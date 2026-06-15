@@ -3,6 +3,7 @@ const Together = require('together-ai');
 const TxtKnowledgeBase = require('../utils/knowledgeBase');
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
+const articleMetadata = require('../metadata/articleMetadata.json');
 
 const router = express.Router();
 
@@ -180,43 +181,80 @@ router.post('/:chatId/message', async (req, res) => {
     - Individual responsibility and liberty
     - Practical policy solutions with real-world applications`;
 
-      if (liveArticles.length > 0) {
-        systemMessage += `\n\nLIVE ARTICLES FROM AEI.ORG:\n`;
-        liveArticles.forEach((article, i) => {
-          systemMessage += `
-    === SOURCE ${i + 1} ===
-    Title: ${article.title}
-    Author: ${article.author}
-    Published: ${article.date}
-    URL: ${article.url}
+if (liveArticles.length > 0) {
+  systemMessage += `\n\nLIVE ARTICLES FROM AEI.ORG:\n`;
 
-    ${article.body}
-    === END SOURCE ${i + 1} ===
-    `;
-          relevantFiles.push(`${article.title} (${article.date})`);
-        });
-        systemMessage += `\n\nCITATION INSTRUCTIONS:
-    - Cite articles inline like: [Source: "Article Title", Published: Date]
-    - Only cite sources that directly support the specific claim
-    - Never guess or fabricate dates — use only the Published date from the source above
-    - If the sources don't answer the question, say so explicitly`;
+  liveArticles.forEach((article, i) => {
+    systemMessage += `
+=== SOURCE ${i + 1} ===
+Title: ${article.title || "Untitled"}
+Author: ${article.author || "Unknown author"}
+Published: ${article.date || "Unknown date"}
+URL: ${article.url || "URL unavailable"}
 
-      } else if (domainContent && Object.keys(domainContent).length > 0) {
-        const searchResults = kb.searchContent(domainContent, message, 3);
-        if (searchResults.length > 0) {
-          systemMessage += `\n\nRELEVANT KNOWLEDGE BASE CONTENT:\n`;
-          searchResults.forEach((result, i) => {
-            systemMessage += `\n=== SOURCE ${i + 1} | File: "${result.filename}" ===\n${result.content}\n=== END SOURCE ${i + 1} ===\n`;
-            relevantFiles.push(result.filename);
-          });
-          systemMessage += `\n\nCITATION INSTRUCTIONS:
-    - Cite inline like: [Source: "Article Title", Published: Date, URL]
-    - Never cite local .txt filenames or file paths in user-facing answers.
-    - Only cite sources that directly support the claim`;
-        }
-      } else {
-        systemMessage += `\n\nNo specific knowledge files are available for ${chat.domainName}. Draw upon established research and empirical evidence, but clearly state when you are uncertain about specific facts.`;
-      }
+${article.body}
+=== END SOURCE ${i + 1} ===
+`;
+
+    relevantFiles.push(`${article.title} (${article.date})`);
+  });
+
+  systemMessage += `
+
+CITATION INSTRUCTIONS:
+- Cite articles inline like: [Source: "Article Title", Published: Date, URL]
+- Use the Title, Published, and URL fields from the source block.
+- Never cite local .txt filenames or file paths in user-facing answers.
+- Only cite sources that directly support the specific claim.
+- Never guess or fabricate dates — use only the Published date from the source above.
+- If the sources don't answer the question, say so explicitly.`;
+
+} else if (domainContent && Object.keys(domainContent).length > 0) {
+  const searchResults = kb.searchContent(domainContent, message, 3);
+
+  if (searchResults.length > 0) {
+    systemMessage += `\n\nRELEVANT KNOWLEDGE BASE CONTENT:\n`;
+
+    searchResults.forEach((result, i) => {
+      const metadataKey = `${chat.domainName}/${result.filename}`;
+      const metadata = articleMetadata[metadataKey] || {};
+
+      const title = metadata.title || result.filename;
+      const author = metadata.author || chat.domainName.replace(/_/g, ' ');
+      const date = metadata.date || 'Unknown date';
+      const url = metadata.url || 'URL unavailable';
+
+      systemMessage += `
+=== SOURCE ${i + 1} ===
+Title: ${title}
+Author: ${author}
+Published: ${date}
+URL: ${url}
+
+${result.content}
+=== END SOURCE ${i + 1} ===
+`;
+
+      relevantFiles.push(result.filename);
+    });
+
+    systemMessage += `
+
+CITATION INSTRUCTIONS:
+- Cite articles inline like: [Source: "Article Title", Published: Date, URL]
+- Use the Title, Published, and URL fields from the source block.
+- Never cite local .txt filenames or file paths in user-facing answers.
+- Only cite sources that directly support the specific claim.
+- Never guess or fabricate dates — use only the Published date from the source above.
+- If the sources don't answer the question, say so explicitly.`;
+
+  } else {
+    systemMessage += `\n\nNo relevant knowledge files were found for ${chat.domainName}. If the provided sources don't answer the question, say so explicitly.`;
+  }
+
+} else {
+  systemMessage += `\n\nNo specific knowledge files are available for ${chat.domainName}. If the provided sources don't answer the question, say so explicitly.`;
+}
     }
 
     // Get chat messages for context
