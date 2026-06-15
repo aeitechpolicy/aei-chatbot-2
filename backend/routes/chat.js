@@ -3,7 +3,7 @@ const Together = require('together-ai');
 const TxtKnowledgeBase = require('../utils/knowledgeBase');
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
-const articleMetadata = require('../metadata/articleMetadata.json');
+const articleMetadata = require('../articleMetadata.json');
 
 const router = express.Router();
 
