@@ -210,7 +210,8 @@ router.post('/:chatId/message', async (req, res) => {
             relevantFiles.push(result.filename);
           });
           systemMessage += `\n\nCITATION INSTRUCTIONS:
-    - Cite inline like: [Source: filename.txt]
+    - Cite inline like: [Source: "Article Title", Published: Date, URL]
+    - Never cite local .txt filenames or file paths in user-facing answers.
     - Only cite sources that directly support the claim`;
         }
       } else {
