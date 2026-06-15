@@ -218,7 +218,8 @@ CITATION INSTRUCTIONS:
     searchResults.forEach((result, i) => {
       const metadataKey = `${chat.domainName}/${result.filename}`;
       const metadata = articleMetadata[metadataKey] || {};
-
+      console.log('metadataKey:', metadataKey);
+      console.log('metadata found:', Boolean(metadata.url), metadata.url);
       const title = metadata.title || result.filename;
       const author = metadata.author || chat.domainName.replace(/_/g, ' ');
       const date = metadata.date || 'Unknown date';
