@@ -196,7 +196,7 @@ ${article.body}
 === END SOURCE ${i + 1} ===
 `;
 
-    relevantFiles.push(`${article.title} (${article.date})`);
+   relevantFiles.push(`${article.title} (${article.date}) - ${article.url}`);
   });
 
   systemMessage += `
@@ -235,7 +235,7 @@ ${result.content}
 === END SOURCE ${i + 1} ===
 `;
 
-      relevantFiles.push(result.filename);
+      relevantFiles.push(`${title} (${date}) - ${url}`);
     });
 
     systemMessage += `
