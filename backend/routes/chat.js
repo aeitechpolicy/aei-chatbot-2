@@ -209,7 +209,17 @@ CITATION INSTRUCTIONS:
 - Never guess or fabricate dates — use only the Published date from the source above.
 - If the sources don't answer the question, say so explicitly.`;
 
-} else if (domainContent && Object.keys(domainContent).length > 0) {
+} else if (domainContent && Object.keys(domainContent).length > 0) { 
+  const targetFilename = 'www_aei_org_articles_the_sharing_economy_under_pressure.txt';
+  const loadedFiles = Object.keys(domainContent);
+
+  console.log('TOTAL LOADED FILES:', loadedFiles.length);
+  console.log('TARGET FILE LOADED:', loadedFiles.includes(targetFilename));
+  console.log(
+    'FILES CONTAINING SHARING:',
+    loadedFiles.filter(f => f.toLowerCase().includes('sharing')).slice(0, 20)
+  );
+
   const searchResults = kb.searchContent(domainContent, message, 10);
   
 console.log('DOMAIN:', chat.domainName);
