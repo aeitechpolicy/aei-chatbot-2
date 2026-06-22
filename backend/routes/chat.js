@@ -210,22 +210,28 @@ CITATION INSTRUCTIONS:
 - If the sources don't answer the question, say so explicitly.`;
 
 } else if (domainContent && Object.keys(domainContent).length > 0) {
-  const searchResults = kb.searchContent(domainContent, message, 3);
-
+  const searchResults = kb.searchContent(domainContent, message, 10);
+  
+console.log('DOMAIN:', chat.domainName);
+console.log('SEARCH RESULTS:', searchResults.map(r => r.filename));
+console.log('METADATA KEYS:', searchResults.map(r => `${chat.domainName}/${r.filename}`));
+  
   if (searchResults.length > 0) {
     systemMessage += `\n\nRELEVANT KNOWLEDGE BASE CONTENT:\n`;
 
-    searchResults.forEach((result, i) => {
-      const metadataKey = `${chat.domainName}/${result.filename}`;
-      const metadata = articleMetadata[metadataKey] || {};
-      console.log('metadataKey:', metadataKey);
-      console.log('metadata found:', Boolean(metadata.url), metadata.url);
-      const title = metadata.title || result.filename;
-      const author = metadata.author || chat.domainName.replace(/_/g, ' ');
-      const date = metadata.date || 'Unknown date';
-      const url = metadata.url || 'URL unavailable';
+searchResults.forEach((result, i) => {
+  const metadataKey = `${chat.domainName}/${result.filename}`;
+  const metadata = articleMetadata[metadataKey] || {};
 
-      systemMessage += `
+  console.log('metadataKey:', metadataKey);
+  console.log('metadata found:', Boolean(metadata.url), metadata.url);
+
+  const title = metadata.title || result.filename;
+  const author = metadata.author || chat.domainName.replace(/_/g, ' ');
+  const date = metadata.date || 'Unknown date';
+  const url = metadata.url || 'URL unavailable';
+
+  systemMessage += `
 === SOURCE ${i + 1} ===
 Title: ${title}
 Author: ${author}
@@ -236,8 +242,8 @@ ${result.content}
 === END SOURCE ${i + 1} ===
 `;
 
-      relevantFiles.push(`${title} (${date}) - ${url}`);
-    });
+  relevantFiles.push(`${title} (${date}) - ${url}`);
+});
 
     systemMessage += `
 
