@@ -12,6 +12,11 @@ const fileRoutes = require('./routes/files');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+app.use((req, res, next) => {
+  console.log('REQUEST HIT:', req.method, req.originalUrl, new Date().toISOString());
+  next();
+});
+
 // Middleware
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
