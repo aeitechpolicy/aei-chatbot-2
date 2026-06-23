@@ -230,7 +230,7 @@ console.log(`Combined ${ddgLinks.length} DuckDuckGo + ${scholarLinks.length} sch
     .slice(0, maxResults);
 }
 
-// Export helpers so metadata backfill scripts can reuse the scraper logic.
+// Export helpers so metadata backfill scripts can now reuse the scraper logic.
 module.exports = {
   fetchRelevantArticles,
   searchAEIArticles,
