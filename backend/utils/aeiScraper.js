@@ -219,15 +219,22 @@ console.log(`Combined ${ddgLinks.length} DuckDuckGo + ${scholarLinks.length} sch
     if (articles.length >= 10) break;
   }
 
+  const ddgSet = new Set(ddgLinks);
+
   return articles
-    const ddgSet = new Set(ddgLinks);
-return articles
-  .map(a => ({
-    ...a,
-    score: scoreRelevance(a, query) + (ddgSet.has(a.url) ? 1000 : 0)
-  }))
-  .sort((a, b) => b.score - a.score)
-  .slice(0, maxResults);
+    .map(a => ({
+      ...a,
+      score: scoreRelevance(a, query) + (ddgSet.has(a.url) ? 1000 : 0)
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, maxResults);
 }
 
-module.exports = { fetchRelevantArticles };
+module.exports = {
+  fetchRelevantArticles,
+  searchAEIArticles,
+  fetchScholarArticleLinks,
+  scrapeArticle,
+  domainToScholarName,
+  scoreRelevance
+};
