@@ -396,26 +396,104 @@ class TxtKnowledgeBase {
   }
 
   searchContent(domainContent, query, maxResults = 3) {
-    const queryWords = query.toLowerCase().split(/\s+/);
-    const results = [];
+   const normalizeText = (text = '') =>
+  text
+    .toLowerCase()
+    .replace(/[_-]/g, ' ')
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 
-    for (const [filename, content] of Object.entries(domainContent)) {
-      const lines = content.split('\n');
-      let score = 0;
-      const matchedIndices = new Set();
+const stopWords = new Set([
+  // generic question words
+  'what', 'has', 'have', 'had',
+  'is', 'are', 'was', 'were',
+  'do', 'does', 'did',
+  'can', 'could', 'would', 'should',
 
-      lines.forEach((line, i) => {
-        const lineLower = line.toLowerCase();
-        const lineScore = queryWords.reduce((acc, word) =>
-          acc + (lineLower.includes(word) ? 1 : 0), 0);
-        if (lineScore > 0) {
-          score += lineScore;
-          // Include 2 lines of context above and below each match
-          for (let j = Math.max(0, i - 2); j <= Math.min(lines.length - 1, i + 2); j++) {
-            matchedIndices.add(j);
-          }
-        }
-      });
+  // small connector words
+  'the', 'a', 'an',
+  'and', 'or', 'but',
+  'about', 'with', 'from', 'into', 'for', 'on', 'in', 'of', 'to', 'by',
+
+  // chatbot request words
+  'written', 'write', 'writes',
+  'said', 'say', 'says',
+  'argue', 'argues', 'argued',
+  'tell', 'me', 'show', 'find', 'summarize',
+
+  // scholar names
+  'shane', 'tews',
+  'will', 'rinehart',
+  'clay', 'calvert',
+  'brent', 'orrell'
+]);
+
+const normalizedQuery = normalizeText(query);
+
+const rawQueryWords = normalizedQuery
+  .split(' ')
+  .filter(word => word.length > 2);
+
+const queryWords = rawQueryWords.filter(word => !stopWords.has(word));
+
+// fallback: if the user only typed stop words, use the raw words
+const effectiveQueryWords = queryWords.length > 0 ? queryWords : rawQueryWords;
+
+const queryPhrases = [];
+for (let i = 0; i < effectiveQueryWords.length - 1; i++) {
+  queryPhrases.push(`${effectiveQueryWords[i]} ${effectiveQueryWords[i + 1]}`);
+}
+
+const results = [];
+
+   for (const [filename, content] of Object.entries(domainContent)) {
+  const lines = content.split('\n');
+  const filenameText = normalizeText(filename.replace(/\.txt$/, ''));
+
+  let score = 0;
+  const matchedIndices = new Set();
+
+  // Filename matches are strong relevance signals.
+  effectiveQueryWords.forEach(word => {
+    if (filenameText.includes(word)) {
+      score += 10;
+    }
+  });
+
+  // Exact phrase matches in filenames are even stronger.
+  queryPhrases.forEach(phrase => {
+    if (filenameText.includes(phrase)) {
+      score += 25;
+    }
+  });
+
+  lines.forEach((line, i) => {
+  const lineLower = normalizeText(line);
+
+  let lineScore = 0;
+
+  effectiveQueryWords.forEach(word => {
+    if (lineLower.includes(word)) {
+      lineScore += 1;
+    }
+  });
+
+  queryPhrases.forEach(phrase => {
+    if (lineLower.includes(phrase)) {
+      lineScore += 5;
+    }
+  });
+
+  if (lineScore > 0) {
+    score += lineScore;
+
+    // Include 2 lines of context above and below each match
+    for (let j = Math.max(0, i - 2); j <= Math.min(lines.length - 1, i + 2); j++) {
+      matchedIndices.add(j);
+    }
+  }
+});
 
       if (score > 0) {
         // Build contiguous context blocks from matched indices
