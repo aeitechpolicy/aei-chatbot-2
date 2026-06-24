@@ -73,39 +73,53 @@ function addUrlIfValid(url, links, seen) {
 async function searchAEIArticles(scholarName, query, maxResults = 5) {
   await sleep(1000);
 
-  const searchQuery = `site:aei.org "${scholarName}" ${query}`;
-  const url = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(searchQuery)}`;
+  const searchQueries = [
+    `site:aei.org ${query}`,
+    `site:www.aei.org ${query}`,
+    `site:aei.org "${scholarName}" ${query}`,
+    `site:www.aei.org "${scholarName}" ${query}`
+  ];
 
-  try {
-    const response = await axios.get(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-      },
-      httpsAgent,
-      timeout: 15000
-    });
+  const links = [];
+  const seen = new Set();
 
-    const $ = cheerio.load(response.data);
-    const links = [];
-    const seen = new Set();
+  for (const searchQuery of searchQueries) {
+    const url = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(searchQuery)}`;
 
-    $('a[href]').each((_, el) => {
-      const href = $(el).attr('href') || '';
+    try {
+      console.log(`DuckDuckGo search query: ${searchQuery}`);
 
-      // Handles both DuckDuckGo wrapped links and direct links.
-      addUrlIfValid(href, links, seen);
-    });
+      const response = await axios.get(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        },
+        httpsAgent,
+        timeout: 15000
+      });
 
-    console.log(`DuckDuckGo search query: ${searchQuery}`);
-    console.log(`DuckDuckGo extracted ${links.length} AEI links`);
-    console.log('DuckDuckGo links:', links.slice(0, maxResults));
+      const $ = cheerio.load(response.data);
+      console.log('DuckDuckGo response length:', response.data.length);
 
-    return links.slice(0, maxResults);
+      $('a[href]').each((_, el) => {
+        const href = $(el).attr('href') || '';
+        addUrlIfValid(href, links, seen);
+      });
 
-  } catch (error) {
-    console.error('DuckDuckGo search error:', error.message);
-    return [];
+      console.log(`DuckDuckGo total AEI links so far: ${links.length}`);
+      console.log('DuckDuckGo links so far:', links.slice(0, maxResults));
+
+      if (links.length >= maxResults) {
+        break;
+      }
+
+      await sleep(500);
+
+    } catch (error) {
+      console.error(`DuckDuckGo search error for "${searchQuery}":`, error.message);
+    }
   }
+
+  return links.slice(0, maxResults);
 }
 
 // Convert domain folder name like "Shane_Tews" back to "Shane Tews" for AEI search
