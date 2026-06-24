@@ -3,6 +3,7 @@ const path = require('path');
 
 const {
   searchAEIArticles,
+  fetchScholarArticleLinks,
   scrapeArticle,
   domainToScholarName
 } = require('../utils/aeiScraper');
@@ -150,6 +151,116 @@ function filenameToSearchTerms(filename) {
     .join(' ');
 }
 
+function extractTitleGuess(txtContent = '') {
+  const lines = txtContent
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line.length > 20 && line.length < 180);
+
+  if (lines.length === 0) {
+    return '';
+  }
+
+  return normalizeText(lines[0])
+    .split(' ')
+    .filter(word => word.length > 2)
+    .slice(0, 12)
+    .join(' ');
+}
+
+function contentToSearchTerms(txtContent = '') {
+  const stopWords = new Set([
+    'the',
+    'and',
+    'for',
+    'with',
+    'from',
+    'that',
+    'this',
+    'have',
+    'has',
+    'are',
+    'was',
+    'were',
+    'will',
+    'would',
+    'could',
+    'should',
+    'about',
+    'after',
+    'before',
+    'during',
+    'into',
+    'onto',
+    'over',
+    'under',
+    'aei',
+    'american',
+    'enterprise',
+    'institute',
+    'article',
+    'articles',
+    'said',
+    'says',
+    'also',
+    'more',
+    'than',
+    'their',
+    'there',
+    'which'
+  ]);
+
+  return normalizeText(txtContent)
+    .split(' ')
+    .filter(word => word.length > 4 && !stopWords.has(word))
+    .slice(0, 12)
+    .join(' ');
+}
+
+async function collectCandidateUrls({ scholarName, filename, txtContent }) {
+  const queries = [
+    filenameToSearchTerms(filename),
+    extractTitleGuess(txtContent),
+    contentToSearchTerms(txtContent)
+  ]
+    .filter(Boolean)
+    .filter((query, index, arr) => arr.indexOf(query) === index);
+
+  const seen = new Set();
+  const urls = [];
+
+  for (const query of queries) {
+    console.log(`Trying search query: ${query}`);
+
+    const foundUrls = await searchAEIArticles(scholarName, query, 8);
+
+    for (const url of foundUrls) {
+      if (!seen.has(url)) {
+        seen.add(url);
+        urls.push(url);
+      }
+    }
+
+    if (urls.length >= 8) {
+      break;
+    }
+  }
+
+  if (urls.length === 0) {
+    console.log('No search URLs found. Trying scholar page fallback...');
+    const scholarUrls = await fetchScholarArticleLinks(scholarName, 25);
+
+    for (const url of scholarUrls) {
+      if (!seen.has(url)) {
+        seen.add(url);
+        urls.push(url);
+      }
+    }
+  }
+
+  return urls.slice(0, 15);
+}
+
 function getDomains() {
   if (!fs.existsSync(KNOWLEDGE_BASE_DIR)) {
     throw new Error(`Knowledge base folder not found: ${KNOWLEDGE_BASE_DIR}`);
@@ -255,7 +366,11 @@ async function findMetadataForFile(domainName, filename) {
   console.log(`Scholar: ${scholarName}`);
   console.log(`Search terms: ${searchTerms}`);
 
-  const urls = await searchAEIArticles(scholarName, searchTerms, 5);
+const urls = await collectCandidateUrls({
+  scholarName,
+  filename,
+  txtContent
+});
 
   if (urls.length === 0) {
     return {
