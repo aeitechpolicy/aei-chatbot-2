@@ -6,7 +6,9 @@ const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 
 const BASE_URL = 'https://www.aei.org';
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-function normalizeAEIUrl(rawUrl) {
+function normalizeAEIUrl(rawUrl, options = {}) {
+  const { allowRelative = false } = options;
+
   if (!rawUrl) return null;
 
   let url = rawUrl.trim();
@@ -23,15 +25,19 @@ function normalizeAEIUrl(rawUrl) {
     // Keep going with the original URL.
   }
 
-  // Handle AEI relative links like /technology-and-innovation/...
+  // Only treat relative links as AEI links when we are already scraping AEI.
+  // Do NOT do this for DuckDuckGo pages, because /html/ is a DuckDuckGo link.
   if (url.startsWith('/')) {
+    if (!allowRelative) {
+      return null;
+    }
+
     url = `${BASE_URL}${url}`;
   }
 
   try {
     const parsed = new URL(url);
 
-    // Accept both aei.org and www.aei.org.
     if (!['aei.org', 'www.aei.org'].includes(parsed.hostname)) {
       return null;
     }
@@ -39,8 +45,6 @@ function normalizeAEIUrl(rawUrl) {
     parsed.protocol = 'https:';
     parsed.hostname = 'www.aei.org';
     parsed.hash = '';
-
-    // Remove tracking/query junk from normal article URLs.
     parsed.search = '';
 
     const cleanUrl = parsed.toString();
@@ -50,7 +54,8 @@ function normalizeAEIUrl(rawUrl) {
       cleanUrl.includes('/scholar/') ||
       cleanUrl.includes('/tag/') ||
       cleanUrl.includes('/wp-content/') ||
-      cleanUrl === 'https://www.aei.org/'
+      cleanUrl === 'https://www.aei.org/' ||
+      cleanUrl === 'https://www.aei.org/html/'
     ) {
       return null;
     }
@@ -61,8 +66,8 @@ function normalizeAEIUrl(rawUrl) {
   }
 }
 
-function addUrlIfValid(url, links, seen) {
-  const normalized = normalizeAEIUrl(url);
+function addUrlIfValid(url, links, seen, options = {}) {
+  const normalized = normalizeAEIUrl(url, options);
 
   if (normalized && !seen.has(normalized)) {
     seen.add(normalized);
@@ -100,10 +105,10 @@ async function searchAEIArticles(scholarName, query, maxResults = 5) {
       const $ = cheerio.load(response.data);
       console.log('DuckDuckGo response length:', response.data.length);
 
-      $('a[href]').each((_, el) => {
-        const href = $(el).attr('href') || '';
-        addUrlIfValid(href, links, seen);
-      });
+     $('a[href]').each((_, el) => {
+  const href = $(el).attr('href') || '';
+  addUrlIfValid(href, links, seen, { allowRelative: false });
+});
 
       console.log(`DuckDuckGo total AEI links so far: ${links.length}`);
       console.log('DuckDuckGo links so far:', links.slice(0, maxResults));
@@ -174,7 +179,7 @@ async function fetchScholarArticleLinks(scholarName, maxArticles = 10) {
 
 $('a[href]').each((_, el) => {
   const href = $(el).attr('href');
-  const normalized = normalizeAEIUrl(href);
+const normalized = normalizeAEIUrl(href, { allowRelative: true });
 
   if (!normalized) return;
 
