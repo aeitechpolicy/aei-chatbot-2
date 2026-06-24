@@ -6,9 +6,73 @@ const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 
 const BASE_URL = 'https://www.aei.org';
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+function normalizeAEIUrl(rawUrl) {
+  if (!rawUrl) return null;
+
+  let url = rawUrl.trim();
+
+  // DuckDuckGo sometimes wraps the real URL inside a uddg parameter.
+  try {
+    const maybeDuckUrl = new URL(url, 'https://duckduckgo.com');
+    const uddg = maybeDuckUrl.searchParams.get('uddg');
+
+    if (uddg) {
+      url = decodeURIComponent(uddg);
+    }
+  } catch {
+    // Keep going with the original URL.
+  }
+
+  // Handle AEI relative links like /technology-and-innovation/...
+  if (url.startsWith('/')) {
+    url = `${BASE_URL}${url}`;
+  }
+
+  try {
+    const parsed = new URL(url);
+
+    // Accept both aei.org and www.aei.org.
+    if (!['aei.org', 'www.aei.org'].includes(parsed.hostname)) {
+      return null;
+    }
+
+    parsed.protocol = 'https:';
+    parsed.hostname = 'www.aei.org';
+    parsed.hash = '';
+
+    // Remove tracking/query junk from normal article URLs.
+    parsed.search = '';
+
+    const cleanUrl = parsed.toString();
+
+    if (
+      cleanUrl.includes('/profile/') ||
+      cleanUrl.includes('/scholar/') ||
+      cleanUrl.includes('/tag/') ||
+      cleanUrl.includes('/wp-content/') ||
+      cleanUrl === 'https://www.aei.org/'
+    ) {
+      return null;
+    }
+
+    return cleanUrl;
+  } catch {
+    return null;
+  }
+}
+
+function addUrlIfValid(url, links, seen) {
+  const normalized = normalizeAEIUrl(url);
+
+  if (normalized && !seen.has(normalized)) {
+    seen.add(normalized);
+    links.push(normalized);
+  }
+}
 // Search DuckDuckGo for scholar + query specific articles on AEI
 async function searchAEIArticles(scholarName, query, maxResults = 5) {
-    await sleep(1000);
+  await sleep(1000);
+
   const searchQuery = `site:aei.org "${scholarName}" ${query}`;
   const url = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(searchQuery)}`;
 
@@ -18,34 +82,24 @@ async function searchAEIArticles(scholarName, query, maxResults = 5) {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
       },
       httpsAgent,
-      timeout: 10000
+      timeout: 15000
     });
 
     const $ = cheerio.load(response.data);
     const links = [];
     const seen = new Set();
 
-    $('a').each((_, el) => {
+    $('a[href]').each((_, el) => {
       const href = $(el).attr('href') || '';
-      // Extract real URL from DuckDuckGo's redirect wrapper
-      const match = href.match(/uddg=([^&]+)/);
-      if (match) {
-        const realUrl = decodeURIComponent(match[1]);
-        if (
-          realUrl.startsWith('https://www.aei.org/') &&
-          !realUrl.includes('/profile/') &&
-          !realUrl.includes('/scholar/') &&
-          !realUrl.includes('/tag/') &&
-          !realUrl.includes('wp-content') &&
-          !seen.has(realUrl)
-        ) {
-          seen.add(realUrl);
-          links.push(realUrl);
-        }
-      }
+
+      // Handles both DuckDuckGo wrapped links and direct links.
+      addUrlIfValid(href, links, seen);
     });
 
-    console.log(`DuckDuckGo found ${links.length} AEI links for: ${searchQuery}`);
+    console.log(`DuckDuckGo search query: ${searchQuery}`);
+    console.log(`DuckDuckGo extracted ${links.length} AEI links`);
+    console.log('DuckDuckGo links:', links.slice(0, maxResults));
+
     return links.slice(0, maxResults);
 
   } catch (error) {
@@ -104,19 +158,22 @@ async function fetchScholarArticleLinks(scholarName, maxArticles = 10) {
     '/energy-and-environment/',
     ];
 
-    $('a[href]').each((_, el) => {
-    const href = $(el).attr('href');
-    const path = href ? href.replace('https://www.aei.org', '') : '';
-    if (
-        href &&
-        href.startsWith('https://www.aei.org/') &&
-        articlePathPrefixes.some(prefix => path.startsWith(prefix)) &&
-        !seen.has(href)
-    ) {
-        seen.add(href);
-        links.push(href);
-    }
-    });
+$('a[href]').each((_, el) => {
+  const href = $(el).attr('href');
+  const normalized = normalizeAEIUrl(href);
+
+  if (!normalized) return;
+
+  const path = new URL(normalized).pathname;
+
+  if (
+    articlePathPrefixes.some(prefix => path.startsWith(prefix)) &&
+    !seen.has(normalized)
+  ) {
+    seen.add(normalized);
+    links.push(normalized);
+  }
+});
 
     console.log(`Found ${links.length} article links on scholar page for ${scholarName}`);
     return links.slice(0, maxArticles);
