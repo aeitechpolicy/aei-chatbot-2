@@ -1,24 +1,41 @@
-name: Backfill Article Metadata
+# .github/workflows/url-backfill.yml
+#
+# Backfill Article Metadata — revised to run the index matcher instead of the
+# old DuckDuckGo/scholar-page scraper. Keeps your existing skeleton: manual
+# dispatch, backend/ working directory, npm run backfill:metadata, dry-run
+# flag, commit-if-changed.
+#
+# Changes from your current file:
+#   - "limit" input retired: the matcher processes the whole corpus locally
+#     in seconds with no network requests, so batching serves no purpose.
+#   - fail-fast check that backend/data/aei-index.json is committed, so a run
+#     without a harvested index errors clearly instead of matching nothing.
+#   - dry runs (write_metadata=false) still print the match summary, so the
+#     flag now means "show me the counts before writing".
+#
+# Assumes: harvest-aei-index.js and match-txt-to-urls.js live in backend/,
+# so their data/ paths resolve to backend/data/. Your backfill:metadata npm
+# script should run the matcher and then transform data/matches.json into
+# articleMetadata.json's schema, honoring WRITE_METADATA.
 
+name: Backfill Article Metadata
 on:
   workflow_dispatch:
     inputs:
-      limit:
-        description: "Number of files to check"
+      kb_path:
+        description: "Knowledge base root (the author folders), relative to backend/"
         required: true
-        default: "5"
+        default: "knowledge_base"   # <-- set to your actual folder name
       write_metadata:
         description: "Actually write articleMetadata.json? Use true or false"
         required: true
         default: "false"
-
 permissions:
   contents: write
-
 jobs:
   backfill:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -34,18 +51,37 @@ jobs:
         working-directory: backend
         run: npm ci
 
+      - name: Check committed index exists
+        run: |
+          if [ ! -f backend/data/aei-index.json ]; then
+            echo "::error::backend/data/aei-index.json not found. Run a harvest and commit the index first."
+            exit 1
+          fi
+
       - name: Run metadata backfill
         working-directory: backend
         env:
-          LIMIT: ${{ github.event.inputs.limit }}
+          KB_PATH: ${{ github.event.inputs.kb_path }}
           WRITE_METADATA: ${{ github.event.inputs.write_metadata }}
         run: npm run backfill:metadata
+
+      - name: Report match summary
+        working-directory: backend
+        run: |
+          node -e "
+            const fs = require('fs');
+            const j = (p) => JSON.parse(fs.readFileSync('data/' + p, 'utf8'));
+            console.log('matched:  ', j('matches.json').length);
+            console.log('ambiguous:', j('ambiguous.json').length);
+            console.log('unmatched:', j('unmatched.json').length);
+            console.log('author mismatches:', j('author-audit.json').length);
+          " | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Commit metadata changes
         if: github.event.inputs.write_metadata == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add backend/articleMetadata.json
+          git add backend/articleMetadata.json backend/data/matches.json backend/data/ambiguous.json backend/data/unmatched.json backend/data/author-audit.json
           git diff --cached --quiet || git commit -m "Backfill article metadata"
           git push
