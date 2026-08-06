@@ -1,0 +1,43 @@
+# .github/workflows/harvest.yml
+#
+# Full harvest of the AEI WordPress REST API into backend/data/aei-index.json
+# and backend/data/aei-authors.json. Manual dispatch only — no schedule.
+# Runs harvest-aei-index.js with no flags, which means full-replace mode
+# (see harvest-aei-index.js: --modified-after triggers incremental merge,
+# omitting it replaces the index entirely).
+
+name: Harvest AEI Index
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Run full harvest
+        working-directory: backend
+        run: node scripts/harvest-aei-index.js
+
+      - name: Commit index changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add backend/data/aei-index.json backend/data/aei-authors.json
+          git diff --cached --quiet || git commit -m "Harvest AEI index"
+          git push

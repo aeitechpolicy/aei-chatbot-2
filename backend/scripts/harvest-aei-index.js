@@ -1,0 +1,250 @@
+// harvest-aei-index.js
+//
+// Walks the AEI WordPress REST API and builds a local JSON index of every
+// publication: canonical URL, title, date, type, scholars, and labels.
+// This is the input for the .txt-to-URL matcher (which you're building).
+//
+// Usage:
+//   node harvest-aei-index.js                  full harvest (backfill)
+//   node harvest-aei-index.js --modified-after=2026-08-01T00:00:00   incremental
+//
+// Outputs (in ./data/):
+//   aei-index.json    one record per publication, all types
+//   aei-authors.json  guest_author id -> name map (the scholar index)
+//
+// Run this locally first. If it works on your laptop but fails on Render,
+// that's an IP-range block and a separate conversation.
+
+const fs = require('fs');
+const path = require('path');
+const axios = require('axios');
+
+const BASE = 'https://www.aei.org/wp-json/wp/v2';
+const OUT_DIR = path.join(__dirname, '..', 'data');
+
+// Every content-bearing type from /wp-json/wp/v2/types. Nothing is excluded
+// at harvest; the `type` field on each record lets you filter at ingestion.
+const CONTENT_TYPES = [
+  'posts',
+  'commentary',
+  'report',
+  'working_paper',
+  'journal_publication',
+  'one_pager',
+  'testimony',
+  'speech',
+  'press',
+  'book',
+  'special_feature',
+  'featured_data',
+  'multimedia',
+  'podcast',
+  'captivate_podcast',
+];
+
+const HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  Accept: 'application/json',
+};
+
+const PER_PAGE = 100;      // WP REST maximum
+const DELAY_MS = 400;      // politeness delay between requests
+const MAX_RETRIES = 3;
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Minimal HTML entity decoding for titles. This is cleanup, not matching:
+// your matcher decides how a decoded title maps to a .txt file.
+function decodeEntities(str) {
+  if (!str) return '';
+  return str
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCharCode(parseInt(n, 16)))
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&hellip;/g, '…')
+    .replace(/&ndash;/g, '–')
+    .replace(/&mdash;/g, '—')
+    .replace(/&(rsquo|lsquo);/g, "'")
+    .replace(/&(rdquo|ldquo);/g, '"')
+    .trim();
+}
+
+async function getWithRetry(url, params = {}) {
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      return await axios.get(url, { headers: HEADERS, params, timeout: 20000 });
+    } catch (err) {
+      const status = err.response ? err.response.status : null;
+      // 400 past the last page is how WP says "no more pages"; let caller handle.
+      if (status === 400) throw err;
+      if (attempt === MAX_RETRIES) throw err;
+      const backoff = 1000 * attempt * attempt;
+      console.warn(`  retry ${attempt}/${MAX_RETRIES} after ${status || err.code}: ${url}`);
+      await sleep(backoff);
+    }
+  }
+}
+
+// Fetch every page of one endpoint. Returns raw item array.
+async function fetchAll(restBase, extraParams = {}) {
+  const items = [];
+  let page = 1;
+  let totalPages = null;
+
+  while (totalPages === null || page <= totalPages) {
+    let response;
+    try {
+      response = await getWithRetry(`${BASE}/${restBase}`, {
+        per_page: PER_PAGE,
+        page,
+        ...extraParams,
+      });
+    } catch (err) {
+      const status = err.response ? err.response.status : null;
+      if (status === 400 && page > 1) break; // walked off the end
+      if (status === 404 || status === 401 || status === 403) {
+        console.warn(`  ${restBase}: not accessible (${status}), skipping type`);
+        return items;
+      }
+      throw err;
+    }
+
+    if (totalPages === null) {
+      const headerVal = response.headers['x-wp-totalpages'];
+      totalPages = headerVal ? Number(headerVal) : 1;
+      const total = response.headers['x-wp-total'] || '?';
+      console.log(`  ${restBase}: ${total} items across ${totalPages} page(s)`);
+    }
+
+    items.push(...response.data);
+    page += 1;
+    await sleep(DELAY_MS);
+  }
+
+  return items;
+}
+
+// Build guest_author id -> name map. This is the scholar index; the numeric
+// ids appear in acf.authors on every publication.
+async function buildAuthorIndex() {
+  console.log('Fetching guest_author index...');
+  const raw = await fetchAll('guest_author');
+  const index = {};
+  for (const a of raw) {
+    const name = decodeEntities(
+      (a.title && a.title.rendered) || a.slug || String(a.id)
+    );
+    index[a.id] = name;
+  }
+  console.log(`  ${Object.keys(index).length} scholars indexed`);
+  return index;
+}
+
+// Normalize one API item into the record shape the matcher will consume.
+function toRecord(item, restBase, authorIndex) {
+  const acf = item.acf || {};
+  const scholarIds = Array.isArray(acf.authors) ? acf.authors : [];
+  const scholars = scholarIds.map((id) => authorIndex[id] || `unknown:${id}`);
+
+  // Fallback byline from Yoast when acf.authors is empty on a type.
+  const yoastAuthor =
+    (item.yoast_head_json && item.yoast_head_json.author) || null;
+
+  return {
+    id: item.id,
+    type: restBase,
+    url: item.link,
+    slug: item.slug,
+    title: decodeEntities(item.title && item.title.rendered),
+    date: item.date_gmt || item.date,
+    modified: item.modified_gmt || item.modified,
+    scholars,
+    scholar_ids: scholarIds,
+    yoast_author: yoastAuthor,
+    outside_authors: acf.outside_authors || null,
+    publication_url: acf.publication_url || null,
+    // class_list carries taxonomy labels (e.g. multimedia_type) as CSS-ish
+    // strings; enough to filter "true video" at ingestion without extra calls.
+    labels: item.class_list || [],
+    excerpt: decodeEntities(
+      ((item.excerpt && item.excerpt.rendered) || '').replace(/<[^>]+>/g, '')
+    ).slice(0, 500),
+  };
+}
+
+// Merge newly fetched records into an existing index, deduping on type+id
+// and keeping whichever record has the newer `modified` date.
+function mergeRecords(existing, incoming) {
+  const byKey = new Map();
+  for (const r of existing) byKey.set(`${r.type}:${r.id}`, r);
+  for (const r of incoming) {
+    const key = `${r.type}:${r.id}`;
+    const prev = byKey.get(key);
+    if (!prev || String(r.modified) > String(prev.modified)) {
+      byKey.set(key, r);
+    }
+  }
+  return Array.from(byKey.values());
+}
+
+async function main() {
+  const modifiedAfterArg = process.argv.find((a) => a.startsWith('--modified-after='));
+  const modifiedAfter = modifiedAfterArg ? modifiedAfterArg.split('=')[1] : null;
+  const extraParams = modifiedAfter ? { modified_after: modifiedAfter } : {};
+  if (modifiedAfter) console.log(`Incremental mode: items modified after ${modifiedAfter}`);
+
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+
+  const authorIndex = await buildAuthorIndex();
+  fs.writeFileSync(
+    path.join(OUT_DIR, 'aei-authors.json'),
+    JSON.stringify(authorIndex, null, 2)
+  );
+
+  const fetched = [];
+  for (const restBase of CONTENT_TYPES) {
+    console.log(`Harvesting ${restBase}...`);
+    let items;
+    try {
+      items = await fetchAll(restBase, extraParams);
+    } catch (err) {
+      console.error(`  ${restBase} failed: ${err.message}; continuing`);
+      continue;
+    }
+    for (const item of items) {
+      fetched.push(toRecord(item, restBase, authorIndex));
+    }
+  }
+
+  const indexPath = path.join(OUT_DIR, 'aei-index.json');
+  let records = fetched;
+  if (modifiedAfter) {
+    const existing = fs.existsSync(indexPath)
+      ? JSON.parse(fs.readFileSync(indexPath, 'utf8'))
+      : [];
+    records = mergeRecords(existing, fetched);
+    console.log(
+      `\nMerged ${fetched.length} fetched record(s) into ${existing.length} existing; ${records.length} total after dedupe.`
+    );
+  }
+
+  records.sort((a, b) => (a.date < b.date ? 1 : -1));
+  fs.writeFileSync(indexPath, JSON.stringify(records, null, 2));
+
+  const byType = {};
+  for (const r of records) byType[r.type] = (byType[r.type] || 0) + 1;
+  console.log('\nDone. Records by type:');
+  for (const [t, n] of Object.entries(byType)) console.log(`  ${t}: ${n}`);
+  console.log(`\nWrote ${records.length} records to data/aei-index.json`);
+}
+
+main().catch((err) => {
+  console.error('Harvest failed:', err.message);
+  process.exit(1);
+});
