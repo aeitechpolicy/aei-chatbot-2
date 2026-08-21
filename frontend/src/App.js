@@ -154,13 +154,16 @@ function App() {
   
       if (response.ok) {
         const data = await response.json();
-        
+
         // Always reload chat history to update sidebar
         await loadChatHistory();
-        
+
         return data;
       } else {
-        throw new Error('Failed to send message');
+        const errorData = await response.json().catch(() => ({}));
+        const sendError = new Error(errorData.error || 'Failed to send message');
+        sendError.code = errorData.code;
+        throw sendError;
       }
     } catch (error) {
       console.error('Error sending message:', error);

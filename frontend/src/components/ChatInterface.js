@@ -96,7 +96,11 @@ const ChatInterface = ({
           messages: prev?.messages?.slice(0, -1) || []
         }));
         setInputValue(messageToSend);
-        setSendError('Together.ai credits exhausted - please contact admin.');
+        setSendError(
+          error.code === 'credit_limit'
+            ? 'Together.ai credits exhausted - please contact admin.'
+            : 'System error'
+        );
       } finally {
         setSendingMessage(false);
       }

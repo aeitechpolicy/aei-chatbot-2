@@ -301,9 +301,10 @@ CITATION INSTRUCTIONS:
 
   } catch (error) {
     console.error('Chat message error:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: 'Failed to process chat message',
-      details: error.message 
+      code: error.status === 402 ? 'credit_limit' : 'system_error',
+      details: error.message
     });
   }
 });
