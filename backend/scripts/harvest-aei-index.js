@@ -92,10 +92,17 @@ async function getWithRetry(url, params = {}) {
 }
 
 // Fetch every page of one endpoint. Returns raw item array.
+//
+// Normally pagination is bounded by the x-wp-totalpages response header. If
+// that header is missing or unparseable (flaky proxy, custom endpoint, etc.)
+// we don't silently assume "1 page" — we page forward until an empty page
+// comes back, and warn loudly so a truncated harvest is never mistaken for
+// a complete one.
 async function fetchAll(restBase, extraParams = {}) {
   const items = [];
   let page = 1;
   let totalPages = null;
+  let paginateUntilEmpty = false;
 
   while (totalPages === null || page <= totalPages) {
     let response;
@@ -115,12 +122,22 @@ async function fetchAll(restBase, extraParams = {}) {
       throw err;
     }
 
-    if (totalPages === null) {
+    if (page === 1) {
       const headerVal = response.headers['x-wp-totalpages'];
-      totalPages = headerVal ? Number(headerVal) : 1;
       const total = response.headers['x-wp-total'] || '?';
-      console.log(`  ${restBase}: ${total} items across ${totalPages} page(s)`);
+      const parsed = headerVal ? Number(headerVal) : NaN;
+      if (Number.isFinite(parsed) && parsed > 0) {
+        totalPages = parsed;
+        console.log(`  ${restBase}: ${total} items across ${totalPages} page(s)`);
+      } else {
+        paginateUntilEmpty = true;
+        console.warn(
+          `  ${restBase}: x-wp-totalpages header missing/invalid (got ${JSON.stringify(headerVal)}); paginating until an empty page instead`
+        );
+      }
     }
+
+    if (paginateUntilEmpty && response.data.length === 0) break;
 
     items.push(...response.data);
     page += 1;
@@ -178,18 +195,44 @@ function toRecord(item, restBase, authorIndex) {
   };
 }
 
-// Merge newly fetched records into an existing index, deduping on type+id
-// and keeping whichever record has the newer `modified` date.
-function mergeRecords(existing, incoming) {
+// Merge newly fetched records into an existing index, deduping on type+id.
+// A record present in `incoming` is always trusted wholesale over whatever
+// was previously stored — it was just fetched, so it's the current ground
+// truth (this also clears any stale `delisted_at`/`url:null` from a prior
+// run: WordPress doesn't bump `modified` when a trashed post is restored,
+// so comparing modified dates can't be used to decide whether to trust it).
+//
+// This is an archive, not a mirror: records are never dropped. On a full
+// harvest (isFullHarvest), an existing record whose key doesn't reappear in
+// `incoming` means AEI took it down (unpublished/deleted) — since a full
+// harvest sees the complete live set for that type, absence is a real
+// signal. Rather than delete it, it's kept and marked `delisted_at` with
+// `url` cleared, so the archive stays comprehensive but stops pointing at a
+// dead link. If it reappears later (republished), the delisted flag clears.
+//
+// coveredTypes guards against a content-type fetch that failed or came back
+// empty (network error, WAF hiccup, rate limiting) being misread as "every
+// article of that type vanished" — only types that actually yielded items
+// this run are eligible for delisting.
+function mergeRecords(existing, incoming, { isFullHarvest = false, coveredTypes = null } = {}) {
   const byKey = new Map();
   for (const r of existing) byKey.set(`${r.type}:${r.id}`, r);
+
+  const seen = new Set();
   for (const r of incoming) {
     const key = `${r.type}:${r.id}`;
-    const prev = byKey.get(key);
-    if (!prev || String(r.modified) > String(prev.modified)) {
-      byKey.set(key, r);
+    seen.add(key);
+    byKey.set(key, { ...r, delisted_at: null });
+  }
+
+  if (isFullHarvest) {
+    for (const [key, r] of byKey) {
+      if (seen.has(key) || r.delisted_at) continue;
+      if (coveredTypes && !coveredTypes.has(r.type)) continue;
+      byKey.set(key, { ...r, delisted_at: new Date().toISOString(), url: null });
     }
   }
+
   return Array.from(byKey.values());
 }
 
@@ -208,6 +251,7 @@ async function main() {
   );
 
   const fetched = [];
+  const coveredTypes = new Set();
   for (const restBase of CONTENT_TYPES) {
     console.log(`Harvesting ${restBase}...`);
     let items;
@@ -217,20 +261,35 @@ async function main() {
       console.error(`  ${restBase} failed: ${err.message}; continuing`);
       continue;
     }
+    // A 200 with zero items (WAF hiccup, rate limiting, transient API glitch)
+    // is indistinguishable from "this type legitimately has no live items" —
+    // treat it the same as a failed fetch and skip delisting for this type
+    // this run, rather than risk mass-delisting everything of that type.
+    if (items.length > 0) {
+      coveredTypes.add(restBase);
+    } else {
+      console.warn(`  ${restBase}: fetched 0 items; skipping delisting for this type this run`);
+    }
     for (const item of items) {
       fetched.push(toRecord(item, restBase, authorIndex));
     }
   }
 
   const indexPath = path.join(OUT_DIR, 'aei-index.json');
-  let records = fetched;
+  const existing = fs.existsSync(indexPath)
+    ? JSON.parse(fs.readFileSync(indexPath, 'utf8'))
+    : [];
+  const isFullHarvest = !modifiedAfter;
+  const records = mergeRecords(existing, fetched, { isFullHarvest, coveredTypes });
+
   if (modifiedAfter) {
-    const existing = fs.existsSync(indexPath)
-      ? JSON.parse(fs.readFileSync(indexPath, 'utf8'))
-      : [];
-    records = mergeRecords(existing, fetched);
     console.log(
       `\nMerged ${fetched.length} fetched record(s) into ${existing.length} existing; ${records.length} total after dedupe.`
+    );
+  } else {
+    const delisted = records.filter((r) => r.delisted_at).length;
+    console.log(
+      `\nFull harvest: ${fetched.length} live record(s) fetched, ${existing.length} previously known; ${records.length} total (${delisted} delisted, 0 dropped).`
     );
   }
 

@@ -6,12 +6,17 @@ function domainToScholarName(domainName) {
   return domainName.replace(/_/g, ' ');
 }
 
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 // Score relevance of an article to a query
 function scoreRelevance(article, query) {
-  const words = query.toLowerCase().split(/\s+/);
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
   const text = `${article.title} ${article.body}`.toLowerCase();
   return words.reduce((score, word) => {
-    return score + (text.match(new RegExp(word, 'g')) || []).length;
+    const pattern = new RegExp(escapeRegExp(word), 'g');
+    return score + (text.match(pattern) || []).length;
   }, 0);
 }
 

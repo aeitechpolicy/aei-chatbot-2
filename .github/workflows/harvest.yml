@@ -2,9 +2,17 @@
 #
 # Full harvest of the AEI WordPress REST API into backend/data/aei-index.json
 # and backend/data/aei-authors.json. Manual dispatch only — no schedule.
-# Runs harvest-aei-index.js with no flags, which means full-replace mode
-# (see harvest-aei-index.js: --modified-after triggers incremental merge,
-# omitting it replaces the index entirely).
+# Runs harvest-aei-index.js with no flags, which means full-harvest mode:
+# every content type is re-fetched in full (see harvest-aei-index.js:
+# --modified-after triggers incremental/partial mode instead). This is an
+# archive, not a mirror — existing records are never dropped. A full harvest
+# sees the complete live set, so any existing record that doesn't reappear
+# gets marked delisted_at with its url cleared rather than removed.
+#
+# data/aei-index.json is filter=lfs in backend/.gitattributes (~133MB), so
+# `git lfs install` runs right after checkout to register the clean filter —
+# without it, `git add` on a fresh runner would commit the raw JSON blob
+# instead of an LFS pointer.
 
 name: Harvest AEI Index
 on:
@@ -18,6 +26,9 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+
+      - name: Set up Git LFS
+        run: git lfs install
 
       - name: Set up Node
         uses: actions/setup-node@v4

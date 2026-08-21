@@ -50,6 +50,12 @@ function main() {
   let withTxtFile = 0;
 
   for (const r of allRecords) {
+    // Delisted records (harvest-aei-index.js marks these when AEI takes an
+    // article down) stay in the full archive but must never be served to
+    // chat — they carry url: null, which the chatbot has no good way to
+    // present as a citation.
+    if (r.delisted_at) continue;
+
     const scholars = r.scholars || [];
     const isServed =
       scholars.some(s => servedNamesLower.has(s.toLowerCase())) ||
