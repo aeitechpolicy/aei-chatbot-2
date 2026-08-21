@@ -1,0 +1,123 @@
+# .github/workflows/biweekly-scrape.yml
+#
+# Runs every other week: incrementally harvests anything new from the AEI
+# API since the last window, then scrapes full text for any new article by
+# the four served scholars (backend/utils/servedScholars.js) that isn't in
+# knowledge_base/ yet, and commits the result. This is the "keep the archive
+# current" counterpart to harvest.yml (manual, full-replace) and
+# backfill-metadata.yml (manual, matches existing knowledge_base files to
+# URLs) — this workflow is the only one that adds brand-new article content
+# on its own.
+#
+# GitHub Actions cron has no native "every N weeks" schedule, so this uses a
+# weekly trigger gated by ISO week parity (check-week job) to land on a true
+# 14-day cadence. Which weeks are "even" vs "odd" is arbitrary and doesn't
+# matter — what matters is it's consistently every other Monday from here on.
+# Manual dispatch always runs regardless of week parity.
+#
+# Pipeline (see fetch-missing-articles.js's own header for why the match
+# step runs both before and after the fetch step):
+#   1. harvest-aei-index.js --modified-after=<~20 days ago>   (incremental,
+#      never deletes — see harvest-aei-index.js's mergeRecords comment)
+#   2. match-txt-to-urls.js                                   (baseline)
+#   3. fetch-missing-articles.js                               (scrape new
+#      served-scholar articles into knowledge_base/)
+#   4. match-txt-to-urls.js                                   (pick up the
+#      files step 3 just wrote)
+#   5. build-slim-index.js                                    (rebuild the
+#      runtime index aeiScraper.js actually reads)
+#
+# aei-index.json is filter=lfs (backend/.gitattributes), hence checkout uses
+# lfs: true. This matters for both directions: without it, a fresh checkout
+# would hand harvest-aei-index.js the small LFS pointer stub instead of the
+# real file (it now always reads the existing index first for the archive/
+# delist merge, so a bare pointer would crash JSON.parse() immediately), and
+# `git add` would commit a raw JSON blob instead of an LFS pointer on push.
+
+name: Biweekly Article Scrape
+on:
+  schedule:
+    - cron: '0 8 * * 1' # every Monday 08:00 UTC; gated below to every other one
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check-week:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - id: check
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Manual run — bypassing the week-parity gate."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          week=$(date +%V)
+          # 10# forces base-10 so a week like 08 or 09 isn't read as octal.
+          if [ $(( 10#$week % 2 )) -eq 0 ]; then
+            echo "ISO week $week — on week, running."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ISO week $week — off week, skipping."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  scrape:
+    needs: check-week
+    if: needs.check-week.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Compute lookback window
+        run: echo "SINCE=$(date -u -d '20 days ago' +%Y-%m-%dT00:00:00)" >> "$GITHUB_ENV"
+
+      - name: Incremental harvest
+        working-directory: backend
+        run: node scripts/harvest-aei-index.js --modified-after=${{ env.SINCE }}
+
+      - name: Match existing knowledge base
+        working-directory: backend
+        run: node scripts/match-txt-to-urls.js knowledge_base
+
+      - name: Fetch missing served-scholar articles
+        working-directory: backend
+        run: node scripts/fetch-missing-articles.js
+
+      - name: Re-match after fetch
+        working-directory: backend
+        run: node scripts/match-txt-to-urls.js knowledge_base
+
+      - name: Rebuild slim runtime index
+        working-directory: backend
+        run: node scripts/build-slim-index.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add backend/data/aei-index.json backend/data/aei-authors.json \
+                  backend/data/matches.json backend/data/ambiguous.json \
+                  backend/data/unmatched.json backend/data/author-audit.json \
+                  backend/data/aei-index-slim.json backend/knowledge_base
+          git diff --cached --quiet || git commit -m "Biweekly scrape: harvest + fetch new served-scholar articles"
+          git push

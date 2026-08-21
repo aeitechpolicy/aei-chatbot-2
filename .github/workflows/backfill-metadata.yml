@@ -23,6 +23,11 @@
 # the slim index is what aeiScraper.js actually reads at request time, so it
 # must be regenerated every time matches.json changes, not left stale.
 # Committed alongside the metadata output, under the same write_metadata gate.
+#
+# data/aei-index.json is filter=lfs (backend/.gitattributes, ~133MB), so
+# checkout uses lfs: true — match-txt-to-urls.js JSON.parse()s that file, and
+# without real LFS content a plain checkout would only provide the small
+# pointer stub, which isn't valid JSON and crashes the backfill immediately.
 
 name: Backfill Article Metadata
 on:
@@ -45,6 +50,8 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Set up Node
         uses: actions/setup-node@v4

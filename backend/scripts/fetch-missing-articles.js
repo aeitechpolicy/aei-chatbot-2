@@ -150,52 +150,61 @@ async function main() {
 
   for (let i = 0; i < missing.length; i++) {
     const record = missing[i];
-    const filename = filenameFor(record.url);
-    const folders = servedFoldersFor(record);
 
-    if (folders.length === 0) continue; // shouldn't happen given findMissingRecords' filter
-
-    const targetPaths = folders.map((folder) => path.join(KB_DIR, folder, filename));
-    const alreadyHaveAll = targetPaths.every((p) => fs.existsSync(p));
-    if (alreadyHaveAll) {
-      report.skipped_exists.push({ url: record.url, filename });
-      continue;
-    }
-
-    console.log(`[${i + 1}/${missing.length}] Fetching: ${record.url}`);
-    let article;
+    // Everything about one record is fault-isolated: a single malformed URL
+    // or unexpected error must not abort the whole batch and lose every
+    // file already written this run (this runs unattended in CI).
     try {
-      const response = await fetchWithRetry(record.url);
-      const $ = cheerio.load(response.data);
-      article = extractArticle($);
+      const filename = filenameFor(record.url);
+      const folders = servedFoldersFor(record);
+
+      if (folders.length === 0) continue; // shouldn't happen given findMissingRecords' filter
+
+      const targetPaths = folders.map((folder) => path.join(KB_DIR, folder, filename));
+      const alreadyHaveAll = targetPaths.every((p) => fs.existsSync(p));
+      if (alreadyHaveAll) {
+        report.skipped_exists.push({ url: record.url, filename });
+        continue;
+      }
+
+      console.log(`[${i + 1}/${missing.length}] Fetching: ${record.url}`);
+      let article;
+      try {
+        const response = await fetchWithRetry(record.url);
+        const $ = cheerio.load(response.data);
+        article = extractArticle($);
+      } catch (err) {
+        console.warn(`  failed: ${err.message}`);
+        report.failed.push({ url: record.url, reason: err.message });
+        await sleep(DELAY_MS);
+        continue;
+      }
+
+      if (!article) {
+        console.warn('  no usable body content found; skipping');
+        report.failed.push({ url: record.url, reason: 'no usable body content extracted' });
+        await sleep(DELAY_MS);
+        continue;
+      }
+
+      for (const targetPath of targetPaths) {
+        if (fs.existsSync(targetPath)) continue;
+        writeArticleFile(targetPath, article.title, article.body);
+        console.log(`  wrote ${path.relative(process.cwd(), targetPath)} (${article.body.length} chars)`);
+      }
+
+      report.written.push({
+        url: record.url,
+        filename,
+        folders,
+        bodyLength: article.body.length,
+      });
+
+      await sleep(DELAY_MS);
     } catch (err) {
-      console.warn(`  failed: ${err.message}`);
+      console.warn(`  unexpected error, skipping record: ${err.message}`);
       report.failed.push({ url: record.url, reason: err.message });
-      await sleep(DELAY_MS);
-      continue;
     }
-
-    if (!article) {
-      console.warn('  no usable body content found; skipping');
-      report.failed.push({ url: record.url, reason: 'no usable body content extracted' });
-      await sleep(DELAY_MS);
-      continue;
-    }
-
-    for (const targetPath of targetPaths) {
-      if (fs.existsSync(targetPath)) continue;
-      writeArticleFile(targetPath, article.title, article.body);
-      console.log(`  wrote ${path.relative(process.cwd(), targetPath)} (${article.body.length} chars)`);
-    }
-
-    report.written.push({
-      url: record.url,
-      filename,
-      folders,
-      bodyLength: article.body.length,
-    });
-
-    await sleep(DELAY_MS);
   }
 
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));

@@ -10,9 +10,12 @@
 # gets marked delisted_at with its url cleared rather than removed.
 #
 # data/aei-index.json is filter=lfs in backend/.gitattributes (~133MB), so
-# `git lfs install` runs right after checkout to register the clean filter —
-# without it, `git add` on a fresh runner would commit the raw JSON blob
-# instead of an LFS pointer.
+# checkout uses lfs: true. This matters both ways: without it, `git add` on
+# a fresh runner would commit the raw JSON blob instead of an LFS pointer,
+# AND — since mergeRecords() now always reads the existing index first to
+# do the archive/delist merge (see harvest-aei-index.js) — a plain checkout
+# would hand it the small LFS pointer stub instead of the real file and
+# crash immediately trying to JSON.parse() it.
 
 name: Harvest AEI Index
 on:
@@ -26,9 +29,8 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
-
-      - name: Set up Git LFS
-        run: git lfs install
+        with:
+          lfs: true
 
       - name: Set up Node
         uses: actions/setup-node@v4
