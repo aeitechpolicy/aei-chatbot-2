@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	When Portability and Social Media Meet (with Matt Reeder) | American Enterprise Institute - AEI
+
+Bluesky Social is a social media app that was originally launched in 2019 on Twitter, before becoming an independent company in 2021. Bluesky’s mission is to offer a decentralized experience for users—where algorithms are not imposed on them, but they can choose their content preferences. The platform also highlights the importance of portability, enabling users to carry their social media ecosystems across different platforms. But what are the technical and social challenges to making true platform portability a reality?
+To explore this, Shane Tews interviews Matt Reeder, head of legal at Bluesky. Formerly, Matt served as chief legal and operations officer at OnlyFans and as a trial attorney with the US Marine Corps. His extensive experience in creating transparent, user-focused terms and conditions, combined with his passion for expanding opportunities, makes for an engaging conversation.
+Find this episode’s transcript HERE.

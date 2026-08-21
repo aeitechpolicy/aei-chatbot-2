@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	DNS Abuse and the Economics of Cybercrime (with Karen Rose) | American Enterprise Institute - AEI
+
+The Domain Name System (DNS)—the system that turns numerical IP addresses into easy-to-read website names—has become highly competitive at the registrar level, with potentially harmful consequences when it comes to leasing domain names for criminal activities. Today, the DNS infrastructure is increasingly exploited for cybercrimes, such as phishing and scams. Why is ignoring the identity of the parties behind the crime more than just a technical DNS infrastructure abuse issue?
+In this episode, Shane is joined by Karen Rose. Rose was an early architect of internet policy and has had a substantial impact on global web infrastructure as one of the primary Department of Commerce authors of the policy white paper that created the Internet Corporation for Assigned Names and Numbers (ICANN) and a senior executive at the Internet Society. Today, she consults on technology issues focused on securing the next generation of communications infrastructure.
+Download this episode’s transcript here.

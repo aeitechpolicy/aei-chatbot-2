@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	Has the Cloud Gone Global? (with Michael Greenwald) | American Enterprise Institute - AEI
+
+National security is becoming inextricably linked with cloud computing and AI—and this year’s Munich Security Conference solidified that fact. International statesmen met with technology leaders to discuss cloud infrastructure resilience, AI and automated defense systems, and the evolving dynamic between digital sovereignty and interoperability. But how will defense institutions balance the pressure to automate quickly without outrunning the workforce’s ability to trust the systems they depend on? And what developments in AI aren’t getting nearly enough attention from defense and policy leaders?
+Shane interviews Michael Greenwald, Director of Global Executive Relations at Amazon Web Services. Michael Greenwald joins us to discuss Munich, global defense alliances, and how AWS’s unique sovereign-by-design architecture powers innovation is secure, scalable AI and Cloud infrastructure. His previous experience as the US Treasury Department’s financial attaché to Qatar and Kuwait, paired with his deep understanding of technology systems, makes him an ideal guest to discuss the future of national security and automation.
+Find this episode’s transcript HERE.

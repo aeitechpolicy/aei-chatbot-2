@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	Breakthrough Models and New Cyber Threats (with Evan Swarztrauber) | American Enterprise Institute - AEI
+
+Until recently, concerns about AI agents conducting autonomous cyber operations were largely theoretical. The OpenAI–Hugging Face incident in July changed that, while Anthropic’s Mythos exposed software vulnerabilities buried for decades. Together, these incidents have forced policymakers to reconsider how governments and companies prepare for AI-enabled cyber threats. Can the federal government and private sector keep pace with increasingly capable models? Will open-source AI strengthen cyber defenses or make dangerous capabilities harder to contain? And can policymakers encourage companies to share threat information while holding them accountable for insecure systems?
+Shane joins Evan Swarztrauber in a crossover episode with The Center Edge. Evan is the founder of CorePoint Strategies and a senior fellow at the Digital Progress Institute. He previously served at the Federal Communications Commission as a policy adviser to then-Chairman Ajit Pai and Commissioner Brendan Carr.
+Find this episode’s transcript here.

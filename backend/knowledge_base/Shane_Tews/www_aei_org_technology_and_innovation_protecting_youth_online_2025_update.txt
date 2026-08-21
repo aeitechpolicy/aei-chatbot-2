@@ -1,0 +1,5 @@
+PAGE_TITLE: 
+	Protecting Youth Online: 2025 Update | American Enterprise Institute - AEI
+
+In 2025, the landscape of digital safety for youth shifted from monitoring to integrated protection. Major platforms have moved beyond simple screen-time counters to introduce granular content filtering, mandatory age-appropriate defaults, and tools that bridge the gap between operating systems and individual apps. The following report detail the specific toolsets announced by Apple, Google, Meta, X, and Roblox as an addendum to my December 2024 report.
+Read the full guide here.

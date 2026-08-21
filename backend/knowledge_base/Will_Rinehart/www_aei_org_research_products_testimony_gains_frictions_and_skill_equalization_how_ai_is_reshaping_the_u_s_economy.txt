@@ -1,0 +1,4 @@
+PAGE_TITLE: 
+	Gains, Frictions, and Skill Equalization: How AI Is Reshaping the U.S. Economy | American Enterprise Institute - AEI
+
+Generative AI is already reshaping how Americans work, how firms organize production, and how young workers enter the labor market. The evidence shows remarkable productivity gains, especially for lowerskilled workers. At the same time, AI adoption remains uneven across industries. Congress does not need to construct an entirely new regulatory superstructure to meet this moment. In fact, doing so would likely create more problems than it solves. The real danger lies in allowing a patchwork of conflicting state AI laws to calcify into a de facto national regime that stifles innovation.

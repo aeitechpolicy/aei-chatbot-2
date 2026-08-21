@@ -1,0 +1,14 @@
+PAGE_TITLE: 
+	Comment for Arizona’s Ad Hoc Committee on Election Integrity | American Enterprise Institute - AEI
+
+Comment for for Arizona’s Ad Hoc Committee on Election Integrity
+Looking ahead, the committee should be considering two courses of action.
+First off, while Arizona should be praised for their forward-thinking use of C2PA, a more thorough review of the program is needed. The current pilot repository has been shown to have inconsistent metadata, which is a telltale sign of broken provenance.
+Second, this body should open a dialogue with the major AI companies. OpenAI, Anthropic, Meta, and Google each have insights into misuse patterns and adversarial techniques. Establishing routine communication channels with these companies, especially as the election near, could be useful to understand:
+How political content is moderated and monitored;
+What safeguards are planned for future model releases;
+How provenance, watermarking, and detection technologies are evolving;
+How models are being hardened against state-sponsored manipulation; and
+What support or guidance can be made available to election agencies.
+The 2024 election was not the deepfake disaster many feared, but that’s because we know what works. Preparedness, transparency, and authentic communication channels matter. As this hearing shows, leaders in Arizona are taking those lessons seriously. If leaders continue to build the partnerships, safeguards, and technical capacities that worked in 2024, they can be confident that future elections will remain secure from emerging threats.
+Read the full comment:

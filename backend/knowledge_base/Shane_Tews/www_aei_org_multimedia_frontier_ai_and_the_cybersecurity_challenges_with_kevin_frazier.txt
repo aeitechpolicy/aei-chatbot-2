@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	Frontier AI and the Cybersecurity Challenges (with Kevin Frazier) | American Enterprise Institute - AEI
+
+New frontier AI models are changing the cybersecurity landscape. As advanced systems become more capable of finding and exploiting software vulnerabilities, the federal government is trying to determine how to protect critical infrastructure and maintain national security. The administration’s June executive order on AI and cybersecurity offers one answer, but it also raises several harder questions. Can the government keep up with rapidly developing models? If officials want to review every model before release, is that process really voluntary? And how can policymakers keep American networks safe without sacrificing innovation?
+To unpack what comes next, Shane is joined by Kevin Frazier in a crossover episode with Scaling Laws. Kevin is the director of the AI Innovation and Law Program at the University of Texas at Austin School of Law and a senior fellow at the Abundance Institute. He has testified before Congress on artificial intelligence and emerging technology issues and is a regular contributor to Lawfare.
+Find this episode’s transcript here.

@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	CISA vs. CISA: How Cybersecurity Legislation Is Being Held Hostage by Politics (with Caitlin Clarke, Cristin Flynn Goodwin, and Jim Lewis) | American Enterprise Institute - AEI
+
+One of the most important cybersecurity laws in the country quietly expired last October with no sign of reauthorization on the horizon. Instead, the conflation between the 2015 Cybersecurity Information Sharing Act and the Cybersecurity and Infrastructure Security Agency has led to a political standstill that will only have negative impacts on American cybersecurity. What implications will not reauthorizing CISA 2015 have on national security? And how much risk are we taking on by letting protections for information sharing between the private sector and the government lapse?
+In this episode, Shane Tews is joined by Caitlin Clarke, Cristin Flynn Goodwin, and James Andrew Lewis. In this conversation, they unpack how confusion between the 2015 information-sharing law and the Cybersecurity and Infrastructure Security Agency (CISA) makes Americans vulnerable to foreign cyberattacks, how rescinded liability and FOIA protections are already slowing down cyber defense, and why speed matters more than ever as AI accelerates malicious actors.
+Find this episode’s transcript HERE.

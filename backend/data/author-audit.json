@@ -1,0 +1,56 @@
+[
+  {
+    "file": "Brent_Orrell/www_aei_org_events_hidden_workers_untapped_talent.txt",
+    "folder_author": "Brent Orrell",
+    "api_scholars": [
+      "Joseph B. Fuller"
+    ],
+    "url": "https://www.aei.org/research-products/report/hidden-workers-untapped-talent/"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_events_neurodiversity_and_the_future_of_work.txt",
+    "folder_author": "Brent Orrell",
+    "api_scholars": [
+      "Scott Winship"
+    ],
+    "url": "https://www.aei.org/multimedia/the-future-of-work/"
+  },
+  {
+    "file": "Clay_Calvert/www_aei_org_events_cheap_fakes_and_dirty_politics_examining_manipulated_media_and_platform_accountability.txt",
+    "folder_author": "Clay Calvert",
+    "api_scholars": [
+      "Shane Tews"
+    ],
+    "url": "https://www.aei.org/technology-and-innovation/examining-manipulated-media-and-platform-accountability/"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_events_navigating_the_post_world_radiocommunication_conference_outlook_for_wireless_innovation.txt",
+    "folder_author": "Shane Tews",
+    "api_scholars": [
+      "Natalie Goodnow"
+    ],
+    "url": "https://www.aei.org/pethokoukis/innovation/"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_events_tech_policy_2015_year_ahead.txt",
+    "folder_author": "Shane Tews",
+    "api_scholars": [
+      "The Editors"
+    ],
+    "url": "https://www.aei.org/telecommunications/tech-policy-2015-year-ahead/"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_events_americas_ai_action_plan_analyzing_the_strategy_for_global_leadership.txt",
+    "folder_author": "Will Rinehart",
+    "api_scholars": [
+      "Leon Aron",
+      "Danielle Pletka",
+      "Nicholas Eberstadt",
+      "Michael Rubin",
+      "Dan Blumenthal",
+      "Frederick W. Kagan",
+      "Gary J. Schmitt"
+    ],
+    "url": "https://www.aei.org/podcast/global-leadership/"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_lights_out.txt",
+    "slug": "lights_out",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/commentary/lights-out/",
+        "type": "commentary",
+        "date": "2019-10-22T13:00:09",
+        "scholars": [
+          "Brent Orrell"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/commentary/lights_out/",
+        "type": "commentary",
+        "date": "2014-12-15T01:00:31",
+        "scholars": [
+          "James V. DeLong"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_events_unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19.txt",
+    "slug": "unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/opportunity-social-mobility/unemployment-insurance-at-a-crossroads-tracing-program-design-during-and-beyond-covid-19/",
+        "type": "posts",
+        "date": "2021-12-10T20:30:38",
+        "scholars": [
+          "Brent Orrell",
+          "Matt Weidinger",
+          "Mason M. Bishop"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/research-products/report/unemployment-insurance-at-a-crossroads-tracing-program-design-during-and-beyond-covid-19/",
+        "type": "report",
+        "date": "2021-10-20T04:01:25",
+        "scholars": []
+      }
+    ]
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_events_an_american_strategy_for_cyberspace_advancing_freedom_security_and_prosperity.txt",
+    "slug": "an_american_strategy_for_cyberspace_advancing_freedom_security_and_prosperity",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/press/an-american-strategy-for-cyberspace-advancing-freedom-security-and-prosperity/",
+        "type": "press",
+        "date": "2016-06-14T21:04:54",
+        "scholars": [
+          "American Enterprise Institute"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/research-products/report/an-american-strategy-for-cyberspace-advancing-freedom-security-and-prosperity/",
+        "type": "report",
+        "date": "2016-06-14T05:30:29",
+        "scholars": [
+          "Jeffrey Eisenach",
+          "Claude Barfield",
+          "James K. Glassman",
+          "Mario Loyola",
+          "Shane Tews"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	The Future of Drones (with Brian Hinman and John Donovan) | American Enterprise Institute - AEI
+
+Innovations in drone technology have expanded their usefulness and made drones increasingly present in everyday life. Despite this progress, key limitations such as short battery life and limited payload capacity have hindered their full potential in critical infrastructure. That reality is beginning to shift. Recent breakthroughs in long-endurance flight are pushing drones beyond these limits and into entirely new possibilities. As these advances reshape what drones can do, we must ask: What new possibilities do these breakthroughs unlock? And what might these possibilities mean for our everyday lives?
+In this episode, Shane is joined by Brian Hinman, the founder and CEO of SiFly, and John Donovan, the CEO of Qudit Investments and a board member at Palo Alto Networks and Lockheed Martin. As leaders of these innovations in drone technology, they draw on their extensive experience in aviation, defense, and technology to help us explore how this next phase of drone development could change the way we think about infrastructure, emergency response, and the future of aviation itself.
+Find this episode’s transcript HERE.

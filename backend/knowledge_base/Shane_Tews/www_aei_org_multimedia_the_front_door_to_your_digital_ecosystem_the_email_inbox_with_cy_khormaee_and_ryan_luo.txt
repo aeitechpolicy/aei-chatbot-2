@@ -1,0 +1,6 @@
+PAGE_TITLE: 
+	The Front Door to Your Digital Ecosystem: The Email Inbox (with Cy Khormaee and Ryan Luo) | American Enterprise Institute - AEI
+
+Email was created over 50 years ago—so why isn’t it secure? Sixty-eight percent of IT teams report a data breach in their organization caused by phishing in the last year. Even experts trained to spot the telltale signs can be fooled: Nearly 66 percent of IT leaders admit to clicking malicious links, and more than half of employees have done the same.
+Shane interviews Cy Khormaee and Ryan Luo, cofounders of AegisAI. Together, they bring over a decade of experience at Google. In this discussion, they provide both a technical and practical lens to cybersecurity. They discuss why email is the frontline of cybersecurity, describe the anatomy of a phishing email, explain how individuals and organizations can protect their inboxes, and more.
+Find this episode’s transcript HERE.
