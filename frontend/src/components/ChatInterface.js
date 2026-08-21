@@ -13,7 +13,6 @@ const ChatInterface = ({
   const [inputValue, setInputValue] = useState('');
   const [currentChat, setCurrentChat] = useState(null);
   const [sendingMessage, setSendingMessage] = useState(false);
-  const [sendError, setSendError] = useState(null);
   const inputRef = useRef(null);
   const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 
@@ -53,7 +52,6 @@ const ChatInterface = ({
     e.preventDefault();
     if (inputValue.trim() && !sendingMessage) {
       setSendingMessage(true);
-      setSendError(null);
       const messageToSend = inputValue;
       
       // Add the user message optimistically to the UI
@@ -96,7 +94,6 @@ const ChatInterface = ({
           messages: prev?.messages?.slice(0, -1) || []
         }));
         setInputValue(messageToSend);
-        setSendError("We're broke 🙁 — couldn't send your message. Please try again in a bit.");
       } finally {
         setSendingMessage(false);
       }
@@ -112,7 +109,6 @@ const ChatInterface = ({
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
-    if (sendError) setSendError(null);
     // Auto-resize textarea
     const textarea = e.target;
     textarea.style.height = 'auto';
@@ -159,19 +155,6 @@ const ChatInterface = ({
       </div>
 
       <form className="chat-input-form" onSubmit={handleSubmit}>
-        {sendError && (
-          <div className="send-error-banner">
-            <span>{sendError}</span>
-            <button
-              type="button"
-              className="send-error-dismiss"
-              onClick={() => setSendError(null)}
-              aria-label="Dismiss error"
-            >
-              &times;
-            </button>
-          </div>
-        )}
         <div className="input-container">
           <textarea
             ref={inputRef}
