@@ -1,22 +1,3 @@
-# .github/workflows/harvest.yml
-#
-# Full harvest of the AEI WordPress REST API into backend/data/aei-index.json
-# and backend/data/aei-authors.json. Manual dispatch only — no schedule.
-# Runs harvest-aei-index.js with no flags, which means full-harvest mode:
-# every content type is re-fetched in full (see harvest-aei-index.js:
-# --modified-after triggers incremental/partial mode instead). This is an
-# archive, not a mirror — existing records are never dropped. A full harvest
-# sees the complete live set, so any existing record that doesn't reappear
-# gets marked delisted_at with its url cleared rather than removed.
-#
-# data/aei-index.json is filter=lfs in backend/.gitattributes (~133MB), so
-# checkout uses lfs: true. This matters both ways: without it, `git add` on
-# a fresh runner would commit the raw JSON blob instead of an LFS pointer,
-# AND — since mergeRecords() now always reads the existing index first to
-# do the archive/delist merge (see harvest-aei-index.js) — a plain checkout
-# would hand it the small LFS pointer stub instead of the real file and
-# crash immediately trying to JSON.parse() it.
-
 name: Harvest AEI Index
 on:
   workflow_dispatch:
