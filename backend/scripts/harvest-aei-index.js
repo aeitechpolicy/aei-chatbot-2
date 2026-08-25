@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 
-const BASE = 'https://www.aei.org/wp-json/wp/v2';
+const BASE = 'https://stage.aei.org/wp-json/wp/v2';
 const OUT_DIR = path.join(__dirname, '..', 'data');
 
 // Every content-bearing type from /wp-json/wp/v2/types. Nothing is excluded
