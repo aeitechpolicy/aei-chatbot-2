@@ -2730,20 +2730,6 @@
     "txtFile": "Will_Rinehart/www_aei_org_technology_and_innovation_spacecraft_is_statecraft.txt"
   },
   {
-    "id": 1008741183,
-    "title": "Proportionality and Framing: Unpacking Free Speech Coalition v. Paxton",
-    "url": "https://www.aei.org/technology-and-innovation/proportionality-and-framing-unpacking-free-speech-coalition-v-paxton/",
-    "excerpt": "Two of the more subtle yet important aspects of the US Supreme Court’s June decision in the First Amendment case of Free Speech Coalition v. Paxton are the majority’s apparent embrace of a proportionality approach to the level of judicial scrutiny and its rather stigmatizing characterization of the litigant challenging a Texas statute’s constitutionality.",
-    "date": "2025-09-09T09:30:00",
-    "scholars": [
-      "Clay Calvert"
-    ],
-    "scholar_ids": [
-      1008680442
-    ],
-    "txtFile": "Clay_Calvert/www_aei_org_technology_and_innovation_proportionality_and_framing_unpacking_free_speech_coalition_v_paxton.txt"
-  },
-  {
     "id": 1008741568,
     "title": "The Hidden Price Tag of California’s AI Oversight Bill",
     "url": "https://www.aei.org/commentary/the-hidden-price-tag-of-californias-ai-oversight-bill/",
@@ -2756,6 +2742,20 @@
       1008699888
     ],
     "txtFile": "Will_Rinehart/www_aei_org_commentary_the_hidden_price_tag_of_californias_ai_oversight_bill.txt"
+  },
+  {
+    "id": 1008741183,
+    "title": "Proportionality and Framing: Unpacking Free Speech Coalition v. Paxton",
+    "url": "https://www.aei.org/technology-and-innovation/proportionality-and-framing-unpacking-free-speech-coalition-v-paxton/",
+    "excerpt": "Two of the more subtle yet important aspects of the US Supreme Court’s June decision in the First Amendment case of Free Speech Coalition v. Paxton are the majority’s apparent embrace of a proportionality approach to the level of judicial scrutiny and its rather stigmatizing characterization of the litigant challenging a Texas statute’s constitutionality.",
+    "date": "2025-09-09T09:30:00",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "scholar_ids": [
+      1008680442
+    ],
+    "txtFile": "Clay_Calvert/www_aei_org_technology_and_innovation_proportionality_and_framing_unpacking_free_speech_coalition_v_paxton.txt"
   },
   {
     "id": 1008741139,
@@ -2800,20 +2800,6 @@
     "txtFile": "Brent_Orrell/www_aei_org_domestic_policy_cmon_student_athletes_flex_those_noncognitive_muscles.txt"
   },
   {
-    "id": 1008740834,
-    "title": "The Rising Cost of Cybercrime: From Billions to Trillions",
-    "url": "https://www.aei.org/technology-and-innovation/the-rising-cost-of-cybercrime-from-billions-to-trillions/",
-    "excerpt": "Shane Tews is joined by Karen Rose, partner at Interisle Consulting Group and formerly a key staff person at the Department of Commerce, where she authored the green paper that became the white paper that led the way for the Internet Corporation for Assigned Names and Numbers.",
-    "date": "2025-09-04T09:30:00",
-    "scholars": [
-      "Shane Tews"
-    ],
-    "scholar_ids": [
-      591646
-    ],
-    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_the_rising_cost_of_cybercrime_from_billions_to_trillions.txt"
-  },
-  {
     "id": 1008740762,
     "title": "Where Are the CHIPS Going to Fall?",
     "url": "https://www.aei.org/technology-and-innovation/where-are-the-chips-going-to-fall/",
@@ -2826,6 +2812,20 @@
       1008699888
     ],
     "txtFile": "Will_Rinehart/www_aei_org_technology_and_innovation_where_are_the_chips_going_to_fall.txt"
+  },
+  {
+    "id": 1008740834,
+    "title": "The Rising Cost of Cybercrime: From Billions to Trillions",
+    "url": "https://www.aei.org/technology-and-innovation/the-rising-cost-of-cybercrime-from-billions-to-trillions/",
+    "excerpt": "Shane Tews is joined by Karen Rose, partner at Interisle Consulting Group and formerly a key staff person at the Department of Commerce, where she authored the green paper that became the white paper that led the way for the Internet Corporation for Assigned Names and Numbers.",
+    "date": "2025-09-04T09:30:00",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "scholar_ids": [
+      591646
+    ],
+    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_the_rising_cost_of_cybercrime_from_billions_to_trillions.txt"
   },
   {
     "id": 1008740655,
@@ -4346,20 +4346,6 @@
     "txtFile": "Will_Rinehart/www_aei_org_op_eds_why_utahs_simple_social_media_reform_could_set_a_dangerous_privacy_precedent.txt"
   },
   {
-    "id": 1008727310,
-    "title": "Free Speech or Culpable Conduct? When Role-playing Chatbots Allegedly Harm Minors",
-    "url": "https://www.aei.org/technology-and-innovation/free-speech-or-culpable-conduct-when-roleplaying-chatbots-allegedly-harm-minors/",
-    "excerpt": "A parent’s lawsuit against an AI chatbot maker could set a pivotal precedent for First Amendment protections extended to artificial intelligence.",
-    "date": "2025-02-19T10:30:00",
-    "scholars": [
-      "Clay Calvert"
-    ],
-    "scholar_ids": [
-      1008680442
-    ],
-    "txtFile": "Clay_Calvert/www_aei_org_technology_and_innovation_free_speech_or_culpable_conduct_when_roleplaying_chatbots_allegedly_harm_minors.txt"
-  },
-  {
     "id": 1008727443,
     "title": "Global Encryption Under Siege: How UK’s Apple Backdoor Demand Threatens International Security",
     "url": "https://www.aei.org/commentary/global-encryption-under-siege-how-uks-apple-backdoor-demand-threatens-international-security/",
@@ -4372,6 +4358,20 @@
       591646
     ],
     "txtFile": "Shane_Tews/www_aei_org_op_eds_global_encryption_under_siege_how_uks_apple_backdoor_demand_threatens_international_security.txt"
+  },
+  {
+    "id": 1008727310,
+    "title": "Free Speech or Culpable Conduct? When Role-playing Chatbots Allegedly Harm Minors",
+    "url": "https://www.aei.org/technology-and-innovation/free-speech-or-culpable-conduct-when-roleplaying-chatbots-allegedly-harm-minors/",
+    "excerpt": "A parent’s lawsuit against an AI chatbot maker could set a pivotal precedent for First Amendment protections extended to artificial intelligence.",
+    "date": "2025-02-19T10:30:00",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "scholar_ids": [
+      1008680442
+    ],
+    "txtFile": "Clay_Calvert/www_aei_org_technology_and_innovation_free_speech_or_culpable_conduct_when_roleplaying_chatbots_allegedly_harm_minors.txt"
   },
   {
     "id": 1008727167,
@@ -4948,20 +4948,6 @@
     "txtFile": "Brent_Orrell/www_aei_org_research_products_testimony_testimony_on_workforce_inclusion_labor_market_demographics_and_the_role_of_technology.txt"
   },
   {
-    "id": 1008722862,
-    "title": "Why Encryption Matters More Than Ever",
-    "url": "https://www.aei.org/technology-and-innovation/why-encryption-matters-more-than-ever/",
-    "excerpt": "As cyber threats continue to involve, encrypted messaging platforms are becoming increasingly critical.",
-    "date": "2024-12-11T10:30:00",
-    "scholars": [
-      "Shane Tews"
-    ],
-    "scholar_ids": [
-      591646
-    ],
-    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_why_encryption_matters_more_than_ever.txt"
-  },
-  {
     "id": 1008722857,
     "title": "The Necessity of Narrow Tailoring: Why Florida’s Latest Social Media Law Is Unconstitutional",
     "url": "https://www.aei.org/technology-and-innovation/the-necessity-of-narrow-tailoring-why-floridas-latest-social-media-law-is-unconstitutional/",
@@ -4974,6 +4960,20 @@
       1008680442
     ],
     "txtFile": "Clay_Calvert/www_aei_org_technology_and_innovation_the_necessity_of_narrow_tailoring_why_floridas_latest_social_media_law_is_unconstitutional.txt"
+  },
+  {
+    "id": 1008722862,
+    "title": "Why Encryption Matters More Than Ever",
+    "url": "https://www.aei.org/technology-and-innovation/why-encryption-matters-more-than-ever/",
+    "excerpt": "As cyber threats continue to involve, encrypted messaging platforms are becoming increasingly critical.",
+    "date": "2024-12-11T10:30:00",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "scholar_ids": [
+      591646
+    ],
+    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_why_encryption_matters_more_than_ever.txt"
   },
   {
     "id": 1008723137,
@@ -6750,20 +6750,6 @@
     "txtFile": "Brent_Orrell/www_aei_org_opportunity_social_mobility_did_ai_just_pass_the_turing_test.txt"
   },
   {
-    "id": 1008709418,
-    "title": "Addictive Speech-Centric Technologies: The Allegation Du Jour for Lawsuits and Legislation",
-    "url": "https://www.aei.org/technology-and-innovation/addictive-speech-centric-technologies-the-allegation-du-jour-for-lawsuits-and-legislation/",
-    "excerpt": "Should it be the responsibility of the government, parents, minors, or businesses—or some combination of them all—to prevent or redress the harms that allegedly befall minors?",
-    "date": "2024-05-21T09:30:00",
-    "scholars": [
-      "Clay Calvert"
-    ],
-    "scholar_ids": [
-      1008680442
-    ],
-    "txtFile": "Clay_Calvert/www_aei_org_technology_and_innovation_addictive_speech_centric_technologies_the_allegation_du_jour_for_lawsuits_and_legislation.txt"
-  },
-  {
     "id": 1008709563,
     "title": "What’s Next for the Affordable Connectivity Program?",
     "url": "https://www.aei.org/commentary/whats-next-for-the-affordable-connectivity-program/",
@@ -6776,6 +6762,20 @@
       1008699888
     ],
     "txtFile": "Will_Rinehart/www_aei_org_articles_whats_next_for_the_affordable_connectivity_program.txt"
+  },
+  {
+    "id": 1008709418,
+    "title": "Addictive Speech-Centric Technologies: The Allegation Du Jour for Lawsuits and Legislation",
+    "url": "https://www.aei.org/technology-and-innovation/addictive-speech-centric-technologies-the-allegation-du-jour-for-lawsuits-and-legislation/",
+    "excerpt": "Should it be the responsibility of the government, parents, minors, or businesses—or some combination of them all—to prevent or redress the harms that allegedly befall minors?",
+    "date": "2024-05-21T09:30:00",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "scholar_ids": [
+      1008680442
+    ],
+    "txtFile": "Clay_Calvert/www_aei_org_technology_and_innovation_addictive_speech_centric_technologies_the_allegation_du_jour_for_lawsuits_and_legislation.txt"
   },
   {
     "id": 1008709397,
@@ -6806,20 +6806,6 @@
     "txtFile": "Will_Rinehart/www_aei_org_technology_and_innovation_automation_isnt_just_one_thing_insights_from_two_census_datasets.txt"
   },
   {
-    "id": 1008708771,
-    "title": "Building Trust in AI: The Crucial Role of Education and Partnerships",
-    "url": "https://www.aei.org/technology-and-innovation/building-trust-in-ai-the-crucial-role-of-education-and-partnerships/",
-    "excerpt": "By prioritizing transparency, responsibility, and education, we can create a solid foundation of trust that allows us to navigate the complexities of the digital age.",
-    "date": "2024-05-14T09:30:00",
-    "scholars": [
-      "Shane Tews"
-    ],
-    "scholar_ids": [
-      591646
-    ],
-    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_building_trust_in_ai_the_crucial_role_of_education_and_partnerships.txt"
-  },
-  {
     "id": 1008709144,
     "title": "A New Proposed AI Regulation in California",
     "url": "https://www.aei.org/commentary/a-new-proposed-ai-regulation-in-california/",
@@ -6832,6 +6818,20 @@
       1008699888
     ],
     "txtFile": "Will_Rinehart/www_aei_org_articles_a_new_proposed_ai_regulation_in_california.txt"
+  },
+  {
+    "id": 1008708771,
+    "title": "Building Trust in AI: The Crucial Role of Education and Partnerships",
+    "url": "https://www.aei.org/technology-and-innovation/building-trust-in-ai-the-crucial-role-of-education-and-partnerships/",
+    "excerpt": "By prioritizing transparency, responsibility, and education, we can create a solid foundation of trust that allows us to navigate the complexities of the digital age.",
+    "date": "2024-05-14T09:30:00",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "scholar_ids": [
+      591646
+    ],
+    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_building_trust_in_ai_the_crucial_role_of_education_and_partnerships.txt"
   },
   {
     "id": 1008708857,
@@ -9650,20 +9650,6 @@
     "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_landmark_supreme_court_ruling_safeguards_the_internets_liability_shield.txt"
   },
   {
-    "id": 1008679357,
-    "title": "Understanding Internet Modularity: Highlights from My Conversation with Susan Ness",
-    "url": "https://www.aei.org/technology-and-innovation/understanding-internet-modularity-highlights-from-my-conversation-with-susan-ness/",
-    "excerpt": "A framework of modularity could solve several issues challenging internet governance in an era of increased fragmentation.",
-    "date": "2023-05-16T10:00:00",
-    "scholars": [
-      "Shane Tews"
-    ],
-    "scholar_ids": [
-      591646
-    ],
-    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_understanding_internet_modularity_highlights_from_my_conversation_with_susan_ness.txt"
-  },
-  {
     "id": 1008679353,
     "title": "The Importance of Spectrum Harmonization (with Roger Entner)",
     "url": "https://www.aei.org/podcast/the-selfish-sandbox-of-american-spectrum-allocation-with-roger-entner/",
@@ -9676,6 +9662,20 @@
       591646
     ],
     "txtFile": "Shane_Tews/www_aei_org_podcast_the_selfish_sandbox_of_american_spectrum_allocation_with_roger_entner.txt"
+  },
+  {
+    "id": 1008679357,
+    "title": "Understanding Internet Modularity: Highlights from My Conversation with Susan Ness",
+    "url": "https://www.aei.org/technology-and-innovation/understanding-internet-modularity-highlights-from-my-conversation-with-susan-ness/",
+    "excerpt": "A framework of modularity could solve several issues challenging internet governance in an era of increased fragmentation.",
+    "date": "2023-05-16T10:00:00",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "scholar_ids": [
+      591646
+    ],
+    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_understanding_internet_modularity_highlights_from_my_conversation_with_susan_ness.txt"
   },
   {
     "id": 1008679116,
@@ -9722,6 +9722,20 @@
     "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_why_a_national_privacy_law_is_essential_to_the_united_states_in_a_global_digital_economy.txt"
   },
   {
+    "id": 1008678295,
+    "title": "A Network of Networks: Modularity in Internet Governance (with Susan Ness)",
+    "url": "https://www.aei.org/podcast/a-network-of-networks-modularity-in-internet-governance-with-susan-ness/",
+    "excerpt": "Two of the long-tail fears surrounding the future of the internet are the danger of creating either an internet controlled by the hands of the few and powerful at a global scale or what’s known…",
+    "date": "2023-05-02T10:00:00",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "scholar_ids": [
+      591646
+    ],
+    "txtFile": "Shane_Tews/www_aei_org_podcast_a_network_of_networks_modularity_in_internet_governance_with_susan_ness.txt"
+  },
+  {
     "id": 1008678280,
     "title": "AEI Section 230 Spring Summit, Part I: Highlights from an Expert Panel Discussion Locating the State of the Section 230 Debate",
     "url": "https://www.aei.org/technology-and-innovation/aei-section-230-spring-summit-part-i-highlights-from-an-expert-panel-discussion-locating-the-state-of-the-section-230-debate/",
@@ -9736,20 +9750,6 @@
       832979
     ],
     "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_aei_section_230_spring_summit_part_i_highlights_from_an_expert_panel_discussion_locating_the_state_of_the_section_230_debate.txt"
-  },
-  {
-    "id": 1008678295,
-    "title": "A Network of Networks: Modularity in Internet Governance (with Susan Ness)",
-    "url": "https://www.aei.org/podcast/a-network-of-networks-modularity-in-internet-governance-with-susan-ness/",
-    "excerpt": "Two of the long-tail fears surrounding the future of the internet are the danger of creating either an internet controlled by the hands of the few and powerful at a global scale or what’s known…",
-    "date": "2023-05-02T10:00:00",
-    "scholars": [
-      "Shane Tews"
-    ],
-    "scholar_ids": [
-      591646
-    ],
-    "txtFile": "Shane_Tews/www_aei_org_podcast_a_network_of_networks_modularity_in_internet_governance_with_susan_ness.txt"
   },
   {
     "id": 1008677940,
@@ -10710,22 +10710,6 @@
     "txtFile": "Brent_Orrell/www_aei_org_op_eds_six_weeks_out_the_statewide_pennsylvania_races_solidify.txt"
   },
   {
-    "id": 1008661040,
-    "title": "Modernizing the Federal Identity System: Highlights from a Conversation with Jordan Burris",
-    "url": "https://www.aei.org/technology-and-innovation/modernizing-the-federal-identity-system-highlights-from-a-conversation-with-jordan-burris/",
-    "excerpt": "Jordan Burris, vice president and head of public sector strategy at Socure, joined Explain to Shane to discuss online fraud prevention and his efforts to modernize identity verification systems. Here are highlights from the conversation.",
-    "date": "2022-09-27T10:00:00",
-    "scholars": [
-      "Shane Tews",
-      "Jim Harper"
-    ],
-    "scholar_ids": [
-      591646,
-      347970
-    ],
-    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_modernizing_the_federal_identity_system_highlights_from_a_conversation_with_jordan_burris.txt"
-  },
-  {
     "id": 1008659728,
     "title": "Effectively Managing Cyber Challenges in the Public and Private Sectors (with Jason Blessing)",
     "url": "https://www.aei.org/podcast/effectively-managing-cyber-challenges-in-the-public-and-private-sectors-with-jason-blessing/",
@@ -10740,6 +10724,22 @@
       1008606430
     ],
     "txtFile": "Shane_Tews/www_aei_org_podcast_effectively_managing_cyber_challenges_in_the_public_and_private_sectors_with_jason_blessing.txt"
+  },
+  {
+    "id": 1008661040,
+    "title": "Modernizing the Federal Identity System: Highlights from a Conversation with Jordan Burris",
+    "url": "https://www.aei.org/technology-and-innovation/modernizing-the-federal-identity-system-highlights-from-a-conversation-with-jordan-burris/",
+    "excerpt": "Jordan Burris, vice president and head of public sector strategy at Socure, joined Explain to Shane to discuss online fraud prevention and his efforts to modernize identity verification systems. Here are highlights from the conversation.",
+    "date": "2022-09-27T10:00:00",
+    "scholars": [
+      "Shane Tews",
+      "Jim Harper"
+    ],
+    "scholar_ids": [
+      591646,
+      347970
+    ],
+    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_modernizing_the_federal_identity_system_highlights_from_a_conversation_with_jordan_burris.txt"
   },
   {
     "id": 1008660558,
@@ -10888,20 +10888,6 @@
     "txtFile": "Brent_Orrell/www_aei_org_podcast_tyler_cowen_on_talent_and_hiring_in_the_twenty_first_century.txt"
   },
   {
-    "id": 1008658769,
-    "title": "How to Think Like an Entrepreneur: Highlights from My Conversation with Jason Feifer",
-    "url": "https://www.aei.org/technology-and-innovation/how-to-think-like-an-entrepreneur-highlights-from-my-conversation-with-jason-feifer/",
-    "excerpt": "Renowned entrepreneur Jason Feifer joined Explain to Shane to discuss disruptive innovation and the mindset needed to thrive in today’s digital world. Here are highlights from the discussion.",
-    "date": "2022-09-06T10:00:00",
-    "scholars": [
-      "Shane Tews"
-    ],
-    "scholar_ids": [
-      591646
-    ],
-    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_how_to_think_like_an_entrepreneur_highlights_from_my_conversation_with_jason_feifer.txt"
-  },
-  {
     "id": 1008658705,
     "title": "Reining in China’s Dominance of the International Telecommunication Union (with Danielle Pletka, Brett Schaefer, and Dominique Lazanski)",
     "url": "https://www.aei.org/podcast/reining-in-chinas-dominance-of-the-international-telecommunication-union-with-danielle-pletka-brett-schaefer-and-dominique-lazanski/",
@@ -10916,6 +10902,20 @@
       51
     ],
     "txtFile": "Shane_Tews/www_aei_org_podcast_reining_in_chinas_dominance_of_the_international_telecommunication_union_with_danielle_pletka_brett_schaefer_and_dominique_lazanski.txt"
+  },
+  {
+    "id": 1008658769,
+    "title": "How to Think Like an Entrepreneur: Highlights from My Conversation with Jason Feifer",
+    "url": "https://www.aei.org/technology-and-innovation/how-to-think-like-an-entrepreneur-highlights-from-my-conversation-with-jason-feifer/",
+    "excerpt": "Renowned entrepreneur Jason Feifer joined Explain to Shane to discuss disruptive innovation and the mindset needed to thrive in today’s digital world. Here are highlights from the discussion.",
+    "date": "2022-09-06T10:00:00",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "scholar_ids": [
+      591646
+    ],
+    "txtFile": "Shane_Tews/www_aei_org_technology_and_innovation_how_to_think_like_an_entrepreneur_highlights_from_my_conversation_with_jason_feifer.txt"
   },
   {
     "id": 1008658480,
