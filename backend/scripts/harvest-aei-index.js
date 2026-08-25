@@ -185,7 +185,7 @@ function toRecord(item, restBase, authorIndex) {
   return {
     id: item.id,
     type: restBase,
-    url: item.link,
+    url: (item.link || '').replace('://stage.aei.org', '://www.aei.org'),
     slug: item.slug,
     title: decodeEntities(item.title && item.title.rendered),
     date: item.date_gmt || item.date,
