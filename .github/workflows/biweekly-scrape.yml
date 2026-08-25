@@ -45,7 +45,7 @@ permissions:
 
 jobs:
   check-week:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, aei-network]
     outputs:
       should_run: ${{ steps.check.outputs.should_run }}
     steps:
@@ -69,8 +69,10 @@ jobs:
   scrape:
     needs: check-week
     if: needs.check-week.outputs.should_run == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
+    runs-on: [self-hosted, aei-network]
+    timeout-minutes: 120
+    env:
+      NODE_EXTRA_CA_CERTS: certs/digicert-global-g2-tls-rsa-sha256-2020-ca1.pem
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -93,7 +95,7 @@ jobs:
 
       - name: Incremental harvest
         working-directory: backend
-        run: node scripts/harvest-aei-index.js --modified-after=${{ env.SINCE }}
+        run: node scripts/harvest-aei-index.js
 
       - name: Match existing knowledge base
         working-directory: backend
@@ -120,4 +122,5 @@ jobs:
                   backend/data/unmatched.json backend/data/author-audit.json \
                   backend/data/aei-index-slim.json backend/knowledge_base
           git diff --cached --quiet || git commit -m "Biweekly scrape: harvest + fetch new served-scholar articles"
+          git pull --rebase origin main
           git push

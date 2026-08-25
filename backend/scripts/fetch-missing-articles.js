@@ -66,7 +66,8 @@ function filenameFor(url) {
 async function fetchWithRetry(url) {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
-      return await axios.get(url, { headers: HEADERS, timeout: 20000 });
+      const stagingUrl = url.replace("://www.aei.org", "://stage.aei.org");
+      return await axios.get(stagingUrl, { headers: HEADERS, timeout: 20000 });
     } catch (err) {
       if (attempt === MAX_RETRIES) throw err;
       const backoff = 1000 * attempt * attempt;
