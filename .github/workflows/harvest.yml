@@ -24,7 +24,7 @@ permissions:
   contents: write
 jobs:
   harvest:
-    runs-on: [self-hosted, aei-network]
+    runs-on: [ubuntu-latest]
     timeout-minutes: 15
     steps:
       - name: Check out repo
