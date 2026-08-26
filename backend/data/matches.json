@@ -1,111 +1,1443 @@
 [
   {
+    "file": "Brent_Orrell/www_aei_org_articles_1008584993.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/1008584993/",
+    "type": "commentary",
+    "title": "The Grim Pandemic Outlook for Fall and Winter",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-11-15T17:54:35",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_a_great_conservative_disappointment.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/a-great-conservative-disappointment/",
+    "type": "commentary",
+    "title": "A Great (Conservative) Disappointment",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-07-20T21:41:25",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_a_pro_market_and_pro_social_economy.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/a-pro-market-and-pro-social-economy/",
+    "type": "commentary",
+    "title": "A Pro-Market and Pro-Social Economy",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-12-04T21:35:53",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_a_skills_development_consensus_if_you_can_keep_it.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/a-skills-development-consensus-if-you-can-keep-it/",
+    "type": "commentary",
+    "title": "A Skills Development Consensus – If You Can Keep It",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-02-27T09:41:37",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_a_sweltering_pandemic_summer.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/a-sweltering-pandemic-summer/",
+    "type": "commentary",
+    "title": "A Sweltering Pandemic Summer",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-08-17T14:53:24",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_a_sympathetic_liberty.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/a-sympathetic-liberty/",
+    "type": "commentary",
+    "title": "A Sympathetic Liberty",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-07-24T09:01:53",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_adam_smith_by_the_bay.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/adam-smith-by-the-bay/",
+    "type": "commentary",
+    "title": "Adam Smith by the Bay",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-02-08T09:50:19",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_americans_face_crisis_of_going_back_to_work_when_the_economy_reopens.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/americans-face-crisis-of-going-back-to-work-when-the-economy-reopens/",
+    "type": "commentary",
+    "title": "Americans Face Crisis of Going Back to Work When the Economy Reopens",
+    "scholars": [
+      "Brent Orrell",
+      "Mason M. Bishop"
+    ],
+    "date": "2020-05-08T22:00:11",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_are_we_creating_a_stem_dead_end.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/are-we-creating-a-stem-dead-end/",
+    "type": "commentary",
+    "title": "Are We Creating a STEM Dead End?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2018-09-28T08:00:36",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_as_covid_increases_need_for_digital_skills_dont_neglect_soft_skills.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/as-covid-increases-need-for-digital-skills-dont-neglect-soft-skills/",
+    "type": "commentary",
+    "title": "As COVID-19 Increases Need for Digital Skills, Don’t Neglect Soft Skills",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-07-01T15:45:04",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_automation_jobs_productivity.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/automation-jobs-productivity/",
+    "type": "commentary",
+    "title": "Automation, Jobs, and Productivity: New Insights on the Future of Robotics",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-07-12T10:12:53",
+    "method": "slug_suffix"
+  },
+  {
     "file": "Brent_Orrell/www_aei_org_articles_avoiding_hooverville_why_we_need_to_extend_and_reform_pandemic_unemployment_insurance.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/research-products/testimony/unemployment-insurance/",
-    "type": "testimony",
-    "title": "Unemployment Insurance",
+    "url": "https://www.aei.org/commentary/avoiding-hooverville-why-we-need-to-extend-and-reform-pandemic-unemployment-insurance/",
+    "type": "commentary",
+    "title": "Avoiding Hooverville: Why We Need to Extend and Reform Pandemic Unemployment Insurance",
     "scholars": [
-      "Alex Brill"
+      "Brent Orrell",
+      "Matthew Leger"
     ],
-    "date": "2008-04-10T00:00:00",
+    "date": "2020-08-09T17:13:17",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_bad_hoosiers.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/bad-hoosiers/",
+    "type": "commentary",
+    "title": "Bad Hoosiers",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-08-11T19:15:24",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_bidens_green_jobs_mirage.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/bidens-green-jobs-mirage/",
+    "type": "commentary",
+    "title": "Biden’s ‘green Jobs’ Mirage",
+    "scholars": [
+      "Brent Orrell",
+      "Mason M. Bishop"
+    ],
+    "date": "2021-02-16T20:47:43",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_articles_brave_new_technology.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/press/technology/",
-    "type": "press",
-    "title": "AEI Internet, Communications, and Technology: Experts, Highlights, and Headlines",
+    "url": "https://www.aei.org/commentary/brave-new-technology/",
+    "type": "commentary",
+    "title": "Brave New Technology",
     "scholars": [
-      "AEI"
+      "Brent Orrell"
     ],
-    "date": "2016-07-19T14:00:45",
+    "date": "2023-02-14T18:08:58",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_calculating_the_cost_of_the_pandemic_shutdowns.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/calculating-the-cost-of-the-pandemic-shutdowns/",
+    "type": "commentary",
+    "title": "Calculating the Cost of the Pandemic Shutdowns",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-07-06T17:29:43",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_city_of_poses.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/city-of-poses/",
+    "type": "commentary",
+    "title": "City of Poses",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-08-20T23:05:34",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_climate_complexity_and_a_really_big_gun.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/climate-complexity-and-a-really-big-gun/",
+    "type": "commentary",
+    "title": "Climate, Complexity, and a Really Big Gun",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-12-17T14:26:01",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_college_or_trade_school_how_about_both.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/college-or-trade-school-how-about-both/",
+    "type": "commentary",
+    "title": "College or Trade School? How About Both?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-03-06T19:38:39",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_covid_19_has_exposed_the_interlocking_risks_of_mass_incarceration.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/covid-19-has-exposed-the-interlocking-risks-of-mass-incarceration/",
+    "type": "commentary",
+    "title": "COVID-19 Has Exposed the Interlocking Risks of Mass Incarceration",
+    "scholars": [
+      "Brent Orrell",
+      "Grant Duwe"
+    ],
+    "date": "2020-04-30T23:00:18",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_covid_is_swamping_native_americans.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/covid-is-swamping-native-americans/",
+    "type": "commentary",
+    "title": "COVID-19 Is Swamping Native Americans",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-08-17T15:02:27",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_crossing_the_stem_divide.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/crossing-the-stem-divide/",
+    "type": "commentary",
+    "title": "Crossing the STEM Divide",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-01-31T12:00:54",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_decision_to_stay_out_of_workforce_is_about_avoiding_covid_19_not_work.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/decision-to-stay-out-of-workforce-is-about-avoiding-covid-19-not-work/",
+    "type": "commentary",
+    "title": "Decision to Stay out of Workforce Is About Avoiding COVID-19, Not Work",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-04-01T15:40:58",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_deindustrializations_global_story.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/deindustrializations-global-story/",
+    "type": "commentary",
+    "title": "Deindustrialization’s Global Story",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-06-14T13:29:55",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_disadvantaged_americans_need_attention_amid_this_health_crisis.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/disadvantaged-americans-need-attention-amid-this-health-crisis/",
+    "type": "commentary",
+    "title": "Disadvantaged Americans Need Attention amid This Health Crisis",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-03-12T20:30:34",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_do_robots_kill_jobs_in_france_the_answer_is_non_and_oui.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/do-robots-kill-jobs-in-france-the-answer-is-non-and-oui/",
+    "type": "commentary",
+    "title": "Do Robots Kill Jobs? In France, the Answer Is, ‘Non!’ – and ‘Oui!’",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-02-20T17:58:16",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_dont_abolish_the_police_reform_them.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/dont-abolish-the-police-reform-them/",
+    "type": "commentary",
+    "title": "Don’t Abolish the Police. Reform Them.",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-06-10T17:31:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_dont_attack_pandemic_unemployment_compensation_it_did_what_it_was_meant_to_do.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/dont-attack-pandemic-unemployment-compensation-it-did-what-it-was-meant-to-do/",
+    "type": "commentary",
+    "title": "Don’t Attack Pandemic Unemployment Compensation. It Did What It Was Meant to Do.",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-06-03T14:49:50",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_articles_embracing_radical_uncertainty.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/research-products/report/uncertainty/",
-    "type": "report",
-    "title": "Uncertainty",
+    "url": "https://www.aei.org/commentary/embracing-radical-uncertainty/",
+    "type": "commentary",
+    "title": "Embracing Radical Uncertainty",
     "scholars": [
-      "John H. Makin"
+      "Brent Orrell"
     ],
-    "date": "2001-10-01T00:00:00",
+    "date": "2019-10-31T16:00:11",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_employer_and_worker_health_are_two_sides_of_this_same_coin_for_economy.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/employer-and-worker-health-are-two-sides-of-this-same-coin-for-economy/",
+    "type": "commentary",
+    "title": "Employer and Worker Health Are Two Sides of This Same Coin for Economy",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-07-06T17:11:18",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_fragments_of_rage.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/fragments-of-rage/",
+    "type": "commentary",
+    "title": "Fragments of Rage",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-01-22T17:14:37",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_get_ready_for_ai_driven_skill_democratization.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/get-ready-for-ai-driven-skill-democratization/",
+    "type": "commentary",
+    "title": "Get Ready for AI-Driven Skill Democratization",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-01-12T20:23:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_gretzkys_puck.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/gretzkys-puck/",
+    "type": "commentary",
+    "title": "Gretzky’s Puck: A Human Capital Strategy for the 21st Century",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-05-14T11:03:21",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_heeding_the_warning_from_the_future.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/heeding-the-warning-from-the-future/",
+    "type": "commentary",
+    "title": "Heeding the Warning from the Future",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-02-24T15:26:05",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_here_are_the_kinds_of_jobs_chat_ai_is_likeliest_to_affect.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/here-are-the-kinds-of-jobs-chat-ai-is-likeliest-to-affect/",
+    "type": "commentary",
+    "title": "Here Are the Kinds of Jobs Chat AI Is Likeliest to Affect",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-03-27T14:00:56",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_heres_a_kind_of_job_training_program_that_works.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/heres-a-kind-of-job-training-program-that-works/",
+    "type": "commentary",
+    "title": "Here’s a Kind of Job-Training Program That Works",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-08-28T13:44:12",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_how_ai_with_theory_of_mind_could_help_in_the_workplace.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-ai-with-theory-of-mind-could-help-in-the-workplace/",
+    "type": "commentary",
+    "title": "How AI with “Theory of Mind” Could Help in the Workplace",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-11-27T14:27:39",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_how_artificial_intelligence_will_impact_human_well_being.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-artificial-intelligence-will-impact-human-well-being/",
+    "type": "commentary",
+    "title": "How Artificial Intelligence Will Impact Human Well-being",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2018-10-12T13:31:31",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_how_children_shape_parents.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-children-shape-parents/",
+    "type": "commentary",
+    "title": "How Children Shape Parents",
+    "scholars": [
+      "Brent Orrell",
+      "Caleb Seibert"
+    ],
+    "date": "2020-02-19T19:18:38",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_how_new_graduates_can_thrive_in_a_workplace_dominated_by_ai.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-new-graduates-can-thrive-in-a-workplace-dominated-by-ai/",
+    "type": "commentary",
+    "title": "How New Graduates Can Thrive in a Workplace Dominated by AI",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-06-05T18:49:26",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_articles_how_to_flatten_the_jobless_curve_by_revisiting_unemployment_benefits.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/research-products/book/unemployment-benefits/",
-    "type": "book",
-    "title": "Unemployment Benefits: Should There Be a Compulsory Federal Standard?",
+    "url": "https://www.aei.org/commentary/how-to-flatten-the-jobless-curve-by-revisiting-unemployment-benefits/",
+    "type": "commentary",
+    "title": "How to Flatten the Jobless Curve by Revisiting Unemployment Benefits",
     "scholars": [
-      "Joseph  M.  Becker"
+      "Brent Orrell",
+      "Mason M. Bishop"
     ],
-    "date": "1980-01-01T00:00:00",
+    "date": "2020-04-17T21:00:11",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_how_well_is_rural_america_doing_youd_be_surprised.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-well-is-rural-america-doing-youd-be-surprised/",
+    "type": "commentary",
+    "title": "How Well Is Rural America Doing? You’d Be Surprised",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-09-29T14:23:36",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_invisible_wounds.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/invisible-wounds/",
+    "type": "commentary",
+    "title": "Invisible Wounds",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-10-09T15:32:37",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_let_them_spend_cash.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/let-them-spend-cash/",
+    "type": "commentary",
+    "title": "Let Them Spend Cash?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-04-26T16:11:19",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_lets_get_men_back_to_work.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/lets-get-men-back-to-work/",
+    "type": "commentary",
+    "title": "Let’s Get Men Back to Work",
+    "scholars": [
+      "Brent Orrell",
+      "Harry Holzer",
+      "Robert Doar"
+    ],
+    "date": "2017-04-20T08:49:20",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_maybe_ai_isnt_coming_for_everyones_job_after_all.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/maybe-ai-isnt-coming-for-everyones-job-after-all/",
+    "type": "commentary",
+    "title": "Maybe AI Isn’t Coming for Everyone’s Job After All",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-07-19T14:12:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_move_ahead_on_criminal_justice_reform.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/move-ahead-on-criminal-justice-reform/",
+    "type": "commentary",
+    "title": "Time to Set Politics Aside to Move Ahead on Criminal Justice Reform",
+    "scholars": [
+      "Ryan Streeter",
+      "Brent Orrell"
+    ],
+    "date": "2018-06-06T06:00:20",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_moving_the_goalposts_in_the_covid_blame_game.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/moving-the-goalposts-in-the-covid-blame-game/",
+    "type": "commentary",
+    "title": "Moving the Goalposts in the COVID Blame Game",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-02-02T21:56:43",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_no_trumps_presidency_wasnt_worth_it.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/no-trumps-presidency-wasnt-worth-it/",
+    "type": "commentary",
+    "title": "No, Trump’s Presidency Wasn’t Worth It",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-01-20T17:09:41",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_of_bernie_bloomie_and_adam.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/of-bernie-bloomie-and-adam/",
+    "type": "commentary",
+    "title": "Of Bernie, Bloomie, and Adam",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-02-24T14:00:08",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_pandemics_elites_and_the_future_of_the_cities.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/pandemics-elites-and-the-future-of-the-cities/",
+    "type": "commentary",
+    "title": "Pandemics, Elites, and the Future of the Cities",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-06-05T14:02:32",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_perspective_how_gen_zs_mental_health_concerns_are_turning_the_workplace_inside_out.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/perspective-how-gen-zs-mental-health-concerns-are-turning-the-workplace-inside-out/",
+    "type": "commentary",
+    "title": "Perspective: How Gen Z’s Mental Health Concerns Are Turning the Workplace Inside Out",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-08-01T15:37:36",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_perspective_the_4_year_dividing_line.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/perspective-the-4-year-dividing-line/",
+    "type": "commentary",
+    "title": "Perspective: The 4-Year Dividing Line",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-11-08T15:31:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_pfizers_art_of_the_deal.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/pfizers-art-of-the-deal/",
+    "type": "commentary",
+    "title": "Pfizer’s Art of the Deal",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-11-13T16:16:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_planning_a_career_in_the_age_of_ai.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/planning-a-career-in-the-age-of-ai/",
+    "type": "commentary",
+    "title": "Planning a Career in the Age of AI",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-02-20T19:13:50",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_police_officers_connection_to_communities_they_serve_is_broken_heres_how_to_repair_it.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/police-officers-connection-to-communities-they-serve-is-broken-heres-how-to-repair-it/",
+    "type": "commentary",
+    "title": "Police Officers’ Connection to Communities They Serve Is Broken. Here’s How to Repair It.",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-07-13T14:53:07",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_prisoner_rehabilitation_what_will_work_for_you.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/prisoner-rehabilitation-what-will-work-for-you/",
+    "type": "commentary",
+    "title": "Prisoner Rehabilitation: From ‘nothing Works’ to ‘what Will Work for You?’",
+    "scholars": [
+      "Brent Orrell",
+      "Caleb Seibert"
+    ],
+    "date": "2019-06-07T09:00:02",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_promoting_marriage_is_good_social_policy.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/promoting-marriage-is-good-social-policy/",
+    "type": "commentary",
+    "title": "Promoting Marriage Is Good Social Policy",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-03-15T09:16:27",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_remote_work_is_becoming_the_new_normal_it_comes_with_tradeoffs.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/remote-work-is-becoming-the-new-normal-it-comes-with-tradeoffs/",
+    "type": "commentary",
+    "title": "Remote Work Is Becoming the New Normal. It Comes with Tradeoffs.",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-11-20T16:32:54",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_rethinking_business_leadership.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/rethinking-business-leadership/",
+    "type": "commentary",
+    "title": "Rethinking Business Leadership",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-08-26T21:17:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_rethinking_pathways_to_reentry.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/rethinking-pathways-to-reentry/",
+    "type": "commentary",
+    "title": "Rethinking Pathways to Reentry",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-10-10T13:31:38",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_running_hard_but_not_keeping_up_stem_skills_in_the_workforce.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/running-hard-but-not-keeping-up-stem-skills-in-the-workforce/",
+    "type": "commentary",
+    "title": "Running Hard, but Not Keeping Up: STEM Skills in the Workforce",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-01-15T23:55:37",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_school_closings_probably_work.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/school-closings-probably-work/",
+    "type": "commentary",
+    "title": "School Closings (probably) Work",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-11-30T15:33:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_should_disabled_workers_get_the_federal_minimum_wage.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/should-disabled-workers-get-the-federal-minimum-wage/",
+    "type": "commentary",
+    "title": "Should Disabled Workers Get the Federal Minimum Wage?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-02-05T16:21:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_socially_distant.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/socially-distant/",
+    "type": "commentary",
+    "title": "Socially Distant",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-08-26T15:51:49",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_articles_staunching_the_bleeding_and_starting_the_recovery.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/research-products/report/the-recovery/",
-    "type": "report",
-    "title": "The Recovery",
+    "url": "https://www.aei.org/commentary/staunching-the-bleeding-and-starting-the-recovery/",
+    "type": "commentary",
+    "title": "Staunching the Bleeding and Starting the Recovery",
     "scholars": [
-      "John H. Makin"
+      "Brent Orrell",
+      "Caleb Seibert"
     ],
-    "date": "2004-10-01T00:00:00",
+    "date": "2020-03-24T14:45:19",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_study_what_you_love_or_study_what_will_make_you_money.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/study-what-you-love-or-study-what-will-make-you-money/",
+    "type": "commentary",
+    "title": "Study What You Love or Study What Will Make You Money?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-02-23T21:35:22",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_supporting_veterans_on_campus.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/supporting-veterans-on-campus/",
+    "type": "commentary",
+    "title": "Supporting Veterans on Campus",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-11-11T14:35:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_swallowed_by_opioids_a_new_look_at_appalachian_deaths_of_despair.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/swallowed-by-opioids-a-new-look-at-appalachian-deaths-of-despair/",
+    "type": "commentary",
+    "title": "‘Swallowed by Opioids’? A New Look at Appalachian ‘deaths of Despair’",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-01-21T17:00:13",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_sympathy_for_the_president.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/sympathy-for-the-president/",
+    "type": "commentary",
+    "title": "Sympathy for the President?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-10-07T19:05:34",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_systemic_disadvantage.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/systemic-disadvantage/",
+    "type": "commentary",
+    "title": "Systemic Disadvantage",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-01-03T15:01:56",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_coming_re_employment_crisis.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-coming-re-employment-crisis/",
+    "type": "commentary",
+    "title": "The Coming Re-employment Crisis",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-12-16T16:18:12",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_common_ground_of_human_dignity.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-common-ground-of-human-dignity/",
+    "type": "commentary",
+    "title": "The Common Ground of Human Dignity",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-01-14T15:51:23",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_covid_culture_war_is_killing_us.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-covid-culture-war-is-killing-us/",
+    "type": "commentary",
+    "title": "The COVID Culture War Is Killing Us",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-05-27T13:00:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_dangers_of_policing_by_algorithm.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-dangers-of-policing-by-algorithm/",
+    "type": "commentary",
+    "title": "The Dangers of Policing by Algorithm",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-01-19T22:13:56",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_deep_roots_of_the_stem_gender_gap.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-deep-roots-of-the-stem-gender-gap/",
+    "type": "commentary",
+    "title": "The Deep Roots of the STEM Gender Gap",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-10-13T20:43:05",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_eerie_familiarity_of_californias_boom_bust_cycle.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-eerie-familiarity-of-californias-boom-bust-cycle/",
+    "type": "commentary",
+    "title": "The Eerie Familiarity of California’s Boom-Bust Cycle",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-02-13T14:30:22",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_federal_ai_shambles.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-federal-ai-shambles/",
+    "type": "commentary",
+    "title": "The Federal AI Shambles",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-03-06T14:38:42",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_finnish_canary_in_the_service_worker_coalmine.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-finnish-canary-in-the-service-worker-coalmine/",
+    "type": "commentary",
+    "title": "The Finnish Canary in the Service-worker Coalmine",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-10-11T13:38:44",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_forgotten_costs_of_layoffs.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-forgotten-costs-of-layoffs/",
+    "type": "commentary",
+    "title": "The Forgotten Costs of Layoffs",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-07-15T21:23:41",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_freedom_to_choose.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-freedom-to-choose/",
+    "type": "commentary",
+    "title": "The Freedom to Choose",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-10-25T14:14:30",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_hard_facts_on_hard_time.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-hard-facts-on-hard-time/",
+    "type": "commentary",
+    "title": "The Hard Facts on Hard Time",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-12-02T15:32:35",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_high_cost_of_political_capture.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-high-cost-of-political-capture/",
+    "type": "commentary",
+    "title": "The High Cost of Political Capture",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-07-25T20:40:33",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_liberal_sciences_and_the_lost_arts_of_learning.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-liberal-sciences-and-the-lost-arts-of-learning/",
+    "type": "commentary",
+    "title": "The Liberal Sciences and the Lost Arts of Learning",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-05-17T09:22:35",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_lost_world_of_ecumenical_republicanism.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-lost-world-of-ecumenical-republicanism/",
+    "type": "commentary",
+    "title": "The Lost World of Ecumenical Republicanism",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-03-02T15:06:42",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_new_consensus_on_worker_safety.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-new-consensus-on-worker-safety/",
+    "type": "commentary",
+    "title": "The New Consensus on Worker Safety",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-05-13T13:00:04",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_new_rights_attack_on_markets_is_as_ignorant_as_the_old_lefts.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-new-rights-attack-on-markets-is-as-ignorant-as-the-old-lefts/",
+    "type": "commentary",
+    "title": "The New Right’s Attack on Markets Is as Ignorant as the Old Left’s",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-02-20T18:09:49",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_not_so_soft_bigotry_of_covid_indifference.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-not-so-soft-bigotry-of-covid-indifference/",
+    "type": "commentary",
+    "title": "The Not-so-soft Bigotry of COVID-19 Indifference",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-09-15T14:48:07",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_pandemic_class_college_graduates_enter_job_market_suddenly_turned_upside_down.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-pandemic-class-college-graduates-enter-job-market-suddenly-turned-upside-down/",
+    "type": "commentary",
+    "title": "The Pandemic Class: College Graduates Enter Job Market Suddenly Turned Upside Down",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-04-14T13:00:39",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_power_of_positive_thinking_too_much_and_never_enough.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-power-of-positive-thinking-too-much-and-never-enough/",
+    "type": "commentary",
+    "title": "The Power of Positive Thinking: Too Much and Never Enough",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-08-26T14:50:13",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_trump_supernova_lies_damned_lies_and_the_end_of_the_gop.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-trump-supernova-lies-damned-lies-and-the-end-of-the-gop/",
+    "type": "commentary",
+    "title": "The Trump Supernova: Lies, Damned Lies, and the End of the GOP",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-01-07T00:43:05",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_the_unemployment_system_is_broken_technology_alone_wont_fix_it.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-unemployment-system-is-broken-technology-alone-wont-fix-it/",
+    "type": "commentary",
+    "title": "The Unemployment System Is Broken. Technology Alone Won’t Fix It.",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2021-02-16T20:42:24",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_time_to_do_something_about_the_nilfs.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/time-to-do-something-about-the-nilfs/",
+    "type": "commentary",
+    "title": "Time to Do Something About the NILFs",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-07-27T15:27:50",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_trumps_divisiveness_and_our_consciences.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/trumps-divisiveness-and-our-consciences/",
+    "type": "commentary",
+    "title": "Trump’s Divisiveness and Our Consciences",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-09-04T15:11:12",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_unemployment_benefits_and_the_real_value_of_work.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/unemployment-benefits-and-the-real-value-of-work/",
+    "type": "commentary",
+    "title": "Unemployment Benefits and the Real Value of Work",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-04-29T13:00:43",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_unemployment_goes_viral.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/unemployment-goes-viral/",
+    "type": "commentary",
+    "title": "Unemployment Goes Viral",
+    "scholars": [
+      "Brent Orrell",
+      "Caleb Seibert"
+    ],
+    "date": "2020-04-09T13:52:55",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_articles_vaccinating_the_prison_population_will_help_protect_all_of_america.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/research-products/book/america/",
-    "type": "book",
-    "title": "America: A Patriotic Primer",
+    "url": "https://www.aei.org/commentary/vaccinating-the-prison-population-will-help-protect-all-of-america/",
+    "type": "commentary",
+    "title": "Vaccinating the Prison Population Will Help Protect All of America",
     "scholars": [
-      "Lynne V. Cheney"
+      "Brent Orrell"
     ],
-    "date": "2002-05-21T00:00:00",
+    "date": "2020-12-18T20:37:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_vaccine_victimhood.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/vaccine-victimhood/",
+    "type": "commentary",
+    "title": "Vaccine Victimhood",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-09-25T14:14:23",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_vocation_a_cure_for_burnout.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/vocation-a-cure-for-burnout/",
+    "type": "commentary",
+    "title": "Vocation: A Cure for Burnout",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-10-17T17:28:24",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_what_a_new_report_on_10_years_of_ai_research_reveals.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/what-a-new-report-on-10-years-of-ai-research-reveals/",
+    "type": "commentary",
+    "title": "What a New Report on 10 years of AI Research Reveals",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-04-11T16:21:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_what_ails_our_politics.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/what-ails-our-politics/",
+    "type": "commentary",
+    "title": "What Ails Our Politics?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-02-22T16:56:20",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_articles_what_the_conservative_version_of_cancel_culture_looks_like.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/economics/economic-fluctuations-and-growth/like/",
-    "type": "posts",
-    "title": "What’s Not to Like?",
+    "url": "https://www.aei.org/commentary/what-the-conservative-version-of-cancel-culture-looks-like/",
+    "type": "commentary",
+    "title": "What the Conservative Version of Cancel Culture Looks Like",
     "scholars": [
-      "John H. Makin"
+      "Brent Orrell"
     ],
-    "date": "2014-12-24T10:39:29",
+    "date": "2020-07-23T15:29:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_what_will_the_ties_that_bind_look_like_after_covid.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/what-will-the-ties-that-bind-look-like-after-covid/",
+    "type": "commentary",
+    "title": "What Will ‘the Ties That Bind’ Look like After COVID?",
+    "scholars": [
+      "Brent Orrell",
+      "Caleb Seibert"
+    ],
+    "date": "2020-05-07T14:00:05",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_whats_going_on_with_republican_women.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/whats-going-on-with-republican-women/",
+    "type": "commentary",
+    "title": "What’s Going on with Republican Women?",
+    "scholars": [
+      "Brent Orrell",
+      "Daniel A. Cox"
+    ],
+    "date": "2020-10-26T06:40:58",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_when_nothing_beats_something.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/when-nothing-beats-something/",
+    "type": "commentary",
+    "title": "When ‘nothing’ Beats ‘something’",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-04-23T09:28:11",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_why_liberal_arts_education_for_prison_inmates_is_a_sound_investment.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/why-liberal-arts-education-for-prison-inmates-is-a-sound-investment/",
+    "type": "commentary",
+    "title": "Why Liberal Arts Education for Prison Inmates Is a Sound Investment",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-09-27T00:56:20",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_articles_with_affirmative_action_gone_we_should_focus_admissions_policies_on_poverty.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/press/poverty/",
-    "type": "press",
-    "title": "AEI Poverty: Experts, Highlights, and Headlines",
+    "url": "https://www.aei.org/commentary/with-affirmative-action-gone-we-should-focus-admissions-policies-on-poverty/",
+    "type": "commentary",
+    "title": "With Affirmative Action Gone, We Should Focus Admissions Policies on Poverty",
     "scholars": [
-      "AEI"
+      "Brent Orrell"
     ],
-    "date": "2016-07-28T14:00:11",
+    "date": "2023-07-07T14:00:59",
     "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_worker_focused_pandemic_relief_was_a_success.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/worker-focused-pandemic-relief-was-a-success/",
+    "type": "commentary",
+    "title": "Worker-focused Pandemic Relief Was a Success",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-09-10T14:53:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_you_are_smarter_than_a_computer.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/you-are-smarter-than-a-computer/",
+    "type": "commentary",
+    "title": "You Are Smarter Than a Computer",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-01-28T11:12:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_articles_youre_not_batman.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/youre-not-batman/",
+    "type": "commentary",
+    "title": "You’re Not Batman",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-09-17T14:36:02",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_commentary_from_agencies_to_agency_building_a_workforce_from_within.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/from-agencies-to-agency-building-a-workforce-from-within/",
+    "type": "commentary",
+    "title": "From Agencies to Agency: Building a Workforce from Within",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-11-15T15:46:00",
+    "method": "exact_path"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_commentary_its_leverage_not_magic_a_better_take_on_ai_in_the_workplace.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/its-leverage-not-magic-a-better-take-on-ai-in-the-workplace/",
+    "type": "commentary",
+    "title": "It’s Leverage, Not Magic—A Better Take on AI in the Workplace",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-10-28T18:25:00",
+    "method": "exact_path"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_commentary_lights_out.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/lights-out/",
+    "type": "commentary",
+    "title": "Lights Out",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2019-10-22T13:00:09",
+    "method": "exact_path"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_commentary_mankind_must_not_sacrifice_human_dignity_at_the_altar_of_ai.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/mankind-must-not-sacrifice-human-dignity-at-the-altar-of-ai/",
+    "type": "commentary",
+    "title": "Mankind Must Not Sacrifice Human Dignity at the Altar of AI",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2026-06-20T13:00:00",
+    "method": "exact_path"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_commentary_shaping_the_humans_who_run_the_machines.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/shaping-the-humans-who-run-the-machines/",
+    "type": "commentary",
+    "title": "Shaping the Humans Who Run the Machines",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2026-05-22T20:58:52",
+    "method": "exact_path"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_commentary_the_coming_acceleration.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-coming-acceleration/",
+    "type": "commentary",
+    "title": "The Coming Acceleration",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-09-16T19:48:57",
+    "method": "exact_path"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_commentary_the_future_of_career_technical_education_building_on_success_while_responding_to_new_challenges.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-future-of-career-technical-education-building-on-success-while-responding-to-new-challenges/",
+    "type": "commentary",
+    "title": "The Future of Career-Technical Education: Building on Success While Responding to New Challenges",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-11-05T19:24:26",
+    "method": "exact_path"
   },
   {
     "file": "Brent_Orrell/www_aei_org_commentary_what_anthropics_internal_study_suggests_about_the_future_of_work.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/multimedia/the-future-of-work/",
-    "type": "multimedia",
-    "title": "The Future of Work",
+    "url": "https://www.aei.org/commentary/what-anthropics-internal-study-suggests-about-the-future-of-work/",
+    "type": "commentary",
+    "title": "What Anthropic’s Internal Study Suggests About the Future of Work",
     "scholars": [
-      "Scott Winship"
+      "Brent Orrell"
     ],
-    "date": "2024-09-17T15:48:17",
-    "method": "slug_suffix"
+    "date": "2025-12-13T18:00:00",
+    "method": "exact_path"
   },
   {
     "file": "Brent_Orrell/www_aei_org_domestic_policy_a_slow_start_for_skills_based_hiring.txt",
@@ -202,6 +1534,30 @@
     ],
     "date": "2024-02-16T21:09:36",
     "method": "exact_path"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_domestic_policy_the_quiet_ai_revolution.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/revolution/",
+    "type": "commentary",
+    "title": "Revolution",
+    "scholars": [
+      "Michael A. Ledeen"
+    ],
+    "date": "2005-03-01T01:00:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_domestic_policy_up_in_the_air.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/up-in-the-air/",
+    "type": "commentary",
+    "title": "Up in the Air",
+    "scholars": [
+      "Michael Auslin"
+    ],
+    "date": "2011-12-19T09:02:00",
+    "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_domestic_policy_what_athletes_take_off_the_field.txt",
@@ -652,39 +2008,943 @@
     "method": "exact_path"
   },
   {
+    "file": "Brent_Orrell/www_aei_org_op_eds_a_glut_of_mbas.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/a-glut-of-mbas/",
+    "type": "commentary",
+    "title": "A Glut of MBAs?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-02-24T21:31:29",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_a_side_effect_of_the_booming_job_market_wage_inequality_is_way_down.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/a-side-effect-of-the-booming-job-market-wage-inequality-is-way-down/",
+    "type": "commentary",
+    "title": "A Side Effect of the Booming Job Market: Wage Inequality Is Way Down",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-11-22T15:31:01",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_ai_and_the_future_of_work_looks_bright.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/ai-and-the-future-of-work-looks-bright/",
+    "type": "commentary",
+    "title": "AI and the Future of Work Looks Bright",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-02-11T19:47:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_ai_and_the_future_of_work_preparing_the_workforce_for_an_ai_driven_economy.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/ai-and-the-future-of-work-preparing-the-workforce-for-an-ai-driven-economy/",
+    "type": "commentary",
+    "title": "AI and the Future of Work: Preparing the Workforce for an AI-Driven Economy",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-04-04T14:57:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_ai_will_have_a_major_impact_on_labor_markets_heres_how_the_us_can_prepare.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/ai-will-have-a-major-impact-on-labor-markets-heres-how-the-us-can-prepare/",
+    "type": "commentary",
+    "title": "AI Will Have a Major Impact on Labor Markets. Here’s How the US Can Prepare.",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-12-31T14:46:43",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_americas_new_frontier_of_opportunity_and_inclusion.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/americas-new-frontier-of-opportunity-and-inclusion/",
+    "type": "commentary",
+    "title": "America’s New Frontier of Opportunity and Inclusion",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-03-06T15:12:31",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_an_unexpected_role_for_ai_in_the_workplace.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/an-unexpected-role-for-ai-in-the-workplace/",
+    "type": "commentary",
+    "title": "An Unexpected Role for AI in the Workplace",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-05-23T13:48:49",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_another_weirdness_of_the_covid_labor_market.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/another-weirdness-of-the-covid-labor-market/",
+    "type": "commentary",
+    "title": "Another Weirdness of the COVID Labor Market",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-08-31T13:37:43",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_at_the_well_with_the_loveladies.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/at-the-well-with-the-loveladies/",
+    "type": "commentary",
+    "title": "At the Well with the Loveladies",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-12-21T14:37:39",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_blacks_latinos_feel_unwelcome_in_stem_careers_and_thats_a_big_problem_for_our_economy.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/blacks-latinos-feel-unwelcome-in-stem-careers-and-thats-a-big-problem-for-our-economy/",
+    "type": "commentary",
+    "title": "Blacks, Latinos Feel Unwelcome in STEM Careers. And That’s a Big Problem for Our Economy.",
+    "scholars": [
+      "Brent Orrell",
+      "Daniel A. Cox"
+    ],
+    "date": "2020-07-28T17:52:08",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_conservatives_distrust_higher_ed_but_still_need_degrees.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/conservatives-distrust-higher-ed-but-still-need-degrees/",
+    "type": "commentary",
+    "title": "Conservatives Distrust Higher Ed—but Still Need Degrees",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-03-19T18:26:17",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_covid_19_has_reshaped_our_economy_for_the_long_haul_heres_how_to_help_workers_adapt.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/covid-19-has-reshaped-our-economy-for-the-long-haul-heres-how-to-help-workers-adapt/",
+    "type": "commentary",
+    "title": "COVID-19 Has Reshaped Our Economy for the Long Haul. Here’s How to Help Workers Adapt.",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2021-04-20T15:26:09",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_employers_have_critical_role_to_prevent_second_wave_of_cases.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/employers-have-critical-role-to-prevent-second-wave-of-cases/",
+    "type": "commentary",
+    "title": "Employers Have Critical Role to Prevent Second Wave of Cases",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2020-06-15T16:53:50",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_finally_a_win_for_working_men.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/finally-a-win-for-working-men/",
+    "type": "commentary",
+    "title": "Finally, a Win for Working Men",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-11-27T15:11:14",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_fix_the_workforce_system_to_aid_the_jobs_recovery.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/fix-the-workforce-system-to-aid-the-jobs-recovery/",
+    "type": "commentary",
+    "title": "Fix the Workforce System to Aid the Jobs Recovery",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2021-03-02T15:14:56",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_from_engineers_to_fast_food_how_ai_is_rocking_the_future_of_jobs.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/from-engineers-to-fast-food-how-ai-is-rocking-the-future-of-jobs/",
+    "type": "commentary",
+    "title": "From Engineers to Fast Food, How AI Is Rocking the Future of Jobs",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-06-11T18:16:28",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_go_fast_break_hr.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/go-fast-break-hr/",
+    "type": "commentary",
+    "title": "Go Fast, Break HR",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-02-25T16:44:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_hispanics_and_the_covid_recession.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/hispanics-and-the-covid-recession/",
+    "type": "commentary",
+    "title": "Hispanics and the COVID-19 Recession",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-08-12T13:20:44",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_how_ai_is_being_transformed_by_foundation_models.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-ai-is-being-transformed-by-foundation-models/",
+    "type": "commentary",
+    "title": "How AI Is Being Transformed by ‘Foundation Models’",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-05-02T13:32:41",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_how_covid_19_doubles_down_on_poor_kids.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-covid-19-doubles-down-on-poor-kids/",
+    "type": "commentary",
+    "title": "How COVID-19 Doubles down on Poor Kids",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-10-14T13:27:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_how_hispanic_americans_think_about_work_and_identity.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-hispanic-americans-think-about-work-and-identity/",
+    "type": "commentary",
+    "title": "How Hispanic Americans Think About Work and Identity",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-11-17T15:08:12",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_how_to_fix_the_minority_stem_crisis.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/how-to-fix-the-minority-stem-crisis/",
+    "type": "commentary",
+    "title": "How to Fix the Minority STEM Crisis",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-05-27T14:29:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_in_austin_a_public_private_partnership_for_workforce_success.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/in-austin-a-public-private-partnership-for-workforce-success/",
+    "type": "commentary",
+    "title": "In Austin, a Public/private Partnership for Workforce Success",
+    "scholars": [
+      "Brent Orrell",
+      "Caleb Seibert"
+    ],
+    "date": "2019-08-30T09:45:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_its_not_enough_to_learn_to_code.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/its-not-enough-to-learn-to-code/",
+    "type": "commentary",
+    "title": "It’s Not Enough to ‘learn to Code’",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-09-02T13:47:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_labor_unions_and_the_double_helix_of_americas_workforce_development_future.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/labor-unions-and-the-double-helix-of-americas-workforce-development-future/",
+    "type": "commentary",
+    "title": "Labor Unions and the “Double-Helix” of America’s Workforce Development Future",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-01-19T21:32:20",
+    "method": "slug_suffix"
+  },
+  {
     "file": "Brent_Orrell/www_aei_org_op_eds_lonely_and_stressed_how_working_from_home_is_affecting_americans_mental_health.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/multimedia/mental-health/",
-    "type": "multimedia",
-    "title": "Mental Health",
+    "url": "https://www.aei.org/commentary/lonely-and-stressed-how-working-from-home-is-affecting-americans-mental-health/",
+    "type": "commentary",
+    "title": "Lonely and Stressed: How Working from Home Is Affecting Americans’ Mental Health",
     "scholars": [
-      "Sally Satel"
+      "Brent Orrell",
+      "Matthew Leger"
     ],
-    "date": "2016-03-21T14:58:32",
+    "date": "2021-03-03T16:21:19",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_mandating_the_4_day_workweek_is_a_one_size_fits_none_policy.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/mandating-the-4-day-workweek-is-a-one-size-fits-none-policy/",
+    "type": "commentary",
+    "title": "Mandating the 4-day Workweek Is a ‘one-size-fits-none’ Policy",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-10-19T20:23:31",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_match_or_miss_how_ai_can_improve_job_search_and_hiring.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/match-or-miss-how-ai-can-improve-job-search-and-hiring/",
+    "type": "commentary",
+    "title": "Match or Miss? How AI Can Improve Job Search and Hiring",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-07-11T15:18:55",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_microsoft_is_getting_ready_to_eat_googles_lunch.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/microsoft-is-getting-ready-to-eat-googles-lunch/",
+    "type": "commentary",
+    "title": "Microsoft Is Getting Ready to Eat Google’s Lunch",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-02-14T14:25:29",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_new_poll_shows_the_bizarre_dynamics_in_the_big_pennsylvania_races.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/new-poll-shows-the-bizarre-dynamics-in-the-big-pennsylvania-races/",
+    "type": "commentary",
+    "title": "New Poll Shows the Bizarre Dynamics in the Big Pennsylvania Races",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-06-22T19:26:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_our_current_labor_shortage_is_just_a_sneak_peek_into_the_future.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/our-current-labor-shortage-is-just-a-sneak-peek-into-the-future/",
+    "type": "commentary",
+    "title": "Our Current Labor Shortage Is Just a Sneak Peek into the Future",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-05-17T16:42:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_ozempic_and_your_community.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/ozempic-and-your-community/",
+    "type": "commentary",
+    "title": "Ozempic and Your Community",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-01-07T15:17:36",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_perspective_can_artificial_intelligence_teach_us_to_be_better_workers.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/perspective-can-artificial-intelligence-teach-us-to-be-better-workers/",
+    "type": "commentary",
+    "title": "Perspective: Can Artificial Intelligence Teach Us to Be Better Workers?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-07-27T15:35:19",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_perspective_is_your_boss_on_your_dos_how_remote_work_monitoring_can_work.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/perspective-is-your-boss-on-your-dos-how-remote-work-monitoring-can-work/",
+    "type": "commentary",
+    "title": "Perspective: Is Your Boss on Your DOS? How Remote Work Monitoring Can Work",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2023-01-03T15:12:37",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_perspective_the_social_workplace_and_why_it_matters_to_zoomers.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/perspective-the-social-workplace-and-why-it-matters-to-zoomers/",
+    "type": "commentary",
+    "title": "Perspective: The “Social Workplace” and Why It Matters to Zoomers",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-01-31T16:22:46",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_perspective_what_flexibility_means_for_younger_workers_and_their_employers.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/perspective-what-flexibility-means-for-younger-workers-and-their-employers/",
+    "type": "commentary",
+    "title": "Perspective: What Flexibility Means for Younger Workers — and Their Employers",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-12-14T21:17:09",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_perspective_women_are_more_likely_to_make_friends_at_work_than_men_heres_why_that_matters.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/perspective-women-are-more-likely-to-make-friends-at-work-than-men-heres-why-that-matters/",
+    "type": "commentary",
+    "title": "Perspective: Women Are More Likely to Make Friends at Work Than Men. Here’s Why That Matters",
+    "scholars": [
+      "Daniel A. Cox",
+      "Brent Orrell"
+    ],
+    "date": "2023-01-03T15:16:43",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_political_tension_is_rising_lets_keep_it_out_of_the_workplace.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/political-tension-is-rising-lets-keep-it-out-of-the-workplace/",
+    "type": "commentary",
+    "title": "Political Tension Is Rising. Let’s Keep It out of the Workplace.",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-10-08T13:30:31",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_reducing_unemployment_fraud_without_depriving_eligible_applicants.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/reducing-unemployment-fraud-without-depriving-eligible-applicants/",
+    "type": "commentary",
+    "title": "Reducing Unemployment Fraud Without Depriving Eligible Applicants",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2021-04-08T16:34:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_reform_this_workforce_law_bring_on_state_policy_entrepreneurs.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/reform-this-workforce-law-bring-on-state-policy-entrepreneurs/",
+    "type": "commentary",
+    "title": "Reform This Workforce Law and Bring on State Policy Entrepreneurs",
+    "scholars": [
+      "Brent Orrell",
+      "Mason M. Bishop"
+    ],
+    "date": "2021-05-04T15:19:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_rent_a_robot_and_our_tight_labor_market.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/rent-a-robot-and-our-tight-labor-market/",
+    "type": "commentary",
+    "title": "Rent-a-Robot and Our Tight Labor Market",
+    "scholars": [
+      "Brent Orrell",
+      "Jake Easter"
+    ],
+    "date": "2022-05-25T14:35:33",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_six_weeks_out_the_statewide_pennsylvania_races_solidify.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/six-weeks-out-the-statewide-pennsylvania-races-solidify/",
+    "type": "commentary",
+    "title": "Six Weeks Out, the Statewide Pennsylvania Races Solidify",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-09-28T13:58:09",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_skilled_workers_are_fleeing_russia_lets_welcome_them.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/skilled-workers-are-fleeing-russia-lets-welcome-them/",
+    "type": "commentary",
+    "title": "Skilled Workers Are Fleeing Russia. Let’s Welcome Them.",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-04-07T14:14:35",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_so_youve_ended_roe_how_are_you_going_to_support_women_and_babies.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/so-youve-ended-roe-how-are-you-going-to-support-women-and-babies/",
+    "type": "commentary",
+    "title": "So You’ve Ended Roe. How Are You Going to Support Women and Babies?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-06-24T12:49:52",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_soft_skills_are_essential_why_college_may_not_have_prepared_you_for_success_at_work.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/soft-skills-are-essential-why-college-may-not-have-prepared-you-for-success-at-work/",
+    "type": "commentary",
+    "title": "‘Soft Skills’ Are Essential: Why College May Not Have Prepared You for Success at Work",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-05-27T13:17:42",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_sometimes_necessary_always_tragic.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/sometimes-necessary-always-tragic/",
+    "type": "commentary",
+    "title": "Sometimes Necessary, Always Tragic",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-11-11T12:24:05",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_spring_break_in_florida_a_dangerous_pandemic_coda.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/spring-break-in-florida-a-dangerous-pandemic-coda/",
+    "type": "commentary",
+    "title": "Spring Break in Florida: A Dangerous Pandemic Coda?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-03-16T16:41:45",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_stop_and_go.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/stop-and-go/",
+    "type": "commentary",
+    "title": "Stop and Go",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-03-12T21:26:18",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_succession_and_the_family_spirit_of_thanksgiving.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/succession-and-the-family-spirit-of-thanksgiving/",
+    "type": "commentary",
+    "title": "‘Succession’ and the Family Spirit of Thanksgiving",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-11-24T14:55:15",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_tariffs_plus_ai_makes_for_a_rocky_job_market_how_should_workers_prepare.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/tariffs-plus-ai-makes-for-a-rocky-job-market-how-should-workers-prepare/",
+    "type": "commentary",
+    "title": "Tariffs Plus AI Makes for a Rocky Job Market. How Should Workers Prepare?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-05-01T13:32:31",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_gop_gets_ready_to_cause_another_debt_ceiling_crisis.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-gop-gets-ready-to-cause-another-debt-ceiling-crisis/",
+    "type": "commentary",
+    "title": "The GOP Gets Ready to Cause Another Debt Ceiling Crisis",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-12-15T20:18:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_great_disappearing_worker.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-great-disappearing-worker/",
+    "type": "commentary",
+    "title": "The Great Disappearing Worker",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-10-15T13:40:09",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_great_resignation_shows_its_time_to_rethink_worker_dignity.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-great-resignation-shows-its-time-to-rethink-worker-dignity/",
+    "type": "commentary",
+    "title": "The Great Resignation Shows It’s Time to Rethink Worker Dignity",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-06-30T13:14:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_labor_market_needs_the_soft_skills_older_workers_have.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-labor-market-needs-the-soft-skills-older-workers-have/",
+    "type": "commentary",
+    "title": "The Labor Market Needs the ‘soft’ Skills Older Workers Have",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-05-27T13:55:20",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_law_of_the_gift.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-law-of-the-gift/",
+    "type": "commentary",
+    "title": "The Law of the Gift",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-12-24T16:11:28",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_longshoremen_are_making_the_wrong_demands.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-longshoremen-are-making-the-wrong-demands/",
+    "type": "commentary",
+    "title": "The Longshoremen Are Making the Wrong Demands",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2024-10-08T12:57:32",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_op_eds_the_new_workplace_gender_imbalance_social_capital_and_job_satisfaction.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/multimedia/job-satisfaction/",
-    "type": "multimedia",
-    "title": "Job Satisfaction",
+    "url": "https://www.aei.org/commentary/the-new-workplace-gender-imbalance-social-capital-and-job-satisfaction/",
+    "type": "commentary",
+    "title": "The New Workplace Gender Imbalance: Social Capital and Job Satisfaction",
     "scholars": [
-      "Karlyn Bowman"
+      "Brent Orrell",
+      "Daniel A. Cox"
     ],
-    "date": "2010-03-15T13:42:05",
+    "date": "2022-10-31T14:37:04",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_rise_of_so_so_automation.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-rise-of-so-so-automation/",
+    "type": "commentary",
+    "title": "The Rise of ‘so-so Automation’",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-08-10T16:45:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_surprising_benefits_of_cooperative_ai.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-surprising-benefits-of-cooperative-ai/",
+    "type": "commentary",
+    "title": "The Surprising Benefits of ‘Cooperative’ AI",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-03-26T18:17:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_unforgiving_math_of_the_u_s_labor_market.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-unforgiving-math-of-the-u-s-labor-market/",
+    "type": "commentary",
+    "title": "The Unforgiving Math of the US Labor Market",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-03-04T14:18:19",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_the_urban_workforce_shakeup.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/the-urban-workforce-shakeup/",
+    "type": "commentary",
+    "title": "The Urban Workforce Shakeup",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2021-03-11T21:36:16",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_there_are_no_simple_answers_for_our_labor_market_problems.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/there-are-no-simple-answers-for-our-labor-market-problems/",
+    "type": "commentary",
+    "title": "There Are No Simple Answers for Our Labor Market Problems",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-06-21T14:39:40",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_tribes_in_the_desert.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/tribes-in-the-desert/",
+    "type": "commentary",
+    "title": "Tribes in the Desert",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-03-31T20:47:57",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_two_cheers_for_americas_covid_19_response.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/two-cheers-for-americas-covid-19-response/",
+    "type": "commentary",
+    "title": "Two Cheers for America’s COVID-19 Response",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-02-09T14:31:32",
     "method": "slug_suffix"
   },
   {
     "file": "Brent_Orrell/www_aei_org_op_eds_we_asked_hundreds_of_unemployed_americans_whats_keeping_them_out_of_work_its_not_unemployment_benefits.txt",
     "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/research-products/book/unemployment-benefits/",
-    "type": "book",
-    "title": "Unemployment Benefits: Should There Be a Compulsory Federal Standard?",
+    "url": "https://www.aei.org/commentary/we-asked-hundreds-of-unemployed-americans-whats-keeping-them-out-of-work-its-not-unemployment-benefits/",
+    "type": "commentary",
+    "title": "We Asked Hundreds of Unemployed Americans What’s Keeping Them out of Work — It’s Not Unemployment Benefits",
     "scholars": [
-      "Joseph  M.  Becker"
+      "Brent Orrell",
+      "Daniel A. Cox"
     ],
-    "date": "1980-01-01T00:00:00",
+    "date": "2021-07-25T10:00:50",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_what_the_house_of_windsor_does.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/what-the-house-of-windsor-does/",
+    "type": "commentary",
+    "title": "What the House of Windsor Does",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-09-19T14:06:40",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_whats_missing_from_the_chips_act.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/whats-missing-from-the-chips-act/",
+    "type": "commentary",
+    "title": "What’s Missing from the CHIPS Act",
+    "scholars": [
+      "Brent Orrell",
+      "Jake Easter"
+    ],
+    "date": "2022-08-17T14:23:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_where_the_tech_layoffs_are_hitting_hardest.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/where-the-tech-layoffs-are-hitting-hardest/",
+    "type": "commentary",
+    "title": "Where the Tech Layoffs Are Hitting Hardest",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-02-08T14:41:43",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_wheres_the_beef_2.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/wheres-the-beef-2/",
+    "type": "commentary",
+    "title": "Where’s the Beef?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-12-16T15:35:47",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_wheres_the_muscle.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/wheres-the-muscle/",
+    "type": "commentary",
+    "title": "Where’s the Muscle?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-04-07T14:32:01",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_why_students_should_forget_the_coronavirus_gap_year_to_take_an_essential_job_instead.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/why-students-should-forget-the-coronavirus-gap-year-to-take-an-essential-job-instead/",
+    "type": "commentary",
+    "title": "Why Students Should Forget the Coronavirus Gap Year to Take an Essential Job Instead",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2020-06-05T14:16:38",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_will_higher_inflation_lead_to_a_spike_in_crime.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/will-higher-inflation-lead-to-a-spike-in-crime/",
+    "type": "commentary",
+    "title": "Will Higher Inflation Lead to a Spike in Crime?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2021-10-26T14:18:50",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_will_the_national_gop_go_the_way_of_the_california_gop.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/will-the-national-gop-go-the-way-of-the-california-gop/",
+    "type": "commentary",
+    "title": "Will the National GOP Go the Way of the California GOP?",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-05-19T13:50:45",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_with_new_restrictions_on_abortion_americans_need_to_open_their_hearts_and_checkbooks.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/with-new-restrictions-on-abortion-americans-need-to-open-their-hearts-and-checkbooks/",
+    "type": "commentary",
+    "title": "With New Restrictions on Abortion, Americans Need to Open Their Hearts and Checkbooks",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2022-09-13T14:39:42",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_without_qualified_workers_our_chips_investment_could_be_money_down_the_drain.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/without-qualified-workers-our-chips-investment-could-be-money-down-the-drain/",
+    "type": "commentary",
+    "title": "Without Qualified Workers, Our CHIPS Investments Could Be Money Down the Drain",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2025-05-02T13:28:58",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_work_from_home_challenges_arent_cause_to_rush_back_to_traditional_offices.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/work-from-home-challenges-arent-cause-to-rush-back-to-traditional-offices/",
+    "type": "commentary",
+    "title": "Work-from-home Challenges Aren’t Cause to Rush Back to Traditional Offices",
+    "scholars": [
+      "Brent Orrell",
+      "Matthew Leger"
+    ],
+    "date": "2021-04-02T16:35:59",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_op_eds_yes_college_is_still_a_good_investment.txt",
+    "folder_author": "Brent Orrell",
+    "url": "https://www.aei.org/commentary/yes-college-is-still-a-good-investment/",
+    "type": "commentary",
+    "title": "Yes, College Is Still a Good Investment",
+    "scholars": [
+      "Brent Orrell"
+    ],
+    "date": "2023-06-28T15:39:42",
     "method": "slug_suffix"
   },
   {
@@ -3834,18 +6094,6 @@
     "method": "exact_path"
   },
   {
-    "file": "Brent_Orrell/www_aei_org_research_products_report_land_of_opportunity_advancing_the_american_dream.txt",
-    "folder_author": "Brent Orrell",
-    "url": "https://www.aei.org/multimedia/the-american-dream/",
-    "type": "multimedia",
-    "title": "The American Dream",
-    "scholars": [
-      "Karlyn Bowman"
-    ],
-    "date": "2014-02-07T09:15:00",
-    "method": "slug_suffix"
-  },
-  {
     "file": "Brent_Orrell/www_aei_org_research_products_report_life_after_roe_supporting_women_and_families_facing_unexpected_pregnancies.txt",
     "folder_author": "Brent Orrell",
     "url": "https://www.aei.org/research-products/report/life-after-roe-supporting-women-and-families-facing-unexpected-pregnancies/",
@@ -4458,6 +6706,18 @@
     "method": "exact_path"
   },
   {
+    "file": "Clay_Calvert/www_aei_org_commentary_a_landmark_tech_ruling_and_what_lies_ahead.txt",
+    "folder_author": "Clay Calvert",
+    "url": "https://www.aei.org/commentary/a-landmark-tech-ruling-and-what-lies-ahead/",
+    "type": "commentary",
+    "title": "A Landmark Tech Ruling and What Lies Ahead",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "date": "2026-04-24T14:07:30",
+    "method": "exact_path"
+  },
+  {
     "file": "Clay_Calvert/www_aei_org_events_cheap_fakes_and_dirty_politics_examining_manipulated_media_and_platform_accountability.txt",
     "folder_author": "Clay Calvert",
     "url": "https://www.aei.org/technology-and-innovation/examining-manipulated-media-and-platform-accountability/",
@@ -4467,6 +6727,54 @@
       "Shane Tews"
     ],
     "date": "2024-01-09T10:55:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Clay_Calvert/www_aei_org_op_eds_ai_gets_political_how_do_we_keep_fake_news_out_of_campaign_ads.txt",
+    "folder_author": "Clay Calvert",
+    "url": "https://www.aei.org/commentary/ai-gets-political-how-do-we-keep-fake-news-out-of-campaign-ads/",
+    "type": "commentary",
+    "title": "AI Gets Political: How Do We Keep Fake News Out of Campaign Ads?",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "date": "2023-06-14T18:36:28",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Clay_Calvert/www_aei_org_op_eds_buffer_zone_restrictions_on_recording_police_are_unnecessary_and_unconstitutional.txt",
+    "folder_author": "Clay Calvert",
+    "url": "https://www.aei.org/commentary/buffer-zone-restrictions-on-recording-police-are-unnecessary-and-unconstitutional/",
+    "type": "commentary",
+    "title": "“Buffer-Zone” Restrictions on Recording Police Are Unnecessary and Unconstitutional",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "date": "2023-07-28T10:00:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Clay_Calvert/www_aei_org_op_eds_missouri_v_biden_and_the_crossroads_of_politics_censorship_and_free_speech.txt",
+    "folder_author": "Clay Calvert",
+    "url": "https://www.aei.org/commentary/missouri-v-biden-and-the-crossroads-of-politics-censorship-and-free-speech/",
+    "type": "commentary",
+    "title": "Missouri v. Biden and the Crossroads of Politics, Censorship, and Free Speech",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "date": "2023-09-13T17:53:50",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Clay_Calvert/www_aei_org_op_eds_what_was_behind_the_fifth_circuits_sudden_reversal_on_social_media_censorship.txt",
+    "folder_author": "Clay Calvert",
+    "url": "https://www.aei.org/commentary/what-was-behind-the-fifth-circuits-sudden-reversal-on-social-media-censorship/",
+    "type": "commentary",
+    "title": "What Was Behind the Fifth Circuit’s Sudden Reversal on Social Media Censorship?",
+    "scholars": [
+      "Clay Calvert"
+    ],
+    "date": "2023-10-02T14:15:27",
     "method": "slug_suffix"
   },
   {
@@ -5634,27 +7942,315 @@
     "method": "exact_path"
   },
   {
+    "file": "Shane_Tews/www_aei_org_articles_2015_the_year_of_the_hack.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/2015-the-year-of-the-hack/",
+    "type": "commentary",
+    "title": "2015: The Year of the Hack",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-12-29T06:00:22",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_3_strategies_for_keeping_icann_and_iana_on_mission_and_out_of_politics.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/3-strategies-for-keeping-icann-and-iana-on-mission-and-out-of-politics/",
+    "type": "commentary",
+    "title": "3 Strategies for Keeping ICANN and IANA on Mission and out of Politics",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-09-10T06:00:23",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_ces_connected_devices_and_the_importance_of_network_integrity.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/ces-connected-devices-and-the-importance-of-network-integrity/",
+    "type": "commentary",
+    "title": "CES, Connected Devices, and the Importance of Network Integrity",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2016-01-12T06:00:10",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_congress_can_help_american_companies_better_protect_themselves_against_cyber_attacks.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/congress-can-help-american-companies-better-protect-themselves-against-cyber-attacks/",
+    "type": "commentary",
+    "title": "Congress Can Help American Companies Better Protect Themselves Against Cyber Attacks",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-04-20T06:00:31",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_cybersecurity_and_commerce_its_not_a_zero_sum_game.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/cybersecurity-and-commerce-its-not-a-zero-sum-game/",
+    "type": "commentary",
+    "title": "Cybersecurity and Commerce: It’s Not a Zero-sum Game",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-01-26T06:00:40",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_digital_wallets_are_the_future_for_faster_access_and_more_secure_transactions.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/digital-wallets-are-the-future-for-faster-access-and-more-secure-transactions/",
+    "type": "commentary",
+    "title": "Digital Wallets Are the Future for Faster Access, and More Secure Transactions",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2023-02-06T17:00:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_domain_names_and_politics_why_chrysler_might_have_to_let_ram_go.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/domain-names-and-politics-why-chrysler-might-have-to-let-ram-go/",
+    "type": "commentary",
+    "title": "Domain Names and Politics: Why Chrysler Might Have to Let .ram Go",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-02-19T06:00:45",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_guiding_future_internet.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/guiding-future-internet/",
+    "type": "commentary",
+    "title": "Guiding the Future of the Internet",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-02-25T14:45:45",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_icann_and_iana_making_the_right_not_a_rash_decision.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/icann-and-iana-making-the-right-not-a-rash-decision/",
+    "type": "commentary",
+    "title": "ICANN and IANA: Making the Right – Not a Rash – Decision",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-10-23T06:00:30",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_icanns_accountability_and_transparency_mechanisms_need_to_be_in_place_before_the_iana_transition_takes_place.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/icanns-accountability-and-transparency-mechanisms-need-to-be-in-place-before-the-iana-transition-takes-place/",
+    "type": "commentary",
+    "title": "ICANN’s Accountability and Transparency Mechanisms Need to Be in Place Before the IANA Transition Takes Place",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-05-11T06:00:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_improving_cybersecurity_through_cooperation_not_regulation.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/improving-cybersecurity-through-cooperation-not-regulation/",
+    "type": "commentary",
+    "title": "Improving Cybersecurity Through Cooperation, Not Regulation",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2017-01-26T06:00:02",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_in_a_big_data_world_protecting_the_information_you_collect_is_vital.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/in-a-big-data-world-protecting-the-information-you-collect-is-vital/",
+    "type": "commentary",
+    "title": "In a Big Data World, Protecting the Information You Collect Is Vital",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-10-16T06:00:30",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_information_sharing_a_necessary_tool_for_securing_americas_networks.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/information-sharing-a-necessary-tool-for-securing-americas-networks/",
+    "type": "commentary",
+    "title": "Information Sharing: A Necessary Tool for Securing America’s Networks",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-04-02T06:00:17",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_internet_censorship_in_the_wake_of_the_ntia_announcement.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/internet-censorship-in-the-wake-of-the-ntia-announcement/",
+    "type": "commentary",
+    "title": "Internet Censorship in the Wake of the NTIA Announcement",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2014-03-20T06:00:59",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_keeping_the_internet_free_iana_transition.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/keeping-the-internet-free-iana-transition/",
+    "type": "commentary",
+    "title": "The Key to Keeping the Internet Free After the IANA Transition",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-07-28T09:32:40",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_lessons_from_deltas_meltdown_the_importance_of_having_a_backup_plan.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/lessons-from-deltas-meltdown-the-importance-of-having-a-backup-plan/",
+    "type": "commentary",
+    "title": "Lessons from Delta’s Meltdown: The Importance of Having a Backup Plan",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2016-08-11T06:00:36",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_navigating_the_data_security_and_privacy_tightrope_balancing_the_biden_administration_and_european_rules_on_tech.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/navigating-the-data-security-and-privacy-tightrope-balancing-the-biden-administration-and-european-rules-on-tech/",
+    "type": "commentary",
+    "title": "Navigating the Data Security and Privacy Tightrope: Balancing the Biden Administration and European Rules on Tech",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2024-02-26T10:55:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_netmundial_takeaways_the_importance_of_keeping_political_agendas_away_from_the_internet.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/netmundial-takeaways-the-importance-of-keeping-political-agendas-away-from-the-internet/",
+    "type": "commentary",
+    "title": "NETmundial Takeaways: The Importance of Keeping Political Agendas Away from the Internet",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2014-04-28T06:00:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_ntia_wants_your_input_on_internet_governance.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/ntia-wants-your-input-on-internet-governance/",
+    "type": "commentary",
+    "title": "NTIA Wants Your Input on Internet Governance",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2016-05-23T06:00:46",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_protecting_the_internet_from_political_agendas_takeaways_from_the_icann_meeting.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/protecting-the-internet-from-political-agendas-takeaways-from-the-icann-meeting/",
+    "type": "commentary",
+    "title": "Protecting the Internet from Political Agendas: Takeaways from the ICANN Meeting",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2014-06-30T06:00:23",
+    "method": "slug_suffix"
+  },
+  {
     "file": "Shane_Tews/www_aei_org_articles_russians_arent_just_hacking_the_dnc_they_are_hacking_america.txt",
     "folder_author": "Shane Tews",
-    "url": "https://www.aei.org/research-products/book/america/",
-    "type": "book",
-    "title": "America: A Patriotic Primer",
+    "url": "https://www.aei.org/commentary/russians-arent-just-hacking-the-dnc-they-are-hacking-america/",
+    "type": "commentary",
+    "title": "Russians Aren’t Just Hacking the DNC – They Are Hacking America",
     "scholars": [
-      "Lynne V. Cheney"
+      "Shane Tews"
     ],
-    "date": "2002-05-21T00:00:00",
+    "date": "2016-07-28T06:00:23",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_the_iana_transition_creating_a_responsible_outcome.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/the-iana-transition-creating-a-responsible-outcome/",
+    "type": "commentary",
+    "title": "The IANA Transition: Creating a Responsible Outcome",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2016-09-26T06:00:24",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_the_sharing_economy_under_pressure.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/the-sharing-economy-under-pressure/",
+    "type": "commentary",
+    "title": "The Sharing Economy Under Pressure",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2014-09-30T00:05:00",
     "method": "slug_suffix"
   },
   {
     "file": "Shane_Tews/www_aei_org_articles_to_overhaul_its_networks_the_government_should_learn_from_corporate_america.txt",
     "folder_author": "Shane Tews",
-    "url": "https://www.aei.org/research-products/book/america/",
-    "type": "book",
-    "title": "America: A Patriotic Primer",
+    "url": "https://www.aei.org/commentary/to-overhaul-its-networks-the-government-should-learn-from-corporate-america/",
+    "type": "commentary",
+    "title": "To Overhaul Its Networks, the Government Should Learn from Corporate America",
     "scholars": [
-      "Lynne V. Cheney"
+      "Shane Tews"
     ],
-    "date": "2002-05-21T00:00:00",
+    "date": "2016-02-26T06:00:54",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_toward_a_connected_future_maximizing_the_internet_of_things.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/toward-a-connected-future-maximizing-the-internet-of-things/",
+    "type": "commentary",
+    "title": "Toward a Connected Future: Maximizing the Internet of Things",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2017-03-23T06:00:13",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_articles_why_accountability_and_transparency_need_to_be_icanns_number_one_priority.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/why-accountability-and-transparency-need-to-be-icanns-number-one-priority/",
+    "type": "commentary",
+    "title": "Why Accountability and Transparency Need to Be ICANN’s Number One Priority",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2015-06-26T06:00:59",
     "method": "slug_suffix"
   },
   {
@@ -6020,15 +8616,100 @@
     "method": "exact_path"
   },
   {
+    "file": "Shane_Tews/www_aei_org_op_eds_biden_must_defend_democracy_against_rising_authoritarianism.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/biden-must-defend-democracy-against-rising-authoritarianism/",
+    "type": "commentary",
+    "title": "Biden Must Defend Democracy Against Rising Authoritarianism",
+    "scholars": [
+      "Ivana Stradner",
+      "Shane Tews"
+    ],
+    "date": "2021-12-08T12:30:07",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_op_eds_congress_is_putting_attacking_big_tech_ahead_of_protecting_americans.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/congress-is-putting-attacking-big-tech-ahead-of-protecting-americans/",
+    "type": "commentary",
+    "title": "Congress Is Putting Attacking Big Tech Ahead of Protecting Americans",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2022-05-02T04:00:29",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_op_eds_global_encryption_under_siege_how_uks_apple_backdoor_demand_threatens_international_security.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/global-encryption-under-siege-how-uks-apple-backdoor-demand-threatens-international-security/",
+    "type": "commentary",
+    "title": "Global Encryption Under Siege: How UK’s Apple Backdoor Demand Threatens International Security",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2025-02-19T10:30:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_op_eds_if_the_u_s_doesnt_set_global_tech_standards_china_will.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/if-the-u-s-doesnt-set-global-tech-standards-china-will/",
+    "type": "commentary",
+    "title": "If the U.S. Doesn’t Set Global Tech Standards, China Will",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2025-08-12T13:47:11",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_op_eds_mobile_security_risks_are_at_an_all_time_high.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/mobile-security-risks-are-at-an-all-time-high/",
+    "type": "commentary",
+    "title": "Mobile Security Risks Are at an All-Time High.",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2021-08-18T13:00:34",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_op_eds_more_than_networks_america_needs_better_cybersecurity.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/more-than-networks-america-needs-better-cybersecurity/",
+    "type": "commentary",
+    "title": "More Than Networks, America Needs Better Cybersecurity",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2022-08-24T11:00:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_op_eds_rural_broadband_requires_out_of_the_box_thinking.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/rural-broadband-requires-out-of-the-box-thinking/",
+    "type": "commentary",
+    "title": "Rural Broadband Requires Out-of-the-Box Thinking",
+    "scholars": [
+      "Shane Tews"
+    ],
+    "date": "2022-04-20T10:00:35",
+    "method": "slug_suffix"
+  },
+  {
     "file": "Shane_Tews/www_aei_org_op_eds_steering_the_transatlantic_partnership_toward_innovation.txt",
     "folder_author": "Shane Tews",
-    "url": "https://www.aei.org/pethokoukis/innovation/",
-    "type": "posts",
-    "title": "Take a Guess: What’s the Biggest Barrier to Innovation?",
+    "url": "https://www.aei.org/commentary/steering-the-transatlantic-partnership-toward-innovation/",
+    "type": "commentary",
+    "title": "Steering the Transatlantic Partnership Toward Innovation",
     "scholars": [
-      "Natalie Goodnow"
+      "Shane Tews"
     ],
-    "date": "2014-11-14T09:51:15",
+    "date": "2021-09-29T10:00:50",
     "method": "slug_suffix"
   },
   {
@@ -8809,6 +11490,18 @@
     "method": "exact_path"
   },
   {
+    "file": "Shane_Tews/www_aei_org_technology_and_innovation_how_the_vatican_is_shaping_the_ethics_of_artificial_intelligence.txt",
+    "folder_author": "Shane Tews",
+    "url": "https://www.aei.org/commentary/artificial-intelligence/",
+    "type": "commentary",
+    "title": "Artificial Intelligence",
+    "scholars": [
+      "James Q. Wilson"
+    ],
+    "date": "2004-10-01T00:00:00",
+    "method": "slug_suffix"
+  },
+  {
     "file": "Shane_Tews/www_aei_org_technology_and_innovation_how_to_better_secure_your_mobile_device_highlights_from_my_conversation_with_kevin_mcnamee.txt",
     "folder_author": "Shane Tews",
     "url": "https://www.aei.org/technology-and-innovation/how-to-better-secure-your-mobile-device-highlights-from-my-conversation-with-kevin-mcnamee/",
@@ -11058,40 +13751,664 @@
     "method": "exact_path"
   },
   {
+    "file": "Will_Rinehart/www_aei_org_articles_a_decades_old_environmental_law_in_need_of_a_makeover.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/a-decades-old-environmental-law-in-need-of-a-makeover/",
+    "type": "commentary",
+    "title": "A Decades-Old Environmental Law in Need of a Makeover",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-09-23T18:17:42",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_a_flammable_landscape.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/a-flammable-landscape/",
+    "type": "commentary",
+    "title": "A Flammable Landscape",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-01-21T19:17:51",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_a_new_proposed_ai_regulation_in_california.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/a-new-proposed-ai-regulation-in-california/",
+    "type": "commentary",
+    "title": "A New Proposed AI Regulation in California",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-05-14T09:30:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_a_venture_capitalist_as_ai_and_crypto_czar.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/a-venture-capitalist-as-ai-and-crypto-czar/",
+    "type": "commentary",
+    "title": "A Venture Capitalist as AI and Crypto Czar",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-12-16T15:58:44",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_ais_emerging_paradox.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/ais-emerging-paradox/",
+    "type": "commentary",
+    "title": "AI’s Emerging Paradox",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-01-27T16:40:20",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_californias_sb_1047_moves_closer_to_changing_the_ai_landscape.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/californias-sb-1047-moves-closer-to-changing-the-ai-landscape/",
+    "type": "commentary",
+    "title": "California’s SB 1047 Moves Closer to Changing the AI Landscape",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-09-09T17:39:18",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_cambridge_analytica_a_redux.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/cambridge-analytica-a-redux/",
+    "type": "commentary",
+    "title": "Cambridge Analytica, a Redux",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-05-28T13:38:53",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_doge_needs_to_dig_deeper_than_its_leaders_understand.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/doge-needs-to-dig-deeper-than-its-leaders-understand/",
+    "type": "commentary",
+    "title": "DOGE Needs to Dig Deeper Than Its Leaders Understand",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-12-23T15:30:29",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_extending_years_of_life_through_innovations_in_drug_therapy.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/extending-years-of-life-through-innovations-in-drug-therapy/",
+    "type": "commentary",
+    "title": "Extending Years of Life Through Innovations in Drug Therapy",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-09-30T14:48:30",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_how_much_might_ai_legislation_cost_in_the_us.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/how-much-might-ai-legislation-cost-in-the-us/",
+    "type": "commentary",
+    "title": "How Much Might AI Legislation Cost in the US?",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-03-19T17:50:00",
+    "method": "slug_suffix"
+  },
+  {
     "file": "Will_Rinehart/www_aei_org_articles_how_tech_regulatory_approaches_have_changed_and_not_for_the_better.txt",
     "folder_author": "Will Rinehart",
-    "url": "https://www.aei.org/multimedia/better/",
-    "type": "multimedia",
-    "title": "Are You Better Off?",
+    "url": "https://www.aei.org/commentary/how-tech-regulatory-approaches-have-changed-and-not-for-the-better/",
+    "type": "commentary",
+    "title": "How Tech Regulatory Approaches Have Changed, and Not for the Better",
     "scholars": [
-      "Karlyn Bowman"
+      "Will Rinehart"
     ],
-    "date": "2014-10-31T21:19:35",
+    "date": "2024-10-28T15:27:09",
     "method": "slug_suffix"
   },
   {
     "file": "Will_Rinehart/www_aei_org_articles_how_the_vetocracy_paralyzes_progress.txt",
     "folder_author": "Will Rinehart",
-    "url": "https://www.aei.org/carpe-diem/progress/",
-    "type": "posts",
-    "title": "Progress",
+    "url": "https://www.aei.org/commentary/how-the-vetocracy-paralyzes-progress/",
+    "type": "commentary",
+    "title": "How the Vetocracy Paralyzes Progress",
     "scholars": [
-      "Mark J. Perry"
+      "Will Rinehart"
     ],
-    "date": "2006-12-25T06:39:00",
+    "date": "2024-09-16T18:19:01",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_human_ambition_and_natural_beauty_meet_in_the_city.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/human-ambition-and-natural-beauty-meet-in-the-city/",
+    "type": "commentary",
+    "title": "Human Ambition and Natural Beauty Meet in the City",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-05-07T21:00:23",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_is_this_the_compute_era.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/is-this-the-compute-era/",
+    "type": "commentary",
+    "title": "Is This the “Compute Era”?",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-06-04T09:30:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_james_c_scott_legibility_and_the_omnipresence_of_tech.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/james-c-scott-legibility-and-the-omnipresence-of-tech/",
+    "type": "commentary",
+    "title": "James C. Scott, Legibility, and the Omnipresence of Tech",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-07-29T15:00:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_taking_a_swing_at_the_size_and_cost_of_government.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/taking-a-swing-at-the-size-and-cost-of-government/",
+    "type": "commentary",
+    "title": "Taking a Swing at the Size and Cost of Government",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-11-18T19:20:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_best_ai_law_may_be_one_that_already_exists.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-best-ai-law-may-be-one-that-already-exists/",
+    "type": "commentary",
+    "title": "The Best AI Law May Be One That Already Exists",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-02-03T19:51:27",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_case_for_forward_looking_policies.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-case-for-forward-looking-policies/",
+    "type": "commentary",
+    "title": "The Case for Forward-Looking Policies",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-11-11T19:38:26",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_dojs_antitrust_remedies_arent_keeping_pace_with_the_market.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-dojs-antitrust-remedies-arent-keeping-pace-with-the-market/",
+    "type": "commentary",
+    "title": "The DOJ’s Antitrust Remedies Aren’t Keeping Pace With the Market",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-12-09T15:32:33",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_economics_of_ai_and_the_impending_robot_takeover_part_i.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-economics-of-ai-and-the-impending-robot-takeover-part-i/",
+    "type": "commentary",
+    "title": "The Economics of AI and the Impending Robot Takeover, Part I",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-06-11T13:38:18",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_expansive_and_expensive_american_privacy_rights_act.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-expansive-and-expensive-american-privacy-rights-act/",
+    "type": "commentary",
+    "title": "The Expansive and Expensive American Privacy Rights Act",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-04-23T19:01:22",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_four_fault_lines_in_ai_policy.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-four-fault-lines-in-ai-policy/",
+    "type": "commentary",
+    "title": "The Four Fault Lines in AI Policy",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-08-05T15:00:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_haphazard_road_to_rural_broadband.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-haphazard-road-to-rural-broadband/",
+    "type": "commentary",
+    "title": "The Haphazard Road to Rural Broadband",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-07-01T14:34:52",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_hardware_and_software_of_ai.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-hardware-and-software-of-ai/",
+    "type": "commentary",
+    "title": "The Hardware and Software of AI",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-01-13T15:13:59",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_lurking_dangers_in_state_level_ai_regulation.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-lurking-dangers-in-state-level-ai-regulation/",
+    "type": "commentary",
+    "title": "The Lurking Dangers in State-Level AI Regulation",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-06-24T15:43:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_power_of_tumblr.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-power-of-tumblr/",
+    "type": "commentary",
+    "title": "The Power of Tumblr",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-07-22T15:10:35",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_promise_of_geoengineering.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-promise-of-geoengineering/",
+    "type": "commentary",
+    "title": "The Promise of Geoengineering",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-08-19T16:01:06",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_the_supreme_court_term_in_review.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-supreme-court-term-in-review/",
+    "type": "commentary",
+    "title": "The Supreme Court Term in Review",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-07-15T14:48:59",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_this_silent_plane_just_made_history.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/this-silent-plane-just-made-history/",
+    "type": "commentary",
+    "title": "This Silent Plane Just Made History",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-02-14T18:50:36",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_transformative_growth_with_ai_is_likely_explosive_growth_is_science_fiction.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/transformative-growth-with-ai-is-likely-explosive-growth-is-science-fiction/",
+    "type": "commentary",
+    "title": "Transformative Growth with AI Is Likely. Explosive Growth Is Science Fiction.",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-06-18T09:30:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_twenty_four_ways_to_understand_2024.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/twenty-four-ways-to-understand-2024/",
+    "type": "commentary",
+    "title": "Twenty-Four Ways to Understand 2024",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-11-04T16:57:41",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_two_cheers_for_the_ai_moratorium.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/two-cheers-for-the-ai-moratorium/",
+    "type": "commentary",
+    "title": "Two Cheers for the AI Moratorium!",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-06-17T09:30:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_unpacking_the_tin_tok_ban.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/unpacking-the-tin-tok-ban/",
+    "type": "commentary",
+    "title": "The TikTok Ban’s Free Speech Dilemma",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-03-26T09:55:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_vipers_failure_and_the_future_of_space_exploration.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/vipers-failure-and-the-future-of-space-exploration/",
+    "type": "commentary",
+    "title": "VIPER’s Failure and the Future of Space Exploration",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-08-26T15:34:18",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_what_happens_online_often_actually_stays_online.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/what-happens-online-often-actually-stays-online/",
+    "type": "commentary",
+    "title": "The Twitter Electorate Isn’t the Real Electorate",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-04-09T13:00:00",
     "method": "slug_suffix"
   },
   {
     "file": "Will_Rinehart/www_aei_org_articles_whats_behind_the_antitrust_ruling_against_google.txt",
     "folder_author": "Will Rinehart",
-    "url": "https://www.aei.org/carpe-diem/google/",
-    "type": "posts",
-    "title": "Google",
+    "url": "https://www.aei.org/commentary/whats-behind-the-antitrust-ruling-against-google/",
+    "type": "commentary",
+    "title": "What’s Behind the Antitrust Ruling Against Google?",
     "scholars": [
-      "Mark J. Perry"
+      "Will Rinehart"
     ],
-    "date": "2006-10-31T13:57:00",
+    "date": "2024-08-12T18:46:30",
     "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_whats_next_for_the_affordable_connectivity_program.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/whats-next-for-the-affordable-connectivity-program/",
+    "type": "commentary",
+    "title": "What’s Next for the Affordable Connectivity Program?",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-05-21T09:30:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_why_dojs_antitrust_case_against_apple_falls_flat.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/why-dojs-antitrust-case-against-apple-falls-flat/",
+    "type": "commentary",
+    "title": "Why DOJ’s Antitrust Case Against Apple Could Fall Flat",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-04-02T09:30:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_why_im_out_of_step_with_my_generation.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/why-im-out-of-step-with-my-generation/",
+    "type": "commentary",
+    "title": "Why I’m Out of Step with My Generation",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-03-19T19:14:17",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_why_western_north_carolina_spurned_flood_control_measures_decades_ago.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/why-western-north-carolina-spurned-flood-control-measures-decades-ago/",
+    "type": "commentary",
+    "title": "Why Western North Carolina Spurned Flood Control Measures Decades Ago",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-10-21T15:29:59",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_articles_your_av_ride_might_take_awhile.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/your-av-ride-might-take-awhile/",
+    "type": "commentary",
+    "title": "Your Autonomous Vehicle Ride Might Take a While",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2024-09-02T17:24:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_a_violent_reaction_to_ai_is_bubbling_but_this_isnt_the_luddites_era.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/a-violent-reaction-to-ai-is-bubbling-but-this-isnt-the-luddites-era/",
+    "type": "commentary",
+    "title": "A Violent Reaction to AI Is Bubbling. But This Isn’t the Luddites’ Era.",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-04-22T14:00:42",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_ai_has_been_a_race_to_the_bottom_towards_alignment.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/ai-has-been-a-race-to-the-bottom-towards-alignment/",
+    "type": "commentary",
+    "title": "AI Has Been a Race to the Bottom, Towards Alignment",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-04-09T16:00:00",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_comment_for_arizonas_ad_hoc_committee_on_election_integrity.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/comment-for-arizonas-ad-hoc-committee-on-election-integrity/",
+    "type": "commentary",
+    "title": "Comment for Arizona’s Ad Hoc Committee on Election Integrity",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-11-14T21:39:01",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_comment_to_the_office_of_science_and_technology_policy_regulatory_reform_on_artificial_intelligence.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/comment-to-the-office-of-science-and-technology-policy-regulatory-reform-on-artificial-intelligence/",
+    "type": "commentary",
+    "title": "Comment to the Office of Science and Technology Policy: Regulatory Reform on Artificial Intelligence",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-10-28T22:32:19",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_data_centers_make_easy_targets_for_rising_energy_bills_but_they_are_poor_scapegoats.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/data-centers-make-easy-targets-for-rising-energy-bills-but-they-are-poor-scapegoats/",
+    "type": "commentary",
+    "title": "Data Centers Make Easy Targets For Rising Energy Bills, But They Are Poor Scapegoats",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-01-15T14:47:43",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_dont_just_tell_me_your_pdoom_tell_me_your_conditionals.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/dont-just-tell-me-your-pdoom-tell-me-your-conditionals/",
+    "type": "commentary",
+    "title": "Don’t Just Tell Me Your p(doom), Tell Me Your Conditionals",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-10-03T19:03:36",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_how_ai_is_changing_hiring.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/how-ai-is-changing-hiring/",
+    "type": "commentary",
+    "title": "How AI Is Changing Hiring",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-09-12T18:50:17",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_introducing_my_new_ai_tracking_site_ai_policy_hub.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/introducing-my-new-ai-tracking-site-ai-policy-hub/",
+    "type": "commentary",
+    "title": "Introducing My New AI Tracking Site: AI Policy Hub",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-04-29T17:17:38",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_the_ai_revolution_is_running_ahead_of_the_workplace.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-ai-revolution-is-running-ahead-of-the-workplace/",
+    "type": "commentary",
+    "title": "The AI Revolution Is Running Ahead of the Workplace",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-07-11T13:11:31",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_the_hidden_price_tag_of_californias_ai_oversight_bill.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-hidden-price-tag-of-californias-ai-oversight-bill/",
+    "type": "commentary",
+    "title": "The Hidden Price Tag of California’s AI Oversight Bill",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-09-09T09:30:00",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_the_mythos_moment_and_the_reordering_of_ai_governance.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-mythos-moment-and-the-reordering-of-ai-governance/",
+    "type": "commentary",
+    "title": "The Mythos Moment and the Reordering of AI Governance",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-07-15T15:25:39",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_the_phenomenology_of_getting_agi_pilled.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/the-phenomenology-of-getting-agi-pilled/",
+    "type": "commentary",
+    "title": "The Phenomenology of Getting AGI-Pilled",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-03-05T16:19:41",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_when_anthropic_and_the_pentagon_went_to_war.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/when-anthropic-and-the-pentagon-went-to-war/",
+    "type": "commentary",
+    "title": "When Anthropic and the Pentagon Went to War",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2026-04-29T14:44:14",
+    "method": "exact_path"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_commentary_will_ai_agents_make_the_perfect_contract.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/will-ai-agents-make-the-perfect-contract/",
+    "type": "commentary",
+    "title": "Will AI Agents Make The Perfect Contract?",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-10-29T15:09:56",
+    "method": "exact_path"
   },
   {
     "file": "Will_Rinehart/www_aei_org_events_americas_ai_action_plan_analyzing_the_strategy_for_global_leadership.txt",
@@ -11109,6 +14426,30 @@
       "Gary J. Schmitt"
     ],
     "date": "2006-06-30T00:00:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_op_eds_why_new_yorks_new_ai_legislation_is_problematic.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/why-new-yorks-new-ai-legislation-is-problematic/",
+    "type": "commentary",
+    "title": "Why New York’s New AI Legislation Is Problematic",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-06-11T09:20:00",
+    "method": "slug_suffix"
+  },
+  {
+    "file": "Will_Rinehart/www_aei_org_op_eds_why_utahs_simple_social_media_reform_could_set_a_dangerous_privacy_precedent.txt",
+    "folder_author": "Will Rinehart",
+    "url": "https://www.aei.org/commentary/why-utahs-simple-social-media-reform-could-set-a-dangerous-privacy-precedent/",
+    "type": "commentary",
+    "title": "Why Utah’s ‘Simple’ Social Media Reform Could Set a Dangerous Privacy Precedent",
+    "scholars": [
+      "Will Rinehart"
+    ],
+    "date": "2025-02-24T16:19:19",
     "method": "slug_suffix"
   },
   {

@@ -1,5 +1,27 @@
 [
   {
+    "file": "Brent_Orrell/www_aei_org_articles_lights_out.txt",
+    "slug": "lights_out",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/commentary/lights-out/",
+        "type": "commentary",
+        "date": "2019-10-22T13:00:09",
+        "scholars": [
+          "Brent Orrell"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/commentary/lights_out/",
+        "type": "commentary",
+        "date": "2014-12-15T01:00:31",
+        "scholars": [
+          "James V. DeLong"
+        ]
+      }
+    ]
+  },
+  {
     "file": "Brent_Orrell/www_aei_org_events_unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19.txt",
     "slug": "unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19",
     "candidates": [
@@ -18,6 +40,28 @@
         "type": "report",
         "date": "2021-10-20T04:01:25",
         "scholars": []
+      }
+    ]
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_research_products_report_land_of_opportunity_advancing_the_american_dream.txt",
+    "slug": "the_american_dream",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/multimedia/the-american-dream/",
+        "type": "multimedia",
+        "date": "2014-02-07T09:15:00",
+        "scholars": [
+          "Karlyn Bowman"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/commentary/the-american-dream/",
+        "type": "commentary",
+        "date": "2007-03-22T01:00:00",
+        "scholars": [
+          "Norman J. Ornstein"
+        ]
       }
     ]
   },

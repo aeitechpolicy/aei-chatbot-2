@@ -1,83 +1,27 @@
 [
   {
-    "file": "Brent_Orrell/www_aei_org_articles_avoiding_hooverville_why_we_need_to_extend_and_reform_pandemic_unemployment_insurance.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Alex Brill"
-    ],
-    "url": "https://www.aei.org/research-products/testimony/unemployment-insurance/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_articles_brave_new_technology.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "AEI"
-    ],
-    "url": "https://www.aei.org/press/technology/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_articles_embracing_radical_uncertainty.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "John H. Makin"
-    ],
-    "url": "https://www.aei.org/research-products/report/uncertainty/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_articles_how_to_flatten_the_jobless_curve_by_revisiting_unemployment_benefits.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Joseph  M.  Becker"
-    ],
-    "url": "https://www.aei.org/research-products/book/unemployment-benefits/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_articles_staunching_the_bleeding_and_starting_the_recovery.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "John H. Makin"
-    ],
-    "url": "https://www.aei.org/research-products/report/the-recovery/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_articles_vaccinating_the_prison_population_will_help_protect_all_of_america.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Lynne V. Cheney"
-    ],
-    "url": "https://www.aei.org/research-products/book/america/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_articles_what_the_conservative_version_of_cancel_culture_looks_like.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "John H. Makin"
-    ],
-    "url": "https://www.aei.org/economics/economic-fluctuations-and-growth/like/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_articles_with_affirmative_action_gone_we_should_focus_admissions_policies_on_poverty.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "AEI"
-    ],
-    "url": "https://www.aei.org/press/poverty/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_commentary_what_anthropics_internal_study_suggests_about_the_future_of_work.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Scott Winship"
-    ],
-    "url": "https://www.aei.org/multimedia/the-future-of-work/"
-  },
-  {
     "file": "Brent_Orrell/www_aei_org_domestic_policy_reasonable_panic.txt",
     "folder_author": "Brent Orrell",
     "api_scholars": [
       "John H. Makin"
     ],
     "url": "https://www.aei.org/research-products/report/panic/"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_domestic_policy_the_quiet_ai_revolution.txt",
+    "folder_author": "Brent Orrell",
+    "api_scholars": [
+      "Michael A. Ledeen"
+    ],
+    "url": "https://www.aei.org/commentary/revolution/"
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_domestic_policy_up_in_the_air.txt",
+    "folder_author": "Brent Orrell",
+    "api_scholars": [
+      "Michael Auslin"
+    ],
+    "url": "https://www.aei.org/commentary/up-in-the-air/"
   },
   {
     "file": "Brent_Orrell/www_aei_org_events_hidden_workers_untapped_talent.txt",
@@ -96,38 +40,6 @@
     "url": "https://www.aei.org/multimedia/the-future-of-work/"
   },
   {
-    "file": "Brent_Orrell/www_aei_org_op_eds_lonely_and_stressed_how_working_from_home_is_affecting_americans_mental_health.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Sally Satel"
-    ],
-    "url": "https://www.aei.org/multimedia/mental-health/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_op_eds_the_new_workplace_gender_imbalance_social_capital_and_job_satisfaction.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Karlyn Bowman"
-    ],
-    "url": "https://www.aei.org/multimedia/job-satisfaction/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_op_eds_we_asked_hundreds_of_unemployed_americans_whats_keeping_them_out_of_work_its_not_unemployment_benefits.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Joseph  M.  Becker"
-    ],
-    "url": "https://www.aei.org/research-products/book/unemployment-benefits/"
-  },
-  {
-    "file": "Brent_Orrell/www_aei_org_research_products_report_land_of_opportunity_advancing_the_american_dream.txt",
-    "folder_author": "Brent Orrell",
-    "api_scholars": [
-      "Karlyn Bowman"
-    ],
-    "url": "https://www.aei.org/multimedia/the-american-dream/"
-  },
-  {
     "file": "Clay_Calvert/www_aei_org_events_cheap_fakes_and_dirty_politics_examining_manipulated_media_and_platform_accountability.txt",
     "folder_author": "Clay Calvert",
     "api_scholars": [
@@ -142,22 +54,6 @@
       "John E. Calfee"
     ],
     "url": "https://www.aei.org/research-products/testimony/first-amendment-issues/"
-  },
-  {
-    "file": "Shane_Tews/www_aei_org_articles_russians_arent_just_hacking_the_dnc_they_are_hacking_america.txt",
-    "folder_author": "Shane Tews",
-    "api_scholars": [
-      "Lynne V. Cheney"
-    ],
-    "url": "https://www.aei.org/research-products/book/america/"
-  },
-  {
-    "file": "Shane_Tews/www_aei_org_articles_to_overhaul_its_networks_the_government_should_learn_from_corporate_america.txt",
-    "folder_author": "Shane Tews",
-    "api_scholars": [
-      "Lynne V. Cheney"
-    ],
-    "url": "https://www.aei.org/research-products/book/america/"
   },
   {
     "file": "Shane_Tews/www_aei_org_events_navigating_the_post_world_radiocommunication_conference_outlook_for_wireless_innovation.txt",
@@ -176,14 +72,6 @@
     "url": "https://www.aei.org/technology-and-innovation/telecommunications/tech-policy-2015-year-ahead/"
   },
   {
-    "file": "Shane_Tews/www_aei_org_op_eds_steering_the_transatlantic_partnership_toward_innovation.txt",
-    "folder_author": "Shane Tews",
-    "api_scholars": [
-      "Natalie Goodnow"
-    ],
-    "url": "https://www.aei.org/pethokoukis/innovation/"
-  },
-  {
     "file": "Shane_Tews/www_aei_org_technology_and_innovation_are_humans_the_greatest_bottleneck_to_ai_progress.txt",
     "folder_author": "Shane Tews",
     "api_scholars": [
@@ -192,36 +80,20 @@
     "url": "https://www.aei.org/carpe-diem/progress/"
   },
   {
+    "file": "Shane_Tews/www_aei_org_technology_and_innovation_how_the_vatican_is_shaping_the_ethics_of_artificial_intelligence.txt",
+    "folder_author": "Shane Tews",
+    "api_scholars": [
+      "James Q. Wilson"
+    ],
+    "url": "https://www.aei.org/commentary/artificial-intelligence/"
+  },
+  {
     "file": "Shane_Tews/www_aei_org_technology_and_innovation_open_banking_data_portability_the_future_of_financial_innovation.txt",
     "folder_author": "Shane Tews",
     "api_scholars": [
       "Natalie Goodnow"
     ],
     "url": "https://www.aei.org/pethokoukis/innovation/"
-  },
-  {
-    "file": "Will_Rinehart/www_aei_org_articles_how_tech_regulatory_approaches_have_changed_and_not_for_the_better.txt",
-    "folder_author": "Will Rinehart",
-    "api_scholars": [
-      "Karlyn Bowman"
-    ],
-    "url": "https://www.aei.org/multimedia/better/"
-  },
-  {
-    "file": "Will_Rinehart/www_aei_org_articles_how_the_vetocracy_paralyzes_progress.txt",
-    "folder_author": "Will Rinehart",
-    "api_scholars": [
-      "Mark J. Perry"
-    ],
-    "url": "https://www.aei.org/carpe-diem/progress/"
-  },
-  {
-    "file": "Will_Rinehart/www_aei_org_articles_whats_behind_the_antitrust_ruling_against_google.txt",
-    "folder_author": "Will Rinehart",
-    "api_scholars": [
-      "Mark J. Perry"
-    ],
-    "url": "https://www.aei.org/carpe-diem/google/"
   },
   {
     "file": "Will_Rinehart/www_aei_org_events_americas_ai_action_plan_analyzing_the_strategy_for_global_leadership.txt",

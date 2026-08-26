@@ -259,6 +259,27 @@ async function main() {
     JSON.stringify(authorIndex, null, 2)
   );
 
+  const indexPath = path.join(OUT_DIR, 'aei-index.json');
+  const existing = fs.existsSync(indexPath)
+    ? JSON.parse(fs.readFileSync(indexPath, 'utf8'))
+    : [];
+
+  // Previously-known live count per type, so a fetch that comes back
+  // suspiciously thin (endpoint returns a handful of items where there were
+  // tens of thousands) can be told apart from a type that legitimately
+  // shrank. Guards against exactly the failure mode that "items.length > 0"
+  // alone doesn't catch: an endpoint that answers 200 with a near-empty
+  // result (e.g. a content type that isn't populated on this host) still
+  // looks "successful" but isn't a complete picture of that type.
+  const existingLiveCountByType = {};
+  for (const r of existing) {
+    if (!r.delisted_at) {
+      existingLiveCountByType[r.type] = (existingLiveCountByType[r.type] || 0) + 1;
+    }
+  }
+  const DELIST_SAFETY_FRACTION = 0.5;
+  const DELIST_SAFETY_MIN_SAMPLE = 20;
+
   const fetched = [];
   const coveredTypes = new Set();
   for (const restBase of CONTENT_TYPES) {
@@ -270,24 +291,29 @@ async function main() {
       console.error(`  ${restBase} failed: ${err.message}; continuing`);
       continue;
     }
+    const previousLive = existingLiveCountByType[restBase] || 0;
     // A 200 with zero items (WAF hiccup, rate limiting, transient API glitch)
     // is indistinguishable from "this type legitimately has no live items" —
     // treat it the same as a failed fetch and skip delisting for this type
     // this run, rather than risk mass-delisting everything of that type.
-    if (items.length > 0) {
-      coveredTypes.add(restBase);
-    } else {
+    if (items.length === 0) {
       console.warn(`  ${restBase}: fetched 0 items; skipping delisting for this type this run`);
+    } else if (
+      previousLive >= DELIST_SAFETY_MIN_SAMPLE &&
+      items.length < previousLive * DELIST_SAFETY_FRACTION
+    ) {
+      console.warn(
+        `  ${restBase}: fetched only ${items.length} item(s), far fewer than the ` +
+        `${previousLive} previously known live record(s); treating as an incomplete ` +
+        `fetch and skipping delisting for this type this run`
+      );
+    } else {
+      coveredTypes.add(restBase);
     }
     for (const item of items) {
       fetched.push(toRecord(item, restBase, authorIndex));
     }
   }
-
-  const indexPath = path.join(OUT_DIR, 'aei-index.json');
-  const existing = fs.existsSync(indexPath)
-    ? JSON.parse(fs.readFileSync(indexPath, 'utf8'))
-    : [];
   const isFullHarvest = !modifiedAfter;
   const records = mergeRecords(existing, fetched, { isFullHarvest, coveredTypes });
 
