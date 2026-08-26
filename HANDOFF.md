@@ -147,23 +147,22 @@ interface tweaks like error banners.)*
 
 ## Deployment / ops history
 
-*(Reconstructed from the README, workflow configs, and commit history — not
-firsthand deployment notes. Verify against the actual Render/Vercel/GitHub
-dashboards before relying on it.)*
+*(Reconstructed from workflow configs and commit history — not firsthand
+deployment notes. Verify against the actual Render/Vercel/GitHub dashboards
+before relying on it.)*
 
-**Hosting.** Backend runs on Render, frontend on Vercel, both under the
-`aeitechpolicy` GitHub org/account, with Together AI as the LLM provider.
-The live frontend is at `aei-chatbot.vercel.app`. Together AI needs an
-account funded (~$5) and its API key set as `TOGETHER_API_KEY` in Render's
-environment variables — the README flags this as an outstanding to-do
-rather than something already configured.
-
-**Render's storage doesn't persist across deploys.** `backend/chats/` and
-`backend/knowledge_base/` are read/written as plain files on disk. On
-Render's free/standard tier that disk resets on every redeploy, so chat
-history and any manually-uploaded files can be lost unless a persistent
-disk or external storage is added — noted as unresolved in the README's
-"Future Steps".
+**How this actually runs, day to day.** Nothing here runs on an AEI-owned
+computer — it's three outside, pay-as-you-go services stitched together.
+One (Render) runs the backend around the clock: the part that stores chat
+history, reads the article library, and talks to the AI. Another (Vercel)
+just serves the website itself — the page you actually visit and type
+into. And a third (Together AI) is the company that owns and runs the
+actual language model doing the writing: every question gets sent to them
+along with the relevant article text, and they send back the answer. None
+of that is free — Together AI in particular bills per use, which is why
+keeping it funded (see Future objective #1 below) isn't a one-time setup
+step but an ongoing cost: if the balance runs out, the site stays up but
+stops being able to answer anything.
 
 **Self-hosted runner (Aug 2026).** `harvest.yml` and `biweekly-scrape.yml`
 originally ran on GitHub's own cloud runners, but AEI's internal site (used
@@ -188,3 +187,54 @@ tracked with Git LFS (`backend/.gitattributes`). Every workflow step and
 local clone that touches this file needs `git lfs` set up / checkout with
 `lfs: true`, or it'll see a small placeholder file instead of the real
 data.
+
+---
+
+## Future objectives
+
+**1. Fund the chatbot.** The assistant runs on Together AI, which is a paid
+API — without a funded account and a valid `TOGETHER_API_KEY`, chat
+requests fail outright. This is the top priority simply because nothing
+else here matters if the bot can't respond.
+
+**2. Get the scraper finding commentary articles again.** AEI's main public
+site (`www.aei.org`) sits behind Cloudflare, which blocks the kind of
+automated requests this scraper makes — that's why the whole harvest
+pipeline reads from AEI's staging site (`stage.aei.org`) instead, then
+rewrites URLs back to `www.aei.org` for display (see `harvest-aei-index.js`
+and `fetch-missing-articles.js`). That workaround mostly holds, but as of
+the Aug 26, 2026 fix (`dbb4018`), the "commentary" content type specifically
+— roughly 52,000 published pieces, one of AEI's biggest categories — isn't
+actually synced to the staging site the scraper reads from. The staging API
+currently reports about 1 commentary item where there should be tens of
+thousands. The pipeline was patched to stop that near-empty response from
+wiping out everything already known about commentary (see the delisting
+safety check in `harvest-aei-index.js`), but that's a safety net, not a
+fix: it means new commentary pieces can't be discovered through this
+pipeline at all right now. Someone needs to find another way to reach that
+content — a different endpoint, a Cloudflare-compatible way to read the
+live site directly, or getting commentary content actually synced to
+staging.
+
+**3. Make search less ad hoc — look at Okapi BM25.** Right now,
+`aeiScraper.js`'s `scoreRelevance()` just counts how many times each query
+word appears in an article's title and excerpt — a simple, somewhat
+arbitrary scoring method that doesn't account for article length or how
+common/rare a word is. Okapi BM25 is a well-established, deterministic
+ranking formula (no LLM or randomness involved) built for exactly this
+problem — scoring a set of documents against a query's keywords — and is
+the standard baseline behind most real search engines. Swapping the current
+word-count scorer for a BM25 implementation should produce more relevant
+top-N article matches without changing anything else about the pipeline.
+
+**4. Look for other improvements — including memory.** Worth a broader
+look at what else would make the assistant noticeably better. One concrete
+gap: `routes/chat.js` only sends the last 10 messages of the current chat
+to the model as context (`contextMessages = chatMessages.messages.slice(-10)`)
+— there's no memory beyond that window, and nothing carries over between
+separate chats even within the same domain. Longer conversations will
+eventually lose track of earlier context, and the assistant can't
+recall anything from a user's past chats. Worth exploring ways to extend
+that — summarizing older turns instead of dropping them, or some form of
+persistent memory per domain or per user — so the bot isn't limited to
+whatever fits in the last 10 messages.
