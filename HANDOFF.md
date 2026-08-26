@@ -216,7 +216,22 @@ content — a different endpoint, a Cloudflare-compatible way to read the
 live site directly, or getting commentary content actually synced to
 staging.
 
-**3. Make search less ad hoc — look at Okapi BM25.** Right now,
+**3. Stop harvesting the entire site for four scholars.** A full harvest
+(`harvest-aei-index.js`) fetches every content-bearing type across all of
+AEI's output — every scholar, every category, ~120k records — even though
+the chatbot only ever serves four scholars
+(`backend/utils/servedScholars.js`). Which records matter isn't decided
+until the very last step of the pipeline, `build-slim-index.js`; everything
+before that fetches and stores all of it regardless. That's most of why
+`aei-index.json` is 130+MB and needs Git LFS, and part of why the workflow
+needs its own timeout and a dedicated always-on runner. Worth checking
+whether AEI's API can filter by scholar/author on the server side, so a
+harvest for four people doesn't require indexing everyone else's work too
+— though that may not be possible if the API doesn't support filtering by
+the custom "guest author" field the scholar names live in, in which case
+this may not have a real fix short of AEI changing their API.
+
+**4. Make search less ad hoc — look at Okapi BM25.** Right now,
 `aeiScraper.js`'s `scoreRelevance()` just counts how many times each query
 word appears in an article's title and excerpt — a simple, somewhat
 arbitrary scoring method that doesn't account for article length or how
@@ -227,7 +242,7 @@ the standard baseline behind most real search engines. Swapping the current
 word-count scorer for a BM25 implementation should produce more relevant
 top-N article matches without changing anything else about the pipeline.
 
-**4. Look for other improvements — including memory.** Worth a broader
+**5. Look for other improvements — including memory.** Worth a broader
 look at what else would make the assistant noticeably better. One concrete
 gap: `routes/chat.js` only sends the last 10 messages of the current chat
 to the model as context (`contextMessages = chatMessages.messages.slice(-10)`)
