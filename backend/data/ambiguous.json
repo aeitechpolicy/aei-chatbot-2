@@ -26,7 +26,51 @@
     "slug": "unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19",
     "candidates": [
       {
-        "url": "https://www.aei.org/opportunity-social-mobility/unemployment-insurance-at-a-crossroads-tracing-program-design-during-and-beyond-covid-19/",
+        "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/unemployment-insurance-at-a-crossroads-tracing-program-design-during-and-beyond-covid-19/",
+        "type": "posts",
+        "date": "2021-12-10T20:30:38",
+        "scholars": [
+          "Brent Orrell",
+          "Matt Weidinger",
+          "Mason M. Bishop"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/research-products/report/unemployment-insurance-at-a-crossroads-tracing-program-design-during-and-beyond-covid-19/",
+        "type": "report",
+        "date": "2021-10-20T04:01:25",
+        "scholars": []
+      }
+    ]
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_opportunity_social_mobility_its_not_the_economy_stupid.txt",
+    "slug": "its_not_the_economy_stupid",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/its-not-the-economy-stupid/",
+        "type": "posts",
+        "date": "2020-04-07T19:28:15",
+        "scholars": [
+          "Brent Orrell"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/commentary/its-not-the-economy-stupid/",
+        "type": "commentary",
+        "date": "2012-03-09T12:05:00",
+        "scholars": [
+          "J.D. Kleinke"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Brent_Orrell/www_aei_org_opportunity_social_mobility_unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19.txt",
+    "slug": "unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/unemployment-insurance-at-a-crossroads-tracing-program-design-during-and-beyond-covid-19/",
         "type": "posts",
         "date": "2021-12-10T20:30:38",
         "scholars": [
@@ -86,6 +130,50 @@
           "Claude Barfield",
           "James K. Glassman",
           "Mario Loyola",
+          "Shane Tews"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_technology_and_innovation_making_sense_of_music_streaming.txt",
+    "slug": "making_sense_of_music_streaming",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/making-sense-of-music-streaming/",
+        "type": "posts",
+        "date": "2024-02-15T10:55:00",
+        "scholars": [
+          "Shane Tews"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/multimedia/making-sense-of-music-streaming/",
+        "type": "multimedia",
+        "date": "2024-01-31T21:35:13",
+        "scholars": [
+          "Shane Tews"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Shane_Tews/www_aei_org_technology_and_innovation_unpacking_the_data_dilemma.txt",
+    "slug": "unpacking_the_data_dilemma",
+    "candidates": [
+      {
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/unpacking-the-data-dilemma/",
+        "type": "posts",
+        "date": "2024-07-22T09:45:00",
+        "scholars": [
+          "Shane Tews"
+        ]
+      },
+      {
+        "url": "https://www.aei.org/multimedia/unpacking-the-data-dilemma/",
+        "type": "multimedia",
+        "date": "2024-07-11T20:00:00",
+        "scholars": [
           "Shane Tews"
         ]
       }
