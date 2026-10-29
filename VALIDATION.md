@@ -1,27 +1,50 @@
-# Local validation
+# Validation record
 
-Checked October 29, 2026 with bundled Node 24.22.1. The free database adaptation now passes local checks.
+Checked October 29, 2026 with bundled Node 24.22.1. Automated AI replies are simulated; no paid API calls were made.
 
-- Backend: 31 tests passed, zero failures. This includes the original login/ownership/allowance checks, the Neon HTTP-driver integration against local PostgreSQL, durable histories and pending reservations across database reopen, shared budget reservations, outages, failed record writes, full UTC days across daylight-saving changes, invalid destinations, and current Together SDK compatibility without retries.
-- Website: 6 tests passed, zero failures. They cover sign-in, rejected credentials, session headers and expiry, the Chatbot RA report, safe rendering of hostile HTML, and preserved basic message formatting.
-- Production website build passed. Existing build-tool deprecation and browser-data notices remain; there were no build errors.
-- Backend dependency audit reported zero known vulnerabilities in the installed locked package set. This is not a guarantee of complete application security or a full audit of the legacy website build toolchain.
-- Compatible backend patches were applied, Together SDK updated to 1.0.0, and the query parser pinned to qs 6.17.1 to address the earlier audit findings. The website's Axios lockfile was also patched.
-- No real Neon or Together requests were made by tests, no Together credits were consumed, and no account plan or hosting configuration was changed by the tests or assistant. The user has separately saved Render settings, as recorded in the setup guide.
+## Qwen follow-up — prepared locally, not yet published
 
-Commands run from the appropriate backend/frontend folders:
+Base: merged release 994b6dd99493dcbbdd92e901a9d699c0698a146e, confirmed as GitHub main on October 29. The user selected Qwen3.8 Flash and deferred new payments. Six backend code/test files and four root documentation files change; frontend source and dependencies are unchanged.
+
+- Backend: **32 tests passed, zero failures** after the Qwen changes. The suite covers sign-in, account ownership, allowances, concurrent reservations, local PostgreSQL integration, durability, database outages, failed writes, UTC boundaries, and Together SDK serialization without automatic retries.
+- The SDK check verifies the exact model ID Qwen/Qwen3.8-Flash, 1,024 output tokens, and reasoning: { enabled: false } survive request serialization.
+- Default estimate calculations use $0.15/million input tokens and $0.47/million output tokens. Budget tests specify independent test rates so pricing changes do not weaken the allowance checks.
+- A simulated reasoning-only response with blank answer text is rejected safely. Known token usage/cost is recorded as failed, reasoning text is not returned, no empty assistant message is saved, and the provider is called once.
+- Tests use the real Neon HTTP driver intercepted by local PGlite PostgreSQL. They do not connect to the user's Neon project or Together account.
+- No real-model response, provider acceptance of the reasoning setting, research-quality result, or actual provider cost has been verified. Qwen is a selected candidate, not a proven best model for AEI.
+
+Command run from backend:
+
+    node --test test/private-pilot.test.js test/ledger-concurrency.test.js test/postgres-storage.test.js test/together-client.test.js
+
+Result: tests 32; pass 32; fail 0; exit status 0.
+
+## Base private-pilot release
+
+Before PR #3, 31 backend tests and 6 website tests passed, and the production website build passed. Website tests cover sign-in, rejected credentials, session headers and expiry, the RA usage report, safe rendering of hostile HTML, and basic message formatting. The frontend is unchanged by the Qwen follow-up, so those checks were not repeated for this backend/documentation update.
+
+The backend locked-dependency audit reported zero known vulnerabilities. Compatible backend patches, Together SDK 1.0.0, qs 6.17.1, and the website Axios patch were included in the base release. This does not constitute a complete security audit; the legacy website toolchain still has maintenance work. Existing build-tool deprecation and browser-data notices did not prevent the build.
+
+Commands run from the appropriate backend/frontend folders for the base release:
 
     node --test test/private-pilot.test.js test/ledger-concurrency.test.js test/postgres-storage.test.js test/together-client.test.js
     node node_modules/react-scripts/bin/react-scripts.js test --watchAll=false --runInBand
     node node_modules/react-scripts/bin/react-scripts.js build
     npm audit --json
 
-Earlier browser previews remain in outputs/Private Pilot Preview. Their dollar amounts and replies are simulated. Today's database implementation retains that interface, and its response formats were checked by the integration tests.
+Earlier browser previews remain in outputs/Private Pilot Preview. Their replies and amounts are simulated.
 
-Configuration status: the user reports saving DATABASE_URL, both private passwords, NODE_VERSION=24, and CHATBOT_ALLOWED_ORIGINS=https://aei-chatbot.vercel.app in Render using Save only. Values and live activation have not been independently verified.
+## Live release checks — October 29
 
-The user confirms Vercel uses aeitechpolicy/aei-chatbot-2, and Render uses that same repository on branch main. GitHub main was checked and still matches the draft base, 17db898bb9734a4f97e82ddbc48d6dc8481e49fa.
+- PR #3 merged into main as 994b6dd99493dcbbdd92e901a9d699c0698a146e. All 28 intended files at review head 3591aac80d8c9046fb77cf691d660e33306a10bf matched the tested copy by Git blob SHA, with no unexpected files.
+- Vercel reported a successful deployment. The public sign-in screen and both account labels were inspected directly.
+- The user reported Render Events live for 994b6dd at 11:29 a.m. Eastern.
+- User-confirmed checks passed: Intern sign-in, RA sign-in, usage report, CSV download, empty-chat creation, separate account histories in both directions, and both accounts' chats surviving a backend restart. Reauthentication after restart was expected.
+- The user saved DATABASE_URL, both passwords, NODE_VERSION=24, and CHATBOT_ALLOWED_ORIGINS in Render. Secret values were not shared with or inspected by the assistant.
+- No live AI question has been sent. No new payment, paid hosting upgrade, or paid AI test was performed by the assistant.
 
-Still required before use: confirm Vercel's production branch, publish the reviewed backend and website together, verify both live sign-ins and account ownership, check the actual Neon connection and persistence across a backend restart, download a live report, confirm model availability/current rates, and perform a small approved AI test with a fresh key. Record the deployed revisions and results here. See PRIVATE PILOT SETUP.md. The new features are not live yet.
+## Remaining checks
 
-Documentation updated October 29: README.md, HANDOFF.md, and PRIVATE PILOT SETUP.md now describe the two account names, free-hosting plan, saved settings, current archive-based research behavior, estimated-cost limits, and remaining publication checks. No code changes were made in this documentation update.
+Publish and inspect the Qwen follow-up, then confirm the new Render deployment. Keep Together disconnected until the user authorizes funding and a small live test. Later verify one real answer, source support, returned token usage, and the estimated usage record against Together's billing. A new key alone does not fund requests. Existing app allowances do not cap activity outside this chatbot.
+
+Login, chat storage, account separation, and restart persistence are live. Retrieval quality, source-grounded General mode, cross-scholar synthesis and citation verification remain future research work; switching models alone does not complete them.

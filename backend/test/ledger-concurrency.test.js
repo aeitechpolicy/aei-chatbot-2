@@ -7,7 +7,7 @@ const { createPilot } = require('../utils/pilot');
 
 test('separate ledger connections share the same pending budget reservations', async t => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-ledger-concurrency-'));
-  const env = { CHATBOT_INTERN_PASSWORD: 'test-only-long-password', CHATBOT_DAILY_ESTIMATE_USD: '0.003' };
+  const env = { CHATBOT_INTERN_PASSWORD: 'test-only-long-password', CHATBOT_DAILY_ESTIMATE_USD: '0.003', CHATBOT_INPUT_USD_PER_MILLION: '1', CHATBOT_OUTPUT_USD_PER_MILLION: '1' };
   const options = { env, now: () => Date.parse('2026-10-28T18:00:00Z'), dataDir: dir };
   const first = createPilot(options); const second = createPilot(options);
   t.after(async () => { await first.close(); await second.close(); fs.rmSync(dir, { recursive: true, force: true }); });

@@ -1,6 +1,6 @@
 # Maintainer handoff
 
-Updated October 29, 2026. This describes the locally tested private-pilot draft, not a confirmed live deployment. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md) for current status. The original baseline checkout and investigation evidence remain separate and unchanged.
+Updated October 29, 2026. This describes private-pilot release 994b6dd, merged through PR #3 and deployed to the existing website/backend. The user has confirmed both logins, report/CSV access, separate chats, and persistence across a backend restart. This checkout adds a locally validated Qwen3.8 Flash follow-up, not yet published or tested against the real model. AI remains disconnected and no new payment is approved. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md) for current status. The original baseline checkout and investigation evidence remain separate and unchanged.
 
 ## Audience and operating plan
 
@@ -8,7 +8,7 @@ Start with two password accounts, Chatbot Intern and Chatbot RA, on the existing
 
 The user reports saving DATABASE_URL, CHATBOT_INTERN_PASSWORD, CHATBOT_RA_PASSWORD, NODE_VERSION=24, and CHATBOT_ALLOWED_ORIGINS=https://aei-chatbot.vercel.app as ordinary Render service variables using Save only. Values have not been inspected. The user also created an environment group; its current contents/link state have not been independently verified. Ordinary service variables take precedence over a matching group variable. Do not duplicate secrets into Vercel or source files.
 
-No new code has been published and no live database or AI call has been tested. The GitHub connector currently has read access but no push permission to aeitechpolicy/aei-chatbot-2; source publication needs the owner's authorized GitHub session or a connection with write access. The user confirms Vercel is connected to aeitechpolicy/aei-chatbot-2. The user also confirms Render deploys aeitechpolicy/aei-chatbot-2, branch main. Vercel's production branch still needs confirmation before merging onto a production branch.
+The user published the code manually through PR #3. GitHub main is merge 994b6dd; Vercel reports a successful deployment for that merge and the public website shows the new sign-in page. Render Events was reported live for the same version at 11:29 a.m. Eastern on October 29. The user has exercised live database reads/writes and restart persistence without sending an AI question. The assistant has not entered account credentials or made a paid AI call. The GitHub connector has read access only; the user performs signed-in changes on Windows.
 
 ## Code map
 
@@ -47,7 +47,9 @@ Defaults: 50 attempts per UTC day overall, 30 per account/day, five per minute/a
 
 The estimated daily app allowance is $0.50. The app reserves a conservative amount before calling Together and later records returned token usage. Failed requests without confirmed usage retain an uncertain reservation; pending reservations survive restarts. Do not release these as free without evidence. Reports return at most the latest 5,000 accessible usage records.
 
-The fixed model is meta-llama/Llama-3.3-70B-Instruct-Turbo. No visitor-selected model or Kimi fallback is implemented. Current availability and pricing remain unverified. Default input and output estimates are each $1.04/million tokens from the supplied October bill. Price settings and source are recorded with usage rows. No automatic paid retries are enabled.
+This follow-up fixes the model to Qwen/Qwen3.8-Flash; the user confirmed Serverless availability in Together's dashboard. Default estimates are $0.15/million input tokens and $0.47/million output tokens, from https://www.together.ai/models/qwen3-8-flash, checked October 29. Price settings and source are recorded with usage rows. Existing CHATBOT_INPUT_USD_PER_MILLION, CHATBOT_OUTPUT_USD_PER_MILLION, or CHATBOT_PRICE_SOURCE environment overrides take precedence; remove obsolete overrides or update them privately before live use. No visitor-selected model or Kimi fallback is implemented.
+
+The request sets reasoning: { enabled: false }, retains the 1,024 output-token limit, and disables automatic retries. A response with blank or missing answer text produces a safe error, records any returned usage as failed, and does not save an empty assistant message or expose reasoning text. Local tests verify SDK serialization and simulated behavior; actual provider acceptance and research quality remain untested. The deployed base release still uses the old Llama Turbo identifier until this follow-up is published. The old model's public page marks it unavailable on Serverless; a dedicated GPU endpoint is not part of this plan.
 
 App allowances cannot prevent someone with the provider key from making requests elsewhere, and estimates are not exact provider billing caps.
 
@@ -91,7 +93,7 @@ Run npm test in backend, npm test -- --watchAll=false --runInBand in frontend, a
 
 ## Publication and troubleshooting
 
-Publish backend and frontend together after reviewing the changes. Keep Together disconnected until live sign-in, database persistence, ownership, and report download work. Then verify model/rates and enable a fresh project-only key for an approved small AI test. Save the actual deployment revisions and live results in VALIDATION.md.
+PR #3 published the matching backend and website together. Both private logins, database access, report download, account separation, and restart persistence now pass by user report. Publish and verify this Qwen follow-up while Together stays disconnected. Later, when the user authorizes funding and a small live AI test, add a fresh chatbot-only project key privately. A new key alone does not fund requests. No paid test or hosting upgrade is currently authorized. For future releases, review the code and coordinate backend/website deployment. Save revisions and results in VALIDATION.md.
 
 - Login setup error: check the two password setting names, length, and that they differ. Do not print their values.
 - Browser connection error: check REACT_APP_API_URL in Vercel, the exact website origin in Render, and whether the service has deployed the updated code/settings.
@@ -99,7 +101,7 @@ Publish backend and frontend together after reviewing the changes. Keep Together
 - Unexpected spending: check Together's authoritative billing records and revoke exposed keys at Together. Removing a Render variable alone does not revoke a provider key.
 - Free-service restart: signing in again is expected; new database-backed chats and usage should remain. Verify this live before relying on the deployment.
 
-The current draft is based on GitHub cleanup commit 17db898. Rolling back to an older unprotected backend is not a safe way to restore AI access: keep Together disconnected while investigating or repairing a failed release.
+The Qwen follow-up is based on merged release 994b6dd99493dcbbdd92e901a9d699c0698a146e, confirmed as GitHub main on October 29. No frontend source or dependencies change in this follow-up. Rolling back to an older unprotected backend is not a safe way to restore AI access: keep Together disconnected while investigating or repairing a failed release.
 
 ## Next research improvements
 

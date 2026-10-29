@@ -19,7 +19,7 @@ async function fixture(t, overrides = {}) {
   const pilot = createPilot({ env, now: () => FIXED, dataDir: dir });
   const manager = new ChatManager(path.join(dir, 'chats'));
   let calls = 0;
-  const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); return overrides.complete ? overrides.complete(request) : answer(); };
+  const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); assert.deepEqual(request.reasoning, { enabled: false }); return overrides.complete ? overrides.complete(request) : answer(); };
   const app = createApp({ env, pilot, complete, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
     manager, knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [])
   } });
@@ -107,7 +107,8 @@ test('request model is fixed and returned usage is recorded without question tex
   assert.equal(saved.chat.messages[0].content, 'private-question-marker');
   const row = (await f.pilot.rows('owner'))[0];
   assert.equal(row.model, MODEL); assert.equal(row.input_tokens, 10000); assert.equal(row.output_tokens, 100);
-  assert.ok(Math.abs(row.estimated_usd - 0.010504) < 1e-10);
+  assert.ok(Math.abs(row.estimated_usd - 0.001547) < 1e-10);
+  assert.equal(row.input_rate, 0.15); assert.equal(row.output_rate, 0.47);
   assert.equal(row.status, 'complete');
   const csv = await (await f.request('/api/usage.csv', { token })).text();
   assert.ok(csv.includes('Chatbot Intern'));
@@ -141,6 +142,20 @@ test('provider errors retain unknown costs and do not expose the raw provider er
   const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } });
   assert.equal(response.status, 500); assert.ok(!(await response.text()).includes('private-provider-error-marker'));
   const row = (await f.pilot.rows('owner'))[0]; assert.equal(row.estimated_usd, null); assert.ok(row.reserved_usd > 0); assert.equal(row.status, 'unknown_cost');
+});
+
+test('a reasoning-only or blank reply records its usage but is not saved as an answer or retried', async t => {
+  const f = await fixture(t, { complete: async () => ({ ...answer(), choices: [{ message: { content: '', reasoning: 'private-reasoning-marker' } }] }) });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } });
+  assert.equal(response.status, 502);
+  const body = await response.json(); assert.equal(body.code, 'empty_answer');
+  assert.ok(!JSON.stringify(body).includes('private-reasoning-marker'));
+  assert.equal(f.calls(), 1);
+  const row = (await f.pilot.rows('owner'))[0];
+  assert.equal(row.status, 'failed'); assert.ok(Math.abs(row.estimated_usd - 0.001547) < 1e-10);
+  const saved = await (await f.request(`/api/chat/${chat.id}`, { token })).json();
+  assert.equal(saved.messages.length, 1); assert.equal(saved.messages[0].role, 'user');
 });
 
 test('missing provider credentials do not crash login or count as a paid request', async t => {

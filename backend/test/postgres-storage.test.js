@@ -82,7 +82,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
     }
     const rows = await pilot.rows('owner');
     assert.equal(rows.length, 2); assert.ok(rows.every(row => row.status === 'complete'));
-    assert.ok(rows.every(row => Math.abs(row.estimated_usd - 0.00572) < 1e-9));
+    assert.ok(rows.every(row => Math.abs(row.estimated_usd - 0.000985) < 1e-9));
     assert.equal((await pilot.rows('supervisor')).length, 1);
     const csv = await pilot.csv('owner');
     assert.ok(csv.includes('Chatbot Intern')); assert.ok(csv.includes('Chatbot RA'));
@@ -125,8 +125,9 @@ test('free database storage through the real Neon HTTP driver', async t => {
   });
 
   await t.test('separate app instances share pending spending reservations', async () => {
-    const first = makePilot({ CHATBOT_DAILY_ESTIMATE_USD: '0.003' });
-    const second = makePilot({ CHATBOT_DAILY_ESTIMATE_USD: '0.003' });
+    const limits = { CHATBOT_DAILY_ESTIMATE_USD: '0.003', CHATBOT_INPUT_USD_PER_MILLION: '1', CHATBOT_OUTPUT_USD_PER_MILLION: '1' };
+    const first = makePilot(limits);
+    const second = makePilot(limits);
     const messages = [{ role: 'user', content: 'A short question' }];
     const results = await Promise.allSettled([first.begin('owner', messages), second.begin('supervisor', messages)]);
     assert.equal(results.filter(result => result.status === 'fulfilled').length, 1);
