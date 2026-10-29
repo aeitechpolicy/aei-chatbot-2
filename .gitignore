@@ -3,3 +3,8 @@ backend/.DS_Store
 node_modules/
 .env
 .env.*
+!.env.example
+backend/.private-data/
+backend/pnpm-lock.yaml
+frontend/pnpm-lock.yaml
+frontend/build/
