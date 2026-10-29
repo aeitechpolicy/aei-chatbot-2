@@ -4,7 +4,7 @@ const path = require('node:path');
 const { DatabaseSync } = require('node:sqlite');
 const { PostgresStorage } = require('../storage/postgres');
 
-const MODEL = 'meta-llama/Llama-3.3-70B-Instruct-Turbo';
+const MODEL = 'Qwen/Qwen3.8-Flash';
 const MAX_OUTPUT_TOKENS = 1024;
 const MAX_INPUT_BYTES = 120000;
 const MAX_QUESTION_CHARS = 6000;
@@ -35,14 +35,14 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   ); CREATE INDEX IF NOT EXISTS usage_started ON usage(started_at);`);
   }
 
-  // These defaults reproduce the user's October 2026 Llama billing rate.
-  // They are estimates, not a promise of Together's current billing price.
-  const inputRate = positiveNumber(env.CHATBOT_INPUT_USD_PER_MILLION, 1.04);
-  const outputRate = positiveNumber(env.CHATBOT_OUTPUT_USD_PER_MILLION, 1.04);
+  // Together's public Qwen3.8 Flash rates, checked October 29, 2026.
+  // Estimates remain separate from the provider's final bill.
+  const inputRate = positiveNumber(env.CHATBOT_INPUT_USD_PER_MILLION, 0.15);
+  const outputRate = positiveNumber(env.CHATBOT_OUTPUT_USD_PER_MILLION, 0.47);
   const dailyBudget = positiveNumber(env.CHATBOT_DAILY_ESTIMATE_USD, 0.50);
   const dailyQuestions = Math.floor(positiveNumber(env.CHATBOT_DAILY_QUESTIONS, 50));
   const personQuestions = Math.floor(positiveNumber(env.CHATBOT_PERSON_DAILY_QUESTIONS, 30));
-  const priceSource = env.CHATBOT_PRICE_SOURCE || 'October 2026 AEI billing export; confirm current rate before live use';
+  const priceSource = env.CHATBOT_PRICE_SOURCE || 'Together Qwen3.8 Flash model page, checked 2026-10-29; estimates, not final billing';
   const accounts = new Map();
   let setupError = null;
   for (const [id, label, password] of [

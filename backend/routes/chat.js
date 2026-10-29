@@ -280,14 +280,19 @@ CITATION INSTRUCTIONS:
       model: MODEL,
       messages: fullMessages,
       max_tokens: MAX_OUTPUT_TOKENS,
+      reasoning: { enabled: false },
       temperature: 0.7,
       stream: false
     });
     aiResult = response;
+    const answerText = response.choices?.[0]?.message?.content;
+    if (typeof answerText !== 'string' || !answerText.trim()) {
+      throw Object.assign(new Error('The model did not return an answer. Check Usage and costs before trying again.'), { status: 502, code: 'empty_answer' });
+    }
 
     const aiResponse = {
       role: 'assistant',
-      content: response.choices[0].message.content,
+      content: answerText,
       sources: relevantFiles,
       searchMode: liveArticles.length > 0 ? 'knowledge_base' : (domainContent && Object.keys(domainContent).length > 0 ? 'knowledge_base' : 'general')
     };
@@ -318,7 +323,7 @@ CITATION INSTRUCTIONS:
       catch { console.error('Unable to update usage; the reserved estimate remains in the ledger.'); }
     }
     console.error('Chat request failed:', { status: error.status, code: error.code });
-    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup'].includes(error.code);
+    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer'].includes(error.code);
     res.status(localCode ? error.status : 500).json({
       error: localCode ? error.message : (error.status === 402 ? 'The Together account has no available credit.' : 'The answer could not be completed. Please check the usage report before retrying.'),
       code: error.status === 402 ? 'credit_limit' : (localCode ? error.code : 'system_error')
