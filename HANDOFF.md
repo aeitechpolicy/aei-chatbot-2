@@ -1,255 +1,106 @@
-# HANDOFF
+# Maintainer handoff
 
-A map of this repo for the next intern. Structural facts only — see the
-pasted section below for deployment/ops history.
+Updated October 29, 2026. This describes the locally tested private-pilot draft, not a confirmed live deployment. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md) for current status. The original baseline checkout and investigation evidence remain separate and unchanged.
 
-## 1. What the chatbot does
+## Audience and operating plan
 
-A full-stack chatbot (Node/Express backend + React frontend) that lets users
-chat with an assistant scoped to one of four AEI scholars (a "domain"), or a
-General mode. Each domain answers from a local archive of that scholar's
-articles: a relevance scorer (`backend/utils/aeiScraper.js`) ranks the
-scholar's known publications against the query using a local index, then
-pulls in the full text of the top matches from `.txt` files in
-`backend/knowledge_base/<Scholar>/` to ground the LLM response (Together AI,
-`meta-llama/Llama-3-70b-chat-hf`). Chat history persists to
-`backend/chats/`. Users can also upload their own `.txt` files into a domain
-via the File Manager UI.
+Start with two password accounts, Chatbot Intern and Chatbot RA, on the existing Vercel website and Render Free backend. Neon Free supplies durable chat and usage storage. Together AI charges separately for model responses. No paid hosting upgrade is part of this plan.
 
-The article archive itself is built and kept current **offline**, by the
-scripts in `backend/scripts/` and the three GitHub Actions workflows below —
-the backend never scrapes AEI.org live at request time.
+The user reports saving DATABASE_URL, CHATBOT_INTERN_PASSWORD, CHATBOT_RA_PASSWORD, NODE_VERSION=24, and CHATBOT_ALLOWED_ORIGINS=https://aei-chatbot.vercel.app as ordinary Render service variables using Save only. Values have not been inspected. The user also created an environment group; its current contents/link state have not been independently verified. Ordinary service variables take precedence over a matching group variable. Do not duplicate secrets into Vercel or source files.
 
-## 2. `backend/scripts/`
+No new code has been published and no live database or AI call has been tested. The GitHub connector currently has read access but no push permission to aeitechpolicy/aei-chatbot-2; source publication needs the owner's authorized GitHub session or a connection with write access. The user confirms Vercel is connected to aeitechpolicy/aei-chatbot-2. The user also confirms Render deploys aeitechpolicy/aei-chatbot-2, branch main. Vercel's production branch still needs confirmation before merging onto a production branch.
 
-Run in this order to go from nothing to a servable archive; the biweekly
-workflow runs steps 1-5 automatically.
+## Code map
 
-| Script | Purpose | When it runs |
-|---|---|---|
-| `harvest-aei-index.js` | Walks the AEI WordPress REST API and writes `data/aei-index.json` (every publication site-wide, ~120k records) and `data/aei-authors.json` (scholar id→name map). No `--modified-after` = full harvest, which also marks records that disappeared from the live site as `delisted_at`. With `--modified-after=<ISO date>`, does an incremental fetch that only adds/updates, never delists. | Manually via `harvest.yml`; incrementally at the start of `biweekly-scrape.yml` |
-| `match-txt-to-urls.js <kb-root>` | Matches existing `knowledge_base/*.txt` files to records in `aei-index.json` by filename (exact path, then slug suffix), writing `data/matches.json`, `data/ambiguous.json`, `data/unmatched.json`, `data/author-audit.json`. | Called by `backfill-metadata.js`; run twice in `biweekly-scrape.yml` (before and after the fetch step) |
-| `fetch-missing-articles.js` | For the four served scholars only, finds index records with no matched `.txt` file yet and aren't delisted, scrapes each article's body from the live AEI page, and writes a new `.txt` into `knowledge_base/<Scholar>/`. Never overwrites an existing file. Writes a run report to `data/fetch-missing-articles-report.json`. | Only in `biweekly-scrape.yml` — this is the only automation that adds new article content |
-| `build-slim-index.js` | Filters the full `aei-index.json` down to just the four served scholars, joins each record to its matched `.txt` file via `matches.json`, writes `data/aei-index-slim.json`. This slim file is the one `aeiScraper.js` actually loads at request time (the 133MB full index is never parsed in the request path — the backend runs on a 512MB Render instance). | End of `backfill-metadata.yml` and `biweekly-scrape.yml`; re-run any time `aei-index.json`, `aei-authors.json`, or `matches.json` change |
-| `backfill-metadata.js` | `npm run backfill:metadata` entry point. Runs `match-txt-to-urls.js`, then transforms `data/matches.json` into `articleMetadata.json` (title/author/date/url per file), merging into the existing file rather than replacing it. `WRITE_METADATA=true` writes; otherwise dry-run (prints what would change). | Only in `backfill-metadata.yml` |
+| File or folder | Responsibility |
+| --- | --- |
+| backend/server.js | Express application; sign-in, session, usage endpoints; authorization before private routes; Together client with retries disabled |
+| backend/utils/pilot.js | Accounts, sessions, request allowances, cost reservations, usage CSV; fixed model and default limits |
+| backend/storage/postgres.js | Neon HTTP driver, schema, atomic shared allowances, usage records, account-owned chats |
+| backend/routes/chat.js | Account-owned chat operations, archive retrieval, bounded prompt construction, model call, usage completion |
+| backend/routes/files.js | Protected File Manager operations with file/path limits |
+| backend/utils/aeiScraper.js | Searches the saved slim index and reads top matching local article files; despite the filename, it does not search the live web for each question |
+| backend/utils/knowledgeBase.js | Local text archive and fallback search |
+| frontend/src/utils/api.js | Sign-in/session client and authorization headers; token in sessionStorage, never the password |
+| frontend/src/components/SignIn.js | Account selector and password entry |
+| frontend/src/components/UsageReport.js | Usage screen and CSV download |
+| frontend/src/components/MessageList.js | Text, limited formatting, and citation rendering without raw HTML interpretation |
+| backend/test/ and frontend/src/*.test.js | Local regression checks; see VALIDATION.md |
 
-`backend/utils/servedScholars.js` is the single source of truth for the four
-served scholars (Brent Orrell, Clay Calvert, Shane Tews, Will Rinehart) —
-`fetch-missing-articles.js`, `build-slim-index.js`, and `aeiScraper.js` all
-import it so the served list can't drift out of sync.
+## Accounts and sessions
 
-`backend/article_extractor/*.py` is an earlier, manual, single-commit
-scraper (per-scholar link extraction + scrape, documented in the root
-`README.md`). It predates the `scripts/` pipeline and workflows above and is
-not part of the automated flow.
+The internal ID owner is labeled Chatbot Intern; supervisor is labeled Chatbot RA. Keep these IDs stable when changing labels so chat ownership does not change. Intern sees both accounts' usage, while RA sees only its own. Neither can read the other's new chat history through the chat API.
 
-## 3. Workflows (`.github/workflows/`)
+Passwords must differ and contain 16–256 characters. The backend compares salted scrypt hashes. Sessions expire after eight hours, signing out revokes the session, and a backend restart invalidates all sessions. These two role accounts are sufficient only for the present pilot; they do not provide individual staff attribution or institutional single sign-on.
 
-| Workflow | Trigger | What it does |
-|---|---|---|
-| `harvest.yml` | Manual (`workflow_dispatch`) only | Full harvest: runs `harvest-aei-index.js` with no args (rebuilds `aei-index.json`/`aei-authors.json` from scratch, delisting anything no longer live), commits and pushes. Runs on the self-hosted `aei-network` runner (AEI's staging API is IP-restricted). |
-| `biweekly-scrape.yml` | `cron: '0 8 * * 1'` (every Monday 08:00 UTC), gated by a `check-week` job to actually fire every *other* Monday (ISO week parity — GitHub Actions has no native every-N-weeks schedule); also manual dispatch (bypasses the parity gate) | The only workflow that adds new article content on its own: incremental harvest (last ~20 days) → match → `fetch-missing-articles.js` → re-match → rebuild slim index → commit. Self-hosted `aei-network` runner. |
-| `backfill-metadata.yml` | Manual (`workflow_dispatch`), inputs `kb_path` (default `knowledge_base`) and `write_metadata` (`true`/`false`, default `false`) | Runs `npm run backfill:metadata` against an existing `knowledge_base/` to regenerate `articleMetadata.json`, then rebuilds the slim index. Fails fast if `data/aei-index.json` isn't already committed. `write_metadata=false` is a dry run that still reports match/ambiguous/unmatched counts. Runs on standard `ubuntu-latest` (reads the already-harvested index; doesn't hit AEI's API). |
+The health and login endpoints are public. Other API routes and /public files require a valid session. Allowed website origins restrict browser requests but are not a substitute for server-side authentication.
 
-All three commit as `github-actions[bot]`. `data/aei-index.json` is tracked
-via Git LFS (`backend/.gitattributes`), so every workflow checks out with
-`lfs: true`.
+## Durable storage and allowances
 
-## 4. Data files (`backend/data/` and related)
+DATABASE_URL selects the Neon HTTP adapter. The connection destination must be a supported Neon ep- hostname ending in .neon.tech with PostgreSQL credentials; never log the URL. There is no idle database pool or heartbeat keeping free compute awake.
 
-| File | Produced by | Consumed by |
-|---|---|---|
-| `data/aei-index.json` | `harvest-aei-index.js` | `match-txt-to-urls.js`, `build-slim-index.js` |
-| `data/aei-authors.json` | `harvest-aei-index.js` | `build-slim-index.js` |
-| `data/matches.json` | `match-txt-to-urls.js` | `backfill-metadata.js`, `build-slim-index.js` |
-| `data/ambiguous.json`, `data/unmatched.json`, `data/author-audit.json` | `match-txt-to-urls.js` | Manual review only |
-| `data/fetch-missing-articles-report.json` | `fetch-missing-articles.js` | Manual review only |
-| `data/aei-index-slim.json` | `build-slim-index.js` | `backend/utils/aeiScraper.js` at request time (the only data file the running backend actually reads) |
-| `backend/articleMetadata.json` (+ `.backup.json`) | `backfill-metadata.js` | `backend/routes/chat.js` (citation metadata) |
-| `backend/knowledge_base/<Scholar>/*.txt` | `fetch-missing-articles.js` (automated) or manual upload via the File Manager UI | `aeiScraper.js` (full article text), `match-txt-to-urls.js` |
-| `backend/knowledge_base/content_cache.json`, `metadata.json` | `backend/utils/knowledgeBase.js` (`TxtKnowledgeBase`), at runtime | Same class, on next backend start/request |
-| `backend/chats/index.json`, `backend/chats/<chatId>.json` | `backend/utils/chatManager.js`, at runtime | Same, for chat history/sidebar |
+On first authorized data access, the adapter initializes aei_pilot_usage, aei_pilot_chats, and the aei_pilot_reserve function. Initialization is transaction-protected. Usage reservations use a database advisory lock to apply shared budgets atomically across app instances. Chat messages append atomically to account-owned JSONB records.
 
-## 5. Running locally
+SQLite in backend/.private-data is a local-development fallback. On Render, missing durable storage blocks AI attempts. Database failures do not silently switch to temporary storage. CHATBOT_DATA_DIR is an explicit persistent-local alternative, not the selected Render Free plan.
 
-```bash
-# one-time setup
-cd backend && npm install && cd ../frontend && npm install
-# backend/.env: TOGETHER_API_KEY=..., PORT=3001
-# frontend/.env: REACT_APP_API_URL=http://localhost:3001
+Defaults: 50 attempts per UTC day overall, 30 per account/day, five per minute/account, one active answer per backend process, 6,000 characters/question, 120,000 serialized input bytes, and 1,024 output tokens. Daily boundaries are UTC, not the user's local midnight.
 
-# two terminals
-cd backend && npm start     # http://localhost:3001/api/health
-cd frontend && npm start    # http://localhost:3000
-```
+The estimated daily app allowance is $0.50. The app reserves a conservative amount before calling Together and later records returned token usage. Failed requests without confirmed usage retain an uncertain reservation; pending reservations survive restarts. Do not release these as free without evidence. Reports return at most the latest 5,000 accessible usage records.
 
-To run the harvest/match/fetch/slim pipeline locally (needed if you want a
-fresh index or new articles without waiting for CI):
+The fixed model is meta-llama/Llama-3.3-70B-Instruct-Turbo. No visitor-selected model or Kimi fallback is implemented. Current availability and pricing remain unverified. Default input and output estimates are each $1.04/million tokens from the supplied October bill. Price settings and source are recorded with usage rows. No automatic paid retries are enabled.
 
-```bash
-cd backend
-node scripts/harvest-aei-index.js                 # full harvest — slow, run once
-node scripts/match-txt-to-urls.js knowledge_base
-node scripts/fetch-missing-articles.js             # LIMIT=20 env var to cap it
-node scripts/match-txt-to-urls.js knowledge_base
-node scripts/build-slim-index.js
-```
+App allowances cannot prevent someone with the provider key from making requests elsewhere, and estimates are not exact provider billing caps.
 
-`harvest-aei-index.js` and `fetch-missing-articles.js` hit AEI's (staging)
-API/site directly — see each script's own header comment for host/cert
-details before running outside the self-hosted CI runner.
+## Research behavior and data limits
 
----
-<div style="page-break-before: always;"></div>
+A scholar conversation ranks saved catalog records by query-word matches in titles/excerpts, then reads up to three matched article texts. If that retrieval returns no articles, the route uses the local text-search fallback. Source metadata is supplied to the model and citations are requested; correctness still needs evaluation against original articles. The source prompt still contains legacy wording about live articles even though current retrieval reads the archive.
 
-## 6. How this project got built (plain-language history)
+General mode does not include the article source blocks in its prompt. It must not be described as a grounded cross-scholar search. The prompt includes the last nine saved messages plus the current question; there is no memory across conversations.
 
-**Spring 2026 — first version.** The chatbot started out searching the live
-internet every time someone asked a question: it would run a Google-style
-search limited to aei.org for the scholar's name and the topic, then read
-whatever pages came back on the spot. This worked but was slow and
-inconsistent — search results aren't always the right article, and the
-assistant sometimes cited the wrong source.
+The article archive stays in GitHub. File Manager writes remain temporary on Render Free. Old backend/chats files are preserved, not migrated or assigned to either account. Do not publish local private-data files, chat exports, credentials, or investigation evidence with the code update.
 
-**June 2026 — fixing citations.** A lot of work went into making sure the
-assistant credits articles correctly: the right title, author, date, and
-link. This is when a lookup file (`articleMetadata.json`) was introduced —
-basically an index card for every article the assistant knows about — plus
-a way to regenerate that index automatically instead of updating it by
-hand.
+## Article refresh pipeline
 
-**Early August 2026 — a new way of finding articles.** This was the biggest
-change. Instead of searching the live web on every question, the project
-switched to keeping its own local copy of AEI's full publication catalog,
-pulled directly from AEI's own website system. A matching step lines that
-catalog up against the article text files already saved on disk, and a
-smaller, scholar-specific version of the catalog gets built for the chatbot
-to actually read from when answering questions. In short: instead of going
-out and searching every time, the assistant now looks things up in its own
-already-organized library, which is faster and more reliable.
+The pipeline is retained from the existing project. It was not run or changed for this pilot. Current workflow success and runner availability have not been verified.
 
-**Mid-to-late August 2026 — keeping the library current and fixing bugs.**
-With the new library approach in place, the project added a scraper that
-automatically finds and saves any new articles by the four scholars the
-chatbot supports, so the library doesn't go stale. This runs on a schedule
-automatically every two weeks. Getting this running reliably took several
-rounds of bug-fixing — including one bug where articles that were still
-live on AEI's website were incorrectly being marked as taken down and
-removed from the library, which was later caught and fixed. Some of these
-steps also had to be moved to run from a dedicated in-office computer
-rather than a cloud server, because AEI's internal systems only allow
-connections from trusted networks.
+| Step | File | Result |
+| --- | --- | --- |
+| Harvest publication metadata | backend/scripts/harvest-aei-index.js | backend/data/aei-index.json and aei-authors.json; incremental and full-harvest modes |
+| Match existing text to URLs | backend/scripts/match-txt-to-urls.js | matches.json plus ambiguous/unmatched/author audit reports |
+| Fetch missing scholar article text | backend/scripts/fetch-missing-articles.js | Adds missing knowledge_base text files for served scholars |
+| Build the runtime index | backend/scripts/build-slim-index.js | data/aei-index-slim.json; the running search avoids loading the full site index |
+| Backfill citation metadata | backend/scripts/backfill-metadata.js | articleMetadata.json; WRITE_METADATA controls writing |
 
-*(Left out as minor: version bumps, environment/config setup, and small
-interface tweaks like error banners.)*
+backend/utils/servedScholars.js lists Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart. The older Python files in backend/article_extractor are a separate manual pipeline.
 
----
+| Workflow | Configuration |
+| --- | --- |
+| .github/workflows/harvest.yml | Manual full harvest; self-hosted aei-network runner |
+| .github/workflows/biweekly-scrape.yml | Monday 08:00 UTC schedule, gated by ISO-week parity; manual dispatch bypasses the gate; self-hosted aei-network runner |
+| .github/workflows/backfill-metadata.yml | Manual metadata/index rebuild; ubuntu-latest; default dry run |
 
-## Deployment / ops history
+The full index uses Git LFS. Archive tooling requires actual LFS data, not its pointer file. Harvesting uses AEI network/certificate configuration; review script headers before running it elsewhere. Existing commentary coverage gaps and staging-site completeness need investigation. A scheduled job is not proof of a complete or current archive.
 
-*(Reconstructed from workflow configs and commit history — not firsthand
-deployment notes. Verify against the actual Render/Vercel/GitHub dashboards
-before relying on it.)*
+## Local development and verification
 
-**How this actually runs, day to day.** Nothing here runs on an AEI-owned
-computer — it's three outside, pay-as-you-go services stitched together.
-One (Render) runs the backend around the clock: the part that stores chat
-history, reads the article library, and talks to the AI. Another (Vercel)
-just serves the website itself — the page you actually visit and type
-into. And a third (Together AI) is the company that owns and runs the
-actual language model doing the writing: every question gets sent to them
-along with the relevant article text, and they send back the answer. None
-of that is free — Together AI in particular bills per use, which is why
-keeping it funded (see Future objective #1 below) isn't a one-time setup
-step but an ongoing cost: if the balance runs out, the site stays up but
-stops being able to answer anything.
+Use Node 24. In backend and frontend, install dependencies with npm ci. Keep private local environment files ignored by Git. Set two distinct test passwords through CHATBOT_INTERN_PASSWORD and CHATBOT_RA_PASSWORD. For local-only storage, leave DATABASE_URL absent and use a disposable CHATBOT_DATA_DIR. Do not copy production credentials into fixtures or documentation.
 
-**Self-hosted runner (Aug 2026).** `harvest.yml` and `biweekly-scrape.yml`
-originally ran on GitHub's own cloud runners, but AEI's internal site (used
-as the data source, aei.org's staging environment) only accepts connections
-from trusted/known networks, so requests from GitHub's runners were being
-blocked. The fix was to set up a computer on AEI's own network as a
-self-hosted GitHub Actions runner (`self-hosted, aei-network` in both
-workflow files) so those two workflows run from inside AEI's network
-instead. `backfill-metadata.yml` doesn't need this — it only reads the
-already-harvested index file, so it still runs on GitHub's normal runners.
+Run npm start in backend (port 3001 by default) and in frontend (port 3000). For local website development, REACT_APP_API_URL=http://localhost:3001; default allowed origins cover localhost and 127.0.0.1 on port 3000. Leave TOGETHER_API_KEY absent for sign-in-only checks. Never assume an interactive question is free if a real key is configured.
 
-**Trusting AEI's staging certificate.** Once harvesting moved to hitting
-AEI's staging environment directly, Node rejected its connection because it
-didn't recognize the security certificate that site presents. The fix was
-to commit that certificate's public root (`backend/certs/*.pem`) and point
-Node at it via the `NODE_EXTRA_CA_CERTS` environment variable in the
-workflow, so it trusts the connection.
+Run npm test in backend, npm test -- --watchAll=false --runInBand in frontend, and npm run build in frontend. Database tests intercept the real Neon HTTP driver and use local PGlite PostgreSQL; they do not connect to the user's Neon project. Together responses are simulated. See VALIDATION.md for the completed checks.
 
-**Large file storage.** `backend/data/aei-index.json` (the full site-wide
-harvest) is well over 100MB, past what plain Git handles well, so it's
-tracked with Git LFS (`backend/.gitattributes`). Every workflow step and
-local clone that touches this file needs `git lfs` set up / checkout with
-`lfs: true`, or it'll see a small placeholder file instead of the real
-data.
+## Publication and troubleshooting
 
----
+Publish backend and frontend together after reviewing the changes. Keep Together disconnected until live sign-in, database persistence, ownership, and report download work. Then verify model/rates and enable a fresh project-only key for an approved small AI test. Save the actual deployment revisions and live results in VALIDATION.md.
 
-## Future objectives
+- Login setup error: check the two password setting names, length, and that they differ. Do not print their values.
+- Browser connection error: check REACT_APP_API_URL in Vercel, the exact website origin in Render, and whether the service has deployed the updated code/settings.
+- Database unavailable: check Neon project/branch status and DATABASE_URL privately. Do not bypass the durable-storage requirement.
+- Unexpected spending: check Together's authoritative billing records and revoke exposed keys at Together. Removing a Render variable alone does not revoke a provider key.
+- Free-service restart: signing in again is expected; new database-backed chats and usage should remain. Verify this live before relying on the deployment.
 
-**1. Fund the chatbot.** The assistant runs on Together AI, which is a paid
-API — without a funded account and a valid `TOGETHER_API_KEY`, chat
-requests fail outright. This is the top priority simply because nothing
-else here matters if the bot can't respond.
+The current draft is based on GitHub cleanup commit 17db898. Rolling back to an older unprotected backend is not a safe way to restore AI access: keep Together disconnected while investigating or repairing a failed release.
 
-**2. Get the scraper finding commentary articles again.** AEI's main public
-site (`www.aei.org`) sits behind Cloudflare, which blocks the kind of
-automated requests this scraper makes — that's why the whole harvest
-pipeline reads from AEI's staging site (`stage.aei.org`) instead, then
-rewrites URLs back to `www.aei.org` for display (see `harvest-aei-index.js`
-and `fetch-missing-articles.js`). That workaround mostly holds, but as of
-the Aug 26, 2026 fix (`dbb4018`), the "commentary" content type specifically
-— roughly 52,000 published pieces, one of AEI's biggest categories — isn't
-actually synced to the staging site the scraper reads from. The staging API
-currently reports about 1 commentary item where there should be tens of
-thousands. The pipeline was patched to stop that near-empty response from
-wiping out everything already known about commentary (see the delisting
-safety check in `harvest-aei-index.js`), but that's a safety net, not a
-fix: it means new commentary pieces can't be discovered through this
-pipeline at all right now. Someone needs to find another way to reach that
-content — a different endpoint, a Cloudflare-compatible way to read the
-live site directly, or getting commentary content actually synced to
-staging.
+## Next research improvements
 
-**3. Stop harvesting the entire site for four scholars.** A full harvest
-(`harvest-aei-index.js`) fetches every content-bearing type across all of
-AEI's output — every scholar, every category, ~120k records — even though
-the chatbot only ever serves four scholars
-(`backend/utils/servedScholars.js`). Which records matter isn't decided
-until the very last step of the pipeline, `build-slim-index.js`; everything
-before that fetches and stores all of it regardless. That's most of why
-`aei-index.json` is 130+MB and needs Git LFS, and part of why the workflow
-needs its own timeout and a dedicated always-on runner. Worth checking
-whether AEI's API can filter by scholar/author on the server side, so a
-harvest for four people doesn't require indexing everyone else's work too
-— though that may not be possible if the API doesn't support filtering by
-the custom "guest author" field the scholar names live in, in which case
-this may not have a real fix short of AEI changing their API.
-
-**4. Make search less ad hoc — look at Okapi BM25.** Right now,
-`aeiScraper.js`'s `scoreRelevance()` just counts how many times each query
-word appears in an article's title and excerpt — a simple, somewhat
-arbitrary scoring method that doesn't account for article length or how
-common/rare a word is. Okapi BM25 is a well-established, deterministic
-ranking formula (no LLM or randomness involved) built for exactly this
-problem — scoring a set of documents against a query's keywords — and is
-the standard baseline behind most real search engines. Swapping the current
-word-count scorer for a BM25 implementation should produce more relevant
-top-N article matches without changing anything else about the pipeline.
-
-**5. Look for other improvements — including memory.** Worth a broader
-look at what else would make the assistant noticeably better. One concrete
-gap: `routes/chat.js` only sends the last 10 messages of the current chat
-to the model as context (`contextMessages = chatMessages.messages.slice(-10)`)
-— there's no memory beyond that window, and nothing carries over between
-separate chats even within the same domain. Longer conversations will
-eventually lose track of earlier context, and the assistant can't
-recall anything from a user's past chats. Worth exploring ways to extend
-that — summarizing older turns instead of dropping them, or some form of
-persistent memory per domain or per user — so the bot isn't limited to
-whatever fits in the last 10 messages.
+Evaluate answers and citations against a small set of real research questions; improve article coverage and relevance; add source-grounded cross-scholar themes; send shorter relevant excerpts to reduce cost; consider article-search-only results before paid generation. Broader use needs individual institutional accounts, operational monitoring, and a storage/hosting review. These are planned improvements, not completed features.

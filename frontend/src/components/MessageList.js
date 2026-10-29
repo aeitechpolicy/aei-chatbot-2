@@ -43,20 +43,18 @@ const MessageList = ({ messages, loading }) => {
   };
 
   const formatMessageContent = (content) => {
-    // Simple markdown-like formatting for better readability
-    // Render inline source citations as styled badges
-    const withCitations = content.replace(
-      /\[Source:\s*([^\]]+)\]/g,
-      '<span class="inline-citation">📄 $1</span>'
-    );
-    return withCitations
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.*?)\*/g, '<em>$1</em>')
-      .replace(/`(.*?)`/g, '<code>$1</code>')
-      .split('\n').map((line, index) => (
+    // React renders source and model text safely without interpreting raw HTML.
+    const tokens = /(\[Source:\s*[^\]\n]+\]|\*\*[^*\n]+\*\*|\*[^*\n]+\*|`[^`\n]+`)/g;
+    return String(content ?? '').split('\n').map((line, index) => (
         <React.Fragment key={index}>
           {index > 0 && <br />}
-          <span dangerouslySetInnerHTML={{ __html: line }} />
+          {line.split(tokens).map((part, tokenIndex) => {
+            if (part.startsWith('[Source:') && part.endsWith(']')) return <span className="inline-citation" key={tokenIndex}>📄 {part.slice(8, -1).trim()}</span>;
+            if (part.startsWith('**') && part.endsWith('**')) return <strong key={tokenIndex}>{part.slice(2, -2)}</strong>;
+            if (part.startsWith('*') && part.endsWith('*') && part.length > 2) return <em key={tokenIndex}>{part.slice(1, -1)}</em>;
+            if (part.startsWith('`') && part.endsWith('`') && part.length > 2) return <code key={tokenIndex}>{part.slice(1, -1)}</code>;
+            return part;
+          })}
         </React.Fragment>
       ));
   };
