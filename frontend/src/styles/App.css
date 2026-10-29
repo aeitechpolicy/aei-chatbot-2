@@ -160,6 +160,36 @@ html {
   scroll-behavior: smooth;
 }
 
+.pilot-header-actions { display: flex; align-items: center; gap: 12px; margin-left: auto; font-size: 14px; }
+.pilot-header-actions button, .pilot-actions button { border: 1px solid #cbd5e1; background: #fff; border-radius: 6px; padding: 8px 12px; cursor: pointer; color: #173d62; }
+.sign-in-page { min-height: 100vh; display: grid; place-items: center; padding: 28px 16px; background: #f3f6f9; }
+.sign-in-card { width: 100%; max-width: 430px; padding: 40px; background: white; border: 1px solid #dbe3eb; border-radius: 12px; box-shadow: 0 10px 36px #12324a0a; }
+.sign-in-logo { width: 56px; height: 56px; object-fit: contain; margin-bottom: 24px; }
+.eyebrow { color: #50667d; letter-spacing: .1em; font-size: 11px; font-weight: 700; margin-bottom: 6px; }
+.sign-in-card h1 { color: #152d44; font-size: 30px; line-height: 1.25; }
+.sign-in-intro { color: #64748b; margin: 12px 0 26px; font-size: 15px; }
+.sign-in-card label { display: block; font-size: 14px; font-weight: 600; margin: 18px 0 7px; }
+.sign-in-card input, .sign-in-card select { width: 100%; padding: 11px 12px; border: 1px solid #b8c6d4; border-radius: 6px; font: inherit; background: white; color: #1e293b; }
+.pilot-primary, .pilot-actions button.pilot-primary { background: #174c76; color: white; border: 1px solid #174c76; border-radius: 6px; padding: 11px 18px; font: inherit; cursor: pointer; }
+.sign-in-card .pilot-primary { width: 100%; margin-top: 24px; }
+.sign-in-card button:disabled { opacity: .65; cursor: wait; }
+.sign-in-note { color: #64748b; font-size: 12px; text-align: center; margin-top: 20px; }
+.pilot-error { background: #fff1f0; border: 1px solid #f2c5c0; color: #8c3027; border-radius: 6px; padding: 12px; margin: 14px 0; font-size: 14px; }
+.usage-report { flex: 1; min-width: 0; overflow: auto; padding: 32px; }
+.usage-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 18px; }
+.usage-heading h2 { font-size: 26px; color: #152d44; }
+.pilot-actions { display: flex; gap: 8px; }
+.usage-totals { display: flex; gap: 16px; flex-wrap: wrap; margin: 24px 0; }
+.usage-totals > div { flex: 1; min-width: 180px; padding: 20px; border: 1px solid #dbe3eb; border-radius: 8px; }
+.usage-totals span { display: block; color: #64748b; font-size: 13px; }
+.usage-totals strong { display: block; color: #173d62; font-size: 26px; margin-top: 6px; }
+.usage-note { font-size: 13px; color: #64748b; margin: 12px 0; }
+.usage-table-wrap { overflow-x: auto; }
+.usage-table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 24px 0; }
+.usage-table th, .usage-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid #e2e8f0; }
+.usage-table th { color: #50667d; background: #f8fafc; font-weight: 600; }
+@media (max-width: 768px) { .app-header p, .pilot-header-actions > span { display: none; } .pilot-header-actions { gap: 6px; } .pilot-header-actions button { font-size: 12px; padding: 7px; } .usage-report { padding: 18px; } .usage-heading { flex-direction: column; align-items: flex-start; } .sign-in-card { padding: 28px; } }
+
 
 /* Button and interactive element animations */
 button, 

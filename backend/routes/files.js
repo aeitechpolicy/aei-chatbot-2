@@ -3,6 +3,10 @@ const multer = require('multer');
 const TxtKnowledgeBase = require('../utils/knowledgeBase');
 
 const router = express.Router();
+const safeDomain = value => typeof value === 'string' && /^[A-Za-z0-9 _-]{1,80}$/.test(value);
+const safeFilename = value => typeof value === 'string' && value.length <= 240 && value.endsWith('.txt') && !/[\\/\x00-\x1f]/.test(value) && !value.startsWith('.');
+router.param('domainName', (req, res, next, value) => safeDomain(value) ? next() : res.status(400).json({ error: 'Invalid scholar folder.' }));
+router.param('filename', (req, res, next, value) => safeFilename(value) ? next() : res.status(400).json({ error: 'Invalid text filename.' }));
 
 // Initialize knowledge base
 const kb = new TxtKnowledgeBase();
@@ -12,14 +16,17 @@ const storage = multer.memoryStorage();
 const upload = multer({
   storage: storage,
   fileFilter: (req, file, cb) => {
-    if (file.mimetype === 'text/plain' || file.originalname.endsWith('.txt')) {
+    if (safeFilename(file.originalname) && (file.mimetype === 'text/plain' || file.originalname.endsWith('.txt'))) {
       cb(null, true);
     } else {
       cb(new Error('Only .txt files are allowed'));
     }
   },
   limits: {
-    fileSize: 10 * 1024 * 1024 // 10MB limit
+    fileSize: 10 * 1024 * 1024, // 10MB per file
+    files: 5,
+    fields: 10,
+    parts: 15
   }
 });
 
@@ -39,7 +46,7 @@ router.post('/domains', async (req, res) => {
   try {
     const { name, description } = req.body;
     
-    if (!name || !name.trim()) {
+    if (!safeDomain(name)) {
       return res.status(400).json({ error: 'Domain name is required' });
     }
 
@@ -252,7 +259,7 @@ router.post('/bulk', async (req, res) => {
   try {
     const { operation, domain, files } = req.body;
     
-    if (!operation || !domain || !files || !Array.isArray(files)) {
+    if (!operation || !safeDomain(domain) || !Array.isArray(files) || files.length > 100 || !files.every(safeFilename)) {
       return res.status(400).json({ 
         error: 'Operation, domain, and files array are required' 
       });

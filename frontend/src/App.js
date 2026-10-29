@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import ChatInterface from './components/ChatInterface';
 import Sidebar from './components/Sidebar';
 import FileManager from './components/FileManager';
-import UserManager from './utils/userManager';
+import SignIn from './components/SignIn';
+import UsageReport from './components/UsageReport';
+import { API_BASE_URL, apiFetch, getSession, setSession, signOut } from './utils/api';
 import './styles/App.css';
 
-function App() {
+function PrivateApp({ session }) {
   const [currentView, setCurrentView] = useState('chat'); // 'chat' or 'files'
   const [currentChatId, setCurrentChatId] = useState(null);
   const [chats, setChats] = useState([]);
@@ -13,8 +15,6 @@ function App() {
   const [selectedDomain, setSelectedDomain] = useState('General');
   const [loading, setLoading] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [userManager] = useState(() => new UserManager());
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 
   // Load initial data
   useEffect(() => {
@@ -23,14 +23,13 @@ function App() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const getHeaders = () => ({
-    'Content-Type': 'application/json',
-    'x-user-id': userManager.getUserId()
+    'Content-Type': 'application/json'
   });
 
 
   const loadDomains = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/domains`);
+      const response = await apiFetch(`${API_BASE_URL}/api/files/domains`);
       if (response.ok) {
         const domainsData = await response.json();
         setDomains(domainsData);
@@ -42,7 +41,7 @@ function App() {
 
   const loadChatHistory = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/chat/history`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/chat/history`, {
         headers: getHeaders()
       });
       if (response.ok) {
@@ -56,7 +55,7 @@ function App() {
 
   const handleNewChat = async (domain = null) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/chat/new`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/chat/new`, {
         method: 'POST',
         headers: getHeaders(),
         body: JSON.stringify({ domainName: domain || selectedDomain }),
@@ -68,7 +67,6 @@ function App() {
         setSelectedDomain(newChat.domainName);
         setCurrentView('chat');
         await loadChatHistory(); // Refresh chat list
-        userManager.updateLastActive();
       }
     } catch (error) {
       console.error('Error creating new chat:', error);
@@ -81,13 +79,12 @@ function App() {
     
     // Load chat details to set domain
     try {
-      const response = await fetch(`${API_BASE_URL}/api/chat/${chatId}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/chat/${chatId}`, {
         headers: getHeaders()
       });
       if (response.ok) {
         const chat = await response.json();
         setSelectedDomain(chat.domainName);
-        userManager.updateLastActive();
       }
     } catch (error) {
       console.error('Error loading chat:', error);
@@ -96,7 +93,7 @@ function App() {
 
   const handleDeleteChat = async (chatId) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/chat/${chatId}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/chat/${chatId}`, {
         method: 'DELETE',
         headers: getHeaders()
       });
@@ -107,7 +104,6 @@ function App() {
           setCurrentChatId(null);
         }
         await loadChatHistory();
-        userManager.updateLastActive();
       }
     } catch (error) {
       console.error('Error deleting chat:', error);
@@ -122,7 +118,7 @@ function App() {
     // Create new chat if none exists
     if (!chatId) {
       try {
-        const response = await fetch(`${API_BASE_URL}/api/chat/new`, {
+        const response = await apiFetch(`${API_BASE_URL}/api/chat/new`, {
           method: 'POST',
           headers: getHeaders(),
           body: JSON.stringify({ domainName: selectedDomain }),
@@ -134,19 +130,18 @@ function App() {
           setCurrentChatId(newChat.id);
           setSelectedDomain(newChat.domainName);
           setCurrentView('chat');
-          userManager.updateLastActive();
         } else {
           throw new Error('Failed to create new chat');
         }
       } catch (error) {
         console.error('Error creating new chat:', error);
-        return;
+        throw error;
       }
     }
   
     setLoading(true);
     try {
-      const response = await fetch(`${API_BASE_URL}/api/chat/${chatId}/message`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/chat/${chatId}/message`, {
         method: 'POST',
         headers: getHeaders(),
         body: JSON.stringify({ message }),
@@ -181,7 +176,7 @@ function App() {
     });
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/upload/${domain}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/files/upload/${domain}`, {
         method: 'POST',
         body: formData,
       });
@@ -220,6 +215,10 @@ function App() {
           </a>
           <h1>AEI Chatbot</h1>
           <p>Chat with your Scholars!</p>
+          <div className="pilot-header-actions"><span>{session.user.label}</span>
+            <button onClick={() => setCurrentView('usage')}>Usage and costs</button>
+            <button onClick={() => { signOut().catch(() => {}); }}>Sign out</button>
+          </div>
         </div>
       </div>
       
@@ -241,7 +240,7 @@ function App() {
           onDomainsUpdate={loadDomains}
         />
         
-        {currentView === 'chat' ? (
+        {currentView === 'usage' ? <UsageReport /> : currentView === 'chat' ? (
           <ChatInterface
             chatId={currentChatId}
             selectedDomain={selectedDomain}
@@ -261,6 +260,26 @@ function App() {
       </div>
     </div>
   );
+}
+
+function App() {
+  const [session, updateSession] = useState(getSession);
+  const [checking, setChecking] = useState(Boolean(getSession()));
+  const [error, setError] = useState('');
+  useEffect(() => {
+    const changed = () => { updateSession(getSession()); setError(''); };
+    window.addEventListener('aei-session-changed', changed);
+    if (getSession()) {
+      apiFetch(`${API_BASE_URL}/api/auth/session`).then(response => {
+        if (!response.ok) setSession(null);
+      }).catch(() => { setSession(null); setError('The chatbot could not be reached. Please try again.'); })
+        .finally(() => setChecking(false));
+    }
+    return () => window.removeEventListener('aei-session-changed', changed);
+  }, []);
+  if (checking) return <main className="sign-in-page"><p role="status">Checking your session…</p></main>;
+  if (!session) return <>{error && <p role="alert">{error}</p>}<SignIn /></>;
+  return <PrivateApp key={session.user.id} session={session} />;
 }
 
 export default App;

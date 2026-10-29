@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import MessageList from './MessageList';
 import { Send } from 'lucide-react';
+import { API_BASE_URL, apiFetch } from '../utils/api';
 import '../styles/ChatInterface.css';
 
 const ChatInterface = ({ 
@@ -15,7 +16,7 @@ const ChatInterface = ({
   const [sendingMessage, setSendingMessage] = useState(false);
   const [sendError, setSendError] = useState(null);
   const inputRef = useRef(null);
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+  const chatLoadVersion = useRef(0);
 
   // Load current chat when chatId changes
   useEffect(() => {
@@ -28,21 +29,18 @@ const ChatInterface = ({
 
   const loadCurrentChat = async () => {
     if (!chatId) return;
+    const version = ++chatLoadVersion.current;
     
     try {
-      const userData = localStorage.getItem('aei_chatbot_user');
-      const userId = userData ? JSON.parse(userData).id : 'anonymous';
-
-      const response = await fetch(`${API_BASE_URL}/api/chat/${chatId}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/chat/${chatId}`, {
         headers: {
-          'Content-Type': 'application/json',
-          'x-user-id': userId
+          'Content-Type': 'application/json'
         }
       });
 
       if (response.ok) {
         const chat = await response.json();
-        setCurrentChat(chat);
+        if (version === chatLoadVersion.current) setCurrentChat(chat);
       }
     } catch (error) {
       console.error('Error loading current chat:', error);
@@ -75,6 +73,11 @@ const ChatInterface = ({
         
         // The API response contains the AI response, so we can add it directly
         if (result && result.response) {
+          ++chatLoadVersion.current;
+          if (result.chat) {
+            setCurrentChat(result.chat);
+            return;
+          }
           const aiMessage = {
             role: 'assistant',
             content: result.response,
@@ -99,7 +102,7 @@ const ChatInterface = ({
         setSendError(
           error.code === 'credit_limit'
             ? 'Together.ai credits exhausted - please contact admin.'
-            : 'System error'
+            : (error.message || 'The answer could not be completed. Please try again.')
         );
       } finally {
         setSendingMessage(false);
@@ -185,6 +188,7 @@ const ChatInterface = ({
             placeholder={getPlaceholderText()}
             className="chat-input"
             rows="1"
+            maxLength={6000}
             disabled={sendingMessage}
           />
           <button

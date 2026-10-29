@@ -1,20 +1,21 @@
 const express = require('express');
-const Together = require('together-ai');
+const path = require('node:path');
+const { MODEL, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS } = require('../utils/pilot');
 const TxtKnowledgeBase = require('../utils/knowledgeBase');
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
 const articleMetadata = require('../articleMetadata.json');
 
+function createChatRouter({ pilot, complete, knowledgeBase, manager, fetchArticles = fetchRelevantArticles }) {
 const router = express.Router();
-
-// Initialize Together AI
-const together = new Together({
-  apiKey: process.env.TOGETHER_API_KEY,
+router.param('chatId', (req, res, next, id) => {
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) return res.status(400).json({ error: 'Invalid chat identifier.' });
+  next();
 });
 
 // Initialize knowledge base and chat manager
-const kb = new TxtKnowledgeBase();
-const chatManager = new ChatManager();
+const kb = knowledgeBase || new TxtKnowledgeBase();
+const chatManager = manager || pilot.chatManager || new ChatManager(path.join(pilot.dataDir, 'chats'));
 
 // In-memory domain content cache to avoid re-reading files on every request
 const domainContentCache = new Map();
@@ -36,7 +37,7 @@ function invalidateDomainCache(domainName) {
 }
 
 const getUserId = (req) => {
-  return req.headers['x-user-id'] || req.query.userId || 'anonymous';
+  return req.auth.id;
 };
 
 
@@ -45,6 +46,7 @@ router.post('/new', async (req, res) => {
   try {
     const { domainName } = req.body;
     const userId = getUserId(req);
+    if (domainName !== undefined && (typeof domainName !== 'string' || !/^[A-Za-z0-9 _-]{1,80}$/.test(domainName))) return res.status(400).json({ error: 'Invalid scholar selection.' });
     const newChat = await chatManager.createChat(domainName || 'General', null, userId);
     res.json(newChat);
   } catch (error) {
@@ -76,7 +78,7 @@ router.get('/:chatId', async (req, res) => {
   try {
     const { chatId } = req.params;
     const userId = getUserId(req)
-    const chat = await chatManager.getChat(chatId, userId);
+    const chat = await chatManager.getChatWithUserCheck(chatId, userId);
     
     if (!chat) {
       return res.status(404).json({ error: 'Chat not found' });
@@ -124,26 +126,29 @@ router.delete('/:chatId', async (req, res) => {
 
 // Send message to chat
 router.post('/:chatId/message', async (req, res) => {
+  let usageId;
+  let attempted = false;
+  let aiResult;
   try {
     const { chatId } = req.params;
     const { message } = req.body;
 
-    if (!message || !message.trim()) {
+    if (typeof message !== 'string' || !message.trim()) {
       return res.status(400).json({ error: 'Message is required' });
     }
 
     // Get chat
-    const chat = await chatManager.getChat(chatId);
+    if (message.length > MAX_QUESTION_CHARS) return res.status(413).json({ error: `Please keep your question under ${MAX_QUESTION_CHARS} characters.`, code: 'input_limit' });
+    const chat = await chatManager.getChatWithUserCheck(chatId, getUserId(req));
     if (!chat) {
       return res.status(404).json({ error: 'Chat not found' });
     }
 
     // Add user message
     const userMessage = { role: 'user', content: message };
-    await chatManager.addMessage(chatId, userMessage);
 
     // Try live AEI scraping first, fall back to local txt files
-    const liveArticles = await fetchRelevantArticles(chat.domainName, message);
+    const liveArticles = await fetchArticles(chat.domainName, message);
     const domainContent = liveArticles.length > 0 
       ? null 
       : await getCachedDomainContent(chat.domainName);
@@ -259,7 +264,7 @@ CITATION INSTRUCTIONS:
 
     // Get chat messages for context
     const chatMessages = await chatManager.getChat(chatId);
-    const contextMessages = chatMessages.messages.slice(-10); // Last 10 messages for context
+    const contextMessages = [...chatMessages.messages.slice(-9).map(({ role, content }) => ({ role, content })), userMessage];
 
     // Create full messages array
     const fullMessages = [
@@ -268,13 +273,17 @@ CITATION INSTRUCTIONS:
     ];
 
     // Get AI response
-    const response = await together.chat.completions.create({
-      model: 'meta-llama/Llama-3.3-70B-Instruct-Turbo', // meta-llama/Llama-3-8b-chat-hf meta-llama/Llama-3-70b-chat-hf meta-llama/Meta-Llama-3-8B-Instruct-Lite
+    usageId = await pilot.begin(getUserId(req), fullMessages);
+    await chatManager.addMessage(chatId, userMessage);
+    attempted = true;
+    const response = await complete({
+      model: MODEL,
       messages: fullMessages,
-      max_tokens: 1024,
+      max_tokens: MAX_OUTPUT_TOKENS,
       temperature: 0.7,
       stream: false
     });
+    aiResult = response;
 
     const aiResponse = {
       role: 'assistant',
@@ -287,68 +296,39 @@ CITATION INSTRUCTIONS:
     await chatManager.addMessage(chatId, aiResponse);
 
     // Update chat title if it's the first message
-    if (chatMessages.messages.length <= 1) {
+    if (chatMessages.messages.length === 0) {
       const title = message.substring(0, 50) + (message.length > 50 ? '...' : '');
       await chatManager.updateChatTitle(chatId, title);
     }
 
+    const savedChat = await chatManager.getChatWithUserCheck(chatId, getUserId(req));
+    await pilot.finish(usageId, { response });
+    usageId = null;
     res.json({
       response: aiResponse.content,
       sources: relevantFiles,
       searchMode: aiResponse.searchMode,
+      chat: savedChat,
       chatId: chatId
     });
 
   } catch (error) {
-    console.error('Chat message error:', error);
-    res.status(500).json({
-      error: 'Failed to process chat message',
-      code: error.status === 402 ? 'credit_limit' : 'system_error',
-      details: error.message
+    if (usageId) {
+      try { await pilot.finish(usageId, { response: aiResult, errorCode: String(error.status || error.code || 'request_error'), attempted: attempted && error.code !== 'ai_setup' }); }
+      catch { console.error('Unable to update usage; the reserved estimate remains in the ledger.'); }
+    }
+    console.error('Chat request failed:', { status: error.status, code: error.code });
+    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup'].includes(error.code);
+    res.status(localCode ? error.status : 500).json({
+      error: localCode ? error.message : (error.status === 402 ? 'The Together account has no available credit.' : 'The answer could not be completed. Please check the usage report before retrying.'),
+      code: error.status === 402 ? 'credit_limit' : (localCode ? error.code : 'system_error')
     });
   }
 });
 
-// Legacy endpoint for backward compatibility
-router.post('/', async (req, res) => {
-  try {
-    const { messages, domainName, userQuery } = req.body;
+// The retired endpoint cannot accept an unverified conversation history.
+router.post('/', (req, res) => res.status(410).json({ error: 'Please use the signed-in chatbot interface.' }));
+return router;
+}
 
-    if (!messages || !domainName || !userQuery) {
-      return res.status(400).json({ 
-        error: 'Missing required fields: messages, domainName, userQuery' 
-      });
-    }
-
-    // Create a new chat if none exists
-    const newChat = await chatManager.createChat(domainName);
-    
-    // Add messages to the new chat
-    for (const message of messages) {
-      await chatManager.addMessage(newChat.id, message);
-    }
-
-    // Process the last user message
-    const lastUserMessage = messages[messages.length - 1];
-    if (lastUserMessage && lastUserMessage.role === 'user') {
-      // Redirect to the new message endpoint
-      req.params.chatId = newChat.id;
-      req.body.message = lastUserMessage.content;
-      return router._router.stack.find(layer => 
-        layer.route && layer.route.path === '/:chatId/message' && layer.route.methods.post
-      ).route.stack[0].handle(req, res);
-    }
-
-    res.json({ chatId: newChat.id });
-
-  } catch (error) {
-    console.error('Legacy chat error:', error);
-    res.status(500).json({ 
-      error: 'Failed to process chat request',
-      details: error.message 
-    });
-  }
-});
-
-module.exports = router;
-module.exports.invalidateDomainCache = invalidateDomainCache;
+module.exports = createChatRouter;

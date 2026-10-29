@@ -1,3 +1,4 @@
+import { apiFetch } from '../utils/api';
 import React, { useState, useEffect } from 'react';
 import { 
   Plus, 
@@ -40,7 +41,7 @@ const FileManager = ({
     
     setLoading(true);
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/content/${selectedDomain}`);
+      const response = await apiFetch(`${API_BASE_URL}/api/files/content/${selectedDomain}`);
       if (response.ok) {
         const filesData = await response.json();
         setFiles(filesData);
@@ -57,7 +58,7 @@ const FileManager = ({
     if (!newDomainName.trim()) return;
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/domains`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/files/domains`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -87,7 +88,7 @@ const FileManager = ({
     }
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/domains/${domainName}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/files/domains/${domainName}`, {
         method: 'DELETE',
       });
 
@@ -118,7 +119,7 @@ const FileManager = ({
     });
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/upload/${selectedDomain}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/files/upload/${selectedDomain}`, {
         method: 'POST',
         body: formData,
       });
@@ -141,7 +142,7 @@ const FileManager = ({
 
   const handleEditFile = async (filename) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/content/${selectedDomain}/${filename}`);
+      const response = await apiFetch(`${API_BASE_URL}/api/files/content/${selectedDomain}/${filename}`);
       if (response.ok) {
         const data = await response.json();
         setFileContent(data.content);
@@ -157,7 +158,7 @@ const FileManager = ({
     if (!editingFile) return;
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/content/${selectedDomain}/${editingFile}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/files/content/${selectedDomain}/${editingFile}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: fileContent }),
@@ -183,7 +184,7 @@ const FileManager = ({
     }
 
     try {
-      const response = await fetch(`${API_BASE_URL}/api/files/content/${selectedDomain}/${filename}`, {
+      const response = await apiFetch(`${API_BASE_URL}/api/files/content/${selectedDomain}/${filename}`, {
         method: 'DELETE',
       });
 
