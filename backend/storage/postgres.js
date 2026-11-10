@@ -150,11 +150,12 @@ class PostgresChats {
     return rows.map(normalizeRow);
   }
 
-  async addMessage(id, message) {
+  async addMessage(id, message, initialTitle = null) {
     const at = new Date(this.store.now()).toISOString();
     const stamped = { ...message, timestamp: at };
     const rows = await this.store.query(`UPDATE aei_pilot_chats SET messages=messages || $2::jsonb,
-      updated_at=$3 WHERE id=$1 RETURNING id`, [id, JSON.stringify([stamped]), at]);
+      updated_at=$3, title=CASE WHEN title='New Chat' THEN COALESCE($4::text, title) ELSE title END
+      WHERE id=$1 RETURNING id`, [id, JSON.stringify([stamped]), at, initialTitle]);
     if (!rows.length) throw new Error('Chat not found');
     return stamped;
   }

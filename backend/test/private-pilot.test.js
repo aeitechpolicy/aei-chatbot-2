@@ -115,6 +115,35 @@ test('request model is fixed and returned usage is recorded without question tex
   assert.ok(csv.includes('10000')); assert.ok(!csv.includes('private-question-marker')); assert.ok(!csv.includes(OWNER));
 });
 
+test('the first answer titles the chat in the same request and follow-ups use only current evidence', async t => {
+  const f = await fixture(t, { complete: async request => {
+    const prompt = request.messages[0].content;
+    assert.ok(request.messages.every(message => message.role !== 'assistant'));
+    const first = request.messages.length === 2;
+    assert.equal(prompt.includes('TITLE:'), first);
+    const content = first
+      ? 'TITLE: Spectrum Sharing and Broadband\nAn initial observation [S1].'
+      : 'A follow-up observation [S1].';
+    return { ...answer(), choices: [{ message: { content } }] };
+  } });
+  const { token } = await f.login();
+  const chat = await f.newChat(token);
+  const route = `/api/chat/${chat.id}/message`;
+  const first = await f.request(route, { token, method: 'POST', body: { message: 'What has Shane Tews written about sharing spectrum for broadband?' } });
+  assert.equal(first.status, 200);
+  const firstBody = await first.json();
+  assert.equal(firstBody.response, 'An initial observation [S1].');
+  assert.equal(firstBody.chat.title, 'Spectrum Sharing and Broadband');
+  assert.equal(f.calls(), 1);
+
+  const second = await f.request(route, { token, method: 'POST', body: { message: 'What about rural deployment?' } });
+  assert.equal(second.status, 200);
+  assert.equal((await second.json()).chat.title, firstBody.chat.title);
+  const history = await (await f.request('/api/chat/history', { token })).json();
+  assert.equal(history[0].title, firstBody.chat.title);
+  assert.equal(f.calls(), 2);
+});
+
 test('daily question allowance blocks the provider call', async t => {
   const f = await fixture(t, { env: { CHATBOT_DAILY_QUESTIONS: '1' } });
   const { token } = await f.login(); const chat = await f.newChat(token);
@@ -252,13 +281,13 @@ test('article search requires login but no provider key, AI allowance or usage r
   assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
   for (const route of ['/api/research/search?q=', '/api/research/search?q=AI&scholar=..%2Fprivate', '/api/research/search?q=a&q=b']) assert.equal((await f.request(route, { token })).status, 400);
 });
-test('no matching sources returns an honest saved response without a provider call or charge', async t => {
-  const f = await fixture(t, { fetchArticles: async () => [] });
+test('catalog-only results produce a saved response without a provider call or charge', async t => {
+  const f = await fixture(t, { fetchArticles: async () => [{ title: 'Catalog only', body: 'Catalog summary', fullText: false }] });
   const { token } = await f.login(); const chat = await f.newChat(token);
   const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'An unsupported topic' } });
   assert.equal(response.status, 200); const body = await response.json();
   assert.equal(body.aiUsed, false); assert.match(body.response, /couldn't find matching evidence/);
-  assert.equal(body.chat.messages.length, 2); assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+  assert.equal(body.chat.messages.length, 2); assert.equal(body.chat.title, 'An unsupported topic'); assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
 });
 test('General mode supplies bounded article sources and records citation notices in history', async t => {
   const f = await fixture(t, { complete: async request => {

@@ -110,6 +110,11 @@ test('free database storage through the real Neon HTTP driver', async t => {
     assert.equal((await chats.getChat(chat.id)).title, 'Updated research title');
     assert.equal(await chats.deleteChat(chat.id), true);
     assert.equal(await chats.getChat(chat.id), null);
+    const untitled = await chats.createChat('General', null, 'owner');
+    await chats.addMessage(untitled.id, { role: 'assistant', content: 'First answer.' }, 'Spectrum Sharing');
+    await chats.addMessage(untitled.id, { role: 'assistant', content: 'Follow-up answer.' }, 'Another Topic');
+    assert.equal((await chats.getChat(untitled.id)).title, 'Spectrum Sharing');
+    assert.equal((await chats.getChat(untitled.id)).messages.length, 2);
   });
 
   await t.test('chat history and unfinished cost reservations survive a fresh app and reopened database', async () => {
