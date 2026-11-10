@@ -3,7 +3,7 @@ const path = require('node:path');
 const { MODEL, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS } = require('../utils/pilot');
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
-const { prepareSources, researchPrompt, checkCitations } = require('../utils/sourceContext');
+const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, checkCitations } = require('../utils/sourceContext');
 const { queryTerms } = require('../utils/research');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles }) {
@@ -124,8 +124,9 @@ router.post('/:chatId/message', async (req, res) => {
     }
 
     const userMessage = { role: 'user', content: message };
-    const chatMessages = chat;
-    const lastQuestion = [...chatMessages.messages].reverse().find(m => m.role === 'user')?.content;
+    const needsTitle = chat.title === 'New Chat';
+    const previousQuestions = chat.messages.slice(-6).filter(({ role }) => role === 'user');
+    const lastQuestion = previousQuestions.at(-1)?.content;
     const retrievalQuery = lastQuestion && queryTerms(message).length < 2 && !/\b(themes?|overview|focus)\b/i.test(message)
       ? `${lastQuestion} ${message}` : message;
     let articles;
@@ -135,17 +136,14 @@ router.post('/:chatId/message', async (req, res) => {
     if (!relevantFiles.length) {
       const aiResponse = { role: 'assistant', content: "I couldn't find matching evidence in the scholar archive. Try a specific topic, another scholar, or Article Search.", sources: [], searchMode: 'no_sources' };
       await chatManager.addMessage(chatId, userMessage);
-      await chatManager.addMessage(chatId, aiResponse);
-      if (!chatMessages.messages.length) await chatManager.updateChatTitle(chatId, message.slice(0, 50));
+      await chatManager.addMessage(chatId, aiResponse, needsTitle ? fallbackChatTitle(message) : null);
       return res.json({ response: aiResponse.content, sources: [], searchMode: 'no_sources', aiUsed: false, chat: await chatManager.getChatWithUserCheck(chatId, getUserId(req)), chatId });
     }
-    const systemMessage = researchPrompt(chat.domainName, relevantFiles, articles.some(a => a.selectionMode === 'overview'));
-    const contextMessages = [...chatMessages.messages.slice(-6).map(({ role, content }) => ({ role, content: content.replace(/\[S\d+\]/g, '[earlier source reference]') })), userMessage];
-
-    // Create full messages array
+    const systemMessage = researchPrompt(chat.domainName, relevantFiles, articles.some(a => a.selectionMode === 'overview'), needsTitle);
     const fullMessages = [
       { role: 'system', content: systemMessage },
-      ...contextMessages
+      ...previousQuestions.map(({ role, content }) => ({ role, content })),
+      userMessage
     ];
 
     // Get AI response
@@ -161,7 +159,10 @@ router.post('/:chatId/message', async (req, res) => {
       stream: false
     });
     aiResult = response;
-    const answerText = response.choices?.[0]?.message?.content;
+    const rawAnswer = response.choices?.[0]?.message?.content;
+    const { content: answerText, title } = needsTitle && typeof rawAnswer === 'string'
+      ? parseFirstAnswer(rawAnswer)
+      : { content: rawAnswer, title: null };
     if (typeof answerText !== 'string' || !answerText.trim()) {
       throw Object.assign(new Error('The model did not return an answer. Check Usage and costs before trying again.'), { status: 502, code: 'empty_answer' });
     }
@@ -169,14 +170,7 @@ router.post('/:chatId/message', async (req, res) => {
     const checkedAnswer = checkCitations(answerText, relevantFiles);
     const aiResponse = { role: 'assistant', ...checkedAnswer, sources: relevantFiles, searchMode: 'archive' };
 
-    // Add AI message to chat
-    await chatManager.addMessage(chatId, aiResponse);
-
-    // Update chat title if it's the first message
-    if (chatMessages.messages.length === 0) {
-      const title = message.substring(0, 50) + (message.length > 50 ? '...' : '');
-      await chatManager.updateChatTitle(chatId, title);
-    }
+    await chatManager.addMessage(chatId, aiResponse, needsTitle ? (title || fallbackChatTitle(message)) : null);
 
     const savedChat = await chatManager.getChatWithUserCheck(chatId, getUserId(req));
     await pilot.finish(usageId, { response });

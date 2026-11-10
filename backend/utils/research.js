@@ -146,8 +146,10 @@ function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_ba
       const key = doc.url || doc.key;
       const existing = unique.get(key);
       if (existing) {
-        existing.authors = [...new Set([...existing.authors, ...doc.authors])];
-        for (const scope of doc.scopes) existing.scopes.add(scope);
+        const preferred = doc.fullText && !existing.fullText ? doc : existing;
+        preferred.authors = [...new Set([...existing.authors, ...doc.authors])];
+        preferred.scopes = new Set([...existing.scopes, ...doc.scopes]);
+        unique.set(key, preferred);
       } else unique.set(key, doc);
     }
     const articles = [...unique.values()];
@@ -166,7 +168,7 @@ function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_ba
     }
     return pending;
   }
-  async function search({ query, scholar = 'General', limit = 12 } = {}) {
+  async function search({ query, scholar = 'General', limit = 12, fullTextOnly = false } = {}) {
     const archive = await catalog();
     const terms = queryTerms(query);
     const scope = scholar === 'General' ? null : scholarKey(scholar);
@@ -176,6 +178,7 @@ function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_ba
     const coverage = { articles: 0, fullTextArticles: 0, latestPublishedDate: null };
     const ranked = [];
     for (const doc of archive.articles) {
+      if (fullTextOnly && !doc.fullText) continue;
       if (scope && !doc.scopes.has(scope)) continue;
       if (!scope && named.length && !named.some(s => doc.scopes.has(s))) continue;
       coverage.articles++;

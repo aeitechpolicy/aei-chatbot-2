@@ -7,7 +7,7 @@ function scoreRelevance(article, query) {
   return queryTerms(query).filter(term => present.has(term)).length;
 }
 async function fetchRelevantArticles(domainName, query, maxResults = 6) {
-  const result = await articleSearch.search({ query, scholar: domainName, limit: maxResults });
+  const result = await articleSearch.search({ query, scholar: domainName, limit: maxResults, fullTextOnly: true });
   return result.articles.map(article => ({ ...article, selectionMode: result.mode }));
 }
 module.exports = { fetchRelevantArticles, domainToScholarName, scoreRelevance };

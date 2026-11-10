@@ -133,7 +133,7 @@ class ChatManager {
     }
   }
 
-  async addMessage(chatId, message) {
+  async addMessage(chatId, message, initialTitle = null) {
     try {
       const chat = await this.getChat(chatId);
       if (!chat) {
@@ -147,6 +147,7 @@ class ChatManager {
       };
 
       chat.messages.push(messageWithTimestamp);
+      if (initialTitle && chat.title === 'New Chat') chat.title = initialTitle;
       chat.updatedAt = new Date().toISOString();
 
       // Save updated chat
@@ -159,6 +160,7 @@ class ChatManager {
       if (chatIndex !== -1) {
         chats[chatIndex].updatedAt = chat.updatedAt;
         chats[chatIndex].messageCount = chat.messages.length;
+        chats[chatIndex].title = chat.title;
         await this.updateChatsIndex(chats);
       }
 

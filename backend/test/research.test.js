@@ -4,7 +4,7 @@ const fs = require('node:fs/promises');
 const os = require('node:os');
 const path = require('node:path');
 const { createArticleSearch, MAX_SOURCE_CHARS, safeUrl } = require('../utils/research');
-const { prepareSources, researchPrompt, checkCitations } = require('../utils/sourceContext');
+const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, checkCitations } = require('../utils/sourceContext');
 
 async function archive(t, entries) {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'aei-search-'));
@@ -78,6 +78,22 @@ test('duplicate URLs appear once; unsafe URLs and impossible dates are not suppl
   const network = (await engine.search({ query: 'spectrum' })).articles[0]; assert.equal(network.url, null); assert.equal(network.date, null);
   for (const bad of ['javascript:alert(1)', 'http://www.aei.org/x', 'https://aei.org@evil.example/x', 'https://evil.example/x']) assert.equal(safeUrl(bad), null);
 });
+test('chat ranks readable scholar files while article search can show catalog excerpts', async t => {
+  const { engine, kbPath } = await archive(t, [
+    { ...entries[0], excerpt: 'A catalog-only passage about workforce training.' },
+    { ...entries[0], scholar: 'Will Rinehart' },
+    { ...entries[3], title: 'Training Notes', excerpt: 'A second catalog-only passage about workforce training.' }
+  ]);
+  await fs.unlink(path.join(kbPath, 'Brent_Orrell', '0.txt'));
+  await fs.unlink(path.join(kbPath, 'Shane_Tews', '2.txt'));
+  const search = await engine.search({ query: 'workforce training' });
+  assert.equal(search.articles.length, 2);
+  assert.ok(search.articles.some(article => !article.fullText));
+  const chat = await engine.search({ query: 'workforce training', scholar: 'Brent_Orrell', fullTextOnly: true });
+  assert.equal(chat.articles.length, 1);
+  assert.match(chat.articles[0].body, /Apprenticeships/);
+  assert.equal((await engine.search({ query: 'workforce training', scholar: 'Shane_Tews', fullTextOnly: true })).articles.length, 0);
+});
 test('archive paths cannot read files outside the article store', async t => {
   const { engine, dir, indexPath, kbPath } = await archive(t, entries.slice(0, 1));
   await fs.writeFile(path.join(dir, 'outside.txt'), 'private-archive-marker');
@@ -100,4 +116,27 @@ test('answers with missing or invalid archive citations are replaced by a source
   const outside = checkCitations('See [another site](https://example.com) for more. [S1]', sources);
   assert.match(outside.citationNotice, /outside the supplied citation IDs/);
   assert.doesNotMatch(outside.content, /example.com/);
+});
+
+test('title metadata stays separate from the answer and invalid titles fall back', () => {
+  const answer = 'Training supports workers. [S1]';
+  assert.deepEqual(parseFirstAnswer(`TITLE: Workforce Training and AI\n${answer}`), { title: 'Workforce Training and AI', content: answer });
+  assert.deepEqual(parseFirstAnswer(`TITLE: https://example.org\n${answer}`), { title: null, content: answer });
+  assert.deepEqual(parseFirstAnswer('TITLE: Missing Answer'), { title: 'Missing Answer', content: '' });
+  assert.deepEqual(parseFirstAnswer(answer), { title: null, content: answer });
+  assert.equal(fallbackChatTitle('  Topic    with whitespace  '), 'Topic with whitespace');
+  assert.ok(fallbackChatTitle('A lengthy research question '.repeat(9)).length <= 64);
+});
+
+test('each answer line needs a citation and long quotations must match a cited source on that line', () => {
+  const quote = 'The available evidence supports this limited conclusion.';
+  const sources = prepareSources([{ title: 'First', body: quote }, { title: 'Second', body: 'A different observation appears here.' }]);
+  const mixed = checkCitations('A cited point [S1].\nA fabricated additional claim.', sources);
+  assert.match(mixed.citationNotice, /Part of the generated answer lacks a source reference/);
+  assert.doesNotMatch(mixed.content, /fabricated additional claim/);
+  const wrongSource = checkCitations(`“${quote}” [S2]\nAnother point [S1].`, sources);
+  assert.match(wrongSource.citationNotice, /quotation/);
+  assert.equal(checkCitations(`“${quote}” [S1]\nAnother point [S2].`, sources).citationNotice, null);
+  assert.match(checkCitations('Source is example.org [S1].', sources).citationNotice, /outside the supplied citation IDs/);
+  assert.match(checkCitations('INSUFFICIENT_EVIDENCE', sources).content, /do not answer this question/);
 });
