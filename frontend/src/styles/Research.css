@@ -1,0 +1,28 @@
+.article-search { flex: 1; min-width: 0; overflow-y: auto; padding: 2rem; background: #fff; color: #1f2937; }
+.research-heading, .research-search-form, .article-search > section, .article-search > p { max-width: 900px; margin-left: auto; margin-right: auto; }
+.research-heading h2 { margin: 0 0 .75rem; font-size: 1.65rem; }
+.research-heading p, .research-note { color: #596579; line-height: 1.6; }
+.research-search-form { margin-top: 1.5rem; padding: 1.25rem; border: 1px solid #d9e2ec; border-radius: 12px; background: #f7fafc; }
+.research-search-form > label { display: block; font-weight: 600; margin-bottom: .5rem; }
+.research-search-form input { box-sizing: border-box; width: 100%; padding: .8rem; border: 1px solid #aebccc; border-radius: 6px; font: inherit; }
+.research-controls { display: flex; align-items: end; flex-wrap: wrap; gap: .8rem; margin-top: .85rem; }
+.research-controls label { display: flex; flex-direction: column; gap: .35rem; font-weight: 600; }
+.research-controls select { max-width: 100%; padding: .65rem; border: 1px solid #aebccc; border-radius: 6px; background: white; font: inherit; }
+.research-controls button { border: 0; border-radius: 6px; padding: .75rem 1rem; background: #007cad; color: white; font: inherit; cursor: pointer; }
+.research-controls .research-overview { background: white; color: #006b96; border: 1px solid #aebccc; }
+.research-controls button:disabled { opacity: .6; cursor: default; }
+.research-sources { list-style: none; padding: 0; margin: 1rem 0; }
+.research-source { padding: 1.1rem 0; border-bottom: 1px solid #dce3eb; }
+.research-source h3 { font-size: 1rem; line-height: 1.5; margin: 0 0 .35rem; }
+.research-source a, .source-reference { color: #006b96; text-decoration: underline; text-underline-offset: 3px; }
+.source-number { color: #53687a; font-size: .8rem; }
+.source-metadata, .source-coverage { margin: .4rem 0; color: #596579; font-size: .8rem; }
+.research-source blockquote { margin: .8rem 0; padding-left: 1rem; border-left: 3px solid #b9cedd; white-space: pre-wrap; line-height: 1.65; font-size: .9rem; }
+.source-coverage { font-style: italic; }
+.research-error, .citation-notice { padding: .8rem; border-radius: 6px; background: #fff6df; color: #725000; line-height: 1.5; }
+.article-source-details { margin-top: 1rem; border-top: 1px solid #dce3eb; padding-top: .75rem; }
+.article-source-details summary { color: #006b96; font-weight: 600; cursor: pointer; }
+.legacy-source { overflow-wrap: anywhere; }
+@media(max-width: 640px) { .article-search { padding: 1.1rem; } .research-controls { align-items: stretch; flex-direction: column; } }
+
+.source-excerpt summary { color: #006b96; font-size: .85rem; cursor: pointer; margin: .4rem 0; }

@@ -4,6 +4,7 @@ const path = require('path');
 const Together = require('together-ai');
 const { createPilot } = require('./utils/pilot');
 const createChatRouter = require('./routes/chat');
+const createResearchRouter = require('./routes/research');
 
 function createApp(options = {}) {
 const env = options.env || process.env;
@@ -24,17 +25,28 @@ app.post('/api/auth/login', express.json({ limit: '2kb' }), (req, res) => {
 });
 
 // Authentication covers the spending endpoint, files, history, and reports.
+function requireStaffView(req, res, next) {
+  if (req.auth.id === 'demo') {
+    return res.status(403).json({ error: 'This view is available to staff accounts.', code: 'staff_only' });
+  }
+  next();
+}
+
 app.use('/api', pilot.requireAuth);
-app.use('/public', pilot.requireAuth);
-app.use('/api/files', express.json({ limit: '12mb' }));
+app.use('/public', pilot.requireAuth, requireStaffView);
+app.use('/api/files', (req, res, next) => {
+  // The scholar selector needs the domain list for every signed-in account.
+  if (req.method === 'GET' && req.path === '/domains') return next();
+  return requireStaffView(req, res, next);
+}, express.json({ limit: '12mb' }));
 app.use('/api', express.json({ limit: '128kb' }));
 app.get('/api/auth/session', (req, res) => res.json({ user: { id: req.auth.id, label: req.auth.label } }));
 app.post('/api/auth/logout', (req, res) => { pilot.logout(req.auth); res.json({ success: true }); });
-app.get('/api/usage', async (req, res, next) => {
+app.get('/api/usage', requireStaffView, async (req, res, next) => {
   try { res.json({ rows: await pilot.rows(req.auth.id), settings: pilot.settings }); }
   catch (error) { next(error); }
 });
-app.get('/api/usage.csv', async (req, res, next) => {
+app.get('/api/usage.csv', requireStaffView, async (req, res, next) => {
   try { res.type('text/csv').set('Content-Disposition', 'attachment; filename="aei-chatbot-usage.csv"').send(await pilot.csv(req.auth.id)); }
   catch (error) { next(error); }
 });
@@ -50,6 +62,7 @@ const complete = options.complete || (async request => {
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Routes
+app.use('/api/research', createResearchRouter(options.researchDependencies));
 app.use('/api/chat', createChatRouter({ pilot, complete, ...options.chatDependencies }));
 app.use('/api/files', options.fileRoutes || require('./routes/files'));
 

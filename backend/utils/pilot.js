@@ -47,10 +47,16 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   let setupError = null;
   for (const [id, label, password] of [
     ['owner', 'Chatbot Intern', env.CHATBOT_INTERN_PASSWORD],
-    ['supervisor', 'Chatbot RA', env.CHATBOT_RA_PASSWORD]
+    ['supervisor', 'Chatbot RA', env.CHATBOT_RA_PASSWORD],
+    ['demo', 'Demo User', env.CHATBOT_DEMO_PASSWORD]
   ]) {
     if (!password) continue;
-    if (password.length < 16 || password.length > 256) {
+    const invalidLength = password.length < 16 || password.length > 256;
+    if (id === 'demo' && (invalidLength || password === env.CHATBOT_INTERN_PASSWORD || password === env.CHATBOT_RA_PASSWORD)) {
+      console.warn('Demo login disabled. Set CHATBOT_DEMO_PASSWORD to a unique password of 16 to 256 characters.');
+      continue;
+    }
+    if (invalidLength) {
       setupError = 'Each configured login password must contain 16 to 256 characters.';
       continue;
     }
@@ -172,7 +178,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
       const query = userId === 'owner' ? 'SELECT * FROM usage ORDER BY started_at DESC LIMIT 5000' : 'SELECT * FROM usage WHERE user_id=? ORDER BY started_at DESC LIMIT 5000';
       result = userId === 'owner' ? db.prepare(query).all() : db.prepare(query).all(userId);
     }
-    const labels = { owner: 'Chatbot Intern', supervisor: 'Chatbot RA' };
+    const labels = { owner: 'Chatbot Intern', supervisor: 'Chatbot RA', demo: 'Demo User' };
     return result.map(row => ({ ...row, account_label: labels[row.user_id] || row.user_id }));
   }
 

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { User, Bot, FileText, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
+import { User, Bot } from 'lucide-react';
+import SourceCards from './SourceCards';
+import { safeSourceUrl } from '../utils/sources';
 import '../styles/MessageList.css';
 
 const MessageList = ({ messages, loading }) => {
@@ -11,44 +13,18 @@ const MessageList = ({ messages, loading }) => {
 
   useEffect(scrollToBottom, [messages]);
 
-  const SourceFiles = ({ sources }) => {
-    const [isExpanded, setIsExpanded] = React.useState(false);
-
-    if (!sources || sources.length === 0) return null;
-
-    return (
-      <div className="source-files">
-        <button
-          className="source-toggle"
-          onClick={() => setIsExpanded(!isExpanded)}
-          title={`${isExpanded ? 'Hide' : 'Show'} source files`}
-        >
-          {isExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
-          <FileText size={16} />
-          <span>Source Files ({sources.length})</span>
-        </button>
-        
-        {isExpanded && (
-          <div className="source-list">
-            {sources.map((source, index) => (
-              <div key={index} className="source-item">
-                <ExternalLink size={12} />
-                <span className="source-name">{source}</span>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  };
-
-  const formatMessageContent = (content) => {
+  const formatMessageContent = (content, sources = []) => {
     // React renders source and model text safely without interpreting raw HTML.
-    const tokens = /(\[Source:\s*[^\]\n]+\]|\*\*[^*\n]+\*\*|\*[^*\n]+\*|`[^`\n]+`)/g;
+    const tokens = /(\[S\d+\]|\[Source:\s*[^\]\n]+\]|\*\*[^*\n]+\*\*|\*[^*\n]+\*|`[^`\n]+`)/g;
     return String(content ?? '').split('\n').map((line, index) => (
         <React.Fragment key={index}>
           {index > 0 && <br />}
           {line.split(tokens).map((part, tokenIndex) => {
+            if (/^\[S\d+\]$/.test(part)) {
+              const source = sources.find(s => typeof s === 'object' && s.id === part.slice(1, -1));
+              const url = safeSourceUrl(source?.url);
+              return url ? <a key={tokenIndex} className="source-reference" href={url} target="_blank" rel="noopener noreferrer" title={source.title}>{part}</a> : <span key={tokenIndex}>{part}</span>;
+            }
             if (part.startsWith('[Source:') && part.endsWith(']')) return <span className="inline-citation" key={tokenIndex}>📄 {part.slice(8, -1).trim()}</span>;
             if (part.startsWith('**') && part.endsWith('**')) return <strong key={tokenIndex}>{part.slice(2, -2)}</strong>;
             if (part.startsWith('*') && part.endsWith('*') && part.length > 2) return <em key={tokenIndex}>{part.slice(1, -1)}</em>;
@@ -65,13 +41,13 @@ const MessageList = ({ messages, loading }) => {
         <div className="welcome-message">
           <div className="welcome-content">
             <h3>Welcome to AEI Chatbot! 👋</h3>
-            <p>Start a conversation by asking questions about the knowledge base.</p>
+            <p>Ask about saved AEI articles, or open Search articles to find passages without using AI credits.</p>
             <div className="welcome-tips">
               <div className="tip">
                 <strong>💡 Tip:</strong> Try asking about specific topics or scholars
               </div>
               <div className="tip">
-                <strong>📚 Explore:</strong> Switch between different knowledge domains
+                <strong>📚 Explore:</strong> Use General for sources across scholars, or choose a specific scholar
               </div>
             </div>
           </div>
@@ -90,12 +66,14 @@ const MessageList = ({ messages, loading }) => {
           </div>
           
           <div className="message-content">
-            {formatMessageContent(message.content)}
+            {formatMessageContent(message.content, message.sources)}
           </div>
 
-          {message.role === 'assistant' && message.sources && (
-            <SourceFiles sources={message.sources} />
-          )}
+          {message.citationNotice && <p className="citation-notice" role="note">{message.citationNotice}</p>}
+          {message.role === 'assistant' && message.sources?.length > 0 && <details className="article-source-details">
+            <summary>Article sources ({message.sources.length})</summary>
+            <SourceCards sources={message.sources} />
+          </details>}
         </div>
       ))}
       

@@ -1,6 +1,6 @@
 # Maintainer handoff
 
-Updated October 29, 2026. This describes private-pilot release 994b6dd, merged through PR #3 and deployed to the existing website/backend. The user has confirmed both logins, report/CSV access, separate chats, and persistence across a backend restart. This checkout adds a locally validated Qwen3.8 Flash follow-up, not yet published or tested against the real model. AI remains disconnected and no new payment is approved. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md) for current status. The original baseline checkout and investigation evidence remain separate and unchanged.
+Updated October 29, 2026. Deployed base is Qwen release 0391378, merged through PR #4 after private-pilot PR #3. Vercel succeeded, Render was reported live, and the user confirmed post-update login, saved chats and usage access. Both-account ownership and restart persistence passed earlier. Together stays disconnected and no new payment is approved. This checkout adds a locally tested research-search follow-up that is not yet published. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md). The original baseline and investigation evidence remain separate.
 
 ## Audience and operating plan
 
@@ -8,7 +8,7 @@ Start with two password accounts, Chatbot Intern and Chatbot RA, on the existing
 
 The user reports saving DATABASE_URL, CHATBOT_INTERN_PASSWORD, CHATBOT_RA_PASSWORD, NODE_VERSION=24, and CHATBOT_ALLOWED_ORIGINS=https://aei-chatbot.vercel.app as ordinary Render service variables using Save only. Values have not been inspected. The user also created an environment group; its current contents/link state have not been independently verified. Ordinary service variables take precedence over a matching group variable. Do not duplicate secrets into Vercel or source files.
 
-The user published the code manually through PR #3. GitHub main is merge 994b6dd; Vercel reports a successful deployment for that merge and the public website shows the new sign-in page. Render Events was reported live for the same version at 11:29 a.m. Eastern on October 29. The user has exercised live database reads/writes and restart persistence without sending an AI question. The assistant has not entered account credentials or made a paid AI call. The GitHub connector has read access only; the user performs signed-in changes on Windows.
+The user published the code manually through PR #3. GitHub main is Qwen merge 0391378; Vercel reports a successful deployment for that merge and the public website shows the new sign-in page. Render Events was reported live for PR #3 at 11:29 a.m. Eastern and later for Qwen merge 0391378 after PR #4 merged at 3:35 p.m. Eastern on October 29. The user has exercised live database reads/writes and restart persistence without sending an AI question. The assistant has not entered account credentials or made a paid AI call. The GitHub connector has read access only; the user performs signed-in changes on Windows.
 
 ## Code map
 
@@ -19,7 +19,11 @@ The user published the code manually through PR #3. GitHub main is merge 994b6dd
 | backend/storage/postgres.js | Neon HTTP driver, schema, atomic shared allowances, usage records, account-owned chats |
 | backend/routes/chat.js | Account-owned chat operations, archive retrieval, bounded prompt construction, model call, usage completion |
 | backend/routes/files.js | Protected File Manager operations with file/path limits |
-| backend/utils/aeiScraper.js | Searches the saved slim index and reads top matching local article files; despite the filename, it does not search the live web for each question |
+| backend/routes/research.js | Authenticated free search endpoint; validates query/scholar; no AI calls or ledger reservations |
+| backend/utils/research.js | Cached full-text ranking, catalog/metadata merge, source excerpts, overview samples and safe recorded metadata |
+| backend/utils/sourceContext.js | Bounded structured source cards, research prompt, citation-ID and quotation checks |
+| backend/utils/aeiScraper.js | Compatibility wrapper around saved-archive search; never a live web scraper |
+| frontend/src/components/ArticleSearch.js and SourceCards.js | Free search, scope selector, recent sample and recorded article links |
 | backend/utils/knowledgeBase.js | Local text archive and fallback search |
 | frontend/src/utils/api.js | Sign-in/session client and authorization headers; token in sessionStorage, never the password |
 | frontend/src/components/SignIn.js | Account selector and password entry |
@@ -49,17 +53,27 @@ The estimated daily app allowance is $0.50. The app reserves a conservative amou
 
 This follow-up fixes the model to Qwen/Qwen3.8-Flash; the user confirmed Serverless availability in Together's dashboard. Default estimates are $0.15/million input tokens and $0.47/million output tokens, from https://www.together.ai/models/qwen3-8-flash, checked October 29. Price settings and source are recorded with usage rows. Existing CHATBOT_INPUT_USD_PER_MILLION, CHATBOT_OUTPUT_USD_PER_MILLION, or CHATBOT_PRICE_SOURCE environment overrides take precedence; remove obsolete overrides or update them privately before live use. No visitor-selected model or Kimi fallback is implemented.
 
-The request sets reasoning: { enabled: false }, retains the 1,024 output-token limit, and disables automatic retries. A response with blank or missing answer text produces a safe error, records any returned usage as failed, and does not save an empty assistant message or expose reasoning text. Local tests verify SDK serialization and simulated behavior; actual provider acceptance and research quality remain untested. The deployed base release still uses the old Llama Turbo identifier until this follow-up is published. The old model's public page marks it unavailable on Serverless; a dedicated GPU endpoint is not part of this plan.
+The request sets reasoning: { enabled: false }, retains the 1,024 output-token limit, and disables automatic retries. A response with blank or missing answer text produces a safe error, records any returned usage as failed, and does not save an empty assistant message or expose reasoning text. Local tests verify SDK serialization and simulated behavior; actual provider acceptance and research quality remain untested. The deployed Qwen base uses this same model and estimate settings; the research follow-up does not change them. The old model's public page marks it unavailable on Serverless; a dedicated GPU endpoint is not part of this plan.
 
 App allowances cannot prevent someone with the provider key from making requests elsewhere, and estimates are not exact provider billing caps.
 
 ## Research behavior and data limits
 
-A scholar conversation ranks saved catalog records by query-word matches in titles/excerpts, then reads up to three matched article texts. If that retrieval returns no articles, the route uses the local text-search fallback. Source metadata is supplied to the model and citations are requested; correctness still needs evaluation against original articles. The source prompt still contains legacy wording about live articles even though current retrieval reads the archive.
+Both scholar-specific and General conversations now use saved article evidence. General searches all four served scholars; names in a query narrow the candidate scholar collections. The free GET /api/research/search endpoint uses the same engine, requires a session and does not call Together, reserve AI budget or create an AI usage row. Search queries are not written to the AI ledger; platform access logs may separately record request URLs.
 
-General mode does not include the article source blocks in its prompt. It must not be described as a grounded cross-scholar search. The prompt includes the last nine saved messages plus the current question; there is no memory across conversations.
+The engine loads the slim index and articleMetadata.json, then scans the served scholars' saved .txt files so readable files absent from the index can still be found. It never parses the 133 MB full site index at runtime. Header titles are read from saved text when metadata is missing; author, date and URL are not inferred from a filename. A folder identifies a collection, not verified authorship. Empty bodies can fall back to an actual catalog excerpt and are labeled accordingly. Dates must be valid calendar dates; links must be HTTPS on aei.org/www.aei.org. Paths, symlinks and file-size checks restrict reads to the article store.
 
-The article archive stays in GitHub. File Manager writes remain temporary on Render Free. Old backend/chats files are preserved, not migrated or assigned to either account. Do not publish local private-data files, chat exports, credentials, or investigation evidence with the code update.
+Token-based relevance ignores question filler and scholar names, uses whole words, normalizes common plurals, and treats AI/artificial intelligence consistently. Term rarity, title matches, query coverage, text substance and article length affect rank. Cross-scholar results include a comparable relevant example per scholar when available; a weak unrelated result is not inserted merely to fill a scholar slot. Duplicate recorded URLs appear once. This is lexical search, not semantic search; ambiguous questions and synonyms can still be missed.
+
+The in-memory index builds on demand, is shared by concurrent searches and refreshes after five minutes. File changes can take that long to appear; deployment/restart rebuilds it. Reads run with bounded concurrency. Saved text is capped at 200,000 characters/article and files above 2 MB are not loaded. A catalog excerpt can still be used if available. Local evaluation counted 1,530 searchable documents, 1,466 with article text; initial counts can change with archive updates. The local cache reached roughly 200–250 MB process RSS in a standalone evaluation, not a production memory guarantee. First-time file hydration was slow on this Mac; a later local build took about a second and cached searches took milliseconds. Render cold-start performance has not been measured.
+
+Search displays up to 12 results. AI receives up to six excerpts of at most 2,200 characters each, rather than whole articles, plus at most the last six conversation messages and the current question. Passage windows retain original wording and mark omissions. IDs [S1] etc. refer to the current answer's stored source objects; earlier citation markers in conversation context are marked as earlier references. Structured title/author/date/URL/excerpt fields and citation notices are stored with the answer in the existing chat JSON; no database migration is required.
+
+A broad theme/overview request uses a small recent sample and labels that limitation. It does not compute corpus-wide theme frequencies. The prompt asks for supported patterns, distinctions between scholars, exact short quotes, and honest abstention. It no longer imposes a single institutional ideological position. Unknown citation IDs are replaced; missing citations or long unmatched quotations receive a notice. These checks validate references and visible wording, not the truth or semantic support of every claim.
+
+No matches produces a saved explanatory reply without a provider call. Archive failures block the provider call. Free search remains usable with Together disconnected. Real model behavior still needs a later approved funded evaluation.
+
+The article archive stays in GitHub. File Manager writes remain temporary on Render Free. Old backend/chats files are preserved, not migrated or assigned to either account. Do not publish local private-data files, chat exports, credentials, or investigation evidence with a code update.
 
 ## Article refresh pipeline
 
@@ -93,7 +107,7 @@ Run npm test in backend, npm test -- --watchAll=false --runInBand in frontend, a
 
 ## Publication and troubleshooting
 
-PR #3 published the matching backend and website together. Both private logins, database access, report download, account separation, and restart persistence now pass by user report. Publish and verify this Qwen follow-up while Together stays disconnected. Later, when the user authorizes funding and a small live AI test, add a fresh chatbot-only project key privately. A new key alone does not fund requests. No paid test or hosting upgrade is currently authorized. For future releases, review the code and coordinate backend/website deployment. Save revisions and results in VALIDATION.md.
+PR #3 published the matching backend and website together. Both private logins, database access, report download, account separation, and restart persistence now pass by user report. Publish and verify this research-search follow-up while Together stays disconnected. No new environment settings, dependencies or paid service are needed. Later, when the user authorizes funding and a small live AI test, add a fresh chatbot-only project key privately. A new key alone does not fund requests. No paid test or hosting upgrade is currently authorized. For future releases, review the code and coordinate backend/website deployment. Save revisions and results in VALIDATION.md.
 
 - Login setup error: check the two password setting names, length, and that they differ. Do not print their values.
 - Browser connection error: check REACT_APP_API_URL in Vercel, the exact website origin in Render, and whether the service has deployed the updated code/settings.
@@ -101,8 +115,8 @@ PR #3 published the matching backend and website together. Both private logins, 
 - Unexpected spending: check Together's authoritative billing records and revoke exposed keys at Together. Removing a Render variable alone does not revoke a provider key.
 - Free-service restart: signing in again is expected; new database-backed chats and usage should remain. Verify this live before relying on the deployment.
 
-The Qwen follow-up is based on merged release 994b6dd99493dcbbdd92e901a9d699c0698a146e, confirmed as GitHub main on October 29. No frontend source or dependencies change in this follow-up. Rolling back to an older unprotected backend is not a safe way to restore AI access: keep Together disconnected while investigating or repairing a failed release.
+The research-search follow-up is based on merged Qwen release 0391378d9f3f12a7dcee12a1525c7a444486e048. Both backend and frontend change; dependencies and environment settings do not. Publish both parts together through one reviewed pull request. Rolling back to an older unprotected backend is not a safe way to restore AI access: keep Together disconnected while investigating or repairing a failed release.
 
 ## Next research improvements
 
-Evaluate answers and citations against a small set of real research questions; improve article coverage and relevance; add source-grounded cross-scholar themes; send shorter relevant excerpts to reduce cost; consider article-search-only results before paid generation. Broader use needs individual institutional accounts, operational monitoring, and a storage/hosting review. These are planned improvements, not completed features.
+Evaluate actual answers and citations against real research questions; improve missing metadata, article freshness and coverage; consider semantic search if lexical search misses important work; evaluate cross-scholar theme answers on a controlled source set. Free article search, shared General-mode sources and bounded excerpts are included in this follow-up; real theme-answer quality remains untested. Broader use needs individual institutional accounts, operational monitoring, and a storage/hosting review. These are planned improvements, not completed features.

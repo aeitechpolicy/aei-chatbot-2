@@ -1,50 +1,45 @@
 # Validation record
 
-Checked October 29, 2026 with bundled Node 24.22.1. Automated AI replies are simulated; no paid API calls were made.
+Checked October 29, 2026 using Node 24.22.1. This research-search follow-up is local and unpublished, based on deployed Qwen merge 0391378d9f3f12a7dcee12a1525c7a444486e048.
 
-## Qwen follow-up — prepared locally, not yet published
+## Research-search follow-up
 
-Base: merged release 994b6dd99493dcbbdd92e901a9d699c0698a146e, confirmed as GitHub main on October 29. The user selected Qwen3.8 Flash and deferred new payments. Six backend code/test files and four root documentation files change; frontend source and dependencies are unchanged.
+- **45 backend tests passed**, zero failures. Tests use simulated provider replies, temporary data and local PGlite behind the real Neon HTTP driver. The PostgreSQL module was also rerun after adding structured-source and citation-notice round-trip assertions.
+- **11 website tests passed**, zero failures. New checks cover authenticated navigation to article search, no chat/AI request for a search, scope selection, recorded links/excerpts, no matches, archive errors, immediate recent-sample search, and safe numbered citation rendering. Existing sign-in/session/HTML-safety checks still pass.
+- **Production website build passed.** Existing build-tool deprecation and stale browser-data notices remain. No dependency or lockfile change was needed. The local preview build used a localhost API override; build output is excluded from the source ZIP and Vercel uses its existing production environment setting.
+- Local browser preview: signed into an isolated test account, opened Search articles, selected Shane Tews, searched spectrum broadband, and visibly inspected real saved-archive results and recorded AEI links. Saved screenshot: outputs/Research Search Update/Article search preview.png outside the repository. The preview AI function was disabled, all passwords were disposable local test values, and no real account credentials were used.
 
-- Backend: **32 tests passed, zero failures** after the Qwen changes. The suite covers sign-in, account ownership, allowances, concurrent reservations, local PostgreSQL integration, durability, database outages, failed writes, UTC boundaries, and Together SDK serialization without automatic retries.
-- The SDK check verifies the exact model ID Qwen/Qwen3.8-Flash, 1,024 output tokens, and reasoning: { enabled: false } survive request serialization.
-- Default estimate calculations use $0.15/million input tokens and $0.47/million output tokens. Budget tests specify independent test rates so pricing changes do not weaken the allowance checks.
-- A simulated reasoning-only response with blank answer text is rejected safely. Known token usage/cost is recorded as failed, reasoning text is not returned, no empty assistant message is saved, and the provider is called once.
-- Tests use the real Neon HTTP driver intercepted by local PGlite PostgreSQL. They do not connect to the user's Neon project or Together account.
-- No real-model response, provider acceptance of the reasoning setting, research-quality result, or actual provider cost has been verified. Qwen is a selected candidate, not a proven best model for AEI.
+Backend checks cover full-text evidence absent from titles/excerpts; stop-word and whole-word handling; no arbitrary results for unmatched queries; AI/artificial-intelligence normalization; scholar scope and broad samples; readable files missing from the slim index; original-wording bounded passages; duplicate URLs; absent metadata; unsafe links/paths/symlinks; unknown citation IDs and unmatched quotations. API checks prove signed-out requests fail, free search needs no model key or AI reservation, General includes sources, no matches avoids the provider, and an archive failure cannot trigger an ungrounded provider fallback.
 
-Command run from backend:
+Existing protections remain covered: private chat ownership, sessions, login limits, shared budgets, request limits, atomic reservations across instances, PostgreSQL persistence/outages, unknown-cost records, Qwen SDK serialization, empty replies and no automatic retries.
 
-    node --test test/private-pilot.test.js test/ledger-concurrency.test.js test/postgres-storage.test.js test/together-client.test.js
+Commands from the appropriate app folders:
 
-Result: tests 32; pass 32; fail 0; exit status 0.
-
-## Base private-pilot release
-
-Before PR #3, 31 backend tests and 6 website tests passed, and the production website build passed. Website tests cover sign-in, rejected credentials, session headers and expiry, the RA usage report, safe rendering of hostile HTML, and basic message formatting. The frontend is unchanged by the Qwen follow-up, so those checks were not repeated for this backend/documentation update.
-
-The backend locked-dependency audit reported zero known vulnerabilities. Compatible backend patches, Together SDK 1.0.0, qs 6.17.1, and the website Axios patch were included in the base release. This does not constitute a complete security audit; the legacy website toolchain still has maintenance work. Existing build-tool deprecation and browser-data notices did not prevent the build.
-
-Commands run from the appropriate backend/frontend folders for the base release:
-
-    node --test test/private-pilot.test.js test/ledger-concurrency.test.js test/postgres-storage.test.js test/together-client.test.js
+    node --test test/*.test.js
+    node --test test/postgres-storage.test.js
     node node_modules/react-scripts/bin/react-scripts.js test --watchAll=false --runInBand
     node node_modules/react-scripts/bin/react-scripts.js build
-    npm audit --json
 
-Earlier browser previews remain in outputs/Private Pilot Preview. Their replies and amounts are simulated.
+## Real saved-archive evaluation
 
-## Live release checks — October 29
+Six local cases checked workforce training, the First Amendment, spectrum/broadband, AI governance, a broad sample and a deliberately nonexistent term. Sources are real saved text; no model was called. The archive exposes 1,530 searchable articles/catalog excerpts, including 1,466 with readable article text, compared with the prior 1,165-record catalog. There are 1,544 saved text files; empty/unusable evidence is excluded. Search uses recorded metadata and marks omissions rather than guessing it.
 
-- PR #3 merged into main as 994b6dd99493dcbbdd92e901a9d699c0698a146e. All 28 intended files at review head 3591aac80d8c9046fb77cf691d660e33306a10bf matched the tested copy by Git blob SHA, with no unexpected files.
-- Vercel reported a successful deployment. The public sign-in screen and both account labels were inspected directly.
-- The user reported Render Events live for 994b6dd at 11:29 a.m. Eastern.
-- User-confirmed checks passed: Intern sign-in, RA sign-in, usage report, CSV download, empty-chat creation, separate account histories in both directions, and both accounts' chats surviving a backend restart. Reauthentication after restart was expected.
-- The user saved DATABASE_URL, both passwords, NODE_VERSION=24, and CHATBOT_ALLOWED_ORIGINS in Render. Secret values were not shared with or inspected by the assistant.
-- No live AI question has been sent. No new payment, paid hosting upgrade, or paid AI test was performed by the assistant.
+The first uncached Mac read included slow file hydration; a later process built the index in about a second and cached queries took milliseconds. Standalone process RSS was roughly 200–250 MB. These are local observations, not production latency or memory guarantees. Cold Render behavior and live archive refresh remain unmeasured. Evaluation details are saved in outputs/Research Search Update/Archive evaluation.json outside the repository.
 
-## Remaining checks
+The prompt accepts at most six source excerpts of 2,200 characters each. This bounds source text; it does not guarantee a fixed token count, lower cost on every question or better real-model answers. Source-ID/quotation checks cannot verify semantic support of every claim. Broad samples are not corpus-wide theme frequency analysis.
 
-Publish and inspect the Qwen follow-up, then confirm the new Render deployment. Keep Together disconnected until the user authorizes funding and a small live test. Later verify one real answer, source support, returned token usage, and the estimated usage record against Together's billing. A new key alone does not fund requests. Existing app allowances do not cap activity outside this chatbot.
+## Demo User checks on November 10, 2026
 
-Login, chat storage, account separation, and restart persistence are live. Retrieval quality, source-grounded General mode, cross-scholar synthesis and citation verification remain future research work; switching models alone does not complete them.
+All 47 backend tests passed with simulated provider replies. The new tests cover separate login and chat access, denied usage reports and file tools, and usage recording under Demo User in the Intern report. The changed frontend modules passed JSX parsing. The frontend suite and build were stopped while loading local dependencies. Check the Vercel preview before merging.
+
+## Deployed base checks
+
+PR #3 deployed private logins/storage as 994b6dd; all 28 intended files matched the tested source before merge. User-confirmed live checks passed for both accounts, usage/CSV, private histories and restart persistence. PR #4 deployed Qwen as 0391378; all 10 changed files matched the prepared package. Vercel succeeded, Render was reported live, and the user confirmed post-update sign-in, saved chats and Usage and costs. PR #4's automated statuses were deployment/preview checks; the 32 backend tests for that release ran locally.
+
+The base release backend locked-dependency audit reported zero known vulnerabilities. This is not a complete security audit and the legacy website toolchain still needs maintenance. This follow-up adds no dependencies.
+
+## Remaining live work
+
+Publish and verify this research-search update on both Vercel and Render. Perform free search/scope/no-match/source-link checks after deployment. No new payment, hosting upgrade, real Together key or paid model call is authorized. Keep AI disconnected.
+
+Later, with explicit funding approval, test Qwen's actual request compatibility, citation support, useful synthesis, short exact quotes, differences between scholars, abstention and token/cost reporting. No real Qwen answer has been evaluated. Do not describe the model or citation system as proven accurate.

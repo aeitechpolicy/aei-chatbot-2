@@ -20,6 +20,7 @@ const Sidebar = ({
   chats,
   currentChatId,
   collapsed,
+  showFileManager = true,
   onViewChange,
   onNewChat,
   onSelectChat,
@@ -103,13 +104,13 @@ const Sidebar = ({
           >
             <Plus size={20} />
           </button>
-          <button 
+          {showFileManager && <button
             className={`sidebar-action ${currentView === 'files' ? 'active' : ''}`}
             onClick={() => onViewChange('files')}
             title="File Manager"
           >
             <Folder size={20} />
-          </button>
+          </button>}
         </div>
       </div>
     );
@@ -149,13 +150,13 @@ const Sidebar = ({
               <MessageSquare size={16} />
               <span>Chats</span>
             </button>
-            <button 
+            {showFileManager && <button
               className={`view-tab ${currentView === 'files' ? 'active' : ''}`}
               onClick={() => onViewChange('files')}
             >
               <Folder size={16} />
               <span>Files</span>
-            </button>
+            </button>}
           </div>
         </div>
 

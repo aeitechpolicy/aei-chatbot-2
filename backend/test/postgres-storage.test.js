@@ -97,7 +97,10 @@ test('free database storage through the real Neon HTTP driver', async t => {
     const title = "Research '; DROP TABLE aei_pilot_chats; --";
     const chat = await chats.createChat('Clay_Calvert', title, 'owner');
     await chats.addMessage(chat.id, { role: 'user', content: 'A private research question.' });
-    await chats.addMessage(chat.id, { role: 'assistant', content: 'A cited answer.', sources: ['Test source'] });
+    const sources = [{ id: 'S1', title: 'Recorded article', url: 'https://www.aei.org/article/', excerpt: 'A saved source passage.', date: null }];
+    await chats.addMessage(chat.id, { role: 'assistant', content: 'A cited answer [S1].', sources, citationNotice: 'Verify the quotation.' });
+    const stored = (await chats.getChat(chat.id)).messages[1];
+    assert.deepEqual(stored.sources, sources); assert.equal(stored.citationNotice, 'Verify the quotation.');
     assert.equal((await chats.getChat(chat.id)).messages.length, 2);
     assert.equal(await chats.getChatWithUserCheck(chat.id, 'supervisor'), null);
     assert.equal((await chats.getUserChats('owner'))[0].messageCount, 2);
@@ -158,7 +161,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
     const env = { RENDER: 'true' };
     let aiCalls = 0;
     const app = createApp({ env, pilot, fileRoutes: express.Router(),
-      chatDependencies: { knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: async () => [] },
+      chatDependencies: { knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: async () => [{ title: 'Database fixture article', body: 'Simulated evidence for a question.', url: 'https://www.aei.org/articles/database-fixture/' }] },
       complete: async () => { aiCalls++; return response(); }
     });
     const server = await new Promise(resolve => { const s = app.listen(0, '127.0.0.1', () => resolve(s)); });

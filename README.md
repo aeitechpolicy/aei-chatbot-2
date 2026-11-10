@@ -1,62 +1,45 @@
 # AEI research chatbot
 
-An internal research assistant for exploring AEI scholars' publications, finding sources, and identifying themes. This project contains the React website and the Node/Express backend.
+An internal research assistant for finding AEI scholars' publications, examining cited evidence and exploring themes. This repository contains the React website, Node/Express backend and saved article archive.
 
-## Current status — October 29, 2026
+## Status — October 29, 2026
 
-The private pilot was merged through pull request #3 and deployed on October 29. The release is 994b6dd99493dcbbdd92e901a9d699c0698a146e. The public login page was inspected, and the user confirmed both account logins, the usage report, CSV download, separate empty chats, and chat persistence after a Render restart. Secret values have not been inspected.
+The private pilot and Qwen update are deployed through PRs #3 and #4. Current deployed base: 0391378d9f3f12a7dcee12a1525c7a444486e048. Both account logins, saved chats, usage reports and restart persistence were confirmed by the user. Vercel reports success and Render was reported live. Together remains disconnected; no new payment or live Qwen test is approved.
 
-This follow-up selects **Qwen3.8 Flash** for the next AI test, using Together's Serverless API. The user confirmed that model in the account dashboard. The code and simulated tests are prepared locally; this follow-up has not yet been published or tested against the real model. Together remains disconnected, and no payment or paid test is approved yet.
+**This research-search follow-up is prepared locally and has not yet been published.** Local checks use saved articles, simulated AI and local PostgreSQL. Real Qwen compatibility and answer quality remain untested.
 
-The intended starting audience is two accounts: **Chatbot Intern** and **Chatbot RA**. This is a small internal pilot; broader staff or public access needs further work.
+## Find sources without AI credits
 
-## Using the private pilot
+After this follow-up is published, sign in at [the chatbot](https://aei-chatbot.vercel.app/) and choose **Search articles**. Enter a topic or question, choose one scholar or All scholars, then select Search saved articles. Results show relevant passages, recorded author/date information, and original AEI links when available. Read full saved excerpt expands a result. This search does not call Together or reserve an AI allowance.
 
-1. Open the [chatbot website](https://aei-chatbot.vercel.app/) and sign in with your assigned account and private password.
-2. Select a scholar before starting a new conversation. The chat keeps that scholar selection.
-3. Once AI is connected, ask a question, then check cited articles against the original source before using the answer in research.
-4. Open Usage and costs to see recorded requests and estimated costs, or download the CSV.
-5. Sign out when finished. A server restart or free-service sleep also requires signing in again.
+Explore a recent sample shows saved articles across the selected scholars. It helps a reader explore possible themes; it does not generate an AI summary or establish the most common themes in an entire body of work. The archive is incomplete and search is not a live web search.
 
-The Chatbot Intern account can see both accounts' usage records; Chatbot RA can see its own records. Each account has its own chat history. These are two role accounts rather than individually identified staff accounts.
+The local archive evaluation found 1,530 searchable articles or catalog excerpts, including 1,466 with saved article text. Search previously used a 1,165-record title/excerpt index. There are 1,544 saved text files; empty/unusable files are not treated as source evidence. Counts can change as the archive is refreshed.
 
-## What the pilot adds
+## Ask a cited research question later
 
-- Password sign-in checked by the backend, including protection for AI requests, files, chats, and usage reports.
-- Durable new chat history and usage records in Neon Postgres.
-- Starting allowances of 50 AI attempts per UTC day across the app, 30 per account, and five per minute per account.
-- A daily estimated app allowance of $0.50, with reservations before an AI request and records for uncertain outcomes.
-- Limits on question length, source/context size, and answer length; automatic paid retries are disabled.
-- Text rendering that does not interpret model responses as raw webpage HTML.
+When funded AI use is approved and connected, select a scholar and start a new chat, or use General to search across the served scholars. The server supplies up to six relevant excerpts, each limited to 2,200 characters, with recorded metadata. It asks the model to distinguish a source's claims from interpretation, preserve differences between scholars, and cite source IDs such as [S1]. Numbered citations link to the recorded AEI URL; Article sources expands the saved evidence.
 
-These are application controls. They do not cap requests made elsewhere with an API key or guarantee Together's final bill. This follow-up fixes the model to Qwen/Qwen3.8-Flash and estimates costs at $0.15 per million input tokens and $0.47 per million output tokens, checked against Together's model page on October 29. Optional reasoning is requested off, and answers remain limited to 1,024 output tokens. A blank answer is reported as failed while retaining any returned usage, with no automatic retry. Real provider behavior and research quality still need an approved live test. See the setup guide.
+Unknown source IDs are replaced with an unverified-source marker. Missing citations and long quotations not found in the supplied excerpts produce a review notice. These checks cannot prove that every claim is supported. Check the original sources before relying on an answer.
 
-## Research coverage and remaining limits
+When no evidence matches, the chatbot explains that without calling the model. A failed archive search also blocks the AI call. A positive article search alone does not prove the excerpts answer the question.
 
-The scholar search uses the saved AEI article index and local article text, not a fresh web search for each question. The served scholar list is in [servedScholars.js](backend/utils/servedScholars.js): Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart. Scheduled archive updates depend on working GitHub Actions and the AEI network runner; a schedule in the repository does not establish that the latest update succeeded.
+## Accounts, storage and costs
 
-**General mode currently does not include the scholars' article sources in its AI prompt.** Use a scholar-specific conversation for research from the archive. Citation accuracy, article coverage, relevance ranking, cross-scholar search, and research evaluation remain future work. An instruction to cite accurately is not a guarantee that every generated claim is supported.
+Chatbot Intern and Chatbot RA have separate histories. Intern can see both accounts' usage; RA can see its own. New chats and usage use the connected Neon database. Sessions last up to eight hours; sign-out revokes them and backend restarts require signing in again.
 
-New chats and usage use the connected database. The article archive stays in GitHub. File Manager uploads and edits still use Render's temporary filesystem and can disappear after a restart or redeployment. Older chat files are preserved and have not been assigned or migrated into the new accounts.
+AI limits remain 50 attempts per UTC day overall, 30 per account/day, five per minute/account, a $0.50 estimated daily app allowance, 6,000 characters per question and 1,024 output tokens. Optional reasoning is requested off and automatic paid retries are disabled. The fixed model is Qwen/Qwen3.8-Flash. Default estimates are $0.15/million input tokens and $0.47/million output tokens, checked October 29: https://www.together.ai/models/qwen3-8-flash. Existing private price overrides take precedence.
 
-## Where everything lives
+App allowances cover this app only and estimates can differ from Together's final bill. Free article searches do not appear as AI usage rows. No paid hosting upgrade is introduced; keep Render Free, Neon Free and the existing Vercel deployment. The actual Vercel account plan/history has not been independently verified. Free services have quotas and may sleep or pause. AI answers still require funded provider credit and a fresh private key when the user approves them.
 
-| Service | Purpose | Where to find it |
-| --- | --- | --- |
-| GitHub | Source code, article archive, update workflows | [aeitechpolicy/aei-chatbot-2](https://github.com/aeitechpolicy/aei-chatbot-2) |
-| Vercel | Chatbot website | Chatbot project in the Vercel dashboard |
-| Render Free | Backend, sign-in checks, AI request controls | aei-chatbot service → Environment, Events, and Logs |
-| Neon Free | New chats and usage records | Existing Neon project → production branch; Connect contains the private connection string |
-| Together AI | Paid model responses and final billing | API Keys, Analytics, and Billing in Together's dashboard |
+## Coverage and maintenance
 
-No paid hosting upgrade is introduced. Keep Render Free, Neon Free, and the existing Vercel deployment. Vercel's actual plan and billing history have not been independently verified. Together AI answers still cost money. Free services have quotas and may sleep or pause; do not enable a paid upgrade automatically.
+The served scholars are Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. Search uses saved full text when available and clearly labels catalog-excerpt fallbacks. Missing authors, dates and URLs stay unrecorded; a scholar collection does not establish authorship. Search uses word-based relevance rather than semantic embeddings and can miss synonyms. Source quality, archive updates, broader scholar coverage and real theme/citation evaluation still need work.
 
-## Setup and maintenance
+The archive stays in GitHub. File Manager uploads and edits remain temporary on Render Free. Older legacy chats were preserved, not migrated into the new accounts.
 
-- [Private pilot setup](PRIVATE%20PILOT%20SETUP.md): settings, publication sequence, and operating limits.
-- [Maintainer handoff](HANDOFF.md): code map, storage, archive pipeline, troubleshooting, and future work.
-- [Validation record](VALIDATION.md): checks completed and remaining live checks.
+- [Setup and publication](PRIVATE%20PILOT%20SETUP.md)
+- [Maintainer handoff](HANDOFF.md)
+- [Validation record](VALIDATION.md)
 
-Use Node 24 and the npm lockfiles. Install each app's dependencies with npm ci in its own folder. The frontend builds with npm run build in frontend. See the handoff for local development instructions.
-
-Keep passwords, database connection strings, and API keys in private environment settings. Never commit an actual .env file. A revoked key must not be reused; deleting a file from GitHub does not erase its older versions.
+Use Node 24 and npm ci in each app folder. Keep all real passwords, database URLs and API keys in private Render settings, never source code or the website bundle. The revoked old key must not be reused.
