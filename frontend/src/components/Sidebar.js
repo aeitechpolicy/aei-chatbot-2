@@ -21,6 +21,7 @@ const Sidebar = ({
   currentChatId,
   collapsed,
   showFileManager = true,
+  chatBusy,
   onViewChange,
   onNewChat,
   onSelectChat,
@@ -30,10 +31,7 @@ const Sidebar = ({
   onCollapse,
   onDomainsUpdate
 }) => {
-  const [expandedSections, setExpandedSections] = useState({
-    chats: true,
-    domains: false
-  });
+  const [chatsExpanded, setChatsExpanded] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [showChatOptions, setShowChatOptions] = useState(null);
   const optionsRef = useRef(null);
@@ -44,13 +42,6 @@ const Sidebar = ({
   );
 
   const recentChats = filteredChats.slice(0, 20);
-
-  const toggleSection = (section) => {
-    setExpandedSections(prev => ({
-      ...prev,
-      [section]: !prev[section]
-    }));
-  };
 
   const handleChatOptions = (chatId, event) => {
     event.stopPropagation();
@@ -99,7 +90,8 @@ const Sidebar = ({
           </button>
           <button 
             className="sidebar-action"
-            onClick={() => onNewChat()}
+            onClick={onNewChat}
+            disabled={chatBusy}
             title="New Chat"
           >
             <Plus size={20} />
@@ -136,7 +128,8 @@ const Sidebar = ({
         <div className="sidebar-actions">
           <button 
             className="action-button new-chat"
-            onClick={() => onNewChat()}
+            onClick={onNewChat}
+            disabled={chatBusy}
           >
             <Plus size={16} />
             <span>New Chat</span>
@@ -181,20 +174,21 @@ const Sidebar = ({
           <div className="section">
             <button 
               className="section-header"
-              onClick={() => toggleSection('chats')}
+              onClick={() => setChatsExpanded(expanded => !expanded)}
             >
-              {expandedSections.chats ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+              {chatsExpanded ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
               <span>Recent Chats ({recentChats.length})</span>
             </button>
 
-            {expandedSections.chats && (
+            {chatsExpanded && (
               <div className="section-content">
                 {recentChats.length === 0 ? (
                   <div className="empty-state">
                     <p>No chats found</p>
                     <button 
                       className="empty-action"
-                      onClick={() => onNewChat()}
+                      onClick={onNewChat}
+                      disabled={chatBusy}
                     >
                       Start your first chat
                     </button>
@@ -205,12 +199,12 @@ const Sidebar = ({
                       <div 
                         key={chat.id}
                         className={`chat-item ${currentChatId === chat.id ? 'active' : ''}`}
-                        onClick={() => onSelectChat(chat.id)}
+                        onClick={() => { if (!chatBusy) onSelectChat(chat.id); }}
                       >
                         <div className="chat-content">
                           <div className="chat-title">{chat.title}</div>
                           <div className="chat-meta">
-                            <span className="chat-domain">{chat.domainName}</span>
+                            <span className="chat-domain">{chat.domainName === 'General' ? 'All 4 scholars' : chat.domainName.replace(/_/g, ' ')}</span>
                             <span className="chat-date">{formatChatDate(chat.updatedAt)}</span>
                           </div>
                         </div>
@@ -226,6 +220,7 @@ const Sidebar = ({
                             <div className="chat-options-menu" ref={optionsRef}>
                               <button
                                 onClick={(e) => handleDeleteChat(chat.id, e)}
+                                disabled={chatBusy}
                                 className="option-item delete"
                               >
                                 <Trash2 size={14} />
@@ -264,7 +259,7 @@ const Sidebar = ({
                       onClick={() => onDomainChange(domainName)}
                     >
                       <div className="domain-content">
-                        <div className="domain-name">{domainInfo.name || domainName}</div>
+                        <div className="domain-name">{(domainInfo.name || domainName).replace(/_/g, ' ')}</div>
                         <div className="domain-meta">
                           {domainInfo.file_count} files
                         </div>
@@ -277,47 +272,6 @@ const Sidebar = ({
           </div>
         )}
 
-        {/* Quick Domain Selector for Chat View */}
-        {currentView === 'chat' && (
-          <div className="section">
-            <button 
-              className="section-header"
-              onClick={() => toggleSection('domains')}
-            >
-              {expandedSections.domains ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
-              <span>Scholars</span>
-            </button>
-
-            {expandedSections.domains && (
-              <div className="section-content">
-                <div className="domain-selector">
-                  <div className="domain-option general" onClick={() => onDomainChange('General')}>
-                    <div className={`domain-radio ${selectedDomain === 'General' ? 'active' : ''}`}>
-                      <div className="radio-dot"></div>
-                    </div>
-                    <span>General Chat</span>
-                  </div>
-                  
-                  {Object.entries(domains).map(([domainName, domainInfo]) => (
-                    <div 
-                      key={domainName}
-                      className="domain-option"
-                      onClick={() => onDomainChange(domainName)}
-                    >
-                      <div className={`domain-radio ${selectedDomain === domainName ? 'active' : ''}`}>
-                        <div className="radio-dot"></div>
-                      </div>
-                      <div className="domain-info">
-                        <span className="domain-name">{domainInfo.name || domainName}</span>
-                        <span className="file-count">{domainInfo.file_count} files</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        )}
       </div>
     </div>
   );

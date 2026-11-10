@@ -173,10 +173,14 @@ function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_ba
     const named = SERVED_SCHOLARS.filter(s => normalize(query).includes(normalize(s))).map(scholarKey);
     const overview = terms.length === 0 && /\b(themes?|overview|work|research|written|writing|focus|summari[sz]e)\b/i.test(query);
     const idf = term => Math.log(1 + (archive.articles.length - (archive.df.get(term) || 0) + 0.5) / ((archive.df.get(term) || 0) + 0.5));
-    let ranked = [];
+    const coverage = { articles: 0, fullTextArticles: 0, latestPublishedDate: null };
+    const ranked = [];
     for (const doc of archive.articles) {
       if (scope && !doc.scopes.has(scope)) continue;
       if (!scope && named.length && !named.some(s => doc.scopes.has(s))) continue;
+      coverage.articles++;
+      if (doc.fullText) coverage.fullTextArticles++;
+      if (doc.date && (!coverage.latestPublishedDate || doc.date > coverage.latestPublishedDate)) coverage.latestPublishedDate = doc.date;
       const matched = terms.filter(t => doc.tf.has(t));
       if (!overview && !matched.length) continue;
       const score = matched.reduce((sum, term) => {
@@ -201,7 +205,7 @@ function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_ba
       collections: SERVED_SCHOLARS.filter(name => doc.scopes.has(scholarKey(name))),
       body: excerptFor(doc.body, terms, idf), fullText: doc.fullText, matchedTerms: matched
     }));
-    return { articles, mode: overview ? 'overview' : 'topic', matchedCount: ranked.length, coverage: { articles: archive.articles.length, fullTextArticles: archive.articles.filter(d => d.fullText).length }, scholars: SERVED_SCHOLARS, aiUsed: false };
+    return { articles, mode: overview ? 'overview' : 'topic', matchedCount: ranked.length, coverage, scholars: SERVED_SCHOLARS, aiUsed: false };
   }
   return { search, invalidate: () => { pending = null; } };
 }

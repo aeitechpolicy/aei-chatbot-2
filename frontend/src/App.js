@@ -7,16 +7,19 @@ import UsageReport from './components/UsageReport';
 import ArticleSearch from './components/ArticleSearch';
 import { API_BASE_URL, apiFetch, getSession, setSession, signOut } from './utils/api';
 import './styles/App.css';
+import './styles/Workspace.css';
 
 function PrivateApp({ session }) {
   const isDemo = session.user.id === 'demo';
-  const [currentView, setCurrentView] = useState('chat'); // 'chat' or 'files'
+  const [currentView, setCurrentView] = useState('chat');
   const [currentChatId, setCurrentChatId] = useState(null);
+  const [chatScope, setChatScope] = useState('General');
+  const [chatVersion, setChatVersion] = useState(0);
   const [chats, setChats] = useState([]);
   const [domains, setDomains] = useState({});
   const [selectedDomain, setSelectedDomain] = useState('General');
   const [loading, setLoading] = useState(false);
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(() => window.matchMedia?.('(max-width: 760px)').matches ?? false);
 
   // Load initial data
   useEffect(() => {
@@ -55,45 +58,23 @@ function PrivateApp({ session }) {
     }
   };
 
-  const handleNewChat = async (domain = null) => {
-    try {
-      const response = await apiFetch(`${API_BASE_URL}/api/chat/new`, {
-        method: 'POST',
-        headers: getHeaders(),
-        body: JSON.stringify({ domainName: domain || selectedDomain }),
-      });
-
-      if (response.ok) {
-        const newChat = await response.json();
-        setCurrentChatId(newChat.id);
-        setSelectedDomain(newChat.domainName);
-        setCurrentView('chat');
-        await loadChatHistory(); // Refresh chat list
-      }
-    } catch (error) {
-      console.error('Error creating new chat:', error);
-    }
+  const handleNewChat = () => {
+    if (loading) return;
+    setCurrentChatId(null);
+    setChatScope('General');
+    setChatVersion(version => version + 1);
+    setCurrentView('chat');
   };
 
-  const handleSelectChat = async (chatId) => {
+  const handleSelectChat = (chatId) => {
+    if (loading) return;
     setCurrentChatId(chatId);
+    setChatVersion(version => version + 1);
     setCurrentView('chat');
-    
-    // Load chat details to set domain
-    try {
-      const response = await apiFetch(`${API_BASE_URL}/api/chat/${chatId}`, {
-        headers: getHeaders()
-      });
-      if (response.ok) {
-        const chat = await response.json();
-        setSelectedDomain(chat.domainName);
-      }
-    } catch (error) {
-      console.error('Error loading chat:', error);
-    }
   };
 
   const handleDeleteChat = async (chatId) => {
+    if (loading) return;
     try {
       const response = await apiFetch(`${API_BASE_URL}/api/chat/${chatId}`, {
         method: 'DELETE',
@@ -101,10 +82,7 @@ function PrivateApp({ session }) {
       });
 
       if (response.ok) {
-        // If we're deleting the current chat, clear it
-        if (currentChatId === chatId) {
-          setCurrentChatId(null);
-        }
+        setCurrentChatId(activeId => activeId === chatId ? null : activeId);
         await loadChatHistory();
       }
     } catch (error) {
@@ -116,33 +94,20 @@ function PrivateApp({ session }) {
     if (!message.trim()) return;
   
     let chatId = currentChatId;
-  
-    // Create new chat if none exists
-    if (!chatId) {
-      try {
+    setLoading(true);
+    try {
+      if (!chatId) {
         const response = await apiFetch(`${API_BASE_URL}/api/chat/new`, {
           method: 'POST',
           headers: getHeaders(),
-          body: JSON.stringify({ domainName: selectedDomain }),
+          body: JSON.stringify({ domainName: chatScope }),
         });
-  
-        if (response.ok) {
-          const newChat = await response.json();
-          chatId = newChat.id;
-          setCurrentChatId(newChat.id);
-          setSelectedDomain(newChat.domainName);
-          setCurrentView('chat');
-        } else {
-          throw new Error('Failed to create new chat');
-        }
-      } catch (error) {
-        console.error('Error creating new chat:', error);
-        throw error;
+        if (!response.ok) throw new Error('Failed to create new chat');
+        const newChat = await response.json();
+        chatId = newChat.id;
+        setCurrentChatId(chatId);
       }
-    }
-  
-    setLoading(true);
-    try {
+
       const response = await apiFetch(`${API_BASE_URL}/api/chat/${chatId}/message`, {
         method: 'POST',
         headers: getHeaders(),
@@ -197,7 +162,6 @@ function PrivateApp({ session }) {
 
   const handleDomainChange = (domain) => {
     setSelectedDomain(domain);
-    // Don't clear current chat when changing domains
   };
 
   const handleViewChange = (view) => {
@@ -209,16 +173,18 @@ function PrivateApp({ session }) {
   };
 
   return (
-    <div className="app">
+    <div className="app article-workspace">
       <div className="app-header">
         <div className="header-content">
-          <a className='logo-link' target="_blank" rel="noopener noreferrer" href='https://www.aei.org/'>
+          <div className="workspace-brand">
             <img src="/aeilogo.jpg" alt="AEI Logo" className="logo" />
-          </a>
-          <h1>AEI Chatbot</h1>
-          <p>Chat with your Scholars!</p>
+            <h1>AEI Chatbot</h1>
+          </div>
+          <nav className="article-mode-switch" aria-label="Article mode">
+            <button type="button" aria-pressed={currentView === 'chat'} onClick={() => setCurrentView('chat')}>Article Chat</button>
+            <button type="button" aria-pressed={currentView === 'research'} onClick={() => setCurrentView('research')}>Article Search</button>
+          </nav>
           <div className="pilot-header-actions"><span>{session.user.label}</span>
-            <button onClick={() => setCurrentView('research')}>Search articles</button>
             {!isDemo && <button onClick={() => setCurrentView('usage')}>Usage and costs</button>}
             <button onClick={() => { signOut().catch(() => {}); }}>Sign out</button>
           </div>
@@ -234,6 +200,7 @@ function PrivateApp({ session }) {
           currentChatId={currentChatId}
           collapsed={sidebarCollapsed}
           showFileManager={!isDemo}
+          chatBusy={loading}
           onViewChange={handleViewChange}
           onNewChat={handleNewChat}
           onSelectChat={handleSelectChat}
@@ -244,15 +211,22 @@ function PrivateApp({ session }) {
           onDomainsUpdate={loadDomains}
         />
         
-        {currentView === 'research' ? <ArticleSearch domains={domains} selectedDomain={selectedDomain} /> : currentView === 'usage' ? <UsageReport /> : currentView === 'chat' ? (
+        <div className="workspace-panel" hidden={currentView !== 'chat'}>
           <ChatInterface
+            key={chatVersion}
+            active={currentView === 'chat'}
             chatId={currentChatId}
-            selectedDomain={selectedDomain}
-            domains={domains}
+            draftScope={chatScope}
+            onScopeChange={setChatScope}
             loading={loading}
             onSendMessage={handleSendMessage}
           />
-        ) : (
+        </div>
+        <div className="workspace-panel" hidden={currentView !== 'research'}>
+          <ArticleSearch showFileCounts={!isDemo} />
+        </div>
+        {currentView === 'usage' && <UsageReport />}
+        {currentView === 'files' && (
           <FileManager
             domains={domains}
             selectedDomain={selectedDomain}

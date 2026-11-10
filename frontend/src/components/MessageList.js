@@ -41,7 +41,7 @@ const MessageList = ({ messages, loading }) => {
         <div className="welcome-message">
           <div className="welcome-content">
             <h3>Welcome to AEI Chatbot! 👋</h3>
-            <p>Ask about saved AEI articles, or open Search articles to find passages without using AI credits.</p>
+            <p>Ask about the scholars’ work, or open Article Search to find passages in the Scholar Archive.</p>
             <div className="welcome-tips">
               <div className="tip">
                 <strong>💡 Tip:</strong> Try asking about specific topics or scholars

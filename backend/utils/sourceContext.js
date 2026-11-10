@@ -23,7 +23,7 @@ Answer from the supplied article excerpts. The archive may be incomplete and is 
 
 RESEARCH RULES:
 - Use only the current source excerpts for factual claims about the scholars' work. Earlier conversation is context, not additional source evidence.
-- Cite each supported claim using the exact source ID, e.g. [S1]. Use separate IDs for multiple sources: [S1] [S2]. Never invent a source ID, link, title, date, quotation, statistic, or author.
+- Cite each supported claim using the exact source ID, e.g. [S1]. Use separate IDs for multiple sources: [S1] [S2]. Do not write URLs or other references. The app links the exact IDs to the saved articles.
 - Quote only exact words visible in an excerpt. Keep quotations short and distinguish quotation from paraphrase.
 - A scholar collection indicates where a file was saved; it does not establish authorship when the author is not recorded.
 - Preserve disagreements, qualifications and differences between scholars. Do not impose a common ideological position or treat one author as speaking for AEI as a whole.
@@ -45,12 +45,18 @@ function checkCitations(content, sources) {
     cited = true; return `[${id}]`;
   });
   const notices = [];
-  if (invalid) notices.push('An unknown source reference was removed. Check this answer against the article excerpts.');
-  if (!cited) notices.push('This answer has no source references. Check it against the article excerpts before using it.');
+  if (invalid) notices.push('The generated answer used an unknown source reference.');
+  if (/https?:\/\/|www\.|\[source:|\]\s*\(/i.test(answer)) notices.push('The answer included a link or source reference outside the supplied citation IDs.');
+  if (!cited) notices.push('The generated answer has no source references.');
   const normalizeQuote = value => value.normalize('NFKC').replace(/[\u2018\u2019]/g, "'").replace(/[\u201c\u201d]/g, '"').replace(/\s+/g, ' ').trim().toLowerCase();
   const evidence = sources.map(s => normalizeQuote(`${s.title}\n${s.excerpt}`));
   const quotations = [...answer.matchAll(/["“]([^"”\n]{40,})["”]/g)].map(m => normalizeQuote(m[1]));
-  if (quotations.some(q => !evidence.some(text => text.includes(q)))) notices.push('A quotation could not be matched to these excerpts. Verify the wording in the original article.');
-  return { content: answer, citationNotice: notices.join(' ') || null };
+  if (quotations.some(q => !evidence.some(text => text.includes(q)))) notices.push('A quotation in the generated answer could not be matched to these excerpts.');
+  return {
+    content: notices.length
+      ? 'I found related articles in the scholar archive, but the answer did not pass the citation check. Open Article sources below to read the relevant passages.'
+      : answer,
+    citationNotice: notices.join(' ') || null
+  };
 }
 module.exports = { prepareSources, researchPrompt, checkCitations };

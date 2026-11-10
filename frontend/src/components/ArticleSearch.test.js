@@ -6,12 +6,14 @@ beforeEach(() => apiFetch.mockReset());
 const result = { articles: [{ id: 'S1', title: 'A saved article', author: 'Brent Orrell', date: '2025-01-02', url: 'https://www.aei.org/articles/example/', body: 'An exact saved passage about workforce training.', fullText: true }], mode: 'topic', matchedCount: 1, coverage: { articles: 1500 }, aiUsed: false };
 test('article search displays recorded sources and sends only a search request, with no chat or AI call', async () => {
   apiFetch.mockResolvedValue({ ok: true, json: async () => result });
-  render(<ArticleSearch domains={{ Brent_Orrell: { name: 'Brent Orrell' } }} />);
+  render(<ArticleSearch />);
   fireEvent.change(screen.getByLabelText('Topic or research question'), { target: { value: 'AI and workforce' } });
   fireEvent.change(screen.getByLabelText('Scholar'), { target: { value: 'Brent_Orrell' } });
   fireEvent.click(screen.getByRole('button', { name: 'Search saved articles' }));
   const link = await screen.findByRole('link', { name: 'A saved article' });
   expect(link).toHaveAttribute('href', 'https://www.aei.org/articles/example/');
+  expect(link).toHaveAttribute('target', '_blank');
+  expect(link).toHaveTextContent('Open on AEI');
   expect(screen.getByText('An exact saved passage about workforce training.')).toBeInTheDocument();
   expect(apiFetch).toHaveBeenCalledTimes(1);
   expect(apiFetch.mock.calls[0][0]).toContain('/api/research/search?q=AI+and+workforce&scholar=Brent_Orrell');

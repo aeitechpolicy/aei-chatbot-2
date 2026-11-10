@@ -11,7 +11,7 @@ const ChatManager = require('../utils/chatManager');
 const OWNER = 'test-only-intern-password';
 const SUPERVISOR = 'test-only-ra-password';
 const FIXED = Date.parse('2026-10-28T18:00:00Z');
-const answer = () => ({ model: MODEL, choices: [{ message: { content: 'A stubbed answer. No external service was called.' } }], usage: { prompt_tokens: 10000, completion_tokens: 100 } });
+const answer = () => ({ model: MODEL, choices: [{ message: { content: 'A stubbed answer based on a saved article. [S1]' } }], usage: { prompt_tokens: 10000, completion_tokens: 100 } });
 
 async function fixture(t, overrides = {}) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-pilot-test-'));
@@ -270,7 +270,9 @@ test('General mode supplies bounded article sources and records citation notices
   const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'What do these scholars discuss?' } });
   const body = await response.json(); assert.equal(response.status, 200);
   assert.equal(body.sources[0].url, 'https://www.aei.org/articles/fixture/');
-  assert.ok(!body.response.includes('[S90]')); assert.match(body.citationNotice, /unknown source/);
+  assert.match(body.response, /Open Article sources/);
+  assert.doesNotMatch(body.response, /invented reference/);
+  assert.match(body.citationNotice, /unknown source/);
   assert.equal(body.chat.messages[1].citationNotice, body.citationNotice);
 });
 test('an unavailable archive does not trigger a general-knowledge provider fallback', async t => {
