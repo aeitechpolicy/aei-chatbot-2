@@ -20,8 +20,8 @@ async function fixture(t, overrides = {}) {
   const manager = new ChatManager(path.join(dir, 'chats'));
   let calls = 0;
   const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); assert.deepEqual(request.reasoning, { enabled: false }); return overrides.complete ? overrides.complete(request) : answer(); };
-  const app = createApp({ env, pilot, complete, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
-    manager, knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [])
+  const app = createApp({ env, pilot, complete, researchDependencies: { search: overrides.searchArticles || (async () => ({ articles: [], matchedCount: 0, coverage: { articles: 0 }, aiUsed: false })) }, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
+    manager, knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
   } });
   const server = await new Promise(resolve => { const s = app.listen(0, '127.0.0.1', () => resolve(s)); });
   const url = `http://127.0.0.1:${server.address().port}`;
@@ -44,7 +44,7 @@ async function fixture(t, overrides = {}) {
 
 test('signed-out callers cannot access chat, files, reports or public uploads', async t => {
   const f = await fixture(t);
-  for (const route of ['/api/chat/history', '/api/files/domains', '/api/usage', '/api/usage.csv', '/public/example.txt']) assert.equal((await f.request(route)).status, 401);
+  for (const route of ['/api/chat/history', '/api/files/domains', '/api/usage', '/api/usage.csv', '/api/research/search?q=AI', '/public/example.txt']) assert.equal((await f.request(route)).status, 401);
   assert.equal((await f.request('/api/health')).status, 200);
   assert.equal(f.calls(), 0);
 });
@@ -129,11 +129,14 @@ test('estimated budget is reserved before a paid request is allowed', async t =>
   assert.equal(f.calls(), 0);
 });
 
-test('an oversized question or source is rejected before the provider is called', async t => {
+test('oversized questions are refused while long sources are excerpted before the provider call', async t => {
   const f = await fixture(t, { fetchArticles: async () => [{ title: 'Long article', body: 'x'.repeat(125000) }] });
   const { token } = await f.login(); const chat = await f.newChat(token, 'Clay_Calvert');
-  for (const message of ['x'.repeat(6001), 'A question']) assert.equal((await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message } })).status, 413);
+  assert.equal((await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'x'.repeat(6001) } })).status, 413);
   assert.equal(f.calls(), 0);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } });
+  assert.equal(response.status, 200); assert.equal(f.calls(), 1);
+  assert.equal((await response.json()).sources[0].excerpt.length, 2200);
 });
 
 test('provider errors retain unknown costs and do not expose the raw provider error', async t => {
@@ -162,6 +165,42 @@ test('missing provider credentials do not crash login or count as a paid request
   const f = await fixture(t, { realComplete: true }); const { token } = await f.login(); const chat = await f.newChat(token);
   assert.equal((await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } })).status, 503);
   assert.equal((await f.pilot.rows('owner'))[0].estimated_usd, 0); assert.equal((await f.pilot.rows('owner'))[0].status, 'not_sent');
+});
+
+test('demo can research and chat while staff retain billing and file controls', async t => {
+  const password = 'test-only-demo-password';
+  const files = express.Router();
+  files.get('/domains', (req, res) => res.json({ General: {} }));
+  const f = await fixture(t, { env: { CHATBOT_DEMO_PASSWORD: password }, fileRoutes: files });
+  const owner = await f.login();
+  const ownerChat = await f.newChat(owner.token);
+  const demo = await f.login('demo', password);
+  const { token } = demo;
+  assert.equal(demo.user.label, 'Demo User');
+  for (const route of ['/api/usage', '/api/usage.csv', '/api/files/list', '/public/example.txt']) {
+    assert.equal((await f.request(route, { token })).status, 403);
+  }
+  assert.equal((await f.request('/api/files/upload', { token, method: 'POST' })).status, 403);
+  assert.equal((await f.request('/api/files/domains', { token })).status, 200);
+  assert.equal((await f.request('/api/research/search?q=spectrum', { token })).status, 200);
+  assert.equal((await f.request(`/api/chat/${ownerChat.id}`, { token })).status, 404);
+  const chat = await f.newChat(token);
+  const answer = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'How does spectrum sharing work?' } });
+  assert.equal(answer.status, 200);
+  const report = await (await f.request('/api/usage', { token: owner.token })).json();
+  assert.equal(report.rows.length, 1);
+  assert.equal(report.rows[0].account_label, 'Demo User');
+  assert.equal(report.rows[0].user_id, 'demo');
+  assert.equal(f.calls(), 1);
+});
+
+test('an unset, short, or reused demo password leaves the demo login disabled', async t => {
+  for (const password of [undefined, 'short', OWNER, SUPERVISOR]) {
+    const f = await fixture(t, { env: { CHATBOT_DEMO_PASSWORD: password } });
+    const attempt = await f.request('/api/auth/login', { method: 'POST', body: { account: 'demo', password } });
+    assert.equal(attempt.status, 401);
+    await f.login();
+  }
 });
 
 test('supervisor reports exclude researcher activity', async t => {
@@ -201,4 +240,43 @@ test('sessions expire and the retired legacy endpoint cannot bypass the new rout
   t.after(() => p.close());
   const session = p.login('owner', OWNER, 'test'); at += 8 * 3600000 + 1;
   assert.equal(p.authenticate(session.token), null);
+});
+
+
+test('article search requires login but no provider key, AI allowance or usage reservation', async t => {
+  const f = await fixture(t, { env: { RENDER: 'true' }, searchArticles: async ({ query, scholar }) => ({ articles: [{ title: query, author: scholar }], matchedCount: 1, coverage: { articles: 1 }, aiUsed: false }) });
+  assert.equal((await f.request('/api/research/search?q=training')).status, 401);
+  const { token } = await f.login();
+  const r = await f.request('/api/research/search?q=training&scholar=Brent_Orrell', { token });
+  assert.equal(r.status, 200); assert.equal((await r.json()).aiUsed, false);
+  assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+  for (const route of ['/api/research/search?q=', '/api/research/search?q=AI&scholar=..%2Fprivate', '/api/research/search?q=a&q=b']) assert.equal((await f.request(route, { token })).status, 400);
+});
+test('no matching sources returns an honest saved response without a provider call or charge', async t => {
+  const f = await fixture(t, { fetchArticles: async () => [] });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'An unsupported topic' } });
+  assert.equal(response.status, 200); const body = await response.json();
+  assert.equal(body.aiUsed, false); assert.match(body.response, /couldn't find matching evidence/);
+  assert.equal(body.chat.messages.length, 2); assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+});
+test('General mode supplies bounded article sources and records citation notices in history', async t => {
+  const f = await fixture(t, { complete: async request => {
+    assert.ok(request.messages[0].content.includes('Fixture article'));
+    assert.ok(!request.messages[0].content.includes('LIVE ARTICLES'));
+    return { ...answer(), choices: [{ message: { content: 'A supported observation [S1], followed by an invented reference [S90].' } }] };
+  } });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'What do these scholars discuss?' } });
+  const body = await response.json(); assert.equal(response.status, 200);
+  assert.equal(body.sources[0].url, 'https://www.aei.org/articles/fixture/');
+  assert.ok(!body.response.includes('[S90]')); assert.match(body.citationNotice, /unknown source/);
+  assert.equal(body.chat.messages[1].citationNotice, body.citationNotice);
+});
+test('an unavailable archive does not trigger a general-knowledge provider fallback', async t => {
+  const f = await fixture(t, { fetchArticles: async () => { throw new Error('private-file-error'); } });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } });
+  assert.equal(response.status, 503); assert.equal((await response.json()).code, 'archive_unavailable');
+  assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
 });

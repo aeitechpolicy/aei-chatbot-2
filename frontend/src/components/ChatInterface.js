@@ -82,6 +82,7 @@ const ChatInterface = ({
             role: 'assistant',
             content: result.response,
             sources: result.sources || [],
+            citationNotice: result.citationNotice,
             timestamp: new Date().toISOString()
           };
           
@@ -144,12 +145,12 @@ const ChatInterface = ({
 
   const getPlaceholderText = () => {
     if (selectedDomain === 'General') {
-      return 'Ask me anything...';
+      return 'Ask about the saved scholars’ work...';
     }
     if (selectedDomain in domains) {
       return `Ask about ${getDomainInfo().toLowerCase()}...`;
     }
-    return 'Ask me anything...';
+    return 'Ask about the saved scholars’ work...';
   };
 
   return (

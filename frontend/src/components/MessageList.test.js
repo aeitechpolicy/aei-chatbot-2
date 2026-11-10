@@ -20,3 +20,15 @@ test('basic emphasis, code and source badges still render', () => {
   expect(container.querySelector('code')).toHaveTextContent('code');
   expect(screen.getByText(/Article title/)).toHaveClass('inline-citation');
 });
+
+test('numbered citations link only to recorded AEI sources, with excerpts and a saved citation notice', () => {
+  const sources = [{ id: 'S1', title: 'Recorded article', author: 'Shane Tews', url: 'https://www.aei.org/articles/recorded/', excerpt: 'The source passage.', date: null }, { id: 'S2', title: 'Unsafe link', url: 'javascript:alert(1)', excerpt: '<img src=x onerror=alert(1)>' }];
+  const { container } = render(<MessageList messages={[{ role: 'assistant', content: 'An observation [S1]. Another [S2]. An unknown [S3].', sources, citationNotice: 'Check this quotation.' }]} loading={false} />);
+  expect(screen.getByRole('link', { name: '[S1]' })).toHaveAttribute('href', 'https://www.aei.org/articles/recorded/');
+  expect(screen.queryByRole('link', { name: '[S2]' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('link', { name: '[S3]' })).not.toBeInTheDocument();
+  expect(container.querySelector('a[href^="javascript:"]')).toBeNull();
+  expect(container.querySelector('img')).toBeNull();
+  expect(screen.getByRole('note')).toHaveTextContent('Check this quotation.');
+  expect(container.textContent).toContain('Date not recorded');
+});

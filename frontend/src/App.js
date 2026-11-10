@@ -4,10 +4,12 @@ import Sidebar from './components/Sidebar';
 import FileManager from './components/FileManager';
 import SignIn from './components/SignIn';
 import UsageReport from './components/UsageReport';
+import ArticleSearch from './components/ArticleSearch';
 import { API_BASE_URL, apiFetch, getSession, setSession, signOut } from './utils/api';
 import './styles/App.css';
 
 function PrivateApp({ session }) {
+  const isDemo = session.user.id === 'demo';
   const [currentView, setCurrentView] = useState('chat'); // 'chat' or 'files'
   const [currentChatId, setCurrentChatId] = useState(null);
   const [chats, setChats] = useState([]);
@@ -216,7 +218,8 @@ function PrivateApp({ session }) {
           <h1>AEI Chatbot</h1>
           <p>Chat with your Scholars!</p>
           <div className="pilot-header-actions"><span>{session.user.label}</span>
-            <button onClick={() => setCurrentView('usage')}>Usage and costs</button>
+            <button onClick={() => setCurrentView('research')}>Search articles</button>
+            {!isDemo && <button onClick={() => setCurrentView('usage')}>Usage and costs</button>}
             <button onClick={() => { signOut().catch(() => {}); }}>Sign out</button>
           </div>
         </div>
@@ -230,6 +233,7 @@ function PrivateApp({ session }) {
           chats={chats}
           currentChatId={currentChatId}
           collapsed={sidebarCollapsed}
+          showFileManager={!isDemo}
           onViewChange={handleViewChange}
           onNewChat={handleNewChat}
           onSelectChat={handleSelectChat}
@@ -240,7 +244,7 @@ function PrivateApp({ session }) {
           onDomainsUpdate={loadDomains}
         />
         
-        {currentView === 'usage' ? <UsageReport /> : currentView === 'chat' ? (
+        {currentView === 'research' ? <ArticleSearch domains={domains} selectedDomain={selectedDomain} /> : currentView === 'usage' ? <UsageReport /> : currentView === 'chat' ? (
           <ChatInterface
             chatId={currentChatId}
             selectedDomain={selectedDomain}

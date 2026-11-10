@@ -2,6 +2,24 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 import { apiFetch, getSession, setSession } from './utils/api';
 
+test('a signed-in user can search saved articles without starting a chat or sending an AI message', async () => {
+  fetch.mockImplementation(async url => {
+    if (url.endsWith('/api/auth/login')) return { ok: true, json: async () => ({ token: 'search-test-session', user: { id: 'owner', label: 'Chatbot Intern' }, expiresAt: Date.now() + 10000 }) };
+    if (url.endsWith('/api/files/domains')) return { ok: true, status: 200, json: async () => ({ Brent_Orrell: { name: 'Brent Orrell' } }) };
+    if (url.endsWith('/api/chat/history')) return { ok: true, status: 200, json: async () => [] };
+    if (url.includes('/api/research/search?')) return { ok: true, status: 200, json: async () => ({ articles: [{ id: 'S1', title: 'Training article', author: 'Brent Orrell', body: 'An archived passage.', url: 'https://www.aei.org/article/' }], matchedCount: 1, mode: 'topic', coverage: { articles: 1 }, aiUsed: false }) };
+    throw new Error(`Unexpected request: ${url}`);
+  });
+  render(<App />);
+  fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-search-password' } });
+  fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'Search articles' }));
+  fireEvent.change(screen.getByLabelText('Topic or research question'), { target: { value: 'training' } });
+  fireEvent.click(screen.getByRole('button', { name: 'Search saved articles' }));
+  expect(await screen.findByRole('link', { name: 'Training article' })).toBeInTheDocument();
+  expect(fetch.mock.calls.some(([url]) => /\/api\/chat\/new|\/message$/.test(url))).toBe(false);
+});
+
 beforeAll(() => {
   HTMLElement.prototype.scrollIntoView = jest.fn();
   global.Headers = class {
@@ -58,4 +76,21 @@ test('a supervisor can sign in and reach the usage report', async () => {
   expect(screen.getByRole('button', { name: 'Download CSV' })).toBeInTheDocument();
   await waitFor(() => expect(getSession().user.id).toBe('supervisor'));
   expect(window.sessionStorage.getItem('aei-private-session')).not.toContain('test-only-ra-password');
+});
+
+test('a demo login shows research and chat while hiding staff controls', async () => {
+  fetch.mockImplementation(async url => {
+    if (url.endsWith('/api/auth/login')) return { ok: true, json: async () => ({ token: 'demo-test-token', user: { id: 'demo', label: 'Demo User' }, expiresAt: Date.now() + 10000 }) };
+    if (url.endsWith('/api/files/domains')) return { ok: true, status: 200, json: async () => ({}) };
+    if (url.endsWith('/api/chat/history')) return { ok: true, status: 200, json: async () => [] };
+    throw new Error(`Unexpected URL ${url}`);
+  });
+  render(<App />);
+  fireEvent.change(screen.getByLabelText('Account'), { target: { value: 'demo' } });
+  fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-demo-password' } });
+  fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
+  expect(await screen.findByRole('button', { name: 'Search articles' })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Chats' })).toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Usage and costs' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Files' })).not.toBeInTheDocument();
 });

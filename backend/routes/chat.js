@@ -1,40 +1,19 @@
 const express = require('express');
 const path = require('node:path');
 const { MODEL, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS } = require('../utils/pilot');
-const TxtKnowledgeBase = require('../utils/knowledgeBase');
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
-const articleMetadata = require('../articleMetadata.json');
+const { prepareSources, researchPrompt, checkCitations } = require('../utils/sourceContext');
+const { queryTerms } = require('../utils/research');
 
-function createChatRouter({ pilot, complete, knowledgeBase, manager, fetchArticles = fetchRelevantArticles }) {
+function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles }) {
 const router = express.Router();
 router.param('chatId', (req, res, next, id) => {
   if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) return res.status(400).json({ error: 'Invalid chat identifier.' });
   next();
 });
 
-// Initialize knowledge base and chat manager
-const kb = knowledgeBase || new TxtKnowledgeBase();
 const chatManager = manager || pilot.chatManager || new ChatManager(path.join(pilot.dataDir, 'chats'));
-
-// In-memory domain content cache to avoid re-reading files on every request
-const domainContentCache = new Map();
-const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
-
-async function getCachedDomainContent(domainName) {
-  const cached = domainContentCache.get(domainName);
-  if (cached && (Date.now() - cached.timestamp < CACHE_TTL_MS)) {
-    return cached.content;
-  }
-  const content = await kb.loadDomainContent(domainName);
-  domainContentCache.set(domainName, { content, timestamp: Date.now() });
-  return content;
-}
-
-// Call this after any file upload/delete to invalidate the cache
-function invalidateDomainCache(domainName) {
-  domainContentCache.delete(domainName);
-}
 
 const getUserId = (req) => {
   return req.auth.id;
@@ -144,127 +123,24 @@ router.post('/:chatId/message', async (req, res) => {
       return res.status(404).json({ error: 'Chat not found' });
     }
 
-    // Add user message
     const userMessage = { role: 'user', content: message };
-
-    // Try live AEI scraping first, fall back to local txt files
-    const liveArticles = await fetchArticles(chat.domainName, message);
-    const domainContent = liveArticles.length > 0 
-      ? null 
-      : await getCachedDomainContent(chat.domainName);
-
-    
-    let systemMessage;
-    let relevantFiles = [];
-
-    if (chat.domainName === 'General') {
-      systemMessage = `You are an expert research assistant working within the analytical framework of the American Enterprise Institute (AEI).
-    AEI INSTITUTIONAL CONTEXT:
-    The American Enterprise Institute (AEI) is a prominent Washington, D.C.–based conservative and free-market–oriented public policy think tank, founded in 1938. AEI's mission is to defend the principles of individual liberty, free enterprise, limited government, and democratic capitalism, and to improve the institutions that uphold those values. It conducts rigorous, evidence-based research and analysis on a wide range of domestic and international policy issues, including economics, foreign policy, national security, health care, education, energy, and social welfare.
-
-    CRITICAL ACCURACY REQUIREMENTS:
-    - NEVER fabricate, invent, or guess at facts, statistics, dates, names, or events
-    - If you don't know something with certainty, explicitly state "I don't have reliable information about..."
-    - Do not create fake citations, studies, or research that doesn't exist
-    - When uncertain, acknowledge limitations and suggest where reliable information might be found`;
-
-    } else {
-      systemMessage = `You are an expert research assistant for ${chat.domainName}, operating within the American Enterprise Institute's analytical framework.
-
-    ABSOLUTE ACCURACY REQUIREMENTS:
-    - NEVER fabricate facts, statistics, quotes, or information not present in the provided sources
-    - NEVER create fake citations, studies, researchers, or publications
-    - If information isn't in the knowledge base, explicitly state this limitation
-    - Do not extrapolate beyond what the sources actually contain
-    - Distinguish between what sources explicitly state vs. your analytical interpretation
-
-    DOMAIN EXPERTISE: ${chat.domainName.toUpperCase()}
-    AEI ANALYTICAL FRAMEWORK:
-    - Evidence-based research with rigorous methodology
-    - Free market economics and limited government principles
-    - Strong institutions and rule of law
-    - Individual responsibility and liberty
-    - Practical policy solutions with real-world applications`;
-
-if (liveArticles.length > 0) {
-  systemMessage += `\n\nLIVE ARTICLES FROM AEI.ORG:\n`;
-
-  liveArticles.forEach((article, i) => {
-    systemMessage += `
-=== SOURCE ${i + 1} ===
-Title: ${article.title || "Untitled"}
-Author: ${article.author || "Unknown author"}
-Published: ${article.date || "Unknown date"}
-URL: ${article.url || "URL unavailable"}
-
-${article.body}
-=== END SOURCE ${i + 1} ===
-`;
-
-   relevantFiles.push(`${article.title} (${article.date}) - ${article.url}`);
-  });
-
-  systemMessage += `
-
-CITATION INSTRUCTIONS:
-- Cite articles inline like: [Source: "Article Title", Published: Date, URL]
-- Use the Title, Published, and URL fields from the source block.
-- Never cite local .txt filenames or file paths in user-facing answers.
-- Only cite sources that directly support the specific claim.
-- Never guess or fabricate dates — use only the Published date from the source above.
-- If the sources don't answer the question, say so explicitly.`;
-
-} else if (domainContent && Object.keys(domainContent).length > 0) { 
-  const searchResults = kb.searchContent(domainContent, message, 4);
-  
-  if (searchResults.length > 0) {
-    systemMessage += `\n\nRELEVANT KNOWLEDGE BASE CONTENT:\n`;
-
-searchResults.forEach((result, i) => {
-  const metadataKey = `${chat.domainName}/${result.filename}`;
-  const metadata = articleMetadata[metadataKey] || {};
-
-  const title = metadata.title || result.filename;
-  const author = metadata.author || chat.domainName.replace(/_/g, ' ');
-  const date = metadata.date || 'Unknown date';
-  const url = metadata.url || 'URL unavailable';
-
-  systemMessage += `
-=== SOURCE ${i + 1} ===
-Title: ${title}
-Author: ${author}
-Published: ${date}
-URL: ${url}
-
-${result.content}
-=== END SOURCE ${i + 1} ===
-`;
-
-  relevantFiles.push(`${title} (${date}) - ${url}`);
-});
-
-    systemMessage += `
-
-CITATION INSTRUCTIONS:
-- Cite articles inline like: [Source: "Article Title", Published: Date, URL]
-- Use the Title, Published, and URL fields from the source block.
-- Never cite local .txt filenames or file paths in user-facing answers.
-- Only cite sources that directly support the specific claim.
-- Never guess or fabricate dates — use only the Published date from the source above.
-- If the sources don't answer the question, say so explicitly.`;
-
-  } else {
-    systemMessage += `\n\nNo relevant knowledge files were found for ${chat.domainName}. If the provided sources don't answer the question, say so explicitly.`;
-  }
-
-} else {
-  systemMessage += `\n\nNo specific knowledge files are available for ${chat.domainName}. If the provided sources don't answer the question, say so explicitly.`;
-}
+    const chatMessages = chat;
+    const lastQuestion = [...chatMessages.messages].reverse().find(m => m.role === 'user')?.content;
+    const retrievalQuery = lastQuestion && queryTerms(message).length < 2 && !/\b(themes?|overview|focus)\b/i.test(message)
+      ? `${lastQuestion} ${message}` : message;
+    let articles;
+    try { articles = await fetchArticles(chat.domainName, retrievalQuery, 6); }
+    catch { return res.status(503).json({ error: 'The saved article archive could not be searched. Please try again shortly.', code: 'archive_unavailable' }); }
+    const relevantFiles = prepareSources(articles);
+    if (!relevantFiles.length) {
+      const aiResponse = { role: 'assistant', content: "I couldn't find matching evidence in the saved article archive. Try a specific topic, another scholar, or Search articles. No AI credits were used for this response.", sources: [], searchMode: 'no_sources' };
+      await chatManager.addMessage(chatId, userMessage);
+      await chatManager.addMessage(chatId, aiResponse);
+      if (!chatMessages.messages.length) await chatManager.updateChatTitle(chatId, message.slice(0, 50));
+      return res.json({ response: aiResponse.content, sources: [], searchMode: 'no_sources', aiUsed: false, chat: await chatManager.getChatWithUserCheck(chatId, getUserId(req)), chatId });
     }
-
-    // Get chat messages for context
-    const chatMessages = await chatManager.getChat(chatId);
-    const contextMessages = [...chatMessages.messages.slice(-9).map(({ role, content }) => ({ role, content })), userMessage];
+    const systemMessage = researchPrompt(chat.domainName, relevantFiles, articles.some(a => a.selectionMode === 'overview'));
+    const contextMessages = [...chatMessages.messages.slice(-6).map(({ role, content }) => ({ role, content: content.replace(/\[S\d+\]/g, '[earlier source reference]') })), userMessage];
 
     // Create full messages array
     const fullMessages = [
@@ -281,7 +157,7 @@ CITATION INSTRUCTIONS:
       messages: fullMessages,
       max_tokens: MAX_OUTPUT_TOKENS,
       reasoning: { enabled: false },
-      temperature: 0.7,
+      temperature: 0.2,
       stream: false
     });
     aiResult = response;
@@ -290,12 +166,8 @@ CITATION INSTRUCTIONS:
       throw Object.assign(new Error('The model did not return an answer. Check Usage and costs before trying again.'), { status: 502, code: 'empty_answer' });
     }
 
-    const aiResponse = {
-      role: 'assistant',
-      content: answerText,
-      sources: relevantFiles,
-      searchMode: liveArticles.length > 0 ? 'knowledge_base' : (domainContent && Object.keys(domainContent).length > 0 ? 'knowledge_base' : 'general')
-    };
+    const checkedAnswer = checkCitations(answerText, relevantFiles);
+    const aiResponse = { role: 'assistant', ...checkedAnswer, sources: relevantFiles, searchMode: 'archive' };
 
     // Add AI message to chat
     await chatManager.addMessage(chatId, aiResponse);
@@ -313,6 +185,8 @@ CITATION INSTRUCTIONS:
       response: aiResponse.content,
       sources: relevantFiles,
       searchMode: aiResponse.searchMode,
+      citationNotice: aiResponse.citationNotice,
+      aiUsed: true,
       chat: savedChat,
       chatId: chatId
     });
