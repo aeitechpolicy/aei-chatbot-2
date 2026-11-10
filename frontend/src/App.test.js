@@ -13,10 +13,19 @@ test('a signed-in user can search saved articles without starting a chat or send
   render(<App />);
   fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-search-password' } });
   fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
-  fireEvent.click(await screen.findByRole('button', { name: 'Search articles' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'Article Search' }));
   fireEvent.change(screen.getByLabelText('Topic or research question'), { target: { value: 'training' } });
   fireEvent.click(screen.getByRole('button', { name: 'Search saved articles' }));
   expect(await screen.findByRole('link', { name: 'Training article' })).toBeInTheDocument();
+  const chatMode = screen.getByRole('button', { name: 'Article Chat' });
+  const searchMode = screen.getByRole('button', { name: 'Article Search' });
+  expect(searchMode).toHaveAttribute('aria-pressed', 'true');
+  fireEvent.click(chatMode);
+  expect(chatMode).toHaveAttribute('aria-pressed', 'true');
+  expect(screen.queryByRole('link', { name: 'Training article' })).not.toBeInTheDocument();
+  fireEvent.click(searchMode);
+  expect(screen.getByLabelText('Topic or research question')).toHaveValue('training');
+  expect(screen.getByRole('link', { name: 'Training article' })).toBeInTheDocument();
   expect(fetch.mock.calls.some(([url]) => /\/api\/chat\/new|\/message$/.test(url))).toBe(false);
 });
 
@@ -79,18 +88,49 @@ test('a supervisor can sign in and reach the usage report', async () => {
 });
 
 test('a demo login shows research and chat while hiding staff controls', async () => {
-  fetch.mockImplementation(async url => {
+  let savedChat;
+  fetch.mockImplementation(async (url, options) => {
     if (url.endsWith('/api/auth/login')) return { ok: true, json: async () => ({ token: 'demo-test-token', user: { id: 'demo', label: 'Demo User' }, expiresAt: Date.now() + 10000 }) };
-    if (url.endsWith('/api/files/domains')) return { ok: true, status: 200, json: async () => ({}) };
+    if (url.endsWith('/api/files/domains')) return { ok: true, status: 200, json: async () => ({ Will_Rinehart: { name: 'Will_Rinehart', file_count: 19 } }) };
     if (url.endsWith('/api/chat/history')) return { ok: true, status: 200, json: async () => [] };
+    if (url.endsWith('/api/chat/new')) {
+      savedChat = { id: 'named-chat', domainName: JSON.parse(options.body).domainName, messages: [] };
+      return { ok: true, json: async () => savedChat };
+    }
+    if (url.endsWith('/api/chat/named-chat')) return { ok: true, json: async () => savedChat };
+    if (url.endsWith('/api/chat/named-chat/message')) {
+      savedChat = { ...savedChat, messages: [{ role: 'assistant', content: 'A cited answer [S1].' }] };
+      return { ok: true, json: async () => ({ response: savedChat.messages[0].content, chat: savedChat }) };
+    }
     throw new Error(`Unexpected URL ${url}`);
   });
   render(<App />);
   fireEvent.change(screen.getByLabelText('Account'), { target: { value: 'demo' } });
   fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-demo-password' } });
   fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
-  expect(await screen.findByRole('button', { name: 'Search articles' })).toBeInTheDocument();
+  expect(await screen.findByRole('button', { name: 'Article Search' })).toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Chats' })).toBeInTheDocument();
+  expect(screen.getByText('Ask a question about our scholars’ work.')).toBeVisible();
+  const general = screen.getByRole('button', { name: 'All 4 scholars' });
+  expect(general).toHaveAttribute('aria-pressed', 'true');
+  for (const name of ['Brent Orrell', 'Clay Calvert', 'Shane Tews', 'Will Rinehart']) {
+    expect(screen.getByRole('button', { name })).toHaveAttribute('aria-pressed', 'false');
+  }
+  fireEvent.click(screen.getByRole('button', { name: 'Shane Tews' }));
+  expect(general).toHaveAttribute('aria-pressed', 'false');
+  expect(fetch.mock.calls.some(([url]) => url.endsWith('/api/chat/new'))).toBe(false);
+  fireEvent.change(screen.getByRole('textbox', { name: 'Ask about our scholars’ work' }), { target: { value: 'Spectrum sharing' } });
+  fireEvent.click(screen.getByRole('button', { name: 'Send message' }));
+  expect(await screen.findByText('Scholar: Shane Tews')).toBeVisible();
+  await waitFor(() => expect(screen.getByRole('button', { name: 'New Chat' })).toBeEnabled());
+  expect(savedChat.domainName).toBe('Shane_Tews');
+  fireEvent.click(screen.getByRole('button', { name: 'New Chat' }));
+  expect(screen.getByRole('button', { name: 'All 4 scholars' })).toHaveAttribute('aria-pressed', 'true');
   expect(screen.queryByRole('button', { name: 'Usage and costs' })).not.toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Files' })).not.toBeInTheDocument();
+  expect(screen.queryByText('19 files')).not.toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Article Search' }));
+  expect(screen.getByRole('option', { name: 'Will Rinehart' })).toHaveValue('Will_Rinehart');
+  expect(screen.getByText('Brent Orrell · Clay Calvert · Shane Tews · Will Rinehart')).toBeVisible();
+  expect(screen.queryByText(/Saved articles only|No AI credits/i)).not.toBeInTheDocument();
 });

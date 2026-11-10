@@ -35,6 +35,7 @@ test('full-text search finds topic evidence absent from title and catalog excerp
   assert.ok(r.articles[0].body.includes('workforce training'));
   assert.ok(r.articles.every(a => a.authors.includes('Brent Orrell')));
   assert.equal(r.aiUsed, false);
+  assert.deepEqual(r.coverage, { articles: 1, fullTextArticles: 1, latestPublishedDate: '2025-04-03' });
 });
 test('irrelevant and stop-word queries do not return arbitrary articles; matching uses whole words', async t => {
   const { engine } = await archive(t, entries);
@@ -86,11 +87,17 @@ test('archive paths cannot read files outside the article store', async t => {
   await fs.writeFile(indexPath, JSON.stringify(rows));
   assert.equal((await engine.search({ query: 'private-archive-marker' })).articles.length, 0);
 });
-test('unknown citation IDs are removed and unverifiable quotations produce a notice', () => {
+test('answers with missing or invalid archive citations are replaced by a source-only response', () => {
   const sources = prepareSources([{ title: 'Actual title', body: 'The available evidence supports this limited conclusion.', url: 'https://www.aei.org/article/' }]);
   const answer = checkCitations('Supported claim [S1]. Unsupported claim [S99]. “This entire invented quotation cannot be found in the source text.”', sources);
-  assert.ok(answer.content.includes('[S1]')); assert.ok(!answer.content.includes('[S99]'));
+  assert.match(answer.content, /Open Article sources/);
+  assert.doesNotMatch(answer.content, /Unsupported claim/);
   assert.match(answer.citationNotice, /unknown source/); assert.match(answer.citationNotice, /quotation/);
   assert.equal(checkCitations('“The available evidence supports this limited conclusion.” [S1]', sources).citationNotice, null);
-  assert.match(checkCitations('No references here.', sources).citationNotice, /no source references/);
+  const uncited = checkCitations('No references here.', sources);
+  assert.match(uncited.citationNotice, /no source references/);
+  assert.doesNotMatch(uncited.content, /No references here/);
+  const outside = checkCitations('See [another site](https://example.com) for more. [S1]', sources);
+  assert.match(outside.citationNotice, /outside the supplied citation IDs/);
+  assert.doesNotMatch(outside.content, /example.com/);
 });

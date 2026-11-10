@@ -130,10 +130,10 @@ router.post('/:chatId/message', async (req, res) => {
       ? `${lastQuestion} ${message}` : message;
     let articles;
     try { articles = await fetchArticles(chat.domainName, retrievalQuery, 6); }
-    catch { return res.status(503).json({ error: 'The saved article archive could not be searched. Please try again shortly.', code: 'archive_unavailable' }); }
+    catch { return res.status(503).json({ error: 'The scholar archive could not be searched. Please try again shortly.', code: 'archive_unavailable' }); }
     const relevantFiles = prepareSources(articles);
     if (!relevantFiles.length) {
-      const aiResponse = { role: 'assistant', content: "I couldn't find matching evidence in the saved article archive. Try a specific topic, another scholar, or Search articles. No AI credits were used for this response.", sources: [], searchMode: 'no_sources' };
+      const aiResponse = { role: 'assistant', content: "I couldn't find matching evidence in the scholar archive. Try a specific topic, another scholar, or Article Search.", sources: [], searchMode: 'no_sources' };
       await chatManager.addMessage(chatId, userMessage);
       await chatManager.addMessage(chatId, aiResponse);
       if (!chatMessages.messages.length) await chatManager.updateChatTitle(chatId, message.slice(0, 50));

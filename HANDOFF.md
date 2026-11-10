@@ -69,7 +69,7 @@ The in-memory index builds on demand, is shared by concurrent searches and refre
 
 Search displays up to 12 results. AI receives up to six excerpts of at most 2,200 characters each, rather than whole articles, plus at most the last six conversation messages and the current question. Passage windows retain original wording and mark omissions. IDs [S1] etc. refer to the current answer's stored source objects; earlier citation markers in conversation context are marked as earlier references. Structured title/author/date/URL/excerpt fields and citation notices are stored with the answer in the existing chat JSON; no database migration is required.
 
-A broad theme/overview request uses a small recent sample and labels that limitation. It does not compute corpus-wide theme frequencies. The prompt asks for supported patterns, distinctions between scholars, exact short quotes, and honest abstention. It no longer imposes a single institutional ideological position. Unknown citation IDs are replaced; missing citations or long unmatched quotations receive a notice. These checks validate references and visible wording, not the truth or semantic support of every claim.
+A broad theme/overview request uses a small recent sample and labels that limitation. It does not compute corpus-wide theme frequencies. The prompt asks for supported patterns, distinctions between scholars, exact short quotes, and honest abstention. It no longer imposes a single institutional ideological position. If a generated answer lacks a recognized citation or includes an unknown reference, a direct link, or a long quote missing from the supplied excerpts, the chat shows the saved sources and a notice in place of that answer. Citation checks cover references and long quotes. Assess each claim against its source before citing it.
 
 No matches produces a saved explanatory reply without a provider call. Archive failures block the provider call. Free search remains usable with Together disconnected. Real model behavior still needs a later approved funded evaluation.
 
@@ -92,10 +92,10 @@ backend/utils/servedScholars.js lists Brent Orrell, Clay Calvert, Shane Tews, an
 | Workflow | Configuration |
 | --- | --- |
 | .github/workflows/harvest.yml | Manual full harvest; self-hosted aei-network runner |
-| .github/workflows/biweekly-scrape.yml | Monday 08:00 UTC schedule, gated by ISO-week parity; manual dispatch bypasses the gate; self-hosted aei-network runner |
+| .github/workflows/biweekly-scrape.yml | Monday 08:00 UTC schedule, gated by ISO-week parity; manual dispatch bypasses the gate and accepts a longer lookback; self-hosted aei-network runner |
 | .github/workflows/backfill-metadata.yml | Manual metadata/index rebuild; ubuntu-latest; default dry run |
 
-The full index uses Git LFS. Archive tooling requires actual LFS data, not its pointer file. Harvesting uses AEI network/certificate configuration; review script headers before running it elsewhere. Existing commentary coverage gaps and staging-site completeness need investigation. A scheduled job is not proof of a complete or current archive.
+The full index uses Git LFS. Archive tooling requires actual LFS data, not its pointer file. Harvesting uses AEI network/certificate configuration; review script headers before running it elsewhere. Existing commentary coverage gaps and staging-site completeness need investigation. Check the **Fetch missing served-scholar articles** step for the number of files written. Then use **Article Search → Explore a recent sample** for each scholar to check the newest recorded publication date and open an expected new article.
 
 ## Local development and verification
 
