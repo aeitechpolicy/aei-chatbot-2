@@ -4,6 +4,7 @@ const SERVED_SCHOLARS = require('./servedScholars');
 
 const MAX_SOURCE_CHARS = 2200;
 const MAX_ARTICLE_CHARS = 200000;
+const AEI_SOURCE_HOSTS = new Set(['aei.org', 'www.aei.org', 'ctse.aei.org', 'cosm.aei.org']);
 const STOP = new Set(('a an and are as at be been being but by can could did do does for from had has have how i if in into is it its me more most of on or our please said say says should show some than that the their them then there these they this those to us was we were what when where which who why will with would you your about also tell find give get written write writes writing summarize summary explain discuss compare comparison common shared across scholars scholar aei american enterprise institute main themes theme overview overall research focus focuses').split(' '));
 function normalize(text = '') {
   return String(text).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[_\u2010-\u2015-]/g, ' ').replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
@@ -27,8 +28,9 @@ function scholarKey(name) { return normalize(name).replace(/ /g, '_'); }
 function safeUrl(value) {
   try {
     const url = new URL(value);
-    if (url.protocol !== 'https:' || !['aei.org', 'www.aei.org'].includes(url.hostname.toLowerCase()) || url.username || url.password || url.port) return null;
-    url.hash = ''; url.search = ''; url.hostname = 'www.aei.org';
+    if (url.protocol !== 'https:' || !AEI_SOURCE_HOSTS.has(url.hostname) || url.username || url.password || url.port) return null;
+    url.hash = ''; url.search = '';
+    if (url.hostname === 'aei.org') url.hostname = 'www.aei.org';
     return url.toString();
   } catch { return null; }
 }
@@ -78,7 +80,13 @@ function excerptFor(text, terms, idf = () => 1, maxChars = MAX_SOURCE_CHARS) {
   return best.sort((a, b) => a.start - b.start).map(win => `${win.start ? '… ' : ''}${win.part}${win.end < text.length ? ' …' : ''}`).join('\n\n').slice(0, maxChars);
 }
 
-function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_base'), indexPath = path.join(__dirname, '..', 'data', 'aei-index-slim.json'), metadataPath = path.join(__dirname, '..', 'articleMetadata.json'), now = Date.now, cacheMs = 5 * 60 * 1000 } = {}) {
+function createArticleSearch({
+  kbPath = path.join(__dirname, '..', 'knowledge_base'),
+  indexPath = path.join(__dirname, '..', 'data', 'aei-index-slim.json'),
+  metadataPath = path.join(__dirname, '..', 'articleMetadata.json'),
+  now = Date.now,
+  cacheMs = 5 * 60 * 1000
+} = {}) {
   let pending;
   let loadedAt = 0;
   async function jsonFile(filename) {
@@ -129,15 +137,23 @@ function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_ba
             fullText = Boolean(article.body);
           }
         } catch (error) { if (error.code !== 'ENOENT') throw error; }
-        const title = String(record.title || meta.title || article.title || 'Untitled saved article');
-        const authors = [...new Set((Array.isArray(record.scholars) && record.scholars.length ? record.scholars : (meta.author ? [meta.author] : [])).map(String))];
+        const imported = Array.isArray(meta.authors) && meta.authors.length > 0;
+        const eventDate = knownDate(meta.eventDate);
+        const sourceType = meta.sourceType === 'event' ? 'event' : null;
+        const catalog = imported || sourceType ? meta : record;
+        const title = String(catalog.title || meta.title || article.title || 'Untitled saved article');
+        const recordedAuthors = Array.isArray(record.scholars) && record.scholars.length ? record.scholars : [];
+        const byline = recordedAuthors.length ? recordedAuthors : (meta.author ? [meta.author] : []);
+        const authors = [...new Set((imported ? meta.authors : byline).map(String))];
         const body = article.body || String(record.excerpt || '').trim().slice(0, MAX_ARTICLE_CHARS);
         if (!body) continue;
         const scopes = new Set([scholarKey(file.split('/')[0]), ...authors.map(scholarKey)]);
         const terms = tokens(body), tf = counts(terms);
         const titleTerms = counts(tokens(title));
         for (const [term, n] of titleTerms) tf.set(term, (tf.get(term) || 0) + n * 5);
-        docs.push({ title, authors, date: knownDate(record.date || meta.date), url: safeUrl(record.url || meta.url), body, fullText, scopes, tf, length: Math.max(1, terms.length), key: file });
+        docs.push({ title, authors, date: sourceType ? null : knownDate(catalog.date) || knownDate(meta.date),
+          url: safeUrl(catalog.url) || safeUrl(meta.url), body, fullText: fullText && meta.textCoverage !== 'excerpt-only',
+          sourceType, eventDate, scopes, tf, length: Math.max(1, terms.length), key: file });
       }
     }));
     // Same article saved under more than one scholar should appear once.
@@ -205,6 +221,7 @@ function createArticleSearch({ kbPath = path.join(__dirname, '..', 'knowledge_ba
     for (const item of ranked) if (!selected.includes(item)) selected.push(item);
     const articles = selected.slice(0, Math.min(12, Math.max(1, limit))).map(({ doc, matched }, i) => ({
       id: `S${i + 1}`, title: doc.title, authors: doc.authors, author: doc.authors.join(', ') || 'Author not recorded', date: doc.date, url: doc.url,
+      ...(doc.sourceType ? { sourceType: doc.sourceType, eventDate: doc.eventDate } : {}),
       collections: SERVED_SCHOLARS.filter(name => doc.scopes.has(scholarKey(name))),
       body: excerptFor(doc.body, terms, idf), fullText: doc.fullText, matchedTerms: matched
     }));

@@ -15,6 +15,11 @@ const SCHEMA = [
     title TEXT NOT NULL, created_at TIMESTAMPTZ NOT NULL, updated_at TIMESTAMPTZ NOT NULL,
     messages JSONB NOT NULL DEFAULT '[]'::jsonb
   )`,
+  `CREATE TABLE IF NOT EXISTS aei_pilot_feedback (
+    id TEXT PRIMARY KEY, chat_id TEXT NOT NULL, message_index INTEGER NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL, reporter_label TEXT NOT NULL, category TEXT NOT NULL,
+    detail TEXT NOT NULL, answer TEXT NOT NULL, UNIQUE (chat_id, message_index)
+  )`,
   `CREATE OR REPLACE FUNCTION aei_pilot_reserve(p JSONB) RETURNS VOID
     LANGUAGE plpgsql VOLATILE AS $$
     DECLARE
@@ -114,6 +119,19 @@ class PostgresStorage {
     const rows = userId === 'owner'
       ? await this.query('SELECT * FROM aei_pilot_usage ORDER BY started_at DESC LIMIT 5000')
       : await this.query('SELECT * FROM aei_pilot_usage WHERE user_id=$1 ORDER BY started_at DESC LIMIT 5000', [userId]);
+    return rows.map(normalizeRow);
+  }
+
+  async saveFeedback(report) {
+    await this.query(`INSERT INTO aei_pilot_feedback
+      (id,chat_id,message_index,created_at,reporter_label,category,detail,answer)
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8) ON CONFLICT (chat_id,message_index) DO NOTHING`,
+    [report.id, report.chatId, report.messageIndex, report.createdAt, report.reporterLabel, report.category, report.detail, report.answer]);
+  }
+
+  async feedbackReports() {
+    const rows = await this.query(`SELECT id, created_at::text AS "createdAt", reporter_label AS "reporterLabel",
+      category, detail, answer FROM aei_pilot_feedback ORDER BY created_at DESC, id DESC`);
     return rows.map(normalizeRow);
   }
 

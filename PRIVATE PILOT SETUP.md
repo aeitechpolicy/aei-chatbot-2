@@ -22,14 +22,18 @@ To enable the optional **Demo User** login, add `CHATBOT_DEMO_PASSWORD` to the R
 
 ## Publish this follow-up
 
-1. Use the prepared AEI Research Search and Demo Update.zip. Transfer it to Windows and Extract All.
-2. In aeitechpolicy/aei-chatbot-2, create research-search-update from main.
-3. Upload the extracted backend folder, frontend folder and four root documentation files together. Paths must start with backend/, frontend/, or the root document name, rather than an outer ZIP folder.
-4. Commit to the new branch with Add free article search and cited research sources.
+1. Use the prepared AEI Scholar Library Update.zip. Transfer it to Windows and Extract All.
+2. In aeitechpolicy/aei-chatbot-2, create a branch from main for the demo update.
+3. Upload the extracted backend and frontend folders and any included root documentation. Confirm that the upload paths start with backend/, frontend/, or the root document name.
+4. Commit to the new branch with Restore original chatbot and update the Scholar Library.
 5. Have the assistant verify file paths and content against the package manifest, then create/review and merge the pull request.
 6. Confirm Vercel succeeds and Render shows the same merge live. Add the demo password in Render if you want to enable Demo User.
 
-Main was last confirmed at Qwen merge 0391378. Preserve any later upstream work when reviewing the branch. The prepared source package contains no actual keys, connection strings, chat records, database files, article archive or investigation evidence.
+Preserve upstream work when reviewing the branch. The package includes the historical scholar files already in the August 26 GitHub revision. The separate recent-publications import belongs in the staff File Manager.
+
+## Demo versions
+
+Demo User starts in **Version 2.0 — November 2026**, with a What’s new overview followed by the guided tour. **Version 1.0 — Pre-September 2026** uses the archived August 26, 2026 interface and scholar folders. The newest recorded publication in that copy is July 15, 2026. In Version 1.0, open Scholars for the original file counts or Files to browse the read-only folders. Each version has its own chat history. Both use the pilot sign-in, model and usage limits.
 
 ## Free checks after deployment
 
@@ -52,3 +56,15 @@ AI allowances remain 50 attempts/day overall UTC, 30/account/day, five/minute/ac
 New chats, structured source excerpts and notices use the existing Neon JSON storage; no database migration is required. Usage and reservations remain durable. Backend restarts require signing in again. Old legacy chats are preserved separately, not assigned to these accounts.
 
 Use Node 24, npm ci in each app folder, backend npm test, frontend npm test -- --watchAll=false --runInBand, and frontend npm run build. Local tests use simulated Together replies and PGlite via the real Neon HTTP driver. They do not contact private accounts. See VALIDATION.md for exact results and remaining live checks.
+
+
+## Experimental web search
+
+The AEI + Web tab uses AEI Scholar Library passages and up to three Tavily web search snippets. Set `TAVILY_API_KEY` on the Render backend to enable it alongside the existing Together connection. The tab tells users before sending that their question is used to search the web. Archive passages and earlier questions stay out of the Tavily request. Each search uses a single basic Tavily request, subject to its own account quota. Together handles answer generation through the existing pilot budget.
+
+Article Chat offers **Compare scholars** when the scope is **All 4 scholars**. The comparison looks for a matching passage with each scholar listed as an author and marks gaps where evidence is limited. A numbered citation opens its passage. **Research brief** opens a preview with findings and linked sources. **Copy brief** copies the preview to the clipboard. Suggested follow-ups fill the question box for review.
+
+
+## Staff feedback inbox
+
+Ordinary chats are available to the account that created them. **Send to the team** lets the user select a reason, explain what went wrong, and review the answer before sending. The report includes the selected answer, the account label, the reason, and the explanation. Staff accounts can open **Feedback inbox**. Demo accounts can submit reports. The inbox uses the pilot database.

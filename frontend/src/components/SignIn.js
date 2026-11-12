@@ -17,7 +17,7 @@ export default function SignIn() {
       <img src="/aeilogo.jpg" alt="AEI" className="sign-in-logo" />
       <p className="eyebrow">INTERNAL RESEARCH</p>
       <h1>AEI Chatbot</h1>
-      <p className="sign-in-intro">Sign in to search scholars’ work and ask research questions.</p>
+      <p className="sign-in-intro">Sign in to search the AEI Scholar Library and ask questions about the scholars’ work.</p>
       <label htmlFor="account">Account</label>
       <select id="account" value={account} onChange={event => setAccount(event.target.value)} disabled={busy}>
         <option value="owner">Chatbot Intern</option><option value="supervisor">Chatbot RA</option>

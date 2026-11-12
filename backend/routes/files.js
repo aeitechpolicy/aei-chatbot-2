@@ -1,6 +1,9 @@
 const express = require('express');
 const multer = require('multer');
+const path = require('node:path');
 const TxtKnowledgeBase = require('../utils/knowledgeBase');
+const { importPublications, PublicationImportError } = require('../scripts/import-aei-publications');
+const { articleSearch } = require('../utils/research');
 
 const router = express.Router();
 const safeDomain = value => typeof value === 'string' && /^[A-Za-z0-9 _-]{1,80}$/.test(value);
@@ -10,6 +13,23 @@ router.param('filename', (req, res, next, value) => safeFilename(value) ? next()
 
 // Initialize knowledge base
 const kb = new TxtKnowledgeBase();
+let importingPublications = false;
+
+router.post('/import-publications', async (req, res) => {
+  if (importingPublications) return res.status(409).json({ error: 'An article import is already running. Wait for it to finish.' });
+  importingPublications = true;
+  try {
+    const report = await importPublications(req.body, { backendPath: path.join(__dirname, '..'), apply: true });
+    res.json(report);
+  } catch (error) {
+    if (error instanceof PublicationImportError) return res.status(400).json({ error: error.message });
+    console.error('Article import failed:', error);
+    res.status(500).json({ error: 'The article import could not finish. Try the same file again.' });
+  } finally {
+    articleSearch.invalidate();
+    importingPublications = false;
+  }
+});
 
 // Configure multer for file uploads
 const storage = multer.memoryStorage();

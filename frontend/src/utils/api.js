@@ -1,4 +1,5 @@
 export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+export const chatEndpoint = (route, legacy = false) => `${API_BASE_URL}/api/chat/${route}${legacy ? '?version=1' : ''}`;
 const SESSION_KEY = 'aei-private-session';
 let session = null;
 try {

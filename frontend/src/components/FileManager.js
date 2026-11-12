@@ -1,5 +1,5 @@
 import { apiFetch } from '../utils/api';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Plus, 
   Upload, 
@@ -29,6 +29,9 @@ const FileManager = ({
   const [showNewDomainForm, setShowNewDomainForm] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [uploadingFiles, setUploadingFiles] = useState(false);
+  const [importingArticles, setImportingArticles] = useState(false);
+  const [importStatus, setImportStatus] = useState(null);
+  const articleImportInput = useRef(null);
 
   useEffect(() => {
     if (selectedDomain && selectedDomain !== 'General') {
@@ -140,6 +143,30 @@ const FileManager = ({
     }
   };
 
+  const handleArticleImport = async (event) => {
+    const file = event.currentTarget.files?.[0];
+    event.currentTarget.value = '';
+    if (!file) return;
+    setImportingArticles(true);
+    setImportStatus(null);
+    try {
+      const response = await apiFetch(`${API_BASE_URL}/api/files/import-publications`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: await file.text()
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'The article import could not finish.');
+      setImportStatus({ message: `Imported ${result.publications} articles. Newest publication date: ${result.newest}.` });
+      await onDomainsUpdate();
+      await loadDomainFiles();
+    } catch (error) {
+      setImportStatus({ error: true, message: error.message || 'The article import could not finish.' });
+    } finally {
+      setImportingArticles(false);
+    }
+  };
+
   const handleEditFile = async (filename) => {
     try {
       const response = await apiFetch(`${API_BASE_URL}/api/files/content/${selectedDomain}/${filename}`);
@@ -219,14 +246,21 @@ const FileManager = ({
         <div className="section">
           <div className="section-header">
             <h3>Scholar Folders</h3>
-            <button 
-              className="action-button primary"
-              onClick={() => setShowNewDomainForm(true)}
-            >
-              <Plus size={16} />
-              New Scholar
-            </button>
+            <div className="header-actions">
+              <button type="button" className="action-button primary" disabled={importingArticles}
+                onClick={() => articleImportInput.current?.click()}>
+                <Upload size={16} aria-hidden="true" />
+                {importingArticles ? 'Importing articles…' : 'Import AEI articles'}
+              </button>
+              <input ref={articleImportInput} type="file" accept=".json,application/json"
+                onChange={handleArticleImport} disabled={importingArticles} hidden />
+              <button type="button" className="action-button primary" onClick={() => setShowNewDomainForm(true)}>
+                <Plus size={16} />
+                New Scholar
+              </button>
+            </div>
           </div>
+          {importStatus && <p role={importStatus.error ? 'alert' : 'status'}>{importStatus.message}</p>}
 
           {showNewDomainForm && (
             <div className="new-domain-form">

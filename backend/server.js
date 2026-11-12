@@ -5,6 +5,7 @@ const Together = require('together-ai');
 const { createPilot } = require('./utils/pilot');
 const createChatRouter = require('./routes/chat');
 const createResearchRouter = require('./routes/research');
+const { createWebSearch } = require('./utils/webSearch');
 
 function createApp(options = {}) {
 const env = options.env || process.env;
@@ -42,6 +43,13 @@ app.use('/api/files', (req, res, next) => {
 app.use('/api', express.json({ limit: '128kb' }));
 app.get('/api/auth/session', (req, res) => res.json({ user: { id: req.auth.id, label: req.auth.label } }));
 app.post('/api/auth/logout', (req, res) => { pilot.logout(req.auth); res.json({ success: true }); });
+app.get('/api/feedback', requireStaffView, async (req, res, next) => {
+  if (!pilot.settings.storageConfigured) {
+    return res.status(503).json({ error: 'The team inbox is unavailable until persistent storage is connected.' });
+  }
+  try { return res.json({ reports: await pilot.feedbackReports() }); }
+  catch (error) { return next(error); }
+});
 app.get('/api/usage', requireStaffView, async (req, res, next) => {
   try { res.json({ rows: await pilot.rows(req.auth.id), settings: pilot.settings }); }
   catch (error) { next(error); }
@@ -63,7 +71,8 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/api/research', createResearchRouter(options.researchDependencies));
-app.use('/api/chat', createChatRouter({ pilot, complete, ...options.chatDependencies }));
+const searchWeb = (env.TOGETHER_API_KEY || options.complete) ? createWebSearch(env.TAVILY_API_KEY) : null;
+app.use('/api/chat', createChatRouter({ pilot, complete, searchWeb, ...options.chatDependencies }));
 app.use('/api/files', options.fileRoutes || require('./routes/files'));
 
 // Error handling middleware
