@@ -106,6 +106,8 @@ async function importPublications(rows, { backendPath, apply = false }) {
     }
     for (const [file, contents] of files) await atomicWrite(path.join(root, file), contents);
     await atomicWrite(metadataPath, JSON.stringify(metadata, null, 2) + '\n');
+    await fs.mkdir(path.dirname(indexPath), { recursive: true });
+    await atomicWrite(path.join(path.dirname(indexPath), 'library-import-status.json'), JSON.stringify({ lastManualImport: new Date().toISOString() }) + '\n');
   }
   return { publications: articles.length, files: files.size, byScholar: counts, newest: articles.map(article => article.date).sort().at(-1) };
 }

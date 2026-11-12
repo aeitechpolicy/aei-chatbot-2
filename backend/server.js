@@ -70,7 +70,7 @@ const complete = options.complete || (async request => {
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/api/research', createResearchRouter(options.researchDependencies));
+app.use('/api/research', createResearchRouter({ ...options.researchDependencies, pilot }));
 const searchWeb = (env.TOGETHER_API_KEY || options.complete) ? createWebSearch(env.TAVILY_API_KEY) : null;
 app.use('/api/chat', createChatRouter({ pilot, complete, searchWeb, ...options.chatDependencies }));
 app.use('/api/files', options.fileRoutes || require('./routes/files'));

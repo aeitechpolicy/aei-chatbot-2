@@ -20,7 +20,7 @@ async function fixture(t, overrides = {}) {
   const manager = new ChatManager(path.join(dir, 'chats'));
   let calls = 0;
   const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); assert.deepEqual(request.reasoning, { enabled: false }); return overrides.complete ? overrides.complete(request) : answer(); };
-  const app = createApp({ env, pilot, complete, researchDependencies: { search: overrides.searchArticles || (async () => ({ articles: [], matchedCount: 0, coverage: { articles: 0 }, aiUsed: false })) }, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
+  const app = createApp({ env, pilot, complete, researchDependencies: { findSource: overrides.findSource, search: overrides.searchArticles || (async () => ({ articles: [], matchedCount: 0, coverage: { articles: 0 }, aiUsed: false })) }, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
     manager, searchWeb: overrides.searchWeb, knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
   } });
   const server = await new Promise(resolve => { const s = app.listen(0, '127.0.0.1', () => resolve(s)); });
@@ -436,4 +436,43 @@ test('feedback shares only an owned selected answer, and only staff can read the
   assert.equal(reports[0].detail, report.detail);
   assert.doesNotMatch(JSON.stringify(reports), /Private question marker|Forged replacement/);
   assert.equal((await f.request(chatUrl, { token: supervisor })).status, 404);
+});
+
+test('article and web source corrections reach the staff inbox without sharing the search or answer', async t => {
+  const demoPassword = 'test-only-source-report-password';
+  const sourceRef = 'a'.repeat(64);
+  const f = await fixture(t, {
+    env: { CHATBOT_DEMO_PASSWORD: demoPassword },
+    findSource: async ref => ref === sourceRef ? { title: 'Saved article', authors: ['Clay Calvert'], date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', key: 'Clay_Calvert/fixture.txt' } : null,
+    searchWeb: async () => [{ title: 'Web article', url: 'https://example.org/policy', content: 'Selected web passage.' }],
+    complete: async () => ({ ...answer(), choices: [{ message: { content: 'Answer to keep private [W1].' } }] })
+  });
+  const { token: demo } = await f.login('demo', demoPassword);
+  const { token: owner } = await f.login();
+  const report = { category: 'Broken or incorrect link', detail: 'The article moved.', source: { title: 'Forged title' }, answer: 'Forged replacement' };
+  const send = (route, token, body) => f.request(route, { method: 'POST', token, body });
+  const articleRoute = '/api/research/feedback';
+  assert.equal((await send(articleRoute, undefined, { ...report, sourceRef })).status, 401);
+  assert.equal((await send(articleRoute, demo, { ...report, sourceRef: 'invalid' })).status, 400);
+  assert.equal((await send(articleRoute, demo, { ...report, sourceRef: 'b'.repeat(64) })).status, 404);
+  assert.equal((await send(articleRoute, demo, { ...report, sourceRef })).status, 200);
+  assert.equal((await send(articleRoute, demo, { ...report, sourceRef })).status, 200);
+  assert.equal(f.calls(), 0);
+
+  const chat = await f.newChat(demo);
+  const chatUrl = `/api/chat/${chat.id}`;
+  const answerResponse = await send(`${chatUrl}/message`, demo, { message: 'Private question marker', mode: 'web' });
+  assert.equal(answerResponse.status, 200);
+  const webReport = { ...report, messageIndex: 1, sourceId: 'W1' };
+  assert.equal((await send(`${chatUrl}/feedback`, owner, webReport)).status, 404);
+  assert.equal((await send(`${chatUrl}/feedback`, demo, { ...webReport, sourceId: 'W2' })).status, 404);
+  assert.equal((await send(`${chatUrl}/feedback`, demo, webReport)).status, 200);
+  assert.equal(f.calls(), 1);
+
+  const { reports } = await (await f.request('/api/feedback', { token: owner })).json();
+  assert.deepEqual(reports.map(item => item.source.title).sort(), ['Saved article', 'Web article']);
+  assert.ok(reports.every(item => item.answer === null && item.reporterLabel === 'Demo User'));
+  assert.equal(reports.find(item => item.source.kind === 'article').source.libraryFile, 'Clay_Calvert/fixture.txt');
+  assert.equal(reports.find(item => item.source.kind === 'web').source.excerpt, 'Selected web passage.');
+  assert.doesNotMatch(JSON.stringify(reports), /Private question marker|Answer to keep private|Forged/);
 });

@@ -51,6 +51,40 @@ test('all-scholar search includes relevant authors and treats AI and artificial 
   }
   assert.ok((await engine.search({ query: 'AI', scholar: 'Brent_Orrell' })).articles.every(a => a.authors.includes('Brent Orrell')));
 });
+test('search filters inclusive dates before ranking and highlights the matching original passage', async t => {
+  const { engine } = await archive(t, [
+    ...entries.slice(0, 2),
+    { ...entries[3], body: 'Short context. '.repeat(95) + 'Artificial intelligence influences satellite networks.' },
+    { ...entries[2], body: 'Artificial intelligence and speech.', date: null }
+  ]);
+  const options = { query: 'AI', from: '2025-04-03', to: '2025-06-01', sort: 'newest', includeHighlights: true };
+  const { articles, matchedCount, coverage } = await engine.search(options);
+  assert.deepEqual(articles.map(article => article.title), ['Connecting Communities', 'Technology Policy', 'Preparing for Change']);
+  assert.equal(matchedCount, 3);
+  const result = articles[0];
+  assert.equal((await engine.findSource(result.sourceRef)).title, result.title);
+  assert.equal(await engine.findSource('a'.repeat(64)), null);
+  assert.ok(result.passageMatches.some(([start, end]) => result.excerpt.slice(start, end) === 'Artificial intelligence'));
+  assert.equal(coverage.latestPublishedDate, '2025-06-01');
+  const limited = await engine.search({ ...options, from: '2025-05-01', to: '2025-05-01', limit: 1 });
+  assert.deepEqual(limited.articles.map(article => article.title), ['Technology Policy']);
+});
+test('library status reports completed refreshes independently of article dates and partial checks', async t => {
+  const { engine, dir } = await archive(t, entries);
+  assert.equal((await engine.status()).lastSuccessfulRefresh, null);
+  await fs.writeFile(path.join(dir, 'library-scrape-status.json'), JSON.stringify({
+    lastSuccessfulScrape: '2025-06-03T10:00:00Z', lastScrapeCheck: '2025-06-17T10:00:00Z', skippedInLastScrape: 3
+  }));
+  await fs.writeFile(path.join(dir, 'library-import-status.json'), JSON.stringify({ lastManualImport: '2025-06-10T10:00:00Z' }));
+  assert.deepEqual(await engine.status(), {
+    lastSuccessfulRefresh: '2025-06-10', lastSuccessfulScrape: '2025-06-03', lastManualImport: '2025-06-10',
+    lastScrapeCheck: '2025-06-17', skippedInLastScrape: 3, latestPublishedDate: '2025-06-01'
+  });
+  await fs.writeFile(path.join(dir, 'library-scrape-status.json'), 'unreadable status fixture');
+  assert.deepEqual(await engine.status({ showRefreshDetails: false }), {
+    latestArticle: { title: entries[3].title, date: entries[3].date, url: entries[3].url }
+  });
+});
 test('a theme overview is labeled a limited sample and includes each scholar', async t => {
   const { engine } = await archive(t, entries);
   const r = await engine.search({ query: 'main themes', limit: 6 });
@@ -115,6 +149,8 @@ test('an authorized bulk import supplies full text, bylines, dates and links for
   await assert.rejects(importPublications([article, { ...article, status: 'draft' }], { backendPath, apply: true }), /published/);
   await assert.rejects(fs.access(metadataPath), { code: 'ENOENT' });
   await importPublications([article], { backendPath, apply: true });
+  const refresh = JSON.parse(await fs.readFile(path.join(backendPath, 'data', 'library-import-status.json'), 'utf8'));
+  assert.ok(Number.isFinite(Date.parse(refresh.lastManualImport)));
   const second = await importPublications([article], { backendPath, apply: true });
   assert.equal(second.files, 1);
   const engine = createArticleSearch({ kbPath, indexPath: path.join(backendPath, 'index.json'), metadataPath });

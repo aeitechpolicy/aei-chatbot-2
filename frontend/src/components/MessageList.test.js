@@ -1,5 +1,8 @@
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import MessageList from './MessageList';
+import { apiFetch } from '../utils/api';
+
+jest.mock('../utils/api', () => ({ ...jest.requireActual('../utils/api'), apiFetch: jest.fn() }));
 
 beforeAll(() => { HTMLElement.prototype.scrollIntoView = jest.fn(); });
 
@@ -73,4 +76,21 @@ test('copies a brief with source URLs and offers follow-ups without submitting t
     if (clipboard) Object.defineProperty(navigator, 'clipboard', clipboard);
     else delete navigator.clipboard;
   }
+});
+
+test('AEI + Web can report a selected source separately from the full answer', async () => {
+  apiFetch.mockResolvedValueOnce({ ok: true });
+  const sources = [{ id: 'W1', kind: 'web', title: 'Current policy', url: 'https://example.org/policy', excerpt: 'Web passage.' }];
+  render(<MessageList chatId="test-chat" loading={false} messages={[{ role: 'assistant', searchMode: 'web', content: 'A policy example [W1].', sources }]} />);
+  expect(screen.getByRole('button', { name: 'Send to the team' })).toBeVisible();
+  fireEvent.click(screen.getByText('Sources (1)').closest('summary'));
+  fireEvent.click(screen.getByRole('button', { name: 'Send to the team: Current policy' }));
+  const dialog = within(screen.getByRole('dialog', { name: 'Send to the team' }));
+  fireEvent.change(dialog.getByLabelText('What went wrong?'), { target: { value: 'Broken or incorrect link' } });
+  fireEvent.change(dialog.getByLabelText('What should the team know?'), { target: { value: 'The link is outdated.' } });
+  fireEvent.click(dialog.getByRole('button', { name: 'Send report' }));
+  expect(await dialog.findByRole('status')).toHaveTextContent('Your report was sent to the staff inbox.');
+  const [url, request] = apiFetch.mock.calls[0];
+  expect(url).toContain('/api/chat/test-chat/feedback');
+  expect(JSON.parse(request.body)).toEqual({ sourceId: 'W1', messageIndex: 0, category: 'Broken or incorrect link', detail: 'The link is outdated.' });
 });

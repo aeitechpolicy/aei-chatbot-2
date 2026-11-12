@@ -71,7 +71,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
   const bootstrap = store(); await bootstrap.initialize();
   t.beforeEach(async () => {
     unavailable = false; now = BASE_TIME;
-    await pg.exec("SET TIMEZONE TO 'UTC'; TRUNCATE aei_pilot_usage, aei_pilot_chats, aei_pilot_feedback");
+    await pg.exec("SET TIMEZONE TO 'UTC'; TRUNCATE aei_pilot_usage, aei_pilot_chats, aei_pilot_feedback, aei_pilot_source_feedback");
   });
 
   await t.test('records returned tokens, estimates and separate account reports', async () => {
@@ -130,6 +130,12 @@ test('free database storage through the real Neon HTTP driver', async t => {
     assert.equal(reports[0].answer, report.answer);
     assert.equal(reports[0].detail, report.detail);
     assert.equal(reports[0].createdAt, report.createdAt);
+    const correction = { ...report, id: 'source-1', source: { kind: 'article', title: 'Recorded article', url: 'https://www.aei.org/article/' } };
+    await db.saveSourceFeedback(correction);
+    await db.saveSourceFeedback(correction);
+    const combined = await db.feedbackReports();
+    assert.equal(combined.length, 2);
+    assert.deepEqual(combined.find(item => item.id === correction.id).source, correction.source);
     assert.equal(await db.chatManager.getChat('reported-chat'), null);
   });
 

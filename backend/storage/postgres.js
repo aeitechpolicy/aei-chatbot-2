@@ -20,6 +20,10 @@ const SCHEMA = [
     created_at TIMESTAMPTZ NOT NULL, reporter_label TEXT NOT NULL, category TEXT NOT NULL,
     detail TEXT NOT NULL, answer TEXT NOT NULL, UNIQUE (chat_id, message_index)
   )`,
+  `CREATE TABLE IF NOT EXISTS aei_pilot_source_feedback (
+    id TEXT PRIMARY KEY, created_at TIMESTAMPTZ NOT NULL, reporter_label TEXT NOT NULL,
+    category TEXT NOT NULL, detail TEXT NOT NULL, source JSONB NOT NULL
+  )`,
   `CREATE OR REPLACE FUNCTION aei_pilot_reserve(p JSONB) RETURNS VOID
     LANGUAGE plpgsql VOLATILE AS $$
     DECLARE
@@ -129,9 +133,19 @@ class PostgresStorage {
     [report.id, report.chatId, report.messageIndex, report.createdAt, report.reporterLabel, report.category, report.detail, report.answer]);
   }
 
+  async saveSourceFeedback(report) {
+    await this.query(`INSERT INTO aei_pilot_source_feedback
+      (id,created_at,reporter_label,category,detail,source)
+      VALUES ($1,$2,$3,$4,$5,$6::jsonb) ON CONFLICT (id) DO NOTHING`,
+    [report.id, report.createdAt, report.reporterLabel, report.category, report.detail, JSON.stringify(report.source)]);
+  }
+
   async feedbackReports() {
-    const rows = await this.query(`SELECT id, created_at::text AS "createdAt", reporter_label AS "reporterLabel",
-      category, detail, answer FROM aei_pilot_feedback ORDER BY created_at DESC, id DESC`);
+    const rows = await this.query(`SELECT id, created_at AS "createdAt", reporter_label AS "reporterLabel",
+      category, detail, answer, NULL::jsonb AS source FROM aei_pilot_feedback
+      UNION ALL
+      SELECT id, created_at, reporter_label, category, detail, NULL, source FROM aei_pilot_source_feedback
+      ORDER BY "createdAt" DESC, id DESC`);
     return rows.map(normalizeRow);
   }
 

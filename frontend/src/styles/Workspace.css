@@ -48,6 +48,8 @@
 .demo-version-nav {
   display: flex;
   align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 6px;
   padding: 6px 22px;
   background: var(--workspace-panel);
@@ -55,7 +57,8 @@
 }
 .demo-version-nav button {
   display: grid;
-  justify-items: start;
+  justify-items: center;
+  min-width: 132px;
   gap: 2px;
   padding: 6px 13px;
   border: 1px solid transparent;
@@ -107,9 +110,10 @@
 .article-mode-switch {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   grid-column: 1 / -1;
   grid-row: 2;
-  justify-self: start;
+  justify-self: center;
   gap: 3px;
   max-width: 100%;
   margin-bottom: 10px;
@@ -317,9 +321,9 @@
 .article-workspace .article-search { padding: 28px 22px; }
 .article-workspace .article-search.workspace-start { padding-bottom: clamp(24px, 8vh, 80px); }
 .article-workspace .research-search-form { width: 100%; max-width: var(--workspace-width); margin: 0 auto; padding: 0; border: 0; background: transparent; }
-.article-workspace .research-controls { align-items: center; justify-content: space-between; flex-direction: row; gap: 8px; }
+.article-workspace .research-controls { align-items: center; justify-content: flex-start; flex-direction: row; gap: 8px 16px; }
 .article-workspace .research-controls label { flex-direction: row; align-items: center; color: var(--workspace-muted); font-size: .85rem; font-weight: 500; }
-.article-workspace .research-controls :is(select, .research-overview) {
+.article-workspace .research-controls :is(select, input[type="date"], .research-overview) {
   color-scheme: light;
   background: var(--workspace-panel);
   border-color: var(--workspace-line);
@@ -327,6 +331,21 @@
   padding: 7px 10px;
   font-size: .85rem;
 }
+.article-workspace .research-date-range { border: 0; padding: 0; }
+.research-date-range legend { margin-bottom: 4px; color: var(--workspace-muted); font-size: .85rem; }
+.research-date-range input[type="date"] { width: auto; }
+.article-workspace .article-search > .library-dates { max-width: var(--workspace-width); margin: 0 auto 16px; padding: 9px 12px; border: 1px solid var(--workspace-line); border-radius: 7px; background: var(--workspace-panel); color: var(--workspace-muted); font-size: .82rem; }
+.library-dates a { color: var(--workspace-link); text-underline-offset: 2px; }
+.library-refresh-details summary { cursor: pointer; color: var(--workspace-link); }
+.library-refresh-details p { margin: 3px 0 0; }
+.source-copy-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 10px; font-size: .85rem; }
+.source-copy-toolbar .research-secondary:disabled { cursor: default; opacity: .55; }
+.source-copy-toolbar textarea { flex-basis: 100%; padding: 6px; font: inherit; }
+.source-selection { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; font-size: .85rem; }
+.source-card-actions { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.source-card-actions .source-report-button { padding: 4px 8px; min-height: 30px; font-size: .8rem; }
+.source-report-button:disabled { opacity: .6; cursor: default; }
+.research-source mark { background: #f8e7ad; color: inherit; border-radius: 2px; }
 .article-workspace .article-search > :is(section, p) { width: 100%; max-width: var(--workspace-width); margin: 22px auto 0; }
 .workspace-meta span { margin: 0 .28em; }
 .workspace-panel :is(.research-note, .source-number, .source-metadata, .source-coverage) { color: var(--workspace-muted); }

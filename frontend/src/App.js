@@ -249,7 +249,8 @@ function PrivateApp({ session }) {
     {guide === 'whats-new' && <WhatsNew onClose={() => finishGuide()}
       onStartTour={() => { if (legacy) selectDemoVersion(2); finishGuide('tour'); }} />}
     {guide === 'tour' && <DemoWalkthrough busy={loading} onClose={() => finishGuide()}
-      onTryQuestion={question => { finishGuide(); handleNewChat(question); }} />}
+      onTryQuestion={question => { finishGuide(); handleNewChat(question); }}
+      onOpenSearch={() => { finishGuide(); setCurrentView('research'); }} />}
   </>;
 
   const sidebarActions = {
@@ -348,7 +349,7 @@ function PrivateApp({ session }) {
           {chat}
         </div>
         <div className="workspace-panel" hidden={currentView !== 'research'}>
-          <ArticleSearch showFileCounts={!isDemo} />
+          <ArticleSearch showFileCounts={!isDemo} showRefreshDetails={session.user.id === 'owner'} active={currentView === 'research'} />
         </div>
         {currentView === 'usage' && <UsageReport />}
         {!isDemo && currentView === 'feedback' && <FeedbackInbox />}
