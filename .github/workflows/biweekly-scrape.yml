@@ -74,7 +74,7 @@ jobs:
 
   scrape:
     needs: check-week
-    if: needs.check-week.outputs.should_run == 'true'
+    if: github.ref == 'refs/heads/main' && needs.check-week.outputs.should_run == 'true'
     runs-on: [self-hosted, aei-network]
     timeout-minutes: 120
     env:
@@ -131,6 +131,23 @@ jobs:
         working-directory: backend
         run: node scripts/build-slim-index.js
 
+      - name: Record library refresh status
+        working-directory: backend
+        run: |
+          node - <<'JS'
+          const fs = require('node:fs');
+          const filename = 'data/library-scrape-status.json';
+          const prior = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {};
+          const report = JSON.parse(fs.readFileSync('data/fetch-missing-articles-report.json', 'utf8'));
+          const checked = new Date().toISOString();
+          const failures = report.failed.length;
+          fs.writeFileSync(filename, JSON.stringify({
+            lastScrapeCheck: checked,
+            lastSuccessfulScrape: failures ? prior.lastSuccessfulScrape || null : checked,
+            skippedInLastScrape: failures
+          }, null, 2) + '\n');
+          JS
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -138,7 +155,23 @@ jobs:
           git add backend/data/aei-index.json backend/data/aei-authors.json \
                   backend/data/matches.json backend/data/ambiguous.json \
                   backend/data/unmatched.json backend/data/author-audit.json \
-                  backend/data/aei-index-slim.json backend/knowledge_base
-          git diff --cached --quiet || git commit -m "Biweekly scrape: harvest + fetch new served-scholar articles"
-          git pull --rebase origin main
-          git push
+                  backend/data/aei-index-slim.json backend/data/library-scrape-status.json backend/knowledge_base
+          if git diff --cached --quiet; then
+            echo "No archive changes to publish."
+            exit 0
+          fi
+          git commit -m "Biweekly scrape: harvest + fetch new served-scholar articles"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            base=$(git rev-parse FETCH_HEAD)
+            git rebase "$base"
+            if git push origin HEAD:refs/heads/main; then
+              exit 0
+            fi
+            remote_head=$(git ls-remote --exit-code origin refs/heads/main | cut -f 1)
+            if [ "$remote_head" = "$base" ] || [ "$attempt" -eq 3 ]; then
+              exit 1
+            fi
+            echo "main advanced during the upload. Rebasing and retrying."
+          done
