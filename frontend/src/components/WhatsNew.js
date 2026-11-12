@@ -5,8 +5,8 @@ import ResearchDialog from './ResearchDialog';
 const updates = [
   {
     icon: Search,
-    title: 'Three ways to research',
-    text: 'Ask a question in Article Chat, find publications in AEI Article Search, or try the experimental AEI + Web mode for outside context.'
+    title: 'Find articles and build a source list',
+    text: 'See the most recent article, filter by publication date, and sort newest first. Highlighted passages show where your terms appear. Select results to copy their citations and links.'
   },
   {
     icon: BookOpen,
@@ -30,8 +30,8 @@ const updates = [
   },
   {
     icon: Flag,
-    title: 'Flag an answer for the team',
-    text: 'Send the specific answer and your explanation to the team when something is wrong or missing.'
+    title: 'Send a correction to the team',
+    text: 'Report a specific article result, web source, or chatbot answer and explain what needs correcting.'
   }
 ];
 

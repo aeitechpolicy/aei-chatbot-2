@@ -108,7 +108,7 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
         {brief && <button className="research-primary" type="button" onClick={() => setBriefOpen(true)}>
           <FileText size={17} aria-hidden="true" /> Preview research brief
         </button>}
-        <SourceCards sources={sources} />
+        <SourceCards sources={sources} chatFeedback={canReport ? { chatId, messageIndex } : undefined} />
       </div>
     </details>}
     {brief && briefOpen && <ResearchBriefPreview brief={brief} onClose={() => setBriefOpen(false)} />}

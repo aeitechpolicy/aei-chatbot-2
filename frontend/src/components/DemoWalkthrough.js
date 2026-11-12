@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, Flag, Globe, MessageCircle, Search } from 'lucide
 import ResearchDialog from './ResearchDialog';
 
 const sampleQuestion = 'What tradeoffs do the scholars discuss around online age verification?';
-const steps = ['Choose a research mode', 'Ask your first question', 'Check the sources', 'Help improve an answer'];
+const steps = ['Choose a research mode', 'Find and copy articles', 'Ask your first question', 'Check the sources', 'Help improve an answer'];
 const modes = [
   {
     label: 'Article Chat',
@@ -22,7 +22,7 @@ const modes = [
   }
 ];
 
-export default function DemoWalkthrough({ onClose, onTryQuestion, busy }) {
+export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, busy }) {
   const [step, setStep] = useState(0);
   const [mode, setMode] = useState(0);
   const heading = useRef(null);
@@ -50,13 +50,20 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, busy }) {
         <p className="walkthrough-example" aria-live="polite">{modes[mode].description}</p>
       </>}
       {step === 1 && <>
+        <p>Open <strong>AEI Article Search</strong>. Look for <strong>Most recent article</strong> to see the newest dated publication in the library and open it on AEI when a link is available.</p>
+        <p>Enter a topic or phrase, choose a scholar or publication date range, and select <strong>Newest first</strong> to see recent matches at the top. Run the search to apply the filters.</p>
+        <p>Look for highlighted words in the title or passage. Tick <strong>Add to source list</strong> on each result you want, then choose <strong>Copy source list</strong> to paste the titles, bylines, dates, and AEI links into a memo.</p>
+        <p>If an article result needs a correction, use <strong>Send to the team</strong> on that result.</p>
+        <button type="button" className="research-secondary" onClick={onOpenSearch}>Open AEI Article Search</button>
+      </>}
+      {step === 2 && <>
         <p>In <strong>Article Chat</strong>, search across all four scholars or pick one before sending your first question. Turn on <strong>Compare scholars</strong> to see their perspectives side by side where the library has evidence.</p>
         <div className="walkthrough-example">
           <strong>Example question</strong>
           <p>{sampleQuestion}</p>
         </div>
       </>}
-      {step === 2 && <>
+      {step === 3 && <>
         <p>Select a numbered citation to see the passage behind it, plus the title, author, date and link when available.</p>
         <details className="walkthrough-example">
           <summary><BookOpen size={16} aria-hidden="true" /> View sample citation [S1]</summary>
@@ -66,9 +73,9 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, busy }) {
         <p>Open <strong>Article sources</strong> under an answer to review its sources and, when available, preview and copy a research brief.</p>
       </>}
       {lastStep && <>
-        <p>Spot an error, missing context or a citation problem? Use <strong>Send to the team</strong> below the answer and describe what went wrong.</p>
+        <p>Use <strong>Send to the team</strong> below an answer to report it. To report a specific citation, open <strong>Sources</strong> and use the button on that source. This works in AEI + Web too.</p>
         <p className="walkthrough-example walkthrough-feedback"><Flag size={17} aria-hidden="true" />
-          <span>The team sees the answer you report and your explanation.</span>
+          <span>The team sees the answer or source you select and your explanation.</span>
         </p>
         <p>Try the example question to start a new Article Chat. You can edit it before sending.</p>
       </>}

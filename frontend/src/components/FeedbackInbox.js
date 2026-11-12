@@ -1,5 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { API_BASE_URL, apiFetch } from '../utils/api';
+import { sourceLink } from '../utils/sources';
+
+function ReportedSource({ source }) {
+  const url = sourceLink(source);
+  return <div className="feedback-answer">
+    <strong>{source.kind === 'web' ? 'Reported web source' : 'Reported article'}</strong>
+    <p>{url ? <a href={url} target="_blank" rel="noopener noreferrer">{source.title}</a> : source.title}</p>
+    {(source.byline || source.date) && <p className="source-metadata">{[source.byline, source.date].filter(Boolean).join(' · ')}</p>}
+    {source.libraryFile && <p className="source-metadata feedback-detail">Library file · {source.libraryFile}</p>}
+    {source.excerpt && <details><summary>Reported passage</summary><blockquote>{source.excerpt}</blockquote></details>}
+  </div>;
+}
 
 export default function FeedbackInbox() {
   const [reload, setReload] = useState(0);
@@ -36,10 +48,10 @@ export default function FeedbackInbox() {
       <h3>{report.category}</h3>
       <p className="source-metadata">{report.reporterLabel} · <time dateTime={report.createdAt}>{new Date(report.createdAt).toLocaleString()}</time></p>
       <p className="feedback-detail">{report.detail}</p>
-      <details className="feedback-answer">
+      {report.source ? <ReportedSource source={report.source} /> : <details className="feedback-answer">
         <summary>Reported answer</summary>
         <blockquote>{report.answer}</blockquote>
-      </details>
+      </details>}
     </article>)}
   </main>;
 }

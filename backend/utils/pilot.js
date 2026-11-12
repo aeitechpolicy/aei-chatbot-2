@@ -38,6 +38,9 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     id TEXT PRIMARY KEY, chat_id TEXT NOT NULL, message_index INTEGER NOT NULL,
     created_at TEXT NOT NULL, reporter_label TEXT NOT NULL, category TEXT NOT NULL,
     detail TEXT NOT NULL, answer TEXT NOT NULL, UNIQUE (chat_id, message_index)
+  ); CREATE TABLE IF NOT EXISTS source_feedback (
+    id TEXT PRIMARY KEY, created_at TEXT NOT NULL, reporter_label TEXT NOT NULL,
+    category TEXT NOT NULL, detail TEXT NOT NULL, source TEXT NOT NULL
   );`);
   }
 
@@ -196,10 +199,22 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
       .run(report.id, chatId, messageIndex, report.createdAt, reporterLabel, category, detail, answer);
   }
 
+  async function saveSourceFeedback({ reporter, target, category, detail, source }) {
+    // A retry of the same report shares an ID. A new explanation can be submitted separately.
+    const id = crypto.createHash('sha256').update(JSON.stringify([reporter.id, target, category, detail])).digest('hex');
+    const report = { id, createdAt: new Date(now()).toISOString(), reporterLabel: reporter.label, category, detail, source };
+    if (remote) return remote.saveSourceFeedback(report);
+    db.prepare(`INSERT INTO source_feedback (id,created_at,reporter_label,category,detail,source)
+      VALUES (?,?,?,?,?,?) ON CONFLICT (id) DO NOTHING`)
+      .run(id, report.createdAt, report.reporterLabel, category, detail, JSON.stringify(source));
+  }
+
   async function feedbackReports() {
     if (remote) return remote.feedbackReports();
-    return db.prepare(`SELECT id, created_at AS "createdAt", reporter_label AS "reporterLabel",
-      category, detail, answer FROM feedback ORDER BY created_at DESC, id DESC`).all();
+    return db.prepare(`SELECT id, created_at AS "createdAt", reporter_label AS "reporterLabel", category, detail, answer, NULL AS source FROM feedback
+      UNION ALL
+      SELECT id, created_at, reporter_label, category, detail, NULL, source FROM source_feedback
+      ORDER BY "createdAt" DESC, id DESC`).all().map(row => ({ ...row, source: row.source ? JSON.parse(row.source) : null }));
   }
 
   async function csv(userId) {
@@ -212,7 +227,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     return [columns.map(cell).join(','), ...(await rows(userId)).map(row => columns.map(key => cell(row[key])).join(','))].join('\r\n');
   }
 
-  return { login, authenticate, requireAuth, begin, finish, rows, csv, saveFeedback, feedbackReports,
+  return { login, authenticate, requireAuth, begin, finish, rows, csv, saveFeedback, saveSourceFeedback, feedbackReports,
     logout: user => revokedSessions.set(user.nonce, user.exp),
     close: async () => { if (db) db.close(); if (remote) await remote.close(); },
     chatManager: remote && remote.chatManager,

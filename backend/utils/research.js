@@ -1,5 +1,6 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 const SERVED_SCHOLARS = require('./servedScholars');
 
 const MAX_SOURCE_CHARS = 2200;
@@ -80,10 +81,29 @@ function excerptFor(text, terms, idf = () => 1, maxChars = MAX_SOURCE_CHARS) {
   return best.sort((a, b) => a.start - b.start).map(win => `${win.start ? '… ' : ''}${win.part}${win.end < text.length ? ' …' : ''}`).join('\n\n').slice(0, maxChars);
 }
 
+function matchRanges(text, terms) {
+  if (!terms.length) return [];
+  const ranges = [];
+  for (const word of text.matchAll(/(?<![\p{L}\p{N}])(?:artificial[\s_-]+intelligence|section[\s_-]+230)(?![\p{L}\p{N}])|[\p{L}\p{M}\p{N}]+/giu)) {
+    if (tokens(word[0]).some(token => terms.includes(token))) ranges.push([word.index, word.index + word[0].length]);
+  }
+  return ranges;
+}
+
+function matchedExcerpt(body, terms) {
+  const firstMatch = matchRanges(body, terms)[0]?.[0] ?? 0;
+  const start = firstMatch > 460 ? body.lastIndexOf(' ', firstMatch - 120) + 1 : 0;
+  const end = body.length > start + 630 ? body.lastIndexOf(' ', start + 630) : body.length;
+  const excerpt = `${start ? '… ' : ''}${body.slice(start, end > start ? end : start + 630)}${end < body.length ? ' …' : ''}`;
+  return { excerpt, passageMatches: matchRanges(excerpt, terms) };
+}
+
 function createArticleSearch({
   kbPath = path.join(__dirname, '..', 'knowledge_base'),
   indexPath = path.join(__dirname, '..', 'data', 'aei-index-slim.json'),
   metadataPath = path.join(__dirname, '..', 'articleMetadata.json'),
+  scrapeStatusPath = path.join(path.dirname(indexPath), 'library-scrape-status.json'),
+  importStatusPath = path.join(path.dirname(indexPath), 'library-import-status.json'),
   now = Date.now,
   cacheMs = 5 * 60 * 1000
 } = {}) {
@@ -170,11 +190,16 @@ function createArticleSearch({
     }
     const articles = [...unique.values()];
     if (!articles.length) throw new Error('Archive has no readable articles');
+    const byReference = new Map();
+    for (const article of articles) {
+      article.sourceRef = createHash('sha256').update(article.key).digest('hex');
+      byReference.set(article.sourceRef, article);
+    }
     const df = new Map();
     for (const doc of articles) for (const term of doc.tf.keys()) df.set(term, (df.get(term) || 0) + 1);
     const averageLength = articles.reduce((n, doc) => n + doc.length, 0) / articles.length;
     loadedAt = now();
-    return { articles, df, averageLength };
+    return { articles, byReference, df, averageLength };
   }
   async function catalog() {
     if (!pending || now() - loadedAt > cacheMs) {
@@ -184,7 +209,31 @@ function createArticleSearch({
     }
     return pending;
   }
-  async function search({ query, scholar = 'General', limit = 12, fullTextOnly = false } = {}) {
+  async function status({ showRefreshDetails = true } = {}) {
+    const [{ articles }, scrape, manual] = await Promise.all([
+      catalog(),
+      showRefreshDetails ? jsonFile(scrapeStatusPath) : null,
+      showRefreshDetails ? jsonFile(importStatusPath) : null
+    ]);
+    const latest = articles.reduce((newest, article) => article.date && (!newest || article.date > newest.date) ? article : newest, null);
+    const latestArticle = latest && { title: latest.title, date: latest.date, url: latest.url };
+    if (!showRefreshDetails) return { latestArticle };
+    const lastSuccessfulScrape = knownDate(scrape?.lastSuccessfulScrape);
+    const lastManualImport = knownDate(manual?.lastManualImport);
+    return {
+      lastSuccessfulRefresh: [lastSuccessfulScrape, lastManualImport].filter(Boolean).sort().at(-1) || null,
+      lastSuccessfulScrape,
+      lastManualImport,
+      lastScrapeCheck: knownDate(scrape?.lastScrapeCheck),
+      skippedInLastScrape: Number.isSafeInteger(scrape?.skippedInLastScrape) ? scrape.skippedInLastScrape : 0,
+      latestPublishedDate: latestArticle?.date || null
+    };
+  }
+  async function findSource(sourceRef) {
+    const { byReference } = await catalog();
+    return byReference.get(sourceRef) || null;
+  }
+  async function search({ query, scholar = 'General', limit = 12, fullTextOnly = false, from, to, sort = 'relevance', includeHighlights = false } = {}) {
     const archive = await catalog();
     const terms = queryTerms(query);
     const scope = scholar === 'General' ? null : scholarKey(scholar);
@@ -200,6 +249,7 @@ function createArticleSearch({
       coverage.articles++;
       if (doc.fullText) coverage.fullTextArticles++;
       if (doc.date && (!coverage.latestPublishedDate || doc.date > coverage.latestPublishedDate)) coverage.latestPublishedDate = doc.date;
+      if ((from || to) && (!doc.date || (from && doc.date < from) || (to && doc.date > to))) continue;
       const matched = terms.filter(t => doc.tf.has(t));
       if (!overview && !matched.length) continue;
       const score = matched.reduce((sum, term) => {
@@ -208,10 +258,11 @@ function createArticleSearch({
       }, 0) * (0.3 + 0.7 * matched.length / Math.max(1, terms.length)) * (0.5 + 0.5 * Math.min(1, doc.body.length / 700));
       ranked.push({ doc, score, matched });
     }
-    ranked.sort((a, b) => b.score - a.score || (b.doc.date || '').localeCompare(a.doc.date || '') || a.doc.key.localeCompare(b.doc.key));
+    const byDate = (a, b) => (b.doc.date || '').localeCompare(a.doc.date || '');
+    ranked.sort((a, b) => (sort === 'newest' ? byDate(a, b) : 0) || b.score - a.score || byDate(a, b) || a.doc.key.localeCompare(b.doc.key));
     const selected = [];
     // Across scholars, surface a relevant example per scholar before filling by rank.
-    if (!scope) {
+    if (!scope && sort !== 'newest') {
       for (const name of (named.length ? named : SERVED_SCHOLARS.map(scholarKey))) {
         const bestCoverage = ranked.reduce((n, r) => Math.max(n, r.matched.length), 0);
         const item = ranked.find(r => r.doc.scopes.has(name) && !selected.includes(r) && (overview || (r.matched.length >= bestCoverage && r.score >= (ranked[0]?.score || 0) * 0.6)));
@@ -219,15 +270,19 @@ function createArticleSearch({
       }
     }
     for (const item of ranked) if (!selected.includes(item)) selected.push(item);
-    const articles = selected.slice(0, Math.min(12, Math.max(1, limit))).map(({ doc, matched }, i) => ({
-      id: `S${i + 1}`, title: doc.title, authors: doc.authors, author: doc.authors.join(', ') || 'Author not recorded', date: doc.date, url: doc.url,
-      ...(doc.sourceType ? { sourceType: doc.sourceType, eventDate: doc.eventDate } : {}),
-      collections: SERVED_SCHOLARS.filter(name => doc.scopes.has(scholarKey(name))),
-      body: excerptFor(doc.body, terms, idf), fullText: doc.fullText, matchedTerms: matched
-    }));
+    const articles = selected.slice(0, Math.min(12, Math.max(1, limit))).map(({ doc, matched }, i) => {
+      const body = excerptFor(doc.body, terms, idf);
+      return {
+        id: `S${i + 1}`, title: doc.title, authors: doc.authors, author: doc.authors.join(', ') || 'Author not recorded', date: doc.date, url: doc.url,
+        ...(doc.sourceType ? { sourceType: doc.sourceType, eventDate: doc.eventDate } : {}),
+        ...(includeHighlights ? { sourceRef: doc.sourceRef, ...matchedExcerpt(body, matched), titleMatches: matchRanges(doc.title, matched) } : {}),
+        collections: SERVED_SCHOLARS.filter(name => doc.scopes.has(scholarKey(name))),
+        body, fullText: doc.fullText, matchedTerms: matched
+      };
+    });
     return { articles, mode: overview ? 'overview' : 'topic', matchedCount: ranked.length, coverage, scholars: SERVED_SCHOLARS, aiUsed: false };
   }
-  return { search, invalidate: () => { pending = null; } };
+  return { search, status, findSource, invalidate: () => { pending = null; } };
 }
 const articleSearch = createArticleSearch();
 module.exports = { createArticleSearch, articleSearch, queryTerms, normalize, tokens, safeUrl, knownDate, excerptFor, MAX_SOURCE_CHARS };

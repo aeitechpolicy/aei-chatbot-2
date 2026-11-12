@@ -8,6 +8,7 @@ const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, par
 const { queryTerms } = require('../utils/research');
 const { prepareWebSources, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
+const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb }) {
 const router = express.Router();
@@ -125,13 +126,13 @@ router.delete('/:chatId', async (req, res) => {
   }
 });
 
-const FEEDBACK_CATEGORIES = ['Incorrect information', 'Missing context', 'Citation issue', 'Other'];
-
 router.post('/:chatId/feedback', async (req, res, next) => {
-  const { messageIndex, category, detail } = req.body || {};
-  if (!Number.isSafeInteger(messageIndex) || messageIndex < 0 || !FEEDBACK_CATEGORIES.includes(category) ||
-      typeof detail !== 'string' || !detail.trim() || detail.length > 2000) {
-    return res.status(400).json({ error: 'Choose a reason and explain what went wrong in 2,000 characters or fewer.' });
+  const { messageIndex, sourceId } = req.body || {};
+  const sourceReport = sourceId !== undefined;
+  const report = readFeedback(req.body, sourceReport ? SOURCE_REASONS : ANSWER_REASONS);
+  if (!Number.isSafeInteger(messageIndex) || messageIndex < 0 || !report ||
+      (sourceReport && (typeof sourceId !== 'string' || !/^[SW]\d{1,2}$/.test(sourceId)))) {
+    return res.status(400).json({ error: FEEDBACK_ERROR });
   }
   if (!pilot.settings.storageConfigured) {
     return res.status(503).json({ error: 'The team inbox is unavailable until persistent storage is connected.' });
@@ -143,7 +144,14 @@ router.post('/:chatId/feedback', async (req, res, next) => {
     if (answer?.role !== 'assistant' || typeof answer.content !== 'string') {
       return res.status(404).json({ error: 'This answer could not be found.' });
     }
-    await pilot.saveFeedback({ chatId, messageIndex, reporterLabel: req.auth.label, category, detail: detail.trim(), answer: answer.content });
+    if (sourceReport) {
+      const source = answer.sources?.find(item => item?.id === sourceId);
+      if (!source) return res.status(404).json({ error: 'This source could not be found in the selected answer.' });
+      const snapshot = sourceSnapshot(source, source.excerpt || '');
+      await pilot.saveSourceFeedback({ ...report, reporter: req.auth, target: ['chat', chatId, messageIndex, sourceId], source: snapshot });
+    } else {
+      await pilot.saveFeedback({ ...report, chatId, messageIndex, reporterLabel: req.auth.label, answer: answer.content });
+    }
     return res.json({ sent: true });
   } catch (error) { return next(error); }
 });
