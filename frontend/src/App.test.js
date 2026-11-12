@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import App from './App';
 import { apiFetch, getSession, setSession } from './utils/api';
 
@@ -13,12 +13,12 @@ test('a signed-in user can search saved articles without starting a chat or send
   render(<App />);
   fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-search-password' } });
   fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
-  fireEvent.click(await screen.findByRole('button', { name: 'Article Search' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'AEI Article Search' }));
   fireEvent.change(screen.getByLabelText('Topic or research question'), { target: { value: 'training' } });
   fireEvent.click(screen.getByRole('button', { name: 'Search saved articles' }));
   expect(await screen.findByRole('link', { name: 'Training article' })).toBeInTheDocument();
   const chatMode = screen.getByRole('button', { name: 'Article Chat' });
-  const searchMode = screen.getByRole('button', { name: 'Article Search' });
+  const searchMode = screen.getByRole('button', { name: 'AEI Article Search' });
   expect(searchMode).toHaveAttribute('aria-pressed', 'true');
   fireEvent.click(chatMode);
   expect(chatMode).toHaveAttribute('aria-pressed', 'true');
@@ -88,6 +88,7 @@ test('a supervisor can sign in and reach the usage report', async () => {
 });
 
 test('a demo login shows research and chat while hiding staff controls', async () => {
+  window.localStorage.removeItem('aei-demo-release-guide-seen');
   let savedChat;
   fetch.mockImplementation(async (url, options) => {
     if (url.endsWith('/api/auth/login')) return { ok: true, json: async () => ({ token: 'demo-test-token', user: { id: 'demo', label: 'Demo User' }, expiresAt: Date.now() + 10000 }) };
@@ -108,9 +109,23 @@ test('a demo login shows research and chat while hiding staff controls', async (
   fireEvent.change(screen.getByLabelText('Account'), { target: { value: 'demo' } });
   fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-demo-password' } });
   fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
-  expect(await screen.findByRole('button', { name: 'Article Search' })).toBeInTheDocument();
+  const whatsNew = within(await screen.findByRole('dialog', { name: 'What’s new in the AEI Chatbot' }));
+  expect(whatsNew.getByRole('heading', { name: 'See the evidence behind an answer' })).toBeVisible();
+  fireEvent.click(whatsNew.getByRole('button', { name: 'Start guided demo' }));
+  const tour = within(await screen.findByRole('dialog', { name: 'How to use AEI Chatbot' }));
+  for (let step = 0; step < 3; step++) {
+    fireEvent.click(tour.getByRole('button', { name: 'Next' }));
+  }
+  fireEvent.click(tour.getByRole('button', { name: 'Try the example question' }));
+  expect(screen.getByRole('textbox', { name: 'Ask about our scholars’ work' })).toHaveValue(
+    'What tradeoffs do the scholars discuss around online age verification?'
+  );
+  expect(fetch.mock.calls.some(([url]) => /\/api\/chat\/new|\/message$/.test(url))).toBe(false);
+  fireEvent.click(screen.getByRole('button', { name: 'How to use' }));
+  fireEvent.click(within(screen.getByRole('dialog', { name: 'How to use AEI Chatbot' })).getByRole('button', { name: 'Skip tour' }));
+  expect(await screen.findByRole('button', { name: 'AEI Article Search' })).toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Chats' })).toBeInTheDocument();
-  expect(screen.getByText('Ask a question about our scholars’ work.')).toBeVisible();
+  expect(screen.getByText('Ask about work in the AEI Scholar Library.')).toBeVisible();
   const general = screen.getByRole('button', { name: 'All 4 scholars' });
   expect(general).toHaveAttribute('aria-pressed', 'true');
   for (const name of ['Brent Orrell', 'Clay Calvert', 'Shane Tews', 'Will Rinehart']) {
@@ -129,7 +144,7 @@ test('a demo login shows research and chat while hiding staff controls', async (
   expect(screen.queryByRole('button', { name: 'Usage and costs' })).not.toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Files' })).not.toBeInTheDocument();
   expect(screen.queryByText('19 files')).not.toBeInTheDocument();
-  fireEvent.click(screen.getByRole('button', { name: 'Article Search' }));
+  fireEvent.click(screen.getByRole('button', { name: 'AEI Article Search' }));
   expect(screen.getByRole('option', { name: 'Will Rinehart' })).toHaveValue('Will_Rinehart');
   expect(screen.getByText('Brent Orrell · Clay Calvert · Shane Tews · Will Rinehart')).toBeVisible();
   expect(screen.queryByText(/Saved articles only|No AI credits/i)).not.toBeInTheDocument();

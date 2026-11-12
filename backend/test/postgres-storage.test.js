@@ -71,7 +71,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
   const bootstrap = store(); await bootstrap.initialize();
   t.beforeEach(async () => {
     unavailable = false; now = BASE_TIME;
-    await pg.exec("SET TIMEZONE TO 'UTC'; TRUNCATE aei_pilot_usage, aei_pilot_chats");
+    await pg.exec("SET TIMEZONE TO 'UTC'; TRUNCATE aei_pilot_usage, aei_pilot_chats, aei_pilot_feedback");
   });
 
   await t.test('records returned tokens, estimates and separate account reports', async () => {
@@ -115,6 +115,22 @@ test('free database storage through the real Neon HTTP driver', async t => {
     await chats.addMessage(untitled.id, { role: 'assistant', content: 'Follow-up answer.' }, 'Another Topic');
     assert.equal((await chats.getChat(untitled.id)).title, 'Spectrum Sharing');
     assert.equal((await chats.getChat(untitled.id)).messages.length, 2);
+  });
+
+  await t.test('feedback is saved separately from chat history and duplicate reports are ignored', async () => {
+    const db = store();
+    const report = {
+      id: 'feedback-1', chatId: 'reported-chat', messageIndex: 1, createdAt: '2026-11-11T16:00:00.000Z',
+      reporterLabel: 'Demo User', category: 'Citation issue', detail: 'The citation points to the wrong passage.', answer: 'A selected answer.'
+    };
+    await db.saveFeedback(report);
+    await db.saveFeedback({ ...report, id: 'duplicate', detail: 'Duplicate report' });
+    const reports = await db.feedbackReports();
+    assert.equal(reports.length, 1);
+    assert.equal(reports[0].answer, report.answer);
+    assert.equal(reports[0].detail, report.detail);
+    assert.equal(reports[0].createdAt, report.createdAt);
+    assert.equal(await db.chatManager.getChat('reported-chat'), null);
   });
 
   await t.test('chat history and unfinished cost reservations survive a fresh app and reopened database', async () => {

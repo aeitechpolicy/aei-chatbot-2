@@ -21,7 +21,7 @@ async function fixture(t, overrides = {}) {
   let calls = 0;
   const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); assert.deepEqual(request.reasoning, { enabled: false }); return overrides.complete ? overrides.complete(request) : answer(); };
   const app = createApp({ env, pilot, complete, researchDependencies: { search: overrides.searchArticles || (async () => ({ articles: [], matchedCount: 0, coverage: { articles: 0 }, aiUsed: false })) }, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
-    manager, knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
+    manager, searchWeb: overrides.searchWeb, knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
   } });
   const server = await new Promise(resolve => { const s = app.listen(0, '127.0.0.1', () => resolve(s)); });
   const url = `http://127.0.0.1:${server.address().port}`;
@@ -96,6 +96,37 @@ test('one account cannot read, send to, or delete another account’s chat', asy
     assert.equal(response.status, 404);
   }
   assert.equal(f.calls(), 0);
+});
+
+test('the demo’s original version has frozen files and separate chats under the same usage account', async t => {
+  const password = 'test-only-demo-password';
+  const f = await fixture(t, { env: { CHATBOT_DEMO_PASSWORD: password } });
+  const { token } = await f.login('demo', password);
+  const owner = await f.login();
+  const archiveRoute = '/api/chat/archive?version=1';
+  assert.equal((await f.request(archiveRoute)).status, 401);
+  assert.equal((await f.request(archiveRoute, { token: owner.token })).status, 404);
+  const { domains } = await (await f.request(archiveRoute, { token })).json();
+  assert.deepEqual(Object.values(domains).map(domain => domain.file_count), [636, 195, 607, 102]);
+  const fileRoute = '/api/chat/archive/Shane_Tews';
+  const { files } = await (await f.request(`${fileRoute}?version=1`, { token })).json();
+  assert.equal(files.length, 607);
+  const file = await (await f.request(`${fileRoute}/${encodeURIComponent(files[0])}?version=1`, { token })).json();
+  assert.ok(file.content.length > 0);
+
+  const latest = await f.newChat(token);
+  const created = await f.request('/api/chat/new?version=1', { token, method: 'POST', body: { domainName: 'Shane_Tews' } });
+  assert.equal(created.status, 200);
+  const original = await created.json();
+  assert.equal((await f.request(`/api/chat/${original.id}`, { token })).status, 404);
+  assert.equal((await f.request(`/api/chat/${latest.id}?version=1`, { token })).status, 404);
+  const question = 'What has Shane Tews written about spectrum allocation and sharing?';
+  const response = await f.request(`/api/chat/${original.id}/message?version=1`, { token, method: 'POST', body: { message: question } });
+  assert.equal(response.status, 200);
+  const result = await response.json();
+  assert.equal(result.chat.title, question.slice(0, 50) + '...');
+  assert.ok(result.sources.length > 0 && result.sources.every(source => typeof source === 'string'));
+  assert.equal((await f.pilot.rows('demo')).length, 1);
 });
 
 test('request model is fixed and returned usage is recorded without question text', async t => {
@@ -210,6 +241,7 @@ test('demo can research and chat while staff retain billing and file controls', 
     assert.equal((await f.request(route, { token })).status, 403);
   }
   assert.equal((await f.request('/api/files/upload', { token, method: 'POST' })).status, 403);
+  assert.equal((await f.request('/api/files/import-publications', { token, method: 'POST', body: [] })).status, 403);
   assert.equal((await f.request('/api/files/domains', { token })).status, 200);
   assert.equal((await f.request('/api/research/search?q=spectrum', { token })).status, 200);
   assert.equal((await f.request(`/api/chat/${ownerChat.id}`, { token })).status, 404);
@@ -310,4 +342,98 @@ test('an unavailable archive does not trigger a general-knowledge provider fallb
   const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } });
   assert.equal(response.status, 503); assert.equal((await response.json()).code, 'archive_unavailable');
   assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+});
+
+test('experimental mode searches only the submitted question and keeps web citations distinct', async t => {
+  const searches = [];
+  const f = await fixture(t, {
+    searchWeb: async question => {
+      searches.push(question);
+      return [{ title: 'Current policy', url: 'https://example.org/policy', content: 'A current policy example.' }];
+    },
+    complete: async request => {
+      const web = request.messages[0].content.includes('"id":"W1"');
+      const content = web
+        ? 'External context provides a current policy example [W1].\nArchive material provides context [S1].\nFOLLOW_UP: What tradeoffs did the archive passage raise?'
+        : 'A scholar passage provides context [S1].';
+      return { ...answer(), choices: [{ message: { content } }] };
+    }
+  });
+  const { token } = await f.login();
+  const capability = await f.request('/api/chat/capabilities', { token });
+  assert.equal((await capability.json()).webSearch, true);
+  const chat = await f.newChat(token);
+  const route = `/api/chat/${chat.id}/message`;
+  const archive = await f.request(route, { token, method: 'POST', body: { message: 'Earlier private question' } });
+  assert.equal(archive.status, 200);
+  assert.equal(searches.length, 0);
+  const web = await f.request(route, { token, method: 'POST', body: { message: 'Current public policy question', mode: 'web' } });
+  assert.equal(web.status, 200);
+  const body = await web.json();
+  assert.deepEqual(searches, ['Current public policy question']);
+  assert.deepEqual(body.sources.map(source => source.id), ['S1', 'W1']);
+  assert.equal(body.sources[1].kind, 'web');
+  assert.match(body.response, /\[W1\]/);
+  assert.equal(body.citationNotice, null);
+  assert.deepEqual(body.chat.messages.at(-1).followUps, ['What tradeoffs did the archive passage raise?']);
+  assert.equal(f.calls(), 2);
+});
+
+test('scholar comparisons keep four rows and reject a citation belonging to another scholar', async t => {
+  const f = await fixture(t, {
+    fetchArticles: async key => {
+      if (key !== 'Brent_Orrell' && key !== 'Shane_Tews') return [];
+      const author = key.replace(/_/g, ' ');
+      return [{ title: `An article by ${author}`, author, body: 'A policy tradeoff discussed in the article.' }];
+    },
+    complete: async () => ({ ...answer(), choices: [{ message: { content:
+      'COMPARE Brent_Orrell | The passage discusses a policy tradeoff [S1].\nCOMPARE Shane_Tews | A claim using the wrong scholar [S1].'
+    } }] })
+  });
+  const { token } = await f.login();
+  const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'How do the scholars approach age verification?', mode: 'compare' } });
+  assert.equal(response.status, 200);
+  const body = await response.json();
+  assert.equal(body.comparison.length, 4);
+  assert.deepEqual(body.comparison.map(row => [row.scholar, row.limited]), [
+    ['Brent Orrell', false], ['Clay Calvert', true], ['Shane Tews', true], ['Will Rinehart', true]
+  ]);
+  assert.doesNotMatch(body.response, /wrong scholar/);
+  assert.deepEqual(body.chat.messages.at(-1).comparison, body.comparison);
+  assert.equal(f.calls(), 1);
+});
+
+
+test('feedback shares only an owned selected answer, and only staff can read the inbox', async t => {
+  const demoPassword = 'test-only-demo-feedback-password';
+  const f = await fixture(t, { env: { CHATBOT_DEMO_PASSWORD: demoPassword } });
+  const { token: demo } = await f.login('demo', demoPassword);
+  const { token: owner } = await f.login();
+  const { token: supervisor } = await f.login('supervisor');
+  const chat = await f.newChat(demo);
+  const chatUrl = `/api/chat/${chat.id}`;
+  const reply = await f.request(`${chatUrl}/message`, { token: demo, method: 'POST', body: { message: 'Private question marker' } });
+  assert.equal(reply.status, 200);
+  const answer = (await reply.json()).response;
+  const report = { messageIndex: 1, category: 'Citation issue', detail: 'The passage missed the tradeoff.', answer: 'Forged replacement' };
+
+  const inbox = token => f.request('/api/feedback', { token });
+  const send = (token, body) => f.request(`${chatUrl}/feedback`, { token, method: 'POST', body });
+  assert.equal((await inbox()).status, 401);
+  assert.equal((await inbox(demo)).status, 403);
+  assert.deepEqual((await (await inbox(owner)).json()).reports, []);
+  assert.equal((await send(owner, report)).status, 404);
+  assert.equal((await send(demo, { ...report, messageIndex: 0 })).status, 404);
+  assert.equal((await send(demo, { ...report, detail: '  ' })).status, 400);
+  assert.equal((await send(demo, report)).status, 200);
+  assert.equal((await send(demo, report)).status, 200);
+
+  const { reports } = await (await inbox(supervisor)).json();
+  assert.equal(reports.length, 1);
+  assert.equal(reports[0].reporterLabel, 'Demo User');
+  assert.equal(reports[0].answer, answer);
+  assert.equal(reports[0].detail, report.detail);
+  assert.doesNotMatch(JSON.stringify(reports), /Private question marker|Forged replacement/);
+  assert.equal((await f.request(chatUrl, { token: supervisor })).status, 404);
 });

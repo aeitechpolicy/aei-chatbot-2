@@ -4,6 +4,7 @@ const fs = require('node:fs/promises');
 const os = require('node:os');
 const path = require('node:path');
 const { createArticleSearch, MAX_SOURCE_CHARS, safeUrl } = require('../utils/research');
+const { importPublications } = require('../scripts/import-aei-publications');
 const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, checkCitations } = require('../utils/sourceContext');
 
 async function archive(t, entries) {
@@ -93,6 +94,40 @@ test('chat ranks readable scholar files while article search can show catalog ex
   assert.equal(chat.articles.length, 1);
   assert.match(chat.articles[0].body, /Apprenticeships/);
   assert.equal((await engine.search({ query: 'workforce training', scholar: 'Shane_Tews', fullTextOnly: true })).articles.length, 0);
+});
+test('an authorized bulk import supplies full text, bylines, dates and links for search and chat', async t => {
+  const backendPath = await fs.mkdtemp(path.join(os.tmpdir(), 'aei-import-'));
+  t.after(() => fs.rm(backendPath, { recursive: true, force: true }));
+  const kbPath = path.join(backendPath, 'knowledge_base');
+  const metadataPath = path.join(backendPath, 'articleMetadata.json');
+  await fs.mkdir(kbPath);
+  const article = {
+    title: 'Verifying Age Without Giving Up Privacy',
+    authors: ['Shane Tews', 'Clay Calvert', 'Example Coauthor'],
+    date: '2026-10-29',
+    url: 'https://ctse.aei.org/example/?tracking=discard',
+    text: 'The original article passage describes age checks using mobile credentials.',
+    status: 'publish'
+  };
+  const preview = await importPublications([article], { backendPath });
+  assert.equal(preview.publications, 1);
+  await assert.rejects(fs.access(metadataPath), { code: 'ENOENT' });
+  await assert.rejects(importPublications([article, { ...article, status: 'draft' }], { backendPath, apply: true }), /published/);
+  await assert.rejects(fs.access(metadataPath), { code: 'ENOENT' });
+  await importPublications([article], { backendPath, apply: true });
+  const second = await importPublications([article], { backendPath, apply: true });
+  assert.equal(second.files, 1);
+  const engine = createArticleSearch({ kbPath, indexPath: path.join(backendPath, 'index.json'), metadataPath });
+  for (const scholar of ['Shane_Tews', 'Clay_Calvert']) {
+    const { articles, coverage } = await engine.search({ query: 'mobile credentials', scholar, fullTextOnly: true });
+    assert.equal(articles.length, 1);
+    assert.equal(articles[0].body, article.text);
+    assert.deepEqual(articles[0].authors, article.authors);
+    assert.equal(articles[0].url, 'https://ctse.aei.org/example/');
+    assert.equal(coverage.latestPublishedDate, '2026-10-29');
+    assert.equal(prepareSources(articles)[0].excerpt, article.text);
+  }
+  assert.deepEqual((await engine.search({ query: 'mobile credentials', scholar: 'Brent_Orrell' })).articles, []);
 });
 test('archive paths cannot read files outside the article store', async t => {
   const { engine, dir, indexPath, kbPath } = await archive(t, entries.slice(0, 1));

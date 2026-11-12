@@ -765,7 +765,10 @@
     "title": "Reasonable Panic",
     "author": "Brent Orrell",
     "date": "2025-07-17",
-    "url": "https://www.aei.org/domestic-policy/reasonable-panic/"
+    "url": "https://www.aei.org/domestic-policy/reasonable-panic/",
+    "authors": [
+      "Brent Orrell"
+    ]
   },
   "Brent_Orrell/www_aei_org_domestic_policy_the_biden_administrations_war_on_flexibility_at_work.txt": {
     "title": "The Biden Administration’s War on Flexibility at Work",
@@ -801,7 +804,10 @@
     "title": "Up in the Air",
     "author": "Brent Orrell",
     "date": "2025-03-03",
-    "url": "https://www.aei.org/domestic-policy/up-in-the-air/"
+    "url": "https://www.aei.org/domestic-policy/up-in-the-air/",
+    "authors": [
+      "Brent Orrell"
+    ]
   },
   "Brent_Orrell/www_aei_org_domestic_policy_veteran_transition_services_getting_more_bang_for_the_buck.txt": {
     "title": "Veteran Transition Services: Getting More Bang for the Buck",
@@ -913,9 +919,9 @@
   },
   "Brent_Orrell/www_aei_org_events_hidden_workers_untapped_talent.txt": {
     "title": "Hidden Workers: Untapped Talent",
-    "author": "Brent Orrell",
-    "date": "2021-09-07",
-    "url": "https://www.aei.org/research-products/report/hidden-workers-untapped-talent/"
+    "url": "https://www.aei.org/events/hidden-workers-untapped-talent/",
+    "sourceType": "event",
+    "eventDate": "2022-04-25"
   },
   "Brent_Orrell/www_aei_org_events_identity_required_how_a_pro_social_identity_fosters_desistance_from_crime.txt": {
     "title": "Identity Required: How a Pro-social Identity Fosters Desistance from Crime",
@@ -930,10 +936,10 @@
     "url": "https://www.aei.org/podcast/minding-our-workforce-the-importance-of-noncognitive-skills-in-employment/"
   },
   "Brent_Orrell/www_aei_org_events_neurodiversity_and_the_future_of_work.txt": {
-    "title": "The Future of Work",
-    "author": "Brent Orrell",
-    "date": "2024-09-17",
-    "url": "https://www.aei.org/multimedia/the-future-of-work/"
+    "title": "Neurodiversity and the Future of Work",
+    "url": "https://www.aei.org/events/neurodiversity-and-the-future-of-work/",
+    "sourceType": "event",
+    "eventDate": "2021-10-18"
   },
   "Brent_Orrell/www_aei_org_events_webinar_stem_perspectives_attitudes_opportunities_and_barriers_in_americas_stem_workforce.txt": {
     "title": "STEM Perspectives: Attitudes, Opportunities, and Barriers in America’s STEM Workforce",
@@ -3342,10 +3348,10 @@
     "url": "https://www.aei.org/uncategorized/irresistible-policy-meet-the-unmovable-labor-market/"
   },
   "Clay_Calvert/www_aei_org_events_cheap_fakes_and_dirty_politics_examining_manipulated_media_and_platform_accountability.txt": {
-    "title": "Examining Manipulated Media and Platform Accountability",
-    "author": "Clay Calvert",
-    "date": "2024-01-09",
-    "url": "https://www.aei.org/technology-and-innovation/examining-manipulated-media-and-platform-accountability/"
+    "title": "Cheap Fakes and Dirty Politics: Examining Manipulated Media and Platform Accountability",
+    "url": "https://www.aei.org/events/cheap-fakes-and-dirty-politics-examining-manipulated-media-and-platform-accountability/",
+    "sourceType": "event",
+    "eventDate": "2023-10-24"
   },
   "Clay_Calvert/www_aei_org_op_eds_ai_gets_political_how_do_we_keep_fake_news_out_of_campaign_ads.txt": {
     "title": "AI Gets Political: How Do We Keep Fake News Out of Campaign Ads?",
@@ -4290,10 +4296,10 @@
     "url": "https://www.aei.org/podcast/extending-us-leadership-on-5g-a-conversation-with-fcc-commissioner-brendan-carr/"
   },
   "Shane_Tews/www_aei_org_events_navigating_the_post_world_radiocommunication_conference_outlook_for_wireless_innovation.txt": {
-    "title": "Take a Guess: What’s the Biggest Barrier to Innovation?",
-    "author": "Shane Tews",
-    "date": "2014-11-14",
-    "url": "https://www.aei.org/pethokoukis/innovation/"
+    "title": "Navigating the Post–World Radiocommunication Conference Outlook for Wireless Innovation",
+    "url": "https://www.aei.org/events/navigating-the-post-world-radiocommunication-conference-outlook-for-wireless-innovation/",
+    "sourceType": "event",
+    "eventDate": "2024-01-22"
   },
   "Shane_Tews/www_aei_org_events_tech_policy_2015_year_ahead.txt": {
     "title": "Tech Policy 2015: The Year Ahead",
@@ -7462,5 +7468,768 @@
     "author": "Will Rinehart",
     "date": "2024-03-22",
     "url": "https://www.aei.org/technology-and-innovation/would-it-even-be-constitutional-to-pause-ai/"
+  },
+  "Brent_Orrell/www_aei_org_articles_lights_out.txt": {
+    "title": "Lights Out",
+    "url": "https://www.aei.org/commentary/lights-out/",
+    "date": "2019-10-22",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_events_10th_annual_housing_conference.txt": {
+    "title": "10th Annual Housing Conference",
+    "url": "https://www.aei.org/events/10th-annual-housing-conference/",
+    "sourceType": "event",
+    "eventDate": "2021-11-17"
+  },
+  "Brent_Orrell/www_aei_org_events_13th_annual_housing_center_conference.txt": {
+    "title": "13th Annual Housing Center Conference",
+    "url": "https://www.aei.org/events/13th-annual-housing-center-conference/",
+    "sourceType": "event",
+    "eventDate": "2024-11-20"
+  },
+  "Brent_Orrell/www_aei_org_events_can_businesses_boost_upward_mobility.txt": {
+    "title": "Can Businesses Boost Upward Mobility?",
+    "url": "https://www.aei.org/events/can-businesses-boost-upward-mobility/",
+    "sourceType": "event",
+    "eventDate": "2023-03-15"
+  },
+  "Brent_Orrell/www_aei_org_events_digital_platforms_and_american_life_a_conference_on_technology_and_government.txt": {
+    "title": "Digital Platforms and American Life: A Conference on Technology and Government",
+    "url": "https://www.aei.org/events/digital-platforms-and-american-life-a-conference-on-technology-and-government/",
+    "sourceType": "event",
+    "eventDate": "2022-09-27"
+  },
+  "Brent_Orrell/www_aei_org_events_empowering_american_workers_a_discussion_with_reps_andy_barr_r_ky_and_mike_johnson_r_la.txt": {
+    "title": "Empowering American Workers: A Discussion with Reps. Andy Barr (R-KY) and Mike Johnson (R-LA)",
+    "url": "https://www.aei.org/events/empowering-american-workers-a-discussion-with-reps-andy-barr-r-ky-and-mike-johnson-r-la/",
+    "sourceType": "event",
+    "eventDate": "2020-09-30"
+  },
+  "Brent_Orrell/www_aei_org_events_ai_and_jobs_measuring_impact_and_building_new_assessment_tools.txt": {
+    "title": "AI and Jobs: Measuring Impact and Building New Assessment Tools",
+    "url": "https://www.aei.org/events/ai-and-jobs-measuring-impact-and-building-new-assessment-tools/",
+    "sourceType": "event",
+    "eventDate": "2025-03-19"
+  },
+  "Brent_Orrell/www_aei_org_events_growing_fairly_a_book_event_with_stephen_goldsmith.txt": {
+    "title": "Growing Fairly: A Book Event with Stephen Goldsmith",
+    "url": "https://www.aei.org/events/growing-fairly-a-book-event-with-stephen-goldsmith/",
+    "sourceType": "event",
+    "eventDate": "2022-07-25"
+  },
+  "Brent_Orrell/www_aei_org_events_employer_resource_networks_improving_employment_retention_and_building_career_opportunities_for_low_wage_workers.txt": {
+    "title": "Employer Resource Networks: Improving Employment Retention and Building Career Opportunities for Low-wage Workers",
+    "url": "https://www.aei.org/events/employer-resource-networks-improving-employment-retention-and-building-career-opportunities-for-low-wage-workers/",
+    "sourceType": "event",
+    "eventDate": "2020-10-22"
+  },
+  "Brent_Orrell/www_aei_org_events_is_sector_based_training_the_answer_to_americas_skills_challenge.txt": {
+    "title": "Is Sector-Based Training the Answer to America’s Skills Challenge?",
+    "url": "https://www.aei.org/events/is-sector-based-training-the-answer-to-americas-skills-challenge/",
+    "sourceType": "event",
+    "eventDate": "2024-02-26"
+  },
+  "Brent_Orrell/www_aei_org_events_new_approaches_for_grassroots_entrepreneurship_2.txt": {
+    "title": "New Approaches for Grassroots Entrepreneurship",
+    "url": "https://www.aei.org/events/new-approaches-for-grassroots-entrepreneurship-2/",
+    "sourceType": "event",
+    "eventDate": "2021-07-29"
+  },
+  "Brent_Orrell/www_aei_org_events_on_the_front_porch_with_brent_orrell_and_tony_pipa_a_conversation_with_benji_backer_and_michelle_moore.txt": {
+    "title": "On the Front Porch with Brent Orrell and Tony Pipa: A Conversation with Benji Backer and Michelle Moore",
+    "url": "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-benji-backer-and-michelle-moore/",
+    "sourceType": "event",
+    "eventDate": "2025-01-29"
+  },
+  "Brent_Orrell/www_aei_org_events_new_approaches_for_grassroots_entrepreneurship.txt": {
+    "title": "CANCELLED: New Approaches for Grassroots Entrepreneurship",
+    "url": "https://www.aei.org/events/new-approaches-for-grassroots-entrepreneurship/",
+    "sourceType": "event",
+    "eventDate": "2021-04-20"
+  },
+  "Brent_Orrell/www_aei_org_events_on_the_front_porch_with_brent_orrell_and_tony_pipa_a_conversation_with_keith_humphreys_and_sally_satel.txt": {
+    "title": "On the Front Porch with Brent Orrell and Tony Pipa: A Conversation with Keith Humphreys and Sally Satel",
+    "url": "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-keith-humphreys-and-sally-satel/",
+    "sourceType": "event",
+    "eventDate": "2024-07-08"
+  },
+  "Brent_Orrell/www_aei_org_events_on_the_front_porch_with_brent_orrell_and_tony_pipa_a_conversation_with_kevin_r_kosar.txt": {
+    "title": "On the Front Porch with Brent Orrell and Tony Pipa: A Conversation with Kevin R. Kosar",
+    "url": "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-kevin-r-kosar/",
+    "sourceType": "event",
+    "eventDate": "2024-07-22"
+  },
+  "Brent_Orrell/www_aei_org_events_on_the_front_porch_with_brent_orrell_and_tony_pipa_a_conversation_with_carol_graham.txt": {
+    "title": "On the Front Porch with Brent Orrell and Tony Pipa: A Conversation with Carol Graham",
+    "url": "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-carol-graham/",
+    "sourceType": "event",
+    "eventDate": "2024-03-14"
+  },
+  "Brent_Orrell/www_aei_org_events_system_error_where_big_tech_went_wrong_and_how_we_can_reboot.txt": {
+    "title": "System Error: Where Big Tech Went Wrong and How We Can Reboot",
+    "url": "https://www.aei.org/events/system-error-where-big-tech-went-wrong-and-how-we-can-reboot/",
+    "sourceType": "event",
+    "eventDate": "2023-06-22"
+  },
+  "Brent_Orrell/www_aei_org_events_the_future_of_remote_work_balancing_the_trade_offs.txt": {
+    "title": "The Future of Remote Work: Balancing the Trade-offs",
+    "url": "https://www.aei.org/events/the-future-of-remote-work-balancing-the-trade-offs/",
+    "sourceType": "event",
+    "eventDate": "2020-12-17"
+  },
+  "Brent_Orrell/www_aei_org_events_the_globotics_upheaval_a_book_event_with_richard_baldwin.txt": {
+    "title": "The Globotics Upheaval: A Book Event with Richard Baldwin",
+    "url": "https://www.aei.org/events/the-globotics-upheaval-a-book-event-with-richard-baldwin/",
+    "sourceType": "event",
+    "eventDate": "2019-10-15"
+  },
+  "Brent_Orrell/www_aei_org_events_there_is_nothing_for_you_here_a_book_event_with_fiona_hill.txt": {
+    "title": "‘There Is Nothing for You Here’: A Book Event with Fiona Hill",
+    "url": "https://www.aei.org/events/there-is-nothing-for-you-here-a-book-event-with-fiona-hill/",
+    "sourceType": "event",
+    "eventDate": "2022-02-14"
+  },
+  "Brent_Orrell/www_aei_org_events_unemployment_insurance_at_a_crossroads_tracing_program_design_during_and_beyond_covid_19.txt": {
+    "title": "Unemployment Insurance at a Crossroads: Tracing Program Design During and Beyond COVID-19",
+    "url": "https://www.aei.org/events/unemployment-insurance-at-a-crossroads-tracing-program-design-during-and-beyond-covid-19/",
+    "sourceType": "event",
+    "eventDate": "2021-10-27"
+  },
+  "Brent_Orrell/www_aei_org_events_worker_retraining_and_transitions_in_a_dynamic_economy_2.txt": {
+    "title": "Worker Retraining and Transitions in a Dynamic Economy",
+    "url": "https://www.aei.org/events/worker-retraining-and-transitions-in-a-dynamic-economy-2/",
+    "sourceType": "event",
+    "eventDate": "2021-05-25"
+  },
+  "Brent_Orrell/www_aei_org_events_workforce_futures_initiative_how_well_does_the_american_workforce_system_work.txt": {
+    "title": "Workforce Futures Initiative: How Well Does the American Workforce System Work?",
+    "url": "https://www.aei.org/events/workforce-futures-initiative-how-well-does-the-american-workforce-system-work/",
+    "sourceType": "event",
+    "eventDate": "2023-02-28"
+  },
+  "Brent_Orrell/www_aei_org_opportunity_social_mobility_do_we_need_a_reboot_challenging_prevailing_narratives_on_ai.txt": {
+    "title": "Do We Need a Reboot? Challenging Prevailing Narratives on AI",
+    "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/do-we-need-a-reboot-challenging-prevailing-narratives-on-ai/",
+    "date": "2023-07-14",
+    "authors": [
+      "Brent Orrell",
+      "Shane Tews"
+    ],
+    "author": "Brent Orrell, Shane Tews"
+  },
+  "Brent_Orrell/www_aei_org_opportunity_social_mobility_upskilling_from_the_top.txt": {
+    "title": "Upskilling from the Top",
+    "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/upskilling-from-the-top/",
+    "date": "2023-11-06",
+    "authors": [
+      "Brent Orrell",
+      "Shane Tews"
+    ],
+    "author": "Brent Orrell, Shane Tews"
+  },
+  "Clay_Calvert/www_aei_org_events_free_speech_and_tech_policy_at_the_us_supreme_court_2025.txt": {
+    "title": "Free Speech and Tech Policy at the US Supreme Court, 2025",
+    "url": "https://www.aei.org/events/free-speech-and-tech-policy-at-the-us-supreme-court-2025/",
+    "sourceType": "event",
+    "eventDate": "2025-07-09"
+  },
+  "Clay_Calvert/www_aei_org_events_jawboning_weighing_government_influence_over_online_platforms_censorship_practices.txt": {
+    "title": "Jawboning: Weighing Government Influence over Online Platforms’ Censorship Practices",
+    "url": "https://www.aei.org/events/jawboning-weighing-government-influence-over-online-platforms-censorship-practices/",
+    "sourceType": "event",
+    "eventDate": "2024-09-10"
+  },
+  "Shane_Tews/www_aei_org_events_ai_and_jobs_measuring_impact_and_building_new_assessment_tools.txt": {
+    "title": "AI and Jobs: Measuring Impact and Building New Assessment Tools",
+    "url": "https://www.aei.org/events/ai-and-jobs-measuring-impact-and-building-new-assessment-tools/",
+    "sourceType": "event",
+    "eventDate": "2025-03-19"
+  },
+  "Clay_Calvert/www_aei_org_events_free_speech_supreme_court_rulings_and_the_future_of_digital_discourse.txt": {
+    "title": "Free Speech Supreme Court Rulings and the Future of Digital Discourse",
+    "url": "https://www.aei.org/events/free-speech-supreme-court-rulings-and-the-future-of-digital-discourse/",
+    "sourceType": "event",
+    "eventDate": "2024-07-23"
+  },
+  "Shane_Tews/www_aei_org_events_aei_section_230_spring_summit.txt": {
+    "title": "AEI Section 230 Spring Summit",
+    "url": "https://www.aei.org/events/aei-section-230-spring-summit/",
+    "sourceType": "event",
+    "eventDate": "2023-04-19"
+  },
+  "Shane_Tews/www_aei_org_events_beyond_bandwidth_addressing_spectrum_capacity_challenges_and_exploring_its_value.txt": {
+    "title": "Beyond Bandwidth: Addressing Spectrum-Capacity Challenges and Exploring the Mid-Band’s Value",
+    "url": "https://www.aei.org/events/beyond-bandwidth-addressing-spectrum-capacity-challenges-and-exploring-its-value/",
+    "sourceType": "event",
+    "eventDate": "2023-07-20"
+  },
+  "Shane_Tews/www_aei_org_events_americas_strategy_for_cyberspace_is_it_working.txt": {
+    "title": "America’s Strategy for Cyberspace: Is It Working?",
+    "url": "https://www.aei.org/events/americas-strategy-for-cyberspace-is-it-working/",
+    "sourceType": "event",
+    "eventDate": "2015-10-27"
+  },
+  "Shane_Tews/www_aei_org_events_crossing_the_consumer_welfare_rubicon_a_conversation_with_commissioner_noah_phillips_of_the_federal_trade_commission.txt": {
+    "title": "Crossing the Consumer Welfare Rubicon: A Conversation with Commissioner Noah Phillips of the Federal Trade Commission",
+    "url": "https://www.aei.org/events/crossing-the-consumer-welfare-rubicon-a-conversation-with-commissioner-noah-phillips-of-the-federal-trade-commission/",
+    "sourceType": "event",
+    "eventDate": "2022-07-18"
+  },
+  "Shane_Tews/www_aei_org_events_an_american_strategy_for_cyberspace_advancing_freedom_security_and_prosperity.txt": {
+    "title": "An American Strategy for Cyberspace: Advancing Freedom, Security, and Prosperity",
+    "url": "https://www.aei.org/events/an-american-strategy-for-cyberspace-advancing-freedom-security-and-prosperity/",
+    "sourceType": "event",
+    "eventDate": "2016-06-14"
+  },
+  "Shane_Tews/www_aei_org_events_can_billions_of_dollars_in_federal_grants_solve_broadband_access_and_availability_throughout_the_us.txt": {
+    "title": "Can Billions of Dollars in Federal Grants Solve Broadband Access and Availability Throughout the US?",
+    "url": "https://www.aei.org/events/can-billions-of-dollars-in-federal-grants-solve-broadband-access-and-availability-throughout-the-us/",
+    "sourceType": "event",
+    "eventDate": "2022-07-21"
+  },
+  "Shane_Tews/www_aei_org_events_clearing_obstacles_to_americas_5g_wireless_future_a_conversation_with_fcc_commissioner_brendan_carr.txt": {
+    "title": "Clearing Obstacles to America’s 5G Wireless Future: A Conversation with FCC Commissioner Brendan Carr",
+    "url": "https://www.aei.org/events/clearing-obstacles-to-americas-5g-wireless-future-a-conversation-with-fcc-commissioner-brendan-carr/",
+    "sourceType": "event",
+    "eventDate": "2018-09-17"
+  },
+  "Shane_Tews/www_aei_org_events_does_the_us_need_a_national_cybersecurity_strategy.txt": {
+    "title": "Does the US Need a National Cybersecurity Strategy?",
+    "url": "https://www.aei.org/events/does-the-us-need-a-national-cybersecurity-strategy/",
+    "sourceType": "event",
+    "eventDate": "2021-10-19"
+  },
+  "Shane_Tews/www_aei_org_events_cyberspace_policy_at_home_and_abroad_the_agenda_for_2016_and_beyond.txt": {
+    "title": "Cyberspace Policy at Home and Abroad: The Agenda for 2016 and Beyond",
+    "url": "https://www.aei.org/events/cyberspace-policy-at-home-and-abroad-the-agenda-for-2016-and-beyond/",
+    "sourceType": "event",
+    "eventDate": "2016-01-28"
+  },
+  "Shane_Tews/www_aei_org_events_digital_discourse_in_flux_navigating_the_legal_economic_and_societal_impacts_of_todays_online_speech_decisions.txt": {
+    "title": "Digital Discourse in Flux: Navigating the Legal, Economic, and Societal Impacts of Today’s Online Speech Decisions",
+    "url": "https://www.aei.org/events/digital-discourse-in-flux-navigating-the-legal-economic-and-societal-impacts-of-todays-online-speech-decisions/",
+    "sourceType": "event",
+    "eventDate": "2023-11-02"
+  },
+  "Shane_Tews/www_aei_org_events_federal_data_consolidation_protecting_civil_liberties_in_the_digital_age.txt": {
+    "title": "Federal Data Consolidation: Protecting Civil Liberties in the Digital Age",
+    "url": "https://www.aei.org/events/federal-data-consolidation-protecting-civil-liberties-in-the-digital-age/",
+    "sourceType": "event",
+    "eventDate": "2025-07-16"
+  },
+  "Shane_Tews/www_aei_org_events_fcc_commissioner_brendan_carr_a_progress_report_on_us_leadership_in_next_generation_networks.txt": {
+    "title": "FCC Commissioner Brendan Carr: A Progress Report on US Leadership in Next-generation Networks",
+    "url": "https://www.aei.org/events/fcc-commissioner-brendan-carr-a-progress-report-on-us-leadership-in-next-generation-networks/",
+    "sourceType": "event",
+    "eventDate": "2021-09-15"
+  },
+  "Shane_Tews/www_aei_org_events_domestic_surveillance_on_foreign_shores_the_case_of_microsofts_servers_in_ireland.txt": {
+    "title": "Domestic Surveillance on Foreign Shores: The Case of Microsoft’s Servers in Ireland",
+    "url": "https://www.aei.org/events/domestic-surveillance-on-foreign-shores-the-case-of-microsofts-servers-in-ireland/",
+    "sourceType": "event",
+    "eventDate": "2015-10-06"
+  },
+  "Shane_Tews/www_aei_org_events_free_speech_and_tech_policy_at_the_us_supreme_court_2025.txt": {
+    "title": "Free Speech and Tech Policy at the US Supreme Court, 2025",
+    "url": "https://www.aei.org/events/free-speech-and-tech-policy-at-the-us-supreme-court-2025/",
+    "sourceType": "event",
+    "eventDate": "2025-07-09"
+  },
+  "Shane_Tews/www_aei_org_events_free_speech_supreme_court_rulings_and_the_future_of_digital_discourse.txt": {
+    "title": "Free Speech Supreme Court Rulings and the Future of Digital Discourse",
+    "url": "https://www.aei.org/events/free-speech-supreme-court-rulings-and-the-future-of-digital-discourse/",
+    "sourceType": "event",
+    "eventDate": "2024-07-23"
+  },
+  "Shane_Tews/www_aei_org_events_jawboning_weighing_government_influence_over_online_platforms_censorship_practices.txt": {
+    "title": "Jawboning: Weighing Government Influence over Online Platforms’ Censorship Practices",
+    "url": "https://www.aei.org/events/jawboning-weighing-government-influence-over-online-platforms-censorship-practices/",
+    "sourceType": "event",
+    "eventDate": "2024-09-10"
+  },
+  "Shane_Tews/www_aei_org_events_maximizing_the_internet_of_things_a_conversation_with_senator_cory_booker_d_nj_and_senator_deb_fischer_r_ne.txt": {
+    "title": "Maximizing the Internet of Things: A Conversation with Senator Cory Booker (D-NJ) and Senator Deb Fischer (R-NE)",
+    "url": "https://www.aei.org/events/maximizing-the-internet-of-things-a-conversation-with-senator-cory-booker-d-nj-and-senator-deb-fischer-r-ne/",
+    "sourceType": "event",
+    "eventDate": "2017-03-30"
+  },
+  "Shane_Tews/www_aei_org_events_path_ahead_us_internet_policy_conversation_representative_greg_walden.txt": {
+    "title": "The Path Ahead for US Internet Policy: A Conversation with Representative Greg Walden",
+    "url": "https://www.aei.org/events/path-ahead-us-internet-policy-conversation-representative-greg-walden/",
+    "sourceType": "event",
+    "eventDate": "2015-03-02"
+  },
+  "Shane_Tews/www_aei_org_events_system_error_where_big_tech_went_wrong_and_how_we_can_reboot.txt": {
+    "title": "System Error: Where Big Tech Went Wrong and How We Can Reboot",
+    "url": "https://www.aei.org/events/system-error-where-big-tech-went-wrong-and-how-we-can-reboot/",
+    "sourceType": "event",
+    "eventDate": "2023-06-22"
+  },
+  "Shane_Tews/www_aei_org_opportunity_social_mobility_upskilling_from_the_top.txt": {
+    "title": "Upskilling from the Top",
+    "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/upskilling-from-the-top/",
+    "date": "2023-11-06",
+    "authors": [
+      "Brent Orrell",
+      "Shane Tews"
+    ],
+    "author": "Brent Orrell, Shane Tews"
+  },
+  "Shane_Tews/www_aei_org_opportunity_social_mobility_do_we_need_a_reboot_challenging_prevailing_narratives_on_ai.txt": {
+    "title": "Do We Need a Reboot? Challenging Prevailing Narratives on AI",
+    "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/do-we-need-a-reboot-challenging-prevailing-narratives-on-ai/",
+    "date": "2023-07-14",
+    "authors": [
+      "Brent Orrell",
+      "Shane Tews"
+    ],
+    "author": "Brent Orrell, Shane Tews"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_ai_damned_if_you_dont.txt": {
+    "title": "AI: Damned If You Don’t",
+    "url": "https://www.aei.org/domestic-policy/ai-damned-if-you-dont/",
+    "date": "2025-11-19",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_ai_pessimism_fades_as_reality_takes_hold.txt": {
+    "title": "AI Pessimism Fades as Reality Takes Hold",
+    "url": "https://www.aei.org/domestic-policy/ai-pessimism-fades-as-reality-takes-hold/",
+    "date": "2025-10-30",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_algorithms_compute_and_the_rise_of_tokenomics.txt": {
+    "title": "Algorithms, Compute, and the Rise of “Tokenomics”",
+    "url": "https://www.aei.org/domestic-policy/algorithms-compute-and-the-rise-of-tokenomics/",
+    "date": "2026-02-24",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_cmon_student_athletes_flex_those_noncognitive_muscles.txt": {
+    "title": "C’mon Student Athletes: Flex Those (Noncognitive) Muscles",
+    "url": "https://www.aei.org/domestic-policy/cmon-student-athletes-flex-those-noncognitive-muscles/",
+    "date": "2025-09-04",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_can_a_new_methodology_give_us_headlights_on_ai_work_disruption.txt": {
+    "title": "Can a New Methodology Give Us “Headlights” on AI Work Disruption?",
+    "url": "https://www.aei.org/domestic-policy/can-a-new-methodology-give-us-headlights-on-ai-work-disruption/",
+    "date": "2026-05-14",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_augment_or_automate_two_competing_visions_for_ais_economic_future.txt": {
+    "title": "Augment or Automate? Two Competing Visions for AI’s Economic Future",
+    "url": "https://www.aei.org/domestic-policy/augment-or-automate-two-competing-visions-for-ais-economic-future/",
+    "date": "2025-09-18",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_goldman_stories_of_workforce_demise_are_greatly_exaggerated.txt": {
+    "title": "Goldman: Stories of Workforce Demise Are Greatly Exaggerated",
+    "url": "https://www.aei.org/domestic-policy/goldman-stories-of-workforce-demise-are-greatly-exaggerated/",
+    "date": "2025-08-19",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_does_more_pay_equal_a_better_job.txt": {
+    "title": "Does More Pay Equal a Better Job?",
+    "url": "https://www.aei.org/domestic-policy/does-more-pay-equal-a-better-job/",
+    "date": "2026-07-06",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_did_the_canaries_just_die.txt": {
+    "title": "Did the Canaries Just Die?",
+    "url": "https://www.aei.org/domestic-policy/did-the-canaries-just-die/",
+    "date": "2025-08-29",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_how_many_gpus_does_the_pope_have.txt": {
+    "title": "How Many GPUs Does the Pope Have?",
+    "url": "https://www.aei.org/domestic-policy/how-many-gpus-does-the-pope-have/",
+    "date": "2026-05-26",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_hello_technical_debt.txt": {
+    "title": "Hello, Technical Debt",
+    "url": "https://www.aei.org/domestic-policy/hello-technical-debt/",
+    "date": "2025-12-12",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_more_things_in_heaven_and_earth.txt": {
+    "title": "More Things in Heaven and Earth",
+    "url": "https://www.aei.org/domestic-policy/more-things-in-heaven-and-earth/",
+    "date": "2026-06-04",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_is_ai_the_new_nafta.txt": {
+    "title": "Is AI the New NAFTA?",
+    "url": "https://www.aei.org/domestic-policy/is-ai-the-new-nafta/",
+    "date": "2026-03-02",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_is_ai_making_your_gastroenterologist_stupid_probably_not.txt": {
+    "title": "Is AI Making Your Gastroenterologist Stupid? Probably Not.",
+    "url": "https://www.aei.org/domestic-policy/is-ai-making-your-gastroenterologist-stupid-probably-not/",
+    "date": "2025-08-14",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_our_labor_force_demographics_are_getting_worse.txt": {
+    "title": "Our Labor Force Demographics Are Getting Worse",
+    "url": "https://www.aei.org/domestic-policy/our-labor-force-demographics-are-getting-worse/",
+    "date": "2026-01-23",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_domestic_policy_when_it_comes_to_vaccines_and_autism_it_is_user_error_not_ai_disinformation.txt": {
+    "title": "When It Comes to Vaccines and Autism, It Is User Error Not AI Disinformation",
+    "url": "https://www.aei.org/domestic-policy/when-it-comes-to-vaccines-and-autism-it-is-user-error-not-ai-disinformation/",
+    "date": "2026-07-01",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_opportunity_social_mobility_learning_by_doing_ai_knowledge_transfer_and_the_future_of_skills.txt": {
+    "title": "Learning by Doing: AI, Knowledge Transfer, and the Future of Skills",
+    "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/learning-by-doing-ai-knowledge-transfer-and-the-future-of-skills/",
+    "date": "2025-09-15",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_multimedia_brookings_aei_commission_on_u_s_rural_prosperity_a_conversation_with_john_roy_price.txt": {
+    "title": "Brookings—AEI Commission on U.S. Rural Prosperity | A conversation with John Roy Price",
+    "url": "https://www.aei.org/multimedia/brookings-aei-commission-on-u-s-rural-prosperity-a-conversation-with-john-roy-price/",
+    "date": "2026-04-29",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_opportunity_social_mobility_teaching_machines_to_remember.txt": {
+    "title": "Teaching Machines to Remember",
+    "url": "https://www.aei.org/domestic-policy/opportunity-social-mobility/teaching-machines-to-remember/",
+    "date": "2025-11-12",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Brent_Orrell/www_aei_org_podcast_a_conversation_about_rural_prosperity_and_its_connection_to_policies_past_present_future.txt": {
+    "title": "A Conversation About Rural Prosperity and Its Connection to Policies, Past, Present & Future",
+    "url": "https://www.aei.org/podcast/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/"
+  },
+  "Brent_Orrell/www_aei_org_press_release_aei_and_the_urban_institute_launch_bipartisan_commission_on_artificial_intelligence_and_the_american_workforce.txt": {
+    "title": "Release: AEI and the Urban Institute Launch Bipartisan Commission on Artificial Intelligence and the American Workforce",
+    "url": "https://www.aei.org/press/release-aei-and-the-urban-institute-launch-bipartisan-commission-on-artificial-intelligence-and-the-american-workforce/",
+    "date": "2026-06-11",
+    "authors": [
+      "Robert Doar",
+      "Brent Orrell",
+      "Paul Ryan"
+    ],
+    "author": "Robert Doar, Brent Orrell, Paul Ryan"
+  },
+  "Brent_Orrell/www_aei_org_podcast_is_this_your_last_job_the_ai_economy_with_aeis_brent_orrell.txt": {
+    "title": "Is This Your Last “Job”? The AI Economy with AEI’s Brent Orrell",
+    "url": "https://www.aei.org/podcast/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/"
+  },
+  "Brent_Orrell/www_aei_org_research_products_report_new_approaches_to_characterize_industries_ai_as_a_framework_and_a_use_case.txt": {
+    "title": "New Approaches to Characterize Industries: AI as a Framework and a Use Case",
+    "url": "https://www.aei.org/research-products/report/new-approaches-to-characterize-industries-ai-as-a-framework-and-a-use-case/",
+    "date": "2025-09-22",
+    "authors": [
+      "Brent Orrell",
+      "Will Rinehart",
+      "Harry J. Holzer"
+    ],
+    "author": "Brent Orrell, Will Rinehart, Harry J. Holzer"
+  },
+  "Brent_Orrell/www_aei_org_research_products_journal_publication_deskilling_the_knowledge_economy_implications_for_schools.txt": {
+    "title": "Deskilling the Knowledge Economy: Implications for Schools",
+    "url": "https://www.aei.org/research-products/journal-publication/deskilling-the-knowledge-economy-implications-for-schools/",
+    "date": "2026-01-07",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_free_speech_rights_calvert_on_wjr_760_ams_jr_morning.txt": {
+    "title": "Discussing free speech rights: Calvert on WJR 760 AM’s ‘JR Morning’",
+    "url": "https://www.aei.org/press/discussing-free-speech-rights-calvert-on-wjr-760-ams-jr-morning/",
+    "date": "2025-09-17",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Brent_Orrell/www_aei_org_technology_and_innovation_ai_will_test_rural_firms_and_workers.txt": {
+    "title": "AI Will Test Rural Firms and Workers",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/ai-will-test-rural-firms-and-workers/",
+    "date": "2026-01-06",
+    "authors": [
+      "Brent Orrell"
+    ],
+    "author": "Brent Orrell"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_first_amendment_rights_calvert_on_wesh_channel_2_news.txt": {
+    "title": "Discussing First Amendment rights: Calvert on WESH Channel 2 News",
+    "url": "https://www.aei.org/press/discussing-first-amendment-rights-calvert-on-wesh-channel-2-news/",
+    "date": "2025-09-16",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_the_fccs_public_interest_mandate_calvert_on_cnn_newsroom.txt": {
+    "title": "Discussing the FCC’s public interest mandate: Calvert on ‘CNN Newsroom’",
+    "url": "https://www.aei.org/press/discussing-the-fccs-public-interest-mandate-calvert-on-cnn-newsroom/",
+    "date": "2025-09-19",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_jimmy_kimmel_the_fcc_free_speech_calvert_on_fmc_fast_chat_with_jaci_clement.txt": {
+    "title": "Discussing Jimmy Kimmel, the FCC & Free Speech: Calvert on FMC Fast Chat with Jaci Clement",
+    "url": "https://www.aei.org/press/discussing-jimmy-kimmel-the-fcc-free-speech-calvert-on-fmc-fast-chat-with-jaci-clement/",
+    "date": "2025-09-23",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_stephen_colbert_and_the_fcc_calvert_on_chch_tvs_trending_now.txt": {
+    "title": "Discussing Stephen Colbert and the FCC: Calvert on CHCH TV’s ‘Trending Now’",
+    "url": "https://www.aei.org/press/discussing-stephen-colbert-and-the-fcc-calvert-on-chch-tvs-trending-now/",
+    "date": "2026-02-18",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_techfreedoms_tech_policy_podcast.txt": {
+    "title": "Discussing the Social Media Addiction Lawsuit: Calvert on TechFreedom’s ‘Tech Policy Podcast’",
+    "url": "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-techfreedoms-tech-policy-podcast/",
+    "date": "2026-02-26",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_ctv_news_ctv_your_morning.txt": {
+    "title": "Discussing the social media addiction lawsuit: Calvert on CTV News’ ‘CTV Your Morning’",
+    "url": "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-ctv-news-ctv-your-morning/",
+    "date": "2026-01-28",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_wjr_760_ams_jr_morning.txt": {
+    "title": "Discussing the social media addiction lawsuit: Calvert on WJR 760 AM’s ‘JR Morning’",
+    "url": "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-wjr-760-ams-jr-morning/",
+    "date": "2026-01-28",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_a_ceaseless_struggle_stopping_attorneys_from_citing_fake_ai_generated_content.txt": {
+    "title": "A Ceaseless Struggle: Stopping Attorneys from Citing Fake, AI-Generated Content",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/a-ceaseless-struggle-stopping-attorneys-from-citing-fake-ai-generated-content/",
+    "date": "2026-07-14",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_research_products_report_first_amendment_problems_with_using_antitrust_law_against_social_media_platforms_content_decisions.txt": {
+    "title": "First Amendment Problems with Using Antitrust Law Against Social Media Platforms’ Content Decisions",
+    "url": "https://www.aei.org/research-products/report/first-amendment-problems-with-using-antitrust-law-against-social-media-platforms-content-decisions/",
+    "date": "2025-10-15",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_chilling_political_dissent_are_llms_censoring_output_criticizing_restrictive_regimes.txt": {
+    "title": "Chilling Political Dissent: Are LLMs Censoring Output Criticizing Restrictive Regimes?",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/chilling-political-dissent-are-llms-censoring-output-criticizing-restrictive-regimes/",
+    "date": "2026-08-05",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_research_products_report_online_expression_during_year_one_of_trumps_second_presidential_term_lofty_rhetoric_confronts_a_dispiriting_reality.txt": {
+    "title": "Online Expression During Year One of Trump’s Second Presidential Term: Lofty Rhetoric Confronts a Dispiriting Reality",
+    "url": "https://www.aei.org/research-products/report/online-expression-during-year-one-of-trumps-second-presidential-term-lofty-rhetoric-confronts-a-dispiriting-reality/",
+    "date": "2026-04-01",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_a_disquieting_post_a_public_university_and_the_tension_between_illegal_threats_and_safeguarded_offense.txt": {
+    "title": "A Disquieting Post, a Public University, and the Tension Between Illegal Threats and Safeguarded Offense",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/a-disquieting-post-a-public-university-and-the-tension-between-illegal-threats-and-safeguarded-offense/",
+    "date": "2025-12-17",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_denying_everyones_access_to_lawful_speech_to_protect_a_vulnerable_few_arkansass_overinclusive_regulatory_trade_off.txt": {
+    "title": "Denying Everyone’s Access to Lawful Speech to Protect a Vulnerable Few: Arkansas’s Overinclusive Regulatory Trade-Off",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/denying-everyones-access-to-lawful-speech-to-protect-a-vulnerable-few-arkansass-overinclusive-regulatory-trade-off/",
+    "date": "2026-02-10",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_anthropic_and_first_amendment_retaliation_social_media_posts_may_bolster_lawsuit.txt": {
+    "title": "Anthropic and First Amendment Retaliation: Social Media Posts May Bolster Lawsuit",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/anthropic-and-first-amendment-retaliation-social-media-posts-may-bolster-lawsuit/",
+    "date": "2026-03-24",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_compelling_platforms_to_convey_state_sponsored_speech_first_amendment_lessons_from_colorado.txt": {
+    "title": "Compelling Platforms to Convey State-Sponsored Speech: First Amendment Lessons from Colorado",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/compelling-platforms-to-convey-state-sponsored-speech-first-amendment-lessons-from-colorado/",
+    "date": "2026-01-21",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_constitutional_complications_with_compelling_journalists_to_disclose_genai_use.txt": {
+    "title": "Constitutional Complications with Compelling Journalists to Disclose GenAI Use",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/constitutional-complications-with-compelling-journalists-to-disclose-genai-use/",
+    "date": "2026-06-23",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_fear_of_speaking_out_online_data_and_contentions_about_self_censorship.txt": {
+    "title": "Fear of Speaking Out Online: Data and Contentions About Self-Censorship",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/fear-of-speaking-out-online-data-and-contentions-about-self-censorship/",
+    "date": "2025-10-22",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_filling_in_the_blanks_in_netchoice_v_fitch_is_first_amendment_doctrine_in_danger.txt": {
+    "title": "Filling in the Blanks in NetChoice v. Fitch: Is First Amendment Doctrine in Danger?",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/filling-in-the-blanks-in-netchoice-v-fitch-is-first-amendment-doctrine-in-danger/",
+    "date": "2025-08-27",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_federal_multidistrict_litigation_and_social_media_addiction_onward_to_summary_judgment_and_bellwether_trials.txt": {
+    "title": "Federal Multidistrict Litigation and Social Media Addiction: Onward to Summary Judgment and Bellwether Trials",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/federal-multidistrict-litigation-and-social-media-addiction-onward-to-summary-judgment-and-bellwether-trials/",
+    "date": "2025-12-09",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_first_amendment_lessons_from_the_shutdown_about_government_compelled_political_expression.txt": {
+    "title": "First Amendment Lessons from the Shutdown About Government-Compelled Political Expression",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/first-amendment-lessons-from-the-shutdown-about-government-compelled-political-expression/",
+    "date": "2026-01-08",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_flawed_appellate_decision_upholding_an_online_parental_consent_mandate_merits_reversal.txt": {
+    "title": "Flawed Appellate Decision Upholding an Online Parental-Consent Mandate Merits Reversal",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/flawed-appellate-decision-upholding-an-online-parental-consent-mandate-merits-reversal/",
+    "date": "2026-07-28",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_free_speech_jawboning_and_aaron_v_bondi_did_government_coercion_stifle_iceblocks_availability.txt": {
+    "title": "Free Speech, Jawboning, and Aaron v. Bondi: Did Government Coercion Stifle ICEBlock’s Availability?",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/free-speech-jawboning-and-aaron-v-bondi-did-government-coercion-stifle-iceblocks-availability/",
+    "date": "2026-01-27",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_first_amendment_problems_with_removing_bias_in_speech_marketplaces_via_government_intervention.txt": {
+    "title": "First Amendment Problems with Removing Bias in Speech Marketplaces via Government Intervention",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/first-amendment-problems-with-removing-bias-in-speech-marketplaces-via-government-intervention/",
+    "date": "2025-09-03",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
+  },
+  "Clay_Calvert/www_aei_org_technology_and_innovation_government_compelled_speech_and_the_groundhog_dayification_of_social_media_regulation.txt": {
+    "title": "Government-Compelled Speech and the Groundhog Dayification of Social Media Regulation",
+    "url": "https://www.aei.org/domestic-policy/technology-and-innovation/government-compelled-speech-and-the-groundhog-dayification-of-social-media-regulation/",
+    "date": "2026-06-04",
+    "authors": [
+      "Clay Calvert"
+    ],
+    "author": "Clay Calvert"
   }
 }

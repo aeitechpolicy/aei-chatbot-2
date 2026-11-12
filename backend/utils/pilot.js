@@ -23,6 +23,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   const root = path.resolve(dataDir || env.CHATBOT_DATA_DIR || path.join(__dirname, '../.private-data'));
   fs.mkdirSync(root, { recursive: true, mode: 0o700 });
   const remote = storage || (env.DATABASE_URL ? new PostgresStorage({ connectionString: env.DATABASE_URL, now }) : null);
+  const storageConfigured = !env.RENDER || Boolean(remote || env.CHATBOT_DATA_DIR);
   const db = remote ? null : new DatabaseSync(path.join(root, 'usage.sqlite'));
   if (db) {
   db.exec('PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;');
@@ -32,7 +33,12 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     estimated_usd REAL, input_tokens INTEGER, output_tokens INTEGER,
     input_rate REAL NOT NULL, output_rate REAL NOT NULL, price_source TEXT NOT NULL,
     error_code TEXT
-  ); CREATE INDEX IF NOT EXISTS usage_started ON usage(started_at);`);
+  ); CREATE INDEX IF NOT EXISTS usage_started ON usage(started_at);
+  CREATE TABLE IF NOT EXISTS feedback (
+    id TEXT PRIMARY KEY, chat_id TEXT NOT NULL, message_index INTEGER NOT NULL,
+    created_at TEXT NOT NULL, reporter_label TEXT NOT NULL, category TEXT NOT NULL,
+    detail TEXT NOT NULL, answer TEXT NOT NULL, UNIQUE (chat_id, message_index)
+  );`);
   }
 
   // Together's public Qwen3.8 Flash rates, checked October 29, 2026.
@@ -122,7 +128,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   }
 
   async function begin(userId, messages) {
-    if (env.RENDER && !remote && !env.CHATBOT_DATA_DIR) {
+    if (!storageConfigured) {
       throw failure('The free database must be connected before AI answers can be enabled.', 503, 'storage_setup');
     }
     if (active.size) throw failure('An answer is already being prepared. Please wait a moment.', 429, 'busy');
@@ -182,6 +188,20 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     return result.map(row => ({ ...row, account_label: labels[row.user_id] || row.user_id }));
   }
 
+  async function saveFeedback({ chatId, messageIndex, reporterLabel, category, detail, answer }) {
+    const report = { id: crypto.randomUUID(), createdAt: new Date(now()).toISOString(), chatId, messageIndex, reporterLabel, category, detail, answer };
+    if (remote) return remote.saveFeedback(report);
+    db.prepare(`INSERT INTO feedback (id,chat_id,message_index,created_at,reporter_label,category,detail,answer)
+      VALUES (?,?,?,?,?,?,?,?) ON CONFLICT (chat_id,message_index) DO NOTHING`)
+      .run(report.id, chatId, messageIndex, report.createdAt, reporterLabel, category, detail, answer);
+  }
+
+  async function feedbackReports() {
+    if (remote) return remote.feedbackReports();
+    return db.prepare(`SELECT id, created_at AS "createdAt", reporter_label AS "reporterLabel",
+      category, detail, answer FROM feedback ORDER BY created_at DESC, id DESC`).all();
+  }
+
   async function csv(userId) {
     const columns = ['started_at','account_label','user_id','model','status','input_tokens','output_tokens','estimated_usd','reserved_usd','input_rate','output_rate','price_source','error_code'];
     const cell = value => {
@@ -192,11 +212,11 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     return [columns.map(cell).join(','), ...(await rows(userId)).map(row => columns.map(key => cell(row[key])).join(','))].join('\r\n');
   }
 
-  return { login, authenticate, requireAuth, begin, finish, rows, csv,
+  return { login, authenticate, requireAuth, begin, finish, rows, csv, saveFeedback, feedbackReports,
     logout: user => revokedSessions.set(user.nonce, user.exp),
     close: async () => { if (db) db.close(); if (remote) await remote.close(); },
     chatManager: remote && remote.chatManager,
-    settings: { model: MODEL, dailyBudget, dailyQuestions, personQuestions, priceSource, storageConfigured: !env.RENDER || Boolean(remote || env.CHATBOT_DATA_DIR), storage: remote ? remote.kind : 'local' },
+    settings: { model: MODEL, dailyBudget, dailyQuestions, personQuestions, priceSource, storageConfigured, storage: remote ? remote.kind : 'local' },
     dataDir: root };
 }
 

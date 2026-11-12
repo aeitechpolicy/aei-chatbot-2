@@ -1,0 +1,74 @@
+[
+  {
+    "id": "online-safety",
+    "topic": "Online safety and speech",
+    "terms": ["age verification", "children's privacy", "social media", "kids online", "children online", "coppa"],
+    "seed": {
+      "title": "California’s social media warnings face a court challenge",
+      "development": "NetChoice asked a federal court to block California’s required social media warning labels while its First Amendment challenge proceeds.",
+      "date": "2026-11-04",
+      "publisher": "NetChoice case filings",
+      "url": "https://netchoice.org/netchoice-v-bonta-california-censorship-labels/"
+    },
+    "reading": [
+      {
+        "title": "The Right Not to Speak: Why California’s Social Media Warning Law Is Unconstitutional",
+        "author": "Clay Calvert",
+        "url": "https://ctse.aei.org/the-right-not-to-speak-why-californias-social-media-warning-law-is-unconstitutional/"
+      },
+      {
+        "title": "Can We Verify Age Without Giving Up Our Privacy?",
+        "author": "Shane Tews",
+        "url": "https://www.aei.org/domestic-policy/can-we-verify-age-without-giving-up-our-privacy/"
+      }
+    ]
+  },
+  {
+    "id": "workforce",
+    "topic": "Workforce and training",
+    "terms": ["apprenticeship", "workforce training", "workforce development", "job training", "career training"],
+    "seed": {
+      "title": "Labor Department opens applications for apprenticeship incentives",
+      "development": "Registered Apprenticeship sponsors in eligible industries can apply for incentive payments of up to $6,000 per apprentice, depending on the program.",
+      "date": "2026-11-02",
+      "publisher": "U.S. Department of Labor",
+      "url": "https://www.dol.gov/index.php/newsroom/releases/eta/eta20261102"
+    },
+    "reading": [
+      {
+        "title": "Government-Supported Job Training in the US: Paths Toward Reforming the Workforce",
+        "author": "Brent Orrell, Peter Mueser and Kenneth Troske",
+        "url": "https://cosm.aei.org/government-supported-job-training-in-the-us-paths-toward-reforming-the-workforce/"
+      },
+      {
+        "title": "AI and American Workers",
+        "author": "Brent Orrell",
+        "url": "https://cosm.aei.org/ai-and-american-workers/"
+      }
+    ]
+  },
+  {
+    "id": "infrastructure",
+    "topic": "Energy and AI infrastructure",
+    "terms": ["electric grid", "power grid", "grid supply chain", "transmission capacity", "data center", "grid reliability"],
+    "seed": {
+      "title": "Energy Department announces $237 million grid supply chain opportunity",
+      "development": "The department is offering funding to expand domestic production and support the refurbishment and reuse of critical equipment as demand for electricity grows.",
+      "date": "2026-10-30",
+      "publisher": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/articles/energy-department-announces-over-230-million-funding-opportunity-strengthen-americas-grid"
+    },
+    "reading": [
+      {
+        "title": "The Power Problem Behind AI Infrastructure",
+        "author": "Shane Tews",
+        "url": "https://ctse.aei.org/the-power-problem-behind-ai-infrastructure/"
+      },
+      {
+        "title": "The Political Backlash to Data Centers",
+        "author": "Will Rinehart",
+        "url": "https://www.aei.org/commentary/the-political-backlash-to-data-centers/"
+      }
+    ]
+  }
+]

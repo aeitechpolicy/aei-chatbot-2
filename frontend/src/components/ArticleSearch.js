@@ -25,14 +25,14 @@ export default function ArticleSearch({ showFileCounts = true }) {
       if (!response.ok) throw new Error(data.error || 'The article search could not be completed.');
       if (version === requestVersion.current) setResult(data);
     } catch (failure) {
-      if (version === requestVersion.current) setError(failure.message || 'The article archive could not be reached.');
+      if (version === requestVersion.current) setError(failure.message || 'The AEI Scholar Library could not be reached.');
     } finally { if (version === requestVersion.current) setLoading(false); }
   }
   return <main className={`article-search ${!result && !loading ? 'workspace-start' : ''}`}>
     <div className="workspace-intro">
-      <p className="workspace-kicker">Scholar Article Finder</p>
-      <h2>Find an article or passage.</h2>
-      <p>Search by topic, title, or scholar.</p>
+      <p className="workspace-kicker">AEI Scholar Library</p>
+      <h2>Search AEI articles</h2>
+      <p>Find articles and passages by topic, title, or scholar.</p>
       <p className="workspace-scholars">{SCHOLAR_NAMES}</p>
     </div>
     <form className="research-search-form" onSubmit={search}>
@@ -51,7 +51,7 @@ export default function ArticleSearch({ showFileCounts = true }) {
       </div>
     </form>
     {error && <p role="alert" className="research-error">{error}</p>}
-    {loading && <p role="status">Searching the saved archive…</p>}
+    {loading && <p role="status">Searching the AEI Scholar Library…</p>}
     {result && <section aria-label="Article search results">
       <p role="status">{result.mode === 'overview' ? `Showing a recent sample of ${result.articles.length} saved articles.` : result.articles.length ? `${result.matchedCount} matching saved articles; showing ${result.articles.length}.` : 'No matching articles found. Try different topic words or another scholar.'}</p>
       {result.mode === 'overview' && <p className="research-note">This is a recent sample across the selected scholars, not a complete review of their work. Read the excerpts to explore possible themes.</p>}
