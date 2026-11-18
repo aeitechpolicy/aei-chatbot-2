@@ -4,6 +4,23 @@ import DemoWalkthrough from './DemoWalkthrough';
 
 beforeAll(() => { HTMLElement.prototype.scrollIntoView = jest.fn(); });
 
+test('Intern can select one Muse trial without changing the default or comparison settings', async () => {
+  const send = jest.fn().mockResolvedValue(null);
+  render(<ChatInterface active allowModelTest draftScope="General" onScopeChange={jest.fn()} onSendMessage={send} />);
+  const model = screen.getByRole('combobox', { name: 'Answer model' });
+  expect(model).toHaveValue('');
+  fireEvent.change(model, { target: { value: 'meta-models/Muse-Spark-Open-816B-A42B' } });
+  expect(screen.getByText(/Intern-only trial/)).toHaveTextContent('$1.25 input / $4.25 output');
+  fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Summarize the article.' } });
+  await act(async () => { fireEvent.click(screen.getByRole('button', { name: 'Send message' })); });
+  expect(send).toHaveBeenCalledWith('Summarize the article.', 'archive', { modelId: 'meta-models/Muse-Spark-Open-816B-A42B' });
+});
+
+test('ordinary accounts have no model trial control', () => {
+  render(<ChatInterface active draftScope="General" onScopeChange={jest.fn()} onSendMessage={jest.fn()} />);
+  expect(screen.queryByRole('combobox', { name: 'Answer model' })).not.toBeInTheDocument();
+});
+
 test('comparison picker sends only selected scholars and prevents a one-scholar request', async () => {
   const send = jest.fn().mockResolvedValue(null);
   render(<ChatInterface active comparisonMode draftScope="General" onScopeChange={jest.fn()} onSendMessage={send} />);

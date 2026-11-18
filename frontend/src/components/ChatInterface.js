@@ -11,6 +11,7 @@ const ChatInterface = ({
   active,
   web = false,
   comparisonMode = false,
+  allowModelTest = false,
   legacy = false,
   hideUsage = false,
   chatId,
@@ -26,6 +27,7 @@ const ChatInterface = ({
   const [sendError, setSendError] = useState(null);
   const [chatLoadError, setChatLoadError] = useState(false);
   const [comparisonScholars, setComparisonScholars] = useState(Object.keys(SCHOLARS));
+  const [testModel, setTestModel] = useState('');
   const [webAvailable, setWebAvailable] = useState(null);
   const inputRef = useRef(null);
   const chatLoadVersion = useRef(0);
@@ -100,7 +102,10 @@ const ChatInterface = ({
       setInputValue(''); // Clear input immediately for better UX
       
       try {
-        const result = await onSendMessage(messageToSend, web ? 'web' : !legacy && comparisonMode ? 'compare' : 'archive', comparisonMode ? { comparisonScholars } : {});
+        const result = await onSendMessage(messageToSend, web ? 'web' : !legacy && comparisonMode ? 'compare' : 'archive', {
+          ...(comparisonMode ? { comparisonScholars } : {}),
+          ...(allowModelTest && testModel ? { modelId: testModel } : {})
+        });
         
         // The API response contains the AI response, so we can add it directly
         if (result && result.response) {
@@ -112,6 +117,7 @@ const ChatInterface = ({
           const aiMessage = {
             role: 'assistant',
             content: result.response,
+            model: result.model,
             sources: result.sources || [],
             citationNotice: result.citationNotice,
             searchMode: result.searchMode,
@@ -225,6 +231,14 @@ const ChatInterface = ({
             </button>
           </div>
         )}
+        {!legacy && allowModelTest && <div className="intern-model-test">
+          <label>Answer model <select aria-label="Answer model" value={testModel} disabled={composerDisabled}
+            onChange={event => setTestModel(event.target.value)}>
+            <option value="">Current default</option>
+            <option value="meta-models/Muse-Spark-Open-816B-A42B">Meta Muse Spark Open · Test</option>
+          </select></label>
+          {testModel && <p className="workspace-meta">Intern-only trial · $1.25 input / $4.25 output per million tokens. Each question uses AI credits.</p>}
+        </div>}
         {!legacy && !comparisonMode && !chatId && !sendingMessage && (
           <fieldset className="chat-scope-picker">
             <legend>Search across</legend>

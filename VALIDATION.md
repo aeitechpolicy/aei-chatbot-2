@@ -1,5 +1,9 @@
 # Validation record
 
+## Intern-only Muse trial validation — November 18, 2026
+
+136 backend tests and 37 frontend tests passed; the production build passed. New checks verify the exact Muse model/parameters and saved identity, one call with Muse-specific ledger rates despite ordinary-model overrides, refusal of unauthorized/arbitrary model choices before spending, cross-account ownership, unchanged budget enforcement, Intern selection payload and hidden controls for ordinary accounts. The other three tester models remain unchanged. No real AI request was sent during automated validation. A single post-deployment live trial is authorized by the maintainer; its outcome and cost will be recorded separately.
+
 ## Three-stage demo introduction validation — November 18, 2026
 
 35 frontend tests passed across seven suites and the production build passed. Tests verify both demo accounts proceeding through What’s new → dedicated before-and-after screen → guided demo, with no optional comparison shortcut. The separate screen supports version selection and Back. Browser checks at desktop and 390×844 phone size showed the comparison immediately on entry, persistent continuation actions inside the viewport, no horizontal overflow and a working transition into the tour. The temporary viewport override was reset. No AI credits or production data writes were used. Backend code was unchanged and backend tests were not repeated.
