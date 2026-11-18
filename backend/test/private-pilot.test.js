@@ -369,6 +369,24 @@ test('an unavailable archive does not trigger a general-knowledge provider fallb
   assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
 });
 
+test('ordinary chat saves a usable partial answer and warning without a second model request', async t => {
+  const f = await fixture(t, { complete: async request => {
+    assert.match(request.messages[0].content, /Prefer a concise paraphrase/);
+    return { ...answer(), choices: [{ message: { content: '## Summary\nA supported observation. [S1]\n\n“A completely invented quotation that is not present in the supplied article.” [S1]' } }] };
+  } });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'What does the article say?' } });
+  const body = await response.json();
+  assert.equal(response.status, 200);
+  assert.match(body.response, /A supported observation/);
+  assert.doesNotMatch(body.response, /invented quotation/);
+  assert.match(body.citationNotice, /Some passages were omitted/);
+  assert.equal(body.chat.messages[1].content, body.response);
+  assert.equal(body.chat.messages[1].citationNotice, body.citationNotice);
+  assert.equal(f.calls(), 1);
+  assert.equal((await f.pilot.rows('owner')).length, 1);
+});
+
 test('experimental mode searches only the submitted question and keeps web citations distinct', async t => {
   const searches = [];
   const f = await fixture(t, {

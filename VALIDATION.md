@@ -1,5 +1,9 @@
 # Validation record
 
+## Citation check for team testing — November 18, 2026
+
+132 backend tests passed with zero failures using Node 24 and simulated providers. New checks cover known headings, wrapped prose/citation placement, isolation of bullet references, retention of separately cited prose, removal of wrong-source/invented quotes, OCR quote restrictions, outside-link exclusion and saving the partial answer plus warning with exactly one model call/ledger entry. No production model request, private database write or new dependency was needed. No frontend files changed, so the existing frontend build/tests were not repeated for this backend-only patch. The parser does not establish semantic support for every claim. Existing stored answers remain unchanged; a post-deploy live question is still needed.
+
 ## Current combined demo validation — November 18, 2026
 
 126 backend tests passed with zero failures. Coverage includes the two demo logins, duplicate/missing-password refusal, cross-account read/delete denial including staff, selected-feedback-only sharing, PostgreSQL history persistence across a new app instance, 100th request allowed and 101st refused, unchanged spending cap, primary-header bylines/dates, related-card/CMS exclusions, cached correction safety and the exact live web-query regression. Existing streaming, storage, ownership, budgets and citation checks remain covered. The tests use simulated providers and local SQLite/PGlite through the real Neon HTTP driver; no live database writes.

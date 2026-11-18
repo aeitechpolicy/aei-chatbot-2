@@ -1,5 +1,13 @@
 # Maintainer handoff
 
+## Citation check for team testing — November 18, 2026
+
+Based on deployed PR #13 (9b99da2). Ordinary Article Chat and AEI + Web now keep independently cited prose units that pass the checks and omit units with unknown references, uncited claims, external references, unmatched long quotations or unverified OCR quotations. A visible citation notice explains omissions. When no usable prose remains, the existing source-only response still appears. Known descriptive headings, wrapped prose and a citation on the following line no longer cause formatting failures; separate list items and uncited complete sentences do not inherit the preceding item's citation. These checks validate reference structure and quote matching, not the truth of every paraphrase.
+
+The prompt prefers cited paraphrases and reserves direct quotations for requests for exact wording. No automatic repair/retry, additional model request, dependency, environment variable, database migration or frontend change. Existing saved answers are not rewritten. The Model Tester still retains raw candidates with warnings for staff inspection. Scholar comparisons keep their existing conservative per-scholar handling when a notice occurs.
+
+Validation: 132 backend tests passed, including partial-answer persistence, one-call accounting, headings/wrapping, per-bullet references, wrong-source quotations, OCR and external-link refusal. All provider replies in this validation were simulated; no production credits were spent. Merge and deploy the patch before expecting live behavior to change.
+
 ## Current complete demo checkpoint — November 18, 2026
 
 Published base: PR #12, merge 01e2c51. Render live and repaired Article Search were confirmed by the maintainer. One subsequent ordinary live GLM AEI + Web answer completed and recorded $0.00070 estimated model cost. It did not find a verified recent spectrum development; it correctly qualified the weak results and kept scholar statements separate from web context. The account briefly returned to sign-in on the first submission, with no new usage record; after sign-in, one completed request was recorded. No more live tests were sent.
