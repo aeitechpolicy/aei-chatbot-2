@@ -6,7 +6,7 @@ const path = require('node:path');
 const express = require('express');
 const { createApp } = require('../server');
 const { createPilot } = require('../utils/pilot');
-const { TEST_MODELS, selectedModels } = require('../utils/modelTesting');
+const { TEST_MODELS, MUSE_TEST_MODEL, selectedModels } = require('../utils/modelTesting');
 
 const OWNER = 'test-only-owner-password';
 const TESTER = 'test-only-model-tester-password';
@@ -33,6 +33,45 @@ async function fixture(t, { env = {}, complete = async () => answer(), fetchArti
   async function chat(user = 'tester') { return (await request('/api/chat/new', { domainName: 'General' }, user)).json(); }
   return { pilot, request, chat };
 }
+
+test('Intern Muse trial uses the selected model, stores its identity and charges its own prices', async t => {
+  const requests = [];
+  const f = await fixture(t, { env: { CHATBOT_INPUT_USD_PER_MILLION: '0.01', CHATBOT_OUTPUT_USD_PER_MILLION: '0.01' },
+    complete: async request => { requests.push(request); return { ...answer(), model: request.model }; } });
+  const chat = await f.chat('owner');
+  const response = await f.request(`/api/chat/${chat.id}/message`, { message: 'Summarize the supplied spectrum article.', modelId: MUSE_TEST_MODEL.id }, 'owner');
+  assert.equal(response.status, 200); const data = await response.json();
+  assert.equal(requests.length, 1); assert.equal(requests[0].model, MUSE_TEST_MODEL.id);
+  assert.equal(requests[0].reasoning_effort, undefined); assert.equal(requests[0].reasoning, undefined);
+  assert.equal(requests[0].max_tokens, 1024);
+  assert.equal(data.model, MUSE_TEST_MODEL.id);
+  assert.equal(data.chat.messages.at(-1).model, MUSE_TEST_MODEL.id);
+  assert.equal(data.citationNotice, null);
+  const rows = await f.pilot.rows('owner');
+  assert.equal(rows.length, 1); assert.equal(rows[0].model, MUSE_TEST_MODEL.id);
+  assert.equal(rows[0].input_rate, 1.25); assert.equal(rows[0].output_rate, 4.25);
+  assert.ok(Math.abs(rows[0].estimated_usd - 0.001675) < 1e-12);
+});
+
+test('Muse trial refuses non-Intern and arbitrary model requests before spending', async t => {
+  let calls = 0;
+  const f = await fixture(t, { complete: async () => { calls++; return answer(); } });
+  const other = await f.chat(); const own = await f.chat('owner');
+  assert.equal((await f.request(`/api/chat/${other.id}/message`, { message: 'Policy', modelId: MUSE_TEST_MODEL.id })).status, 403);
+  for (const modelId of ['unknown/model', '', null, [MUSE_TEST_MODEL.id]]) {
+    assert.equal((await f.request(`/api/chat/${own.id}/message`, { message: 'Policy', modelId }, 'owner')).status, 400);
+  }
+  assert.equal((await f.request(`/api/chat/${other.id}/message`, { message: 'Policy', modelId: MUSE_TEST_MODEL.id }, 'owner')).status, 404);
+  assert.equal(calls, 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+});
+
+test('Muse reservations use Muse prices and keep the existing daily spending cap', async t => {
+  let calls = 0;
+  const f = await fixture(t, { env: { CHATBOT_DAILY_ESTIMATE_USD: '0.001' }, complete: async () => { calls++; return answer(); } });
+  const own = await f.chat('owner');
+  assert.equal((await f.request(`/api/chat/${own.id}/message`, { message: 'Policy', modelId: MUSE_TEST_MODEL.id }, 'owner')).status, 429);
+  assert.equal(calls, 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+});
 
 test('model choices are a server allowlist with no duplicates or arbitrary model IDs', () => {
   assert.equal(selectedModels().length, 3);

@@ -249,7 +249,7 @@ function PrivateApp({ session }) {
   };
 
   const chat = <ChatInterface key={chatDraft.version} active={chatView} web={currentView === 'web'} comparisonMode={currentView === 'compare'}
-    legacy={legacy} hideUsage={isDemo} chatId={currentChatId} initialQuestion={chatDraft.question}
+    legacy={legacy} hideUsage={isDemo} allowModelTest={session.user.id === 'owner'} chatId={currentChatId} initialQuestion={chatDraft.question}
     draftScope={chatScope} onScopeChange={setChatScope} loading={loading} onSendMessage={handleSendMessage} />;
 
   if (legacy) return (

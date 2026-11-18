@@ -1,5 +1,9 @@
 # Maintainer handoff
 
+## Intern-only Muse trial — November 18, 2026
+
+Chatbot Intern (owner) now has an optional Answer model selector for meta-models/Muse-Spark-Open-816B-A42B. The selection applies per request and resets with a new chat/session. Default routing for other accounts and the existing three-model tester remain unchanged. Only this exact model ID is accepted for owner-only trials; other accounts cannot request it. The existing single-request beginBatch reservation records Muse rates ($1.25 input/$4.25 output per million uncached tokens), independent of GLM rate overrides, with the same 1024-token output cap, daily budget and no automatic retries. Saved trial answers retain their model ID and show a Meta Muse Test badge. No environment variables, hosting upgrades or database migration are needed. Provider acceptance and real answer quality require a post-deployment test.
+
 ## Three-stage demo introduction — November 18, 2026
 
 Demo entry now proceeds through three distinct screens: What’s new → Before-and-after → Guided demo. The comparison is no longer below the feature list or dependent on an optional shortcut. Every continuation from What’s new, including Escape, opens the dedicated comparison; continuing there opens the existing seven-step tour. Back returns to the overview. How to use still opens the tour directly for replay. Header and footer actions remain visible while only the overview/comparison body scrolls. Other dialogs retain their normal close button. No backend, account, spending, history or Version 1 changes.

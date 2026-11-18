@@ -9,6 +9,14 @@ const TEST_MODELS = Object.freeze([
     parameters: { reasoning_effort: 'low' }, priceUrl: 'https://www.together.ai/models/gpt-oss-120b' }
 ].map(model => Object.freeze({ ...model, priceSource: `${model.priceUrl}, checked 2026-11-17; uncached estimates, not final billing` })));
 
+// A single owner-only trial; ordinary accounts and the three-model tester keep
+// their existing defaults and limits.
+const MUSE_TEST_MODEL = Object.freeze({
+  id: 'meta-models/Muse-Spark-Open-816B-A42B', label: 'Meta Muse Spark Open',
+  inputRate: 1.25, outputRate: 4.25, parameters: Object.freeze({}),
+  priceSource: 'https://www.together.ai/models/muse-spark-open, checked 2026-11-18; uncached estimates, not final billing'
+});
+
 function selectedModels(ids) {
   const selected = ids === undefined ? TEST_MODELS.map(model => model.id) : ids;
   if (!Array.isArray(selected) || selected.length < 1 || selected.length > TEST_MODELS.length ||
@@ -24,4 +32,4 @@ function estimatedCost(usage, model) {
     ? (usage.prompt_tokens * model.inputRate + usage.completion_tokens * model.outputRate) / 1e6 : null;
 }
 
-module.exports = { TEST_MODELS, selectedModels, estimatedCost };
+module.exports = { TEST_MODELS, MUSE_TEST_MODEL, selectedModels, estimatedCost };

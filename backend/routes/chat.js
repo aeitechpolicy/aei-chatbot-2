@@ -9,7 +9,7 @@ const { queryTerms } = require('../utils/research');
 const { prepareWebSources, planWebSearch, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
 const { providerErrorDetails } = require('../utils/providerError');
-const { TEST_MODELS, selectedModels, estimatedCost } = require('../utils/modelTesting');
+const { TEST_MODELS, MUSE_TEST_MODEL, selectedModels, estimatedCost } = require('../utils/modelTesting');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb, now = Date.now }) {
@@ -170,6 +170,12 @@ router.post('/:chatId/message', async (req, res) => {
     const { message, mode = 'archive' } = req.body;
     const legacy = isLegacy(req);
     const testing = req.auth.id === 'tester';
+    let testModel = null;
+    if (req.body.modelId !== undefined) {
+      if (req.auth.id !== 'owner') return res.status(403).json({ error: 'Model trials are available only to Chatbot Intern.' });
+      if (req.body.modelId !== MUSE_TEST_MODEL.id) return res.status(400).json({ error: 'Choose the available model trial.' });
+      testModel = MUSE_TEST_MODEL;
+    }
     if (!testing && req.body.modelIds !== undefined) return res.status(403).json({ error: 'Model comparisons require the Model Tester login.' });
     const models = testing ? selectedModels(req.body.modelIds) : null;
     if (!['archive', 'compare', 'web'].includes(mode) || (legacy && mode !== 'archive')) {
@@ -260,7 +266,8 @@ router.post('/:chatId/message', async (req, res) => {
     if (testing) {
       comparisonIds = await pilot.beginBatch(req.auth.id, reservedMessages, models);
       for (const id of comparisonIds) pendingComparisons.add(id);
-    } else usageId = await pilot.begin(req.auth.id, reservedMessages);
+    } else if (testModel) [usageId] = await pilot.beginBatch(req.auth.id, reservedMessages, [testModel]);
+    else usageId = await pilot.begin(req.auth.id, reservedMessages);
     if (web) {
       let webSources;
       try { webSources = prepareWebSources(await searchWeb(message, webPlan), webPlan); }
@@ -336,10 +343,10 @@ router.post('/:chatId/message', async (req, res) => {
     }
     attempted = true;
     const response = await complete({
-      model: MODEL,
+      model: testModel ? testModel.id : MODEL,
       messages: fullMessages,
       max_tokens: MAX_OUTPUT_TOKENS,
-      ...MODEL_PARAMETERS,
+      ...(testModel ? testModel.parameters : MODEL_PARAMETERS),
       temperature: 0.2,
       stream: false
     });
@@ -365,6 +372,7 @@ router.post('/:chatId/message', async (req, res) => {
     const hasAnswer = compare ? comparison.some(group => !group.limited) : !checkedAnswer.citationNotice && answerText !== 'INSUFFICIENT_EVIDENCE';
     const aiResponse = {
       role: 'assistant',
+      ...(testModel ? { model: testModel.id } : {}),
       ...checkedAnswer,
       sources,
       searchMode: legacy ? 'legacy' : mode,
@@ -380,6 +388,7 @@ router.post('/:chatId/message', async (req, res) => {
     usageId = null;
     res.json({
       response: aiResponse.content,
+      model: aiResponse.model,
       sources,
       comparison: aiResponse.comparison,
       followUps: aiResponse.followUps,
