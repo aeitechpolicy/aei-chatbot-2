@@ -94,3 +94,46 @@ test('AEI + Web can report a selected source separately from the full answer', a
   expect(url).toContain('/api/chat/test-chat/feedback');
   expect(JSON.parse(request.body)).toEqual({ sourceId: 'W1', messageIndex: 0, category: 'Broken or incorrect link', detail: 'The link is outdated.' });
 });
+
+ test('reported web dates stay qualified in source cards, citation passages and copied briefs', () => {
+  const source = { id: 'W1', kind: 'web', title: 'A policy update', publisher: 'example.org', url: 'https://example.org/update',
+    date: '2026-11-10', dateIsEstimate: true, excerpt: 'A dated source passage.' };
+  render(<MessageList title="Policy update" messages={[{ role: 'assistant', content: 'A finding [W1].', sources: [source], searchMode: 'web' }]} />);
+  fireEvent.click(screen.getByText('Sources (1)').closest('summary'));
+  expect(screen.getByText('example.org · 2026-11-10 (reported publication/update date)')).toBeVisible();
+  fireEvent.click(screen.getByRole('button', { name: 'Preview research brief' }));
+  expect(screen.getByRole('dialog', { name: 'Research brief' })).toHaveTextContent('2026-11-10 (reported publication/update date)');
+  fireEvent.click(screen.getByRole('button', { name: 'Close dialog' }));
+  fireEvent.click(screen.getByRole('button', { name: 'View passage [W1]' }));
+  expect(screen.getByRole('complementary', { name: 'Passage [W1]' })).toHaveTextContent('2026-11-10 (reported publication/update date)');
+});
+
+test('interview sources distinguish the transcript, participants and linked episode in passage and brief', () => {
+  const source = { id: 'S1', title: 'An interview — full transcript', author: 'Author not recorded', sourceType: 'podcast_transcript',
+    date: '2026-11-05', url: 'https://www.aei.org/transcript.pdf', excerpt: '[Speaker: Alex Guest]\nAlex Guest: Coordination matters.',
+    interview: { participants: ['Shane Tews', 'Alex Guest'], episodeUrl: 'https://www.aei.org/multimedia/interview/', transcriptUrl: 'https://www.aei.org/transcript.pdf' } };
+  render(<MessageList title="Spectrum interview" messages={[{ role: 'assistant', content: 'Alex Guest discusses coordination [S1].', sources: [source] }]} />);
+  fireEvent.click(screen.getByRole('button', { name: 'View passage [S1]' }));
+  const passage = within(screen.getByRole('complementary', { name: 'Passage [S1]' }));
+  expect(passage.getByText('Full podcast transcript · Interview participants: Shane Tews, Alex Guest')).toBeVisible();
+  expect(passage.getByRole('link', { name: 'Open podcast episode' })).toHaveAttribute('href', 'https://www.aei.org/multimedia/interview/');
+  expect(passage.queryByText('Author not recorded')).not.toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Close passage' }));
+  fireEvent.click(screen.getByText('Article sources (1)').closest('summary'));
+  fireEvent.click(screen.getByRole('button', { name: 'Preview research brief' }));
+  const brief = within(screen.getByRole('dialog', { name: 'Research brief' }));
+  expect(brief.getByText(/Full podcast transcript/)).toBeVisible();
+  expect(brief.getByRole('link', { name: 'Open podcast episode' })).toHaveAttribute('href', 'https://www.aei.org/multimedia/interview/');
+});
+
+test('scanned transcript passages and brief references retain their text-recognition qualification', () => {
+  const source = { id: 'S1', title: 'An older interview', sourceType: 'podcast_transcript', date: '2022-06-21', url: 'https://www.aei.org/older-transcript.pdf',
+    excerpt: '[Speaker: Alex Guest]\nAn available passage.', interview: { participants: ['Shane Tews', 'Alex Guest'], extractionMethod: 'ocr' } };
+  render(<MessageList title="Older interview" messages={[{ role: 'assistant', content: 'A paraphrased point [S1].', sources: [source] }]} />);
+  fireEvent.click(screen.getByRole('button', { name: 'View passage [S1]' }));
+  expect(screen.getByRole('complementary', { name: 'Passage [S1]' })).toHaveTextContent('Text read from a scanned PDF. Verify exact quotations in the original.');
+  fireEvent.click(screen.getByRole('button', { name: 'Close passage' }));
+  fireEvent.click(screen.getByText('Article sources (1)').closest('summary'));
+  fireEvent.click(screen.getByRole('button', { name: 'Preview research brief' }));
+  expect(screen.getByRole('dialog', { name: 'Research brief' })).toHaveTextContent('Text read from scanned PDF; verify quotations in the original');
+});

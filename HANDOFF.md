@@ -1,6 +1,59 @@
 # Maintainer handoff
 
-## Current checkpoint - November 17, 2026
+## Current prepared checkpoint — November 18, 2026
+
+The final package now includes actual repaired library text and metadata, not just importer code. Public pages were checked from the current catalog and known filenames. Results: 312 existing files updated; 107 podcast transcripts added (28 digital/79 OCR); two additional verified episode/article pages added; all 421 output source files have recorded publication dates. Four initially broken URL candidates were recovered and verified. There are no unresolved requested interview-page/PDF downloads in this scoped run. See backend/data/interview-repair-report.json for every changed file, source link, participant and extraction method.
+
+Nineteen transcript sources retain uncertain printed/OCR speaker labels; uncertain turns stay unidentified. Twelve event/conference PDFs are listed for separate review, since they can cover multiple panels and are not necessarily full versions of the linked highlights. Fifteen other event/press files remain outside scope. Ten transcripts have more than one explicitly linked episode page; the report retains all those publication dates and chooses the earliest verified page, without claiming it is a recording date. Shared transcript URLs establish one interview identity even across different episode-page aliases.
+
+Ordinary article files, the other scholars' source files, private database data and the frozen Version 1 snapshot were not rewritten. Search can retrieve a served scholar as an explicitly identified interview guest without changing byline authorship or the file's collection. A Brent Orrell guest example was checked using the real repaired library.
+
+This package combines all pending work after PR #11: ordinary-chat GLM routing, dated web retrieval, production library refresh, and speaker-aware Explain to Shane sources. It is not deployed. Main was checked at 7b4d4bec10663c10c63b05014d3a03ae7c599001. The GitHub connection can read but a content write returned 403 “Resource not accessible by integration”; the maintainer must upload and merge the package. This is an integration permission limit.
+
+### Model and web evidence
+
+The user chose zai-org/GLM-5.3-Flash for ordinary accounts and unchanged Together privacy settings. MODEL, parameters and default rates come from the existing model allowlist. Existing price overrides must match GLM's $0.15/$0.50 uncached rates or be removed. The tester still offers Qwen, GLM and gpt-oss; Qwen currently fails the organization's passthrough permission check. One successful live GLM reply is not a broad quality evaluation.
+
+The maintainer added the private web-search key in Render; a live response returned web sources. The previous long spectrum question sent generic answer instructions into lexical search and returned old/undated reporting. Replaying it against the frozen 607-file Tews test collection reproduced the poor matches. A focused spectrum-allocation query returned relevant spectrum pieces instead. That frozen test collection is not a library refresh.
+
+webSearch.js now derives the topic without an AI rewrite, plans relative windows in America/New_York, reads documented RFC/ISO timestamps, makes one basic news search for a dated request, and locally filters out old/unknown/future dates. The model receives the date window and a warning that a reported publication/update date does not prove an event is new. If the dated search yields no usable source, the route saves an explanation and marks reservations not sent without calling the model. The search itself still uses its ordinary search credit. General undated web context is allowed without calling it recent.
+
+### Library refresh audit and prepared repair
+
+- November 16 run 43927312659: the parity check ran; scraping was skipped.
+- November 10 run 42896072946: a 180-day staging-feed lookback read four modified catalog records, wrote zero new scholar text files, and failed to push when main advanced during a roughly 25-minute/212 MB LFS upload. The existing workflow already contains a rebase/retry loop.
+- November 9 run 42675763712 is the latest recorded completed scrape job. A completed job is not evidence of a complete collection.
+- The public production posts endpoint returned current November 17 content. Normal guest_author pagination and slug lookups worked for all four scholars; name-search queries were blocked. A production article fetched and yielded readable text. stage.aei.org did not resolve locally. These public checks are not a full ingestion run.
+
+harvest-aei-index.js uses www.aei.org/wp-json/wp/v2, requires all four served authors, retains prior records in incremental mode, and reports inaccessible/failed feeds. fetch-missing-articles.js fetches production URLs instead of rewriting them to staging. The workflow uses ubuntu-24.04, serializes refreshes, and removes the local AEI computer's certificate settings. Standard GitHub-hosted runner compute is free for this public repository; storage/LFS quotas are separate. No new paid host is configured.
+
+The included interview data needs no additional repair run. For a separate recent-publication catch-up after merge, use main, lookback_days 180, refresh_interviews false. A later deliberate refresh_interviews true rechecks existing Shane records outside the incremental date window. Normal scheduled runs retain the alternating-Monday cadence and 20-day lookback. The fetch step stops after 45 minutes and records remaining items as deferred, so partial work can be published instead of lost to the workflow timeout. Rerun if needed.
+
+Inspect data/harvest-report.json, data/fetch-missing-articles-report.json, library-scrape-status.json, and the resulting knowledge_base/metadata commit. Feed failures and article/PDF/deferred failures must not advance lastSuccessfulScrape. The source update and a web-search result do not establish library currency. API blocking from the first GitHub-hosted runner is still possible and must be checked in that run.
+
+### Explain to Shane source handling
+
+The user clarified the actual publishing pattern: an audio episode/description, sometimes an attached PDF, followed by differently titled edited highlights. Pair only explicit official links; do not guess from similar titles. An unrelated PDF report is not a transcript.
+
+interviewSources.js preserves explicit speaker labels and marks whole bold questions as host questions only in a recognized interview. Continuation answers can use the sole identified guest; multi-guest unknown turns remain unidentified. Introductions remain editorial context. interviewTranscripts.js downloads only bounded official AEI PDFs, rejects redirects/non-PDF responses, runs pdftotext with a timeout in an isolated temporary folder, and requires readable host/guest labels. The workflow installs poppler-utils and tesseract-ocr/English data; image-only PDFs have a 40-page/two-minute OCR bound. The one-time Mac repair used local Apple Vision with spatial reading-order checks. Linux OCR is covered by command-level tests but has not run in GitHub yet. No Node dependency or lockfile changed. No speech-to-text service or model is called.
+
+The importer stores PDF text separately under Shane_Tews, with sourceType podcast_transcript. Edited articles use interview_highlights. Description-only pages use podcast_description and are excluded from chat evidence. Metadata records episodeUrl, transcriptUrl, episodeDate, participants and unverified printed speaker labels. Dates of the episode and later article remain distinct. No date is inferred from a filename. Transcript failures leave usable highlights in place and mark the refresh partial.
+
+Runtime retrieval prefers an enriched copy when old flattened/imported files have the same URL, carries speaker markers into excerpts, and prefers a matching linked full transcript for chat. Article Search still shows both formats. The prompt forbids treating guests' remarks as the bylined scholar's views, host questions as endorsements, or linked versions as independent corroboration. It does not guarantee semantic correctness; review model answers against passages.
+
+Verified example: https://www.aei.org/multimedia/making-online-safety-simpler-with-greg-oslan/ (November 5) explicitly links the nine-page ETS-154-Oslan-MCO-Transcript.pdf. https://www.aei.org/domestic-policy/why-is-it-so-hard-to-stay-safe-online/ (November 12) explicitly links that episode. Real PDF extraction found Shane Tews/Greg Oslan turns and one printed Greg Osland label. That spelling variation remains unverified and is marked rather than silently merged or invented as a third participant. Downloaded PDF and HTML cache files are not packaged. The update includes the extracted public AEI library text requested by the maintainer.
+
+### Publication and remaining verification
+
+Use the single combined package and the current setup instructions. It includes the workflow file; preserve its hidden .github path or paste the supplied standalone YAML into GitHub's editor on the same branch. Do not separately upload the earlier overlapping GLM package. After merge, verify Render/Vercel and the included episode/highlight examples. A separate recent-publication catch-up can then run if wanted. Then make one small ordinary GLM request and inspect speaker attribution and the recorded cost. No production credentials were read or paid calls made in these local checks.
+
+115 backend and 21 frontend checks passed, the CI website build passed, workflow YAML parsed, and simulated desktop/phone checks had no overflow or browser errors. Real PDF conversion also passed. Dependency/lockfiles are unchanged. See VALIDATION.md for limits.
+
+## Historical release notes
+
+The following sections describe earlier checkpoints and must not override the current setup above.
+
+## Historical November 17 streaming/comparison checkpoint
 
 This checkout prepares the streaming compatibility fix and a separate optional Model Tester account. The user has restored Together credits, created a new key, saved it privately in Render, and deployed diagnostic logging through PR #10. The latest live error was HTTP 400: the Qwen model requires streaming. No successful live Qwen answer has yet been verified in this session. The code in this update must be uploaded, merged and deployed before that test.
 

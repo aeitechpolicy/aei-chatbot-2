@@ -19,7 +19,8 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 
-const BASE = 'https://stage.aei.org/wp-json/wp/v2';
+const BASE = 'https://www.aei.org/wp-json/wp/v2';
+const SERVED_SCHOLARS = require('../utils/servedScholars');
 const OUT_DIR = path.join(__dirname, '..', 'data');
 
 // Every content-bearing type from /wp-json/wp/v2/types. Nothing is excluded
@@ -107,7 +108,7 @@ async function getWithRetry(url, params = {}) {
 // we don't silently assume "1 page" — we page forward until an empty page
 // comes back, and warn loudly so a truncated harvest is never mistaken for
 // a complete one.
-async function fetchAll(restBase, extraParams = {}) {
+async function fetchAll(restBase, extraParams = {}, diagnostics = []) {
   const items = [];
   let page = 1;
   let totalPages = null;
@@ -125,6 +126,7 @@ async function fetchAll(restBase, extraParams = {}) {
       const status = err.response ? err.response.status : null;
       if (status === 400 && page > 1) break; // walked off the end
       if (status === 404 || status === 401 || status === 403) {
+        diagnostics.push({ type: restBase, status, reason: `Content feed unavailable (${status})` });
         console.warn(`  ${restBase}: not accessible (${status}), skipping type`);
         return items;
       }
@@ -168,6 +170,8 @@ async function buildAuthorIndex() {
     );
     index[a.id] = name;
   }
+  const missing = SERVED_SCHOLARS.filter(name => !Object.values(index).some(value => value.trim().toLowerCase() === name.toLowerCase()));
+  if (missing.length) throw new Error(`The author feed is missing required scholars: ${missing.join(', ')}`);
   console.log(`  ${Object.keys(index).length} scholars indexed`);
   return index;
 }
@@ -281,13 +285,17 @@ async function main() {
   const DELIST_SAFETY_MIN_SAMPLE = 20;
 
   const fetched = [];
+  const failures = [];
   const coveredTypes = new Set();
   for (const restBase of CONTENT_TYPES) {
     console.log(`Harvesting ${restBase}...`);
     let items;
     try {
-      items = await fetchAll(restBase, extraParams);
+      const diagnostics = [];
+      items = await fetchAll(restBase, extraParams, diagnostics);
+      failures.push(...diagnostics.filter(item => item.status !== 404 || existingLiveCountByType[restBase] > 0));
     } catch (err) {
+      failures.push({ type: restBase, reason: err.message });
       console.error(`  ${restBase} failed: ${err.message}; continuing`);
       continue;
     }
@@ -331,6 +339,9 @@ async function main() {
   records.sort((a, b) => (a.date < b.date ? 1 : -1));
   fs.writeFileSync(indexPath, JSON.stringify(records, null, 2));
 
+  fs.writeFileSync(path.join(OUT_DIR, 'harvest-report.json'), JSON.stringify({ checkedAt: new Date().toISOString(), fetched: fetched.length, failures }, null, 2) + '\n');
+  if (failures.length) console.warn(`Harvest incomplete: ${failures.length} feed(s) could not be fully checked; see data/harvest-report.json`);
+
   const byType = {};
   for (const r of records) byType[r.type] = (byType[r.type] || 0) + 1;
   console.log('\nDone. Records by type:');
@@ -338,7 +349,10 @@ async function main() {
   console.log(`\nWrote ${records.length} records to data/aei-index.json`);
 }
 
-main().catch((err) => {
+if (require.main === module) main().catch((err) => {
   console.error('Harvest failed:', err.message);
   process.exit(1);
 });
+
+module.exports = { BASE, fetchAll, buildAuthorIndex, toRecord, mergeRecords };
+

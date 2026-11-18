@@ -2,6 +2,7 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const { createHash } = require('node:crypto');
 const SERVED_SCHOLARS = require('./servedScholars');
+const { interviewFields, speakerPrefix } = require('./interviewSources');
 
 const MAX_SOURCE_CHARS = 2200;
 const MAX_ARTICLE_CHARS = 200000;
@@ -26,6 +27,7 @@ function queryTerms(query) {
   return /\b(themes?|overview|focus)\b/i.test(query) && terms.every(t => t === 'work') ? [] : terms;
 }
 function scholarKey(name) { return normalize(name).replace(/ /g, '_'); }
+function includesScholar(doc, key) { return doc.scopes.has(key) || (doc.interview?.participants || []).some(name => scholarKey(name) === key); }
 function safeUrl(value) {
   try {
     const url = new URL(value);
@@ -62,7 +64,7 @@ function excerptFor(text, terms, idf = () => 1, maxChars = MAX_SOURCE_CHARS) {
   for (let start = 0; start < text.length;) {
     let end = Math.min(text.length, start + 1000);
     if (end < text.length) { const boundary = text.lastIndexOf(' ', end); if (boundary > start + 700) end = boundary; }
-    const part = text.slice(start, end).trim();
+    const part = text.slice(start, end).trim().replace(/\[Speaker:[^\]]*$/, '').trim();
     const frequencies = counts(tokens(part));
     const matches = terms.filter(t => frequencies.has(t));
     const score = matches.reduce((n, t) => n + idf(t) * (1 + Math.log1p(frequencies.get(t))), 0) * (1 + matches.length);
@@ -78,7 +80,7 @@ function excerptFor(text, terms, idf = () => 1, maxChars = MAX_SOURCE_CHARS) {
     best.push(win);
     if (best.length === 2) break;
   }
-  return best.sort((a, b) => a.start - b.start).map(win => `${win.start ? '… ' : ''}${win.part}${win.end < text.length ? ' …' : ''}`).join('\n\n').slice(0, maxChars);
+  return best.sort((a, b) => a.start - b.start).map(win => `${speakerPrefix(text, win.start)}${win.start ? '… ' : ''}${win.part}${win.end < text.length ? ' …' : ''}`).join('\n\n').slice(0, maxChars);
 }
 
 function matchRanges(text, terms) {
@@ -94,7 +96,7 @@ function matchedExcerpt(body, terms) {
   const firstMatch = matchRanges(body, terms)[0]?.[0] ?? 0;
   const start = firstMatch > 460 ? body.lastIndexOf(' ', firstMatch - 120) + 1 : 0;
   const end = body.length > start + 630 ? body.lastIndexOf(' ', start + 630) : body.length;
-  const excerpt = `${start ? '… ' : ''}${body.slice(start, end > start ? end : start + 630)}${end < body.length ? ' …' : ''}`;
+  const excerpt = `${speakerPrefix(body, start)}${start ? '… ' : ''}${body.slice(start, end > start ? end : start + 630)}${end < body.length ? ' …' : ''}`;
   return { excerpt, passageMatches: matchRanges(excerpt, terms) };
 }
 
@@ -157,9 +159,10 @@ function createArticleSearch({
             fullText = Boolean(article.body);
           }
         } catch (error) { if (error.code !== 'ENOENT') throw error; }
-        const imported = Array.isArray(meta.authors) && meta.authors.length > 0;
+        const imported = Array.isArray(meta.authors);
         const eventDate = knownDate(meta.eventDate);
-        const sourceType = meta.sourceType === 'event' ? 'event' : null;
+        const interview = interviewFields(meta);
+        const sourceType = interview.sourceType || (meta.sourceType === 'event' ? 'event' : null);
         const catalog = imported || sourceType ? meta : record;
         const title = String(catalog.title || meta.title || article.title || 'Untitled saved article');
         const recordedAuthors = Array.isArray(record.scholars) && record.scholars.length ? record.scholars : [];
@@ -171,9 +174,9 @@ function createArticleSearch({
         const terms = tokens(body), tf = counts(terms);
         const titleTerms = counts(tokens(title));
         for (const [term, n] of titleTerms) tf.set(term, (tf.get(term) || 0) + n * 5);
-        docs.push({ title, authors, date: sourceType ? null : knownDate(catalog.date) || knownDate(meta.date),
-          url: safeUrl(catalog.url) || safeUrl(meta.url), body, fullText: fullText && meta.textCoverage !== 'excerpt-only',
-          sourceType, eventDate, scopes, tf, length: Math.max(1, terms.length), key: file });
+        docs.push({ title, authors, date: sourceType === 'event' ? null : knownDate(catalog.date) || knownDate(meta.date),
+          url: safeUrl(catalog.url) || safeUrl(meta.url), body, fullText: fullText && !['excerpt-only', 'description-only'].includes(meta.textCoverage) && sourceType !== 'podcast_description',
+          ...interview, sourceType, eventDate, scopes, tf, length: Math.max(1, terms.length), key: file });
       }
     }));
     // Same article saved under more than one scholar should appear once.
@@ -182,7 +185,8 @@ function createArticleSearch({
       const key = doc.url || doc.key;
       const existing = unique.get(key);
       if (existing) {
-        const preferred = doc.fullText && !existing.fullText ? doc : existing;
+        const quality = item => (item.fullText ? 4 : 0) + (item.interview && item.body.includes('[Speaker:') ? 2 : 0);
+        const preferred = quality(doc) > quality(existing) ? doc : existing;
         preferred.authors = [...new Set([...existing.authors, ...doc.authors])];
         preferred.scopes = new Set([...existing.scopes, ...doc.scopes]);
         unique.set(key, preferred);
@@ -244,8 +248,8 @@ function createArticleSearch({
     const ranked = [];
     for (const doc of archive.articles) {
       if (fullTextOnly && !doc.fullText) continue;
-      if (scope && !doc.scopes.has(scope)) continue;
-      if (!scope && named.length && !named.some(s => doc.scopes.has(s))) continue;
+      if (scope && !includesScholar(doc, scope)) continue;
+      if (!scope && named.length && !named.some(s => includesScholar(doc, s))) continue;
       coverage.articles++;
       if (doc.fullText) coverage.fullTextArticles++;
       if (doc.date && (!coverage.latestPublishedDate || doc.date > coverage.latestPublishedDate)) coverage.latestPublishedDate = doc.date;
@@ -265,16 +269,23 @@ function createArticleSearch({
     if (!scope && sort !== 'newest') {
       for (const name of (named.length ? named : SERVED_SCHOLARS.map(scholarKey))) {
         const bestCoverage = ranked.reduce((n, r) => Math.max(n, r.matched.length), 0);
-        const item = ranked.find(r => r.doc.scopes.has(name) && !selected.includes(r) && (overview || (r.matched.length >= bestCoverage && r.score >= (ranked[0]?.score || 0) * 0.6)));
+        const item = ranked.find(r => includesScholar(r.doc, name) && !selected.includes(r) && (overview || (r.matched.length >= bestCoverage && r.score >= (ranked[0]?.score || 0) * 0.6)));
         if (item) selected.push(item);
       }
     }
     for (const item of ranked) if (!selected.includes(item)) selected.push(item);
-    const articles = selected.slice(0, Math.min(12, Math.max(1, limit))).map(({ doc, matched }, i) => {
+    // For chat evidence, prefer the linked full transcript over its edited version
+    // when both matched. Article Search still lists the two page types separately.
+    const interviewKey = doc => doc.interview?.transcriptUrl || doc.interview?.episodeUrl;
+    const transcriptByEpisode = new Map(ranked.filter(item => ['podcast_transcript', 'interview_transcript'].includes(item.doc.sourceType) && interviewKey(item.doc)).map(item => [interviewKey(item.doc), item]));
+    const chosen = [...new Set(selected.map(item => fullTextOnly && item.doc.sourceType === 'interview_highlights'
+      ? transcriptByEpisode.get(interviewKey(item.doc)) || item : item))];
+    const articles = chosen.slice(0, Math.min(12, Math.max(1, limit))).map(({ doc, matched }, i) => {
       const body = excerptFor(doc.body, terms, idf);
       return {
         id: `S${i + 1}`, title: doc.title, authors: doc.authors, author: doc.authors.join(', ') || 'Author not recorded', date: doc.date, url: doc.url,
         ...(doc.sourceType ? { sourceType: doc.sourceType, eventDate: doc.eventDate } : {}),
+        ...interviewFields(doc),
         ...(includeHighlights ? { sourceRef: doc.sourceRef, ...matchedExcerpt(body, matched), titleMatches: matchRanges(doc.title, matched) } : {}),
         collections: SERVED_SCHOLARS.filter(name => doc.scopes.has(scholarKey(name))),
         body, fullText: doc.fullText, matchedTerms: matched

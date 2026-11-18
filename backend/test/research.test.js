@@ -211,3 +211,26 @@ test('each answer line needs a citation and long quotations must match a cited s
   assert.match(checkCitations('Source is example.org [S1].', sources).citationNotice, /outside the supplied citation IDs/);
   assert.match(checkCitations('INSUFFICIENT_EVIDENCE', sources).content, /do not answer this question/);
 });
+
+test('a served scholar can be found as an identified interview guest without changing the byline or file collection', async t => {
+  const { engine } = await archive(t, [{ scholar: 'Shane Tews', title: 'A discussion about work', url: 'https://www.aei.org/work-transcript.pdf',
+    body: '[Speaker: Brent Orrell]\nBrent Orrell: Workforce training helps employees adapt.',
+    metadata: { title: 'A discussion about work', authors: [], url: 'https://www.aei.org/work-transcript.pdf', sourceType: 'podcast_transcript',
+      interview: { series: 'Explain to Shane', participants: ['Shane Tews', 'Brent Orrell'] } } }]);
+  const selected = await engine.search({ query: 'workforce training', scholar: 'Brent_Orrell', fullTextOnly: true });
+  assert.equal(selected.articles.length, 1);
+  assert.deepEqual(selected.articles[0].authors, []);
+  assert.deepEqual(selected.articles[0].collections, ['Shane Tews']);
+  assert.equal((await engine.search({ query: 'What did Brent Orrell say about workforce training?', fullTextOnly: true })).articles.length, 1);
+  assert.equal((await engine.search({ query: 'workforce training', scholar: 'Will_Rinehart', fullTextOnly: true })).articles.length, 0);
+});
+
+test('different episode-page aliases with the same explicit PDF link use one transcript for chat evidence', async t => {
+  const pdf = 'https://www.aei.org/explicit-shared-transcript.pdf';
+  const { engine } = await archive(t, [
+    { scholar: 'Shane Tews', title: 'Edited spectrum highlights', body: 'Spectrum coordination involves practical tradeoffs.', metadata: { title: 'Edited spectrum highlights', authors: ['Shane Tews'], url: 'https://www.aei.org/highlights/', sourceType: 'interview_highlights', interview: { episodeUrl: 'https://www.aei.org/podcast/older-page/', transcriptUrl: pdf } } },
+    { scholar: 'Shane Tews', title: 'Full spectrum transcript', body: '[Speaker: Alex Guest]\nSpectrum coordination involves different services.', metadata: { title: 'Full spectrum transcript', authors: [], url: pdf, sourceType: 'podcast_transcript', interview: { episodeUrl: 'https://www.aei.org/podcast/alternate-page/', transcriptUrl: pdf } } }
+  ]);
+  const result = await engine.search({ query: 'spectrum coordination', fullTextOnly: true });
+  assert.equal(result.articles.length, 1); assert.equal(result.articles[0].sourceType, 'podcast_transcript');
+});

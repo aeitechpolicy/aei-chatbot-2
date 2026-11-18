@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const express = require('express');
-const { createPilot, MODEL } = require('../utils/pilot');
+const { createPilot, MODEL, MODEL_PARAMETERS } = require('../utils/pilot');
 const { createApp } = require('../server');
 const ChatManager = require('../utils/chatManager');
 const { togetherCompletion } = require('../utils/togetherCompletion');
@@ -20,9 +20,9 @@ async function fixture(t, overrides = {}) {
   const pilot = createPilot({ env, now: () => FIXED, dataDir: dir });
   const manager = new ChatManager(path.join(dir, 'chats'));
   let calls = 0;
-  const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); assert.deepEqual(request.reasoning, { enabled: false }); return overrides.complete ? overrides.complete(request) : answer(); };
+  const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); assert.deepEqual(Object.fromEntries(Object.keys(MODEL_PARAMETERS).map(key => [key, request[key]])), MODEL_PARAMETERS); assert.equal(request.reasoning, undefined); return overrides.complete ? overrides.complete(request) : answer(); };
   const app = createApp({ env, pilot, complete, researchDependencies: { findSource: overrides.findSource, search: overrides.searchArticles || (async () => ({ articles: [], matchedCount: 0, coverage: { articles: 0 }, aiUsed: false })) }, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
-    manager, searchWeb: overrides.searchWeb, knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
+    manager, searchWeb: overrides.searchWeb, now: overrides.now || (() => FIXED), knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
   } });
   const server = await new Promise(resolve => { const s = app.listen(0, '127.0.0.1', () => resolve(s)); });
   const url = `http://127.0.0.1:${server.address().port}`;
@@ -139,8 +139,8 @@ test('request model is fixed and returned usage is recorded without question tex
   assert.equal(saved.chat.messages[0].content, 'private-question-marker');
   const row = (await f.pilot.rows('owner'))[0];
   assert.equal(row.model, MODEL); assert.equal(row.input_tokens, 10000); assert.equal(row.output_tokens, 100);
-  assert.ok(Math.abs(row.estimated_usd - 0.001547) < 1e-10);
-  assert.equal(row.input_rate, 0.15); assert.equal(row.output_rate, 0.47);
+  assert.ok(Math.abs(row.estimated_usd - 0.00155) < 1e-10);
+  assert.equal(row.input_rate, 0.15); assert.equal(row.output_rate, 0.50);
   assert.equal(row.status, 'complete');
   const csv = await (await f.request('/api/usage.csv', { token })).text();
   assert.ok(csv.includes('Chatbot Intern'));
@@ -241,7 +241,7 @@ test('a reasoning-only or blank reply records its usage but is not saved as an a
   assert.ok(!JSON.stringify(body).includes('private-reasoning-marker'));
   assert.equal(f.calls(), 1);
   const row = (await f.pilot.rows('owner'))[0];
-  assert.equal(row.status, 'failed'); assert.ok(Math.abs(row.estimated_usd - 0.001547) < 1e-10);
+  assert.equal(row.status, 'failed'); assert.ok(Math.abs(row.estimated_usd - 0.00155) < 1e-10);
   const saved = await (await f.request(`/api/chat/${chat.id}`, { token })).json();
   assert.equal(saved.messages.length, 1); assert.equal(saved.messages[0].role, 'user');
 });
@@ -500,4 +500,33 @@ test('article and web source corrections reach the staff inbox without sharing t
   assert.equal(reports.find(item => item.source.kind === 'article').source.libraryFile, 'Clay_Calvert/fixture.txt');
   assert.equal(reports.find(item => item.source.kind === 'web').source.excerpt, 'Selected web passage.');
   assert.doesNotMatch(JSON.stringify(reports), /Private question marker|Answer to keep private|Forged/);
+});
+
+
+test('recent web questions share focused library evidence, dated web sources and explicit date context', async t => {
+  const query = 'Identify one U.S. spectrum-allocation development from the past 30 days and explain how it relates to Shane Tews’s published work. Clearly distinguish the new reporting from her own views, cite both, and acknowledge anything you cannot verify.';
+  const lookups = [];
+  const f = await fixture(t, { now: () => Date.parse('2026-11-18T02:00:00Z'),
+    fetchArticles: async (scope, topic) => { lookups.push(topic); return [{ title: 'Spectrum policy', author: 'Shane Tews', body: 'A scholar discusses spectrum allocation.', url: 'https://www.aei.org/articles/spectrum/' }]; },
+    searchWeb: async (submitted, plan) => { assert.equal(submitted, query); assert.equal(plan.currentDate, '2026-11-17'); return [{ title: 'New spectrum decision', published_date: 'Tue, 10 Nov 2026 12:00:00 GMT', url: 'https://example.org/new-decision', content: 'A spectrum decision was announced on November 10, 2026.' }]; },
+    complete: async request => { assert.match(request.messages[0].content, /2026-10-18 through 2026-11-17/); return { ...answer(), choices: [{ message: { content: 'A new spectrum decision provides external context [W1].\nThe scholar discusses allocation [S1].' } }] }; }
+  });
+  const { token } = await f.login(); const chat = await f.newChat(token, 'Shane_Tews');
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: query, mode: 'web' } });
+  assert.equal(response.status, 200); const data = await response.json();
+  assert.deepEqual(lookups, ['U.S. spectrum allocation']); assert.equal(data.sources[1].date, '2026-11-10');
+  assert.equal(data.citationNotice, null); assert.equal(f.calls(), 1);
+});
+
+test('no dated news in the requested window saves an explanation without a model charge', async t => {
+  const f = await fixture(t, { now: () => Date.parse('2026-11-18T02:00:00Z'), searchWeb: async () => [
+    { title: 'Old spectrum report', published_date: '2022-09-01', url: 'https://example.org/old', content: 'An older report.' },
+    { title: 'Unknown date', url: 'https://example.org/unknown', content: 'An undated excerpt.' }
+  ] });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'Spectrum allocation news from the past 30 days', mode: 'web' } });
+  const data = await response.json(); assert.equal(response.status, 200); assert.equal(data.aiUsed, false);
+  assert.match(data.response, /2026-10-18 and 2026-11-17/); assert.equal(f.calls(), 0);
+  const [row] = await f.pilot.rows('owner'); assert.equal(row.status, 'not_sent'); assert.equal(row.estimated_usd, 0);
+  assert.equal(data.chat.messages.at(-1).role, 'assistant'); assert.ok(data.sources.every(source => source.kind !== 'web'));
 });

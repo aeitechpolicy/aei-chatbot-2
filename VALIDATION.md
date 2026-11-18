@@ -1,5 +1,45 @@
 # Validation record
 
+## Current combined update — November 18, 2026
+
+The source repair checked 590 distinct public AEI pages and produced 421 source files: 312 updated existing files plus 107 podcast transcripts and two new verified episode/article pages. All output sources have recorded publication dates. All explicitly selected podcast PDFs were downloaded and parsed. Of the 107 podcast transcripts, 79 required local text recognition; 19 sources retain uncertain printed/recognized speaker labels. Exact OCR wording has not been manually reviewed line by line. Ordinary answers using an OCR-only direct quotation fail the citation check; the sources and briefs carry an OCR qualification.
+
+Twelve event/conference PDF links were retained for separate metadata review rather than mislabelled as podcast transcripts. Four malformed filename-derived URL candidates were corrected and verified. Ten shared PDFs have multiple episode pages with different publication dates; all are recorded, and the earliest verified page is selected without guessing a recording date. Fifteen other event/press files remain outside this interview scope.
+
+Real retrieval checks returned the Greg Oslan full transcript with speaker labels and the Brent Orrell/Bojan Tunguz transcript under Brent's scope, without inventing a Brent byline or moving its collection. A spectrum query correctly retained edited highlights where no transcript link was available. Tests additionally cover first-name labels resolved only from a unique printed participant list, timestamp labels, panel agendas, exact name variations, scholar-as-guest retrieval, shared-PDF deduplication and alias-date handling.
+
+- 115 backend checks passed, zero failures, with Node 24. Tests used simulated model/search replies, temporary local data, SQLite and PGlite behind the real Neon HTTP driver. Local test servers required the permitted network-enabled execution environment; no production model requests or private database writes were used.
+- 21 frontend checks passed across four suites. These cover existing account/navigation behavior, model comparison, article search, date qualifications, interview format/participants, episode links, citation passages and brief previews. An existing non-failing React act timing warning remains in App tests.
+- The production website build passed with CI=true. Existing toolchain deprecation and browser-data notices remain. No new Node dependencies or lockfile changes were made.
+- The workflow YAML parsed and its GitHub-hosted runner, transcript-reader step and manual refresh_interviews input were checked. The workflow has not run on GitHub with these changes.
+- A local browser check at 1440px desktop and 390px phone width displayed the transcript citation/episode link, showed no horizontal overflow or browser errors, and confirmed Article Search added no model submission. All displayed answers were simulated.
+
+New backend coverage includes production-URL fetching, author-feed completeness guards, feed diagnostics, topic-focused web search, Eastern relative windows, RFC/ISO dates, exclusion of old/undated/future news, no-model generation when no dated result remains, exact speaker/continuation preservation, multi-guest ambiguity, unrelated PDF rejection, bounded official PDF downloads, name-variant flags, speaker context in long excerpts, same-URL enriched-copy preference, linked-format retrieval, failure-safe PDF fallback, description-only exclusion and bounded partial-import reporting. Existing login/ownership, persistence, atomic spending reservations, streaming, usage and citation checks still pass.
+
+The real Greg Oslan AEI pair was inspected using public source pages/API. The episode is dated November 5 and the edited highlights November 12. The linked nine-page PDF was downloaded successfully using the importer’s actual request settings and converted with the same pdftotext interface used in the workflow. The extractor returned roughly 29,000 characters with Shane Tews/Greg Oslan turns. One printed “Greg Osland” label is flagged against the episode header rather than silently changed. This is one real-source verification, not a corpus-wide transcript audit.
+
+Commands, from the relevant app folder:
+
+    node --test test/*.test.js
+    CI=true node node_modules/react-scripts/bin/react-scripts.js test --watchAll=false --runInBand
+    CI=true node node_modules/react-scripts/bin/react-scripts.js build
+
+Checks ran in temporary source copies because Desktop dependency reads were slow. Packaged source files were byte-compared with the checked copies. Build output, installed dependencies, test credentials and downloaded copyrighted source fixtures are excluded from the ZIP.
+
+No paid inference/search calls, secret reads, payments, privacy changes, production database writes or publishing actions were performed. The maintainer must merge/deploy the update, run and inspect the catch-up refresh, and test actual answer quality with the funded account. Public endpoint access from this Mac does not guarantee access from GitHub-hosted runners. Citation-format checks cannot prove semantic support or correct attribution of every generated claim.
+
+## Historical validation records
+
+The following records describe earlier checkpoints. Their pending-work, cost, model and deployment statements are superseded by the current setup above.
+
+## GLM ordinary-chat follow-up - November 17, 2026
+
+All 59 backend checks passed after switching ordinary chats to GLM-5.3-Flash with low reasoning effort. This includes the real Together SDK stream request with the GLM ID and parameters, both persistent storage implementations, updated per-model cost arithmetic, login and ownership checks, demo behavior, library-only retrieval, experimental web mode, concurrent comparisons and spending limits. The source files packaged below were byte-compared with the temporary source copy used by these checks. No frontend source or dependency/lockfile changed, so the earlier website build and UI checks were not repeated.
+
+The user already obtained one successful live GLM answer through Model Tester. The ordinary-chat switch still needs publication and one live check through an ordinary account. No paid API calls, private key reads, privacy-setting changes or production writes were made in this follow-up. Default estimates are $0.15 input/$0.50 output per million tokens; existing explicit price overrides must be kept consistent with this model. Existing ledger records are unchanged.
+
+The rest of this file is the earlier streaming and comparison validation record.
+
 ## November 17, 2026 - Streaming and private model comparisons
 
 59 backend checks passed with zero failures using simulated model replies, local SQLite and PGlite PostgreSQL. The suite covers three requests starting concurrently from identical evidence; one shared web search; partial provider failure; per-model prices; atomic rollback before any paid call when the complete comparison exceeds a limit; unused reservations; allowlisted model IDs; optional unique login passwords; tester isolation from other chats, files and staff reports; normal user/demo behavior; real Together SDK streaming; usage-only final chunks; interrupted streams; and credential-safe error logging.

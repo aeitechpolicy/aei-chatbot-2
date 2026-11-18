@@ -1,4 +1,4 @@
-import { sourceLink } from './sources';
+import { sourceLink, sourceDateLabel, sourceTypeLabel, sourceByline, interviewLinks } from './sources';
 
 const citationPattern = /\[([SW]\d+)\]/g;
 
@@ -25,16 +25,16 @@ export function buildResearchBrief(message, title) {
   const heading = title && title !== 'New Chat' ? title : 'Research brief';
   const references = ids.map(id => {
     const source = sources.get(id);
-    const details = [source.author || source.publisher, source.date].filter(Boolean).join(' · ');
+    const details = [sourceByline(source), source.date ? sourceDateLabel(source) : null, sourceTypeLabel(source), source.interview?.extractionMethod === 'ocr' ? 'Text read from scanned PDF; verify quotations in the original' : null, source.interview?.participants?.length ? `Interview participants: ${source.interview.participants.join(', ')}` : null].filter(Boolean).join(' · ');
     const label = `[${id}] ${source.title}${details ? ` — ${details}` : ''}${source.kind === 'web' ? ' (Web search snippet)' : ''}`;
-    return { id, label, url: sourceLink(source) };
+    return { id, label, url: sourceLink(source), relatedLinks: interviewLinks(source) };
   });
   const linked = line => escapeHtml(line).replace(citationPattern, (mark, id) => {
     const url = sourceLink(sources.get(id));
     return url ? `<a href="${escapeHtml(url)}">${mark}</a>` : mark;
   });
-  const text = [heading, 'Key findings', findings.map(line => `• ${line}`).join('\n'), 'Sources', references.map(({ label, url }) => url ? `${label}\n${url}` : label).join('\n\n')].join('\n\n');
-  const html = `<h2>${escapeHtml(heading)}</h2><h3>Key findings</h3><ul>${findings.map(line => `<li>${linked(line)}</li>`).join('')}</ul><h3>Sources</h3><ul>${references.map(({ label, url }) => url ? `<li><a href="${escapeHtml(url)}">${escapeHtml(label)}</a></li>` : `<li>${escapeHtml(label)}</li>`).join('')}</ul>`;
+  const text = [heading, 'Key findings', findings.map(line => `• ${line}`).join('\n'), 'Sources', references.map(({ label, url, relatedLinks }) => [(url ? `${label}\n${url}` : label), ...relatedLinks.map(link => `${link.label}: ${link.url}`)].join('\n')).join('\n\n')].join('\n\n');
+  const html = `<h2>${escapeHtml(heading)}</h2><h3>Key findings</h3><ul>${findings.map(line => `<li>${linked(line)}</li>`).join('')}</ul><h3>Sources</h3><ul>${references.map(({ label, url, relatedLinks }) => `<li>${url ? `<a href="${escapeHtml(url)}">${escapeHtml(label)}</a>` : escapeHtml(label)}${relatedLinks.map(link => ` — <a href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a>`).join('')}</li>`).join('')}</ul>`;
   return { heading, findings, references, text, html };
 }
 

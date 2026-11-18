@@ -1,7 +1,8 @@
+import InterviewDetails from './InterviewDetails';
 import React, { useEffect, useId, useRef, useState } from 'react';
 import { User, Bot, BookOpen, ChevronDown, FileText, Flag, X, ArrowUpRight } from 'lucide-react';
 import SourceCards from './SourceCards';
-import { sourceLink } from '../utils/sources';
+import { sourceLink, sourceDateLabel, sourceByline } from '../utils/sources';
 import { buildResearchBrief } from '../utils/researchBrief';
 import ResearchBriefPreview from './ResearchBriefPreview';
 import FeedbackDialog from './FeedbackDialog';
@@ -33,14 +34,14 @@ function CitationPassage({ source, onClose }) {
   const close = useRef(null);
   useEffect(() => { close.current?.focus(); }, [source]);
   const url = sourceLink(source);
-  const event = source.sourceType === 'event';
   return <aside className="citation-passage" aria-label={`Passage [${source.id}]`} onKeyDown={event => { if (event.key === 'Escape') onClose(); }}>
     <div className="citation-passage-header">
       <span>{source.kind === 'web' ? 'Web search snippet' : 'AEI Scholar Library passage'} [{source.id}]</span>
       <button type="button" ref={close} onClick={onClose} aria-label="Close passage"><X size={16} /></button>
     </div>
     <h3>{source.title}</h3>
-    <p className="source-metadata">{event ? 'AEI event' : source.author || source.publisher || 'Author not recorded'} · {(event ? source.eventDate : source.date) || 'Date not recorded'}</p>
+    <p className="source-metadata">{sourceByline(source)} · {sourceDateLabel(source)}</p>
+    <InterviewDetails source={source} />
     <blockquote>{source.excerpt || source.body || 'Passage not available.'}</blockquote>
     {url && <a href={url} target="_blank" rel="noopener noreferrer">{source.kind === 'web' ? 'Open web source' : 'Open on AEI'} <ArrowUpRight size={14} /></a>}
   </aside>;

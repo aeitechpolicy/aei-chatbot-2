@@ -1,10 +1,10 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const Together = require('together-ai');
-const { MODEL, MAX_OUTPUT_TOKENS } = require('../utils/pilot');
+const { MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS } = require('../utils/pilot');
 const { togetherCompletion } = require('../utils/togetherCompletion');
 
-test('the Together SDK streams Qwen text and returns final usage for the existing chat flow', async () => {
+test('the Together SDK streams GLM text and returns final usage for the existing chat flow', async () => {
   let calls = 0;
   const client = new Together({ apiKey: 'test-only-not-a-real-key', baseURL: 'http://127.0.0.1:9', maxRetries: 0, timeout: 45000,
     fetch: async (input, options) => {
@@ -12,8 +12,8 @@ test('the Together SDK streams Qwen text and returns final usage for the existin
       assert.equal(new URL(input).pathname, '/v1/chat/completions');
       const body = JSON.parse(options.body);
       assert.equal(body.model, MODEL); assert.equal(body.max_tokens, MAX_OUTPUT_TOKENS);
-      assert.equal(body.model, 'Qwen/Qwen3.8-Flash');
-      assert.deepEqual(body.reasoning, { enabled: false });
+      assert.equal(body.model, 'zai-org/GLM-5.3-Flash');
+      assert.equal(body.reasoning_effort, 'low'); assert.equal(body.reasoning, undefined);
       assert.equal(body.stream, true);
       assert.deepEqual(body.stream_options, { include_usage: true });
       assert.ok(options.signal instanceof AbortSignal);
@@ -27,7 +27,7 @@ test('the Together SDK streams Qwen text and returns final usage for the existin
       return new Response(data, { status: 200, headers: { 'Content-Type': 'text/event-stream' } });
     }
   });
-  const result = await togetherCompletion(client, { model: MODEL, messages: [{ role: 'user', content: 'A test question' }], max_tokens: MAX_OUTPUT_TOKENS, reasoning: { enabled: false }, stream: false });
+  const result = await togetherCompletion(client, { model: MODEL, messages: [{ role: 'user', content: 'A test question' }], max_tokens: MAX_OUTPUT_TOKENS, ...MODEL_PARAMETERS, stream: false });
   assert.equal(calls, 1); assert.equal(result.usage.prompt_tokens, 100);
   assert.equal(result.choices[0].message.content, 'TITLE: Policy Research\nSimulated answer [S1].');
   assert.equal(result.usage.completion_tokens, 20);
