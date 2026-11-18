@@ -152,7 +152,9 @@ test('a demo login shows research and chat while hiding staff controls', async (
   const whatsNew = within(await screen.findByRole('dialog', { name: 'What’s new in the AEI Chatbot' }));
   expect(whatsNew.getByRole('heading', { name: 'See the evidence behind an answer' })).toBeVisible();
   expect(whatsNew.getByRole('heading', { name: 'Find articles and build a source list' })).toBeVisible();
-  fireEvent.click(whatsNew.getByRole('button', { name: 'Start guided demo' }));
+  fireEvent.click(whatsNew.getByRole('button', { name: 'See the change' }));
+  const comparison = within(await screen.findByRole('dialog', { name: 'Before-and-after' }));
+  fireEvent.click(comparison.getByRole('button', { name: 'Start guided demo' }));
   const tour = within(await screen.findByRole('dialog', { name: 'Try AEI Chatbot' }));
   fireEvent.click(tour.getByRole('button', { name: 'AEI Article Search', exact: true }));
   fireEvent.change(tour.getByLabelText('Search the sample library'), { target: { value: 'Greg Oslan' } });
@@ -210,8 +212,11 @@ test.each(['demo1', 'demo2'])('the %s login always starts with What’s new then
     fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-demo-password' } });
     fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
     const news = await screen.findByRole('dialog', { name: 'What’s new in the AEI Chatbot' });
-    expect(within(news).getByRole('region', { name: 'Before and now interface comparison' })).toBeVisible();
-    fireEvent.click(within(news).getByRole('button', { name: 'Close dialog' }));
+    expect(within(news).queryByRole('region', { name: 'Before and now interface comparison' })).not.toBeInTheDocument();
+    fireEvent.click(within(news).getByRole('button', { name: 'Continue to before-and-after comparison' }));
+    const comparison = within(await screen.findByRole('dialog', { name: 'Before-and-after' }));
+    expect(comparison.getByRole('region', { name: 'Before and now interface comparison' })).toBeVisible();
+    fireEvent.click(comparison.getByRole('button', { name: 'Continue to guided demo' }));
     fireEvent.click(within(await screen.findByRole('dialog', { name: 'Try AEI Chatbot' })).getByRole('button', { name: 'Skip tour' }));
     expect(screen.queryByRole('button', { name: 'Files', exact: true })).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Usage and costs' })).not.toBeInTheDocument();
