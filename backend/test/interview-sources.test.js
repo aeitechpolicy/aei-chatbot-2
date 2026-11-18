@@ -166,7 +166,7 @@ test('the source keeps the page canonical URL and visible byline separate from i
   const { backendPath, fetchPage } = await fixture(t);
   const canonical = 'https://www.aei.org/technology/canonical-highlights/';
   const html = highlights.replace('</head>', `<link rel="canonical" href="${canonical}"></head>`)
-    .replace('<body>', '<body><a class="author-link" href="https://www.aei.org/profile/editorial-staff/">Editorial Staff</a>');
+    .replace('<body>', '<body><h1>Edited Highlights</h1><div class="details"><div class="author line"><a class="author-link" href="https://www.aei.org/profile/editorial-staff/">Editorial Staff</a></div></div>');
   await runImport({ backendPath, refreshInterviews: true, interviewsOnly: true, delay: 0, log: () => {},
     fetchPage: async url => url === highlightUrl ? { data: html } : fetchPage(url), fetchTranscript: async () => tagTranscript(rawTranscript) });
   const meta = JSON.parse(await fs.readFile(path.join(backendPath, 'articleMetadata.json'), 'utf8'));

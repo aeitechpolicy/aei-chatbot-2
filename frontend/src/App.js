@@ -12,23 +12,15 @@ import WhatsNew from './components/WhatsNew';
 import LegacyFrame from './components/LegacyFrame';
 import LegacyFiles from './components/LegacyFiles';
 import LegacySidebar from './components/LegacySidebar';
+import { isDemoAccount } from './utils/accounts';
 import { CircleHelp, Sparkles } from 'lucide-react';
 import { API_BASE_URL, apiFetch, chatEndpoint, getSession, setSession, signOut } from './utils/api';
 import './styles/App.css';
 import './styles/Workspace.css';
 
-const demoGuideKey = 'aei-demo-release-guide-seen';
-
 function PrivateApp({ session }) {
-  const isDemo = session.user.id === 'demo';
-  const [guide, setGuide] = useState(() => {
-    if (!isDemo) return null;
-    try {
-      return window.localStorage.getItem(demoGuideKey) === '1' ? null : 'whats-new';
-    } catch {
-      return 'whats-new';
-    }
-  });
+  const isDemo = isDemoAccount(session.user.id);
+  const [guide, setGuide] = useState(isDemo ? 'whats-new' : null);
   const [currentView, setCurrentView] = useState('chat');
   const [demoVersion, setDemoVersion] = useState(2);
   const legacy = isDemo && demoVersion === 1;
@@ -116,14 +108,7 @@ function PrivateApp({ session }) {
     setCurrentView(view => view === 'web' ? 'web' : 'chat');
   };
 
-  const finishGuide = (next = null) => {
-    setGuide(next);
-    try {
-      window.localStorage.setItem(demoGuideKey, '1');
-    } catch {
-      // The walkthrough still works when browser storage is unavailable.
-    }
-  };
+  const finishGuide = (next = null) => setGuide(next);
 
   const handleDeleteChat = async (chatId) => {
     if (loading) return;
@@ -247,9 +232,9 @@ function PrivateApp({ session }) {
       </nav>;
 
   const guideDialog = <>
-    {guide === 'whats-new' && <WhatsNew onClose={() => finishGuide()}
+    {guide === 'whats-new' && <WhatsNew onClose={() => { if (legacy) selectDemoVersion(2); finishGuide('tour'); }}
       onStartTour={() => { if (legacy) selectDemoVersion(2); finishGuide('tour'); }} />}
-    {guide === 'tour' && <DemoWalkthrough busy={loading} onClose={() => finishGuide()}
+    {guide === 'tour' && <DemoWalkthrough busy={loading} showWhatsNewLink={isDemo} onClose={() => finishGuide()}
       onTryQuestion={question => { finishGuide(); handleNewChat(question); }}
       onOpenSearch={() => { finishGuide(); setCurrentView('research'); }} />}
   </>;
@@ -261,7 +246,7 @@ function PrivateApp({ session }) {
   };
 
   const chat = <ChatInterface key={chatDraft.version} active={chatView} web={currentView === 'web'}
-    legacy={legacy} chatId={currentChatId} initialQuestion={chatDraft.question}
+    legacy={legacy} hideUsage={isDemo} chatId={currentChatId} initialQuestion={chatDraft.question}
     draftScope={chatScope} onScopeChange={setChatScope} loading={loading} onSendMessage={handleSendMessage} />;
 
   if (legacy) return (

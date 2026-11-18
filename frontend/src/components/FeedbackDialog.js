@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ResearchDialog from './ResearchDialog';
 import { API_BASE_URL, apiFetch, chatEndpoint } from '../utils/api';
 import { sourceLink } from '../utils/sources';
@@ -6,11 +6,21 @@ import { sourceLink } from '../utils/sources';
 const REASONS = ['Incorrect information', 'Missing context', 'Citation issue', 'Other'];
 const SOURCE_REASONS = ['Incorrect title, byline or date', 'Broken or incorrect link', 'Incorrect passage', 'Irrelevant result', 'Other'];
 
-export default function FeedbackDialog({ chatId, messageIndex, answer, source, sent, onSent, onClose, practice = false }) {
+export default function FeedbackDialog({ chatId, messageIndex, answer, source, sent, onSent, onClose, practice = false, autoComplete = false }) {
   const [category, setCategory] = useState('');
   const [detail, setDetail] = useState('');
   const [error, setError] = useState('');
   const [sending, setSending] = useState(false);
+
+  const sentCallback = useRef(onSent);
+  sentCallback.current = onSent;
+  useEffect(() => {
+    if (!practice || !autoComplete) return undefined;
+    setCategory('Incorrect information');
+    setDetail('Practice example: please check the attribution in this answer.');
+    const timer = setTimeout(() => sentCallback.current(), 900);
+    return () => clearTimeout(timer);
+  }, [practice, autoComplete]);
 
   async function submit(event) {
     event.preventDefault();

@@ -240,6 +240,34 @@ test('free database storage through the real Neon HTTP driver', async t => {
     await assert.rejects(() => pilot.begin('owner', messages), /daily question allowance/);
     await pilot.close();
   });
+  await t.test('the two demo histories persist independently through a new database-backed app instance', async () => {
+    const settings = { CHATBOT_DEMO_1_PASSWORD: 'test-only-demo-one-password', CHATBOT_DEMO_2_PASSWORD: 'test-only-demo-two-password' };
+    const first = makePilot(settings);
+    const chat = await first.chatManager.createChat('Shane_Tews', 'Private demo research', 'demo1');
+    await first.chatManager.addMessage(chat.id, { role: 'user', content: 'A private saved question' });
+    await first.close();
+    const next = makePilot(settings);
+    assert.equal(next.login('demo1', settings.CHATBOT_DEMO_1_PASSWORD, 'one').user.id, 'demo1');
+    assert.equal(next.login('demo2', settings.CHATBOT_DEMO_2_PASSWORD, 'two').user.id, 'demo2');
+    assert.equal((await next.chatManager.getUserChats('demo1')).length, 1);
+    assert.equal((await next.chatManager.getUserChats('demo2')).length, 0);
+    assert.equal((await next.chatManager.getChatWithUserCheck(chat.id, 'demo1')).messages[0].content, 'A private saved question');
+    assert.equal(await next.chatManager.getChatWithUserCheck(chat.id, 'demo2'), null);
+    assert.equal(await next.chatManager.getChatWithUserCheck(chat.id, 'owner'), null);
+    await next.close();
+  });
+
+  await t.test('the hundredth daily request is permitted and the hundred-and-first is blocked across accounts', async () => {
+    await pg.query(`INSERT INTO aei_pilot_usage (id,started_at,user_id,model,status,reserved_usd,estimated_usd,input_rate,output_rate,price_source)
+      SELECT 'seed-' || n, $1::timestamptz, 'owner', $2, 'complete', 0, 0, 0.15, 0.50, 'local test' FROM generate_series(1,99) AS n`, [new Date(BASE_TIME - 3600000).toISOString(), MODEL]);
+    const pilot = makePilot();
+    const id = await pilot.begin('demo1', [{ role: 'user', content: 'The hundredth question' }]);
+    await pilot.finish(id, { response: response() });
+    await assert.rejects(() => pilot.begin('demo2', [{ role: 'user', content: 'One too many' }]), /daily question allowance/);
+    assert.equal(pilot.settings.dailyBudget, 0.5);
+    await pilot.close();
+  });
+
   assert.ok(httpRequests > 0);
 });
 

@@ -1,3 +1,4 @@
+const { publicationMetadata } = require('./publicationMetadata');
 // Preserve explicitly identified speakers; a page byline is not a speaker label.
 const AEI_HOSTS = new Set(['aei.org', 'www.aei.org', 'ctse.aei.org', 'cosm.aei.org']);
 const INTERVIEW_TYPES = new Set(['interview_highlights', 'podcast_transcript', 'interview_transcript', 'podcast_description']);
@@ -28,16 +29,8 @@ function knownDate(value) {
   const parsed = new Date(date + 'T00:00:00Z');
   return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date ? date : null;
 }
-function pageDate($) {
-  let date = knownDate($('meta[property="article:published_time"]').attr('content'));
-  function visit(value) {
-    if (!value || typeof value !== 'object') return;
-    if (Array.isArray(value)) { value.forEach(visit); return; }
-    date ||= knownDate(value.datePublished);
-    if (value['@graph']) visit(value['@graph']);
-  }
-  $('script[type="application/ld+json"]').each((_, el) => { try { visit(JSON.parse($(el).text())); } catch { /* Invalid page metadata stays unknown. */ } });
-  return date;
+function pageDate($, pageUrl) {
+  return publicationMetadata($, pageUrl).date;
 }
 function contentContainer($) {
   return ['.post-content', '.entry-content', 'article'].map(selector => $(selector).first()).find(el => el.length) || null;
@@ -95,11 +88,11 @@ function inspectInterview($, pageUrl, { seriesHint = false } = {}) {
   const sourceType = edited || hasHostQuestion ? 'interview_highlights' : 'podcast_description';
   return {
     title, body: parts.join('\n\n'), sourceType,
-    authors: [...new Set($('a.author-link').toArray().map(el => clean($(el).text())).filter(Boolean))],
+    ...publicationMetadata($, pageUrl),
     interview: { series: explicitSeries ? 'Explain to Shane' : null, host, participants: names,
       episodeUrl: episode?.url || (sourceType === 'podcast_description' ? officialUrl(pageUrl) : null),
       transcriptUrl: transcript?.url || null, episodeDate: null },
-    date: pageDate($)
+    date: pageDate($, pageUrl)
   };
 }
 function tagTranscript(raw) {

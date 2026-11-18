@@ -55,3 +55,15 @@ test('the answer prompt distinguishes event dates, search-estimated dates and in
   assert.match(prompt, /not independent proof of when an event happened/);
   assert.match(prompt, /interview guest/);
 });
+
+test('the live two-sentence request excludes explanatory instructions and irrelevant recent job/legal-table results', () => {
+  const actual = 'Identify one U.S. spectrum-allocation development from the past 30 days. Explain it in two sentences and connect it to Shane Tews’s work, citing the web source and the AEI passage separately. If no dated evidence supports a recent development, say so.';
+  const plan = planWebSearch(actual, at);
+  assert.equal(plan.query, 'U.S. spectrum allocation');
+  const sources = prepareWebSources([
+    { title: 'FCC job', url: 'https://www.usajobs.gov/job/123', content: 'Spectrum allocation expertise.', published_date: '2026-11-13' },
+    { title: 'Frequency table', url: 'https://www.ecfr.gov/current/title-47', content: 'Frequency allocations table.', published_date: '2026-10-29' },
+    { title: 'An actual policy announcement', url: 'https://www.fcc.gov/document/example', content: 'The commission announced a rulemaking today.', published_date: '2026-11-13' }
+  ], plan);
+  assert.equal(sources.length, 1); assert.equal(sources[0].id, 'W1'); assert.equal(sources[0].publisher, 'www.fcc.gov');
+});

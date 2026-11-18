@@ -164,3 +164,36 @@ test('a demo login shows research and chat while hiding staff controls', async (
   expect(screen.getByText('Brent Orrell · Clay Calvert · Shane Tews · Will Rinehart')).toBeVisible();
   expect(screen.queryByText(/Saved articles only|No AI credits/i)).not.toBeInTheDocument();
 });
+
+
+test.each(['demo1', 'demo2'])('the %s login always starts with What’s new then the tour and hides staff details', async account => {
+  window.localStorage.setItem('aei-demo-release-guide-seen', '1');
+  fetch.mockImplementation(async url => {
+    if (url.endsWith('/api/auth/login')) return { ok: true, json: async () => ({ token: 'test-only-demo-session', user: { id: account, label: account === 'demo1' ? 'Demo User 1' : 'Demo User 2' }, expiresAt: Date.now() + 10000 }) };
+    if (url.endsWith('/api/auth/logout')) return { ok: true, json: async () => ({ success: true }) };
+    if (url.endsWith('/api/files/domains')) return { ok: true, json: async () => ({ Shane_Tews: { name: 'Shane Tews', file_count: 712 } }) };
+    if (url.endsWith('/api/chat/history')) return { ok: true, json: async () => [] };
+    if (url.endsWith('/api/research/status')) return { ok: true, json: async () => ({ latestArticle: { title: 'Latest example article', date: '2026-11-12', url: 'https://www.aei.org/example/' } }) };
+    throw new Error('Unexpected demo request: ' + url);
+  });
+  render(<App />);
+  for (let attempt = 0; attempt < 2; attempt++) {
+    fireEvent.change(screen.getByLabelText('Account'), { target: { value: account } });
+    fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'test-only-demo-password' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
+    const news = await screen.findByRole('dialog', { name: 'What’s new in the AEI Chatbot' });
+    expect(within(news).getByRole('region', { name: 'Before and now interface comparison' })).toBeVisible();
+    fireEvent.click(within(news).getByRole('button', { name: 'Close dialog' }));
+    fireEvent.click(within(await screen.findByRole('dialog', { name: 'Try AEI Chatbot' })).getByRole('button', { name: 'Skip tour' }));
+    expect(screen.queryByRole('button', { name: 'Files', exact: true })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Usage and costs' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Feedback inbox' })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'AEI Article Search', exact: true }));
+    expect(await screen.findByRole('link', { name: 'Latest example article' })).toBeVisible();
+    expect(screen.getByText('Nov 12, 2026')).toBeVisible();
+    expect(screen.queryByText(/Library refreshed on|Last successful|712 files/)).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Sign out' }));
+    await screen.findByRole('button', { name: 'Sign in' });
+  }
+  expect(fetch.mock.calls.some(([url]) => /usage|feedback|chat\/new|message$/.test(url))).toBe(false);
+});

@@ -11,6 +11,7 @@ const ChatInterface = ({
   active,
   web = false,
   legacy = false,
+  hideUsage = false,
   chatId,
   initialQuestion = '',
   draftScope,
@@ -134,7 +135,9 @@ const ChatInterface = ({
         }));
         setInputValue(messageToSend);
         setSendError(
-          error.code === 'credit_limit'
+          hideUsage && /credits?|tokens?|costs?|usage report|budget|together/i.test(error.message || '')
+            ? 'Answers are temporarily unavailable. Please try again later or let the team know.'
+            : error.code === 'credit_limit'
             ? 'Together.ai credits exhausted - please contact admin.'
             : (error.message || 'The answer could not be completed. Please try again.')
         );

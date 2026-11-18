@@ -530,3 +530,43 @@ test('no dated news in the requested window saves an explanation without a model
   const [row] = await f.pilot.rows('owner'); assert.equal(row.status, 'not_sent'); assert.equal(row.estimated_usd, 0);
   assert.equal(data.chat.messages.at(-1).role, 'assistant'); assert.ok(data.sources.every(source => source.kind !== 'web'));
 });
+
+test('two demo accounts keep separate histories, deny staff access and share only reported answers', async t => {
+  const f = await fixture(t, { env: { CHATBOT_DEMO_1_PASSWORD: 'demo-one-test-only-password', CHATBOT_DEMO_2_PASSWORD: 'demo-two-test-only-password' } });
+  const one = await f.login('demo1', 'demo-one-test-only-password'), two = await f.login('demo2', 'demo-two-test-only-password');
+  const staff = await f.login();
+  assert.equal(one.user.label, 'Demo User 1'); assert.equal(two.user.label, 'Demo User 2');
+  const chat = await f.newChat(one.token);
+  assert.equal((await f.request(`/api/chat/${chat.id}/message`, { token: one.token, method: 'POST', body: { message: 'A private demo question' } })).status, 200);
+  for (const token of [two.token, staff.token]) {
+    assert.equal((await f.request(`/api/chat/${chat.id}`, { token })).status, 404);
+    assert.equal((await f.request(`/api/chat/${chat.id}`, { token, method: 'DELETE' })).status, 404);
+  }
+  assert.equal((await (await f.request('/api/chat/history', { token: one.token })).json()).length, 1);
+  assert.equal((await (await f.request('/api/chat/history', { token: two.token })).json()).length, 0);
+  for (const token of [one.token, two.token]) for (const route of ['/api/usage', '/api/usage.csv', '/api/feedback', '/api/files/content/Test/file.txt']) {
+    assert.equal((await f.request(route, { token })).status, 403);
+  }
+  assert.equal((await f.request(`/api/chat/${chat.id}/feedback`, { token: one.token, method: 'POST', body: { messageIndex: 1, category: 'Incorrect information', detail: 'Please review the answer.' } })).status, 200);
+  const inbox = await (await f.request('/api/feedback', { token: staff.token })).json();
+  assert.equal(inbox.reports.length, 1); assert.equal(inbox.reports[0].reporterLabel, 'Demo User 1');
+  assert.ok(!JSON.stringify(inbox).includes('A private demo question'));
+  const reloaded = new ChatManager(path.join(f.dir, 'chats'));
+  assert.equal((await reloaded.getUserChats('demo1')).length, 1);
+  assert.equal((await reloaded.getUserChats('demo2')).length, 0);
+  const legacy = await f.request('/api/chat/new?version=1', { token: two.token, method: 'POST', body: { domainName: 'Shane_Tews' } });
+  const oldChat = await legacy.json();
+  assert.equal((await f.request(`/api/chat/${oldChat.id}?version=1`, { token: one.token })).status, 404);
+});
+
+test('demo passwords must be unique across all configured accounts', async t => {
+  const pilot = createPilot({ env: { CHATBOT_INTERN_PASSWORD: OWNER, CHATBOT_DEMO_1_PASSWORD: 'same-test-only-demo-password', CHATBOT_DEMO_2_PASSWORD: 'same-test-only-demo-password' }, dataDir: fs.mkdtempSync(path.join(os.tmpdir(), 'aei-demo-password-')) });
+  t.after(() => { pilot.close(); fs.rmSync(pilot.dataDir, { recursive: true, force: true }); });
+  for (const account of ['demo1', 'demo2']) assert.throws(() => pilot.login(account, 'same-test-only-demo-password', account), error => error.code === 'invalid_login');
+  assert.ok(pilot.login('owner', OWNER, 'owner').token);
+});
+
+test('the default daily allowance is 100 total and per account while the spending cap remains', async t => {
+  const f = await fixture(t);
+  assert.equal(f.pilot.settings.dailyQuestions, 100); assert.equal(f.pilot.settings.personQuestions, 100); assert.equal(f.pilot.settings.dailyBudget, 0.5);
+});

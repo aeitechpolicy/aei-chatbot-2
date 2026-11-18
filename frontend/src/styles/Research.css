@@ -83,3 +83,25 @@
   .guided-demo-search > div { flex-wrap: wrap; }
   .guided-demo-search button { width: 100%; }
 }
+
+.guided-demo-coach .guided-demo-assist { border-radius: 7px; background: #eaf3f9; padding: 9px; font-size: .78rem; color: #234f6d; }
+.guided-demo-workspace.is-demonstrating [data-tour-focus="true"]::before { content: '↖'; position: absolute; right: 3px; top: 4px; z-index: 4; font-size: 30px; line-height: 1; color: #143e5c; text-shadow: 1px 1px #fff, -1px -1px #fff; animation: demo-cursor 700ms ease-in-out infinite alternate; pointer-events: none; }
+@keyframes demo-cursor { from { transform: translate(7px, 6px); } to { transform: translate(0, 0); } }
+.before-after-preview { margin-top: 26px; padding: 18px; border: 1px solid #d0dde8; border-radius: 12px; background: #f5f8fb; }
+.before-after-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.before-after-heading h3 { margin: 4px 0 12px; font-size: 1.13rem; color: #163e5b; }
+.before-after-tabs { display: flex; gap: 8px; margin: 14px 0; }
+.before-after-tabs button { flex: 1; display: grid; gap: 4px; padding: 10px; border: 1px solid #cad7e2; border-radius: 8px; text-align: left; background: #fff; color: #456075; font: inherit; }
+.before-after-tabs button[aria-pressed="true"] { background: #153e5b; color: #fff; border-color: #153e5b; }
+.before-after-tabs span { font-size: .76rem; }
+.before-after-screen { margin: 0; overflow: hidden; border-radius: 8px; border: 1px solid #d7e1e9; background: white; }
+.before-after-screen img { width: 100%; aspect-ratio: 1160 / 790; object-fit: contain; object-position: top; display: block; animation: interface-appear 450ms ease-out; }
+.before-after-screen figcaption { padding: 12px; display: grid; gap: 5px; color: #244b67; border-top: 1px solid #d7e1e9; font-size: .84rem; }
+.before-after-points { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; list-style: none; margin: 13px 0; }
+.before-after-points li { padding: 5px 9px; border: 1px solid #cfdee8; border-radius: 15px; background: #fff; color: #27526e; font-size: .76rem; }
+.before-after-note, .whats-new-next { color: #566c7d; font-size: .78rem; line-height: 1.5; }
+@keyframes interface-appear { from { opacity: .3; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .guided-demo-workspace.is-demonstrating [data-tour-focus="true"]::before, .before-after-screen img { animation: none; } }
+@media (max-width: 600px) { .before-after-preview { padding: 11px; } .before-after-heading { align-items: flex-start; } .before-after-heading h3 { font-size: 1rem; } }
+
+.guided-demo-return-hint { flex-basis: 100%; margin: 0 0 8px; color: #36556d; font-size: .84rem; line-height: 1.5; }

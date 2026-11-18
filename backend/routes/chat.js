@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('node:path');
-const { MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS } = require('../utils/pilot');
+const { isDemoAccount, MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS } = require('../utils/pilot');
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
 const { fetchLegacyArticles, legacyPrompt, legacyDomains, legacyFileList, legacyFile } = require('../utils/legacyArchive');
@@ -21,8 +21,8 @@ router.param('chatId', (req, res, next, id) => {
 
 const chatManager = manager || pilot.chatManager || new ChatManager(path.join(pilot.dataDir, 'chats'));
 
-const isLegacy = req => req.auth.id === 'demo' && req.query.version === '1';
-const getUserId = req => isLegacy(req) ? 'demo:version-1' : req.auth.id;
+const isLegacy = req => isDemoAccount(req.auth.id) && req.query.version === '1';
+const getUserId = req => isLegacy(req) ? `${req.auth.id}:version-1` : req.auth.id;
 
 
 // Create new chat

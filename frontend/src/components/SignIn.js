@@ -21,7 +21,8 @@ export default function SignIn() {
       <label htmlFor="account">Account</label>
       <select id="account" value={account} onChange={event => setAccount(event.target.value)} disabled={busy}>
         <option value="owner">Chatbot Intern</option><option value="supervisor">Chatbot RA</option>
-        <option value="demo">Demo User</option><option value="tester">Model Tester</option>
+        <option value="demo1">Demo User 1</option><option value="demo2">Demo User 2</option>
+        <option value="demo">Demo User (original)</option><option value="tester">Model Tester</option>
       </select>
       <label htmlFor="password">Password</label>
       <input id="password" type="password" autoComplete="current-password" value={password} onChange={event => setPassword(event.target.value)} maxLength={256} required disabled={busy} />
