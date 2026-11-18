@@ -126,30 +126,25 @@
 .guided-demo-generation { padding: 14px 18px; margin: 12px 0 20px; border: 1px solid var(--workspace-line); border-radius: 10px; background: var(--workspace-panel); }
 .guided-demo-generation h3 { margin: 0 0 8px; }
 
-/* Keep entry actions visible while only the overview content scrolls. */
-.research-dialog.whats-new-dialog[open] { display: flex; flex-direction: column; overflow: hidden; max-height: min(92dvh, 900px); }
-.whats-new-dialog .research-dialog-header,
-.whats-new-dialog .research-dialog-actions { flex: 0 0 auto; background: var(--workspace-panel); }
-.whats-new-dialog .research-dialog-header h2 { margin: 0; }
-.whats-new-dialog .research-dialog-header button { border: 1px solid var(--workspace-line); border-radius: 8px; padding: 8px 10px; font: inherit; font-size: .8rem; font-weight: 600; white-space: nowrap; }
-.whats-new-dialog .whats-new { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
-.whats-new-dialog .whats-new-stages { display: flex; align-items: center; gap: 8px; color: var(--aei-navy); font-size: .8rem; font-weight: 700; }
-.whats-new-comparison-shortcut { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 14px; padding: 12px; margin: 4px 0 20px; border: 1px solid #cadbe7; border-radius: 10px; background: #eef4f8; color: #163e5b; font: inherit; text-align: left; cursor: pointer; }
-.whats-new-comparison-shortcut strong { display: block; font-size: .95rem; }
-.whats-new-comparison-shortcut small { display: block; margin-top: 5px; font-size: .76rem; line-height: 1.4; }
-.whats-new-mini-screens { display: flex; align-items: center; gap: 5px; flex-shrink: 0; }
-.whats-new-mini-screens img { width: 78px; height: 54px; object-fit: cover; object-position: top; border: 1px solid #cbd8e2; border-radius: 4px; }
+/* The welcome overview and comparison each keep navigation visible. */
+.research-dialog.onboarding-dialog[open] { display: flex; flex-direction: column; overflow: hidden; max-height: min(92dvh, 900px); }
+.onboarding-dialog .research-dialog-header,
+.onboarding-dialog .research-dialog-actions { flex: 0 0 auto; background: var(--workspace-panel); }
+.onboarding-dialog .research-dialog-header h2 { margin: 0; }
+.onboarding-dialog .research-dialog-header button { border: 1px solid var(--workspace-line); border-radius: 8px; padding: 8px 10px; font: inherit; font-size: .8rem; font-weight: 600; white-space: nowrap; }
+.onboarding-dialog .onboarding-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.onboarding-dialog .onboarding-stages { color: var(--aei-navy); font-size: .8rem; font-weight: 700; }
 .whats-new-feature-heading { font-size: 1rem; margin: 0 0 12px; }
-.whats-new-comparison-target { scroll-margin-top: 14px; outline-offset: 3px; }
-.whats-new-dialog .whats-new-next { margin: 0 auto 0 0; max-width: 290px; }
+.onboarding-dialog .onboarding-next { margin: 0 auto 0 0; max-width: 290px; color: var(--workspace-muted); font-size: .78rem; line-height: 1.5; }
+.interface-changes { padding: 14px 22px 20px; }
+.interface-changes .before-after-preview { margin-top: 0; }
+.interface-changes .before-after-screen img { max-height: 36dvh; object-fit: contain; }
 @media (max-width: 600px) {
-  .whats-new-dialog .research-dialog-header { flex-wrap: wrap; padding: 12px 16px; gap: 8px; }
-  .whats-new-dialog .research-dialog-header h2 { font-size: 1.2rem; }
-  .whats-new-dialog .research-dialog-header button { margin-left: auto; }
-  .whats-new-dialog .research-dialog-actions { flex-wrap: wrap; padding: 10px 16px; gap: 8px; }
-  .whats-new-dialog .research-dialog-actions .research-primary { width: 100%; justify-content: center; }
-  .whats-new-dialog .whats-new-next { max-width: none; font-size: .75rem; }
-  .whats-new-comparison-shortcut { gap: 8px; }
-  .whats-new-mini-screens img { width: 44px; height: 40px; }
-  .whats-new-mini-screens { gap: 3px; }
+  .onboarding-dialog .research-dialog-header { flex-wrap: wrap; padding: 12px 16px; gap: 8px; }
+  .onboarding-dialog .research-dialog-header h2 { font-size: 1.2rem; }
+  .onboarding-dialog .research-dialog-header button { margin-left: auto; }
+  .onboarding-dialog .research-dialog-actions { flex-wrap: wrap; padding: 10px 16px; gap: 8px; }
+  .onboarding-dialog .research-dialog-actions .research-primary { width: 100%; justify-content: center; }
+  .onboarding-dialog .onboarding-next { max-width: none; font-size: .75rem; }
+  .interface-changes { padding-inline: 14px; }
 }

@@ -1,8 +1,8 @@
 # Maintainer handoff
 
-## Visible demo entry — November 18, 2026
+## Three-stage demo introduction — November 18, 2026
 
-The What’s new dialog now keeps the header and Start guided demo footer outside its scrollable overview body. The old X is replaced by Continue to demo, accurately describing the existing transition into the tour. A prominent before-and-after shortcut with real interface thumbnails focuses and scrolls directly to the full comparison; a welcome-overview → guided-demo label makes the sequence explicit. Other dialogs retain their normal close button. No backend, account, spending, history or Version 1 changes.
+Demo entry now proceeds through three distinct screens: What’s new → Before-and-after → Guided demo. The comparison is no longer below the feature list or dependent on an optional shortcut. Every continuation from What’s new, including Escape, opens the dedicated comparison; continuing there opens the existing seven-step tour. Back returns to the overview. How to use still opens the tour directly for replay. Header and footer actions remain visible while only the overview/comparison body scrolls. Other dialogs retain their normal close button. No backend, account, spending, history or Version 1 changes.
 
 ## Compare Scholars category and answer explanation — November 18, 2026
 

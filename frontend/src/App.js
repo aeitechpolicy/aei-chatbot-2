@@ -9,6 +9,7 @@ import FeedbackInbox from './components/FeedbackInbox';
 import ArticleSearch from './components/ArticleSearch';
 import DemoWalkthrough from './components/DemoWalkthrough';
 import WhatsNew from './components/WhatsNew';
+import InterfaceChanges from './components/InterfaceChanges';
 import LegacyFrame from './components/LegacyFrame';
 import LegacyFiles from './components/LegacyFiles';
 import LegacySidebar from './components/LegacySidebar';
@@ -232,8 +233,10 @@ function PrivateApp({ session }) {
       </nav>;
 
   const guideDialog = <>
-    {guide === 'whats-new' && <WhatsNew onClose={() => { if (legacy) selectDemoVersion(2); finishGuide('tour'); }}
-      onStartTour={() => { if (legacy) selectDemoVersion(2); finishGuide('tour'); }} />}
+    {guide === 'whats-new' && <WhatsNew onClose={() => { if (legacy) selectDemoVersion(2); finishGuide('comparison'); }}
+      onContinue={() => { if (legacy) selectDemoVersion(2); finishGuide('comparison'); }} />}
+    {guide === 'comparison' && <InterfaceChanges onClose={() => finishGuide('tour')} onStartTour={() => finishGuide('tour')}
+      onBack={() => finishGuide('whats-new')} />}
     {guide === 'tour' && <DemoWalkthrough busy={loading} showWhatsNewLink={isDemo} onClose={() => finishGuide()}
       onTryQuestion={question => { finishGuide(); handleNewChat(question); }}
       onOpenSearch={() => { finishGuide(); setCurrentView('research'); }} />}

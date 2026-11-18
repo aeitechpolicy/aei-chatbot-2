@@ -1,7 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { ArrowRight, BookOpen, Columns2, FileText, Flag, Newspaper, Search } from 'lucide-react';
 import ResearchDialog from './ResearchDialog';
-import BeforeAfterPreview from './BeforeAfterPreview';
 
 const updates = [
   {
@@ -36,38 +35,25 @@ const updates = [
   }
 ];
 
-export default function WhatsNew({ onClose, onStartTour }) {
-  const comparison = useRef(null);
-  function showComparison() {
-    comparison.current?.focus({ preventScroll: true });
-    comparison.current?.scrollIntoView({ behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
-  }
-  return <ResearchDialog title="What’s new in the AEI Chatbot" onClose={onClose} className="whats-new-dialog"
-    closeLabel="Continue to guided demo" closeText="Continue to demo →">
-    <div className="whats-new">
-      <p className="whats-new-stages">Welcome overview <ArrowRight size={14} aria-hidden="true" /> Guided demo</p>
+export default function WhatsNew({ onClose, onContinue }) {
+  return <ResearchDialog title="What’s new in the AEI Chatbot" onClose={onClose} className="onboarding-dialog whats-new-dialog"
+    closeLabel="Continue to before-and-after comparison" closeText="Continue →">
+    <div className="whats-new onboarding-body">
+      <p className="onboarding-stages">1 of 3 · What’s new</p>
       <p>This version brings together research from Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart.</p>
-      <p>Compare Version 1.0 (pre-September 2026) with Version 2.0 (November 2026). Chats are saved separately under each account for future reference.</p>
-      <button type="button" className="whats-new-comparison-shortcut" onClick={showComparison} aria-label="See the before-and-after">
-        <span><strong>See the before-and-after</strong><small>Original chatbot → November 2026 workspace</small></span>
-        <span className="whats-new-mini-screens" aria-hidden="true"><img src="/tour-version1.png" alt="" /><ArrowRight size={16} /><img src="/tour-version2.png" alt="" /></span>
-      </button>
+      <p>Next: a before-and-after comparison of the original chatbot and the November workspace, followed by the guided demo.</p>
       <h3 className="whats-new-feature-heading">Explore the new features</h3>
       <ul className="whats-new-list">
         {updates.map(({ icon: Icon, title, text }) => <li key={title}>
           <Icon size={19} aria-hidden="true" />
-          <div>
-            <h3>{title}</h3>
-            <p>{text}</p>
-          </div>
+          <div><h3>{title}</h3><p>{text}</p></div>
         </li>)}
       </ul>
-      <div ref={comparison} tabIndex={-1} role="region" aria-label="Before-and-after details" className="whats-new-comparison-target"><BeforeAfterPreview /></div>
     </div>
     <footer className="research-dialog-actions walkthrough-actions">
-      <p className="whats-new-next">Next: a guided, seven-step demo. Each step can be skipped or demonstrated.</p>
-      <button type="button" className="research-primary" onClick={onStartTour}>
-        Start guided demo <ArrowRight size={16} aria-hidden="true" />
+      <p className="onboarding-next">Next: the original chatbot and the new workspace, in a dedicated before-and-after comparison.</p>
+      <button type="button" className="research-primary" onClick={onContinue}>
+        See the change <ArrowRight size={16} aria-hidden="true" />
       </button>
     </footer>
   </ResearchDialog>;

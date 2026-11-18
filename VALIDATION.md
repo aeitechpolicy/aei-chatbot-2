@@ -1,8 +1,8 @@
 # Validation record
 
-## Visible demo entry validation — November 18, 2026
+## Three-stage demo introduction validation — November 18, 2026
 
-34 frontend tests passed across seven suites and the production build passed. Tests verify the comparison shortcut focus/scroll, visible entry actions and both demo accounts continuing from the overview into the tour. Browser checks at desktop and 390×844 phone size confirmed that Start guided demo remained inside the viewport initially and after jumping to the comparison, with no horizontal page overflow. The Continue control opened the tour. The temporary viewport override was reset. No AI credits or production data writes were used; backend code was unchanged and backend tests were not repeated.
+35 frontend tests passed across seven suites and the production build passed. Tests verify both demo accounts proceeding through What’s new → dedicated before-and-after screen → guided demo, with no optional comparison shortcut. The separate screen supports version selection and Back. Browser checks at desktop and 390×844 phone size showed the comparison immediately on entry, persistent continuation actions inside the viewport, no horizontal overflow and a working transition into the tour. The temporary viewport override was reset. No AI credits or production data writes were used. Backend code was unchanged and backend tests were not repeated.
 
 ## Compare Scholars and editorial update validation — November 18, 2026
 
