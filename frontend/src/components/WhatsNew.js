@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { ArrowRight, BookOpen, Columns2, FileText, Flag, Newspaper, Search } from 'lucide-react';
 import ResearchDialog from './ResearchDialog';
 import BeforeAfterPreview from './BeforeAfterPreview';
@@ -37,10 +37,22 @@ const updates = [
 ];
 
 export default function WhatsNew({ onClose, onStartTour }) {
-  return <ResearchDialog title="What’s new in the AEI Chatbot" onClose={onClose}>
+  const comparison = useRef(null);
+  function showComparison() {
+    comparison.current?.focus({ preventScroll: true });
+    comparison.current?.scrollIntoView({ behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  }
+  return <ResearchDialog title="What’s new in the AEI Chatbot" onClose={onClose} className="whats-new-dialog"
+    closeLabel="Continue to guided demo" closeText="Continue to demo →">
     <div className="whats-new">
+      <p className="whats-new-stages">Welcome overview <ArrowRight size={14} aria-hidden="true" /> Guided demo</p>
       <p>This version brings together research from Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart.</p>
       <p>Compare Version 1.0 (pre-September 2026) with Version 2.0 (November 2026). Chats are saved separately under each account for future reference.</p>
+      <button type="button" className="whats-new-comparison-shortcut" onClick={showComparison} aria-label="See the before-and-after">
+        <span><strong>See the before-and-after</strong><small>Original chatbot → November 2026 workspace</small></span>
+        <span className="whats-new-mini-screens" aria-hidden="true"><img src="/tour-version1.png" alt="" /><ArrowRight size={16} /><img src="/tour-version2.png" alt="" /></span>
+      </button>
+      <h3 className="whats-new-feature-heading">Explore the new features</h3>
       <ul className="whats-new-list">
         {updates.map(({ icon: Icon, title, text }) => <li key={title}>
           <Icon size={19} aria-hidden="true" />
@@ -50,10 +62,10 @@ export default function WhatsNew({ onClose, onStartTour }) {
           </div>
         </li>)}
       </ul>
-      <BeforeAfterPreview />
+      <div ref={comparison} tabIndex={-1} role="region" aria-label="Before-and-after details" className="whats-new-comparison-target"><BeforeAfterPreview /></div>
     </div>
     <footer className="research-dialog-actions walkthrough-actions">
-      <p className="whats-new-next">Next: try the guided demo. Each step can be skipped or demonstrated.</p>
+      <p className="whats-new-next">Next: a guided, seven-step demo. Each step can be skipped or demonstrated.</p>
       <button type="button" className="research-primary" onClick={onStartTour}>
         Start guided demo <ArrowRight size={16} aria-hidden="true" />
       </button>

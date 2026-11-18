@@ -1,5 +1,9 @@
 # Maintainer handoff
 
+## Visible demo entry — November 18, 2026
+
+The What’s new dialog now keeps the header and Start guided demo footer outside its scrollable overview body. The old X is replaced by Continue to demo, accurately describing the existing transition into the tour. A prominent before-and-after shortcut with real interface thumbnails focuses and scrolls directly to the full comparison; a welcome-overview → guided-demo label makes the sequence explicit. Other dialogs retain their normal close button. No backend, account, spending, history or Version 1 changes.
+
 ## Compare Scholars category and answer explanation — November 18, 2026
 
 Compare Scholars is now a separate Version 2 category beside Article Chat, AEI Article Search and AEI + Web. The old ordinary-chat toggle is removed. Users select two to four scholars through named toggle buttons; one-name submissions are disabled. The API validates unique, allowed scholar IDs before any retrieval/provider call and retrieves only those chosen authors. Omitting the optional selection retains the previous all-four API behavior, including Model Tester compatibility. Existing missing-evidence and quote/citation protections remain. Saved comparison groups restore the chosen names when opened in comparison mode; switching into the category starts a new General-scope chat. No new dependencies, environment variables, database migration or extra model request.

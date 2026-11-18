@@ -1,5 +1,9 @@
 # Validation record
 
+## Visible demo entry validation — November 18, 2026
+
+34 frontend tests passed across seven suites and the production build passed. Tests verify the comparison shortcut focus/scroll, visible entry actions and both demo accounts continuing from the overview into the tour. Browser checks at desktop and 390×844 phone size confirmed that Start guided demo remained inside the viewport initially and after jumping to the comparison, with no horizontal page overflow. The Continue control opened the tour. The temporary viewport override was reset. No AI credits or production data writes were used; backend code was unchanged and backend tests were not repeated.
+
 ## Compare Scholars and editorial update validation — November 18, 2026
 
 133 backend tests and 33 frontend tests passed with zero failures; the CI production build passed. New checks cover selected-author retrieval, invalid/duplicate/unknown/fewer-than-two selections rejected before provider use, exactly one provider call, persisted comparison groups, the top-level category and request payload, disabling a one-scholar submission, interactive practice selection and all seven user-paced tour steps without API calls. The local browser check showed the new category, correct selected-name states, two-scholar picker and updated What’s new/tour. All model/search responses were simulated, no production data or credits were used, and there are no new dependencies. Existing non-failing toolchain/React warnings remain. Post-deployment live answer quality still needs a new question.

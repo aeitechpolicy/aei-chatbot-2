@@ -211,7 +211,7 @@ test.each(['demo1', 'demo2'])('the %s login always starts with What’s new then
     fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
     const news = await screen.findByRole('dialog', { name: 'What’s new in the AEI Chatbot' });
     expect(within(news).getByRole('region', { name: 'Before and now interface comparison' })).toBeVisible();
-    fireEvent.click(within(news).getByRole('button', { name: 'Close dialog' }));
+    fireEvent.click(within(news).getByRole('button', { name: 'Continue to guided demo' }));
     fireEvent.click(within(await screen.findByRole('dialog', { name: 'Try AEI Chatbot' })).getByRole('button', { name: 'Skip tour' }));
     expect(screen.queryByRole('button', { name: 'Files', exact: true })).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Usage and costs' })).not.toBeInTheDocument();
