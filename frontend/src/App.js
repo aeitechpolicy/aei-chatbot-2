@@ -373,7 +373,7 @@ function App() {
     }
     return () => window.removeEventListener('aei-session-changed', changed);
   }, []);
-  if (checking) return <main className="sign-in-page"><p role="status">Checking your session…</p></main>;
+  if (checking) return <main className="sign-in-page"><p role="status">Checking session…</p></main>;
   if (!session) return <>{error && <p role="alert">{error}</p>}<SignIn /></>;
   if (session.user.id === 'tester') return <ModelTester key={session.user.id} session={session} />;
   return <PrivateApp key={session.user.id} session={session} />;

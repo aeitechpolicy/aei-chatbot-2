@@ -343,7 +343,7 @@ test('catalog-only results produce a saved response without a provider call or c
   const { token } = await f.login(); const chat = await f.newChat(token);
   const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'An unsupported topic' } });
   assert.equal(response.status, 200); const body = await response.json();
-  assert.equal(body.aiUsed, false); assert.match(body.response, /couldn't find matching evidence/);
+  assert.equal(body.aiUsed, false); assert.match(body.response, /No matching evidence was found/);
   assert.equal(body.chat.messages.length, 2); assert.equal(body.chat.title, 'An unsupported topic'); assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
 });
 test('General mode supplies bounded article sources and records citation notices in history', async t => {

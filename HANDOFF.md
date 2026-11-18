@@ -1,10 +1,12 @@
 # Maintainer handoff
 
-## Compare Scholars category — November 18, 2026
+## Compare Scholars category and answer explanation — November 18, 2026
 
 Compare Scholars is now a separate Version 2 category beside Article Chat, AEI Article Search and AEI + Web. The old ordinary-chat toggle is removed. Users select two to four scholars through named toggle buttons; one-name submissions are disabled. The API validates unique, allowed scholar IDs before any retrieval/provider call and retrieves only those chosen authors. Omitting the optional selection retains the previous all-four API behavior, including Model Tester compatibility. Existing missing-evidence and quote/citation protections remain. Saved comparison groups restore the chosen names when opened in comparison mode; switching into the category starts a new General-scope chat. No new dependencies, environment variables, database migration or extra model request.
 
 What’s new describes the category and picker, the interface comparison now says four modes, and the user-paced guided tour has a seventh, interactive scholar-selection practice step. The practice panels explain the layout without inventing scholar positions or making API calls. This combined package also includes the previously prepared source-first reply display change. Version 1 is preserved.
+
+The demo now explains retrieval, model drafting, numbered references and quotation/reference checks, including why shorter answers or related articles may appear. The visible message states “Responses are actively being fine-tuned.” Partial-answer diagnostics remain stored but are presented as a calmer, neutral source-review note. Modern interface instructions and generated-narration guidance use an impersonal voice; original source quotations, article titles and the frozen Version 1 interface retain their original wording. No training job or model-weight change is performed.
 
 ## Source-first replies — November 18, 2026
 

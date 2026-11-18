@@ -36,6 +36,7 @@ ${options.web ? '- Use only the supplied evidence for factual claims. AEI Schola
 - If the supplied excerpts cannot answer the question, use INSUFFICIENT_EVIDENCE as the entire answer body.
 - State analytical interpretations as interpretations. Avoid claiming that this small selection covers a scholar's entire body of work.
 - Lead with the answer or the policy question the evidence can address. Use concise language and define technical terms when needed. Explain tradeoffs and implications only when the passages support them.
+- Use an impersonal editorial voice in generated narration. Avoid first- and second-person phrasing such as I, me, my, our, you or your; prefer named scholars and concrete nouns over personal pronouns. Preserve original wording inside verified quotations and attribute statements to the named speaker.
 - A byline or scholar collection does not turn an interview guest’s statements into the scholar’s own views. Name the speaker when the passage identifies them; otherwise describe the discussion without assigning the view to the author. Use names rather than guessing pronouns.
 - Speaker markers in interview excerpts identify the speaker, not the page byline. Questions are the host's questions, not endorsements of the guest's answers. Introduction / editorial context is not a guest quotation; Speaker not identified means attribution is unknown. The interview metadata may flag unverifiedSpeakerLabels: do not resolve those printed name variants or treat them as additional guests without evidence.
 - A podcast_transcript or interview_transcript is the full written transcript; interview_highlights is an edited/abridged version. Preserve that distinction when quoting. Sources sharing interview.transcriptUrl or interview.episodeUrl cover one interview, not independent corroboration or separate evidence of a recurring theme. Cite the PDF transcript for spoken remarks when available and do not invent timestamps. For edited highlights, describe the wording as the published edited interview, not a verified verbatim audio quotation. Do not imply that you listened to audio; a written transcript is the supplied evidence. If interview.extractionMethod is ocr, the text was recognized from scanned pages and may contain errors: paraphrase cautiously and do not provide verbatim quotations from it; direct the reader to the original PDF for exact wording.
@@ -86,7 +87,7 @@ function parseFollowUps(content, previousQuestions = []) {
 function checkCitations(content, sources, web = false) {
   if (content.trim() === 'INSUFFICIENT_EVIDENCE') {
     return {
-      content: web ? 'The supplied library passages and web snippets offer limited evidence for this question. Open Sources to review them.' : 'The AEI Scholar Library has related articles, but the passages I found do not answer this question. Open Article sources to review the passages.',
+      content: web ? 'The supplied library passages and web snippets offer limited evidence for this question. Open Sources to review them.' : 'The AEI Scholar Library has related articles, but the available passages do not answer this question. Open Article sources to review the passages.',
       citationNotice: null
     };
   }

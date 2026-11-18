@@ -192,14 +192,14 @@ router.post('/:chatId/message', async (req, res) => {
     }
 
     // Get chat
-    if (message.length > MAX_QUESTION_CHARS) return res.status(413).json({ error: `Please keep your question under ${MAX_QUESTION_CHARS} characters.`, code: 'input_limit' });
+    if (message.length > MAX_QUESTION_CHARS) return res.status(413).json({ error: `Please keep the question under ${MAX_QUESTION_CHARS} characters.`, code: 'input_limit' });
     const chat = await chatManager.getChatWithUserCheck(chatId, getUserId(req));
     if (!chat) {
       return res.status(404).json({ error: 'Chat not found' });
     }
 
     if (compare && chat.domainName !== 'General') {
-      return res.status(400).json({ error: 'Start a chat with All 4 scholars to compare their work.' });
+      return res.status(400).json({ error: 'Start a new comparison to choose scholars.' });
     }
 
     const userMessage = { role: 'user', content: message };
@@ -225,7 +225,7 @@ router.post('/:chatId/message', async (req, res) => {
     if (!legacy && !web && !archiveSources.length) {
       const aiResponse = {
         role: 'assistant',
-        content: compare ? 'The AEI Scholar Library has limited evidence for this comparison.' : "I couldn't find matching evidence in the AEI Scholar Library. Try a specific topic, another scholar, or AEI Article Search.",
+        content: compare ? 'The AEI Scholar Library has limited evidence for this comparison.' : "No matching evidence was found in the AEI Scholar Library. Try a specific topic, another scholar, or AEI Article Search.",
         sources: [],
         searchMode: compare ? 'compare' : 'no_sources',
         ...(compare ? { comparison: parseComparison('', groups) } : {})
@@ -272,7 +272,7 @@ router.post('/:chatId/message', async (req, res) => {
           pendingComparisons.delete(id);
         }
         usageId = null;
-        const content = `I could not verify a web result with a reported publication or update date between ${webPlan.window.from} and ${webPlan.window.to}. ${archiveSources.length ? 'The AEI passages below provide background, but they do not establish a development in that period.' : 'No matching AEI passages were found either.'} Try a wider date window or a more specific topic.`;
+        const content = `No web result could be verified with a reported publication or update date between ${webPlan.window.from} and ${webPlan.window.to}. ${archiveSources.length ? 'The AEI passages below provide background without establishing a development in that period.' : 'No matching AEI passages were found either.'} Try a wider date window or a more specific topic.`;
         const aiResponse = { role: 'assistant', content, sources: archiveSources, searchMode: 'web' };
         await chatManager.addMessage(chatId, userMessage);
         await chatManager.addMessage(chatId, aiResponse, needsTitle ? fallbackChatTitle(message) : null);

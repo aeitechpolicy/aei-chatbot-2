@@ -121,3 +121,7 @@
 .has-whats-new .marker-how-to { left: 70%; }
 .guided-demo-return-guide figcaption { margin-top: 14px; font-size: .9rem; line-height: 1.6; color: #415e74; }
 @media (max-width: 600px) { .guided-demo-return-guide { padding: 16px; } .guided-demo-return-guide h3 { font-size: 1.35rem; } .guided-demo-return-guide > p, .guided-demo-return-guide li { font-size: 1rem; } .help-picture-marker { width: 25px; height: 25px; } }
+
+.citation-notice.citation-review-note { background: #eef4f8; color: #29475d; }
+.guided-demo-generation { padding: 14px 18px; margin: 12px 0 20px; border: 1px solid var(--workspace-line); border-radius: 10px; background: var(--workspace-panel); }
+.guided-demo-generation h3 { margin: 0 0 8px; }

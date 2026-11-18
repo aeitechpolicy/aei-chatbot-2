@@ -198,13 +198,13 @@ const ChatInterface = ({
       {empty && !legacy ? (
         <div className="workspace-intro">
           <p className="workspace-kicker">{web ? 'Experimental' : 'AEI Chatbot'}</p>
-          <h2>{web ? 'Research with AEI and the web' : comparisonMode ? 'How do their perspectives compare?' : 'What policy question are you researching?'}</h2>
-          <p>{web ? 'Find relevant scholarship and additional context from the web.' : comparisonMode ? 'Choose two to four scholars and ask one question. Compare their perspectives and see where the library has limited evidence.' : 'Ask about work in the AEI Scholar Library.'}</p>
+          <h2>{web ? 'Research with AEI and the web' : comparisonMode ? 'Compare scholar perspectives' : 'Explore a policy question'}</h2>
+          <p>{web ? 'Find relevant scholarship and additional context from the web.' : comparisonMode ? 'Choose two to four scholars and ask one question. Compare perspectives and identify limits in the available evidence.' : 'Ask about work in the AEI Scholar Library.'}</p>
         </div>
       ) : (
         <div className="messages-container">
           {chatLoadError && !chatReady ? (
-            <p className="workspace-meta" role="alert">This chat could not be opened. Select it again from your chat history or start a new chat.</p>
+            <p className="workspace-meta" role="alert">This chat could not be opened. Select the conversation again from chat history or start a new chat.</p>
           ) : (
             <Messages messages={currentChat?.messages || []} loading={sendingMessage || loading || !chatReady} title={currentChat?.title} chatId={currentChat?.id} onFollowUp={composerDisabled ? undefined : fillFollowUp} />
           )}
@@ -242,7 +242,7 @@ const ChatInterface = ({
         {!legacy && <div className="chat-research-options">
           {web ? <p className="workspace-meta" role="status">
             {webAvailable === null ? 'Checking web search availability…' : webAvailable
-              ? 'Your question is used to search the web.'
+              ? 'The question is used to search the web.'
               : 'Web search is currently unavailable.'}
           </p> : null}
         </div>}
@@ -252,10 +252,10 @@ const ChatInterface = ({
             value={inputValue}
             onChange={handleInputChange}
             onKeyDown={handleKeyPress}
-            aria-label="Ask about our scholars’ work"
+            aria-label="Ask about the scholars’ work"
             placeholder={legacy
               ? (scope === 'General' ? 'Ask me anything...' : `Ask about ${(SCHOLARS[scope] || scope).toLowerCase()}...`)
-              : web ? 'Ask a question for AEI and web research…' : comparisonMode ? 'Ask one question for the selected scholars…' : 'Ask about our scholars’ work…'}
+              : web ? 'Ask a question for AEI and web research…' : comparisonMode ? 'Ask one question for the selected scholars…' : 'Ask about the scholars’ work…'}
             className="chat-input"
             rows="1"
             maxLength={6000}

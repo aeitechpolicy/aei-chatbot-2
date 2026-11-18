@@ -20,11 +20,11 @@ test('Compare Scholars has its own category and sends the selected pair through 
   });
   render(<App />);
   fireEvent.click(await screen.findByRole('button', { name: 'Compare Scholars', exact: true }));
-  expect(screen.getByRole('heading', { name: 'How do their perspectives compare?' })).toBeVisible();
+  expect(screen.getByRole('heading', { name: 'Compare scholar perspectives' })).toBeVisible();
   const picker = within(screen.getByRole('group', { name: /Choose scholars to compare/ }));
   fireEvent.click(picker.getByRole('button', { name: 'Brent Orrell' }));
   fireEvent.click(picker.getByRole('button', { name: 'Will Rinehart' }));
-  fireEvent.change(screen.getByLabelText('Ask about our scholars’ work'), { target: { value: 'Compare their approach to age verification.' } });
+  fireEvent.change(screen.getByLabelText('Ask about the scholars’ work'), { target: { value: 'Compare their approach to age verification.' } });
   fireEvent.click(screen.getByRole('button', { name: 'Send message' }));
   await waitFor(() => expect(submitted).toEqual({ message: 'Compare their approach to age verification.', mode: 'compare', comparisonScholars: ['Clay_Calvert', 'Shane_Tews'] }));
   expect(await screen.findByText('Comparing: Clay Calvert, Shane Tews')).toBeVisible();
@@ -173,7 +173,7 @@ test('a demo login shows research and chat while hiding staff controls', async (
   fireEvent.click(screen.getByRole('button', { name: 'Shane Tews' }));
   expect(general).toHaveAttribute('aria-pressed', 'false');
   expect(fetch.mock.calls.some(([url]) => url.endsWith('/api/chat/new'))).toBe(false);
-  fireEvent.change(screen.getByRole('textbox', { name: 'Ask about our scholars’ work' }), { target: { value: 'Spectrum sharing' } });
+  fireEvent.change(screen.getByRole('textbox', { name: 'Ask about the scholars’ work' }), { target: { value: 'Spectrum sharing' } });
   fireEvent.click(screen.getByRole('button', { name: 'Send message' }));
   expect(await screen.findByText('Scholar: Shane Tews')).toBeVisible();
   await waitFor(() => expect(screen.getByRole('button', { name: 'New Chat' })).toBeEnabled());

@@ -1,8 +1,10 @@
 # Validation record
 
-## Compare Scholars category validation — November 18, 2026
+## Compare Scholars and editorial update validation — November 18, 2026
 
 133 backend tests and 33 frontend tests passed with zero failures; the CI production build passed. New checks cover selected-author retrieval, invalid/duplicate/unknown/fewer-than-two selections rejected before provider use, exactly one provider call, persisted comparison groups, the top-level category and request payload, disabling a one-scholar submission, interactive practice selection and all seven user-paced tour steps without API calls. The local browser check showed the new category, correct selected-name states, two-scholar picker and updated What’s new/tour. All model/search responses were simulated, no production data or credits were used, and there are no new dependencies. Existing non-failing toolchain/React warnings remain. Post-deployment live answer quality still needs a new question.
+
+After the explanation and impersonal-copy changes, all 133 backend and 33 frontend tests and the CI build passed again. The browser preview confirmed the answer-generation explanation, active-refinement wording and neutral notice for an existing stored partial answer. Citation diagnostic data and the ability to report an answer remain intact. The revision adds no paid retry or provider request.
 
 ## Source-first reply validation — November 18, 2026
 

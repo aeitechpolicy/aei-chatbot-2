@@ -80,7 +80,7 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
   return <div className={`message ${message.role}`}>
     <div className="message-header">
       <div className="message-icon">{isUser ? <User size={20} /> : <Bot size={20} />}</div>
-      <div className="message-role">{isUser ? 'You' : 'Assistant'}</div>
+      <div className="message-role">{isUser ? 'Question' : 'Assistant'}</div>
       {experimental && <span className="answer-mode-label">AEI + Web</span>}
     </div>
     {experimental && !sources.some(source => source?.id?.startsWith('S')) && <p className="answer-source-note">The web search returned results. The AEI Scholar Library has no matching passages for this question.</p>}
@@ -88,8 +88,8 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
       <div className="message-content">
         {sourceOnly ? <>
           <p>{experimental
-            ? 'I found related articles and web sources. Read the relevant passages below.'
-            : 'I found related articles in the AEI Scholar Library. Read the relevant passages below.'}</p>
+            ? 'Related articles and web sources are shown below.'
+            : 'Related articles from the AEI Scholar Library are shown below.'}</p>
           <section aria-label={experimental ? 'Related sources' : 'Related articles'}>
             <SourceCards sources={sources} chatFeedback={canReport ? { chatId, messageIndex } : undefined} />
           </section>
@@ -106,7 +106,9 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
       </div>
       {selected && <CitationPassage source={selected} onClose={closeSource} />}
     </div>
-    {!sourceOnly && message.citationNotice && <p className="citation-notice" role="note">{message.citationNotice}</p>}
+    {!sourceOnly && message.citationNotice && <p className={`citation-notice ${message.citationNotice.startsWith('Some passages were omitted') ? 'citation-review-note' : ''}`} role="note">{message.citationNotice.startsWith('Some passages were omitted')
+      ? 'This answer was shortened after a source-reference or quotation check. Related passages remain available in the sources.'
+      : message.citationNotice}</p>}
     {canReport && <div className="message-tools">
       {!feedbackSent && <span className="feedback-hint" id={feedbackHintId}>Something wrong with this answer?</span>}
       <button className="research-secondary" type="button" aria-describedby={feedbackSent ? undefined : feedbackHintId}

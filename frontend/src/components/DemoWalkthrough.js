@@ -20,13 +20,13 @@ const webSource = {
 const answer = 'Oslan recommends checking whether account credentials have appeared in a breach and reviewing older accounts that still contain personal information. [S1]';
 const brief = buildResearchBrief({ content: answer, sources: [sampleSource] }, 'Protecting personal accounts');
 const steps = [
-  { title: 'Choose a mode', help: 'Select AEI Article Search. Article Chat answers from the Scholar Library; Compare Scholars lets you choose whose perspectives to compare; AEI + Web adds outside material.' },
-  { title: 'Find an article', help: 'Search Greg Oslan. In real search, you can also choose a scholar, date range, or Newest first. Select results to copy a source list.' },
+  { title: 'Choose a mode', help: 'Select AEI Article Search. Article Chat answers from the Scholar Library; Compare Scholars supports selected-scholar comparisons; AEI + Web adds outside material.' },
+  { title: 'Find an article', help: 'Search Greg Oslan. Live search also includes scholar filters, date ranges, and Newest first. Select results to copy a source list.' },
   { title: 'Open the citation', help: 'Select [S1] to read the supporting passage. Shane Tews is the author of this article; Greg Oslan is the guest speaking in the passage.' },
   { title: 'Preview a research brief', help: 'Open the brief, review the findings and linked source, and copy the text if useful. It is made from the answer already on screen.' },
   { title: 'Try AEI + Web', help: 'Select AEI + Web, then [W1]. This prepared comparison connects the AEI interview with NIST guidance. [S1] identifies AEI evidence; [W1] identifies an outside source.' },
-  { title: 'Report a problem', help: 'Select Send to the team, choose a reason, and explain what needs correcting. This practice form sends nothing. In real use, staff see the answer or source you report and your explanation.' },
-  { title: 'Compare selected scholars', help: 'Open Compare Scholars and select two to four names. Ask one question to see their perspectives side by side. The live answer uses only the selected scholars and flags limited evidence. This practice shows the controls, not generated findings.' }
+  { title: 'Report a problem', help: 'Select Send to the team, choose a reason, and explain what needs correcting. This practice form sends nothing. In real use, staff receive the reported answer or source and the submitted explanation.' },
+  { title: 'Compare selected scholars', help: 'Open Compare Scholars and select two to four names. Ask one question to compare perspectives side by side. The live answer uses only the selected scholars and flags limited evidence. This practice shows the controls, not generated findings.' }
 ];
 const modes = [
   { key: 'chat', label: 'Article Chat', icon: MessageCircle },
@@ -80,7 +80,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   }
   async function copySourceList() {
     try { await navigator.clipboard.writeText(`${sampleSource.title}\n${sampleSource.author} · ${sampleSource.date}\n${sampleSource.url}`); setCopyStatus('Sample source list copied.'); }
-    catch { setCopyStatus('Clipboard access is unavailable. You can copy the title and link from the sample result.'); }
+    catch { setCopyStatus('Clipboard access is unavailable. The sample title and link can be copied manually.'); }
   }
   function advanceTour() {
     run.current++; setShowing(false); setBriefOpen(false); setFeedbackOpen(false); showStep(step + 1);
@@ -112,7 +112,13 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
     </section>;
   }
   return <ResearchDialog title="Try AEI Chatbot" onClose={onClose} className="guided-demo-dialog">
-    <div className="guided-demo-intro"><span className="guided-demo-badge">Guided practice</span><p>Try a prepared example. Nothing is sent to the chatbot or saved to your chat history.</p></div>
+    <div className="guided-demo-intro"><span className="guided-demo-badge">Guided practice</span><p>Explore a prepared example. Practice activity is not sent to the chatbot or saved to chat history.</p></div>
+    <section className="guided-demo-generation" aria-label="How answers are generated">
+      <h3>How answers are generated</h3>
+      <p>Each question starts with a search for relevant passages from the selected scholars. An AI model then drafts a response using those passages and adds numbered source references. AEI + Web also includes outside search results, labelled separately.</p>
+      <p>A source check looks for missing references and checks longer quotations against the supplied passages. When wording needs further review, a shorter answer or related articles may appear instead. Source links and excerpts remain available for closer reading.</p>
+      <p><strong>Responses are actively being fine-tuned.</strong> Reports submitted through <strong>Send to the team</strong> help improve relevance, wording, and source quality.</p>
+    </section>
     <div className="guided-demo-layout">
       <aside className="guided-demo-guide" aria-label="Tour checklist">
         <div className="walkthrough-progress"><span>{completed.length} of {steps.length} complete</span><progress value={completed.length} max={steps.length} aria-label="Walkthrough progress" /></div>
@@ -120,23 +126,23 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
           <span className={`guided-demo-step-number ${completed.includes(index) ? 'is-complete' : ''}`} aria-label={completed.includes(index) ? 'Completed' : `Step ${index + 1}`}>{completed.includes(index) ? <Check size={14} aria-hidden="true" /> : index + 1}</span>{item.title}
         </button></li>)}</ol>
         <section className="guided-demo-coach" aria-live="polite"><p className="workspace-kicker">{finished ? 'Practice complete' : `Step ${step + 1}`}</p>
-          <h3 ref={heading} tabIndex={-1}>{finished ? 'You’re ready to explore' : steps[step].title}</h3>
+          <h3 ref={heading} tabIndex={-1}>{finished ? 'Ready to explore' : steps[step].title}</h3>
           <p>{finished ? 'Use the same controls in the real chatbot. Check the sources, keep interview speakers distinct, and report anything that needs attention.' : steps[step].help}</p>
-          {!finished && <p className="guided-demo-assist">{showing ? 'Showing this step for you…' : completed.includes(step) ? `Take your time. Select ${step === steps.length - 1 && completed.includes(step) ? 'Finish tour' : 'Next'} when you’re ready.` : 'Need a hand? Next will show this step. You can read it for as long as you like, then select Next again to continue.'}</p>}
+          {!finished && <p className="guided-demo-assist">{showing ? 'Demonstrating this step…' : completed.includes(step) ? `Review this step, then select ${step === steps.length - 1 && completed.includes(step) ? 'Finish tour' : 'Next'} to continue.` : 'Select Next for a demonstration. The step remains open for review; select Next again to continue.'}</p>}
         </section>
       </aside>
       <section className={`guided-demo-workspace ${showing ? 'is-demonstrating' : ''}`} aria-label="Practice workspace" aria-busy={showing}>
         <div className="guided-demo-workspace-heading"><strong>AEI Chatbot</strong><span>Prepared example</span></div>
         <nav className="guided-demo-modes" aria-label="Practice research modes">{modes.map(({key, label, icon: Icon}) => <button key={key} type="button" disabled={showing} aria-pressed={mode === key} data-tour-focus={(step === 0 && key === 'search') || (step === 4 && key === 'web' && mode !== 'web')} onClick={() => chooseMode(key)}><Icon size={15} aria-hidden="true" />{label}</button>)}</nav>
         {mode === 'compare' && <>
-          <p className="guided-demo-mode-description">Choose two to four scholars, then ask the same question of their work.</p>
+          <p className="guided-demo-mode-description">Choose two to four scholars, then ask the same question about the selected publications.</p>
           <fieldset className="chat-scope-picker"><legend>Practice: choose scholars to compare</legend>
             {Object.entries(SCHOLARS).map(([key, name]) => <button type="button" key={key} disabled={showing} aria-pressed={comparisonScholars.includes(key)} onClick={() => {
               const next = comparisonScholars.includes(key) ? comparisonScholars.filter(item => item !== key) : [...comparisonScholars, key];
               setComparisonScholars(next); if (step === 6 && next.length >= 2) mark(6);
             }}>{name}</button>)}
           </fieldset>
-          <p role="status">{comparisonScholars.length < 2 ? 'Select at least two scholars, or use Next to see an example.' : 'These are the scholars your comparison would include.'}</p>
+          <p role="status">{comparisonScholars.length < 2 ? 'Select at least two scholars, or use Next to see an example.' : 'The comparison would include the selected scholars.'}</p>
           <div className="scholar-comparison" aria-label="Practice selected scholars">{comparisonScholars.map(key => <section key={key}><h3>{SCHOLARS[key]}</h3><p>The live comparison would show this scholar’s perspective, supporting sources, and any limits in the evidence.</p></section>)}</div>
         </>}
         {mode === 'search' && <>
@@ -153,7 +159,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
         </>}
         {mode === 'web' && <>
           <p className="guided-demo-mode-description">AEI + Web brings outside context alongside the scholar material. This is a prepared example, not a live search or a claim about today’s news.</p>
-          {step < 2 ? <p className="guided-demo-placeholder">Choose AEI Article Search to start, or select Next to have that step shown for you.</p> : <>
+          {step < 2 ? <p className="guided-demo-placeholder">Choose AEI Article Search to start, or select Next to see a demonstration of that step.</p> : <>
             <p className="guided-demo-question"><strong>Example question</strong><br />How does the AEI interview’s account-safety advice compare with NIST’s guidance?</p>
             <article className="guided-demo-answer" aria-label="Prepared AEI plus Web answer"><p><strong>AEI interview:</strong> Greg Oslan recommends checking whether an email address has appeared in data breaches. <button type="button" className="source-reference citation-button" aria-label="Open sample AEI web citation S1" onClick={() => setWebPassage('S1')}>[S1]</button></p>
               <p><strong>Outside guidance:</strong> NIST recommends a password manager for accounts requiring passwords. This adds a practical way to manage account credentials. <button type="button" className="source-reference citation-button" aria-label="Open sample web citation W1" data-tour-focus={step === 4 && webPassage !== 'W1'} onClick={() => { setWebPassage('W1'); mark(4); }}>[W1]</button></p>
@@ -161,7 +167,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
             </article>
           </>}
         </>}
-        {mode === 'chat' && <>{step < 2 ? <p className="guided-demo-placeholder">Start with AEI Article Search, or select Next to have the step shown for you.</p> : <>
+        {mode === 'chat' && <>{step < 2 ? <p className="guided-demo-placeholder">Start with AEI Article Search, or select Next to see a demonstration of the step.</p> : <>
           <p className="guided-demo-question"><strong>Example question</strong><br />{sampleQuestion}</p><article className="guided-demo-answer" aria-label="Prepared sample answer"><p className="workspace-kicker">Prepared answer</p>
             <p>Oslan recommends checking whether account credentials have appeared in a breach and reviewing older accounts that still contain personal information. <button type="button" className="source-reference citation-button" data-tour-focus={step === 2 && !passage} aria-label="Open sample citation S1" onClick={() => { setPassage(!passage); mark(2); }}>[S1]</button></p>
             {passage && sourcePassage(sampleSource, 'Sample source passage')}
@@ -173,17 +179,17 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
       </section>
     </div>
     {finished && <section className="guided-demo-return-guide" aria-label="Where to find help again">
-      <h3 ref={completionHeading} tabIndex={-1}>You can come back anytime</h3>
+      <h3 ref={completionHeading} tabIndex={-1}>Help is always available</h3>
       <p>Look in the <strong>top-right corner of the chatbot</strong>, as shown in the picture below.</p>
       <ol>
         {showWhatsNewLink && <li><strong>What’s new</strong> — review the latest features and the before-and-after comparison.</li>}
-        <li><strong>How to use</strong> — replay this guided demo whenever you need a reminder.</li>
+        <li><strong>How to use</strong> — replay this guided demo at any time.</li>
       </ol>
       <figure><div className={`guided-demo-help-picture ${showWhatsNewLink ? 'has-whats-new' : ''}`}>
         <img src={showWhatsNewLink ? '/tour-help-header.png' : '/tour-help-how-to.png'} alt={showWhatsNewLink ? 'Screenshot of the top-right chatbot toolbar showing What’s new and How to use next to each other.' : 'Screenshot of the How to use button at the top of the chatbot.'} />
         {showWhatsNewLink && <span className="help-picture-marker marker-whats-new" aria-hidden="true">1</span>}
         <span className="help-picture-marker marker-how-to" aria-hidden="true">{showWhatsNewLink ? '2' : '1'}</span>
-      </div><figcaption>This picture shows where to look. After you close the tour, use these buttons at the top of the chatbot.</figcaption></figure>
+      </div><figcaption>This picture shows where to look. After closing the tour, use these buttons at the top of the chatbot.</figcaption></figure>
     </section>}
     <footer className="research-dialog-actions guided-demo-actions"><button type="button" className="walkthrough-dismiss" onClick={onClose}>{finished ? 'Close tour' : 'Skip tour'}</button>
       <button type="button" className="research-secondary" disabled={showing} onClick={restart}><RotateCcw size={14} aria-hidden="true" /> Restart</button>

@@ -46,11 +46,11 @@ export default function FeedbackDialog({ chatId, messageIndex, answer, source, s
 
   return <ResearchDialog title="Send to the team" onClose={onClose}>
     {sent ? <div className="feedback-confirmation">
-      <p role="status">{practice ? 'Practice complete. No report was sent.' : 'Your report was sent to the staff inbox.'}</p>
+      <p role="status">{practice ? 'Practice complete. No report was sent.' : 'Report sent to the staff inbox.'}</p>
       <button type="button" className="research-primary" onClick={onClose}>Done</button>
       {practice && onContinue && <button type="button" className="research-secondary" onClick={onContinue}>Next</button>}
     </div> : <form className="feedback-form" onSubmit={submit}>
-      <p>{practice ? 'Practice form: nothing you enter here is sent to staff. Take your time to review or edit it. Try sending a sample report, or select Next when you’re ready.' : <>Staff will see the selected {source ? 'source' : 'answer'}, your account label, and your explanation.</>}</p>
+      <p>{practice ? 'Practice form: no information is sent to staff. Review or edit the form, try a sample report, or select Next to continue.' : <>Staff will see the selected {source ? 'source' : 'answer'}, the account label, and the submitted explanation.</>}</p>
       {source && <p className="feedback-source-title"><strong>{source.title}</strong></p>}
       <label>What went wrong?
         <select value={category} onChange={event => setCategory(event.target.value)} required disabled={sending}>
@@ -60,15 +60,15 @@ export default function FeedbackDialog({ chatId, messageIndex, answer, source, s
       </label>
       <label>What should the team know?
         <textarea rows="4" maxLength={2000} value={detail} onChange={event => setDetail(event.target.value)} required disabled={sending}
-          placeholder={source ? 'Describe the issue and include the correct information if you have it.' : 'Explain what happened or what you expected to find.'} />
+          placeholder={source ? 'Describe the issue and include the correct information if available.' : 'Describe the issue and the expected result.'} />
       </label>
       {source ? <details className="feedback-answer">
-        <summary>Preview the source you’re sharing</summary>
+        <summary>Preview the selected source</summary>
         <p>{[source.author || source.publisher, source.eventDate || source.date].filter(Boolean).join(' · ')}</p>
         {sourceLink(source) && <a href={sourceLink(source)} target="_blank" rel="noopener noreferrer">Open reported source</a>}
         {chatId && source.excerpt && <blockquote>{source.excerpt}</blockquote>}
       </details> : <details className="feedback-answer">
-        <summary>Preview the answer you’re sharing</summary>
+        <summary>Preview the selected answer</summary>
         <blockquote>{answer}</blockquote>
       </details>}
       {error && <p className="pilot-error" role="alert">{error}</p>}
