@@ -345,7 +345,7 @@ router.post('/:chatId/message', async (req, res) => {
     const response = await complete({
       model: testModel ? testModel.id : MODEL,
       messages: fullMessages,
-      max_tokens: MAX_OUTPUT_TOKENS,
+      max_tokens: testModel?.maxOutputTokens || MAX_OUTPUT_TOKENS,
       ...(testModel ? testModel.parameters : MODEL_PARAMETERS),
       temperature: 0.2,
       stream: false
@@ -372,7 +372,7 @@ router.post('/:chatId/message', async (req, res) => {
     const hasAnswer = compare ? comparison.some(group => !group.limited) : !checkedAnswer.citationNotice && answerText !== 'INSUFFICIENT_EVIDENCE';
     const aiResponse = {
       role: 'assistant',
-      ...(testModel ? { model: testModel.id } : {}),
+      ...(testModel ? { model: testModel.id, truncated: response.choices?.[0]?.finish_reason === 'length' } : {}),
       ...checkedAnswer,
       sources,
       searchMode: legacy ? 'legacy' : mode,
@@ -394,6 +394,7 @@ router.post('/:chatId/message', async (req, res) => {
       followUps: aiResponse.followUps,
       searchMode: aiResponse.searchMode,
       citationNotice: aiResponse.citationNotice,
+      truncated: aiResponse.truncated,
       aiUsed: true,
       chat: savedChat,
       chatId: chatId

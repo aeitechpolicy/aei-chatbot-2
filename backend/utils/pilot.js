@@ -151,7 +151,9 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     const inputBytes = Buffer.byteLength(JSON.stringify(messages), 'utf8');
     if (inputBytes > MAX_INPUT_BYTES) throw failure('This conversation and its sources are too long for the pilot limit. Try a shorter question in a new chat.', 413, 'input_limit');
     if (!Array.isArray(models) || models.length < 1 || models.length > 3 || models.some(model =>
-      typeof model.id !== 'string' || !Number.isFinite(model.inputRate) || model.inputRate <= 0 || !Number.isFinite(model.outputRate) || model.outputRate <= 0)) {
+      typeof model.id !== 'string' || !Number.isFinite(model.inputRate) || model.inputRate <= 0 || !Number.isFinite(model.outputRate) || model.outputRate <= 0 ||
+      (model.maxOutputTokens !== undefined && (!Number.isSafeInteger(model.maxOutputTokens) || model.maxOutputTokens < 1 || model.maxOutputTokens > 4096)) ||
+      (model.maxEstimatedUsd !== undefined && (!Number.isFinite(model.maxEstimatedUsd) || model.maxEstimatedUsd <= 0)))) {
       throw failure('The comparison models need to be configured.', 503, 'model_setup');
     }
     const at = new Date(now()).toISOString();
@@ -159,10 +161,13 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     const nextDay = new Date(Date.parse(`${day}T00:00:00Z`) + 86400000).toISOString();
     const reservations = models.map(model => ({
       id: crypto.randomUUID(), startedAt: at, userId, model: model.id,
-      reserve: ((inputBytes + 1024) * model.inputRate + MAX_OUTPUT_TOKENS * model.outputRate) / 1e6,
+      reserve: ((inputBytes + 1024) * model.inputRate + (model.maxOutputTokens || MAX_OUTPUT_TOKENS) * model.outputRate) / 1e6,
       inputRate: model.inputRate, outputRate: model.outputRate, priceSource: model.priceSource,
       dailyBudget, dailyQuestions, personQuestions
     }));
+    if (reservations.some((row, index) => models[index].maxEstimatedUsd !== undefined && row.reserve > models[index].maxEstimatedUsd)) {
+      throw failure('This test exceeds the $0.05 estimated limit. Try a shorter question or a narrower scholar selection.');
+    }
     for (const row of reservations) active.set(row.id, row);
     try {
       if (remote) {

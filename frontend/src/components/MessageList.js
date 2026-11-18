@@ -107,6 +107,7 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
       </div>
       {selected && <CitationPassage source={selected} onClose={closeSource} />}
     </div>
+    {message.truncated && <p className="citation-notice citation-review-note" role="note">The output limit was reached. The response may be incomplete.</p>}
     {!sourceOnly && message.citationNotice && <p className={`citation-notice ${message.citationNotice.startsWith('Some passages were omitted') ? 'citation-review-note' : ''}`} role="note">{message.citationNotice.startsWith('Some passages were omitted')
       ? 'This answer was shortened after a source-reference or quotation check. Related passages remain available in the sources.'
       : message.citationNotice}</p>}
