@@ -7,6 +7,7 @@ const express = require('express');
 const { createPilot, MODEL } = require('../utils/pilot');
 const { createApp } = require('../server');
 const ChatManager = require('../utils/chatManager');
+const { togetherCompletion } = require('../utils/togetherCompletion');
 
 const OWNER = 'test-only-intern-password';
 const SUPERVISOR = 'test-only-ra-password';
@@ -144,6 +145,30 @@ test('request model is fixed and returned usage is recorded without question tex
   const csv = await (await f.request('/api/usage.csv', { token })).text();
   assert.ok(csv.includes('Chatbot Intern'));
   assert.ok(csv.includes('10000')); assert.ok(!csv.includes('private-question-marker')); assert.ok(!csv.includes(OWNER));
+});
+
+test('a streamed provider reply reaches the normal chat endpoint with title, citations and usage', async t => {
+  const client = { chat: { completions: { create: async function* (request) {
+    assert.equal(request.stream, true);
+    assert.deepEqual(request.stream_options, { include_usage: true });
+    yield { choices: [{ index: 0, delta: { content: 'TITLE: Spectrum Sharing\nThe passage ' }, finish_reason: null }] };
+    yield { choices: [{ index: 0, delta: { content: 'discusses a policy tradeoff [S1].' }, finish_reason: 'stop' }] };
+    yield { choices: [], usage: { prompt_tokens: 100, completion_tokens: 20 } };
+  } } } };
+  const f = await fixture(t, { complete: request => togetherCompletion(client, request) });
+  const { token } = await f.login();
+  const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'What are the spectrum sharing tradeoffs?' } });
+  assert.equal(response.status, 200);
+  const result = await response.json();
+  assert.equal(result.response, 'The passage discusses a policy tradeoff [S1].');
+  assert.equal(result.chat.title, 'Spectrum Sharing');
+  assert.equal(result.sources[0].id, 'S1');
+  const [row] = await f.pilot.rows('owner');
+  assert.equal(row.status, 'complete');
+  assert.equal(row.input_tokens, 100);
+  assert.equal(row.output_tokens, 20);
+  assert.equal(f.calls(), 1);
 });
 
 test('the first answer titles the chat in the same request and follow-ups use only current evidence', async t => {

@@ -1,12 +1,26 @@
 # AEI research chatbot
 
-An internal research assistant for finding AEI scholars' publications, examining cited evidence and exploring themes. This repository contains the React website, Node/Express backend and saved article archive.
+An internal research assistant for publications by Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. The React website runs on Vercel, the Express backend on Render, and private chats and usage records in Neon PostgreSQL. Together AI supplies model responses. No paid hosting change is required by this update.
 
-## Status — October 29, 2026
+## Current update - November 17, 2026
 
-The private pilot and Qwen update are deployed through PRs #3 and #4. Current deployed base: 0391378d9f3f12a7dcee12a1525c7a444486e048. Both account logins, saved chats, usage reports and restart persistence were confirmed by the user. Vercel reports success and Render was reported live. Together remains disconnected; no new payment or live Qwen test is approved.
+Together credits have been restored and a new private key was added to Render by the maintainer. Initial live requests identified two separate compatibility requirements: organization passthrough permission for Qwen3.8 Flash, followed by streaming-only responses. This update collects Together's stream into one complete response, retains final token counts, and rejects interrupted streams. Live answer quality must still be tested after deployment.
 
-**This research-search follow-up is prepared locally and has not yet been published.** Local checks use saved articles, simulated AI and local PostgreSQL. Real Qwen compatibility and answer quality remain untested.
+The optional **Model Tester** login compares Qwen3.8 Flash, GLM-5.3-Flash and gpt-oss-120B. Article Chat shares one retrieval across all selected models. AEI + Web shares one library retrieval and one web search. AEI Article Search remains a direct library search and makes no model calls. Candidate replies, timings, token counts and per-model cost estimates are private to the tester's chats. Citation failures remain visible with a warning in this account so they can be evaluated. Regular accounts retain their existing citation behavior.
+
+Each candidate counts as a separate paid request. All candidates are reserved atomically against the existing pilot limits before any model is called. A failed candidate does not discard the others. The account has no file editor or staff feedback inbox access. Enable it with a unique `CHATBOT_TESTER_PASSWORD` in Render, 16-256 characters. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md).
+
+## Current research modes
+
+- **Article Chat:** ask questions using retrieved scholar passages, with linked citations and source excerpts.
+- **AEI Article Search:** search the saved library, narrow by scholar/date, sort by newest, inspect matching passages, and copy a selected source list.
+- **AEI + Web:** experimental answers using scholar passages and externally retrieved web snippets. Requires the existing backend search connection.
+
+Intern, RA and Demo User logins remain available when their passwords are configured. The demo omits costs and file management. Staff can review reported answers and sources in the feedback inbox. Private chat history is kept separately by account. A visible library date records the latest refresh; it does not prove the collection contains every published article.
+
+## Earlier implementation notes
+
+The following notes are the historical October 29 record. Names, deployment status, counts and pending-work statements below may have been superseded by the update above.
 
 ## Find sources without AI credits
 

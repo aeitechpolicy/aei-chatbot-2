@@ -53,6 +53,15 @@ const SCHEMA = [
       VALUES (p->>'id', at_time, p->>'userId', p->>'model', 'pending',
         (p->>'reserve')::DOUBLE PRECISION, (p->>'inputRate')::DOUBLE PRECISION,
         (p->>'outputRate')::DOUBLE PRECISION, p->>'priceSource');
+    END; $$`,
+  `CREATE OR REPLACE FUNCTION aei_pilot_reserve_batch(items JSONB) RETURNS VOID
+    LANGUAGE plpgsql VOLATILE AS $$
+    DECLARE item JSONB;
+    BEGIN
+      PERFORM pg_advisory_xact_lock(1470293341);
+      FOR item IN SELECT value FROM jsonb_array_elements(items) LOOP
+        PERFORM aei_pilot_reserve(item);
+      END LOOP;
     END; $$`
 ];
 
@@ -100,8 +109,12 @@ class PostgresStorage {
     return this.driver.query(text, values);
   }
 
-  async reserve(row) {
-    try { await this.query('SELECT aei_pilot_reserve($1::jsonb)', [JSON.stringify(row)]); }
+  async reserve(row) { return this.reserveRequest('aei_pilot_reserve', row); }
+
+  async reserveBatch(rows) { return this.reserveRequest('aei_pilot_reserve_batch', rows); }
+
+  async reserveRequest(operation, rows) {
+    try { await this.query(`SELECT ${operation}($1::jsonb)`, [JSON.stringify(rows)]); }
     catch (error) {
       const messages = {
         daily_question_limit: 'The daily question allowance has been reached. Please try again tomorrow. Allowances reset at midnight UTC.',

@@ -9,6 +9,7 @@ const { queryTerms } = require('../utils/research');
 const { prepareWebSources, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
 const { providerErrorDetails } = require('../utils/providerError');
+const { TEST_MODELS, selectedModels, estimatedCost } = require('../utils/modelTesting');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb }) {
@@ -56,7 +57,8 @@ router.get('/history', async (req, res) => {
   }
 });
 
-router.get('/capabilities', (req, res) => res.json({ webSearch: typeof searchWeb === 'function' }));
+router.get('/capabilities', (req, res) => res.json({ webSearch: typeof searchWeb === 'function',
+  ...(req.auth.id === 'tester' ? { models: TEST_MODELS.map(({ parameters, ...model }) => model), maxOutputTokens: MAX_OUTPUT_TOKENS } : {}) }));
 router.get('/archive', async (req, res, next) => {
   if (!isLegacy(req)) return res.status(404).json({ error: 'Archive unavailable.' });
   try { res.json({ domains: await legacyDomains() }); }
@@ -162,10 +164,14 @@ router.post('/:chatId/message', async (req, res) => {
   let usageId;
   let attempted = false;
   let aiResult;
+  const pendingComparisons = new Set();
   try {
     const { chatId } = req.params;
     const { message, mode = 'archive' } = req.body;
     const legacy = isLegacy(req);
+    const testing = req.auth.id === 'tester';
+    if (!testing && req.body.modelIds !== undefined) return res.status(403).json({ error: 'Model comparisons require the Model Tester login.' });
+    const models = testing ? selectedModels(req.body.modelIds) : null;
     if (!['archive', 'compare', 'web'].includes(mode) || (legacy && mode !== 'archive')) {
       return res.status(400).json({ error: 'Choose a supported research mode.' });
     }
@@ -239,7 +245,11 @@ router.post('/:chatId/message', async (req, res) => {
     let sources = archiveSources;
     let fullMessages = messagesFor(sources);
     const reservedMessages = web ? [...fullMessages, { role: 'system', content: WEB_CONTEXT_RESERVE }] : fullMessages;
-    usageId = await pilot.begin(req.auth.id, reservedMessages);
+    let comparisonIds;
+    if (testing) {
+      comparisonIds = await pilot.beginBatch(req.auth.id, reservedMessages, models);
+      for (const id of comparisonIds) pendingComparisons.add(id);
+    } else usageId = await pilot.begin(req.auth.id, reservedMessages);
     if (web) {
       let webSources;
       try { webSources = prepareWebSources(await searchWeb(message)); }
@@ -252,6 +262,53 @@ router.post('/:chatId/message', async (req, res) => {
     }
 
     await chatManager.addMessage(chatId, userMessage);
+    if (testing) {
+      // Retrieve evidence once, reserve every call atomically, then dispatch together.
+      const modelResponses = await Promise.all(models.map(async (model, index) => {
+        const id = comparisonIds[index];
+        const started = Date.now();
+        let result;
+        let failureCode;
+        let providerAttempted = true;
+        let output;
+        try {
+          result = await complete({ model: model.id, messages: fullMessages, max_tokens: MAX_OUTPUT_TOKENS,
+            ...model.parameters, temperature: 0.2, stream: false });
+          const raw = result.choices?.[0]?.message?.content;
+          const parsed = typeof raw === 'string' ? parseFirstAnswer(raw) : { content: '' };
+          const { content, followUps } = parseFollowUps(parsed.content, [...previousQuestions.map(question => question.content), message]);
+          if (!content) throw Object.assign(new Error('The model returned no answer text within the output limit.'), { code: 'empty_answer' });
+          const scholarComparison = compare ? parseComparison(content, groups) : null;
+          const checked = compare ? { citationNotice: null } : checkCitations(content, sources, web);
+          output = { status: checked.citationNotice ? 'citation_warning' : 'complete',
+            // Tester-only: retain the candidate so a failed citation check can be examined.
+            role: 'assistant', content: checked.citationNotice ? content : (checked.content || content),
+            citationNotice: checked.citationNotice, followUps, title: parsed.title,
+            truncated: result.choices?.[0]?.finish_reason === 'length',
+            ...(scholarComparison ? { comparison: scholarComparison } : {}) };
+        } catch (error) {
+          providerAttempted = error.code !== 'ai_setup';
+          failureCode = String(error.status || error.code || 'request_error');
+          console.error('Model comparison failed:', JSON.stringify({ model: model.id, ...providerErrorDetails(error) }));
+          output = { status: 'failed', error: error.code === 'empty_answer' ? error.message :
+            `This model could not complete its answer${error.status ? ` (HTTP ${error.status})` : ''}. Check Render logs before retrying.`,
+            errorCode: failureCode };
+        }
+        const elapsedMs = Date.now() - started;
+        let usageRecorded = true;
+        try { await pilot.finish(id, { response: result, errorCode: failureCode, attempted: providerAttempted }); }
+        catch { usageRecorded = false; console.error('Unable to record comparison usage; the reserved estimate remains in the ledger.'); }
+        finally { pendingComparisons.delete(id); }
+        return { ...output, model: model.id, label: model.label,
+          elapsedMs, estimatedUsd: estimatedCost(result?.usage, model),
+          usage: result?.usage, usageRecorded };
+      }));
+      const aiResponse = { role: 'assistant', content: 'Model comparison', sources, searchMode: mode, modelResponses };
+      const chatTitle = modelResponses.find(result => result.title)?.title || fallbackChatTitle(message);
+      await chatManager.addMessage(chatId, aiResponse, needsTitle ? chatTitle : null);
+      return res.json({ modelResponses, sources, searchMode: mode, aiUsed: true,
+        chat: await chatManager.getChatWithUserCheck(chatId, getUserId(req)), chatId });
+    }
     attempted = true;
     const response = await complete({
       model: MODEL,
@@ -309,12 +366,16 @@ router.post('/:chatId/message', async (req, res) => {
     });
 
   } catch (error) {
+    for (const id of pendingComparisons) {
+      try { await pilot.finish(id, { errorCode: String(error.code || 'not_sent'), attempted: false }); }
+      catch { console.error('Unable to clear an unused comparison reservation.'); }
+    }
     if (usageId) {
       try { await pilot.finish(usageId, { response: aiResult, errorCode: String(error.status || error.code || 'request_error'), attempted: attempted && error.code !== 'ai_setup' }); }
       catch { console.error('Unable to update usage; the reserved estimate remains in the ledger.'); }
     }
     console.error('Chat request failed:', JSON.stringify(providerErrorDetails(error)));
-    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer', 'web_unavailable'].includes(error.code);
+    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer', 'web_unavailable', 'model_selection', 'model_setup'].includes(error.code);
     res.status(localCode ? error.status : 500).json({
       error: localCode ? error.message : (error.status === 402 ? 'The Together account has no available credit.' : 'The answer could not be completed. Please check the usage report before retrying.'),
       code: error.status === 402 ? 'credit_limit' : (localCode ? error.code : 'system_error')

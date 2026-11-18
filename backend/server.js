@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const Together = require('together-ai');
+const { togetherCompletion } = require('./utils/togetherCompletion');
 const { createPilot } = require('./utils/pilot');
 const createChatRouter = require('./routes/chat');
 const createResearchRouter = require('./routes/research');
@@ -27,7 +28,7 @@ app.post('/api/auth/login', express.json({ limit: '2kb' }), (req, res) => {
 
 // Authentication covers the spending endpoint, files, history, and reports.
 function requireStaffView(req, res, next) {
-  if (req.auth.id === 'demo') {
+  if (!['owner', 'supervisor'].includes(req.auth.id)) {
     return res.status(403).json({ error: 'This view is available to staff accounts.', code: 'staff_only' });
   }
   next();
@@ -50,11 +51,11 @@ app.get('/api/feedback', requireStaffView, async (req, res, next) => {
   try { return res.json({ reports: await pilot.feedbackReports() }); }
   catch (error) { return next(error); }
 });
-app.get('/api/usage', requireStaffView, async (req, res, next) => {
+app.get('/api/usage', (req, res, next) => req.auth.id === 'tester' ? next() : requireStaffView(req, res, next), async (req, res, next) => {
   try { res.json({ rows: await pilot.rows(req.auth.id), settings: pilot.settings }); }
   catch (error) { next(error); }
 });
-app.get('/api/usage.csv', requireStaffView, async (req, res, next) => {
+app.get('/api/usage.csv', (req, res, next) => req.auth.id === 'tester' ? next() : requireStaffView(req, res, next), async (req, res, next) => {
   try { res.type('text/csv').set('Content-Disposition', 'attachment; filename="aei-chatbot-usage.csv"').send(await pilot.csv(req.auth.id)); }
   catch (error) { next(error); }
 });
@@ -63,7 +64,7 @@ let client;
 const complete = options.complete || (async request => {
   if (!env.TOGETHER_API_KEY) throw Object.assign(new Error('The AI service is not connected yet.'), { status: 503, code: 'ai_setup' });
   client = client || new Together({ apiKey: env.TOGETHER_API_KEY, maxRetries: 0, timeout: 45000 });
-  return client.chat.completions.create(request);
+  return togetherCompletion(client, request);
 });
 
 // Serve static files
