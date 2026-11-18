@@ -24,7 +24,7 @@ function PrivateApp({ session }) {
   const [currentView, setCurrentView] = useState('chat');
   const [demoVersion, setDemoVersion] = useState(2);
   const legacy = isDemo && demoVersion === 1;
-  const chatView = currentView === 'chat' || currentView === 'web';
+  const chatView = currentView === 'chat' || currentView === 'web' || currentView === 'compare';
   const [currentChatId, setCurrentChatId] = useState(null);
   const [chatScope, setChatScope] = useState('General');
   const [chatDraft, setChatDraft] = useState({ version: 0, question: '' });
@@ -97,7 +97,7 @@ function PrivateApp({ session }) {
     setCurrentChatId(null);
     if (!legacy) setChatScope('General');
     setChatDraft(draft => ({ version: draft.version + 1, question }));
-    setCurrentView(view => !question && view === 'web' ? 'web' : 'chat');
+    setCurrentView(view => !question && ['web', 'compare'].includes(view) ? view : 'chat');
   };
 
   const handleSelectChat = (chatId) => {
@@ -105,7 +105,7 @@ function PrivateApp({ session }) {
     setCurrentChatId(chatId);
     if (legacy) setChatScope(chats.find(chat => chat.id === chatId)?.domainName || 'General');
     setChatDraft(draft => ({ version: draft.version + 1, question: '' }));
-    setCurrentView(view => view === 'web' ? 'web' : 'chat');
+    setCurrentView(view => view === 'compare' && chats.find(chat => chat.id === chatId)?.domainName !== 'General' ? 'chat' : ['web', 'compare'].includes(view) ? view : 'chat');
   };
 
   const finishGuide = (next = null) => setGuide(next);
@@ -127,7 +127,7 @@ function PrivateApp({ session }) {
     }
   };
 
-  const handleSendMessage = async (message, mode = 'archive') => {
+  const handleSendMessage = async (message, mode = 'archive', options = {}) => {
     if (!message.trim()) return;
   
     let chatId = currentChatId;
@@ -137,7 +137,7 @@ function PrivateApp({ session }) {
         const response = await apiFetch(chatEndpoint('new', legacy), {
           method: 'POST',
           headers: getHeaders(),
-          body: JSON.stringify({ domainName: chatScope }),
+          body: JSON.stringify({ domainName: mode === 'compare' ? 'General' : chatScope }),
         });
         if (!response.ok) throw new Error('Failed to create new chat');
         const newChat = await response.json();
@@ -149,7 +149,7 @@ function PrivateApp({ session }) {
       const response = await apiFetch(chatEndpoint(`${chatId}/message`, legacy), {
         method: 'POST',
         headers: getHeaders(),
-        body: JSON.stringify({ message, mode }),
+        body: JSON.stringify({ message, mode, ...options }),
       });
   
       if (response.ok) {
@@ -245,7 +245,7 @@ function PrivateApp({ session }) {
     onSelectChat: handleSelectChat, onDeleteChat: handleDeleteChat, onCollapse: handleSidebarCollapse,
   };
 
-  const chat = <ChatInterface key={chatDraft.version} active={chatView} web={currentView === 'web'}
+  const chat = <ChatInterface key={chatDraft.version} active={chatView} web={currentView === 'web'} comparisonMode={currentView === 'compare'}
     legacy={legacy} hideUsage={isDemo} chatId={currentChatId} initialQuestion={chatDraft.question}
     draftScope={chatScope} onScopeChange={setChatScope} loading={loading} onSendMessage={handleSendMessage} />;
 
@@ -299,6 +299,10 @@ function PrivateApp({ session }) {
           </div>
           <nav className="article-mode-switch" aria-label="Article mode">
             <button type="button" aria-pressed={currentView === 'chat'} onClick={() => setCurrentView('chat')}>Article Chat</button>
+            <button type="button" disabled={loading} aria-pressed={currentView === 'compare'} onClick={() => {
+              if (currentView !== 'compare') { setCurrentChatId(null); setChatScope('General'); setChatDraft(draft => ({ version: draft.version + 1, question: '' })); }
+              setCurrentView('compare');
+            }}>Compare Scholars</button>
             <button type="button" aria-pressed={currentView === 'research'} onClick={() => setCurrentView('research')}>AEI Article Search</button>
             <button type="button" aria-pressed={currentView === 'web'} onClick={() => setCurrentView('web')}>AEI + Web</button>
           </nav>
@@ -321,7 +325,7 @@ function PrivateApp({ session }) {
       <div className={`app-content ${sidebarCollapsed ? 'sidebar-collapsed' : ''}`}>
         <Sidebar
           {...sidebarActions}
-          currentView={currentView === 'web' ? 'chat' : currentView}
+          currentView={['web', 'compare'].includes(currentView) ? 'chat' : currentView}
           domains={domains}
           selectedDomain={selectedDomain}
           showFileManager={!isDemo}
@@ -369,7 +373,7 @@ function App() {
     }
     return () => window.removeEventListener('aei-session-changed', changed);
   }, []);
-  if (checking) return <main className="sign-in-page"><p role="status">Checking your session…</p></main>;
+  if (checking) return <main className="sign-in-page"><p role="status">Checking session…</p></main>;
   if (!session) return <>{error && <p role="alert">{error}</p>}<SignIn /></>;
   if (session.user.id === 'tester') return <ModelTester key={session.user.id} session={session} />;
   return <PrivateApp key={session.user.id} session={session} />;

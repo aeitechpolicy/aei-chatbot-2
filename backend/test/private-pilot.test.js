@@ -343,7 +343,7 @@ test('catalog-only results produce a saved response without a provider call or c
   const { token } = await f.login(); const chat = await f.newChat(token);
   const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'An unsupported topic' } });
   assert.equal(response.status, 200); const body = await response.json();
-  assert.equal(body.aiUsed, false); assert.match(body.response, /couldn't find matching evidence/);
+  assert.equal(body.aiUsed, false); assert.match(body.response, /No matching evidence was found/);
   assert.equal(body.chat.messages.length, 2); assert.equal(body.chat.title, 'An unsupported topic'); assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
 });
 test('General mode supplies bounded article sources and records citation notices in history', async t => {
@@ -420,6 +420,25 @@ test('experimental mode searches only the submitted question and keeps web citat
   assert.equal(body.citationNotice, null);
   assert.deepEqual(body.chat.messages.at(-1).followUps, ['What tradeoffs did the archive passage raise?']);
   assert.equal(f.calls(), 2);
+});
+
+test('selected scholar comparisons retrieve only chosen authors and reject invalid selections before model calls', async t => {
+  const retrieved = [];
+  const f = await fixture(t, {
+    fetchArticles: async key => { retrieved.push(key); return [{ title: key, author: key.replace(/_/g, ' '), body: 'A policy tradeoff discussed in the article.' }]; },
+    complete: async () => ({ ...answer(), choices: [{ message: { content: 'COMPARE Clay_Calvert | A policy tradeoff. [S1]\nCOMPARE Shane_Tews | Another policy tradeoff. [S2]' } }] })
+  });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  for (const comparisonScholars of [[], ['Shane_Tews'], ['Shane_Tews', 'Shane_Tews'], ['Shane_Tews', '../private'], 'all']) {
+    assert.equal((await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'Compare regulation', mode: 'compare', comparisonScholars } })).status, 400);
+  }
+  assert.equal(f.calls(), 0); assert.deepEqual(retrieved, []);
+  const result = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'Compare regulation', mode: 'compare', comparisonScholars: ['Shane_Tews', 'Clay_Calvert'] } });
+  assert.equal(result.status, 200); const body = await result.json();
+  assert.deepEqual(retrieved, ['Clay_Calvert', 'Shane_Tews']);
+  assert.deepEqual(body.comparison.map(item => item.scholar), ['Clay Calvert', 'Shane Tews']);
+  assert.deepEqual(body.chat.messages.at(-1).comparison, body.comparison);
+  assert.equal(body.sources.length, 2); assert.equal(f.calls(), 1);
 });
 
 test('scholar comparisons keep four rows and reject a citation belonging to another scholar', async t => {

@@ -35,7 +35,7 @@ test('sending a source correction shares the selected reference and explanation'
   fireEvent.change(dialog.getByLabelText('What went wrong?'), { target: { value: 'Incorrect title, byline or date' } });
   fireEvent.change(dialog.getByLabelText('What should the team know?'), { target: { value: 'Please correct the byline.' } });
   fireEvent.click(dialog.getByRole('button', { name: 'Send report' }));
-  expect(await dialog.findByRole('status')).toHaveTextContent('Your report was sent to the staff inbox.');
+  expect(await dialog.findByRole('status')).toHaveTextContent('Report sent to the staff inbox.');
   const [url, request] = apiFetch.mock.calls[2];
   expect(url).toBe('http://test/api/research/feedback');
   expect(JSON.parse(request.body)).toEqual({ sourceRef: result.articles[0].sourceRef, category: 'Incorrect title, byline or date', detail: 'Please correct the byline.' });

@@ -7,7 +7,10 @@ beforeEach(() => jest.clearAllMocks());
 test('the guided practice completes search, citation, brief and feedback without API calls', () => {
   const onTryQuestion = jest.fn();
   render(<DemoWalkthrough showWhatsNewLink onClose={jest.fn()} onOpenSearch={jest.fn()} onTryQuestion={onTryQuestion} />);
-  expect(screen.getByText('0 of 6 complete')).toBeVisible();
+  expect(screen.getByText('0 of 7 complete')).toBeVisible();
+  const explanation = screen.getByRole('region', { name: 'How answers are generated' });
+  expect(explanation).toHaveTextContent('Responses are actively being fine-tuned.');
+  expect(explanation).toHaveTextContent('missing references');
   fireEvent.click(screen.getByRole('button', { name: 'AEI Article Search', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
   fireEvent.change(screen.getByLabelText('Search the sample library'), { target: { value: 'Greg Oslan' } });
@@ -29,17 +32,20 @@ test('the guided practice completes search, citation, brief and feedback without
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Send to the team', exact: true }));
   const feedback = screen.getByRole('dialog', { name: 'Send to the team' });
-  expect(feedback).toHaveTextContent('nothing you enter here is sent to staff');
+  expect(feedback).toHaveTextContent('no information is sent to staff');
   fireEvent.change(within(feedback).getByLabelText('What went wrong?'), { target: { value: 'Missing context' } });
   fireEvent.change(within(feedback).getByLabelText('What should the team know?'), { target: { value: 'A point needs more context.' } });
   fireEvent.click(within(feedback).getByRole('button', { name: 'Try sending sample report' }));
   expect(within(feedback).getByRole('status')).toHaveTextContent('No report was sent');
   fireEvent.click(within(feedback).getByRole('button', { name: 'Done' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
+  fireEvent.click(screen.getByRole('button', { name: 'Clay Calvert', exact: true }));
+  fireEvent.click(screen.getByRole('button', { name: 'Shane Tews', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Finish tour' }));
-  expect(screen.getByText('6 of 6 complete')).toBeVisible();
+  expect(screen.getByText('7 of 7 complete')).toBeVisible();
   expect(screen.getByRole('region', { name: 'Where to find help again' })).toHaveTextContent('top-right corner of the chatbot');
   expect(screen.getByRole('img', { name: /Screenshot of the top-right chatbot toolbar/ })).toHaveAttribute('src', '/tour-help-header.png');
-  expect(screen.getByRole('heading', { name: 'You can come back anytime' })).toHaveFocus();
+  expect(screen.getByRole('heading', { name: 'Help is always available' })).toHaveFocus();
   fireEvent.click(screen.getByRole('button', { name: 'Open this question in Article Chat' }));
   expect(onTryQuestion).toHaveBeenCalledWith('What does Greg Oslan recommend for protecting personal accounts?');
   expect(apiFetch).not.toHaveBeenCalled();
@@ -55,7 +61,7 @@ test('the practice can be skipped or restarted and other mode buttons never run 
   fireEvent.click(screen.getByRole('button', { name: 'Search', exact: true }));
   expect(screen.getByRole('alert')).toHaveTextContent('For this practice example, search Greg Oslan');
   fireEvent.click(screen.getByRole('button', { name: 'Restart' }));
-  expect(screen.getByText('0 of 6 complete')).toBeVisible();
+  expect(screen.getByText('0 of 7 complete')).toBeVisible();
   expect(screen.getByRole('button', { name: 'Next', exact: true })).toBeEnabled();
   fireEvent.click(screen.getByRole('button', { name: 'Skip tour' }));
   expect(onClose).toHaveBeenCalledTimes(1);
@@ -67,8 +73,8 @@ test('automatic demonstrations wait indefinitely for Next, including both passag
   jest.useFakeTimers();
   try {
     render(<DemoWalkthrough onClose={jest.fn()} onOpenSearch={jest.fn()} onTryQuestion={jest.fn()} />);
-    const titles = ['Choose a mode', 'Find an article', 'Open the citation', 'Preview a research brief', 'Try AEI + Web', 'Report a problem'];
-    for (let index = 0; index < 6; index++) {
+    const titles = ['Choose a mode', 'Find an article', 'Open the citation', 'Preview a research brief', 'Try AEI + Web', 'Report a problem', 'Compare selected scholars'];
+    for (let index = 0; index < 7; index++) {
       const tour = within(screen.getByRole('dialog', { name: 'Try AEI Chatbot' }));
       fireEvent.click(tour.getByRole('button', { name: 'Next', exact: true }));
       await act(async () => { jest.advanceTimersByTime(650); await Promise.resolve(); });
@@ -90,10 +96,10 @@ test('automatic demonstrations wait indefinitely for Next, including both passag
         await act(async () => { jest.advanceTimersByTime(60000); await Promise.resolve(); });
         expect(feedback.getByLabelText('What should the team know?')).toHaveValue('I can edit and review this at my own pace.');
         fireEvent.click(feedback.getByRole('button', { name: 'Next', exact: true }));
-      } else fireEvent.click(tour.getByRole('button', { name: 'Next', exact: true }));
+      } else fireEvent.click(tour.getByRole('button', { name: index === 6 ? 'Finish tour' : 'Next', exact: true }));
     }
-    expect(screen.getByText('6 of 6 complete')).toBeVisible();
-    expect(screen.getByRole('heading', { name: 'You can come back anytime' })).toHaveFocus();
+    expect(screen.getByText('7 of 7 complete')).toBeVisible();
+    expect(screen.getByRole('heading', { name: 'Help is always available' })).toHaveFocus();
     expect(apiFetch).not.toHaveBeenCalled();
   } finally { jest.useRealTimers(); }
 });

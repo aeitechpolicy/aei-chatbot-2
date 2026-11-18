@@ -11,7 +11,7 @@ export default function ResearchBriefPreview({ brief, onClose, onContinue }) {
       await copyResearchBrief(brief);
       setStatus('Research brief copied.');
     } catch {
-      setStatus('Clipboard access is unavailable. You can select and copy the preview.');
+      setStatus('Clipboard access is unavailable. The preview can be selected and copied manually.');
     }
   }
 

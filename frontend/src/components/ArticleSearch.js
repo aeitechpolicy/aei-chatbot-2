@@ -144,7 +144,7 @@ export default function ArticleSearch({ showFileCounts = true, showRefreshDetail
     {loading && <p role="status">Searching the AEI Scholar Library…</p>}
     {result && <section aria-label="Article search results">
       <p role="status">{!result.articles.length ? 'No matching articles found. Try other search terms or filters.' : result.mode === 'overview' ? `Showing a recent sample of ${result.articles.length} saved articles.` : `${result.matchedCount} matching saved articles. Showing ${result.articles.length}.`}</p>
-      {result.mode === 'overview' && <p className="research-note">This is a recent sample across the selected scholars, not a complete review of their work. Read the excerpts to explore possible themes.</p>}
+      {result.mode === 'overview' && <p className="research-note">This is a recent sample across the selected scholars, not a complete review of the selected publications. Read the excerpts to explore possible themes.</p>}
       {result.articles.length > 0 && <div className="source-copy-toolbar">
         <span>{selection.length ? `${selection.length} selected` : 'Select articles to build a source list.'}</span>
         <button type="button" className="research-secondary" disabled={!selection.length} onClick={copySources}><Copy size={16} aria-hidden="true" /> Copy source list</button>

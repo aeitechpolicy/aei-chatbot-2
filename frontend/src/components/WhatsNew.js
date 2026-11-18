@@ -7,7 +7,7 @@ const updates = [
   {
     icon: Search,
     title: 'Find articles and build a source list',
-    text: 'See the most recent article, filter by publication date, and sort newest first. Highlighted passages show where your terms appear. Select results to copy their citations and links.'
+    text: 'See the most recent article, filter by publication date, and sort newest first. Highlighted passages show where search terms appear. Select results to copy article citations and links.'
   },
   {
     icon: BookOpen,
@@ -16,8 +16,8 @@ const updates = [
   },
   {
     icon: Columns2,
-    title: 'Compare scholars and keep exploring',
-    text: 'See perspectives side by side, use suggested follow-ups, and return to chats named for the question you asked.'
+    title: 'Choose scholars to compare',
+    text: 'Open the Compare Scholars tab, select two to four scholars, and ask one question. See perspectives side by side, with sources and clear limits where evidence is missing.'
   },
   {
     icon: FileText,
@@ -39,8 +39,8 @@ const updates = [
 export default function WhatsNew({ onClose, onStartTour }) {
   return <ResearchDialog title="What’s new in the AEI Chatbot" onClose={onClose}>
     <div className="whats-new">
-      <p>This version helps you find and use research from Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart.</p>
-      <p>Compare Version 1.0 (pre-September 2026) with Version 2.0 (November 2026). Your chats are saved privately to your account so you can return to them later.</p>
+      <p>This version brings together research from Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart.</p>
+      <p>Compare Version 1.0 (pre-September 2026) with Version 2.0 (November 2026). Chats are saved separately under each account for future reference.</p>
       <ul className="whats-new-list">
         {updates.map(({ icon: Icon, title, text }) => <li key={title}>
           <Icon size={19} aria-hidden="true" />
@@ -53,7 +53,7 @@ export default function WhatsNew({ onClose, onStartTour }) {
       <BeforeAfterPreview />
     </div>
     <footer className="research-dialog-actions walkthrough-actions">
-      <p className="whats-new-next">Next: try the guided demo. You can skip or have any step shown for you.</p>
+      <p className="whats-new-next">Next: try the guided demo. Each step can be skipped or demonstrated.</p>
       <button type="button" className="research-primary" onClick={onStartTour}>
         Start guided demo <ArrowRight size={16} aria-hidden="true" />
       </button>

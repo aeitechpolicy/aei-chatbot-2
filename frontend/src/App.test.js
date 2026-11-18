@@ -2,6 +2,34 @@ import { fireEvent, render, screen, waitFor, within } from '@testing-library/rea
 import App from './App';
 import { apiFetch, getSession, setSession } from './utils/api';
 
+test('Compare Scholars has its own category and sends the selected pair through the app', async () => {
+  const user = { id: 'owner', label: 'Chatbot Intern' };
+  setSession({ token: 'comparison-test-session', user, expiresAt: Date.now() + 100000 });
+  let chat = { id: 'comparison-chat', domainName: 'General', messages: [] };
+  let submitted;
+  fetch.mockImplementation(async (url, options = {}) => {
+    if (url.endsWith('/api/auth/session')) return { ok: true, json: async () => ({ user }) };
+    if (url.endsWith('/api/chat/new')) { expect(JSON.parse(options.body).domainName).toBe('General'); return { ok: true, json: async () => chat }; }
+    if (url.endsWith('/api/chat/comparison-chat/message')) {
+      submitted = JSON.parse(options.body);
+      chat = { ...chat, messages: [{ role: 'assistant', content: 'A comparison.', comparison: [{ scholar: 'Clay Calvert', content: 'Limited evidence.', limited: true }, { scholar: 'Shane Tews', content: 'Limited evidence.', limited: true }] }] };
+      return { ok: true, json: async () => ({ response: 'A comparison.', chat }) };
+    }
+    if (url.endsWith('/api/chat/comparison-chat')) return { ok: true, json: async () => chat };
+    return { ok: true, json: async () => [] };
+  });
+  render(<App />);
+  fireEvent.click(await screen.findByRole('button', { name: 'Compare Scholars', exact: true }));
+  expect(screen.getByRole('heading', { name: 'Compare scholar perspectives' })).toBeVisible();
+  const picker = within(screen.getByRole('group', { name: /Choose scholars to compare/ }));
+  fireEvent.click(picker.getByRole('button', { name: 'Brent Orrell' }));
+  fireEvent.click(picker.getByRole('button', { name: 'Will Rinehart' }));
+  fireEvent.change(screen.getByLabelText('Ask about the scholars’ work'), { target: { value: 'Compare their approach to age verification.' } });
+  fireEvent.click(screen.getByRole('button', { name: 'Send message' }));
+  await waitFor(() => expect(submitted).toEqual({ message: 'Compare their approach to age verification.', mode: 'compare', comparisonScholars: ['Clay_Calvert', 'Shane_Tews'] }));
+  expect(await screen.findByText('Comparing: Clay Calvert, Shane Tews')).toBeVisible();
+});
+
 test('a signed-in user can search saved articles without starting a chat or sending an AI message', async () => {
   fetch.mockImplementation(async url => {
     if (url.endsWith('/api/auth/login')) return { ok: true, json: async () => ({ token: 'search-test-session', user: { id: 'owner', label: 'Chatbot Intern' }, expiresAt: Date.now() + 10000 }) };
@@ -145,7 +173,7 @@ test('a demo login shows research and chat while hiding staff controls', async (
   fireEvent.click(screen.getByRole('button', { name: 'Shane Tews' }));
   expect(general).toHaveAttribute('aria-pressed', 'false');
   expect(fetch.mock.calls.some(([url]) => url.endsWith('/api/chat/new'))).toBe(false);
-  fireEvent.change(screen.getByRole('textbox', { name: 'Ask about our scholars’ work' }), { target: { value: 'Spectrum sharing' } });
+  fireEvent.change(screen.getByRole('textbox', { name: 'Ask about the scholars’ work' }), { target: { value: 'Spectrum sharing' } });
   fireEvent.click(screen.getByRole('button', { name: 'Send message' }));
   expect(await screen.findByText('Scholar: Shane Tews')).toBeVisible();
   await waitFor(() => expect(screen.getByRole('button', { name: 'New Chat' })).toBeEnabled());

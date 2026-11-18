@@ -31,7 +31,7 @@ test('partial answers still show their omission notice and regular source drawer
   render(<MessageList messages={[{ role: 'assistant', content: 'A supported finding [S1].',
     citationNotice: 'Some passages were omitted because they did not pass the citation check.',
     sources: [{ id: 'S1', title: 'An article', excerpt: 'Evidence.' }] }]} />);
-  expect(screen.getByRole('note')).toHaveTextContent('Some passages were omitted');
+  expect(screen.getByRole('note')).toHaveTextContent('This answer was shortened');
   expect(screen.getByText('Article sources (1)').closest('details')).not.toHaveAttribute('open');
   expect(screen.getByRole('button', { name: 'View passage [S1]' })).toBeVisible();
 });
@@ -119,7 +119,7 @@ test('AEI + Web can report a selected source separately from the full answer', a
   fireEvent.change(dialog.getByLabelText('What went wrong?'), { target: { value: 'Broken or incorrect link' } });
   fireEvent.change(dialog.getByLabelText('What should the team know?'), { target: { value: 'The link is outdated.' } });
   fireEvent.click(dialog.getByRole('button', { name: 'Send report' }));
-  expect(await dialog.findByRole('status')).toHaveTextContent('Your report was sent to the staff inbox.');
+  expect(await dialog.findByRole('status')).toHaveTextContent('Report sent to the staff inbox.');
   const [url, request] = apiFetch.mock.calls[0];
   expect(url).toContain('/api/chat/test-chat/feedback');
   expect(JSON.parse(request.body)).toEqual({ sourceId: 'W1', messageIndex: 0, category: 'Broken or incorrect link', detail: 'The link is outdated.' });

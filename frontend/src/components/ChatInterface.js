@@ -10,6 +10,7 @@ import '../styles/ChatInterface.css';
 const ChatInterface = ({ 
   active,
   web = false,
+  comparisonMode = false,
   legacy = false,
   hideUsage = false,
   chatId,
@@ -24,7 +25,7 @@ const ChatInterface = ({
   const [sendingMessage, setSendingMessage] = useState(false);
   const [sendError, setSendError] = useState(null);
   const [chatLoadError, setChatLoadError] = useState(false);
-  const [compare, setCompare] = useState(false);
+  const [comparisonScholars, setComparisonScholars] = useState(Object.keys(SCHOLARS));
   const [webAvailable, setWebAvailable] = useState(null);
   const inputRef = useRef(null);
   const chatLoadVersion = useRef(0);
@@ -78,7 +79,7 @@ const ChatInterface = ({
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (inputValue.trim() && !composerDisabled) {
+    if (inputValue.trim() && !composerDisabled && (!comparisonMode || comparisonScholars.length >= 2)) {
       setSendingMessage(true);
       setSendError(null);
       const messageToSend = inputValue;
@@ -99,7 +100,7 @@ const ChatInterface = ({
       setInputValue(''); // Clear input immediately for better UX
       
       try {
-        const result = await onSendMessage(messageToSend, web ? 'web' : !legacy && compare && scope === 'General' ? 'compare' : 'archive');
+        const result = await onSendMessage(messageToSend, web ? 'web' : !legacy && comparisonMode ? 'compare' : 'archive', comparisonMode ? { comparisonScholars } : {});
         
         // The API response contains the AI response, so we can add it directly
         if (result && result.response) {
@@ -178,11 +179,17 @@ const ChatInterface = ({
     }
   }, [active, currentChat, sendingMessage, loading]);
 
+  useEffect(() => {
+    if (!comparisonMode || !currentChat?.id) return;
+    const previous = [...(currentChat.messages || [])].reverse().find(item => item.comparison?.length);
+    if (previous) setComparisonScholars(previous.comparison.map(item => item.scholar.replace(/ /g, '_')));
+  }, [comparisonMode, currentChat?.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const scope = (chatId && currentChat?.domainName) || draftScope;
   const chatReady = !chatId || currentChat?.id === chatId;
   const composerDisabled = sendingMessage || loading || !chatReady || (web && !webAvailable);
   const empty = chatReady && !currentChat?.messages?.length && !sendingMessage && !loading;
-  const home = empty && !chatId && !web && !legacy;
+  const home = empty && !chatId && !web && !legacy && !comparisonMode;
   const Messages = legacy ? LegacyMessageList : MessageList;
 
   return (
@@ -191,13 +198,13 @@ const ChatInterface = ({
       {empty && !legacy ? (
         <div className="workspace-intro">
           <p className="workspace-kicker">{web ? 'Experimental' : 'AEI Chatbot'}</p>
-          <h2>{web ? 'Research with AEI and the web' : 'What policy question are you researching?'}</h2>
-          <p>{web ? 'Find relevant scholarship and additional context from the web.' : 'Ask about work in the AEI Scholar Library.'}</p>
+          <h2>{web ? 'Research with AEI and the web' : comparisonMode ? 'Compare scholar perspectives' : 'Explore a policy question'}</h2>
+          <p>{web ? 'Find relevant scholarship and additional context from the web.' : comparisonMode ? 'Choose two to four scholars and ask one question. Compare perspectives and identify limits in the available evidence.' : 'Ask about work in the AEI Scholar Library.'}</p>
         </div>
       ) : (
         <div className="messages-container">
           {chatLoadError && !chatReady ? (
-            <p className="workspace-meta" role="alert">This chat could not be opened. Select it again from your chat history or start a new chat.</p>
+            <p className="workspace-meta" role="alert">This chat could not be opened. Select the conversation again from chat history or start a new chat.</p>
           ) : (
             <Messages messages={currentChat?.messages || []} loading={sendingMessage || loading || !chatReady} title={currentChat?.title} chatId={currentChat?.id} onFollowUp={composerDisabled ? undefined : fillFollowUp} />
           )}
@@ -218,7 +225,7 @@ const ChatInterface = ({
             </button>
           </div>
         )}
-        {!legacy && !chatId && !sendingMessage && (
+        {!legacy && !comparisonMode && !chatId && !sendingMessage && (
           <fieldset className="chat-scope-picker">
             <legend>Search across</legend>
             {[['General', 'All 4 scholars'], ...Object.entries(SCHOLARS)].map(([value, label]) => (
@@ -226,13 +233,18 @@ const ChatInterface = ({
             ))}
           </fieldset>
         )}
+        {!legacy && comparisonMode && <fieldset className="chat-scope-picker">
+          <legend>Choose scholars to compare ({comparisonScholars.length} selected)</legend>
+          {Object.entries(SCHOLARS).map(([key, name]) => <button key={key} type="button" disabled={composerDisabled}
+            aria-pressed={comparisonScholars.includes(key)} onClick={() => setComparisonScholars(previous => previous.includes(key) ? previous.filter(item => item !== key) : [...previous, key])}>{name}</button>)}
+          <p className="workspace-meta" role="status">{comparisonScholars.length < 2 ? 'Select at least two scholars to continue.' : 'Only the selected scholars will be included.'}</p>
+        </fieldset>}
         {!legacy && <div className="chat-research-options">
           {web ? <p className="workspace-meta" role="status">
             {webAvailable === null ? 'Checking web search availability…' : webAvailable
-              ? 'Your question is used to search the web.'
+              ? 'The question is used to search the web.'
               : 'Web search is currently unavailable.'}
-          </p> : scope === 'General' && <button type="button" className="compare-toggle" disabled={composerDisabled}
-            aria-pressed={compare} onClick={() => setCompare(value => !value)}>Compare scholars</button>}
+          </p> : null}
         </div>}
         <div className={legacy ? 'input-container' : 'input-container workspace-composer'}>
           <textarea
@@ -240,10 +252,10 @@ const ChatInterface = ({
             value={inputValue}
             onChange={handleInputChange}
             onKeyDown={handleKeyPress}
-            aria-label="Ask about our scholars’ work"
+            aria-label="Ask about the scholars’ work"
             placeholder={legacy
               ? (scope === 'General' ? 'Ask me anything...' : `Ask about ${(SCHOLARS[scope] || scope).toLowerCase()}...`)
-              : web ? 'Ask a question for AEI and web research…' : compare && scope === 'General' ? 'Ask one question for all four scholars…' : 'Ask about our scholars’ work…'}
+              : web ? 'Ask a question for AEI and web research…' : comparisonMode ? 'Ask one question for the selected scholars…' : 'Ask about the scholars’ work…'}
             className="chat-input"
             rows="1"
             maxLength={6000}
@@ -252,7 +264,7 @@ const ChatInterface = ({
           <button
             type="submit"
             className="send-button"
-            disabled={composerDisabled || !inputValue.trim()}
+            disabled={composerDisabled || !inputValue.trim() || (comparisonMode && comparisonScholars.length < 2)}
             aria-label="Send message"
             title="Send message"
           >
@@ -261,7 +273,7 @@ const ChatInterface = ({
         </div>
         {!legacy && (chatReady || sendingMessage) && (chatId || sendingMessage) && (
           <p className="workspace-meta">
-            {scope === 'General' ? <>All 4 scholars <span aria-hidden="true">·</span> {SCHOLAR_NAMES}</> : `Scholar: ${SCHOLARS[scope] || scope.replace(/_/g, ' ')}`}
+            {comparisonMode ? `Comparing: ${comparisonScholars.map(key => SCHOLARS[key]).join(', ')}` : scope === 'General' ? <>All 4 scholars <span aria-hidden="true">·</span> {SCHOLAR_NAMES}</> : `Scholar: ${SCHOLARS[scope] || scope.replace(/_/g, ' ')}`}
           </p>
         )}
       </form>

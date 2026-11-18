@@ -5,7 +5,7 @@ const scenes = [
   { title: 'Version 1.0', date: 'Pre-September 2026', image: '/tour-version1.png',
     text: 'The original interface grouped chats and scholar files in a sidebar.', points: ['Original chat and scholar selector', 'Original collection of articles', 'Basic chat workflow'] },
   { title: 'Version 2.0', date: 'November 2026', image: '/tour-version2.png',
-    text: 'The new workspace brings research, evidence and follow-up actions together.', points: ['Three clear research modes', 'Search dates, passages and AEI links', 'Citation passages and brief previews', 'Private saved chats and team feedback'] }
+    text: 'The new workspace brings research, evidence and follow-up actions together.', points: ['Four clear research modes', 'Search dates, passages and AEI links', 'Citation passages and brief previews', 'Private saved chats and team feedback'] }
 ];
 export default function BeforeAfterPreview() {
   const [scene, setScene] = useState(0);
