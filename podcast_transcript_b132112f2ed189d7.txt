@@ -1,0 +1,140 @@
+PAGE_TITLE: 
+	A Privacy-Friendly Digital Wallet for Children (with Rick Lane) — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI Explain to Shane: A privacy-friendly digital wallet for children (with Rick Lane) Episode # 46 | November 16, 2021 | Shane Tews and Rick Lane
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane." I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. When the Children's Online Privacy Protection Act became law in 1998, today's innovative digital ecosystem simply did not exist. But now, children are using debit and credit cards, online payment systems, and social media networks, and many other technology-enabled devices that involve the collection of personal data on the child user — on especially these apps and the payment gateways. With this challenge in mind, my guest today, Rick Lane, decided to participate in promoting better privacy practices for kids by investing both his time and money in Rego Payment Architectures' Mazoola app. Mazoola is the only independently certified family mobile wallet that is compliant with the Children's Online Privacy Act of 1998 (also known as COPPA) and GDPR (the Europeans' General Data Protection Regulation) that's on the market today. Rick joins the podcast to discuss why he, as someone who consults for startups, decided to advise and ultimately invest in Mazoola. He also explains why Mazoola's compliance with COPPA and GDPR [is] important to children's privacy and their financial safety, and how Mazoola complies with privacy requirements for children, especially when financial transactions are involved. Rick is the founder and CEO of Iggy Ventures. Previously, he served as senior vice president of government affairs for NewsCorp/ 21st Century Fox, and he is still engaged in both the media and movie industries. I met and worked with Rick when he represented the US Chamber of Commerce on internet and e- commerce issues. He and I have seen the nascent e-commerce industry be built into today's digital economy. Rick always brings a lot of energy into any policy discussion. Rick, welcome to the "Explain to Shane" podcast. You have a new adventure you're focused on. So tell us what Mazoola is about and how it operates, and walk us through why you think, as someone who advises startups, this is a particular group you decide to get involved in.
+
+[Speaker: Rick Lane]
+Rick Lane: Well, thank you Shane, for having me. Your podcasts are amazing, so to be part of one is such an honor. My involvement in Rego, which is the parent
+
+[Speaker: Rick Lane]
+company and the Mazoola kids' digital wallet really came about when Rego reached out to me to discuss how to protect kids online. And l've been volunteering my time on public policy issues relating to the WHOIS issue and Section 230 and others, and they wanted some advice about COPPA and this new area that they were launching into, which was the digital wallet space. And so my conversation began just looking at what they were doing, and what I found was absolutely fascinating. What I found was that Rego had developed an infrastructure, a financial fintech infrastructure built from the ground up that was COPPA compliant, that their vision was to allow kids of all ages to engage in commerce online and offline without being tracked. And that was something novel and new because most of the cards that are out there, digital wallets, debit cards, targeting kids, almost all of them — | haven 't found one yet that isn't like this — but they all follow the Gramm-Leach-Bliley Act (GLBA) privacy protection provisions, which is an opt-out based on your parents. What Rego has put together is an opt-in, and the total control of a kid's ourchasing activities is done by the parents: what stores they can buy trom, how much money is in their account, who can put it in their account. And the parents have control of how loose they want that, or how tight they want that. And that, to me, was a great way of allowing kids to learn: one, financial literacy, but two, protect them as they're getting more involved in this cashless society.
+
+[Speaker: Shane Tews]
+Shane Tews: So l thought this was really interesting when you brought this up to me because data and information management, I think, are something that we need to spend a lot more time on. A lot of times — we'll talk a little bit later about privacy — I say privacy is an emotion, but controlling your data is something you need to understand is technically feasible. So this was really interesting to And just for a reminder to people listening, COPPA is the Children's Online Privacy Act that passed in 1998. So they were thinking about this back when there weren't really smartphones or mobile devices. This was web-based, and it's something that we still need to keep in mind because kids are exceptionally more online now than they even were in 1998. So Mazoola is the only independent certified family mobile wallet, as you were just explaining, but it's also compliant with the European General Data Protection Regulation (known as GDPR). So talk to us about what that compliance looks like in practice.
+
+[Speaker: Rick Lane]
+Rick Lane: Sure. They go through a process. When COPPA was created by now-Sen. Ed Markev (D-MA), but Congressman Ed Markey back in the day, there was ar idea of: How do we ensure that these new websites at the time were aoina to protect children's privacy? And one of the ways to do it was either you have a complete self-regulatory regime where you say, "Oh, well, we're doing it" and then there's no mechanism to check unless there's litigation, or to create a process where the Federal Trade commission could certify private-sector third parties that then would go through and do the analysis and walk through the processes of companies that are engaged in collecting information on children and targeting children online to become COPPA certified.
+
+[Speaker: Rick Lane]
+And that certification process is very robust. And Rego went through that entire process, and they come back, the company was PRIVO, one of the premier entities in COPPA compliance. They've been around almost since the beginning. I think they were one of the first ones along with BBB Online. And they go through and make sure that every aspect of the collection, use, and storage of a child's information is within the boundaries of the regulations of COPPA.
+
+[Speaker: Shane Tews]
+Shane Tews: So Mazoola is new, but Rego has been around for a while. Am I understanding that correctly?
+
+[Speaker: Rick Lane]
+Rick Lane: Yeah, so Rego has been around since 2008. Their first product was a pay button — what they call the Mazoola Kids Pay Button. So when you would go to a website to buy an item or you were going to a Walmart or wherever it happens to be — an online retail store — there would be a button on that website that would allow a kid to buy something anonymously without having to go through the process. And the parents would sign them up for the Rego Pay Putton, and that would allow these kids to engage in transactions without those transactions being tracked. That was the idea that sort of created this in 2008, but over the last year and a half they saw another opportunity, which is the digital wallet. And they have been developing an app which they just rolled out this week to the public that would provide kids the ability not just to buy things in the online environment, but also in the in-person environment.
+
+[Speaker: Shane Tews]
+Shane Tews: So just to make sure I have this clear and maybe simplify it in my head, so was the Rego pay button — it sounds like it had another name — was it something that was like a PayPal for kids or was it something that was on the Walmart? Like, Walmart signed up and certified and they offered that in their back end, because usually the back-end payment systems are separate from the website.
+
+[Speaker: Rick Lane]
+Rick Lane: Yeah. It was more like a PayPal, Apple Pay, Google Pay type of system.
+
+[Speaker: Shane Tews]
+Shane Tews: I guess I'm not shopping in the right places or I wasn't looking because | don't have kids, but I never noticed that before. It's really interesting.
+
+[Speaker: Rick Lane]
+Rick Lane: Well, that's been the problem. It didn't take off. And you know, they had some deals here and there and they've been working on it, but there really wasn't the focus on kids' privacy on the financial transaction side as much as there was a focus on the online side of the collection and use of data on sites like Instagram or Facebook or Twitter or Snap. That's why there's this fintech child privacy protection gap is that most parents never thought about it. You know, I have two boys. I got them credit cards when they were 14 years old so that they could — because they were going to school downtown and I wanted them to have the ability to buy things without having a lot of cash on hand. And I never opted out. I never even thought about it. I just [thought] "oh, I'll give them a credit card." Most people don't think about opting out on how their information is being used, and let's face it: that was the strategy of the financial services industry
+
+[Speaker: Rick Lane]
+when Gramm-Leach-Bliley was enacted. It was: Most people don't opt out. When Gramm-Leach-Bliley was enacted in 1999, most people didn't even think about kids getting credit cards or debit cards. This is a relatively new phenomenon where because of COVID, we've moved to a much more cashless society. Kids don't carry much cash. Parents are getting these debit and credit cards. You see a whole host of companies — PayPal just announced today that they're getting into this space. You have Citibank, you have GoHenry, you have all these other companies that are out there that are targeting children and teens because the market is huge. You know, there's 20 million teens in America. Estimated spending of these teens is somewhere around $150 billion a year, and so people are seeing that there's a market. We see that as well. But the big difference between Mazoola and our competitors is that we collect no personally identifiable information on a child
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. So when you got the credit cards for your two boys, all that information that is used on us as adults that markets to us unless we opt out was getting collected on your kids. And were the credit cards in their name so they were getting identified and their habits are getting identified as 14, 15 year-olds, 16 year-olds?
+
+[Speaker: Rick Lane]
+Rick Lane: Yes. Social security numbers, first name, last name, date of birth, all the information that data brokers collect on us is being collected on our kids.
+
+[Speaker: Shane Tews]
+Shane Tews: They're already getting marketed to because of all the influence of this information.
+
+[Speaker: Rick Lane]
+Rick Lane: Well yeah, you don't know where the data is going, right?
+
+[Speaker: Shane Tews]
+Shane Tews: Yes.
+
+[Speaker: Rick Lane]
+Rick Lane: Unless you opted out of how the information is going to be used, we know that that information is sold. And then think about this — and again, I didn't until talking to the Rego people — that you're able to combine the financial transactions of your 14 year-old and 15 year-old — and sometimes down to 7 year-old — if they're 13 and older, all their information that they've put or -acebook and Instaaram and all the other data collected on their web browsing histories. And so it is a powerful amount of information that has been collected on our children since GLBA. But now it's even more so because we've moved to this cashless society and kids are using debit and credit cards all over the place.
+
+[Speaker: Shane Tews]
+Shane Tews: It's like they knew more about your kids than you did. What?
+
+[Speaker: Rick Lane]
+Rick lane: Yeah. And the question is: What is the long-term ramification of that data collection?
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, yeah.
+
+[Speaker: Rick Lane]
+Rick Lane: You know, I don't know what, you know, what did they purchase? What did they buy at the local drug store?
+
+[Speaker: Shane Tews]
+Shane Tews: Right. You needed to pay attention to the bills.
+
+[Speaker: Rick Lane]
+Rick Lane: Well that's the other thing, [which]is, you know, with Rego is: Parents are notified instantly when their kids are making a purchase, which is kind of — it's really great. It helps in terms of knowing what they're purchasing, but at the same time, you can pick what stores they can buy things from. So if you want to say that your child can only buy at Starbucks, Walmart, and Dick's Sporting Goods, then that's the only place the cards will work — that there's a wall that will work, both online and in person. You can expand it. You also can donate to charities with the way this digital wallet works. You have savings in there. You have goals, chores, all of these great features on how to learn to save and shop and plan for your future in a very safe environment. But also, your parents are tracking you, not the credit card companies.
+
+[Speaker: Shane Tews]
+Shane Tews: So the parents have the ability to, like you're saying, chores — they can put some sort ot system in there that savs " 'you get X, Y, and Z," and you get to use more of your assets.
+
+[Speaker: Rick Lane]
+Rick Lane: Exactly. If you make your bed, clean your room, and do the dishes, you'll get $5, you know, or, you know, you do your homework. There's a lot of different ways to encourage. The other thing that it prevents is strangers putting money into your kid's account. So, any person who wants to put money into the account — so let's say you want the grandparents to be able to do it, or aunts and uncles — it's an opt-in for the parents to approve them first, even friends. So if there's a bully in the schoolyard, you know, taking your lunch money [like] back in the day, they, you know, transferring money to that child, you know, that has to be pre- approved. Just not anyone can put money in your kid's account.
+
+[Speaker: Shane Tews]
+Shane Tews: liust have a whole sidebar in my head now of how thev fiaured out — the bullies figured out how to get pre-approved on the kids. It's really sounds like a debit card more than a credit card. But so that's, that's a whole — very interesting. So it's a full ecosystem of teaching financial management, as well as having the privacy protections and understanding the regulations. That's — you've got a lot going on there, in a good way. That's great.
+
+[Speaker: Rick Lane]
+Rick Lane: Yeah, no, it's, very exciting. And Shane, as you know, there's very few green- field policy issues that are discussed in Washington, DC. And this is one of them. It's just per chance that you have two worlds that are now colliding, which is the financial services world and debit cards and digital wallets and digital currencies and the online world where he had COPPA and other types of privacy protections for children. And these worlds are now merging. And what really attracted me to the Rego team was that they were in the middle of solving this public policy problem with a new technological solution. And that was built from the ground up. And that's a very unique situation to be in in this town.
+
+[Speaker: Shane Tews]
+Shane Tews: So you and I have been in this space for a long time, and we were some of the early crew that were saying we would figure out how to do privacy by industry, which — lactually think privacy by industry has worked well in medical and financial areas. However, the technology that we have both worked on has come in and, like, turned a lot of this on its head. So l'm now a big proponent of us having a federal privacy law, because | think we are making it too tough for companies to figure out state by state how to get into all the guidelines, especially when we're mobile. So you're moving around. It's hard for your mobile device, you know, to know that l've just driven across the state line and a bunch of things are supposed to change because of the privacy policy, even though they try. They're doing a good job of trying. So how is the current patchwork of privacy laws? Is that affecting the ability for this product to get rolled out?
+
+[Speaker: Rick Lane]
+Rick Lane: Actually, no, because we're under COPPA. So in a weird way, the Child Online Privacy Protection Act is a federal privacy bill.
+
+[Speaker: Shane Tews]
+Shane Tews: So it preempts.
+
+[Speaker: Rick Lane]
+Rick Lane: And so we're under that. So the more macro discussions of federal preemption and private rights of action, all those issues were already resolved, you know, in 1998 when COPPA came about. So we are fortunate in that we don't have a lot of state law conflicts because we're under COPPA or, as some of the financial services under GLBA (Gramm-Leach-Bliley), which has also usually been carved out of some of these state laws. So we're in this middle world of a federal system, privacy system, just like HIPAA and some of the other, you know, the movie-rental privacy laws, you know, from Judge Robert Bork's day and others that are out there. So we're kind of in an interesting spot [in] that even if there isn't a change or an enactment of a tederal privacy bill, we still can amena. And you ve seen this with Ed Markev and Rep. Kathy Castor's (D-FL) bill of amendina COPPA to one, increase the age up to 17, which would make it similar to, sort of, the GDPR, and also including financial services transactions as part of the information that falls within the realm of COPPA.
+
+[Speaker: Shane Tews]
+Shane Tews: That's interesting. So is this product available right now if anyone listening wants to go enroll their family, their children?
+
+[Speaker: Rick Lane]
+Rick Lane: Yes, it is. It's available now at mazoola.co, and you can download it off the app or the app stores of Apple and Google. So it's ready to roll. It's there for parents today. And as we said, it is a mechanism to not just protect kids, but also to teach them financial literacy. So it is a two-for. The other thing that's also important that ties into this in not having any information on the child is in regards to data breach, which is somewhat connected to the privacy debate, but a separate effort, as you know, Shane, in data-breach protection bills. And one of the things that's fascinating is the impact that data breaches have had on children themselves. There is a ton of
+
+[Speaker: Rick Lane]
+evidence of kids getting caught in these data breaches. And the beauty is that if there's a data breach with one of the Mazoola products, there's no information on the kid to be collected. So you're orotecting a child not just from the collection and use of their data by the data orokers out there, but also you're helping to protect them against the use of their data on the dark web.
+
+[Speaker: Shane Tews]
+Shane Tews: A lot of people, when you talk about data or privacy, they don't really understand, and it amazes me how Americans are for some reason not — and I know, as I said, federal privacy legislation over GDPR. I mean, yeah. But you have this dossier that's going around and getting sold on you. And a lot of times they don't realize that there has been an ongoing issue and that their identity has been stolen until, a lot of times, they go to apply for higher education — if they're going to college and they find out that they had a car loan or they' d applied for a bunch of credit cards, or they' d run a bunch of debt that eventually gets assigned to them that they weren't party to. So it is really important to protect children's privacy. It's important to protect all data of it, especially on children. So you mentioned that you are in the app stores, both Apple and Google Play, which is great because that means that you have gone through the security measures, which you need to get onto the app store. But also, are you working to get into the Apple Wallet? Because I love my wallet. I would imagine kids are [such] digital natives, that would be the next step.
+
+[Speaker: Rick Lane]
+Rick Lane: No, absolutely. I mean, we're definitely looking into partnerships with the leaders out there in this space on the bank side, the Apple side, you know, and others. This is, we believe, our infrastructure. So we have sort of the Mazoola app that is out there in the public, but we also have an amazing back end under the Rego infrastructure that allows us to white-label what we're doing. And so we could bring others into the fold who are interested in having the ability to be COPPA compliant, allow kids to buy products and services on their websites or in their stores, as well as, you know, partnering with Apple woulo be amazing. We do think that there's a great fit there as well.
+
+[Speaker: Shane Tews]
+Shane Tews: So when you say white-label, I may just make it easy while it's on my head. It's like, you're saying it's almost gone full cycle. So it's like, when you were saying it was on the Walmart, originally on the website, they could have this as, like, a CVS pay element.
+
+[Speaker: Rick Lane]
+Rick Lane: Absolutely. You know, that's exactly correct. Or it could be ABC Bank credit card, you know, we could do the entire back end for — so, you know, sort of that private labeling that would allow somebody to get in this space who doesn't have the infrastructure that is COPPA compliant like we do.
+
+[Speaker: Shane Tews]
+Shane Tews: Fascinating. Good stuff. So thanks for teaching us all this. So looking at where you are now, what are future developments we should keep an eye out for?
+
+[Speaker: Rick Lane]
+Rick Lane: Well, I think in this space [it] is the revisions to the Child Online Privacy Protection Act. I think you heard trom sen. Markey, who is the original author, as well as the chair of the Senate Commerce Committee, as well as the ranking member of the House Commerce Committee, as well as Democrats and Republicans on both sides of the aisle, that COPPA needs to be updated. So that is going to happen, in my view, probably sometime next session. It's just, there's too much momentum. The stumbling block may be that someone may want to try to tie it to more macro privacy legislation. But as I mentioned earlier, COPPA is its own separate entity and doesn't have some of the outlying issues that a general privacy bill would have to get it over the finish line. So you could amend COPPA and you could do it in a way that you don't have to bring in some of the other privacy and data breach issues. But also what's interesting is: It's not just Congress that is looking at this, but the Federal Trade Commission, as well — as the entity that oversees COPPA. And they too are noticing that there is this new world order in the fintech space that is targeting children and does not fall under COPPA. So that's another interesting place where you could see some discussions happening here in Washington, DC.
+
+[Speaker: Shane Tews]
+Shane Tews: Well you have certainly given us a lot to look out for as well as, you know, teaching us a lot today. So, Rick, thank you so much for being a guest on "Explain to Shane."
+
+[Speaker: Rick Lane]
+Rick Lane: Well, thank you, Shane, for having me.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of "Explain to Shane." For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of "Explain to Shane."

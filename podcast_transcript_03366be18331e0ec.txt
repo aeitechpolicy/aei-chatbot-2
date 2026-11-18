@@ -1,0 +1,188 @@
+PAGE_TITLE: 
+	Combatting the Problem of Domain Name Abuse (with Graeme Bunton) — full transcript
+
+[Speaker: Introduction / editorial context]
+AEI Explain to Shane: Combatting the Problem of Domain Name Abuse (with Graeme Bunton) Episode # 70 | September 16, 2022 | Shane Tews and Graeme Bunton
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. The Domain Name Abuse Institute has helped set up a centralized domain name system (DNS) abuse reporting system that creates a more efficient way for domain name registrars to receive and process abuse claims. This new program is called NetBeacon, and it is a collaborative partnership with CleanDNS, who is an anti-abuse solution developer that is donating the technology behind NetBeacon. Together, these groups understand the need for a process that standardizes industry reports around DNS abuse that include activities that are harmful to consumers and companies such as malware, botnets, phishing, and spam. DNS industry partners can utilize this information to identify, report, and mitigate on these cybercriminal activities. NetBeacon DNS abuse reports are free of charge and publicly available. Today's guest is Graeme Bunton. Graeme is the inaugural director of the DNS Abuse Institute, where he works as part of the leadership in the design and development of new platforms and technologies to understand and reduce online harms. Graeme was previously an information specialist at Tucows, where he worked in business intelligence, analytics, and reporting. Graeme was the chair of the Registrar Stakeholder Group for four years at the Internet Corporation for Assigned Names and Numbers (ICANN), and co-chair of both the Registry and Registrar Abuse Working Group and the Contracted Party Abuse Working Group, where he was a driving force in the creation of the Framework to Address Abuse. As the 75th ICANN meeting approaches, Graeme joins the podcast to discuss the Domain Name Abuse Institute's work around enabling a more effective process tor abuse claims, and why his work to help establish best practices and tund research on DINS abuse through shared data will help fight against the consumer harms and the security threats at the core of the network at the domain-name level. Graeme, welcome to Explain to Shane. To get started, talk to us about domain name abuse—or "DNS abuse" as it's referred to in the industry—and the importance of combatting criminal activity.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Sure, thanks for having me, Shane. I'm really pleased to be here. So DNS abuse-and we can go into the definition a bit if you want to—is a subset of
+
+[Speaker: Graeme Bunton]
+online harms that are particularly impactful on what's called the "domain registration industry"-you know, impact the domain registration industry. And because of the way the internet works, the DNS is sort of that sole point of centralization.
+
+[Speaker: Shane Tews]
+Shane Tews: Right.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: It's really a key bit for trying to mitigate cybercrime and online harms. And so we find ourselves stewing in this space a lot about DNS abuse.
+
+[Speaker: Shane Tews]
+Shane Tews: I think of it as the genesis. It's where things start, and then you have to keep it going in a good way. I mean the DNS. Yeah, not the abuse.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Well, I mean, you're not wrong. It's how people like myself end up being like, "Hey, this seems neat."
+
+[Speaker: Shane Tews]
+Shane Tews: I'm not wrong.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yeah. And then you're trapped. And then it's 10 years later and you're spending all your time thinking about domain names.
+
+[Speaker: Shane Tews]
+Shane Tews: I'm with you. There's a self-help group for us. So you guys have a new reporting service called NetBeacon, and I'm just starting to learn about it. So give us an idea of what you're doing with the centralized DNS abuse reports that you're creating and this partnership that you have with CleanDNS.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Happily. So we started the DNS Abuse Institute created by Public Interest Registry last year. And we really—me, mostly—spent some time surveying: What were the real pain points about dealing with DNS abuse across the industry, and where could we make the most impact? And it became very clear really quickly reading through documents out of the ICANN ecosystem and talking with registries and registrars that the manual abuse reports that are coming in the door at registries and registrars everyday are problematic. And there's actually sort of two problems here. For the people who are wantina to have discovered or been impacted by abuse in some tashion and want to report it, for them, that experience is awful. You've got to be able to identify who a registrar is, which is not trivial for most people. You need to be able to use WHOIS or something like that. And then you need to go and find an individual registrar's abuse reporting page, which isn't always straightforward, and then fill out their own custom requirements to submit an abuse report. Not everybody is capable of that. Not everybody has the sort of experience that would allow them to do that. And then, boy, having to do it if you've got multiple domain names across multiple registrars, it just sort of increases exponentially. Then, as I was saying on the registrar/registry side of things, they're getting everyday hundreds, maybe thousands of these abuse reports that are also awful. So for them, the experience is really brutal. They're duplicative reports, they're unevidenced, they're unactionable, they're domains that don't belong to them. It's a long list of really unpleasant attributes of these abuse reports.
+
+[Speaker: Graeme Bunton]
+And so we have a very frustrated industry spending lots of time and energy triaging these tickets for basically very little value—thousands of useless abuse reports. On the other side, no one is happy about the abuse they're encountering.
+
+[Speaker: Shane Tews]
+Shane Tews: Can we just step through that for somebody who—I mean, I realize we are both steeped in this, but so when you're saying that you're dealing with worthless reports, who are generating those reports?
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: It's going to be a mix of people from just regular end users who say, "I think this thing is bad." And that thing could be, "Someone said something mean about me." It could be, "This is actually a horrible crime." It could be, "This is phishing or malware," this sort of stuff that we would put inside of DNS abuse. And
+
+[Speaker: Shane Tews]
+Shane Tews: So that's individual income. Those are basically, let's say, going into an inbox at a registrar.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Mostly registrars.
+
+[Speaker: Shane Tews]
+Shane Tews: At that point, or a registry. Okay.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: So maybe that's good context for most of this discussion. By and large, registrars should be the front line on most abuse. They have the relationship with the registrant—the person who bought the domain name. And so most harms, they should be the ones resolving. There are some exceptions like botnets where you're doing some stuff at scale where the registry is more important. By and large, we're talking mostly here about registrars.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. Right. So, yes, that's very helpful. The registries, the back-end operating things, registrars tend to be the people that are at the consumer end of this, so I just want to make sure we understood where these reports were coming from.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: There is another—so there are sort of end users. There are—let's call them "cybersecurity companies" that do this, again, sort of professionally to a certain extent. Oftentimes that overlaps with sort of brand protection interests as well who are finding bank phishing and things like that and want to make sure those come down. So there are some commercial interests at play here as well.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. So what is this NetBeacon thing? It sounds cool.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Well, so we have these two problems that I was describing: Reporting abuse sucks, and getting abuse reports also sucks. And the way to fix that was for us to build, essentially, an abuse reporting intermediary: something that is sitting in between the people who are trying to submit and people are trying to get these things to build one place that's easy to use, that standardizes all these functions so that the people reporting abuse are happy. And then on the other side, we're going to standardize those reports, we're going to enrich them with usetul information, and then get them to where they need to go so that the experience on the registry or registrar side is much better.
+
+[Speaker: Graeme Bunton]
+And that, I think, makes it easier for reporters and incentivizes registrars to use and participate in this thing. And ultimately, we're really trying to reduce the barrier to action so that registries and registrars can get an abuse report. They don't have to do a lot of work because it's now standardized. We've added some useful information to it. And hopefully they can just make a choice about whether this domain is indeed abusive or not. There is sort of a subtle big caveat in there which I should point out, which is: We, as the intermediary, can never make a registrar or registry take a domain offline. They are always going to be responsible for that choice. We are just trying to make that choice as easy and as quick as possible.
+
+[Speaker: Shane Tews]
+Shane Tews: So this is just better information flow, and especially since a lot of criminal activity tend to have something that's in common, I would think, so you're kind of looking for those common anomalies. There's the counter.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: So one of the things we do is—we call it "enrichment" in the context of NetBeacon—is: We take all the domains submitted and we bounce them off various sources of domain intelligence online. So that's going to be block lists like Spamhaus and SURBL [which] have kindly donated access to them. We're working on integrating Google Safe Browsing API right now so that when you get a report out of the system, it's including a bunch of information [like] whether someone else has flagged this domain name as abusive. This is probably a good point to point out that I don't code this stuff myself. We sort of had this idea of this system we wanted to build and Jeff Bedser from CleanDNS put his hand up and said, , "Hey, look, I really believe in the mission of the institute and what you guys are up to. Can I support this work?" And [he] essentially offered to customize a portion of CleanDNS and provide that to the institute to build NetBeacon on top of. So that's where the CleanDNS portion comes in.
+
+[Speaker: Shane Tews]
+Shane Tews: So it's good to have a cybersecurity expert actually volunteer, like, "Hey, let me just do this. Let's make this easier.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yeah. And if that wasn't clear, he donated that, so the sort of customization or the sort of code base that we've customized and the customization itself has been an awfully generous partnership.
+
+[Speaker: Shane Tews]
+Shane Tews: That's fantastic. So it's allowed you to bring some new tools into the space?
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yeah. So we launched this in June to moderate fanfare and then have spent much of the summer—I guess Northern Hemisphere summer—trying to work out a bunch of deliverability quirks which is: Boy, if we're saying we're going to take this thing and get it somewhere, we sure as hell better be able to actually do that. And so we've been working to make sure that we're super reliable in our abilitv to do that. And so now we're in a space where we're like, "Hey, registrars, check this out. Hey, people that want to use it, check this out. Please There's maybe another sort of fun bit of this. And l apologize, I think all of it is kind of fun because I work on it all day, and so you can tell me when it's not, but
+
+[Speaker: Graeme Bunton]
+registrars are obligated under gTLD (so, generic TLD registrars). Those accredited with ICANN are obligated by contract to provide a public abuse report email address. And so we don't need registrars to sign up. We can distribute these things to the entire gTLD registrar space without them having to do anything. And most won't. Most will just get from us high-quality standardized abuse reports. They don't need to do anything. If they want to, they can create an account, claim their registrar, set some custom settings so they could decide exactly where they want these reports to go. Maybe they don't like some of these enrichments that we've added so they could uncheck those. Maybe they want to integrate via the API. They can do that as well.
+
+[Speaker: Shane Tews]
+Shane Tews: So mostly it's an information flow process both ways, you're saying?
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yep.
+
+[Speaker: Shane Tews]
+Shane Tews: We're giving it there, and then if you want to customize, we'll help you do that as well.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yep.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay, that's great. So the European Commission recently had a DNS Abuse study that noted the European country codes. As you just noted, you're talking about the generics: com, net, org, info, blah, blah. But the country code top- level domain names have existing good practices internally that they are saying are ignored by the generic domain name registries and registrars. So what do you think of that analysis? And are there any particular practices in the country code operations you think the generic should be looking at closer?
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Boy, "ignored" feels like strong language to me. I think to sort of phrase it that way, probably, to me is sort of skipping the complicated economic context of the generic gTLD registration industry, which is globally competitive and doesn't have the sort of captured market that a country code has.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah,.fr.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yeah. And so you've got to be pretty careful, I think, and thoughtful when you're moving your analysis from CCs to Gs. There's other things in there, and there was a lot in that report that I thought was actually really good. They made, I thought, some reasonable recommendations. They made some I thought were also not great, but things like—and it's a bit of a third rail—data accuracy, registrar data information, registrar verification. So they're doing things like that. Those are all available to ccTLDs in a way that they're just not to gTLDs. There just is no global unique identifier that people can use. I mean, the closest thing we have to that is domain names, so now we're in a circular problem.
+
+[Speaker: Shane Tews]
+Shane Tews: Right. Exactly. An email from a domain name, right?
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yeah. So l think there are some lessons and there are some interesting bits in that, but I hesitate to really lean on the recommendations of that study too much. And in fact, a lot of the work that we're doing at the institute is deliberately avoiding some of the registrar information pieces, because we
+
+[Speaker: Graeme Bunton]
+don't want to get into privacy issues. It certainly has weighed down the ICANN community an awful lot. And also, by and large, to mitigate abuse, to disrupt abuse, registrars don't need more registrar information. They've got what they need. They've got the domain names. They have what's in their database. I don't need to be providing it to them or getting access to it at all. And so tor me, I think we can oe a bit more agile, come up with better solutions, move a little bit quicker it we're staying a little bit away from some of the privacy issues.
+
+[Speaker: Shane Tews]
+Shane Tews: That's probably—yeah, it's eating us all. And I keep waiting for the lawyer to do the study that shows that you cannot abide by the General Data Protection Regulation (GDPR), the data act, and the digital—a couple other things they have on. I'm just sure that you have to do the risk evaluation to decide which one you're going to comply with because it's going to have a cost evaluation where the others, you just can't do them all at once. And I have it in the back of my head. I haven't taken the time to write it, but I keep thinking that somebody smarterthan | will put it together.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Yeah, I don't think you're wrong. And getting into that world is messy. There's sort of an undercurrent of our work that I have tried to bake in which is really about some pragmatism. These abuses are bad. They're causing real harm to real people every day, and getting into the place where we're in philosophical arguments, l enjoy those over a beer at an ICANN meeting maybe, but in our work, the stuff we're trying to do is really about, like, "Okay, where can we make an impact? What's going to be a bit of a minefield?" Let's stay away from that and let's make the choices where we're moving forward, making progress, making the internet safer without getting too stuck down in philosophical debates.
+
+[Speaker: Shane Tews]
+Shane Tews: So l know one of your challenges was having to get a group consensus on something. So you have a fairly narrow definition of DNS abuse compared to the European Commission's, what they're saying [and] put forward, and they talked about this. And part of what I read that was, like, you try to get a lot of people who've got a lot of money at stake to come down to enough words that they can come together in a room. And I give you major kudos tor being able to do that, but they criticize you for that. And l thought—just kind of give us your opinion on that.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Sure. So the European Commission that studies DNS abuse uses a hilariously broad definition, which is more or less anything that uses a domain name that someone thinks is bad. And the DNS in that definition is almost incidental. It's basically anything online. And I find, again, going back to sort of pragmatism, how are we going to move forward? That just creates such a vast playing field of online harms that how do you even start? And so | just don't think that's sort of helpful. And also, it gives a crazy amount of power to registries and registrars. If you want them to be obligated to be dealing with online harms that involve a domain name, you're forcing them into places where they're now regulating speech and social media platforms in a way that are just not appropriate at the DNS. And I think most people would agree on that.
+
+[Speaker: Graeme Bunton]
+On the other side, we have that relatively constrained set of harms that is that list of DNS abuse: malware, botnets, farming, fishing, spam, where it's a vehicle for the others. It's an okay list. Again, to be pragmatic, I think it has its weaknesses; it's very categorical. What do you do when some awful person invents a new awful thing to do? I then need to go get every registrar in a room and argue about whether it should be on the list or not. And so that's not super I had a long blog post | wrote last year about a different approach for this that sort of takes 40 minutes to explain and a bunch of string and diagrams, as anyone who tries to go down a better definition of DNS abuse goes. But most people know what we're talking about with that list. When we're looking at those harms, most people get it. And so we can make some progress with that constrained list of harms. And that feels good. And the arguments about the periphery are really interesting and again, fun over a beer, but boy, let's make some real difference on phishing and malware, because those are just devastating. They're really causing real harms. I don't need to argue about some of the boundaries of those because there's so much—is it a bad metaphor, but red-meat DNS abuse that we can make a difference on? If I'm going to put it really strongly, I think some people carry on the definitional debate because they don't really want to do some of the work of getting down to it.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, well you do have three core principles that you have agreed to, which are innovation, education, and collaboration. So talk to us about what you guys would have agreed on and how it's going.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: It's going well, although I still feel like we're in relatively early stages at the institute and trying to figure out everything we want to do and what we could be doing and what order it goes in and how it fits into those pillars. So innovation is clearly this NetBeacon initiative where we're building tools for registries, registrars, and end users to make the internet safer. Education is sort of an ongoing eternal effort for us, mostly focused at the noment on producing a set of best practices. So we put out two last year. We're working on a fun one we should have out in the next couple weeks for registries and registrars on managing reporter expectations. So people put in abuse reports and they would like to know what happens when they do that. And the industry by and large is not great at managing those expectations. And so how do you do that without revealing too much about your processes, without litigating endlessly on these back-and-forth issues? And so we're putting out something there. We've got another one coming out later this year on architecting registration workflows to reduce abuse. So sometimes it's really how to respond to abuse; sometimes it's really operational. We did one for end users last year on how to keep your blog safe, unique passwords, stuff like that. So that's sort all into the education bit. In collaboration, we've got some nice space right now that we're mostly using for discussing with registries and registrars the work that we're up to. And so that's like, "Hey, we're working on this best practice or thinking about this
+
+[Speaker: Graeme Bunton]
+feature for NetBeacon. Can we get some feedback?" And we're beginning to see signs of, like, "Hey, how do we begin sharing actionable intelligence in a safe and privacy-compliant manner?" And there's a huge need for that in the industry. And so we're really figuring out how to take some next steps there where we want to combat things like TLD hopping, where you see a domain name engaged in malware, say, or phishing bouncing around the industry. And how do we begin to get people in front of that and be able to share reliable, useful information that's both actionable and compliant? It's going to be a tricky one, but we're thinking about it.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. Actually an old-school example, the telecommunications companies have had that for years and they 're over in Arlington. And they literally have an operations center where one of each of the major companies, at least before COVID, had a physical person there, but it was easier for them to trade information that was allowable under the common carrier law, so they could say—but it was to basically deal with transatlantic problems or anything that was domestic. It could actually be an energy issue. So there's a lot of examples there, but you guys are really smart and digital so you can do it faster, I'm sure.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: We're trying.
+
+[Speaker: Shane Tews]
+Shane Tews: But you've got to get people to actually use the information that gets put forward.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: One of the quirky bits I'm discovering is that registrars—I spent four years as chair of the Registrar Stakeholder Group within ICANN. If you're outside this world, don't look that up. It's not worth it. But it means that I've spent a lot of time with registrars. And the scale of registrars is crazy, from giants like GoDaddy to lots and lots and lots of small guys with less than 10,000 domains, give or take. And the resources they have at their disposal are vastly different. And I think by and large, the vast majority of registrars are probably running their abuse side of things inside just an email box. And so deploying sophisticated data sharing methodologies that are tederated and automatically changing these signals of compromise to each other works for, like, 10 of them maybe, which might be a big chunk of the internet, but it's not necessarily the people who need them. And so there's some really interesting challenges to overcome there.
+
+[Speaker: Shane Tews]
+Shane Tews: Well that's true with a lot of regulation. The people that can afford the automation and putting together a whole group of—an entity that's maybe offshored or somewhere else, not in the same place as the headquarters, it takes money and energy to do that. So when we're passing all these regulations, not only in the domain name addressing space, I always think about that, because you want to do a mom-and-pop operation. How do you manage through that? That's a tough one. So speaking of, what do you guys have on the horizon? What are you looking at going forward?
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: There are two things I want to mention about what's coming up. One is: We
+
+[Speaker: Graeme Bunton]
+keep expanding NetBeacon. So right now, it's gTLDs only. We'll look at adding ccTLDs pretty shortly as well as expanding the list of harms that you can report. Ultimately, I want this thing to be the place to report bad things online for everything so that we can route to hosting companies and email providers, the whole range of the infrastructure ecosystem, because I think that's important. That's essentially a public service that it exists. There is lots of room between me and that and there is a ton of work and it's an ambitious goal, but we're working on it. The next one is coming out real soon. So I think we've set a really high bar here for transparency, academic robustness, [and] accuracy so that we're really trying to get the community to a place that these are useful statistics that they can rely on, that if they want to dig into how they were made that they can, that it is the best shot at this that anyone has seen to date. And so that's now, or very shortly. And then over the next couple months, we have the underlying data. So how much of that abuse is lying at which TLDs and at which registrars? We've also got some really neat bits in there where we can measure abuse time to live so we can see who is actioning their abuse really quickly and so that we can celebrate those registries and registrars that are doing a great job. And we can see this in the data. We're also able to split between malicious and compromised domain names so that we can see what the split is in that respect across the industry, which is really important because boy, someone might have a whole bunch of phishing sites but they re actually compromised websites. And it's up to the hosts to resolve those issues, not necessarily the registrar. It's really important to understand that distinction. And so we'll begin publishing that level of data at the registry and registrar. Currently, the plan is for November, but we're really trying to get in front of that, do a lot of outreach with the community to be like, "Here's what we're seeing," shave off any rough edges of that methodology, make sure that no one is surprised by what it is we're trying to report, and then ideally it's a very open, uneditorialized, transparent, robust platform that the community can interact with and ideally make some policy choices from.
+
+[Speaker: Shane Tews]
+Shane Tews: That's fantastic. Well, Graeme, thank you for all the work that you're doing in this space. I know it's really important at multiple levels, but especially for those of us who want the trust in the internet to continue, having the right people online and being able to take the bad guys off—which is an eternal thing that we have to work on—is really important. So good luck.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Thank you.
+
+[Speaker: Shane Tews]
+Shane Tews: I will see you probably in Kuala Lumpur. And thank you for being a guest today on Explain to Shane.
+
+[Speaker: Graeme Bunton]
+Graeme Bunton: Thanks, Shane. I really appreciate it.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of Explain to Shane.

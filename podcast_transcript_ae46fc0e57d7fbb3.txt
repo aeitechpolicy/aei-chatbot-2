@@ -1,0 +1,179 @@
+PAGE_TITLE: 
+	Digitizing the Barter Economy (with Josh Kline) — full transcript
+
+[Speaker: Introduction / editorial context]
+AEI Explain to Shane: Digitizing the barter economy (with Josh Kline) Episode #27 | March 2, 2021 | Shane Tews and Josh Kline
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane."I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. The pandemic has given us plenty of time to think about what we have — especially in the space we've occupied during the lockdown — or what we need, or maybe just what we want. It's also brought to light what individuals are needing within their communities, that it's not always easy to fulfill due to barriers of communication, and sometimes, the difficulty to connect with the individual that's in need. Josh Kline thought about this before the pandemic and decided there should be an app for that: how we can trade our no-longer-wanted goods for another good or service, or perhaps as part of a donation to a cause. HaveNeed is the first consumer multiparty barter platform for goods and services. It is a patented multiparty matching engine that connects the "haves" and the "needs" of limitless numbers of people efficiently, creating barter opportunities that could not previously be achieved. This means I could trade a winter coat for tennis lessons for my niece, or maybe my winter coat goes to a math tutor who then connects with a student that I may not know and provides educational support as part of my barter agreement. Josh Kline is an Emmy Award-winning technologist and an executive in Hollywood who decided that he wanted to take his passion for doing more for his community digital. He's the creator of HaveNeed barter platform — that is an app that will go live in the Apple App Store this March. Josh says his motto is that he "tries to leave the campground nicer than he found it." l've witnessed the passion Josh has for making this world a better place. In this case, he is trying to help people connect, and he's using technology for a good cause. Check it out: You may clear out a storage space or learn a new skill. Josh, you've been talking about HaveNeed for quite a while, and I know it's been a labor of love for you, but what inspired you to launch this company, and where are you in the process right now?
+
+[Speaker: Josh Kline]
+Josh Kline: A few years ago, I was being recruited to join a Silicon Valley tech company called Box, which is a cloud content management company. I knew it was a great company and was preparing for an IPO, and I was going to join as the head of media and entertainment, but I also understood that there was a shelf life on that role, ultimately, and I was thinking about what I was going to do next, which is kind of an odd thing to do as you're being recruited for a job. But | felt that I wanted to be in a position where I could be more impactful on the world around me beyond, you know, donating to charities [and] local organizations. I wanted to find a way that | could create impact at scale, but not as an adjunct to what | did for a living. I wanted it to be intrinsic to what | did for a living, but not necessarily in the form of, you know, starting a charitable organization. I'm an entrepreneur, and I wanted to find a way to create something that could deliver scale and have an economic engine driving it that would make it sustainable.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, that sounds like the good story, but there's got to be something behind that, like: Coop had too many skateboards, or...
+
+[Speaker: Josh Kline]
+Josh Kline: Yeah, so, you know, l've got a — at this point — a teenage son.
+
+[Speaker: Shane Tews]
+Shane Tews: I think it was tennis racquets.
+
+[Speaker: Josh Kline]
+Josh Kline: Yeah, so we had a lot to get started with tennis racquets. I've got a kid who's a competitive tennis player and, you know, as he was growing, he was just churning through tennis racquets and tennis equipment and shoes. He might sometimes wear a pair of shoes once or twice, and then he' d beat and grow and move onto the next ones — and ski clothes, I mean, you know, just the normal stuff parents go through of kids outgrowing things. And that fed into this idea about: There must be a way, a more efficient way, to distribute things we're not using into the community. Whatever community that is, whether it's where | live in Los Angeles or Sub-Saharan Africa, there just has to be a better way to distribute underused goods and services throughout a community.
+
+[Speaker: Shane Tews]
+Shane Tews: So what'd you come up with?
+
+[Speaker: Josh Kline]
+Josh Kline: Sol thought that barter probably played a role in it on some level, and I couldn't — at first, it wasn't obvious to me why there wasn't a breakout success among tech companies and startups in the barter space. And so that was a research project in and of itself. They all had some things in common and ultimately, they all failed because of this thing called the mutual coincidence of wants, which is, you know: If I want your headphones, but you don't want my iPad, we don't share a mutual coincidence of wants, so there's no barter to be had. So l had to figure out if there was going to be a chance to be successful by
+
+[Speaker: Josh Kline]
+leveraging barter, which is, you know, it's a form of commerce and dates back at least 8,000 years. We know it works, but why doesn't it scale? What I ended up coming up with was a multiparty barter architecture, so that if I want your apple but you don't want my orange, we don't have a barter. But if you want somebody's lime and they want my orange and I get your apple, we all have a trade to be done there. And so that's a very basic way of looking at multiparty barter, but it actually is kind of a powerful change in how things are done. So l've spent the last several years actually developing a platform called HaveNeed, which is the first consumer multiparty barter platform for goods and services. And that allows people to list their haves and their needs, and then we'll algorithmically match and offset those haves and needs across a population of people and create these things called "barter loops" that people can either decide to participate in or not.
+
+[Speaker: Shane Tews]
+Shane Tews: Then how does this become an app? Explain the app situation here.
+
+[Speaker: Josh Kline]
+Josh Kline: In looking at opportunities to create a business, I'm looking at, on global scale, the next couple of billion internet users are going to be coming online with smartphones and internet access and little or no access to cash or banking systems. So right there, that creates an opportunity to deliver services through mobile apps, and that's where I focus. So HaveNeed, you know, going back to the beginning, was architected and designed to be a mobile-first company. As I mentioned earlier, it's about delivering impact at scale, and that means global scale, and most people aren't going to have a desktop computer. Their first foray onto the internet is going to be through their phone. So the trick is — in boiling down this concept, which at first may seem simple enough, this multiparty barter concept — boiling down the functionality of that into a user interface that's easy to understand but sits on top an incredibly powerful platform that makes these connections across essentially disparate data points and brings logic to them.
+
+[Speaker: Shane Tews]
+Shane Tews: So, Facebook's got some version of this that is monetary, right? And they're done by neighborhoods or, if you want, you can kind of geofence what you're looking for. What I find so fascinating about this is: You're trying to do this, as you said, using barter as your mechanism for the trade element. So that got a little more complicated, I think, when you started to put it into play — as you and I have talked about it through your years of working on this. So talk about the "need feed" and how it actually — the functions that you've had to put in place.
+
+[Speaker: Josh Kline]
+Josh Kline: Sure — nice way to reference one of our trademarks! I really appreciate that, Shane. So the "need feed" is our name for our home screen. The way the need feed differs from all other existing mobile apps that have tiles with items on them that you can scroll is that everything on our need feed is indexed off of the active users' haves and needs. So everything you see there — as a reference, it says "so-and-so has this thing" or "so-and-so needs this thing," and as you scroll through that, it's very evident as to: If they have something and it's on your need feed, it's because you've listed that as a need. And we're surfacing that information to the active user. So there's several ways to actually access the underlying functionality within our app. The easiest one is the need feed, where you can just scroll and find things that people have that are indexed off of your needs. But you'll also see things that people need that are indexed off your haves, and if you find a tile that lists something that somebody needs, and you click into that tile, we're going to tell you all the things you could possibly get if you offer up that thing that that other person needs. So we've got this interesting sort of wildcard matching capability here where we ultimately want to offset haves and needs, but you could also just search for something in the platform and we'll tell you what potentially you'd have to offer up to get the thing you're looking for. Or, if you find you want to contribute something to somebody else's need, we'll tell you all the things you can get for it without you having to ultimately have thought about what that was first and list it. So we try to make it as easy as possible to donate, to trade, essentially to, as I said, push these products and services back into the community. We think — and in fact, I'll tell you — that the app is being submitted to the App Store right now. I finished some of the metadata and screenshot work this morning, and so the engineers are submitting it right now. So this is all happening real-time after a long time in development.
+
+[Speaker: Shane Tews]
+Shane Tews: So let's go with a different example, even though I did appreciate the oranges as a girl who loves a cocktail and was really in need of a lime the other day for National Margarita Day. But mentioning that your son Cooper is great at tennis, let's say that he was willing to give tennis lessons. How does he — explain your triangulation loop — if he's got tennis lessons but he wants to figure out a barter element there. He's willing to give a service.
+
+[Speaker: Josh Kline]
+Josh Kline: If he's prepared to contribute somehow by offering tennis lessons locally, he could list a service a tennis coach, and he could list [that] as a have. And if he wants new headphones, he could list that as a need. And instead of having to
+
+[Speaker: Josh Kline]
+find somebody that needs tennis lessons and has headphones, which would be a mutual coincidence of wants, and even at internet scale, that just doesn't happen very often. So what we'll allow to happen is: We'll assemble a barter loop algorithmically of between two and five people. Two people is great; that's legacy barter. It's a one-to-one, it's a high degree of probability that it's going to succeed, but it just doesn't happen very often. So we'll put together barter loops of between two and five people. So Cooper could — that's my son's name, Cooper — would offer tennis lessons to one person, that person in turn could provide something that another person wants, and that other person would provide Cooper the headphones. So now, the person that Cooper is giving the tennis lessons to is not the same person he's getting the headphones from.
+
+[Speaker: Shane Tews]
+Shane Tews: I'm getting this vision of Michael J. Fox when he played a concierge in that movie where they all are trying to figure out like: "I've got tickets to a Broadway show and you need tickets to" — yeah.
+
+[Speaker: Josh Kline]
+Josh Kline: So there are all of these examples of this happening in the real world that we really don't think about very often. For instance, multiteam, multiplayer sports trades — those take scores of people, weeks of processing information to come up with a trade. Another really good example here is organ transplants. So it used to be that if I needed a kidney and my wife wasn't a match, l'd go on a kidney list, and hopefully a donor kidney would become available before l died.
+
+[Speaker: Shane Tews]
+Shane Tews: I have a friend who went through that. You have to have like a — you basically have a triangulation that assures everyone shows up for the transaction.
+
+[Speaker: Josh Kline]
+Josh Kline: Right.
+
+[Speaker: Shane Tews]
+Shane Tews: But, so how did you make this into an algorithm?
+
+[Speaker: Josh Kline]
+Josh Kline: As a non-engineer, that's a great question.
+
+[Speaker: Shane Tews]
+Shane Tews: We know a lot of them.
+
+[Speaker: Josh Kline]
+Josh Kline: So my strength would be in conceiving of and mapping out product requirements and then, you know, I depend heavily on very talented engineers to put that in practice.
+
+[Speaker: Shane Tews]
+Shane Tews: There was a cocktail napkin involved and you drew something out and said, "Can you do this?"
+
+[Speaker: Josh Kline]
+Josh Kline: Actually, there certainly was a cocktail napkin involved, and then that became whiteboards, and then that became product specs. But you know, the first
+
+[Speaker: Josh Kline]
+thing I did was actually engage the services of a user experience firm up in San Francisco who just sort of acted as a sort of adjunct brain for me to, like, throw ideas into, and let's start wireframing how this would actually come together in an application that people could use. If I can mention something, because some people don't quite understand sort of what a powerful difference it is to go to this multiparty architecture, but an example of it that | think puts it into perspective is: When we're doing software releases and we've got a small group of test users in the system for bug testing, it's a group of six users, each with five haves and five needs, and then we run our bug testing against that. And with six users, each with five haves and five needs, in the last analysis we ran, we generated 11 two-person barters, so: legacy barter, mutual coincidence of wants, we get 11. When we extend that out to include up to five people on any barter loop, the number of possible transactions jumped to 3,279.
+
+[Speaker: Shane Tews]
+Shane Tews: Wow.
+
+[Speaker: Josh Kline]
+Josh Kline: So it's almost 300x more barter possibilities with the same population and the same number of items available.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, that is really interesting.
+
+[Speaker: Josh Kline]
+Josh Kline: It is orders of magnitude greater.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, that's fantastic. So as you've been going through this, I know that you've kind of been looking at — besides looking for funding because you had to build the app and, as you said, you're getting on the App Store, tell us about any of the barriers to entry you've run into, especially on the government side, because that's a little bit of my audience here. Any regulations? When you went out to look for help, were they like, "This is a great idea, let's throw some cash at you"?
+
+[Speaker: Josh Kline]
+Josh Kline: Yeah, no, not people l've spoken with. I fit into kind of an interesting segment of the market for startups. So it's a social enterprise and it's not a nonprofit, and there's certainly buckets of funding available for nonprofits. And I haven't been able to navigate successfully government funding for this because nobody can quite understand what to make of it. It's not a nonprofit. It is a for-profit tech startup. I should be able — and I have raised capital through traditional channels as tech startups do. But, you know, especially over the last year, as l've reached out to both Los Angeles and California city resources and state resources, it seems to me that there's almost no more powerful startup possibility than something that would allow citizens to be more resilient and share goods and services among
+
+[Speaker: Josh Kline]
+themselves in a time when tens of millions of people are out of work and cash is tight. But | have not, to date, been successful in identifying grant funding or government programs, and it's certainly not for a lack of trying.
+
+[Speaker: Shane Tews]
+Shane Tews: So you mentioned the closed loops. As l've been following you coordinate all these things, the closed loops are interesting because you brought up something in a conversation you and I had earlier about the trust factor and that, you know, part of when you are doing or using cash, which I hope does go the way of the dodo bird at some point, you know, you don't need that trust value because you know the value of the dollar. So you've had to go to a closed loop system and you're in the beta testing. Can you walk us through that? And also, I'm noting on your website here that if anybody's interested, they can actually become part of your testing group here. So talk about that.
+
+[Speaker: Josh Kline]
+Josh Kline: Yes. So, anybody listening: We're rolling out in beta imminently this week (by the time you hear this, last week, I guess), and I would love it for anybody listening to go to HaveNeed.org. And at the bottom of that homepage is a signup form so that we can let you know when we're opening up the app to the public or putting together new private groups. And it's basically our update list.
+
+[Speaker: Shane Tews]
+Shane Tews: Explain what a closed loop group is.
+
+[Speaker: Josh Kline]
+Josh Kline: So this came out — we did some work with Oxfam, which is the world's largest anti-poverty and disaster relief charitable organization, and one of the feature requirements was that we have private groups for bartering and, as was generally explained to me, you know, if they go into Haiti after an earthquake to help put back the community, get a community back on its feet, they can't really have drug dealers, gun dealers, human traffickers, and the like involved in those barter groups because those people will get taken advantage of. It's a bad situation, so there's got to be a way to close off those groups to make them secure. I know this sounds crazy given what's happened on our social media networks of late — there are in fact bad actors — and we just need to maintain the trustworthy and safe trading community.
+
+[Speaker: Shane Tews]
+Shane Tews: So you are hopefully going to be on the App Store soon.
+
+[Speaker: Josh Kline]
+Josh Kline: Yeah, so we'll be in the App Store. By March 1, I think, it'Il be in the App Store. The thing is: Even if you see it in the App Store and download it, unless you're part of one of the private groups, your account won't be whitelisted.
+
+[Speaker: Shane Tews]
+Shane Tews: There's a hoop you have to jump through; okay.
+
+[Speaker: Josh Kline]
+Josh Kline: Yeah, you'll get a little popup that says "sorry, not yet," but when we open up to the public, we're going to have to figure out how many people we allow or how many loops we allow any one person to participate in at a time before they start fulfilling those loops.
+
+[Speaker: Shane Tews]
+Shane Tews: Is there going to be a star system? So it's like my Uber driver who's always begging me to give him five stars, and hopefully he has given me five stars.
+
+[Speaker: Josh Kline]
+Josh Kline: For us, yes, there is a rating system. The benefit is: At some point, that rating system will be very helpful to determining who you want to trade with, and will allow you to filter out — very similar to Amazon — you know, "I only want to see things that are Prime" or "I only want to see things that have a four-star or higher review," and we'll have that filter system as well. But upon launch, the HaveNeed rating system means nothing. Nobody's done anything yet.
+
+[Speaker: Shane Tews]
+Shane Tews: You have to build value into it.
+
+[Speaker: Josh Kline]
+Josh Kline: Yeah. Now we've got to build that up, and so we have to provide tools that provide our users with comfort around the dependability and the safety of the platform, and that includes convenience services like shipping, deliveries, local deliveries, [or] escrow services for higher value items. It also includes something that hasn't been done before, which is transactional barter insurance, and that's actually an insurance product we're developing right now with an insurance tech firm.
+
+[Speaker: Shane Tews]
+Shane Tews: I didn'tknow that was a thing, but you're making it a thing.
+
+[Speaker: Josh Kline]
+Josh Kline: We're making it a thing. Any barter startup over the last 15-20 years at some point in their collateral has said, "And at some point, we'll have insurance." None of them ever did, and I think, ultimately, insurance will be a very important thing to offer our users. We are working with an insurtech company right now in developing that insurance product, so | think we'll actually have the first transactional barter insurance products on the market.
+
+[Speaker: Shane Tews]
+Shane Tews: So this will be one more place where I'm like, "It hurts," having anxiety going, "Does my credit card really cover this? Should I say no to that?" Or, I'm like, "Okay, I can get barter insurance and I'm good."
+
+[Speaker: Josh Kline]
+Josh Kline: Right. Listen, I'm going to send my iPad to one person, and I'm hoping that the guitar lessons I'm getting from the other person are actually working out.
+
+[Speaker: Shane Tews]
+Shane Tews: They don't flake out. Okay.
+
+[Speaker: Josh Kline]
+Josh Kline: Yeah — they don't flake out, or they know how to play guitar. And by the way,
+
+[Speaker: Josh Kline]
+we have chat in the app, we've got the rating system, we want people to communicate within the app. There's no anonymity in this app. We want people to know who they're dealing with. We want people to communicate. We want people to feel good about these transactions and not just roll the dice, but ultimately, some things won't work out and we want to be able to insure those transactions.
+
+[Speaker: Shane Tews]
+Shane Tews: It never occurred to me somebody would offer guitar lessons and not know how to play the guitar.
+
+[Speaker: Josh Kline]
+Josh Kline: You'd be surprised.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, it's an interesting world out there. Well, we all look forward to having this app on our mobile device soon and start bartering away. And we will come back and stay in touch and find out how it's going, and so thank you very much for being a guest today on "Explain to Shane."
+
+[Speaker: Josh Kline]
+Josh Kline: Thank you, Shane. It's a pleasure being here today.
+
+[Speaker: Shane Tews]
+Shane Tews: Any time. Thank you for listening to another episode of "Explain to Shane." For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of "Explain to Shane."

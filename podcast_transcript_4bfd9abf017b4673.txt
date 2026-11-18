@@ -1,0 +1,209 @@
+PAGE_TITLE: 
+	Adapting to the AI Era (with Bojan Tunguz and Brent Orrell) — full transcript
+
+[Speaker: Introduction / editorial context]
+Explain to Shane: Adapting to the AI Era (with Bojan Tunguz and Brent Orrell) Episode #123 | July 10, 2025 | Shane Tews, Brent Orrell, and Bojan Tunguz
+
+[Speaker: Shane Tews]
+Shane Tews (00:06) Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work and how they shape our social and economic life. On today's episode of Explain to Shane, we'll explore how artificial intelligence is transforming the way we teach, learn, and prepare for the future of work. From AI learning tools to prompt engineering, both education systems and work systems are facing questions about how to adapt, what's at stake if we don't, and how academic institutions should navigate these changes. Today, I'm joined by Brent Orrell, Senior Fellow at the American Enterprise Institute, and Bojan Tunguz, founder and CEO of Tablo AI, a startup focused on applying machine learning to structured data problems. Before founding Tablo AI, Boyan was a senior system software engineer at NVIDIA, and he has a bachelor's of science in physics and a master's of science in applied physics from Stanford, and he holds a PhD in theoretical physics from the University of Illinois. I hope you enjoy this episode. Thank you for being a guest today on Explain to Shane, and we have a bonus because we have Brent Orrell with us here today.
+
+[Speaker: Brent Orrell]
+Brent Orrell (00:19) Well, it is entirely my honor, so thank you for having me along with Bojan, who really knows everything about everything.
+
+[Speaker: Shane Tews]
+Shane Tews (01:25) And I know you two have been chatting a lot today, and I've missed a couple of events, so I look forward to learning because I've missed quite a bit. So let's just start with, I'll just give us a real quick background on what you've been doing the last two years, because I know you've been in this space around artificial intelligence for quite some time but the last two years seem to have been a catalyst for some of your work.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (01:47) Prior to this, I was at Nvidia, and I left about a year and a half ago. The last two years, as everyone knows, have been very explosive in AI, and I thought that I could do a little bit more if I did it on my own. So I've been working on some of my own projects ever since I left, primarily kind of laying
+
+[Speaker: Bojan Tunguz]
+groundwork for even bigger projects that I'm planning on working on, and that's pretty much where I'm right now.
+
+[Speaker: Shane Tews]
+Shane Tews (02:15) Can you tell us what the bigger project is, or is it going to be a surprise?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (02:21) It's not really a surprise. It's still very much in the ideation stage. I have two main focuses right now. One is using artificial intelligence machine learning for tabular data, which is my narrow specialty within machine learning. The other one is something that I'm trying to do with a future of work. It's a much more nebulous thing that I'm interested in. So my thinking is that it's not just what I want to do, but how I want to do it. For the second part, I don't feel that we still have the infrastructure and institutions that can kind of support the kind of projects and the kind of work that I want to be doing going forward.
+
+[Speaker: Brent Orrell]
+Brent Orrell (03:12) That's the educational reform kind of stuff.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (03:16) No, it's the future of work.
+
+[Speaker: Shane Tews]
+Shane Tews (03:20) I've loved working with Brent because I've learned so much about an area that I was like, I don't know somebody else solves that problem, and then I do my tech thing. But I think of it as an infinity loop in my head that you need to get the future of work, and make sure that we have a practical application. We need to be working with the education system, so if we don't start to change the curriculum in the education system, then we won't get the right skill sets to really enable us to go through with what we need for the future of work. So, that's how I think of it.
+
+[Speaker: Brent Orrell]
+Brent Orrell (03:50) When you say, I'm thinking about working on the future of work, what does that mean to you?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (03:57) One thing that I realized is that as the AI becomes more powerful every year, the traditional structures like startups, companies are not really well suited to actually take full advantage of it. They think of multi-year plans and multi-year implementation, and most of those long-term projects are pretty much becoming very over-optimistic at this point. I think a more flexible work structure that can allow you to work on projects in much shorter time horizons and still get funded for that would be something I'm interested in.
+
+[Speaker: Brent Orrell]
+Brent Orrell (04:33) I see, so you mean the actual future of work, not the future of work looking at it from a labor standpoint. It's like, how do we better organize our work.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (04:45) So one of my issues, being this whole issue of remote work, which I was very hopeful about, and I managed to build my whole career around it. But unfortunately, there was not enough long-term support for it. So a lot of big companies decide to return to the office, forcing us back to the modes of working that I felt were outdated already five years ago, even more so today I think the big reason we never really got any major buying was because we don't have tools, and we don't have infrastructure that can help us to get this from the ground up and scale it.
+
+[Speaker: Shane Tews]
+Shane Tews (05:32) Let's walk through that because my latest fascination is trying to make artificial intelligence practical and application-oriented for a lot of the policymakers we talk to. And that really goes right now to not just tool sets, but the option of bringing in more agents to the work that they're doing. And it's a layered effect. I also think it's a little mundane. It's to the point of it's the work that you have to put these tools in place and then make sure that you spend the time showing people how to use the tools, so then it can make sense. One area that I was talking to somebody about is congressional offices. They just don't have the wherewithal to kind of put the thought process together. So I'm hoping that Brent will help me, and maybe you if you're interested in putting together just a workshop to basically say here's how we can start to integrate tool sets, but it's going to have to be a build and a migration because of the way that they do things. Even though we know that Congress has a lot of money, they appropriate a lot of money, but they don't tend to have a lot of money to spend on fixing their own system. So, walk us through what a system change you would do? What would you recommend?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (06:45) I think most of our organizations are structured as some monolithic organization, and I think that's one of the big problems when changes are rapid and need to be implemented much more in an agile way. We have very much command and control structures in almost all of our organizations, whether it's Congress, whether it's a big tech company, or even a small startup. They all have a very centralized way of organizing things, and it creates a lot of friction points downstream that stifle innovation and agility to move quickly as the outside circumstances dictate. The idea is to make organizations much more cellular in a way. So, like enabling small teams, small groups to be much more responsive and create products or projects as they see fit, without having to go through all sorts of internal approval mechanisms. How to do that in an effective way, the whole operator agent problem becomes an issue, and how to implement it.
+
+[Speaker: Brent Orrell]
+Brent Orrell (07:57) It reminds me of the study that came out of the Harvard Business Review a few months back, but they were looking at the application of AI inside Procter & Gamble, where they had four groups. They had groups without AI, individuals without AI, and then individuals with AI and groups with AI to test what the effect of that was on their productivity and their creativity, and so on. What they found was
+
+[Speaker: Brent Orrell]
+that the groups using AI delivered better products faster, and they generated more value-added insights into the company's operations. What was more surprising was that the individual working with AI also outperformed the group without AI. And of course, the individual by themselves isn't able to compete with anybody using an AI. What it says to me is that there are not just enormous efficiencies to be gained, but insights to be gained by human AI collaboration.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (09:16) I think one place where we actually had decades of experience with that kind of collaboration is chess. We had systems that were superhuman chess players since the 1990s. What was discovered in the years since then was that humans with AI outperform both AI and humans by themselves. For a while, this whole centaur model was very prominent. I don't know if that's the case anymore because the modern AI chess players are just orders of magnitude better than what they used to be. But that was one of the first things that you encounter when human-level AI tools become available. Humans with AI are probably the best combination.
+
+[Speaker: Brent Orrell]
+Brent Orrell (10:04) One other really interesting finding in that study was that although the groups and individuals using AI outperformed it better across the board, they tended to trust their work product less because they're used to building everything from the ground up. So you can be accountable in a sense because why decisions are made, why we're doing it this way, not that way. You don't have that visibility with AI, and therefore you're handing over to your boss a product that you're like, I hope that's right so people are anxious.
+
+[Speaker: Shane Tews]
+Shane Tews (10:49) I hope they're doing validation. You can't just hand it over to AI and be like, “Good luck, sucker.” You know, that doesn't work. I use the tools all the time, but I check my math.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (11:03) I think that's important to emphasize. We are still not at the stage where you could blindly trust AI to get a thing done. It's at a trust but verify stage. It still requires a lot of human competence to be able to verify things properly. Verification is still easier than actually building things from scratch. So we definitely have an advantage now, but it's not a process where you can really trust the whole process over to AI.
+
+[Speaker: Brent Orrell]
+Brent Orrell (11:32) So that would lead you to a multiple AI thing, where one AI is producing it and another one is checking it. And I'm about to have a real-time test of this because my first paper, written with heavy use of AI and the research process, which I did all on my own, I did not ask my RAs to do this. I'll find out whether it can be trusted for me. And I do feel nervous about it.
+
+[Speaker: Shane Tews]
+Shane Tews (12:09)
+
+[Speaker: Shane Tews]
+Okay, just wondering if you're trying to put the RAs out of business.
+
+[Speaker: Brent Orrell]
+Brent Orrell (12:13) No, there's still plenty for them.
+
+[Speaker: Shane Tews]
+Shane Tews (12:15) Well, let's go to more of a practical application then because you were talking this morning about education and how we start to implement this and that is another group that is used to somebody handing them large lesson plans or thought out process and now there's things getting thrown out of that. Some people are adopting and others are just not willing to do this at all. So what's your thought process and bringing AI along into the education system?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (12:41) Well, the first thing that everyone in education has to realize is that AI is here, it's staying, and it's going to have a major impact on everything that we do. So that should be a given. How we adopt, where do we go from there, that's the next question. My suggestion is that educational institutions, instead of just teaching AI as some kind of special little subject on the side, have to be reformed from the ground up to use this as a reality that we already have. Institutions themselves have to start thinking about how do we redo everything that we know about education from the ground up, and have an AI-first kind of education, because it will be a tool that everyone will be using. We may want to fight it for a while, but it's going to overtake our processes and professional development.
+
+[Speaker: Shane Tews]
+Shane Tews (13:38) I like what you've said in a paper that you wrote recently for AEI, where you're talking about the feedback loop and how important that is because it's really almost instantaneous, which the lagging of that, I can remember back when I was in school, was always frustrating. You almost felt like, “Why are we having this conversation? Oh, you didn't like my paper. Okay, great. Let's go from there.”
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (13:56) I think if I have to point out one single thing that the AI has an advantage over everything else is that instant feedback that you can have in an educational setting. So if you're working on a paper, you can kind of give it to AI and ask him for feedback. It can almost instantly give you very valuable feedback, especially with the most advanced tools that we have nowadays. It used to be, as we've mentioned just now, like unreliable, but the expertise level has significantly increased just over the last six months. So you can be much more confident that the feedback that you get will be both accurate and relevant. And another thing is it can give you feedback just based on your own strengths. So we'll have different feedback if you're writing ahigh school paper versus a college paper versus a graduate level math project or whatnot, so it will have a fine-tuned feedback depending on your own background and what you're trying to accomplish.
+
+[Speaker: Brent Orrell]
+Brent Orrell (15:04) One of the things about AI feedback is that it's a lot easier to take than feedback from a human being, I've found. It's depersonalized. It's not that you are a bad person or a bad writer or bad anything. It's like, this isn't right, or this needs to be changed. You might want to think about doing this.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (15:22) Yeah, you don't take it personally. When someone tells you oh “Your paper is completely off.” You don't think you're a horrible person, and you're a waste life on something you take it in stride.
+
+[Speaker: Brent Orrell]
+Brent Orrell (15:34) It's very straightforward. If anything, it probably leans too far toward reaffirming you than it does correcting you.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (15:47) You can tell it not to be like that. There's a part, which we can talk more about the prompt engineering part where you can actually say, “Be as harsh as possible, use this kind of tone of voice,” and it can do that.
+
+[Speaker: Brent Orrell]
+Brent Orrell (16:00) I don't want to do that.
+
+[Speaker: Shane Tews]
+Shane Tews (16:03) Those are not tools that Brent will be using. So let's talk about learning management systems and how they can improve what teachers do. For example, my step sister has been a teacher in the grade school system for decades. Every fall, she's got to get her lesson plan out and think through it and walk through it. And then I would imagine now she's going to have to figure out how to put these new tool sets in. I realize grade school is a little young. We're working on that part of it. But the whole idea of how do I make this, we were just talking about the feedback loop, how do we make sure that we put these things in place in the right sync, because I realize there's gonna be some resistance to people just wanting to do their regular lesson plan they've been doing for years.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (16:46) So, one advantage that AI tools have over other technologies that came before it is that they're very intuitive to use. If you had, at the college level, these teaching and learning management systems like Blackboard or Moodle that were very powerful, very good to use if you can figure out how to use them. But they had a lot of technical issues that made them inaccessible to majority of college professors. My contention is that, if you use AI now, it's much more intuitive to actually know how to set it up. You can pretty much tell it to set up a teaching plan for you and it will do it in a very natural language that you can interact with and can help you with the setting up of a learning plan, coming up with a
+
+[Speaker: Bojan Tunguz]
+lesson for struggling students, what exactly to focus, and how to actually approach them and things like that through a very conversational interface.
+
+[Speaker: Brent Orrell]
+Brent Orrell (17:45) Do you think there's a kind of paralysis that affects us with new technology, where it's like, I don't know how to get started, it's too complicated. AI is actually the opposite of that, right? We talk about how AIs are approaching a recursive development cycle where they were able to modify themselves, but we're already in a recursive learning process with them because we ask how to do something, and it tells us and we say I don't understand that. Make it simpler. It's an absolutely phenomenal tool for learning how to use it, which is hard for people to get their heads around like this. It is its own coach.
+
+[Speaker: Shane Tews]
+Shane Tews (18:39) In the very beginning, I was just obsessed with making sure I did a well-thought-out prompt, and I would really think about the prompt before I would put it in. And now, you just ask it anything.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (18:49) Or you can ask it to come up with a prompt for you. So it's like meta-prompting. You can ask, I want to design a good prompt, and this is what I want a prompt to focus on, what would be a good prompt for this? Then you can actually play one AI system against the other. Prompt this one with this kind of prompt and the other one with the other kind of prompt, and then see how they can interact with each other.
+
+[Speaker: Shane Tews]
+Shane Tews (19:16) Asking as a non-engineer, how do you feel about vibe coding? Hearing a lot about that now, what's your thoughts on vibe coding?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (19:30) It's wonderful. I think it's really enabling a lot of people to come up with projects and tools that they wouldn't be doing otherwise. The way I explain to people, I don't consider myself an engineer, I consider myself more data scientist, which is much less of an engineering and coding-focused discipline. But I've been able to come up with my own little tools and my own little apps that I vibe code. I think it's really enabling a lot more people to give coding a chance. But there are a lot of things that you have to be careful about. You shouldn't be vibe-coding a mission-critical application. You still need to understand what your application is doing and how it actually works. That requires you to understand the code itself. So if you just vibe code without any understanding of how code works, that's a disaster waiting to happen.
+
+[Speaker: Shane Tews]
+Shane Tews (20:33) I don't use that exact analogy, but I'm always talking about when it comes to regulation and legislation, you need to be thinking about the outcome and not the input. You need to be thinking about, I'm solving for this problem, but I'm gonna let the experts figure out how I best put the thing in to solve the problem. For right now, we have a lot of legislation where they're like, we want this
+
+[Speaker: Shane Tews]
+exact thing to happen, but that exact thing is not going to get you the outcome that you're looking for. I think everybody's kind of learning. You're always having to explain technology to people who are non-tech to say there are certain things it has the best of intentions of wanting to do. And especially for AI, it wants to please you, where it's going to start to do the weird workaround to try to get you from A to B.
+
+[Speaker: Brent Orrell]
+Brent Orrell (21:22) Bojan, first of all, I heard you use vibe as a verb. I'm going to vibe this, whatever the challenge was, which is interesting. We say that you can't rely on vibe coding on mission-critical stuff. Do you foresee a day in which you can? Basically, I, as a non-expert or no exposure whatsoever, talk to an AI to produce an app for me, and I would get the completed thing and be able to rely on it.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (22:05) I think AI can already check the code. So if you can check the code and you can actually run the code and come up with a whole set of how to actually test it for like availability and accuracy and these things, I think there are all of the applications and products out there that do that for you. I still think that we are still in very early stages, but I think overall we're moving in that direction.
+
+[Speaker: Brent Orrell]
+Brent Orrell (22:35) When people say, well AI can't do that, usually it's like well AI doesn't have really any understanding of emotions, or social context. Just put an asterisk there as yet they can't do it yet. But it is advancing incredibly rapidly on all fronts. So, what's true today won't be true tomorrow.
+
+[Speaker: Shane Tews]
+Shane Tews (22:59) Changing topics, let's go back to data. So one of the challenges that we're dealing with, especially when it comes to the regulatory side, is making sure that people can get access to the data, or how we decide we're going to utilize data, which is a push and pull. There are groups that want to have access to everybody's data, and Cambridge Analytica immediately comes to my head, and I'm like let's think that through. And then there are other points where we just don't have the regulatory guidance yet or we haven't corrected for it for thinking about using it with artificial intelligence. So there's lots of interesting information out there that, if we can disaggregate it from personally identifiable information, it'd be very useful. But right now it just kind of gets stuck into a great big basket of stuff with good things and bad things in there. What do you recommend there?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (23:50) Tread carefully. That would be my recommendation because even if you think it's anonymized, it may not be. I know people who are masters at figuring out who someone is just based off all sorts of very tangential data. So there are ways that probably, even now, that can be done. On the other hand, you don't want to be too careful because you want to strike some kind of balance between benefits and setbacks. My suggestion is that we should tread carefully, but don't be frozen by overthinking it. Get data that can potentially have very important health benefits for everyone, or public policy benefits for
+
+[Speaker: Bojan Tunguz]
+everyone. I think those data sets should be made accessible, but I think they should also maybe be accessible to well-vetted groups. So you could get access to data, but you really have to pass some kind of clearance. You don't want to have it outside in the open.
+
+[Speaker: Shane Tews]
+Shane Tews (25:04) So what I am thinking in my head when you say that is letting scientists or people who are researchers looking at certain data sets make sense if they're working on curing cancer or something in that area, versus a bunch of marketers getting hold of all that data and then starting to sell you pharmaceuticals.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (25:22) That's exactly my point. I think users should definitely have some kind of input on how the data could be shared. Just like right now, we have opt-in for organ donation on driver's licenses. Maybe we can have an opt-in for data to be shared for scientific purposes. So that could be one thing that we ask people when they check into the hospital, do you want data to used for research?
+
+[Speaker: Shane Tews]
+Shane Tews (25:56) I feel like I do occasionally do that, but I can't think of why I think that. Just interesting.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (26:03) I know I feel too many forms.
+
+[Speaker: Shane Tews]
+Shane Tews (26:05) Which is still a mystery to me because that information doesn't change that much, why I can't like hand them something and they can check my credit card type thing, just wand it and it knows everything about me.
+
+[Speaker: Brent Orrell]
+Brent Orrell (26:14) The whole conversation just gives me a bit of the willies. I think the problem is not so much coming from marketers are going to use this. I'm really quite concerned that it could become a tool for the government to monitor us.
+
+[Speaker: Shane Tews]
+Shane Tews (26:39) Well down on that path. Different topic for a different podcast. So let's go back. Now, we've talked about schools. What's preventing employers from starting to bring in AIs? Is cost?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (26:50) I think at this point it's institutional inertia, so they're still used to doing things a certain way, and they're not going to change until there's an overwhelmingly compelling reason to do that. It will really depend on how mission-critical a particular skill is for the employer. If you're a top AI researcher right now, I just heard just the other day that Meta is offering up to $10 million to join their team. So obviously, being able to screen for these positions, not quite at that level, but maybe the level below, could become very valuable.
+
+[Speaker: Bojan Tunguz]
+But for the regular run-of-the-mill positions, think the system is still operating the way most stakeholders expect it to be operating. So there's not really real pressure. There's very little pressure to get a top-notch accountant out of college, if you will. But there might be a little pressure to get the top-notch practitioner in a field that's very mission-critical, in which case, pretty much everyone knows everyone. So it's not really that much of an issue. But going forward, I think loosening regulations about employment will be a bigger deal than just using AI. When credentialing does not become a major liability or lack of credentialing becomes a major liability for companies, they will start being much more open to non-traditional ways of recruiting and screening candidates.
+
+[Speaker: Shane Tews]
+Shane Tews (28:34) Is this in your paper where you talked about the four-year degree as just a litmus test. I mean, not that it has that much to do with the actual job. It's just like, well, they got through those four years they must at least be able to accomplish that.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (28:47) I might have mentioned that. I do know what I talk about.
+
+[Speaker: Shane Tews]
+Shane Tews (28:51) When I read it I've always thought that there's so much that you can't. When I look at people's resume or CVs I look to see what their extracurriculars are to see what else they have accomplished besides just being able to get through a good four-year academic institution, which is important. But there's a lot of other things that you need to do to get certain things done. Okay, and any last thoughts here
+
+[Speaker: Brent Orrell]
+Brent Orrell (29:21) Yeah, I've got like a million questions some which I've asked already in other contexts. So, I think that's a good place to leave things and just encourage people to read the paper. It's really fantastic on the AEI website. I have found that if I just type “AEI Tunguz” it takes me right to your paper. That's probably the easiest way to get it, or we can put it in the show notes, or both and really hear more about someone who I kind of regard as a Renaissance man because he does so many different things on the technical side and on the human side of this.
+
+[Speaker: Shane Tews]
+Shane Tews (30:05) All right. Well, thank you, gentlemen, for being guests today on Explain to Shane. I really appreciate it.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz (30:11) Thank you for having me.
+
+[Speaker: Shane Tews]
+Shane Tews (30:13) Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode,
+
+[Speaker: Shane Tews]
+leave us a review and tell your friends and colleagues to tune in. We'll see you on the next episode of Explain to Shane.

@@ -1,0 +1,302 @@
+PAGE_TITLE: 
+	Breakthrough Models and New Cyber Threats (with Evan Swarztrauber) — full transcript
+
+[Speaker: Introduction / editorial context]
+Explain to Shane: Breakthrough Models and New Cyber Threats (with Evan Swarztrauber) Episode #147 | July 30, 2026 | Shane Tews, Evan Swarztrauber
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I’m your host, Shane Tews, with the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today’s information technology system work and how they shape our social and economic life. Artificial intelligence has the promise to transform cybersecurity by helping defenders identify vulnerabilities faster than ever before. But what happens when an AI system being evaluated for its cyber capabilities finds its own way outside the test environment and onto the internet, then into another company’s system where it’s looking for the answers to the test that has been assigned? That is exactly what happened in a recent incident involving OpenAI and Hugging Face, where an internal benchmark evaluation unexpectedly became a real-world security event. It is a powerful demonstration that highly capable AI agents can pursue objectives in a way that their creators didn’t anticipate. Today we are cross-posting a podcast interview where Evan Swarztrauber and I unpack what happened in the situation and explore what it means for AI safety, cybersecurity, public policy and the future of autonomous systems. Evan is a principal at CorePoint Strategies and a longtime friend and colleague in the tech and telecom policy space. He’s also a senior fellow at Digital Progress Institute and he served as a policy advisor at the FCC under Chairman Ajit Pai and then Commissioner Brendan Carr. I hope you enjoy today’s joint episode of The Center Edge and Explain to Shane.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Recently, OpenAI admitted something unprecedented. Its own models hacked another company. It grew out of an internal test designed to measure how good OpenAI models are at hacking. And with the safety rails deliberately loosened, its model ChatGPT 5.6 Sol and an even more capable unreleased model found a zero-day vulnerability and used it to break out of their sandbox, get themselves onto the open Internet and hack into the production systems of Hugging Face. That is the main hub for open-source AI. In a way, its model passed the test but only by cheating on it. The models figured out that Hugging Face probably had the answer to the test and they went and took it. Thousands of actions, stolen credentials, the works. And here’s the kicker. When Hugging Face’s security team tried to use an American frontier model to analyze the attack, the safety guardrails refused to help. So they had to resort to using a Chinese open-source model instead to run the forensics. Now, this headline unleashed a torrent of news coverage and hot takes from AI interests and influencers. And it landed just a few months after what my guest today called the Mythos moment. Back in April, which feels like ancient history in AI land, Anthropic gave a small group of banks and infrastructure operators access to a model called Mythos that could find security flaws that had been sitting in trusted software for decades.
+
+[Speaker: Evan Swarztrauber]
+Within days, the Treasury Department, the Federal Reserve, major bank executives were in urgent conversations. Mythos didn’t just reveal flaws in code, it revealed a fundamental flaw in how companies think about cybersecurity. For decades, as my guest will explain, the implicit bargain was you would ship products fast and patch them later, but later usually meant never. The only thing protecting all that aging unsecure code was that finding flaws was expensive and slow, requiring skilled hackers. Mythos erased that protection overnight. Decades of technical debt was now coming due as outdated code immediately became an inviting attack surface for bad actors. Washington’s response has been a bit of whiplash. You had an executive order on AI security June 2nd. Anthropic released Fable on June 9th, which was its slimmed-down version of Mythos. But three days later, the Commerce Department issued export controls that led Anthropic to disable it worldwide. Then 18 days after that, the government reversed its decision. Then in July, the White House stood up an AI vulnerability clearinghouse called the Gold Eagle, run out of Treasury on the back of a Carnegie Mellon Coordination Center, stood up in 1988. And underneath all of that, the legal foundation that this whole system rests on is a 2015 law that lets companies share cyber threat information with the government without getting sued. That law expires September 30th, and it’s held hostage by a political fight that arguably has nothing to do with cybersecurity. The real question we’ll get into today, can companies and governments actually keep up with cyber threats in the age of AI, especially when China may soon release models openly to anyone that can do what Mythos does today? These are the very capabilities that America has been trying to keep under lock and key. And to help answer that, I’m joined by someone who’s worked these issues from every angle for quite a while. Shane Tews is a non-resident senior fellow at the American Enterprise Institute and president of Logan Circle Strategies. She is a host of the Explain to Shane podcast, and more importantly, a friend and mentor to me. Shane, thank you so much for joining.
+
+[Speaker: Shane Tews]
+Shane Tews: Evan, thanks for having me.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: I love that your podcast is called Explain to Shane, when, today, it will be Shane explains. All right.
+
+[Speaker: Shane Tews]
+Shane Tews: I’m sure we’ll do a little of both.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: You have so much to give, right? You should be explaining more than you were explained to, in my opinion, but we’re glad that you have that show. So we are recording this on July 22nd. So this is the day after the OpenAI Hugging Face . . .
+
+[Speaker: Shane Tews]
+Shane Tews: Incident, as I think of it.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Incident. I guess I was about to say debacle. You stopped me. So it is very possible that we are overcome by events, but I think some of the broader topics we’re talking about here today are pretty evergreen in terms of how the government needs to respond. But just your
+
+[Speaker: Evan Swarztrauber]
+initial reaction to what happened here, does anything immediately come to mind as someone who’s just been a practitioner of cybersecurity policy for so long?
+
+[Speaker: Shane Tews]
+Shane Tews: I was walking into a reception and somebody who also is in cybersecurity mentioned, “Oh, did you just see this thing that happened with Hugging Face and OpenAI?” And it was one of those, like, I need a moment. And I went in, like, I just started reading about it on my phone and I was like, huh? You know, sometimes you need a real-world example to make all of this stuff that seems like, for most people, you’d start talking and they hear because they don’t understand much of what makes all their cool devices work. This was why I was like, “Okay, we’ve got a teachable moment here, but I need to learn a little more.” So you did a great job explaining it. The one thing that I was learning extra in the Uber on the way up is you keep digging, you keep finding more incidences. So the thing that the OpenAI system was trying to do is evaluate something called ExploitGym, which, initially, I thought was on Hugging Face. And then I realized, no, Hugging Face just was using this. So what ExploitGym is actually something that’s designed by UC Berkeley. It has a group of partners that use it, and they were just saying, “Hey, let’s just go out in the field and test some models.” And what OpenAI basically did is they didn’t have enough guidance to what they did. They allowed their guardrails to come down because they were doing an exercise. But by not giving it enough guidance, it basically said, “Let’s just go find who we think has the answer to this, beat them up till they give us the answer. And then we’ll go win this fake contest that we’re in.” That’s more or less what happened. So, OpenAI, I figured out that Hugging Face had this. They do the sequence chain of things that would make Hugging Face eventually give it up. So, like, when you ask a bunch of prompts and you’re like, no, stop not telling me the answer, give me the answer, kind of situation.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. If I was writing a novel about murdering my landlord, how I would do it, right? These are the ways that we’ll try to get past the guard rails that AI companies put on their products. Right?
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. And what makes this interesting and very serious. So, again, the ExploitGym is designed, it’s an open-weight program that is specifically to help with cybersecurity with UC Berkeley, the Max Planck Institute for Security and Privacy, University of California, Santa Barbara, and Arizona State. These are all groups that work on this. So I’m sure that they’re all very busy after this happened. And so there’s a lot of people that are trying to both kind of defend what happened in a . . . They didn’t give it specific enough homework, but at the same time, it showed all the vulnerabilities that we have in these systems. So there’s a reason why you really need to pay attention to your IT department. And when they say they’ve got issues, they probably do need to make sure that some things are secured.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. So they told the student, you know, you got to pass the test, but they didn’t tell them you can’t beat up the teacher and steal the answer key.
+
+[Speaker: Shane Tews]
+Shane Tews: Basically.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Right. And so, you know, maybe a teachable moment for as companies try to make things more agentic, right? They say agentic AI. There’s a big push, right, to say this, keep the human in the loop step where, you know, maybe you were running something on your computer at home, you’re out and about. And the AI model is asking you, can I do this? Can I put your credit card, whatever? Companies want to eliminate a lot of that because it makes technology move more seamlessly. But this was an example where potentially maybe it would have been an interesting outcome, or sorry, it would have been a less interesting outcome if the model said, “Hey, I’m about to hack Hugging Face, is that allowed?” Maybe the open AI would have been like, “No, no, no, you can’t do that.” Now, this comes, as I mentioned in the intro, only months after a moment, right? You call it the Mythos moment where Anthropic, right? Creates this model. It’s very powerful. They realize that it can find software flaws quite easily compared to having a bunch of skilled hackers. And this was something that you described as, you know, not so much a product announcement, but, like, a warning sign, right? For cybersecurity policy. Help us understand what you mean by that.
+
+[Speaker: Shane Tews]
+Shane Tews: I’m using somebody else’s phrase, but the best thing I’ve heard that explains it, it’s like you all of a sudden have a black light that shines down on the global system, IT systems. And it notes everywhere that something is misconfigured or unlocked. And this is where the technical debt comes in. You have companies that buy systems that then collect on top of another system and another system and a new guy comes in and he doesn’t have any feeling of ownership over the old system. So he doesn’t keep the updates because they’re not maybe using that. But what it’s doing is, along the way, is it’s just creating these friction points where people can go in. And a lot of times what they do is they don’t act immediately. They figure out how to get into a network and then they hide. And the reason why they hide is they can collect more data the longer that they’re hiding in the system. And then, at some point, they’re probably going to either exfiltrate that data or they’re going to wreak havoc on someone’s system. So when Mythos came out with this, it was a, “Whoa, we can now see everybody who has missed their updates, not done their reconfigurations have just done a really lazy job of taking care of their cybersecurity systems. And if we release this, people will pounce on this right away.” So their response was to create something called Project Glasswing, where they took the top 40 corporations they said that they thought were trusted people. And they gave them this to sandbox and test and make sure because they thought you are the ones that do most of the software in the world. If we give it to you first and we trust you, you will fix these things, which then will have a knock-on effect along the way. It makes a lot of sense. But the people that are competitors to what the Mythos product is, were immediately saying, “You don’t need to go out and buy this product. You don’t need to have Anthropic in your vendor set. We can do this. And you can fill in the blank on the company.” It could be Microsoft or Google or someone said, “No, no, no, no, this is just an example of a problem. We can also solve this problem for you.”
+
+[Speaker: Shane Tews]
+So there’s been a lot of grist in the mill around that one, just kind of how much of a problem is this? It was definitely enough of a problem that the site best I saw last night, Department of Defense, doing business as Department of War is . . . DBA. Was very concerned about it. And it immediately said, “We need to lock this all down.” And I still think the ultimate lesson is that we need to tighten up everything. We’re in a world that’s going to be running on software, that’s building software. So any time you see something like this, like what happened yesterday with Hugging Face, it could happen anywhere. And that’s kind of the lesson of it.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: And you’ve written that there’s just basically no world, at least as you see it, in which the government is going to move at the speed that is required to manage this situation, right? Like, this was a scenario where you basically had a, depending on your perspective, right? There’s a lot of controversy around Anthropic as a company, some of its philosophy and its political spending, whatever. Set that aside. Let’s all assume it’s a benevolent actor in this case, right? Because the irresponsible thing would have been to just throw it out there and see what happens, right? Instead, much like a white hat, right, in cybersecurity parlance, right? They found a vulnerability and they told people about it in a secure setting so that they could fix it. And they did warn and say, right, these capabilities, we may be the first ones today, but our competitors, and then some Chinese companies, etc., are not far behind. So you need to be on top of this, right? But that was really, in a way, industry-led, right? It was led by the release of a product by a private actor and the decision by that private actor be a good actor. At the same time now, government’s involved, right? They want to have this clearinghouse, etc. But it’s always been opaque to me, even as someone in tech policy, like, what exactly does our government do on cybersecurity? Can you give us a sense now with treasury being in charge, right? Maybe that has something to do with the fact that banks are really freaked out because of the potential calamities that can happen here, deleting people’s bank accounts, etc. But maybe eventually the information gets to the Department of Homeland Security. Like, what exactly does our government do on cybersecurity and what are they doing in light of Mythos?
+
+[Speaker: Shane Tews]
+Shane Tews: So there’s something called information sharing advisory. I think that’s council, I always got the C wrong. We’ll call them council for fun. They’re called ISACs and they’ve been around for a long time. And the original ISAC was after the breakup of AT&T, when they realized that all these other telecommunications companies were not going to have that direct report into the government that AT&T had with the Department of Justice or the FTC or whoever.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Right. Because it was a government-sanctioned monopoly at the time.
+
+[Speaker: Shane Tews]
+Shane Tews: So they’re like, well, we need to rebuild that one part of the system that was really important to infrastructure trust. And so they created the first version of an ISAC. And then we created one around just information sharing with the IT industry in the early 2000s. The most recent one was during COVID, the restaurant and hospitality industry realized there was a benefit to doing this.
+
+[Speaker: Shane Tews]
+And part of that is it’s a liability. You’re sharing information. I mean, I don’t know, maybe Taco Bell did it recently with their lettuce situation. I’m not sure. But where you’re sharing information, you’re saying, “Hey, I’ve got in the case . . . ” Let’s use Taco Bell because it’s not IT so people might understand it. “I use this vendor and something seems to be amiss with the lettuce. So you might check if you are using this vendor because this lettuce seems a little suspect.”
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: But we are talking about code, not lettuce, right?
+
+[Speaker: Shane Tews]
+Shane Tews: So it’s similar in that what you’re doing is you’re saying, hey, I used so-and-so’s code as the kernel for a system that is now run on 10,000 systems. If you’re using this and the code you have has not been updated since, like, even 2025, here are some issues you might have. This is the reason why Microsoft has what’s known as Microsoft Patch Tuesday. I mean, they just do a full blank of people report into them, things that they’ve done. And then on Tuesdays, they just do this massive patching. It’s the reason why every time your phone says I have an update, you should update because they’ve probably found something that may be innocuous to you, but it may also just wipe out your contacts, which might be a problem.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: And the policy choice that really matters here or seems to matter here is liability protection, right? Because without the protection of saying, you know, if I disclose this vulnerability, whether it’s to the government or whether it’s to private actors, companies, at least this is what they argue in DC a lot, they say we will not want to share information like that without liability protection because if we do, anyone could turn around and sue us. Like, a customer could sue us for negligence, a shareholder could sue us for negligence, maybe even a government actor like a state AG. There’s just a lot of liability that opens up when a company admits they have an insecurity or that they sold a product, to use your example, the lettuce is now with all these people and I’m going to . . . That’s like cascading liability, right? So there’s this framework that’s been in place for quite a while, I guess since 2015, correct me if I’m wrong, that protects companies from liability if they, you know, “do the right thing,” right? If they come forward when there’s a vulnerability and they share it with the government and then the government helps facilitate that sharing with other actors. Now, a consumer or a skeptic might say, you know, we’ve established that companies have been shipping product without enough security for years, right? That there’s this idea of like, well, we’ll ship the product, we’ll patch it later. And Mythos exposed that a lot of companies, whether for cost reasons or otherwise, decided to prioritize capturing market share, selling to products over security. And you’ve heard lawmakers and industry people for years banging on the table saying security by design, security by design, right? The implication being we haven’t been doing that, right? People buy a smart speaker off of Amazon, it’s got no security and it takes out your house, right? That’s the fear. So in a world where companies, not all of them obviously, but some have basically demonstrated technical debt, right? They’ve not been responsible, they’ve not been patching things. A consumer might say, “Well, now you’re going to protect them from liability?” Like, what incentive do these companies have to get their act together?
+
+[Speaker: Evan Swarztrauber]
+I was about to say a bad word. Get their act together if you’re just going to protect them from liability. It’s like, you know, as long as I go to confession, I can keep sinning, right? Like, help us understand why . . . It might be counterintuitive, but, like, why protecting companies from liability actually makes us more secure. Because some people might say, no, the threat of being sued is what will get you to clean up your act.
+
+[Speaker: Shane Tews]
+Shane Tews: So the reason for the information sharing in the liability protection is so they aren’t under a DOJ investigation for collusion. So that is the key thing, is saying that, in some way, by putting this behind a veil of secrecy, that you’re giving them some sort of agreement to do bad things. And what they’re really doing is collaborating. And they really . . . Let me go through some of the things.. You’re going to get to this.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: That collusion would be under like an antitrust, right? So, like, because you’re all talking to each other in ways that competitors can’t normally all talk to each other?
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. And, you know, the lawyers are not going to let those people get in a room, even the engineers, unless they have an airtight agreement that it’s okay they talk about certain things.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. Even if it’s for what you would consider a benign thing like cybersecurity, even then, yeah, just the lawyers would be like, you can’t do that. Right. So you need that protection.
+
+[Speaker: Shane Tews]
+Shane Tews: Yes. That’s why these ISACs exists. But the challenge is if you don’t do the right things and really make it robust, the big players won’t show up. The little guys will show up because they’ll feel like it’s free information flow that they don’t have to bother with then. So it can have an invert effect, but you want to make sure that everybody in that industry is showing up and in good measure, trying to protect each other from bad things happening. That’s the overall gist of an information sharing system.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: And so, this framework, right, has been established. I know we’ve had ISACs before, right? But we have the Cyber Information Sharing Act, the law, not the agency, right? So there’s different things. There’s cease of the law, cease of the agency, right? So this law, passed in 2015, has liability protections, and then also Freedom of Information Act protections, which is important, right? Because, otherwise, in theory, a journalist or a competitor or some activist group could file a request with the government and get sensitive information about a company’s cybersecurity. So that’s another protection that’s in there. Now, this law is sunsetting September 30th of this year, unless it gets reauthorized.
+
+[Speaker: Shane Tews]
+Shane Tews: And it had to . . . It actually was set to sunset last year. They gave it a year.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yes. So they gave it a year in a budget bill, if I’m not mistaken. So normally something uncontroversial like this would just get voted unanimously, which would short-circuit a lot of the floor time and other things that Congress has to do. There’s one Senator that’s been blocking that. Senator Rand Paul is libertarian. A lot of times when there’s one Senator doing something, it turns out to be a libertarian. Sorry, sorry. Don’t at me, but it’s true. So he’s been blocking this and the White House has been very clear. They want a clear 10-year reauthorization, right? Because it was 2015, the 2025, it got the 1-year extension, but he is very
+
+[Speaker: Evan Swarztrauber]
+upset about some of the work that this agency did under the Biden administration about misinformation on social media and things like that. And I guess he’s not reassured or doesn’t feel that the agency has done enough under this administration to correct for those sins or to guard against things like that happening again, right? We don’t have to make a whole show about that, but given your expertise, is this agency siloed in a way that what he’s concerned about . . . It’s not even the same people that work on those things. Like, if you were to go to Senator Rand Paul and say, like, I hear you on the COVID social media and those debates, but the thing you’re concerned about has nothing to do with this. Like, how would you convince him? Because I’ve had conversations at happy hours where there are business groups that depend on this law that are banging their heads against the wall saying like, “I don’t know how to get through to them.” So what would you say?
+
+[Speaker: Shane Tews]
+Shane Tews: A couple of things. One is there’s so many things that need a 10-year review. And the one thing that has it should not be the cybersecurity. It should not lapse. And you’re like, “Oh, well, everything that runs every device, every digital thing in our world now is sort of open to anything because there’s an angry Senator on the other side.” But please, I encourage 10-year reviews on lots of legislation. They’re going to do it again on this one. Fine. So what happened is Rand Paul was upset because there was engagement by CISA during the Biden administration around the prior Trump administration in the campaign. And I think you’re right in saying the probably different actors, not the same people, but the agency itself was engaged in it. And when the new Trump team came in, they felt like not enough had been done about that. To what extent, I candidly don’t know, but I was actually contacted by people that were budgeting for CISA and saying, “This is a real problem. We about ready to lapse back last September.” And I wrote several pieces and did a very good podcast, not because of me, because the people I had on as a guest about this, who are people that had been in CISA had been overworking in major companies, had been working in the federal government. And they all said, yeah, this is a very serious thing here. We need to make sure this information sharing continues. Otherwise, now we realize things like AI, you know, the AI is like putting the whole Mythos situation on steroids as well as what just happened with Hugging Face. These are exactly the kind of thing that you need the information-sharing process to mitigate and minimize these things as fast as possible. So yeah, we’re still in a situation where Rand Paul hasn’t budged. Not surprised by that. People don’t seem to be convinced, but the reason why they’re not convinced is because they don’t see the connection between the two things. Literally. I mean, you’re like, they really aren’t connected except for the fact that you are tangling up the budget capabilities and the liability of this information sharing, because you’re still mad about the social media that got taken down now six years late. Yeah. Six years ago.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. So it’s one of those points, you know, and politicians sometimes use leverage, even if it’s maybe unrelated to the thing they’re trying to extract something on. Right. We’ve seen this before, but it is interesting that if Rand Paul, the reason he’s upset is because of how the agency treated Trump, yet the white house, currently led by President Trump, wants this
+
+[Speaker: Evan Swarztrauber]
+reauthorized for 10 years, you know, I wonder at what point the white house says, “Love your energy, but, like, we’re . . . ”
+
+[Speaker: Shane Tews]
+Shane Tews: Right, right. “Can we guide it a little bit?”
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: We’re good, right? Like, we are at least satisfied. Maybe we’re still mad about it, but we’re willing to reauthorize this. Now, there’s a bigger question. Let’s say we get this done, right? And the worst-case scenario doesn’t happen. It gets reauthorized for some amount of time, even if it’s a kick-the-can exercise, which Congress is famous for, or it’s a 10-year, whatever it is, there’s a bigger question of whether the introduction of open-source and open-weight models, including from China, particularly from China, will start to make this sort of closed-door process less effective. Right? Because the theory is Anthropic is closed-source AI, right? And grossly oversimplifying. The training data, the model weights are not available. It’s proprietary. You have open weight where model weights are able to be looked at. So you can kind of see how the model behaves, but you’re still not seeing training data. And then open source is like everything’s open, right? And there’s this whole debate that was already raging before the Hugging Face OpenAI incident about, you know, should the US government crack down on Chinese AI? Is what China doing effectively dumping because they’re trying to convince Wall Street that all the money Anthropic and OpenAI are spending on data centers and training is dumb and that AI is going to be commoditized, right? There’s a lot of folks saying China’s strategy is to essentially devalue American expensive closedsource AI by dumping cheap AI out there, right? There are people making that argument. And then there’s the question of, should the government do anything about it, or should we let the free market work and let companies choose the best model? And then to throw gasoline on that debate, when the OpenAI Hugging Face incident happened, the closed-source American frontier models said, we will not help you with this because they had cyber guardrails. So Hugging Face had to turn to a Chinese model that didn’t have those guardrails. So just like gasoline on the debate. But with all of that context, there is this possibility that may be around the corner where something as powerful as Mythos, right, where we had this whole . . . we created this whole informationsharing glass-gazing project and we’re fixing all the banks flaws and whatever, but this is just one model, right? Something as capable or even more capable, at some point, could just be open, right? You click Download on your computer and you have the capability before anyone has a chance to patch anything. Does that possibility change the effectiveness of something like a project glasswaring? Does that possibility make us need to rethink our entire like operating principles about how we do cybersecurity, information sharing and policy, or would that be an overreaction?
+
+[Speaker: Shane Tews]
+Shane Tews: So there’s a lot in there, so let’s cut parts on some of that. Part of it is . . . So let’s just go to open weights and open model because that means that there are certain companies, and Hugging Face or a Mistral is one of them, where they give you a certain part of the thing for free. So they say, here’s a model that if you’re a small business, you can go in and you can start building your own API and you don’t have to pay for a subscription model or the expense of going into one of
+
+[Speaker: Shane Tews]
+the, in this case, OpenAI or Anthropic, which is a more expensive apparatus. Once you start using their system, they have a lot of plus apps. So they’re like, well, while you’re here, we’d like to sell you this, we’d like to sell you this. So it’s like the first thing’s free.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Freemium, like an app on your phone.
+
+[Speaker: Shane Tews]
+Shane Tews: It is a freemium model because you have to look at me, well, why are they doing that? And then part of that is also . . . But the reason why academics love it is because it’s open and they can really look at the value sets. That’s why the weight is important. And it makes a difference to how they can watch for things like these cybersecurity issues. So when something’s completely behind a closed door in a vault, you have very limited eyes on it. And so that’s the concern there. The other thing that . . . when you talk about, which gets to what’s happening with Wall Street and these different models is you had to start . . . the party had to start somewhere. And when it started here and it was done with a lot of people that had very expensive models. And China basically did what China does. They rip them off. So they took what they could out of it. And then they don’t take that funding. You know, the group that really did it already had built their own system to do a version of a venture capital fund. And then they built an open source on top of it. And so they discount that first billion dollars of use of compute and power. They just don’t put that in the equation. So it sounds like it was really cheap, but it wasn’t. But now we’re in a stage, and this gets to the . . . There was a whole discussion last week about, you know, do you need to use these big expensive models on everything? And the answer is it depends. So there are certain things, and DoorDash is a great example because they’re doing this. They use some of the open-weight models for things that are more simplified. And then there’s things that are very proprietary to their business that they use a different set of models because they say, “I don’t want somebody to have access to this.” That might also be the beginning of an open model that they used. And then they built their own proprietary model on it. So there’s different iterations on this. Also, it means there’s a different cost process to do you want to just offload this? And so you go to a Anthropic or OpenAI and say, “Here’s all the things I want to do. Here’s what I’m willing to pay. I’m either going to buy the old seat model. X amount of people in my system can touch this at any point in time, or we only get X amount of tokens.” You hear a lot about that. Where if you build it as a smaller company, you can have a little more control. Plus, you’re not giving away what . . . I’m trying to use the guy from Palantir.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Palantir. Alex Carr.
+
+[Speaker: Shane Tews]
+Shane Tews: Alex Carr refers to as giving away your alpha, which is you’re giving away your secrets.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Because in the process of using some of these companies’ models, a lot of businesses might not be thinking like, “Wait, I am telling them how to run my business.” They could effectively, depending on what . . . They could copy me. When I use it, I’m not particularly worried about that. I’m a sole proprietor. Hats off to you, open AI or Anthropic if you figure out how to replicate my business because I’m using your product. But for some of these companies, that’s a real concern with protecting IP.
+
+[Speaker: Shane Tews]
+Shane Tews: The other thing, just because the DoorDash makes me think about it, was it was also in the news this past week that people were using the Chipotle and the McDonald’s chat bot to solve their computer IT support system. So they were like, “Yeah, yeah, yeah, I’m going to order that fries in a second. But while I’m here, I’ve got this problem with Python.” And then they would just basically lay out their issue. And since their little chatbot didn’t have any guardrail saying only let it order food or get an address, it started resolving IT support issues for free.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. That’s a way to get free AIs, potentially just start a customer service chat with lots of different chatbots. So it may be annoying, listener or viewer, that you sometimes get sent to an AI agent to deal with your customer service.
+
+[Speaker: Shane Tews]
+Shane Tews: But while you’re there, ask them more questions.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: You can be getting free AI. So, no, that is very helpful context on some of these debates about companies are going to do different things. But do you think just that potential for the power of open source to start to match the power of the closed source and the fact that a government like China or the companies that are governed by that country might have an incentive to put out a Mythos-like product into the wild and allow chaos to reign because it would not only potentially send our stock market tumbling. If Wall Street says, “Well, if China can do this cheaply,” putting in the air quotes, then why am I financing these hundreds of billions of dollars in data centers? But also, just the fact that putting it out there means that hacking groups or terrorist groups or whatever. Now, I’m not saying China has no downside for their own country. If powerful tools are out there in the wild and there are thinkers who are wondering like, when is China going to realize they could be targets from these? But there’s a lot of folks that think this is a possibility. Does that possibility mean we need to rethink how we’re doing cyber sharing, rethink Project Glasswing, or do we just need to stay the course?
+
+[Speaker: Shane Tews]
+Shane Tews: In this past week, the White House put out an executive order called Gold Eagle. Sorry, I always want to call him Gold Eagle.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: We have a Glass Wing, and we have a Gold Eagle.
+
+[Speaker: Shane Tews]
+Shane Tews: We have lots of things, things with wings. Part of that is they are creating a clearinghouse, which you have to join, which basically says that you’re a team member and then your benefit of being a team member is you share information. You also receive information. So you would have your IT team be scanning your system to see if you have any of these things. Now, the key to this is it’s done at AI speed rather than human speed. So, it’s looking and betting very quickly to see if there’s any of these open apertures for things that have recently been reported as causing problems. And it goes much faster. Plus, you can then patch much faster, is the key idea behind it. The challenge is, of course, that’s not asymmetrical. There’s going to always be bad guys not using necessarily Gold Eagle, but they could slide in. And then they would exploit that. So, you have to make sure that the offense is working faster than the defense when it comes to this. I believe it was Jim Lewis who recently said that actually North Korea is completely funding their capabilities, their defense capabilities off of their cyber scamming, what they’re doing.
+
+[Speaker: Shane Tews]
+So, you know, we think like this doesn’t matter at a certain level, but you realize all these scams that are both . . . Just scams that you’re getting on your phone and things you might get in your email that are paying off. Sometimes it only feels like a couple bucks. You’re like, “Who cares?” But it does really add up and North Korea is using that to buy missiles. So, there is a whole, like, an ecosystem to the bad guys, which is very interesting. It really started . . . when we started to recognize it was when Sony Pictures had to take down their movie because it pissed off the . . .
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Oh, yes. Right. Yeah. I remember that. So, is the best thing that government can be doing right now is essentially just continue with this kind of convening role, the liability protection, facilitating information sharing, or are there more specific policies that you would like to see put in place to deal with just the onslaught of potential challenges, whether it’s code being rotting over decades or whether it’s the potential for agentic disruptions like what we saw with OpenAI and Hugging Face where the instructions were not specific enough, or if there are people that just want to start offloading everything to agents that are not ready for prime time. There’s all these challenges. A lot of folks say, “Well, what is the government doing?” But industry is doing a lot. Is that the best thing the government can be doing, is continuing to just incentivize industry to lead here because they’re just not going to be able to move fast enough?
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. And you don’t want everything going as fast as the speed of government. That’s just not comforting for anybody. The other challenge that is there is they don’t open the aperture wide enough to see the problems that can be solved. So, all the trouble on the edge just becomes where a lot of the things are the government just isn’t paying attention to it. And that’s where things tend to . . . people go over in those areas because they don’t think there’s eyes on it. So, the government can be helpful, but no one’s going to have as much incentive as somebody who’s got full skin money in the game. And that’s why you see that it’s important for industry to have a real play in this because otherwise things will degrade very quickly. And when you get back to the technical debt, the reason why it’s important to clean that up is there’s a lot of data that’s just languishing in these companies that they should just get rid of because it might end up in a honeypot. There may be different ways that they’ll decide the bad guys will come in and use it. Some of it is pretty evergreen, so it stays live. Older people don’t move as much. So addresses tend to be more important. Versus younger people, which they like them because they don’t have credit ratings that have been as cemented. So, they can go in and exploit their credit very quickly. And next thing you know, you go to apply for a house and you’re like, “What do you mean I have six credit cards that I’ve run through?” And it’s just some scammer that got a hold of your information, opened up cards, went shopping, bought gas for their car, tossed them, and now it’s your problem.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: So, you wrote about, back in March, the fact that these systems, these AI models, are remembering a lot of things about their users. And it depends on the level you pay at and the settings you have and whether you instruct them to delete things or not. But there’s also a lot of AI researchers who’ve said that these systems have a hard time forgetting information, even if you say don’t store my information. And learning it can be difficult.
+
+[Speaker: Evan Swarztrauber]
+And you wrote about the potential problems that result from that. And just a couple of weeks ago, the memory heist researcher site talked about, and you’re going to have to help me understand exactly what happened here, but basically tricked Claude, right, Anthropic’s model into spelling out its user’s name, its employer, and its hometown, which is stuff that normally they would not. Personally identifiable information. They mitigated it after this was revealed. But just kind of goes to show you, right, these models do know a lot about people, right, and maybe people should start thinking twice about handing everything over, right, pot kettle, like I use these things, right? But other people should think about being less honest with these chat models. As someone who just has the expertise that you have, I’m wondering, what do you think consumers should be thinking about? What should companies be thinking about with this memory problem? Because data deletion has been a talking point in cybersecurity for years, right? You buy clothing at some random store 10 years ago, and then you get an email in your inbox that says we’ve had a breach and some of your information might have been compromised. And you’re like, “I bought one pair of pants, like, why did you keep my information?” Maybe we need a law that just says auto-delete every 180 days because some of these companies are hoarding information, like, why do you still have that? But with these models, everyone’s using them, right? It’s not just the clothing store. So what should we be thinking about in terms of just the memory problem?
+
+[Speaker: Shane Tews]
+Shane Tews: Well, there’s pros and cons to that. And part of that is, is it truly retail? And we don’t have rules around retail. So we do have rules with HIPAA around privacy on your medical information. We have banking laws. So that is in a separate incident. And a lot of people think, “Well, America doesn’t have a privacy law.” We do, but we have privacy laws around very specific information.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Sector-specific.
+
+[Speaker: Shane Tews]
+Shane Tews: What we don’t have is, to your example, is retail. So the challenge you have is how do I write a privacy regulation without having a national privacy law? Like, a national privacy law could spell a lot of this out. The challenge with 180-day deletion might end up being on your insurance company. And then you have to be like, “Why am I refilling this information all the time?” Sort of the way you feel like when you go to the doctor and you’re like, “They know all this. Why am I filling out this physical form?” You should be better, but they just have . . . Through HIPAA, they’ve just decided that the best safeguard is to somehow make you write this stuff out every single time, which is probably even a bigger risk when it comes to data infiltration.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: All those chats.
+
+[Speaker: Shane Tews]
+Shane Tews: A lot of that without a national privacy law, which it took me a long time to get there. And my colleague, Jim Harper, does not believe in a national privacy law. I always feel it’s important. Separate us two on that. He has his points. It’ll be difficult to get to that stage, but just because AI is extremely fast, you know, the internet is what made it feel uncomfortable because it was a lot faster than the old days of the white pages. It’s very important that we actually have a national cybersecurity law that we can build upon.
+
+[Speaker: Shane Tews]
+Otherwise, AI is fast. Internet was pretty fast. AI is a lot faster, but the information is also important because we need to be able to build on it. But to give you another example of the importance of keeping your data locked up and in the right place, right before the World Cup, there was a breach of the DHS system, which was the sharing mechanism for federal state and local law enforcement to help protect people while they were in the United States watching the World Cup. So, luckily, it seems like we got through that without an incident. People always call that the Y2K problem. Like, you solved it, and no one knew it, and it didn’t make news, so, therefore, it’s like, it didn’t happen. But when you have these databases that can be exfiltrated like that, a lot of mischief can happen that will feel not connected. It’s one of the reasons why you should just, as an individual, minimize the data that you share with people. So it feels like a lot of times it’s a lot easier if you just let all the devices remember things, and who cares if I get something from the Gap, even though I haven’t walked into a Gap in a decade. It feels innocent enough until somebody takes that information from their system that has maybe still an active credit card file, it has the main information that they can build another version of you and start using your credit along the way. Or, you know, maybe something that’s more of in the physical harm capability, which is also plausible.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: So when you say, you know, minimize the amount of information, that gets me thinking about this other debate, right, about how, whether, like, what do we do about AI agents? Because that is the hot thing, right? It’s already past say, “Oh, you’re only using AI to just ask questions?” The real cool thing is to get it to do work for you, right? To get out there and say, book me flights, buy me clothes, right? Do whatever. And those are maybe benign examples compared to businesses, right? Just like automate this person’s job, right? And the potential downside to that, right, is exactly what you just said, right? It requires you to tell them a lot of information, right? Here’s my credit cards so you can go buy things, right? Here’s what I like, right? Here’s the style I like. Like, here’s all the emails from this person that we just fired so that you can do their job, right? More information, more information, right? The agents need the information. But some of the AI thinkers, when they were reacting to the OpenAI Hugging Face thing, they said that’s the real lesson, right? Is that we are unprepared for the potential cybersecurity risks of agentic flows, because that’s essentially what OpenAI was doing, was it was telling someone to do something, right? And the instructions were not specific enough. And if a highly sophisticated AI company can slip up in the specificity of their instructions in plain English, right? You bet your ass the average person is going to give instructions that are not specific enough, right? So we want to benefit from AI. We want to benefit from AI agents. We don’t want people sharing too much information. How do we begin to strike that balance of, like, be careful what you tell the AI, but also experiment with agents so that you can reap the benefits of the future?
+
+[Speaker: Shane Tews]
+Shane Tews: We’re in the beginning stages of this. I’ll give you an earlier example. Remember when all these groups are like, there’s too many subscriptions because everything was becoming a subscription. Then enroll with us, and we’ll help you delete all these subscriptions you don’t use.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Subscribe to us to get rid of the subscriptions.
+
+[Speaker: Shane Tews]
+Shane Tews: You subscribe to them and then, all of a sudden, they just start unsubscribing you from things. You’re like, “Whoa, whoa, whoa, I use that. Why did you get rid of my Netflix account?” And so, then you’re like . . . There doesn’t seem to be any middle ground. Sometimes you review it and finally be like, “You know what? I just will keep the subscriptions. Thank you. And delete the subscription to delete the description.” So part of that is how much do you trust these agents? And travel is one of the great examples. If your credit card has enough limit, it might just buy you a NetJets. You’re like, that was more than I expected. I didn’t put calibration on that. I should have said business class only.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Sorry, honey. I guess we have to take the private jet.
+
+[Speaker: Shane Tews]
+Shane Tews: Right. I accidentally rented a NetJets to go down where we could have taken, you know, easyJet or Breeze for 129 bucks. I didn’t put a limit on that. But the other thing that it’s doing is it’s using a lot more compute power because we tend to do linear searches. So if you and I are searching, we might go a couple do searches for hotels or airplanes, or something like that, airline reservations. When you send an agent out, it grabs everything that’s plausible and it uses somewhere between 40 percent to 60 percent more volume of increase of compute energy. So it’s really . . . It’s an intensity at a multiple level, you know, that’s using more of the broadband. Cisco just did a whole thing on this. So that’s just so it can come back and be like, “Look, look, look, I did all this information sharing. So I’ve got this for you.” And then it puts it in a spreadsheet, which we’re all excited about. But you don’t realize on the back end how much more compute and things that you just did to get what probably might have taken you three or four strokes to do it. So we’re working through that, I think. And then it’s just the, you know, do you give your agent its own credit card? Like, then if it does something bad, are you liable? There’s all kinds of new things we have to think about with the agents.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. So we might have a couple of natural constraints there on how quickly this grows. You mentioned the efficiency companies are already seeing in the press, right? Companies trying to figure out how to spend less on AI. because they laid some people off. Maybe that was because of AI. or they just use it as an excuse either way. But then they realize, “Oh, wait, in the process of trying to automate some of these tasks, we ended up spending way too much on tokens.” You know, there was that push. We got a token max. You got to take it back. It’s like just getting done. Maxing is actually very wasteful. Don’t token-max, like Whiplash in one month. But Metta, for example, was it was like SoulCycle, like everyone needed to be on the leaderboard to token-max. I was like, oh, never mind.
+
+[Speaker: Shane Tews]
+Shane Tews: Nothing actually it happened when you did all that, right? It burned a lot of things.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: So that might be a natural barrier to the proliferation of these agents. And then, you know, to your point as well, just like trying to figure out how do you get them to operate. So, hey, don’t search literally every hotel in the world. If I asked you, you know, for like very specific things that I like and I have a certain rewards program, is there anything else that you would like to touch on digital cybersecurity before we do a quick detour to the physical the physical security?
+
+[Speaker: Shane Tews]
+Shane Tews: It’s not all negative. There’s a lot of really interesting things I can do. There’s a lot of jobs that make up by the wayside because, you know, the AI agent, if you’re smart enough to use the system correctly, can do it. We have friends who are now using it as its financial advisor. They’re like, “I’m doing a much better job and I’m getting a better percentage.” I’m going to let my financial advisor stay employed. I see that same thing with tax accountants. I mean, if you if it can ingest the code, which is usually the conundrum I have on my . . . I don’t know. Are we still doing this? You know what, which . . . I don’t know which section numbers things are. So there’ll be certain things that are more servicedriven that you and I might choose to continue the service, but other people will be like, “I can build an agent that will do that for me. And I’m going to, you know, put my Excel documents in it and I get better . . . I feel like that works better.” So we’re just really at the beginning of all this.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Well, I know a topic that you’ve tracked that we referenced on the episode with NCTA president and CEO and former US Senator Cory Gardner.
+
+[Speaker: Shane Tews]
+Shane Tews: It was a great episode, by the way.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Thank you. Appreciate it. We talked about copper theft, right? So this is the physical security of people literally destroying broadband networks in search of copper, in part, that is driven indirectly by AI because AI data centers use a lot of copper. So the price has gone up. So thieves who are, you know, sending it to scrap yards or sending it overseas to be laundered, whatever, they could potentially get a nice premium on it just as AI has driven up memory chip prices. It’s driven up copper. Now, fiber networks don’t have copper, but . . .
+
+[Speaker: Shane Tews]
+Shane Tews: Yet they steal it anyway.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: And thieves don’t know.
+
+[Speaker: Shane Tews]
+Shane Tews: So the first thing that you should do is they should Google what copper looks like so they stop cutting into all these fiber operations that they can’t sell the fiber.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. No one’s buying that glass.
+
+[Speaker: Shane Tews]
+Shane Tews: But the whole idea of stealing the copper, which apparently they’re just digging and digging up everything and just wreaking havoc on communication systems at this point.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah. So any . . . Other than your advice to thieves, right? To be better thieves is to look up . . .
+
+[Speaker: Shane Tews]
+Shane Tews: Make sure you’re not stealing the, yeah . . .
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Steal the right thing, idiot. Anything else you’d like to share?
+
+[Speaker: Shane Tews]
+Shane Tews: They are looking at involving both local law enforcement as well as the FBI on this because it is becoming very disruptive. It’s one of the few things that are wireless and our wire line guys and cable and those are used, you know, they all are having a problem in this area, and we all like the services that they have. So I’m for minimizing them having problems so they can spend
+
+[Speaker: Shane Tews]
+more time making sure that my . . . whatever I’m connected to, if it’s licensed or unlicensed, is going very well.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Well, it’s nice when mom and dad who fight over spectrum can agree on something, right?
+
+[Speaker: Shane Tews]
+Shane Tews: Yes. Stop stealing their copper.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Shane, your podcast is Explain to Shane. Your very smart writing that formed the basis of all of my prep today is at aei.org. So if you look up in Google, like, AEI Tech, you could see Shane and Oliver writing . . . She’s also the president of Core. Sorry, not president of Core Point Strategies. That’s me, president of Logan Circle Strategies.
+
+[Speaker: Shane Tews]
+Shane Tews: Should we have a merger conversation?
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Yeah, exactly. It might get blocked by the DOJ or FTC. Logan Circle, great neighborhood, great name. Shane, thank you so much.
+
+[Speaker: Shane Tews]
+Shane Tews: Thanks for having me, Evan.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: I have to say before we sign off, I have lived and worked in this city for a long time. Shane is a rare person in DC who is not transactional, who was a mentor to me for many years. I would not be where I am without Shane. I have just never seen anyone who takes people under her wing, who is so helpful to anyone who ever asks, expects nothing in return. You are truly a rare breed in a city that is otherwise can be very cynical and make people cynical. So thank you. I appreciate it.
+
+[Speaker: Shane Tews]
+Shane Tews: You’ve been worth every minute.
+
+[Speaker: Evan Swarztrauber]
+Evan Swarztrauber: Oh, thank you. But hopefully this podcast is really the culmination of all of that.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in. We’ll see you on the next episode of Explain to Shane.

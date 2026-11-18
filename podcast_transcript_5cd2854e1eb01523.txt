@@ -1,0 +1,170 @@
+PAGE_TITLE: 
+	Explain to Shane: Coronavirus, 5G, and Restoring Internet Freedom at the Federal Communications Commission with Joel Thayer — full transcript
+
+[Speaker: Introduction / editorial context]
+AEI Coronavirus, 5G, and Restoring Internet Freedom at the Federal Communications Commission with Joel Thayer Episode #6 | June 2, 2020 | Shane Tews and Joel Thayer
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane." I'm your host Shane Tews at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work. And how they shape our social and economic life. Welcome back to another episode of "Explain to Shane." Today my guest is Joel Thayer. Joel is an associate at the law firm of Phillips Lytle out in New York, but he is basically here in DC, where he focuses on FCC regulatory issues, privacy and cybersecurity. I met Joel when he was focusing on more the app development world, and specifically software. So Joel is my go-to guy on a lot of things. But one thing he's really good at explaining to me is the intricacies of current FCC filings and the position each side takes on the legal arguments. So Joel, thanks for being my background on a lot of that for many years.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Thank you for being my soundboard.
+
+[Speaker: Shane Tews]
+Shane Tews: Right. Happily. So today we are going to discuss on "Explain to Shane" some things that are going on. We're going to start with the FCC's response to COVID and how they have been very good about doing temporary rules. And we'll walk through those a little bit. That's one key thing I want to hit on. Also, I know that you have been doing some work with Ligado and I'm fascinated because that's a proxy fight. So we're going to get into that. And then we're going to end with sort of some, if you missed it, there was the restoring internet freedom order comments that were due April 20th, and replies were May 20th. And in our world, that's an all-day conversation. So, that gives you a little Joel, welcome. Let's start with what's going on with the FCC and COVID? What temporary regulations have they been changing that hopefully been making broadband easier for American citizens?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah, so the FCC has taken what I feel is a leadership role in this area. And they've done three key things that | think are important to help out in this time of crisis. The three things are as follows: One, they had carriers take a Keep America Connected pledge, which we'll go into in a little bit. Secondly, they opened up a lot of spectrum to augment our Wi-Fi footprint and increase
+
+[Speaker: Joel Thayer]
+capabilities, especially for wireless internet service providers or WISPs. Lastly, they implemented a lot of subsidy programs that have been focused primarily on telehealth capabilities and also connected education. So they're doing a lot. And them, in conjunction with industry, I think have positioned us very well to increase our abilities in the broadband space.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, that's really interesting. So | know they have the Keep America Connected pledge and they've recently extended that until the end of June. 700 companies and associations have agreed to work the chairman on this. And when you say carriers, you mean both the traditional telecommunications companies as well as cable companies. Is there anybody I'm leaving out? You said WISPs. Explain what are WISPs again?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah. And yeah, you're right. It's traditional carriers, being like a Verizon, an AT&T. Even fiber optic cable operators, I believe are part of the list. I'm not entirely sure, but I'm almost certain it is. But specifically it's targeted at wireless internet service providers, which are called WISPs. WISPs are primarily based in rural areas and rely heavily on spectrum in order to provide internet-based services for those who live in middle America, and enter any small rural town here. And so it's critical for them to access the spectrum that allows them to augment their services. So some of the things that the FCC has done, on top of the pledge, is also to open up spectrum for Wi-Fi capabilities. And specifically, there are two items that the FCC has promulgated that has really pushed us forward in that regard. One is the 6 GHz proceeding. 6 GHz, it's just basically radio frequency spectrum that wasn't traditionally used for Wi-Fi, but through a lot of extensive research and also testing, and also previous usage, the FCC has identified this spectrum frequency as a key element to increasing our Wi-Fi footprint. The other frequency is literally.... So, spectrum basically is, think of it more like a layered cake. And the next layer right underneath 6 GHz is the 5.9 gigahertz band. And the 5.9 GHz band, it was traditionally used for auto manufacturers to provide public safety capabilities. Which arguably hasn't been used, but in this instance, the FCC has temporarily allowed it to be used, the 5.9 GHz band, to make a more contiguous Wi-ri spectrum trequency. And contiguous just means that now it goes from using one layer of the cake to using a larger portion of the cake, to just enjoy for Wi-Fi purposes.
+
+[Speaker: Shane Tews]
+Shane Tews: So when Wi-Fi gets congested, it allows it to kind of — it's like a radio dial that it's always seeking the best outcome. And so if we open 5.9 next to 6 GHz, and we're using 6 GHz for new Wi-Fi purposes, it's just kind of helping with the congestion? Do I have that right?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Exactly. And this is a big concern, particularly with WISPs who have rural customers. Now that many of us, due to COVID, have been in isolation, we are relying very heavily on our broadband capability to do things like, anything from streaming Netflix shows, to getting on Zoom calls, to doing just basic things. Even going as far as ordering groceries online. So with all of that traffic on traditional frequencies, we require more bandwidth for that. That is what these two proceedings seek to accomplish. Frankly, it's a very wise move on the part of the FCC.
+
+[Speaker: Shane Tews]
+Shane Tews: So they're giving Wi-Fi more real estate. Am I okay to say that that?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Precisely.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Joel Thayer]
+Joel Thayer: That's exactly right.
+
+[Speaker: Shane Tews]
+Shane Tews: | like the analogy because we all know that we have to make best current use, or whatever the challenges are, when you're deciding how to use physical space. And now we're doing that with spectrum, which is how do we best use this for the purposes of when it's needed. And so what'sinteresting is that the FCC was able to do this on a temporary basis, realizing we have all of a sudden, a lot more people using bandwidth for entertainment, working, education. Talking to the network carriers, it is kind of fascinating. They said it hasn't so much been that it's such a gigantic uptick, if you look at how much usage a peak is, but he says, it's more steady and it's all day long. And that the minute they wake up, they're online until the minute they go the bed. Where before you would see kind of highs and lows during the day where people would actually be going out doing things where they weren't using a Wi-Fi connection. Which | think for most of us is — I know l'm on it all day long. So, good for the FCC. Now that these things are temporary, are they able to make them permanent? What do they have to do about that?
+
+[Speaker: Joel Thayer]
+Joel Thayer: So the 6 GHz proceeding that I mentioned earlier, that is an order and that rule is here to stay. 5.9, however, is still in regulatory limbo. What the FCC has to do, is move on what's called a Notice of Proposed Rulemaking [NPRM]. And just to give you a very quick briefer on FCC proceedings, is that the FCC has to, in order for them to promulgate a rule with the effect of law, they have to first give the public enough notice. That would meet their, A, their statutory obligations under what's called the Administrative Procedures Act. And it would also meet our overall constitutional view of due process. Due process means that if the government is doing anything that could potentially affect our rights, they have to give us notice. So the FCC does this first. They will first put out what's called a Notice of Inquiry, where they'II say, "Hey, world, we want to move on these items. What say you? What can we do? Do you think that we have statutory authority?" And they seek comment on it through a certain period of time. After that, assuming everything is kosher, they move to the next stage, which is a Notice of Proposed Rulemaking, where it's a more articulated proceeding that has in it. So basically they say, "Look. Given all your input from the Notice of Inquiry, we think that this would be a good looking rule. Do you guys agree that it's good looking? If not, tell us why it's not, and we will take that comment and then we will potentially create an order or a rule out of that proceeding." Which ultimately results in a final order or rule. For the 5.9 proceeding, we're in the middle part. We're still in the Notice of Proposed Rulemaking area. And I believe that comments have just closed, either a week or two weeks ago. The next stage for the FCC to move to make this use a little bit more permanent, is to now move on to creating an order. So for now, it's temporary, but once the FCC moves on its previous NPRM, the
+
+[Speaker: Joel Thayer]
+rule will be here to stay. But it has to move on this rule before it becomes anything less than temporary.
+
+[Speaker: Shane Tews]
+Shane Tews: I believe I have this right, like T-Mobile was able to come in on the 5.9 temporary expansion because they're working on changing up their networks, they recently have merger issues that they're working through, trying to become the big third carrier. Can they go back to the FCC with use cases and say, "Here's what we did with it. Here's kind of the great things that happened while we had three months of opportunity on 5.9." Can they include that on an
+
+[Speaker: Joel Thayer]
+Joel Thayer: Oh, absolutely. And they would probably do that through what's called an ex parte. An ex parte is outside of a traditional comment. And so, going back to the idea of the notice and comment period where the FCC gives notice and you comment, another thing that the FCC does, or allows tor, orits rules allow for, is for folks like 1-Mobile who say, "Hey, we have been using 5.9 on those temporary basis. We' ve seen a lot ot successes here. We've also seen some interference. Here's what we have done to ensure that we are providing the services that we promised, while at the same time ameliorate any of the concerns that have been previously noted in the NPRM." They can absolutely still add that to the record before it becomes a rule. So yes.
+
+[Speaker: Shane Tews]
+Shane Tews: So NPRMs tend to be both technical and legal and maybe a little bit rhetorical?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah. A little bit. A bunch of legal sections, really.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. Well, the other thing | think has been interesting to watch, because | focus a lot on the FCC in the tech space, and I haven't watched it as much in the other agencies. But I have in the news reports seen that the FCC has gotten a lot of kudos for realizing the encumberment, and figuring out how to waive things either temporarily or clearing the path. One of them has been the gift rules that broadband providers needed for, especially rural, around remote learning and enhanced capacity for Wi-Fi spots, network gear, and the ability to basically, I don't know if we're calling it lending, borrowing equipment because people just haven't made the investment and they realized there was a gap. That's that last mile challenge. That you may have it up to a certain point, to the call node, and that's to get to One example you hear a lot about is kids that don't have Wi-Fi in their home, were used to going to a McDonald's or a coffee shop. That's where they were actually able to sit down and finish their homework. Well, obviously a lot of these coffee shops and restaurants aren't open, so their Wi-Fi may not be available and they needed to bring that capacity home. So | think it's been really fascinating to watch the waving of the gifting rules. And I think that also extends to medical and telehealth as well.
+
+[Speaker: Joel Thayer]
+Joel Thayer: That's correct. And I think that a lot of that had to do with the extra monies afforded to the FCC through the CARES Act. The FCC was allotted by Congress an extra $200 million to provide to health providers that wanted to augment their telehealth capacities. That, from both a public health perspective, and also a telecommunications perspective is incredibly crucial in
+
+[Speaker: Joel Thayer]
+the fight against COVID. Because as you know, social distancing has been sort of the term of art that has been blasted throughout the news media and everything else. Part of that social distancing requires connectivity. Especially when it comes to, if we have to be distant, how do we make sure that the right — as you noted, low income folks are oftentimes miles away from hospitals. They need to be able to get that affordable care. And so the FCC along with partners in Congress and also HHS, which is the [Department of] Human Health and Services, essentially came up with a plan to relax tele-health rules so that way these low income folks can access these Wi-Fi capabilities that you expanded upon. While at the same time, remotely describing symptoms to their doctors to see whether or not they should come into the hospital. I think that ultimately the FCC has done a great job in trying to really expedite a lot of these proceedings so that we can get the connectivity that we need to provide the help to a lot of low income folks. Although it's been a very complicated few months, I think the FCC has taken a serious leadership role and them, along with HHS should be applauded for some of the opportunities they've provided, especially in the broadband space.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay, I'm a little bit out of my area of expertise, but on the tele-health, the challenge was also just Medicare, Medicaid rules on reimbursement. So hopefully those are things that'Il get worked through. We've seen success, and we have good corner cases as to — and it isn't always low income rural. I'm from Nebraska. Not everybody wants to live next to each other. And in understanding from a carrier's perspective, sometimes those are hard people to get a hold of because they live far away on purpose. But again, wanting to be able to stay in place, stay at home while you're having a medical issue, and not have to be next to a hospital. That's another area where they've been able to expand. So hopefully we'll see a lot of these things that will actually become permanent as you have noted. As well as, talking to my friends, I don't happen to have children, but what's going on with remote learning and how that's going. Have the governors and states and local districts, they' ve been collaborating with the FCC on these rules, too? That seems like another layer that they have to get through.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah. The FCC, in tandem with the Department of Education, have convened a lot of stakeholder meetings with governors, state officials, and also local school districts. And they've also worked a lot with local tribes that are also feeling the impacts of not being able to having to send their kids to school every day. There's been a wide conversation happening with a lot of stakeholders at every level of government to try to ameliorate the concerns that we're getting from working remotely and closing institutions that we normally rely on. So yes, it has been all hands on deck when it comes to this COVID response.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you. That's that helps a lot to understand that. And then in the middle of all this, there's an issue that has been out there for many years, changed ownership, this company Ligado. What is Ligado and what are they up to?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah, so Ligado is sort of a tortured history. Ligado was formerly [called] LightSquared. And what LightSquared essentially did, was provide satellite-
+
+[Speaker: Joel Thayer]
+based services in a very specific frequency, using a very specific type of spectrum called L-band. L-band is traditionally used for GPS purposes, and is used by a wide variety of stakeholders, both governmental and also private industry, such as John Deere or Garmin. Anyone who is in the GPS space uses spectrum frequencies in or around L band. So LightSquared realized that, "'Hey, this is actually a pretty valuable spectrum to provide other services that are also beneficial, such as broadband." Circa 2004, they petitioned the FCC to modify its license, its spectrum license. For the uninitiated, in order tor a carrier like Ligado or Verizon or anyone to provide services using specific frequencies, they have to go and buy that particular frequency through an auction that the FCC holds, usually. So Ligado, tormerly LightSquared, bought specitic frequencies within L band and said, "Hey, you have a license to provide satellite services that does X, Y, and Z." That X, Y, and Z aspects of their license did not include providing broadband services. Ligado said, "All right, well, we think that we have enough capabilities to provide broadband services. So let's go and let's modify our license." In order to do that, you need the FCC to basically give a blessing. In order for you to get the FCC blessing, it is incredibly hard to do. It requires an immense amount of thought behind it. It requires a lot of inter-agency work to make sure that you're not offending incumbents, which are other people who are currently using the band, and even the band around it.
+
+[Speaker: Shane Tews]
+Shane Tews: So is this sort of, it's like a neighborhood thing. Like they have to basically go talk to their neighbors and say, "Hey, here's our plan. We didn't initially have broadband on our plan, but we think we can use it. So are you guys cool with that?" And some people were saying yes, and some were saying, no? Okay.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah. Like this was zoned residential. You can't just immediately zone it commercial and have everyone say, "Oh yeah, we're cool with that." There has to be a lot of dialogue and a lot of input to change zoning. But what Ligado's asking is not even a change of zoning. They're just saying, "Hey, can we also use our apartment for a home office? It's within the confines of our apartment. We don't think that we're going to offend anybody." And they have kind of noisy neighbors and the neighbors don't like the idea of Ligado potentially using their particular space or real estate of spectrum in a way that allows for IOT [Internet of Thinas] and 5a services.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, I thought they were doing a lot of industrial kind of IOT work, especially for like heavier industrial that just needed to have communications amongst — again, going to the GPS point of like, they have a lot of physical space in between things, but they needed to be able to be connected. So the idea of them coming into broadband is really interesting for me.
+
+[Speaker: Joel Thayer]
+Joel Thayer: What they want to do is add another layer of density into the network. So they want it to be able to provide more services in the IOT space. And so, at this point, it's interesting to see what they're actually working on. But before we even get into what services they can provide, they have to be able to get the okay from the FCC to do that.
+
+[Speaker: Shane Tews]
+Shane Tews: I think we're missing a big part of this conversation, which is who's their biggest neighbor that gets really upset about this. The Department of Defense, maybe?
+
+[Speaker: Joel Thayer]
+Joel Thayer: They are probably the largest neighbor that has the most pull. And they are the ones making the most noise. So yes, the DOD is, it was a resident of that neighborhood.
+
+[Speaker: Shane Tews]
+Shane Tews: And one of the things I think that we've seen in the entire, your layered cake perspective about this, is that we've learned how to make the layers tighter and more efficient as we can increase frequency and decrease wavelength that we can use [this spectrum] for other things. It's the commercial use versus government use is a huge challenge in this space. And Ligado has become a proxy fight for a lot of this.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah. And so from my perspective, it looks as if the DOD is interested in preserving its assets. Although there's no real issue, either from the FCC's perspective or even NTIA's [National Telecommunications and Information Administration] perspective, which is the agency that sort of governs over government spectrum, DOD has seemed to be pretty upset with the FCC granting Ligado its modification in their license. But not because of interference concerns, because they hadn't really pointed to any. Well they're claiming interference concerns, but they haven't pointed to any real true interference that was either put on record, or hasn't been ameliorated by the numerous amount of modifications to Ligado's license. So, Ligado and the FCC had created this particular modification to be very restrictive and which almost undoubtedly ensures that the DOD and other incumbents are protected. But I think the DOD views this as, "Well if we give them this, what will they come after next?" They, being the FCC. As you know, Shane, this FCC has been moving fast and they are okay with breaking down walls. But they do so, I think, responsibly. And they do so in ways that are well within their regulatory purview and legal authority, while at the same time, recognize that, "Look, we need to make sure that we're making the most use out of our spectrum." And Ligado's modification is a good example of how we formerly used spectrum for X, Y, and Z purposes. Now we see that it can range from whole letters of the alphabet that we can use, or we could use this particular piece of the spectrum. Why are we preventing this? When this is a clear win-win for everyone. We get more competition in the mobile space. Stakeholders can use spectrum in ways they couldn't. And now, while at the same time fully protecting all of the government interests and private interests in the adjacent bands. What's the issue? Frankly, I think that the DOD is looking at this and getting kind of nervous saying, "Well, if we say yes to this, then it will be harder to say no to something else ." And so | think that DOD is drawing a line in the sand saying, "Absolutely not." It will be interesting to see what reasons they really proffer. And if they actually do have interference concerns that they haven't shared in the 10 year span of this proceeding being in front of the FCC. Frankly, I doubt it. But | think that this, to them, they're treating this as life or death. I think, as you noted, Shane,
+
+[Speaker: Joel Thayer]
+this seems to be a proxy for another issue that they have with the FCC specifically, and Ligado is just caught in the middle.
+
+[Speaker: Shane Tews]
+Shane Tews: Give us real quick timing. What happens next?
+
+[Speaker: Joel Thayer]
+Joel Thayer: The FCC has already granted this modification. And in order for it to become effective, it has to be in the Federal Register. So there's really no action that needs to be done on the part of the FCC or anyone else. But the problem you're going to run into, is that once it gets into the Federal Register, you can challenge it in court or, obviously you can always go to Congress. And Congress can say "Shame on you, FCC. We are rewriting statutes to make sure vou can't touch L-band." The likelihood of congressional action, in my view, is very, very low. Mainly because the Armed Service Committee seems to want to take the lead on this issue, but it's not clear to me that they would have the appropriate jurisdiction over the FCC, which is usually reserved tor the Senate Commerce Committee or Energy and Commerce from the House side. So it's a very complicated and legislative quagmire. But in the immediate term, I think what Ligado should be worried about is a bunch of lawsuits against the FCC that are specifically tailored to the FCC's grant of its modification. As soon as that hits the register, I fully expect there either to be a petition for reconsideration on the agency level, or a straight-up lawsuit. So it'Il be interesting to see what happens.
+
+[Speaker: Shane Tews]
+Shane Tews: | love that the Federal Register is still the mother-may-l element of the federal government. It's like, you can talk about something for a really long time, but until it gets actually published in the Federal Register, you can't act. Fascinates me.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Just pretend it doesn't exist.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, exactly. Final and not a small topic, the Restoring Internet Freedom Order and the comments. Some people still refer to this as net neutrality, which I don't because I think that it's something that we've gone way past its prime on the concept. It might've made sense in the early 2000s, but it just keeps bringing its ugly head back up. So what just happened April 20th? I know there were comments, and then we had reply comments on May 20th. Can you just break that down for us a little bit and what the key issues were?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah. So ultimately this is a question from the DC circuit, or a request from the DC circuit, that the FCC, pursuant to a lawsuit called Mozilla v. FCC, explain how it's changing classification of broadband services going from a telecommunication services, which was done in 2015, how its reversion back, through the Restoring Internet Freedom order, which happened in 2018, how that would affect some other policies.
+
+[Speaker: Shane Tews]
+Shane Tews: Title I versus Title II. Information services has been what broadband has been tor a long time. It just was how these zeros and ones tlow. And then certain beople thouaht that it needs to be treated more like an old-fashioned telecom carrier. Is that correct?
+
+[Speaker: Joel Thayer]
+Joel Thayer: That's absolutely right. So it goes back to, firstly, I was going to say, what is net neutrality? That's basically the, this conversation is just an extension of that conversation. And net neutrality at its highest of high levels, is how the internet should be regulated from the perspective of the Federal Communications Commission. Or at least it's devolved into that kind of conversation.
+
+[Speaker: Shane Tews]
+Shane Tews: Baseline is free market versus government control. Am I oversimplifying that?
+
+[Speaker: Joel Thayer]
+Joel Thayer: No. That is precisely what it is. It's just a philosophical difference. Do you think that the FCC should do a Title I free market perspective, or should it be regulated like a traditional telephone that existed in 1934, which is Title II. Ajit Pai and the current commission in 2018 said, "Why in 2015 are we regulating this like a 1934 telephone?" The Internet is very broad and market and competitive forces should be determining how ISPs interact with, not just its consumers, but also its edge partners like a Google or Facebook or other major tech companies. The FCC also recognized that, "Hey, the Internet has been running on a Title I free market regime since the dawn of the worldwide web. We should be encouraging that because we saw spurs of investment as a result of keeping it in the free market. The Internet was not broken to begin with. Why are we over- regulating something that is clearly working?" So the Restoring Internet Freedom Order really just brings the Internet back to what it always has been, which is back to the regulatory family it's always fallen under, which is a Title I information service.
+
+[Speaker: Shane Tews]
+Shane Tews: Couple of things that they just recently, I think, brought this to light was, people were concerned about, how are the broadband networks doing during COVID? And there was a request by several European countries, European Commission, back in March and April with Netflix and YouTube. There was a misunderstanding that, while the systems are quite similar, they are still parts of Europe that are running on DSL, which we have mostly been off of for quite some time here in the United States. Which is a decision about free market жмет росотроно, again versus government control. So | just want to inject that because it's an
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah, no. And that goes precisely to the investment point. So in 2018, once it hit the Federal Register, a lawsuit immediately started to ensue and it was put forward by the leading petitioner in the DC circuit, Mozilla. Mozilla basically asserted that, "Hey, the FCC can't do this. The FCC can't go from Title I to Title Il so easily. They have to justify it." And the DC circuit mostly said, "I don't think so. The FCC did everything almost perfectly, but you're right, Mozilla, that they should clarify a few things for us. You, FCC, can you go back and seek comment on three specific items? How your Restoring Internet Freedom order actually affects public safety or how it actually affects your other initiatives on pole attachments? And also what does this do for Lifeline? So if you can go back and do that, we bless your order categorically. But you should go back and make sure you seek comment on that to make sure your record is absolutely complete and airtight." So that's what the FCC is essentially asking in this notice, where the FCC is saying, "Look, pursuant to our order from the court, we are asking, how does
+
+[Speaker: Joel Thayer]
+Restoring Internet Freedom Order either help or hurt our initiatives on public safety, pole attachments, and Lifeline?" And it turns out that it really doesn't. If anything, the kestoring Internet Freedom Order helps more than it hurts, if it hurts at all. What it actually does, the Restoring Internet Freedom Order allows a lot of these things. A lot of things, like in public safety, to really engage with private stakeholders, to come up with more priority access agreements that will ultimately save lives. On the pole attachment front, that's going back to the investment part of the discussion, the Restoring Internet Freedom Order has actually had the prover effect to increase broadband investment and broadband deployment investment. Which is integral into the conversation of pole attachments. Pole attachments, for the unfamiliar, are just a specific type of deployment regime that allows carriers to slap antennas onto a light pole or something similar. Existing infrastructure, basically. The idea is that those types of deployment mechanisms will densify our networks. So Restoring Internet Freedom Order, because you can now engage in a lot of pro-competitive arrangements, specifically zero-rating data, which allows smaller companies to engage with ISPs to be expelled from a traditional data plan. Carriers are seeing more opportunities than they did in the previous Title Il regime, which is inadvertently promoting a lot of investment. So if anything, the Restoring Internet Freedom Order promotes more broadband investment and more broadband deployment, and ultimately encourages more pole attachments. Ultimately that's what's going on. What the FCC did was just restored the internet back to what it was. A free market enterprise that encourages investment, and that ultimately puts us in a better place from a broadband perspective to have things that we all love. And potentially add more density to 5G networks to allow for more priority access agreements that we all depend on, like to services like tele-health or autonomous vehicles. This is an ultimate win. I think that what we're going to see is that the FCC is going to take in the comments and come up with either another order or ask for further comment through an NPRM. So it'll be interesting to see.
+
+[Speaker: Shane Tews]
+Shane Tews: And all this is to answer the question that the court laid in front of them, correct? To finalize some of the really finite details.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Exactly.
+
+[Speaker: Shane Tews]
+Shane Tews: That's really interesting. Well, Joel, thank you. You have explained a lot to us today on this "Explain to Shane."
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yeah, there's a lot in here.
+
+[Speaker: Shane Tews]
+Shane Tews: Hopefully it's interesting to our readers and we will probably come back at some point to learn more, because your head is full of all kinds of stuff that I want to know. So thank you for listening to today's "Explain to Shane." And Joel, thank you for being our guest. And we hope that the broadband connections and the Internet keeps running as smoothly as it has been for the rest of the year as we continue to work, play and learn from home.
