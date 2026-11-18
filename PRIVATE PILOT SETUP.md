@@ -1,3 +1,20 @@
+# Publish the guided-practice follow-up
+
+PR #12 is already merged as 01e2c51. Render live and repaired Article Search were confirmed. Do not upload the old six-batch package again.
+
+1. Review the new `guided-demo-and-excerpt-fixes` branch and create one pull request into main. It contains the guided tour, speaker-excerpt/name-search corrections and documentation, with no new library data, dependencies or settings.
+2. Merge after review, then wait for Render Live and Vercel Ready for the new merge commit.
+3. Refresh the website, sign in, and select **How to use**. Demo users can also start from **What’s new**. Try the five steps: mode selection, Greg Oslan search, citation, brief and practice feedback. The practice form must say **No report was sent**. Skip and Restart are available; the tour uses no AI or search credits.
+4. After the tour, **Try real Article Search** opens search. **Open this question in Article Chat** only fills the question; it does not send it. A real message uses normal funded-model controls and allowances.
+5. In real Article Search, search Greg Oslan under Shane Tews. Expect the relevant episode/highlights/transcript results, intact speaker labels and no unrelated Greg Walden event. Check the passage and original AEI links.
+6. Separately make one small ordinary GLM request and inspect cited support, guest/host attribution and usage. This tour does not prove live model-answer quality or full library currency.
+
+No new environment variables, passwords, API keys, provider privacy changes or paid hosting are required. Existing Demo restrictions remain. This follow-up does not change the library refresh date.
+
+## Published PR #12 setup record
+
+The instructions below describe the prior complete source-repair package. That package is already published; do not repeat its batch uploads.
+
 # Publish the complete update
 
 This package includes the code changes AND the actual repaired interview files. Do not also upload either earlier update ZIP.

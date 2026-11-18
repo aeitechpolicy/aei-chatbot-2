@@ -125,20 +125,15 @@ test('a demo login shows research and chat while hiding staff controls', async (
   expect(whatsNew.getByRole('heading', { name: 'See the evidence behind an answer' })).toBeVisible();
   expect(whatsNew.getByRole('heading', { name: 'Find articles and build a source list' })).toBeVisible();
   fireEvent.click(whatsNew.getByRole('button', { name: 'Start guided demo' }));
-  const tour = within(await screen.findByRole('dialog', { name: 'How to use AEI Chatbot' }));
-  fireEvent.click(tour.getByRole('button', { name: 'Next' }));
-  expect(tour.getByRole('heading', { name: 'Find and copy articles' })).toBeVisible();
-  expect(tour.getByRole('button', { name: 'Open AEI Article Search' })).toBeVisible();
-  for (let step = 0; step < 3; step++) {
-    fireEvent.click(tour.getByRole('button', { name: 'Next' }));
-  }
-  fireEvent.click(tour.getByRole('button', { name: 'Try the example question' }));
-  expect(screen.getByRole('textbox', { name: 'Ask about our scholars’ work' })).toHaveValue(
-    'What tradeoffs do the scholars discuss around online age verification?'
-  );
+  const tour = within(await screen.findByRole('dialog', { name: 'Try AEI Chatbot' }));
+  fireEvent.click(tour.getByRole('button', { name: 'AEI Article Search', exact: true }));
+  fireEvent.change(tour.getByLabelText('Search the sample library'), { target: { value: 'Greg Oslan' } });
+  fireEvent.click(tour.getByRole('button', { name: 'Search', exact: true }));
+  expect(tour.getByRole('article', { name: 'Practice search result' })).toHaveTextContent('Why Is It So Hard to Stay Safe Online?');
+  fireEvent.click(tour.getByRole('button', { name: 'Skip tour' }));
   expect(fetch.mock.calls.some(([url]) => /\/api\/chat\/new|\/message$/.test(url))).toBe(false);
   fireEvent.click(screen.getByRole('button', { name: 'How to use' }));
-  fireEvent.click(within(screen.getByRole('dialog', { name: 'How to use AEI Chatbot' })).getByRole('button', { name: 'Skip tour' }));
+  fireEvent.click(within(screen.getByRole('dialog', { name: 'Try AEI Chatbot' })).getByRole('button', { name: 'Skip tour' }));
   expect(await screen.findByRole('button', { name: 'AEI Article Search' })).toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Chats' })).toBeInTheDocument();
   expect(screen.getByText('Ask about work in the AEI Scholar Library.')).toBeVisible();

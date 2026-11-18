@@ -322,10 +322,10 @@ function PrivateApp({ session }) {
               <button className="walkthrough-trigger" type="button" onClick={() => setGuide('whats-new')}>
                 <Sparkles size={16} aria-hidden="true" /> What’s new
               </button>
-              <button type="button" onClick={() => setGuide('tour')}>
-                <CircleHelp size={16} aria-hidden="true" className="walkthrough-help-icon" /> How to use
-              </button>
             </>}
+            <button type="button" onClick={() => setGuide('tour')}>
+              <CircleHelp size={16} aria-hidden="true" className="walkthrough-help-icon" /> How to use
+            </button>
             {!isDemo && <button onClick={() => setCurrentView('feedback')}>Feedback inbox</button>}
             {!isDemo && <button onClick={() => setCurrentView('usage')}>Usage and costs</button>}
             <button onClick={() => { signOut().catch(() => {}); }}>Sign out</button>

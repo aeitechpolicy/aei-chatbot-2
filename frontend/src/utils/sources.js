@@ -41,3 +41,13 @@ export function sourceByline(source) {
   return [source?.author, source?.publisher, source?.authors?.join(', ')]
     .find(name => name && name !== 'Author not recorded') || (source?.collections?.length ? `${source.collections.join(', ')} (scholar collection)` : 'Author not recorded');
 }
+
+export function shortenSourceExcerpt(text, maxChars = 650) {
+  if (text.length <= maxChars) return text;
+  let end = Math.min(text.length, maxChars);
+  const wordBoundary = text.lastIndexOf(' ', end);
+  if (wordBoundary > 0) end = wordBoundary;
+  const opening = text.lastIndexOf('[Speaker:', Math.max(0, end - 1));
+  if (opening >= 0 && (text.indexOf(']', opening) < 0 || text.indexOf(']', opening) >= end)) end = opening;
+  return text.slice(0, end).trimEnd() + ' …';
+}

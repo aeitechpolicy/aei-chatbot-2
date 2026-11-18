@@ -1,6 +1,16 @@
 # Validation record
 
-## Current combined update — November 18, 2026
+## Current guided-practice follow-up — November 18, 2026
+
+Based on published PR #12 (01e2c51). 117 backend tests passed with zero failures. The new regressions check intact speaker labels through excerpt boundaries and exact identified-guest matching without first-name-only false positives. A real local library query for Greg Oslan returned six relevant sources, no unrelated Greg Walden event and no broken speaker labels. No provider was called.
+
+24 frontend tests passed across five suites. These exercise the full practice tour, mode selection, search validation, citation opening, brief preview, practice report completion, skip/restart, real-mode callbacks and no API submission. Existing real feedback and account behavior remain covered. An existing non-failing React act warning remains in App tests. The CI production build passed with existing toolchain/browser-data notices and no new compile warnings. Package files and lockfiles are unchanged.
+
+A real local Chrome check completed all five steps at 1440px desktop width and verified search, citation and brief controls at 390px phone width. It exercised restart and skip, saw no browser errors or horizontal overflow, made zero API writes during the tour, and verified Demo still hides Files and Usage and costs. All displayed answers were explicitly prepared examples. The tour does not run Together or Tavily and its feedback form sends nothing. Ordinary app session/history/status reads are separate from the practice flow.
+
+These results verify the local implementation, not production deployment or generated-answer quality. No secrets were read, no paid provider/search calls were made and no private database writes or account settings were changed. The maintainer must merge/deploy and separately evaluate a real funded answer.
+
+## PR #12 combined update validation — November 18, 2026
 
 The source repair checked 590 distinct public AEI pages and produced 421 source files: 312 updated existing files plus 107 podcast transcripts and two new verified episode/article pages. All output sources have recorded publication dates. All explicitly selected podcast PDFs were downloaded and parsed. Of the 107 podcast transcripts, 79 required local text recognition; 19 sources retain uncertain printed/recognized speaker labels. Exact OCR wording has not been manually reviewed line by line. Ordinary answers using an OCR-only direct quotation fail the citation check; the sources and briefs carry an OCR qualification.
 

@@ -275,3 +275,18 @@ test('a shared PDF keeps the earliest verified episode-page date regardless of p
     assert.equal(source.date, '2026-11-05'); assert.equal(source.interview.episodeUrl, older);
   }
 });
+
+test('moving a speaker change across retrieval boundaries never changes attribution or leaves broken labels', () => {
+  for (let padding = 0; padding < 1000; padding += 13) {
+    const text = '[Speaker: Greg Oslan]\n' + 'Background about account protection. '.repeat(25) + 'x'.repeat(padding) +
+      '\n\n[Speaker: Shane Tews]\nWhat does hostquestionevidence suggest about helping parents?\n\n[Speaker: Greg Oslan]\n' +
+      'The guestanswerevidence concerns checking personal accounts. '.repeat(35);
+    const excerpt = excerptFor(text, ['hostquestionevidence', 'guestanswerevidence']);
+    assert.ok(excerpt.length <= MAX_SOURCE_CHARS);
+    assert.doesNotMatch(excerpt.replace(/\[Speaker: [^\]\n]+\]/g, ''), /[\[\]]/);
+    for (const [term, speaker] of [['hostquestionevidence', 'Shane Tews'], ['guestanswerevidence', 'Greg Oslan']]) {
+      const at = excerpt.indexOf(term);
+      if (at >= 0) assert.equal([...excerpt.slice(0, at).matchAll(/\[Speaker: ([^\]]+)\]/g)].at(-1)?.[1], speaker);
+    }
+  }
+});

@@ -163,10 +163,23 @@ function interviewFields(source = {}) {
     unverifiedSpeakerLabels: Array.isArray(interview.unverifiedSpeakerLabels) ? interview.unverifiedSpeakerLabels.map(clean).filter(name => name && name.length <= 80).slice(0, 12) : []
   } };
 }
+function speakerStart(text, position) {
+  const opening = text.lastIndexOf('[Speaker:', position);
+  const closing = opening < 0 ? -1 : text.indexOf(']', opening);
+  return opening >= 0 && closing >= position && closing - opening <= 120 ? opening : position;
+}
+function speakerEnd(text, position) {
+  const opening = text.lastIndexOf('[Speaker:', Math.max(0, position - 1));
+  const closing = opening < 0 ? -1 : text.indexOf(']', opening);
+  return opening >= 0 && (closing < 0 || closing >= position) ? opening : position;
+}
+function clipSpeakerText(text, maxChars) {
+  return text.slice(0, speakerEnd(text, Math.min(text.length, maxChars))).trimEnd();
+}
 function speakerPrefix(text, start) {
   if (!start) return '';
   const last = text.slice(0, start).match(/\[Speaker: [^\]\n]{1,100}\]/g)?.at(-1);
   const next = text.indexOf('[Speaker:', start);
   return last && (next < 0 || next > start + 4) ? `${last}\n` : '';
 }
-module.exports = { officialUrl, inspectInterview, tagTranscript, interviewFields, speakerPrefix, pageDate };
+module.exports = { officialUrl, inspectInterview, tagTranscript, interviewFields, speakerPrefix, speakerStart, speakerEnd, clipSpeakerText, pageDate };

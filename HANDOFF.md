@@ -1,6 +1,18 @@
 # Maintainer handoff
 
-## Current prepared checkpoint — November 18, 2026
+## Current guided-practice checkpoint — November 18, 2026
+
+Base: PR #12 merged as 01e2c51. Render live and the repaired Article Search were confirmed by the maintainer. Actual ordinary AI answer quality remains to be tested.
+
+This review branch adds a five-step guided practice workspace to the existing How to use modal, available to Intern/RA/Demo. It uses an explicitly prepared Greg Oslan example, with progress, coachmarks, mode pills, search, citation passage, the existing brief preview and a practice-only version of the feedback form. Practice submission returns before any API call; it never writes a report or chat. Completion can open real search or prefill a question without sending it. Existing Demo staff-control restrictions remain in force. No new dependencies or services.
+
+Speaker-label boundaries are aligned before passage windows are selected and before frontend preview truncation. Exact identified participant-name searches require that full name, avoiding Greg Walden for Greg Oslan while retaining older unlabelled mentions. Two new backend regressions and the actual repaired-library query passed.
+
+117 backend tests, 24 frontend tests, CI build and simulated desktop/390px mobile browser flow passed. Browser checks completed search, citation, brief, practice report, restart and skip with no API writes, no browser errors and no mobile horizontal overflow. No paid model/search requests or private credential reads were made. See VALIDATION.md.
+
+Next: review and merge this follow-up, verify Render/Vercel, open How to use, then test one real ordinary GLM answer separately. This patch does not refresh the full library or change its refresh timestamp.
+
+## PR #12 source repair checkpoint — November 18, 2026
 
 The final package now includes actual repaired library text and metadata, not just importer code. Public pages were checked from the current catalog and known filenames. Results: 312 existing files updated; 107 podcast transcripts added (28 digital/79 OCR); two additional verified episode/article pages added; all 421 output source files have recorded publication dates. Four initially broken URL candidates were recovered and verified. There are no unresolved requested interview-page/PDF downloads in this scoped run. See backend/data/interview-repair-report.json for every changed file, source link, participant and extraction method.
 
@@ -8,7 +20,7 @@ Nineteen transcript sources retain uncertain printed/OCR speaker labels; uncerta
 
 Ordinary article files, the other scholars' source files, private database data and the frozen Version 1 snapshot were not rewritten. Search can retrieve a served scholar as an explicitly identified interview guest without changing byline authorship or the file's collection. A Brent Orrell guest example was checked using the real repaired library.
 
-This package combines all pending work after PR #11: ordinary-chat GLM routing, dated web retrieval, production library refresh, and speaker-aware Explain to Shane sources. It is not deployed. Main was checked at 7b4d4bec10663c10c63b05014d3a03ae7c599001. The GitHub connection can read but a content write returned 403 “Resource not accessible by integration”; the maintainer must upload and merge the package. This is an integration permission limit.
+This package combines all pending work after PR #11: ordinary-chat GLM routing, dated web retrieval, production library refresh, and speaker-aware Explain to Shane sources. It was published through PR #12 (merge 01e2c51), with Render live confirmed. The connector can read but content/PR writes returned 403; GitHub Desktop successfully pushed the complete branch and the maintainer created and merged its pull request.
 
 ### Model and web evidence
 

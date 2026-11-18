@@ -1,8 +1,16 @@
 # AEI research chatbot
 
-## Current prepared update — November 18, 2026
+## Guided-practice follow-up — November 18, 2026
 
-An internal research assistant for work by Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. The website runs on Vercel, the backend on Render, and private chats/usage in Neon. This source update is prepared locally; it has not been published. GitHub main was last checked at 7b4d4bec10663c10c63b05014d3a03ae7c599001 (merged PR #11).
+PR #12 is merged as 01e2c51 and the maintainer confirmed its Render deployment and live Article Search. This follow-up adds an optional five-step practice tour under **How to use** for Intern, RA and Demo accounts. A labelled prepared example walks through mode selection, search, a citation passage, research-brief preview and a practice feedback report. Progress, highlighted controls, Back, Skip and Restart are included. The tour does not call model/search services, save a chat, or send a report. Real Article Search and a prefilled chat question are available after completion; sending a real question still uses the normal controls.
+
+It also preserves complete speaker labels at search/excerpt boundaries and prevents an exact identified interview-guest query from matching an unrelated person who shares a first name. The actual Greg Oslan search returned six relevant sources without the Greg Walden event. Broader topic matching is unchanged.
+
+117 backend checks, 24 frontend checks, the production build and simulated desktop/phone checks passed. The follow-up is prepared for review and is not live until merged and deployed. No package, lockfile, provider setting or paid hosting changes are needed.
+
+## PR #12 source repair record — November 18, 2026
+
+An internal research assistant for work by Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. The website runs on Vercel, the backend on Render, and private chats/usage in Neon. The combined source update was published through PR #12 as merge 01e2c51. The notes below describe that release.
 
 This combined package replaces the earlier pending GLM-only package. It includes:
 

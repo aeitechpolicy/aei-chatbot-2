@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, Flag } from 'lucide-react';
-import { sourceLink, sourceDateLabel, sourceByline, sourceTypeLabel } from '../utils/sources';
+import { sourceLink, sourceDateLabel, sourceByline, sourceTypeLabel, shortenSourceExcerpt } from '../utils/sources';
 import InterviewDetails from './InterviewDetails';
 import FeedbackDialog from './FeedbackDialog';
 import '../styles/Research.css';
@@ -34,7 +34,7 @@ export default function SourceCards({ sources = [], preview = false, selection =
       const url = sourceLink(source);
       const excerpt = source.excerpt || source.body || '';
       const shortened = preview && excerpt.length > 650;
-      const visibleExcerpt = shortened ? excerpt.slice(0, 650).replace(/\s+\S*$/, '') + ' …' : excerpt;
+      const visibleExcerpt = shortened ? shortenSourceExcerpt(excerpt) : excerpt;
       const fullExcerpt = shortened ? excerpt : preview && source.body !== excerpt ? source.body : null;
       const event = source.sourceType === 'event';
       const byline = sourceByline(source);
