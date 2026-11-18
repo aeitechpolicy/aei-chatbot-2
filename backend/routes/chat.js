@@ -8,6 +8,7 @@ const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, par
 const { queryTerms } = require('../utils/research');
 const { prepareWebSources, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
+const { providerErrorDetails } = require('../utils/providerError');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb }) {
@@ -312,7 +313,7 @@ router.post('/:chatId/message', async (req, res) => {
       try { await pilot.finish(usageId, { response: aiResult, errorCode: String(error.status || error.code || 'request_error'), attempted: attempted && error.code !== 'ai_setup' }); }
       catch { console.error('Unable to update usage; the reserved estimate remains in the ledger.'); }
     }
-    console.error('Chat request failed:', { status: error.status, code: error.code });
+    console.error('Chat request failed:', JSON.stringify(providerErrorDetails(error)));
     const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer', 'web_unavailable'].includes(error.code);
     res.status(localCode ? error.status : 500).json({
       error: localCode ? error.message : (error.status === 402 ? 'The Together account has no available credit.' : 'The answer could not be completed. Please check the usage report before retrying.'),
