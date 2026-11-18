@@ -1,194 +1,74 @@
 PAGE_TITLE: 
-	The Making of Global Telecommunications Policy: Highlights from My Conversation with Grace Koh and Patricia Paoletta | American Enterprise Institute - AEI
+	The Making of Global Telecommunications Policy: Highlights from My Conversation with Grace Koh and Patricia Paoletta
 
+[Speaker: Introduction / editorial context]
 What rules govern how telecommunications standards work across countries? How do governments manage the process to ensure national standards are compatible? And how has the rise of China affected global telecommunications policy? Grace Koh, the US Ambassador to the International Telecommunications Union’s World Telecommunications Conference, and Patricia Paoletta, a telecommunications lawyer and spectrum policy expert, joined me for a two-part discussion on “Explain to Shane” to cover these issues and more.
-Below is an edited and abridged transcript of our talk. You can listen to the podcast at these links (
-Part 1
-,
-Part 2
-) and read our full discussion at these links (
-Part 1
-,
-Part 2
-). You can also subscribe to the “Explain to Shane” podcast on
-iT
-u
-nes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane
-Tews: I thought for our listeners who may not be as familiar with some of these
-things, it’ll be easier if we dial into the acronyms here in a second. Can we
-just start with some of the basics? So let’s start with the ITU and it’s three
-parts: ITU-T, ITU-D, and ITU-R. Tricia, why don’t you lead off, and give us a
-quick breakdown on what these three sectors are and why they matter.
-Patricia Paoletta: the
-three sectors of the International Telecommunication Union are: R for radio
-communications, T for telecommunication standardization, and D for development
-sector. These are three different sectors where folks around the world, in an
-intergovernmental body but one in which the private sector is very much
-engaged, come to discuss those different areas. So R for spectrum allocation
-and rules attendant to the use of radio. D for development and how to help
-countries deploy broadband and other telecom services in their country. T to
-standardization discussions. These three sectors are part of the 150-year plus
-body.
-The International
-Telecommunication Union, which actually was formed before the advent of the
-United Nations, was formed out of the conundrum between Germany and France, how
-do we regulate telegraph wire?” We want to have telegraph messages going
-cross-border, we need to have an international body talk about this. So it was
-founded 150-something years ago. Then when United Nations came along, the ITU
-was subsumed within it. So right now it is part of the United Nations, but
-because it predates it, and it’s fairly technical, it’s a bit more specialized
-than some of your more political- or policy-only UN bodies.
-Good
-to know. Madam Ambassador, or as we will get familial and call you Grace from
-here on out, what were you the ambassador of? What is this WRC of which we
-speak?
-Grace Koh: This is
-squarely in Tricia’s world, the World Radio Communication Conference, which
-happens every four years. It’s a conference where the 193 national members get
-together and update the treaty. Yes, there is a treaty that governs how we
-avoid interfering with each other’s technology, because as we all know,
-spectrum doesn’t respect borders, and how we assign certain frequencies for
-certain services in order to continue to sort of harmonize that Spectrum use.
-The countries are all required to abide by it, as part of the treaty
-instrument.
-It’s a fascinating
-process. Every four years, they meet and they set the agenda for the next
-conference four years later. And then during those four years in between each
-conference, the ITU hosts study groups, essentially people who get together and
-study whether or not the proposed changes are actually feasible, recommendable,
-desirable. So in this instance, giving an example here at WRC 19, for four
-years between WRC 15 and WRC 19 we studied the feasibility of putting 5G in
-millimeter wave spectrum. That took up a lot of time in that four-year study
-cycle. But obviously that’s not the only thing that’s on the agenda. There are
-other things, like how to enable megaconstellation NGSO, Wi-Fi safety and
-maritime radar, et cetera. That’s how that works, and each country or region
-comes in with their proposals.
-So
-what’s at stake in these? You’re saying they like to delve into potentially
-internet governance, what else are they doing?
-Patricia Paoletta: While
-Grace considers her answer to that, I do want to jump in. This is where the
-nationality of the secretary general of the ITU, the Chinese secretary general,
-does come into play, because he was formerly the director of the
-telecommunications standards sector, which is the body that is hosting the
-WTSA. This is where you do have some interplay, at least through some US
-observers’ perspective, between his nationality in playing for the home team
-and Huawei. For instance, when Huawei doesn’t win at the industry-driven
-standards bodies like 3GPP, they often come back for a second bite at the apple
-at the ITU and try to have the ITU bless something that Huawei might be
-throwing into the 3GPP or other mix that Nokia or Ericsson or others bat down.
-And as Grace suggested,
-the ITU-T folks generally have been guilty of mission creep. So ICT [Information
-Communications Technology] is broad, but now they’ve been getting into
-artificial intelligence, and quantum computing, and a range of issues. They’ve
-just created more study groups. So, in the R world, you have just five study
-groups, and then you have a number of working parties under each. In the T
-world, you have 12 different study groups each with multiple working parties
-and focus groups. What all that means is there so many meetings around the
-clock, nonstop, that everybody else who’s not interested in having the ITU
-regulate telecom has to play whack-a-mole.
-To an extent, it’s hard
-for the United States, with our budget and our deep technical sector and our
-deep public-private history of working together, to stay on top of everything.
-You can imagine what it’s like for the rest of the countries, particularly
-those in the developing world, trying to manage 12 different study groups and
-working parties and whatever. So at least for the US perspective, and actually
-our region as well, I think one of our main goals is to try to streamline the
-existing structure of the T sector from at least from the 12 different study
-groups down to eight study groups, just so it’s more manageable as well as to
-prevent this mission creep. And part of the mission creep is pretty scary
-stuff, but I will leave it at that.
-Well,
-why is the international scene so important to tech policy at large? You’ve got
-trade, you’ve got competition?
-Patricia Paoletta: You
-need economies of scale in this global interconnected world that we live in.
-It’s no longer sufficient to build a telecommunications switch for one market.
-It’s a very competitive market. You’ve got major players up and down the supply
-chain throughout the world. The way to compete is to have global addressable
-markets. As Grace earlier said, spectrum doesn’t stop at the border. Data flows
-hopefully don’t stop at the border. If they do, it’s far more expensive. You do
-need those global economies of scale. You get those by talking to our
-international partners and international bodies.
-Grace Koh: I just want to
-point out: I think technology and tech policy, and to some degree tech trade, are
-becoming more and more weaponized, in a way, for economic and military
-aggression. That’s becoming more of a concern as we’re looking at things like
-cybersecurity and supply chains. The international scene also needs to be
-managed in a way that allows us to get the benefit of international trade and
-those global markets, but at the same time, protect any national security
-interests that we have as well.
-Let’s get into the global
-nature, which gets a little outside of the United States directly, which is
-these challenges we’re having with Huawei and ZTE. We all probably spend a lot
-of time explaining to people the reason why this matters is because it’s not
-just China, it’s Africa, and now it’s, in the last couple of years, really been
-Europe adopting a technology that, I’ll be the one to say, is a little suspect.
-What are the alternatives? Does
-this play itself out on the international diplomacy stage? Is this a huge
-issue? I mean, is it always the gorilla in the room, elephant, whichever one we
-want to go with? Or is this more of a market situation where you guys don’t
-talk about this from a diplomatic point of view, but we know it’s always
-omnipresent when you’re actually going to buy your equipment?
-Grace Koh: We have spent quite a bit of diplomatic
-coin talking about Huawei and the concerns that the United States government
-has with Huawei equipment. It’s a concerted effort at the State Department.
-There is a whole toolkit for discussing this issue.
-First of all, is it a market concern? Yes and no. We
-would like to have a market where there are competing players, and one of the
-things that I think we have complained fairly frequently of is the fact that
-Huawei, with access to state subsidies or state-backed guarantees, doesn’t
-compete on the same playing field.
-So for example, if it’s able to go to Sierra Leone
-and offer to build the whole telecommunications network at a cut rate price with
-Huawei equipment, you’re not going to see, I think, another manufacturer able
-to do the same sort of thing. They might be able to throw in a soccer stadium
-or something along those lines. Then also pitch into the rest of the One Belt
-One Road initiative that China has going on. So, that’s a concern. There’s some
-unfair market practices there to begin. Then you have the actual practice of
-actual deployment that is problematic.
-Then you have the substantive concerns about the
-security of the networks that are being deployed, which I think we’ve all tried
-to alert other countries to, as well. Part of that message has been muddied by
-the notion that this is part of a trade war. I think the national security
-concerns get lost in the argument that really we’re just putting Huawei under
-the ringer so that we can get better advantages in any sort of trade
-negotiations. But when that question comes up, I’m quick to remind people that
-we have had concerns about Huawei equipment since 2012, when we first required
-SoftBank to take all of that equipment out of the Sprint network in order for
-it to purchase the Sprint network.
-These are not new concerns. They continue to exist,
-and I think that the government has information that validates those concerns.
-They were one of the major
-contributors at the Consumer Electronics Show [CES]. There were companies that
-were trying to decide, was there any value still in this space? And all of a
-sudden, Huawei just came in and filled in the blank space that some of the
-other companies were deciding what to do. Then because Huawei came in, I think,
-it’s my personal opinion, you saw some of the others come back, and they were
-like, “Well, wait a minute. We’re not going to cede space to these guys.”
-It’s very interesting to see that go on.
-Patricia Paoletta: But, in addition to the market
-concerns and the unfair practices, and those are of course, very prevalent — to
-your point, Shane, yes, there’s not a US-headquartered competitor, but there
-are trusted ally vendors like Nokia and Erickson who’ve been in the US market,
-and have invested heavily, have a lot of R&D, a lot of employees. We want
-to see them, of course, not driven out of the market from unfair practices. 
 
-There’s
-also some of the, in my view, more sinister technology agendas that Huawei’s
-bringing in to various forms, certainly the ITU-T. they have one AI proposal, I
-suppose, on facial recognition, trying to get that blessed and sanctioned
-internationally. In light of what’s going on in Hong Kong and everywhere else,
-that’s scary. Obviously non-democratic powers have very different views towards
-the uses of technology and we do have to combat that, combat their proposals at
-the ITU. So, certainly, there’s a security aspect as Grace said. There’s the
-unfair trade practices. There’s obviously surveillance, but there’s also them
-going to the ITU to get their non-democratic use of technology sanctioned.
-That’s frightening, and the US government is, and US industry is, rightfully
-organized to try to thwart that.
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to the podcast at these links (Part 1, Part 2) and read our full discussion at these links (Part 1, Part 2). You can also subscribe to the “Explain to Shane” podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: I thought for our listeners who may not be as familiar with some of these things, it’ll be easier if we dial into the acronyms here in a second. Can we just start with some of the basics? So let’s start with the ITU and it’s three parts: ITU-T, ITU-D, and ITU-R. Tricia, why don’t you lead off, and give us a quick breakdown on what these three sectors are and why they matter.
+
+[Speaker: Patricia Paoletta]
+Patricia Paoletta: the three sectors of the International Telecommunication Union are: R for radio communications, T for telecommunication standardization, and D for development sector. These are three different sectors where folks around the world, in an intergovernmental body but one in which the private sector is very much engaged, come to discuss those different areas. So R for spectrum allocation and rules attendant to the use of radio. D for development and how to help countries deploy broadband and other telecom services in their country. T to standardization discussions. These three sectors are part of the 150-year plus body.
+
+[Speaker: Patricia Paoletta]
+The International Telecommunication Union, which actually was formed before the advent of the United Nations, was formed out of the conundrum between Germany and France, how do we regulate telegraph wire?” We want to have telegraph messages going cross-border, we need to have an international body talk about this. So it was founded 150-something years ago. Then when United Nations came along, the ITU was subsumed within it. So right now it is part of the United Nations, but because it predates it, and it’s fairly technical, it’s a bit more specialized than some of your more political- or policy-only UN bodies.
+
+[Speaker: Shane Tews]
+Good to know. Madam Ambassador, or as we will get familial and call you Grace from here on out, what were you the ambassador of? What is this WRC of which we speak?
+
+[Speaker: Grace Koh]
+Grace Koh: This is squarely in Tricia’s world, the World Radio Communication Conference, which happens every four years. It’s a conference where the 193 national members get together and update the treaty. Yes, there is a treaty that governs how we avoid interfering with each other’s technology, because as we all know, spectrum doesn’t respect borders, and how we assign certain frequencies for certain services in order to continue to sort of harmonize that Spectrum use. The countries are all required to abide by it, as part of the treaty instrument.
+
+[Speaker: Grace Koh]
+It’s a fascinating process. Every four years, they meet and they set the agenda for the next conference four years later. And then during those four years in between each conference, the ITU hosts study groups, essentially people who get together and study whether or not the proposed changes are actually feasible, recommendable, desirable. So in this instance, giving an example here at WRC 19, for four years between WRC 15 and WRC 19 we studied the feasibility of putting 5G in millimeter wave spectrum. That took up a lot of time in that four-year study cycle. But obviously that’s not the only thing that’s on the agenda. There are other things, like how to enable megaconstellation NGSO, Wi-Fi safety and maritime radar, et cetera. That’s how that works, and each country or region comes in with their proposals.
+
+[Speaker: Shane Tews]
+So what’s at stake in these? You’re saying they like to delve into potentially internet governance, what else are they doing?
+
+[Speaker: Patricia Paoletta]
+Patricia Paoletta: While Grace considers her answer to that, I do want to jump in. This is where the nationality of the secretary general of the ITU, the Chinese secretary general, does come into play, because he was formerly the director of the telecommunications standards sector, which is the body that is hosting the WTSA. This is where you do have some interplay, at least through some US observers’ perspective, between his nationality in playing for the home team and Huawei. For instance, when Huawei doesn’t win at the industry-driven standards bodies like 3GPP, they often come back for a second bite at the apple at the ITU and try to have the ITU bless something that Huawei might be throwing into the 3GPP or other mix that Nokia or Ericsson or others bat down.
+
+[Speaker: Patricia Paoletta]
+And as Grace suggested, the ITU-T folks generally have been guilty of mission creep. So ICT [Information Communications Technology] is broad, but now they’ve been getting into artificial intelligence, and quantum computing, and a range of issues. They’ve just created more study groups. So, in the R world, you have just five study groups, and then you have a number of working parties under each. In the T world, you have 12 different study groups each with multiple working parties and focus groups. What all that means is there so many meetings around the clock, nonstop, that everybody else who’s not interested in having the ITU regulate telecom has to play whack-a-mole.
+
+[Speaker: Patricia Paoletta]
+To an extent, it’s hard for the United States, with our budget and our deep technical sector and our deep public-private history of working together, to stay on top of everything. You can imagine what it’s like for the rest of the countries, particularly those in the developing world, trying to manage 12 different study groups and working parties and whatever. So at least for the US perspective, and actually our region as well, I think one of our main goals is to try to streamline the existing structure of the T sector from at least from the 12 different study groups down to eight study groups, just so it’s more manageable as well as to prevent this mission creep. And part of the mission creep is pretty scary stuff, but I will leave it at that.
+
+[Speaker: Shane Tews]
+Well, why is the international scene so important to tech policy at large? You’ve got trade, you’ve got competition?
+
+[Speaker: Patricia Paoletta]
+Patricia Paoletta: You need economies of scale in this global interconnected world that we live in. It’s no longer sufficient to build a telecommunications switch for one market. It’s a very competitive market. You’ve got major players up and down the supply chain throughout the world. The way to compete is to have global addressable markets. As Grace earlier said, spectrum doesn’t stop at the border. Data flows hopefully don’t stop at the border. If they do, it’s far more expensive. You do need those global economies of scale. You get those by talking to our international partners and international bodies.
+
+[Speaker: Grace Koh]
+Grace Koh: I just want to point out: I think technology and tech policy, and to some degree tech trade, are becoming more and more weaponized, in a way, for economic and military aggression. That’s becoming more of a concern as we’re looking at things like cybersecurity and supply chains. The international scene also needs to be managed in a way that allows us to get the benefit of international trade and those global markets, but at the same time, protect any national security interests that we have as well.
+
+[Speaker: Grace Koh]
+Let’s get into the global nature, which gets a little outside of the United States directly, which is these challenges we’re having with Huawei and ZTE. We all probably spend a lot of time explaining to people the reason why this matters is because it’s not just China, it’s Africa, and now it’s, in the last couple of years, really been Europe adopting a technology that, I’ll be the one to say, is a little suspect.
+
+[Speaker: Shane Tews]
+What are the alternatives? Does this play itself out on the international diplomacy stage? Is this a huge issue? I mean, is it always the gorilla in the room, elephant, whichever one we want to go with? Or is this more of a market situation where you guys don’t talk about this from a diplomatic point of view, but we know it’s always omnipresent when you’re actually going to buy your equipment?
+
+[Speaker: Grace Koh]
+Grace Koh: We have spent quite a bit of diplomatic coin talking about Huawei and the concerns that the United States government has with Huawei equipment. It’s a concerted effort at the State Department. There is a whole toolkit for discussing this issue.
+
+[Speaker: Grace Koh]
+First of all, is it a market concern? Yes and no. We would like to have a market where there are competing players, and one of the things that I think we have complained fairly frequently of is the fact that Huawei, with access to state subsidies or state-backed guarantees, doesn’t compete on the same playing field.
+
+[Speaker: Grace Koh]
+So for example, if it’s able to go to Sierra Leone and offer to build the whole telecommunications network at a cut rate price with Huawei equipment, you’re not going to see, I think, another manufacturer able to do the same sort of thing. They might be able to throw in a soccer stadium or something along those lines. Then also pitch into the rest of the One Belt One Road initiative that China has going on. So, that’s a concern. There’s some unfair market practices there to begin. Then you have the actual practice of actual deployment that is problematic.
+
+[Speaker: Grace Koh]
+Then you have the substantive concerns about the security of the networks that are being deployed, which I think we’ve all tried to alert other countries to, as well. Part of that message has been muddied by the notion that this is part of a trade war. I think the national security concerns get lost in the argument that really we’re just putting Huawei under the ringer so that we can get better advantages in any sort of trade negotiations. But when that question comes up, I’m quick to remind people that we have had concerns about Huawei equipment since 2012, when we first required SoftBank to take all of that equipment out of the Sprint network in order for it to purchase the Sprint network.
+
+[Speaker: Grace Koh]
+These are not new concerns. They continue to exist, and I think that the government has information that validates those concerns.
+
+[Speaker: Grace Koh]
+They were one of the major contributors at the Consumer Electronics Show [CES]. There were companies that were trying to decide, was there any value still in this space? And all of a sudden, Huawei just came in and filled in the blank space that some of the other companies were deciding what to do. Then because Huawei came in, I think, it’s my personal opinion, you saw some of the others come back, and they were like, “Well, wait a minute. We’re not going to cede space to these guys.” It’s very interesting to see that go on.
+
+[Speaker: Patricia Paoletta]
+Patricia Paoletta: But, in addition to the market concerns and the unfair practices, and those are of course, very prevalent — to your point, Shane, yes, there’s not a US-headquartered competitor, but there are trusted ally vendors like Nokia and Erickson who’ve been in the US market, and have invested heavily, have a lot of R&D, a lot of employees. We want to see them, of course, not driven out of the market from unfair practices. There’s also some of the, in my view, more sinister technology agendas that Huawei’s bringing in to various forms, certainly the ITU-T. they have one AI proposal, I suppose, on facial recognition, trying to get that blessed and sanctioned internationally. In light of what’s going on in Hong Kong and everywhere else, that’s scary. Obviously non-democratic powers have very different views towards the uses of technology and we do have to combat that, combat their proposals at the ITU. So, certainly, there’s a security aspect as Grace said. There’s the unfair trade practices. There’s obviously surveillance, but there’s also them going to the ITU to get their non-democratic use of technology sanctioned. That’s frightening, and the US government is, and US industry is, rightfully organized to try to thwart that.

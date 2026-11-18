@@ -1,18 +1,14 @@
 PAGE_TITLE: 
-	Data Protection, Privacy, and the Ethics of Artificial Intelligence (with Christina Montgomery) | American Enterprise Institute - AEI
+	Data Protection, Privacy, and the Ethics of Artificial Intelligence (with Christina Montgomery)
 
-Enabling
-data to flow between enterprise divisions and industry partners enhances our
-economy, but it’s important that user privacy is protected when the information
-being shared is about individuals. Data usage will thus continue to be a major
-topic in tech policy, especially with regard to newer products that use
-artificial intelligence (AI) to collect and transfer user data. If the US were
-to pass federal data protection legislation or a federal privacy law, what
-AI-related measures would need to be included? How can we ensure AI is
-regulated in a precise manner that protects innovation?
-On this episode,
-Shane
-is joined by IBM’s Chief Privacy Officer and AI Ethics Board Co-Chair
-Christina Montgomery
-. They discuss how IBM is working to ensure its newest technologies — including AI — handle consumer data in an ethical manner, and why the company supports “precision regulation” of AI under the next administration.
+[Speaker: Introduction / editorial context]
+Enabling data to flow between enterprise divisions and industry partners enhances our economy, but it’s important that user privacy is protected when the information being shared is about individuals. Data usage will thus continue to be a major topic in tech policy, especially with regard to newer products that use artificial intelligence (AI) to collect and transfer user data. If the US were to pass federal data protection legislation or a federal privacy law, what AI-related measures would need to be included? How can we ensure AI is regulated in a precise manner that protects innovation?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by IBM’s Chief Privacy Officer and AI Ethics Board Co-Chair Christina Montgomery. They discuss how IBM is working to ensure its newest technologies — including AI — handle consumer data in an ethical manner, and why the company supports “precision regulation” of AI under the next administration.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

@@ -1,40 +1,83 @@
 PAGE_TITLE: 
-	Unpacking Misconceptions in Tech Antitrust: Highlights from My Conversation with Daniel Francis | American Enterprise Institute - AEI
+	Unpacking Misconceptions in Tech Antitrust: Highlights from My Conversation with Daniel Francis
 
-The recent neo-Brandeisian tack in antitrust policy has sparked a heated debate about the government’s appropriate role in regulating Big Tech. In a recent conversation on the Explain to Shane podcast, I talked with Professor
-Daniel Francis
-, a faculty member at NYU School of Law, a former Federal Prosecutor at the Federal Trade Commission, and a leading legal expert in technology antitrust policy.
+[Speaker: Introduction / editorial context]
+The recent neo-Brandeisian tack in antitrust policy has sparked a heated debate about the government’s appropriate role in regulating Big Tech. In a recent conversation on the Explain to Shane podcast, I talked with Professor Daniel Francis, a faculty member at NYU School of Law, a former Federal Prosecutor at the Federal Trade Commission, and a leading legal expert in technology antitrust policy.
+
+[Speaker: Introduction / editorial context]
 Francis unpacks the misconceptions surrounding the current policy landscape, specifically focusing on the American Innovation and Choice Online Act (AICOA) and the Open App Markets Act (OAMA). He also evaluates the FTC’s recent attempt to send advisors to the European Union, where a more aggressive approach to tech antitrust is already underway. Francis argues that there is no easy answer to the question of whether big is bad when it comes to technology antitrust. He points out that the natural experiment unfolding in Europe provides valuable insights into the potential consequences of different regulatory approaches. He also warns against the danger of drawing arbitrary lines in tech legislation, which could stifle innovation.
+
+[Speaker: Introduction / editorial context]
 This conversation is essential listening for anyone who wants to understand the complex and rapidly evolving landscape of tech antitrust.
-Below is an edited and abridged transcript of our fascinating discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our fascinating discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Do you think we need to keep tech antitrust industry-specific?
+
+[Speaker: Daniel Francis]
 Daniel Francis: I think about the whole thing slightly differently from the way that question might suggest. So I don’t really believe there’s a single industry that it’s helpful for regulatory purposes to think of as a tech industry. I think an e-commerce platform looks very different, both technologically, and commercially, and in its place in society, from a search engine, or from a social network, or an email platform, or a ride-sharing platform, or a handheld device architecture.
+
+[Speaker: Daniel Francis]
 So, one of the things that troubles me about some aspects of the tech antitrust and competition policy conversation is the idea that because these companies are all large, have some platform dynamics in some important ways, and play important roles in our shared life that they therefore present a set of common problems for antitrust.
+
+[Speaker: Daniel Francis]
 I just don’t see much of a reason to think that’s right. Antitrust’s great virtue is its neutrality. We have these three great pillars of our antitrust system. A rule against agreements that restrain trade, a rule against unilateral conduct by monopolists that excludes competition, and a rule against anti-competitive mergers and acquisitions.
-And those three rules in their heart are exactly the same, whether we’re talking about a market for social networking services or a market for spoons. But when we move outside of the almost
-constitutionally
-general antitrust conversation and we start thinking about creating specific sectoral obligations, we have to take a much more granular look. And then we have to start thinking, “What’s the problem in this market? What’s the problem in this corner of the economy? What are we really worried about? What’s the evidence showing us about something that’s really going wrong in this space? And what’s it suggesting about an alternative that really would be better for society?” And there’s no way to have that conversation, at least no way that I know about, that isn’t really granular, industry by industry, market by market.
+
+[Speaker: Daniel Francis]
+And those three rules in their heart are exactly the same, whether we’re talking about a market for social networking services or a market for spoons. But when we move outside of the almost constitutionally general antitrust conversation and we start thinking about creating specific sectoral obligations, we have to take a much more granular look. And then we have to start thinking, “What’s the problem in this market? What’s the problem in this corner of the economy? What are we really worried about? What’s the evidence showing us about something that’s really going wrong in this space? And what’s it suggesting about an alternative that really would be better for society?” And there’s no way to have that conversation, at least no way that I know about, that isn’t really granular, industry by industry, market by market.
+
+[Speaker: Shane Tews]
 What do you think about the arbitrary thresholds in legislation like the American Innovation and Choice Online Act (AICOA) and Open App Markets Act (OAMA)? Are they unavoidable? Or do you think something more targeted is going on?
+
+[Speaker: Daniel Francis]
 I don’t think anyone has any theory of what makes these numbers sort of sensible or non-arbitrary other than the jurisdictional bounds of AICOA are pretty clearly drawn with a set of companies in mind. Well, what do they have in common? Well, they all run platform businesses at various times, although many of them have businesses that don’t look very much like platforms as well. And they’re politically unpopular in a very distinctive way at the minute.
+
+[Speaker: Daniel Francis]
 So I’d be the first person to say that because many of the markets we might naturally think of as digital platform markets are really important, it’s crucial that we have both vigorous antitrust enforcement, to make sure that we don’t see common or garden monopolization or bad mergers and carefully framed, targeted, industry-specific regulation.
+
+[Speaker: Daniel Francis]
 But the idea that the right toolkit for thinking about Amazon and businesses like it would be the same as the right toolkit for thinking about Apple or Google—I can’t think of any reason to think that that’s right. And that’s one of the things that troubles me about the approach to regulation that bundles together a bunch of companies just because they’re big. That’s not something we’ve ever really done in the United States.
+
+[Speaker: Shane Tews]
 Let’s dive deeper into AICOA. What are your main critiques here?
+
+[Speaker: Daniel Francis]
 In its heart, I understand AICOA as really being about two things. Thing number one is, presumptively forbidding self-preferencing by big platforms. And then thing number two is, presumptively requiring certain kinds of access and interoperability by the platforms with pretty limitless array of third parties. So I look at that first one, the idea that there’s something presumptively wrong with self-preferencing, and I don’t see it. I don’t understand what the basis is for concluding that more often than not, that’s something that’s bad, rather than good for consumers.
+
+[Speaker: Daniel Francis]
 Let’s think about what’s involved. That’s anytime the operator or owner of a platform uses it to integrate in a better way, promote in a better way, synchronize in a better way, with some other product or service that’s wanted by a consumer. So that could be integrating functions, right? Like, you’re on Google search, running a search, here are some results. And here’s information from Google Maps that pertains to what you want.
+
+[Speaker: Daniel Francis]
 It could be pre-installing applications or programs, right? You buy an iPhone, you buy a Windows PC, what you’re getting out of the box isn’t a bare empty architecture. It has a bunch of Apple apps pre-installed on it. It has a bunch of Microsoft applications pre-installed on it. When you subscribe to Amazon Prime, you’re getting not only access to certain kinds of shipping and fulfillment services from Amazon, but you’re getting access to streaming music and streaming movies as a result. The idea that practices like this should be even presumptively illegal strikes me as completely wild.
+
+[Speaker: Daniel Francis]
 The problem with creating these very broad obligations of access and interoperability, is that the world out there is full of a bunch of low-quality, dangerous, malicious, and hostile actors, code, and apps that are better being kept away from consumers and the products they use.
+
+[Speaker: Daniel Francis]
 It’s in the interest of anyone who runs a platform to protect their users by denying requests for access, or interoperability, or access to data, or access to your camera or your microphone, from that limitless group of third parties. Legislation that comes along and says, hey, if you do this, number one, it’s only going to be legal if you can prove you meet some very narrow, very demanding set of circumstances. If it turns out a court disagrees with you, you’re going to be facing fines, injunctions, long costly investigations, maybe even the loss of your own personal compensation as an executive who takes that decision. There’s only one direction in which that moves outcomes. That is a big, big thumb on the scales in favor of forcing open the gates that plays such a crucial role in keeping bad actors and low-quality or even hostile code away from consumers’ devices, and out of their homes.
+
+[Speaker: Shane Tews]
 I’m still struggling with the affirmative defense that’s in AICOA, and I feel like you’re explaining a positive negative. So can you just walk us through why they would put this in this legislation?
+
+[Speaker: Daniel Francis]
 There’s no defense under AICOA on the ground that what’s restricted was just a really bad product, full of spam or intrusive advertising, full of false, objectionable, or explicit content, or it was just too expensive to integrate into the system.
-Now, there
-is
-a defense in there for product improvement. There’s room for a platform to say self-preferencing here is a kind of product improvement. But they only get to make that argument if what’s being improved is a core product function.
+
+[Speaker: Daniel Francis]
+Now, there is a defense in there for product improvement. There’s room for a platform to say self-preferencing here is a kind of product improvement. But they only get to make that argument if what’s being improved is a core product function.
+
+[Speaker: Daniel Francis]
 If you’re trying to improve a non-core function, then there’s no defense. And you don’t get the defense at all if what you’re trying to do could be done in a less discriminatory way. Even if doing that would be unprofitable and no rational business would ever do it. If that possibility exists, no defense. So setting aside the fact that relying on any affirmative defense means spending a whole bunch of time, and money, and incurring risk, in the hope that at the end of the day a court will agree with you that you satisfy the conditions. What’s going on here is much too narrow.
+
+[Speaker: Daniel Francis]
 My iPhone has a flashlight and a digital camera integrated into it. That is obviously a product improvement. My life is made better by the fact that this is carrying a flashlight and a digital camera. Now, is that bad for third-party flashlight and digital camera manufacturers who never got an opportunity to be on the platform? Sure, it is. But it’s great for consumers.
+
+[Speaker: Daniel Francis]
 And so when I think about that as a kind of paradigmatic product improvement, the integration of complementary products that’s so good for consumers, that’s what I have in my mind when I look at an affirmative defense in something like AICOA.
+
+[Speaker: Shane Tews]
 What are some of the definitional things you’re concerned about in the bill?
+
+[Speaker: Daniel Francis]
 The conception of harm to competition in the bill creates this kind of strategic ambiguity between the two worlds. On the one hand, it could mean overall harm to consumer welfare. And if that was put in the bill, that would allay many, but not all, of my concerns. But doing that means it wouldn’t bring a revolution in competition policy for digital platforms. So to my mind, having this concept of harm to competition, as if there’s something that competition just is, as if there’s this unitary index that everyone knows and understands, just isn’t true. If it’s supposed to mean welfare harms, if it’s supposed to mean the kinds of practices that the antitrust laws would prohibit, then it’s got to say so on its face. Because it sure looks like an effort to do something dramatically different.

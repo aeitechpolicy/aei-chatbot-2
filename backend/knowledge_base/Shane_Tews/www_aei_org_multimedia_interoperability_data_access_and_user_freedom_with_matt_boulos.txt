@@ -1,7 +1,11 @@
 PAGE_TITLE: 
-	Interoperability, Data Access, and User Freedom (with Matt Boulos) | American Enterprise Institute - AEI
+	Interoperability, Data Access, and User Freedom (with Matt Boulos)
 
+[Speaker: Introduction / editorial context]
 As AI systems become central to our digital lives, questions about openness, competition, and user agency are moving to the forefront, and discussions surrounding AI agents have placed system interoperability in the spotlight. Ensuring AI system interoperability isn’t simply a technical challenge; it will determine how innovation unfolds in the AI age. How will AI agents reshape our relationship to personal data? And why is interoperability central to user freedom?
-Shane Tews is joined by Matt Boulos, head of policy and safety at Imbue, on the latest episode of
-Explain to Shane
-. Together they explore the privacy implications of AI agents, how legislative efforts like Senator Mark Warner’s ACCESS Act could safeguard competition and user choice, and more.
+
+[Speaker: Introduction / editorial context]
+Shane Tews is joined by Matt Boulos, head of policy and safety at Imbue, on the latest episode of Explain to Shane. Together they explore the privacy implications of AI agents, how legislative efforts like Senator Mark Warner’s ACCESS Act could safeguard competition and user choice, and more.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.

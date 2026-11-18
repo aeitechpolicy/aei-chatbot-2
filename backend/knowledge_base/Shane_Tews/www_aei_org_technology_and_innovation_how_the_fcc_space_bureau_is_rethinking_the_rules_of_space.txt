@@ -1,35 +1,71 @@
 PAGE_TITLE: 
-	How the FCC Space Bureau is Rethinking the Rules of Space | American Enterprise Institute - AEI
+	How the FCC Space Bureau Is Rethinking the Rules of Space
 
+[Speaker: Introduction / editorial context]
 Spectrum sharing rules between geostationary (GSO) and non-geostationary (NGSO) satellites have remained largely unchanged for decades, despite major advances in satellite technology and deployment. Safeguards like equivalent power-flux density (EPFD) limits were designed before the rise of large NGSO constellations, and today’s framework reflects outdated assumptions about system design and spectrum use. The FCC’s April 2025 Notice of Proposed Rulemaking marks a critical step toward modernizing these legacy rules for today’s modern satellite landscape.
+
+[Speaker: Introduction / editorial context]
 Jay Schwarz, the new Chief of the FCC’s Space Bureau, returns to the agency with extensive communications policy experience. He previously served as Wireline Advisor to Chairman Ajit Pai and held senior roles in Commission’s Wireline Competition Bureau, Wireless Telecommunications Bureau, and Office of Strategic Planning.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: You have an NPRM that recently came out
-—
-a notice of proposed rulemaking—on the use and regulation of satellites. Is the FCC’s Space Bureau currently functioning off 30-year-old regulations?
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: You have an NPRM that recently came out—a notice of proposed rulemaking—on the use and regulation of satellites. Is the FCC’s Space Bureau currently functioning off 30-year-old regulations?
+
+[Speaker: Jay Schwarz]
 Jay Schwarz: When Chairman Brendan Carr asked me to join the Space Bureau, he wanted for me and my team to take a look at how we can expand America’s capacity to innovate in space.
+
+[Speaker: Jay Schwarz]
 We wanted to identify what barriers are constraining the capacity to innovate, and there are three major buckets that these barriers fall in to. The first is that we want to modernize our licensing process. At this point, it’s too slow. It’s not predictable enough. We think it needs to be flexible for developments.
+
+[Speaker: Jay Schwarz]
 The second is that we want to make sure that spectrum is available for these satellite services. At the last open meeting, the Commission started a rulemaking to examine over 20,000 Gigahertz of spectrum across four different bands to provide more spectrum for these services. This is the second category.
+
+[Speaker: Jay Schwarz]
 The third category is looking at any outdated technical rules that might be holding back the provision of these satellite services. This rulemaking, called Modernizing Spectrum Sharing for Satellite Broadband, is fundamentally about giving America the best broadband from satellite services. There are all of these new developments, which have happened in less than a decade. But as it turns out, there are outdated limits on how some of these satellites can operate, which were developed in the late ‘90s.
+
+[Speaker: Jay Schwarz]
 These limits are preventing the best delivery of broadband.
+
+[Speaker: Shane Tews]
 Many people in the United States don’t live close to where you can get fiber connection, which is great for internet connectivity. The next best thing is fixed wireless. How do satellites fill this gap?
+
+[Speaker: Jay Schwarz]
 If you look at the speeds that satellite is delivering compared with what is typical for broadband, you’re seeing speeds already exceeding those levels. If they are able to increase the quality of service and increase the speeds, which is a big part of this rulemaking, then you’re going to see nearly fiber-like speeds being delivered from satellites. What this means is that you’re going to have competition in areas that we never imagined possible.
+
+[Speaker: Jay Schwarz]
 I’ll give you one example: myself. Where I live, we do not have a wired connection available to us. In the six or so years that we’ve lived there, non-wired technologies became available for our use. Then, satellite technologies became available. What you’re going to see because of this is what we’re already seeing: Places we never thought could have broadband competition, particularly rural parts of the country, are going to have competition. And this is not competition that even had to be subsidized. At the highest level, this is a really exciting thing that satellite technologies have already brought to the United States.
+
+[Speaker: Shane Tews]
 My understanding is that there is a concern on the part of geostationary (GEO) satellites on interference. Is that something you’re looking at in this rulemaking?
+
+[Speaker: Jay Schwarz]
 Yes, that’s what all of the questions are really about.
+
+[Speaker: Jay Schwarz]
 We mentioned earlier that there are these outdated rules from the 1990s. You can visually imagine the GEOs at 35,000 kilometers, and then closer to Earth, you have non-geostationary satellites (NGSOs) that are orbiting the Earth much more quickly.
+
+[Speaker: Jay Schwarz]
 NGSOs were something that were already being contemplated, systems that people were proposing back in the 1990s. There was a recognition that we have to figure out how to protect the geostationary satellites (GSOs). More specifically, they considered how NGSO systems have to protect the GSO systems, because we don’t want interference. A huge portion of what the FCC focuses on when it’s dealing with radio spectrum is preventing interference.
+
+[Speaker: Jay Schwarz]
 They came up with something called EPFD limits, or equivalent power flux density limits. At the time, these limits were designed to make sure that there wasn’t going to be interference with the GSOs to the point where they couldn’t function.
+
+[Speaker: Jay Schwarz]
 These limits were put in place in the late 90s based on the technologies of the time. When we began taking a look at the potential barriers to better services and better broadband were, these limits came up as something we needed to look at. We began to consider that maybe these limits are far too restrictive in light of recent developments in technology.
+
+[Speaker: Jay Schwarz]
 What this rulemaking is considering is whether we could have a different approach other than these 1990s era EPFD limits.
-If the US decides to create a new path and update our guidance, do we ask other countries to come along with us, or do we share that information? Is part of this creating an example for others to potentially follow without going through the entire
-International Telecommunication Union (ITU) process?
+
+[Speaker: Shane Tews]
+If the US decides to create a new path and update our guidance, do we ask other countries to come along with us, or do we share that information? Is part of this creating an example for others to potentially follow without going through the entire International Telecommunication Union (ITU) process?
+
+[Speaker: Jay Schwarz]
 Yeah, so the United States has t sought to be able to have a conversation through the ITU on reconsidering these EPFD limits.
+
+[Speaker: Jay Schwarz]
 Ultimately, the US decided that we want to move forward only looking at this for the United States because things are not going at the pace that we’d like to be able to expand this internationally.
+
+[Speaker: Jay Schwarz]
 We would hope that the ITU would look at that and help create global harmonization with some updated rules. But to your point, countries can do what they would like to do on these sorts of limits in their own territory. I do think there’s a path forward where other countries would, after we go through this rulemaking and see where we land, look at what the US is doing and see that it is working: We are protecting folks and getting amazing broadband. Hopefully, they would say that they want that for their own country. Romania, interestingly enough, just a few days after the FCC adopted this notice of proposed rulemaking, said that they were going to look at the EPFD rules for their country. I think there’s definitely the possibility that other countries will want to come along and say that this makes sense—we want better broadband, too. And then, over time, you would hope that it becomes a demonstration that this can work, so other countries will be more willing to have that conversation.

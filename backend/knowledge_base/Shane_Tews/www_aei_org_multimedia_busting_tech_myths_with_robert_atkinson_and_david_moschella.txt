@@ -1,12 +1,11 @@
 PAGE_TITLE: 
-	Busting Tech Myths (with Robert Atkinson and David Moschella) | American Enterprise Institute - AEI
+	Busting Tech Myths (with Robert Atkinson and David Moschella)
 
+[Speaker: Introduction / editorial context]
 Is technology really addictive, or is that just another myth? What hidden benefits of AI are we overlooking? And how will the landscape of innovation shift as lawmakers tighten the reins of regulation?
-In this episode, Shane interviews
-Robert Atkinson
-and
-David Moschella
-, co-authors of
-Technology Fears and Scapegoats: 40 Myths About Privacy, Jobs, AI, and Today’s Innovation Economy
-. Robert is president of the Information Technology and Innovation Foundation (ITIF) and author of numerous books on innovation economics and technology. David is a nonresident senior fellow at ITIF. Before joining ITIF, he was a research fellow at Leading Edge Forum where he explored digital technologies’ impact on business.
+
+[Speaker: Introduction / editorial context]
+In this episode, Shane interviews Robert Atkinson and David Moschella, co-authors of Technology Fears and Scapegoats: 40 Myths About Privacy, Jobs, AI, and Today’s Innovation Economy. Robert is president of the Information Technology and Innovation Foundation (ITIF) and author of numerous books on innovation economics and technology. David is a nonresident senior fellow at ITIF. Before joining ITIF, he was a research fellow at Leading Edge Forum where he explored digital technologies’ impact on business.
+
+[Speaker: Introduction / editorial context]
 Tune in as we dispel leading, and sometimes harmful, myths about technology today.

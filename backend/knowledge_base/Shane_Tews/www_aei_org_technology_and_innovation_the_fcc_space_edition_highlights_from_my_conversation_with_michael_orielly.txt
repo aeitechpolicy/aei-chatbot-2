@@ -1,39 +1,86 @@
 PAGE_TITLE: 
-	The FCC, Spectrum Edition: Highlights from My Conversation with Michael O’Rielly | American Enterprise Institute - AEI
+	The FCC, Spectrum Edition: Highlights from My Conversation with Michael O’Rielly
 
-This year yields many major challenges for the Federal Communications Commission (FCC). For starters, it
-lost spectrum auctioning authority
-on March 9, 2023. There is a huge pot of money with many agencies for broadband expansion to keep tabs on too, but that’s not all. The FCC is looking to the final frontier: space. It has set its sights on building the capacity to regulate satellites and the internet that low-earth orbit (LEO) satellites can bring.
+[Speaker: Introduction / editorial context]
+This year yields many major challenges for the Federal Communications Commission (FCC). For starters, it lost spectrum auctioning authority on March 9, 2023. There is a huge pot of money with many agencies for broadband expansion to keep tabs on too, but that’s not all. The FCC is looking to the final frontier: space. It has set its sights on building the capacity to regulate satellites and the internet that low-earth orbit (LEO) satellites can bring.
+
+[Speaker: Introduction / editorial context]
 To walk us through how the Commission might fare, I sat down with former FCC Commissioner Michael O’Rielly. He is also a Capitol Hill veteran and an expert in telecommunications policy, both on Earth and in orbit.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Could you tell me a bit more about what FCC spectrum auctioning authority is and what would mean for it to expire by Congress not renewing this authority?
+
+[Speaker: Michael O’Rielly]
 Michael O’Rielly: Well, it means the ability of the FCC to hold an auction for spectrum licenses would expire. Therefore the Commission would revert to its old means, which don’t make any sense in the current worldview of spectrum licenses.
-What
-is
-the spectrum pipeline? What goes into it?
+
+[Speaker: Shane Tews]
+What is the spectrum pipeline? What goes into it?
+
+[Speaker: Michael O’Rielly]
 The spectrum pipeline is a simple term for the plan for having spectrum available for new wireless services going forward. And today, all usable spectrum is allocated for some purpose or another. And to go for something new—some new opportunity, new wireless service—you’ve got to disrupt someone who exists today. A great deal of spectrum is held by non-commercial users, the government, the federal government, in this case, the Department of Defense, is a great user of spectrum. And we have to negotiate, and different layers of the government have to try and free bands from their clutches.
+
+[Speaker: Shane Tews]
 I know the government is a great holder of spectrum, but are they a great user of spectrum?
+
+[Speaker: Michael O’Rielly]
 We honestly don’t have good data on that. And actually having which particular bands that they may use, and how often they use them, and where they use them particularly, is all data that can be very classified, and require very in-depth conversations in the most secure rooms. So, you often don’t get that from someone who’s not briefed and doesn’t have the security clearance. We just know that federal government users as a whole are not efficient users of spectrum.
+
+[Speaker: Shane Tews]
 Some of us worry that spectrum hoarding is real. We need these bands for multiple things. So this pipeline idea of being as public as possible—especially with the interagency process—I know has always been an entanglement trying to figure out how the sharing process is going. But when the FCC did C-band, did it take a lot of convincing to repurpose that area? Are we back into that cycle right now?
+
+[Speaker: Michael O’Rielly]
 For C-band, we luckily had willing participants. International satellite companies were willing to free a portion of their band that they were using, shrink their footprint, and then be able to make that available for new wireless services that are being deployed for 5G in the United States today. And they’re being rolled out under two different phases, so we had some luck.
+
+[Speaker: Shane Tews]
 SpaceX seems to be doing a nice job of holding onto its first-mover advantage. Are we getting better about sharing the “space” space? Are we giving satellite companies enough elbow room up there?
+
+[Speaker: Michael O’Rielly]
 First-mover advantage certainly can work, but we’ve also seen first-movers crash and burn. So you have to be protective to not just make sure that the investment that SpaceX or others have made—you have to be mindful of what the industry is going to look like going forward. If you think about the spectrum pipeline, for instance, it’s not just about today, and having spectrum for today—it’s about 10 years out.
+
+[Speaker: Michael O’Rielly]
 Let’s discuss the workforce. Are we getting the right people in place so we can be thinking clearly about satellites at various levels of orbit? Because it gets a little scary when you start thinking about equipment bumping into each other up there.
+
+[Speaker: Michael O’Rielly]
 The question is, when satellites are parked in particular positions, do they cause interference with other satellite constellations, at certain times, at certain moments, depending on where they are globally? Interference does happen. It’s natural. And you’re trying to make sure that you minimize those circumstances.
+
+[Speaker: Michael O’Rielly]
 When I’m talking about low-Earth orbit (LEO) satellites, much different than the big geosynchronous equatorial orbit (GEO) systems, we’re talking about thousands of smaller satellites. It’s a whole different communication between the satellite and the Earth in terms of the speed and what you’re able to do with it.
+
+[Speaker: Michael O’Rielly]
 And so, having these huge constellations, you know, it requires more work. And that’s something that the Commission has to stand up and be ready for. They’ve also bumped up the staff in the International Bureau, which now is going to be the Satellite Bureau. It’s a signal that the Commission is mindful of how dynamic the satellite industry is.
+
+[Speaker: Shane Tews]
 What’s the difference between the LEOs and the really big things that to me remind me of a Bond movie?
+
+[Speaker: Michael O’Rielly]
 It’s just how far away from the earth they are. LEOs are a certain distance, and you have MEOs, and then you have GEOs. And the higher you go, you have bigger, fewer satellites. You could have non-geostationary, meaning they’re moving around at lower altitudes. And the higher you go, you can go to GEOs, which means they’re actually moving at the same pace as the Earth is rotating.
+
+[Speaker: Michael O’Rielly]
 The LEO systems provide a better quality of service and require more work, and more constellations, and more effort but are more expensive due to the number required.
+
+[Speaker: Shane Tews]
 Back on Earth, how are we doing on broadband expansion?
+
+[Speaker: Michael O’Rielly]
 We’ve got so many different programs available for broadband deployment. The big enchilada is the BEAD program at NTIA, $42.5 billion are going to go out in the next couple of years to build out and expand existing broadband networks to basically everybody in our nation.
+
+[Speaker: Michael O’Rielly]
 I have difficulty with the size of the programs, and also the coordination between the NTIA program I just mentioned, but you also have the Treasury money, you have money at USDA, and you have several different programs that are smaller, and then combined with that, all of the money that came off of state COVID relief. This is pretty flexible in terms of how state governments can use it. And I am extremely worried about waste, fraud, and abuse, and how those dollars will not go ultimately to where they’re intended.
+
+[Speaker: Michael O’Rielly]
 You also have two parts: you have the broadband service, fixed service in some instances, and then you have your mobility, your wireless services, and see how many dead zones you have. The service quality is better nationwide. But it’s such a diverse nation and such a geographically challenged nation.
+
+[Speaker: Michael O’Rielly]
 There’s another program that got started during COVID: the Affordable Connectivity Program (ACP). Tell us about that.
+
+[Speaker: Michael O’Rielly]
 This is on the adoption side. You can build a network, but if the person can’t afford it, then does it matter? These aren’t just the urban poor we’re talking about; there are many pockets in the United States where the cost of broadband is a little bit outside the budget of a family. The more rural you get, the more you can see economic difficulties.
+
+[Speaker: Michael O’Rielly]
 This is a program that provides $14 billion allocated by Congress to connect consumers, and the consumer gets to decide how they’re best going to spend those dollars. The good part about this program is it still keeps Congress in the driver’s seat.
+
+[Speaker: Michael O’Rielly]
 The flip side of it is if you don’t do something on adoption, or affordability, then you do heighten the likelihood of a push for price regulation. In my old institution, they’d push on Capitol Hill for regulating the prices of broadband offerings. And that’s detrimental not only to the companies, but that has an impact on consumers.

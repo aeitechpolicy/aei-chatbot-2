@@ -1,44 +1,77 @@
 PAGE_TITLE: 
-	Exploring the Federal Communications Commission’s Challenges in 5G Leadership | American Enterprise Institute - AEI
+	Exploring the Federal Communications Commission’s Challenges in 5G Leadership
 
-On November 17, AEI hosted an expert panel to discuss lagging national spectrum strategy. The panel featured the Federal Communications Commission’s
-Brendan Carr
-and Searchlight Capital’s
-Ajit Pai
-.
-Below is an edited and abridged transcript of key events from the panel. You can re-watch the full event on
-AEI.org
-and read the
-full transcript
-here.
+[Speaker: Introduction / editorial context]
+On November 17, AEI hosted an expert panel to discuss lagging national spectrum strategy. The panel featured the Federal Communications Commission’s Brendan Carr and Searchlight Capital’s Ajit Pai.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key events from the panel. You can re-watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
 Shane Tews: We started this week with Biden administration coming out with a national spectrum strategy plan. You filed comments that said that you were a little concerned that they are freezing up spectrum. So give us an idea of what you think should have been included.
-Brendan Carr:
-Most Americans don’t have any clue about spectrum bands, or frequency, or the airwaves. What they do understand is they want their phone to work when they flip it on. They want the data to be fast and affordable. They want more competition for in-home broadband. What they don’t realize is, it is the airwaves that make that happen. The more spectrum that we open up, the better it is for consumers here in America.
+
+[Speaker: Brendan Carr]
+Brendan Carr: Most Americans don’t have any clue about spectrum bands, or frequency, or the airwaves. What they do understand is they want their phone to work when they flip it on. They want the data to be fast and affordable. They want more competition for in-home broadband. What they don’t realize is, it is the airwaves that make that happen. The more spectrum that we open up, the better it is for consumers here in America.
+
+[Speaker: Brendan Carr]
 More broadly, spectrum is vital for geopolitics and our leadership. When America is freeing up spectrum, the entire world takes notice, and they follow our lead. It puts a wind at the back of US officials and allied nations, as they are negotiating how the airwaves should work on a global basis. The reality is that we have been behind the rest of the world before when it comes to spectrum.
+
+[Speaker: Brendan Carr]
 The Biden administration had an opportunity to meet that moment with this much-anticipated National Spectrum Strategy. It came out earlier this week on Monday. It was a moment that the Biden administration had to deliver results. It needed to identify specific spectrum bands and put out a timeline for when that spectrum would move into the commercial marketplace (a calendar or pipeline as we call it) and it whiffed. The Biden administration’s plan after three years of study says that they should continue to study. It doesn’t free up a single megahertz of spectrum. That’s a bad sign for America’s leadership
+
+[Speaker: Shane Tews]
 Shane Tews: Ajit, can you explain how we’re behind and how the pipeline was meant to work when you put it forward?
-Ajit Pai:
-The spectrum pipeline is very critical for wireless innovation in the United States. Since the dawn of commercial wireless, the one constant has been that consumers are always requiring more and more bandwidth to handle the evermore-advanced applications and services that are out there. The pipeline is basically a way for the government to signal to consumers and to industry: these are spectrum bands that we think are usable for next-generation wireless services and we are going to move particular bands on an identifiable timeframe into the commercial side of the ledger, so that companies and consumers can benefit from them.
+
+[Speaker: Ajit Pai]
+Ajit Pai: The spectrum pipeline is very critical for wireless innovation in the United States. Since the dawn of commercial wireless, the one constant has been that consumers are always requiring more and more bandwidth to handle the evermore-advanced applications and services that are out there. The pipeline is basically a way for the government to signal to consumers and to industry: these are spectrum bands that we think are usable for next-generation wireless services and we are going to move particular bands on an identifiable timeframe into the commercial side of the ledger, so that companies and consumers can benefit from them.
+
+[Speaker: Ajit Pai]
 As Commissioner Carr described very well earlier this week, the unfortunate thing about the so-called National Spectrum Strategy is that it’s missing spectrum, which is kind of a critical input when you’re talking about a pipeline that will give wireless innovators a chance to continue to innovate here on our shores.
+
+[Speaker: Shane Tews]
 Shane Tews: There seem to be two parts to this. I want to get to the global part first, and we’ll come back to the more domestic challenges. How did we get behind China? And why is global harmonization so important?
-Brendan Carr:
-Part of the challenge we have in the US right now is that the federal government and its different agencies like DOD have something like 12 times mid-band spectrum reserved for the federal government, as compared to what’s available in the consumer market. As the chairman was walking through, one of the key pieces is to find a way to work with our agencies to free that spectrum up for the private sector.
+
+[Speaker: Brendan Carr]
+Brendan Carr: Part of the challenge we have in the US right now is that the federal government and its different agencies like DOD have something like 12 times mid-band spectrum reserved for the federal government, as compared to what’s available in the consumer market. As the chairman was walking through, one of the key pieces is to find a way to work with our agencies to free that spectrum up for the private sector.
+
+[Speaker: Brendan Carr]
 As we go into this conference, China and its delegation are supporting the introduction of 5G mobile wireless services in almost 1,500 megahertz of spectrum spread across something like five separate spectrum bands. In contrast, the US delegation is going into this global conference only pushing for 5G or for use cases that we prefer in two spectrum bands. We’re stuck in this position now, without a spectrum pipeline, without the administration delivering spectrum in this plan, playing defense on a global scale.
+
+[Speaker: Brendan Carr]
 This administration isn’t leaning in. Frankly, this FCC is not leaning it. We’ve got two to five gigahertz licenses that we auctioned, were won at auction, and people paid us millions of dollars for, and we’re just sitting on. We should be issuing those licenses immediately. Had we issued those licenses, something like 50 million Americans could get new or better wireless service virtually overnight. We’re not moving forward on it and it’s a shame.
-Ajit Pai:
-Every four years, there’s the World Radio Communication Conference, which is essentially where every country comes together with a delegation as a member state and they try to push policies that those particular countries would prefer in terms of spectrum policy.
+
+[Speaker: Ajit Pai]
+Ajit Pai: Every four years, there’s the World Radio Communication Conference, which is essentially where every country comes together with a delegation as a member state and they try to push policies that those particular countries would prefer in terms of spectrum policy.
+
+[Speaker: Ajit Pai]
 The reason that’s important is, to the extent that a particular policy is ratified or agreed to by a large number, or ideally all, countries, then you essentially have a spectrum band that everybody agrees on. Then equipment manufacturers and innovators can innovate around that. To your point about global harmonization, that’s really, really important. Because if the United States prefers X, but the rest of the world prefers Y, even though we’re obviously a large country, we’re not so large that everybody is going to pour capital or innovate in that particular spectrum band.
+
+[Speaker: Ajit Pai]
 This is underscored by the fact that retrospectively over the last three years, there hasn’t been a single spectrum auction that the current FCC started. Every single spectrum auction they held is one that we started: the C-Band, of course, and the 2.5 gigahertz band. We’re also moving backward on the 4.9 gigahertz band, and the Ligado L-Band spectrum, which we took a lot of effort to get across the finish line before I left office, is now in limbo. You want to give innovators and entrepreneurs the building blocks to be able to do what they do best. If it’s not there, then they’ll simply go to other countries and see if they can innovate there.
+
+[Speaker: Shane Tews]
 Shane Tews: So does auction authority being held up play into the ongoing disputes between entities over spectrum?
-Ajit Pai:
-I don’t think it does. In fact, if anything, the fact that the FCC hasn’t even commenced any spectrum proceedings since January 2021 takes away the urgency for Congress to take any action. I think a Republican or Democrat member of Congress might rightly ask, why is this an urgent issue for us to address if the agency, the White House, and other entities in the executive branch don’t even have a pipeline or a timeframe for suggesting that they’re going to exercise that authority?
+
+[Speaker: Ajit Pai]
+Ajit Pai: I don’t think it does. In fact, if anything, the fact that the FCC hasn’t even commenced any spectrum proceedings since January 2021 takes away the urgency for Congress to take any action. I think a Republican or Democrat member of Congress might rightly ask, why is this an urgent issue for us to address if the agency, the White House, and other entities in the executive branch don’t even have a pipeline or a timeframe for suggesting that they’re going to exercise that authority?
+
+[Speaker: Ajit Pai]
 Moreover, on the 2.5 gigahertz licenses, the authority they did have to hold auctions, is not being followed through.
+
+[Speaker: Ajit Pai]
 Of course, I support the FCC having spectrum auction authority. But, I think it’s going to be important for the FCC to start putting plans on paper, and for the entire executive branch to say, this is what we’re going to do, instead of just kicking the can down the road for another two years. The question I would ask to those who believe that spectrum auction authority is urgent is what makes you think that? If I’m a legislator, and I don’t see anything on the horizon for the next two years, at the very least, why don’t we just focus other more pressing topics like tax, or immigration, or foreign policy?
-Brendan Carr:
-I agree with that. If the FCC were to put out a concrete spectrum plan or a spectrum calendar, that would go a long way in terms of encouraging Congress to revisit and reauthorize our spectrum authority. But frankly, I think this is another one where I’d like to see the industry doing a little bit better job of even advocating for itself. I’m advocating because I think this is in the best interest of America’s national security interests and American consumers. But I think industry needs to do a little bit of job too.
+
+[Speaker: Brendan Carr]
+Brendan Carr: I agree with that. If the FCC were to put out a concrete spectrum plan or a spectrum calendar, that would go a long way in terms of encouraging Congress to revisit and reauthorize our spectrum authority. But frankly, I think this is another one where I’d like to see the industry doing a little bit better job of even advocating for itself. I’m advocating because I think this is in the best interest of America’s national security interests and American consumers. But I think industry needs to do a little bit of job too.
+
+[Speaker: Shane Tews]
 Shane Tews: You mentioned infrastructure, which has been a huge focus for the last couple of years. And that itself has its own pipeline and its own workforce and equipment challenges. I know NTIA has a lot of the lead on this with the BEAD program, but GAO came out with a study saying there are 133 programs for potential broadband across America. Is it getting better?
-Brendan Carr:
-There are a lot of different infrastructure and broadband initiatives that are going on around. You noted the GAO report, again, it’s something like 130 programs spread across a dozen plus agencies right now. And as GAO pointed out, there’s no national coordinating strategy. I’ve called for it. It hasn’t happened. If you step back, we’re putting something like $800 billion into the system, and we have no coordination across all of them. That’s like turning our hose on full blast, and then walking away from the spigot. It’s really not going to work out well.
-Ajit Pai:
-I think the two are actually generally symbiotic, to the extent that most wireless traffic ultimately ends up on wires much more than over the airwaves. And to the extent that we can get the workforce development predominately fiber-based networks that were going to be deployed through the BEAD program, could be used for wireless backhaul in more parts of the country that today don’t have the benefit of 5G. Spectrum and infrastructure are two sides of the connectivity coin.
+
+[Speaker: Brendan Carr]
+Brendan Carr: There are a lot of different infrastructure and broadband initiatives that are going on around. You noted the GAO report, again, it’s something like 130 programs spread across a dozen plus agencies right now. And as GAO pointed out, there’s no national coordinating strategy. I’ve called for it. It hasn’t happened. If you step back, we’re putting something like $800 billion into the system, and we have no coordination across all of them. That’s like turning our hose on full blast, and then walking away from the spigot. It’s really not going to work out well.
+
+[Speaker: Ajit Pai]
+Ajit Pai: I think the two are actually generally symbiotic, to the extent that most wireless traffic ultimately ends up on wires much more than over the airwaves. And to the extent that we can get the workforce development predominately fiber-based networks that were going to be deployed through the BEAD program, could be used for wireless backhaul in more parts of the country that today don’t have the benefit of 5G. Spectrum and infrastructure are two sides of the connectivity coin.
+
+[Speaker: Ajit Pai]
 The other thing I’d point out is that there are some really interesting initiatives in the private sector to help solve this problem. The Wireless Infrastructure Association years ago, under the leadership of former Commissioner Adelstein set up a workforce initiative. There are others as well that are on the federal level, and on state base levels. One of the things I’m seeing in my own private sector work is that there are different entities, some of which focus on veterans who are coming out of the armed services and training them for these jobs, both wireless and fiber deployment. Hopefully, as Commissioner Carr said, there can be a more overarching national strategy to help leverage the energy that is out there and to make sure that we’re all rowing in the same direction.

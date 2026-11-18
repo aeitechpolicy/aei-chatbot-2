@@ -1,146 +1,83 @@
 PAGE_TITLE: 
-	How 5G Wireless Can Put More Americans to Work: Highlights from My Conversation with Michael Mandel and Sal D’Itri | American Enterprise Institute - AEI
+	How 5G Wireless Can Put More Americans to Work: Highlights from My Conversation with Michael Mandel and Sal D’Itri
 
+[Speaker: Introduction / editorial context]
 Demand for 5G equipment has fueled a wave of job growth as American industries incorporate next-generation technology into their business models. How do we continue harnessing 5G’s potential to expand the labor market? What regulatory policies are most conducive to job growth?
-On the latest episode of “Explain to Shane,” I was joined by
-Michael Mandel
-, chief economic strategist at the
-Progressive Policy Institute
-(PPI), and
-Sal D’Itri
-, chairman of the
-National Spectrum Consortium
-and vice president and general manager, public sector for
-Federated Wireless
-. Together, we discussed a PPI report Michael co-authored for the National Spectrum Consortium called “
-The Third Wave: How 5G Will Drive Job Growth Over the Next Fifteen Years
-,” which gives government and industry a roadmap for building 5G networks and creating jobs in the process.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Sal, give
-us some background on what the National Spectrum Consortium does and why you
-exist.
-Sal D’Itri: The National Spectrum Consortium is a group of
-about 400 members that includes academics, Silicon Valley startups, and big
-companies that we all know as household names who have come together to work
-with the Department of Defense (DOD) to innovate and leapfrog the nation
-forward in 5G technology and spectrum — two things that need to go hand-in-hand
-if we want to advance our wireless competitive solutions here in the US and
-work with our partners overseas.
-Do you have a
-particular focus that’s guiding you into 2021?
-2021 is all about 5G and spectrum. Two very hot topics in
-the US right now are freeing up more spectrum for 5G and driving 5G innovation.
-We’re very proud to be working with the DOD and our members on an initial
-launch of 5G to five major US bases, with another seven coming on the way. And
-these are efforts to bring 5G and Internet of Things (IoT) to make smart bases,
-smart logistics warehouses, improve spectrum access for commercial and DOD
-users, and make DOD what I like to term the “first enterprise.” We’re bringing
-5G to enterprise applications, unlike what we saw in 4G, which was, for the
-most part, a consumer application technology.
-Michael, you recently
-authored a report on PPI’s behalf for the National Spectrum Consortium (which Sal
-chairs). It really showcases how much will be going on with job growth over the
-next 15 years. Can you explain the “three waves” that you outline in the report?
-Michael Mandel: There’s been a long debate about the job
-impact of wireless, and we can think about wireless as coming in, as you said,
-three waves. The first wave ran from 1990 to 2007 — kind of the basic buildout.
-This was when you had your flip phones that gave you talk and text
-functionality without the ability to build applications. In that wave, the jobs
-created — about 200,000 — were tied mostly to the construction and operation of
-wireless.
-Then wave two was the introduction of smartphones in which
-an infrastructure of apps was built on top of the already-existing, fundamental
-base of talk and text. The amount of jobs created by this wave was on the order
-of about 2 million.
-This report focuses on wave three, which is the 5G
-revolution. It goes out to not just consumers but pretty much every industry in
-the economy: agriculture, energy, construction, manufacturing, transportation,
-education, healthcare, and government, including defense. We estimate that this
-means 4.6 million jobs over the next 15 years. And as wireless affects more
-industries, you’ll continually get more jobs being affected as well.
-Building on the
-concept of wireless continuously affecting more industries, can you walk us
-through how these specific sectors you just mentioned will benefit from 5G and subsequent
-generations of technologies?
-Think about, for example, manufacturing. Manufacturing is
-going through this process of digitization, which requires being able to sync up
-not just machinery but the things that you’re producing, the logistics, and a
-bunch of moving parts. There aren’t fixed connections; you’re talking about
-mobile technology, improvements in productivity, and cost reductions that enable
-us to bring jobs back from overseas. In terms of jobs, you’re talking about the
-engineers and the programmers who do the coding as well as the people who
-install the equipment.
-And that’s what’s fascinating to me: Up to this point,
-investments by businesses in mobile have been comparatively sparse — a really
-low percentage of their expenditures — and that’s not going to be true in the
-future. They’re going to be putting more money in, and more money means more
-jobs, not just for the people at the high end but for skilled people on the
-medium level as well.
-Sal, you mentioned
-that your work is essentially springing from the Department of Defense. But how
-are you collaborating with the Federal Communications Commission (FCC)? And how
-are the policy changes that are made in spectrum policy helping spur this third
-wave of wireless?
-Sal D’Itri: This has certainly been a time of great movement
-in the area of 5G by the FCC. That starts with the innovative launch of shared
-spectrum in this country — opening up the mid-band spectrum, the 3.55 to 3.7
-gigahertz spectrum known as Citizens Broadband Radio Service spectrum — for
-spectrum sharing. That’s a US innovation, and we’re first to market with that
-as a country.
-In addition, new spectrum auctions are continuing to open up
-the mid-band spectrum for US innovation and for the rollout of 5G, and that’s
-absolutely critical. If you look at some of the work we’re doing in these first
-four bases and then in the next seven, we’re looking at things like how 5G can
-support telemedicine, how 5G moves IoT, and how it improves base logistics.
-Each one of these has a direct correlation to the commercial
-economy, and it gets back to a point I made at the beginning, which is: I
-really look at DOD now as the “first enterprise.” There’s several hundred
-million dollars being invested right out of the gate in this 5G innovation and
-buildout program, and you’d be hard-pressed in the United States right now to
-find another private enterprise investing at that rate in 5G technology. So I
-think the FCC opened the door with spectrum sharing. They’ve continued to look
-at mid-band spectrum and opportunities to make that available to US private
-industry as well as carriers, and that’s a huge step in the right direction.
-What if there was no
-more spectrum made available for 5G network expansion and capacity? If it were
-to stop right where we are now, would we be able to continue this success, or do
-we need to make sure the policies are structured in a way that keeps things
-flowing the way they have been?
-I think in the wireless industry we’re going to continue seeing
-massive growth over the next decade, especially as we look even to 6G. And
-there’s some really interesting work going on in the very-high-bandwidth
-spectrum, which goes beyond millimeter waves into the terahertz spectrum. There
-are a lot of challenges there but also lots of opportunities just given its
-massive bandwidth.
-So I think we’ll continue to see opportunities to innovate
-in spectrum and to make use of different parts of the spectrum for different
-applications whether it’s the long-haul, the mid-haul (which is the mid-band),
-or the in-the-home service (advances in unlicensed and terahertz spectrum). I
-think we’ll continue on that journey over the next decade to find better ways
-to use spectrum and open up more spectrum.
-Going into the new
-administration, what policy developments should we be looking out for? This is
-a good time to be an optimist.
-Michael Mandel: I would just say that this is one case
-where, in terms of creating jobs to pull us out of the downturn, the more
-spectrum we can provide for 5G, the more we can build out small cells, and the
-more job training we provide, that will actually help accelerate the rebound.
-This is one of our key technologies going forward, and if we want a
-technology-driven boom, 5G is one of the things we have to focus on.
-Something that has
-captivated the people who follow spectrum and 5G is the DOD’s request for
-information (RFI) on doing a 5G program. No one is completely clear on what the
-outcome is going to be of that or where it may be heading. Do you have any
-thoughts on that? Are we fear-mongering? What’s going on over there?
-Sal D’Itri: Well, as you say, we don’t know if a request for
-proposal (RFP) would come out. I think given where wireless is heading in
-general, it is right for the department to take a look at both its overall
-spectrum strategy and its tools and technology, which are probably in need of a
-significant refresh.
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I was joined by Michael Mandel, chief economic strategist at the Progressive Policy Institute (PPI), and Sal D’Itri, chairman of the National Spectrum Consortium and vice president and general manager, public sector for Federated Wireless. Together, we discussed a PPI report Michael co-authored for the National Spectrum Consortium called “The Third Wave: How 5G Will Drive Job Growth Over the Next Fifteen Years,” which gives government and industry a roadmap for building 5G networks and creating jobs in the process.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Sal, give us some background on what the National Spectrum Consortium does and why you exist.
+
+[Speaker: Sal D’Itri]
+Sal D’Itri: The National Spectrum Consortium is a group of about 400 members that includes academics, Silicon Valley startups, and big companies that we all know as household names who have come together to work with the Department of Defense (DOD) to innovate and leapfrog the nation forward in 5G technology and spectrum — two things that need to go hand-in-hand if we want to advance our wireless competitive solutions here in the US and work with our partners overseas.
+
+[Speaker: Shane Tews]
+Do you have a particular focus that’s guiding you into 2021?
+
+[Speaker: Speaker not identified]
+2021 is all about 5G and spectrum. Two very hot topics in the US right now are freeing up more spectrum for 5G and driving 5G innovation. We’re very proud to be working with the DOD and our members on an initial launch of 5G to five major US bases, with another seven coming on the way. And these are efforts to bring 5G and Internet of Things (IoT) to make smart bases, smart logistics warehouses, improve spectrum access for commercial and DOD users, and make DOD what I like to term the “first enterprise.” We’re bringing 5G to enterprise applications, unlike what we saw in 4G, which was, for the most part, a consumer application technology.
+
+[Speaker: Shane Tews]
+Michael, you recently authored a report on PPI’s behalf for the National Spectrum Consortium (which Sal chairs). It really showcases how much will be going on with job growth over the next 15 years. Can you explain the “three waves” that you outline in the report?
+
+[Speaker: Michael Mandel]
+Michael Mandel: There’s been a long debate about the job impact of wireless, and we can think about wireless as coming in, as you said, three waves. The first wave ran from 1990 to 2007 — kind of the basic buildout. This was when you had your flip phones that gave you talk and text functionality without the ability to build applications. In that wave, the jobs created — about 200,000 — were tied mostly to the construction and operation of wireless.
+
+[Speaker: Michael Mandel]
+Then wave two was the introduction of smartphones in which an infrastructure of apps was built on top of the already-existing, fundamental base of talk and text. The amount of jobs created by this wave was on the order of about 2 million.
+
+[Speaker: Michael Mandel]
+This report focuses on wave three, which is the 5G revolution. It goes out to not just consumers but pretty much every industry in the economy: agriculture, energy, construction, manufacturing, transportation, education, healthcare, and government, including defense. We estimate that this means 4.6 million jobs over the next 15 years. And as wireless affects more industries, you’ll continually get more jobs being affected as well.
+
+[Speaker: Shane Tews]
+Building on the concept of wireless continuously affecting more industries, can you walk us through how these specific sectors you just mentioned will benefit from 5G and subsequent generations of technologies?
+
+[Speaker: Speaker not identified]
+Think about, for example, manufacturing. Manufacturing is going through this process of digitization, which requires being able to sync up not just machinery but the things that you’re producing, the logistics, and a bunch of moving parts. There aren’t fixed connections; you’re talking about mobile technology, improvements in productivity, and cost reductions that enable us to bring jobs back from overseas. In terms of jobs, you’re talking about the engineers and the programmers who do the coding as well as the people who install the equipment.
+
+[Speaker: Speaker not identified]
+And that’s what’s fascinating to me: Up to this point, investments by businesses in mobile have been comparatively sparse — a really low percentage of their expenditures — and that’s not going to be true in the future. They’re going to be putting more money in, and more money means more jobs, not just for the people at the high end but for skilled people on the medium level as well.
+
+[Speaker: Shane Tews]
+Sal, you mentioned that your work is essentially springing from the Department of Defense. But how are you collaborating with the Federal Communications Commission (FCC)? And how are the policy changes that are made in spectrum policy helping spur this third wave of wireless?
+
+[Speaker: Sal D’Itri]
+Sal D’Itri: This has certainly been a time of great movement in the area of 5G by the FCC. That starts with the innovative launch of shared spectrum in this country — opening up the mid-band spectrum, the 3.55 to 3.7 gigahertz spectrum known as Citizens Broadband Radio Service spectrum — for spectrum sharing. That’s a US innovation, and we’re first to market with that as a country.
+
+[Speaker: Sal D’Itri]
+In addition, new spectrum auctions are continuing to open up the mid-band spectrum for US innovation and for the rollout of 5G, and that’s absolutely critical. If you look at some of the work we’re doing in these first four bases and then in the next seven, we’re looking at things like how 5G can support telemedicine, how 5G moves IoT, and how it improves base logistics.
+
+[Speaker: Sal D’Itri]
+Each one of these has a direct correlation to the commercial economy, and it gets back to a point I made at the beginning, which is: I really look at DOD now as the “first enterprise.” There’s several hundred million dollars being invested right out of the gate in this 5G innovation and buildout program, and you’d be hard-pressed in the United States right now to find another private enterprise investing at that rate in 5G technology. So I think the FCC opened the door with spectrum sharing. They’ve continued to look at mid-band spectrum and opportunities to make that available to US private industry as well as carriers, and that’s a huge step in the right direction.
+
+[Speaker: Shane Tews]
+What if there was no more spectrum made available for 5G network expansion and capacity? If it were to stop right where we are now, would we be able to continue this success, or do we need to make sure the policies are structured in a way that keeps things flowing the way they have been?
+
+[Speaker: Speaker not identified]
+I think in the wireless industry we’re going to continue seeing massive growth over the next decade, especially as we look even to 6G. And there’s some really interesting work going on in the very-high-bandwidth spectrum, which goes beyond millimeter waves into the terahertz spectrum. There are a lot of challenges there but also lots of opportunities just given its massive bandwidth.
+
+[Speaker: Speaker not identified]
+So I think we’ll continue to see opportunities to innovate in spectrum and to make use of different parts of the spectrum for different applications whether it’s the long-haul, the mid-haul (which is the mid-band), or the in-the-home service (advances in unlicensed and terahertz spectrum). I think we’ll continue on that journey over the next decade to find better ways to use spectrum and open up more spectrum.
+
+[Speaker: Speaker not identified]
+Going into the new administration, what policy developments should we be looking out for? This is a good time to be an optimist.
+
+[Speaker: Michael Mandel]
+Michael Mandel: I would just say that this is one case where, in terms of creating jobs to pull us out of the downturn, the more spectrum we can provide for 5G, the more we can build out small cells, and the more job training we provide, that will actually help accelerate the rebound. This is one of our key technologies going forward, and if we want a technology-driven boom, 5G is one of the things we have to focus on.
+
+[Speaker: Shane Tews]
+Something that has captivated the people who follow spectrum and 5G is the DOD’s request for information (RFI) on doing a 5G program. No one is completely clear on what the outcome is going to be of that or where it may be heading. Do you have any thoughts on that? Are we fear-mongering? What’s going on over there?
+
+[Speaker: Sal D’Itri]
+Sal D’Itri: Well, as you say, we don’t know if a request for proposal (RFP) would come out. I think given where wireless is heading in general, it is right for the department to take a look at both its overall spectrum strategy and its tools and technology, which are probably in need of a significant refresh.
+
+[Speaker: Sal D’Itri]
 One of the things that will enable greater cooperation in spectrum is an opportunity for DOD to refresh its own spectrum technology tools and, in many cases, move to the cloud. From an IT perspective — in which we’re seeing the commercial industry with 5G now operating at cloud timescales — DOD is going to need the same technology refresh along the way as well. So there are some encouraging things in the RFI and, as you say, we’ll have to wait and see if an RFP comes forward.
+
+[Speaker: Sal D’Itri]
+[related-items item=”” title=”Learn more:”]

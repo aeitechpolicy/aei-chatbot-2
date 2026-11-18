@@ -1,32 +1,77 @@
 PAGE_TITLE: 
-	Securing the Web with Route Origin Authorizations | American Enterprise Institute - AEI
+	Securing the Web with Route Origin Authorizations
 
+[Speaker: Introduction / editorial context]
 As part of the initiative to bolster cybersecurity defenses, the National Telecommunications and Information Administration (NTIA) is championing the widespread adoption of Route Origin Authorizations (ROAs), a security mechanism to prevent cyber-attacks on the internet’s routing system. ROAs prevent unauthorized parties from hijacking IP prefixes or re-routing legitimate network traffic to malicious destinations. On June 6, The Federal Communications Commission (FCC) took this effort one step further, proposing to mandate border gateway protocols (BPGs)—a standardized protocol that allows networks to share information about IP prefixes and enables routers to construct routing tables between networks—on internet service providers.
+
+[Speaker: Introduction / editorial context]
 I spoke with Grace Abuhamad and Robert (Bob) Cannon to unpack these measures to validate website legitimacy. Grace is the chief of staff at the NTIA, where she previously served as a policy analyst in the Office of International Affairs. Bob is a senior telecommunications policy analyst at the NTIA. Before joining the NTIA, he was a senior attorney at the FCC’s Office of Policy Analysis.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: The Department of Commerce recently implemented a new internet security measure called Route Origin Authorization. So, let’s start with the basics. What is Route Origin Authorization? And why is this important?
+
+[Speaker: Bob Cannon]
 Bob Cannon: Routing security is a problem. Networks route traffic and send traffic back and forth. It’s almost as if they map the internet. They exchange information about the destination of sites. They also create a map so that they know how to get there and, if they want to get there, what hallway they go down, what elevator they take, or whatever route to that destination. The problem is that both the destination and the route can be wrong.
+
+[Speaker: Bob Cannon]
 What ROAs do primarily is work on the destination. Somebody can hijack the destination, and my example here would be NTIA as a destination. We are on the NOAA network, so NOAA announces, “Here’s NTIA. Anybody who wants to get to NTIA, come to my network and you will reach NTIA.” Well, anybody anywhere can make that announcement. And that’s the problem with routing security, that in trying to know where and how to reach destinations, anybody can make that announcement.
+
+[Speaker: Bob Cannon]
 So how do you know your map is correct? How do you know the information about your destination is correct? ROAs give you that accuracy. ROAs are a cryptographic verification that the destination is actually on this network, in my example, that NTIA is actually on the NOAA network. And if any other network anywhere in the world announces that NTIA can be found on this network, ignore them. It’s false. So what ROAs do more than anything else is that they validate the destination.
+
+[Speaker: Shane Tews]
 Can you explain the importance of Border Gateway Protocol, known as BGP?
+
+[Speaker: Bob Cannon]
 Bob Cannon: BGP is a funny thing to explain. Networks make a map of the internet simply by announcing the routes to each other. Either, “NTIA is on my network,” that’s the first announcement, or the second announcement by Verizon would be, “Hey, you can go through me to get to where NTIA is found.” So you have both the origin announcement, the very first announcement, and the, “You can get there through me.” There are about 70,000 networks on the internet right now, all of them making these announcements constantly, and eventually, they build a routing table. This is your map of the internet, and that’s how traffic is sent back and forth. But again, when they first built the internet, one of the priorities was the efficiency of routing. So they tried to make the routing as simple as possible.
+
+[Speaker: Bob Cannon]
 One of the things they didn’t put into routing was authentication and validation. That was just not included. Even the way our PKI is designed, it’s not in the routing or in the router to do this validation. It’s on a whitelist over on the side, and you look at the whitelist and say, “Hey, is this a valid route?” And the whitelist, the trust anchor, will say, “Yes, this is a valid route. Trust it.” We tried to put as little load on the routers as possible so they can do their job and send traffic as fast and efficiently as possible.
+
+[Speaker: Bob Cannon]
 I’m reminded of a conversation I had years ago where I was talking to engineers, and this very simplistic thing suddenly got very complex. I was like, “What happened here?” and they said, “Oh, that’s your fault. You policy people made us do a hard left, which doesn’t follow what an engineer would do. Then we have to loop it back into the engineering structure.”
+
+[Speaker: Bob Cannon]
 It was such a wonderful visual for me because I saw why engineers get upset with policymakers. It’s not me, but sometimes the ‘nerd harder’ mentality just makes things harder. And that’s where you all figure it out, and we appreciate you doing that.
+
+[Speaker: Bob Cannon]
 Bob Cannon: We’re wonderful at making a mess out of everything. But it’s not entirely true that the design of the internet was supposed to be this very simple, interconnecting protocol that supports all the intelligence on the outside. Well, what does that mean? It means every network’s ecosystem configuration is different. There is no one-size-fits-all. Many different networks do many different things.
+
+[Speaker: Bob Cannon]
 As simple as Bank of America traffic does financial traffic—that’s high-value traffic, risky traffic that needs a lot of security. Netflix does video and entertainment. It’s very important to us, maybe not as important as Bank of America, but it’s also high-volume traffic. Netflix traffic might take up 70 percent of the traffic on a residential network. Another residential network might just provide traffic to average customers and have very little traffic on those links. It’s the same thing: one address and one address—there are equal counts of address.
+
+[Speaker: Bob Cannon]
 But the risk scenario for Bank of America is entirely different than Netflix and is entirely different than me at home just trying to watch something stupid before I go to bed. That needs to be part of the security analysis too, as to where we deploy our security resources and what we attend to first. It’s very important that our critical infrastructure attends to these security needs as a priority.
+
+[Speaker: Bob Cannon]
 Grace, you oversee some of this in your role as Chief of Staff at NTIA. I’m sure this was not an easy conversation to have to say, “We’re telling everyone else they should be worried about security. Now we need to do something about it.” Tell me what it took to get the government to pay attention.
+
+[Speaker: Grace Abuhamad]
 Grace Abuhamad: I’ll step back for a second and say, just to the conversation we were having earlier, there’s this tension we see in the internet policy space. Generally, there’s tension between the beautiful technology and the amazing growth that we’ve benefited from with the internet and the need for evolution. Sometimes the need for evolution, this idea of security or greater privacy on the network, etc., some of those values or goals are sometimes in tension with the original design or they weren’t thought of at the time for whatever reason. I think the fun part about the internet policy space—and Bob, you know this—is managing that tension.
+
+[Speaker: Grace Abuhamad]
 And you’re right, one of the many big projects that NTIA has been working on, was a $50 billion grant program. Pushing the government on routing security was a tougher sell in our front office, I will say, only because it’s just a tougher sell in comparison to the large programs that we’ve been running. I have to give credit, in some ways, to the rest of the federal government broadly. Routing security has been an issue for a while. The more recent attempt at BGP hijack with the Russian invasion of Ukraine probably put the routing security context a little bit more on the front burner for folks. But the folks at the White House have been thinking about security on the internet broadly. The National Cybersecurity Strategy has outlined and described BGP routing security as a pervasive concern. The FCC has looked at how they can get commercial stakeholders to implement routing security measures.
+
+[Speaker: Grace Abuhamad]
 Generally speaking, the big issue is the incentive to get companies also the federal government to implement these security measures, in part because going through and doing Route Origin Authorizations and validations are part of a security framework, but they’re not the only piece to a security framework. So, sometimes the incentive may not necessarily align with the risk.
+
+[Speaker: Grace Abuhamad]
 So in 2022, and then over the past couple of years, as there’s been more and more attention on BGP, what we’ve tried to do is say, “Okay, we know the federal government as a whole is lagging behind on implementing these security measures. Let’s try to lead by example.” And maybe that will set the tone for some of the incentive issues that we’re seeing with the private sector.
+
+[Speaker: Grace Abuhamad]
 Let’s talk about the implementation plan because, as you said, now you’ve helped the government build a path forward and smoothed out the legal situation with light-touch legal contracts. But in your announcement, you talk about workforce, money, and resources being a challenge for moving forward in this adoption, specifically in the federal government. How do you use the Department of Commerce to say, “This is really important cybersecurity. It’s part of our mantra; we’re trying to make things easier, smarter, faster, and more secure.” But now, I need you all to make this a priority over at fill-in-the-blank agency.
+
+[Speaker: Grace Abuhamad]
 Grace Abuhamad: We were lucky at Commerce because we have leadership that has been very supportive of us improving our cybersecurity. There have been resources for the department as a whole going into this, and pushes from the top through the different bureaus. One of the nice things about doing this as a test case within Commerce is that the way Commerce is built as a department, we have all these different agencies that themselves have their own domains, NTIA.gov, other parts of Commerce, DOC.gov, sub-components, and sub-domains. NTIA operates on the NOAA network, so even though we are one bureau, we depend on the resources of another bureau to operate parts of our network. It’s a nice complicated case to test for other federal agencies. We got some good practice doing it early.
+
+[Speaker: Grace Abuhamad]
 The other piece was that part of doing this and testing it out at Commerce allowed us to get a sense of what some of the complications might be for other departments. We’re not necessarily going to know everything, but we know, for example, that within Commerce, one of the challenges to getting everyone on board was making sure that all the legacy networks were updated. Folks in each of those bureaus had training, had access to the right people to help them get the ROAs ready to go, etc. There was a little bit of prep required to get to where we are, but it was good training and practice for us. Now, lessons learned, we can share with other departments.
+
+[Speaker: Bob Cannon]
 Bob Cannon: The White House, the Office of National Cyber Directorate, is working on the roadmap report on routing security, and that will be coming out later in the summer. That will have a call to action. You’re asking about the way forward: what are the next steps? How do we get this implemented? Of course, the first step is US government implementation. That’s going to help the US government, but it’s going to help everybody because the United States government being such a large player influences demand, which should bring down costs. It also establishes a de facto standard of what routing security looks like.
+
+[Speaker: Bob Cannon]
 If we take the White House plan and implement it, we are currently seeing great progress. We’re up to 38 percent ROAs in the North American space. The Internet Society data shows routing incidents’ trendline is going down in the right direction. How do we further that? How do we deal with stuck solutions? If we implement the White House plan, we’re going to see continued progress and improvement in routing security. We need to get there, and we need to deal with a few stuck exceptional situations like, oh, I don’t know, the US government.

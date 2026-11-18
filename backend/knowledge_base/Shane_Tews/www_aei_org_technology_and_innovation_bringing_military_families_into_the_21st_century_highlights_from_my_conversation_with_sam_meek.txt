@@ -1,33 +1,80 @@
 PAGE_TITLE: 
-	Bringing Military Families into the 21st Century: Highlights from My Conversation with Sam Meek | American Enterprise Institute - AEI
+	Bringing Military Families into the 21st Century: Highlights from My Conversation with Sam Meek
 
+[Speaker: Introduction / editorial context]
 Thank you to our military heroes and their families for their service.
+
+[Speaker: Introduction / editorial context]
 The proliferation of mobile technology has transformed how people connect with one another. Yet, service members have long faced unique challenges in staying connected while deployed overseas or stationed far from home. Sandboxx, a startup founded by former Marine Sam Meek, aims to close this connectivity gap with a platform designed specifically for the military community.
+
+[Speaker: Introduction / editorial context]
 Launched in 2019, Sandboxx has become a lifeline for millions of active-duty personnel, veterans, and military families. The mobile app and web platform offers free encrypted messaging, photo sharing, location tracking, voice memos, and transcribes messages into physical letters and mails them anywhere in the world. With over 4 million users to date, Sandboxx has quickly filled a critical niche within military communities for tools to bridge physical and emotional distance.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Thank you for creating this app, which seems to be a great tool for military families and friends who have their loved ones overseas. Explain Sandboxx to us.
+
+[Speaker: Sam Meek]
 Sam Meek:The essence of Sandboxx has to do with understanding the friction points along the military journey. These points start at the very beginning, in that phase where you’re interested in joining the military. It moves through into recruiting, then into basic training, then into advanced school, and then your active duty, or reserve, or guard career. Where we’ve spent the lion’s share of our time is uniquely looking at the friction points that exist along that first year of service, which we define as the moment that you’re interested in joining the military to the end of basic training.
+
+[Speaker: Sam Meek]
 As you think about the friction points that exist there, there are two key ones that stuck out to us in the beginning. There was no single source of truth to help the individual service member or to help the people supporting them. That could look like helping a mom understand how to have a positive dinner table conversation about joining the military, but it’s really anything that was around helping recruiters be better recruiters. As I’m sure you’re aware, today, that’s a pretty tough subject.
+
+[Speaker: Sam Meek]
 The second was the fact that we have disconnectivity at basic training. When you ship off to basic training, you’re not allowed to take your phone with you, or you have very limited access to it. And the opportunity for friends and family around each service member—to be able to stay in contact with them—is critical. Today’s generation warfighters have grown up in a smartphone environment, with mom sending selfies, and texting buddies on the football team. That connectivity is snipped when they ship off to basic training. We wanted to allow that connectivity to exist within the needs of the Department of Defense training machine. That’s where we developed the letters platform. So, the beginning of Sandboxx journey was wrapped around knowledge transfer and connectivity with basic training.
+
+[Speaker: Shane Tews]
 How did this come about? You are former military, so did this come to mind while you were going through your own process?
+
+[Speaker: Sam Meek]
 When I first got back from Iraq on my first deployment, MySpace was all the rage. I remember building MySpace pages for a lot of my Marines, and then I started building the MySpace page for our battalion. Our battalion commander would ask me to post things on behalf of the battalion. It was a big deal for the spouses as well, and for that community around the battalion to stay connected.
+
+[Speaker: Sam Meek]
 I really didn’t think twice about it when I left and I went to my next unit, and onto my next duty station, and eventually got out of the military. But, when I was introduced to Major General Ray Smith, who’s our Chairman and my Co-Founder, he had this interesting idea around helping our Marine Corps spouses stay connected. All of that came back to me.
+
+[Speaker: Sam Meek]
 When we looked at that unique problem set of, “How do you help Marine Corps spouses stay connected?” and we thought about the broader capabilities of where we were in the technological environment, we recognized that no one was building content and technology that was holistic to the military journey or that was focused on today’s user experience expectations. That was the key thing that led us to take Sandboxx where it is today. It was really driven under this Northstar that we fundamentally believe that our military community is special, so they need their own platform that’s built by them, with them, and with the needs of the DoD at large.
+
+[Speaker: Sam Meek]
 Give us some ideas of some of the dangers that you’re helping keep at bay by having a separate application for service members and service families only.
+
+[Speaker: Sam Meek]
 I would say there’s probably a myriad of them. Today, the biggest focus is really on recruiting and engagement. One of the fears we have is that we’re going to continue to have a tough recruiting environment. We’re seeing the tide begin to turn, but fundamentally, today’s generation that’s joining the military has grown up very different than my generation.
+
+[Speaker: Sam Meek]
 In a way, they are more akin to this Instagram, Snapchat type of generation, where the content and the way they make decisions is very, very different. The military really doesn’t have the ability to create the type of technology—the type of user experiences that this generation needs—or to iterate on it fast enough, in two-week sprints and cycles. It’s the ability to do these experiments that allow us to rapidly innovate. That’s also one of the biggest dangers we see: the inability for the Department of Defense to have a tool that helps this generation stay connected to each other and to the content utilities that are going to help them be successful.
+
+[Speaker: Sam Meek]
 Going back to that user experience, what are the utilities that most young men and women today will use to move through their lives? We’ve got the Ubers of the world, we’ve got the Amazons of the world, we’ve got the Facebooks… name your favorite app… whether it’s social, whether it’s utilitarian, the military doesn’t have that. That’s the kind of layer—that platform functionality—that we’re bringing to the military. And that’s the danger we see if we don’t bring that to the military.
+
+[Speaker: Sam Meek]
 Explain to me your role in the recruiting process.
+
+[Speaker: Sam Meek]
 We define a lot of the military journey in these things called moments of truth. There’s a big moment of truth that exists when you say, “I’m going to reach out to the recruiter.” It’s a big, vulnerable decision. Depending on where you’re from, your beliefs, your family and friend history with the military, there’s a lot at stake there.
+
+[Speaker: Sam Meek]
 But in that moment, the first thing that recruiters do is they try to screen you. You know, are you eligible? We’ve got a massive problem with obesity in this country. We have a growing problem with drugs. We have a growing problem with law enforcement issues. That’s not even mentioning our big propensity issue. There are fewer people that are even interested in or know about the military journey.
+
+[Speaker: Sam Meek]
 In this process, the recruiter very quickly begins to screen, but this isn’t happing through an an app or digital engagement. Instead, you’ve got to pick up a phone or walk into a recruiting station. The services have built some websites and some tools to help with some of this digital engagement, but fundamentally, that big first step is talking to the recruiter. And right now in the army, there’s no tool that allows that recruiter and that individual who’s interested in joining the army, to be able to communicate effectively.
+
+[Speaker: Sam Meek]
 The feature we’ve launched called Muster is solely focused on two pieces: improving that recruiter and future soldier communication capability, and delivering highly specific content based on where you are along your military journey. So, if you’re going to be a combat engineer and you’re going to go to Fort Moore versus you’re going to become a communications technician, the content that we want to deliver to you and the content we want to deliver to your parents, friends, and family is very different. The piece that’s missing there is a platform that’s designed around today’s user experience expectations. That’s how we’re helping with recruiting.
+
+[Speaker: Shane Tews]
 Beyond the digital platform, you have a letter service where families and service members can communicate through letters. Why do they continue to do that?
+
+[Speaker: Sam Meek]
 In basic training, our service members need to focus on becoming warfighters. Our officers need to break them down and build them back up. So much of that revolves around making everybody equal and taking away any access to the outside world. That’s a fundamental belief system that I think is correct for how you shape the beginnings of a warfighter in our branches of service.
+
+[Speaker: Sam Meek]
 But, they’ve always allowed mail. Mail call is a tale old as time. It is the greatest thing that happens in an environment when you have no access to the outside world. From World War I, to World War II, to—name your war, name your training environment, wherever we are—mail call is the single largest source of morale. Basic training for an 18-year-old that has never been off the grid in their life, when the phone is ripped out of their hand, it’s all about mail call.
+
+[Speaker: Sam Meek]
 The issue is that we’ve moved away from sending mail. Maybe some really good friends will send you a handwritten card in the mail. But beyond that, we really don’t get any personal mail anymore. It’s just bills and spam. But for basic training, it’s all the old school mail. It’s mom, dad, grandma, friends.
+
+[Speaker: Sam Meek]
 And it starts in the app. If you write your letter and hit send, that letter goes into our technology system. We’ve got a team of people that will digitize and print those letters. And we’ve got a huge fulfillment facility. They go through a letter stuffing machine, and they come out. We print a letter every half second, or something like that.

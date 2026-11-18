@@ -1,27 +1,56 @@
 PAGE_TITLE: 
-	The Spectrum Exchange: Networks, Security, and Innovation | American Enterprise Institute - AEI
+	The Spectrum Exchange: Networks, Security, and Innovation
 
+[Speaker: Introduction / editorial context]
 Spectrum management is crucial to our digital future as it provides the invisible regulatory framework enabling efficient and equitable allocation of finite radio frequency resources. Without comprehensive, forward-thinking spectrum policies, our rapidly evolving technological landscape will face stifled innovation and restricted growth. Ensuring responsible spectrum issues involves balancing regulatory frameworks that encourage innovation while ensuring the investment needed for long-term infrastructure development. To ensure continued progress on the spectrum roadmap, Congress must act to establish a spectrum pipeline—empowering the FCC to build on the groundwork already laid. More effective spectrum allocation processes are critical, and proven solutions already exist to address longstanding inefficiencies in spectrum sharing.
-Below are the highlights from my conversation with
-Peter Rysavy
-, president of Rysavy research, a consulting firm specializing in computer networking and wireless technology since 1993. With over three decades of experience, Peter brings unparalleled expertise in analyzing spectrum requirements for mobile broadband and forecasting the future of wireless technology. Together we discuss these intricate policy landscapes that ultimately determine how our increasingly connected world functions.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below are the highlights from my conversation with Peter Rysavy, president of Rysavy research, a consulting firm specializing in computer networking and wireless technology since 1993. With over three decades of experience, Peter brings unparalleled expertise in analyzing spectrum requirements for mobile broadband and forecasting the future of wireless technology. Together we discuss these intricate policy landscapes that ultimately determine how our increasingly connected world functions.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: The term Spectrum sharing is widely used, but it encompasses multiple approaches. Can you walk us through some of the different forms of spectrum sharing that are available?
+
+[Speaker: Peter Rysavy]
 Peter Rysavy: Spectrum sharing is a big topic right now. It’s one of the key elements of the national spectrum strategy. It’s important to note that a general-purpose spectrum sharing solution does not exist today. Nonetheless, entities have shared spectrum throughout time. In fact, all spectrum is shared because you have simple geographic sharing, meaning that spectrum band is used in one place and then reused in another place. But the most complex forms of sharing are where you use the same frequencies at the same time in the same location.
-One of our first attempts at that was with Citizens Broadband Radio Service (CBRS). Proponents of CBRS have suggested that this approach should be used for some of the bands under consideration in the national spectrum strategy, such as the band 3.1 to 3.45 GHz. But, CBRS is a simplistic approach, and the technology at this point is obsolete.  First of all, CBRS has not been widely used because it is complex to use. It involves coordination between incumbents and secondary users. There’s a very complicated environmental sensing capability that secondary users must rely on to detect Department of Defense operations. Also, CBRS was specified to operate at very low power levels, which means that anyone wanting to provide coverage over a wide area has to deploy five to seven times as many cell sites as a cellular network running at full power. It’s very simplistic because it’s either on or off, meaning that if the government needs to use those frequencies for a radar system, the network has to stop using those frequencies entirely.
+
+[Speaker: Peter Rysavy]
+One of our first attempts at that was with Citizens Broadband Radio Service (CBRS). Proponents of CBRS have suggested that this approach should be used for some of the bands under consideration in the national spectrum strategy, such as the band 3.1 to 3.45 GHz. But, CBRS is a simplistic approach, and the technology at this point is obsolete. First of all, CBRS has not been widely used because it is complex to use. It involves coordination between incumbents and secondary users. There’s a very complicated environmental sensing capability that secondary users must rely on to detect Department of Defense operations. Also, CBRS was specified to operate at very low power levels, which means that anyone wanting to provide coverage over a wide area has to deploy five to seven times as many cell sites as a cellular network running at full power. It’s very simplistic because it’s either on or off, meaning that if the government needs to use those frequencies for a radar system, the network has to stop using those frequencies entirely.
+
+[Speaker: Peter Rysavy]
 There are much better approaches available today. One proposal is an approach called active RAN (Radio Access Network) that relies on the intelligence in today’s networks with beamforming and rapidly adapting to the environment. With active RAN, the network doesn’t have to stop using those frequencies entirely; it can reconfigure itself to not direct radio energy in a way that would interfere with the military systems.
+
+[Speaker: Shane Tews]
 Let’s say there are aircraft carriers in Boston using a specific spectrum. When they move out to sea, you can use that spectrum back on land. Is there a buffer when ships are ready to come back into interference? Do those who share the band immediately move to another band?
+
+[Speaker: Peter Rysavy]
 That’s the way it would work right now with CBRS. If the environmental sensing network, a distributed network of radios along the coast that listen for military radar, detect any use then they inform the CBRS systems that those frequencies are no longer available. Then the commercial users have to turn off their use of those frequencies within 300 seconds.
+
+[Speaker: Peter Rysavy]
 The interesting thing is that these rules apply to use of those frequencies in the United States, but there are countries around the world that are using those same frequencies that are in contention in the United States. Somehow, the US military or navy is able to use those frequencies just fine in countries where commercial networks are using those frequencies, and there are no spectrum sharing systems in place in those countries.
+
+[Speaker: Shane Tews]
 The other ongoing debate is between low power versus high power spectrum sharing approaches. What are the tradeoffs there?
+
+[Speaker: Peter Rysavy]
 There are entities involved in spectrum sharing development projects that advocate for low power. They say the reason is that it can result in less interference between incumbents and secondary users. But I think that argument is fundamentally flawed, because what we really need are flexible solutions. If you limit spectrum sharing to only low power use, then you end up with a situation such as CBRS, where if you want to provide broad coverage, you need so many cell sites that the solution is not practical. It makes much more sense to develop spectrum sharing solutions that operate on or accommodate a wide range of power. If you have a secondary user or commercial network operating close to a military system it doesn’t mean you can’t then use it in a low power way, it just means that you can accommodate a much wider range of use cases. As long as we’re developing these new spectrum sharing technologies, we should do them in the most flexible way to make the resulting solution as effective for as many use cases as possible.
+
+[Speaker: Shane Tews]
 Mobile devices have become a replacement for sitting in front of a screen or a television, and this has become a challenge for the use of Wi-Fi spectrum. Wi-Fi proponents argue that they need more spectrum than the cellular networks because Wi-Fi carries more of the actual data. Can you walk us through how this works? What are your thoughts on the matter?
+
+[Speaker: Peter Rysavy]
 My view on Wi-Fi spectrum versus mobile network spectrum is that both networks provide an equally important role. We need both to provide us extremely efficient, high bandwidth connectivity. Right now, the US has a real imbalance between unlicensed and licensed spectrum in mid-band frequencies. There’s more than three times as much spectrum right now available for Wi-Fi as there is for mobile networks. I think that ratio just does not make sense. Wi-Fi proponents like to say that they carry more data over Wi-Fi networks than the mobile networks do, but I think that’s very misleading. It’s like saying, “Secondary roads in the United States carry 75% of the traffic, therefore they’re more important than the freeway systems. And if congestion occurs on freeways, it doesn’t matter, because the secondary roads are where all the traffic is.”
+
+[Speaker: Peter Rysavy]
 An interplay that’s going to become really crucial as we look at 6G is in the United States where the entire 6 GHz band has been allocated for Wi-Fi. Most of the rest of the world has only allocated part of 6 GHz for Wi-Fi and will be looking at the upper 6 GHz band for the sweet spot for 6G operation. Meanwhile, the United States is one of the few countries that has given that whole band over to Wi-Fi. We’re looking at 7.1-8.4 GHz, which is the band above the 6 GHz Wi-Fi band. I expect a future battle for that spectrum, but I think it’s going to be critically important for the United States, because it doesn’t have 6 GHz available for 6G, to make that 7 GHz band for mobile networks.
+
+[Speaker: Shane Tews]
 Are there any other breakthrough capacities? Is there anything they’ve been using it for that you weren’t expecting or something that you strongly support using it for?
+
+[Speaker: Peter Rysavy]
 One area that’s been extremely successful is fixed wireless access. Because 5G uses the mid-band frequency so efficiently and provides such high performance, all the operators are now offering fixed wireless access. This essentially means they sell their service, but in a non-mobile fashion, with at price points that are extremely competitive relative to cable company broadband solutions.
+
+[Speaker: Peter Rysavy]
 I still think 5G has a huge opportunity with Internet of Things. 5G was designed to accommodate Internet of Things. The difficulty is that these applications require a lot of time to develop, and it takes companies a long time to integrate safe 5G connectivity into their operations. Opportunities have not materialized as quickly as people want, but to me, it seems inevitable. I think we’re going to see a massive integration of 5G and 6G connectivity into the environment, factories, and everything around us.

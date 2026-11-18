@@ -1,15 +1,20 @@
 PAGE_TITLE: 
-	Can We Future-Proof AI? (with Rob Reich) | American Enterprise Institute - AEI
+	Can We Future-Proof AI? (with Rob Reich)
 
+[Speaker: Introduction / editorial context]
 The explosion of large language models (LLMs) into the public sphere in 2023 here in Washington has raised many questions on how much artificial intelligence (AI) should be under the direct scrutiny of the government. Should we proceed with as much caution as Europe? Will AI as we know it today become misaligned with our interests? AI should lead us towards the next economic boom, but will the involvement of the government hasten or inhibit that?
-To sift through some of these deeper policy questions, Shane spoke with
-Rob Reich
-about his work in philosophy, politics, and technology.
+
+[Speaker: Introduction / editorial context]
+To sift through some of these deeper policy questions, Shane spoke with Rob Reich about his work in philosophy, politics, and technology.
+
+[Speaker: Introduction / editorial context]
 Rob Reich is a Professor of Political Science at Stanford University. He is also the faculty co-director of Stanford’s Center on Philanthropy and Civil Society (PACS), the faculty director of the McCoy Center for Ethics in Society, and the associate director of the Stanford Institute for Human-Centered Artificial Intelligence (HAI).
-Rob discusses the merits (and limitations) of the precautionary principle and other points from his book,
-System Error:
-Where Big Tech Went Wrong and How We Can Reboot
-.
-Shane
-reiterates how stifling innovation can lead to worse outcomes than expected but that thoughtlessness on AI is a mistake just as well.
+
+[Speaker: Introduction / editorial context]
+Rob discusses the merits (and limitations) of the precautionary principle and other points from his book, System Error: Where Big Tech Went Wrong and How We Can Reboot. Shane reiterates how stifling innovation can lead to worse outcomes than expected but that thoughtlessness on AI is a mistake just as well.
+
+[Speaker: Introduction / editorial context]
 Tune in as Shane and Rob examine the circuitry of America’s AI moment.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

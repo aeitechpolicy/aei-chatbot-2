@@ -1,176 +1,68 @@
 PAGE_TITLE: 
-	The Risks and Rewards of America’s 5G Future: Highlights from My Conversation with Tommy Ross | American Enterprise Institute - AEI
+	The Risks and Rewards of America’s 5G Future: Highlights from My Conversation with Tommy Ross
 
-If the US 5G rollout is to reach its full potential, network security must be a priority. But what are the security risks of 5G, and how can the US win the global 5G race? On the latest episode of “Explain to Shane,” I sat down with
-Tommy Ross
-, senior policy director at
-BSA | The Software Alliance
-and author of BSA’s
-position paper
-titled “Securing 5G: A Call to Harness Software Innovation,” which discusses the transition from hardware-dominated networking to a software-centric model for 5G. Together, we addressed the availability and importance of 5G network security tools.
-Below is an
-edited and abridged transcript of our talk. You can listen to “Explain to Shane”
-on
-AEI.org
-and subscribe via your
-preferred listening
-platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and
-tell your friends and colleagues.
-Shane Tews: Tommy, BSA recently sent a set
-of comments to the National Telecommunications and Information Administration on
-national strategy for 5G implementation and released a position paper called “Securing
-5G: A Call to Harness Software Innovation,” both of which you authored. Can you
-walk us through how to secure 5G at the network level and how this is important
-to the edge consumer?
-Tommy Ross: There
-are a lot of different elements in 5G security, and a lot of different
-technologies that go into building out a telecommunications network,
-particularly one as complex as 5G, but what we focus on in the two papers that
-you referenced is that 5G is really different from previous generations of
-telecommunications technology because it is so software-centric. Those
-software-centric capabilities in 5G bring built-in benefits that make it
-inherently more secure than previous generations, but they also create
-possibilities for applying different security techniques and security controls
-in new ways that can promise greater security throughout the network. I don’t
-want to overstate that, because there are huge risks that could come in a 5G
-network that is not architected thoughtfully, but there are a lot of
-possibilities to bring to bear in securing the network.
-There are
-inherent advantages to software-centric capabilities. There are standards that
-build in stronger encryption and authentication, but also the internet protocol
-(IP) basis of the network enables more consistent or system-wide application of
-security controls, and the IP-based communications as well as the cloud
-backbone underpinning 5G allows for more flexibility in providing tailored
-environments and solutions for different types of data.
-When you
-think about the tailored solutions, there are possibilities. When people talk
-about software-defined networking, network slicing — that kind of thing — we’re
-really talking about using the cloud to create contained environments and apply
-those different environments to different types of data. So, if you have IoT
-devices that are being used by consumers, you could potentially allow traffic
-between those devices to occur on a channel that is completely separate from
-the communications between critical infrastructure technologies. That allows
-you to keep actors that might be in one of those channels out of the other
-channels and to apply tailored security rules in those different environments.
-Beyond just
-network slicing or software-defined networking that allows you to apply wide-scale
-solutions by tailoring security rules to different environments, it also allows
-you to create private networks. So, individual companies or critical
-infrastructure operators can create completely self-contained networks to take
-care of their communications needs and apply their own tailored security rules
-without depending on the broader network to do that for them. That’s a big
-advantage that you’ll see a lot of companies take advantage of.
-When I first was reading about
-software-defined networking, I was really fascinated with this whole idea of
-“fetching,” where you would have a smart set of boxes with the capability to
-grab things. You may need something momentarily for a project, but you don’t
-need to hold onto it for a long time. You no longer have to build an entire
-network operation of hardware and specific software because of the cloud. I
-just thought, “Wow, what a great way to redesign this so we’re using all
-of these amazing, innovative things we’ve come up with in the combination of
-cloud and software.” The network slicing is an unsung hero here. That’s
-really interesting for an enterprise to be able to utilize their network
-capacity on different variations, so can you walk us through network slicing?
-Just as you
-think about the big motors and pistons you would find in a Cadillac from 30 years
-ago, you think about telecommunications networks 30 or 50 years ago, and the
-operators switching out connections and the circuit switching that previous
-generations of telecommunications technologies relied on, and it was all
-hardware-driven. Now, there are efforts to replace hardware components at many
-different levels throughout the 5G architecture with software. And one of the
-areas where that’s gotten the most attention has been with radio access network
-technology.
-With 5G, the
-very core of the network has gone from being heavily based on hardware routers
-and switches to being almost entirely virtualized. That’s a big shift, and that
-kind of virtualization allows you to really rethink how you’re managing the
-network. It is much less like a traditional telecommunications network, and
-much more like an application software: much more flexible with patches and
-things like that. You can not only address security issues as they arise, but
-you can change the software’s functionality over time.
-You mentioned radio access networking
-(RAN), and there’s virtual (vRAN), and lately, in the news, we’ve been hearing
-about O-RAN. What’s going on with O-RAN, and how does that fit into the 5G
-operations and networking?
-There are four
-terms that people need to be familiar with. There’s RAN — the radio access
-network technology — which allows individual devices to connect with the 5G
-network. It’s the boxes that are on cell phone towers in the current
-generation, and there’ll be small cells in the 5G generation. There is OpenRAN,
-which means the radio access network technology is built on open standards that
-are common across devices that are not proprietary — that are transparent to
-everyone — and that’s really important because it allows interoperability
-across different providers and technology developers, and it also allows individual
-companies to develop solutions to certain parts of the radio access network
-functionality that are modular — that can be plugged in with things that other
-people are doing in other parts of the RAN.
-All of that
-is really important for increasing the diversity of suppliers and for
-increasing competition to supply radio access network technology. When you have
-more competition, it allows you to incentivize competition around security, and
-that’s best for consumers and enterprises alike. So, OpenRAN is really
-important.
-O-RAN is a
-specific effort to produce OpenRAN standards, so it’s kind of a subset of
-OpenRAN. And then virtualized RAN is a series of efforts to produce RAN
-technology that is software-based, rather than hardware. I think the vRAN that
-is also OpenRAN is really the jackpot, because vRAN allows you to get away from
-the hardware boxes that bring both supply chain security and vendor lock-in
-concerns.
-If you buy
-hardware-based RAN technology, you’re probably only going to have the resources
-to fund those boxes every 20 years or so, whereas if it’s software, it starts
-out cheaper, because there aren’t the physical components associated with it,
-and it allows you to update it, patch it, and/or replace it with other software
-solutions or add those modular solutions in an easy, flexible manner.
-If all that
-can be done based on open standards and with open-source-driven architectures
-that allow developers to plug into open-source components and build their own
-products off that open-source basis, that’s really good for fostering a
-dynamic, diverse ecosystem in that space. That will reduce a lot of the
-security concerns.
-What is going on with China’s 5G strategy?
-It sounds like they are not following the same path, or they’re the reason why
-we’re creating O-RAN, which is a response to the need to not be 100 percent in China’s
-supply chain path. How is their model different than what you just described?
-I think it
-begins with their national champions. They’ve invested a lot of resources in
-subsidizing Huawei and ZTE and other providers in their system. Huawei, in
-particular, has achieved a really favorable market position, because they’ve offered
-lower-priced products and services that have appealed to a lot of countries with
-fewer resources to expend on developing telecommunications networks. And
-they’re able to offer lower-priced products and services for two main reasons:
-One is that they are heavily subsidized by the Chinese government, and two is that
-they invest less in the quality of their products and services.
-I think we
-would underestimate Huawei if we just assumed all their products are
-substandard. They can achieve a dominant market position because people want
-their technologies and feel like their technologies are able to meet basic
-needs, but it comes with some risk. I don’t think that we’ve seen clear
-evidence of a lot of Huawei’s nefarious activities, like the Chinese government
-ensuring there are back doors that allow them to access all sorts of data. It
-doesn’t mean it’s not part of the master plan, but I don’t think we’ve seen many
-indications it has happened.
-What I do
-think we’ve seen is a lot of evidence that Huawei just doesn’t invest in
-developing secure code and quality controls around its products, which
-generates a few problems. One is that most of Huawei’s equipment is
-proprietary, so there’s no transparency around it, and, from what we
-understand, every instantiation is different. Huawei sends in engineers, and
-they code on the spot, and I’m sure they have some repositories that they draw
-from and some standard solutions that they put in place, but there is also a
-lot of variation from one part (or instantiation) to the other, which makes it
-really hard to identify where there might be anomalies or vulnerabilities in
-the code.
-If we know
-the vulnerability in a standardized offering, the vulnerability will exist in
-every instantiation of that offering, so you can patch it and mitigate the
-risk. But if every offering is different, you don’t know where those
-vulnerabilities lie, which makes it really hard to mitigate. The proprietary
-nature, paired with the very poor quality of code that we’ve seen in Huawei
-products and instantiations of those products, is really concerning from a
-security standpoint.
+[Speaker: Introduction / editorial context]
+If the US 5G rollout is to reach its full potential, network security must be a priority. But what are the security risks of 5G, and how can the US win the global 5G race? On the latest episode of “Explain to Shane,” I sat down with Tommy Ross, senior policy director at BSA | The Software Alliance and author of BSA’s position paper titled “Securing 5G: A Call to Harness Software Innovation,” which discusses the transition from hardware-dominated networking to a software-centric model for 5G. Together, we addressed the availability and importance of 5G network security tools.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues.
+
+[Speaker: Shane Tews]
+Shane Tews: Tommy, BSA recently sent a set of comments to the National Telecommunications and Information Administration on national strategy for 5G implementation and released a position paper called “Securing 5G: A Call to Harness Software Innovation,” both of which you authored. Can you walk us through how to secure 5G at the network level and how this is important to the edge consumer?
+
+[Speaker: Tommy Ross]
+Tommy Ross: There are a lot of different elements in 5G security, and a lot of different technologies that go into building out a telecommunications network, particularly one as complex as 5G, but what we focus on in the two papers that you referenced is that 5G is really different from previous generations of telecommunications technology because it is so software-centric. Those software-centric capabilities in 5G bring built-in benefits that make it inherently more secure than previous generations, but they also create possibilities for applying different security techniques and security controls in new ways that can promise greater security throughout the network. I don’t want to overstate that, because there are huge risks that could come in a 5G network that is not architected thoughtfully, but there are a lot of possibilities to bring to bear in securing the network.
+
+[Speaker: Tommy Ross]
+There are inherent advantages to software-centric capabilities. There are standards that build in stronger encryption and authentication, but also the internet protocol (IP) basis of the network enables more consistent or system-wide application of security controls, and the IP-based communications as well as the cloud backbone underpinning 5G allows for more flexibility in providing tailored environments and solutions for different types of data.
+
+[Speaker: Tommy Ross]
+When you think about the tailored solutions, there are possibilities. When people talk about software-defined networking, network slicing — that kind of thing — we’re really talking about using the cloud to create contained environments and apply those different environments to different types of data. So, if you have IoT devices that are being used by consumers, you could potentially allow traffic between those devices to occur on a channel that is completely separate from the communications between critical infrastructure technologies. That allows you to keep actors that might be in one of those channels out of the other channels and to apply tailored security rules in those different environments.
+
+[Speaker: Tommy Ross]
+Beyond just network slicing or software-defined networking that allows you to apply wide-scale solutions by tailoring security rules to different environments, it also allows you to create private networks. So, individual companies or critical infrastructure operators can create completely self-contained networks to take care of their communications needs and apply their own tailored security rules without depending on the broader network to do that for them. That’s a big advantage that you’ll see a lot of companies take advantage of.
+
+[Speaker: Shane Tews]
+When I first was reading about software-defined networking, I was really fascinated with this whole idea of “fetching,” where you would have a smart set of boxes with the capability to grab things. You may need something momentarily for a project, but you don’t need to hold onto it for a long time. You no longer have to build an entire network operation of hardware and specific software because of the cloud. I just thought, “Wow, what a great way to redesign this so we’re using all of these amazing, innovative things we’ve come up with in the combination of cloud and software.” The network slicing is an unsung hero here. That’s really interesting for an enterprise to be able to utilize their network capacity on different variations, so can you walk us through network slicing?
+
+[Speaker: Tommy Ross]
+Just as you think about the big motors and pistons you would find in a Cadillac from 30 years ago, you think about telecommunications networks 30 or 50 years ago, and the operators switching out connections and the circuit switching that previous generations of telecommunications technologies relied on, and it was all hardware-driven. Now, there are efforts to replace hardware components at many different levels throughout the 5G architecture with software. And one of the areas where that’s gotten the most attention has been with radio access network technology.
+
+[Speaker: Tommy Ross]
+With 5G, the very core of the network has gone from being heavily based on hardware routers and switches to being almost entirely virtualized. That’s a big shift, and that kind of virtualization allows you to really rethink how you’re managing the network. It is much less like a traditional telecommunications network, and much more like an application software: much more flexible with patches and things like that. You can not only address security issues as they arise, but you can change the software’s functionality over time.
+
+[Speaker: Shane Tews]
+You mentioned radio access networking (RAN), and there’s virtual (vRAN), and lately, in the news, we’ve been hearing about O-RAN. What’s going on with O-RAN, and how does that fit into the 5G operations and networking?
+
+[Speaker: Tommy Ross]
+There are four terms that people need to be familiar with. There’s RAN — the radio access network technology — which allows individual devices to connect with the 5G network. It’s the boxes that are on cell phone towers in the current generation, and there’ll be small cells in the 5G generation. There is OpenRAN, which means the radio access network technology is built on open standards that are common across devices that are not proprietary — that are transparent to everyone — and that’s really important because it allows interoperability across different providers and technology developers, and it also allows individual companies to develop solutions to certain parts of the radio access network functionality that are modular — that can be plugged in with things that other people are doing in other parts of the RAN.
+
+[Speaker: Tommy Ross]
+All of that is really important for increasing the diversity of suppliers and for increasing competition to supply radio access network technology. When you have more competition, it allows you to incentivize competition around security, and that’s best for consumers and enterprises alike. So, OpenRAN is really important.
+
+[Speaker: Tommy Ross]
+O-RAN is a specific effort to produce OpenRAN standards, so it’s kind of a subset of OpenRAN. And then virtualized RAN is a series of efforts to produce RAN technology that is software-based, rather than hardware. I think the vRAN that is also OpenRAN is really the jackpot, because vRAN allows you to get away from the hardware boxes that bring both supply chain security and vendor lock-in concerns.
+
+[Speaker: Tommy Ross]
+If you buy hardware-based RAN technology, you’re probably only going to have the resources to fund those boxes every 20 years or so, whereas if it’s software, it starts out cheaper, because there aren’t the physical components associated with it, and it allows you to update it, patch it, and/or replace it with other software solutions or add those modular solutions in an easy, flexible manner.
+
+[Speaker: Tommy Ross]
+If all that can be done based on open standards and with open-source-driven architectures that allow developers to plug into open-source components and build their own products off that open-source basis, that’s really good for fostering a dynamic, diverse ecosystem in that space. That will reduce a lot of the security concerns.
+
+[Speaker: Shane Tews]
+What is going on with China’s 5G strategy? It sounds like they are not following the same path, or they’re the reason why we’re creating O-RAN, which is a response to the need to not be 100 percent in China’s supply chain path. How is their model different than what you just described?
+
+[Speaker: Tommy Ross]
+I think it begins with their national champions. They’ve invested a lot of resources in subsidizing Huawei and ZTE and other providers in their system. Huawei, in particular, has achieved a really favorable market position, because they’ve offered lower-priced products and services that have appealed to a lot of countries with fewer resources to expend on developing telecommunications networks. And they’re able to offer lower-priced products and services for two main reasons: One is that they are heavily subsidized by the Chinese government, and two is that they invest less in the quality of their products and services.
+
+[Speaker: Tommy Ross]
+I think we would underestimate Huawei if we just assumed all their products are substandard. They can achieve a dominant market position because people want their technologies and feel like their technologies are able to meet basic needs, but it comes with some risk. I don’t think that we’ve seen clear evidence of a lot of Huawei’s nefarious activities, like the Chinese government ensuring there are back doors that allow them to access all sorts of data. It doesn’t mean it’s not part of the master plan, but I don’t think we’ve seen many indications it has happened.
+
+[Speaker: Tommy Ross]
+What I do think we’ve seen is a lot of evidence that Huawei just doesn’t invest in developing secure code and quality controls around its products, which generates a few problems. One is that most of Huawei’s equipment is proprietary, so there’s no transparency around it, and, from what we understand, every instantiation is different. Huawei sends in engineers, and they code on the spot, and I’m sure they have some repositories that they draw from and some standard solutions that they put in place, but there is also a lot of variation from one part (or instantiation) to the other, which makes it really hard to identify where there might be anomalies or vulnerabilities in the code.
+
+[Speaker: Tommy Ross]
+If we know the vulnerability in a standardized offering, the vulnerability will exist in every instantiation of that offering, so you can patch it and mitigate the risk. But if every offering is different, you don’t know where those vulnerabilities lie, which makes it really hard to mitigate. The proprietary nature, paired with the very poor quality of code that we’ve seen in Huawei products and instantiations of those products, is really concerning from a security standpoint.
+
+[Speaker: Tommy Ross]
 However, Huawei’s ability to compete — because the quality of their products is lower — depends on the proprietary nature of their products and services, because that puts in place the vendor lock-in that ensures they have customers for the next few decades, rather than just the next year or two until people discover significant vulnerabilities.

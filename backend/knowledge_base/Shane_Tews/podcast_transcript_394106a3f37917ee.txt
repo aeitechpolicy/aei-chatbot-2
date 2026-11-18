@@ -1,0 +1,173 @@
+PAGE_TITLE: 
+	What Will the Next Generation of the Internet Look Like? (with Gabrielle Hibbert) — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI Explain to Shane: What will the next generation of the internet look like? (with Gabrielle Hibbert) Episode # 51 | February 1, 2022 | Shane Tews and Gabrielle Hibbert
+
+[Speaker: Shane Tews]
+Shane: Welcome to "Explain to Shane." I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. The next generation of the internet, known as Web3, is a proposed change in some of the ways the internet functions, including more use of blockchain technology, much more decentralization of information, and more user control of personal data, and tokenized-based economics. A major opportunity could be how Web3 will enable more online trust and enable safety tools for authentication and identity management, along with other challenges around cybersecurity and privacy. Today's guest is Gabrielle Hibbert. Gabrielle is a Web3 researcher and developer who specializes in presenting information regarding Web3 and blockchain, specifically helping explain the decentralized ecosystem, offering use cases, and explaining why it's important that we get ahead of the relevant policy conversations. Gabrielle is a security researcher at Least Authority, and will serve as a fellow at the recently created Decentralized Future Council. Gabrielle joins the podcast to discuss opportunities and challenges posed by Web3, and how the Decentralized Future Council will approach this new generation of the internet. Gabrielle, welcome to "Explain to Shane." To get us started, tell us about Web3, the decentralized web, and, specifically, you are working with the Decentralized Future Council. These are all fun new [things]. So explain this.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, sure. So to break down Web3 very succinctly, Web3 is the web of trust, immutability, and authentication. So here at the Decentralized Future Council, what our basic mission is is to educate policymakers by really explaining to regulators how to better embrace the centralized and decentralized web so that we can really support positive impact that these new technologies can have on our greater community. So these include topics such as privacy, security, greater trust and safety online. And, specifically, my work there will really focus on articulating the public- interest potential for the decentralized web as being a more equitable web that can really enhance commerce, communications, and democracy, in addition to
+
+[Speaker: Gabrielle Hibbert]
+discussing how the future internet can represent the values and causes of all people, regardless of geography or economy.
+
+[Speaker: Shane Tews]
+Shane: A lot of us are mobile users and we've gotten new used to the phrase 5G. And some understand what that means, and other people think it's an indicator on their phone. Thank you, a certain company, for doing that for their marketing plan. So when we talk about Web3, like, migrate us there. What are we going away — what are we migrating off of and enhancing towards?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so to kind of orient ourselves and frame everything, we are in Web2. This is the iteration that most people are familiar with, and we are moving towards the new iteration, which is a more decentralized architecture — or Web3. So, as I said earlier, Web3 you can kind of think of as the web of trust. And from a systems-engineering perspective, Web3 will differ in terms of that decentralized architecture. So if we think about Web 2 more succinctly in terms of systems engineering, Web2 relies on a centralized authority. So all trust is funneled through that centralized authority. Web3 is different. So Web3 is an interconnected, peer-to-peer information system where no single entity has sole authority. So essentially what this does at a kind of thousand-foot level is make the internet more equitable, democratized, and secure. So I do have some examples that I can give to kind of illustrate what I mean by all of this.
+
+[Speaker: Shane Tews]
+Shane: Yes.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: So the first example I have — and this is me speaking as a security researcher — so if we go back to the definition of Web3, this interconnected system makes it incredibly resilient, and this is very different from Web2. So in Web2, we have that sole authority, and this sole authority makes the process of security a little bit more difficult. So let's say that sole authority experiences an outage, or is compromised in some way by an attack. This has the potential to affect all other entities connected to it. In Web3, a single outage does not necessarily have that cascading effect due to its decentralized nature. So from a security standpoint, having those interconnected peer-to-peer nodes talking to one another and that decentralized structure really helps bolster the secure foundation it has.
+
+[Speaker: Shane Tews]
+Shane: You mentioned authentication. Give us an idea of what you're thinking about there because I think it's very important, and it's always been the challenge of: We have yet to figure out a model that people seem to quickly want to adopt. But I'm hoping that one of the positives that'II come out of COVID is going to this very digital economy. But we, at the authentication part, seem to still be lagging. So what are you thinking there?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Sure. So authentication and Web3 can really be boiled down to the hashing algorithms that are routinely used. And hashing algorithms are basically one- way encryption algorithms. So you can't go back after a piece of data has entered that hashing algorithm. It's that form of authentication that I believe
+
+[Speaker: Gabrielle Hibbert]
+that people may be looking for in this new iteration of the web. So there is a very practical application of this. Another example that people can kind of hang their hat on in terms of relating that authentication method is with the idea of permanence and preservation within the Web3 ecosystem. So currently, in Web2, we have a lot of link-rot, or these broken links that populate our internet. And if you don'tknow, the average lifespan of a webpage is around 100 days before it's gone. So this has huge implications for preserving humanity's history. And really, what can combat that in Web3 that ties back to that authentication piece is the idea of a decentralized file system. So it's called IPFS (or the interplanetary file system). This was created by Protocol Labs. So IPFS can really combat these link-rot and inefficiencies of our current internet through the use of a content identifier (or CID). So this CID utilizes that hashing algorithm to authenticate different files and records that you may have.
+
+[Speaker: Shane Tews]
+Shane: I get the hashing, but being a longtime domain name addressing girl — DNS girl — you know, the whole web is designed decentralized, actually. You know, it's just that it got outweighed with a particular group of companies just being the ones that are winning all the time, right? You know, that's where everybody wants to go. But so l have a couple questions there. One, I'm really curious about 100 days and then the, you know, kind of it aging out. I'd love to know kind of the reason on that. And the other is: I'm a little — I don't completely understand the need to then, like, you're, is it just like — it sounds like a garbage hole. Like, you're just taking stuff off the web that doesn't need to exist there anymore. And right now, are you saying that Web 2 just doesn't have an efficiency factor on that and there needs to — there's a reason for there to be more tidy records? Kind of walk me through that.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so 1 would definitely say that Web2 does need to be more efficient in terms of just thinking about the data that we host online. If those links no longer work, who is keeping records of those files of those data, of the data that we have there?
+
+[Speaker: Shane Tews]
+Shane: The Wayback Machine.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yes, of course. We have the Wayback Machine. But again, lam a security person. So having backups or having something that is immutable through using that content identifier — or that CID — to make sure that that data isn't changed and stays as it was is very helpful for preservation of history.
+
+[Speaker: Shane Tews]
+Shane: How do you see the authentication mechanism actually working? Do people have — at some point, there needs to be a trust anchor, I guess, is what I should be asking. So how do you navigate that world of trust anchor so people understand which ones are legit and which ones should be not recommended? Because we had that problem early on with Secure Sockets Layer (SSL) certificates, right? I mean, they got kind of gamed in the system and the value of them went down tremendously.
+
+[Speaker: Shane Tews]
+So what are you thinking about from a trust-anchor perspective?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, definitely. So I think that is one of those topics that we need to further research and look into because although we have those algorithms that can ensure on an empirical level that something is authenticated, on a more, ! would say, human level, making sure that the public is educated efficiently and trust what is being put out on Web3 is essential to the progression of this next iteration of the internet.
+
+[Speaker: Shane Tews]
+Shane: And a lot of people associate Web3 with crypto, just because it's probably, you know, it really hasn't — I mean, it's starting to take off now but we're not seeing it as the mode ot financial mechanism that we — you know, some oeople can't wait. It can't go tast enough. Then others want more, you know, security mechanisms around it. And then you get the big question of: Is it a currency or is it an investment, right? So, you know, I'm saying there's a lot to be managed through there. But, you know, where does crypto fit in on Web3?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so to provide a little bit more context, I would say that, you know, both the wider community and policymakers do, or are really only vaguely familiar with that one aspect of the decentralized web - being, you know, cryptocurrencies. But it might take — cryptocurrencies are such small part of the wider decentralized web ecosystem. And there's so much more outside of that such as smart contracts or these computer programs that can automatically execute control and document events and actions. So there is a lot out there outside of cryptocurrencies. And part of me being here is to make sure that the public interest within technology is expressly talked about and discussed.
+
+[Speaker: Shane Tews]
+Shane: So you've written a lot about the idea of distributive justice. So kind of walk me through how that technology works and: Why do we want it?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so, in August of 2021, I wrote this piece for Brandeis University's Economic and Racial Justice Institute entitled, "Technology needs to achieve distributive justice" where, really, the crux of my thesis is to say that to achieve the best possible internet that best serves the public, we really need an internet that reflects the great diversity of our country while also achieving equity and democracy. So in terms of the concept of distributive justice kind of intersecting with the decentralized web, it really comes down to building a diverse ecosystem, right? And squaring that with public interest, in addition to making sure that sectors such as trust and safety, commerce, communications, and democracy are really enhanced to make sure that everyone gets their equitable slice of the pie, essentially.
+
+[Speaker: Shane Tews]
+Shane: And as we all hear about, you know, bias in code, one of the best reasons to not have or not — we don't want bias, but the problem is: Bias tends to be just sort of native to things that we do, and code is one of them. If we don't have enough people that are of a variety of backgrounds, you know, everything tends to be the same thing. I mean, it's been this way in society for a long time.
+
+[Speaker: Shane Tews]
+It's just that right now, we're really focusing on how that's going through with code and some, you know, artificial intelligence. So the Decentralized Future Council sounds really cool. It sounds like you guys are running around in, like, robes or something like Star Wars. Tell me what your goals are for that group.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so our goal is to educate policymakers and really outside of that as well, the wider community on what Web3 and the decentralized web in general is. And, in addition, we really want to support open-source protocols to ensure that information is never compromised, abused, or ruled by a single entity.
+
+[Speaker: Shane Tews]
+Shane: So by that you mean there is transparency in kind of every element of what is going on?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, exactly.
+
+[Speaker: Shane Tews]
+Shane: make this happen?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so | would say it comes down to, first, that education piece that l've talked about for a while, and this is something that I do outside of my work with the Decentralized Future Council. I give a lot of guest lectures here and there to universities to talk about what the decentralized web is, but also in terms of my role at the Decentralized Future Council, it's about that research front as well. So research is a vital part and progression of the understanding of the technology stack in general. So in addition to that, using the research there to help fuel innovation that could best suit our greater community is part of that apparatus in making this work, right?
+
+[Speaker: Shane Tews]
+Shane: So, putting your security hat on, what do you think is the most important thing we change as we migrate off of Web2 to Web3? Because as we know, God love Vint Cerf, he's been very candid about it, they just weren't thinking about security when they created the tools that brought us the current web. So we've got authentication. You've mentioned that. We have that more distributed in the process. But it's usually the humans, not the machines that cause the problems. What do you need to teach us humans so we can be safer in our environment? And hopefully, you know, keeping everything a little more tidy since that seems to be a theme here on this. Does this, you know, have a better sense of who's on what and where they're going?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah. So in general, there's a conversation that we have a lot in my security circle that security challenges are also architectural and design challenges. There kind of a tug of war going on, really. There needs to be a balance between making something as secure as possible while also making it usable for people who are app developers or engineers.
+
+[Speaker: Shane Tews]
+Shane: People hate friction in the system, but security right now is that one extra step. l'm a huge hater of passwords. I appreciate why we have to have them. I wish somebody would figure out very quickly something — something quickly.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: That makes my heart hurt. As, you know, as a security researcher, I find it fun to kind of teach people how to make their data more secure. And specifically, speaking from my own experiences and speaking with people who are much newerto the decentralized web ecosystem, it's easy for me to say, you know, "Here are some steps to take: One, making sure that you protect your private key and make sure that you're not giving out any of that information to people who would want to have that, making people aware of phishing," and many of the other topics that we talk about in security circles.
+
+[Speaker: Shane Tews]
+Shane: Are the humans getting better at it? Are they a little more self-aware?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: I would say it's definitely a mixed crowd, you know? And I think the reason why there are some people who are very good at securing their data and some people who may not be up to speed is due to the education piece. You know, learning about the decentralized web is a bit tough tor tolks who may not be familiar with the terminology and the kind of the operating system. And being able to break it down step by step is what people and the wider community need, really.
+
+[Speaker: Shane Tews]
+Shane: So it's basically: Are there going to be gating mechanisms along the way which will be different if we're changing the way? The current construction of it with the DNS is a tree. I mean, it's a decision-making tree that engineers are very familiar with and they like. Do you see it changing? I guess, you know, I think when I think about the tree mechanism, I think of the roots, then. Like, are we going to, you know, where do we make the change that makes this decentralization still frictionless so people don't get frustrated by the process? Because you do have passwords. Because there's some, you know, anything you put in their way that is not just kind of, you know, makes intrinsic sense, they tend to not use it. And that's why, you know, it's why the things that work get used and the things that might be better quality but have a little bit of a chink in their armor, you know, don't get used as much because it's just, it's one more thing that somebody has to remember. It's like, even just two-factor authentication. Like, it's not that complicated, yet people still, they have something, you know, they just disable it, right?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah. Again, I think it goes back to that balance piece — you know, making sure that the security measures we put in place don't make people not want to use it, right? Or decrease the usability while also making sure that people's data is protected. It's still kind of like a tightrope right now. And hopefully with more research, there will be a point at which the barriers to bringing people into the community will be lessened. And at this point in time, there are a lot of different companies that are helping ease that transition. But outside of that, I think there still could be a lot of growth in that arena.
+
+[Speaker: Shane Tews]
+Shane: So, going back to the earlier part of the conversation, you mentioned that a lot of links break after 100 days, which — so are they marketing links? Are they things that people just abandoned because they come in, they have an immediate use case, and then the use case dies out within three months? What
+
+[Speaker: Shane Tews]
+do you think? It sounds like you've researched this pretty well.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah. I mean, trom my own experience, even, so l have, you know, ever since I kind of got acquainted with the internet during the Webl phase, I have had websites that I have no longer maintained. So they're gone — way past 100 days, and they are no longer usable. And even recently for me personally, there are websites that I tend to forget about that I created and they fall into disrepair. So this is a very common, just, mode of how some webpages work currently.
+
+[Speaker: Shane Tews]
+Shane: It makes me think of you as, like, the Picasso of the internet, like, "Ah, that's sort of a piece. I moved free. I moved on. It's over there. When did I paint that?"
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Exactly.
+
+[Speaker: Shane Tews]
+Shane: And then you get your registrar notice and you're like, "Am I still paying for that?"
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Exactly.
+
+[Speaker: Shane Tews]
+Shane: Well, for those interested in following this topic, what future developments should we be keeping an eye on with you in mind?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so, one other thing that | did want to mention — and hopefully we can squeeze this in — but it's the idea of identity management. So in my last semester at my master's program, I wanted to figure out how to develop a decentralized identity. So kind of going back to what you said with, you know, having this Picasso image of where your data is stored and how, you know, where you were moving throughout the internet, the idea of a decentralized identity is something that's being actively researched. And it's something that | find fascinating. So instead of having a fixed profile that stays within a centralized authority, your identity could be more flexible and move with you through a unique identifier. And this kind of brings us really close to how we operate in the real world as we move throughout different spaces in different times. So with that, this is one of those topics that I encourage folks to look into in addition to the work being done at Protocol Labs with IPFS and sign up for our email updates at the Decentralized Future Council once we get our website up and running.
+
+[Speaker: Shane Tews]
+Shane: So actually, can you just walk us down a little further on that? So I want my identity. Somebody is going to authenticate my identity. Do I choose a particular entity where my identity resides, and then is it tokenized, or how does that work?
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, so there's so much research in this field. And I can walk you through an example of how I myself have conceptualized of it. So we are very used to kind of tangible markers of who we are — you know, our birth certificate, our driver's license ID. Those are not necessarily secure items. You know, they can be burned in a fire. You can lose them, and that's kind of, you know, a pain
+
+[Speaker: Gabrielle Hibbert]
+when we have to get them replaced.
+
+[Speaker: Shane Tews]
+Shane: Exactly. Right.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: So, exactly. And as I was thinking about this research question and figuring out what the true problem statement is, is that flexibility piece, right? So an aspect of this decentralized identity for me is making it so that there is no human data attached to it. And what I mean by that is biometrics — so, like your fingerprint orthings that could tie you to yourself, to me. That is not a secure mode of creating a decentralized identification system. So again, what I had to think about was: Alright, if I'm not going to use biometrics, how are we going to link who you are and use that in different spaces? So that's where the idea of having a unique identifier comes into play so that you can basically, say, type in your information, say who you are, but shield your identity by using something known as a zero-knowledge proof (or zk-SNARK). So there are really, really fun cryptographers and mathematicians that are looking into how to do this at a wider scale. But it's still very much in the research, early-days stages.
+
+[Speaker: Shane Tews]
+Shane: It sounds a little bit like if you use — I'm an Apple person. So if you use Apple Pay, you know, you disaggregate your actual credit card from that particular transaction. And I was returning something once in, like, a CVS. And God love this woman - actually, it was Whole Foods. She's lik"That's why the receipt is "Oh, did you use Apple Pay when you checked out?" I go, "Yeah." She goes, not coming up." You know, like, she's like, "Look it up." She's like, okay, once she — she had to go look in a different folder basically. But the whole idea was that, you know, you don't, every time I use my Apple Pay, whatever the retail outlet is, it's not actually recording my, you know, credit card information, which is one more step [toward] safety, but somebody does. I mean, she was able to figure out eventually where my transaction was. So l guess that's kind of how I see all this with the whole idea of the, you know, interoperability, [which] is always one of the bigger challenges, which is why even password keepers, I, you know, can't decide on one. I have a couple of them which is probably my problem is, you know, you want that information to flow across platforms and across the network, and sometimes it works and then you've got hardware and software as well as, you know, update applications and all that, which is frustrating. So hopefully in your plan it'Il be seamless.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Yeah, hopefully it is.
+
+[Speaker: Shane Tews]
+Shane: Perfect. Well, thank you so much for joining us today. We look forward to watching the work that you're doing and hearing from you in the future.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle: Thank you so much for having me.
+
+[Speaker: Shane Tews]
+Shane: Absolutely. Thanks for being on "Explain to Shane." Thank you for listening to another episode of "Explain to Shane." For more
+
+[Speaker: Shane Tews]
+episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of "Explain to Shane."

@@ -1,48 +1,74 @@
 PAGE_TITLE: 
-	Separating Fact from Fiction in Election Information Online: Highlights from an Expert Panel Discussion on Section 230, Internet Content, and the Midterms | American Enterprise Institute - AEI
+	Separating Fact from Fiction in Election Information Online: Highlights from an Expert Panel Discussion on Section 230, Internet Content, and the Midterms
 
-Note: This event and all affiliated content are part of AEI’s Online Speech Project. To learn more about the project, click
-here
-.
+[Speaker: Introduction / editorial context]
 On November 4, 2022, just a few days before the 2022 Midterm elections, AEI hosted a panel to discuss how social media and tech companies are navigating content moderation and Section 230 issues in light of those elections.
-The panel of experts featured
-Samir Jain
-, Director of Policy for the Center for Democracy and Technology,
-Quinta Jurecic
-, Fellow in Governance Studies at the Brookings Institution, and Spencer Davis of Guadalupe Strategies.
-Below is an edited and abridged transcript of key highlights from the panel. You can watch the full event on
-AEI.org
-and read the full transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+The panel of experts featured Samir Jain, Director of Policy for the Center for Democracy and Technology, Quinta Jurecic, Fellow in Governance Studies at the Brookings Institution, and Spencer Davis of Guadalupe Strategies.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from the panel. You can watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
 Shane Tews: A top priority at the moment, Spencer, is that we’ve got the RNC concerned that they think that they’re being suppressed. What are the basics of why they are feeling this way?
+
+[Speaker: Spencer Davis]
 Spencer Davis: It’s all a question of email fundraising, and to frame this conversation correctly, I think, just speaking from a campaign background, we have to remember that the most fundamental tool to a campaign today is digital advertising.
+
+[Speaker: Spencer Davis]
 From 2016 to last year, we were just seeing exponential growth. And on the republican side, that’s due to more email fundraising. It’s also due to WinRed, which was our copy of ActBlue. And as we expanded into this, we’re now seeing this last year of through the last four quarters we’ve been down, and that’s quarter to quarter. It’s not comparing that to presidential years. And some of those complaints and some of those gripes can come from this spam issue.
+
+[Speaker: Spencer Davis]
 But they were seeing, especially on Gmail, a disproportionate amount of emails coming from republican campaigns going to spam when comparing them to democrat campaigns. For democrats it’s below 10 percent, and for republicans, it’s somewhere above 65 percent. So that’s a concern as we’re trying to build fair elections and campaigns.
+
+[Speaker: Shane Tews]
 Shane Tews: That brings us to the bigger questions of the internet that’s about to face the Supreme Court right now, which is, what stays up? What goes down? Who’s in charge? Who gets to decide?
-Quinta Jurecic: There are two cases that the Supreme Court recently granted
-certiorari
-. We’re expecting to hear them later this term,
-Gonzalez v. Google
-and
-Twitter v. Taamneh
-. They both concern a problem that has been on people’s radars for a long time. This is the first time that it’s gotten to the Supreme Court, and essentially the fact pattern in each case involves an instance where somebody was hurt or killed in a terrorist attack. The plaintiffs were arguing in the lower courts that the platforms had liability for this because they in some way allowed it to happen.
-The first case,
-Gonzalez v. Google
-, has to do with the scope of Section 230 protections. So that’s the law that shields platforms from liability, from most liability, for user-generated content. And the question presented in Gonzalez concerns whether a platform’s use of an algorithm to boost or downrank content is protected by Section 230 or not. The argument being, in this case, well, a terrorist group, there was content that was boosted from this terrorist group on the algorithm. That’s not user-generated content. That’s content produced by the platform itself, and therefore, the plaintiffs are arguing that it should be able to be held liable. That’s a hugely important case. I think it could reshape how Section 230 works and how the internet functions.
-The second case,
-Twitter v. Taamneh
-, shares the previous fact pattern but the specific question here has to do with the statute under which Twitter would be held liable, the Anti-Terrorism Act. And so that is, sort of, a particular question of statutory interpretation (instead of protection by Section 230): whether the plaintiffs would be able to recover certain damages for this content that their plaintiffs are arguing the platform contributed to due to the terrorist attack in some way. That’s the general overview. There are a lot of nuances there and I’m very curious about Samir’s take. I think that the bottom line is really that these cases could be extremely significant in how we understand the future of the internet.
+
+[Speaker: Quinta Jurecic]
+Quinta Jurecic: There are two cases that the Supreme Court recently granted certiorari. We’re expecting to hear them later this term, Gonzalez v. Google and Twitter v. Taamneh. They both concern a problem that has been on people’s radars for a long time. This is the first time that it’s gotten to the Supreme Court, and essentially the fact pattern in each case involves an instance where somebody was hurt or killed in a terrorist attack. The plaintiffs were arguing in the lower courts that the platforms had liability for this because they in some way allowed it to happen.
+
+[Speaker: Quinta Jurecic]
+The first case, Gonzalez v. Google, has to do with the scope of Section 230 protections. So that’s the law that shields platforms from liability, from most liability, for user-generated content. And the question presented in Gonzalez concerns whether a platform’s use of an algorithm to boost or downrank content is protected by Section 230 or not. The argument being, in this case, well, a terrorist group, there was content that was boosted from this terrorist group on the algorithm. That’s not user-generated content. That’s content produced by the platform itself, and therefore, the plaintiffs are arguing that it should be able to be held liable. That’s a hugely important case. I think it could reshape how Section 230 works and how the internet functions.
+
+[Speaker: Quinta Jurecic]
+The second case, Twitter v. Taamneh, shares the previous fact pattern but the specific question here has to do with the statute under which Twitter would be held liable, the Anti-Terrorism Act. And so that is, sort of, a particular question of statutory interpretation (instead of protection by Section 230): whether the plaintiffs would be able to recover certain damages for this content that their plaintiffs are arguing the platform contributed to due to the terrorist attack in some way. That’s the general overview. There are a lot of nuances there and I’m very curious about Samir’s take. I think that the bottom line is really that these cases could be extremely significant in how we understand the future of the internet.
+
+[Speaker: Samir Jain]
 Samir Jain: As Quinta said, these particular cases concern terrorist content but I think they have implications really for third-party or user-generated content writ large. Because if providers like Google or social media services can be held liable for this kind of third-party content, and they face that risk of liability, a longstanding theory around Section 230 is that if they face that kind of liability, they may have little choice but to start being much more aggressive in taking down content. Because if you’re potentially liable when someone posts some content and then there’s a complaint, someone says, “Hey, that’s defamatory, or that’s supporting terrorism,” if you’re a service provider your rational choice may be, “I’m just simply going to take that content down in response to that notice.”
+
+[Speaker: Samir Jain]
 Or more broadly, if you think about terrorism, for example, if you’re a service provider and you’re now potentially liable for terrorist content, maybe you couldn’t place an automated tool that just does a keyword search for “terrorism” and takes down all content related to terrorism. That’s going to be positive content as well, right? It could be journalism about terrorism. It could be anti-terrorist content, and so there’s a real risk that, depending on how the court decides 230, you may end up with less beneficial speech and suppression of free expression as a result.
+
+[Speaker: Samir Jain]
 And the other point I would make is that it’s important to realize that Section 230 is not just about the Facebooks and Googles of the world, it’s about all providers who benefit. And in some ways, the smaller providers are going to be most at risk because they’re the ones that don’t have the resources to defend against this kind of litigation. And they may well decide they shut down or they don’t allow for third-party content. If you’re a newspaper, why allow for comments from your users if you’re potentially liable for those comments?
+
+[Speaker: Samir Jain]
 Or they may, again, because they can’t really employ thousands of people to engage in content moderation, they may take these very broad steps of, “I’m just not going to allow content that terrorists”—I mean, just to give you an example, when there was a small provider who was being told that, “Terrorists are using your platform to spread propaganda,” and his response was, “I’m a small provider. All of this is happening in Arabic. I don’t have anyone who understands Arabic so I’m just going to block all Arabic content.” A lot of that content was beneficial, useful, and had nothing to do with terrorists, but that was the only choice he had because he had no other option to separate the potentially harmful content from other content.
+
+[Speaker: Shane Tews]
 Shane Tews: Is there a balance in the terms of service and terms of use on a level of algorithmic transparency that would help with this whole situation?
+
+[Speaker: Samir Jain]
 Samir Jain: I think transparency is definitely a positive thing. We’ve long called for transparency. There are what are called the Santa Clara Principles which lay out in quite a bit of detail the kinds of transparency that I think would be useful for everyone to see and would inform public policy decisions about this. Such transparency would also allow us to have more informed discussions from a policy and a legal standpoint because we’d better understand what the ramifications are if we change Section 230 in this way, or if we interpret the First Amendment in a particular way. Obviously, you can go too far where if you provide all the details of the algorithm people can then game those algorithms so that they can bypass filters and things like that.
+
+[Speaker: Shane Tews]
 Shane Tews: Does the idea of a common carrier for these platforms help or hinder the conversation?
+
+[Speaker: Spencer Davis]
 Spencer Davis: I don’t think that these large social media platforms are common carriers for the same reason I don’t think that they’re monopolies, and I think it’s because they really in most cases just don’t charge anything. And I think if you need to quantify what a monopoly is, I’m just not convinced by any argument that doesn’t include something about price competition.
+
+[Speaker: Spencer Davis]
 Common carrier law sometimes is just “it’s a common carrier because we say it’s a common carrier.” But I think coming to head with the RNC Gmail issue. RNC in California court, when they filed the lawsuit, made extensive citations of former common carrier laws. They were attempting to peg Gmail as a common carrier, and of course, that’s what we’re seeing in Europe. I don’t think I ever personally have seen a headline, “EU Commission Makes New Rule,” and have ever been particularly happy about it. They’re treading dangerous ground where they’re getting too involved in the market, and the only people that are able to follow these new rules are going to be the large companies.
+
+[Speaker: Samir Jain]
 Samir Jain: I think also there’s in some ways a misunderstanding of the idea that free speech means that simply everyone can speak. But it’s far more complicated than that because we know that part of what goes on online is significant harassment, significant trolling, and significantly negative behavior that drives people off and makes it so that they can’t speak online.
+
+[Speaker: Samir Jain]
 So if you allow everyone to speak, that doesn’t necessarily mean that everyone’s going to have an equal voice, because what’s going to happen is there are going to be people who, as a result of other people’s speech, are forced offline or don’t feel free to speak. And so having rules in place is necessary to create a community in which everyone has an equal right to speak.
+
+[Speaker: Shane Tews]
 Shane Tews: What do we think Congress is going to do about this? They don’t like to be shown up by the Supreme Court all that often, and that’s kind of where we’re headed. Any thoughts on where our congressional friends are going on this?
+
+[Speaker: Samir Jain]
 Samir Jain: By and large, republicans want to get rid of Section 230 because they want less content moderation, and we see that in the Texas and Florida laws under review. On the other hand, democrats want to get rid of Section 230 because they want platforms to be more aggressive in policing this information, disinformation, and harassment. Quinta Jurecic: I do think we have seen increased movement toward carving out certain areas from Section 230 in the proposals that have been put forward, such as proposals to exempt algorithmic amplification in some form from Section 230 protections. The rub is always going to be in how exactly to define the boundaries there. We have a great example of how this can go wrong in the FOSTA law that created carve outs of Section 230 protections for content that was related in some way to sex trafficking. The problem was that the way that the law was written was both incredibly broad and incredibly convoluted at the same time, and you ended up with a situation where platforms were just not sure what they needed to take down or not, and ended up removing—just whole swaths of speech that didn’t necessarily need to be taken down.

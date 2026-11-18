@@ -1,11 +1,8 @@
 PAGE_TITLE: 
-	Taking on DMV Bureaucracy (with Shane Bigelow) | American Enterprise Institute - AEI
+	Taking on DMV Bureaucracy (with Shane Bigelow)
 
+[Speaker: Introduction / editorial context]
 Digital solutions for vehicle titling and registration are transforming how DMVs operate, replacing slow bureaucratic processes with efficient blockchain-based systems. Through successful partnerships with state governments, companies offering these digital services have demonstrated significant time and cost savings in vehicle-related transactions. This proven track record in modernizing DMV operations creates opportunities to expand similar technological solutions across other government functions, streamlining services beyond the transportation sector.
-In today’s episode of
-Explain to Shane
-, Shane interviews
-Shane Bigelow
-, CEO of
-Champ Titles
-, a company that specializes in digitizing government and business processes. Under Bigelow‘s leadership, Champ Titles has focused on transforming traditional vehicle titling systems with blockchain technology, aiming to reduce costs and improve efficiency in government operations. Before founding Champ Titles, Bigelow gained valuable insights into blockchain’s potential for societal impact while serving as senior vice president and managing director at AllianceBernstein.
+
+[Speaker: Introduction / editorial context]
+In today’s episode of Explain to Shane, Shane interviews Shane Bigelow, CEO of Champ Titles, a company that specializes in digitizing government and business processes. Under Bigelow‘s leadership, Champ Titles has focused on transforming traditional vehicle titling systems with blockchain technology, aiming to reduce costs and improve efficiency in government operations. Before founding Champ Titles, Bigelow gained valuable insights into blockchain’s potential for societal impact while serving as senior vice president and managing director at AllianceBernstein.

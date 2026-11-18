@@ -1,137 +1,71 @@
 PAGE_TITLE: 
-	Do Data Protection Laws Really Improve Cybersecurity? Highlights from My Conversation with Emily Taylor | American Enterprise Institute - AEI
+	Do Data Protection Laws Really Improve Cybersecurity? Highlights from My Conversation with Emily Taylor
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
+
+[Speaker: Introduction / editorial context]
 Data protection and privacy laws must strike a difficult balance between individual privacy and cybersecurity. For example, what happens when a cyberattacker’s identity is masked in the name of privacy? How would existing laws in the European Union (EU), United Kingdom, and India address this dilemma? What can proponents of federal data protection or privacy legislation in the US learn from these countries?
-Emily Taylor
-, CEO of
-Oxford Information Labs
-and an associate fellow of
-Chatham House’s
-international security program, joined “Explain to Shane” to discuss the complex relationship between data protection and cybersecurity. She also previewed key findings from Chatham House’s recent ransomware simulation project, which tested how national data protection and privacy laws would influence the severity, investigation, and eventual attribution of a cyberattack. The simulation’s full results have yet to be released.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Back in December, you and your
-Chatham House colleagues ran a series of ransomware simulations to find out how
-much — or perhaps how little — national laws on cross-border data flows would
-influence the trajectory of a cyberattack. What exactly were you looking for with
-regard to these laws, and what did you find?
-Emily
-Taylor: This is part of a series of projects that Chatham House is involved
-with in building cybersecurity multistakeholder capacity and relationships
-through simulation exercises, so this was the second in the series. Really, our
-focus was on the free flow of data across borders and what a response to a
-cybersecurity incident would look like if you overlaid the different
-requirements of national laws. India, for example, has a very wide-ranging
-proposal that looks and feels like Europe’s General Data Protection Regulation
-(GDPR), but with some twists, and has a strong theme of keeping data onshore.
-And what we
-really wanted to say is: In the context of a rapid response, what would happen
-to valuable outsourcing arrangements between India and the UK, for example? India
-is a great outsourcing partner of ours in a lot of heavy data-processing
-relationships, so one thing we wanted to discover was how those relationships
-would be affected by data protection laws, and whether or not both parties would
-be able to restore services in the context of a ransomware attack.
-Did you look at what happened to the EU-US
-data sharing agreement in your model? That was struck down because the EU
-determined that the US didn’t meet its standard of “adequacy” for data
-protection.
-We did. I
-don’t want to give too much away about the simulation, but we did look at
-questions of adequacy. For example, the European Union has already published
-materials suggesting that India would not achieve adequacy at the moment. But a
-key question about the United Kingdom at the moment is: Post-Brexit, will we
-fulfill the requirements for EU adequacy? Schrems II — the decision that
-invalidated the EU-US privacy shield — really shows what happens when an
-activist civil society participant decides, “No, I don’t buy it.” So while the
-EU might well award the UK the necessary adequacy, what if it’s challenged by
-another Schrems-like case? And then you start to get into difficulties
-regarding the extent of data sharing and the requirements on businesses and
-organizations to keep records and give access to the government.
-Time and time
-again, when the European courts have looked at other countries’ privacy
-protections, they’ve said, “You don’t have sufficient privacy safeguards here.
-You don’t have enough in place to protect from government overreach.” This
-happened on numerous occasions with the United States. We, in the United
-Kingdom, have very far-reaching surveillance laws, so that’s one area to look
-at, but there’s also a lot of controversy in the Indian bill because the
-government in India reserves very extensive powers to receive data. And there’s
-not much in the way, currently drafted, of checks and balances and the
-safeguards you would expect to ensure protection of fundamental rights.
-This is a
-rights question, of course, but it’s also a business question, because as soon
-as you start to question whether or not a whole country is a good bet for an
-outsource partner, then you start to wonder: Can we get guarantees? Can we get
-them back by indemnities to make sure that we don’t end up liable for your
-mess-up? Is there a way we can get around this whole thing by some sort of
-regulatory arbitrage? Can we actually ensure that none of the data touches
-either the UK or India, even though both parties in this fictional scenario are
-based in the UK and India?
-You’ll see
-that businesses’ real priority is to keep the data flowing, and anything that
-interrupts data flows will interrupt business operations and impose costs. That’s
-what we were really trying to raise awareness of in this simulation.
-Did you look at this from the lens of what
-is technically feasible, or from the lens of what policy demands?
-In the past,
-most simulations of cyberattacks have been done through a very cyber-heavy
-approach. But what we really wanted to do was to drive home the issues around
-policy, legal, communications, operations — business-related things — and the
-experts in those areas were totally new to the idea of doing simulations. So
-they were really unfamiliar with the format, and yet it was their expertise
-that we were trying to bring to bear in solving these problems across
-continents.
-Part of what
-we were trying to raise awareness of is just how much cross-jurisdictional
-legal knowledge every business is going to need if they’ve got data flowing
-across borders. But what about small businesses? How are they going to get the
-legal knowhow across not just one jurisdiction, but multiple jurisdictions?
-We’ve got to consider the impact of laws like the GDPR on that.
-The
-simulation really made me think of our mutual background with the Internet
-Corporation for Assigned Names and Numbers (ICANN), where we’ve had many
-decades to think about the domain name lookup system WHOIS. But under GDPR, neither
-industry nor law enforcement can continue using WHOIS to find domain owners due
-to privacy concerns. So how difficult will it be for entities like ICANN to
-find a solution that protects privacy but lets people harness the benefits —
-both in intellectual property and cybersecurity — of WHOIS?
-It turns out
-it’s really difficult. One of the things that came out in the simulation was
-attempts by businesses to compartmentalize user data according to different
-countries of origin — all of the Europeans in one bucket, all of the Brits in
-one bucket, and all of the Indians in one bucket. But the truth is that the
-data isn’t actually structured that way in the first place. And that’s the
-operational impact that a lot of these laws have, which is: It is very difficult
-for businesses to comply, particularly if they’ve undergone acquisitions or
-still have legacy systems. If they’ve got complex supply chains with small
-partners and don’t really know what their data practices are, can you really
-hand-on-heart say that every single data subject in your multimillion user
-dataset has got consents and that those haven’t been withdrawn? I don’t think
-anybody would be able to make that assurance and back it up with indemnities.
-What else are you working on? You’re always
-doing really interesting things; what should we be looking for on the horizon
-from you and Chatham House?
-We just
-finished a major project looking at what’s happening in technical standards
-bodies. For Europe, the last seven years have all been about what US Big Tech
-is doing, whether it’s because it’s so huge or because of what is happening
-with privacy. Meanwhile, China has been really busy in technical standards
-bodies — particularly those in which the really heavy tech people don’t get
-involved, like the International Telecommunications Union (the UN body that
-specializes in telecommunications).
-One of my colleagues, Dominique Lazanski (
-an “Explain to Shane” guest
-), helped write a paper last year that pieced together different proposals China is making across various study groups within this UN body. And if you put them all together, they would create a new architecture in which there would essentially be two different internets. For customers of China — and there are many — they might like China’s vision of a surveillance-heavy internet, a cleaner internet, and a less troublesome internet where people don’t say the wrong thing, or where you could enact a shutdown if there was unrest. Other countries who receive aid from China in the form of technical buildout might just receive it without even being aware of what’s there.
-The tech
-community has been really dismissive of the prowess of these proposals, but I
-don’t think that’s the point. I think the point is that we’re seeing a very
-organized, well-invested-in, long-term strategy by one country that does not
-share our values to dominate technical standards bodies. And somehow or other,
-we’re going to have to cope with a future where the world’s tech powers don’t
-share the same values as us.
+
+[Speaker: Introduction / editorial context]
+Emily Taylor, CEO of Oxford Information Labs and an associate fellow of Chatham House’s international security program, joined “Explain to Shane” to discuss the complex relationship between data protection and cybersecurity. She also previewed key findings from Chatham House’s recent ransomware simulation project, which tested how national data protection and privacy laws would influence the severity, investigation, and eventual attribution of a cyberattack. The simulation’s full results have yet to be released.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Back in December, you and your Chatham House colleagues ran a series of ransomware simulations to find out how much — or perhaps how little — national laws on cross-border data flows would influence the trajectory of a cyberattack. What exactly were you looking for with regard to these laws, and what did you find?
+
+[Speaker: Emily Taylor]
+Emily Taylor: This is part of a series of projects that Chatham House is involved with in building cybersecurity multistakeholder capacity and relationships through simulation exercises, so this was the second in the series. Really, our focus was on the free flow of data across borders and what a response to a cybersecurity incident would look like if you overlaid the different requirements of national laws. India, for example, has a very wide-ranging proposal that looks and feels like Europe’s General Data Protection Regulation (GDPR), but with some twists, and has a strong theme of keeping data onshore.
+
+[Speaker: Emily Taylor]
+And what we really wanted to say is: In the context of a rapid response, what would happen to valuable outsourcing arrangements between India and the UK, for example? India is a great outsourcing partner of ours in a lot of heavy data-processing relationships, so one thing we wanted to discover was how those relationships would be affected by data protection laws, and whether or not both parties would be able to restore services in the context of a ransomware attack.
+
+[Speaker: Emily Taylor]
+Did you look at what happened to the EU-US data sharing agreement in your model? That was struck down because the EU determined that the US didn’t meet its standard of “adequacy” for data protection.
+
+[Speaker: Emily Taylor]
+We did. I don’t want to give too much away about the simulation, but we did look at questions of adequacy. For example, the European Union has already published materials suggesting that India would not achieve adequacy at the moment. But a key question about the United Kingdom at the moment is: Post-Brexit, will we fulfill the requirements for EU adequacy? Schrems II — the decision that invalidated the EU-US privacy shield — really shows what happens when an activist civil society participant decides, “No, I don’t buy it.” So while the EU might well award the UK the necessary adequacy, what if it’s challenged by another Schrems-like case? And then you start to get into difficulties regarding the extent of data sharing and the requirements on businesses and organizations to keep records and give access to the government.
+
+[Speaker: Emily Taylor]
+Time and time again, when the European courts have looked at other countries’ privacy protections, they’ve said, “You don’t have sufficient privacy safeguards here. You don’t have enough in place to protect from government overreach.” This happened on numerous occasions with the United States. We, in the United Kingdom, have very far-reaching surveillance laws, so that’s one area to look at, but there’s also a lot of controversy in the Indian bill because the government in India reserves very extensive powers to receive data. And there’s not much in the way, currently drafted, of checks and balances and the safeguards you would expect to ensure protection of fundamental rights.
+
+[Speaker: Emily Taylor]
+This is a rights question, of course, but it’s also a business question, because as soon as you start to question whether or not a whole country is a good bet for an outsource partner, then you start to wonder: Can we get guarantees? Can we get them back by indemnities to make sure that we don’t end up liable for your mess-up? Is there a way we can get around this whole thing by some sort of regulatory arbitrage? Can we actually ensure that none of the data touches either the UK or India, even though both parties in this fictional scenario are based in the UK and India?
+
+[Speaker: Emily Taylor]
+You’ll see that businesses’ real priority is to keep the data flowing, and anything that interrupts data flows will interrupt business operations and impose costs. That’s what we were really trying to raise awareness of in this simulation.
+
+[Speaker: Shane Tews]
+Did you look at this from the lens of what is technically feasible, or from the lens of what policy demands?
+
+[Speaker: Emily Taylor]
+In the past, most simulations of cyberattacks have been done through a very cyber-heavy approach. But what we really wanted to do was to drive home the issues around policy, legal, communications, operations — business-related things — and the experts in those areas were totally new to the idea of doing simulations. So they were really unfamiliar with the format, and yet it was their expertise that we were trying to bring to bear in solving these problems across continents.
+
+[Speaker: Emily Taylor]
+Part of what we were trying to raise awareness of is just how much cross-jurisdictional legal knowledge every business is going to need if they’ve got data flowing across borders. But what about small businesses? How are they going to get the legal knowhow across not just one jurisdiction, but multiple jurisdictions? We’ve got to consider the impact of laws like the GDPR on that.
+
+[Speaker: Emily Taylor]
+The simulation really made me think of our mutual background with the Internet Corporation for Assigned Names and Numbers (ICANN), where we’ve had many decades to think about the domain name lookup system WHOIS. But under GDPR, neither industry nor law enforcement can continue using WHOIS to find domain owners due to privacy concerns. So how difficult will it be for entities like ICANN to find a solution that protects privacy but lets people harness the benefits — both in intellectual property and cybersecurity — of WHOIS?
+
+[Speaker: Emily Taylor]
+It turns out it’s really difficult. One of the things that came out in the simulation was attempts by businesses to compartmentalize user data according to different countries of origin — all of the Europeans in one bucket, all of the Brits in one bucket, and all of the Indians in one bucket. But the truth is that the data isn’t actually structured that way in the first place. And that’s the operational impact that a lot of these laws have, which is: It is very difficult for businesses to comply, particularly if they’ve undergone acquisitions or still have legacy systems. If they’ve got complex supply chains with small partners and don’t really know what their data practices are, can you really hand-on-heart say that every single data subject in your multimillion user dataset has got consents and that those haven’t been withdrawn? I don’t think anybody would be able to make that assurance and back it up with indemnities.
+
+[Speaker: Shane Tews]
+What else are you working on? You’re always doing really interesting things; what should we be looking for on the horizon from you and Chatham House?
+
+[Speaker: Emily Taylor]
+We just finished a major project looking at what’s happening in technical standards bodies. For Europe, the last seven years have all been about what US Big Tech is doing, whether it’s because it’s so huge or because of what is happening with privacy. Meanwhile, China has been really busy in technical standards bodies — particularly those in which the really heavy tech people don’t get involved, like the International Telecommunications Union (the UN body that specializes in telecommunications).
+
+[Speaker: Emily Taylor]
+One of my colleagues, Dominique Lazanski (an “Explain to Shane” guest), helped write a paper last year that pieced together different proposals China is making across various study groups within this UN body. And if you put them all together, they would create a new architecture in which there would essentially be two different internets. For customers of China — and there are many — they might like China’s vision of a surveillance-heavy internet, a cleaner internet, and a less troublesome internet where people don’t say the wrong thing, or where you could enact a shutdown if there was unrest. Other countries who receive aid from China in the form of technical buildout might just receive it without even being aware of what’s there.
+
+[Speaker: Emily Taylor]
+The tech community has been really dismissive of the prowess of these proposals, but I don’t think that’s the point. I think the point is that we’re seeing a very organized, well-invested-in, long-term strategy by one country that does not share our values to dominate technical standards bodies. And somehow or other, we’re going to have to cope with a future where the world’s tech powers don’t share the same values as us.
+
+[Speaker: Emily Taylor]
 We might need to re-find some of the enthusiasm that brought you and me into this space in the first place for openness, interoperability, and free flow of information and data — things we used to say 10 years ago and then felt self-conscious about saying because of all the failures the western internet seemed to bring to light. But we’re going to have to figure out what we do with a different world order. Bans, shutting things down, and trade sanctions will help for a little while, but they’re not actually going to arrest the development of a country of that size and capability. So what’s our plan B?
+
+[Speaker: Emily Taylor]
+[related-items item=”” title=”Learn more:”]

@@ -1,54 +1,74 @@
 PAGE_TITLE: 
-	Data, Security, and Liberty: What’s at Stake in Federal Consolidation? | American Enterprise Institute - AEI
+	Data, Security, and Liberty: What’s at Stake in Federal Consolidation?
 
+[Speaker: Introduction / editorial context]
 On July 16, 2025, AEI hosted an expert panel discussing the critical issues surrounding federal data consolidation and the protection of civil liberties in the digital age.
-The panel featured
-Courtney Bowman
-of Palantir Technologies,
-Alexandra Reeve Givens
-of the Center for Democracy & Technology,
-Daniel Werfel
-, former US Commissioner of the IRS, and
-Kim Wyman
-, former Washington Secretary of State and President of Election Security & Innovation Consulting, with
-Shane Tews
-, Nonresident Senior Fellow at AEI, serving as moderator.
-Below is an edited and abridged transcript of key highlights from the panel. You can re-watch the full event on
-AEI.org
-and read the full transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+The panel featured Courtney Bowman of Palantir Technologies, Alexandra Reeve Givens of the Center for Democracy & Technology, Daniel Werfel, former US Commissioner of the IRS, and Kim Wyman, former Washington Secretary of State and President of Election Security & Innovation Consulting, with Shane Tews, Nonresident Senior Fellow at AEI, serving as moderator.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from the panel. You can re-watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
 Shane Tews: Recent concerns about federal data sharing and civil rights violations have highlighted gaps in our current safeguards. While data sharing offers opportunities, we must address the serious civil rights concerns that have emerged. How do we establish proper guidance and guardrails that project our rights and enable legitimate data sharing benefits?
-Alexandra Reeve Givens:
-It may help to do a little bit of level setting on the fact patterns that we’re seeing so far, just so we’re speaking from a common dialogue. In March, President Trump sent Executive Order 14243 on eliminating information silos, which directed federal agencies to take all necessary steps to facilitate sharing within agencies of unclassified records, across agencies, and accessing records that are held by state programs that receive federal funding. Both before and after that executive order, we were getting newspaper reports, from whistleblowers and from others, sharing information about unprecedented levels of access requests and consolidation that were happening across agencies.
+
+[Speaker: Alexandra Reeve Givens]
+Alexandra Reeve Givens: It may help to do a little bit of level setting on the fact patterns that we’re seeing so far, just so we’re speaking from a common dialogue. In March, President Trump sent Executive Order 14243 on eliminating information silos, which directed federal agencies to take all necessary steps to facilitate sharing within agencies of unclassified records, across agencies, and accessing records that are held by state programs that receive federal funding. Both before and after that executive order, we were getting newspaper reports, from whistleblowers and from others, sharing information about unprecedented levels of access requests and consolidation that were happening across agencies.
+
+[Speaker: Alexandra Reeve Givens]
 I think it’s helpful to think about the three different vectors where this is showing up. One is intra-agency consolidation. This is when an agency has collected data for one purpose, and is now either using it for another purpose, or combining it with data that is being collected for another purpose. A second is interagency data sharing agreements. There are issues like DHS now having an unprecedented agreement with the IRS to access taxpayer records for immigration enforcement purposes, which I’m hoping we will talk about in more detail today. The third is federal agencies accessing state records for their purposes. This includes, for example, the Department of Agriculture demanding the names, social security numbers, addresses, and birth dates of tens of millions of people who have applied for SNAP benefits over the past five years. Or, as was reported in The Washington Post, the Department of Justice recently asked nine states for the entirety of their voter rolls to be able to gather that information.
+
+[Speaker: Alexandra Reeve Givens]
 The reason why we worry about these things is that, yes, of course, data sharing between agencies and within agencies isn’t new. It’s an important way to deliver services to people. But a lot about this is unprecedented, and I’m going to quickly highlight four ways that this really is breaking the mold in ways that we have to pay attention to. The first is that data is being accessed and consolidated without rigorous public accountability or oversight at all. Second is that we’re seeing this data being combined, accessed, and used to target and profile people. Third is that we’re seeing completely unprecedented misuses of data sets. The fourth is the lack of visibility into this, at the time of a significant erosion of the protections that have existed in agencies.
-Shane Tews: Daniel, as someone who’s been inside the government and helped manage some of these sensitive data sets before
-—
-particularly at the IRS, which handles some of our most personal information
-—
-can you break down what it’s actually like to share data between agencies?
-Daniel Werfel:
-It’s important to start with the construct that the law is set up so that the default for the IRS is, you are not allowed to share people’s taxpayer data outside this agency.  It’s so fundamental that there are people sitting in jail today who were inside the IRS and inappropriately accessed and shared taxpayer information. The law delineates a very narrow set of exceptions for where the IRS can share.
-Right now, the
-Internal Revenue Code is essentially being expanded administratively, not legislatively. The administration has made a determination—even though there’s nothing in the exceptions that say you can share taxpayer data outside the IRS for the purpose of immigration enforcement—that has never been used in this way.
-For this, historically, we would have certainly waited for an act of Congress before we did it, and historically demanded it be in the Internal Revenue Code.
+
+[Speaker: Shane Tews]
+Shane Tews: Daniel, as someone who’s been inside the government and helped manage some of these sensitive data sets before—particularly at the IRS, which handles some of our most personal information—can you break down what it’s actually like to share data between agencies?
+
+[Speaker: Daniel Werfel]
+Daniel Werfel: It’s important to start with the construct that the law is set up so that the default for the IRS is, you are not allowed to share people’s taxpayer data outside this agency. It’s so fundamental that there are people sitting in jail today who were inside the IRS and inappropriately accessed and shared taxpayer information. The law delineates a very narrow set of exceptions for where the IRS can share.
+
+[Speaker: Daniel Werfel]
+Right now, the Internal Revenue Code is essentially being expanded administratively, not legislatively. The administration has made a determination—even though there’s nothing in the exceptions that say you can share taxpayer data outside the IRS for the purpose of immigration enforcement—that has never been used in this way. For this, historically, we would have certainly waited for an act of Congress before we did it, and historically demanded it be in the Internal Revenue Code.
+
+[Speaker: Daniel Werfel]
 I think if we’re going to move into a world where we are co-mingling data, where we are unlocking the potential of data to reduce fraud and error—in some ways to reduce burden—we shouldn’t take a decade to decide it, but we also shouldn’t do it without public engagement. People like Alex should have the opportunity to stand up in public meetings, testify before Congress, and make sure everyone has a substantive understanding of what the risks are. If those risks are understood, then the federal agencies involved can put mitigators in place to address those risks. Right now, we’re moving so quickly that we don’t even understand the full nature of the risks, and nobody should have any confidence that we’re putting in mitigators if we don’t really understand the full extent of the risks.
+
+[Speaker: Shane Tews]
 Shane Tews: Courtney, I’d like to bring you into this conversation about Palantir’s role in the data consolidation. When I first read about these data sharing challenges, my reaction was actually that I would be more concerned about the government doing this than an outside entity like Palantir, since private companies have contractual obligations and rules they must follow. I love the idea of better, faster, smarter efficiency and the potential of AI to identify patterns that human analysis might miss.
+
+[Speaker: Shane Tews]
 I want secure systems, but I also want to leverage these powerful tools and some of what I’ve been reading doesn’t make sense to me. So let’s do some myth-busting here: Can you give us an understanding of what Palantir is actually working on with the federal government?
-Courtney Bowman
-: Palantir has been in the news lately around concerns about unauthorized or illegitimate data sharing across institutions. Just to clear the air on this topic, Palantir is not building a master list across federal agencies. We don’t have contracts with DOGE. We haven’t been asked to build this type of cross-agency information system.
+
+[Speaker: Courtney Bowman]
+Courtney Bowman: Palantir has been in the news lately around concerns about unauthorized or illegitimate data sharing across institutions. Just to clear the air on this topic, Palantir is not building a master list across federal agencies. We don’t have contracts with DOGE. We haven’t been asked to build this type of cross-agency information system.
+
+[Speaker: Courtney Bowman]
 The core of our work has been to work with individual institutions across the federal government and state agencies in various jurisdictions to help build the critical digital infrastructure to enable responsible use of information technologies. And some of the guiding principles that we think about relate to areas of fallacious thinking when it comes to how to deal with modern technology and modern data. We tend to come from a position of humility, that there aren’t simple solutions to hard problems at the intersection of law, policy, technology, ethics, norms, and that complex thinking has to be integrated into the ethos of the way that we operate as a business, and how we build information technologies.
-Initially, when the company was founded, we were working with the intelligence community in the wake of 9/11 to address gross deficiencies in information sharing that needed to take place, or should have taken place, to identify the threats of 9/11. But one of the things that prevented those intelligence agencies from achieving appropriate levels of information sharing was privacy concerns and the presumption that you couldn’t protect privacy for the sake of security– had to do one or the other. Our belief is that you have to reject that kind of false dichotomy and focus on optimizing technology solutions that achieve both of those objectives.
-You don’t necessarily need to pool all of the information in a centralized place. With a lot of the discourse and a lot of the reporting on Palantir’s work, those concepts tend to be grossly conflated to the detriment of the public discussions that we need to be having.
+
+[Speaker: Courtney Bowman]
+Initially, when the company was founded, we were working with the intelligence community in the wake of 9/11 to address gross deficiencies in information sharing that needed to take place, or should have taken place, to identify the threats of 9/11. But one of the things that prevented those intelligence agencies from achieving appropriate levels of information sharing was privacy concerns and the presumption that you couldn’t protect privacy for the sake of security– had to do one or the other. Our belief is that you have to reject that kind of false dichotomy and focus on optimizing technology solutions that achieve both of those objectives. You don’t necessarily need to pool all of the information in a centralized place. With a lot of the discourse and a lot of the reporting on Palantir’s work, those concepts tend to be grossly conflated to the detriment of the public discussions that we need to be having.
+
+[Speaker: Shane Tews]
 Shane Tews: In terms of clunky digital infrastructure, Kim, you’re dealing with 50 different states, each with its own way of managing information and all with different legal frameworks and ways of managing information. What are the specific challenges you face from a state perspective in managing voter data?
-Kim Wyman:
-Each state has a plethora of state laws and federal laws. Two specific federal laws, the National Voter Registration Act of 1993 and the Help America Vote Act of 2003, really do define how states can manage voter registration. And why this is important is that your voter registration record is what helps us get you the right ballot, so you are voting on the right candidates and issues that you are eligible to vote on based on your residence. And more importantly, it’s a way for us to validate that you only voted once. And even if you tried to vote more than once, only one ballot was counted in the election. These are fundamental building blocks of building a credible election.
+
+[Speaker: Kim Wyman]
+Kim Wyman: Each state has a plethora of state laws and federal laws. Two specific federal laws, the National Voter Registration Act of 1993 and the Help America Vote Act of 2003, really do define how states can manage voter registration. And why this is important is that your voter registration record is what helps us get you the right ballot, so you are voting on the right candidates and issues that you are eligible to vote on based on your residence. And more importantly, it’s a way for us to validate that you only voted once. And even if you tried to vote more than once, only one ballot was counted in the election. These are fundamental building blocks of building a credible election.
+
+[Speaker: Kim Wyman]
 Most people, I think, assume that we’re verifying all these things about you when you register to vote. For example, one of the requirements in all 50 states is that you are a US citizen. But we have no list, as election officials, to compare that to, because there is no list of US citizens. Now, there are a bunch of interrelated databases, the people who have gotten a passport, for example. So that seems like that would be really simple, right? If election officials had access to that list, then we could compare, and we would be done. The inherent problem with that is that only about half of the country has a passport and interestingly, it skews to blue states. I just threw that out not to be political, but this is the problem for election officials—this is always going to be politicized.
+
+[Speaker: Kim Wyman]
 The second tier of that is, there’s been a lot of talk in the last year or so of using the SAVE database, which is essentially a list of people who are here with legal presence. Again, it’s not a list of non-citizens who are here illegally. It is not an encompassing list of all US citizens. One of the efforts that the administration is working on right now is to pull the passport list and the Social Security data information on Social Security numbers with the SAVE database, to create a tool that election officials will be able to compare their list to. It is inherently problematic, partially because not everybody provides their Social Security number when they register to vote, among other issues. So, those are the issues and alarm bells that are being set off for me, as a former election official.
+
+[Speaker: Shane Tews]
 Shane Tews: We’ve established there’s a problem – people are concerned about information flow but often carelessly agree to data sharing–like clicking “yes” for a 10% discount. Courtney, you’re being asked to figure out how to legally share data between groups. Where do we need new rules and regulations to allow appropriate data commingling? The 1988 amendment uses outdated language that doesn’t reflect how we use technology today. What regulatory changes do we need to bridge the gap between current restrictions and actually leveraging technology’s power?
-Courtney Bowman:
-We need to draw distinctions between this sort of bogeyman, centralized data concept, and the notion of common, interoperable infrastructure that can include all the base layer security considerations and privacy protections. But it can also include also appropriate levels of access control, purpose justification, and sharing capability that enables authorized, legitimate data to be shared within institutions, and in limited cases, outside of institutions. That infrastructure exists. There are patterns for it. Obviously, I’m partisan on this issue. Palantir builds this. We’ve been building this for two decades. But there are other companies that do some similar aspects of this work. So the art of the possible is there. I do think we need to have robust conversations around these sorts of things. We should continue to have open dialog. We should continue to have opportunities to engage in public discussion and provide responses to RFIs.
-Alexandra Reeve Givens:
-To jump in here: it only works if people are following the rules and doing it with public visibility, public transparency and accountability. And that companies that implement these programs are following the rules with accountability as well. It doesn’t work if we take a wrecking ball to all of the existing laws and norms, to the oversight infrastructure that, again, was established by Congress and by long tradition to make sure that these programs are operating safely and well.
+
+[Speaker: Courtney Bowman]
+Courtney Bowman: We need to draw distinctions between this sort of bogeyman, centralized data concept, and the notion of common, interoperable infrastructure that can include all the base layer security considerations and privacy protections. But it can also include also appropriate levels of access control, purpose justification, and sharing capability that enables authorized, legitimate data to be shared within institutions, and in limited cases, outside of institutions. That infrastructure exists. There are patterns for it. Obviously, I’m partisan on this issue. Palantir builds this. We’ve been building this for two decades. But there are other companies that do some similar aspects of this work. So the art of the possible is there. I do think we need to have robust conversations around these sorts of things. We should continue to have open dialog. We should continue to have opportunities to engage in public discussion and provide responses to RFIs.
+
+[Speaker: Alexandra Reeve Givens]
+Alexandra Reeve Givens: To jump in here: it only works if people are following the rules and doing it with public visibility, public transparency and accountability. And that companies that implement these programs are following the rules with accountability as well. It doesn’t work if we take a wrecking ball to all of the existing laws and norms, to the oversight infrastructure that, again, was established by Congress and by long tradition to make sure that these programs are operating safely and well.
+
+[Speaker: Alexandra Reeve Givens]
 Through CDT, we are invested in helping governments deliver services better. We have an entire part of our organization that does that. But it only works if the people actually trust that that infrastructure is going to deliver and work for them, and not be politicized and weaponized. And in this moment when these systems are consciously, verbally, intentionally being weaponized, we need more scrutiny than ever before. So I do hope that one of the takeaways from this is that folks need to be paying attention. It is really easy to get overwhelmed by the newspaper articles, by different leaks and different stories. We kind of get tired and pull back, but actually we need to be looking even closer to make this a public conversation that folks have been talking about unanimously on the panel today.

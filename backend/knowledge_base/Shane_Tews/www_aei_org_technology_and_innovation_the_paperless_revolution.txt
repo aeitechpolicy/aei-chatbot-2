@@ -1,26 +1,59 @@
 PAGE_TITLE: 
-	The Paperless Revolution | American Enterprise Institute - AEI
+	The Paperless Revolution
 
+[Speaker: Introduction / editorial context]
 In our age of rapid technological advancement, many businesses and government agencies still rely on inefficient, error-prone paper forms for data collection. How can we bring these outdated paper-based workflows into the digital age in order to drive meaningful progress? What are the consequences of keeping critical systems tethered to paper forms?
+
+[Speaker: Introduction / editorial context]
 To examine the transformative potential of digitizing paperwork, I spoke with Scott Wyatt, founder and CEO of FormEngine. Scott pioneers efforts to modernize inefficient business and government workflows and envisions a more connected future between individuals, businesses, and public services.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: It’s amazing that the work you’re doing hasn’t been done before because it’s so commonsensical. So, tell us about Form Engine and the amazing things that it does, because I’m awed by it.
+
+[Speaker: Scott Wyatt]
 Scott Wyatt:We recently patented our Form Engine software, which is speeding up business and government by automating the form and document transactions. That affects most of us. Form-based transactions and documents drive business and government and that’s not going to change, but we invented a way to greatly improve the system for everyone involved. While modern business runs increasingly on cloud-source systems, there are also countless forms in the business world that are still in old PC file formats like PDFs, Microsoft Word, and paper. Source systems can’t talk to those volumes of personal computer-era files and e-signature tools like DocuSign only solve a small part of the problem. That’s a costly disconnect.
+
+[Speaker: Scott Wyatt]
 For all of us, filling out all the required forms in our lives is painful and error prone. For business and government, the volumes of these PC file forms and documents have to be handled and processed into their source systems before they can deliver any service or get business done. It’s a slow and costly part of business. Form Engine turns today’s PDF, Microsoft Word, and paper files into digital source system forms and assets by enabling all this work to be done in the source system, instead of outside them and try to integrate them back in.
+
+[Speaker: Scott Wyatt]
 Give us an example of how this is going to make our lives so much easier. The example I think of is the doctor’s office. Why do I have to fill the same form out every time I go? That’s just a drop in the bucket compared filling out and compiling government forms. I would think the whole transfer also would be a huge failure in the system because the ability to inadvertently transpose data and have to redo that process must be its own economic cost on the system as well.
+
+[Speaker: Scott Wyatt]
 It’s an ugly system today. You mentioned the doctor’s office. At the office, there are multiple forms to fill out. They might be in paper today, they might even be on your laptop, or your iPad and it would still be an ugly process. Same thing with onboarding new employees or a new customer or even a new vendor. The same goes for any service that you want to request from the government. . . your city, county, state, federal government. There’s hundreds, thousands of PDFs and Word forms that you have to download. Some of them are fillable, some of them are not. You may have to print them if they need signatures and then you sign them and scan them.
+
+[Speaker: Scott Wyatt]
 Instead, we convert all those offline forms into digital source system forms. That means that the fields are real source system fields with those correct choices, field validation, and prefilled in some cases. Let’s say you fill out the first of three or four forms at the doctor’s office and you started with a blank form, the next forms should be prefilled with all the information.
+
+[Speaker: Scott Wyatt]
 Since we’re dealing with and interacting with pure source system data, we are pre filling the rest of the forms from the input into the first form. Your forms should be prefilled with the correct information so you can just update and correct anything that’s changed, add anything that’s needed, and just hit the submit button.
+
+[Speaker: Shane Tews]
 The source system is the entity looking for the data, so is there an ID validation on the front end? Does the system identify you to make sure that you are who you say you are as you’re filling out this document?
+
+[Speaker: Scott Wyatt]
 It does. When I say source system, I mean whatever the doctor, or the business, or the government is using on the back end. They could have Oracle, they could have Salesforce, they could haveother source systems. We can’t work with absolutely everything that’s out there, but we are built to integrate with those systems.
+
+[Speaker: Scott Wyatt]
 Authentication is important because these are secure systems. That’s one of the things that we have to solve and broach. That can be personal authentication or the form can be pre-authenticated when the link is sent to you—let’s say, the link can only be used once—things like that. We build out protection and data security in the system, but also give users access to do what they need to do with that form or document.
+
+[Speaker: Shane Tews]
 There must be a genesis story behind this of a very frustrating moment behind this. How did this get started?
+
+[Speaker: Scott Wyatt]
 A few years ago, we had a couple of one-off cases, where clients were trying to solve this issue, and were writing code, or were building a solution to it. Clients would ask us to automate some of these forms—they pointed to a whole handful of PDF forms and said, “When we onboard new customers, they have to fill out all these forms. It can take days or weeks. We lose customers and we lose revenue, in the process, but this is what we have to do even though it’s costly and it’s painful.” We set off to think about how we would do that.
+
+[Speaker: Scott Wyatt]
 We were doing this in one off cases. But, I thought there could be something bigger here. We had looked around for some software that could do it and we could plug in, but nobody else was doing this. It’s not an e-signature tool, it’s not a DocuSign, it’s not an e-form builder tool. This is a different animal. So we just . . . really, we worked on it, and invested in it, and have developed it over the past, say, four or five years. Took us that long to get the patent anyway.
+
+[Speaker: Shane Tews]
 Am I always going to be filling out these large forms? The government already knows so much about me, so if I’ve used my digital ID to get into the system, can they can then transpose or transform some of that information into the system?
+
+[Speaker: Scott Wyatt]
 That depends on them. There are constraints, but there’s also opportunity in them sharing. Blockchain, for example, is a shared system—a secure shared system. There are other ways to get there, but before we get to this blockchain-enabled future, they’ll likely share the systems and the data the way that they want to. Ideally, it would go across government entities, so whatever you tell the federal government, the state government, your county, and your city would also know. In this case, absolutely they should be giving you a prefilled form with everything you submitted last year, from their source system, or that they know from another source that they’re legally allowed to know—because there are some legal issues there of sharing. Then you would say, that all looks right, hit your signature, hit go, and you’re done. You could abstract it up to voice input, or something like that. We can do a level of voice completion of forms, and some people really need that for ADA reasons. It’s an incremental improvement.
+
+[Speaker: Scott Wyatt]
 The data they have to capture, that you have to present, or that is presented to you isn’t going away. The formatted output that is required for all of those things have to be accommodated. You can’t just wish them away or believe that somehow they’re going to go away. They’re not. But, we can deal with them much better now.

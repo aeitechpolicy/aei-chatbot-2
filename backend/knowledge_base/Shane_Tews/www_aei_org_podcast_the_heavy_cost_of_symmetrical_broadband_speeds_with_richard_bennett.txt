@@ -1,11 +1,14 @@
 PAGE_TITLE: 
-	The Heavy Cost of Symmetrical Broadband Speeds (with Richard Bennett) | American Enterprise Institute - AEI
+	The Heavy Cost of Symmetrical Broadband Speeds (with Richard Bennett)
 
+[Speaker: Introduction / editorial context]
 As the pandemic has shifted work, education, and entertainment online, there is a growing appetite in Washington to enhance broadband access across the country. However, some members of Congress and the current administration have advocated for ramping up broadband speeds to a symmetrical 100 megabits per second both upstream and downstream (known as 100/100). Where is the push for this new standard coming from, and what would it mean for the average consumer?
-Richard Bennett
-, founder of
-High Tech Forum
-and a co-creator of Wi-Fi, returns to the podcast to explain how 100/100 would burden consumers and fail to connect more Americans to the internet. He and
-Shane
-discuss Joe Biden’s infrastructure plan, the digital divide, and more on this episode of “Explain to Shane.”
+
+[Speaker: Introduction / editorial context]
+Richard Bennett, founder of High Tech Forum and a co-creator of Wi-Fi, returns to the podcast to explain how 100/100 would burden consumers and fail to connect more Americans to the internet. He and Shane discuss Joe Biden’s infrastructure plan, the digital divide, and more on this episode of “Explain to Shane.”
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

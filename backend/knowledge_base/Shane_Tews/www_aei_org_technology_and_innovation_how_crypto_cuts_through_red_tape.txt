@@ -1,28 +1,65 @@
 PAGE_TITLE: 
-	How Crypto Cuts Through Red Tape | American Enterprise Institute - AEI
+	How Crypto Cuts Through Red Tape
 
+[Speaker: Introduction / editorial context]
 Blockchain technology has revolutionized global finance, playing a crucial role in bypassing traditional intermediaries to facilitate humanitarian aid in conflict zones like Ukraine. This financial transformation paves the way for a more inclusive and transparent global ecosystem, offering new opportunities for the unbanked, underbanked, and displaced populations.
+
+[Speaker: Introduction / editorial context]
 Below are the highlights of my conversation with Candace Kelly, Chief Legal Officer of the Stellar Development Foundation, the non-profit organization supporting the growth of the Stellar network. She leads SDF’s legal and policy teams, focusing on bridging the gap between the public and private sectors. Prior to joining SDF, Candace held various positions at Uber, and she brings 17 years of experience from the U.S. Department of Justice, where she worked on national security, criminal, and civil rights issues.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: I want to talk about your company, Stellar, and about your recent visit to the IMF talking about what’s going on with Ukraine. But let’s start with what is Stellar? What are y’all doing over there?
+
+[Speaker: Candace Kelly]
 Candace Kelly: We like to use Stellar to refer to this blockchain network. It’s an open, decentralized public network. And the Stellar Development Foundation, which is where I am an employee, is a nonprofit where we pay our taxes. We’re not a charity. But, we’re helping to support the growth and development of that ecosystem growing on the blockchain. We shepherd the codebase, and we make grants to folks who are going to join the ecosystem and build an ecosystem to get a seed and start getting them up and running.
+
+[Speaker: Candace Kelly]
 As the head of legal and policy, we do a lot of work with regulators and policymakers, trying to make sure that we speak not only for the Stellar ecosystem but that we think more broadly about the industry. The crypto industry and the blockchain industry are varied but still really small. So, I always caution against us trying to be too self-interested in the various different ecosystems. We should be interoperable. We should pick the right tool and the right ecosystem for the right challenge.
+
+[Speaker: Candace Kelly]
 Using a SWIFT system is so important to moving money, but it means that everybody gets a dip on those funds. When you look at the investment in the entire financial ecosystem, you realize a lot of why there’s so much challenge in the blockchain transom is because of the people that you are basically sidestepping in the current system. Talk to us about how you’re managing kind of the policy and politics around those issues.
+
+[Speaker: Candace Kelly]
 Bitcoin came in to supplant or be a separate system from the traditional banking system. The Stellar Network is not intended to be that. The Stellar Network is intended to augment and interoperate with the traditional system, to make it better and more efficient, and to remove some of those intermediaries that don’t need to be in the flow. And what we care a lot about is creating more access for people who have been excluded from the banking system.
+
+[Speaker: Candace Kelly]
 I mean, I was a federal prosecutor. I worked in national security. I was doing all of that during 9/11. And I recognize now that the pendulum swung pretty far towards protecting against counterterrorism. The unintended consequence of that is that a lot of people have been excluded from traditional banking that really, they don’t present a risk. These people are mostly unbanked or underbanked. There are some people who are in the system, but they still don’t trust it or the minimums are too high or the fees are too high.
+
+[Speaker: Candace Kelly]
 Probably the biggest player in the Stellar Network right now is MoneyGram, which is a competitor to Western Union. MoneyGram saw an opportunity to say, you know what, if we can reach a different population, maybe some of those people are the same folks who are walking in with cash and using MoneyGram rails to send remittances back home. MoneyGram is now in 180 countries. At those locations, people can take cash and convert it into USDC, so, a US dollar-backed stable coin, and then send it, in most cases, to an individual’s self-hosted wallet. At that point, the individual can send it to their family member in, let’s pick Mexico. There are no intermediaries at this point because it’s a peer-to-peer transaction, self-hosted wallet to self-hosted wallet. Then the person who receives it in Mexico walks into their local MoneyGram and they cash out in pesos.
+
+[Speaker: Candace Kelly]
 So, some people are going to use it for that very use case that I described. But some people are going to use it because they want to get into the digital economy. And they don’t have a bank account and they don’t have a credit card to be able to access some of the other services and products that are out there in the digital world. So, MoneyGram is really a revolutionary mover in the space of creating that access, those on and off ramps. And that is what we’ve leveraged for some of the work that we’ve done in Ukraine and in humanitarian aid, was using the MoneyGram.
+
+[Speaker: Shane Tews]
 Everybody likes a good use case, so let’s talk about Ukraine. What are you doing there?
+
+[Speaker: Candace Kelly]
 The Stellar Network and all the work we do is open source – it’s open, it’s public, and it’s transparent to the world. So, the war in Ukraine started and the treasurer at the UN High Commission for Refugees saw this MoneyGram on and off ramp solution. And she said, “Oh, this would solve a lot of problems for me distributing aid to internally displaced Ukrainians.” So, she reached out to us. I’m going to give her full credit. We helped to work with the UNHCR, MoneyGram, and a self-hosted wallet to create this flow of funds and we added a tool, which is a bulk disbursement tool called the Stellar Disbursement Platform, which we have also open sourced. It can be used by anybody. But for Ukraine, if you’re trying to reach a lot of internally displaced folks and you think about what the UN had to do, they have to bring them cash. And there’s a war going on. So, they are bringing humans to a central location to hand out cash during certain hours.
+
+[Speaker: Shane Tews]
 To collect the money, do people create their own unique identifier? Is that a part of your system?
+
+[Speaker: Candace Kelly]
 Yes, they have an identifier, but they’re just building all of this on the open network. So, an individual gets cleared by UNHCR, then they receive a text message on their phone. It says download this app. They download the app. And then the UNHCR has this bulk disbursement tool, so they can upload thousands of identifiers and wallet addresses. And with like a push of a button, they disperse it.
+
+[Speaker: Candace Kelly]
 We were very engaged to try and make sure that it worked, and we could help them navigate through. At this point, fast-forwarding to today, it’s working, and we are not really involved. Which is exactly how we want it to operate. We obviously care a lot. And so, to the extent there are any issues, or we want to try and add anything, we’re in close communication with UNHCR. You can imagine they were super careful because this is not something you want to get wrong. But there were people literally sitting in bunkers who were receiving these funds.
+
+[Speaker: Candace Kelly]
 So, they receive the money in US dollar-backed tokens. And then whenever, 24/7, they can receive it at any time. They don’t have to go out and risk their lives and become a target. In Ukraine, there’s actually a very high rate of people having bank accounts, so MoneyGram can either do an ACH wire into their bank account and it will show up in hryvnia, the local currency, or they can walk into a MoneyGram location and get actual cash. Or they can hold it. We have other instances where the same type of flow of funds, if you’re in Argentina or somewhere where inflation is a serious problem on an hourly basis, you can hold your funds in dollars and only cash out into pesos when you need it and when the rates are good and things like that.
+
+[Speaker: Candace Kelly]
 Over $2 million have been distributed that way. And I think we always tell the story, and we focus on that end user. What was really interesting for us working so closely with the UNHCR is how important it is to have that transparency of the open public blockchain ledger to be able to convince donors that it’s safe to send your money through this channel.
+
+[Speaker: Shane Tews]
 One of the biggest challenges that crypto has is that it’s just so easy to transfer funds into the unknown. You know, in theory it’s transparent because it’s on the blockchain… you should know where all that went. But there are tricks of the trade that allow you to obfuscate where the funds went. Do you have a concern about that?
+
+[Speaker: Candace Kelly]
 Yes. And as you said, I mean, I was a national security prosecutor for many years. And so, I think illicit financing it’s an issue in all financial systems, not just in blockchain. I think there has been a lot of kind of high-profile headlines and cases that have highlighted some of the issues. What I start with is that blockchain itself has never been lost. It’s not the blockchain networks, name any of them out there, the consensus protocols, or the cryptography that has been breached. It’s the products and services that are built on top of it. And so, I do think that there is more to be done in that in terms of security.
+
+[Speaker: Candace Kelly]
 But in terms of illicit finance, that again is why it’s really important for us to interoperate with the traditional system and to make sure that even if it’s not traditional, it’s a regulated entity. And if all of those entities really complied with their BSA and used at least the equivalent systems in other parts of the world, I think the amount of fraud and the amount of illicit finance would drop dramatically. But again, if you actually look at the numbers with Chainalysis’s reports, it’s well under 1 percent of blockchain and crypto activity that is involved with illicit finance.

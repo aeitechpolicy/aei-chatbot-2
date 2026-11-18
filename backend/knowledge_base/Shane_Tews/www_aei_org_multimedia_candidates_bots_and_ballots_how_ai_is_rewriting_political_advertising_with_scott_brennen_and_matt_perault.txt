@@ -1,13 +1,8 @@
 PAGE_TITLE: 
-	Candidates, Bots, and Ballots: How AI Is Rewriting Political Advertising (with Scott Brennen and Matt Perault) | American Enterprise Institute - AEI
+	Candidates, Bots, and Ballots: How AI Is Rewriting Political Advertising (with Scott Brennen and Matt Perault)
 
+[Speaker: Introduction / editorial context]
 Generative AI poses new challenges for political campaigning and our democracy as we head towards the 2024 presidential election. While this technology could streamline political messaging, there is greater fear that it could enable widespread manipulation and distortion of the democratic process. Heading into a contentious election, how can we assess and mitigate harms from AI-generated disinformation? How will the use of generative AI be different than prior “cheap fake” attempts? How should policymakers prepare for and respond to the use of AI in political advertising?
-On this episode,
-Shane
-is joined by
-Scott Brennen
-and
-Matt Perault
-, co-authors of “
-The new political ad machine: Policy frameworks for political ads in an age of AI
-.” They discuss how generative AI is transforming campaigning and address constituents’ pressing concerns around the technology including AI-manipulation risks, synthetic media transparency, and evolving regulations for political advertising.
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by Scott Brennen and Matt Perault, co-authors of “The new political ad machine: Policy frameworks for political ads in an age of AI.” They discuss how generative AI is transforming campaigning and address constituents’ pressing concerns around the technology including AI-manipulation risks, synthetic media transparency, and evolving regulations for political advertising.

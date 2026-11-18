@@ -1,166 +1,74 @@
 PAGE_TITLE: 
-	How Congress Could Make Your Smartphone Less Secure: Highlights from My Conversation with Patrick Hedger | American Enterprise Institute - AEI
+	How Congress Could Make Your Smartphone Less Secure: Highlights from My Conversation with Patrick Hedger
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Congress is currently
-taking steps to weaken the security of your mobile device by forcing
-application (app) store operators to allow “sideloading”—the unvetted
-downloading of any app or software from the open internet—which could give bad
-actors a fast lane to your personal data and information. Beyond security,
-letting online platforms retain control over their digital marketplaces is crucial
-as both a physical and information war rages on in Ukraine. Why is Congress
-considering this legislation, and why now?
-To help make
-sense of the sideloading and app security issues,
-Patrick
-Hedger
-, executive director of the
-Taxpayers
-Protection Alliance
-(TPA), joined the latest episode of “Explain to
-Shane.” We discussed Congress’ app store regulatory proposals, along with a new
-TPA initiative called the
-App Security Project
-.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Patrick, let’s get started with
-a quick overview of the Open App Markets Act, which is currently under
-consideration in Congress. The bill, if it became law, would demand that tech
-companies lower their guard on security by making all software eligible for
-downloading, possibly omitting the key step of human vetting for app stores.
-What’s going on here?
-Patrick
-Hedger: You’re exactly right. And while we’re talking about omitting key steps,
-this legislation was passed out of the Senate Judiciary Committee without an
-official legislative hearing. They’re trying to claim some of these antitrust
-hearings counted as legislative hearings, but that’s just not the case. It went
-straight to a markup and was voted out of committee without any vetting or
-consideration of some serious cybersecurity concerns.
-The bill
-would effectively turn your smart device into something more akin to an old
-laptop, on which you could download almost anything from the open web. Some
-people like that, but for the most part, people just need their smartphones to
-work regularly and reliably. Increasingly, a smart device is becoming the one
-thing people leave their house with. It’s your house keys, car keys, credit
-card, and your personal identification in some states. Given this, why are we
-shifting the burden of protecting cybersecurity from trillion-dollar tech
-companies onto consumers who rely on these devices every day? I think it’s
-adding an unnecessary step when folks have already signaled that they like their
-devices as-is.
-Apple entered a busy market with a more
-closed device that gave people a sense of security and was almost foolproof.
-You can go into the app store, download an app, and not have to look into the
-background of the app developer because you know Apple has vetted them and that
-they’ve met a certain bare minimum of standards. Trying to get rid of that now,
-I think, is grossly misguided. The White House recently said, “Shields up;
-Russia is getting desperate. They’re looking for ways to put pressure on us
-through cyberattacks.” They’ve effectively told businesses, “Use everything at
-your disposal to increase cybersecurity.” Simultaneously, you have allies of
-the president in Congress basically trying to outlaw one of the key
-cybersecurity measures that companies can deploy right now.
-You
-started a new organization to specifically address these issues. Tell us about
-that.
-At the Taxpayers Protection Alliance, we
-started the App Security Project, which felt natural because we’re a taxpayer
-and consumer watchdog organization. I don’t think a lot of people understand
-the threat to both their devices and expectations around their devices that
-this kind of legislation poses.
-I think, right now, we have almost a tyranny
-of experts. You have very tech-savvy folks who like a more open ecosystem. That’s
-great for them; that’s a tradeoff they can make. But the average consumer isn’t
-looking to build their own computer in their basement and have the most open
-system. They just need something that works for them on a day-to-day basis. I
-think there’s a real disconnect there.
-What are the specific problems and concerns
-with sideloading?
-Sideloading
-essentially allows devices to run software that hasn’t first gone through a
-vetting process such as Apple’s with its e-marketplace. You can’t actually go
-into a browser on your iPhone right now, download any software, and run it on
-the phone. It has to come through the app store, which has a vetting process in
-place.
-Sideloading
-basically allows developers to go around the app store and circumvent this
-vetting process. There are several reasons why they want to do that; the main
-one is to essentially bypass Apple’s payment system. That’s putting more money
-into the hands of big videogame developers and other similar entities. But
-there are systems out there that do allow some sideloading. The Android
-ecosystem, which is more open, allows sideloading which, again, is just
-downloading software directly from the open web.
-But there’s
-a tradeoff there. You have access to more applications and potential software
-to run on your smart device if you have an Android. But at the same time, the
-data show that Androids are somewhere in the double-digits-times more likely to
-be infected with malware than an Apple device. And that’s not necessarily a bad
-thing because, again, you get more access. If you’re more tech-savvy and you
-know what you’re looking for, an Android device might be better for you. But if
-you’re just kind of the average consumer or you’re looking for a device to buy
-your elderly parent that you know is reliable for them, you may favor a more
-closed ecosystem that’s foolproof like Apple’s.
-What this
-legislation unfortunately does, under the guise of creating more choice through
-sideloading, is reduce choice at the hardware and operating system levels by limiting
-consumers’ ability to decide between a closed, foolproof system and a more open
-ecosystem that allows sideloading.
-This gets to the idea of a company “self-preferencing”
-its own products, which the lawmakers behind these bills are essentially trying
-to outlaw. But this is just in the digital world. What’s going to happen next
-time I go to the grocery store and want to buy a generic-brand product?
-Exactly. I
-think more rules, regulations, and legislation need to be neutral to the market
-as a whole.  Everybody likes Costco’s
-generic Kirkland brand. If it’s okay for them to self-preference their products
-and offer them at a lower price or in a more favorable store location, there’s
-no reason why tech companies shouldn’t be able to do the same. I think that’s
-just a question of basic fairness.
-That also
-gets to the question of why members of Congress would be pursuing antitrust legislation
-that has all of these really clear cybersecurity holes and threats. Why is
-there this rush? I think it’s because they don’t want to stop at the tech
-sector. The tech sector presents the first case where you’ve got Republicans
-and Democrats really mad at the same sector for a lot of different reasons, so
-there’s this political appetite to take a bite out of those companies. But the
-long game is interesting. And we’ve already seen this—the Democrats have kind
-of played their hand with some new legislation they’ve introduced that would
-basically prohibit any merger larger than $5 billion. And it’s retroactive to the
-year 2000, I think. That shows you the direction Democrats want to go. (There
-are Republican co-sponsors, though, who are giving these bills traction.)
-There’s the
-other problem too with arbitrary size thresholds, which is that they are kind
-of moving targets. But that self-preferencing that goes on elsewhere in the
-economy is the next target. Silicon Valley to me just seems like the proving
-ground for where folks want to take antitrust law. And they’ve said as much. I
-mean, you’ve got Sen. Amy Klobuchar (D-MN) openly saying that it’s “everything
-from caskets to cat food.” To me, the fact that those are such obscure examples
-shows there isn’t that much concentration in the market. And Sen. Tom Cotton
-(R-AR) is a co-sponsor of the aforementioned mergers bill with her.
-But I
-digress. They’re looking to use antitrust as a hammer to go after every last
-sector that’s politically disfavored from Big Pharma to Big Agriculture to any
-sort of sector that catches political ire if bills like this—which inherently
-weaken our understanding of antitrust—move forward.
-There are
-all sorts of problems with the legislation I mentioned regarding mergers, not
-least of which is: It seems to pretty explicitly carve out Arkansas-based
-Walmart and Minnesota-based Target, among other major retailers. But what’s
-funny is that this market is so dynamic with these companies coming and going
-that Facebook (Meta now) over the course of less than a month went from being
-covered by that legislation with a $600 billion market cap threshold to no
-longer being covered based on a drop in their market value. And a lot of that
-drop actually has to do with privacy-enhancing systems that Apple was free to
-put in place but would be outlawed by other antitrust legislation that we see.
-Ironically, the same senators probably like those changes Apple made despite
-their attempts to effectively outlaw them going forward.
-How can we follow along with the work
-you’re doing?
-Protectingtaxpayers.org
-is the website of the Taxpayers Protection Alliance Foundation. The website for our project specific to these issues, the App Security Project, is
-appsecurityproject.org
-.
+
+[Speaker: Introduction / editorial context]
+Congress is currently taking steps to weaken the security of your mobile device by forcing application (app) store operators to allow “sideloading”—the unvetted downloading of any app or software from the open internet—which could give bad actors a fast lane to your personal data and information. Beyond security, letting online platforms retain control over their digital marketplaces is crucial as both a physical and information war rages on in Ukraine. Why is Congress considering this legislation, and why now?
+
+[Speaker: Introduction / editorial context]
+To help make sense of the sideloading and app security issues, Patrick Hedger, executive director of the Taxpayers Protection Alliance (TPA), joined the latest episode of “Explain to Shane.” We discussed Congress’ app store regulatory proposals, along with a new TPA initiative called the App Security Project.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Patrick, let’s get started with a quick overview of the Open App Markets Act, which is currently under consideration in Congress. The bill, if it became law, would demand that tech companies lower their guard on security by making all software eligible for downloading, possibly omitting the key step of human vetting for app stores. What’s going on here?
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: You’re exactly right. And while we’re talking about omitting key steps, this legislation was passed out of the Senate Judiciary Committee without an official legislative hearing. They’re trying to claim some of these antitrust hearings counted as legislative hearings, but that’s just not the case. It went straight to a markup and was voted out of committee without any vetting or consideration of some serious cybersecurity concerns.
+
+[Speaker: Patrick Hedger]
+The bill would effectively turn your smart device into something more akin to an old laptop, on which you could download almost anything from the open web. Some people like that, but for the most part, people just need their smartphones to work regularly and reliably. Increasingly, a smart device is becoming the one thing people leave their house with. It’s your house keys, car keys, credit card, and your personal identification in some states. Given this, why are we shifting the burden of protecting cybersecurity from trillion-dollar tech companies onto consumers who rely on these devices every day? I think it’s adding an unnecessary step when folks have already signaled that they like their devices as-is.
+
+[Speaker: Patrick Hedger]
+Apple entered a busy market with a more closed device that gave people a sense of security and was almost foolproof. You can go into the app store, download an app, and not have to look into the background of the app developer because you know Apple has vetted them and that they’ve met a certain bare minimum of standards. Trying to get rid of that now, I think, is grossly misguided. The White House recently said, “Shields up; Russia is getting desperate. They’re looking for ways to put pressure on us through cyberattacks.” They’ve effectively told businesses, “Use everything at your disposal to increase cybersecurity.” Simultaneously, you have allies of the president in Congress basically trying to outlaw one of the key cybersecurity measures that companies can deploy right now.
+
+[Speaker: Patrick Hedger]
+You started a new organization to specifically address these issues. Tell us about that.
+
+[Speaker: Patrick Hedger]
+At the Taxpayers Protection Alliance, we started the App Security Project, which felt natural because we’re a taxpayer and consumer watchdog organization. I don’t think a lot of people understand the threat to both their devices and expectations around their devices that this kind of legislation poses.
+
+[Speaker: Patrick Hedger]
+I think, right now, we have almost a tyranny of experts. You have very tech-savvy folks who like a more open ecosystem. That’s great for them; that’s a tradeoff they can make. But the average consumer isn’t looking to build their own computer in their basement and have the most open system. They just need something that works for them on a day-to-day basis. I think there’s a real disconnect there.
+
+[Speaker: Shane Tews]
+What are the specific problems and concerns with sideloading?
+
+[Speaker: Patrick Hedger]
+Sideloading essentially allows devices to run software that hasn’t first gone through a vetting process such as Apple’s with its e-marketplace. You can’t actually go into a browser on your iPhone right now, download any software, and run it on the phone. It has to come through the app store, which has a vetting process in place.
+
+[Speaker: Patrick Hedger]
+Sideloading basically allows developers to go around the app store and circumvent this vetting process. There are several reasons why they want to do that; the main one is to essentially bypass Apple’s payment system. That’s putting more money into the hands of big videogame developers and other similar entities. But there are systems out there that do allow some sideloading. The Android ecosystem, which is more open, allows sideloading which, again, is just downloading software directly from the open web.
+
+[Speaker: Patrick Hedger]
+But there’s a tradeoff there. You have access to more applications and potential software to run on your smart device if you have an Android. But at the same time, the data show that Androids are somewhere in the double-digits-times more likely to be infected with malware than an Apple device. And that’s not necessarily a bad thing because, again, you get more access. If you’re more tech-savvy and you know what you’re looking for, an Android device might be better for you. But if you’re just kind of the average consumer or you’re looking for a device to buy your elderly parent that you know is reliable for them, you may favor a more closed ecosystem that’s foolproof like Apple’s.
+
+[Speaker: Patrick Hedger]
+What this legislation unfortunately does, under the guise of creating more choice through sideloading, is reduce choice at the hardware and operating system levels by limiting consumers’ ability to decide between a closed, foolproof system and a more open ecosystem that allows sideloading.
+
+[Speaker: Shane Tews]
+This gets to the idea of a company “self-preferencing” its own products, which the lawmakers behind these bills are essentially trying to outlaw. But this is just in the digital world. What’s going to happen next time I go to the grocery store and want to buy a generic-brand product?
+
+[Speaker: Patrick Hedger]
+Exactly. I think more rules, regulations, and legislation need to be neutral to the market as a whole. Everybody likes Costco’s generic Kirkland brand. If it’s okay for them to self-preference their products and offer them at a lower price or in a more favorable store location, there’s no reason why tech companies shouldn’t be able to do the same. I think that’s just a question of basic fairness.
+
+[Speaker: Patrick Hedger]
+That also gets to the question of why members of Congress would be pursuing antitrust legislation that has all of these really clear cybersecurity holes and threats. Why is there this rush? I think it’s because they don’t want to stop at the tech sector. The tech sector presents the first case where you’ve got Republicans and Democrats really mad at the same sector for a lot of different reasons, so there’s this political appetite to take a bite out of those companies. But the long game is interesting. And we’ve already seen this—the Democrats have kind of played their hand with some new legislation they’ve introduced that would basically prohibit any merger larger than $5 billion. And it’s retroactive to the year 2000, I think. That shows you the direction Democrats want to go. (There are Republican co-sponsors, though, who are giving these bills traction.)
+
+[Speaker: Patrick Hedger]
+There’s the other problem too with arbitrary size thresholds, which is that they are kind of moving targets. But that self-preferencing that goes on elsewhere in the economy is the next target. Silicon Valley to me just seems like the proving ground for where folks want to take antitrust law. And they’ve said as much. I mean, you’ve got Sen. Amy Klobuchar (D-MN) openly saying that it’s “everything from caskets to cat food.” To me, the fact that those are such obscure examples shows there isn’t that much concentration in the market. And Sen. Tom Cotton (R-AR) is a co-sponsor of the aforementioned mergers bill with her.
+
+[Speaker: Patrick Hedger]
+But I digress. They’re looking to use antitrust as a hammer to go after every last sector that’s politically disfavored from Big Pharma to Big Agriculture to any sort of sector that catches political ire if bills like this—which inherently weaken our understanding of antitrust—move forward.
+
+[Speaker: Patrick Hedger]
+There are all sorts of problems with the legislation I mentioned regarding mergers, not least of which is: It seems to pretty explicitly carve out Arkansas-based Walmart and Minnesota-based Target, among other major retailers. But what’s funny is that this market is so dynamic with these companies coming and going that Facebook (Meta now) over the course of less than a month went from being covered by that legislation with a $600 billion market cap threshold to no longer being covered based on a drop in their market value. And a lot of that drop actually has to do with privacy-enhancing systems that Apple was free to put in place but would be outlawed by other antitrust legislation that we see. Ironically, the same senators probably like those changes Apple made despite their attempts to effectively outlaw them going forward.
+
+[Speaker: Shane Tews]
+How can we follow along with the work you’re doing?
+
+[Speaker: Patrick Hedger]
+Protectingtaxpayers.org is the website of the Taxpayers Protection Alliance Foundation. The website for our project specific to these issues, the App Security Project, is appsecurityproject.org.

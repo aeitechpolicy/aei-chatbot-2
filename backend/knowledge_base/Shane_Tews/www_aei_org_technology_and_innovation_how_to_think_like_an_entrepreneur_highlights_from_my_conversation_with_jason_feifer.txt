@@ -1,58 +1,77 @@
 PAGE_TITLE: 
-	How to Think Like an Entrepreneur: Highlights from My Conversation with Jason Feifer | American Enterprise Institute - AEI
+	How to Think Like an Entrepreneur: Highlights from My Conversation with Jason Feifer
 
+[Speaker: Introduction / editorial context]
 I love a good “life hack.” Whether it’s an organizational app, a new productivity strategy, or a novel way to use technology, everyone could use new ways to be more efficient.
-With this in mind, I recently hosted
-Jason Feifer
-on
-Explain to Shane
-to hear the life hacks that a startup and entrepreneurship expert would recommend. Jason is the editor in chief of
-Entrepreneur Magazine
-, a
-podcast host
-, keynote speaker, startup adviser, and the author of an upcoming
-book
-titled
-Build for Tomorrow: An Action Plan for Embracing Change, Adapting Fast, and Future-Proofing Your Career
-(releasing September 6).
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+With this in mind, I recently hosted Jason Feifer on Explain to Shane to hear the life hacks that a startup and entrepreneurship expert would recommend. Jason is the editor in chief of Entrepreneur Magazine, a podcast host, keynote speaker, startup adviser, and the author of an upcoming book titled Build for Tomorrow: An Action Plan for Embracing Change, Adapting Fast, and Future-Proofing Your Career (releasing September 6).
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: On one of your podcasts recently, you talked about the importance of making people in Congress better informed, using the example of Sen. Richard Blumenthal (D-CT) talking about “finsta” in a hearing. Can you recap your thoughts on this for our listeners?
+
+[Speaker: Jason Feifer]
 Jason Feifer: When we simplify problems, we inhibit our ability to come up with meaningful solutions. Blumenthal says this silly thing to a Facebook executive where he asks if Facebook (which owns Instagram) will commit to ending finsta, and they have this awkward exchange because it seems he doesn’t have any idea what finsta is. And she’s very delicately trying to explain that it’s not something Facebook can end because it’s just a user behavior.
+
+[Speaker: Jason Feifer]
 You could listen to that and conclude that old man Blumenthal is a dummy who is too old to understand technology and thus everything is broken. But there has to be a better explanation. It can’t possibly be that senators, old as they may be, simply wander into a hearing room like a retiree wandering in to play chess and say whatever is on their mind. Clearly, people work for them. They’ve studied this.
+
+[Speaker: Jason Feifer]
 To understand it better, I dug in, talked to some very smart people, and came away with a much better understanding of what that moment was a symptom of and what we can actually do to start building better solutions. I think that we need to apply this way of thinking to everything. When you see something that doesn’t work, it’s worth understanding why. Because if you simplify the problem down to, “Oh, that guy is an idiot” or “that group of people is terrible” or “that technology is hurting us because it’s new,” we will never be able to achieve meaningful solutions.
+
+[Speaker: Jason Feifer]
 Explain vertical versus horizontal thinking.
+
+[Speaker: Jason Feifer]
 This came to me years ago when my wife and I released a book. My friends who were writers and worked in the media would call to congratulate me, but my entrepreneur friends would say, “What are you going to do with it? What’s the point?” To them, it doesn’t make any sense to do something simply for the sake of doing it. You do something because you are going to build on top of it, because it fits into an existing structure of growth.
+
+[Speaker: Jason Feifer]
 Entrepreneurs think vertically. They think the only reason to do something is because it is a foundation upon which the next thing will be built. That kind of thinking, which I have now absorbed, radically altered the way that I approach my career and my work, because now I have a filter by which I’m looking at things and saying, “Okay, here’s where I want to go. Here are the strategic steps that are going to get me there, and everything that I do must fit into that or else it is extraneous.”
-So the book I’ve written now,
-Build for Tomorrow
-, is very much in line with this. I’ve thought about what things I do and don’t want to do. I am building and thinking vertically every single day. It is a mind shift. And once you get there, the best word I can come up with is “clarifying.”
+
+[Speaker: Jason Feifer]
+So the book I’ve written now, Build for Tomorrow, is very much in line with this. I’ve thought about what things I do and don’t want to do. I am building and thinking vertically every single day. It is a mind shift. And once you get there, the best word I can come up with is “clarifying.”
+
+[Speaker: Shane Tews]
 In one of your podcasts, you talk about how John Philip Sousa worried that the ability to record things would ruin music and stop people from singing anymore. Does this tell us something about society’s hesitance to embrace new things?
+
+[Speaker: Jason Feifer]
 Yes—this story really captures why so many people panic about new things. John Philip Sousa was a leader of the resistance against recorded music technology. He made these wild arguments that if you brought recorded music into the home, it would halt all forms of live music because why would anybody perform live? And because people would no longer perform live, at home, mothers would no longer sing to their children, because why would they do that? And because children grow up imitating their mothers, they’d now grow up to imitate the machine and we’d thus raise a generation of machine babies. That was his argument.
+
+[Speaker: Jason Feifer]
 What you see here is him extrapolating loss. Of course, he didn’t recognize that this technology was actually going to create massive new opportunities for people in his industry and would expand access to consumers and job opportunities. He was really, in fact, defending a system that was limiting his economic opportunity, but he couldn’t see it because he was equating change with loss.
+
+[Speaker: Jason Feifer]
 People generally panic over change because they equate change with loss. Something new comes along and they immediately say, “This is going to alter the way in which I used to do something.” And we do this at a cultural level. This is why we have endless conversations about new forms of social media destroying some old way in which we communicated or gathered. You’re seeing some kind of change and equating that change with loss. But that’s natural because it’s so hard to see gain when something new comes along. It’s very difficult. There’s a predictable progression that was true then and still is now: panic, adaptation, new normal, and “wouldn’t go back”—wouldn’t go back being the moment where we have something so new and valuable that we say, “I wouldn’t want to go back to a time before I had this.”
+
+[Speaker: Jason Feifer]
 I think technologists, innovators, and people who create often are so familiar with the thing they’re creating that they forget that it is going to be unfamiliar to everyone they’re introducing it to. And so they leave a gap in knowledge there because they’re not building this bridge of familiarity, which they need to focus on more.
+
+[Speaker: Jason Feifer]
 Talk to us about “opportunity A” versus “opportunity B.”
+
+[Speaker: Jason Feifer]
 I have this theory called “work your next job.” If you want to be more adaptable, prepare yourself for the future, and future-proof yourself in your career, work your next job.
+
+[Speaker: Jason Feifer]
 What does it mean? Well, Shane, you, me, and everyone has in front of us have two sets of opportunities: opportunity set A and opportunity set B. Opportunity set A is everything that’s being asked of us. If we have a job and we have a boss, then we show up to work every day and have tasks that we must perform. There are things that we’re evaluated on. That’s opportunity set A; do well at that.
+
+[Speaker: Jason Feifer]
 Then there’s opportunity set B, which is everything that’s available to you that nobody is asking you to do. That could be at your job. That could be new teams to join. That could be new responsibilities to learn, but it could also be something outside of your job. It could be that you really like listening to podcasts and maybe should start one. Whatever it is, this is opportunity set B. Nobody is asking you to do it, but it is available to you.
+
+[Speaker: Jason Feifer]
 My argument is that opportunity set B is always infinitely more important. It doesn’t mean you discard opportunity set A. You need to do well at your job. You need to make money. But opportunity set B is where growth happens. If you only focus on opportunity set A, you will only be qualified to do the thing you’re already doing, but opportunity set B is where you grow, you learn, and develop new skills.
+
+[Speaker: Jason Feifer]
 You don’t even have to know why it’s going to pay off, but the more that you push yourself beyond what you’re already doing and into the things you could be doing, the more you will expand your opportunities and your access to people, ideas, and things. That is where you’re going to really grow.
+
+[Speaker: Shane Tews]
 When does your book come out?
+
+[Speaker: Jason Feifer]
 The book comes out September 6th. You can find it wherever you find books. If you for some reason cannot think of a single place to find books, I love Politics and Prose. My wife grew up in Chevy Chase so we go there a lot—for your Washington, DC listeners.
-Online,
-jasonfeifer.com/book
-is a good place to get it. I also have a
-Build for Tomorrow
-newsletter folks can follow at
-jasonfeifer.bulletin.com
-. This is where I’m going to keep people posted on everything. I would love for people to connect with me; I’ve spent years and years trying to understand how we can both be navigators of change and change-makers. I am just totally obsessed with how people do it, and I love connecting with anyone who is thinking about it.
+
+[Speaker: Jason Feifer]
+Online, jasonfeifer.com/book is a good place to get it. I also have a Build for Tomorrow newsletter folks can follow at jasonfeifer.bulletin.com. This is where I’m going to keep people posted on everything. I would love for people to connect with me; I’ve spent years and years trying to understand how we can both be navigators of change and change-makers. I am just totally obsessed with how people do it, and I love connecting with anyone who is thinking about it.

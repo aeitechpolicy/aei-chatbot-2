@@ -1,149 +1,71 @@
 PAGE_TITLE: 
-	Does the Chip Industry Need a Big-government Intervention? Highlights from a Conversation with Karl Wennberg | American Enterprise Institute - AEI
+	Does the Chip Industry Need a Big-government Intervention? Highlights from a Conversation with Karl Wennberg
 
-Members of
-Congress and industry representatives have encouraged the US government to put
-federal funds toward shoring up the domestic semiconductor industry to compete
-with China. Europe likewise appears poised to spend large sums of government
-money on its chip industry as part of a reaction to the global chip shortage.
-It appears industrial policy is making a comeback.
-While
-free-market advocates who previously warned against heavy government spending
-seem to be on board, there are others who say the market is already on a
-corrective path. Is a national investment in semiconductor chips the right
-answer to today’s chip shortage? Are the security risks at hand pressing enough
-to prioritize a long-term investment in chip production on US soil?
-On the
-latest episode of “Explain to Shane,” AEI Senior Fellow
-Claude
-Barfield
-and I co-interviewed
-Karl
-Wennberg
-, an innovation policy researcher and professor at the Stockholm
-School of Economics. We discussed the potential pitfalls of industrial policy —
-even in vulnerable sectors like the chip industry — and talked about Karl’s
-upcoming book, “
-Questioning the entrepreneurial state: Status-quo, pitfalls, and
-the need for credible innovation policy
-” (Springer, 2022).
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Karl, tell us about the
-underlying premise of your upcoming book, and what inspired you to write it.
-Karl
-Wennberg: The book is kind of an antithesis. What inspired me and the other
-co-authors to write it is essentially that this big trend of big government
-trying to be innovative and entrepreneurial is an oxymoron. It goes against
-what I’ve been doing research on for 20 years, and it’s also against my kind of
-personal view of things, being a former small business owner. Government should
-not be cutting ribbon to break ground on new projects, but should be cutting
-red tape. So we set out to study this phenomenon of the entrepreneurial state,
-which I think is perhaps most popular in Europe, but it is certainly growing in
-the United States, East Asia, and elsewhere.
-There are always important trends worth examining in industrial policy and especially innovation policy. Perhaps the first trend was after World War II with Vannevar Bush and the “
-Endless Frontier
-” — the United States’ massive investment in space technology, plastics, computers, and what have you, which spawned a lot of private enterprise and innovations. Then there was the second trend of Japan becoming a high-tech economy, along with Taiwan, China, and the like.
-But now
-there is this third trend, which is really about the government stepping in and
-directing sectors and technologies, and choosing the types of actors and
-companies that are supposed to be investing in new technologies. That is really
-an odd thing for an economist. So I’m both worried but also very curious about
-what this really is and what the logic is.
-Claude Barfield: I’m wondering if we can get your reaction to the
-US Innovation and Competition Act
-(USICA), which is winding its way through Congress. It’s going to be a huge infusion of funds into a number of technological areas. But part of what spurred the bill was this interest in semiconductors as a key avenue for competing with China. It seems like there could be key lessons here about the state’s ability to be entrepreneurial.
-I’m
-altogether not surprised that this bill is gaining traction. It’s similar to
-how after the financial recession, the US and other industrial nations spent
-money on everything and heavily subsidized startups in key sectors — many of
-which do not exist today, by the way.
-There really
-has been a trend of government experimenting with these things. And if something
-like a pandemic or financial meltdown creates a need to infuse the economy with
-funds, it’s very easy for a policymaker to put on a little extra pork, so to
-speak, and perhaps invest in something that he or she feels strongly about, his
-or her constituents feel strongly about, or something on the general political agenda.
-With
-semiconductors specifically, I’m somewhat surprised by the magnitude of this
-discussion. A number of unprecedented events like the storms in Texas, fires in
-Taiwan, and the pandemic made consumers like us buy all of these technologies —
-not to mention the automobile industry’s rapid turn towards a digital economy.
-So all of those things broke up demand, and there was a shortage. And to make
-matters worse, it isn’t easy to be these gigafactories. So this was definitely
-not a foreseeable problem, or one that had many explanations.
-The
-interesting part, though, is that now, everyone suddenly sees the need to
-materialize these massive investments to subsidize the industry. This always
-works well for political reasons, but the actual track record of these
-investments paying off is less clear.
-Shane Tews: Another interesting factor with
-USICA is that the unforeseen crises you named have largely subsided, making the
-bill’s passage far less urgent than when it was introduced. So at this point,
-do we need to put financial support toward this industry, or would the industry
-just naturally migrate there? I get the argument that our national security is
-on the line, but is such a huge infusion of government funds still necessary at
-this point?
-As someone
-who has studied entrepreneurs for decades and started a few businesses, I get
-very cautious when I hear private enterprises asking for handouts from the
-government and not by customers. If there is one thing we have an excess of now
-in the world, it is money. It is highly risk-willing investments. There have
-been more dollars printed in the last couple of years than ever before, and the
-European Central Bank has been following with quantitative easing for over a
-decade.
-We are
-drowning in money. Investors are everywhere. It’s not a supply problem. Anyone
-can start a business, make huge investments, and get investors if they have a
-credible business plan. So the real question is: Do these companies have a real
-business plan, and will there be customers to purchase all of these chips?
+[Speaker: Introduction / editorial context]
+Members of Congress and industry representatives have encouraged the US government to put federal funds toward shoring up the domestic semiconductor industry to compete with China. Europe likewise appears poised to spend large sums of government money on its chip industry as part of a reaction to the global chip shortage. It appears industrial policy is making a comeback.
+
+[Speaker: Introduction / editorial context]
+While free-market advocates who previously warned against heavy government spending seem to be on board, there are others who say the market is already on a corrective path. Is a national investment in semiconductor chips the right answer to today’s chip shortage? Are the security risks at hand pressing enough to prioritize a long-term investment in chip production on US soil?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” AEI Senior Fellow Claude Barfield and I co-interviewed Karl Wennberg, an innovation policy researcher and professor at the Stockholm School of Economics. We discussed the potential pitfalls of industrial policy — even in vulnerable sectors like the chip industry — and talked about Karl’s upcoming book, “Questioning the entrepreneurial state: Status-quo, pitfalls, and the need for credible innovation policy” (Springer, 2022).
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Karl, tell us about the underlying premise of your upcoming book, and what inspired you to write it.
+
+[Speaker: Karl Wennberg]
+Karl Wennberg: The book is kind of an antithesis. What inspired me and the other co-authors to write it is essentially that this big trend of big government trying to be innovative and entrepreneurial is an oxymoron. It goes against what I’ve been doing research on for 20 years, and it’s also against my kind of personal view of things, being a former small business owner. Government should not be cutting ribbon to break ground on new projects, but should be cutting red tape. So we set out to study this phenomenon of the entrepreneurial state, which I think is perhaps most popular in Europe, but it is certainly growing in the United States, East Asia, and elsewhere.
+
+[Speaker: Karl Wennberg]
+There are always important trends worth examining in industrial policy and especially innovation policy. Perhaps the first trend was after World War II with Vannevar Bush and the “Endless Frontier” — the United States’ massive investment in space technology, plastics, computers, and what have you, which spawned a lot of private enterprise and innovations. Then there was the second trend of Japan becoming a high-tech economy, along with Taiwan, China, and the like.
+
+[Speaker: Karl Wennberg]
+But now there is this third trend, which is really about the government stepping in and directing sectors and technologies, and choosing the types of actors and companies that are supposed to be investing in new technologies. That is really an odd thing for an economist. So I’m both worried but also very curious about what this really is and what the logic is.
+
+[Speaker: Claude Barfield]
+Claude Barfield: I’m wondering if we can get your reaction to the US Innovation and Competition Act (USICA), which is winding its way through Congress. It’s going to be a huge infusion of funds into a number of technological areas. But part of what spurred the bill was this interest in semiconductors as a key avenue for competing with China. It seems like there could be key lessons here about the state’s ability to be entrepreneurial.
+
+[Speaker: Claude Barfield]
+I’m altogether not surprised that this bill is gaining traction. It’s similar to how after the financial recession, the US and other industrial nations spent money on everything and heavily subsidized startups in key sectors — many of which do not exist today, by the way.
+
+[Speaker: Claude Barfield]
+There really has been a trend of government experimenting with these things. And if something like a pandemic or financial meltdown creates a need to infuse the economy with funds, it’s very easy for a policymaker to put on a little extra pork, so to speak, and perhaps invest in something that he or she feels strongly about, his or her constituents feel strongly about, or something on the general political agenda.
+
+[Speaker: Claude Barfield]
+With semiconductors specifically, I’m somewhat surprised by the magnitude of this discussion. A number of unprecedented events like the storms in Texas, fires in Taiwan, and the pandemic made consumers like us buy all of these technologies — not to mention the automobile industry’s rapid turn towards a digital economy. So all of those things broke up demand, and there was a shortage. And to make matters worse, it isn’t easy to be these gigafactories. So this was definitely not a foreseeable problem, or one that had many explanations.
+
+[Speaker: Claude Barfield]
+The interesting part, though, is that now, everyone suddenly sees the need to materialize these massive investments to subsidize the industry. This always works well for political reasons, but the actual track record of these investments paying off is less clear.
+
+[Speaker: Shane Tews]
+Shane Tews: Another interesting factor with USICA is that the unforeseen crises you named have largely subsided, making the bill’s passage far less urgent than when it was introduced. So at this point, do we need to put financial support toward this industry, or would the industry just naturally migrate there? I get the argument that our national security is on the line, but is such a huge infusion of government funds still necessary at this point?
+
+[Speaker: Speaker not identified]
+As someone who has studied entrepreneurs for decades and started a few businesses, I get very cautious when I hear private enterprises asking for handouts from the government and not by customers. If there is one thing we have an excess of now in the world, it is money. It is highly risk-willing investments. There have been more dollars printed in the last couple of years than ever before, and the European Central Bank has been following with quantitative easing for over a decade.
+
+[Speaker: Speaker not identified]
+We are drowning in money. Investors are everywhere. It’s not a supply problem. Anyone can start a business, make huge investments, and get investors if they have a credible business plan. So the real question is: Do these companies have a real business plan, and will there be customers to purchase all of these chips?
+
+[Speaker: Claude Barfield]
 Claude Barfield: Returning to Shane’s point about security, the fact that Taiwan houses the world’s most advanced and versatile chipmaker is something we cannot ignore given the island’s imminent security threats from China. And I think what is happening in Russia could also spill over into Asia with the Chinese. You do have, in a very vulnerable place, a key set of technologies, and this national security argument seems different from the pro- or anti-industrial-policy arguments. What’s your reaction to that?
-I think it’s
-a very valid point. There are sectors that any country would want to have, to
-some extent, within their borders or closely accessible via free-trade
-arrangements with closely related countries (the European Union, for example).
-My question, though, is about the demand issue. Is there a genuine spike in
-demand for chips or is it just due to the pandemic and other unforeseeable
-disasters I mentioned? Does every country need these gigafactories, or do we
-perhaps need better trade agreements with each other?
-Right now,
-Europe has quite a few of these big plans as well. And I don’t really see the
-demand for them all, but I do understand that you don’t want to have all of
-your eggs in one basket, very close to a potential hostile power. I just think we
-can’t get in over our heads in the name of national security. Whatever you do
-still has to be pragmatic and based on sound economics as to not hurt yourself
-even further.
-How does Europe compare to the US in terms
-of how it treats semiconductors and, beyond that, industrial policy in general?
-Do subsidies and protectionism inevitably go together? Because you’re putting
-“public money” into something, you naturally hear the argument, at least in
-Congress, that the public money ought to be spent here in the United States and
-others shouldn’t be able to come in and compete.
-That’s a
-very good point. I would say in this respect, Europe is probably better off at
-this point because the European economy is already somewhat less innovative as
-a whole. It’s less diversified, meaning you have to trade to increase your
-wealth. It has to be an integrated part of the world economy, or else it will
-fail. So to some degree, this is just rhetoric coming from Europe. Their
-survival is contingent on trade, whereas the US could genuinely try to do
-something protectionist and fare OK for a while before getting into trouble.
-Also, the
-European Union has a long history. It has a big rucksack of different
-industrial policies for cultural and historical reasons — the common
-agriculture policy being the perfect example. So there is a history of this that
-makes it somewhat easier for European policymakers to just add something to
-that rucksack, making the burden somewhat heavier for European Union taxpayers.
-So what
-you’re seeing is unfortunately a direct and very natural consequence. It’s a
-political-economy response of subsidized industry. If you create these
-mountains of butter and seas of glass, you essentially also need to subsidize
-the selling of those products in order to get rid of them. So you kind of warp
-the economy from something which is about customers and suppliers to something
-which is about the government running around trying to address specific crises.
-What is perceived as a crisis or a potential crisis will very likely create new
-problems along the way that then have to be resolved.
+
+[Speaker: Claude Barfield]
+I think it’s a very valid point. There are sectors that any country would want to have, to some extent, within their borders or closely accessible via free-trade arrangements with closely related countries (the European Union, for example). My question, though, is about the demand issue. Is there a genuine spike in demand for chips or is it just due to the pandemic and other unforeseeable disasters I mentioned? Does every country need these gigafactories, or do we perhaps need better trade agreements with each other?
+
+[Speaker: Claude Barfield]
+Right now, Europe has quite a few of these big plans as well. And I don’t really see the demand for them all, but I do understand that you don’t want to have all of your eggs in one basket, very close to a potential hostile power. I just think we can’t get in over our heads in the name of national security. Whatever you do still has to be pragmatic and based on sound economics as to not hurt yourself even further.
+
+[Speaker: Claude Barfield]
+How does Europe compare to the US in terms of how it treats semiconductors and, beyond that, industrial policy in general? Do subsidies and protectionism inevitably go together? Because you’re putting “public money” into something, you naturally hear the argument, at least in Congress, that the public money ought to be spent here in the United States and others shouldn’t be able to come in and compete.
+
+[Speaker: Claude Barfield]
+That’s a very good point. I would say in this respect, Europe is probably better off at this point because the European economy is already somewhat less innovative as a whole. It’s less diversified, meaning you have to trade to increase your wealth. It has to be an integrated part of the world economy, or else it will fail. So to some degree, this is just rhetoric coming from Europe. Their survival is contingent on trade, whereas the US could genuinely try to do something protectionist and fare OK for a while before getting into trouble.
+
+[Speaker: Claude Barfield]
+Also, the European Union has a long history. It has a big rucksack of different industrial policies for cultural and historical reasons — the common agriculture policy being the perfect example. So there is a history of this that makes it somewhat easier for European policymakers to just add something to that rucksack, making the burden somewhat heavier for European Union taxpayers.
+
+[Speaker: Claude Barfield]
+So what you’re seeing is unfortunately a direct and very natural consequence. It’s a political-economy response of subsidized industry. If you create these mountains of butter and seas of glass, you essentially also need to subsidize the selling of those products in order to get rid of them. So you kind of warp the economy from something which is about customers and suppliers to something which is about the government running around trying to address specific crises. What is perceived as a crisis or a potential crisis will very likely create new problems along the way that then have to be resolved.

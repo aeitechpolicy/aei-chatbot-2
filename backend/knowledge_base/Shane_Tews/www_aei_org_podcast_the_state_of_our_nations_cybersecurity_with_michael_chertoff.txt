@@ -1,17 +1,14 @@
 PAGE_TITLE: 
-	The State of Our Nation’s Cybersecurity (with Michael Chertoff) | American Enterprise Institute - AEI
+	The State of Our Nation’s Cybersecurity (with Michael Chertoff)
 
-Cyber
-threats are multidimensional; they can manifest as large-scale attacks carried
-out by nation states or private actors, targeted at critical infrastructure or
-individual devices. In the information age, they can also target vulnerable
-individuals via malware or on social media platforms in the form of false or
-misleading information. Across the board, the Russia-Ukraine conflict has made
-plugging vulnerabilities in all cyber domains a lead priority for government,
-industry, and civil society alike.
-What does a former top security official have to say about all of this? On this episode of “Explain to Shane,”
-Shane
-sits down with
-Michael Chertoff
-, former Secretary of the Department of Homeland Security, for an update on how both cybersecurity threats and best practices have progressed in a number of domains since Secretary Chertoff left office. They also discuss the security pitfalls of Congress’ attempts to weaken mobile device protections in the name of competition.
+[Speaker: Introduction / editorial context]
+Cyber threats are multidimensional; they can manifest as large-scale attacks carried out by nation states or private actors, targeted at critical infrastructure or individual devices. In the information age, they can also target vulnerable individuals via malware or on social media platforms in the form of false or misleading information. Across the board, the Russia-Ukraine conflict has made plugging vulnerabilities in all cyber domains a lead priority for government, industry, and civil society alike.
+
+[Speaker: Introduction / editorial context]
+What does a former top security official have to say about all of this? On this episode of “Explain to Shane,” Shane sits down with Michael Chertoff, former Secretary of the Department of Homeland Security, for an update on how both cybersecurity threats and best practices have progressed in a number of domains since Secretary Chertoff left office. They also discuss the security pitfalls of Congress’ attempts to weaken mobile device protections in the name of competition.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

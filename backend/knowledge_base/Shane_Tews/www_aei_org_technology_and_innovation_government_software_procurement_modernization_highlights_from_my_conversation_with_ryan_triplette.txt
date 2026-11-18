@@ -1,28 +1,56 @@
 PAGE_TITLE: 
-	Government Software Procurement Modernization: Highlights from My Conversation with Ryan Triplette | American Enterprise Institute - AEI
+	Government Software Procurement Modernization: Highlights from My Conversation with Ryan Triplette
 
-The Byzantine nature of software licensing, where contract costs are not always transparent and licensing terms can be opaque, has recently received the attention of the current administration as part of its
-National Cybersecurity Strategy
-. The plan aims to modernize the government’s IT infrastructure and review the inherent vulnerabilities of legacy software as well as the licensing of software to federal government agencies. This strategy is an opportunity for the federal government to bring forward a new standard of what good cybersecurity protocols should look like.
+[Speaker: Introduction / editorial context]
+The Byzantine nature of software licensing, where contract costs are not always transparent and licensing terms can be opaque, has recently received the attention of the current administration as part of its National Cybersecurity Strategy. The plan aims to modernize the government’s IT infrastructure and review the inherent vulnerabilities of legacy software as well as the licensing of software to federal government agencies. This strategy is an opportunity for the federal government to bring forward a new standard of what good cybersecurity protocols should look like.
+
+[Speaker: Introduction / editorial context]
 To walk us through the software licensing practices and what might work when it comes to software procurement reform, I sat down with Ryan Triplette, the executive director of the Coalition for Fair Software Licensing (CFSL). She is an expert in intellectual property, cybersecurity, and competition issues and has worked with early stage and mature companies in the technology industry throughout her career.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: I’ll be honest, this issue was flying under my radar until you brought it to my attention.
-But since, I’ve read a couple of interesting headlines like NASA overspending $15 million on Oracle software because it was afraid an audit would cost more. Could you tell me a bit more about government procurement of software? What exactly is going on here?
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: I’ll be honest, this issue was flying under my radar until you brought it to my attention. But since, I’ve read a couple of interesting headlines like NASA overspending $15 million on Oracle software because it was afraid an audit would cost more. Could you tell me a bit more about government procurement of software? What exactly is going on here?
+
+[Speaker: Ryan Triplette]
 Ryan Triplette: The more you learn about the impact of these procurement contracts, the more you find yourself digging through different threads of vendor negotiations and the customer impact, especially regarding the public sector. There are some big dynamics at play here in terms of the impact on the procurement process and the securing of vendors. Specifically, CFSL, as a coalition for fair software licensing, is focused almost solely on the impact of software licenses and software contract negotiations on the digital transformation and cloud migration strategies of customers. And it’s something that we have seen actually lies at the root of a lot of these much larger concerns that you’re looking at—like the headline about NASA overpaying. In other words, our information technology (IT) infrastructure is at the heart of many discussions, whether they’re about government overspending or cybersecurity concerns.
+
+[Speaker: Shane Tews]
 The Treasury Department put out a report saying they were concerned about the risk cloud computing poses to the financial sector. What does the Treasury recommend we do?
+
+[Speaker: Ryan Triplette]
 Yeah, I spent a lot of time going through the Treasury Department report. What’s actually interesting about this is that the report had a very balanced approach in terms of looking at the pros and cons and considering some of the things that are going on over at the EU and G7. It did also highlight the need to look at the different vulnerabilities being created through the cloud vendor selection process.
+
+[Speaker: Ryan Triplette]
 But from looking at the report, one of the key highlights I took away from it was that the document really is more of a primer. I think of it as the introduction to the conversation from the Treasury Department’s perspective. They did have recommendations for their commercial companies, but they also discussed their own cloud strategy. Another interesting thing I found was a focus on interoperability and the need for there to be greater interoperability between vendors and legacy providers.
+
+[Speaker: Ryan Triplette]
 The failure to create this interoperability results in what is known as a single point of failure. This is very similar to what happened in Colonial Pipeline. The single point of failure, if it’s exploited, can bring down an agency’s entire system and have overarching impact across an entire industry. I mean, to quote what the Treasury would say, a large system failure or data breach on one vendor can impact multiple financial institutions. So this gives you a sense of some of the implications of what we’re talking about, especially vis-à-vis cybersecurity.
+
+[Speaker: Ryan Triplette]
 You have a nine-point code that touches on the most important aspects of IT procurement. Can you break down this code? I’m reading here that the first point is that licensing terms should be clear and intelligible.
+
+[Speaker: Ryan Triplette]
 This is probably one of the most important points of our nine principles, because it fundamentally gets to these questions of what is the vendor requiring and what is the customer getting? Part of this point is that customers shouldn’t be subjected to surprises later on, like when there is an audit. Being clear and intelligible also gets into how companies should react if there are flaws in the implementation of the software. For example, the contract should discuss what resources they have and should go to as well as what are their obligations.
+
+[Speaker: Ryan Triplette]
 The biggest problem we see is that a lot of them have buried hyperlinks. We’ve all seen those. It’s something that unfortunately permeates across lots of industries, and it’s certainly present in our telecommunications field. You see it in many terms and conditions. Do you really want to hyperlink through everything?
+
+[Speaker: Ryan Triplette]
 This really is a huge problem just thinking about it, but we also must consider that these contracts are not just millions, but tens or hundreds of millions of dollars. It’s especially salient when you look at it over a certain period and certainly much more when you’re talking about the US government as a customer. When these contracts have those hyperlinks, you sometimes need to go into three or four hyperlinks to fully understand what those obligations are. We want to make sure those obligations are clear. That they’re something that is more readily understandable from a first reading of the contract.
+
+[Speaker: Shane Tews]
 There are concerns that vendors could resort to retaliatory behavior. What exactly does this mean? Could vendors actually do this?
+
+[Speaker: Ryan Triplette]
 Potentially. We have talked to some customers that have indicated that they are very nervous about speaking out publicly. It really was the impetus for forming the coalition: providing that collective voice when you have customers that individually don’t feel like they have the market leverage to push back on specific vendors. These customers also often don’t feel like they have the recourse to say anything publicly to the press or whatnot, because that then puts a target on their back.
+
+[Speaker: Ryan Triplette]
 We’ve had some customers that have basically been given contracts on a take it or leave it basis. Where it’s like, either you do it the way we’re doing it here, or you don’t have access to our product and software at all.
+
+[Speaker: Ryan Triplette]
 But also, it can come in the form of vendor-conducted audits. Audits are in a little bit of a different context than the cybersecurity space we were discussing earlier. Don’t get me wrong, audits are a necessary form of software compliance. But in this context, it goes back to vendors saying, “we’re going look at how you’re using your software. Does it comply with the terms that we agree to? Do you have extra usage? If so, you need to pay additional fees.” As you may be connecting the dots, this is also tangential to the NASA inspector general’s report.
+
+[Speaker: Ryan Triplette]
 Moreover, audits are quite expensive, because some vendors actually have to come to companies’ physical premises and go through everything. This process can be quite costly. And unless you have a good software asset management system in place and you understand your usage and the current scope of your contract, you’re looking at an end result of having additional costs and then having a further unknown of what the impact will be for being out of compliance. So we’ve seen that there’s been this “weaponization” of audits, where if you don’t immediately go in with their service again, then you’re looking at an expensive audit.

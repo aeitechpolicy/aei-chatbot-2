@@ -1,0 +1,113 @@
+PAGE_TITLE: 
+	How 5G Wireless Can Put More Americans to Work (with Michael Mandel and Sal D’Itri) — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI Explain to Shane: How 5G wireless can put more Americans to work (with Michael Mandel and Sal D'Itri) Episode #23 | January 5, 2021 | Shane Tews, Michael Mandel, and Sal D'Itri
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane." I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. The next generation of wireless technology is already having a major impact on job growth. Many industries are looking to take advantage of real-time data and automation. This means job creation, and as more equipment needs to be installed and maintained to enable access to these new network capabilities, we are seeing this job creation across several key industries including agriculture, energy, construction, healthcare, and national security. For this job growth to endure, we need to continue cooperation with the government on policy matters around the spectrum needed for 5G operations. I discuss these joint objectives today with Michael Mandel, Chief Economic Strategist at the Progressive Policy Institute (PPI), and Sal D'ltri, Chairman of the National Spectrum Consortium and Vice President of the software company Federated Wireless. Michael recently authored a report for the National Spectrum Consortium on behalf of PPI titled, "The Third Wave: How 5G Will Drive Job Growth Over the Next 15 Years." Michael and Sal join me to discuss the report's recommendations on how to harness 5G's job-creating potential and how both government and industry can better facilitate the buildout of 5G networks. So, Sal, tell us about the National Spectrum Consortium. Give us a baseline on what you all do and why you exist.
+
+[Speaker: Speaker not identified]
+Sal D'ltri: Well, the National Spectrum Consortium is a group of about 400 members. These are academia, the Silicon Valley startups, [and] big companies that we all know as household brand names who have come together to work with the Department of Defense (DOD) to innovate and really leapfrog the nation forward in 5G technology and spectrum — two things that have to go together as we want to advance our wireless competitive solutions here in the United States and work with our partners overseas. So we have about 400 members. They are leading academic institutions, as I
+
+[Speaker: Speaker not identified]
+mentioned, the Silicon Valley startups, as well as folks who are national carriers and traditional Department of Defense contractors and vendors.
+
+[Speaker: Shane Tews]
+Shane Tews: Do you have a particular focus you're going into with 2021?
+
+[Speaker: Speaker not identified]
+Sal D'ltri: 2021 is all about 5G and spectrum. Two very hot topics right now in the United States [are] freeing up more spectrum for 5G and then driving 5G innovation here in the United States. So we're very proud to be working with - through the Department of Defense and our members — on an initial launch of 5G to five major US bases with another seven coming on the way. And these are efforts to bring 5G and Internet of Things (loT) to make smart bases, smart logistics warehouses, improve spectrum access for commercial and DOD users, as well as really bringing what I like to term as DOD being the "first enterprise" and really bringing 5G to enterprise applications, unlike what we saw in 4G which was, for the most part, a consumer application technology.
+
+[Speaker: Shane Tews]
+Shane Tews: And Michael, you recently authored a report at the Progressive Policy Institute for the National Spectrum Consortium (that Sal chairs) about 5G technology — really great report. I enjoyed reading it — very easy graphics for those who like pictures, but it also really explains that, you know, there's a lot going on with job growth over the next 15 years. But to understand the report, can you start by explaining the waves that you discussed in the very beginning of the report, kind of really two and three because we're going into wave three?
+
+[Speaker: Michael Mandel]
+Michael Mandel: Absolutely, Shane. You know, there's been a long debate about the impact — the job impact — of wireless. And we can think about wireless as coming in, as you said, three waves. The first wave ran from 1990 to 2007 — kind of the basic buildout. And this was, you know, when you sort of had your flip phones and you could talk on it and you [could] text on it but it really couldn't build applications on it. And in that case, the jobs created were tied mostly to the construction and operation of wireless — and we estimate about 200,000 jobs. Then wave two was the introduction of smartphones, and you built this infrastructure of apps on top of it — mobile applications — and Sal mentioned mostly consumers, entertainment, finance, communications, [and] social networks. If you look at the jobs created by the app economy, that was on the order of about 2 million. And this report focuses on wave three, which is the 5G revolution. It goes out Ito not just consumers but pretty much every industry in the economy: agriculture, energy, construction, manutacturing, transportation, education, healthcare, and government, including defense, and certainly not the least — detense. And we estimate that this means 4.6 million iobs over the next 15 years. This is the third wave. And the way that we think about this is the big picture of the relationship between wireless and the labor market and job growth. And as wireless affects more industries, you get more jobs being affected as well.
+
+[Speaker: Shane Tews]
+Shane Tews: I was really interested in seeing how you discussed the changes in the Bureau of Labor Statistics. Years ago — I've known Elaine Chao since she was in the Department of Transportation the first time as the deputy — | ran into her when I was, vou know, kind of new in the digital space. And I said, vou know, "You auys aren't really collectina all the work we're doina in e-commerce." This is
+
+[Speaker: Shane Tews]
+back in the mid-2000s, and she looked at me like, "That's just not relevant." And of course she doesn't — she now completely understands the relevancy of it and she's very kind about it, but we laugh about it. And so the way that you explained in the report the breakdown in how the migration of these jobs are not only — I'm sorry, what's your term of art you have for [it]? Is it cognitive?
+
+[Speaker: Michael Mandel]
+Michael Mandel: Cognitive and cognitive physical.
+
+[Speaker: Shane Tews]
+Shane Tews: Yes. And we definitely have heard a lot of that from [FCC] Commissioner Carr on the importance of all of the labor entities that come along with 5G. So can you walk us through some of the ways that these sectors that you just mentioned —education, healthcare, government, agriculture, energy — are going to benefit from 5G and the next generation of technologies?
+
+[Speaker: Michael Mandel]
+Michael Mandel: Well you think about, for example, you think about manufacturing, and manufacturing is going through this process of digitization and digitization requires being able to connect up not just machinery but the things that you're producing, the logistics as well, and everything is moving. There's not fixed connections. You're talking about mobile technology and you're talking about improvements in productivity, reductions in costs that enable us to bring jobs back from overseas — create new jobs — and you're really talking about two types of jobs at this point. You're talking about the people who sort of do the — the engineers and the programmers who do the coding, and then you're talking about the people who install the equipment. And what's fascinating is: Up to this point, investments by businesses in mobile have been comparatively sparse — really a low percentage of their expenditures, and that's not going to be true in the future. They're going to be putting more money in, and more money means more jobs, not just for the people at the high end but for skilled people on the medium level as well.
+
+[Speaker: Shane Tews]
+Shane Tews: Solknow, Sal, you mentioned that you are kind of springing from the Department of Defense and the work they're doing in that area. Explain to us the collaboration with FCC. And how are the policy changes that are made in spectrum policy helping spur this third wave of wireless?
+
+[Speaker: Speaker not identified]
+Sal D'ltri: Well certainly this has been a time of great movement in the area of 5G by the FCC. That starts with the innovative launch of shared spectrum in this country - opening up the mid-band spectrum, the 3.55 to 3.7 [gigahertz] spectrum known as Citizens Broadband Radio Service (CBRS) spectrum, for spectrum sharing. And that's a US innovation and we're first to market with that as a country. In addition, there are new spectrum auctions that are coming about in the market that are continuing to open up the mid-band spectrum for US innovation and for the rollout of 5G here in the United States. So that's absolutely critical. Keying a little bit of what Michael had said, you know, if you look at some of the work we're doing in these first four bases and then in the next seven, we're looking at things like how 5G can support telemedicine, how 5G moves loT, and how it improves base logistics. Each one of these has a direct correlation to the commercial economy, and it gets back to a point I made at the beginning which is: I really look at DOD now
+
+[Speaker: Speaker not identified]
+as the "first enterprise." There's several hundred million dollars being invested right out of the gate in this 5G innovation and buildout program, and you'd be hard-pressed in the United States right now to find another private enterprise investing at that rate in 5G technology. So I think the FCC opened the door with spectrum sharing. They've continued to look at mid-band spectrum and opportunities to make that available to US private industry as well as carriers, and that's a huge step in the right direction.
+
+[Speaker: Michael Mandel]
+Michael Mandel: Can ladd something here? Which is that if you look at job postings for 5G- related jobs, they've really been soaring over the last few months. They're up 50 percent since August through November and quite a few of them are defense-related. And so we can actually see what Sal is describina; we can see the efforts by the Department of Defense to move forward on 5G and the applications of it.
+
+[Speaker: Shane Tews]
+Shane Tews: What I was going to mention is that l've been following how in the Department of Defense they've been doing a lot of R&D testing on 5G, which is great because they have the capability of having a closed network, which is really great for testing. Is that information flowing over into the commercial market?
+
+[Speaker: Speaker not identified]
+Sal D'ltri: Well, the unique thing about the National Spectrum Consortium is: It's really geared towards the non-traditional players. So many of our members are Silicon Valley startups. They're purely commercial companies who, if it wasn't for the construct and the contracting structure of the consortium, they wouldn't typically do business with DOD. So for the first time ever, we see this great collaboration between the commercial innovator — the commercial driver of the market — and the Department of Defense around really dual-use opportunities in things like loT, telemedicine, and smart warehouse s]. So there's absolutely a flow back into the commercial market and the commercial entrepreneurs who are working hand-in-hand through the National Spectrum Consortium with DOD. Another thing that we're doing as a consortium is: We're also reaching out to the state and local level where states are now standing up 5G innovation centers and universities are standing up 5G innovation centers and we're reaching out to them to see: How can we all work together to turther advance 5G but also to establish training programs to educate our next workforce on 5G so that when we come out of these efforts, we are the ones who are doing the technology development, the technology leadership, as opposed to continually buying the next-generation product from companies overseas?
+
+[Speaker: Shane Tews]
+Shane Tews: Well that's definitely encouraging. I'm always a big fan of the flywheel effect and not having everybody replicating each other's work. So how did the findings from Michael's study influence the policies that you guys are looking at going forward?
+
+[Speaker: Speaker not identified]
+Sal D'ltri: Certainly in our outreach to state and local it's had a huge impact, and that we realize we're not operating alone just with the DOD — that there's so m[any] organic efforts springing up around the states now. Whether it's the state of Indiana, work in Puerto Rico, [or] in Utah and Texas, we wanted to be a part of that because there's a natural give-and-take there with those states as to what they're doing. And they have their own agriculture, loT applications, [and]
+
+[Speaker: Speaker not identified]
+industrial applications that, as a group, we can leverage and bring that information back to DOD and then leverage a lot of the funding and drive that DOD is pushing into the technology piece — leverage that and offer that back to the states [so_ that they can now push that out to community colleges, their state colleges, their local workforce. And what you see emerge is: In places that Michael cites like Lincoln, Vebraska, places like Wilkes-Barre Pennsylvania, that there are actually opportunities to now drive technology into these areas and also get some feedback as to what's working and not working. Sol think it's a perfect marriage, and what I really loved about his report [is]: It seems some of this starting to come to life. Even in these early stages that we're talking about, we're only lighting up four of these facilities at present and will another seven in 2021.I do think, though, that there is a wonderful opportunity to leverage his report and drive that technology out to the state and local level.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, the move from just-in-time to real-time is going to be fascinating — all that data actually, you know, changing things at a moment's notice is going to be great. So one of the things that has been a concern as we've seen a lot of things opening with 5G and spectrum sharing and allocating resources [is]: What if there wlasl no more spectrum made available on the 5G network expansion and capacity? Do we think that if it were to stop where we are now, would we be able to continue with this success, or do we need to make sure the policies are engaged to keep things flowing the way that they have been?
+
+[Speaker: Speaker not identified]
+Sal D'ltri: I think in the wireless industry we're going to continue to see massive growth over the next decade, especially as we even look to 6G. And there's some really interesting work going on in the very-high-bandwidth spectrum beyond millimeter wave even now into the terahertz spectrum — a lot of challenges there but a lot of opportunity just given its massive bandwidth. So l think we'll continue to see opportunities to innovate in spectrum and to make use of different parts of the spectrum for different applications whether it's the long-haul, the mid-haul, which is the mid-band, or the in-the-home service, which is advances in unlicensed and terahertz spectrum. I think we'll continue on that journey over the next decade to find better ways to use spectrum and open up more spectrum.
+
+[Speaker: Shane Tews]
+Shane Tews: Michael, one of your policy recommendations is the need for significant investment in job training which, you know, we've all been hearing about STEM, but you definitely see that what your report talks about — one is to very specific things that we can see a quick uptake on. Are people being responsive to that, and are you seeing it being rewarded? Are we seeing policies change because we have these potential economic drivers?
+
+[Speaker: Michael Mandel]
+Michael Mandel: I think we're about to start seeing a positive feedback loop. What people don't remember is that the second wave of wireless — the app economy boom — was important in pulling us out of the great financial crisis in 2008-2009, and we're going to start seeing 5G-related training as being an important role [in] pulling us out of the COVID recession. And we're going to start seeing more
+
+[Speaker: Michael Mandel]
+training for cognitive physical workers who will be able to find jobs. There'll be job pull there, and this will be happening on the state and local level and also on the federal level — absolutely essential.
+
+[Speaker: Shane Tews]
+Shane Tews: So, going into a new administration, what policy developments should we be looking out for? This is a good time to be an optimist.
+
+[Speaker: Michael Mandel]
+Michael Mandel: I would just say that this is one case where, in terms of creating jobs to pull us out of the downturn, that the more spectrum we can sort of provide for 5G, the more we can build out small cells, the more job training we provide — that will actually help accelerate the rebound. This is one of our key technologies going forward and if we want a technology-driven boom, 5G is one of the things we have to focus on.
+
+[Speaker: Shane Tews]
+Shane Tews: So one of the things that has kind of captivated this group - being the people who follow spectrum and 5G — is the request for information (RFI) over at the Department of Defense on doing a 5G program. No one is completely clear on what the outcome is going to be of that or where it may be heading. Do you have any thoughts on that? Are we fear-mongering? What's going on over
+
+[Speaker: Speaker not identified]
+Sal D'ltri: Well, as you say, we don't know if a request for proposal (RFP) would come out. I think given where wireless is heading in general, it is right for the department to take a look at its overall spectrum strategy but also its tools and technology, which are probably in need of a significant refresh. One of the things that will enable greater cooperation in spectrum is an opportunity for DOD to refresh its own spectrum technology tools and, in many cases, move to the cloud. From an IT perspective where we're seeing the commercial industry with 5G now operating at cloud timescales, DOD is going to need the technology refresh along the way as well. So there are some encouraging things in the RFl and, as you say, we'll have to wait and see if an RFP comes
+
+[Speaker: Shane Tews]
+Shane Tews: Michael, you comment in your paper that spending on 5G networks is what's known in economics as "autonomous investment." So what do you think, kind of future casting for us here, we see the benefits on this for — are we looking at weeks, months, years, decades? Sal mentioned 6G; is 5G already blasé?
+
+[Speaker: Michael Mandel]
+Michael Mandel: So we project out 15 years here. If you think about 15 years, 4.6 million jobs, that's 300,000 jobs a year for the next 15 years, and that's quite a few jobs. And a lot of them are rolling out now in construction — into development of new technologies for 5G. I see this as both a short-term and a medium- long- term proposition that is not going to go away.
+
+[Speaker: Shane Tews]
+Shane Tews: Well, I highly recommend listeners taking a look at your report. It's interesting; it makes me want to put [out] a betting pool that's like medium-, short-, long- term [and] see how close you get. You have great use cases on how we see these different industries moving forward with it. So l want to thank you guys for your time today, and | look forward to seeing the work you're doing and I hope we can check back in in a few months and see what the predictions are showing true.
+
+[Speaker: Michael Mandel]
+Michael Mandel: Thanks very much, Shane.
+
+[Speaker: Speaker not identified]
+Sal D'ltri: Thank you, Shane.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of "Explain to Shane." For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of "Explain to Shane."

@@ -1,138 +1,77 @@
 PAGE_TITLE: 
-	How to Improve Trust and Safety Online: Highlights from My Conversation with Clara Tsao | American Enterprise Institute - AEI
+	How to Improve Trust and Safety Online: Highlights from My Conversation with Clara Tsao
 
-Trust is a binding agent for society, but the internet was
-not designed with trust or user safety in mind. And today, trust in the online
-ecosystem seems to be plummeting. How can we reverse this trend?
-Many tech companies have trust and safety professionals working behind the scenes on complex issues like content moderation, disinformation, and user privacy. To help unify these efforts and establish best practices,
-Clara Tsao
-co-founded the
-Trust & Safety Professional Association
-after serving as the Department of Homeland Security’s (DHS) chief technology officer from 2016–2019. She joined “Explain to Shane” to discuss how the trust and safety industry operates, and how her organization is tackling the challenges of the digital age.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Clara,
-tell us a bit about the Trust & Safety Professional Association. What do
-you guys do, how do you do it, and how long have you been in existence?
-Clara Tsao: A lot of people think “trust and safety” is a
-brand new field, but similar to privacy or cybersecurity, it was around for years
-before people started using it as a common name or term. Still, I think we’re
-starting to hear more people in DC and policymakers use it today.
-Back in the e-commerce days, trust and safety teams existed to
-protect the safety of users. But with the advent of social media, thornier
-issues surfaced that were far less black and white. And so over the last few
-years, more and more of these teams have ended up being built up within
-companies. Sometimes they’re put under their legal team as an extension of copyright
-and other kinds of issues when it comes to more content-based platforms. Other
-times, we’ve seen trust and safety teams fall under operations. So early
-companies sometimes may have teams that deal with customer success, spam, and
-fraud; trust and safety is sometimes an extension of that. Sometimes it’s an
-extension of cybersecurity.
-The way this got started in 2019 was that there has never
-been a shared community of practice for trust and safety professionals. Even
-though a huge set of professionals has spent the last decade or more thinking
-about these issues, there has never been a place for them to share what’s in
-between. We got started after feeling that niche from the community of wanting
-something like this to exist for a while.
-Are you seeing
-startups treat trust and safety departments as a must-have nowadays?
-I think it depends on the company and their structure. The
-sad part is: Much like every single issue, most companies don’t really think
-about trust and safety until something really bad happens. We saw this in the
-cybersecurity space where until major cyberattacks happened, most people weren’t
-investing in cybersecurity infrastructure. After seeing what cyber incidents
-could do, though, companies today will invest in cybersecurity regardless of whether
-there’s an attack or not.
-I think in the online space, people have demanded better
-from companies. A lot of startup founders have had really bad trust and safety
-experiences in their first run at it. And so they often realize the importance
-of investing up front to have community practices in place.
-Even today, we’re looking at new kinds of mediums for where
-there’s new trust and safety issues. With new audio platforms like Clubhouse,
-for example, companies are having to decide how to deal with content that is
-really vulgar, shouldn’t be out there, or might be against a community standard
-in a certain country or somewhere else. But it’s harder for startups — unlike
-the bigger players — to have the resources to constantly monitor content.
-But yeah, more and more companies are feeling the pull of
-users demanding healthier communities online. So we’ve been trying to help smaller
-companies and startups get involved with us by sponsoring them through grants. We’re
-constantly trying to make sure we’re thinking of the best practices — not just for
-the larger guys, but for the smaller ones as well.
-What are some common
-misconceptions about how content moderation works? Do people underestimate how
-complex it is?
-Absolutely — and the dialogue has changed significantly in
-the past year. What’s been really fascinating is: Around COVID-19
-disinformation and health misinformation, there’s more unanimous agreement that
-this is bad content. Even if we’re unsure, we should take it down because
-public health is on the line.
-But around more polarizing issues like politics or
-elections, there’s been a lot of back and forth on what’s good content and
-what’s not — and, furthermore, about what good content moderation practices
-look like. But historically, most people have thought about content moderation
-as what’s been represented in the news: outsourced teams, normally in the
-Philippines or somewhere else, working really terrible hours in bad conditions
-trying to manually sort through pieces of content. And a lot of these teams
-today are using automated software to minimize the amount of harm.
-But that’s just part of the story. To paint a bigger picture
-today, there are some teams that continue to use outsourced vendors, but a lot
-of teams that deal with a higher volume of content can’t possibly have humans
-monitor everything, so they turn to artificial intelligence.
-Still, there’s another common misconception about whether or
-not we can just automate ourselves out of this problem easily. This is a common
-Silicon Valley example of trying to use technology to just get ourselves out of
-a tricky problem. I think at the end of the day, companies have realized that
-there continues to be the need for a human in the loop and for smart people to
-think about determining a way forward for the process.
-Does your work
-address Section 230 of the Communications Decency Act? That’s a hot topic in
-Washington, DC these days.
-It comes up all the time. A lot of trust and safety teams
-are not as familiar with policy, so they’re always questioning what actually
-has weight when we think about the policy world. And I think Section 230 also
-has divisions in the trust and safety community. So we try to educate people at
-companies on what’s happening around policy and legislation.
-Our main goal is to get more voices of professionals to help
-explain the nuances of how complex tasks like content moderation are done at
-companies of all sizes, and for them to also learn about what’s happening, because
-a lot of trust and safety professionals aren’t at the table. It’s usually the
-public affairs or government teams that tend to kind of play communicator or
-deflect questions when these are raised.
-And so we want to value that. There’s so many important
-perspectives that are needed. And I think there are a lot of gaps right now among
-policymakers and their understanding of how operations just work normally,
-because you can’t really change something until you change the structure or you
-have enough resourcing to allow things to actually come about. Otherwise a
-policy is just a dead policy.
-You were a
-disinformation and security expert at DHS; how has that experience informed
-your current work?
-I was the chief technology officer of two teams. One focused
-on election security, and another one focused on terrorists’ use of the
-internet and homegrown extremism. I think for both issues, I felt like I was just
-a professional translator. A lot of times, an issue was raised and people immediately
-began trying to solve it using what were practically different languages. I
-think at the core, most people when faced with a national security issue wanted
-to problem solve together, but ended up speaking past each other and feeling
-misunderstood.
-There are so many communities that touch trust and safety as
-an issue, but there was a real lack of sharing across the aisle there. So in US
-government, when you touch an issue like terrorist content, it’s completely
-separate from election security or broader disinformation. And when disinformation
-became a bigger issue, it was really unclear where in the government it would
-sit and under what jurisdiction. Also, a lot of these agency folks don’t have a
-firm grasp on who to talk to at companies. They often had one government
-affairs contact, but no one else to talk to. This is not just in the US but
-internationally too.
-I think there is still a lot of work ahead, and I feel like
-a lot of my time in government was spent on educating people on this “technology
-literacy” that I think a lot of stakeholders now have. But I still see this in
-congressional hearings all the time where people confound or mix up different
-issues from data privacy to advertising to how actual user-generated content
-can be regulated. If you don’t separate those issues, it’s really hard to tackle
-each one.
+[Speaker: Introduction / editorial context]
+Trust is a binding agent for society, but the internet was not designed with trust or user safety in mind. And today, trust in the online ecosystem seems to be plummeting. How can we reverse this trend?
+
+[Speaker: Introduction / editorial context]
+Many tech companies have trust and safety professionals working behind the scenes on complex issues like content moderation, disinformation, and user privacy. To help unify these efforts and establish best practices, Clara Tsao co-founded the Trust & Safety Professional Association after serving as the Department of Homeland Security’s (DHS) chief technology officer from 2016–2019. She joined “Explain to Shane” to discuss how the trust and safety industry operates, and how her organization is tackling the challenges of the digital age.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Clara, tell us a bit about the Trust & Safety Professional Association. What do you guys do, how do you do it, and how long have you been in existence?
+
+[Speaker: Clara Tsao]
+Clara Tsao: A lot of people think “trust and safety” is a brand new field, but similar to privacy or cybersecurity, it was around for years before people started using it as a common name or term. Still, I think we’re starting to hear more people in DC and policymakers use it today.
+
+[Speaker: Clara Tsao]
+Back in the e-commerce days, trust and safety teams existed to protect the safety of users. But with the advent of social media, thornier issues surfaced that were far less black and white. And so over the last few years, more and more of these teams have ended up being built up within companies. Sometimes they’re put under their legal team as an extension of copyright and other kinds of issues when it comes to more content-based platforms. Other times, we’ve seen trust and safety teams fall under operations. So early companies sometimes may have teams that deal with customer success, spam, and fraud; trust and safety is sometimes an extension of that. Sometimes it’s an extension of cybersecurity.
+
+[Speaker: Clara Tsao]
+The way this got started in 2019 was that there has never been a shared community of practice for trust and safety professionals. Even though a huge set of professionals has spent the last decade or more thinking about these issues, there has never been a place for them to share what’s in between. We got started after feeling that niche from the community of wanting something like this to exist for a while.
+
+[Speaker: Shane Tews]
+Are you seeing startups treat trust and safety departments as a must-have nowadays?
+
+[Speaker: Clara Tsao]
+I think it depends on the company and their structure. The sad part is: Much like every single issue, most companies don’t really think about trust and safety until something really bad happens. We saw this in the cybersecurity space where until major cyberattacks happened, most people weren’t investing in cybersecurity infrastructure. After seeing what cyber incidents could do, though, companies today will invest in cybersecurity regardless of whether there’s an attack or not.
+
+[Speaker: Clara Tsao]
+I think in the online space, people have demanded better from companies. A lot of startup founders have had really bad trust and safety experiences in their first run at it. And so they often realize the importance of investing up front to have community practices in place.
+
+[Speaker: Clara Tsao]
+Even today, we’re looking at new kinds of mediums for where there’s new trust and safety issues. With new audio platforms like Clubhouse, for example, companies are having to decide how to deal with content that is really vulgar, shouldn’t be out there, or might be against a community standard in a certain country or somewhere else. But it’s harder for startups — unlike the bigger players — to have the resources to constantly monitor content.
+
+[Speaker: Clara Tsao]
+But yeah, more and more companies are feeling the pull of users demanding healthier communities online. So we’ve been trying to help smaller companies and startups get involved with us by sponsoring them through grants. We’re constantly trying to make sure we’re thinking of the best practices — not just for the larger guys, but for the smaller ones as well.
+
+[Speaker: Shane Tews]
+What are some common misconceptions about how content moderation works? Do people underestimate how complex it is?
+
+[Speaker: Clara Tsao]
+Absolutely — and the dialogue has changed significantly in the past year. What’s been really fascinating is: Around COVID-19 disinformation and health misinformation, there’s more unanimous agreement that this is bad content. Even if we’re unsure, we should take it down because public health is on the line.
+
+[Speaker: Clara Tsao]
+But around more polarizing issues like politics or elections, there’s been a lot of back and forth on what’s good content and what’s not — and, furthermore, about what good content moderation practices look like. But historically, most people have thought about content moderation as what’s been represented in the news: outsourced teams, normally in the Philippines or somewhere else, working really terrible hours in bad conditions trying to manually sort through pieces of content. And a lot of these teams today are using automated software to minimize the amount of harm.
+
+[Speaker: Clara Tsao]
+But that’s just part of the story. To paint a bigger picture today, there are some teams that continue to use outsourced vendors, but a lot of teams that deal with a higher volume of content can’t possibly have humans monitor everything, so they turn to artificial intelligence.
+
+[Speaker: Clara Tsao]
+Still, there’s another common misconception about whether or not we can just automate ourselves out of this problem easily. This is a common Silicon Valley example of trying to use technology to just get ourselves out of a tricky problem. I think at the end of the day, companies have realized that there continues to be the need for a human in the loop and for smart people to think about determining a way forward for the process.
+
+[Speaker: Clara Tsao]
+Does your work address Section 230 of the Communications Decency Act? That’s a hot topic in Washington, DC these days.
+
+[Speaker: Clara Tsao]
+It comes up all the time. A lot of trust and safety teams are not as familiar with policy, so they’re always questioning what actually has weight when we think about the policy world. And I think Section 230 also has divisions in the trust and safety community. So we try to educate people at companies on what’s happening around policy and legislation.
+
+[Speaker: Clara Tsao]
+Our main goal is to get more voices of professionals to help explain the nuances of how complex tasks like content moderation are done at companies of all sizes, and for them to also learn about what’s happening, because a lot of trust and safety professionals aren’t at the table. It’s usually the public affairs or government teams that tend to kind of play communicator or deflect questions when these are raised.
+
+[Speaker: Clara Tsao]
+And so we want to value that. There’s so many important perspectives that are needed. And I think there are a lot of gaps right now among policymakers and their understanding of how operations just work normally, because you can’t really change something until you change the structure or you have enough resourcing to allow things to actually come about. Otherwise a policy is just a dead policy.
+
+[Speaker: Shane Tews]
+You were a disinformation and security expert at DHS; how has that experience informed your current work?
+
+[Speaker: Clara Tsao]
+I was the chief technology officer of two teams. One focused on election security, and another one focused on terrorists’ use of the internet and homegrown extremism. I think for both issues, I felt like I was just a professional translator. A lot of times, an issue was raised and people immediately began trying to solve it using what were practically different languages. I think at the core, most people when faced with a national security issue wanted to problem solve together, but ended up speaking past each other and feeling misunderstood.
+
+[Speaker: Clara Tsao]
+There are so many communities that touch trust and safety as an issue, but there was a real lack of sharing across the aisle there. So in US government, when you touch an issue like terrorist content, it’s completely separate from election security or broader disinformation. And when disinformation became a bigger issue, it was really unclear where in the government it would sit and under what jurisdiction. Also, a lot of these agency folks don’t have a firm grasp on who to talk to at companies. They often had one government affairs contact, but no one else to talk to. This is not just in the US but internationally too.
+
+[Speaker: Clara Tsao]
+I think there is still a lot of work ahead, and I feel like a lot of my time in government was spent on educating people on this “technology literacy” that I think a lot of stakeholders now have. But I still see this in congressional hearings all the time where people confound or mix up different issues from data privacy to advertising to how actual user-generated content can be regulated. If you don’t separate those issues, it’s really hard to tackle each one.

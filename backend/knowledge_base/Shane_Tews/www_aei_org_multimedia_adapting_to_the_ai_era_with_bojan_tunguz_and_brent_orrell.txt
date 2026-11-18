@@ -1,10 +1,11 @@
 PAGE_TITLE: 
-	Adapting to the AI Era (with Bojan Tunguz and Brent Orrell) | American Enterprise Institute - AEI
+	Adapting to the AI Era (with Bojan Tunguz and Brent Orrell)
 
+[Speaker: Introduction / editorial context]
 What does the rise of generative AI mean for how we educate, train, and prepare for the future of work? And despite AI’s growing capabilities, why have institutions been so slow to respond to these changes and what will help them catch up with the growth of AI in new industries and educational forums?
-On this episode of
-Explain to Shane
-, Shane Tews and AEI Senior Fellow Brent Orrell interview Bojan Tunguz, founder and CEO of TabulAI. They discuss why AI should be central to modern education and workforce development—and what needs to change to make that vision a reality.
-Download this episode’s transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+On this episode of Explain to Shane, Shane Tews and AEI Senior Fellow Brent Orrell interview Bojan Tunguz, founder and CEO of TabulAI. They discuss why AI should be central to modern education and workforce development—and what needs to change to make that vision a reality.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.

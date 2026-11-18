@@ -1,102 +1,53 @@
 PAGE_TITLE: 
-	Inside a Cybersecurity Training Firm: Highlights from My Conversation with Keith Peer | American Enterprise Institute - AEI
+	Inside a Cybersecurity Training Firm: Highlights from My Conversation with Keith Peer
 
-Cyberattacks
-are one of the largest threats facing society today. Learning how cyber
-disruptions take place is the best way to protect services provided by network
-operations and data systems, but who has the training resources and expert
-teams required to detect unseen risks for enterprise, government, and civil
-society?
-On the
-latest episode of
-Explain to Shane
-, I
-was joined by Keith Peer, head of
-Offensive Security
-’s federal practice, to hear about new
-cybersecurity training offerings tailored toward the unique challenges of today’s
-digital threat landscape. Offensive Security is a leading cybersecurity
-organization that provides state-of-the-art coursework, training exercises, and
-certifications on systems penetration testing for the federal government and a
-number of Fortune 500 companies.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Keith, explain what “offensive”
-cybersecurity looks like in today’s context.
-Keith Peer: Our company, Offensive Security, is focused on two things: producing
-Kali Linux
-distribution and cybersecurity training, which consists of penetration testing and both offensive and defensive cyber operations. Penetration testing is where you assess the security vulnerabilities in an application or particular target. There’s also red teaming, which is going after a target inside of an operation. So it would not just be finding the vulnerabilities in an application; it’s actually using those vulnerabilities going all the way through to a particular target inside that organization.
-Our students
-learn how to do penetration testing, assessments of applications, and looking
-for vulnerabilities—in some cases all the way from applications to developing
-their own toolsets to perform those actions as well.
-Let’s talk about training. If someone wants
-to get involved in the cyber world, what types of training and certification do
-they need?
-Lots of
-certifications are really entry-level. Our 100-level content is a little more
-advanced than having just graduated out of college or high school. But when you
-want to embark on your cybersecurity career, it’s a little more advanced than
-that. You should have some prerequisites done by then. Those could be the
-classic CompTIA courseware, information technology (IT) fundamentals, A+, and
-Security+. We then have a track for penetration testing that is well-respected
-in the industry and among stakeholders as demonstratively valuable. I say that
-because of our unique pedagogy and testing.
-Our
-comprehensive training accumulates in a robust, 100-percent practical, hands-on
-test where you have to demonstrate the skills and mindset you have learned over
-the course in a real-world environment and be able to write about and document it
-as well. We have a lot of Fortune 500 customers, as well as across the federal
-government.
-When it comes to the Internet of Things
-(IoT), what level of security do we need on devices that we integrate into a
-larger system?
-Historically,
-the threat landscape has revolved around IT systems. Now you’re moving into IoT
-systems, and sometimes those IoT systems enable operational technology (OT)
-networks to have communication that typically was not available. These OT
-devices were managing pumps and switches, and everything else that they managed
-was done manually. Now, they have the ability to be internet-enabled, monitored,
-and controlled.
-I consider a
-mobile phone an IoT device. It’s connected to a network, but it’s portable;
-it’s unique. All those devices—whether it be mobile, IoT devices, or OT devices
-that are now enabled because of IoT devices and IT networks—have expanded the
-threat landscape.
-One of the
-ways to start securing the network is by developing skills in monitoring those
-transition points. The communications coming in from those IoT devices go into
-your IT infrastructure at some point. So it’s being able to authenticate those
-devices, assess the data coming in, and secure the data in transit.
-There are
-many considerations when you are enabling an IoT device to communicate with
-your IT systems. The best way to start to defend that is by looking at the security
-of the IoT devices themselves and making sure that, again, you’re testing the
-vulnerabilities and making sure you’re using the proper security posture on
-those IoT devices as is practical.
-You can only
-do so much at any given time, but you can routinely in many cases assess them
-if you have control of them for security vulnerabilities and then patch them,
-or be able to remediate them in a different way. So it may not be patching, but
-you can control the data inflow from that IoT device differently.
-There’s legislation in both the House and Senate—along with the European Union—that would let consumers lower their guard on mobile security by forcing application stores to allow “
-sideloading
-” of unvetted software. Meanwhile, the Department of Homeland Security is telling us to put our “
-Shields Up
-” against growing digital threats. As a consumer who is used to having layers of protection, this sounds frightening. Is it?
-Absolutely.
-When you start to loosen the walled garden and lower the defenses to
-accommodate a user base, you are naturally exposing yourself to more threats
-because now you control less and when you control less, you’re more vulnerable.
-You cannot maintain the same security posture as you had previously if you’re
-allowing uncontrolled applications into the environment that can potentially
-attack you.
+[Speaker: Introduction / editorial context]
+Cyberattacks are one of the largest threats facing society today. Learning how cyber disruptions take place is the best way to protect services provided by network operations and data systems, but who has the training resources and expert teams required to detect unseen risks for enterprise, government, and civil society?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of Explain to Shane, I was joined by Keith Peer, head of Offensive Security’s federal practice, to hear about new cybersecurity training offerings tailored toward the unique challenges of today’s digital threat landscape. Offensive Security is a leading cybersecurity organization that provides state-of-the-art coursework, training exercises, and certifications on systems penetration testing for the federal government and a number of Fortune 500 companies.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Keith, explain what “offensive” cybersecurity looks like in today’s context.
+
+[Speaker: Keith Peer]
+Keith Peer: Our company, Offensive Security, is focused on two things: producing Kali Linux distribution and cybersecurity training, which consists of penetration testing and both offensive and defensive cyber operations. Penetration testing is where you assess the security vulnerabilities in an application or particular target. There’s also red teaming, which is going after a target inside of an operation. So it would not just be finding the vulnerabilities in an application; it’s actually using those vulnerabilities going all the way through to a particular target inside that organization.
+
+[Speaker: Keith Peer]
+Our students learn how to do penetration testing, assessments of applications, and looking for vulnerabilities—in some cases all the way from applications to developing their own toolsets to perform those actions as well.
+
+[Speaker: Shane Tews]
+Let’s talk about training. If someone wants to get involved in the cyber world, what types of training and certification do they need?
+
+[Speaker: Keith Peer]
+Lots of certifications are really entry-level. Our 100-level content is a little more advanced than having just graduated out of college or high school. But when you want to embark on your cybersecurity career, it’s a little more advanced than that. You should have some prerequisites done by then. Those could be the classic CompTIA courseware, information technology (IT) fundamentals, A+, and Security+. We then have a track for penetration testing that is well-respected in the industry and among stakeholders as demonstratively valuable. I say that because of our unique pedagogy and testing.
+
+[Speaker: Keith Peer]
+Our comprehensive training accumulates in a robust, 100-percent practical, hands-on test where you have to demonstrate the skills and mindset you have learned over the course in a real-world environment and be able to write about and document it as well. We have a lot of Fortune 500 customers, as well as across the federal government.
+
+[Speaker: Shane Tews]
+When it comes to the Internet of Things (IoT), what level of security do we need on devices that we integrate into a larger system?
+
+[Speaker: Keith Peer]
+Historically, the threat landscape has revolved around IT systems. Now you’re moving into IoT systems, and sometimes those IoT systems enable operational technology (OT) networks to have communication that typically was not available. These OT devices were managing pumps and switches, and everything else that they managed was done manually. Now, they have the ability to be internet-enabled, monitored, and controlled.
+
+[Speaker: Keith Peer]
+I consider a mobile phone an IoT device. It’s connected to a network, but it’s portable; it’s unique. All those devices—whether it be mobile, IoT devices, or OT devices that are now enabled because of IoT devices and IT networks—have expanded the threat landscape.
+
+[Speaker: Keith Peer]
+One of the ways to start securing the network is by developing skills in monitoring those transition points. The communications coming in from those IoT devices go into your IT infrastructure at some point. So it’s being able to authenticate those devices, assess the data coming in, and secure the data in transit.
+
+[Speaker: Keith Peer]
+There are many considerations when you are enabling an IoT device to communicate with your IT systems. The best way to start to defend that is by looking at the security of the IoT devices themselves and making sure that, again, you’re testing the vulnerabilities and making sure you’re using the proper security posture on those IoT devices as is practical.
+
+[Speaker: Keith Peer]
+You can only do so much at any given time, but you can routinely in many cases assess them if you have control of them for security vulnerabilities and then patch them, or be able to remediate them in a different way. So it may not be patching, but you can control the data inflow from that IoT device differently.
+
+[Speaker: Shane Tews]
+There’s legislation in both the House and Senate—along with the European Union—that would let consumers lower their guard on mobile security by forcing application stores to allow “sideloading” of unvetted software. Meanwhile, the Department of Homeland Security is telling us to put our “Shields Up” against growing digital threats. As a consumer who is used to having layers of protection, this sounds frightening. Is it?
+
+[Speaker: Keith Peer]
+Absolutely. When you start to loosen the walled garden and lower the defenses to accommodate a user base, you are naturally exposing yourself to more threats because now you control less and when you control less, you’re more vulnerable. You cannot maintain the same security posture as you had previously if you’re allowing uncontrolled applications into the environment that can potentially attack you.

@@ -1,18 +1,18 @@
 const express = require('express');
 const path = require('node:path');
-const { MODEL, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS } = require('../utils/pilot');
+const { MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS } = require('../utils/pilot');
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
 const { fetchLegacyArticles, legacyPrompt, legacyDomains, legacyFileList, legacyFile } = require('../utils/legacyArchive');
 const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, parseFollowUps, checkCitations } = require('../utils/sourceContext');
 const { queryTerms } = require('../utils/research');
-const { prepareWebSources, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
+const { prepareWebSources, planWebSearch, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
 const { providerErrorDetails } = require('../utils/providerError');
 const { TEST_MODELS, selectedModels, estimatedCost } = require('../utils/modelTesting');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
-function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb }) {
+function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb, now = Date.now }) {
 const router = express.Router();
 router.param('chatId', (req, res, next, id) => {
   if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) return res.status(400).json({ error: 'Invalid chat identifier.' });
@@ -200,12 +200,14 @@ router.post('/:chatId/message', async (req, res) => {
     const lastQuestion = previousQuestions.at(-1)?.content;
     const retrievalQuery = lastQuestion && queryTerms(message).length < 2 && !/\b(themes?|overview|focus)\b/i.test(message)
       ? `${lastQuestion} ${message}` : message;
+    const webPlan = web ? planWebSearch(message, now()) : null;
+    const libraryQuery = web ? searchTopic(retrievalQuery) : retrievalQuery;
     let articles = [];
     let groups;
     try {
       if (legacy) articles = await fetchArchivedArticles(chat.domainName, message);
       else if (compare) groups = await findComparisonSources(fetchArticles, retrievalQuery);
-      else articles = await fetchArticles(chat.domainName, retrievalQuery, web ? 3 : 6);
+      else articles = await fetchArticles(chat.domainName, libraryQuery, web ? 3 : 6);
     } catch {
       return res.status(503).json({ error: 'The AEI Scholar Library could not be searched. Please try again shortly.', code: 'archive_unavailable' });
     }
@@ -234,6 +236,7 @@ router.post('/:chatId/message', async (req, res) => {
       return [
         { role: 'system', content: researchPrompt(chat.domainName, sources, articles.some(article => article.selectionMode === 'overview'), needsTitle, {
           web,
+          webPlan,
           comparison: compare ? comparisonInstructions(groups) : null,
           followUps: true
         }) },
@@ -252,8 +255,22 @@ router.post('/:chatId/message', async (req, res) => {
     } else usageId = await pilot.begin(req.auth.id, reservedMessages);
     if (web) {
       let webSources;
-      try { webSources = prepareWebSources(await searchWeb(message)); }
+      try { webSources = prepareWebSources(await searchWeb(message, webPlan), webPlan); }
       catch { throw Object.assign(new Error('Experimental web search could not retrieve sources. Try Article Chat or try again shortly.'), { status: 502, code: 'web_unavailable' }); }
+      if (!webSources.length && webPlan.window) {
+        const unused = usageId ? [usageId] : [...pendingComparisons];
+        for (const id of unused) {
+          await pilot.finish(id, { errorCode: 'no_dated_web_sources', attempted: false });
+          pendingComparisons.delete(id);
+        }
+        usageId = null;
+        const content = `I could not verify a web result with a reported publication or update date between ${webPlan.window.from} and ${webPlan.window.to}. ${archiveSources.length ? 'The AEI passages below provide background, but they do not establish a development in that period.' : 'No matching AEI passages were found either.'} Try a wider date window or a more specific topic.`;
+        const aiResponse = { role: 'assistant', content, sources: archiveSources, searchMode: 'web' };
+        await chatManager.addMessage(chatId, userMessage);
+        await chatManager.addMessage(chatId, aiResponse, needsTitle ? fallbackChatTitle(message) : null);
+        return res.json({ response: content, sources: archiveSources, searchMode: 'web', aiUsed: false,
+          chat: await chatManager.getChatWithUserCheck(chatId, getUserId(req)), chatId });
+      }
       if (!webSources.length) {
         throw Object.assign(new Error('Experimental web search found no usable results for this question. Try Article Chat or a more specific question.'), { status: 502, code: 'web_unavailable' });
       }
@@ -314,7 +331,7 @@ router.post('/:chatId/message', async (req, res) => {
       model: MODEL,
       messages: fullMessages,
       max_tokens: MAX_OUTPUT_TOKENS,
-      reasoning: { enabled: false },
+      ...MODEL_PARAMETERS,
       temperature: 0.2,
       stream: false
     });
@@ -375,7 +392,7 @@ router.post('/:chatId/message', async (req, res) => {
       catch { console.error('Unable to update usage; the reserved estimate remains in the ledger.'); }
     }
     console.error('Chat request failed:', JSON.stringify(providerErrorDetails(error)));
-    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer', 'web_unavailable', 'model_selection', 'model_setup'].includes(error.code);
+    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer', 'web_unavailable', 'model_selection', 'model_setup', 'web_window'].includes(error.code);
     res.status(localCode ? error.status : 500).json({
       error: localCode ? error.message : (error.status === 402 ? 'The Together account has no available credit.' : 'The answer could not be completed. Please check the usage report before retrying.'),
       code: error.status === 402 ? 'credit_limit' : (localCode ? error.code : 'system_error')

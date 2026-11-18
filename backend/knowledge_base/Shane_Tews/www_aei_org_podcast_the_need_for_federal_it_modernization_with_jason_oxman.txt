@@ -1,10 +1,14 @@
 PAGE_TITLE: 
-	The Need for Federal IT Modernization (with Jason Oxman) | American Enterprise Institute - AEI
+	The Need for Federal IT Modernization (with Jason Oxman)
 
+[Speaker: Introduction / editorial context]
 Federal information technology (IT) is widely known to be outdated, but proposed legislation in Congress would fast-track federal IT modernization. If passed, the legislation would strengthen the government’s overall security by allowing departments and agencies to bring their systems into the digital innovation era with better cybersecurity and data collection mechanisms. Many agencies realize that upgraded legacy systems are crucial during the COVID-19 crisis. The government needs to change the procurement rules to allow for more emerging technologies that would enable more efficiency from both their IT systems and the employees who deliver their agencies’ services.
-On this episode,
-Jason Oxman
-, president and CEO of the Information Technology Industry Council (ITI) joins
-Shane
-to discuss why ITI has made federal IT modernization a priority. Jason’s insights on government investment in cybersecurity and privacy emphasize the extent to which the modernization of critical infrastructure (or lack thereof) will dictate the government’s ability to serve its citizens efficiently.
+
+[Speaker: Introduction / editorial context]
+On this episode, Jason Oxman, president and CEO of the Information Technology Industry Council (ITI) joins Shane to discuss why ITI has made federal IT modernization a priority. Jason’s insights on government investment in cybersecurity and privacy emphasize the extent to which the modernization of critical infrastructure (or lack thereof) will dictate the government’s ability to serve its citizens efficiently.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

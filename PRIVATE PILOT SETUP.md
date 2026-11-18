@@ -1,42 +1,42 @@
-# Private pilot setup and publication
+# Publish the complete update
 
-Updated November 17, 2026. This update adds streaming compatibility and the optional Model Tester workspace. Local checks do not establish live provider compatibility or answer quality. The maintainer uploads changes to GitHub and controls deployments and private settings.
+This package includes the code changes AND the actual repaired interview files. Do not also upload either earlier update ZIP.
 
-## Existing services
+## One branch, one pull request, one publication
 
-Keep the existing Vercel website, Render Free backend and Neon Free database. Free services retain their normal quotas and sleep/pause behavior. Together usage is charged separately. This update requires no hosting upgrade and adds no dependencies.
+Use branch search-and-interview-repair. All upload batches go onto that same branch. Merge only after every batch and the workflow change are included and reviewed. The live site remains on main until then.
 
-## Private backend settings
+The browser upload has a 100-file limit, so the supplied browser package splits the release into six batches of no more than 90 files. Upload the contents of 01Code at the repository root, preserving backend/frontend paths. Then open backend/knowledge_base/Shane_Tews on the same GitHub branch and upload the flat text-file contents of 02Files1 through 06Files5 there. Do not upload the numbered folders themselves. Do not upload the library text files at the repository root.
 
-Render -> aei-chatbot -> Environment:
+01Code contains the code, documentation, updated articleMetadata.json and repair report. 02Files1 through 06Files5 contain the interview library files. They are one release, not alternatives.
 
-| Name | Value |
-| --- | --- |
-| DATABASE_URL | Existing private Neon PostgreSQL connection string |
-| TOGETHER_API_KEY | Existing newly created Together project key |
-| CHATBOT_INTERN_PASSWORD | Existing Intern password, 16-256 characters |
-| CHATBOT_RA_PASSWORD | Existing, different RA password, 16-256 characters |
-| CHATBOT_DEMO_PASSWORD | Optional existing unique demo password, 16-256 characters |
-| CHATBOT_TESTER_PASSWORD | NEW: optional unique Model Tester password, 16-256 characters |
-| CHATBOT_ALLOWED_ORIGINS | https://aei-chatbot.vercel.app |
-| NODE_VERSION | 24 |
-| TAVILY_API_KEY | Existing optional web-search connection; required for AEI + Web |
+The hidden .github/workflows/biweekly-scrape.yml file belongs on the same branch. On Mac, Command–Shift–Period shows hidden folders. If needed, edit the existing workflow on GitHub and replace the entire contents with the supplied standalone workflow file before merging. Do not paste a diff or upload the standalone copy at the repository root.
 
-Choose the tester password privately. Do not place any secret in GitHub, Vercel frontend variables, this document, screenshots, or chat. Ordinary Render variables override matching environment-group values. Vercel retains its existing REACT_APP_API_URL pointing to the backend.
+Suggested pull request title: Improve search and repair podcast sources
 
-Together passthrough models may require prompt storage and third-party sharing enabled in organization privacy settings. Those are organization choices, not permissions this code changes. Training consent is separate. Do not rotate a working key merely to resolve a streaming-format error.
+After all batches are committed, create one pull request into main and have Codex check it before merging. Wait for Render Live and Vercel Ready for the merge commit. The repaired files are already included; no separate interview repair run is needed to publish them.
 
-## Publish
+## Private settings
 
-1. Extract the update ZIP. At the repository root, upload its backend and frontend folders and documentation, preserving paths.
-2. Create a branch named model-testing-update. Commit with 'Add private model comparisons and streaming support', then open a pull request into main.
-3. Review the changed paths and merge once checks pass. This package contains no built website, dependencies or private credentials.
-4. Add CHATBOT_TESTER_PASSWORD in Render, then save and deploy. The database adds the comparison reservation function through the existing initialization process. Existing tables and records are retained.
-5. Confirm the Render deployment is Live for the merge commit and Vercel's deployment for that commit succeeded.
-6. Sign in as Chatbot Intern and ask one short article-grounded question. Check the answer and the newest usage entry.
-7. Sign out, choose Model Tester, and sign in using its new password. Leave the three defaults selected and ask the same question once. Check each answer, citations, timings and estimated costs. One failed model is shown separately, without an automatic retry.
-8. Test Article Search and AEI + Web. Article Search should produce no new Together usage. Web mode requires the existing search key and shares the same web results across candidates.
+Keep the existing Render/Neon/Vercel services and Together organization privacy settings. No new API key, database or paid hosting is needed. If old CHATBOT_INPUT_USD_PER_MILLION / CHATBOT_OUTPUT_USD_PER_MILLION overrides exist, remove them or use 0.15 / 0.50 for GLM. Remove/update an obsolete CHATBOT_PRICE_SOURCE too. Keep spending limits unchanged.
 
-Each candidate counts as one request against the current global, per-account and per-minute allowances. Three selected models use three requests. A second three-model run inside one minute can exceed the five-request minute limit. Wait at least a minute rather than repeatedly retrying. The defaults remain 50 requests/day globally, 30/account/day and $0.50/day estimated usage, resetting at midnight UTC. Uncertain provider outcomes retain a conservative reservation. The app's limits cannot prevent use of a stolen API key outside the chatbot.
+Existing backend settings remain DATABASE_URL, TOGETHER_API_KEY, CHATBOT_INTERN_PASSWORD, CHATBOT_RA_PASSWORD, optional CHATBOT_DEMO_PASSWORD and CHATBOT_TESTER_PASSWORD, CHATBOT_ALLOWED_ORIGINS=https://aei-chatbot.vercel.app, NODE_VERSION=24, and the private TAVILY_API_KEY. Passwords must be different and 16–256 characters. Keep all secrets out of GitHub, Vercel website variables, screenshots and chat. Vercel keeps its existing REACT_APP_API_URL.
 
-To disable the tester login, remove CHATBOT_TESTER_PASSWORD from Render and deploy. Other accounts retain their own private chats. Compare model quality using the same questions and evidence, and review claims against cited passages. A model labeled available by the catalog still needs a live call to confirm access for this organization.
+## Check the deployed result
+
+1. Refresh and sign in. Start a new chat so the test uses the new evidence; historical answers retain their original saved excerpts.
+2. In Article Search, find Making Online Safety Simpler (with Greg Oslan), its full transcript, and Why Is It So Hard to Stay Safe Online? Check dates, format labels and episode/PDF links.
+3. Ask one small Intern question. Check GLM-5.3-Flash in Usage and costs, cited support and correct guest/host attribution. Scanned text is qualified; exact quotations require the original PDF.
+4. Test a Brent Orrell guest question or comparison. A scholar can appear as a guest without being the page's author.
+5. In Model Tester, deselect Qwen while passthrough remains disabled. Each selected model is a separately charged request. Article Search has no Together or web-search charge.
+6. Recheck AEI + Web with the past-30-days spectrum question. Dates are reported publication/update estimates, and no verified dated result is an acceptable answer.
+
+The existing limits remain 50 model attempts per UTC day overall, 30/account/day, five/minute/account and $0.50/day estimated app usage. These app limits do not control use of a key elsewhere. Never reuse a revoked key.
+
+## Optional broader library catch-up
+
+This repair does not establish that every publication by all four scholars is current. For that separate check, run Actions → Biweekly Article Scrape on main with lookback_days 180 and refresh_interviews false. The current interview repair is already included. Inspect harvest-report.json, fetch-missing-articles-report.json and the resulting commit before claiming complete coverage. A green job alone is insufficient. Later, refresh_interviews true can deliberately recheck older interview pages.
+
+The workflow now uses standard GitHub-hosted Linux and public AEI endpoints, with Poppler/Tesseract for PDFs. Standard runner compute is free for this public repository; storage/LFS quotas remain separate. The first hosted run is still unverified. Reading PDF/scanned text does not consume Together or paid search credits.
+
+Twelve conference/event PDFs and 15 other event/press files remain outside the automatic podcast repair. Nineteen transcript sources have uncertain printed/OCR speaker labels. See the repair summary and report; do not describe the collection as perfectly verified or exhaustive.

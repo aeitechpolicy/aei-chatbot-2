@@ -1,0 +1,155 @@
+PAGE_TITLE: 
+	Explain to Shane: Telecom Supply Chain Security and 5G with David Stehlin — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI Telecom supply chain security and 5G with David Stehlin Episode #2 | April 21, 2020 | Shane Tews and David Stehlin
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast I interview tech industry experts to explain how the apps, services and structures of today's information technology system work and how they shape our social and economic life. Hello and welcome David Stehlin to my show today on Explain to Shane. David joins us from the Telecommunications Industry Association, also known as TIA, where he stepped in as president in September of last year and he got right to work on two of my favorite topics, supply chain security and next generation, also known as 5G, technology. Prior to joining TIA, David served as a CEO of MRV Communications. Previous to that he was President of Overture Networks, and then CEO of Ceterus Networks prior to that. Before beginning his civil career, David was Captain at the US Marine Corps and was a graduate of the US Naval Academy, so we have been honored with your service for quite some time David, and thank you for joining us today.
+
+[Speaker: David Stehlin]
+David Stehlin: Hi, Shane. Glad to be here.
+
+[Speaker: Shane Tews]
+Shane Tews: So you guys have been hard at work from the minute you stepped in the door and I had the honor of meeting you in December when we were talking about the work that TIA is putting together on supply chain security around 5G. That was important in December and from what we've been going through recently, I think we're seeing that security on our networks and the internet is probably more important than ever. So I'm very excited about the work that you're doing.
+
+[Speaker: David Stehlin]
+David Stehlin: Yeah, we are too. This is one of those parts of the industry that has not brought enough attention to itself and one of the focuses of TIA is to help drive this forward. TIA is an industry association. We represent the manufacturers and suppliers of high tech communications networks around the world and l've been doing so in one form or fashion for more than 60 years and we recognize that the security of our ICT [information and communications technology] networks is really critical and perhaps is one of the most critical things that our country faces.
+
+[Speaker: Shane Tews]
+Shane Tews: I know one of the things that you were emphasizing is how you're going to bring transparency into the 5G supply chain. I know that a lot of us who've been following the 5G dialogue have said we're really down to Ericsson and Nokia, which from an economic perspective was challenging, and there's a lot more people who want to get into the system for the supply chain. But there is a definite need to understand who people are and what they're doing, and it sounds like you're going to give us a window into that world so we have a better view as to who the suppliers are and who the vendors are able to purchase from. Do I have that right?
+
+[Speaker: David Stehlin]
+David Stehlin: Yes. We live in a connected world and it's becoming more connected every single day. We see that time and time again. This requires a lot to happen. This connected globe we live in means that we can't live in isolation. We have to find ways to add transparency and add trust into our ICT networks because without that, our economy will not be able to grow, will not be sustainable, we're not going to be able take advantage of new technologies. TIA is very focused on addressing the issue and doing so from the perspective of quality. Our view is that supply chain security is a subset of quality and you can't have a quality product or quality network, quality system without built in, not bolted on supply chain security, so that's become a very big focus of ours.
+
+[Speaker: Shane Tews]
+Shane Tews: Well that's fantastic. And I know you mentioned when you and I had spoken earlier, that also gives us an opportunity to have a better view into where potential counterfeit parts might be coming in or pirated parts, which might work in the very beginning, but they very quickly degrade systems. That's also another kind of a key part that peaked my interest. Just by way of background, because I'm not that familiar with the standards bodies, but I'm not as familiar with ISO 9001 and your TL 9000 standards. Can you just give us a real baseline on that so we understand where you guys are starting on this structure with the supply chain management?
+
+[Speaker: David Stehlin]
+David Stehlin: Sure. First, and perhaps a little bit of background, maybe 20, 25 years ago, there was a major network outage along the east coast, much of the east coast went down for almost a day. Trading on Wall Street stopped for hours, and when they finally realized what happened, they found out that there were some faulty components and faulty software in one of the major switches in the network. And that brought down, as I said, most of the east coast. That brought the realization that there was no quality standard in the ICT space, in the telecom network space. The government, the US government obviously was very concerned about that and made suggestions, strong suggestions to the industry that, "Hey, you guys better solve this or we're going to help you solve it." And nobody wants to have government being overbearing. For the first time, service providers and equipment providers got together and created TL 9000 which is the telecom industries quality standard. It's not just a standard, but it's a combination of measurements and benchmarks and
+
+[Speaker: David Stehlin]
+certifications. You not only have maybe a bar that you should meet, but there's a clear bar that you must jump over and you have to verify that you're jumping over that bar. TL 9000 is based on ISO 9001. ISO is an international standards body that created the first broad-based quality standard, not just for telecom but for all industries. It's a very generic quality standard. We took that generic standard and modified it and made it specific for the telecom networks. It's been in place for over 20 years. It's been very successful. It continually gets upgraded. One of the rules of quality is continuous improvement and we're going to use that same methodology to build this annex to TL 9000 that's specifically for supply chain security.
+
+[Speaker: Shane Tews]
+Shane Tews: Well that's fascinating because the supply chain quality management definitely allows you to eliminate the need for the multiple quality management standards that l've heard you all talk about for years, as well as having the sustainability standards that show you where your performance metrics are, I would imagine. When I'm working back in the internet industry where a lot of times we would buy things, off the shelf gear, but we knew who we were dealing with then. And there's so many bits and parts to the networks I would imagine that having a consistent set of quality expectations across the telecom supply chain is really key to building into this next generation.
+
+[Speaker: David Stehlin]
+David Stehlin: Yeah, very much so. And we all know that 5G is not just your next 4G, it's not just more bandwidth or faster video downloads for your cell phone, it's a pervasive change in the network. Service providers today, the large service providers typically will operate eight to 10 to 12 different networks because they might have some specifically for consumers and some for enterprises, wireless and wireline, some just for back haul, some are for certain types of enterprises. Each and every one of these networks requires its own set of products, its own set of management tools, its own team, very difficult and expensive to manage multiple networks. 5G allows service providers to squeeze a lot of networks into one, or maybe they'll not get all the way down to one network, but they're certainly going to go from 10 or 12 down to maybe two or three networks, so they'll be much more efficient in how they operate. That's the good news. The bad news is that now you have a network that can do much more. It's much more pervasive and we all know that one of the benefits and potential opportunities for 5G is connected cars, telemedicine, very low latency services, network slicing, manufacturing controls for automation. All these great potential opportunities out there that will create new businesses and new services around the globe. The challenge is now you have much more running on the one network so you have more risk of bad actors getting into the network, whether it be through a critical IOT [internet of things] device. It could be your router in your house, it could be your connected HVAC system, it could be your car, and all these things become at risk when they get more and more connected.
+
+[Speaker: David Stehlin]
+On top of that, the industry is moving from proprietary network products to more open source network products, and we'll talk about that I bet in a minute. But the government, the US government is very supportive of open source because it gives the opportunity for our creative engineering talent in the United States to go out and create new services and new products and new parts of this coming 5G network. That's fantastic, but how do you manage that risk? Because now you have to stitch together all those different parts in the network, each and every place that you have an access to the network, a critical IOT device as I mentioned before or a switch or router, whatever it may be, you allow a bad actor to come in and perhaps do harm.
+
+[Speaker: Shane Tews]
+Shane Tews: Let's just take a step back to make sure that l'm clear on this. When you say they're taking kind of multiple networks and creating one network, are they using new technology to streamline into a base network that then can be plussed up? They're getting away from these individual networks that have been created for other specific uses?
+
+[Speaker: David Stehlin]
+David Stehlin: That's right. 5G is much more than upgraded RAN [radio access network] equipment out of a cell tower. And as I said, it's much more than more speed. It's fiber much deeper into the network. It's moving data centers out to the edge of the network closer to you and closer to shopping malls and business centers and things of that sort. And they're doing that because 5G and some of the services that will be enabled in 5G require very, very low latency. Latency is in many ways tied to distance. If you have to back haul everything to this very large hyperscale data center that might be 50 miles away, that time it takes causes latency in the network and you can't have high latency operation if you're going to do something like autonomous and connected cars.
+
+[Speaker: Shane Tews]
+Shane Tews: The network operation also sounds like it gets closer to the edge because they'll be able to just utilize the pieces of the network they need, but not the current way that the internet runs where we see bigger edge players in the network tend to be more centralized. Right?
+
+[Speaker: David Stehlin]
+David Stehlin: That's right.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. Let's go ahead and go into the open source, and one of the favorite buzzwords on Capitol Hill right now and in the industry is ORAN.
+
+[Speaker: David Stehlin]
+David Stehlin: Yes.
+
+[Speaker: Shane Tews]
+Shane Tews: Can you walk us through that?
+
+[Speaker: David Stehlin]
+David Stehlin: Sure. ORAN is open radio access networks. Today there are really three or four major RAN players, major 5G players around the world, Nokia, Ericsson, Samsung and Hauwei. None of those, of course, are US manufacturers. While Samsung and Ericsson and Nokia have facilities here and do a lot of business
+
+[Speaker: David Stehlin]
+with the US service providers, none of them are based in the United States. We have determined, and the US government has determined, that 5G is of strategic importance to our future. It, as I said, enables so much more than simply more bandwidth. It will become pervasive in everything we do and everything we operate that we need to have more strategic value and control over 5G networks in the United States. Historically a service provider will buy a whole system from an equipment manufacturer. If you're a service provider X, you might use Nokia in half of your network and Ericsson and the other half of your network for example, but then you're restricted to use only those types of gear. Because technology is changing so quickly, the intent of ORAN and the ORAN Coalition, for example, is to allow providers of other types of services, typically software-based, to come in and provide the software component of the network. RAN is obviously the radios that are up on a tower or up on a light pole, for example, but it's also the software that controls things. And historically a service provider will buy both that software and the hardware from one vendor. Open source allows the service provider to buy software from one vendor or perhaps multiple vendors and the hardware from somebody else.
+
+[Speaker: Shane Tews]
+Shane Tews: Yep, it's going to be a different world. I was reading an article yesterday about how they were referring to it as IP transport because we have to look at the entire system as it's running more efficiently, but it has different elements than what we've dealt with 3G and 4G. And as you've mentioned now, we will have more suppliers that hopefully will be validated and onto the secure supply chain network work you're doing, as well as more connection points. So that also sounds like it might have the ability to interject some more risk.
+
+[Speaker: David Stehlin]
+David Stehlin: That's right. Nokia and Ericsson are fantastic suppliers. They've been around for decades and have provided the backbone of our wireless networks in the United States for years. Of course Nokia bought Alcatel and Alcatel had bought Lucent and that's kind of the evolution of that company and they continue to provide fantastic equipment. But because there is now technology in place where you can separate that hardware from the software, you can take in pieces of software from creative suppliers and we all know that. And just look at how many apps are out there, for example, that we can use on our phones. We all know that there are many, many creative software suppliers. This allows the service provider to be more specific and perhaps build the network that they want to build with the services they want to offer. But as you say, it then requires that service provider to somehow stitch together the network. They're not buying it all from vendor A or vendor B. They have to pull together five, 10, 15 different vendors to make that network operate. There's a much higher component of systems integration that's required and every time you connect all these parts together, you inject risk. Not only risk that it won't work well, but risk that something bad is in the network.
+
+[Speaker: Shane Tews]
+Shane Tews: What is TIA's role in this?
+
+[Speaker: David Stehlin]
+David Stehlin: We do a couple things. We help enable new technologies. For example, 1 mentioned that we're enabling 5G by creating a standard related to edge data centers to help lower that latency. But our role in this specific opportunity is to create a new supply chain security standard and we're going to take the best of many standards that are already out there, but are not specifically built for telecom and merge them together and layer on top of what's already been built. Telecom-specific parts of a standard that will ensure that every component in the network, every product in the network, every system and every part of the network are transparent and are trustworthy. It's a combination of, is that chip coming from the vendor you think it is? And is that chip a trusted chip? You mentioned earlier, pirated or counterfeit parts, that's a big issue. Numbertwo, that manufacturer. Many times these equipment providers will use contract manufacturing. They're not building it in their own factory. Well, is that manufacturer trusted? Is the equipment provider using software that is in fact trusted? Most equipment providers will not only make their own software, but they will buy stacks and build upon those stacks. What's the whole history of that stack of software? And when you link all these things together, you have to do so in a way that's transparent and verifiable and you create a series of elements that are locked down and can't be changed. We will put a — call it a digital fingerprint on all the major critical elements in that network and then perhaps use something like blockchain to ensure that it is secure. What we're doing is we're bringing together our members and others, industry experts, to create this new supply chain security standard. The intent is that we will have draft one of it out this year and that by the middle of next year it'll be a released standard. And if you know anything about standards bodies, that's extremely quick.
+
+[Speaker: Shane Tews]
+Shane Tews: That is quick.
+
+[Speaker: David Stehlin]
+David Stehlin: Yeah, typically it's a three to five year process.
+
+[Speaker: Shane Tews]
+Shane Tews: And so are you involving the ITU [International Telecommunication Union] in this or is this an industry program separate from the work that they do? I know that they're a standards body.
+
+[Speaker: David Stehlin]
+David Stehlin: Yeah, we are not involving the ITU. One of the challenges you have is we want to create standards that are best for our country and best for the telecom networks in general, that's number one. We want to be able to do it quickly and not have to go through all sorts of approval processes that add too much time. This is too critical to wait that long. We will follow international processes and methodologies on how standards ought to be built, but we're not going
+
+[Speaker: David Stehlin]
+to ask their approval in advance.
+
+[Speaker: Shane Tews]
+Shane Tews: I think that's probably why you're going to get it done much faster.
+
+[Speaker: David Stehlin]
+David Stehlin: That's right.
+
+[Speaker: Shane Tews]
+Shane Tews: You mentioned you've done work with the ITU, now that it's a very long process.
+
+[Speaker: David Stehlin]
+David Stehlin: Yes.
+
+[Speaker: Shane Tews]
+Shane Tews: Sometimes technology comes and goes before they' ve made a decision about it. I know that the US governments also very engaged in this between DHS [Department of Homeland Security] and NIST [National Institute of Standards and Technologyl and work that's going on in the Pentagon. How are you incorporating sort of the work that they're doing in supply chain with the TIA efforts?
+
+[Speaker: David Stehlin]
+David Stehlin: Yeah. First of all, we're in dialogue with all of them. The Department of Commerce, DOD [Department of Defense], DHS, the CMMC |Cybersecurity Maturity Model Certification], we are in discussions with each of them. We're not trying to recreate the wheel. We're trying to take the best of each of those elements and merge them together into what makes sense for telecom. And we want it to be something that's manageable, that's not so overbearing and overarching that it doesn't get deployed. It has to be something that's workable, and that's why we are focused on a standard that is process-based. What we do is we'll go back and check how the processes are in place. Can you prove that that chip came from vendor X? Tell me where every element in that software stack came from. And then you merge these things together and you create a series of metrics and those metrics can then be benchmarked. One of the things we do with TL 9000 is everybody that is certified and is part of TL 9000 submits monthly data into an anonymized database on the quality of their products. How many problems they had during development, how many problems they had during the manufacturing of what type, when it was deployed, what type of problems they had, how quickly did they fix those problems. That data then gets anonymized and creates a benchmark. Now you can look if you're a member here or a service provider, for example, you can look at the benchmarks and see best in class, middle of the road and worst in class, and you as a vendor can see how you stack up versus the others. That benchmarking is something that's really important to continue to raise the bar.
+
+[Speaker: Shane Tews]
+Shane Tews: And the anonymization is done by — I want to say the carriers, but the network operators who — Why is the anonymization important?
+
+[Speaker: David Stehlin]
+David Stehlin: Well, if you're vendor A, you don't want vendor B knowing where your warts
+
+[Speaker: David Stehlin]
+are.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, okay.
+
+[Speaker: David Stehlin]
+David Stehlin: All right. And we anonymize it as the data is sent in to us. We can't understand who specifically it came from, but you as a service provider might say, "I require all my vendors to be supply chain security certified." And they then can look at each of the vendors that's applying to win their business and see how they stack up from a supply chain security perspective, just like they 're doing it today from a quality perspective.
+
+[Speaker: Shane Tews]
+Shane Tews: That's great. Well, I imagine also collaborating with the government means you have the power of the purse. You've got some major money behind you on that one. You mentioned IOT devices earlier, and | know that you said this may extend to securing buildings and the smart devices. How does that parlay into this?
+
+[Speaker: David Stehlin]
+David Stehlin: Yeah, it's so interesting, especially with this time we're in right now. First of all, the world is becoming more urbanized. It's expected that two thirds of the world's population will live in an urban area by 2050.
+
+[Speaker: Shane Tews]
+Shane Tews: I think we're all feeling that right now, since we're in the middle of the coronavirus, yes.
+
+[Speaker: David Stehlin]
+David Stehlin: Exactly, and so think about that. Now you have these clusters of people, which obviously there are health issues there, but buildings need to be sustainable. Buildings need to be secure. You need great connectivity, but you want to make sure the HVAC system is working well. You want to be able to ensure that you're using as little energy as possible and you do that by connecting all the parts of the building, the operating systems as well as the IT systems. The challenge, of course is the risk of somebody hacking in. You need to not only make it a better environment to live and work in and more safe and more secure, but you have to ensure that there's no way that somebody can link into your information and your privacy. These networks will extend not just to the side of the building. The networks will go into the building. 5G becomes pervasive where it might be controlling the HVAC system in a very large enterprise to help them be more efficient. But, you have to make sure that you're taking the risk away when you're doing that.
+
+[Speaker: Shane Tews]
+Shane Tews: That's a lot of data and a lot of machine to machine talking going on there. Pretty fascinating. Well Dave, thank you for giving us the lowdown on what you guys are working on. We look forward to watching it go through the process and I hope that it goes as expediently as you're planning on it because I know we've been hearing about 5G and we all want it yesterday.
+
+[Speaker: David Stehlin]
+David Stehlin: Yeah, absolutely. And we're excited. This is something of strategic importance
+
+[Speaker: David Stehlin]
+and when you can find those handful of things that are really going to make a difference for the long haul, those are the things that you latch onto, and this is certainly one of them.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, fantastic. I appreciate you being a guest today, and thank you for all the work that you're doing with you and your team.
+
+[Speaker: David Stehlin]
+David Stehlin: Great. Thank you Shane.

@@ -1,44 +1,74 @@
 PAGE_TITLE: 
-	Modernizing the Federal Identity System: Highlights from a Conversation with Jordan Burris | American Enterprise Institute - AEI
+	Modernizing the Federal Identity System: Highlights from a Conversation with Jordan Burris
 
-Criminals are constantly looking for holes in online identity verification—a key reason why the US
-government
-lost
-$163 billion in unemployment-related fraud during the pandemic. Can technology make identity verification systems more resilient, despite everyone being on separate networks?
-On this episode, we interviewed
-Jordan Burris
-, vice president and head of public sector strategy at
-Socure
-—a platform that combines machine learning and artificial intelligence to provide accurate, trusted digital identity verification. We discussed how fraud prevention is a “team sport” that requires balancing best practices and robust information sharing with careful protection of citizens’ personal information from government overreach.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+[Speaker: Introduction / editorial context]
+Criminals are constantly looking for holes in online identity verification—a key reason why the US government lost $163 billion in unemployment-related fraud during the pandemic. Can technology make identity verification systems more resilient, despite everyone being on separate networks?
+
+[Speaker: Introduction / editorial context]
+On this episode, we interviewed Jordan Burris, vice president and head of public sector strategy at Socure—a platform that combines machine learning and artificial intelligence to provide accurate, trusted digital identity verification. We discussed how fraud prevention is a “team sport” that requires balancing best practices and robust information sharing with careful protection of citizens’ personal information from government overreach.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: To get us started, can you give us an overview of what you did as chief of staff in the White House Office of the Federal Chief Information Officer (CIO)?
+
+[Speaker: Jordan Burris]
 Jordan Burris: Basically, I helped orchestrate several things relating to information technology (IT), cybersecurity policy, and the president’s budget.
+
+[Speaker: Jordan Burris]
 Some notable things I worked on included the expansion of the high-value asset program across all of our legacy technology policies and promoting zero-trust incubation. I think a report is coming out soon that says the government is even beating the commercial world in zero-trust adoption.
+
+[Speaker: Jordan Burris]
 Additionally, I spearheaded pushes to improve the government’s proofing and confirming of identities online, because a lot of the processes and practices that we had in place had been largely unchanged for decades. Toward the end of my tenure, I was heavily involved with the shift to complete remote work at the height of the pandemic and the response to SolarWinds.
+
+[Speaker: Shane Tews]
 Did remote work help people finally understand the importance of actually knowing what’s happening with our systems and networks?
+
+[Speaker: Speaker not identified]
 Absolutely. A lot of chief information officers from the CIO Council had been evangelizing about what should be done to move us to a more digital age. When everyone was forced to be at home, it was the moment the IT community had been waiting for.
+
+[Speaker: Speaker not identified]
 A lot of CIOs were really prepared for remote working because we extensively prepared prior to the decision to go remote. When we thought that a shift to full remote working could happen, the CIO community started battle-testing what they already had in place, asking for necessary changes within their organization, and investing in technology that better prepared them for that transition. Had these preparations not been done, remote work would’ve played out much less smoothly for everyone.
+
+[Speaker: Jim Harper]
 Jim Harper: Can you give us a quick primer on the zero-trust security architecture?
+
+[Speaker: Jim Harper]
 Zero-trust security is more of a mindset shift. The premise is that you can only trust someone after you verify them overall. Key questions to ask when building this kind of architecture are: How can you better manage devices? How are you controlling access to data? Who has what permissions? How are you thinking about the way data flows in and out of your environment?
+
+[Speaker: Shane Tews]
 Shane Tews: After working in government, you moved to Socure. Tell us what the company does and what you do specifically.
+
+[Speaker: Speaker not identified]
 Socure is a market leader in what I describe as “accurate and inclusive identity verification.” Joining Socure gave me the opportunity to continue some of the initiatives I started while I was in government, specifically around identity and identity proofing.
+
+[Speaker: Speaker not identified]
 What’s unique about Socure is that it takes data science, machine learning, and an AI-based approach to provide a multidimensional view of an identity for any end user engaging with an agency or organization. It allows organizations to shift into a risk-based approach for overall identification management.
+
+[Speaker: Speaker not identified]
 We call our product “graph-defined identity verification.” Since identity is fragmented within the US—meaning the data that shows who we are is strewn across numerous digital channels—the only way to get an accurate picture of someone online is to put all those pieces together. So we take and natively build all the elements of the identity string and put it together in a complete digital footprint of someone. Then, you can accurately confirm someone is who they say they’re claiming to be behind that computer screen—despite you never having met them.
+
+[Speaker: Speaker not identified]
 With machine learning, we’ve developed models that help triangulate fraud. The models are really good at identifying what signals are present, the data at the time of the fraudulent transaction, and what signals are present on the devices that someone is using, such as their geolocation or internet protocol address.
+
+[Speaker: Speaker not identified]
 In order to help the models get smarter, our clients give us feedback or performance outcome information. So after we give them a probability that someone is who they claim to be, our customer decides whether to let them into their environment. After a while, they’ll let us know whether or not we got our prediction of someone’s identity right or wrong. From there, we take that information and ingest it into our system to help increase accuracy.
+
+[Speaker: Jim Harper]
 Jim Harper: Since there are so many different programs doing so many different things, is there an organized way to think about all the reasons the government may need to identify people?
+
+[Speaker: Jim Harper]
 In a nutshell, the government interacts or engages with the public in order to serve them for whatever the mission associated with the organization is. It’s really important to understand the multitude of paths associated with a citizen’s journey within the US bureaucracy and all the contact points they may need to have with the government—everything from visas to being able to get food benefits for struggling families.
+
+[Speaker: Jim Harper]
 It will be important to be transparent about what happens behind the scenes so that there is no illusion about why information is being used. There are privacy protections that can be put in place to confirm that information is only being used for its intended purpose.
+
+[Speaker: Shane Tews]
 Shane Tews: I heard a story about an Alabaman applying for unemployment benefits in Arizona during the pandemic. A company wanted to flag that for the states, but the states’ response was, “Not currently our problem.” What are your initial reactions to this story and the states’ dereliction of duty?
+
+[Speaker: Speaker not identified]
 Since the government was prioritizing getting benefits to people as quickly as possible, identity verification was not the main focus during the pandemic. There is this belief that a good way to confirm someone’s identity is by putting many bureaucratic gates in place and creating lots of friction to slow down the whole process.
+
+[Speaker: Speaker not identified]
 I believe that’s a myth. There is a way to verify someone while having the same positive experience associated with what you see in commercial business today. It is possible to recreate private-sector efficiency in the public sector when it comes to digital services, but there is a blueprint that has to be followed. If you’re not following that blueprint, you’re probably going to resort to some of these legacy approaches.

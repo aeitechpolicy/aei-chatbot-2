@@ -1,5 +1,6 @@
 # .github/workflows/biweekly-scrape.yml
 #
+# Uses standard GitHub-hosted Linux with AEI's public production API.
 # Runs every other week: incrementally harvests anything new from the AEI
 # API since the last window, then scrapes full text for any new article by
 # the four served scholars (backend/utils/servedScholars.js) that isn't in
@@ -45,13 +46,22 @@ on:
         type: number
         required: true
         default: 20
+      refresh_interviews:
+        description: 'Re-check existing Shane pages for speaker labels and linked transcript PDFs (one-time catch-up)'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
 
+concurrency:
+  group: aei-library-refresh-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   check-week:
-    runs-on: [self-hosted, aei-network]
+    runs-on: ubuntu-24.04
     outputs:
       should_run: ${{ steps.check.outputs.should_run }}
     steps:
@@ -75,10 +85,8 @@ jobs:
   scrape:
     needs: check-week
     if: github.ref == 'refs/heads/main' && needs.check-week.outputs.should_run == 'true'
-    runs-on: [self-hosted, aei-network]
+    runs-on: ubuntu-24.04
     timeout-minutes: 120
-    env:
-      NODE_EXTRA_CA_CERTS: certs/digicert-global-g2-tls-rsa-sha256-2020-ca1.pem
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -91,6 +99,11 @@ jobs:
           node-version: 24
           cache: npm
           cache-dependency-path: backend/package-lock.json
+
+      - name: Install transcript text reader
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends poppler-utils tesseract-ocr tesseract-ocr-eng
 
       - name: Install backend dependencies
         working-directory: backend
@@ -119,8 +132,10 @@ jobs:
         working-directory: backend
         run: node scripts/match-txt-to-urls.js knowledge_base
 
-      - name: Fetch missing served-scholar articles
+      - name: Fetch missing served-scholar articles and transcripts
         working-directory: backend
+        env:
+          REFRESH_INTERVIEWS: ${{ github.event_name == 'workflow_dispatch' && inputs.refresh_interviews && 'true' || 'false' }}
         run: node scripts/fetch-missing-articles.js
 
       - name: Re-match after fetch
@@ -139,12 +154,14 @@ jobs:
           const filename = 'data/library-scrape-status.json';
           const prior = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {};
           const report = JSON.parse(fs.readFileSync('data/fetch-missing-articles-report.json', 'utf8'));
+          const harvest = JSON.parse(fs.readFileSync('data/harvest-report.json', 'utf8'));
           const checked = new Date().toISOString();
-          const failures = report.failed.length;
+          const failures = report.failed.length + harvest.failures.length;
           fs.writeFileSync(filename, JSON.stringify({
             lastScrapeCheck: checked,
             lastSuccessfulScrape: failures ? prior.lastSuccessfulScrape || null : checked,
-            skippedInLastScrape: failures
+            skippedInLastScrape: report.failed.length,
+            incompleteHarvest: harvest.failures.length > 0
           }, null, 2) + '\n');
           JS
 
@@ -155,7 +172,9 @@ jobs:
           git add backend/data/aei-index.json backend/data/aei-authors.json \
                   backend/data/matches.json backend/data/ambiguous.json \
                   backend/data/unmatched.json backend/data/author-audit.json \
-                  backend/data/aei-index-slim.json backend/data/library-scrape-status.json backend/knowledge_base
+                  backend/data/aei-index-slim.json backend/data/library-scrape-status.json \
+                  backend/articleMetadata.json backend/data/fetch-missing-articles-report.json \
+                  backend/data/harvest-report.json backend/knowledge_base
           if git diff --cached --quiet; then
             echo "No archive changes to publish."
             exit 0
@@ -175,3 +194,4 @@ jobs:
             fi
             echo "main advanced during the upload. Rebasing and retrying."
           done
+

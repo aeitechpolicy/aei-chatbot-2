@@ -1,7 +1,14 @@
 PAGE_TITLE: 
-	Securing the Web with Route Origin Authorizations (with Grace Abuhamad and Robert Cannon) | American Enterprise Institute - AEI
+	Securing the Web with Route Origin Authorizations (with Grace Abuhamad and Robert Cannon)
 
+[Speaker: Introduction / editorial context]
 NTIA is championing Route Origin Authorizations or ROA’s as part of the Biden Administration’s cybersecurity plan to fend off nation-state hackers and cyberattacks.
+
+[Speaker: Introduction / editorial context]
 In tandem with this effort, on June 6, the Federal Communications Commission (FCC) advanced a Notice of Proposed Rulemaking aimed at strengthening internet security through the implementation of border gateway protocols (BGPs) for internet service providers (ISPs). While the National Telecommunications and Information Administration (NTIA) already encourages federal agencies to embrace these routing security protocols, the FCC’s proposed rule would mandate broadband providers to submit confidential reports on their BGP usage.
+
+[Speaker: Introduction / editorial context]
 This move is an effort to defend against cyber-attacks by validating the legitimacy of websites and securing web traffic, preventing hackers from spoofing government domains, stealing data, and hijacking critical communications.
+
+[Speaker: Introduction / editorial context]
 Here to discuss the policy behind this decision, including routing security, BGPs, and efforts to secure government infrastructure, are Grace Abuhamad and Robert (Bob) Cannon. Grace is the chief of staff at the NTIA, where she previously served as a policy analyst in the Office of International Affairs. Bob is a Senior Telecommunications Policy Analyst at the NTIA. Before joining NTIA, he was a Senior Attorney at the FCC’s Office of Policy Analysis.

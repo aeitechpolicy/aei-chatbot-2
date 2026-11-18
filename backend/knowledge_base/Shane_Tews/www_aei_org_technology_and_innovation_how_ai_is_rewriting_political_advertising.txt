@@ -1,33 +1,74 @@
 PAGE_TITLE: 
-	How AI Is Rewriting Political Advertising | American Enterprise Institute - AEI
+	How AI Is Rewriting Political Advertising
 
+[Speaker: Introduction / editorial context]
 As the 2024 presidential election approaches, campaigns are exploring how to leverage generative AI to influence voters, raising concerns about the spread of misinformation and election manipulation. With a contentious election on the horizon, understanding how generative AI may shape voter perspectives and actions is crucial, as is considering strategies to mitigate associated risks.
-Below are the highlights from my conversation with Scott Brennen and Matt Perault, co-authors of
-The New Political Ad Machine: Policy Frameworks for Political Ads in an Age of AI
-. Scott is the Head of Online Expression Policy and Matt is the Director of the University of North Carolina’s Center on Technology Policy.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below are the highlights from my conversation with Scott Brennen and Matt Perault, co-authors of The New Political Ad Machine: Policy Frameworks for Political Ads in an Age of AI. Scott is the Head of Online Expression Policy and Matt is the Director of the University of North Carolina’s Center on Technology Policy.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Scott and Matt, you have written an amazing paper. To provide some background here, I know we’ve already seen some issues with artificial intelligence in ads. Give us the gist of what you’re working on in this paper?
+
+[Speaker: Matt Perault]
 Matt Perault: I can start at the 30,000-foot level, with sort of an embarrassing admission that this is the first report we’ve generated where we really tried hard to stay very close to a specific organizational structure. We said, what are the things that people have alleged as harms about generative AI? What does academic literature tell us about those harms? What can we learn from what the research actually shows? And based on that, what are the right set of policy recommendations for the direction that we might go in?
+
+[Speaker: Matt Perault]
 The basic thing that we found is that for harms like scale, authenticity, or personalization, most of the academic research suggests that those harms are likely overstated. I want to be really clear: We’re not saying you shouldn’t pay any attention to potential risks in those areas. The point in our report is that the current conversation around generative AI and harms tends to over-rotate toward the harmfulness of those things.
+
+[Speaker: Matt Perault]
 We did find two areas that we think aren’t getting enough attention. One is bias, which obviously has gotten a decent amount of attention, but the research really does support that that’s an area of potential harm. And the second, which has gotten almost no attention is the potential impact of generative AI technologies in smaller and down-ballot races.
+
+[Speaker: Matt Perault]
 Based on what the literature suggests is likely to actually be harmful and what it suggests is a little bit less impactful, we developed a set of 10 recommendations across two categories. The first is that public policy should target electoral harms, rather than specific technologies. So rather than singling out generative AI, specifically, we should look at a range of electoral harms that may or may not involve generative AI technologies and target those.
+
+[Speaker: Matt Perault]
 The second bucket of recommendations is around learning. The research does point in a particular direction, but we don’t believe that it does so in a conclusive way. There’s a lot more to study about each of these potential harms, and about how generative AI plays into them specifically. We have an opportunity to track that more closely and to develop smarter, more data-driven public policy going forward.
+
+[Speaker: Shane Tews]
 One of the things I love that you talk about in your recommendations, as you start with something that isn’t actually a technology. Instead, it’s something that we need to do as a protection of democracy, which is: Congress and states should outlaw voter suppression. One things I’m concerned about is, if generative AI somehow is an exceptional enhancement on historic misinformation in elections, how quickly do you think we can get that retracted? Where you seem to be heading is trying to make elections a better system for people to participate in?
+
+[Speaker: Scott Brennen]
 Scott Brennen: You’re right that our first recommendation in the report is calling for a federal ban on voter suppression. I think this is something that we’ve called for in previous writing. And it really surprised me when I learned that there is no federal ban on voter suppression. We actually call for reviving a bill that was originally introduced by then-Senator, Barack Obama, almost 15 or 20 years ago, that would be narrowly targeted at the time, manner, and place of elections. This seems a really important step to generally protecting the health of our democracy. And, as we as we point out in this report, it’s more targeted at the underlying harm rather than a particular technology. It doesn’t really matter if that bit of voter suppression is done through generative AI or through just a good old-fashioned lie. What we care about is the harm.
+
+[Speaker: Scott Brennen]
 Now, your question about what can we do about the lies that are told about an election is tough. One of the things we call for is flooding the zone. This goes back to a Steve Bannon quote where he said, his general approach is flooding the zone with shit: spreading all sorts of lies and various falsehoods. We say that governments should flood the zone with good, true content. This is rooted in an underlying assumption about how free speech needs to work, which is you can’t count on stopping all problematic speech nor should you necessarily want to, but you can out-compete that with good speech.
+
+[Speaker: Matt Perault]
 Matt Perault: I think I’d slightly challenge the premise of the question, in that our research showed that cheap fakes probably actually aren’t that influential. The idea that they are is repeated over and over and over again and gives us the perception that this is a problem that requires really stringent solutions. If the government were to prohibit cheap fakes, that would almost certainly be struck down on First Amendment grounds, but let’s just say that it’s feasible legally. That kind of a strong remedy seems out of step, with what the literature actually says about the impact of cheap fakes.
+
+[Speaker: Matt Perault]
 Again, our recommendation is not to bury your head in the sand. We think it’s important to continue studying cheap fakes and generative AI might increase the authenticity of content. But again, it’s something that we should study closely. The reason that we get to the kinds of recommendations that we get is that if you take the research seriously, then you wouldn’t focus all your energy on prohibiting deceptive political content and trying to get rid of cheap fakes. That’s why the kinds of recommendations that Scott’s talking about, like flooding the zone with positive content, we think are likely to be more productive.
+
+[Speaker: Shane Tews]
 You go through some federal laws that have been introduced. Is there anything in particular you’ve seen introduced that you think we should be watching closely?
+
+[Speaker: Matt Perault]
 Matt Perault: I was actually pretty encouraged by the White House Executive Order. We had obviously done a lot of research on this before the executive order came out and I thought the general approach in the executive order actually echoed some of the language that we had in our report around the enforcement of existing law, particularly in areas related to bias and discrimination.
+
+[Speaker: Matt Perault]
 There’s a lot in the order about coordination with the Civil Rights Division at the Justice Department to enforce existing laws related to existing civil rights statutes. That strikes me as exactly the right kind of approach that’s technology agnostic. There are existing laws that you can prosecute with and it will target what we believe to be actual harm supported by research.
+
+[Speaker: Matt Perault]
 It also has a section about a coordination function. So like learning more about how AI technologies might interplay with civil rights, so as to ensure that the way that we prosecute civil rights crimes keeps up with new technological developments. We have several recommendations in the report that really are oriented around information and education for prosecutors so that they can build effective cases when people are deprived of their civil rights.
+
+[Speaker: Matt Perault]
 There’s also a lot in the executive order around research and report writing. I think there are people who want stronger government action and who see this kind of public policy as not having strong enough teeth, but we generally disagree. The research points to a specific direction that very aggressive policy solutions based on eliminating speech or constraining technology probably aren’t the right ones. Maybe we don’t know enough definitively, but that’s partly because of actual holes in the research state. It’s also because we haven’t lived with some of these specific technologies that long, so we need to do more research on them. I think a lot of the government funding for research and support for information sharing seems like the right direction.
+
+[Speaker: Shane Tews]
 If you had a wish list going into 2024 of the tools that you could have coming into the election so you can monitor this in real-time, what would be on it?
+
+[Speaker: Scott Brennen]
 Scott Brennen: In the report, we offer a series of kind of potential research questions that point to these unanswered questions. As we’ve been talking about already, we don’t have a good sense of the effectiveness or the effect of some of the common interventions. So, we just don’t know how people interpret watermarks. When they see them, especially in political ads, do they notice them? Do they encourage people to think more deeply about a political ad or have the opposite effect?
+
+[Speaker: Scott Brennen]
 We’ve been studying misinformation in earnest for seven years and despite hundreds of studies, there’s still a great deal of debate about what sort of impact that actually has in the real world: on the opinions that people have and on the behaviors that they engage in. We need a better understanding of what effect misinformation or deceptive imagery specifically in political ads can have on voters and on elections.
+
+[Speaker: Matt Perault]
 Matt Perault: I’d also put on my wish list, more information about how people are using these technologies at a state and local level. There will be just an enormous amount of attention on Trump versus Biden. The technology probably won’t be significantly impactful in that kind of a race where there’s just such a massive amount of spending and a massive amount of attention. But it might impact who voted on Tuesday in Durham’s mayoral and city council races.
+
+[Speaker: Matt Perault]
 The ability to see the way that it’s being used, analyze it, understand the harms, and combat them is much more limited in smaller, local races. I think it’s going to be extremely hard to have an assessment of how this technology is being used at the state and local level and what positive and negative impacts it has there.

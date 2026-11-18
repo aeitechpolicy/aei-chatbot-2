@@ -1,8 +1,11 @@
 PAGE_TITLE: 
-	AI’s Corporate Takeover? (With Mark Johnson) | American Enterprise Institute - AEI
+	AI’s Corporate Takeover? (With Mark Johnson)
 
+[Speaker: Introduction / editorial context]
 As artificial intelligence continues to reshape industries, companies are grappling with the challenges of effectively leveraging AI tools. From data readiness to privacy concerns, the path to successful AI implementation is fraught with complexities. Yet the potential benefits—from revolutionizing health care to enhancing our daily interactions with technology—are too significant to ignore.
-Here to shed light on these pressing questions is
-Mark Johnson
-, cofounder of Michigan Software Labs. With extensive experience in AI consulting, Mark shares valuable insights into the strategies companies are employing to harness the power of AI while addressing its challenges.
+
+[Speaker: Introduction / editorial context]
+Here to shed light on these pressing questions is Mark Johnson, cofounder of Michigan Software Labs. With extensive experience in AI consulting, Mark shares valuable insights into the strategies companies are employing to harness the power of AI while addressing its challenges.
+
+[Speaker: Introduction / editorial context]
 Join us as we explore the future of AI integration, the potential of brain-computer interfaces, and the delicate balance between innovation and privacy in the age of artificial intelligence.

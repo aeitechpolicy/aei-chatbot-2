@@ -1,23 +1,47 @@
 PAGE_TITLE: 
-	Understanding Internet Modularity: Highlights from My Conversation with Susan Ness | American Enterprise Institute - AEI
+	Understanding Internet Modularity: Highlights from My Conversation with Susan Ness
 
+[Speaker: Introduction / editorial context]
 Two of the most common fears about the future of the internet are that it will be controlled by a small number of powerful people or that it will fragment into separate networks controlled by different countries.
-Susan Ness
-, a scholar of internet policy and former FCC commissioner, believes that there is a middle ground between these two extremes. She proposes a modular approach to the local regulatory and legal issues that govern the internet. This modularity would allow digital platforms and content providers to enable protocols that are internationally aligned by the multistakeholder community to have an agreed-upon structure for countries to enable connection to the global internet. These modules would achieve technical and regulatory compliance across borders of multiple legal jurisdictions. In this episode, I explore Ness’ concept of modularity and discuss with her the risks and benefits of this approach.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Susan Ness, a scholar of internet policy and former FCC commissioner, believes that there is a middle ground between these two extremes. She proposes a modular approach to the local regulatory and legal issues that govern the internet. This modularity would allow digital platforms and content providers to enable protocols that are internationally aligned by the multistakeholder community to have an agreed-upon structure for countries to enable connection to the global internet. These modules would achieve technical and regulatory compliance across borders of multiple legal jurisdictions. In this episode, I explore Ness’ concept of modularity and discuss with her the risks and benefits of this approach.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: So Susan, in simple terms, what is this modularity that you’re working on?
+
+[Speaker: Susan Ness]
 Susan Ness: Modularity is actually quite simple. It’s a co-regulatory approach to internet platform governance. It helps to align democracies, despite having different legal systems, different regulatory horizons, and different societal norms. As you know, there’s a disconnect between the internet, which is global, and the laws that regulate it, which are local. As you know, the problems online are largely the same worldwide, hate speech, harassment, privacy, sexual exploitation of children, data access. And yet, the rules combating these problems are local. Freedom House, I believe, identified more than 48 countries that were trying to regulate online services. So as you can imagine, it’s a cacophony of regulatory morass.
+
+[Speaker: Shane Tews]
 How does the structure come together to create similar outcomes in each country, then? Who are the decision makers here?
+
+[Speaker: Susan Ness]
 Actually, modularity is really a regulatory philosophy that privileges multi-stakeholder and multi-national collaboration. So, regulators in multiple countries, working in partnership with both civil society and industry, they would recognize these common cross-border systems or codes, as essentially fulfilling specific functions under their respective regulatory frameworks. They’re building blocks (or Legos for Europeans). Part of a regulatory framework.
+
+[Speaker: Susan Ness]
 Think of it as filling in a sandwich. It’s the middle layer between multiple regulatory frameworks on top, such as the Digital Service Act or the UK’s Online Safety bill, and government enforcement of the rules on the bottom. We don’t want to take government enforcement away. They could be organized to draft and oversee cross-border codes of conduct, or draft minimum standards and protocols for independent auditors that are seeking to review a platform’s risk assessment. Or they could be draft standards operating on a cross-border system, for vetting researchers and research projects that are seeking to access platform data.
+
+[Speaker: Susan Ness]
 They can also be updated more rapidly than regulation, as the digital ecosystem evolves. So, that is basically the way that we go about it. It makes little sense for democracies to operate multiple systems to carry out the same function, such as vetting researchers. It’s a waste of limited regulatory resources. It’s likely to cause confusion for industry. And for users and compliance, it’s going to be really difficult for online services that are small and don’t have resources. You asked about how it would be structured, who would structure it? You basically would get together with governments or regulators and multi-stakeholders to identify specific requirements in these laws that could be common. And the more routine these tasks are, the more likely they’re going to work as modules. Chances are that stakeholders are already hard at work on these issues. Over the past decade, we’ve seen a multitude of civil society groups, as well as industry groups, that have been formed to find workable solutions to these problems.
+
+[Speaker: Susan Ness]
 We all recognize legislation is on the horizon. And that’s a great motivating force. The work of these groups that’s already in place could become the foundation of one or more of these modules. Then you have conversations with governments interested in trying to get some commonality on, for example, researcher access. And then you get the organizations that have already been working on these problems at the table. And if they decide that this makes sense to do it as a module across borders, you make sure that there are multiple governments, then you come up with a system that the governments can accept as substantially satisfying a requirement under their rules.
+
+[Speaker: Shane Tews]
 What are some of the organizations in this space up to? How do they interface with governments?
+
+[Speaker: Susan Ness]
 Well, the Global Network Initiative’s work is essentially a process for auditing members’ risk assessments and mitigation efforts in the area of freedom of expression and privacy. It’s a voluntary organization, but they’re very thorough and thoughtful in the way that they approach these risk assessments and evaluations with outside independent auditors reviewing them. So it sets up a concept that could be expanded upon, not necessarily by that organization, but used in a more expanded form as a module for evaluating, setting standards for conducting risk assessment. Because there aren’t any standards at the moment. And also for setting standards and protocols for those independent auditors that are going to be doing the audits. So we see that is, once again, something that could be cross-border, even if a country, say the United States as an example, doesn’t require such audits or risk assessments. Nonetheless, if they are subscribing to it, if they want to join on, they can join on and participate in a meaningful way.
+
+[Speaker: Shane Tews]
 So where are you in polishing the module process right now?
+
+[Speaker: Susan Ness]
 Where we are right now is that we’ve been having a lot of discussions with a number of regulators, as well as with the various organizations, both industry and civil society, to see what could be generated. We’ve talked with Ofcom, the UK regulator, that’s drafting the rules under the Online Safety bill. They are very interested in this. And in fact, they have set up together with Australia and Fiji an e-safety group of regulators that are going to be looking at best practices. And it’s those kinds of groups of regulators that are primed for working on a module together because it’ll already be cross-border. So that’s one piece of this.
+
+[Speaker: Susan Ness]
 We’ve also had conversations with regulators in New Zealand. They’re considering updating their framework. They would love to see it because they’re a small country with limited resources. They benefit from collaborating with other governments on some of the digital roles. Of course, we’ve been speaking with the European Commission, the task they have in front of them is enormous. It must stand up an office of regulators, which it doesn’t currently have, and at the same time, draft a multitude of delegated acts to implement the complex provisions of the DSA. It would benefit from multi-stakeholder modules, essentially helping them to fulfill some of the requirements under the DSA and moving it along more rapidly.

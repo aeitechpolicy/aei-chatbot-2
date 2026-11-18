@@ -1,19 +1,14 @@
 PAGE_TITLE: 
-	How Data Privacy Laws Have Upended International Trade (with Nigel Cory) | American Enterprise Institute - AEI
+	How Data Privacy Laws Have Upended International Trade (with Nigel Cory)
 
-As countries
-impose new requirements on data collection and governance, the flow of consumer
-data between countries and business entities is more restricted than ever. For
-companies that need to comply with these new regulations, it can be challenging
-to build compliance tools around a patchwork of national laws without upending
-their fundamental business models. What does the regulatory landscape of
-today’s data governance world look like? And where, if at all, can regulators,
-trade experts, and multinational companies find common ground?
-On this episode,
-Shane
-is joined by
-Nigel Cory
-, associate director for trade policy at the
-Information Technology and Innovation Foundation
-(ITIF). Nigel discusses how different privacy regimes both in the US and across the globe complicate digital trade, and why there are more barriers to data flows today than ever before.
+[Speaker: Introduction / editorial context]
+As countries impose new requirements on data collection and governance, the flow of consumer data between countries and business entities is more restricted than ever. For companies that need to comply with these new regulations, it can be challenging to build compliance tools around a patchwork of national laws without upending their fundamental business models. What does the regulatory landscape of today’s data governance world look like? And where, if at all, can regulators, trade experts, and multinational companies find common ground?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by Nigel Cory, associate director for trade policy at the Information Technology and Innovation Foundation (ITIF). Nigel discusses how different privacy regimes both in the US and across the globe complicate digital trade, and why there are more barriers to data flows today than ever before.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

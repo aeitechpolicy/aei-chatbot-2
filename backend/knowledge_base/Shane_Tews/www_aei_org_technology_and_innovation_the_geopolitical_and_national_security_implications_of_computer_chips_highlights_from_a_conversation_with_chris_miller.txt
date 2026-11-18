@@ -1,168 +1,77 @@
 PAGE_TITLE: 
-	The Geopolitical and National Security Implications of Computer Chips: Highlights from a Conversation with Chris Miller | American Enterprise Institute - AEI
+	The Geopolitical and National Security Implications of Computer Chips: Highlights from a Conversation with Chris Miller
 
-Should US
-semiconductor chip manufacturers move their fabrication plants (fabs) onto
-American soil? Should we offer migration incentives for high-tech chip
-engineers from Taiwan to come to the US? What role, if any at all, should the
-government play in subsidizing the construction of chip plants for US
-companies? These and other questions remain unsettled when it comes to the
-geopolitical challenges around semiconductor design, production, and trade.
-AEI’s
-Claude
-Barfield
-and I hosted another joint “Explain to Shane” episode on this
-topic — this time with
-Chris Miller
-, a new Jeane Kirkpatrick Fellow in AEI’s
-Foreign and Defense Policy department. Chris recently published a report titled
-“
-Labs over fabs: How the US should invest in the future of
-semiconductors
-,” and will be releasing a book on the geopolitical history
-of semiconductors this year. Chris joined the podcast to discuss his expansive
-portfolio on the semiconductor industry, Congress’ attempts to guide US chip
-production, and how chip manufacturing is indefinitely tied to national
-security.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Chris, tell us about your
-upcoming book on the geopolitical history of the computer chip.
-Chris
-Miller: I came to focus on this topic from two different directions. One was
-trying to understand the history of the Cold War, since I’m a Russia historian
-by training. And one of the puzzles I’d always wrestled with was why the Soviet
-Union was able to make atomic weapons and shoot a rocket and human into space
-with relative ease, but struggled with computers and, by the end of the Cold
-War, had fallen far behind in military technology.
-Secondly,
-US-China dynamics have been increasingly reliant on semiconductors over the
-past few years, and I’d previously spent almost no time thinking about this
-piece of technology. As I came to look at both of these interests in more
-detail, I began to realize how crucial semiconductors are to both our daily
-lives and in the production of military power and geopolitical influence. From
-the first invention of chips amid the Cold War space race and arms race, all
-the way up to present US-China competition, chips have been front and center.
-Claude Barfield: In your work, you make a
-strong case for policymakers to spend more time thinking about advanced
-research on semiconductors rather than on short-term fab construction. But
-Congress is moving toward passing the US Innovation and Competition Act
-(USICA), which would make massive investments in innovation. What’s your
-thinking about this? It looks like the bill is really focusing on the “R” side
-of research and development (R&D).
-When I look
-at the semiconductor challenges we face as a country, I first think about how
-we — and really the entire world — are heavily reliant on a small number of
-producers largely arrayed along the coast of China, in Taiwan and South Korea.
-A second problem is that in certain parts of the semiconductor supply chain,
-which is an enormously complicated set of companies, the US position has been
-falling behind relative to rivals in other countries. That’s where R&D are
-crucial. The US obviously has a set of universities that are second to none,
-but there’s more we can do to ensure we’re providing new ideas coming out of
-universities with a pathway towards commercialization.
-One of the
-challenges the industry has faced over the past couple of decades is that
-there’s a lot more venture-capital money going into software ideas and iPhone
-apps than into hardware and semiconductor startups, simply because they’re more
-expensive to fund. And there are some good ideas coming out of Congress on this
-issue.
-The other idea on the table is putting all
-of this into something like the Defense Advanced Research Projects Agency
-(DARPA), but these are two very different pathways, I think, from research into
-commercial development. What do you think?
-It’s clear
-that universities are very good at developing ideas and lobbying Congress for
-more research funding. Both of those facts have shaped the debate. There are
-case studies of universities successfully developing technologies, but there
-are far fewer than one might expect. That’s not really how a university is
-structured. That’s not what the incentives are at universities. And in most
-examples, the commercialization doesn’t happen in the university’s department
-of electrical engineering. It happens when a professor leaves and founds a
-startup, or takes an idea and hands it off to a company.
-So I think
-we should be a little bit skeptical of the idea that universities are good at
-the “D” in R&D. But they’re certainly good at the “R.” DARPA, in some ways,
-is one of the most successful organizations in the history of American governance.
-It has funded and helped develop a whole range of ideas and has been
-extraordinarily useful for the American military’s pushing of the boundaries of
-science and engineering. It has helped fund risky ideas that otherwise wouldn’t
-have gotten private-sector funding.
-But DARPA is
-also not focused on commercialization at all; that’s not what it’s structured
-to do and has not done so historically. It’s focused on finding and testing
-ideas that might be relevant to the Department of Defense. We shouldn’t
-overestimate DARPA’s ability to support commercialization either. That’s why I
-think there is space to think about other institutions we need to find, create,
-or fund that can play this development and commercialization role.
-Shane Tews: Chip careers tend to have a
-very long education cycle. How can we make them easier to get into?
-To work in
-the chip industry, one usually finishes a PhD in electrical engineering,
-material science, or physics. There’s a long pathway, and over the past decade
-or two, salaries have been higher in software than in hardware, simply because
-we’ve had a lot more growth in software. It makes sense for an economy to
-allocate more employees to sectors that are growing faster where there’s more
-money to be made, but there are risks there as well. We don’t have the trained
-engineers and material scientists to keep innovation going in the chip
-industry.
-The US
-increasingly relies on importing PhDs from abroad to take up positions in the
-chip industry. That’s a good thing we ought to embrace, but it also adds challenges
-given immigration restrictions. So we ought to think about how we can provide
-better pathways into the chip industry that will take students who are
-interested in the sub-fields that lead into the design and manufacturing of
-chips and the machine tools that make chips, and provide them with a pathway to
-finishing a PhD and getting a career in the industry. We meanwhile need to
-think about how to simplify our immigration rules so we can hire workers we need
-from anywhere in the world.
-We should
-remember that this has been built into Silicon Valley since its earliest days.
-We’ve got to be very comfortable with bringing talented foreigners here, but we
-also need to make sure there are clear pathways for anyone starting a PhD
-program in the US to see how they could end up with a job in the chip industry.
-You work for AEI’s Foreign and Defense
-Policy team — and there’s a balance we always have in this conversation between
-economic and national security issues. Do you see national security as part of
-why we should be onshoring chip production here in the US, versus design only?
-I think
-there are two distinct but related national security issues. One is that, again,
-a big chunk of chip manufacturing — including some really irreplaceable
-capacity for manufacturing the most high-end, advanced processor chips that
-power smartphones and data centers — takes place right off the coast of China
-and, in particular, on a small island that China considers a renegade province:
-Taiwan. There’s a huge risk that a crisis in Taiwan would not only be a
-military challenge but would also have huge economic repercussions that, I
-think, would shock most Americans. People don’t realize that if Taiwan were unable
-to produce semiconductors next year, it would be almost impossible anywhere in
-the world to buy a smartphone. The ramifications would be extraordinary.
-The other
-issue looks more at the present. Currently, can the US military be confident
-it’s getting access to chips that are designed exactly how they’re supposed to
-be? We don’t want the military to acquire chips that have been modified in a
-way that opens up back doors. One solution is to have less chip manufacturing in
-China and other geographies where we’re less confident in security. Another
-solution is that there are some new ideas, including some funded by DARPA,
-about how to make chips more easily verifiable to ensure you receive what you
-were expecting with nothing changed in the process.
-So the
-solution to the first issue is to make sure we’ve got Taiwan properly defended to
-ensure the Chinese don’t try to attack or blockade. The second is to think
-about our defense and critical infrastructure chip supply chains. We need
-confidence that all fabs producing these chips have security standards. We want
-to ensure no one is manipulating chips before they’re sent to us and put in critical
-systems.
-Looking ahead, what can Congress and
-federal agencies do to ensure we stay competitive? Is USICA the ideal path? Are
-we looking at the right solution sets?
-I think it’s
-a good thing, first off, that Congress is focused on the issue with funds
-available. My sense is that USICA strikes an OK balance between thinking about
-R&D and closing the cost gap between what it takes to open a facility in
-the US versus abroad.
+[Speaker: Introduction / editorial context]
+Should US semiconductor chip manufacturers move their fabrication plants (fabs) onto American soil? Should we offer migration incentives for high-tech chip engineers from Taiwan to come to the US? What role, if any at all, should the government play in subsidizing the construction of chip plants for US companies? These and other questions remain unsettled when it comes to the geopolitical challenges around semiconductor design, production, and trade.
+
+[Speaker: Introduction / editorial context]
+AEI’s Claude Barfield and I hosted another joint “Explain to Shane” episode on this topic — this time with Chris Miller, a new Jeane Kirkpatrick Fellow in AEI’s Foreign and Defense Policy department. Chris recently published a report titled “Labs over fabs: How the US should invest in the future of semiconductors,” and will be releasing a book on the geopolitical history of semiconductors this year. Chris joined the podcast to discuss his expansive portfolio on the semiconductor industry, Congress’ attempts to guide US chip production, and how chip manufacturing is indefinitely tied to national security.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Chris, tell us about your upcoming book on the geopolitical history of the computer chip.
+
+[Speaker: Chris Miller]
+Chris Miller: I came to focus on this topic from two different directions. One was trying to understand the history of the Cold War, since I’m a Russia historian by training. And one of the puzzles I’d always wrestled with was why the Soviet Union was able to make atomic weapons and shoot a rocket and human into space with relative ease, but struggled with computers and, by the end of the Cold War, had fallen far behind in military technology.
+
+[Speaker: Chris Miller]
+Secondly, US-China dynamics have been increasingly reliant on semiconductors over the past few years, and I’d previously spent almost no time thinking about this piece of technology. As I came to look at both of these interests in more detail, I began to realize how crucial semiconductors are to both our daily lives and in the production of military power and geopolitical influence. From the first invention of chips amid the Cold War space race and arms race, all the way up to present US-China competition, chips have been front and center.
+
+[Speaker: Claude Barfield]
+Claude Barfield: In your work, you make a strong case for policymakers to spend more time thinking about advanced research on semiconductors rather than on short-term fab construction. But Congress is moving toward passing the US Innovation and Competition Act (USICA), which would make massive investments in innovation. What’s your thinking about this? It looks like the bill is really focusing on the “R” side of research and development (R&D).
+
+[Speaker: Claude Barfield]
+When I look at the semiconductor challenges we face as a country, I first think about how we — and really the entire world — are heavily reliant on a small number of producers largely arrayed along the coast of China, in Taiwan and South Korea. A second problem is that in certain parts of the semiconductor supply chain, which is an enormously complicated set of companies, the US position has been falling behind relative to rivals in other countries. That’s where R&D are crucial. The US obviously has a set of universities that are second to none, but there’s more we can do to ensure we’re providing new ideas coming out of universities with a pathway towards commercialization.
+
+[Speaker: Claude Barfield]
+One of the challenges the industry has faced over the past couple of decades is that there’s a lot more venture-capital money going into software ideas and iPhone apps than into hardware and semiconductor startups, simply because they’re more expensive to fund. And there are some good ideas coming out of Congress on this issue.
+
+[Speaker: Shane Tews]
+The other idea on the table is putting all of this into something like the Defense Advanced Research Projects Agency (DARPA), but these are two very different pathways, I think, from research into commercial development. What do you think?
+
+[Speaker: Speaker not identified]
+It’s clear that universities are very good at developing ideas and lobbying Congress for more research funding. Both of those facts have shaped the debate. There are case studies of universities successfully developing technologies, but there are far fewer than one might expect. That’s not really how a university is structured. That’s not what the incentives are at universities. And in most examples, the commercialization doesn’t happen in the university’s department of electrical engineering. It happens when a professor leaves and founds a startup, or takes an idea and hands it off to a company.
+
+[Speaker: Speaker not identified]
+So I think we should be a little bit skeptical of the idea that universities are good at the “D” in R&D. But they’re certainly good at the “R.” DARPA, in some ways, is one of the most successful organizations in the history of American governance. It has funded and helped develop a whole range of ideas and has been extraordinarily useful for the American military’s pushing of the boundaries of science and engineering. It has helped fund risky ideas that otherwise wouldn’t have gotten private-sector funding.
+
+[Speaker: Speaker not identified]
+But DARPA is also not focused on commercialization at all; that’s not what it’s structured to do and has not done so historically. It’s focused on finding and testing ideas that might be relevant to the Department of Defense. We shouldn’t overestimate DARPA’s ability to support commercialization either. That’s why I think there is space to think about other institutions we need to find, create, or fund that can play this development and commercialization role.
+
+[Speaker: Shane Tews]
+Shane Tews: Chip careers tend to have a very long education cycle. How can we make them easier to get into?
+
+[Speaker: Speaker not identified]
+To work in the chip industry, one usually finishes a PhD in electrical engineering, material science, or physics. There’s a long pathway, and over the past decade or two, salaries have been higher in software than in hardware, simply because we’ve had a lot more growth in software. It makes sense for an economy to allocate more employees to sectors that are growing faster where there’s more money to be made, but there are risks there as well. We don’t have the trained engineers and material scientists to keep innovation going in the chip industry.
+
+[Speaker: Speaker not identified]
+The US increasingly relies on importing PhDs from abroad to take up positions in the chip industry. That’s a good thing we ought to embrace, but it also adds challenges given immigration restrictions. So we ought to think about how we can provide better pathways into the chip industry that will take students who are interested in the sub-fields that lead into the design and manufacturing of chips and the machine tools that make chips, and provide them with a pathway to finishing a PhD and getting a career in the industry. We meanwhile need to think about how to simplify our immigration rules so we can hire workers we need from anywhere in the world.
+
+[Speaker: Speaker not identified]
+We should remember that this has been built into Silicon Valley since its earliest days. We’ve got to be very comfortable with bringing talented foreigners here, but we also need to make sure there are clear pathways for anyone starting a PhD program in the US to see how they could end up with a job in the chip industry.
+
+[Speaker: Shane Tews]
+You work for AEI’s Foreign and Defense Policy team — and there’s a balance we always have in this conversation between economic and national security issues. Do you see national security as part of why we should be onshoring chip production here in the US, versus design only?
+
+[Speaker: Speaker not identified]
+I think there are two distinct but related national security issues. One is that, again, a big chunk of chip manufacturing — including some really irreplaceable capacity for manufacturing the most high-end, advanced processor chips that power smartphones and data centers — takes place right off the coast of China and, in particular, on a small island that China considers a renegade province: Taiwan. There’s a huge risk that a crisis in Taiwan would not only be a military challenge but would also have huge economic repercussions that, I think, would shock most Americans. People don’t realize that if Taiwan were unable to produce semiconductors next year, it would be almost impossible anywhere in the world to buy a smartphone. The ramifications would be extraordinary.
+
+[Speaker: Speaker not identified]
+The other issue looks more at the present. Currently, can the US military be confident it’s getting access to chips that are designed exactly how they’re supposed to be? We don’t want the military to acquire chips that have been modified in a way that opens up back doors. One solution is to have less chip manufacturing in China and other geographies where we’re less confident in security. Another solution is that there are some new ideas, including some funded by DARPA, about how to make chips more easily verifiable to ensure you receive what you were expecting with nothing changed in the process.
+
+[Speaker: Speaker not identified]
+So the solution to the first issue is to make sure we’ve got Taiwan properly defended to ensure the Chinese don’t try to attack or blockade. The second is to think about our defense and critical infrastructure chip supply chains. We need confidence that all fabs producing these chips have security standards. We want to ensure no one is manipulating chips before they’re sent to us and put in critical systems.
+
+[Speaker: Shane Tews]
+Looking ahead, what can Congress and federal agencies do to ensure we stay competitive? Is USICA the ideal path? Are we looking at the right solution sets?
+
+[Speaker: Speaker not identified]
+I think it’s a good thing, first off, that Congress is focused on the issue with funds available. My sense is that USICA strikes an OK balance between thinking about R&D and closing the cost gap between what it takes to open a facility in the US versus abroad.
+
+[Speaker: Speaker not identified]
 But there’s always a fair amount of sausage-making in any big legislation that moves through Congress, especially with regard to anything resembling industrial policy, and we’ve seen no small amount of that here. It’s no surprise that the senators and representatives who are most gung ho about the legislation are also looking to have additional facilities built in their district. I do worry that the desire to see more fabs built is taking precedent over strategic thinking about which types of fabs we actually need, because it matters whether you’re building a memory or a logic fab and which logic process you’re looking at. Some of these are a lot more valuable and strategic than others.
+
+[Speaker: Speaker not identified]
 So I think to the extent we can remove this decision making from the hands of legislators who are interested in pork-barrel politics for their own districts and put it in the hands of people who are thinking strategically about where actual national security challenges are and are not, the better off we will be.

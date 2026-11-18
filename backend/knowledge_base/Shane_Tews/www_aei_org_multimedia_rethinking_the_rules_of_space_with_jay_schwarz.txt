@@ -1,8 +1,11 @@
 PAGE_TITLE: 
-	Rethinking the Rules of Space (with Jay Schwarz) | American Enterprise Institute - AEI
+	Rethinking the Rules of Space (with Jay Schwarz)
 
+[Speaker: Introduction / editorial context]
 Space-based satellite networks are transforming global connectivity, extending access to even the most remote corners of the planet. The rules that govern these networks have never been more critical. How does satellite spectrum actually function? Why is there an increasing need to revise the regulations that oversee it? And what are the key components of the Federal Communications Commission’s (FCC’s) proposed reforms?
+
+[Speaker: Introduction / editorial context]
 In this episode, Shane Tews is joined by Jay Schwarz, chief of the Federal Communications Commission’s space bureau. Together, they unpack the FCC’s Notice of Proposed Rulemaking and solicit comments regarding updates to satellite spectrum–sharing rules. The FCC will assess how these changes could affect competition between geostationary and nongeostationary satellite providers and examine the technical and policy challenges of implementing potential new regulations.
-Download this episode’s transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.

@@ -1,9 +1,14 @@
 PAGE_TITLE: 
-	A Network of Networks: Modularity in Internet Governance (with Susan Ness) | American Enterprise Institute - AEI
+	A Network of Networks: Modularity in Internet Governance (with Susan Ness)
 
+[Speaker: Introduction / editorial context]
 Two of the long-tail fears surrounding the future of the internet are the danger of creating either an internet controlled by the hands of the few and powerful at a global scale or what’s known as the “splinternet”—the cabining off of nation-states’ networks from the mainstream due to censorship, technological change, or commercial fragmentation.
-Susan Ness
-sees something that lies between those poles. As a former FCC commissioner, Ness has extensive insight into the national and international machinations of the superstructure of our internet, and she has been crafting a new framework for understanding where the internet could go. Modularity is a co-regulatory approach to internet platform governance that helps to align democracies despite different legal systems, different regulatory horizons, and different societal norms. But how can we ensure that more illiberal governments don’t take advantage of this much more federated approach?
-In this episode,
-Shane
-explores Ness’ concept of modularity from all sides. Tune in as they connect the nodes on internet governance innovation!
+
+[Speaker: Introduction / editorial context]
+Susan Ness sees something that lies between those poles. As a former FCC commissioner, Ness has extensive insight into the national and international machinations of the superstructure of our internet, and she has been crafting a new framework for understanding where the internet could go. Modularity is a co-regulatory approach to internet platform governance that helps to align democracies despite different legal systems, different regulatory horizons, and different societal norms. But how can we ensure that more illiberal governments don’t take advantage of this much more federated approach?
+
+[Speaker: Introduction / editorial context]
+In this episode, Shane explores Ness’ concept of modularity from all sides. Tune in as they connect the nodes on internet governance innovation!
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

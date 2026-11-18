@@ -1,0 +1,248 @@
+PAGE_TITLE: 
+	GPS, the Invisible Foundation of Modern Infrastructure, Needs an Update (with Dana A. Goward and Jeff Hathaway) — full transcript
+
+[Speaker: Introduction / editorial context]
+Explain to Shane: GPS, the Invisible Foundation of Modern Infrastructure, Needs an Update (with Dana A. Goward and Jeff Hathaway) Episode #138 | February 26, 2028 | Shane Tews, Dana A. Goward, and Jeff Hathaway
+
+[Speaker: Shane Tews]
+Shane Tews (00:06) Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work and how they shape our social and economic life. GPS is often described as a navigational tool, but at its core, it is a global timing system. Satellites orbiting Earth carrying atomic clocks that broadcast ultra-precise time signals enable ground-based receivers to determine location by measuring tiny differences in signal arrival times. Those same signals quietly synchronize the modern world, keeping electric power grids stable, coordinating mobile phone networks, and time-stamping financial transactions. They also enable systems to operate in lockstep across continents. Because this precise timing is available anywhere on the planet, GPS has become one of the invisible foundations of modern infrastructure. Today, I am talking with two experts in GPS policy. Dana Goward is president of the Resilient Navigation and Timing Foundation and a former member of the President's Advisory Board for GPS. He took this role after retiring from the Maritime Navigation Authority for the United States, where he worked for the U.S. Coast Guard. Also with us is one of the Foundation's board members and a long-time navigator, Coast Guard Rear Admiral Jeff Hathaway. Today, we are talking with these two experts about GPS innovation and global competition. I hope you enjoy this episode of Explain to Shane. Thank you for being guests today on Explain to Shane. Dana, I want you to tell us a little bit about your organization, but one of the things I found so fascinating just in learning about the GPS system is that it's more than what us non-military type people think of it as — just a mapping system. So when you're telling us about what you're doing, make sure that you get into that because the time sequence is so important to why GPS matters.
+
+[Speaker: Speaker not identified]
+Dana Goward (02:06) Sure, thank you, and it's great being here. Thanks for having us. So we are the Resilient Navigation and Timing Foundation. We are a public benefit 501c3 that advocates for policies and systems to protect GPS satellites, signals, and users. And on the one hand, that's a very narrow policy niche, but on the other hand, it's something that concerns every American and every facet of the United States government. So we visit and work with the Department of Defense, Transportation, DHS… I was just at the Department of Energy this morning, and it's an invisible utility that is critical to everything that we do in our technologically oriented society. You mentioned timing. So people think of GPS, as you mentioned, as the device in their car or on their phone that tells them where to go. And it does that. It's really good. And GPS as a system is great. But we really, in a sense, don’t care that much about GPS or the 32 satellites that are up there. What we care about is the service that we get from GPS, which is called positioning, navigation, and timing. And actually, timing is the most important. If this were the Lord of the Rings, it would be the one ring that rules them all, right? GPS satellites are essentially suites of highly precise clocks, usually three rubidium or cesium clocks that transmit a time signal. And when they all transmit the time signal simultaneously, it arrives at various times in your cell phone, and through a miracle of microchip technology and algorithms, it figures out where you are on the earth in three dimensions.
+
+[Speaker: Shane Tews]
+Shane Tews (03:49) Which is amazing. I mean, a lot of us are big users of Uber or Lyft or something like that. And again, that's why people tend to think it's a map because it knows where I am, even though sometimes when I'm in the building that we're in, it wants to pick me up somewhere else, and I have to be like, no, no, no, I'm really in this location. But banks — I found that so fascinating. The fact that, like, you know, just like ATMs and all these things, GPS is so important in that whole network operation system.
+
+[Speaker: Speaker not identified]
+Dana Goward (04:14) Absolutely. Timing is absolutely essential. So it's time and timing. Timing is a synchronization piece, right? It allows cell phone towers to talk to each other. It allows packet communications back and forth on the Internet. And time, of course, is time of day. And that's important, too, for forensics. So you know that you're putting money in before you take it out. More importantly, the bank knows
+
+[Speaker: Speaker not identified]
+that. And the sequence of events just generally, both for forensics and for sequencing.
+
+[Speaker: Shane Tews]
+Shane Tews (04:47) So two major issues that come up are jamming and spoofing. So let's take jamming first. What is it when you're jamming the GPS system?
+
+[Speaker: Speaker not identified]
+Dana Goward (04:59) So if we were talking about cybersecurity, this would be a denial of service attack. GPS, as I mentioned, is great. And it does exactly what it's supposed to do. But it was designed to have a very, very weak signal, so it doesn't interfere with other signals. And also because it's powered by solar panels and a bunch of other reasons, it's a very, very, very faint signal. So that means that just about any radio noise on or near the frequency can deny reception to your receiver, depending on how close the transmission is to you. So it's essentially interfering with that very, very weak signal. That's what jamming is. And it can happen either accidentally or intentionally. The European Union did a survey several years ago and found over 450,000 signals that had the potential to interfere with GPS and the other global navigation satellite systems. But only about 10 % of those were intentional. The others were random radio noise from machinery, accidental transmissions, and that sort of thing. So jamming and other spurious interferences are a real concern.
+
+[Speaker: Shane Tews]
+Shane Tews (06:04) But spoofing, I understand, is the real problem.
+
+[Speaker: Speaker not identified]
+Dana Goward (06:08) Spoofing is not denial of service. Spoofing is hacking, if you would; if we're talking cybersecurity. It's transmitting false GPS signals so that the receiver thinks that it's someplace where it's not. And we see that a lot, especially in conflict zones, although we've seen it here in the United States as well. It's often a common tool in cargo theft. Guy Fieri, the celebrity chef, had a million dollars' worth of his tequila stolen using a GPS spoofer device — folks misdirected the truck to someplace where they wanted it to be. But more insidiously and more dangerously, it can cause aircraft to wander into prohibited spaces, it can cause ships to collide, and it's done all of those kinds of things. And unfortunately, that's
+
+[Speaker: Speaker not identified]
+relatively easy to do now as well. Back in the day, when GPS was first developed, it wasn't such a problem. But with the advances in microchip technology, now anyone with a fairly sophisticated knowledge of hobby-level hacking can buy a software-defined transmitter and transmit fake GPS signals or other global navigation satellite signals and make a receiver think it's someplace that it's not.
+
+[Speaker: Shane Tews]
+Shane Tews (07:27) I feel like probably Ukraine, and I remember it being a big issue with Israel and just their flight patterns. Jeff, did you want to jump in on this?
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (07:36) I just wanted to mention that for the average person like myself, and this applies to either jamming or spoofing, you have to keep in mind, and Dana has already mentioned it, but that GPS signal is a thousand times weaker than the weakest cell phone signal that you would ever receive. A thousand times weaker than that. So, what does it take for a spoofer to be able to overpower or for the jammer to be able to just block out the signal? It's not too hard.
+
+[Speaker: Shane Tews]
+Shane Tews (08:13) Now, is that part of the architecture from its origin, the way it was designed? And if we were to do it today, would you be designing this differently? So part of the question I'm getting into is looking at how the Chinese have designed this. It looks like they have a different style system, and it's very well adopted by those that the Chinese support, including the Belt and Road people, which is a lot of Africa and South America, which should concern us because that means that there's again a choice being made. Sometimes it's going against America and towards Chinese technology, which has its own issues around that. So let's walk into that.
+
+[Speaker: Speaker not identified]
+Dana Goward (08:54) Yes, it's interesting. So, actually, the Chinese system is called BeiDou. For context, there are four global navigation satellite systems. Of course, GPS was the first. GLONASS is a Russian system that was developed second. Galileo is the European Union system, and then there's BeiDou, which is the newest — the Chinese system. It is the most modern, and it surpasses GPS and the other systems in a couple of ways. First, it's the newest, and so it has software- defined transmitters, which gives it a lot
+
+[Speaker: Speaker not identified]
+more flexibility in satellite design. They've learned lessons from the other three systems and provided different features that people had been hoping for, especially now that they were possible with the new technology. And they've done a lot more international outreach by putting correction stations and monitoring stations in a whole host of places where the United States has never even bothered to consider putting them. So, at any given time, there are more Chinese satellites in the skies of most countries than there are U.S. satellites. And so there are a lot of advantages to going and picking up and using BeiDou in addition to GPS, Galileo, and GLONASS. And it's possible because they're all very similar systems and they're designed to interact, to use all four at the same time.
+
+[Speaker: Shane Tews]
+Shane Tews (10:22) Part of what I found interesting is that they have more of a terrestrial base with physical ground locations than our original GPS system. Is that right?
+
+[Speaker: Speaker not identified]
+Dana Goward (10:33) That's correct, yes.
+
+[Speaker: Shane Tews]
+Shane Tews (10:35) Okay, so do we need to correct for that? Or, where do we head with this because, you know, we’re of the age that we actually, if we had to, we could get a map out. I know that Jeff spent a lot of time running around. Both of you probably navigated things where if the machine decided not to work, you knew how to get from A to B, but we have lots of people now who depend on this really for everything.
+
+[Speaker: Speaker not identified]
+Dana Goward (10:54) Well, and as you indicated, there are a number of companies that wouldn't exist but for GPS and other global navigation satellite systems. Uber and Lyft, if the signals went away, would immediately cease operation. Think about the number of trucks that FedEx has and the number of drivers. How many more would they need? How many more would all kinds of delivery companies need if it weren't for the efficiencies that you're enabled by GPS? And then, as you mentioned, there's the timing issue that because GPS has been free and highly accurate and generally pretty good, clever engineers have adopted this signal and incorporated it into darn near anything. SCADA systems, we
+
+[Speaker: Speaker not identified]
+had a water sewage treatment plant that went offline because of a GPS interference device that was parked next door, as an example.
+
+[Speaker: Shane Tews]
+Shane Tews (11:38) And then utilities. Give us the utility example because that one's also interesting.
+
+[Speaker: Speaker not identified]
+Dana Goward (11:42) Sure! So it gets a little bit geeky, but this is a tech podcast, right?
+
+[Speaker: Shane Tews]
+Shane Tews (11:47) You've got the right crowd.
+
+[Speaker: Speaker not identified]
+Dana Goward (11:48) So imagine an electrical grid coming together, two electrical grids coming together. Now, of course, alternating current, you have sine waves going in both. You're going to need to match those sine waves as precisely as possible to eliminate heat and loss of power, right? Well, how do you do that? Well, you use the frequency of phase of GPS or some other timing system in order to match them and make the energy transfer efficient and as safe as possible. So, the list goes on and on.
+
+[Speaker: Shane Tews]
+Shane Tews (12:26) Who pays for GPS?
+
+[Speaker: Speaker not identified]
+Dana Goward (12:27) Space Force.
+
+[Speaker: Shane Tews]
+Shane Tews (12:28) Okay. So we're all riding on the back of the Space Force. Every time I use my Uber button, or I use my GPS on a golf course, I can thank the Space Force for keeping it going.
+
+[Speaker: Speaker not identified]
+Dana Goward (12:37) That's true, and they're not only happy to have you do that, although at times the Department of Defense has been a little bit grumpy because they can't adjust GPS for their own purposes as much as
+
+[Speaker: Speaker not identified]
+they would like, because we've all become so dependent on it.
+
+[Speaker: Shane Tews]
+Shane Tews (12:53) Is there a movement for it to ever become a more free-market environment? I mean, is there competition emerging for GPS beyond what we've talked about with the international players?
+
+[Speaker: Speaker not identified]
+Dana Goward (13:05) Well, it's kind of hard to compete with something that's free and provided by the government. And that's actually been the challenge because while GPS is great and functions exactly as it should, it and its receivers are vulnerable, and users can be deceived or denied service relatively easily. And that's a real danger. And so folks have been encouraged to find other sources for their positioning, navigation, and timing in order to back up or complement GPS. The challenge is that everything costs money, right? And while there are technologies available, none have been deployed widely and affordably. And it's primarily because everyone's looking to the United States government because they provide GPS. If it goes wrong, it's the United States government's fault and not the individual business owner who, if they spent money on an alternative system, would be at a competitive disadvantage because they're buying this insurance that their competitors don't have to buy, right? So lots of issues in terms of backing up GPS.
+
+[Speaker: Shane Tews]
+Shane Tews (14:20) You just have to, every time somebody comes in new, go, this is a priority. And they're like, GPS, really? And you're like, uh-huh.
+
+[Speaker: Speaker not identified]
+Dana Goward (14:25) Everything's worked fine so far… At the same time, we have a real challenge getting ahead of the bang on things like this and preventing bad things from happening. I was the skipper at the Coast Guard helicopter station in New Orleans before Hurricane Katrina, and every hurricane season, the Army Corps of Engineers would come around and tell us, “When the levees fail, you need to have a hand axe in your attic.” They didn't say if, they said when. And, rather than investing tens of millions in the levees, we waited for Hurricane Katrina, which cost billions and thousands of lives.
+
+[Speaker: Shane Tews]
+Shane Tews (14:58)
+
+[Speaker: Shane Tews]
+It's like here in Washington — eventually you will need a snow shovel, even though no one believes that. And I do scrape, I usually use a credit card to get my...
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (15:06) So there are today commercial entities that are providing terrestrial-based position navigation and timing, not space-based, but terrestrial-based. And we're probably gonna wanna get into this a little bit more. For example, Dana mentioned one, farming. There are some applications that the farmer will actually hire someone to come in and create a terrestrial-based position navigation and timing system that gives them even more accuracy than what he could get from GPS. Another good example is a container-ship terminal. Container-ship pulls up. They need to know within centimeters which container do I pick up next and which truck do I put it on. In many cases, GPS doesn't provide that level of accuracy. And so there's technology, terrestrialbased, where they come in, and they create it just for that environment.
+
+[Speaker: Shane Tews]
+Shane Tews (16:15) Do they sync, or are they separate systems?
+
+[Speaker: Speaker not identified]
+Dana Goward (16:17) No, they're separate stand-alone systems. And you make an excellent point, Jeff. So, we look at PNT generally as utility-level and then specialized PNT, right? So, the container terminal has a specialized need, and there's a business case for that. And so, they pay for it. And GPS would never reliably, even with augmentations like those often done with precision farming, GPS would never really be able to meet that need. So there's a business case there. And then on the other hand, there's a utility level. Basically, GPS right now, which is the only utility level we have, that all of us use and need, and that really is a national security vulnerability because it's a single point of failure, in the words of a member of the National Security Council. And if it goes away, all kinds of bad things are going to happen. Everything’s interconnected; you’ll likely have cascading failures through various infrastructures and so on. Now, we are not unique in that, but there are others, other nations, our adversaries, and some of our allies who don't have that challenge. Probably the best example is that China, while they have constructed their own GPS-like system in BeiDou, they have also instituted a terrestrial timing
+
+[Speaker: Speaker not identified]
+network with 20,000 kilometers of fiber, 294 timing stations, and a terrestrial eLoran positioning, navigation, and timing broadcast system based on towers that covers up to a thousand miles offshore. And they've synchronized all three of these systems so that they all have the same information. So, regardless of what happens to space or to fiber or to terrestrial broadcast, it's very unlikely to interfere with the other two. So their military, their companies, their citizens are going to have the essential positioning, navigation, timing that they need pretty much regardless of what happens. We can't say the same thing.
+
+[Speaker: Shane Tews]
+Shane Tews (18:34) What's eLoran?
+
+[Speaker: Speaker not identified]
+Dana Goward (18:35) eLoran is a terrestrial system — it's kind of like a terrestrial GPS, except it's from towers on the ground and it's hundreds of thousands, probably millions of times stronger signal in a much lower frequency band than GPS. So same kind of services, not quite as accurate, but much more powerful and much more difficult to disrupt.
+
+[Speaker: Shane Tews]
+Shane Tews (18:58) So, Jeff, the terrestrial, let's say the agriculture thing you're talking about, is it a similar type of system that they're using?
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (19:04) It could be, there are several different technologies that can be used today, which Dana will get into, because it really gets us to what is that backup to GPS that makes sense? And in order to get there, Dana will tell you that we need to have some leadership. We're lacking national-level leadership to define the criteria that would make up that backup utility to GPS. And we haven't really gotten into that, but that's really the core of what our foundation is advocating for. And that's for somebody to pick up the football. The football's sitting in the middle of the field, who's gonna pick it up and run with it? I don't care if it's the defense, the offense, somebody pick up the friggin' football.
+
+[Speaker: Shane Tews]
+Shane Tews (20:03) Well, let's go there because obviously, map reading class is not the answer.
+
+[Speaker: Speaker not identified]
+Dana Goward (20:07) I mean, neither is carrying around an atomic clock on your wrist, right? Yeah, and so it's not just China. Russia has most of its nation covered by a similar terrestrial broadcast system. South Korea has got access to space, terrestrial broadcast, eLoran, and fiber. France and the UK are building an eLoran system. The UK is already building out its own terrestrial fiber system. Which is really in accordance with what the Department of Transportation, the civil lead for GPS and positioning, navigation, and timing, said in a report several years ago: you really need signals from space, terrestrial broadcast, and fiber. And if you have those three, it's going to be pretty hard to disrupt the entire system. It's what we like to call the resilience triad, or national resilient core PNT architecture — something that people can build on and add for their specialized needs, and cooperate with, but a backbone that all Americans can count on for a minimal level of service regardless of whether their neighbor has an interference device or not.
+
+[Speaker: Shane Tews]
+Shane Tews (21:18) So when I think of what you just said, you're talking about critical infrastructure. So, is there sort of a tiering where you say, this isn't as important, we'll let you ride on our tail? I think of things like Uber, as much as I love it and use it every day. We're happy to keep you there, though what we're really most concerned about is critical infrastructure and making sure that that's protected.
+
+[Speaker: Speaker not identified]
+Dana Goward (21:38) Well, we're concerned about critical infrastructure, but we're also concerned about national security, right? And every American contributes to the economic and national security of the nation, whether you're delivering coffee and printer ink to the Department of Defense or you're just making the economy go, right? So, GPS and PNT are one of those things that are so woven through everything that, as I mentioned, if it were to go away or be seriously disrupted for a while, you're going to see cascading failures in every aspect of the economy and our national security impacted.
+
+[Speaker: Shane Tews]
+Shane Tews (22:07) So if I were to grant your wishes, one is just somebody paying attention to this; it sounds like it's a
+
+[Speaker: Shane Tews]
+priority. What would you ask for?
+
+[Speaker: Speaker not identified]
+Dana Goward (22:14) So I would ask for a designated, empowered, and funded leader for our national resilient PNT architecture.
+
+[Speaker: Shane Tews]
+Shane Tews (22:24) Wow. We go back to the czar days.
+
+[Speaker: Speaker not identified]
+Dana Goward (22:28) You know, we have had that mentioned. I don't think it's really a czar.
+
+[Speaker: Shane Tews]
+Shane Tews (22:34) It's not in vogue at the moment.
+
+[Speaker: Speaker not identified]
+Dana Goward (22:37) Well, you know, czars tend to get stove-piped, you know, and be resented. What we need is somebody to bring everybody together and say, okay, this is something we're all concerned about. This is something that benefits us all. Here's your part. Here's your part. Here's what we're going to do. Go off and do good things, and let's get together every week and make sure it's all going in the direction that the president and the nation want.
+
+[Speaker: Shane Tews]
+Shane Tews (23:10) I'm trying to imagine that interagency process. It's like who would show up, and it sounds like everyone.
+
+[Speaker: Speaker not identified]
+Dana Goward (23:14) Pretty much everyone. So there is actually a national positioning, navigation, and timing executive committee. It is chaired by the Deputy Secretary of Defense and the Deputy Secretary of Transportation. Very senior people who don't have a whole lot of time to worry about this. So it's a committee, and it's a very senior committee. Two strikes and you're almost out, right? And so things tend to evolve on a day-to-day basis to unempowered staff who pretty much do the best they can,
+
+[Speaker: Speaker not identified]
+but when they run into roadblocks and disagree with each other, there's nobody there to break the tie. So I'm not saying we need a czar to break the tie, but we need somebody to bring folks together, keep everybody's eye on the prize, and move us in the right direction so that we're not so far behind China and Russia and South Korea or the UK and France, so that we're not hanging out there on this very, very thin thread from space.
+
+[Speaker: Shane Tews]
+Shane Tews (24:09) Well, if you ever decide you want to run a political campaign, you should go on Daylight Saving Time because I think you could win on that one. All of us who have friends who work on the Energy and Commerce Committee say, please, I know it's getting to be that time of year. Don't yell at me. We know we're in charge of time. They love to remind us of that. But the critical importance of this is amazing.
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (24:29) But let me just jump in, Shane, and say, going back to the Resilient Navigation and Timing Foundation, we're a charitable organization, which means we're prohibited from advocating for any particular kind of technology that could perhaps meet if there were requirements stated for some sort of backup.
+
+[Speaker: Shane Tews]
+Shane Tews (24:54) Are you allowed to like nod yes or no in a meeting?
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (25:07) Dana and I can’t even do that.
+
+[Speaker: Speaker not identified]
+Dana Goward (25:00) We're not necessarily prohibited for technology. We're prohibited from advocating for the interests of our members, financial interests of our members as a charity, right? We do try to stay technologyneutral because there are a lot of mature technologies out there. But we do observe what other folks have done and found. So we're happy to report on what the Department of Homeland Security has found in their studies, what the Department of Transportation has found in their studies, and the
+
+[Speaker: Speaker not identified]
+same with the Department of Defense. And they all pretty much say we need signals from space, terrestrial broadcast, and fiber. And you know, we're not talking a whole lot of money. I was just at the Department of Energy event this morning, and we spend a lot of money generating electricity in this country. And the reason I was there is because timing, as we talked about before, is essential to them. There are 20 different places in the electrical grids where timing is ingested and critical to their operations.
+
+[Speaker: Shane Tews]
+Shane Tews (26:00) And there’s going to be more because these data centers are like mushrooms showing up everywhere.
+
+[Speaker: Speaker not identified]
+Dana Goward (26:05) Yes, exactly right. Now, putting resilient timing into the electrical grid — Considering all the money we spend to produce electricity and to consume electricity, the amount of that is de minimis. I mean, it would not even show up on an electrical bill or in a budget as a separate line item. But the challenge is, because the Department of Energy really believes they only have the authority and power to demonstrate, to inform, to educate, and to bring people together and talk about it. It's really the Federal Energy Regulatory Commission and NERC that have the sway here, and this is not something that's on their radar.
+
+[Speaker: Shane Tews]
+Shane Tews (26:49) I actually love the idea of looking at my utility bill and seeing a sub-line that says I'm paying for time. And then when I scan the QR code- “What does this mean?”- with AI, you could pop up and explain it. That’d be awesome.
+
+[Speaker: Speaker not identified]
+Dana Goward (27:02) There we go. I’d be happy to do that.
+
+[Speaker: Shane Tews]
+Shane Tews (27:04) Well, gentlemen, I wish you the best of luck because it's really important that this all goes well. All of us depend on it.
+
+[Speaker: Speaker not identified]
+Dana Goward (27:09) Well, thank you very much. We hope so too. It's really important, especially in this instance, to get ahead of the bang. You talk about things that are important but not urgent. Well, this will never be urgent. It will only go from important but not urgent to a disaster. Right? It won’t slow down in the middle.
+
+[Speaker: Shane Tews]
+Shane Tews (27:31) That doesn't make me feel any better.
+
+[Speaker: Speaker not identified]
+Dana Goward (27:33) No, it doesn't. And to give you another example — as you'll recall with the Department of Transportation — there were 142 commercial airliners hijacked before 9/11. In two of those instances, the hijacker said they were going to fly the plane into a nuclear power plant if their demands weren't met. But we didn't do much on airliner security until the Twin Towers fell and the whole world changed. And this issue has the potential, if it goes south, to be worse than 9/11. It really does. An administration falling would be the least of it. America's standing would decline in the world. We would fall behind in so many areas, both physically and economically, behind our adversaries and allies who are more prepared than we are.
+
+[Speaker: Shane Tews]
+Shane Tews (28:21) I know that's really catastrophic and sounds horrible, but I'm also thinking about DoorDash not showing up, and not being able to get my car — there are just so many other things that we think about on a daily basis. I just want to put that in perspective because what you're talking about is completely catastrophic, but there are also little everyday catastrophes that could happen to people all day long.
+
+[Speaker: Speaker not identified]
+Dana Goward (28:39) Absolutely. And they can happen any day.
+
+[Speaker: Shane Tews]
+Shane Tews (28:41) Well, thank you very much for being guests today on Explain to Shane.
+
+[Speaker: Speaker not identified]
+Dana Goward (28:44) Our pleasure. Thank you for having us.
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (28:47) If I could just close with…
+
+[Speaker: Shane Tews]
+Shane Tews (28:48) Yes, Jeff, you may.
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (28:49) For anyone who would like to learn even a little bit more than what we've talked about here today, rntfnd.org.
+
+[Speaker: Speaker not identified]
+Dana Goward (28:57) Say it again for…
+
+[Speaker: Jeff Hathaway]
+Jeff Hathaway (28:58) rntfnd.org. Thank you.
+
+[Speaker: Shane Tews]
+Shane Tews (29:03) Alright, we will be sending our listeners there. Thank you, gentlemen. Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in. We'll see you on the next episode of Explain to Shane.

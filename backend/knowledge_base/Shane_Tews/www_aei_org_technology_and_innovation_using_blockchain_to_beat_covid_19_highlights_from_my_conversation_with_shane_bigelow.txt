@@ -1,149 +1,56 @@
 PAGE_TITLE: 
-	Using Blockchain to Beat COVID-19: Highlights from My Conversation with Shane Bigelow | American Enterprise Institute - AEI
+	Using Blockchain to Beat COVID-19: Highlights from My Conversation with Shane Bigelow
 
+[Speaker: Introduction / editorial context]
 How can we slow the spread of the coronavirus while maintaining our privacy? Will a test-and-trace app have to track our every move? Shane Bigelow, CEO of Ownum and Vital Chain, joined me on the latest episode of “Explain to Shane” to discuss how blockchain can help in the battle against COVID-19.
-Below is an edited and abridged transcript of our talk. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the Explain to Shane podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane
-Tews: Can you walk us through the work? I know you guys put this together
-pretty quickly, but you have a very interesting consortium you’re working with
-that is specifically Ohio-based, but it probably goes beyond that, so you want
-to give us the basics?
-Shane
-Bigelow: Vital Chain is a company that we started underneath our holding
-company, Ownum. Ownum creates different companies that digitize different vital
-records. And Vital Chain started, as an idea in our head a couple of years ago,
-but the basic concept was to digitize birth and death certificates. And when
-you contemplate a birth or death certificate, all it is is a record that a
-medical professional signed off on that talks about a particular event
-occurring, the event being a birth or a death.
-Well you can
-transfer that same base technology that we’ve spent a few years developing and
-use it to track any medical event, including receiving an inoculation,
-vaccination, or antibody test. And that to us is a way that we can provide a
-service back to the country to allow for people to have a validation tool — or
-a certification tool is probably a better word — a certification tool for the
-tests that you’ve received. So on the presumption that mass testing is rolling
-out, which I think we all have to presume will occur in some way — and not a
-problem that we necessarily need to solve for — on the presumption that mass
-testing is rolling out, there needs to be a way to certify the results and that
-would make it usable inside of the enterprise world. Because without it, I
-don’t know what people would do. Would they just walk with their test results
-in a manila folder or something like that?
-They need a
-way to just have these results certified and to have the results that if you
-think about it, they’re only going to last for a certain period of time. They
-need to be able to time out as well, and pieces of paper can’t do that.
-You’ve
-also alluded to having an audit trail, which seems to be part of the going
-forward equation where we need to be able to understand how we validate and
-then what is the trust mechanism on this. So it seems like you have some really
-good partners that are engaged there and this is a model that can be emulated.
-So what is your plan? How are you guys going to roll this out?
-If you think
-about it, everyone gets the test and then you get a particular result from the
-test. The result could have a variety of options to it. So let’s be clear,
-there’s people who’ve never had the test. So that’s one category of people.
-There’s people that take the test and it turns out that they have the virus. So
-clearly they’ve got to quarantine and take care of themselves and get the right
-medical care. There’s people that take the test and do not have the virus, but
-also don’t have the antibodies present. Then there’s people that take the test,
-don’t have the virus, and do have the antibodies present. But the antibodies
-could range in terms of how significant they are in one person versus another
-based on a number of factors that the medical community is still quite frankly
-sorting out.
-The results
-from the test will have to be deployed in different ways. So at first what
-we’ll know for sure, and there’s really good science around it, is who has the
-virus and who doesn’t. That’s the first standard. But clearly if you don’t have
-the virus at the point you take the test, you could go somewhere an hour, two
-hours, five minutes later and acquire the virus. So how do you test for that?
-What use cases can use that data out of the gate? And there are some places
-that could use that data out of the gate. So knowing that the people you’re
-admitting to your place don’t have the virus, if you’ve properly cleaned your
-place and you’re not worried about the virus being carried in, there is utility
-to that to start getting the economy going.
-As the
-serological tests advance, and we wind up with a better test to reveal what the
-antibodies are and agreement in the scientific community, medical communities
-around what those antibody levels mean, that’s when we’ll be able to roll out
-to the next phase of understanding what everyone’s antibody levels are and what
-that would permit them to do. So our certification tool will mature as that
-science matures. There are a variety of serological tests that are starting to
-come out. I don’t think there’s uniform agreement in the medical community
-around the veracity of what those tests would imply for your ability to return
-to work, or to a plane, or to a sporting facility. That will come, but it will
-come in short order. This is all going to evolve very, very rapidly as the mass
-testing rolls out.
-One of
-the examples you shared with me earlier, you and I are both huge fans of Clear
-because it just seems to solve a lot problems. Of course it was solving
-problems different than this prior than a couple of months ago, but I have not
-used Clear in a stadium. I know that Clear has been rolling itself out in
-stadiums and I imagine there’s competitors to it, but explain how this will
-work in that environment.
-Yeah, so if
-you think about the way Clear works — for anyone that’s listening and not
-familiar with this, you scan your fingerprints, your irises, and you keep that
-information inside of Clear’s database. And then when you go to check in to
-TSA, instead of having to have the TSA agent verify who you are by looking at
-your license, Clear has done that by looking at your biometrics and you get
-passed through security considerably faster as a function of that. It works
-similarly with sporting arenas where you can attach your ticket account to
-Clear and instead of scanning your ticket, they scan your irises to get in. I
-use it to go to the Cleveland Indians games and it works fantastically well.
-Even renting a car, Hertz does it now too.
-So what
-would happen is that within the Clear accounts, and to be fair, we haven’t
-spoken to Clear yet, but it’s clear, pun intended, how this would work. We
-would be embedded inside of the barcode that is part of your ticket, which
-would then be, obviously it’s linked to Clear. The way that we’re controlling
-for privacy, because I think you have to think about privacy in this instance,
-it’s not as if the arena needs to have your medical record. That is not the way
-this will work. The way it works is that they set a standard for what they’re
-comfortable with in letting people back in. We are just certifying that your
-test meets that standard. We’re not sharing medical data, we’re not moving your
-data around. The arena would set a standard that you’d have to meet in order
-for them to feel comfortable letting you in and you either meet or don’t meet.
-So it becomes binary that you are allowed in or you’re not allowed in.
-It would
-work the same way, by the way, for a barbershop or for your local store. They
-will be able to control their profile and say, “Here’s what we’re
-comfortable doing.” This is America after all, the enterprise should
-control who they want to have in to their business. And certainly this is a
-tool that would enable them to control for the health of the people entering
-during this very different time.
-So to use
-your barber example. Are they scanning an app? Is that where they’re getting
-this information?
-Yeah, so
-it’s a great example. So our solution for the barbers is not to imply that they
-have a scanner, right? I don’t want small business to have to go out and incur
-even more expense during a period like this. Instead they’d set up an account
-within Vital Chain. They could then print off a QR code that as people come to
-their facility, they’d use the QR code scanner on their phone, scan that QR
-code. It immediately loops into their Vital Chain app and their Vital Chain app
-says you’re approved or you’re not approved to enter this facility. And so that
-eliminates the technical need for the barbershop to have to have a scanner. It
-keeps it very simple for the consumer. And most importantly, it keeps the data in
-the consumer’s hands. It’s the consumer’s data. There’s no reason why it should
-have to be shared with every place you want to go enter.
-But
-certainly places are going to set standards for how you can enter them and you
-need to be able to prove or certify to them that you’re able to go in. But you
-need to control your own data. And that’s the big difference between us and
-contact tracing. With contact tracing, it’s anything but your own data. I think
-what people are fearful of with contact tracing is that all of a sudden, Apple
-and Google find out I was near someone with COVID, they send me an alert and 30
-seconds later I’m also getting advertisements to buy a ventilator. I don’t want
-that. I don’t want them having that level of knowledge of my health.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to the podcast here and read our full discussion here. You can also subscribe to the Explain to Shane podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: Can you walk us through the work? I know you guys put this together pretty quickly, but you have a very interesting consortium you’re working with that is specifically Ohio-based, but it probably goes beyond that, so you want to give us the basics?
+
+[Speaker: Shane Bigelow]
+Shane Bigelow: Vital Chain is a company that we started underneath our holding company, Ownum. Ownum creates different companies that digitize different vital records. And Vital Chain started, as an idea in our head a couple of years ago, but the basic concept was to digitize birth and death certificates. And when you contemplate a birth or death certificate, all it is is a record that a medical professional signed off on that talks about a particular event occurring, the event being a birth or a death.
+
+[Speaker: Shane Bigelow]
+Well you can transfer that same base technology that we’ve spent a few years developing and use it to track any medical event, including receiving an inoculation, vaccination, or antibody test. And that to us is a way that we can provide a service back to the country to allow for people to have a validation tool — or a certification tool is probably a better word — a certification tool for the tests that you’ve received. So on the presumption that mass testing is rolling out, which I think we all have to presume will occur in some way — and not a problem that we necessarily need to solve for — on the presumption that mass testing is rolling out, there needs to be a way to certify the results and that would make it usable inside of the enterprise world. Because without it, I don’t know what people would do. Would they just walk with their test results in a manila folder or something like that?
+
+[Speaker: Shane Bigelow]
+They need a way to just have these results certified and to have the results that if you think about it, they’re only going to last for a certain period of time. They need to be able to time out as well, and pieces of paper can’t do that.
+
+[Speaker: Shane Tews]
+You’ve also alluded to having an audit trail, which seems to be part of the going forward equation where we need to be able to understand how we validate and then what is the trust mechanism on this. So it seems like you have some really good partners that are engaged there and this is a model that can be emulated. So what is your plan? How are you guys going to roll this out?
+
+[Speaker: Shane Bigelow]
+If you think about it, everyone gets the test and then you get a particular result from the test. The result could have a variety of options to it. So let’s be clear, there’s people who’ve never had the test. So that’s one category of people. There’s people that take the test and it turns out that they have the virus. So clearly they’ve got to quarantine and take care of themselves and get the right medical care. There’s people that take the test and do not have the virus, but also don’t have the antibodies present. Then there’s people that take the test, don’t have the virus, and do have the antibodies present. But the antibodies could range in terms of how significant they are in one person versus another based on a number of factors that the medical community is still quite frankly sorting out.
+
+[Speaker: Shane Bigelow]
+The results from the test will have to be deployed in different ways. So at first what we’ll know for sure, and there’s really good science around it, is who has the virus and who doesn’t. That’s the first standard. But clearly if you don’t have the virus at the point you take the test, you could go somewhere an hour, two hours, five minutes later and acquire the virus. So how do you test for that? What use cases can use that data out of the gate? And there are some places that could use that data out of the gate. So knowing that the people you’re admitting to your place don’t have the virus, if you’ve properly cleaned your place and you’re not worried about the virus being carried in, there is utility to that to start getting the economy going.
+
+[Speaker: Shane Bigelow]
+As the serological tests advance, and we wind up with a better test to reveal what the antibodies are and agreement in the scientific community, medical communities around what those antibody levels mean, that’s when we’ll be able to roll out to the next phase of understanding what everyone’s antibody levels are and what that would permit them to do. So our certification tool will mature as that science matures. There are a variety of serological tests that are starting to come out. I don’t think there’s uniform agreement in the medical community around the veracity of what those tests would imply for your ability to return to work, or to a plane, or to a sporting facility. That will come, but it will come in short order. This is all going to evolve very, very rapidly as the mass testing rolls out.
+
+[Speaker: Shane Bigelow]
+One of the examples you shared with me earlier, you and I are both huge fans of Clear because it just seems to solve a lot problems. Of course it was solving problems different than this prior than a couple of months ago, but I have not used Clear in a stadium. I know that Clear has been rolling itself out in stadiums and I imagine there’s competitors to it, but explain how this will work in that environment.
+
+[Speaker: Shane Bigelow]
+Yeah, so if you think about the way Clear works — for anyone that’s listening and not familiar with this, you scan your fingerprints, your irises, and you keep that information inside of Clear’s database. And then when you go to check in to TSA, instead of having to have the TSA agent verify who you are by looking at your license, Clear has done that by looking at your biometrics and you get passed through security considerably faster as a function of that. It works similarly with sporting arenas where you can attach your ticket account to Clear and instead of scanning your ticket, they scan your irises to get in. I use it to go to the Cleveland Indians games and it works fantastically well. Even renting a car, Hertz does it now too.
+
+[Speaker: Shane Bigelow]
+So what would happen is that within the Clear accounts, and to be fair, we haven’t spoken to Clear yet, but it’s clear, pun intended, how this would work. We would be embedded inside of the barcode that is part of your ticket, which would then be, obviously it’s linked to Clear. The way that we’re controlling for privacy, because I think you have to think about privacy in this instance, it’s not as if the arena needs to have your medical record. That is not the way this will work. The way it works is that they set a standard for what they’re comfortable with in letting people back in. We are just certifying that your test meets that standard. We’re not sharing medical data, we’re not moving your data around. The arena would set a standard that you’d have to meet in order for them to feel comfortable letting you in and you either meet or don’t meet. So it becomes binary that you are allowed in or you’re not allowed in.
+
+[Speaker: Shane Bigelow]
+It would work the same way, by the way, for a barbershop or for your local store. They will be able to control their profile and say, “Here’s what we’re comfortable doing.” This is America after all, the enterprise should control who they want to have in to their business. And certainly this is a tool that would enable them to control for the health of the people entering during this very different time.
+
+[Speaker: Shane Tews]
+So to use your barber example. Are they scanning an app? Is that where they’re getting this information?
+
+[Speaker: Shane Bigelow]
+Yeah, so it’s a great example. So our solution for the barbers is not to imply that they have a scanner, right? I don’t want small business to have to go out and incur even more expense during a period like this. Instead they’d set up an account within Vital Chain. They could then print off a QR code that as people come to their facility, they’d use the QR code scanner on their phone, scan that QR code. It immediately loops into their Vital Chain app and their Vital Chain app says you’re approved or you’re not approved to enter this facility. And so that eliminates the technical need for the barbershop to have to have a scanner. It keeps it very simple for the consumer. And most importantly, it keeps the data in the consumer’s hands. It’s the consumer’s data. There’s no reason why it should have to be shared with every place you want to go enter.
+
+[Speaker: Shane Bigelow]
+But certainly places are going to set standards for how you can enter them and you need to be able to prove or certify to them that you’re able to go in. But you need to control your own data. And that’s the big difference between us and contact tracing. With contact tracing, it’s anything but your own data. I think what people are fearful of with contact tracing is that all of a sudden, Apple and Google find out I was near someone with COVID, they send me an alert and 30 seconds later I’m also getting advertisements to buy a ventilator. I don’t want that. I don’t want them having that level of knowledge of my health.
+
+[Speaker: Shane Bigelow]
 I also don’t like the concept of being marketed to during this time. I think the fear is there that they would do it. I haven’t seen assurance that they won’t do it, but contact tracing is a very useful tool to figuring out how to eliminate hot spots. So that’s my point about this has to work in tandem, right? So we can keep the data private and contact tracing if it’s done on an opt in basis can be useful to reduce hot spots. It’s going to be a myriad of solutions that have to come together to really get rid of this virus and move us back into a state of normalcy.

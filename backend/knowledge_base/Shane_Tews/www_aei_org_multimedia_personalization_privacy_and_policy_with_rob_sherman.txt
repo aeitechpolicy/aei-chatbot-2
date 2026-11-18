@@ -1,8 +1,11 @@
 PAGE_TITLE: 
-	Personalization, Privacy, and Policy (with Rob Sherman) | American Enterprise Institute - AEI
+	Personalization, Privacy, and Policy (with Rob Sherman)
 
+[Speaker: Introduction / editorial context]
 As social media platforms integrate personalization technology, questions around privacy, transparency, and user choice are becoming increasingly pronounced. What does personalization really mean for users? How do platforms like Facebook and Instagram decide what content or ads you see? And how can companies ensure that personalization enhances user experience without compromising data privacy?
+
+[Speaker: Introduction / editorial context]
 In this episode, Shane Tews sits down with Rob Sherman, Vice President and Deputy Chief Privacy Officer for Policy at Meta. They take a look behind the curtain and discuss the mechanics behind personalization on Meta’s platforms, as well as how users can benefit from this technology. Rob shares insights from over a decade at Meta, offering a rare behind-the-scenes look at how personalization works and how platforms aim to make it more transparent and responsible.
-Download this episode’s transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.

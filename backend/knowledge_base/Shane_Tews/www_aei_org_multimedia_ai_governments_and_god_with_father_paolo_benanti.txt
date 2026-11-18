@@ -1,8 +1,11 @@
 PAGE_TITLE: 
-	AI, Governments, and God (with Father Paolo Benanti) | American Enterprise Institute - AEI
+	AI, Governments, and God (with Father Paolo Benanti)
 
+[Speaker: Introduction / editorial context]
 AI is reshaping our world as profoundly as past technological revolutions: the printing press, the Industrial Age, and the Digital Revolution. Its rapid advancement presents both extraordinary opportunities and significant risks. How will AI affect industries, national economies, and global governance? How can businesses and policymakers ensure AI remains a tool for human progress rather than unchecked disruption or vice?
+
+[Speaker: Introduction / editorial context]
 Join Shane Tews and Father Paolo Benanti, a theologian and ethicist for the Vatican on AI, for a thought-provoking interactive discussion that transcends traditional debates on values and policy to examine AI’s broader psychological, philosophical, and even theological implications. In collaboration with the International Economic Alliance, this discussion will offer a unique perspective on balancing innovation and opportunities with ethical responsibility, ensuring AI remains human-centered.
-Download this episode’s transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.

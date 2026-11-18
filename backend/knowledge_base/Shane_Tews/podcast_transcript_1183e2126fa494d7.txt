@@ -1,0 +1,155 @@
+PAGE_TITLE: 
+	Financial Data upon Request (with Penny Lee) — full transcript
+
+[Speaker: Introduction / editorial context]
+Explain to Shane: Financial Data Upon Request (with Penny Lee) Episode #132 | November 13, 2025 | Shane Tews and Penny Lee
+
+[Speaker: Shane Tews]
+Shane Tews (00:02) Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. The Consumer Financial Protection Bureau's Open Banking Rule, issued under Section 1033 of the Dodd-Frank Act, aims to give consumers more control over their own information, allowing them or their agents to securely access their financial data upon request. In October 2024, the CFPB issued a final rule implementing Section 1033, but its future remains uncertain, as ongoing litigation and regulatory considerations have placed the implementation of Section 1033 on hold. This means there will be more focus on how the CFPB guidance will eventually be implemented and what it will mean for innovation, competition, and consumer protection. To explore these challenges currently facing banks and their financial technology industry partners, I'm joined today by Penny Lee, President and CEO of the Financial Technology Association. Penny's career has bridged the worlds of both policy and entrepreneurship. She chaired K Street Capital, an organization built to support early-stage startups, and served as the Chief Strategy Officer at 1776, a global incubator for tech innovation. Before joining FTA, Penny spent many years shaping political strategy and communications in Washington. I hope you enjoy today's episode. Penny, thank you for being a guest today on Explain to Shane. You have a fascinating career arc, and it spans deeply into policy work and the startup ecosystem when you founded K Street Capital, shaping at 1776, which I actually used to be in the building next to them. You guys always had interesting guests coming in and out. And then leading into where you are now at the Financial Technology Association. So, what drew you into the combined policy expertise startup of investing? And then we'll go into what you're doing now at FTA.
+
+[Speaker: Penny Lee]
+Penny Lee (02:06)
+
+[Speaker: Penny Lee]
+Yeah, the first half of my career was in the political sense, working on campaigns and working
+
+[Speaker: Penny Lee]
+to elect officials that I thought could individually, or would hope that individuals would be able to affect change. It was building off of that and working on those campaigns that bled into a little bit of policy. Once they get elected, you want to work on the various different policies to be able to make that change that you're looking for. So, when I got out of that world and went into multi-client lobbying, I saw a bit of a market gap in the sense that we were seeing incredible innovation and entrepreneurs who were having these incredible reg tech startups, trying to think through how we can make government more efficient, how we can make healthcare, the economy, and finances more accessible to the regular everyday person. I saw that these entrepreneurs were going into the regulated space but really didn't have any clue as to what all of the rules, parameters, or restrictions were in place. So, we formed K Street Capital with the notion of trying to invest — a lot of us came from the regulatory world or from policy or politics. Can we use our knowledge of the space to be able to not only invest in the company or the entrepreneur but then use our networks, our building, and our knowledge to help build these companies and propel them for greater success? That was the thesis behind K Street Capital. Now, 12 years later, we have 65 million assets under management. We've had several unicorns, and it's been an exciting space to see that technology can change how government operates and works, and to the betterment of it. You see a lot of folks in this space — some of the big unicorns like Palantir, Anduril, and others — that are really making dynamic changes in how government operates. We were on a smaller scale, but now, fast forward to financial technology and our association, and we're seeing that same capability — amazing innovators coming into this space to think through what that marketplace gap is. Do consumers have access to investing platforms? Can we offer banking services without high fees? Can we offer an account without overdraft fees? All of these things are changing how consumers and small businesses interact with financial services. For me, it's a path and a part of the journey, and really exciting to be a part of.
+
+[Speaker: Shane Tews]
+Shane Tews (04:49)
+
+[Speaker: Shane Tews]
+That is, and now I feel like you must be using so many of those lessons because you're back at the beginning of, okay, I've got to bang through a bunch of these regulations. I started to recognize the friction points. I've been on the tech side for a long time, and I think it started with an Instagram feed where I saw somebody saying they were watching the, they called it Nancy Pelosi feed on something called Autopilot. It fascinated me. I was like, okay, I'm going to go. I downloaded Autopilot, and they wanted me to have an account. So I thought, well, I'm just going to move some funds and create a Robinhood account. After hearing all this stuff about the meme stocks, it was really hard. It was like, why can't this connect? It took me a week to finally get my large bank to put some money into this little baby Robinhood account
+
+[Speaker: Shane Tews]
+so I could humor myself while looking to see what Paul Pelosi is investing in. It was my first moment of watching the friction, and then I started talking to you all about you coming on. Since then, I think I've had a banking lesson every day. I have an old E-Trade account I was trying to close yesterday, which is still not closed. Let's talk about the work you're doing now.
+
+[Speaker: Penny Lee]
+Penny Lee (05:51)
+
+[Speaker: Penny Lee]
+Yes, a lot of that is to try to remove the friction out of the marketplace or make it easier for you to change your account or connect your account, for that matter. For the last 10 years, there is a kind of policy, I guess you could say, called open banking. That is the ability for consumers, or the notion that consumers have the right to own their data and permission it to the apps and services that they choose. That could be simply moving from, you know, I have a bank account right now with a 0.003 interest rate on my savings. I don't keep a lot of money there, and I move my funds into a higher-yield savings account. That ability for you to make that choice and move your own data is what open banking is about. That foundational piece says you, the consumer, have the right to your data. This has gone through some rulemaking process, and where we are right now is that this is in question. The question is whether or not consumers own it, that they have the right to authorize it to a third party, to a fintech, to others, and whether or not banks have the right to charge for access to that data. At FTA, we argue that the statute is clear. It says banks shall make available to consumers, upon request, their financial information. It did not say upon request for a fee, did not say upon request for a toll; it said upon request. We urge the Trump administration, which is looking at this rule again — finalized in 2024 and now under review on different aspects — to hold firm that consumers have the right to permission their data and do it without exorbitant fees from banks.
+
+[Speaker: Shane Tews]
+Shane Tews (07:51)
+
+[Speaker: Shane Tews]
+I feel like this, who owns the data, is such a question. Years ago, we were down looking at some stuff with a car company, and there was a telecommunications company who was also on this. I said, wait a minute, I'm buying the car, and what you've just told me is everybody else owns the data but me, the one who's paying for the car. They said, well, we don't really look at it that way. I can imagine how the conversation went from there. It just seems like, as consumers, we're still learning how important all of these data points are and what you can do with them, especially in the financial markets. I'm obsessed with the rate, so when you realize, why do I have all this money sitting here when it should be over there, and then I can't get it across the bridge, it's very frustrating.
+
+[Speaker: Penny Lee]
+Penny Lee (08:31)
+
+[Speaker: Penny Lee]
+What we want to do is empower consumers to be able to make those choices and not have roadblocks in the way of making those choices. So, if they do want to find, I search on a daily basis to see if there's a better rate someplace else and should I move. We're in a very mobile digital world where funds are fungible in the sense that they can be moved, and they should be moved according to the consumer's consent and their own authorization to be able to get the best financial tools for them. It used to be that if you wanted to learn about your financial status or where you should be investing, you took a box of receipts into your local branch, into your bank, and they sifted through it and said, maybe you should invest here or maybe you should put savings there. That is now online. That is now all digital. The same information that you took in that shoebox is now available in electronic form. Similarly, you didn't have to pay a toll to that large bank when you went in to visit them. You shouldn't have to pay it now to be able to get that holistic picture of you so that you can get personalized services that best suit your needs.
+
+[Speaker: Shane Tews]
+Shane Tews (09:43)
+
+[Speaker: Shane Tews]
+We actually had a podcast about a year ago with a guy who named his company Shoebox because he was from the Bronx. He said that he realized during COVID this change where a lot of his local bodegas were having trouble doing things. That's ultimately where he landed — they needed to figure out how to get into the current market, and he created something called Shoebox for that. Awesome. I know, it's kind of funny. So, there's a big discussion right now about data scraping, which was very prominent for a long time, and we're coming out of that into doing APIs. Explain that.
+
+[Speaker: Penny Lee]
+Penny Lee (10:15)
+
+[Speaker: Penny Lee]
+Yeah, when the concept of making or sharing your personal financial data first came, probably in the early 2000s, it was mainly done through what they would call screen scraping, where you would give over your credentials to your account, and then the third party would go and find information from that bank account to have a more fulsome picture. That has now moved into what they call APIs, which are essentially network communications between two entities to allow that information to flow more securely and permissioned. It is often tokenized, in the sense that your credentials don't stay in any one place. So, the security factors are much higher and much safer to transfer through an API. That's the shift. What the rule said was to start shifting away from screen scraping, and we've been supportive of that. There are smaller institutions that still don't have the tech stack to absorb or build out APIs. That's just going to take some time to get there. So, we've been in favor of a phasing out of screen scraping and moving to APIs, but in an appropriate way that allows everybody to make sure they have the right tech stack to do it.
+
+[Speaker: Shane Tews]
+Shane Tews (11:45) So, from a security standpoint, there have been some people who say that because you have these varying levels of people's interest in security or what they can afford, it might not be as secure. It sounds, as somebody who works on cybersecurity, I want to know whether it's going to be the highest level, not the lowest level. And right now, it sounds like we might be working kind of toward the low level.
+
+[Speaker: Penny Lee]
+Penny Lee (12:08)
+
+[Speaker: Penny Lee]
+I would say, actually, in many of the APIs, they do have very high standards. There are ISO, NIST, and GLBA standards and a variety of others, because there is nothing more sacred than your financial data and wanting to make sure that it is securely transferred, not compromised, accurate, and used in a way that you said you wanted it to be used. There is an incredible amount of security standards within that. Ironically, right now, probably the least secure form of payment is a check. On a check, you have your account and your routing number, which, if somebody has access to, they can do all kinds of mischievous things. Just the other day, someone said to me, “Just send me a check in the mail.” And I said, “No, I won’t,” because I know sending it to somebody first in the mail doesn’t guarantee that it’ll get to the person. I have no idea who along the chain is going to have access to those numbers. Once it’s given to this person, I don’t know what they’re going to do — if they’re just going to cash it, and now it’s voided and can’t be used. We’re trying to get away from that and appreciate President Trump’s emphasis, especially at the government level, to move to electronic payments, which are a much more secure form of payment than what we have right now.
+
+[Speaker: Shane Tews]
+Shane Tews (13:32)
+
+[Speaker: Shane Tews]
+I've been managing my mother's accounts, and I finally looked at them and realized that somebody had been taking ACH payments out of her account. I had to deal with the bank, and they just put the money back and didn't want to talk about it. I said, we'll just move forward, but now I'm trying to put all these guards around her. So, when you talk about what you consider clear rules of the road, since there’s been this kind of bump in what everybody thought was going forward, what’s in play right now?
+
+[Speaker: Penny Lee]
+Penny Lee (13:59)
+
+[Speaker: Penny Lee]
+So, in play are a couple of matters. One, and again, going back to statute — and I'm not a lawyer, but I'd have to play one on a podcast here — is the definition of what a consumer is. It says in the rule that consumers are defined as an individual, agent, representative, or trustee. Banks, or the large banks, have said that agent, representative, and trustee must have a fiduciary duty, irrespective that oftentimes they don't have a fiduciary duty to their customers when they receive this information. That is a roadblock they want to put in place to say there needs to be a barrier and that you have to have a special relationship, when in fact the law and the legal definition of
+
+[Speaker: Penny Lee]
+representative don't require that. A representative, a third party, or a fintech acts on behalf of the consumer to get the information they need to share with various products and services — again, to have that personalized experience you would have if you were on a betterment platform. It would say, “Hey, have you thought about investing here? Or have you thought about this 401(k)? What is your risk tolerance? What do you want to accomplish?” All of that happens because of the fullness and richness of the data. If we went back to defining how some of the large banks have said, “All we're required to give you, consumer, and nobody else, is a PDF of your monthly bank statement,” just think about all of that innovation that would be stopped. There’s not much you can do with that. So that’s the definition of what a consumer is — that authorized third parties and representatives can act on behalf of the consumer. Two, defining “upon request.” We would say that banks are required under statute to provide this information upon the consumer’s request without a fee. Then there’s a whole host of cascading other issues, such as what type of accounts go into having that complete financial picture, how often they should be reauthorized or nonauthorized, and what type of providers are now considered aggregators or non-aggregators. There’s a whole host, but it comes down to two points: defining who is a consumer and the authorized third party, and whether fees should be allowed.
+
+[Speaker: Shane Tews]
+Shane Tews (16:39) So, when I hear the phrase open banking, I think of just more access. Am I kind of correctly doing that in my head? And then the phrase of the summer has been 1033. All of a sudden, I went from having no idea this was going on to everybody wanting to talk about it. You're welcome. You were one of many, but yeah, you guys were the ones that were making the most sense to me, actually. So that's why you're here.
+
+[Speaker: Penny Lee]
+Penny Lee (17:06)
+
+[Speaker: Penny Lee]
+You're welcome. Yeah, when we say 1033, it's very D.C. code for in the Dodd-Frank Act back in 2010. They promulgated a rule that created the Consumer Financial Protection Bureau, the CFPB, and it did a whole host of other things. It was the response to the financial crisis that happened in 2008 and 2009. This was the regulatory or legal congressional response to it and created a massive bill, a massive law that went into effect with many different elements of consumer protections and oversight of banks, mortgage companies, and others. In that act is Section 1033, which is what we are arguing right now. It says, as I alluded to earlier, banks shall provide to consumers, upon request, their financial information in a machine-readable form. That’s what open banking is about, and that’s where we are today. It took, since 2010, about 13 years to finalize that rule and put the regulations around it. It started under President Trump in 2015, they did an initial rulemaking, and it was finalized under President Biden at the end of 2024. Unfortunately, the big banks sued against it and litigated against it. We then intervened to be an intervening party to protect that rule, and
+
+[Speaker: Penny Lee]
+especially the consumer's right to permission their data. Part of it is tied up in litigation, and at the same time, the Trump administration decided to reopen it and take a look to see if there were changes that needed to be made or clarifications that needed to be done. We are right now in the sausage-making of rulemaking here in Washington around that Section 1033 of the Dodd-Frank Act.
+
+[Speaker: Shane Tews]
+Shane Tews (19:11) So, as a consumer who's hyper-tech — I love my tech — the two things I always look for are, I don't always say I believe in privacy because it's a feeling; it's data protection. It's data protection and the security that it provides to you. Is 1033 part of that, trying to make sure that I can feel good about moving forward on that?
+
+[Speaker: Penny Lee]
+Penny Lee (19:32)
+
+[Speaker: Penny Lee]
+And it is narrow in the sense that it's on the financial side. We're still in the U.S. working through a full data privacy bill. It's been before Congress for the better part of, I don't know, 10 or 15 years. One of the rules, called the GLBA rule, governs how financial data in particular can move and the safeguards and security around it. The final rule, finalized in October 2024, put in many security measures and gave consumers a lot of control over their data — when they can permission, when they can revoke, how long they can have authorization for it, or how long a third party can have authorization to use it. These are protections we hope will continue under the new rule that comes out under President Trump, because it is important to have those clear defining moments to make sure the consumer is always in control of their data and can permission it for their own use and what they want, versus just letting somebody go wild with it. So, measures were in there, and I hope they continue to be.
+
+[Speaker: Shane Tews]
+Shane Tews (20:53) And you mentioned that. Is there currently a fee structure that is being promoted versus just saying this is my data?
+
+[Speaker: Penny Lee]
+Penny Lee (21:08)
+
+[Speaker: Penny Lee]
+So, right now, under statute, it says “upon request.” When that was promulgated as a final rule — I know it's technical — it said “upon request” means banks cannot charge fees. That rule became final; that's in Dodd-Frank. When the regulations came out about it in October 2024, they also affirmed that “upon request” means banks cannot charge fees for this information — for a consumer's own information. The announcement happened on an October morning at 10 a.m. By 6 p.m., the large banks had sued against it, complaining that they weren't allowed to charge fees and that they wanted to charge fees. We've had some back and forth in the courts, and there was a moment of uncertainty as to whether the case was withdrawn or stayed — some ambiguity. During that ambiguity, the nation's largest bank decided to charge fees. They issued prohibitive, exorbitant fees against one of the data aggregators.
+
+[Speaker: Penny Lee]
+That now is tied up as to whether or not that's permissioned. That is the open question right now going before the new rulemaking.
+
+[Speaker: Shane Tews]
+Shane Tews (22:27)
+
+[Speaker: Shane Tews]
+So, in theory, these fees have the ability to be prohibitive to a lot of these people. In the beginning of the conversation, we were hoping to get out onto the market.
+
+[Speaker: Penny Lee]
+Penny Lee (22:37)
+
+[Speaker: Penny Lee]
+I mean, it's your own data, and you should be able to have access to that data and share it with whom you want it to be shared. Foundationally, we believe that is the case. If you put a toll on every time you seek to get access to your own data, you’re going to be less inclined to have access to it or share it. It also trickles down into the crypto industry and into AI as well. We're starting to see a lot more agentic AI being used in financial services. If, especially on the crypto side, you need to connect your bank account to your crypto wallet and have to pay a high fee every time, that will have a devastating impact on your ability to move your funds. If you need to move from fiat to crypto and pay a prohibitive fee each time, you’ll be less inclined to do so. All of that innovation will stall and stop if the largest banks are able to charge exorbitant fees for this information, which is your own. You also need it to train the AI machines and to share it with various platforms to make sure it's accurately capturing who you are. Again, if there are large fees attached to it, that innovation is going to stop as well. I think it's something that we hope the Trump administration will — and I know they’re taking it under strong consideration — uphold the language of the statute. It says “upon request” doesn’t mean fees.
+
+[Speaker: Shane Tews]
+Shane Tews (24:23)
+
+[Speaker: Shane Tews]
+I use a big tap to pay. I live in a neighborhood where I can never have cash on me for weeks. And then I forget, and you get in such a habit that you never have cash on you because it's made so easy. Plus, it's traceable in a way that seems positive for me. So, that was a lot of information. I'm trying to absorb it, thinking as a consumer who loves seeing all these current products flourish. Give us your path forward on those — say things go well — where are we headed?
+
+[Speaker: Penny Lee]
+Penny Lee (24:55)
+
+[Speaker: Penny Lee]
+We're heading into an incredible age of financial innovation. What we're seeing, with what Congress passed through the Genius Act, is the ability to open up what they would call payment rails with stablecoins to move money faster, cheaper, and globally at the speed of 24/7–365. We still, in the United States, lag behind many other jurisdictions across the world, where it
+
+[Speaker: Penny Lee]
+takes two, three, or even nine days to settle a check — which for a small business can be the lifeblood if they're having to wait for checks to clear to get inventory, pay workers, or do other things. All of that, moving into a 24/7–365 global digital financial world, is incredibly exciting and has the potential to allow you to save with more intelligence, choose financial products that better fit you, and use payments without interest, high fees, or other barriers. It’s an incredible amount of innovation that is on the doorstep, but it does require the data to be portable and without high tolls to access it.
+
+[Speaker: Shane Tews]
+Shane Tews (26:19)
+
+[Speaker: Shane Tews]
+That is a great point. Thank you so much for coming on to Explain to Shane today. It's a fascinating area. I look forward to seeing what's next, so good luck to you and your team and everybody that's engaged. Thank you for being a guest today.
+
+[Speaker: Penny Lee]
+Penny Lee (26:28) Thank you so much for having us. Appreciate it.
+
+[Speaker: Shane Tews]
+Shane Tews (26:34)
+
+[Speaker: Shane Tews]
+Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in. We'll see you on the next episode of Explain to Shane.

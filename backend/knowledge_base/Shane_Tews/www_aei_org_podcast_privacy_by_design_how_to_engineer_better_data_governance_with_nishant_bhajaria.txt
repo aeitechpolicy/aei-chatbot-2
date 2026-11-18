@@ -1,27 +1,17 @@
 PAGE_TITLE: 
-	‘Privacy By Design’: How to Engineer Better Data Governance (with Nishant Bhajaria) | American Enterprise Institute - AEI
+	‘Privacy By Design’: How to Engineer Better Data Governance (with Nishant Bhajaria)
 
-Efforts to legislate
-data protection (or “privacy”) have become a top priority in the US and Europe.
-But the real issue at hand is data governance — namely the collection, storage,
-and deletion of data that companies collect about customers. These companies,
-especially those whose mobile digital applications collect location data, contacts,
-and other personal information, now face a patchwork of potential
-legislation to regulate data access and retention. But what if engineers and
-corporate leaders could work together to limit data collection risks before
-their products come to market? And what if privacy protections could evolve to
-meet consumer preferences around information gathering and sharing by both
-companies and third-party vendors? Would there be more understanding of how the
-information is used and less concern over the security of the data retained by
-these companies?
-On this episode,
-Shane
-is joined by
-Nishant Bhajaria
-, Uber’s head of technical privacy and governance. Nishant’s upcoming book,
-Privacy Engineering
-(releasing in August), will offer a roadmap for company executives and engineers to equip their products with greater built-in privacy protections while increasing transparency and accountability for users. Nishant joins the podcast to share points of interest from his book and explain what industry leaders stand to gain from improved data governance.
-**UPDATE: Nishant’s book is now available for purchase
-here
-.**
+[Speaker: Introduction / editorial context]
+Efforts to legislate data protection (or “privacy”) have become a top priority in the US and Europe. But the real issue at hand is data governance — namely the collection, storage, and deletion of data that companies collect about customers. These companies, especially those whose mobile digital applications collect location data, contacts, and other personal information, now face a patchwork of potential legislation to regulate data access and retention. But what if engineers and corporate leaders could work together to limit data collection risks before their products come to market? And what if privacy protections could evolve to meet consumer preferences around information gathering and sharing by both companies and third-party vendors? Would there be more understanding of how the information is used and less concern over the security of the data retained by these companies?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by Nishant Bhajaria, Uber’s head of technical privacy and governance. Nishant’s upcoming book, Privacy Engineering (releasing in August), will offer a roadmap for company executives and engineers to equip their products with greater built-in privacy protections while increasing transparency and accountability for users. Nishant joins the podcast to share points of interest from his book and explain what industry leaders stand to gain from improved data governance.
+
+[Speaker: Introduction / editorial context]
+**UPDATE: Nishant’s book is now available for purchase here.**
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

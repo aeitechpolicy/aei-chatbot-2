@@ -1,0 +1,143 @@
+PAGE_TITLE: 
+	Explain to Shane: ‘Permissionless Innovation’ During COVID-19 and Beyond (with Adam Thierer) — full transcript
+
+[Speaker: Introduction / editorial context]
+AFI "Permissionless innovation" during COVID-19 and beyond (with Adam Thierer) Episode #5 | May 19, 2020 | Shane Tews and Adam Thierer
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services and structures of today's information technology system work and how they shape our social and economic life. Welcome back to another episode of Explain to Shane. Today my guest is Adam Thierer, who is a senior research fellow at the Mercatus Center at George Mason University, where he specializes in innovation, the internet, free speech with a particular tocus on public pollcy concerns surrounding emerging technologies. Adam has just released his tenth book, and I know l've read a lot of them, but this one's really great. He's focusing on permissionless innovation, and we're going to talk today, especially about what's going on with COVID- 19. Adam, thank you for being a guest today. In the middle of COVID-19, Adam, let's talk about what's going on with kind of the practical solutions, and what's going on during the pandemic, and how people are finding solutions outside of government.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah, absolutely, and thanks for having me on your show, Shane. I really appreciate it.
+
+[Speaker: Shane Tews]
+Shane Tews: Absolutely.
+
+[Speaker: Adam Thierer]
+Adam Thierer: It's been a really remarkable thing to watch over the past month and a half, the response of governments and the public to the COVID pandemic. And there's been a lot of people who've grown increasingly frustrated with the slow pace of the responses that we've seen by governments around the globe, but especially here in the United States. And a lot of people have grown so fed up with that slow pace of change or response that some of them have jumped into action and started taking matters into their own hands to try to figure out ways to come up with solutions to some of the tough problems that we're confronted with today. There are a lot of examples I could go through, but just a couple of fun ones is that you started seeing things like, well, what are we going to do about the shortage of hand sanitizers or face masks? Well, a lot of people jumped into action and started actually trying to produce these things independently, regardless of what maybe federal or state regulations said. And so distilleries that were usually making beer or whiskey were all of a sudden gearing up to make hand sanitizers with alcohol. Various people used a variety of methods to
+
+[Speaker: Adam Thierer]
+nake face masks, including old-tashioned methods, just firing up old sewing machines, to new ones using maybe 3-D printers. 3-D printers were also tapped to make all sorts of medical devices by cobbling together off-the-shelf hardware and open source systems, and then maybe replicating parts or entire systems to build ready-made ventilators of some sort, or to retrofit old breathing apparatuses with various types of new tools to make them more functional. Everywhere you looked in response to COVID, we started finding examples of what | call "evasive entrepreneurialism," which is a term that is used by economists and political scientists to refer to individuals or organizations that sometimes don't go exactly by the book in approaching the various types of services, goods, technologies, or whatever else that they want to market to the public. And sometimes this is for money. Sometimes it's not. Sometimes entrepreneurialism is for profit, but sometimes it's just bottom-up, sort of almost household or user innovation in nature. And so in the wake of COVID, we've seen that sort of activity just absolutely supercharged in a very decentralized, spontaneous fashion.
+
+[Speaker: Shane Tews]
+Shane Tews: Has there been interference by government or are we seeing collaboration along the way with, let's say the distilleries in the producing of hand sanitizer. It seemed like those guys got on that pretty quickly.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Well, they did, but unfortunately there's still a lack of clarity. The problem is that entrepreneurs are always confronted with a crazy quilt of federal, state and local policies and red tape that sometimes encumbered their ability to start new and exciting ideas or businesses. And that was clearly the case with the COVID crisis, where a lot of people started just doing things to be helpful and in new and different ways, but were confronted with many archaic regulations or public policies that really defied common sense and just undermined public health in crazy ways. Not just for hand sanitizers or face masks, but a lot of the testing that needed to be done. Early on, there were tests that were emerging from labs, like in Seattle and elsewhere, that were shown to be pretty effective in diagnosing early on the coronavirus crisis. And yet, the FDA and the CDC and other agencies are always just such slaves to the book. They basically want everything to go by the book to the point where they become victims of just massive proceduralism over common sense. And so even though I think agencies have now started to turn the corner, especially the FDA, and become more flexible, it took a lot of effort and it's still not clear what the legality of a lot of these things are. When people behave evasively, as | call it, or engage in what l've even called technological civil disobedience, sometimes it's not really clear what the law currently says or will say in the future about a lot of these activities.
+
+[Speaker: Shane Tews]
+Shane Tews: So we're waiting to see if the, now that they've kind of, didn't ask for permission to move forward if they get to keep going?
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah, that's right. And you know what's going to be really interesting, Shane, is that there's been a huge number of regulations at the federal and state level that have been paused or sunset in the wake of the COVID crisis in order to make sure that those rules did not encumber a quick response by organizations or individuals. So the really interesting question's going to come a couple
+
+[Speaker: Adam Thierer]
+months down the road, or maybe longer, when we're confronted with the question of how are those rules are going to get put back on the books? When does the sunset or the pause stop? I recently released a new paper for the Mercatus Center along with two of my colleagues, Matt Mitchell and Patrick McLaughlin, that is advocating the idea of a fresh start initiative where we ought to just basically collect all of the rules and regulations at the federal and state level that have been sunset or paused during this crisis and then do an inventory and a study of all those rules to say, well, what was our experience both before and after the rules were paused? And then maybe come up with a package of reforms or even sunsets and say, let's put it all together in one package and vote up or down on it. Say, do we even need these laws anymore? I mean, why do we have crazy rules regarding how you manufacture some of these things like hand sanitizers or whatever else and occupational licensing laws at the state level that should be considered. There were seriously questions during this crisis that have been raised in some states, like, is it okay for people to cut hair at home without a barbering license? It's like, come on, really? And yet, honestly, when asked, bureaucrats don't know how to answer that question. But luckily most of those laws have been paused, or they're just being ignored. But after this crisis, we need a spring cleaning to clean that stuff up, largue.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. I think Americans for Tax Reform is keeping a daily tally. Last one I saw was around 187 laws, but so | think if they keep the list, I would look forward to you doing the actual work behind it.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah. That list is actually over, last time I checked, it was over 250.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay, I'm behind.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah, it's really, really hard to even keep track of everything that's happening because so many laws have been paused or suspended in some fashion. But yeah, we have a unique chance here to do that spring cleaning and sort of clean up our house, get our house in order. It's just, it's a real mess right now.
+
+[Speaker: Shane Tews]
+Shane Tews: As a young kid, I remember my parents having a book called "You Can't Eat Peanuts in Church and Other Strange Laws," and I was always fascinated by it. Foreshadowing things that were going to be in my future. The other side of this which is interesting is we had just been really working through techlash, as we would call it, up on Capitol Hill. A lot of Senate hearings and social media companies, not people, not seeing the benefit of them, I guess is the best way to put it. And all of a sudden that seems to have kind of boomeranged.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah, in a huge way.
+
+[Speaker: Shane Tews]
+Shane Tews: We're seeing social media come back and manage the solitude around social distancing.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Shane, I know you do a lot of work on this and I have as well, and it's been remarkable. It just makes our heads spin how fast the narrative around tech companies has changed over the last six weeks to two months. And I think the most amazing two headlines I have here that l've clipped and that I keep are
+
+[Speaker: Adam Thierer]
+friggest a ls oh i argereos camlanies. But tinese res ecivei rct e not e biggest fans of large tech companies. But one reads, quote, more trustworthy than the president" and the other one says "Twitter is making the coronavirus world a better place. And these are not common headlines every day where we're starting to see people say, "Well, thank God we at least have these technologies handy of all sorts." And even some mundane things. It's like somebody I saw tweeted out the other day, like, imagine if this would have even happened just 20 years ago or 15. We would have been all like lining up outside Blockbuster to have to get our movies.
+
+[Speaker: Shane Tews]
+Shane Tews: Right.
+
+[Speaker: Adam Thierer]
+Adam Thierer: So think of the danger of that. Of course, our cell phones just 15, 20 years ago probably could have never handled the amount of traffic, data traffic, that we're throwing at them. This has been a real stress test for a lot of industries and institutions, and l've been very, very impressed with a lot of the tech companies, especially digital technology companies, and their ability to weather the storm. Whereas a lot of government institutions I think have been called into question about their effectiveness at a time of crisis.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. The other thing is identity management, which I know you and l've spent a lot ot time in the past and, used to be that privacy and security were two sides of the coin and people really wanted ease. That was the part of it we couldn't fit on the coin is that they were only going to do what was sort of as frictionless as possible, which is one of the reasons why Zoom has taken off over others that are a little more heavy to manage. But I think we're going to see a resurgence in that area of it, like after — you never thought before 9/11 you would have put up with something like TSA. And I'm kind of curious to see what the litmus test is going to be on what people are willing to take on as far as needing to understand more who they're dealing with, as they're probably staying in a digital world.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah. I think that's a very good point. I think we're going to see it go in different directions. You mentioned how 9/11 changed a lot of our attitudes about things like travel. Clearly, they're going to change again and we're going to have a number of new restrictive policies put in place, but we're also seeing other policies loosened. One of the things that the TSA did in the wake of this crisis has said, well, okay, go ahead and take your 10 ounces of hand sanitizer on the plane.
+
+[Speaker: Shane Tews]
+Shane Tews: Hand sanitizer, right.
+
+[Speaker: Adam Thierer]
+Adam Thierer: We're not going to stop you anymore. It's like, well, wait a minute? What have we just spent the last 20 years panicking about whether or not we have hand sanitizer or any liquid in our bags. And now it's okay? What are you telling us? So we are reassessing these policies in real time. And I think we're going to come out of this with a different approach in a number of different ways, but it's not always entirely clear when it comes to things like privacy and security, how these things will be balanced out. Things like contact tracing and other types of health surveillance may be ramped up in ways that I think will concern a lot of us, but also we'll find to be more necessary in the world that we now inhabit.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, on the TSA example, l always worry that it's like the military, we're fighting the last war. So whoever that person was that was trying to get on with the liquid that was more than four ounces, we're still suffering because of that. l've actually lost lipstick over that. Try to explain that one to somebody. Tell us about your book. What are you working on, and what are we going to learn?
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah, so l alluded to the idea of evasive entrepreneurialism and technological civil disobedience. And that's the subject of my latest book, my 10th book. And it's out last Tuesday from the Cato Institute. The full title is "Evasive Entrepreneurs and the Future of Governance: How Innovation Improves Economies and Governments." And my book argues that basically everywhere you look today, and this was true even before the COVID crisis, average folks are utilizing new types of technologies of freedom as I call them, or technologies of resistance, to sometimes push back against federal, state and local policies that sometimes just defy common sense, and other times are highly offensive or just completely illogical. And sometimes we have a real problem in this country, just reforming laws like that, for whatever reason. I could go into all the reasons and I do in chapter five of the book. But the point is that now our public has been empowered. We have new decentralized technological capabilities, a chance to have our voices heard. And if our voices aren't heard, we can sometimes take action. And so clearly, new digital technologies have greatly facilitated this, but they're not the only ones. Clearly the internet, smartphones, and computing have been huge in empowering the citizenry, but even other things like 3-D printing and Bitcoin and the sharing economy and decentralized, personalized medical devices, drones, and personal transportation devices. These things are revolutionizing the world and leading to a shift, largue, in the political dynamic in some ways. It's giving people and individuals and corporations more leverage when they enter into political negotiations of any sort, because it can say like, look, if you have these crazy sort of taxi cab laws or hoteling laws, we think we should have more choices. And you know, we're just going to do it. That's sort of the story about like Uber and Lyft with ride sharing, and Airbnb with hotel and space sharing. And we revolutionized those sectors, not necessarily through preemptive policy reform, but by technological action, by basically people rising up and saying, "We think there needs to be a better way of doing things," and then doing it. And then that changes the policy dynamic, and we get the change that we should have had through traditional legislative or deregulatory means. So that's what | argue in my book. It's a big book. It's over 300 pages and 10 chapters, and I hope everybody will pick it up.
+
+[Speaker: Shane Tews]
+Shane Tews: You've done all the big think for us. We just have to read it. So now that you've done all the thought process, what do you want to do for action? How do we actually make the change?
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yeah, well, there's a number of steps I recommend in the book. This book is not just about people going out and breaking the law. I actually say that that's not a good idea. We actually need to push for a strategy of permissionless innovation, as I called it in my previous book, in the policy world. We need to find ways to create a dynamic where innovation is given the benefit of the doubt. We give more entrepreneurs the green light to go forth with new,
+
+[Speaker: Adam Thierer]
+exciting ideas. One of the ways we can do that is just to make sure, as l've already alluded to, that we clean house on occasion. We find a way to actually clean up laws and regulations that are archaic and no longer make sense through occasional sunsets of some sort. In tact, in my book, largue for something along the lines of what | call Moore's Law for tech policy, which is all your listeners will know what Moore's Law is.
+
+[Speaker: Shane Tews]
+Shane Tews: Interesting, yeah.
+
+[Speaker: Adam Thierer]
+Adam Thierer: But basically all businesses these days in our modern technological world are expected to like keep their business models fresh. Every 18 months to two years, they have to kind of rethink their business models. But government never does. And they never clean up. And why not? Why not have a provision like Moore's Law for policy that says every couple of years, these provisions are sunset. And then they can always be put back on the books, but we ought to be forced to reassess them. Another idea that I have is something called the innovator's presumption, that when we are doing technology policymaking, we need to make sure, in the policies or regulations we're writing, that the benefit of the doubt is given to innovators. And it should say that unless there's a compelling case made by the agency that we should stop new types of progress, innovators should be presumably allowed to go forth and do it instead of having to come and ask for a blessing to be free from some old preexisting regulatory regime. And this is something you've done a lot of work on, Shane, in the past, in different contexts, whether it's traditional telecommunications or domain names or whatever else. There's always somebody out there, specifically often special interests, who want to pigeonhole a new technology into yesterday's old regulatory system. Along comes a new device or service, and somebody else says, "Well, I think that's a broadcast station." Or "I think that's a telephone." I'm like, no, it's not. It's nothing like those things. Why do we have to regulate them like that? So we should give innovators the presumption of innocence, if you will, and freedom and allow them to go forth until a compelling case is made why they should be stopped.
+
+[Speaker: Shane Tews]
+Shane Tews: I'm thinking you need a game show where you bring forth the bureaucrat that's holding on to the regulation and everybody gets to vote it up or down.
+
+[Speaker: Adam Thierer]
+Adam Thierer: I like that. And you'd also have to bring on that game show all the special interests that of course exist to preserve those, right?
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, yeah! Yeah. I like, llike.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Maybe they can work as a team. We could have the regulator and the regulatee working in cahoots somehow to show why they need to preserve some crusty old regulation that makes no sense that's holding back competition. And in my book, I have numerous examples of this throughout history and point out that unfortunately, Congress has sort of abdicated its sort of oversight and reform role that it's supposed to have about cleaning up these messes. They've delegated so much authority to nameless bureaucrats and to various three letter regulatory agencies and said, "You figure it out." And the problem with that is it becomes a set it and forget it mode of
+
+[Speaker: Adam Thierer]
+government. Sort of build and treeze. We build a new regulatory regime. We freeze it in place, set it, forget it. And then next thing you know, you come back 20 years later and somebody is trying to hold it against the new innovator in town. And that's why, ultimately, evasive entrepreneurialism is on the rise. Because so many people have gotten a bad shake in terms of trying to break into a new sector or do something new and different only to find out, wait, what? There's this obscure provision of the US Code that applies to broadcast radio stations that's going to stop me from doing a new internet audio service? And that's exactly the world we live in today and why evasive entrepreneurialism is on the rise.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, I think it's been interesting watching the FCC move quickly, and some of these are temporary measures, but realizing that obviously we need as much broadband as possible. What they've done with 5.9 and allowing, I believe it's T-Mobile onto space that, unavailable to manufacturers who've held onto it for 20 years saying, "We'll get there." And actually, they're asking for another five years right now. And they're like, no, temporarily, we're going to give it to somebody so we can get that out there and people can be using it for their broadband uses. I didn't realize you've written 10. I know I've read several, but | feel like l'm behind now in the Adam book club, so l'm going to have to catch up. Now, I'm going to encourage everyone to of course buy and read the book. But are nou going to give us litle baby Twitter feeds forthose ofus who have Twitter
+
+[Speaker: Adam Thierer]
+Adam Thierer: Oh, yeah. I encourage everybody to come to my Twitter account. It's just @AdamThierer, and you'll find all sorts of material from the book. I have also put the introduction of the book free online on the website. You can go to either the cato.org page or the mercatus.org page and find more material about the book. You can find it on Kindle. There's lots more to come that you can find by following me on these social media platforms.
+
+[Speaker: Shane Tews]
+Shane Tews: So we'll have a daily diet.
+
+[Speaker: Adam Thierer]
+Adam Thierer: Yes, absolutely.
+
+[Speaker: Shane Tews]
+Shane Tews: We can find it. All right.
+
+[Speaker: Adam Thierer]
+Adam Thierer: 1 am nothing if not a shameless self-promoter, Shane.
+
+[Speaker: Shane Tews]
+Shane Tews: Happily. Loving all the stuff that you always come out with, so I'm very excited that you have a new book. Well, Adam, thank you very much for being a guest
+
+[Speaker: Adam Thierer]
+Adam Thierer: Thanks so much for having me. I really appreciate it.
+
+[Speaker: Shane Tews]
+Shane Tews: And thanks for listening to another episode of Explain to Shane.

@@ -1,0 +1,122 @@
+PAGE_TITLE: 
+	A Look Inside a Cybersecurity Training Firm (with Keith Peer) — full transcript
+
+[Speaker: Introduction / editorial context]
+AEI Explain to Shane: A Look Inside a Cybersecurity Training Firm (with Keith Peer) Episode # 60 | June 21, 2022 | Shane Tews and Keith Peer
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane." I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. Cyberattacks are one of the largest threats facing business today. Damage from cybercrime will top $10.5 trillion annually by 2025, according to the recent research by Cybersecurity Ventures. Learning how the disruptions and misdirection take place is the core of protecting the services provided by network operations and data systems. The training programs to build teams that can predict an unseen risk to potential cybersecurity are called offensive security teams (or OffSec) in the cyber parlance. My guest today helps build these teams of professionals by educating them on how information technologies and network systems disclose data so they can prepare for the attacks designed to damage the hardware, software, and data in computer systems. Keith Peer is the head of federal teams for Offensive Security. Keith uses his deep understanding of offensive and defensive cyber operations in the use of machine learning, big data development, and artificial intelligence to build systems and training modules that defend networks from attacks on their business operations. Keith's students learn how to protect and defend access to these network operations to ensure the resilience of applications within the network systems. Keith and I discuss the importance of knowing your customer in the landscape of network operations, including the Internet of Things (loT), connected devices, and the challenge that these bring to both enterprises and consumer systems. Keith, welcome to "Explain to Shane." Before we get started on the importance of the work your company is doing, tell us a little bit about yourself and how you arrived in the world of cybersecurity.
+
+[Speaker: Keith Peer]
+Keith Peer: I started out—l've been in cybersecurity my entire career. I started out back in 1990 with an antivirus software company, and then progressively throughout the years that company was sold and progressively throughout the years, l've worked for venture capital and many startups along the way. And I found myself here in DC back in 2017 and then progressed, you know, to where I'm at today at Offensive Security.
+
+[Speaker: Shane Tews]
+Shane Tews: So your name of your company is Offensive Security. So enlighten us on what that means in the context of today's security landscape. How are you able to become more offensive in your stature around cybersecurity threats?
+
+[Speaker: Keith Peer]
+Keith Peer: Well, Offensive Security is actually our historical name. We've had that for many years, and it implies that we only do offensive training, which we did do up until about 12 months ago when we rolled out, actually, defensive courseware and detensive training ofterings across our plattorm. But, that being said, Offensive Security really is focused on two things: one, producing their Kali Linux distribution, and then also our cybersecurity training, which consists of penetration testing and offensive cyber operations, and then also defensive cyber operations today.
+
+[Speaker: Shane Tews]
+Shane Tews: So for the listeners of this podcast, they tend to be pretty good about policy, but may not know as much about what it actually takes to make things more safe. So walk us through, like, pen testing, for example, what do you do when you're doing penetration testing?
+
+[Speaker: Keith Peer]
+Keith Peer: Penetration testing, there's two types of that that most of the time get talked about. One of those is penetration testing, where you're assessing the security vulnerabilities in an application or particular target. And then there's red teaming, which is going after a target inside of an operation, you know, historically. So it would be not just, you know, finding the vulnerabilities in an application; it's actually using those vulnerabilities going all the way through to a particular target inside that organization. So that's red teaming. So our students really do—they learn how to do penetration testing and assessments of applications and looking for vulnerabilities—in some cases all the way from applications to developing their own toolsets to perform those actions as well.
+
+[Speaker: Shane Tews]
+Shane Tews: So let's talk about training. I have quite a few friends who have kids that are students coming out of college that are really interested in the cyber space. And they're always asking me: What are the best next steps for them to get into the cyber world and what type of certifications do they need? And I don't have a clue. So what would you recommend?
+
+[Speaker: Keith Peer]
+Keith Peer: There are lots of certifications that are really entry level, and then there's ours as well. So there's very basic certifications that are out there. They're fairly well- known by some of our competitors as well. They're very fundamental, but today we offer that as well. So we have our 100-level content. It's a little more advanced than just graduating out of college or high school. You know, when you want to embark on your cybersecurity career, it's a little more advanced than that. So you should have some prerequisites done, but we also offer that fundamental courseware. So, that being said, there's a lot of fundamental courseware that's out there that a newly graduating student would need to embark on. So those could be, you know, the classic CompTIA courseware, which is information technology (IT) fundamentals and, you know, At and Security+. And then they have a track as well for penetration testing, but here at Offensive Security, we do as well. So we pick those individuals up and offer them a unique learning experience that is well-respected in the industry and among stakeholders as being
+
+[Speaker: Keith Peer]
+demonstratively valuable. And I say that because of our unique pedagogy and then ending in our unique testing. So we have very comprehensive training that accumulates in a very robust test that sa 100-percent practical hands on test where vou have to demonstrate the skills and mindset that you have learned over the course ofthe time or, you know, course of the training period where you can then apply those skills in a real-world environment and be able to write about and document that as well. So it's unique. So that's why here at Offensive Security—and, you know, I can't say that there's others as well—but ours is known for being the most comprehensive, the most rigorous testing that's held in high regard. So that's why we have a lot of, you know, the Fortune 500 are customers of ours, as well as across the federal government.
+
+[Speaker: Shane Tews]
+Shane Tews: So do people show up prepared for this or are they working in your programs before they arrive? Or, once they arrive, do they come with a baseline understanding of computer science and how to work network operations, and then they build into these cybersecurity programs?
+
+[Speaker: Keith Peer]
+Keith Peer: Yes. So historically our average student would have some type of practical experience in the field before they would actually attempt to take our training and certifications, because that is very valuable to have that experience in the field before you come to our training and certifications, because they're known to be extremely rigorous and challenging. And because of that, they're held in high regard.
+
+[Speaker: Shane Tews]
+Shane Tews: So it kind of sounds like doing one of your tests might be fun if you're talking about red teaming. Tell us: How do those work?
+
+[Speaker: Keith Peer]
+Keith Peer: So, I mean, it's really a number of courseware that you would take that accumulates in tests and then collectively, this will allow you to have the skills let alone to do penetration testing to find the vulnerabilities, but to then after you've penetrated an organization or a target, then you learn how to move laterally into other machines and use pivoting, too, and other types of skills that you would develop over time. Because with Offensive Security, we're really training a mindset rather than a specific technical skill. So you have to become very reliant on your own skillset and you have to have a lot of rigor in your approach to performing the task. So you're going to be very rigorous. You're going to be very challenged and you're not going to give up. So that's really part of our training as well. It's not just pure technical skills; it's also a mindset. So in red teaming, you have to have all these skills because as vou penetrate a target, you know, in many cases that's difficult to start with—let alone being able to move inside the organization after a specific target. So that's what we train on. It's not just technical skills; it's also a mindset.
+
+[Speaker: Shane Tews]
+Shane Tews: So how big are the teams that the people you train work on?
+
+[Speaker: Keith Peer]
+Keith Peer: It varies. It could be from a small team, you know, as small as an individual all
+
+[Speaker: Keith Peer]
+the way up to, you know, larger teams depending on the organization—you know, 20-50, or if you're in the Department of Defense (DOD), it could be even larger teams. So it really varies and it really depends on the organization.
+
+[Speaker: Shane Tews]
+Shane Tews: So if you they're working within the DOD, are they subcontracted into the Pentagon or DOD for a program through your organization?
+
+[Speaker: Keith Peer]
+Keith Peer: We do train contractors that perform on government contracts, for sure. And we also train employees of the federal government, whether they be civilian employees or DOD employees or servicemen or women for that matter. We train the wide gamut of all of them—and Fortune 500 as well.
+
+[Speaker: Shane Tews]
+Shane Tews: Sol would imagine part of the reason for a company like Offensive Security to exist is because a lot of the people did come out of the Defense Department. I imagine you came—you were army, correct?
+
+[Speaker: Keith Peer]
+Keith Peer: No, I was not. I was not in the service.
+
+[Speaker: Shane Tews]
+Shane Tews: My misunderstanding.
+
+[Speaker: Keith Peer]
+Keith Peer: Yeah, no worries.
+
+[Speaker: Shane Tews]
+Shane Tews: I think about it in a way that, like, I fly a lot. So I think about the United pilots and for years, you know, they were all coming out of the military at some point. And then we had to actually train pilots because there were less people going through those programs. And in the cybersecurity world, I used to work with a lot of people who were out of West Point and there's always the challenge because the Air Force thinks that they own space. So we've got that going on, but the idea of how you get trained at a level to do this without having all that good taxpayer dollar funding that brought you through those programs—it's great to see that there are other companies that are training people up as well. So how much of the work that you do is actually probably adjacent [to] or within the federal government?
+
+[Speaker: Keith Peer]
+Keith Peer: We don't disclose exactly the percentage of our customer base, but a significant number of [folks] literally across the DOD utilize our training and hold our certifications in very high regard.
+
+[Speaker: Shane Tews]
+Shane Tews: So most of the time on this podcast we focus on policy, and there are policies that come out of the Department of Homeland Security (DHS). I know there's a new newer program called the National Initiative for Cybersecurity Education (known as NICE). Are you working in programs like the NICE program out of DHS?
+
+[Speaker: Keith Peer]
+Keith Peer: We are aligning to it. We are absolutely leaning into the NICE framework because it breaks the jobs down into work roles. And those work roles have a number of KSAs (knowledge, skills, and abilities) underneath them. And we are aligning our training to that framework—to those KSAs—so we can then help the adopters of the NICE framework, whether it be the federal government or industry, to match up the work roles and the KSAs to our certifications and training.
+
+[Speaker: Shane Tews]
+Shane Tews: So we hear a lot especially since the Ukrainian-Russian conflict has come into play about "Shields Up" out of DHS. And so when you hear "Shields Up, you have a client who comes to you and says, "I understand the government's concern; they re telling me there's a 'Shields Up' program," what do you suggest that they bring more into play or do more of than they might be doing in their current baseline? What is the fear bringing into the cybersecurity space?
+
+[Speaker: Keith Peer]
+Keith Peer: Well, lequate, you know, defensive cyber operations to a lot of, like, the game whack-a-mole, right? So if you're purely defensive, there's always going to be more moles pop[ping] up, and you're constantly whacking them. Where if you use penetration testing to find your vulnerabilities in advance, you make less holes, right? Because now there's less whack-a-mole opportunities because the holes have been identified in advance and fixed. So that being said, from a Shields Up perspective, it's not just pure defensive operations. So it's not just, you know, throw all your equipment to be defensive, because at some point you're just going to be chasing everyone because you cannot keep up with a number of threats coming at you if you don't do assessment of your own vulnerabilities. And that's where penetration testing comes in. So and that, a lot of organizations don't do that. So they think that they're just going to deploy and deploy and deploy more defenses, but have no idea where their actual vulnerabilities are because they've never been assessed.
+
+[Speaker: Shane Tews]
+Shane Tews: So once you have the assessment—I do a lot of work in the Internet of Things area as well as on mobile security. And I always worry that those are the items that we're attaching to the networks [and] are often the culprits. I think about when you have a situation in your house and you have, let's say, a mouse, you know? And you're like, so l've got to figure out—your pen testing is a little bit lıke: How dia the mouse get in, and then where did they go from there? Anc loT to me always seems like that mouse that nibbled its way through the wall aoabotiito your house and you have to figure out now to block it and whatto So when it comes to all the devices in the Internet of Things—I realize you probably are using mostly enterprise-but what are your recommendations for what level of security you need to have on devices that you put onto a system?
+
+[Speaker: Keith Peer]
+Keith Peer: Well, the Internet of Things is really, I mean, if you think about the threat landscape and what it's been historically, you know, it's been IT systems, right? So now you're moving into loT systems and sometimes those loT systems are enabling OT networks to have communication that typically was not available because of these OT (operational technology) devices that were managing pumps and switches and everything else that they would be managing that was done manually now have the ability to be internet-enabled and monitored and controlled. And then you take in all the other types of loT devices, which—l consider a mobile phone as also an loT device, right? So, I mean, it's connected to a network, but it's portable; it's unique. So if you take all those devices, whether it be mobile, whether it be loT devices, [or] OT devices that are now enabled
+
+[Speaker: Keith Peer]
+because of loT devices and IT networks, the threat landscape is exploded. So one of the ways to really start to secure the network is that you have to really develop skills in monitoring those transition points, right? So when the communications coming in from those loT devices, they go into your IT infrastructure at some point. So it's being able to authenticate, to assess the data coming in, to authenticate those devices, and then, you know, also secure the data in transit as well. So there's lots of considerations when you are enabling an loT device to communicate with your IT systems. The best way to start to defend that is: One, look at the security of the loT devices themselves and makle] sure that, again, yeut wayto putitisulherablities, you're making sure that you 're using - the proper posture," security posture on those loT devices as is practical. You can only do so much at any given time, but also assessing them, you can routinely in many cases assess them if you have control of them for security vulnerabilities and then patch them, or be able to remediate them in different way. So it may not be patching, but you can control the data inflow from that IoT device differently. So that's some of the way that you can start to protect yourself from loT networks that get compromised.
+
+[Speaker: Shane Tews]
+Shane Tews: So, thinking about mobile, there is legislation both in the House and the Senate, and there's also regulations over in Europe right now saying that they are interested in letting you lower the guard around your device. I happen to ›e an Apple user, and I love the fact that thev actually have to vet thinas that ac into the App Store. I realize Android has a separate system, but they're saying, "No, you should be able to put anything on any device." And as a consumer who is used to having layers of protection—I realize you're more on the enterprise side, and I know that enterprises have much more stringent rules usually about what they will allow onto a system, especially a mobile device that plugs in—that seems like that is a very challenging way. We're getting mixed messages here. We're hearing "Shields up,' " and then we're turning around and saying, "We're going to let you put anything on your device." And then this device by its nature is going to want to plug into a bunch of networks when it goes in. Is that as frightening as it sounds to me? Because it sounds pretty scary.
+
+[Speaker: Keith Peer]
+Keith Peer: Yeah, absolutely. When you start to loosen the walled garden, when you start to lower the defenses to accommodate a user base, you are naturally exposing vourselt to more threats because now vou control less and when vou contro ess, you're more vulnerable. You cannot maintain the same level or same security posture as you had have previously if you're allowing uncontrolled applications into the environment that can potentially attack you.
+
+[Speaker: Shane Tews]
+Shane Tews: That is my concern. And it's interesting that there's a lot of people from the security community that have been trying to point this out to both Congress and the European Union, and they don't seem to care. It's fascinatina. So l'm hoping that we don't see that come to fruition either, though you're going to have a whole lot—you're going to have some new programs you're going to have to put together because it's going to make your job just either that much
+
+[Speaker: Shane Tews]
+more challenging or you're going to have that much more work. I'm not sure. So, Keith, for those who want to follow the work that you're doing, where is the best way to find out what you're up to and how to stay in touch?
+
+[Speaker: Keith Peer]
+Keith Peer: A number of ways: You can follow us on our website. We have a blog that we post routinely to. You can follow us on Linkedln and Twitter as well for that matter. So we do have a social presence that users can follow us on. We also do podcasts as well. I mean, they are security focused. So there's a number of ways that users can follow both our content and our current thought leadership experts that we have in house.
+
+[Speaker: Shane Tews]
+Shane Tews: Great. Well, thank you very much for being a guest today on "Explain to Shane."
+
+[Speaker: Keith Peer]
+Keith Peer: Oh, well, thank you very much.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of "Explain to Shane." For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your referred listening platform. If you enjoyed this episode, leave us a review, anc tell vour friends and colleaaues to tune in. We'|| see vou on the next episode of "Explain to Shane."

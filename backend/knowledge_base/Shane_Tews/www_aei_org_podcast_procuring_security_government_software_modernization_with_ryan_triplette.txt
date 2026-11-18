@@ -1,15 +1,17 @@
 PAGE_TITLE: 
-	Procuring Security: Government Software Modernization (with Ryan Triplette) | American Enterprise Institute - AEI
+	Procuring Security: Government Software Modernization (with Ryan Triplette)
 
-Situated squarely in the digital age, yet still years behind the curve, our government spends upwards of $100 billion on its IT and cyber needs annually according to the
-Government Accountability Office
-(GAO). With all that money being spent, how do we know we’re getting not only the best deal on software but also the most secure systems?
-The
-National Cybersecurity Strategy
-calls for holding software companies liable for the security flaws in their products. This is an opportunity for the federal government to bring forward a new standard of good cybersecurity protocols. The White House plan invites the modernizing of government IT infrastructure to review the inherent vulnerabilities of legacy software and the licensing of software to federal government agencies. But how will this be accomplished? What does sound procurement look like?
-To help us sort through this topic, we are joined by
-Ryan Triplette
-, executive director of the Coalition for Fair Software Licensing.
-In this episode,
-Shane
-walks us through what’s involved in efficient, safe software procurement. Tune in as they sift through the paperwork!
+[Speaker: Introduction / editorial context]
+Situated squarely in the digital age, yet still years behind the curve, our government spends upwards of $100 billion on its IT and cyber needs annually according to the Government Accountability Office (GAO). With all that money being spent, how do we know we’re getting not only the best deal on software but also the most secure systems?
+
+[Speaker: Introduction / editorial context]
+The National Cybersecurity Strategy calls for holding software companies liable for the security flaws in their products. This is an opportunity for the federal government to bring forward a new standard of good cybersecurity protocols. The White House plan invites the modernizing of government IT infrastructure to review the inherent vulnerabilities of legacy software and the licensing of software to federal government agencies. But how will this be accomplished? What does sound procurement look like?
+
+[Speaker: Introduction / editorial context]
+To help us sort through this topic, we are joined by Ryan Triplette, executive director of the Coalition for Fair Software Licensing.
+
+[Speaker: Introduction / editorial context]
+In this episode, Shane walks us through what’s involved in efficient, safe software procurement. Tune in as they sift through the paperwork!
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

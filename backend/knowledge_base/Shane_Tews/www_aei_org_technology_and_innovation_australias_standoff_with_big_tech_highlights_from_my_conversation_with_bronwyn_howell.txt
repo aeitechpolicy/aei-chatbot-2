@@ -1,126 +1,77 @@
 PAGE_TITLE: 
-	Australia’s Standoff with Big Tech: Highlights from My Conversation with Bronwyn Howell | American Enterprise Institute - AEI
+	Australia’s Standoff with Big Tech: Highlights from My Conversation with Bronwyn Howell
 
+[Speaker: Introduction / editorial context]
 By Shane Tews and Bronwyn Howell
-Facing a
-new law
-requiring social media firms to pay Australian news providers for their content, Google was willing to comply after brief opposition, but Facebook blocked all news content on its Australian platform for two days. Why did the two companies approach the issue so differently, and what will Australia’s law mean for the future of tech regulation?
-To offer first-hand perspective from “down under,” AEI Adjunct Scholar
-Bronwyn Howell
-joined me from Wellington, New Zealand to share her insights on the regulatory dilemma Australia has unraveled — both for itself and the rest of the world.
-(Note: Since this episode was recorded, Facebook
-reached
-a multiyear deal with News Corp. for access to its Australian news content.)
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Bronwyn, tell us what’s going
-on between Google, Facebook, and the Australian government.
-Bronwyn
-Howell: A couple of weeks ago, the Australian federal government passed a law
-which would require Big Tech firms — notably Facebook and Google — to negotiate
-with select media companies in Australia on a code for the latter to be
-compensated by tech companies who take news content and use it in their own
-apps or services.
-This would
-apply, for example, to the news that shows up in Google’s search function, and
-to news that Facebook’s users either post or repost — so long as the news came
-from one of the Australian firms that the law applies to.
-The
-government’s justification for forcing this negotiation code came from an
-inquiry about two years ago that concluded Big Tech had market power in advertising.
-But the code tries to establish a link between that alleged market power in
-advertising and copyright breaches that would occur when Big Tech firms either
-share or allow sharing of forbidden content — Australian news, in this case. This
-is interesting because there’s two different ways in which these Big Tech
-companies use that content, and it’s a really long bow to stretch between the
-finding of market power in the advertising market — which has made Facebook and
-Google a target for regulation — and the issue of needing to compensate media
-firms that have generally struggled in international markets. It thus seems really
-difficult to have a standard, one-size-fits-all code for negotiation.
-Talk to us a bit more about the advertising
-market, because it seems like there are a few different things happening there.
-Again,
-the argument is that Google and Facebook, by using that content, are enhancing their business models, thereby being able to sell advertising better. But the issue here is that the traditional media companies also are now online, and they also sell online advertising. So the end goal for intervention was to compensate media companies for their content in order to make up for declining advertising revenues — which have allegedly been lost to Big Tech firms with vast market power.
-But of
-course, this model of newspapers using advertising revenue to compensate for
-the creation of news — or to fund news content — is as old as newspapers
-themselves. There has always been a two-sided market in publishing where
-advertising has subsidized content. The Google and Facebook piece is only a
-secondary issue, because even before Google and Facebook existed, we were
-seeing the revenues of these companies reduced because of the copyright issue —
-in which people could take easily videotape televised content and repost it,
-for example.
-The news
-companies provide what the Australian treasurer calls “public-good journalism.”
-And since that’s being reduced because of media companies’ struggle to bring in
-revenue, they’re looking for ways to prop up that industry. So they’ve basically
-latched onto the fact that Google and Facebook could be tagged or taxed in
-order to help subsidize the creation of Australian news content.
-One of the
-pieces
-you did for AEI cited public opinion data showing that Australians overwhelmingly supported this move by the government. Why do you think that is?
-There’s a
-general trend internationally that frames Big Tech as somehow the enemy of the
-state. And I think when the enemy of the state is also located in a different
-country, it’s possible to play off a number of different prejudices. The
-general thought is that Big Tech is bad, but that Big Tech companies that are
-foreign are “badder” than Big Tech companies that are not foreign.
-The politics
-have become complicated as well, because it can’t just be seen as a simple
-battle between good and bad — or the little Aussie battler against the big evil
-giant from overseas. It’s got these other issues going on as well about who’s
-eligible to be negotiated with. The Australian Competition and Consumer
-Commission (ACCC) — which launched the market power inquiry in 2018 — is also mixing
-up the markets in deciding why this should be the way for compensation. It is
-quite complicated.
-Why did Google come to the table so much
-faster than Facebook did?
-Yes — the
-two firms have very different business models. Google has total control over
-what content its searches yield. So to the extent that the code exposes Google
-to liability, it can choose to use or not use content from the identified media
-companies. Facebook, on the other hand, is much more limited because it’s less
-able to control what content is posted. Any user can post a piece of content that
-breaches copyright. But if Facebook’s algorithms then pick that up and
-redistribute it, they now become financially liable for the original content’s reproduction
-and retransmission, creating uncapped liability. The original breach of
-copyright was not governed by Facebook; it was controlled by the user who
-posted the content.
-Facebook thus
-argues that this code creates an extremely difficult, unkempt liability if they
-have to negotiate over regulating content whose posting and sharing they fundamentally
-cannot control. And while algorithms can be used, they can be very imperfect
-because they’re just taking the best-guess stab at picking out what might be a
-breach. Furthermore, the only way for Facebook to insulate itself against this
-massive liability was to not carry Australian news content at all.
-Ultimately,
-where Facebook can’t control the instances of breach because it’s the end users
-that do it, Google can. This likely led to Google being more amenable to enter
-into a deal with the content providers. So one can look at Facebook’s “unfriending”
-of Australia a couple of weeks ago as an example of how good their algorithms
-weren’t
-. They were very blunt: In order
-to take the risk-averse strategy, they applied an algorithm to cut all
-Australian content and, in consequence, ended up cutting out legitimate
-material — from the government’s COVID-19 experts, for example.
-Going forward, what should we keep an eye
-on?
-Facebook and
-the Australian government struck a deal that gave Facebook more time to enter into
-agreements with the big media firms (which, as noted above, has started
-happening). In exchange, they’ve given the ACCC more discretion in deciding
-whether the contracts that have already been struck meet the expectations of
-the various parties. And arbitration will only be required if it’s believed the
-voluntary contracts do not meet that objective.
-But the big
-Australian media companies are strongly unionized, which is how they got the
-Australian regulators to act on this in the first place. If the companies know
-Facebook isn’t going to voluntarily offer a deal that they like, the big media
-firms can thus fall back on the arbitration option — which they know will force
-Facebook into something less amiable.
+
+[Speaker: Introduction / editorial context]
+Facing a new law requiring social media firms to pay Australian news providers for their content, Google was willing to comply after brief opposition, but Facebook blocked all news content on its Australian platform for two days. Why did the two companies approach the issue so differently, and what will Australia’s law mean for the future of tech regulation?
+
+[Speaker: Introduction / editorial context]
+To offer first-hand perspective from “down under,” AEI Adjunct Scholar Bronwyn Howell joined me from Wellington, New Zealand to share her insights on the regulatory dilemma Australia has unraveled — both for itself and the rest of the world.
+
+[Speaker: Introduction / editorial context]
+(Note: Since this episode was recorded, Facebook reached a multiyear deal with News Corp. for access to its Australian news content.)
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Bronwyn, tell us what’s going on between Google, Facebook, and the Australian government.
+
+[Speaker: Bronwyn Howell]
+Bronwyn Howell: A couple of weeks ago, the Australian federal government passed a law which would require Big Tech firms — notably Facebook and Google — to negotiate with select media companies in Australia on a code for the latter to be compensated by tech companies who take news content and use it in their own apps or services.
+
+[Speaker: Bronwyn Howell]
+This would apply, for example, to the news that shows up in Google’s search function, and to news that Facebook’s users either post or repost — so long as the news came from one of the Australian firms that the law applies to.
+
+[Speaker: Bronwyn Howell]
+The government’s justification for forcing this negotiation code came from an inquiry about two years ago that concluded Big Tech had market power in advertising. But the code tries to establish a link between that alleged market power in advertising and copyright breaches that would occur when Big Tech firms either share or allow sharing of forbidden content — Australian news, in this case. This is interesting because there’s two different ways in which these Big Tech companies use that content, and it’s a really long bow to stretch between the finding of market power in the advertising market — which has made Facebook and Google a target for regulation — and the issue of needing to compensate media firms that have generally struggled in international markets. It thus seems really difficult to have a standard, one-size-fits-all code for negotiation.
+
+[Speaker: Bronwyn Howell]
+Talk to us a bit more about the advertising market, because it seems like there are a few different things happening there.
+
+[Speaker: Bronwyn Howell]
+Again, the argument is that Google and Facebook, by using that content, are enhancing their business models, thereby being able to sell advertising better. But the issue here is that the traditional media companies also are now online, and they also sell online advertising. So the end goal for intervention was to compensate media companies for their content in order to make up for declining advertising revenues — which have allegedly been lost to Big Tech firms with vast market power.
+
+[Speaker: Bronwyn Howell]
+But of course, this model of newspapers using advertising revenue to compensate for the creation of news — or to fund news content — is as old as newspapers themselves. There has always been a two-sided market in publishing where advertising has subsidized content. The Google and Facebook piece is only a secondary issue, because even before Google and Facebook existed, we were seeing the revenues of these companies reduced because of the copyright issue — in which people could take easily videotape televised content and repost it, for example.
+
+[Speaker: Bronwyn Howell]
+The news companies provide what the Australian treasurer calls “public-good journalism.” And since that’s being reduced because of media companies’ struggle to bring in revenue, they’re looking for ways to prop up that industry. So they’ve basically latched onto the fact that Google and Facebook could be tagged or taxed in order to help subsidize the creation of Australian news content.
+
+[Speaker: Shane Tews]
+One of the pieces you did for AEI cited public opinion data showing that Australians overwhelmingly supported this move by the government. Why do you think that is?
+
+[Speaker: Bronwyn Howell]
+There’s a general trend internationally that frames Big Tech as somehow the enemy of the state. And I think when the enemy of the state is also located in a different country, it’s possible to play off a number of different prejudices. The general thought is that Big Tech is bad, but that Big Tech companies that are foreign are “badder” than Big Tech companies that are not foreign.
+
+[Speaker: Bronwyn Howell]
+The politics have become complicated as well, because it can’t just be seen as a simple battle between good and bad — or the little Aussie battler against the big evil giant from overseas. It’s got these other issues going on as well about who’s eligible to be negotiated with. The Australian Competition and Consumer Commission (ACCC) — which launched the market power inquiry in 2018 — is also mixing up the markets in deciding why this should be the way for compensation. It is quite complicated.
+
+[Speaker: Shane Tews]
+Why did Google come to the table so much faster than Facebook did?
+
+[Speaker: Bronwyn Howell]
+Yes — the two firms have very different business models. Google has total control over what content its searches yield. So to the extent that the code exposes Google to liability, it can choose to use or not use content from the identified media companies. Facebook, on the other hand, is much more limited because it’s less able to control what content is posted. Any user can post a piece of content that breaches copyright. But if Facebook’s algorithms then pick that up and redistribute it, they now become financially liable for the original content’s reproduction and retransmission, creating uncapped liability. The original breach of copyright was not governed by Facebook; it was controlled by the user who posted the content.
+
+[Speaker: Bronwyn Howell]
+Facebook thus argues that this code creates an extremely difficult, unkempt liability if they have to negotiate over regulating content whose posting and sharing they fundamentally cannot control. And while algorithms can be used, they can be very imperfect because they’re just taking the best-guess stab at picking out what might be a breach. Furthermore, the only way for Facebook to insulate itself against this massive liability was to not carry Australian news content at all.
+
+[Speaker: Bronwyn Howell]
+Ultimately, where Facebook can’t control the instances of breach because it’s the end users that do it, Google can. This likely led to Google being more amenable to enter into a deal with the content providers. So one can look at Facebook’s “unfriending” of Australia a couple of weeks ago as an example of how good their algorithms weren’t. They were very blunt: In order to take the risk-averse strategy, they applied an algorithm to cut all Australian content and, in consequence, ended up cutting out legitimate material — from the government’s COVID-19 experts, for example.
+
+[Speaker: Shane Tews]
+Going forward, what should we keep an eye on?
+
+[Speaker: Bronwyn Howell]
+Facebook and the Australian government struck a deal that gave Facebook more time to enter into agreements with the big media firms (which, as noted above, has started happening). In exchange, they’ve given the ACCC more discretion in deciding whether the contracts that have already been struck meet the expectations of the various parties. And arbitration will only be required if it’s believed the voluntary contracts do not meet that objective.
+
+[Speaker: Bronwyn Howell]
+But the big Australian media companies are strongly unionized, which is how they got the Australian regulators to act on this in the first place. If the companies know Facebook isn’t going to voluntarily offer a deal that they like, the big media firms can thus fall back on the arbitration option — which they know will force Facebook into something less amiable.
+
+[Speaker: Bronwyn Howell]
 It’s going to be very interesting to watch just what those contracts are and how they’re struck, because there’s lots more game-playing that could still ignite another standoff. This is far from resolved at the moment; it’s really just been kicked down the road.
+
+[Speaker: Bronwyn Howell]
+[related-items item=”” title=”Learn more:”]

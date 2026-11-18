@@ -1,157 +1,80 @@
 PAGE_TITLE: 
-	The State of Our Nation’s Cybersecurity: Highlights from My Conversation with Michael Chertoff | American Enterprise Institute - AEI
+	The State of Our Nation’s Cybersecurity: Highlights from My Conversation with Michael Chertoff
 
-Cyber threats are multidimensional; they can manifest as large-scale
-attacks carried out by nation states or private actors, targeted at critical infrastructure
-or individual devices. In the information age, they can also target vulnerable
-individuals via malware or on social media platforms in the form of false or
-misleading information. Across the board, the Russia-Ukraine conflict has made
-plugging vulnerabilities in all cyber domains a lead priority for government,
-industry, and civil society alike.
-On our latest episode of “Explain to Shane,” I sat down with
-Michael
-Chertoff
-, former Secretary of the Department of Homeland Security (DHS),
-for an update on how both cybersecurity threats and best practices have
-progressed in a number of domains since Secretary Chertoff left office. We also
-discussed the security pitfalls of Congress’s attempts to weaken mobile device
-protections in the name of competition.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of “Explain to Shane” on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Secretary Chertoff,
-welcome to the show. Can you give us an overview of how both cyber threats and
-management of cyberattacks have changed since your time at DHS?
-Michael Chertoff: When I was secretary, the internet was still
-relatively young as a commercial activity. There was the possibility of
-criminal groups stealing identification information or moving money illicitly.
-There was a sense that we might have theft of intellectual property, but it was
-not viewed as a major security threat in the same way terrorism was.
-At one point, a senior intelligence official informed the president that
-our adversaries could use the internet to shut down parts of the banking system
-or the American economy in a way that would be comparable to what we’d
-experienced as a result of 9/11. The president, as a result, had me and a
-number of others put together a national cybersecurity strategy. We began to
-look at the possibility of cyberattacks not just being about theft of money or
-information, but about interfering with operating systems. Systems increasingly
-connected to the internet that turned on the lights or ran the water could be
-tampered with or shut down. So this elevated from a criminal issue into a national
-security challenge.
-What are some lessons learned in
-the cyber domain from the Russia-Ukraine situation?
-The Russians were early to weaponize the internet and add cyberattacks
-to the menu of tools they used in hybrid warfare situations that fell just
-short of armed conflict. When I was in office in 2007, there was a popular
-movement in Estonia to take down a statue memorializing Soviet activity during World
-War II. The Russians got angry and launched a cyberattack that shut down Estonia’s
-government offices and banking system, then we worked with the Estonians under
-our NATO obligations to help them recover.
-In 2008, the Russians attacked parts of Georgia to try to break them
-away from the main country, and cyberattacks were involved too. So we witnessed
-the beginning of the weaponization of the internet by Russia; since then, they’ve
-been quite willing to use the internet as a means of inflicting real-world harm
-on their adversaries.
-Ukraine has had the misfortune of being a Petri dish for Russian cyberattacks over the last several years. Before the most recent invasion, there were attacks on Ukraine’s electrical grid. There was a ransomware attack called
-NotPetya
-, which infected an accounting software package that most big companies operating in Ukraine use. It froze all of their data, and collateral damage was felt by Western companies with offices in Ukraine.
-And, as the DHS has warned, we have now found traces of Russian cyber
-activity on our electrical grid. Warnings have gone out from the US government
-to the private sector—particularly the financial and energy sectors—to be on
-alert for possible attacks.
-If you’re a company in today’s
-risk-filled environment, how do you maximize your cybersecurity and offensive
-functionality?
-You have to consider which of your assets are most likely to be
-attractive to an adversary. Depending on the nature of your business unit, the
-adversary may be different. It’s a reasonable concern, for example, that the
-Russians may decide at some point they’re better off attacking the financial
-sector than trying to continue participating in it. The financial, energy, and healthcare
-sectors should be alert for nation-state adversaries looking to shut them down.
-Other types of businesses may be more prone to criminal theft of data
-and intellectual property. For example, when China conducts cyber operations,
-they collect huge amounts of personal data, some of which they do overtly and some
-of which they do covertly. They attacked the Office of Personnel Management—at least
-my assumption is that it was them—and stole background check files with very
-detailed information about 25 million potential or current US government
-employees. They also hacked into major healthcare databases. China is building
-a huge artificially intelligent database about all Americans so they will know
-everything about you and can decide who’s an intelligence target and who’s a
-counterintelligence target. It’s not like they’re looking to shut down a
-personnel system; they’re looking to glean information from it.
-The Russians are much heavier handed and more interested in ransomware or destructive attacks. They’re quite skilled. The US government publicly named Russian intelligence as the culprit of the attack on
-SolarWinds
-, a software management company that did supply chain work for thousands of enterprises online. The Russians created a backdoor (or skeleton key) that would allow them, at their option, to enter into targets they were interested in.
-Companies need to analyze: What are your key assets? Which adversaries
-want to penetrate your systems in order to get those assets? You then need to
-build an architecture of security that is tailored to the particular tactics
-and techniques said adversaries typically use.
-As DHS is telling companies to put their “
-Shields Up
-,” tech antitrust proposals in Congress would weaken mobile security by requiring e-commerce operators let users download any software onto their devices (“sideload”) in the name of competition. What are your thoughts about that?
-The general concern here is that the Internet of Things has made
-everything wirelessly connected and “smart,” like your baby camera,
-refrigerator, and home security system. That creates more surface area for
-attacks. Once an adversary gets into the network, there is no limit to how far
-they can go. Some years ago in Washington, an institution that I will not name
-got hacked by a foreign entity through its thermostat, which then gave the
-hacker a route to the database. So you have to worry about the surface area.
-One area of concern is the mobile phone. There is sensitivity about
-whether something can be brought in sideways through an app that will then
-infect the phone. Most of the big tech companies try to vet and check any apps
-in the app store so that you have a reasonable degree of confidence that the
-app does not have vulnerabilities, is not infected with malware, and doesn’t
-have a widely known exploit that can be used by a bad actor. The problem with
-bringing in apps from app stores that are not vetted or simply going on the
-internet and downloading anything is: You’re putting yourself at risk because
-you don’t know the safety and security of the app you’re downloading. Making
-sure you can give people confidence is more important than giving everybody the
-opportunity to simply move anything in sideways that they want.
-Some people say if you want to take a risk with your phone and download
-anything, that’s on you. The problem is: It’s not just a risk on your phone. If
-your phone gets infected, the nature of the infection may ultimately wind up
-allowing someone to take over your email and use that to fool your friends and
-get them to download things. So we ought to think twice about this.
-What are your thoughts on how to
-combat disinformation—another cyber-adjacent threat that’s particularly
-relevant these days given the Russia-Ukraine conflict?
-Disinformation
-has been enabled and weaponized because of the ability to use data to target
-you, the consumer. We’ve always had propaganda. Even a hundred years ago, the
-Russians were out there doing propaganda, but in a gross sense and aimed at
-everybody. They had to reflect it in a way that was more broadly appealing and less
-persuasive. But now they can send you something tailored exactly to your
-concerns and interests to get your attention and draw you in further to
-intensify and amplify the message they want to send.
-Platforms ought to put a warning out when there is disinformation like
-that. But we also need to regulate the way data can be disseminated to third
-parties and used. I think the federal government as a whole is going to have to
-look at how we give people control over their data even if someone else has collected
-it. Moving to that model may afford us some hope in putting a break on the
-weaponization of our data.
-Along with weaponization of data and disinformation, we have
-polarization. I hate to blame the internet for everything, but it gets people
-amped up. The only time period I can think of that this reminds me of is the
-1960s. We had assassinations. We had a war. We had riots. We had terrorism. We
-had bombs. There was a sense of alarm about the future of the country. But one
-thing we did not have were major political figures essentially applauding
-activity that we would consider terroristic or violent. Now, to my regret, a number
-of prominent politicians are either silent about violence or in some ways willing
-to applaud theories like the “great replacement,” which are fueling shooters
-like the guy in Buffalo.
-Across the entire globe, over the last several years, there has been a
-steady decline in democracy and human rights with only a few notable
-exceptions. I’m encouraged when I see the public getting out there and demonstrating
-and fighting for their rights. But all too often, we see someone getting
-elected and using their position to insulate and cement themselves in power.
-Hungary’s Viktor Orbán is a good example.
-Autocracy doesn’t necessarily come at the point of a gun or a military
-coup; it starts with a public that is willing to elect people who are
-expressing views that are hostile to human rights. That person then uses the
-leverage of an elected position to shut down the press, harass their opponents,
-and insulate themselves so they can stay in power.
+[Speaker: Introduction / editorial context]
+Cyber threats are multidimensional; they can manifest as large-scale attacks carried out by nation states or private actors, targeted at critical infrastructure or individual devices. In the information age, they can also target vulnerable individuals via malware or on social media platforms in the form of false or misleading information. Across the board, the Russia-Ukraine conflict has made plugging vulnerabilities in all cyber domains a lead priority for government, industry, and civil society alike.
+
+[Speaker: Introduction / editorial context]
+On our latest episode of “Explain to Shane,” I sat down with Michael Chertoff, former Secretary of the Department of Homeland Security (DHS), for an update on how both cybersecurity threats and best practices have progressed in a number of domains since Secretary Chertoff left office. We also discussed the security pitfalls of Congress’s attempts to weaken mobile device protections in the name of competition.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Secretary Chertoff, welcome to the show. Can you give us an overview of how both cyber threats and management of cyberattacks have changed since your time at DHS?
+
+[Speaker: Michael Chertoff]
+Michael Chertoff: When I was secretary, the internet was still relatively young as a commercial activity. There was the possibility of criminal groups stealing identification information or moving money illicitly. There was a sense that we might have theft of intellectual property, but it was not viewed as a major security threat in the same way terrorism was.
+
+[Speaker: Michael Chertoff]
+At one point, a senior intelligence official informed the president that our adversaries could use the internet to shut down parts of the banking system or the American economy in a way that would be comparable to what we’d experienced as a result of 9/11. The president, as a result, had me and a number of others put together a national cybersecurity strategy. We began to look at the possibility of cyberattacks not just being about theft of money or information, but about interfering with operating systems. Systems increasingly connected to the internet that turned on the lights or ran the water could be tampered with or shut down. So this elevated from a criminal issue into a national security challenge.
+
+[Speaker: Shane Tews]
+What are some lessons learned in the cyber domain from the Russia-Ukraine situation?
+
+[Speaker: Michael Chertoff]
+The Russians were early to weaponize the internet and add cyberattacks to the menu of tools they used in hybrid warfare situations that fell just short of armed conflict. When I was in office in 2007, there was a popular movement in Estonia to take down a statue memorializing Soviet activity during World War II. The Russians got angry and launched a cyberattack that shut down Estonia’s government offices and banking system, then we worked with the Estonians under our NATO obligations to help them recover.
+
+[Speaker: Michael Chertoff]
+In 2008, the Russians attacked parts of Georgia to try to break them away from the main country, and cyberattacks were involved too. So we witnessed the beginning of the weaponization of the internet by Russia; since then, they’ve been quite willing to use the internet as a means of inflicting real-world harm on their adversaries.
+
+[Speaker: Michael Chertoff]
+Ukraine has had the misfortune of being a Petri dish for Russian cyberattacks over the last several years. Before the most recent invasion, there were attacks on Ukraine’s electrical grid. There was a ransomware attack called NotPetya, which infected an accounting software package that most big companies operating in Ukraine use. It froze all of their data, and collateral damage was felt by Western companies with offices in Ukraine.
+
+[Speaker: Michael Chertoff]
+And, as the DHS has warned, we have now found traces of Russian cyber activity on our electrical grid. Warnings have gone out from the US government to the private sector—particularly the financial and energy sectors—to be on alert for possible attacks.
+
+[Speaker: Shane Tews]
+If you’re a company in today’s risk-filled environment, how do you maximize your cybersecurity and offensive functionality?
+
+[Speaker: Michael Chertoff]
+You have to consider which of your assets are most likely to be attractive to an adversary. Depending on the nature of your business unit, the adversary may be different. It’s a reasonable concern, for example, that the Russians may decide at some point they’re better off attacking the financial sector than trying to continue participating in it. The financial, energy, and healthcare sectors should be alert for nation-state adversaries looking to shut them down.
+
+[Speaker: Michael Chertoff]
+Other types of businesses may be more prone to criminal theft of data and intellectual property. For example, when China conducts cyber operations, they collect huge amounts of personal data, some of which they do overtly and some of which they do covertly. They attacked the Office of Personnel Management—at least my assumption is that it was them—and stole background check files with very detailed information about 25 million potential or current US government employees. They also hacked into major healthcare databases. China is building a huge artificially intelligent database about all Americans so they will know everything about you and can decide who’s an intelligence target and who’s a counterintelligence target. It’s not like they’re looking to shut down a personnel system; they’re looking to glean information from it.
+
+[Speaker: Michael Chertoff]
+The Russians are much heavier handed and more interested in ransomware or destructive attacks. They’re quite skilled. The US government publicly named Russian intelligence as the culprit of the attack on SolarWinds, a software management company that did supply chain work for thousands of enterprises online. The Russians created a backdoor (or skeleton key) that would allow them, at their option, to enter into targets they were interested in.
+
+[Speaker: Michael Chertoff]
+Companies need to analyze: What are your key assets? Which adversaries want to penetrate your systems in order to get those assets? You then need to build an architecture of security that is tailored to the particular tactics and techniques said adversaries typically use.
+
+[Speaker: Shane Tews]
+As DHS is telling companies to put their “Shields Up,” tech antitrust proposals in Congress would weaken mobile security by requiring e-commerce operators let users download any software onto their devices (“sideload”) in the name of competition. What are your thoughts about that?
+
+[Speaker: Michael Chertoff]
+The general concern here is that the Internet of Things has made everything wirelessly connected and “smart,” like your baby camera, refrigerator, and home security system. That creates more surface area for attacks. Once an adversary gets into the network, there is no limit to how far they can go. Some years ago in Washington, an institution that I will not name got hacked by a foreign entity through its thermostat, which then gave the hacker a route to the database. So you have to worry about the surface area.
+
+[Speaker: Michael Chertoff]
+One area of concern is the mobile phone. There is sensitivity about whether something can be brought in sideways through an app that will then infect the phone. Most of the big tech companies try to vet and check any apps in the app store so that you have a reasonable degree of confidence that the app does not have vulnerabilities, is not infected with malware, and doesn’t have a widely known exploit that can be used by a bad actor. The problem with bringing in apps from app stores that are not vetted or simply going on the internet and downloading anything is: You’re putting yourself at risk because you don’t know the safety and security of the app you’re downloading. Making sure you can give people confidence is more important than giving everybody the opportunity to simply move anything in sideways that they want.
+
+[Speaker: Michael Chertoff]
+Some people say if you want to take a risk with your phone and download anything, that’s on you. The problem is: It’s not just a risk on your phone. If your phone gets infected, the nature of the infection may ultimately wind up allowing someone to take over your email and use that to fool your friends and get them to download things. So we ought to think twice about this.
+
+[Speaker: Shane Tews]
+What are your thoughts on how to combat disinformation—another cyber-adjacent threat that’s particularly relevant these days given the Russia-Ukraine conflict?
+
+[Speaker: Michael Chertoff]
+Disinformation has been enabled and weaponized because of the ability to use data to target you, the consumer. We’ve always had propaganda. Even a hundred years ago, the Russians were out there doing propaganda, but in a gross sense and aimed at everybody. They had to reflect it in a way that was more broadly appealing and less persuasive. But now they can send you something tailored exactly to your concerns and interests to get your attention and draw you in further to intensify and amplify the message they want to send.
+
+[Speaker: Michael Chertoff]
+Platforms ought to put a warning out when there is disinformation like that. But we also need to regulate the way data can be disseminated to third parties and used. I think the federal government as a whole is going to have to look at how we give people control over their data even if someone else has collected it. Moving to that model may afford us some hope in putting a break on the weaponization of our data.
+
+[Speaker: Michael Chertoff]
+Along with weaponization of data and disinformation, we have polarization. I hate to blame the internet for everything, but it gets people amped up. The only time period I can think of that this reminds me of is the 1960s. We had assassinations. We had a war. We had riots. We had terrorism. We had bombs. There was a sense of alarm about the future of the country. But one thing we did not have were major political figures essentially applauding activity that we would consider terroristic or violent. Now, to my regret, a number of prominent politicians are either silent about violence or in some ways willing to applaud theories like the “great replacement,” which are fueling shooters like the guy in Buffalo.
+
+[Speaker: Michael Chertoff]
+Across the entire globe, over the last several years, there has been a steady decline in democracy and human rights with only a few notable exceptions. I’m encouraged when I see the public getting out there and demonstrating and fighting for their rights. But all too often, we see someone getting elected and using their position to insulate and cement themselves in power. Hungary’s Viktor Orbán is a good example.
+
+[Speaker: Michael Chertoff]
+Autocracy doesn’t necessarily come at the point of a gun or a military coup; it starts with a public that is willing to elect people who are expressing views that are hostile to human rights. That person then uses the leverage of an elected position to shut down the press, harass their opponents, and insulate themselves so they can stay in power.

@@ -1,0 +1,221 @@
+PAGE_TITLE: 
+	Reclaiming the Airwaves (with Harold Furchtgott-Roth) — full transcript
+
+[Speaker: Introduction / editorial context]
+Explain to Shane: Reclaiming the Airwaves (with Harold Furchtgott-Roth) Episode #124 | July 24, 2025 | Shane Tews and Harold Furchtgott-Roth
+
+[Speaker: Shane Tews]
+Shane Tews (00:06) Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work and how they shape our social and economic life. Spectrum may be invisible, but it is a foundational part of American digital infrastructure. As the demand for wireless connectivity surges, U.S. Spectrum policy faces challenges. Who controls this resource? Why has the United States fallen behind in the efficient use of such an important resource? And what reforms are needed to ensure that Spectrum remains a catalyst, not a bottleneck, for innovation? To answer these questions, I'm joined today by Harold Furchtgott Roth. He is a former commissioner of the Federal Communications Commission and currently a senior fellow at the Hudson Institute, where he founded the Center on the Economics of the Internet. He has served as the chief economist on the House Committee on Energy and Commerce, where he helped draft the Telecommunications Act of 1996. Harold also consults widely across the communications industry. I hope you enjoy today's episode. Harold, thank you for being a guest today on Explain to Shane. It is, first of all, so nice to see you in person, so thank you for coming over here. You wrote a great piece which brought a lot of things to mind, but before we get into the deep dive of what you wrote about, let's just start with some real basics for the listeners. I mean, we have a pretty sophisticated audience, but sometimes we need to start with some of the building blocks. So you write this piece about Spectrum. So why has Spectrum become such a foundational part of our American digital infrastructure? I know it started with wireless, and we can kind of tail back into that, but it's a huge deal, and we are challenged with it right now.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (01:58) Yes, well, first of all, Shane, thank you so much for having me on your program. It's a great honor to be here today. Why is Spectrum important? Spectrum is important globally because it is the foundation of a lot of the great innovations of the past generation. If you go back to as recently as the mid-1980s, the World Bank has these annual studies of poverty globally and income levels. And in the mid-1980s, roughly 60% of the world's population was at a subsistence level. Maybe a little less than 60%, but call it 50%. What we've seen in the past generation is that the number has shrunk to now it's less than 10 % globally. Most of those changes have taken place in China, India, and Africa, where at the time the vast majority of people were at a subsistence level. Now they're at a higher income level. Well, how did that happen?
+
+[Speaker: Speaker not identified]
+It's one of the greatest transformations of economic welfare in human history to have roughly half of the world's population go from subsistence level to a situation where their children are better off. That's the greatest thing that a parent could want is to see my children to be better off than I was. And that has happened in that generation that was from the mid to late 1980s till 2015. Well, how did that happen? There have been a lot of innovations, some medical, some agricultural; there's been a lot of efficiency there. But one of the great innovations has been the explosion of wireless services. Wireless services have transformed the lives of individuals. You can go to the poorest locations in the world, and you'll find people with wireless phones. They've become far more of an essential ingredient to life than refrigeration or electricity, and a lot of other things, but to have a wireless phone, to be able to communicate with the world, to gather information, to communicate with friends and family literally all over the world. That is something that this generation can do that their parents' generation could not do. And it's extraordinarily valuable. And it's raised people's incomes substantially. And how is that possible? It's happened. One of the foundations of that is Spectrum. That's why Spectrum, in my view, is really important, not just to the United States. Frankly, it's been far more important to people in other countries than in the United States.
+
+[Speaker: Shane Tews]
+Shane Tews (04:45) I’m remembering an article, it's an antidote, but in The Economist about women in Africa really capturing the mobile idea earlier on, for some reason. They would get one phone, and then they would share it in a community, and people would pay them. So then they would allow them to get a second phone. They became like little baby mobile operators, where they would share this. But then people could communicate with their families, family, colleagues, and businesses outside of their village. That was a while ago, but it's just one of those things that really stuck in my head.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (05:17) No, it's exactly right because what happens, people are better off when markets are efficient, when they can buy and sell things, knowing what the prices are, not just right where they are, but say a few miles away. And in the days before wireless communications, it was very inefficient. You didn't really know if you were a day laborer, if you went to this location, if there were jobs available, or if you went a few miles away, that there would be jobs available. Today, with wireless communications, you know. You know where to go to get a day labor. Or if you're selling rice, you know where to go to get the best prices. And that's made all possible because of wireless communications.
+
+[Speaker: Shane Tews]
+Shane Tews (05:57) I am always blessing the smart people, but especially the radio frequency engineers, because I'm always just amazed. All these little zeros and ones are flying through the air, and we've been able to create an entire digital commerce economy on the back of things that we just weren't using that efficiently. But I think one of the things we continually see, especially as we're seeing a lot of this now with the FCC, is they're rethinking some of the regulations on the books. And one of the things that worked really well was Spectrum licensing and the Spectrum auctions. People like to call it a pause, but it really feels like a stall right now. So let's go through both of those. Let's first start with how the Spectrum auctions, whichever you think, it's chicken and egg, they're like the licensing and the
+
+[Speaker: Shane Tews]
+auction works, and then what is our current state of play.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (06:52) The United States led the world in spectrum auctions. Auction authority began with the Omnibus Budget Reconciliation Act of 1993, based on the ideas of an economist called Ronald Coase back in the 1950s who came up with the idea of auctioning off spectrum licenses. Initially, he was thought to be a crackpot. But over time, the economics profession came around to sort of say, no, this really makes lot of sense. You really ought to try it. And finally, Congress did. It was an enormous success. It was far more efficient than what preceded it, which initially were, let's call them, beauty contests. And regulators would give licenses to their political friends. Funny thing about that. And that's how licenses were signed before the early 1980s. Then, Congress saw that it wasn't very good, so they tried something called lotteries. Let's have lotteries. Well, lotteries were better than beauty contests, but it turned out that if you knew really how to play the lottery game you would apply for millions or billions of lottery tickets because they were free.
+
+[Speaker: Shane Tews]
+Shane Tews (08:18) More chances to win something you didn't have to pay for it. That seems like good idea
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (08:21) A former FCC employee went off into the private sector, became very wealthy doing that. He's now a member of the US Senate. Senator Warner of Virginia. He's a very clever fellow. Congratulations to him. Then Congress said, well, what's a better idea? And that turned out to be auctions. And so that's what Congress came up with in 1993. And it was a smashing success. It was very efficient. The important thing about an economy is that you want to put assets to their highest value of use. And how do you determine what the highest value of use is? Well, whoever's willing to pay the most for it. And how do you do that? You do that with an auction. And that's what auctions did is they put licenses in the hands of people who were going to put Spectrum to the highest value to use. It was such a great idea that countries around the world within five years, every country around the world went to Spectrum auctions because they weren't going to let the U.S. get ahead of them for that long. And that's what happened. Back in the 1990s, the U.S. was the uncontested leader in Spectrum policy. We came up with lots of new ideas about how to work with Spectrum, not just licensing and auctioning unlicensed, which was really developed in the late 1980s by the FCC became extraordinarily popular around the world. That was an innovation of the United States. If you look at almost all of the major Spectrum policy ideas, they originated in the United States in this very fertile period from the late 1980s through the early 2000s.
+
+[Speaker: Shane Tews]
+Shane Tews (10:05) That's amazing. I'm still stuck back on Ronald Coase. What was he thinking about auctioning in the 1950s?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (10:19)
+
+[Speaker: Speaker not identified]
+Radio licenses.
+
+[Speaker: Shane Tews]
+Shane Tews (10:21) Just radio licenses, okay. Because I was like, we have so many more things that flow in that space now, but really, a futurist in the 1950s on that thought. Let's get into some intramural politics here because that seems to be the challenge that we're in now is that we obviously have a valuable asset in the Spectrum. We had a licensing regime that seemed to be working. They were using a market mechanism. What happened?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (10:51) Well, the US has been the leader in good ideas, and we've also been the leader in really not very good ideas. And one of the not very good ideas was to make spectrum auctions time-limited instead of permanent. We wouldn't be in these troubles that we've been in the past few years if Spectrum auction authority were permanent. One of the reasons Congress doesn't make it permanent is the House Energy and the Senate Commerce Committee like to be able to collect credit for auction receipts in the budget windows, which are ten years. If it were permanent, they wouldn't be able to collect the auction receipts for the out years. But it's very bad policy to have it expire, which it did a few years ago.
+
+[Speaker: Shane Tews]
+Shane Tews (11:50) Is that real, or is that a scoring issue?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (11:53) It’s a complete scoring issue. It's the fabrication of the congressional accounting system, don't get me started on that, we will be here for days. I’m just in despair. I’m actually working on a column right now about the problems with the Budget and Control Act in 1974.
+
+[Speaker: Shane Tews]
+Shane Tews (12:12) So you mentioned in your piece some other ranges of reforms. Does that help? Spectrum, which is a huge deal, I'm not trying to minimize that. Does that solve a lot of our current issues in this space? Are there other things that you still think we should be considering as far as the FCC? Since the FCC has opened the book and said, let's take a look at what's going on. And we're looking at media, all kinds of areas. But is there something else that you would recommend?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (12:40) I think Chairman Carr is doing a great job, and I think he's going to do a great job on Spectrum, and he is doing a lot of important things, like trying to get rid of some of the broadcast ownership rules. So there's a lot of improvement that I'm sure Chairman Carr is going to do. There are a lot of things that our government should be doing in spectrum policy outside of the FCC, which is where I think we're missing opportunities to put Spectrum to higher-value use. A lot of this has to do with federal Spectrum, and right now it's if you're managing federal spectrum for an agency, your only real incentive is to just protect it and not necessarily put it to its highest value of use because your agency doesn't benefit if there were some higher value of use and your agency isn't penalized if it isn't putting it to some efficient use. Creating a system where there were costs and benefits associated with putting Spectrum to a higher value of use, I think that would be very
+
+[Speaker: Speaker not identified]
+beneficial. I think there's a way of doing that was something that I would call a Spectrum fee on federal spectrum so that an agency would have to pay a certain amount of money every year to keep their licenses but if they thought the Spectrum wasn't worth it they would be able to turn it in and avoid the fee or get some money in return. We don't have anything like that. The idea has floated around for years but nothing's ever been done about it.
+
+[Speaker: Shane Tews]
+Shane Tews (14:25) When I read that in your piece, which we'll put in the show notes. I just had a couple of visuals that went through my head. One is somebody just completely losing their mind at the idea that they've got this cabined off resource that they've been able to say, mine, mine, mine, mine, mine. And they literally just like take it out of play, and no one demands it come back onto the Spectrum field. Except for hoping that somewhere along the line there is an accountant, somebody that's going, that actually makes some sense. But you have to get through the just the emotional political idea that you're taking something that I have, I'm not using it, and actually figure out a way to have it be more efficient. I love the idea. I know that there are probably a lot of people in the federal government who are very scared of it.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (15:08) They're very scared of it, you're right. But here's a fact to think about. There are auctions. Anyone can show up at the auction and bid for the Spectrum because they think the amount of money they're willing to bid is less valuable to them than actually having the Spectrum. Agencies never show up at the auction to bid. So they obviously don't think the spectrum is worth that amount of money to them than whatever the auction clearing price is. Now, in fairness, the agencies aren't authorized to bid, but they're not marching up to Capitol Hill. You don't see Agency X marching up to Capitol Hill saying, We need more Spectrum, it's worth ten billion dollars to us. Please appropriate ten billion dollars to us so we can go to the FCC auction and get more spectrum. You don't see that.
+
+[Speaker: Shane Tews]
+Shane Tews (16:00) Yeah, it's another idea. I love asset recycling, where you take something, and an example is that because digital is challenging for people, they can't see it, such as parking lots. The amount of huge parking, or even shopping centers that we have had for decades that people don't go to, there are just certain areas people don't drive as much as they need to because we've changed things with, you know, the way we have Uber and things like that. But then, doing an actual asset recycling. DC did a program for a while with the government of Australia. And they thought about like, really started to look at it, and they did well on the commercial side of the market. They kind of hit a wall, and they got to GSA. The idea of not having those half-empty buildings be considered something that you would rethink just didn't float. So how is this being received? Are you talking to people who are more interested that are actually players on this field, or is this still something we're on either side of the glass trying to explain things to people inside the building?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (17:12)
+
+[Speaker: Speaker not identified]
+I think we're still at the concept discussion phase. This is not something that Congress is going to take up anytime soon, I'm afraid.
+
+[Speaker: Shane Tews]
+Shane Tews (17:23) And even in the very well-pointed out budget deficits that we're in today, there still just doesn't seem to be the appetite.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (17:30) Right.
+
+[Speaker: Shane Tews]
+Shane Tews (17:32) What do you think becomes a catalyst? Other than just a change of mind.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (17:44) Sadly, I think all you need is one country to do this and do it well. There actually have been a couple of countries that have tried and failed miserably at it. But if you have a country that actually does it and does it well, then I think other countries are going to look at it and sort of say, goodness, they're becoming much more efficient at Spectrum policy than we are. What we've lost in the United States, really over the past 15 years or so, is a determination that the United States is going to be the most innovative location for Spectrum policy in the world. If someone else has a better idea, we're going to do that even better. There isn't that mindset. The mindset we have right now is, let's just keep doing what we've been doing, and that's good enough. It's not good enough. We need to do better.
+
+[Speaker: Shane Tews]
+Shane Tews (18:41) And we haven't felt anything forcing our hand.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (18:44) Not yet.
+
+[Speaker: Shane Tews]
+Shane Tews (18:45) Is there a country you would say is doing well by this? There's somebody that we might actually look to as a model.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (18:55) Well, some countries are autocratic. The head of the country says we're doing this tomorrow, and that happens tomorrow. China is an example. They can turn Spectrum policy in a day. We're not that. Thank goodness we're not that. And thank goodness they haven't figured out how to insert marketoriented concepts in a way that is as useful to them as they could be. There is a mindset in the United States, I'm afraid, among a lot of political leadership to use regulation to improve Spectrum policy or to improve policy in almost every area. Other countries are much better at regulation than we are. We're not very good at it.
+
+[Speaker: Shane Tews]
+Shane Tews (19:49) In what way? Explain that.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (19:51) We're slow, it takes forever, we have all of these legal procedures, you have to jump through a
+
+[Speaker: Speaker not identified]
+thousand bureaucratic steps, and I'm not saying there's anything wrong with the bureaucratic steps; that's just where we are as a country. Where we excel is putting markets to work, and that is what we've done; that's what we did in spectrum policy beginning of the late 1980s to the other 2000, up through 2010 or so. We just haven't moved forward very much in the past 15 years. And we need to do that. And where America excels is market ideas, letting businesses develop technologies that will accelerate economic activity. An example we're seeing is artificial intelligence. What industry has not been regulated, really ever? Artificial intelligence. Whereas it developed, almost all the big AI companies right now are in the United States. It's a great natural national resource for the United States. There are provisions that were proposed in the reconciliation bill to essentially prohibit states from regulating artificial intelligence. Well, that got stripped out. So it's open season for states to regulate artificial intelligence. Who benefits when artificial intelligence is regulated? Not the United States. Not American businesses. The innovative ideas that are to be regulated to death will wind up going elsewhere.
+
+[Speaker: Shane Tews]
+Shane Tews (21:31) Yep, that's a tough one. I mean, there are a lot of things I've been focused on, like digital sovereignty and all these other challenges we have and also in the same way that these go hand in glove AI is with cloud. And so you start looking at that from a cybersecurity perspective, the efficiency of cloud is bigger is definitely better when you're trying to just keep the information flow of like what's going on, how to make sure your defense mechanisms are up. So you have both an offense and a defense. And some of these countries get sold on this whole idea that they can just create a server farm, and it's going to solve their problem if it's on-prem. Like it's close by. It just doesn't, it doesn't solve any problems. If anything, it just becomes a honeypot. And so it's been, it's interesting to sit back and look at the macro damage that could be done by these little micro movements in this space. Yeah, AI is gonna be one there. I'm a huge fan, love it, use it all the time, and think that there's just so much opportunity. I mean, there were just several reports in this last week about a medical, like we've been hearing rumors of it, but it's becoming very real. And the idea of starting to have all these little death by a thousand cuts if we let the states in, I just think, and I believe in states' rights, but there's a point where you say it's not going to benefit people if we start doing this, and the way that they currently have been managing other things in the regulatory spectrum.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (23:05) Yeah, I think that's exactly right.
+
+[Speaker: Shane Tews]
+Shane Tews (23:06) So going to something that seems almost old school now, but just curious about your thoughts on how are we doing on technology like 5G and advancing into 6G? That was the talk like five, six, seven years ago. And then I think we just assumed that it was all moving forward. What made me think when you mentioned China and the whole idea of we're trying to get around, especially. And it's not talked about as much in this administration, oddly, because we've become such supply chain management aware.
+
+[Speaker: Shane Tews]
+But the whole open radio access network of creating something that doesn't necessarily have to all land back on Chinese equipment. Are we advancing on that? Are we doing okay? Or have we just forgotten about that while we've been focused on terafors and other things in that area?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (23:51) Let me just begin at the hundred-thousand-foot level. The US is in a substantial competition with China, both economically, politically, militarily, and diplomatically. I think we should just avoid the pretense that we're ahead; we're not ahead. China is way ahead in 5G.
+
+[Speaker: Shane Tews]
+Shane Tews (24:23) They're very focused. You can do it when you have centralized everything.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (24:26) It's not just that they're centralized. It's that they're good at centralization. That's what they excel at. The US is not good at centralization. There are some politicians in Washington who look at China and say we should be more like China. And my reaction is, no. If the result is, if the thinking is that imitating China is good for the United States, we lose. We lose in so many ways.
+
+[Speaker: Shane Tews]
+Shane Tews (25:00) Which part of that do you think they want to emulate?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (25:03) Centralized management of 5G
+
+[Speaker: Shane Tews]
+Shane Tews (25:08) The government will make the decisions and we're not going to have market decisions.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (25:12) Let's set off this for the government's going to do this government program this government program that. It works in China, but it's not going to work in the United States and not very well. Plus, we then lost the war at that point because, at the end of the day, it's about who has the better idea. A country is not just about military might; a country is also about ideas. A country is about saying which set of ideas are going to work? We defeated the Soviet Union, not just militarily, but because we had the ideas that markets are the way to make people better off. That's what ultimately destroyed the Soviet Union, because the people in the Soviet Union, Soviet block countries, realized their lives were miserable compared to what they heard about life in the West. China is really good at centralized planning. And people who don't agree with them, you know, they wind up in some prison as an organ donor or something like that. We're not that. And if we get to a situation where we say centralized planning is the way to go, then essentially China has won.
+
+[Speaker: Shane Tews]
+Shane Tews (26:23) Yeah, and we see that in some of the ways that states are looking at just things in the digital economy as well. They need to make the decisions, and then they're going to hand the decisions down, and then you comply.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (26:33) We win when individual autonomy, when individuals make decisions, when individuals have control over their lives, when individuals, not the government, make these types of decisions. In China, it's the other way. In China, it's the government that makes the decisions, the government that monitors people and gives them social scores. And if they're doing the wrong thing or jaywalking or something, then their children aren't gonna get into the right school. It's a crazy system, and we should recognize that it’s not where we want to be. That's not good for America. It's not good for individuals. We're the country of individuals, and individuals thrive in markets. They thrive in markets because they see that in a market, if they work hard, they can do better. In a centralized planning economy, if you work hard, all that really matters is what the government's gonna tell you you can have. And then you just start trying to influence the government to give you more. And that's a bad situation to be in.
+
+[Speaker: Shane Tews]
+Shane Tews (27:37) So coming back to the 5G question. Do we feel like there are enough market alternatives? This is sort of early on; it was like we were looking at Nokia, and it was great. But, we were limited in our market alternatives to what we wanted to do with the Chinese market. Has all of this, back and forth, with what the administration's been doing, helped us build markets in other places? I realize it didn't just start with Trump.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (28:06) Yeah, this has been going on for a while. I think up through 4G, everything was proceeding. Every few years, there would be a new generation of wireless technology, roughly once every five years, and everything proceeded at a pace. And consumers loved each of the new generations. And you'd have new generations of cell phones, new generations of network equipment, lots of new apps that were available that worked on the newer generation. 5G hasn't worked quite that way.
+
+[Speaker: Shane Tews]
+Shane Tews (28:46) Well, video definitely forced our hand on needing to do the, you know, the upgrade. The amount of things we expect our device in our hand to do is really amazing to me. Then when it just, you get a fraction of a hiccup, you just get a little upset. You're like, is it working? Is it okay?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (29:06) No, you're right. They're amazing devices. But what has happened with 5G is that there really haven't been a lot of new applications. The wireless carriers have not been able to monetize the new technology. They've collectively spent, say, $100 billion almost annually on investment in planned equipment for 5G. Revenue's been flat, and costs have gone way up. It's not been a very profitable activity. And consumers have been, it's great, it's nice. They're not clamoring for it. Actually, I had a program on 6G a few months ago with one of the leading 6G experts. I asked naively the question, well, when is 6G going to come, and expected him to say, you 2030 or something like that. And he says, well, it's going to come when 5G becomes profitable.
+
+[Speaker: Shane Tews]
+Shane Tews (30:13) Is that at just the consumer level because at the industrial level I can see why some of that would
+
+[Speaker: Shane Tews]
+make sense, but I also have read reports about it's really gone more to maybe a Bluetooth model? I mean, there are other technologies and many versions of that, and it's sort of they haven't needed the extensive rewiring which they thought they would have to do in that space. So we're still looking at market demand, like waiting for the market to pick up.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (30:40) Exactly. I'm being a little flippant about it. Now, 6G is going to happen.
+
+[Speaker: Shane Tews]
+Shane Tews (30:47) It’s because neither you or I are on TikTok all day long, maybe then you would be more interested
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (30:51) That’s true.
+
+[Speaker: Shane Tews]
+Shane Tews (30:53) I don't know, we've got a producer over here who thinks that she'd like it to go faster. The videos won't get any faster.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (31:02) Part of 6G is actually going to be tied to artificial intelligence, because a lot of what 6G is doing is pushing artificial intelligence further out into the network
+
+[Speaker: Shane Tews]
+Shane Tews (31:16) So they're picking up more efficiency that way? I would think there are many things, but I'd also think that you'd get an amazing amount of efficiency.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (31:22) A lot is putting more computational power, artificial intelligence out into the network instead of just in some centralized hub. And I think that's one of the new innovations of a lot of the 6G technologies. What we've seen in each of the generations of technology has been that technological development has been almost entirely in the private sector and almost entirely private sector-driven up through 5G. There's a lot of talk about 6G being government-driven in part because that's sort of what China does, but that would be a very big mistake. It's very troubling anytime someone says the solution to something is to get the government involved.
+
+[Speaker: Shane Tews]
+Shane Tews (32:15) I'm glad you brought up artificial intelligence. It also sounds like we've just lost focus on 5G. It's probably swimming along at a certain pace. Nobody ever talks about network upgrades. It's just not something that we think about. And I think back to like Covid and talking to the guys at Comcast and saying like, how did it go? And they're like, actually, there were a bunch of interesting things that we found out. Basically, it balanced itself at load balance because we just had to push more out to the suburbs and less into downtown areas. Right.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (32:44) Balanced networks, so there's a lot more uplink because everyone's doing video
+
+[Speaker: Shane Tews]
+Shane Tews (32:48)
+
+[Speaker: Shane Tews]
+Yeah, and they just had to figure out how to tweak all of that load in a way that was still really we had no Internet systems in the United States that fell down. Europe would still run on DSL, and it had some challenges. So, I see the market demands, but I think it's gonna be interesting. It's also application-driven so that makes the big difference. Lead us out of this conversation with what do you have on the horizon? You mentioned you have another piece you're working on. You didn't sound like you wanted to go to the CBO route, so I was gonna leave that one alone, but. You're gonna rant about CBO today?
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (33:29) No, I'm not gonna. No, not today. What I have on the rise. I'm coming up with a textbook on communications law.
+
+[Speaker: Shane Tews]
+Shane Tews (33:39) Oh, that's awesome. All these people in town that we know who went to a Catholic university, should they go revamp and just make sure that their law degrees are relevant? They all know it.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (33:49) I've got a lot of other things going on.
+
+[Speaker: Shane Tews]
+Shane Tews (33:51) Okay, well good. Well, thank you so much for being a guest today. I learned a lot. I'm sure that our listeners did too.
+
+[Speaker: Speaker not identified]
+Harold Furchtgott Roth (34:00) Thank you so much for having me on.
+
+[Speaker: Shane Tews]
+Shane Tews (34:05) Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in. We'll see you on the next episode of Explain to Shane.

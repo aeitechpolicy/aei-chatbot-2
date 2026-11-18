@@ -1,8 +1,8 @@
 PAGE_TITLE: 
-	Borderless Banking: How Crypto Cuts Through Red Tape (with Candace Kelly) | American Enterprise Institute - AEI
+	Borderless Banking: How Crypto Cuts Through Red Tape (with Candace Kelly)
 
+[Speaker: Introduction / editorial context]
 As the world becomes increasingly interconnected economically, blockchain-based financial networks offer new solutions for facilitating seamless international trade, remittances, and humanitarian aid. What specific advantages do blockchain-based financial networks offer over traditional systems? As global economic interconnectivity increases, what role can blockchain technology play in developing a more robust and efficient infrastructure for cross-border payments?
-Shane
-interviews
-Candace Kelly
-, Chief Legal Officer of the Stellar Development Foundation, on the latest episode of Explain to Shane. They discuss how blockchain-based payment networks like Stellar are poised to step in and facilitate cross-border transactions when traditional banking falters.
+
+[Speaker: Introduction / editorial context]
+Shane interviews Candace Kelly, Chief Legal Officer of the Stellar Development Foundation, on the latest episode of Explain to Shane. They discuss how blockchain-based payment networks like Stellar are poised to step in and facilitate cross-border transactions when traditional banking falters.

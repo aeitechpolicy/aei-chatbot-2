@@ -1,124 +1,59 @@
 PAGE_TITLE: 
-	Re-Thinking Spectrum Sharing to Enable a 5G Future: Highlights from My Conversation with Peter Rysavy | American Enterprise Institute - AEI
+	Re-Thinking Spectrum Sharing to Enable a 5G Future: Highlights from My Conversation with Peter Rysavy
 
-The radio airwaves that power wireless technologies—known as
-spectrum—are a finite but critical resource. Tailoring spectrum toward its best
-use often entails industry and government sharing airwaves with one another, a
-process that has proven complicated as historical use does not always equate to
-the best current use of spectrum assets. And, with the advent of 5G wireless,
-the stakes are higher than ever.
-On the latest episode of
-Explain
-to Shane
-, I sat down with
-Peter Rysavy
-to analyze potential spectrum sharing
-solutions and discuss how 5G policy has played out across different industries
-and government agencies. Peter is president of
-Rysavy Research, LLC
-, a
-consulting firm that has specialized in computer networking and wireless
-technology since 1993. He recently published a
-series of articles
-and slide decks
-on the basics of spectrum sharing, along with advanced
-concepts that draw on past examples to demonstrate the complexity—and
-importance—of the spectrum sharing process.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: What
-exactly is spectrum sharing and why are we debating it?
-Peter Rysavy: Spectrum sharing is a very broad concept. In
-fact, all spectrum is shared. It’s really how you share it that is the topic of
-the day. Geographic sharing is simple. You use spectrum in one country; you use
-the same spectrum somewhere else. But a much more complex form of sharing is,
-for example, 5G and Wi-Fi sharing the same unlicensed spectrum band. That is a
-more complicated problem for which the solution is very specific to those
-systems. Citizens Broadband Radio Service is another example of spectrum
-sharing where cellular networks can share the same spectrum with Department of
-Defense radar systems.
-So the real question is: How do we take the know-how we have
-today and apply it to new scenarios? Are there off-the-shelf solutions that
-will allow us to share spectrum between different types of systems in the
-future?
-What are some lessons
-we’ve learned on licensed versus unlicensed spectrum? The theory of unlicensed
-is lovely, but I get the sense that it’s hard to plan around.
-Both unlicensed and licensed play an extremely important
-role. There’s a huge amount of Wi-Fi deployment, but Wi-Fi doesn’t solve
-everything. You can’t get ubiquitous coverage like you do with cellular. With a
-Wi-Fi approach, what we really need is a balanced amount of spectrum that’s
-available for Wi-Fi and a corresponding amount for cellular. In recent years,
-we’ve made more spectrum available for Wi-Fi than for cellular. Currently, I
-would say that we’re in a bit of an unbalanced situation due to the 6 gigahertz
-(GHz) allocation for Wi-Fi.
-Both Wi-Fi and cellular play an important role in our lives.
-We’re used to our devices being able to seamlessly switch between the two—Wi-Fi
-in our homes and cellular outside. It’s this combination that is essential for
-people’s day-to-day experience.
-What should we be
-doing now on spectrum pipeline since the chairwoman of the Federal
-Communications Commission (FCC) recently notified Congress that we don’t have
-one?
-People are innovating and coming up with new applications.
-The amount of data that the average person consumes is growing 30–40 percent
-per year and will continue to do so. The applications of the future—virtual
-reality, the metaverse, cloud gaming, industrial Internet of Things—are going
-to consume more data. If we want to use fixed wireless access to address the
-digital divide, then we need more spectrum for that.
-We can only increase network capacity using three tools. One
-is to densify the network with more cell sites, which is happening as quickly
-as feasible. We can also increase the spectral efficiency of the technology, which
-is happening as quickly as possible with smart antennas, massive input, massive
-output (MIMO), and 5G. But ultimately, we need more spectrum. Those three in
-combination provide the increases in capacity that allow us to address all the
-new use cases that are coming.
-MIMO refers to a large array of antennas. Today, 64
-transmit/64 receive is a typical configuration at base stations. That allows
-the network to dynamically send radio beams to specific users and increases the
-efficiency of the network.
-There’s been a
-challenge in Washington, DC, where the aviation industry somehow did not
-realize 5G was coming online while the rest of the world completely knew about
-it. What’s going on there?
-The aviation situation is very unfortunate. In 2003, the
-World Radio Communications Conference identified mid-band frequencies (C-band)
-as a future cellular network. So we had 19 years to get ready for this, but we
-didn’t heed the warning. In 2016, the EU began a plan to make those frequencies
-available for cellular networks. In 2017, the FCC began its C-band process
-notifying everybody that these frequencies are going to be used for cellular,
-so everybody needs to get ready and share their concerns if they have any.
-Then in 2022, the aviation industry basically said, “We
-think there’s a problem.” That problem is being addressed and we are making
-progress. One of the problems is that some aircraft altimeters are designed
-without any filtering. Basically, they can receive radio energy well outside of
-the band that the altimeters were designed for (4.2–4.4 GHz).
-Yet, it’s a theoretical problem based on worst-case
-scenarios and worst-case assumptions. Some 53 countries are using mid-band
-frequencies for cellular systems, and so far there hasn’t been a single
-reported real-world incident of altimeters adversely failing. Studies addressing
-the issue are encouraging. There is a test bed in Colorado where base stations are
-installed for the specific test’s purposes. Helicopters fly around with
-sensitive measurement equipment, measuring the energy of the base stations at
-different altitudes and distances, and the altimeters are likewise being
-tested.
-While we don’t have any final results yet, the National
-Telecommunications and Information Administration indicated that a detailed
-report would be available in August. There was some encouraging news that the
-base station equipment was performing exactly as it was supposed to. It had great
-filtering on its frequencies, meaning that by the time you got to C-band
-frequencies, there was virtually no radio energy from the 5G systems.
-However, there is at least one altimeter identified that can
-receive radio energy all the way down to 3.4 GHz—which is important because
-that’s exactly the radio band that other countries are using. So the way I look
-at this is: Either this is a problem globally, or it’s not a problem anywhere. And
-so far, the US seems to be the only country truly concerned about this.
+[Speaker: Introduction / editorial context]
+The radio airwaves that power wireless technologies—known as spectrum—are a finite but critical resource. Tailoring spectrum toward its best use often entails industry and government sharing airwaves with one another, a process that has proven complicated as historical use does not always equate to the best current use of spectrum assets. And, with the advent of 5G wireless, the stakes are higher than ever.
+
+[Speaker: Introduction / editorial context]
+On the latest episode of Explain to Shane, I sat down with Peter Rysavy to analyze potential spectrum sharing solutions and discuss how 5G policy has played out across different industries and government agencies. Peter is president of Rysavy Research, LLC, a consulting firm that has specialized in computer networking and wireless technology since 1993. He recently published a series of articles and slide decks on the basics of spectrum sharing, along with advanced concepts that draw on past examples to demonstrate the complexity—and importance—of the spectrum sharing process.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: What exactly is spectrum sharing and why are we debating it?
+
+[Speaker: Peter Rysavy]
+Peter Rysavy: Spectrum sharing is a very broad concept. In fact, all spectrum is shared. It’s really how you share it that is the topic of the day. Geographic sharing is simple. You use spectrum in one country; you use the same spectrum somewhere else. But a much more complex form of sharing is, for example, 5G and Wi-Fi sharing the same unlicensed spectrum band. That is a more complicated problem for which the solution is very specific to those systems. Citizens Broadband Radio Service is another example of spectrum sharing where cellular networks can share the same spectrum with Department of Defense radar systems.
+
+[Speaker: Peter Rysavy]
+So the real question is: How do we take the know-how we have today and apply it to new scenarios? Are there off-the-shelf solutions that will allow us to share spectrum between different types of systems in the future?
+
+[Speaker: Peter Rysavy]
+What are some lessons we’ve learned on licensed versus unlicensed spectrum? The theory of unlicensed is lovely, but I get the sense that it’s hard to plan around.
+
+[Speaker: Peter Rysavy]
+Both unlicensed and licensed play an extremely important role. There’s a huge amount of Wi-Fi deployment, but Wi-Fi doesn’t solve everything. You can’t get ubiquitous coverage like you do with cellular. With a Wi-Fi approach, what we really need is a balanced amount of spectrum that’s available for Wi-Fi and a corresponding amount for cellular. In recent years, we’ve made more spectrum available for Wi-Fi than for cellular. Currently, I would say that we’re in a bit of an unbalanced situation due to the 6 gigahertz (GHz) allocation for Wi-Fi.
+
+[Speaker: Peter Rysavy]
+Both Wi-Fi and cellular play an important role in our lives. We’re used to our devices being able to seamlessly switch between the two—Wi-Fi in our homes and cellular outside. It’s this combination that is essential for people’s day-to-day experience.
+
+[Speaker: Shane Tews]
+What should we be doing now on spectrum pipeline since the chairwoman of the Federal Communications Commission (FCC) recently notified Congress that we don’t have one?
+
+[Speaker: Peter Rysavy]
+People are innovating and coming up with new applications. The amount of data that the average person consumes is growing 30–40 percent per year and will continue to do so. The applications of the future—virtual reality, the metaverse, cloud gaming, industrial Internet of Things—are going to consume more data. If we want to use fixed wireless access to address the digital divide, then we need more spectrum for that.
+
+[Speaker: Peter Rysavy]
+We can only increase network capacity using three tools. One is to densify the network with more cell sites, which is happening as quickly as feasible. We can also increase the spectral efficiency of the technology, which is happening as quickly as possible with smart antennas, massive input, massive output (MIMO), and 5G. But ultimately, we need more spectrum. Those three in combination provide the increases in capacity that allow us to address all the new use cases that are coming.
+
+[Speaker: Peter Rysavy]
+MIMO refers to a large array of antennas. Today, 64 transmit/64 receive is a typical configuration at base stations. That allows the network to dynamically send radio beams to specific users and increases the efficiency of the network.
+
+[Speaker: Shane Tews]
+There’s been a challenge in Washington, DC, where the aviation industry somehow did not realize 5G was coming online while the rest of the world completely knew about it. What’s going on there?
+
+[Speaker: Peter Rysavy]
+The aviation situation is very unfortunate. In 2003, the World Radio Communications Conference identified mid-band frequencies (C-band) as a future cellular network. So we had 19 years to get ready for this, but we didn’t heed the warning. In 2016, the EU began a plan to make those frequencies available for cellular networks. In 2017, the FCC began its C-band process notifying everybody that these frequencies are going to be used for cellular, so everybody needs to get ready and share their concerns if they have any.
+
+[Speaker: Peter Rysavy]
+Then in 2022, the aviation industry basically said, “We think there’s a problem.” That problem is being addressed and we are making progress. One of the problems is that some aircraft altimeters are designed without any filtering. Basically, they can receive radio energy well outside of the band that the altimeters were designed for (4.2–4.4 GHz).
+
+[Speaker: Peter Rysavy]
+Yet, it’s a theoretical problem based on worst-case scenarios and worst-case assumptions. Some 53 countries are using mid-band frequencies for cellular systems, and so far there hasn’t been a single reported real-world incident of altimeters adversely failing. Studies addressing the issue are encouraging. There is a test bed in Colorado where base stations are installed for the specific test’s purposes. Helicopters fly around with sensitive measurement equipment, measuring the energy of the base stations at different altitudes and distances, and the altimeters are likewise being tested.
+
+[Speaker: Peter Rysavy]
+While we don’t have any final results yet, the National Telecommunications and Information Administration indicated that a detailed report would be available in August. There was some encouraging news that the base station equipment was performing exactly as it was supposed to. It had great filtering on its frequencies, meaning that by the time you got to C-band frequencies, there was virtually no radio energy from the 5G systems.
+
+[Speaker: Peter Rysavy]
+However, there is at least one altimeter identified that can receive radio energy all the way down to 3.4 GHz—which is important because that’s exactly the radio band that other countries are using. So the way I look at this is: Either this is a problem globally, or it’s not a problem anywhere. And so far, the US seems to be the only country truly concerned about this.

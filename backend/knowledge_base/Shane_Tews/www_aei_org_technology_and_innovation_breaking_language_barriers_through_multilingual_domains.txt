@@ -1,35 +1,71 @@
 PAGE_TITLE: 
-	Breaking Language Barriers Through Multilingual Domains | American Enterprise Institute - AEI
+	Breaking Language Barriers Through Multilingual Domains
 
+[Speaker: Introduction / editorial context]
 Domain names act as the backbone of the internet, but as millions of users worldwide use it, many non-Latin script languages face barriers to fully accessing the internet. While multilingual domain names are technically possible, limited support across systems and platforms has made true language inclusion an ongoing challenge—and a key issue for global digital equity.
-Ram Mohan is the chief strategy officer of Identity Digital, an organization that seeks to expand and connect the online world through top-level domains and advanced technology. In the latest episode of
-Explain to Shane
-, he brings decades of experience to discuss this and more.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Ram Mohan is the chief strategy officer of Identity Digital, an organization that seeks to expand and connect the online world through top-level domains and advanced technology. In the latest episode of Explain to Shane, he brings decades of experience to discuss this and more.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: You’ve talked about the challenges of getting non-Latin scripts like Cyrillic and Arabic represented in domain names and getting applications to recognize them, so you are working with the Coalition on Digital Impact (CODI). What’s going on with that and who’s involved?
-Ram Mohan:
-A couple of years ago, I came to the realization that linguistic diversity and digital inclusion are no longer a technology problem. It is actually a human problem. It is a problem that requires policymakers. It requires educators. It requires the industry to come together because if you are a business and if you want to reach somebody in Sub-Saharan Africa, they speak a language that probably is not available in Google Translate. It’s probably not available in ChatGPT.
+
+[Speaker: Ram Mohan]
+Ram Mohan: A couple of years ago, I came to the realization that linguistic diversity and digital inclusion are no longer a technology problem. It is actually a human problem. It is a problem that requires policymakers. It requires educators. It requires the industry to come together because if you are a business and if you want to reach somebody in Sub-Saharan Africa, they speak a language that probably is not available in Google Translate. It’s probably not available in ChatGPT.
+
+[Speaker: Ram Mohan]
 How do you reach that population? How do you get them to understand your products? How do you get them to understand your services? That is what the Coalition on Digital Impact is trying to do. It’s bringing together those who are doing the last step, the last mile of connecting the unconnected. They have needs. They need to be able to reach those populations in their own languages, but they don’t know how to, or they don’t have the tools on how to do that.
+
+[Speaker: Ram Mohan]
 At the same time, there are organizations like the IETF, like the Unicode Consortium, that are building tools, building frameworks, and their mission is focused on building those tools and just putting them out there. But where is the place that connects these folks together, that gets those who supply the tools and supply the systems with those who need the tools and need the systems? We need a coalition that gets them together. If you do that and if you get that coalition working well, the impact you will have on human beings should be amazing because, finally, people will be able to navigate the internet in their own language.
+
+[Speaker: Shane Tews]
 We have a similar challenge with AI because it’s still very English-based. Are there tools that are starting to combine and come together to help bridge this gap?
+
+[Speaker: Ram Mohan]
 Large language models, by their very definition, require large amounts of data, large amounts of content to learn and train. So as a result, the more you have of it, the better that model is going to be. The most amount of content and information that’s out there is in English. And if you look at the really dominant languages for AI, for GPT engines, it’s English and Chinese: so it’s not even the seven dominant languages. We’re moving down to two languages that things are being trained on.
+
+[Speaker: Ram Mohan]
 If you have, say, let’s take a large language, such as Hindi. It’s an Indian language, with 400 million speakers of that language. But the amount of content that is available is about a tenth of what is available, say, in German. What is a large language model going to do? It’s going to go scan everything that it can about that language, and it’s going to look at it and say, I have a fraction of what I have in German. German is a better language for me to use, so I’m going to have more of my learning and understanding in German than in Hindi, even though there are more speakers of Hindi than German.
+
+[Speaker: Ram Mohan]
 You mentioned earlier the concern about the US controlling the root servers, and now we have the challenge of digital sovereignty, with many governments feeling that they want to have more control over their data and systems. From a cybersecurity perspective, being big is usually better because it’s harder to target.
+
+[Speaker: Shane Tews]
 But you’re bringing up an interesting point about preserving local languages and authenticity. How do we address the concerns of losing localization, while also helping them understand that going too local can be harmful from a security standpoint?
+
+[Speaker: Ram Mohan]
 There is a great deal of strength in expanding and being global. It’s harder to shut you down. It’s harder to restrict a point of view, so there is that power in that. But from a technological point of view, it also provides tremendous resilience. And with the advent of hyperscalers and cloud infrastructure, that has been a huge advancement for the internet.
+
+[Speaker: Ram Mohan]
 But the other side of it, I also agree with you, is that some level of local knowledge and expertise is important because when you get to making everything homogeneous and everything standardized, you end up losing the local authenticity of it. More and more, I think, there is going to be a greater and greater priority for authenticity because the commoditized things are now all standardized or all accessible. So I think as humans, we’re going to be looking for more authentic experiences, and authentic experiences come in your own language, in your own dialect. Authentic experiences don’t always come in just a generic standardized format.
+
+[Speaker: Ram Mohan]
 We have a new round of new top level domains (TLDs) coming up, and there’s still focus on security challenges. You brought up bulk registrations, sometimes legitimate for brand protection, but other times used for scamming and spam.
+
+[Speaker: Shane Tews]
 With AI making phishing more sophisticated, what role do you see the registries and the registrars playing in helping combat these threats? Are you working in that area collectively?
+
+[Speaker: Ram Mohan]
 We are, we’re doing a lot of work in that area. In fact, the registries and the registrars have just put a policy proposal inside the ICANN area, Shane, to look at. There is a particular problem that is happening now. There are a few bad actors who are registering tens of thousands of names, and these are names that, you know, all look legitimate, but they’re all spam names. And what they’re doing is they’re using it to send toll road scams. They’re sending, you know, a note to you saying your EZ Pass account is overdue. And that yields millions of dollars of fraud money to the guys who are perpetrating it.
+
+[Speaker: Ram Mohan]
 Underneath all of that, they’re using domain names. And they are registering 10,000 domain names, all one letter, one number apart from each other. And the way the system works right now is, you find one scam, you send a complaint, and that one domain name is then acted upon. But in the meantime, the other 9,999 domains are left untouched. If you look at it, you could look at it and say, come on, here is this huge long string. It has been used in a bad way. At least put a watch on these other 10,000.
+
+[Speaker: Ram Mohan]
 So that’s one of the things that the registries and registrars are working together to say, hey, there ought to be a mechanism that allows for these names that look suspicious to be tagged in that way and to be held, right, rather than just addressing them only after the abuse has already happened.
+
+[Speaker: Shane Tews]
 Let’s close with the future, knowing new TLDs are on the horizon and given your company name, Identity Digital, where should we be looking for innovation in this space? What are you thinking about when you look 5, 10 years out? Are we just out of the baby steps into a whole new world when it comes to what you guys are working on?
+
+[Speaker: Ram Mohan]
 I think that this is an exciting era. There’s going to be new TLDs, but there’s really going to be new digital identities. And it’s not only in the domain name space. There are other spaces where people are exploring identities. But what they realize when they create identities in those spaces is that if you want it to be ubiquitous, if you want it to just work everywhere automatically, it’s in the DNS; it’s in the domain name system; and it’s best expressed using domain names. And those domain names have to be accessible. They have to be inclusive. They have to be available in your own language. All of those are essential parts of it.
+
+[Speaker: Ram Mohan]
 I’m really optimistic about where we’re going. I think that there is space for a lot more extensions on the Internet for people to express themselves and to be their authentic digital selves. And there are many ways to do that online. And I think top-level domains are one great way to do that. And not just top-level domains in English, but top-level domains in your own language, or second-level or other domain names and website content in your own language.
+
+[Speaker: Ram Mohan]
 I think there is great potential there. And the other part that I’m really excited about is the work that CODI and universal acceptance are doing, getting digital inclusion, getting language as a core component of inclusion. This dream that you can navigate the Internet in your own language, I think, it is going to come to life in our lifetimes in the next few years. I think there is a huge amount of potential there. And I think AI is going to be a huge auxiliary to all of these things.

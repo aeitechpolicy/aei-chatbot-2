@@ -1,36 +1,71 @@
 PAGE_TITLE: 
-	Is an Interagency Kerfuffle Between the FCC and NOAA a Threat to the Future of 5G Wireless? | American Enterprise Institute - AEI
+	Is an Interagency Kerfuffle Between the FCC and NOAA a Threat to the Future of 5G Wireless?
 
+[Speaker: Introduction / editorial context]
 The Federal Communications Commission (FCC) recently completed an auction for 24 GHz spectrum that telecommunications carriers will use primarily for wireless backhaul for their 5G networks. In almost every other country that is deploying 5G networks, 24 GHz is among the spectrum bands most critical to their success. Although the auction is over, theNational Oceanic and Atmospheric Administration’s (NOAA’s) National Weather Service and the NASA have raised concerns and publicly criticized the FCC for conducting the auction. To explore NOAA’s concerns with the 24 GHz auction and how they may impact the rollout of 5G in the US, I recently interviewed telecommunications expert Joel Thayer, policy counsel for ACT | The App Association. Here are some highlights from our discussion:
+
+[Speaker: Shane Tews]
 Shane Tews: Before we get into the weeds on the recent interagency kerfuffle between NOAA and the FCC regarding the FCC’s 24 GHz auction, I wanted to ask, what is 5G? And what is the FCC’s role in its rollout?
-Joel Thayer: Generally, 5G, at this stage, is merely a marketing term. Practically, 5G seeks to facilitate three key goals: 1) faster broadband speeds, 2) lower consumer costs, and 3) more interconnectivity. However, these outcomes aren’t going to happen magically. 5G is going to require a slew of different wireless infrastructure schemes and wide swaths of radio and microwave spectrum to accomplish these goals. To its credit, the FCC developed its
-5G FAST Plan
-to further US leadership in the wireless space, but now some unexpected regulators have appeared to disrupt 5G’s path forward.
-Shane Tews:  How important is the 24 GHz band to the deployment of 5G?
-Joel Thayer: Very! The FCC opening up 24 GHz comes from the position that your smartphone should be as mobile as you are. The National Telecommunications and Information Administration (NTIA) recognized the 24 GHz band as a “
-key focus
-” for the 5G landscape.
-Regional and smaller carriers
-could use the 24 GHz band to leverage millimeter waves in adjacent bands to facilitate point-to-multipoint connectivity, which can help them compete with the larger service providers.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Generally, 5G, at this stage, is merely a marketing term. Practically, 5G seeks to facilitate three key goals: 1) faster broadband speeds, 2) lower consumer costs, and 3) more interconnectivity. However, these outcomes aren’t going to happen magically. 5G is going to require a slew of different wireless infrastructure schemes and wide swaths of radio and microwave spectrum to accomplish these goals. To its credit, the FCC developed its 5G FAST Plan to further US leadership in the wireless space, but now some unexpected regulators have appeared to disrupt 5G’s path forward.
+
+[Speaker: Shane Tews]
+Shane Tews: How important is the 24 GHz band to the deployment of 5G?
+
+[Speaker: Joel Thayer]
+Joel Thayer: Very! The FCC opening up 24 GHz comes from the position that your smartphone should be as mobile as you are. The National Telecommunications and Information Administration (NTIA) recognized the 24 GHz band as a “key focus” for the 5G landscape. Regional and smaller carriers could use the 24 GHz band to leverage millimeter waves in adjacent bands to facilitate point-to-multipoint connectivity, which can help them compete with the larger service providers.
+
+[Speaker: Shane Tews]
 Shane Tews: Can you explain how point-to-multipoint connectivity works?
-Joel Thayer:  These types of microwaves — the wavelengths, not the kitchen appliance — like 24 GHz, can provide last-mile wireless coverage to ensure that your experience on apps and other mobile services remain uninterrupted when bouncing from place to place. 24 GHz will
-be particularly helpful
-to enhance apps that require a high-range spectrum (e.g., virtual reality, 3-D video, and streaming applications), especially in places where large swaths of spectrum in traditional bands are unavailable.
+
+[Speaker: Joel Thayer]
+Joel Thayer: These types of microwaves — the wavelengths, not the kitchen appliance — like 24 GHz, can provide last-mile wireless coverage to ensure that your experience on apps and other mobile services remain uninterrupted when bouncing from place to place. 24 GHz will be particularly helpful to enhance apps that require a high-range spectrum (e.g., virtual reality, 3-D video, and streaming applications), especially in places where large swaths of spectrum in traditional bands are unavailable.
+
+[Speaker: Shane Tews]
 Shane Tews: Will machine-to-machine devices take advantage of this particular band of spectrum, or is its use limited to consumer applications?
+
+[Speaker: Joel Thayer]
 Joel Thayer: It will include machine-to-machine applications, too. Outside of consumer-based uses, this spectrum broadens 5G networks to perform life-saving services that require many points of connections, such as telemedicine or assisting first responders. This is why opening up this spectrum is so crucial to the success of 5G.
+
+[Speaker: Shane Tews]
 Shane Tews: When did the idea for this auction process for transitioning the 24 GHz spectrum space begin at the FCC? Is it a recent idea?
-Joel Thayer:  No, the FCC had been discussing this since 2007.
+
+[Speaker: Joel Thayer]
+Joel Thayer: No, the FCC had been discussing this since 2007.
+
+[Speaker: Shane Tews]
 Shane Tews: Why are NOAA and NASA at odds with FCC on this important issue that will affect the success of 5G in the US?
-Joel Thayer: NOAA and NASA have two primary concerns with the FCC’s recent auction: 1) the potential for harmful interference in adjacent bands (i.e. the 23.6-24 GHz spectrum band) when collecting weather data through the use of microwave sensors measuring atmospheric levels of water vapors, and 2) the alleged procedural breakdown between them and the FCC on its auctioning of blocks of the 24 GHz spectrum band. As for the former concern, there is no reason to believe interference from commercial services will exceed the allowable limits in place now. Moreover, the importance of 24 GHz to 5G is indisputable. If this is truly a technical problem, then these agencies can solve it with technical solutions.
+
+[Speaker: Joel Thayer]
+Joel Thayer: NOAA and NASA have two primary concerns with the FCC’s recent auction: 1) the potential for harmful interference in adjacent bands (i.e. the 23.6-24 GHz spectrum band) when collecting weather data through the use of microwave sensors measuring atmospheric levels of water vapors, and 2) the alleged procedural breakdown between them and the FCC on its auctioning of blocks of the 24 GHz spectrum band. As for the former concern, there is no reason to believe interference from commercial services will exceed the allowable limits in place now. Moreover, the importance of 24 GHz to 5G is indisputable. If this is truly a technical problem, then these agencies can solve it with technical solutions.
+
+[Speaker: Shane Tews]
 Shane: Given that NOAA’s primary complaint is that commercial carriers using 24 GHz will affect its weather service that leverages a band adjacent to 24 GHz, does NTIA have a role in all of this?
-Joel Thayer: Yes. NTIA must coordinate with government incumbents such as NOAA and NASA, and other relevant agencies, to help to develop the US government’s position on 5G to ensure that spectrum bands with government users are protected from interference via commercial services. What’s interesting here is that NTIA
-agreed
-that the 24 GHz block of spectrum is essential to its overall 5G strategy, presumably having taken into account the countervailing interests of incumbent federal agencies like NOAA and NASA.
+
+[Speaker: Joel Thayer]
+Joel Thayer: Yes. NTIA must coordinate with government incumbents such as NOAA and NASA, and other relevant agencies, to help to develop the US government’s position on 5G to ensure that spectrum bands with government users are protected from interference via commercial services. What’s interesting here is that NTIA agreed that the 24 GHz block of spectrum is essential to its overall 5G strategy, presumably having taken into account the countervailing interests of incumbent federal agencies like NOAA and NASA.
+
+[Speaker: Shane Tews]
 Shane Tews: Is there a problem that needs to be solved?
+
+[Speaker: Joel Thayer]
 Joel Thayer: NTIA has found no interference issues for incumbent government users (including NASA and NOAA’s National Weather Service) with the concurrent use of commercial wireless services in its two-year long investigation. Additionally, even after the State Department, the main arbiter of interagency disputes, weighed in and sided with the FCC, these two agencies still disagree with their sister agencies and maintain their objections to the 24 GHz auction.
+
+[Speaker: Shane Tews]
 Shane Tews: The sensor NOAA claimed would be the most affected by stakeholders’ use of 24 GHz — the Conical Scanning Microwave Imager — is not currently in use by NOAA’s National Weather Service, right?
-Joel:  Yes, in fact, there’s no record of the National Weather Service ever using that particular sensor in the way NOAA describes.
+
+[Speaker: Joel Thayer]
+Joel: Yes, in fact, there’s no record of the National Weather Service ever using that particular sensor in the way NOAA describes.
+
+[Speaker: Shane Tews]
 Shane Tews: How does this (or any) interagency dispute affect 5G rollout in the US?
+
+[Speaker: Joel Thayer]
 Joel Thayer: Without the full cooperation of the US government, these 5G networks will be adversely affected and, ultimately, hurt our small business developers who intend to leverage 5G networks to provide their innovative services.
+
+[Speaker: Shane Tews]
 Shane Tews: So, what’s next?
+
+[Speaker: Joel Thayer]
 Joel Thayer: The good news is that the 24 GHz auction is over, and there seems to be little appetite to undo it. However, the Commission intends to open up more spectrum that may have implications for other government incumbents. The important thing here is to make sure that the US keeps its eyes on the prize by making sure that future spectrum auctions help those willing and able to deploy 5G networks and are not encumbered by interagency disputes.

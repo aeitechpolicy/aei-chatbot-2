@@ -25,8 +25,9 @@ export default function ResearchBriefPreview({ brief, onClose }) {
           : part)}
       </li>)}</ul>
       <h4>Sources</h4>
-      <ul>{brief.references.map(({ id, label, url }) => <li key={id}>
+      <ul>{brief.references.map(({ id, label, url, relatedLinks = [] }) => <li key={id}>
         {url ? <a href={url} target="_blank" rel="noopener noreferrer">{label}</a> : label}
+        {relatedLinks.map(link => <React.Fragment key={link.url}> — <a href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a></React.Fragment>)}
       </li>)}</ul>
     </article>
     <footer className="research-dialog-actions">

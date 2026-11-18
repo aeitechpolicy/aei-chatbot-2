@@ -1,10 +1,14 @@
 PAGE_TITLE: 
-	Broadband Network Capacity amid the COVID-19 Pandemic (with Roger Entner) | American Enterprise Institute - AEI
+	Broadband Network Capacity amid the COVID-19 Pandemic (with Roger Entner)
 
-Technology is becoming increasingly relevant to every part of our day-to-day lives; COVID-19 has shown us how necessary it is for our daily functioning. But how does it all work, and what’s coming next? AEI Visiting Fellow
-Shane Tews
-sits down with tech leaders to break down what’s going on behind your screens in the newest addition to the AEI Podcast Network, “Explain to Shane”!
-In our first episode, Shane sits down with
-Roger Entner
-, founder of Recon Analytics and telecom expert. Entner explains why networks are able to handle the load of so many people teleworking amid the coronavirus pandemic.
+[Speaker: Introduction / editorial context]
+Technology is becoming increasingly relevant to every part of our day-to-day lives; COVID-19 has shown us how necessary it is for our daily functioning. But how does it all work, and what’s coming next? AEI Visiting Fellow Shane Tews sits down with tech leaders to break down what’s going on behind your screens in the newest addition to the AEI Podcast Network, “Explain to Shane”!
+
+[Speaker: Introduction / editorial context]
+In our first episode, Shane sits down with Roger Entner, founder of Recon Analytics and telecom expert. Entner explains why networks are able to handle the load of so many people teleworking amid the coronavirus pandemic.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

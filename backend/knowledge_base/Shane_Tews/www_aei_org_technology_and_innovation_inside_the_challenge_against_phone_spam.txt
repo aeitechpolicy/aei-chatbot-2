@@ -1,31 +1,68 @@
 PAGE_TITLE: 
-	Inside the Challenge Against Phone Spam | American Enterprise Institute - AEI
+	Inside the Challenge Against Phone Spam
 
+[Speaker: Introduction / editorial context]
 Behind the growing challenge of robocalls lies a complex digital economy. As our digital footprints grow and our phone numbers become a key aspect of our online identity, providers and regulators seek to restore eroding public trust in telecommunications.
-Leading the battle is
-Dave Stewart
-, Senior Vice President for Somos, a global provider of telephone numbers and identity services.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Leading the battle is Dave Stewart, Senior Vice President for Somos, a global provider of telephone numbers and identity services.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: One key aspect of our communications structure is not so much the device, but the idea that your number is used as an identity. With people using that number for different things, how do we protect and manage that?
+
+[Speaker: Dave Stewart]
 Dave Stewart: Our telephone numbers have become our personal identity. They’re our connection to our digital life. I think we kind of get that conceptually. To bring that down to earth, when you sign up for a new service online, it’s your telephone number they look for. You used to sign up for a service with your email, now it’s your telephone number.
+
+[Speaker: Dave Stewart]
 Businesses are asking for that information, validating that you’re a legitimate consumer, and getting some kind of a profile on you. This helps them address fraud, but also rewards good behavior. If you have a good track record, those records are attached to your telephone number. They’re using that to verify who you are.
+
+[Speaker: Dave Stewart]
 We see this in the US, but it’s the same across the world. Telephone numbers are the one ubiquitous form of numbers around the world. It’s becoming the de facto identity, that connects you with the digital world.
+
+[Speaker: Dave Stewart]
 The key to all digital connections, whether it’s with friends, family, to businesses, is trust. Trusting that that telephone number is who you say you are and that you have some kind of a track record behind that is critical to making this digital world work. There’s research that says that in the US, about 55% of the people trust telecommunications. That’s about the mid-tier for other countries around the world.
+
+[Speaker: Dave Stewart]
 We as consumers are very aware of this, but it impacts businesses as well. Businesses make about 8 billion calls to their customers a month. Seventy percent of people wouldn’t answer a call if we don’t recognize a number, and about the same number of people report missing important calls. We’ve got this trust factor that’s really an issue right now, and it impacts us as consumers, but it also impacts the efficacy of communication from businesses to their customers as well.
+
+[Speaker: Dave Stewart]
 Let’s go to the irritation topic that you brought up: the robocalls. I actually did just answer a phone call thinking it was my mom and it was a robocall. It was a local number, so I thought it was somebody I must know.
+
+[Speaker: Dave Stewart]
 They call it spoofing where you can put an originating number into a call. There are actually very legitimate use cases for that. For example, if you’re a business operating here in the US, but you have a call center operating out of India, you want them to be able to call customers using a US number. But, those technologies in the wrong hands can be used in nefarious ways. And we see that often. And, you know, you mentioned that, I had a call yesterday from my doctor’s office, didn’t say who it was, I didn’t have the number in my phone. But it said verified. And I’ve had a couple of those calls now. This one I actually answered, and it was my doctor’s office, so we’re clear.
+
+[Speaker: Shane Tews]
 If I receive a phone call from a number not in my contacts that shows up as ‘verified,’ what does that mean and should I answer it?
+
+[Speaker: Dave Stewart]
 That gets to the core of what we’re talking about. When we talk about the public switched telephone network, PSTN, everyone sort of thinks of that as a monolith of telephone network that we call each other on. Really, it’s a tapestry of networks. It’s individually owned and, more often than not, run for profit. So often, when you’re making a call from the West Coast to the East Coast, that call can transverse two, three, four, or even five networks sometimes. Remember, the telecom industry is a for-profit industry, that’s built on volumes. Often, you’ll hear a term in telecoms: “quad one”. They’re referring to either a cost or revenue that’s 0.00001 per transaction. We’re talking about large volumes and small individual dollar values, but at the end of the day, the industry is built on volumes. For a lot of these network operators, their whole revenue model is built on volume.
+
+[Speaker: Dave Stewart]
 Weeding out the bad guys, trying to identify those bad fraudulent calls, and at the same time, letting the legitimate calls get through to the consumers is like trying to find a needle in a haystack. Every call that they shut down impacts their revenue. If they get a false positive, now they are impacting a business that is legitimately trying to get a hold of a customer.
+
+[Speaker: Shane Tews]
 Is it helpful when I report a call as junk?
+
+[Speaker: Dave Stewart]
 That report is captured by your mobile network operator. 7726 is the industry code for it, which if you look at your keypad, spells spam. The mobile network operator collects that information and they share it with various different players like firewall providers to give them intelligence to try to weed this stuff out. They build reputations around those numbers.
+
+[Speaker: Dave Stewart]
 Here’s another element where it gets tricky: what you consider span might not be what I would consider spam. Or I might have signed up for a service six months ago, now I no longer want that information. If I report it as spam, it is captured, and it gets recorded against the originator of that message.
+
+[Speaker: Shane Tews]
 Where are we headed next? What’s going to be the big thing in 2024?
+
+[Speaker: Dave Stewart]
 Over the next 12 to 24 months we’re really focused on trying to weed out the bad guys. Identify the bad calls, identify the bad texts, weed them out, and stop them from ever reaching the consumer on the other end. The flip side of that is identifying the good guys, those that have been vetted, they can be attested to by someone on the originating end, businesses that use their numbers for calls, for text messages.
+
+[Speaker: Dave Stewart]
 We’re trying to encourage everyone to do the right thing, behave in the right way, go through the steps that we’re asking you to go through, and then build your reputation. It’s up to us as an industry to make sure that there is less friction and the treatment is better for those good actors, as opposed to really focusing on just weeding out the bad ones.
+
+[Speaker: Dave Stewart]
 There was an announcement yesterday from one of the wireless operators who said, for branded calling, here is our partner, here is our provider. But that only solves for their network. From a business standpoint, I’ve now got to go to the other networks to do the same thing. So I think an ecosystem-based framework that allows competition but is consistent in behavior and expectations will make life a lot easier for us as consumers, and becoming educated and understanding some predictability and some consistency.
+
+[Speaker: Dave Stewart]
 I think we’re making progress. It’s very slow and it does require partnership between government and industry. One of the things that we do at Somos, because of our role, because we’re trusted, because we’re neutral, a big part of our role in this ecosystem is bringing those people together. Having that dialogue, sharing that information, and trying to solve for this is what it’s going to take.

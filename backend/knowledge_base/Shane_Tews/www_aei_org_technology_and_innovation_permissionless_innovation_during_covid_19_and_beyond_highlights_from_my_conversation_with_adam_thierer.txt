@@ -1,159 +1,53 @@
 PAGE_TITLE: 
-	‘Permissionless Innovation’ During COVID-19 and Beyond: Highlights from My Conversation with Adam Thierer | American Enterprise Institute - AEI
+	‘Permissionless Innovation’ During COVID-19 and Beyond: Highlights from My Conversation with Adam Thierer
 
-How have regulations stymied the response to the COVID-19
-pandemic? And what explains the intense regulatory scrutiny tech companies
-face? Adam Thierer, technology and innovation policy analyst at the Mercatus
-Center and author of the upcoming book “Permissionless Innovation,” joined me
-on the latest episode of “Explain to Shane” to discuss regulatory hurdles to
-innovation during the current pandemic and in normal times.
-Below is an edited and abridged transcript of our talk. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the Explain to Shane podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane Tews: Today my guest is Adam Thierer, who is a
-senior research fellow at the Mercatus Center at George Mason University, where
-he specializes in innovation, the internet, free speech with a particular focus
-on public policy concerns surrounding emerging technologies. Adam has just
-released his tenth book, focusing on permissionless innovation, which we’re
-going to talk about today. In the middle of COVID-19, let’s talk about what’s
-going on with kind of the practical solutions, and what’s going on during the
-pandemic, and how people are finding solutions outside of government.
-Adam Thierer: It’s been a really remarkable thing to watch
-over the past month and a half, the response of governments and the public to
-the COVID pandemic. And there’s been a lot of people who’ve grown increasingly
-frustrated with the slow pace of the responses that we’ve seen by governments
-around the globe, but especially here in the United States. And a lot of people
-have grown so fed up with that slow pace of change that some of them have
-jumped into action and started taking matters into their own hands to try to
-figure out ways to come up with solutions to some of the tough problems that
-we’re confronted with today.
-There are a lot of examples I could go through, but just a
-couple of fun ones is that you started seeing things like, well, what are we
-going to do about the shortage of hand sanitizers or face masks? Well, a lot of
-people jumped into action and started actually trying to produce these things
-independently, regardless of what maybe federal or state regulations said. And
-so distilleries that were usually making beer or whiskey were all of a sudden
-gearing up to make hand sanitizers with alcohol. Various people used a variety
-of methods to make face masks, including old-fashioned methods, just firing up
-old sewing machines, to new ones using maybe 3-D printers. 3-D printers were
-also tapped to make all sorts of medical devices by cobbling together
-off-the-shelf hardware and open source systems, and then maybe replicating
-parts or entire systems to build ready-made ventilators of some sort, or to
-retrofit old breathing apparatuses with various types of new tools to make them
-more functional.
-Everywhere you looked in response to COVID, we started
-finding examples of what I call “evasive entrepreneurialism,” which is a term
-used by economists and political scientists to refer to individuals or
-organizations that don’t go exactly by the book in approaching the various
-types of services, goods, technologies, or whatever else that they want to
-market to the public. In the wake of COVID, we’ve seen that sort of activity
-just absolutely supercharged in a very decentralized, spontaneous fashion.
-Has there been interference by government, or are we seeing
-collaboration along the way?
-Unfortunately there’s still a lack of clarity. The problem
-is that entrepreneurs are always confronted with a crazy quilt of federal,
-state and local policies and red tape that sometimes encumbers their ability to
-start new and exciting ideas or businesses. And that was clearly the case with
-the COVID crisis, where a lot of people started just doing things to be helpful
-and in new and different ways, but were confronted with many archaic
-regulations or public policies that really defied common sense and just
-undermined public health in crazy ways. Not just for hand sanitizers or face
-masks, but a lot of the testing that needed to be done. Early on, there were
-tests that were emerging from labs, like in Seattle and elsewhere, that were
-shown to be pretty effective in diagnosing early on the coronavirus crisis.
-And yet, the FDA and the CDC and other agencies are always
-such slaves to the book. They basically want everything to go by the book to
-the point where they become victims of massive proceduralism over common sense.
-And so even though I think agencies have now started to turn the corner,
-especially the FDA, and become more flexible, it took a lot of effort and it’s
-still not clear what the legality of a lot of these things are. When people
-behave evasively, as I call it, or engage in what I’ve even called
-technological civil disobedience, sometimes it’s not really clear what the law
-currently says or will say in the future about a lot of these activities.
-So we’re waiting to see, now that they didn’t ask for
-permission to move forward, if they get to keep going?
-Yeah, that’s right. And you know what’s going to be really
-interesting, Shane, is that there’s been a huge number of regulations at the
-federal and state level that have been paused or sunset in the wake of the
-COVID crisis in order to make sure that those rules did not encumber a quick
-response by organizations or individuals. So the really interesting question’s
-going to come a couple months down the road, or maybe longer, when we’re
-confronted with the question of how are those rules are going to get put back
-on the books? When does the sunset or the pause stop?
-I recently released a new paper for the Mercatus Center
-along with two of my colleagues, Matt Mitchell and Patrick McLaughlin, that is
-advocating the idea of a fresh start initiative where we ought to collect all
-of the rules and regulations at the federal and state level that have been
-sunset or paused during this crisis and then do an inventory and a study of all
-those rules to say, well, what was our experience both before and after the
-rules were paused? And then maybe come up with a package of reforms or even
-sunsets and say, let’s put it all together in one package and vote up or down
-on it. Say, do we even need these laws anymore? I mean, why do we have crazy
-rules regarding how you manufacture some of these things like hand sanitizers
-or whatever else.
-Tell us about your book. What are you working on, and
-what are we going to learn?
-I alluded to the idea of evasive entrepreneurialism and
-technological civil disobedience. And that’s the subject of my latest book, my
-10th book. And it’s out last Tuesday from the Cato Institute. The full title is
-“Evasive Entrepreneurs and the Future of Governance: How Innovation Improves
-Economies and Governments.” And my book argues that basically everywhere you
-look today, and this was true even before the COVID crisis, average folks are
-utilizing new types of technologies of freedom as I call them, or technologies
-of resistance, to push back against federal, state and local policies that just
-defy common sense, and other times are highly offensive or just completely
-illogical. And sometimes we have a real problem in this country, just reforming
-laws like that, for whatever reason. I could go into all the reasons and I do
-in chapter five of the book.
-But the point is that now our public has been empowered. We
-have new decentralized technological capabilities, a chance to have our voices
-heard. And if our voices aren’t heard, we can sometimes take action. And so
-clearly, new digital technologies have greatly facilitated this, but they’re
-not the only ones. Clearly the internet, smartphones, and computing have been
-huge in empowering the citizenry, but even other things like 3-D printing and
-Bitcoin and the sharing economy and decentralized, personalized medical
-devices, drones, and personal transportation devices. These things are
-revolutionizing the world and leading to a shift, I argue, in the political
-dynamic in some ways. It’s giving people and individuals and corporations more
-leverage when they enter into political negotiations of any sort, because it
-can say like, look, if you have these crazy sort of taxi cab laws or hoteling
-laws, we think we should have more choices. And you know, we’re just going to
-do it.
-You’ve done all the big think for us. We just have to
-read it. So now that you’ve gone through the thought process, what do you want
-to do for action? How do we actually make the change?
-There’s a number of steps I recommend in the book. This book
-is not just about people going out and breaking the law. I actually say that
-that’s not a good idea. We actually need to push for a strategy of
-permissionless innovation, as I called it in my previous book, in the policy
-world. We need to find ways to create a dynamic where innovation is given the
-benefit of the doubt. We give more entrepreneurs the green light to go forth
-with new, exciting ideas. One of the ways we can do that is just to make sure,
-as I’ve already alluded to, that we clean house on occasion. We find a way to
-actually clean up laws and regulations that are archaic and no longer make
-sense through occasional sunsets of some sort. In fact, in my book, I argue for
-something along the lines of what I call Moore’s Law for tech policy, which is
-all your listeners will know what Moore’s Law is.
+[Speaker: Introduction / editorial context]
+How have regulations stymied the response to the COVID-19 pandemic? And what explains the intense regulatory scrutiny tech companies face? Adam Thierer, technology and innovation policy analyst at the Mercatus Center and author of the upcoming book “Permissionless Innovation,” joined me on the latest episode of “Explain to Shane” to discuss regulatory hurdles to innovation during the current pandemic and in normal times.
 
-But basically all businesses these days in our
-modern technological world are expected to like keep their business models
-fresh. Every 18 months to two years, they have to rethink their business
-models. But government never does. And they never clean up. And why not? Why not
-have a provision like Moore’s Law for policy that says every couple of years,
-these provisions are sunset. And then they can always be put back on the books,
-but we ought to be forced to reassess them. Another idea that I have is
-something called the innovator’s presumption, that when we are doing technology
-policymaking, we need to make sure, in the policies or regulations we’re
-writing, that the benefit of the doubt is given to innovators. And it should
-say that unless there’s a compelling case made by the agency that we should
-stop new types of progress, innovators should be presumably allowed to go forth
-and do it instead of having to come and ask for a blessing to be free from some
-old preexisting regulatory regime.
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to the podcast here and read our full discussion here. You can also subscribe to the Explain to Shane podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: Today my guest is Adam Thierer, who is a senior research fellow at the Mercatus Center at George Mason University, where he specializes in innovation, the internet, free speech with a particular focus on public policy concerns surrounding emerging technologies. Adam has just released his tenth book, focusing on permissionless innovation, which we’re going to talk about today. In the middle of COVID-19, let’s talk about what’s going on with kind of the practical solutions, and what’s going on during the pandemic, and how people are finding solutions outside of government.
+
+[Speaker: Adam Thierer]
+Adam Thierer: It’s been a really remarkable thing to watch over the past month and a half, the response of governments and the public to the COVID pandemic. And there’s been a lot of people who’ve grown increasingly frustrated with the slow pace of the responses that we’ve seen by governments around the globe, but especially here in the United States. And a lot of people have grown so fed up with that slow pace of change that some of them have jumped into action and started taking matters into their own hands to try to figure out ways to come up with solutions to some of the tough problems that we’re confronted with today.
+
+[Speaker: Adam Thierer]
+There are a lot of examples I could go through, but just a couple of fun ones is that you started seeing things like, well, what are we going to do about the shortage of hand sanitizers or face masks? Well, a lot of people jumped into action and started actually trying to produce these things independently, regardless of what maybe federal or state regulations said. And so distilleries that were usually making beer or whiskey were all of a sudden gearing up to make hand sanitizers with alcohol. Various people used a variety of methods to make face masks, including old-fashioned methods, just firing up old sewing machines, to new ones using maybe 3-D printers. 3-D printers were also tapped to make all sorts of medical devices by cobbling together off-the-shelf hardware and open source systems, and then maybe replicating parts or entire systems to build ready-made ventilators of some sort, or to retrofit old breathing apparatuses with various types of new tools to make them more functional.
+
+[Speaker: Adam Thierer]
+Everywhere you looked in response to COVID, we started finding examples of what I call “evasive entrepreneurialism,” which is a term used by economists and political scientists to refer to individuals or organizations that don’t go exactly by the book in approaching the various types of services, goods, technologies, or whatever else that they want to market to the public. In the wake of COVID, we’ve seen that sort of activity just absolutely supercharged in a very decentralized, spontaneous fashion.
+
+[Speaker: Shane Tews]
+Has there been interference by government, or are we seeing collaboration along the way?
+
+[Speaker: Adam Thierer]
+Unfortunately there’s still a lack of clarity. The problem is that entrepreneurs are always confronted with a crazy quilt of federal, state and local policies and red tape that sometimes encumbers their ability to start new and exciting ideas or businesses. And that was clearly the case with the COVID crisis, where a lot of people started just doing things to be helpful and in new and different ways, but were confronted with many archaic regulations or public policies that really defied common sense and just undermined public health in crazy ways. Not just for hand sanitizers or face masks, but a lot of the testing that needed to be done. Early on, there were tests that were emerging from labs, like in Seattle and elsewhere, that were shown to be pretty effective in diagnosing early on the coronavirus crisis.
+
+[Speaker: Adam Thierer]
+And yet, the FDA and the CDC and other agencies are always such slaves to the book. They basically want everything to go by the book to the point where they become victims of massive proceduralism over common sense. And so even though I think agencies have now started to turn the corner, especially the FDA, and become more flexible, it took a lot of effort and it’s still not clear what the legality of a lot of these things are. When people behave evasively, as I call it, or engage in what I’ve even called technological civil disobedience, sometimes it’s not really clear what the law currently says or will say in the future about a lot of these activities.
+
+[Speaker: Shane Tews]
+So we’re waiting to see, now that they didn’t ask for permission to move forward, if they get to keep going?
+
+[Speaker: Adam Thierer]
+Yeah, that’s right. And you know what’s going to be really interesting, Shane, is that there’s been a huge number of regulations at the federal and state level that have been paused or sunset in the wake of the COVID crisis in order to make sure that those rules did not encumber a quick response by organizations or individuals. So the really interesting question’s going to come a couple months down the road, or maybe longer, when we’re confronted with the question of how are those rules are going to get put back on the books? When does the sunset or the pause stop?
+
+[Speaker: Adam Thierer]
+I recently released a new paper for the Mercatus Center along with two of my colleagues, Matt Mitchell and Patrick McLaughlin, that is advocating the idea of a fresh start initiative where we ought to collect all of the rules and regulations at the federal and state level that have been sunset or paused during this crisis and then do an inventory and a study of all those rules to say, well, what was our experience both before and after the rules were paused? And then maybe come up with a package of reforms or even sunsets and say, let’s put it all together in one package and vote up or down on it. Say, do we even need these laws anymore? I mean, why do we have crazy rules regarding how you manufacture some of these things like hand sanitizers or whatever else.
+
+[Speaker: Shane Tews]
+Tell us about your book. What are you working on, and what are we going to learn?
+
+[Speaker: Adam Thierer]
+I alluded to the idea of evasive entrepreneurialism and technological civil disobedience. And that’s the subject of my latest book, my 10th book. And it’s out last Tuesday from the Cato Institute. The full title is “Evasive Entrepreneurs and the Future of Governance: How Innovation Improves Economies and Governments.” And my book argues that basically everywhere you look today, and this was true even before the COVID crisis, average folks are utilizing new types of technologies of freedom as I call them, or technologies of resistance, to push back against federal, state and local policies that just defy common sense, and other times are highly offensive or just completely illogical. And sometimes we have a real problem in this country, just reforming laws like that, for whatever reason. I could go into all the reasons and I do in chapter five of the book.
+
+[Speaker: Adam Thierer]
+But the point is that now our public has been empowered. We have new decentralized technological capabilities, a chance to have our voices heard. And if our voices aren’t heard, we can sometimes take action. And so clearly, new digital technologies have greatly facilitated this, but they’re not the only ones. Clearly the internet, smartphones, and computing have been huge in empowering the citizenry, but even other things like 3-D printing and Bitcoin and the sharing economy and decentralized, personalized medical devices, drones, and personal transportation devices. These things are revolutionizing the world and leading to a shift, I argue, in the political dynamic in some ways. It’s giving people and individuals and corporations more leverage when they enter into political negotiations of any sort, because it can say like, look, if you have these crazy sort of taxi cab laws or hoteling laws, we think we should have more choices. And you know, we’re just going to do it.
+
+[Speaker: Shane Tews]
+You’ve done all the big think for us. We just have to read it. So now that you’ve gone through the thought process, what do you want to do for action? How do we actually make the change?
+
+[Speaker: Adam Thierer]
+There’s a number of steps I recommend in the book. This book is not just about people going out and breaking the law. I actually say that that’s not a good idea. We actually need to push for a strategy of permissionless innovation, as I called it in my previous book, in the policy world. We need to find ways to create a dynamic where innovation is given the benefit of the doubt. We give more entrepreneurs the green light to go forth with new, exciting ideas. One of the ways we can do that is just to make sure, as I’ve already alluded to, that we clean house on occasion. We find a way to actually clean up laws and regulations that are archaic and no longer make sense through occasional sunsets of some sort. In fact, in my book, I argue for something along the lines of what I call Moore’s Law for tech policy, which is all your listeners will know what Moore’s Law is. But basically all businesses these days in our modern technological world are expected to like keep their business models fresh. Every 18 months to two years, they have to rethink their business models. But government never does. And they never clean up. And why not? Why not have a provision like Moore’s Law for policy that says every couple of years, these provisions are sunset. And then they can always be put back on the books, but we ought to be forced to reassess them. Another idea that I have is something called the innovator’s presumption, that when we are doing technology policymaking, we need to make sure, in the policies or regulations we’re writing, that the benefit of the doubt is given to innovators. And it should say that unless there’s a compelling case made by the agency that we should stop new types of progress, innovators should be presumably allowed to go forth and do it instead of having to come and ask for a blessing to be free from some old preexisting regulatory regime.

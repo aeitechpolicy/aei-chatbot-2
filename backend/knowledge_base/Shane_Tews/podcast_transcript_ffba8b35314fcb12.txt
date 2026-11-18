@@ -1,0 +1,140 @@
+PAGE_TITLE: 
+	Explain to Shane: The Making of Global Telecommunications Policy with Grace Koh and Tricia Paoletta (Part 1) — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI The making of global telecommunications policy with Grace Koh and Tricia Paoletta (Part Episode #7 | June 16, 2020 | Shane Tews, Grace Koh, and Tricia Paoletta
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work and how they shape our social and economic life. Welcome back. Today, we are discussing a very important part of the telecommunications policy planning that is not well understood beyond those who are actually enveloped in the world of the International Telecommunications Union, the United Nations, and a multitude of global conferences on telecom policy that are part of the telecommunications standard process. I have two guests today. Grace Koh was most recently the US ambassador to the ITU's World Radio Telecommunications Conference, known as WRC, in this case WRC 19. Yes, we have an ambassador for communications. Every four years, it's a great opportunity, it's a really cool title, and yes, I'm a bit jealous. Grace represented the United States this past year in Sharm el-Sheikh, Egypt, where she led a 125-member delegation that successfully negotiated outcomes for US spectrum and satellite policy. Before representing the United States, Grace also served as a special assistant to the president for technology, telecom, and cybersecurity policy. In this role, she advised the president and other White House senior staff on matters pertaining to technology policy. Previous to serving in the administration, Grace served as Deputy Chief Counsel to the Subcommittee on Communications and Technology of the Energy and Commerce Committee in the US House of Representatives, where she advised the chairman on telecom and technology policy as well. My other esteemed guest is Tricia Paoletta, while she may not hold the Senate- confirmed title of ambassador, we all know her as the mistress of spectrum. If you need to know anything about Spectrum, Tricia is your go-to source. Tricia is a partner in the law firm of Harris, Wiltshire & Grannis, where she specializes in telecommunications and technology policy. Tricia is considered an expert in telecom and trade policy because she has held so many roles in Washington. She's been a senior advisor at the International Bureau of the FCC [Federal Communications Commission], Director of Telecom and Trade Policy at USTR [United States Trade Representative], working on numerous multilateral and bilateral agreements all around the world. And I met Tricia in her role as the Majority Council of the House Energy and Commerce Committee, where she
+
+[Speaker: Shane Tews]
+kind of scared me a little bit, but I'm really glad that | took the time to get to know her. Both of these ladies have worked in many very lucky law firms and corporations as well. You can go look at their bios and be as impressed as l am. We had so much fun recording this Explain to Shane that we've actually broken it into two podcasts, and l hope you take the time to enjoy them both. So Grace, or Madam Ambassador, as some have called you, and Tricia, who we may just, I don'tknow, l'm going to give you a mistress title, like the Mistress of the Spectrum. We're going to talk about some things that use a lot of acronyms. So l thought for our listeners who may not be as familiar with some of these things, it'Il be easier if we dial into the acronyms here in a second. Can we just start with some of the basics? And really this is like a bingo game. So let's start with the ITU and it's three parts: ITU-T, ITU-D, and ITU-R. Tricia, why don't you lead off, and give us a quick breakdown on what these three sectors are and why they matter.
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: All right, the three sectors of the International Telecommunication Union are, R for radio communications, T for telecommunication standardization and D for development sector. So these are three different sectors where folks around the world, that it is an intergovernmental body, but one in which the private sector is very much engaged, come to discuss those different areas. So Rfor spectrum allocation and rules attendant to the use of radio, D for development and how to help countries deploy broadband and other telecom services in their country, and T to standardization discussions. These three sectors are part of the 150 year plus body. The International Telecommunication Union, which actually was formed before the advent of the United Nations. It was formed out of the conundrum between Germany and France of gee, how do we regulate telegraph wire? We want to have telegraph messages going cross-border, we need to have an international body talk about this. So it was founded, back 150 something years ago. Then when United Nations came along, the ITU was subsumed within it. So right now it is part of the United Nations, but because it predates it, and it's tairly technical, it' s a bit more specialized than some ot your more political- or policy-only UN bodies.
+
+[Speaker: Shane Tews]
+Shane Tews: And as mistress of this spectrum, where do you spend most of your time?
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: I spend most of my time in the radio communications sector.
+
+[Speaker: Shane Tews]
+Shane Tews: So it's the R. The R is very important.
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: The R is where the cool kids spend their time.
+
+[Speaker: Shane Tews]
+Shane Tews: Good to know. And Madam Ambassador, or as we will get familial and call you Grace from here on out, what were you the ambassador of? What is this WRC of which we speak?
+
+[Speaker: Grace Koh]
+Grace Koh: See, this is squarely in Tricia's world, The World Radio Communication Conference, which happens every four years. It's a conference where the 193 national members get together and update the treaty. Yes, there is a treaty that
+
+[Speaker: Grace Koh]
+governs how we avoid interfering with each other's technology, because as we all know, spectrum doesn't respect borders, and how we assign certain frequencies for certain services in order to continue to sort of harmonize that spectrum use. The countries are all required to abide by it, as part of the treaty instrument.
+
+[Speaker: Shane Tews]
+Shane Tews: You just reminded me of a conversation that somebody repeated to me that they had with, it happened to be a Canadian, they re usually really good on this stuff, who didn't understand that Spectrum didn't just end at the border. So l get your point.
+
+[Speaker: Grace Koh]
+Grace Koh: That was probably not an R person.
+
+[Speaker: Shane Tews]
+Shane Tews: No. So the treaty, do we get together every four years and just do a checkup on it and plug in new ideas? What goes on there?
+
+[Speaker: Grace Koh]
+Grace Koh: That would be nice, but then I think a lot of us would be out of work. It's a fascinating process actually. Every four years, they meet and they set the agenda for the next conference four years later. And then during those four years in between each conference, the ITU hosts study groups, essentially people who get together and study whether or not the proposed changes are actually feasible, recommendable, really, desirable. So this is, in this instance, just like giving an example here at WRC 19, we studied for four years between WRC 15 and WRC 19, the feasibility of putting 5G in millimeter wave spectrum. That took up a lot of time in that four-year study cycle. But obviously that's not the only thing that's on the agenda. There's other things like, how to enable things like megaconstellation NGSO, Wi-Fi safety, and maritime radar, et cetera, et cetera. That's how that works, and each country or region comes in with their proposals.
+
+[Speaker: Shane Tews]
+Shane Tews: Interestingly, the ITU, which is currently run by a Chinese national, was the host of the WRC conference late last year. Was that a point of contention at all under 5G considering the political environment we've been in, in this area?
+
+[Speaker: Grace Koh]
+Grace Koh: Well, the ITU is the body that administers the treaty, really. So that conflict is always going to be hosted and run by the II U. I think there was to some degree — there's been a concern, I think generally, in the government about a Chinese national, leading the ITU, generally. There's been some question about that. And I think that that's something that the missions of Geneva, our presence there, is very seemingly aware of and keep a close tab on.
+
+[Speaker: Shane Tews]
+Shane Tews: Our acronym bingo here, so we all know what we're talking about. Later this year is, is something called WTSA or W-T-S-A 20, the World Telecommunication Standard Assembly. What's this one all about?
+
+[Speaker: Grace Koh]
+Grace Koh: This one's hard.
+
+[Speaker: Shane Tews]
+Shane Tews: I'm sorry, like the other one was easy.
+
+[Speaker: Grace Koh]
+Grace Koh: No, but this is exactly it. I mean, it's funny, Tricia, let me know if you think l'm wrong, but the ITU-R at least, has a fairly clear mission, harmonizing our use of Spectrum. ITU-T used to have more of a mission, obviously when telegraph was more important, et cetera. It's currently, I think, reshaping itself, so there's
+
+[Speaker: Grace Koh]
+quite a bit of scope creep in terms of what it thinks it should sort of regulate, if regulate is the right word for an international body. They don't administer a treaty at all in the same way that ITU-R does. Their goal here is to come up with standards to work for them, to figure how to better harmonize, telecommunication standards. Here's another acronym for you. So the world, the IT world considers its ourview IC1, the Intormation Communications lechnology, so it's more than telephones. I think our free market bent in the United States tends to sort of resist the notion that all such technologies need as much regulation. You find the ICT looking to regulate things like internet governance issues.
+
+[Speaker: Shane Tews]
+Shane Tews: Which is always a bone of contention. I know that, we don't have to get into the super details here, but they re looking at a new internet protocol process, which we may get into in another podcast. Ihat's a long topic. So what' s at stake in these? You're saying they like to delve into potentially internet governance, what else are they doing if they end up having this conference?
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: Well, Madam moderator, while Grace considers her answer to that, I do want to jump in. This is where the nationality of the Secretary General of the ITU, the Chinese secretary general, does come into play because he was formerly the director of the telecommunications standards sector, which is the body that is hosting the W-T-S-A or WTSA. This is where you do have some interplay, at least through some US observers' perspective, between his nationality in playing for the home team and Huawei. For instance, when Huawei doesn't win and the industry-driven standards bodies like 3GPP, they often come back for a second bite of the apple at the ITU and have the ITU, or try to have the ITU bless something that Huawei might be throwing into the 3GPP or other mix that Nokia or Ericsson or others bat down. They have a second bite at it. And as Grace suggested, they've been very guilty, generally, the ITU-T folks generally, of mission creep. So it's, ICT is broad, but now they've been getting into artificial intelligence, and quantum computing, and a range of issues. And they've just created more study groups. So, in the R world, you have just five study groups, and then you have a number of working parties under each. In the T world, you have 12 different study groups each with multiple working parties and focus groups. What all that means is there so many meetings around the clock, non-stop that everybody else who's not interested in having the ITU regulate telecom, or ICT on the international level, has to play whack-a-mole. To an extent, it's hard for the United States with our budget, somewhat drained these days, but with our budget and our deep technical sector and our deep public-private history of working together, it's hard for us to stay on top of everything. You can imagine what the rest of the countries, particularly those in the developing world, trying to manage 12 different study groups and working parties and whatever. So at least for the U S perspective, and actually our region as well, I think one of our main goals is to try to streamline the existing structure of the T sector from at least from the 12 different study groups down to eight study groups, just so it's more manageable as well as to prevent this mission creep. And part of the mission creep is pretty scary stuff, but | will leave it at that, while Grace answers your original question.
+
+[Speaker: Shane Tews]
+Shane Tews: Actually, before we get back to the original question, you bring up a really interesting point, which is the way that the US government and the industry interplay with each other in a more, I'll say free market, cause that's my preference, way versus these governments that come in very centralized. Before we even get to that, the part of the challenge is, a lot of this stuff takes, a lot of the conversations take place in the hallways. We know that the people who represent these governments are very smart, well-educated representatives of their governments. They may agree with you in the hallway, but the challenge is when they get behind the microphone, they're there to represent their country. So to use a colloquialism, they basically show up and then they're very well-educated — once they put their team jersey on, sometimes they're out there to just score points and get their jersey dirty. So it's a really interesting dynamic. I'm the one who asks you guys all the time, what do you do for three weeks? Because a lot of these conferences are three weeks long and it's like, well.
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: Four weeks for the WRC.
+
+[Speaker: Shane Tews]
+Shane Tews: My favorite is, you spent a week getting someone nominated for office, which means a lot of parties. Then all the heads of office go home. Then the rest of us kind of get down to like, into the dirt. Then the last week is kind of the sweep up of actually getting things pen to paper for anything that wasn't defined during week two. I don'tknow ifl probably have that all wrong, but that's what it always sounds like to me, which is just a tascinating interplay of all these people. For a second, can we just digress onto how when we use the spectrum of experts that can come to one of these events. Do others do that too? Are our European counterparts and the Five Eyes, do they bring their industry partners in as well.
+
+[Speaker: Grace Koh]
+Grace Koh: Yes, absolutely they do. In fact, when you go and visit - through my travels, attending a variety of the regional conferences, we saw a lot of participation from the private sector all the way throughout. But they don't have the same strength, I think, of voice, as they do maybe in America and in a couple of other places. It's quite vocal, interagency participation, also quite vocal. I think it varies depending on the regime. I think if you have a more centralized and authoritarian regime, there's going to be a clear decision maker. Whereas, I think some place like the United States, you're going to have much more sort of a free flow of ideas until there is some sort of real consensus reached. Definitely at WRC, I think it helped us because we had been through all of the arguments that were going to be raised regardless. We pretty much had a good sense of where the bottom lines were going to be, but it is a serious firalless. You take a lot of body blows as you are going through getting to that
+
+[Speaker: Shane Tews]
+Shane Tews: Most people do not think of international telecommunications, diplomacy, and body blows in the same sentence. That will just give us a lot to think about
+
+[Speaker: Grace Koh]
+Grace Koh: We all came through intact.
+
+[Speaker: Shane Tews]
+Shane Tews: Good, all the body parts are still there, great. Well, why is the international scene so important to tech policy at large? You've got trade, you've got competition...
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: Well, I'Il start, and then Grace can kick in. You need economies of scale in this global interconnected world that we live in. It's no longer sufficient to build a telecommunications switch tor one market. It's a very competitive market. You've got major players and all different — up and down the supply chain throughout the world. The way to compete is to have global addressable markets. As Grace earlier said, spectrum doesn't stop at the border. Data flows hopetully don't stop at the border. If they do, it's tar more expensive. You do need those global economies of scale. You get those by talking to our international partners and international bodies.
+
+[Speaker: Grace Koh]
+Grace Koh: I just want to point out: I think technology and tech policy, to some degree tech trade is becoming more and more weaponized, in a way, for economic and military aggression. That's becoming more of a concern as we're looking at things like cybersecurity and supply chains. So the international scene there also needs to be managed in a way that allows us to get the benefit of international trade and those global markets, but at the same time, protect any national security interests that we have as well.
+
+[Speaker: Shane Tews]
+Shane Tews: That's a really good point.
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: Yeah, and as far as, also, places where we can explain to our partners and our allies, why we do have the positions we have, why we hold certain policy positions relative to technology regulation. It's an educational forum as well.
+
+[Speaker: Grace Koh]
+Grace Koh: We can talk tech policy diplomacy in so many different ways. It's not just at the ITU, although that is probably our most persistent form of engagement or form of, not ritualized, formal engagement. But that US companies doing business with other companies, there are also other diplomatic efforts working through places like the G7 or the, we just joined the G7-Al.
+
+[Speaker: Shane Tews]
+Shane Tews: You're going to have to unpack that. What's the G7 for our acronym bingo.
+
+[Speaker: Grace Koh]
+Grace Koh: Ithink quite honestly, we should probably just touch on these things just because there's just so much there, but the G7 is this international economic organization and it's supposed to be the largest international monetary fund of advanced economies in the world. That consists right now, of Canada, France, Germany, Italy, Japan, the UK, the US.
+
+[Speaker: Shane Tews]
+Shane Tews: Sounds like someone's missing.
+
+[Speaker: Grace Koh]
+Grace Koh: There are a couple missing. That's one sort of place where we can do some cooperation. There are other places as well.
+
+[Speaker: Shane Tews]
+Shane Tews: Well, and that gets to, something I think you Tricia, you touched on, which is the harmonization, and as Grace, you said, the borderless nature of the flow of spectrum. The economy of scale is because just making things for Austria probably wouldn't be cost efficient. I'm just guessing. Maybe Liechtenstein. Is this helping with getting people to understand that they can get together and make things that work across borders and across continents? Is that part of
+
+[Speaker: Shane Tews]
+this?
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: Yeah, absolutely.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. So how does the United States seek to influence our international tech policy? Is this our main avenue here or is there a lot going on in this space? It sounds like there's a lot going on.
+
+[Speaker: Tricia Paoletta]
+Tricia Paoletta: Well this is global, right? The other fora that Grace mentioned, obviously G7 is the G7. Ourtrade negotiations, particularly under this administration, are more bilateral or regional, like the USMCA, but here at the ITU, it's 193 countries. It's the developing world, it's the developed world. So it is a global forum where everybody's going to come, or mostly everybody is going to come, and exchange views or develop standards, develop consistent harmonization of spectrum allocation. So yes, this is a central role. Again, it has the benefit or sometimes disadvantage of being a United Nations body. So this is where the world is supposed to come together and work out their issues. Then on the T side, the standards for telecommunications.
+
+[Speaker: Shane Tews]
+Shane Tews: You just listened to Part One of a great dialogue on international telecom and internet policy with Grace Koh and Trish Paoletta. Please join us for part two, which will air later this week.

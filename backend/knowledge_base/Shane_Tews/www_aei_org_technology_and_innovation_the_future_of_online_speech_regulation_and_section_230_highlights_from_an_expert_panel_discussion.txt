@@ -1,126 +1,53 @@
 PAGE_TITLE: 
-	The Future of Online Speech Regulation and Section 230: Highlights from an Expert Panel Discussion | American Enterprise Institute - AEI
+	The Future of Online Speech Regulation and Section 230: Highlights from an Expert Panel Discussion
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Note: This event and all affiliated content are part of AEI’s Online Speech Project. To learn more about the project, click
-here
-.
-On April 11, AEI hosted an event on how government officials and social media platforms can address online content moderation concerns involving both the First Amendment and
-Section 230 of the Communications Decency Act
-. To kick off the event, I held a one-on-one discussion with former
-Rep. Chris Cox
-(R-CA), who coauthored Section 230; a panel discussion followed with Rep. Cox,
-Daniel Lyons
-and
-Jeffrey A. Rosen
-of AEI, and
-Benjamin Wittes
-of Brookings. Each participant brought a unique perspective to the debate about Section 230’s original intentions, how well the statue has aged in the era of digital information sharing, and what “free speech” online really means.
-Below is an edited and abridged transcript of key highlights from the event, including excerpts of my opening conversation with Rep. Cox. You can re-watch the full event on
-AEI.org
-and read the full transcript
-here
-.
-Rep. Cox on the distinction between Section
-230 and the First Amendment:
-Both have applications in online spaces and are obviously important in their own ways. They intersect. But the First Amendment, if this were a Venn diagram, is inclusive of all; it’s much bigger than Section 230 is.
-Section 230 is a statute that allocates liability in certain circumstances. The First Amendment goes to the entire concept of speech, including what it is, what the government can do when trying to regulate it, what people can do and say, and what the government can or cannot stop private citizens from doing. The First Amendment restrains the government; it’s part of the Bill of Rights.
-When we apply the First Amendment to private platforms in the online environment, the private platforms are not the government—so they are not, by operation of the First Amendment, restrained. Rather, they have rights
-against
-government attempts to restrain them when they exercise their own speech rights, which include what we now think of as content moderation. When someone on the internet says, “I think that Adolf Hitler is really cool, and I think that Adolf Hitler is related to candidate X,” the platform can say, “That’s not happening here; you don’t get to say that,” and the First Amendment gives them that right. It isn’t Section 230 but the First Amendment.
-Rep. Cox on whether state-level attempts to
-ban online content moderation run afoul of the First Amendment:
-Texas and Florida are approaching regulation of online speech and Section 230 from the standpoint that there is too much content moderation on the internet. In other states and in Congress, there is also a significant faction that thinks that there is not enough content moderation.
-Texas is saying that platforms cannot discriminate against user content based on viewpoint. But viewpoint is not really defined in the statute and, of course, if you think about it, everything and everyone expresses a viewpoint of one kind or another. So ultimately we get a little bit too close to the anything-goes model. That was one of the reasons that I wrote this legislation with then-Rep. Ron Wyden (D-OR) in the first place.
-You’ve got to have some—and platforms are entitled to establish these under the First Amendment—rules of the road to have even the most robust political discussion or else all the f-bombs, harassment, ad hominem attacks, and the illogical and immoral overcomes the substance of what people are trying to discuss. If we’re going to have some content moderation standards, the government is the worst person to enforce them. Inevitably, when government is the tool, conservatives used to always come up with that answer.
-The First Amendment is going to protect the platforms in these instances because they are private and thus protected from the action of the government as a regulator. That’s the argument NetChoice made in its lawsuits in
-Texas
-and
-Florida
-, and it was sustained in the first round of litigation in both states. At some point, there’s no question the Supreme Court will become involved in this, but I think it’s likely that the Texas or Florida case will end up there.
-Shane Tews: Daniel, you and William Rau recently published a
-piece
-that talked about Truth Social, Gettr, Gab, Parler, and other self-proclaimed “free-speech-oriented” social media platforms. You argued that platforms like these eventually learn the hard way that some level of content moderation is necessary. Why is that?
-Daniel
-Lyons: The big takeaway is that content moderation is both hard and, to some
-degree, necessary when you’re operating a platform in order to avoid it devolving
-into a cesspool. Much of the promise of a lot of these new social media
-platforms was in response to arguments that traditional social media was
-engaging in too much content moderation, so we needed to create these new
-companies that are all about free speech. The takeaway from these experiments though
-is that you can’t really achieve that Trump-right dream of a social media
-platform free of content moderation.
-It turned
-out there was far too much leeway on these platforms. They quickly learned that
-allowing anybody to post anything at all times quickly turns every social media
-site into 4chan, which is (1) not a place anybody wants to go, and (2) not
-really representative of at least whatever values traditional conservatives would
-want to be promoting. So, all of these companies quickly have run into the
-reality that some moderation is going to be necessary in order to attract and
-keep users. The question isn’t, “Should we engage in content moderation or
-not?” The question is, “What content-moderation policies are we going to be
-engaging in?” And I think it’s a great idea if different companies are
-experimenting with different content-moderation tools because then we as
-consumers have a choice of which platform we want to go to, some of which are
-more generous than others, and which end up providing a different portfolio of
-content available to the information marketplace of Web 2.0.
-Jeff, you’ve asked a number of specific
-questions about Section 230 in different positions you’ve held over the years.
-You seem to take issue with how Section 230 gives companies discretion to
-decide what qualifies as “otherwise objectionable” content worthy of censoring.
-What’s up with that?
-Jeffrey A.
-Rosen: I think there is widespread support for the basic concept that a
-platform is not responsible for things other people post in a general sense. For
-the last 25 years, the litigation that’s arisen hasn’t really been about
-moderation. It was about who was covered, and what types of claims were
-defamatory and what weren’t. Nowadays, the demands really are for taking things
-down. The way the statute is written is largely focused on legal immunity for
-taking illegal things down—or things that are obscene, lewd, lascivious,
-filthy, excessively violent, or harassing. I don’t think there’s tremendous
-controversy about those.
-But then it
-said there would be immunity for taking down “otherwise objectionable” content.
-Well, what is that? Is that anything? Is it totally arbitrary? Does it mean a
-platform could take things down because it doesn’t want posts from Jewish
-people? To me, that’s a statutory problem that needs to be addressed in some
-manner. I think there needs to be some refinement that creates actual standards
-for there to be immunity. I would say the phrase “otherwise objectionable”
-either needs to be construed consistently with the illegal-type behaviors that
-are in the statute, or it needs to be changed in some manner. I would not
-delete that portion of Section 230 altogether, but I think some refinements are
-in order and that the phrase “otherwise objectionable” is too carte blanche.
-We should
-remember that removing immunity does not automatically create liability. There
-still has to be some other valid claim that the moderation activity is improper
-in some way; it could be a breach of contract under the terms of service or
-something else. But taking away the immunity would allow some experimentation
-on regulatory approaches. Why would you instead give unfettered immunity for
-taking down literally anything the platform owner wants?
-Ben, in the era of disinformation, are they
-any reforms to Section 230 that you’d consider valuable or useful?
-Benjamin
-Wittes: I will say, I think the current proposal to change Section 230 in
-Congress is a total mess, so I don’t want to hold that out as a model. With
-that said, I think we do have to consider the question of reform given
-contemporary challenges. What if I post something defamatory and false that is
-going to cause people to make terrible medical decisions or—you know, go down
-your list of disinformation categories. And because it acquires a certain
-organic enthusiasm among my followers, the platform decides, “Hey, this is
-high-engagement content; let’s show it to a billion other people.”
-The question of how we regard that algorithmic decision strikes me as a really important one that contemporary 230 really does not answer, even with the
-Fair Housing Council of San Fernando Valley v. Roommates.com
-case.
-Roommates
-answers the question of when there’s a drop-down menu for roommates with invidious categories, whether it’s ok for you to say “I want a room only with White people,” which was literally an option. That’s an editorial decision on the part of the platform that is not immunized. But what if they’ve added nothing to it; they’ve just made sure that a million people saw it, and no human being ever made that decision? I think that’s a much more fitting description of how today’s social media platforms operate.
-That’s a
-really interesting challenge—how we regard it and where the action is in the
-disinformation space because the platforms really aren’t actually creating
-disinformation, ever. They’re making decisions—often without human
-involvement—about how many people see foreign or domestically produced
-disinformation.
-You can re-watch the full event on
-AEI.org
-and read the full transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+On April 11, AEI hosted an event on how government officials and social media platforms can address online content moderation concerns involving both the First Amendment and Section 230 of the Communications Decency Act. To kick off the event, I held a one-on-one discussion with former Rep. Chris Cox (R-CA), who coauthored Section 230; a panel discussion followed with Rep. Cox, Daniel Lyons and Jeffrey A. Rosen of AEI, and Benjamin Wittes of Brookings. Each participant brought a unique perspective to the debate about Section 230’s original intentions, how well the statue has aged in the era of digital information sharing, and what “free speech” online really means.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from the event, including excerpts of my opening conversation with Rep. Cox. You can re-watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Introduction / editorial context]
+Rep. Cox on the distinction between Section 230 and the First Amendment:
+
+[Speaker: Introduction / editorial context]
+Rep. Cox on whether state-level attempts to ban online content moderation run afoul of the First Amendment:
+
+[Speaker: Shane Tews]
+Shane Tews: Daniel, you and William Rau recently published a piece that talked about Truth Social, Gettr, Gab, Parler, and other self-proclaimed “free-speech-oriented” social media platforms. You argued that platforms like these eventually learn the hard way that some level of content moderation is necessary. Why is that?
+
+[Speaker: Daniel Lyons]
+Daniel Lyons: The big takeaway is that content moderation is both hard and, to some degree, necessary when you’re operating a platform in order to avoid it devolving into a cesspool. Much of the promise of a lot of these new social media platforms was in response to arguments that traditional social media was engaging in too much content moderation, so we needed to create these new companies that are all about free speech. The takeaway from these experiments though is that you can’t really achieve that Trump-right dream of a social media platform free of content moderation.
+
+[Speaker: Daniel Lyons]
+It turned out there was far too much leeway on these platforms. They quickly learned that allowing anybody to post anything at all times quickly turns every social media site into 4chan, which is (1) not a place anybody wants to go, and (2) not really representative of at least whatever values traditional conservatives would want to be promoting. So, all of these companies quickly have run into the reality that some moderation is going to be necessary in order to attract and keep users. The question isn’t, “Should we engage in content moderation or not?” The question is, “What content-moderation policies are we going to be engaging in?” And I think it’s a great idea if different companies are experimenting with different content-moderation tools because then we as consumers have a choice of which platform we want to go to, some of which are more generous than others, and which end up providing a different portfolio of content available to the information marketplace of Web 2.0.
+
+[Speaker: Shane Tews]
+Jeff, you’ve asked a number of specific questions about Section 230 in different positions you’ve held over the years. You seem to take issue with how Section 230 gives companies discretion to decide what qualifies as “otherwise objectionable” content worthy of censoring. What’s up with that?
+
+[Speaker: Jeffrey A. Rosen]
+Jeffrey A. Rosen: I think there is widespread support for the basic concept that a platform is not responsible for things other people post in a general sense. For the last 25 years, the litigation that’s arisen hasn’t really been about moderation. It was about who was covered, and what types of claims were defamatory and what weren’t. Nowadays, the demands really are for taking things down. The way the statute is written is largely focused on legal immunity for taking illegal things down—or things that are obscene, lewd, lascivious, filthy, excessively violent, or harassing. I don’t think there’s tremendous controversy about those.
+
+[Speaker: Jeffrey A. Rosen]
+But then it said there would be immunity for taking down “otherwise objectionable” content. Well, what is that? Is that anything? Is it totally arbitrary? Does it mean a platform could take things down because it doesn’t want posts from Jewish people? To me, that’s a statutory problem that needs to be addressed in some manner. I think there needs to be some refinement that creates actual standards for there to be immunity. I would say the phrase “otherwise objectionable” either needs to be construed consistently with the illegal-type behaviors that are in the statute, or it needs to be changed in some manner. I would not delete that portion of Section 230 altogether, but I think some refinements are in order and that the phrase “otherwise objectionable” is too carte blanche.
+
+[Speaker: Jeffrey A. Rosen]
+We should remember that removing immunity does not automatically create liability. There still has to be some other valid claim that the moderation activity is improper in some way; it could be a breach of contract under the terms of service or something else. But taking away the immunity would allow some experimentation on regulatory approaches. Why would you instead give unfettered immunity for taking down literally anything the platform owner wants?
+
+[Speaker: Shane Tews]
+Ben, in the era of disinformation, are they any reforms to Section 230 that you’d consider valuable or useful?
+
+[Speaker: Benjamin Wittes]
+Benjamin Wittes: I will say, I think the current proposal to change Section 230 in Congress is a total mess, so I don’t want to hold that out as a model. With that said, I think we do have to consider the question of reform given contemporary challenges. What if I post something defamatory and false that is going to cause people to make terrible medical decisions or—you know, go down your list of disinformation categories. And because it acquires a certain organic enthusiasm among my followers, the platform decides, “Hey, this is high-engagement content; let’s show it to a billion other people.”
+
+[Speaker: Benjamin Wittes]
+The question of how we regard that algorithmic decision strikes me as a really important one that contemporary 230 really does not answer, even with the Fair Housing Council of San Fernando Valley v. Roommates.com case. Roommates answers the question of when there’s a drop-down menu for roommates with invidious categories, whether it’s ok for you to say “I want a room only with White people,” which was literally an option. That’s an editorial decision on the part of the platform that is not immunized. But what if they’ve added nothing to it; they’ve just made sure that a million people saw it, and no human being ever made that decision? I think that’s a much more fitting description of how today’s social media platforms operate.
+
+[Speaker: Benjamin Wittes]
+That’s a really interesting challenge—how we regard it and where the action is in the disinformation space because the platforms really aren’t actually creating disinformation, ever. They’re making decisions—often without human involvement—about how many people see foreign or domestically produced disinformation.
+
+[Speaker: Benjamin Wittes]
+You can re-watch the full event on AEI.org and read the full transcript here.

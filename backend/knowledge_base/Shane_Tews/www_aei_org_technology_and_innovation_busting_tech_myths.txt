@@ -1,46 +1,101 @@
 PAGE_TITLE: 
-	Busting Tech Myths | American Enterprise Institute - AEI
+	Busting Tech Myths
 
+[Speaker: Introduction / editorial context]
 Myths about technology are constantly in flux, from companies claiming to have made the next great thing to rumors about the latest smartphone. These myths often seep into social discourse, making it challengiung to separate fact from fiction.
-To sort through some of these common misunderstandings, I spoke with
-Robert Atkinson
-and
-David Moschella
-, authors of
-Technology Fears and Scapegoats: 40 Myths About Privacy, Jobs, AI, and Today’s Innovation Economy
-. Robert is president of the Information Technology and Innovation Foundation (ITIF) and author of numerous books on innovation economics and technology. David is a nonresident senior fellow at ITIF. Before joining ITIF, he was a research fellow at Leading Edge Forum where he explored digital technologies’ impact on business.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+To sort through some of these common misunderstandings, I spoke with Robert Atkinson and David Moschella, authors of Technology Fears and Scapegoats: 40 Myths About Privacy, Jobs, AI, and Today’s Innovation Economy. Robert is president of the Information Technology and Innovation Foundation (ITIF) and author of numerous books on innovation economics and technology. David is a nonresident senior fellow at ITIF. Before joining ITIF, he was a research fellow at Leading Edge Forum where he explored digital technologies’ impact on business.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: In the book, you start discussing how the markets of the 2020s and 2030s are going to change. You suggest we’ll be focusing more on industrial forces, which we’ve seen a bit with the CHIPS Act, and the question of whether we need an industrial policy. You argue that we need to look beyond just the tech industry and instead look towards raw materials, minerals, and the risks of climate change. The digital disruption you describe represents a major shift in economic focus. So, let’s discuss: are we at the beginning of this new cycle?
+
+[Speaker: Rob Atkinson]
 Rob Atkinson: Well, I wish we were, but I don’t know that we are. I look at the pace of technological change, and it’s incredibly slow. Labor productivity rates in the US over the last 15 or so years have been the slowest in US history, and we see that in other countries around the world. We need to speed that up enormously.
+
+[Speaker: Rob Atkinson]
 The last thing in the world I’m worried about is high levels of energy use by AI. If we’re going to spend energy on AI, it’s because the net benefit far outweighs the cost of energy; otherwise, we wouldn’t do it. Secondly, you can’t solve climate change by tweaking AI usage a little less—it’s irrelevant. You solve climate change through a massive shift to decarbonize fuels. When people raise concerns about AI energy use, I say, “Hey, stop driving your car, stop heating your house.” I’m using energy to heat my house in the winter. Should I sleep in a sleeping bag instead? No, you can’t solve the problem that way.
+
+[Speaker: David Moschella]
 David Moschella: Historically, the technological innovations of the first half of the 20th century tended to be things in the physical world: electricity, lighting, hot water, appliances, cars, rockets, trains, and birth control pills. These were physical products that were created, and these capabilities are fundamentally more important to more people than email, e-commerce, and information. In a sense, the innovations of the recent past are less important than those of the more distant past.
+
+[Speaker: David Moschella]
 However, looking forward, many of the upcoming challenges do involve the physical world. How do we produce cheaper, cleaner energy? How do we create more resilient supply chains with less dependence on China? How do we develop more sustainable agriculture and more sustainable businesses overall? How do we make the transition to electric vehicles and charging networks? All of these challenges are primarily physical in nature.
+
+[Speaker: David Moschella]
 The relationship between these challenges and the traditional big tech giants is unclear. They’ve all dabbled in these areas, but they’re hardly at the forefront of most of them. The interplay between the physical and cyber worlds is a really important and shifting dynamic.
+
+[Speaker: Shane Tews]
 You also challenge the idea that big tech companies are just stifling competition. I have a big concern about recent actions, especially from Europe, like the Digital Markets Act (DMA), which seem to be asking us to slow down innovation through fines. Essentially, the DMA fines the US for doing certain things. To me, that’s a regulatory step in the wrong direction. Are you concerned about this global tilt towards more regulation of everything tech-related?
+
+[Speaker: Rob Atkinson]
 Rob Atkinson: The people who really need to read this book are the Europeans. They’re the ones who don’t even question these myths over there. My suggestion, somewhat facetiously, is that any fines imposed on American companies by European regulators should be sent to the US Treasury, and then we can give it right back to the companies.
+
+[Speaker: Rob Atkinson]
 To answer your question, Shane, there’s no doubt that this is motivated by anti-Americanism, jealousy, and protectionism. When Europe promotes this notion of “digital sovereignty,” think about how outrageous that is. We’re protecting them through NATO, without which NATO wouldn’t really exist. For them to say they need digital sovereignty over us when they’re running a $200-plus billion trade surplus with America, while we’re running a measly $2 billion trade surplus with them on digital services, is audacious. They have the nerve to talk about digital sovereignty and potentially excluding Microsoft, Google, and other American companies. I find it outrageous, and I think US government policymakers have been far too passive for far too long in not pushing back against this.
+
+[Speaker: Rob Atkinson]
 Lastly, this approach is hurting their own innovation system. I don’t think there’s any doubt that the AI Act, which I saw Terry Burton, the head of digital there, praising as it was signed into law, is going to hurt them. I’m certain it’s going to slow down their AI development.
+
+[Speaker: David Moschella]
 David Moschella:Your original question was about whether there is competition in the tech sphere, and to me, this is obviously the case. Who’s leading some of the most exciting companies now? NVIDIA, which we hardly heard of until recently. Look at what Musk has done with SpaceX and Tesla, or BYD, the Chinese EV company, and TikTok in China.
+
+[Speaker: David Moschella]
 Historically, as I pointed out in one of my earlier books called “Waves of Power,” in the computer world, there have always been dominant players, but those dominant players have always gotten overthrown. For example, Intel was once this overwhelming monopoly giant, and they’ve just been blown away, not just by NVIDIA, but by ARM, the British company. Intel is now the third-best in the high-end chip market. Then you look at TSMC dominating the whole world of chip manufacturing.
+
+[Speaker: Shane Tews]
 We’re seeing an immense amount of wealth coming in from places like the UAE and Saudi Arabia directly to China. Are you concerned that the investment engine for artificial intelligence might be bypassing us?
+
+[Speaker: Speaker not identified]
 My view is that no one will dominate AI from a software and data point of view. The only potential choke points will be in hardware—if someone makes better chips or servers, for instance. That’s historically an area where you can get an edge. But the basic concepts behind deep learning and machine learning have been around for a long time, and they don’t change all that radically.
+
+[Speaker: Speaker not identified]
 I think you’ll have plenty of people doing interesting things in AI, with the US being one of them and probably the leader. But certainly, the days where we can control these technologies are largely over. The Saudi money is an amazing factor—just consider how much they’re raking in from endless oil sales.
+
+[Speaker: Rob Atkinson]
 Rob Atkinson: In our book, a number of the myths we discuss are about AI. You don’t have any of those myths in China. You’re not going to have TV shows and an elite class of AI scientists in China saying, “Oh, we better slow this thing down.” No, no, no—the pedal is to the metal there.
+
+[Speaker: Rob Atkinson]
 I’m also worried about locking up data. AI is built on data, and that’s another myth we address in the book—that datasets can automatically and always be re-identified. That’s wrong.
+
+[Speaker: Rob Atkinson]
 To David’s point, our companies, particularly the large platform and software companies, are doing an amazing job and investing so much in this space. But at some point, the government has to comply and not put up all these barriers. We need to try to have a more positive view for society. Otherwise, these companies are going to have the wind at their front, not their back.
+
+[Speaker: Shane Tews]
 Sticking with part of your last discussion on data, your book argues that the claim “technology is destroying individual privacy” is a myth. So how is technology actually enhancing privacy?
+
+[Speaker: David Moschella]
 David Moschella: It’s one of the great myths because it’s very easy to focus on the risks to privacy—the way we’re tracked, location targeting, and all kinds of surveillance. These risks exist to some extent, but they’re often largely speculative. However, the ways that technology increases privacy are so obvious and pervasive that they hardly ever get mentioned.
+
+[Speaker: David Moschella]
 Consider this: Is there anyone among us who hasn’t Googled something sensitive that we didn’t really want to ask someone we knew? Has anyone not texted something from the office to a friend or family member because you didn’t want people to overhear a conversation about whatever was going on in your family?
+
+[Speaker: David Moschella]
 Historically, for people living in small towns across America, we’ve had almost zero privacy. Every movement, every transaction, every public appearance was seen by someone. The freedom that the internet gives people to read, listen to, and learn about what they want without anyone necessarily knowing is just absolutely enormous.
+
+[Speaker: David Moschella]
 It really boils down to this: There are so many things that Americans would rather Google or look up on WebMD, allowing these companies to digitally know something about them, than ask their friends, families, or even doctors. The ability to do things relatively anonymously with technology has infinitely increased privacy in countless realms. To me, this increase in privacy is orders of magnitude more important to actual people than the many speculative threats that get all the attention.
+
+[Speaker: Shane Tews]
 Your book mentions that the claim “your data is gold” is misleading. Can you explain why individuals’ data isn’t as valuable as portrayed? And who actually benefits the most from all this data collection?
+
+[Speaker: David Moschella]
 David Moschella: The question of how much your data is actually worth is an empirical one. People call it gold and claim they’re being ripped off. But if you try to understand its worth on a per-consumer basis, here’s what you find:
+
+[Speaker: David Moschella]
 Look at the profits of Google and Facebook, the two big users of data. Let’s say they gave half of those profits back—a ridiculously high percentage, but let’s use it for this example. If they divided that half amongst the four billion or so people who use their products, it would amount to about four dollars per customer per year for Google, and about the same for Facebook. So, my back-of-the-envelope calculation suggests that the typical consumer’s data is worth about eight dollars a year.
+
+[Speaker: David Moschella]
 When you look at the services delivered for that eight dollars, it’s one of the greatest bargains you can imagine. Consumers aren’t being ripped off; it’s actually a fantastic deal. This calculation is quite easy to do, yet you hardly ever see it done.
+
+[Speaker: Rob Atkinson]
 Rob Atkinson: Related to that is this notion that many people, especially in Europe, have come to accept: “I should be able to get this for free without paying anything, including with my data.” I hate the term “paying with your data.” Shane, you know how tall I am. For all your listeners, I’m six foot seven. I’ve now given away my data—you all owe me money.
+
+[Speaker: Rob Atkinson]
 People want to get services for free. In Europe, they’ve passed a law saying that if you’re a Facebook or similar company, and you want to avoid customized ads, you can opt for non-targeted ads. But those ads are worth almost nothing because advertisers can’t target specific demographics.
+
+[Speaker: Rob Atkinson]
 People are saying, “I have a right to have this for free.” So who’s supposed to pay for all this? You have to pay for it through ads. That’s how it works, unless you want to move to a completely different model of the internet with monthly subscription fees.

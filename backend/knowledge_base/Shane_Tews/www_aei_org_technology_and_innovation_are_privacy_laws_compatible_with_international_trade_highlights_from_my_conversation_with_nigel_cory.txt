@@ -1,180 +1,89 @@
 PAGE_TITLE: 
-	Are Privacy Laws Compatible with International Trade? Highlights from My Conversation with Nigel Cory | American Enterprise Institute - AEI
+	Are Privacy Laws Compatible with International Trade? Highlights from My Conversation with Nigel Cory
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-As countries
-impose new requirements on data collection and governance, the flow of consumer
-data between countries and business entities is becoming more restricted than
-ever — making it difficult for companies to ensure they are in compliance with new
-regulations. The ongoing challenge to keep up with regulatory changes often
-means building expensive new compliance tools that could potentially dismantle
-the business models of many data-driven global companies. What does the
-regulatory landscape of today’s data governance world look like, and how can
-businesses adapt?
-Nigel Cory
-, associate director for trade policy at the
-Information Technology and Innovation Foundation
-(ITIF), joined “Explain to Shane” to discuss how the patchwork of data regulations and privacy regimes across the globe is hampering digital trade and constructing more barriers to data retention across borders.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Nigel, to get started, give us
-an overview of your research on data flows, digital trade, and data governance.
-Nigel Cory: At
-the moment, I’m focusing on the emerging set of policies countries are enacting
-to support, restrict, or control the use and movement of data, especially across
-borders. In pretty much every country around the world, policymakers are trying
-to figure out how to adapt their legal systems to our data-driven world.
-A central
-point here is that many countries — some democratic, but many authoritarian —
-associate the location of data storage with data privacy, data protection, and digital
-development. And they do this for both commercial and national security reasons,
-which, as supporters of data-driven innovation and digital trade, we think is
-wrong and misguided for a number of reasons.
-As we’re
-seeing more countries enact these restrictions on the movement of data, we’re
-being forced to confront questions about what type of global internet we want
-to see. Do we want to see an open, rules-based, innovative one, or are we heading
-towards a fragmented, less innovative, less competitive global digital economy
-where each country has their tech national champions but largely exists behind protective
-regulatory barriers?
-In my report
-last month on data localization, which is when countries force firms to store
-data locally, we saw that in 2017, there were 35 countries that enacted 67 such
-barriers. There are now 62 countries who have enacted 144 restrictions, with dozens
-more under consideration. And it’s not just the overall number of localization
-measures we’ve seen, but also that these restrictions are targeting a growing
-range of data types from the mapping data used for self-driving cars and
-e-commerce services, to the personal health and genomic data that’s driving
-life-science innovation, to measures targeting financial payment and insurance data.
-Together, this means it’s increasingly difficult for firms to operate across
-borders and to collect and use data from markets and consumers around the
-world.
-Can you give us some examples of how
-barriers to cross-border data flows are spreading globally?
-The
-clearest, easiest examples are in China — a world leader in localizing data and
-restricting its flows. Data localization is one of many tools China uses to
-essentially wall itself off from the global internet and protect its global
-tech giants like Alibaba and Tencent from the likes of Amazon, Microsoft, and
-others. This allows them to grow behind protective barriers then expand
-globally once they reach a certain point of competitiveness.
-One of the
-clearest examples I use with policymakers about how this is shortsighted is
-that the value of data comes from how it’s used, not where it’s stored. A clear
-example of this is health and genomics data. Some incredible innovations depend
-upon running clinical trials and user data from around the world. And if they’re
-unable to transfer genomic, health, and personal data as part of that, they
-can’t accelerate drug discovery, for example.
-This is
-what’s at stake in the breakdown in digital connectivity between the EU and US,
-but it’s already sort of broken down with China. Given China’s use of data
-localization and internet restrictions, it’s essentially cut itself off from
-the rest of the world and the global internet the rest of us exist in.
-Contextualize this for us as a trade issue.
-What are the greater implications for international trade?
-The trade
-rules we have under the World Trade Organization are relics of the 19th century
-and are just not ready for today’s digital 21st century. Meanwhile, domestic
-regulations have emerged — some conflicting and restrictive, and some more open
-and based on legal principles like accountability for wherever the data is
-stored.
-An idea I’ve
-advocated to policymakers is on sectoral-specific agreements. But the issue
-there is with ensuring there are sectoral bridges between countries and
-regions. It’s actually an idea I’ve been recommending for health and genomic
-data because, as I mentioned earlier, while health and genomic data are among
-the most sensitive, they hold some of the greatest potential societal benefits (i.e.,
-new drug discoveries and health treatments).
-Private-sector
-and academic researchers have constantly found that the European Union’s
-General Data Protection Regulation (GDPR) is already cutting off and undermining
-transatlantic health research. 20-odd percent of US-registered drug trials have
-clinical trials in both Europe and the US. If those companies engaged in this
-aren’t able to transfer data, those drugs and clinical trials are undermined
-and we’re all worse off.
-So it would
-be far better if the two sides got together to enact common principles and
-processes to ensure firms manage data reasonably, responsibly, and ethically, but
-in a way that doesn’t undermine their ability to use it for broader societal
-and economic benefits.
-Talk a bit more about what’s been happening
-in Europe recently with regard to privacy laws and their enforcement. For one,
-Luxembourg’s e-commerce regulator just fined Amazon 746 million euros for a
-GDPR violation.
-Europe has
-sought to seize what it sees as a first-mover advantage in setting what it
-thinks should be the global benchmark for data privacy. But it’s done so in a
-way that has created enormous problems. It’s restrictive and largely based on
-geography. It is essentially supposed to be a single law for the entire
-European Union, but we’ve seen it’s actually fragmented in how it empowers
-individual data protection authorities in EU member states to interpret GDPR as
-they see fit.
-The further
-GDPR moves into implementation and enforcement, the more issues and errors pop
-up and make life hard for foreign firms that rely on global information technology
-(IT) systems to manage data. They obviously don’t want to set up individual IT,
-administrative, legal, and compliance operations in each and every market,
-including in Europe. GDPR has moved ahead and put these very broad and
-restrictive rules in place on privacy, but it’s only really coming to life more
-recently — in the Amazon-Luxembourg case, for example.
-The
-Luxembourg case is both interesting and absurd in that it’s the first time a
-data protection authority has interpreted a particular part of GDPR — in this
-case about what constitutes lawful processing. It’s actually fascinating for a
-number of reasons; one of them is that it actually goes to the heart of
-targeted advertising. The activists argue Amazon shouldn’t be allowed to use
-data to build behavioral profiles to offer targeted advertising; it should
-simply be a service to buy and sell goods.
-There was no
-data breach or customer data lost. It was simply about how Amazon uses data. In
-consequence, they were issued the largest fine under GDPR thus far, which Amazon
-is understandably appealing since it sets a pretty worrying precedent that
-could affect a core part of their operations, and sends a clear signal about
-what other firms may face.
-Bringing it
-back to my favorite issue of delocalization: The potential for massive fines
-drives localization because the uncertainty of the local law and whether firms can
-transfer and use data in a certain way is so high that they have no choice but
-to store data locally. That isn’t the case here with the Luxembourg example given
-it’s about use of data, but more broadly, that’s a major fear for US firms
-operating in Europe. And that’s what’s driving them to shift more data and
-services within the region.
-On the issue of Europe, tell us about the
-two cases Austrian privacy activist Max Schrems has raised, and how they will
-shape the United States’ approach to cross-border data flows going
-forward.
-Max Schrems
-is an Austrian data privacy advocate who has filed successive cases at Europe’s
-highest court about GDPR, specifically as it relates to data going into the US given
-concerns about American surveillance activities. In response to these cases,
-the US and Europe have enacted these legal frameworks for companies to transfer
-personal data across the Atlantic.
-To test his
-case, Schrems chose Facebook. Obviously they collect and use a huge amount of
-personal data as a central piece of their business model. And so what we had
-last year was Max Schrems’ second successful case: The court agreed with him
-about the nature of US surveillance activities, which they then used to
-invalidate the EU-US privacy shield, which was the latest legal framework that
-the two sides had enacted to allow cross-border data transfers for companies
-like Facebook. Schrems II was re-litigating the initial point about European
-citizens not having sufficient safeguards and remedies in the US against the
-National Security Agency potentially collecting and using their data.
-Now, US
-firms will face an increasingly difficult environment if they cannot transfer
-EU personal data to the US, because Europe has very few other legal tools for
-them to use. The Schrems cases have also had huge repercussions for the EU-US
-transatlantic relationship. They also have geopolitical ramifications; if the EU
-and US can’t agree to work together on data transfers, what chance do they have
-on working together to enact other rules and norms around data and global
-digital trade to compete with China and Russia’s alternative models?
-That point has
-underpinned both cases and put EU-US digital relations in flux for a decade
-now. It’s a matter of seeing whether the two sides can finally put something in
-place that survives the inevitable legal challenges in Europe. And that’s still
-an open question. It’s probably the Joe Biden administration’s number one
-digital policy goal at the moment, but it remains a question mark.
+
+[Speaker: Introduction / editorial context]
+As countries impose new requirements on data collection and governance, the flow of consumer data between countries and business entities is becoming more restricted than ever — making it difficult for companies to ensure they are in compliance with new regulations. The ongoing challenge to keep up with regulatory changes often means building expensive new compliance tools that could potentially dismantle the business models of many data-driven global companies. What does the regulatory landscape of today’s data governance world look like, and how can businesses adapt?
+
+[Speaker: Introduction / editorial context]
+Nigel Cory, associate director for trade policy at the Information Technology and Innovation Foundation (ITIF), joined “Explain to Shane” to discuss how the patchwork of data regulations and privacy regimes across the globe is hampering digital trade and constructing more barriers to data retention across borders.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Nigel, to get started, give us an overview of your research on data flows, digital trade, and data governance.
+
+[Speaker: Nigel Cory]
+Nigel Cory: At the moment, I’m focusing on the emerging set of policies countries are enacting to support, restrict, or control the use and movement of data, especially across borders. In pretty much every country around the world, policymakers are trying to figure out how to adapt their legal systems to our data-driven world.
+
+[Speaker: Nigel Cory]
+A central point here is that many countries — some democratic, but many authoritarian — associate the location of data storage with data privacy, data protection, and digital development. And they do this for both commercial and national security reasons, which, as supporters of data-driven innovation and digital trade, we think is wrong and misguided for a number of reasons.
+
+[Speaker: Nigel Cory]
+As we’re seeing more countries enact these restrictions on the movement of data, we’re being forced to confront questions about what type of global internet we want to see. Do we want to see an open, rules-based, innovative one, or are we heading towards a fragmented, less innovative, less competitive global digital economy where each country has their tech national champions but largely exists behind protective regulatory barriers?
+
+[Speaker: Nigel Cory]
+In my report last month on data localization, which is when countries force firms to store data locally, we saw that in 2017, there were 35 countries that enacted 67 such barriers. There are now 62 countries who have enacted 144 restrictions, with dozens more under consideration. And it’s not just the overall number of localization measures we’ve seen, but also that these restrictions are targeting a growing range of data types from the mapping data used for self-driving cars and e-commerce services, to the personal health and genomic data that’s driving life-science innovation, to measures targeting financial payment and insurance data. Together, this means it’s increasingly difficult for firms to operate across borders and to collect and use data from markets and consumers around the world.
+
+[Speaker: Shane Tews]
+Can you give us some examples of how barriers to cross-border data flows are spreading globally?
+
+[Speaker: Nigel Cory]
+The clearest, easiest examples are in China — a world leader in localizing data and restricting its flows. Data localization is one of many tools China uses to essentially wall itself off from the global internet and protect its global tech giants like Alibaba and Tencent from the likes of Amazon, Microsoft, and others. This allows them to grow behind protective barriers then expand globally once they reach a certain point of competitiveness.
+
+[Speaker: Nigel Cory]
+One of the clearest examples I use with policymakers about how this is shortsighted is that the value of data comes from how it’s used, not where it’s stored. A clear example of this is health and genomics data. Some incredible innovations depend upon running clinical trials and user data from around the world. And if they’re unable to transfer genomic, health, and personal data as part of that, they can’t accelerate drug discovery, for example.
+
+[Speaker: Nigel Cory]
+This is what’s at stake in the breakdown in digital connectivity between the EU and US, but it’s already sort of broken down with China. Given China’s use of data localization and internet restrictions, it’s essentially cut itself off from the rest of the world and the global internet the rest of us exist in.
+
+[Speaker: Shane Tews]
+Contextualize this for us as a trade issue. What are the greater implications for international trade?
+
+[Speaker: Nigel Cory]
+The trade rules we have under the World Trade Organization are relics of the 19th century and are just not ready for today’s digital 21st century. Meanwhile, domestic regulations have emerged — some conflicting and restrictive, and some more open and based on legal principles like accountability for wherever the data is stored.
+
+[Speaker: Nigel Cory]
+An idea I’ve advocated to policymakers is on sectoral-specific agreements. But the issue there is with ensuring there are sectoral bridges between countries and regions. It’s actually an idea I’ve been recommending for health and genomic data because, as I mentioned earlier, while health and genomic data are among the most sensitive, they hold some of the greatest potential societal benefits (i.e., new drug discoveries and health treatments).
+
+[Speaker: Nigel Cory]
+Private-sector and academic researchers have constantly found that the European Union’s General Data Protection Regulation (GDPR) is already cutting off and undermining transatlantic health research. 20-odd percent of US-registered drug trials have clinical trials in both Europe and the US. If those companies engaged in this aren’t able to transfer data, those drugs and clinical trials are undermined and we’re all worse off.
+
+[Speaker: Nigel Cory]
+So it would be far better if the two sides got together to enact common principles and processes to ensure firms manage data reasonably, responsibly, and ethically, but in a way that doesn’t undermine their ability to use it for broader societal and economic benefits.
+
+[Speaker: Nigel Cory]
+Talk a bit more about what’s been happening in Europe recently with regard to privacy laws and their enforcement. For one, Luxembourg’s e-commerce regulator just fined Amazon 746 million euros for a GDPR violation.
+
+[Speaker: Nigel Cory]
+Europe has sought to seize what it sees as a first-mover advantage in setting what it thinks should be the global benchmark for data privacy. But it’s done so in a way that has created enormous problems. It’s restrictive and largely based on geography. It is essentially supposed to be a single law for the entire European Union, but we’ve seen it’s actually fragmented in how it empowers individual data protection authorities in EU member states to interpret GDPR as they see fit.
+
+[Speaker: Nigel Cory]
+The further GDPR moves into implementation and enforcement, the more issues and errors pop up and make life hard for foreign firms that rely on global information technology (IT) systems to manage data. They obviously don’t want to set up individual IT, administrative, legal, and compliance operations in each and every market, including in Europe. GDPR has moved ahead and put these very broad and restrictive rules in place on privacy, but it’s only really coming to life more recently — in the Amazon-Luxembourg case, for example.
+
+[Speaker: Nigel Cory]
+The Luxembourg case is both interesting and absurd in that it’s the first time a data protection authority has interpreted a particular part of GDPR — in this case about what constitutes lawful processing. It’s actually fascinating for a number of reasons; one of them is that it actually goes to the heart of targeted advertising. The activists argue Amazon shouldn’t be allowed to use data to build behavioral profiles to offer targeted advertising; it should simply be a service to buy and sell goods.
+
+[Speaker: Nigel Cory]
+There was no data breach or customer data lost. It was simply about how Amazon uses data. In consequence, they were issued the largest fine under GDPR thus far, which Amazon is understandably appealing since it sets a pretty worrying precedent that could affect a core part of their operations, and sends a clear signal about what other firms may face.
+
+[Speaker: Nigel Cory]
+Bringing it back to my favorite issue of delocalization: The potential for massive fines drives localization because the uncertainty of the local law and whether firms can transfer and use data in a certain way is so high that they have no choice but to store data locally. That isn’t the case here with the Luxembourg example given it’s about use of data, but more broadly, that’s a major fear for US firms operating in Europe. And that’s what’s driving them to shift more data and services within the region.
+
+[Speaker: Nigel Cory]
+On the issue of Europe, tell us about the two cases Austrian privacy activist Max Schrems has raised, and how they will shape the United States’ approach to cross-border data flows going forward.
+
+[Speaker: Nigel Cory]
+Max Schrems is an Austrian data privacy advocate who has filed successive cases at Europe’s highest court about GDPR, specifically as it relates to data going into the US given concerns about American surveillance activities. In response to these cases, the US and Europe have enacted these legal frameworks for companies to transfer personal data across the Atlantic.
+
+[Speaker: Nigel Cory]
+To test his case, Schrems chose Facebook. Obviously they collect and use a huge amount of personal data as a central piece of their business model. And so what we had last year was Max Schrems’ second successful case: The court agreed with him about the nature of US surveillance activities, which they then used to invalidate the EU-US privacy shield, which was the latest legal framework that the two sides had enacted to allow cross-border data transfers for companies like Facebook. Schrems II was re-litigating the initial point about European citizens not having sufficient safeguards and remedies in the US against the National Security Agency potentially collecting and using their data.
+
+[Speaker: Nigel Cory]
+Now, US firms will face an increasingly difficult environment if they cannot transfer EU personal data to the US, because Europe has very few other legal tools for them to use. The Schrems cases have also had huge repercussions for the EU-US transatlantic relationship. They also have geopolitical ramifications; if the EU and US can’t agree to work together on data transfers, what chance do they have on working together to enact other rules and norms around data and global digital trade to compete with China and Russia’s alternative models?
+
+[Speaker: Nigel Cory]
+That point has underpinned both cases and put EU-US digital relations in flux for a decade now. It’s a matter of seeing whether the two sides can finally put something in place that survives the inevitable legal challenges in Europe. And that’s still an open question. It’s probably the Joe Biden administration’s number one digital policy goal at the moment, but it remains a question mark.

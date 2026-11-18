@@ -1,158 +1,65 @@
 PAGE_TITLE: 
-	Contact Tracing, Data Privacy, and ‘check-in Culture’: Highlights from My Conversation with Adrian Kinderis | American Enterprise Institute - AEI
+	Contact Tracing, Data Privacy, and ‘check-in Culture’: Highlights from My Conversation with Adrian Kinderis
 
-The
-COVID-19
-pandemic has fueled a debate about contact tracing apps. Virginia recently rolled out an app that uses Google’s and Apple’s Bluetooth technology to notify users if they’ve been exposed to the virus. However, Australians began using contact tracing months ago and have since debated the need to balance privacy with government regulation. What are the trade-offs of contact tracing? Are small businesses willing to endure a small fee for a solution that ensures they can reopen safely?
-Adrian Kinderis
-, a hospitality venue owner and founder of a contact tracing solution called
-GuestCheck Australia
-, joined the latest episode of “Explain to Shane” to discuss the costs, benefits, and privacy implications of contact tracing.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-.
-Shane Tews
-:
-Adrian, you and your team put together an app that offers a valuable
-third-party contact tracing solution for the three-way relationship between
-hospitality locations (bars or hotels), guests (customers), and the government.
-Explain how you figured this out, because we don’t have it quite right here in
-the United States.
-Adrian
-Kinderis: I don’t know that any of us have it quite right just yet, but we’re
-working our way through it. So, my background is in IT. I managed to sell out
-of that a little while ago, and I did as any good entrepreneur does: I went and
-bought a pub. In owning a pub, while we were locked down in Melbourne, we
-started hearing about this contact tracing regulation that the Victoria government
-was putting out, and all state governments were adhering to the same sort of
-rules, and we started going through the conundrum of, you know, how are we
-going to solve this? At a very basic level, pen and paper would’ve been
-appropriate to grab contact tracing data in the event that someone within your
-venue had contracted the virus, and then had given it to other people also in
-the venue.
-And so it
-was a method by which the government would contact potentially infected people.
-We looked at pen and paper and thought, “That’s not really going to cut it.”
-Forgetting about the contamination risk, given my background in IT and what I
-did around domain names, understanding the various privacy rules and
-regulations, handing a piece of paper around with people’s private details
-didn’t sit well with us. So, my old chief technology officer from my previous
-life and I stayed in touch, and we hatched a bit of a plan to develop some
-tech.
-From the
-get-go, our philosophy was about getting the most accurate data possible. You’ve
-probably seen a lot of QR code operators pop up. A little cottage industry has
-sprung up around people doing a similar thing. The problem you have is whenever
-you allow free-form data entry, especially online, that doesn’t guarantee that
-people aren’t going to put in rubbish information.
-So, we
-didn’t want to just scan a QR code, you’re presented some forms on your
-internet-enabled device, then you’re checked in. That wasn’t enough for us, so
-we went about creating a validated solution, and by “validated,” we used what
-is now somewhat of a forgotten methodology, which is SMS-based tech. What the
-SMS enabled us to do — or the text message enabled us to do — was when someone
-walks into a venue, they text our phone number with a unique code of that
-venue, and then we bounce a text message back to them. In doing so, we get a
-valid phone number, so we now know that the phone number works. And, when you
-distill all the information down, that’s really what the government needs. When
-the contact tracing teams are called into action, they need accurate data in
-the most efficient way possible.
-That was the
-basis for the tech: the core tenet of validated data, and doing it in a very,
-very efficient way such that you can check in within three seconds. We do allow
-free-form data entry if you’ve got a minor with you, for example, that doesn’t
-have a phone, and a couple of other little caveats. But, ultimately, the one
-thing we do grab is a valid phone number. We know that the contact tracing
-teams can reach out to anyone within moments via text message and tell those
-people to isolate and go and get tested.
-Virginia recently rolled out a contact
-tracing app that is Apple- and Google-enabled using Bluetooth technology. What
-is the difference between your contact tracing app and the one Virginia just
-rolled out?
-One difference
-between our solutions is that we’re not an app. You don’t have to download
-anything for us, which is different because the Virginian solution is all about
-downloading an app. Then, it uses the Google and Apple proximity solutions,
-which use Bluetooth between two devices that have the app turned on. Should you
-get within a certain distance between these two devices, it logs two unique
-codes and says, “Well, you’ve come in contact with this person.” That doesn’t
-keep your details or anything else. It’s just a code of that person, and then
-should that person contract the virus, it goes through their phone and then
-says, “Well, in the last 14 days, who did this person come in contact with?”
-then automatically sends a message to you. And so the Virginian solution is
-built on the backbone of proximity.
-There’s a
-bunch of issues with Bluetooth. It doesn’t always work. It’s not always
-accurate. The person must have it turned on, not just the app downloaded, but the
-app turned on. And then there’s the whole “Big Brother” thing around that. Because
-it’s run by a government, people think, “Oh, the government’s grabbing all my
-data,” so people gravitate towards privatized solutions, which is ridiculous
-for the aforementioned reasons. That’s what the Virginian difference is. It’s
-an app that you download that uses proximity.
-There’s a
-version as well that the Australian government tried to get up that’s been a
-massive failure. We’ve had people with walls in between them, but because the
-Bluetooth could connect through that wall, they were caught up in the contact
-tracing. Now, I didn’t even come in touch with this person working in an office
-next door to me that had thin walls. I never saw them, and didn’t even know who
-they were, yet they had COVID and I was called into it.
-You do have over 500 venues using your
-solution so far, correct?
-Yeah, and
-that’s increasing. Last week, we had a bit of a media blitz. We did two things.
-The one, just telling people about the tech, that did okay for us. We did
-independent research on “lockdown one” and then asked people, “Were you
-entering correct data?” The research obviously showed us what we thought to be
-true, which was that people were lying on their contact tracing, and, of
-course, there were reasons for doing so. There were some horror stories about a
-table of women that had written their appropriate data, and then got creepy
-text messages from staff that had access to that data because it was all done
-on a pen and paper. It’s justifiable that people didn’t feel comfortable
-putting their correct data in, despite the reason as to why they should. Sadly,
-when we guard our privacy so much that it becomes inhibitive to us to do the
-right thing by way of trying to deal with COVID, there’s got to be a better
-solution out there.
-We published
-this data, and all of a sudden the Federal Health Minister for Australia was
-asked about it and what he thought of it, and it just blew up on us, and so last
-week was a bit of a media blitz for us. We did a fair few interviews on
-television, radio, and in the press about this data and how important contact
-tracing is going to be.
-Contact
-tracing will be around for a long, long time. The long tail of wanting to know
-— even if you get your numbers down to two or three cases a day — where those
-people have been, and who they have interacted with will become very important.
-I read something recently that said, “We’ve got to change our culture from a
-walk-in culture to a check-in culture.” From walking into a venue and just
-taking a seat, now, for at least the foreseeable future, if we want to go out
-and enjoy some of the finer things of socialization, we’re going to need to
-change our mindset towards a check-in culture.
-Obviously, we’re feeling a bit humiliated
-some days at our numbers here in the United States. The way that you’re sharing
-information is why I highlighted the three-way relationship you have between
-the customer, the actual restaurant (or the hotel), and then the government. So
-far, have you had any problems with those entities?
-No, not at
-all. The dangerous part about this little cottage industry that’s popped up
-saying “We’re going to collect data on behalf of venues” is, you know, let’s
-take a worst case example, and I’m not casting any aspersions here, but I could
-be a Chinese entity. I could go and register a domain name, “Aussie Check-in” or
-“freeaussiecheckin.com,” register that domain name, and then go and get some
-Google Ad words, get some traction in the market, and go set up a QR code. I
-could then be collecting that data on behalf of those venues, but then doing
-whatever the hell I want with it, and the Australian government’s got no
-jurisdiction to come after you for privacy breaches or anything else.
-So, it’s a
-bit of a dangerous game, and we’ve certainly been in good discussions with the
-government. We’ve stood up. With our understandings of how to deal with the
-collection and storage of data from our previous lives, we’ve done the right
-thing. But, alerting the government to the fact that there are bad actors out
-there to try to come up with something, whether it’s a certification program,
-or even the government endorsing certain providers, or at least providing a set
-of criteria that each one must adhere to in order to give venues better
-instruction, because that’s one of the negative sides of this.
+[Speaker: Introduction / editorial context]
+The COVID-19 pandemic has fueled a debate about contact tracing apps. Virginia recently rolled out an app that uses Google’s and Apple’s Bluetooth technology to notify users if they’ve been exposed to the virus. However, Australians began using contact tracing months ago and have since debated the need to balance privacy with government regulation. What are the trade-offs of contact tracing? Are small businesses willing to endure a small fee for a solution that ensures they can reopen safely?
+
+[Speaker: Introduction / editorial context]
+Adrian Kinderis, a hospitality venue owner and founder of a contact tracing solution called GuestCheck Australia, joined the latest episode of “Explain to Shane” to discuss the costs, benefits, and privacy implications of contact tracing.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here.
+
+[Speaker: Shane Tews]
+Shane Tews: Adrian, you and your team put together an app that offers a valuable third-party contact tracing solution for the three-way relationship between hospitality locations (bars or hotels), guests (customers), and the government. Explain how you figured this out, because we don’t have it quite right here in the United States.
+
+[Speaker: Adrian Kinderis]
+Adrian Kinderis: I don’t know that any of us have it quite right just yet, but we’re working our way through it. So, my background is in IT. I managed to sell out of that a little while ago, and I did as any good entrepreneur does: I went and bought a pub. In owning a pub, while we were locked down in Melbourne, we started hearing about this contact tracing regulation that the Victoria government was putting out, and all state governments were adhering to the same sort of rules, and we started going through the conundrum of, you know, how are we going to solve this? At a very basic level, pen and paper would’ve been appropriate to grab contact tracing data in the event that someone within your venue had contracted the virus, and then had given it to other people also in the venue.
+
+[Speaker: Adrian Kinderis]
+And so it was a method by which the government would contact potentially infected people. We looked at pen and paper and thought, “That’s not really going to cut it.” Forgetting about the contamination risk, given my background in IT and what I did around domain names, understanding the various privacy rules and regulations, handing a piece of paper around with people’s private details didn’t sit well with us. So, my old chief technology officer from my previous life and I stayed in touch, and we hatched a bit of a plan to develop some tech.
+
+[Speaker: Adrian Kinderis]
+From the get-go, our philosophy was about getting the most accurate data possible. You’ve probably seen a lot of QR code operators pop up. A little cottage industry has sprung up around people doing a similar thing. The problem you have is whenever you allow free-form data entry, especially online, that doesn’t guarantee that people aren’t going to put in rubbish information.
+
+[Speaker: Adrian Kinderis]
+So, we didn’t want to just scan a QR code, you’re presented some forms on your internet-enabled device, then you’re checked in. That wasn’t enough for us, so we went about creating a validated solution, and by “validated,” we used what is now somewhat of a forgotten methodology, which is SMS-based tech. What the SMS enabled us to do — or the text message enabled us to do — was when someone walks into a venue, they text our phone number with a unique code of that venue, and then we bounce a text message back to them. In doing so, we get a valid phone number, so we now know that the phone number works. And, when you distill all the information down, that’s really what the government needs. When the contact tracing teams are called into action, they need accurate data in the most efficient way possible.
+
+[Speaker: Adrian Kinderis]
+That was the basis for the tech: the core tenet of validated data, and doing it in a very, very efficient way such that you can check in within three seconds. We do allow free-form data entry if you’ve got a minor with you, for example, that doesn’t have a phone, and a couple of other little caveats. But, ultimately, the one thing we do grab is a valid phone number. We know that the contact tracing teams can reach out to anyone within moments via text message and tell those people to isolate and go and get tested.
+
+[Speaker: Shane Tews]
+Virginia recently rolled out a contact tracing app that is Apple- and Google-enabled using Bluetooth technology. What is the difference between your contact tracing app and the one Virginia just rolled out?
+
+[Speaker: Adrian Kinderis]
+One difference between our solutions is that we’re not an app. You don’t have to download anything for us, which is different because the Virginian solution is all about downloading an app. Then, it uses the Google and Apple proximity solutions, which use Bluetooth between two devices that have the app turned on. Should you get within a certain distance between these two devices, it logs two unique codes and says, “Well, you’ve come in contact with this person.” That doesn’t keep your details or anything else. It’s just a code of that person, and then should that person contract the virus, it goes through their phone and then says, “Well, in the last 14 days, who did this person come in contact with?” then automatically sends a message to you. And so the Virginian solution is built on the backbone of proximity.
+
+[Speaker: Adrian Kinderis]
+There’s a bunch of issues with Bluetooth. It doesn’t always work. It’s not always accurate. The person must have it turned on, not just the app downloaded, but the app turned on. And then there’s the whole “Big Brother” thing around that. Because it’s run by a government, people think, “Oh, the government’s grabbing all my data,” so people gravitate towards privatized solutions, which is ridiculous for the aforementioned reasons. That’s what the Virginian difference is. It’s an app that you download that uses proximity.
+
+[Speaker: Adrian Kinderis]
+There’s a version as well that the Australian government tried to get up that’s been a massive failure. We’ve had people with walls in between them, but because the Bluetooth could connect through that wall, they were caught up in the contact tracing. Now, I didn’t even come in touch with this person working in an office next door to me that had thin walls. I never saw them, and didn’t even know who they were, yet they had COVID and I was called into it.
+
+[Speaker: Shane Tews]
+You do have over 500 venues using your solution so far, correct?
+
+[Speaker: Adrian Kinderis]
+Yeah, and that’s increasing. Last week, we had a bit of a media blitz. We did two things. The one, just telling people about the tech, that did okay for us. We did independent research on “lockdown one” and then asked people, “Were you entering correct data?” The research obviously showed us what we thought to be true, which was that people were lying on their contact tracing, and, of course, there were reasons for doing so. There were some horror stories about a table of women that had written their appropriate data, and then got creepy text messages from staff that had access to that data because it was all done on a pen and paper. It’s justifiable that people didn’t feel comfortable putting their correct data in, despite the reason as to why they should. Sadly, when we guard our privacy so much that it becomes inhibitive to us to do the right thing by way of trying to deal with COVID, there’s got to be a better solution out there.
+
+[Speaker: Adrian Kinderis]
+We published this data, and all of a sudden the Federal Health Minister for Australia was asked about it and what he thought of it, and it just blew up on us, and so last week was a bit of a media blitz for us. We did a fair few interviews on television, radio, and in the press about this data and how important contact tracing is going to be.
+
+[Speaker: Adrian Kinderis]
+Contact tracing will be around for a long, long time. The long tail of wanting to know — even if you get your numbers down to two or three cases a day — where those people have been, and who they have interacted with will become very important. I read something recently that said, “We’ve got to change our culture from a walk-in culture to a check-in culture.” From walking into a venue and just taking a seat, now, for at least the foreseeable future, if we want to go out and enjoy some of the finer things of socialization, we’re going to need to change our mindset towards a check-in culture.
+
+[Speaker: Shane Tews]
+Obviously, we’re feeling a bit humiliated some days at our numbers here in the United States. The way that you’re sharing information is why I highlighted the three-way relationship you have between the customer, the actual restaurant (or the hotel), and then the government. So far, have you had any problems with those entities?
+
+[Speaker: Adrian Kinderis]
+No, not at all. The dangerous part about this little cottage industry that’s popped up saying “We’re going to collect data on behalf of venues” is, you know, let’s take a worst case example, and I’m not casting any aspersions here, but I could be a Chinese entity. I could go and register a domain name, “Aussie Check-in” or “freeaussiecheckin.com,” register that domain name, and then go and get some Google Ad words, get some traction in the market, and go set up a QR code. I could then be collecting that data on behalf of those venues, but then doing whatever the hell I want with it, and the Australian government’s got no jurisdiction to come after you for privacy breaches or anything else.
+
+[Speaker: Adrian Kinderis]
+So, it’s a bit of a dangerous game, and we’ve certainly been in good discussions with the government. We’ve stood up. With our understandings of how to deal with the collection and storage of data from our previous lives, we’ve done the right thing. But, alerting the government to the fact that there are bad actors out there to try to come up with something, whether it’s a certification program, or even the government endorsing certain providers, or at least providing a set of criteria that each one must adhere to in order to give venues better instruction, because that’s one of the negative sides of this.
+
+[Speaker: Adrian Kinderis]
 Contact tracing is going to be part of our existence going forward, and we would like that the government mandated a solution and stuck with it. We didn’t start this business to profiteer. This isn’t the traditional “Let’s do a startup, let’s find some VC, and let’s flip it or do whatever.” That was never, ever our intention. I called it the “popup startup,” which is where we just want to stand this thing up, have it run for a couple of months, and then shut the whole thing down and feel like we’ve done some good. Sadly, I think we’re going to be around for a long, long time. But yeah, this is not a profit-making venture. It’s more so that we’re just trying to do the right thing and trying to help where we can.

@@ -1,165 +1,74 @@
 PAGE_TITLE: 
-	How Tech Firms Are Managing the Challenges of Today’s Market: Highlights from My Conversation with John Godfrey | American Enterprise Institute - AEI
+	How Tech Firms Are Managing the Challenges of Today’s Market: Highlights from My Conversation with John Godfrey
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Technology
-companies are facing some of their largest security, supply chain, and
-regulatory threats ever. Members of Congress, the Joe Biden administration, and
-Federal Trade Commission (FTC) are trying to require that firms allow anyone,
-anywhere to repair their consumer devices — at a high cost to product quality
-and individual security. Meanwhile, cyberattacks and data breaches are on the
-rise, and while trying to get next-generation 5G products off the ground, both
-software and hardware providers are facing massive semiconductor chip
-shortages. How are large tech companies navigating these challenges?
-On the
-latest episode of “Explain to Shane,” I was joined by
-John
-Godfrey
-, Samsung’s acting head of US public affairs and leader of their
-Washington, DC team. John discusses how Samsung is grappling with “right to
-repair” initiatives on Capitol Hill, congressional funding for semiconductor
-production, and the growth of 5G wireless in the US and beyond.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: I want to get started with an
-issue that is front and center with the Biden administration: “right to
-repair.” The FTC suggested that not being able to take your device anywhere you
-wish for a repair increases costs and limits consumer choice. Can you walk us
-through this issue and share your thoughts?
-John Godfrey:
-Consumers already fully have a right to get their products repaired. What
-consumers want is for the repairs to be convenient and affordable. Warranty
-repairs are completely free, but a lot of this pertains to out-of-warranty
-repair. People want that to be affordable, which means there’s competition among
-multiple people to provide a good price on those repairs. Consumers essentially
-want them to be effective and safe.
-I think the
-advocates for government intervention in the repair service market are looking
-for the government to intervene and require manufacturers to take extra steps outside
-the free market. They’re asking manufacturers like Samsung to provide parts and
-business information to effectively anyone who asks for it, who would then use them
-to provide repairs to consumers. That would certainly make repair more
-convenient if, theoretically, everyone could access exactly the same
-information and parts, but I’d have real questions about whether that would be
-safe or effective because modern products are complicated. It takes some
-training to know how to repair them properly.
-In terms of how
-Samsung approaches this, we have a wide range of convenient and affordable
-repair options for consumers, starting from Samsung in-house repair, where you
-can mail in a product to Samsung or carry it in to one of our repair centers.
-Or, you can work with a Samsung-certified technician within our authorized network
-of repair providers. But we recognize that right-to-repair advocates want even
-more choice and competition than that. So in the last year, we’ve opened up
-another alternative called “independent service providers.” And earlier this
-year, we announced a partnership with a company called Batteries Plus that has franchises
-all over the country with access to authentic, genuine Samsung parts including
-batteries, screens, circuit parts, motors, and other things on the condition
-that their repair people are certified under the cellular industry’s certification
-program for excellence in repair. That means the repair people have gone
-through a training course and achieved certification that they know what
-they’re doing.
-We do that
-because we really don’t want consumers to be exposed to danger from using
-counterfeit parts. So it’s good that they are getting genuine parts. It’s good
-that they’re getting a qualified, competent repair by someone who’s certified
-so they’re not leaving the product vulnerable to a security flaw or leaving the
-product in a state where it might break or, worst case, catch on fire, be
-physically dangerous, and even introduce problems with customer satisfaction.
-We’re doing
-all of this without being told by the government to do so. We and other
-companies in the industry really are trying to expand repair options and repair
-competition for consumers as long as it is safe and effective.
-What has Samsung been doing to increase
-security of its mobile devices recently?
-Samsung has
-worked hard on security for many years. Part of the advantage we bring is that
-as a hardware manufacturer, we make our own hardware. We don’t outsource that.
-That includes the chips in the phone; some of those we source from outside, but
-some we manufacture ourselves. We have created sort of a hardware-rooted
-element of trust in every phone, and a tamper-proof and tamper-evident system
-so that if anyone tries to replace the operating system in the phone or break
-its security, the secure elements of the phone will stop working.
-For a
-consumer, important things like your biometric information are stored in that
-tamper-proof exterior element in the root of the phone. And the phone will do a
-secure boot-up so that if it detects it has been tampered with, it won’t boot
-up. Above that, there are additional enhancements to the Android operating
-system that we’ve worked on with the Android community.
-I think the
-best marker of the results of our work is that a large proportion of our
-flagship phones have been certified by the Department of Defense as meeting the
-common-criteria security guidelines that are required for phones to carry
-top-secret information.
-The pandemic has helped us realize how
-important semiconductor chips are to these devices being able to function in
-the first place. You guys have been on the forefront of trying to make the
-semiconductor supply chain more robust for a long time. How is that going?
-Samsung has
-had a factory in Austin, Texas, since the 1990s, and has been through multiple
-generations of reinvestment to a combined total of over $17 billion of
-investment into Austin. This originally was a memory chip factory, then it
-changed over to making logic chips, which are more cutting-edge and require more
-advanced types of manufacturing. This is now what’s called a foundry factory.
-What I think
-would be useful for people to know about the semiconductor market is that the
-shortages today are largely in logic chips rather than memory chips. And not
-that many companies actually manufacture logic chips. Most of the companies
-you’ve heard of design logic chips but they outsource the manufacturing to
-someone else. They don’t own their own fabs; fabs are incredibly expensive, and
-it requires incredibly complicated technology to etch the semiconductor wafers
-properly.
-Samsung is
-the number two foundry company in the world after Taiwan Semiconductor
-Manufacturing Company (TSMC). And our Austin plant is very important to the
-overall semiconductor supply chain. Because there’s a shortage right now, it is
-really urgent for investment to continue in building additional foundry
-capacity.
-One of our
-top priorities in Washington, DC on the team I lead is legislation before
-Congress — originally called the CHIPS Act — and it’s moving through the
-legislative sausage-making process. It includes grants for building
-semiconductor manufacturing in the United States and also investment tax
-credits for US investment in semiconductor manufacturing. This will be really
-important for diversifying the US supply chain and having at least some production
-here in the United States to help alleviate that supply. So we hope Congress
-will move fast on leading that.
-We’ve also
-announced this year that we will make an additional semiconductor manufacturing
-investment in the United States. We’ll be spending $17 billion on a new
-cutting-edge semiconductor facility — location to be determined, but Texas,
-Arizona, and New York State are all in the running. We really look forward to
-bringing that additional investment.
-5G-enabled devices have been a real
-benefactor of all of this. How is 5G going at Samsung?
-It’s alive
-and well; it’s going fast. Look, we’re in a stage in the evolution of any new
-technology where the initial excitement over something that’s brand new has
-died down and now people are impatient to see the revolution happen and see new
-applications come along. The stage we’re in now is: Operators are deploying 5G
-networks — even during the pandemic — and US operators have been deploying 5G.
-You could say 5G is coast-to-coast today in the United States. All major US
-carriers have 5G available — at least in populated areas nationwide. But the
-problem is that it’s in the low-band spectrum where there’s not a whole lot of
-capacity. And so yes, it’s 5G, but the data rates are not terribly greater than
-4G. You may get some other benefits of 5G when they finish deploying the core
-network elements to get some of the low latency that 5G provides, but not the
-high data rates and the low bands.
-Mid-band is
-being deployed nationwide. T-Mobile already has it through their Sprint network
-that they acquired when they bought Sprint. Verizon and AT&T bid heavily in
-the C-band auction, which is mid-band. They’re now deploying that equipment and
-will be able to turn it on in December of this year: 200 megahertz of
-additional spectrum for the early licenses and more two years later.
-I think that
-is when consumers will begin to see across all three national carriers a big
-speed jump in 5G. I think then, companies who want to develop new applications
-and services that take advantage of 5G will really be able to do it since they
-will be able to reach consumers all across the country with high speeds. 5G is
-already in the phones. Samsung has really democratized 5G on the consumer side
-— we’ve put it not just on our high-end phones, but on our more affordable,
-mid-range phones.
+
+[Speaker: Introduction / editorial context]
+Technology companies are facing some of their largest security, supply chain, and regulatory threats ever. Members of Congress, the Joe Biden administration, and Federal Trade Commission (FTC) are trying to require that firms allow anyone, anywhere to repair their consumer devices — at a high cost to product quality and individual security. Meanwhile, cyberattacks and data breaches are on the rise, and while trying to get next-generation 5G products off the ground, both software and hardware providers are facing massive semiconductor chip shortages. How are large tech companies navigating these challenges?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I was joined by John Godfrey, Samsung’s acting head of US public affairs and leader of their Washington, DC team. John discusses how Samsung is grappling with “right to repair” initiatives on Capitol Hill, congressional funding for semiconductor production, and the growth of 5G wireless in the US and beyond.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: I want to get started with an issue that is front and center with the Biden administration: “right to repair.” The FTC suggested that not being able to take your device anywhere you wish for a repair increases costs and limits consumer choice. Can you walk us through this issue and share your thoughts?
+
+[Speaker: John Godfrey]
+John Godfrey: Consumers already fully have a right to get their products repaired. What consumers want is for the repairs to be convenient and affordable. Warranty repairs are completely free, but a lot of this pertains to out-of-warranty repair. People want that to be affordable, which means there’s competition among multiple people to provide a good price on those repairs. Consumers essentially want them to be effective and safe.
+
+[Speaker: John Godfrey]
+I think the advocates for government intervention in the repair service market are looking for the government to intervene and require manufacturers to take extra steps outside the free market. They’re asking manufacturers like Samsung to provide parts and business information to effectively anyone who asks for it, who would then use them to provide repairs to consumers. That would certainly make repair more convenient if, theoretically, everyone could access exactly the same information and parts, but I’d have real questions about whether that would be safe or effective because modern products are complicated. It takes some training to know how to repair them properly.
+
+[Speaker: John Godfrey]
+In terms of how Samsung approaches this, we have a wide range of convenient and affordable repair options for consumers, starting from Samsung in-house repair, where you can mail in a product to Samsung or carry it in to one of our repair centers. Or, you can work with a Samsung-certified technician within our authorized network of repair providers. But we recognize that right-to-repair advocates want even more choice and competition than that. So in the last year, we’ve opened up another alternative called “independent service providers.” And earlier this year, we announced a partnership with a company called Batteries Plus that has franchises all over the country with access to authentic, genuine Samsung parts including batteries, screens, circuit parts, motors, and other things on the condition that their repair people are certified under the cellular industry’s certification program for excellence in repair. That means the repair people have gone through a training course and achieved certification that they know what they’re doing.
+
+[Speaker: John Godfrey]
+We do that because we really don’t want consumers to be exposed to danger from using counterfeit parts. So it’s good that they are getting genuine parts. It’s good that they’re getting a qualified, competent repair by someone who’s certified so they’re not leaving the product vulnerable to a security flaw or leaving the product in a state where it might break or, worst case, catch on fire, be physically dangerous, and even introduce problems with customer satisfaction.
+
+[Speaker: John Godfrey]
+We’re doing all of this without being told by the government to do so. We and other companies in the industry really are trying to expand repair options and repair competition for consumers as long as it is safe and effective.
+
+[Speaker: Shane Tews]
+What has Samsung been doing to increase security of its mobile devices recently?
+
+[Speaker: John Godfrey]
+Samsung has worked hard on security for many years. Part of the advantage we bring is that as a hardware manufacturer, we make our own hardware. We don’t outsource that. That includes the chips in the phone; some of those we source from outside, but some we manufacture ourselves. We have created sort of a hardware-rooted element of trust in every phone, and a tamper-proof and tamper-evident system so that if anyone tries to replace the operating system in the phone or break its security, the secure elements of the phone will stop working.
+
+[Speaker: John Godfrey]
+For a consumer, important things like your biometric information are stored in that tamper-proof exterior element in the root of the phone. And the phone will do a secure boot-up so that if it detects it has been tampered with, it won’t boot up. Above that, there are additional enhancements to the Android operating system that we’ve worked on with the Android community.
+
+[Speaker: John Godfrey]
+I think the best marker of the results of our work is that a large proportion of our flagship phones have been certified by the Department of Defense as meeting the common-criteria security guidelines that are required for phones to carry top-secret information.
+
+[Speaker: Shane Tews]
+The pandemic has helped us realize how important semiconductor chips are to these devices being able to function in the first place. You guys have been on the forefront of trying to make the semiconductor supply chain more robust for a long time. How is that going?
+
+[Speaker: John Godfrey]
+Samsung has had a factory in Austin, Texas, since the 1990s, and has been through multiple generations of reinvestment to a combined total of over $17 billion of investment into Austin. This originally was a memory chip factory, then it changed over to making logic chips, which are more cutting-edge and require more advanced types of manufacturing. This is now what’s called a foundry factory.
+
+[Speaker: John Godfrey]
+What I think would be useful for people to know about the semiconductor market is that the shortages today are largely in logic chips rather than memory chips. And not that many companies actually manufacture logic chips. Most of the companies you’ve heard of design logic chips but they outsource the manufacturing to someone else. They don’t own their own fabs; fabs are incredibly expensive, and it requires incredibly complicated technology to etch the semiconductor wafers properly.
+
+[Speaker: John Godfrey]
+Samsung is the number two foundry company in the world after Taiwan Semiconductor Manufacturing Company (TSMC). And our Austin plant is very important to the overall semiconductor supply chain. Because there’s a shortage right now, it is really urgent for investment to continue in building additional foundry capacity.
+
+[Speaker: John Godfrey]
+One of our top priorities in Washington, DC on the team I lead is legislation before Congress — originally called the CHIPS Act — and it’s moving through the legislative sausage-making process. It includes grants for building semiconductor manufacturing in the United States and also investment tax credits for US investment in semiconductor manufacturing. This will be really important for diversifying the US supply chain and having at least some production here in the United States to help alleviate that supply. So we hope Congress will move fast on leading that.
+
+[Speaker: John Godfrey]
+We’ve also announced this year that we will make an additional semiconductor manufacturing investment in the United States. We’ll be spending $17 billion on a new cutting-edge semiconductor facility — location to be determined, but Texas, Arizona, and New York State are all in the running. We really look forward to bringing that additional investment.
+
+[Speaker: Shane Tews]
+5G-enabled devices have been a real benefactor of all of this. How is 5G going at Samsung?
+
+[Speaker: John Godfrey]
+It’s alive and well; it’s going fast. Look, we’re in a stage in the evolution of any new technology where the initial excitement over something that’s brand new has died down and now people are impatient to see the revolution happen and see new applications come along. The stage we’re in now is: Operators are deploying 5G networks — even during the pandemic — and US operators have been deploying 5G. You could say 5G is coast-to-coast today in the United States. All major US carriers have 5G available — at least in populated areas nationwide. But the problem is that it’s in the low-band spectrum where there’s not a whole lot of capacity. And so yes, it’s 5G, but the data rates are not terribly greater than 4G. You may get some other benefits of 5G when they finish deploying the core network elements to get some of the low latency that 5G provides, but not the high data rates and the low bands.
+
+[Speaker: John Godfrey]
+Mid-band is being deployed nationwide. T-Mobile already has it through their Sprint network that they acquired when they bought Sprint. Verizon and AT&T bid heavily in the C-band auction, which is mid-band. They’re now deploying that equipment and will be able to turn it on in December of this year: 200 megahertz of additional spectrum for the early licenses and more two years later.
+
+[Speaker: John Godfrey]
+I think that is when consumers will begin to see across all three national carriers a big speed jump in 5G. I think then, companies who want to develop new applications and services that take advantage of 5G will really be able to do it since they will be able to reach consumers all across the country with high speeds. 5G is already in the phones. Samsung has really democratized 5G on the consumer side — we’ve put it not just on our high-end phones, but on our more affordable, mid-range phones.

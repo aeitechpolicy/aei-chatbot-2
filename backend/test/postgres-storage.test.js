@@ -86,7 +86,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
     }
     const rows = await pilot.rows('owner');
     assert.equal(rows.length, 2); assert.ok(rows.every(row => row.status === 'complete'));
-    assert.ok(rows.every(row => Math.abs(row.estimated_usd - 0.000985) < 1e-9));
+    assert.ok(rows.every(row => Math.abs(row.estimated_usd - 0.001) < 1e-9));
     assert.equal((await pilot.rows('supervisor')).length, 1);
     const csv = await pilot.csv('owner');
     assert.ok(csv.includes('Chatbot Intern')); assert.ok(csv.includes('Chatbot RA'));

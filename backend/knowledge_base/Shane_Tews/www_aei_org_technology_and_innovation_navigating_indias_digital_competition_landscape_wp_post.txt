@@ -1,56 +1,86 @@
 PAGE_TITLE: 
-	Navigating India’s Digital Competition Landscape | American Enterprise Institute - AEI
+	Navigating India’s Digital Competition Landscape
 
+[Speaker: Introduction / editorial context]
 India’s Digital Competition Bill of 2024 represents a crucial balancing act for the nation’s digital economy. The legislation aims to foster digital entrepreneurship while carefully avoiding regulatory constraints that could impede technological innovation. However, the bill is not without its criticism, and experts argue that its anti-big-business agenda and ambiguous policy prescriptions could hinder rather than help the economy’s growth.
-In response to these challenges, Shruti Rajagopalan and Shreyas Narla have undertaken a paper series at the Mercatus Center to explore these issues of regulatory intent, technological dynamism, and workforce development in India’s unique context.
-Shruti Rajagopalan
-is a Senior Research Fellow at the Mercatus Center and a Fellow at the Classical Liberal Institute at New York University School of Law. She leads the India political economy research program and Emergent Ventures India at Mercatus.
-Shreyas Narla
-is a research scholar with the India Political Economy program at the Mercatus Center.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews:
-The Indian government has proposed a new framework for a proposal for a digital competition framework titled
-The Draft Digital Competition Bill in 2024
-. In your policy comments, you say it’s heavy-handed and imposes arbitrary, ambiguous, punitive obligations on large digital firms that are yet to be completely known. I ended up reading your extensive work in this area and I’m so glad you were able to come on the podcast so we can talk about it.
-Shruti Rajagopalan:
-Yeah, thanks Shane. Everyone knows that India is really large: It’s a 1.4 billion population country. But there are two other things that are under appreciated. First, India is much poorer than we realize. If we look at India’s GDP per capita, India is at about $7,000 per capita. For a point of comparison, the United States is at $65,000 per capita, and China is at about $18,000 per capita. So, India is much poorer than these other two behemoths that we’re talking about in the digital space, which are sort of competing and haggling in geopolitics. And second, India is much younger. India’s median age is about 28. In the US, it’s about 38, and China is pretty close to that. And Japan and southern Europe’s median ages are in the late ’40s.
+
+[Speaker: Introduction / editorial context]
+In response to these challenges, Shruti Rajagopalan and Shreyas Narla have undertaken a paper series at the Mercatus Center to explore these issues of regulatory intent, technological dynamism, and workforce development in India’s unique context. Shruti Rajagopalan is a Senior Research Fellow at the Mercatus Center and a Fellow at the Classical Liberal Institute at New York University School of Law. She leads the India political economy research program and Emergent Ventures India at Mercatus. Shreyas Narla is a research scholar with the India Political Economy program at the Mercatus Center.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: The Indian government has proposed a new framework for a proposal for a digital competition framework titled The Draft Digital Competition Bill in 2024. In your policy comments, you say it’s heavy-handed and imposes arbitrary, ambiguous, punitive obligations on large digital firms that are yet to be completely known. I ended up reading your extensive work in this area and I’m so glad you were able to come on the podcast so we can talk about it.
+
+[Speaker: Shruti Rajagopalan]
+Shruti Rajagopalan: Yeah, thanks Shane. Everyone knows that India is really large: It’s a 1.4 billion population country. But there are two other things that are under appreciated. First, India is much poorer than we realize. If we look at India’s GDP per capita, India is at about $7,000 per capita. For a point of comparison, the United States is at $65,000 per capita, and China is at about $18,000 per capita. So, India is much poorer than these other two behemoths that we’re talking about in the digital space, which are sort of competing and haggling in geopolitics. And second, India is much younger. India’s median age is about 28. In the US, it’s about 38, and China is pretty close to that. And Japan and southern Europe’s median ages are in the late ’40s.
+
+[Speaker: Shruti Rajagopalan]
 What’s happening in India right now that is it has a young population that’s very aspirational and needs jobs. We have about a million young Indians trying to join the workforce every month with pretty bad prospects. India’s number one priority is to grow. And because India has had an enormous amount of success since the ’90s in the tech sector, especially in exporting tech services, the sense is that India should be thinking about technology at the front.
+
+[Speaker: Shruti Rajagopalan]
 But unless India actually has broad based reforms, including with digital competition in the tech sector, we argue that it’s going to be very difficult for India to get rich before Indians get old, which is sort of the call for the century. And for this, India needs to pursue a lot of structural reforms.
+
+[Speaker: Shruti Rajagopalan]
 This may be sort of a throwback for folks to the Washington consensus of the late ’90s and the early 2000s that India sort of forgot or abandoned along the way. So India, we argue, requires more trade liberalization. It needs to become part of global supply chains. It should actually get rid of the remnants of the old command-and-control socialism, which are strangling its manufacturing sector. It needs to have more sensible regulation when it comes to the tech space, especially the digital marketplace, instead of just wholesale copying the developed world and borrowing from the European rule book or the American rule book. It just needs to have regulation that’s more suited for its stage of growth.
-Shane Tews:
-The digital powerhouse aspect is so interesting. Even though India is a crucial part of the supply chain, they weren’t actually part of the momentum of the growth of the digital footprint. So it seems like the government is holding them back from participating in the digital footprint with a combination of old laws and their tendency to follow the footsteps of the Europeans on, for example, the Precautionary Principle. When the government says, “we’re going to help you decide what kind of business you’re going to open,” and “we’re going to help you decide how those businesses are run,” those types of rules stifle tech growth. Tech needs innovation and out of the box thinkers, who are slowed down by those rules.
-Shreyas Narla:
-You’re kind of spot on about that. In our paper on India’s digital competition bill, it pretty much sounds like we’re talking about the work that the European Union has done with the Digital Markets Act. It’s the same framework where the government has decided that we’re going to look at these large enterprises that, on one hand, we want to invite and invest and set up factories and build phones and, you know, set up and expand our semiconductor manufacturing. But at the same time, this notion that big is bad is just like the European Union’s Competition Act.
+
+[Speaker: Shane Tews]
+Shane Tews: The digital powerhouse aspect is so interesting. Even though India is a crucial part of the supply chain, they weren’t actually part of the momentum of the growth of the digital footprint. So it seems like the government is holding them back from participating in the digital footprint with a combination of old laws and their tendency to follow the footsteps of the Europeans on, for example, the Precautionary Principle. When the government says, “we’re going to help you decide what kind of business you’re going to open,” and “we’re going to help you decide how those businesses are run,” those types of rules stifle tech growth. Tech needs innovation and out of the box thinkers, who are slowed down by those rules.
+
+[Speaker: Shreyas Narla]
+Shreyas Narla: You’re kind of spot on about that. In our paper on India’s digital competition bill, it pretty much sounds like we’re talking about the work that the European Union has done with the Digital Markets Act. It’s the same framework where the government has decided that we’re going to look at these large enterprises that, on one hand, we want to invite and invest and set up factories and build phones and, you know, set up and expand our semiconductor manufacturing. But at the same time, this notion that big is bad is just like the European Union’s Competition Act.
+
+[Speaker: Shreyas Narla]
 But look again at what India is really doing when it’s identifying these large tech firms which meet certain thresholds, and designating them as what we call as systematically significant digital enterprises. It’s not very different from the European Union’s gatekeeper firms, and giving a lot of powers in terms of what activities of these firms the government will regulate. It’s one thing to say that they will regulate from case by case and, you know, go so on and so forth. It’s an entirely different thing, where you have already listed a set of activities that digital firms do, and say, we are going to prohibit and ban these.
+
+[Speaker: Shreyas Narla]
 At least in the DMA, they have listed out certain obligations that these kind of firms should subscribe to in terms of how they conduct their business activities. In the Indian one, these obligations were not in the bill. They said that we are giving the powers to the government to come out with few rules and regulations to stipulate what these obligations would be. I mean, this is a kind of a discretion and power being handed over to bureaucrats to determine how digital tech firms should actually conduct their business.
-Shruti Rajagopalan:
-It’s basically anti-bigness and anti-successful firms that have a big footprint globally, even if they don’t have a big footprint in India, and it is a lot of power in the hands of the regulator. Without having very clear rules and standards, it’s the idea that anything can be bad as long as it’s done by a large and successful firm. That seems to be the overwhelming spirit of these laws. And I think aside from the broad rule of illegal activity, as an economist, I’m personally offended by them because they don’t need to show harm. They don’t need to show that there is a consumer who has suffered or a competitor who has suffered. These big firms just need to exist. There seems to be a trigger happy spirit of this law, and I’m very worried of how it would play out in the hands of the regulator.
-Shane Tews:
-Since we’ve just gone through the Supreme Court rulings on Chevron deference in the US, some of the ruling sounded familiar and kind of echoed the content in some of your pieces. It’s this idea of well, we’re going to make rules, and then we’re going to figure out the rules. We want to just have the ink on the paper, even though it’s very blurry.
-Shruti Rajagopalan:
-You’re right that the attitude is the same. Butthere’s one difference relative to the Chevron deference situation in the United States. India’s regulators actually have very little capacity. So if you’re going to create this kind of burdensome regulation and just sort of hand over the entire machinery to competition or insurance or telecom or any set of regulators, then they need to have the capability, they need to have the budgets, they need to have the workforce for it. And so India is in this weird place where we have this kind of deference to the regulators. But unlike the United States, the regulators don’t have state capacity to actually execute on the mandate that’s been given to them.
+
+[Speaker: Shruti Rajagopalan]
+Shruti Rajagopalan: It’s basically anti-bigness and anti-successful firms that have a big footprint globally, even if they don’t have a big footprint in India, and it is a lot of power in the hands of the regulator. Without having very clear rules and standards, it’s the idea that anything can be bad as long as it’s done by a large and successful firm. That seems to be the overwhelming spirit of these laws. And I think aside from the broad rule of illegal activity, as an economist, I’m personally offended by them because they don’t need to show harm. They don’t need to show that there is a consumer who has suffered or a competitor who has suffered. These big firms just need to exist. There seems to be a trigger happy spirit of this law, and I’m very worried of how it would play out in the hands of the regulator.
+
+[Speaker: Shane Tews]
+Shane Tews: Since we’ve just gone through the Supreme Court rulings on Chevron deference in the US, some of the ruling sounded familiar and kind of echoed the content in some of your pieces. It’s this idea of well, we’re going to make rules, and then we’re going to figure out the rules. We want to just have the ink on the paper, even though it’s very blurry.
+
+[Speaker: Shruti Rajagopalan]
+Shruti Rajagopalan: You’re right that the attitude is the same. Butthere’s one difference relative to the Chevron deference situation in the United States. India’s regulators actually have very little capacity. So if you’re going to create this kind of burdensome regulation and just sort of hand over the entire machinery to competition or insurance or telecom or any set of regulators, then they need to have the capability, they need to have the budgets, they need to have the workforce for it. And so India is in this weird place where we have this kind of deference to the regulators. But unlike the United States, the regulators don’t have state capacity to actually execute on the mandate that’s been given to them.
+
+[Speaker: Shruti Rajagopalan]
 Now, I don’t know if that’s good or bad. It could be good that the regulators don’t have these very, very strong, powerful tools and lots of capacity, but it’s also bad because it means cases get delayed forever and ever. With all these big companies like Uber and Google, the litigation goes on for years just at the regulatory stage. If it does even go to the courts, the Indian judicial system is known for its long delays.
-Shreyas Narla:
-The other aspect where the capacity issue really kicks in is the fact that not only are there investigations, like with the competition regulators looking at problems with dominance in the cab market, with Uber and other market players competing in that space. It’s also how they never come out with the investigation reports. The law stipulates some timelines for coming out of the investigation processes or how long the process should take. But it’s concerning when, not only does the regulator have a lot of discretion, not only does the regulator take quite a lot of time to even investigate whether there is even an abuse of dominance in the market, but also the fact that they hold on to the investigation reports for long and just keep the businesses in limbo.
+
+[Speaker: Shreyas Narla]
+Shreyas Narla: The other aspect where the capacity issue really kicks in is the fact that not only are there investigations, like with the competition regulators looking at problems with dominance in the cab market, with Uber and other market players competing in that space. It’s also how they never come out with the investigation reports. The law stipulates some timelines for coming out of the investigation processes or how long the process should take. But it’s concerning when, not only does the regulator have a lot of discretion, not only does the regulator take quite a lot of time to even investigate whether there is even an abuse of dominance in the market, but also the fact that they hold on to the investigation reports for long and just keep the businesses in limbo.
+
+[Speaker: Shreyas Narla]
 So right now, Google and Apple are being investigated. Some of their investigation reports have led to a conclusion, but others haven’t been released for almost two to three years of being under investigation.
-Shane Tews:
-In your papers, you explain that India is poised to add around 150 million already to their massive work force in the next two decades. Talk about this unique development challenge and the challenge of creating quality jobs for the growing workforce. Obviously, Tech is one of those places where you would bring in a higher revenue as well as just a different work environment, so what is India’s digital backbone that some of these opportunities could ride on the back of?
-Shruti Rajagopalan:
-The digital infrastructure is quite fantastic. Shane, when you visited in 2016, we already had the universal payments interface. This is the ability to pay people through their smartphones. It would be the equivalent of Venmo or Zelle, except in India the pipes are made by a government and private partnership and anybody can use them. For instance, if you have Google Pay and I have one of the Indian apps, which is rupay, or Paytm, we can still transact with each other, because the infrastructure is set up to be completely interoperable.
+
+[Speaker: Shane Tews]
+Shane Tews: In your papers, you explain that India is poised to add around 150 million already to their massive work force in the next two decades. Talk about this unique development challenge and the challenge of creating quality jobs for the growing workforce. Obviously, Tech is one of those places where you would bring in a higher revenue as well as just a different work environment, so what is India’s digital backbone that some of these opportunities could ride on the back of?
+
+[Speaker: Shruti Rajagopalan]
+Shruti Rajagopalan: The digital infrastructure is quite fantastic. Shane, when you visited in 2016, we already had the universal payments interface. This is the ability to pay people through their smartphones. It would be the equivalent of Venmo or Zelle, except in India the pipes are made by a government and private partnership and anybody can use them. For instance, if you have Google Pay and I have one of the Indian apps, which is rupay, or Paytm, we can still transact with each other, because the infrastructure is set up to be completely interoperable.
+
+[Speaker: Shruti Rajagopalan]
 About 900 million Indians have access to a smartphone within the household. And India has about 750 million active Internet users as of about a year ago. So about 50 percent to 55 percent of its population is very actively on the internet. You took take rickshaw in India, you can pay using your smartphone. I’ve gone to buy vegetables with my parents and I’ve paid with my smartphone. I’ve actually paid with my smartphone at a temple because I didn’t have change, and they just have a QR code out there in this place where they used to have the donation box.
+
+[Speaker: Shruti Rajagopalan]
 This also makes me lead up to another point which makes India slightly different from Europe and the United States. So, you know, in the US and Europe, UK, all the developed world, there was a very slow progression from sort of the analog world and paper transactions to online bank transactions to now smartphone transactions and so on. And so a lot of the new innovation is still being built on the old plumbing, or the old pipes, which can sometimes cause bottlenecks. In India, all this infrastructure was laid after the digital revolution. So while laying it out, India knew that needs to be interoperable.
+
+[Speaker: Shruti Rajagopalan]
 This relates to the digital market regulation because, let’s say Google decides that one of the things that it’s going to bundle in the Google Play Store is the Google Pay app. Maybe in other parts of the world it may be considered anti-competitive, because Google is so ubiquitous that having Google also in the payment system gives it this huge advantage, which another startup may not have. But in India, because you can use any payment app to transact with Google Pay and it’s completely interoperable, it actually doesn’t give Google that much of an advantage. And it doesn’t leave behind the startup firms very much, even if they don’t control the OS or they don’t manufacture the smartphone, like Apple or Google. So India needs to also regulate given its own context, because these things are much newer, and India could just leapfrog into the latest technology and the latest infrastructure. It made things more competitive and created a more level playing tech field, right off the bat, so it doesn’t need to borrow the European regulation.
-Shane Tews:
-I’d like to get to the positive side of this, so what in the policy agenda could help India unlock innovation and boost domestic manufacturing?
-Shruti Rajagopalan:
-Very broadly, India needs to stop shying away from scale. There’s a reason it’s called economies of scale, right? Scale makes them more competitive, which is very important in the export market, especially given that India is one of the biggest exporters of services, not just goods. So I think this attitude of being against scale is a very big problem.
+
+[Speaker: Shane Tews]
+Shane Tews: I’d like to get to the positive side of this, so what in the policy agenda could help India unlock innovation and boost domestic manufacturing?
+
+[Speaker: Shruti Rajagopalan]
+Shruti Rajagopalan: Very broadly, India needs to stop shying away from scale. There’s a reason it’s called economies of scale, right? Scale makes them more competitive, which is very important in the export market, especially given that India is one of the biggest exporters of services, not just goods. So I think this attitude of being against scale is a very big problem.
+
+[Speaker: Shruti Rajagopalan]
 Most Indian firms are small and medium scale enterprises employing fewer than 100 workers, which is just too small for the population. And it’s not just about workers and labor regulation. We have very high levels of difficulty in every single factor market. India needs to overall think about how it regulates land, labor, electricity, all the factors of production. That should also be overlaid with sensible regulation, whether it comes to antitrust law, competition law, or thinking about India’s energy resources. It’s a multi-pronged challenge.
+
+[Speaker: Shruti Rajagopalan]
 And finally, I would say we really need to think about building India’s human capital. One of what should be its greatest asset is actually its greatest weakness. India managed to democratize schooling, so virtually every child is enrolled in schooling, but it’s not yet managed to get its education level up to the mark. This is a very big problem if India wants to be a workforce, especially one that’s trained in this English speaking engineering and technology driven knowledge economy of the future.
-Shreyas Narla:
-With all these reforms, India needs to send out signals that it’s going to focus on creating simple, bright line rules and follow through with them. That’s opposed to a system it has entered into where it signals that it wants the big business and cuts these deals in an entrenched cronyism manner, and then mixes it up with policy uncertainty and a lot of bureaucratic discretion. All of these are mixed signals. Sending out a different message, that it’s going to be a rules-based approach to economic reforms should be the overarching principle.
+
+[Speaker: Shreyas Narla]
+Shreyas Narla: With all these reforms, India needs to send out signals that it’s going to focus on creating simple, bright line rules and follow through with them. That’s opposed to a system it has entered into where it signals that it wants the big business and cuts these deals in an entrenched cronyism manner, and then mixes it up with policy uncertainty and a lot of bureaucratic discretion. All of these are mixed signals. Sending out a different message, that it’s going to be a rules-based approach to economic reforms should be the overarching principle.

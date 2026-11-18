@@ -1,35 +1,44 @@
 PAGE_TITLE: 
-	Top 5 Podcasts of 2021: ‘Explain to Shane’ with Shane Tews | American Enterprise Institute - AEI
+	Top 5 Podcasts of 2021: ‘Explain to Shane’ with Shane Tews
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-This blog post is part of AEI’s Best Podcasts of 2021 series. Click
-here
-to see other AEI podcast hosts’ favorite episodes of the year.
-Over the past year on “
-Explain to Shane
-,” I have interviewed economists, engineers, policymakers, and other experts to break down current technology policy issues. From COVID-19 vaccine patents to Section 230, my guests helped us understand many of 2021’s hot topics. A year and a half out from our March 2020 launch, the podcast has covered a wide range of subjects that are being discussed in the halls of Congress, state and local governments, and international forums. As the show continues to reach new audiences, I am excited about what we have ahead of us in 2022 — so stick with us for another great year!
-Here are five of my favorite episodes of “Explain to Shane” from 2021. As always, if you enjoy the show, remember to subscribe and leave us a review on your
-preferred listening platform
-. Thanks for listening, and happy holidays.
-1.
-A co-author of Section 230 on the law’s past, present, and future (with Former Rep. Chris Cox)
-— Episode #44, November 2
+
+[Speaker: Introduction / editorial context]
+This blog post is part of AEI’s Best Podcasts of 2021 series. Click here to see other AEI podcast hosts’ favorite episodes of the year.
+
+[Speaker: Introduction / editorial context]
+Over the past year on “Explain to Shane,” I have interviewed economists, engineers, policymakers, and other experts to break down current technology policy issues. From COVID-19 vaccine patents to Section 230, my guests helped us understand many of 2021’s hot topics. A year and a half out from our March 2020 launch, the podcast has covered a wide range of subjects that are being discussed in the halls of Congress, state and local governments, and international forums. As the show continues to reach new audiences, I am excited about what we have ahead of us in 2022 — so stick with us for another great year!
+
+[Speaker: Introduction / editorial context]
+Here are five of my favorite episodes of “Explain to Shane” from 2021. As always, if you enjoy the show, remember to subscribe and leave us a review on your preferred listening platform. Thanks for listening, and happy holidays.
+
+[Speaker: Introduction / editorial context]
+1. A co-author of Section 230 on the law’s past, present, and future (with Former Rep. Chris Cox) — Episode #44, November 2
+
+[Speaker: Introduction / editorial context]
 Section 230 of the Communications Decency Act is often credited with allowing the internet to grow unfettered from the legal challenges of third-party content sharing, thereby enabling the growth of today’s innovative social media platforms. However, a continued controversy over online content moderation has now made Section 230 a target for reform by both parties. Former Rep. Chris Cox (R-CA), a co-author of Section 230, joined the podcast to discuss his intent when writing the statute, the potential costs of reforming it, and the intersection of Section 230 and private platforms’ First Amendment right of editorial control.
-2.
-The future of IP protections for COVID-19 vaccines and beyond (with Michael Rosen)
-— Episode #35, July 6
+
+[Speaker: Introduction / editorial context]
+2. The future of IP protections for COVID-19 vaccines and beyond (with Michael Rosen) — Episode #35, July 6
+
+[Speaker: Introduction / editorial context]
 The Biden administration’s support for waiving intellectual property (IP) protections for COVID-19 vaccines and treatments has been controversial — not just for vaccine distribution, but as a challenge to IP protections globally. In a testament to the current vaccines’ effectiveness and their importance to society’s reopening, AEI Adjunct Fellow Michael Rosen joined our first in-person recording since March 2020. We unpacked how the administration’s seemingly anti-IP leanings could shape the future of innovation and public health.
-3.
-Analyzing Congress’ skirmish with Big Tech (with Jennifer Huddleston)
-— Episode #43, October 19
+
+[Speaker: Introduction / editorial context]
+3. Analyzing Congress’ skirmish with Big Tech (with Jennifer Huddleston) — Episode #43, October 19
+
+[Speaker: Introduction / editorial context]
 With five antitrust bills introduced in the House, alongside companion bills in the Senate, many Members of Congress are pursuing a new antitrust initiative to regulate what they see as Big Tech firms’ anticompetitive business practices. My AEI colleague Mark Jamison and I talked with NetChoice Policy Counsel Jennifer Huddleston, who examined Big Tech firms’ allegedly anticompetitive behaviors and explained the political and cultural forces behind Congress’ antitrust push as well as how these proposed laws could impact consumers.
-4.
-How is cybersecurity law being constructed? (with Jim Dempsey)
-— Episode #47, December 7
-After a year of extensive cyberattacks that brought the cybersecurity practices of many companies and federal agencies into question, we’ve seen elected officials searching for the right tools and guidance to secure American cyberspace — with a major caveat. The field of cybersecurity law is not systematic, and cybersecurity problems are not easily solved with a regulatory template. With his new book titled “
-Cybersecurity Law Fundamentals
-,” law professor and cyber policy expert Jim Dempsey has created a coherent legal roadmap for this evolving field. Jim came on the show to share excerpts from the book, along with cybersecurity lessons that policymakers, industry leaders, and lawyers would be well-advised to consider.
-5.
-How data privacy laws have upended international trade (with Nigel Cory)
-— Episode #39, September 7
+
+[Speaker: Introduction / editorial context]
+4. How is cybersecurity law being constructed? (with Jim Dempsey) — Episode #47, December 7
+
+[Speaker: Introduction / editorial context]
+After a year of extensive cyberattacks that brought the cybersecurity practices of many companies and federal agencies into question, we’ve seen elected officials searching for the right tools and guidance to secure American cyberspace — with a major caveat. The field of cybersecurity law is not systematic, and cybersecurity problems are not easily solved with a regulatory template. With his new book titled “Cybersecurity Law Fundamentals,” law professor and cyber policy expert Jim Dempsey has created a coherent legal roadmap for this evolving field. Jim came on the show to share excerpts from the book, along with cybersecurity lessons that policymakers, industry leaders, and lawyers would be well-advised to consider.
+
+[Speaker: Introduction / editorial context]
+5. How data privacy laws have upended international trade (with Nigel Cory) — Episode #39, September 7
+
+[Speaker: Introduction / editorial context]
 As governments around the world enact new data protection laws, the flow of consumer data between countries and business entities is more restricted than ever. Are these laws hurting international trade more than they’re actually helping to protect people’s data? If so, what pitfalls should the US avoid when crafting its own federal privacy law? Nigel Cory of the Information Technology and Innovation Foundation shared fascinating insights about the regulatory landscape of today’s data governance world, and where, if at all, regulators, trade experts, and multinational companies can find common ground.

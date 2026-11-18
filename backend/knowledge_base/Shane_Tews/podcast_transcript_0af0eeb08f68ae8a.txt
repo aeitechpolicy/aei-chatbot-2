@@ -1,0 +1,209 @@
+PAGE_TITLE: 
+	“Building for Tomorrow”: How to Think like an Entrepreneur (with Jason Feifer) — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI Explain to Shane: "Building for Tomorrow" : How to Think Like an Entrepreneur (with Jason Feifer) Episode # 67 | August 30, 2022 | Shane Tews and Jason Feifer
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. I love a good hack. It could be a new productivity app or a new process for better thought mapping. !his is why ! was excited to interview the guest on today's podcast, Jason Feifer. He is the Editor in Chief of Entrepreneur Magazine. A large part of Jason's work is talking to people who have accomplished amazing goals. Jason uses the lessons learned from these interviews to teach us their successful thought methods and behaviors. He has turned these teachings into multiple podcasts, a newsletter, and a book that are all part of his Build for Tomorrow series. Jason believes these insights can be built into skills that people can use to make their lives more productive and fulfilling, and he uses this knowledge to help individuals and, in some cases, entire companies grow into the future. Prior to his leadership at Entrepreneur, Jason held editorial roles at Men's Health, Maxim, and Boston Magazine, and he has written about business and technology for the Washington Post, Slate, and New York Magazine, amongst many other major publications. Jason, thank you for being a guest on Explain to Shane. I was just listening to one of your podcasts on the Build for Tomorrow podcast series you have, and you did a great interview where you talked to both TechCongress Founder Travis Moore and Austin Carson, who is now at SeedAl. For the record, 1 am actually on the board of SeedAl. I'm very proud of the work that they're doing there, but it was about whether we can make politics smarter. And you started with the example of the Senate hearing where Sen. Richard Blumenthal (D-CT) talked about the "finsta." And l actually did a podcast—I mean, I did a blog on that and the confusion and the challenge of it. And so | really enjoyed listening to your podcast, because you kind of tracked with the same process as a lot of us who try to make people in Congress more informed. You nailed it in this.
+
+[Speaker: Speaker not identified]
+lason Feifer: I'm really glad to hear that. Thank you.
+
+[Speaker: Shane Tews]
+Shane Tews: So just a major shout out; everybody should listen to this one. But both Austin and Travis really explain the importance of: Part of it is that we need to enable
+
+[Speaker: Shane Tews]
+better staff, which is why TechCongress allows us to put people that are kind of digital natives, but they're also current in what the issue is, because you don't always need—you know, it's like a lot of things. You need somebody who's really smart about semiconductors for a couple years and then you want that person to go do something else. They don't necessarily really need to stay and get really good on tax policy, unless they want to be. And then the other one is outside educators, which is one of the reasons why I started this podcast. I am very fortunate l am in a position where I know a lot of smart people. Ihey would come up and talk to me about things and I was like, "We should record this." And that is actuallv the aenesis of Explain to Shane. So just major kudos on that.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Thank you.
+
+[Speaker: Shane Tews]
+Shane Tews: And then if you go listen all the way to the very end of that episode, you, God love you, put to rest a story. So I worked for George Herbert Walker Bush, and this used to drive me nuts. It was that the story about the grocery store scanner. And everyone was like, "Oh my God, this guy is an idiot. He is this rich guy. He is president of the United States. He didn't know how to go to the grocery store." Well, so l used to live by the Vice President's Mansion or by the Safeway—it's called the "Social Safeway" —that was there. And I actually was in line when he was vice president behind him and a secret service guy, and he was buying lotion and he looked at me and he goes, "It's for Barb," "his wife. So l knew. I'd been there. I'd seen him use a scanner before this whole thing happened. And I was like, "How the hell did that get so out of hand?" And so you talk about that at the very end where you say he was at the national grocery—you know, one of the trade associations and they were actually showing him new technology, but the media ran with the idea that he just didn't know what he was talking about.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Yeah, that's right. So he was at some kind of convention or something and they were showing him new technology. The National Grocers Association is what it was, and he was being impressed because, one, it was new technology and two, he was playing to the crowa. They made this thing. They re excited about it. They wanted him to be excited about it. And that's wonderful. We all love new technology and the people who create smart things. And the thing that really drove my curiosity about that whole episode and that I think is the big takeaway for everything that you just said there is, I think—and I'm really obsessed with this idea. I think that when we simplify problems, we inhibit our ability to come up with meaningful solutions. And even something like, to go back to what you were saying before there: Richard Blumenthal says this silly thing to this Facebook executive where he asks if Facebook will commit to ending finsta, and they have this awkward exchange because it seems that he doesn't have any idea what finsta is. And she's very delicately trying to explain to him that it's not a thing that Facebook can end because it's just a user behavior. You could listen to that and say, "Well, the problem here is that old man Blumenthal is a dummy who is too old to understand technology and thus everything is broken." And I was watching that moment because it blew up on
+
+[Speaker: Jason Feifer]
+Twitter and I thought to myself, "There has to be a better explanation for this." It can't possibly be that senators, old as they may be, simply wander into the Senate hearing room like a retiree wandering in to play chess or something and just kind of say whatever's on their mind. Clearly, people work for them. They've studied this. What is happening? I just didn't know. I'm not a creature of Washington. I had no idea what | was seeing. I was seeing some system breakdown, but I was pretty sure it wasn't as simple as "dummy walks into a hearing." And so to understand it better, I dug in, I talked to these very smart people, and I came away with this much better understanding of what that moment is a symptom of and what we can actually do to start building better solutions. And I think that we need to apply this way of thinking to everything. When you see something that doesn't work, it's worth understanding truly why it doesn 't work. Because if you simplify the problem down to, "Oh, that guy is an idiot" or "that group of people are terrible" or "that technology is just hurting us because it's new, ," we will never, ever be able to get to meaningful solutions.
+
+[Speaker: Shane Tews]
+Shane Tews: And you did a great job in that particular instance. And I'm just a bit playing to my audience because I know we are here in Washington, but it's a little bit of both. I mean, they're time compressed, right? They don't have as much time as you think they would to really go through very naughty problems as in—you get
+
+[Speaker: Speaker not identified]
+lason Feifer: Right.
+
+[Speaker: Shane Tews]
+Shane Tews: So the fact that we have groups now like Tech Congress bringing more people in is: It kind of leads to, I think, a lot of what | just saw in your podcast—and we'll get to your book here in a minute-(which] is the idea of being in technology. l've been in the technology space for over 20 years. It actually has changed my thought process where I try to think, "Okay." As Will knows, my favorite word is "iterative." If you do something once and it doesn't make sense, you figure out how to improve the process. And you really focus on that, especially in your role as the chief editor of Entrepreneur Magazine. It sounds like you talk to a lot of people and then you actually embrace those stories and say, "Here's how you can actually kind of improve your thought process." So for example, give us the thought process on vertical versus horizontal thinking.
+
+[Speaker: Speaker not identified]
+lason Feifer: Yeah, sure. So, talking in the same way that you just said, being around tech has really changed the way that you think. My world is entrepreneurs because | run Entrepreneur Magazine, and I find technology very interesting as perhaps the most visible articulation of change and new things. But | really am fascinated with just the way that people manage change and build and grow more broadly as well, because I think understanding that really also helps you understand the conversations that are happening culturally around technology. So let me talk about vertical and horizontal. This came to me when I, years ago, was releasing a book with my wife. So prior to Entrepreneur, I was just a media guy. I was an editor at multiple magazines. I had this idea for a romantic comedy in which the story is that two people sleep together each week and then critically review each other's performance in a magazine.
+
+[Speaker: Shane Tews]
+Shane Tews: Was this when you were at Maxim?
+
+[Speaker: Jason Feifer]
+Jason Feifer: You know, it's funny. Before I was at Maxim was when I thought about that, but it would've made more sense to release when I was at Maxim.
+
+[Speaker: Shane Tews]
+Shane Tews: Right. It seems like a series you would read in Maxim.
+
+[Speaker: Jason Feifer]
+Jason Feifer: lotally. It totally does. It was just an idea that popped into my head years ano years ago and my wite and I decided to write it together because she's a novelist. And it came out in 2018. And at that point I was an editor. I was the editor in chief of Entrepreneur Magazine. And so | started to get these two completely different responses to this news that | had this romantic comedy conigratult Frons dat awes wiee Bute ireeee er ay, on,o what are you going to do with it? What's the point of it?" Because to them, it doesn't make any sense to do something simply for the sake of doing it. You do something because you are going to build on top of it, because it fits into an existing structure of growth. And I realized that I had come from a world of horizontal thinking where I do something, I put it out in the world, I move on to the next thing. I put it out in the world, I move on to the next thing. I put it out in the world. And entrepreneurs think vertically. They think the only reason to do something is because it is a foundation upon which the next thing will be built. That kind of thinking, which I have now absorbed, radically altered the way that l approach my career and my work, because now I have a filter by which I'm looking at things and saying, "Okay, here's where | want to go. Here are the strategic steps that are going to get me there, and everything thati do must fit into that or else it is extraneous. So the book that I've written now, for example, which is also called Build for Tomorrow, is very much in line with this direction that I want to go. And l've thought about what things I do and don't want to do. And I am building and thinking vertically every single day. It is a mind shift. And once you get there, the best word I can come up with is "clarifying."
+
+[Speaker: Shane Tews]
+Shane Tews: I hat makes sense. A lot of startups, being in the tech space tor a long time, people who don't—they come from a corporate town. It's like, you're from where Kellogg's is made or something. You know, you just do the same thing over and over again and you're just part of that supply chain. That's what you do in that town. And that's just not what you see. And one of the reasons why a lot of the work I do in tech policy, you try to explain that you can't put these obstructions in place because it makes sense to some other industry or vertical. Tech needs a clear path to be able to innovate, and they don't have a problem failing as long as they learn from the failure. And that's not always the way people think. The other thing that you mentioned to me before that you are working on in your book—first of all, do l have the outline of your book right? It sounds like you're just taking a lot of these lessons and you're writing them down to make us all smarter people. Is that what we're doing?
+
+[Speaker: Speaker not identified]
+lason Feifer: Basically. So my argument is that change happens in four phases: panic, adaptation, new normal, and wouldn't go back, and that the most successful
+
+[Speaker: Speaker not identified]
+people, the most successful companies, leaders of companies, are the ones that can navigate through those changes the tastest and the most etticient. so l wanted to understand how people do it. And so what I did is: I combined lessons from the smartest entrepreneurs of today, many of whom are coming from tech, as well as the history of innovation and the history of technology, which l've studied from the podcast, to understand how change happens and how people navigate it smartly and turn it into opportunity.
+
+[Speaker: Shane Tews]
+Shane Tews: In one of your podcasts, you talk about how John Philip Sousa, who I love, you have to explain who that is in the podcast. That almost broke my heart. [Hel was very concerned about recorded music and that people wouldn't be singing because they would just listen to recordings. And we know from so many—like Spotify is a great example of the exponential of many different things do you listen to because it's like, you feel like this, go check this out. There's other things.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Well, yeah. Let me tell you that story because I feel like that story actually really captures well why so many people panic about new things. And I think that for people who are in the business of creating new things and then watching how people and trying to manage how people react to them, I think this is a really important thing to understand. So my argument here is that people panic over change because they equate change with loss. Something new comes along and they immediately say, "Oh, this is going to alter the way in which l used to do something." And we do this at a cultural level. This is why for example, you'll have, and we still have these kind of endless conversations about, , "Oh, this new form of social media is destroying some old way in which we communicated or we gathered, ,"whatever, that you're seeing some kind of change, you're equating that change with loss, and that's natural because it's so hard to see gain when new comes along. It's very, very difficult. And I think I'm going to put a bookmark in this because I want to come back to it, but | think that technologists, innovators, people who create often are so familiar with the thing that they're creating that they forget that it is going to be unfamiliar to everyone they're introducing it to. And so they leave a gap in knowledge there because they're not building this bridge of familiarity, which I'Il talk about in a second. But let me go back to the John Philip Sousa thing. So, people equate change with loss and then because they want to know what's coming next, they start to extrapolate what they already know, which is that they extrapolate the loss. So they say, "Because this change is coming, I'm going to lose this thing. And because I lose this thing, I'm going to lose that thing. And then I'm going to lose that thing." And suddenly it's a terrible death spiral. And that is so well captured. So, John Philip Sousa, who, even though it will make you sad, Shane, I'm going to explain John Philip Sousa.
+
+[Speaker: Shane Tews]
+Shane Tews: Well you just mentioned it. Go ahead, go ahead. That's fine.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Yes. Famous musician, composer of the time, wrote all the military marches that you know today. Da da da da da da. That's John Philip Sousa. John Philip Sousa in 1906 was a leader of the resistance against recorded music technology, the first phonographs. And he made these wild arguments in a
+
+[Speaker: Jason Feifer]
+piece called "The Menace of Mechanical Music" in Appleton's Magazine where he argued for all the different ways in which this was going to destroy our lives. And the one that you were referencing is that he said that when you bring recorded music technology into the home, it will halt all forms of live music. Why would anybody perform live? And because people will no longer perform live at home, mothers will no longer sing to their children, because again, why would they do that? And because children grow up imitating their mothers, they 'Il now grow up to imitate the machine and thus we will raise a generation of machine babies. That was his argument. And what you see here is him extrapolating loss. Now, of course, what he didn't recognize was that this technology was actually going to create all sorts of massive new opportunities for people in his industry and were going to actually expand access to consumers, were going to expand job opportunities. And he was really in fact defending a system that was limiting his economic opportunity, but he couldn't see it because he was equating change with loss.
+
+[Speaker: Shane Tews]
+Shane Tews: It's a great story. And in case anyone wants to listen to that whole podcast, it was—l love the title of this one. Well, let's see. "The Case for Sex Robots. That's the one that it was on. It was actually a fascinating one. The sex robot thing kind of went the direction I thought it would, but John Philip Sousa in the middle of that, I wasn't expecting that.
+
+[Speaker: Speaker not identified]
+lason Feifer: Right—didn't expect that.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. Go backto: What are your four points again? We've got to reiterate these.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Panic, adaptation, new normal, and wouldn't go back—wouldn't go back being that moment where we have something so new and valuable that we say, "I wouldn't want to go back to a time before I had this."
+
+[Speaker: Shane Tews]
+Shane Tews: I think that's really interesting. So the other part that l've heard you talking about, I think is fantastic. Because I spend a lot of time—Washington is one of these places where smart people like to land and then they don't quite know what to do next. And then their parents usually call me and say, "Can you talk to my kid?" And I do, and sometimes it works out well—most of the time, hopefully. But it's this idea of opportunity A and opportunity B. So can you walk us through that?
+
+[Speaker: Speaker not identified]
+lason Feifer: Sure. I think that this is something that's important for anyone at any stage of their career, but particularly I think when you're young. Okay. So I have this theory of work. It's called "work your next job." If you want to be more adaptable, if you want to prepare yourself for the future, if you want to future- proof yourself in your career, work your next job. What does it mean? Well, Shane, you, me, everyone listening right now, we in front of us have two sets of opportunities: opportunity set A, opportunity set B. Opportunity set A is everything that's being asked of us. So if we have a job and we have a boss, then we show up to work every day and we have tasks that
+
+[Speaker: Speaker not identified]
+we must perform. And there are things that we're evaluated on. That's opportunity set A. Do well at that. Then there's opportunity set B. Opportunity set B is everything that's available to you that nobody is askina you to do. And that could be at vour iob. That could be new teams to join. That could be new responsibilities to learn, but it could also be something outside of your job. It could be that you really like listening to podcasts and maybe you should start a podcast. Whatever it is, this is opportunity set B. Nobody is asking you to do it, but it is available to you. My argument to you is that opportunity set B is always more important— infinitely more important. It doesn't mean that you discard opportunity set A. You've got to do good at your job. You've got to make money. But opportunity set B is where growth happens. If you only focus on opportunity set A, you will only be qualified to do the thing that you're already doing, but opportunity set B is where you grow, where you learn, where you develop new You don't even have to know why it's going to pay off, but | am telling you that the more that you push yourself outside of the thing that you're already doing and into the things that you could be doing, the more you will expand your opportunities and you will also expand your access to people and to ideas and to things. And that is where you're going to really grow.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you, because I think that's just so important. And I heard you talk about this on one of your other podcasts, [which] was: Opportunity A is, like, you want me to congratulate you for doing your job. Sometimes you have to, but you're doing your job, but there's just—especially in areas like where l am in Washington, since l've been in the tech space, l've gone out of my way to try to meet every person who was part of what we now would consider Webl, since we're on our way to Web3, and have been able to ask them questions. Like, Vint Cerf is very honest about, "Hey, we didn't think about security because we all knew each other. We were just so excited. We could connect a bunch of machines and actually talk and it didn't ever occur to us that we needed to put locks on those at that level." And I tried to meet Henry Kissinger the other day because he's 99. You know, he's 99. So there's just a certain point.
+
+[Speaker: Speaker not identified]
+lason Feifer: The time is now.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, it was a Saturday afternoon. I was like, "Kissinger is talking at four; I'm vertical and horizontal. Explain stacking.
+
+[Speaker: Speaker not identified]
+lason Feifer: Oh, yeah, well stacking is a method of time management, which I think is also really important for people. Actually, before | get into stacking, I will tell you: I do a lot. I write a book, I make this podcast, I'm the editor in chief of this magazine, I speak, I do some startup advising, I do a lot. People ask me, "How do you do all this?" And the answer is that I think of time like a balloon. So here's a funny thing. People might have listened to the opportunity set A/B
+
+[Speaker: Speaker not identified]
+thing and they might have thought to themselves, "Well, that makes sense, but I don't have time for that. I don't have time to do a new thing." And here's the thing: Nobody has time tor anything. Like, there is not a gap of time that you re going to one day have where you're like, "Oh, now I can fill this time with a new thing." It doesn't work that way. You don't make time and then fill it. Instead, you have things to do and then you make the time for it. It's exactly like a balloon. So if you're going to fill up a balloon, what you don't do is make room in the balloon for the air. You don't expand the balloon and say, "Now there's room for the air. I'll put the air in." That's not how a balloon works. You fill the balloon with air and then it expands. And the same thing is true for time. You add more things to your day and it forces you to reconsider everything that you're doing to come up with efficiencies, to decide what is worth your time and what is not. And that is how you get to do more things. That's how I do it. So stacking is one wonderful method of thinking through this. So stacking is something that | got from Bethany Frankel who was originally best known as being one of the Real Housewives of New York, but now also is the founder of Skinny Girl, an extremely, extremely popular line of everything. It's just like, there's Skinny Girl everything out there. And she told me that one of the things that she does is: She stacks, which is to say that she takes like tasks that all require the same kind of thing from her and then she stacks them together so that she is most efficient with the time before and after. So, for example, when she does interviews, she has to get all dressed up and put on makeup and the whole thing. Bethany doesn't like doing that. Bethany would rather be sitting around in her pajamas working from home. So it doesn't make any sense for her to every single day get dressed up and put on makeup for one interview. Why not instead take six interviews, stack them up so that she's just doing them back to back to back to back, and therefore she only has to get dressed up and do the makeup once? And once you hear that, you think, , "Well, there are all sorts of ways in which anybody could do that because we all have these tasks and we scatter them throughout our days." And then there's all this time where we have to study up and think or change or set up the microphone for the podcast or whatever. And if you just start thinking about: How can I be ever more efficient about everything that I'm doing, then you start to create more time in your day for all the other things.
+
+[Speaker: Shane Tews]
+Shane Tews: So, | love that. And I actually do a version of that a lot. I mean, I won't leave the house for just one thing.
+
+[Speaker: Speaker not identified]
+lason Feifer: Yeah, right. It doesn't make sense.
+
+[Speaker: Shane Tews]
+Shane Tews: Right. I'm going to do two things it I'm going to leave the house. You also have another podcast. So you have Build for Tomorrow and then is the second one Problem Solvers?
+
+[Speaker: Jason Feifer]
+Jason Feifer: Yeah, the second one is Problem Solvers, which is a show | do for Entrepreneur. And to me, I think of that one as, like, a forcing function of talking to really,
+
+[Speaker: Jason Feifer]
+really smart people and absorbing the things that they do. And then the Build for Tomorrow podcast is really the big ideas podcast where I engage with a lot of technology and ways in which we change.
+
+[Speaker: Shane Tews]
+Shane Tews: And when does your book come out?
+
+[Speaker: Jason Feifer]
+Jason Feifer: So the book comes out September 6th. You can find it wherever you find books. If you've ever heard of a place to get books, then that's the place to get this book. But if you for some reason cannot think of a single one, I love Politics and Prose. My wife grew up in Chevy Chase so we are there a lot, for your Washington, DC listeners. But so anyway, jasonfeifer.com/book is a good place to get it.
+
+[Speaker: Shane Tews]
+Shane Tews: Are you going to be in DC? Will we be able to come visit you? Are you going to be at Politics and Prose? There's two. We can go to the one at the waterfront. We can get a cocktail after.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Oh, that sounds great. I have not been to the one at the waterfront. I've only been to the one that's near Chevy Chase because that's where my wife grew up going. So I will, but | don't have dates, but people can follow—so I have a newsletter. It's called Build for Tomorrow as well.
+
+[Speaker: Shane Tews]
+Shane Tews: lappreciate you staying on theme.
+
+[Speaker: Speaker not identified]
+lason Feifer: You've got to stay on brand. You don't want to create too much confusion. Anyway, jasonfefier.bulletin.com. My last name is F-E-I-F-E-R. So Jason, J-A-S-O- N, Feifer, F-E-I-F-E-R.bulletin.com is my newsletter where I'm going to keep people posted on all that stuff. So I would love for people to connect. l've spent years and years trying to understand how we can both be navigators of change and change-makers. And I am just totally obsessed with how people do it, and | love connecting with people who are thinking about it.
+
+[Speaker: Shane Tews]
+Shane Tews: Well, as you can tell, l'm a fan, but I'm also a groupie. So l've signed up for the newsletter.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Amazing.
+
+[Speaker: Shane Tews]
+Shane Tews: I love the podcast. Ilook forward to the book coming out. And if you do come to Washington, let us know because we may know a few people. Oh, which reminds me, that's one of the things you said in another one: It's amazing how many people don't keep their connections. They will meet somebody and they just let the whole thing go.
+
+[Speaker: Speaker not identified]
+lason Feifer: Yes. Oh my God.
+
+[Speaker: Shane Tews]
+Shane Tews: So let's finish with that. Tell us how important that is.
+
+[Speaker: Speaker not identified]
+lason Feifer: Okay, I will finish with that. And then also, wait, can I then add something on top?
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah.
+
+[Speaker: Speaker not identified]
+lason Feifer: Because I promised the bridge of familiarity thing and I don't want to leave
+
+[Speaker: Speaker not identified]
+people hanging. So quickly, I realized years ago that I was letting people slip through my tingers because I would meet people then I would torget. And so l started to create-and I realize this sounds awkward and weird at first it you're not doing something like this—but | just started. I created a Google Sheet, just a spreadsheet that I call "good contacts." And every time that I meet someone—Shane, you're in it—every time I meet someone who is interesting, I put them in "good contacts." I have little tabs: There's media, there's technology, there's whatever. And that way I can go back periodically and say, "Oh, I haven't caught up with that person in a while" or "Really, I need somebody who can think about this." AndI go back to the form. It is just wonderful to have everybody you know in one place.
+
+[Speaker: Shane Tews]
+Shane Tews: So it's your own individual version of Salesforce?
+
+[Speaker: Jason Feifer]
+Jason Feifer: It is; that's exactly right. It's a personal customer relationship management (CRM). It's a personal CRM.
+
+[Speaker: Shane Tews]
+Shane Tews: And Linkedln isn't enough because you want to be able to put notes. I totally get that.
+
+[Speaker: Speaker not identified]
+lason Feifer: Yeah, and Linkedln is chaos because | just accept everybody. So l've got like 40,000 connections on Linkedln. So, okay, I know we're short on time, so l'Il just tell the bridge of familiarity really fast. Here's the thing. Quick technology history story that I bet people love, and this is going to lead to some advice for anybody who is in the business of introducing new things to people. So the car, brand new thing, or the "horseless carriage" as they called it, going back a century or more. And at first when this thing hit the streets, people did not say, "Oh my gosh. This is a wonderful new way to get around and it makes my life so efficient." People instead said, "This is the devil wagon" and they threw cars at it. I don'tknow, devil wagon, by the way, literally is a phrase that they used. I don'tknow if you know this, but when people would drive a horseless carriage down the street, other people would stand on the sidewalks and they would vell "get a horse" at the people who were drivina by. People hated these things. They hated them. So the story that we know is that the mass adoption of cars was driven by Henry Ford. And that's sort of true in that he innovated manufacturing, but there was something that came before this that is not often told in the history books that came to me from an automobile historian who had told me this. And she said that years before Henry Ford, the automobile industry was trying to understand why people were not so excited about this new technology. And they realized that they were presenting it wrong because they were running these ads in which they were talking about the car as a replacement to the horse. But the thing is that people like their horse. The horse was a member of the family. The horse was something that had been in their family as long as they had known. They had no desire to get rid of the horse. Because the thing
+
+[Speaker: Speaker not identified]
+is, people, you are in the business of creating new things. Write this down to remind yourself. People don't like new things. You know what they like? They like better versions of old things. That's what they like. They like an improvement to something that they re already familiar and comfortable with. And so the thing that you need to do when you're introducing something is not say, "Hey, l've got something so great that you're going to throw your old life away and take up my thing. " Instead, you have to say, "Here is a way to do the things that you love to do better." That's where we need to be. And I think that's something that innovators always forget because they are so focused on the value of the thing that they created that they don't understand that most people don't see how it fits into their lives. So the solution for the automobile industry was to start to talk about the car not as a replacement to the horse, but rather as a better horse. Advertisements of the time started to shift where they would now start to talk about cars in horse terms. Ihey started to name cars atter horses, which is a tradition that we still have today.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, right.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Right?
+
+[Speaker: Shane Tews]
+Shane Tews: Mustang.
+
+[Speaker: Jason Feifer]
+Jason Feifer: Yeah, exactly, Bronco. In some cases they would even put, like, fake horse heads on the front of these cars. And this ultimately gave people the opening to embrace this thing because now it fit into their lives because it wasn't a replacement of something they were comfortable with; it was an addition to something that they were comfortable with. And that is the bridge of familiarity, and that is what we all need to be building.
+
+[Speaker: Shane Tews]
+Shane Tews: Now I'm going through in my head just the generations of car names, which I'm going to go look up after this. Jason, it's been such a pleasure to meet you and talk to you, and l look torward to reading your book. And please, please stay in touch, and thank you for being a guest on Explain to Shane.
+
+[Speaker: Speaker not identified]
+lason Feifer: I sure will. I'Il see you at Politics and Prose.
+
+[Speaker: Shane Tews]
+Shane Tews: Absolutely. Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of Explain to Shane.

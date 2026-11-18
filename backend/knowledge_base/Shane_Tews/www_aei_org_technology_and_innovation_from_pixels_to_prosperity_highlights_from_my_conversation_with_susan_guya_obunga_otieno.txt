@@ -1,29 +1,62 @@
 PAGE_TITLE: 
-	From Pixels to Prosperity: Highlights from My Conversation with Susan Otieno | American Enterprise Institute - AEI
+	From Pixels to Prosperity: Highlights from My Conversation with Susan Otieno
 
+[Speaker: Introduction / editorial context]
 Photography conveys so much more than just pixels, and stock photography helps us escape the particularities of a subject and allows us to step outside of the familiar and into the general. With the increase in need for stock photography due to the rise of digital platforms, there’s a whole world built on a web of permissions, intellectual property, and copyrights. But how does one bridge the gap between legal intricacies and the creative mind? What do data protection laws look like in a continent as diverse as Africa, especially in the digital age? And with the rise of generative AI, what are the potential biases and implications for visual representation?
-To unravel these threads, I had a candid conversation with
-Susan Otieno
-, a privacy and legal expert deeply entrenched in the stock photography space in Kenya.
-Below is an edited and abridged transcript of our enlightening discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+To unravel these threads, I had a candid conversation with Susan Otieno, a privacy and legal expert deeply entrenched in the stock photography space in Kenya.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our enlightening discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: You spend a lot of time in the intellectual property and copyright space with stock photography; what is it like interfacing with creatives, and how would you describe the exchange of intellectual property?
+
+[Speaker: Susan Otieno]
 Susan Otieno: At first I thought it was just going to be reviewing some contracts and looking at paperwork. But it was so different because I was really interfacing with creatives, photographers, videographers, illustrators, graphic designers, and I didn’t know how to communicate with them.
+
+[Speaker: Susan Otieno]
 It was quite frustrating because I was coming from a transactional point of view, in terms of “This is what you need to do. This is what you need to know. This is the law. It can empower you.” But it wasn’t reaching them because they perceive information from a different lens. It took us time to understand that and be able to kind of unpack my own communication style, so that I can be able to relate and convey what I need to convey. And that also got me into photography, which is great. So now I’m able to speak in a language that makes sense to creatives.
+
+[Speaker: Susan Otieno]
 In essence, the stock photography model ideally operates on a series of permissions. So you have the model who will give the photographer permission to shoot them, and consequently monetize the image, and release them from any liability. And then you have the photographer who gives the platform permission to showcase their images on the platform. And when they’re sold, they get a commission, and the photographer will retain the rights to the image.
+
+[Speaker: Susan Otieno]
 So, for us, we realized that in Africa, there’s quite a bit of awareness that needs to happen because people aren’t fully familiar with stock photography and how it works. We really try to unpack that and go from a simplified version, like user permissions, which is easy for helping someone understand how the platform works. So for us, we have contributors who voluntarily upload their images to the platform, and they sign a license agreement with PICHA. And then ideally, they receive 50 percent commission when an image is purchased or licensed.
+
+[Speaker: Shane Tews]
 With all these permissions and metadata, what are the privacy regimes like in African nations? Is there coordination?
+
+[Speaker: Susan Otieno]
 There is some movement on it. But it’s quite a difficult task because one, not all the African countries have passed data protection laws. And two, the level of enforcement is quite different in the countries. And the countries are taking different approaches to how they want to govern data. So there’s no unifying voice yet.
+
+[Speaker: Susan Otieno]
 For instance, Tanzania just passed their Personal Data Protection Act of 2022. And I think in the region, Kenya passed its act in 2019, Uganda also has an act. So it’s quite timely that they passed their act and they’ve taken a bit of a liberal interpretation to how they want to govern data in the jurisdiction. So for example, they don’t prohibit cross-border data transfers, and Kenya does. So it’s really interesting to see how those things will play out.
+
+[Speaker: Susan Otieno]
 When you look at the African Continental Free Trade Area (AfCFTA), which is ideally a trade agreement that is supposed to help intra-jurisdictional trade in Africa, it’s going to be an interesting conversation to see how we talk about digital trade when we haven’t discussed the movement of data across our borders as a continent.
+
+[Speaker: Susan Otieno]
 Even when you look at the EU, they were able to unify their laws because there’s a level of standardization, there’s a level of cognizance that we are working together, and we understand what our ecosystem is in terms of economics or socially. There’s already a level where there’s that expectation that there’s movement that’s facilitated through regulation. So, hopefully we can mirror that.
+
+[Speaker: Shane Tews]
 Are you thinking about AI stock image generation in your work?
+
+[Speaker: Susan Otieno]
 Within the generative AI space, how these systems are being trained is of major concern, because in Africa or in the global north, the data points are reflective of the north. So when the system is created, it reflects the bias of the north and kind of the narrative of the north. And when you look at images, video—this is part of the visual narrative. So it really impacts our ability to tell our stories, and our ability to create of our own. So I think it’d be interesting to see how we are able to generate data, and to also potentially get into developing these AI systems.
+
+[Speaker: Shane Tews]
 What are African nations doing on data localization?
+
+[Speaker: Susan Otieno]
 So when you talk about the rights of a data subject, you’re talking about the rights of an individual to their data, to express themselves in terms of determining what happens to the data. When we talk about storage, in Africa, the data centers are owned by the big cloud computing companies.
+
+[Speaker: Susan Otieno]
 In Kenya, for example, we’re definitely doing the data localization. And you’re seeing that in a slew of other African countries. But I think it really is just a question of capacity. For us, in Kenya, we’re probably at a better position in terms of data centers. We’re able to facilitate infrastructure. We have great internet governance, too.
+
+[Speaker: Shane Tews]
 From your perspective, what tends to be the most common method of connecting to the internet?
+
+[Speaker: Susan Otieno]
 The informal sector really contributes to the broader economy. The African informal sector has a high penetration in terms of mobile phones. That means that’s your point of connection. So, in terms of access, in terms of communication and information, the mobile phone has become a center for all that.

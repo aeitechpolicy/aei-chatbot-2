@@ -1,0 +1,143 @@
+PAGE_TITLE: 
+	Explain to Shane: The American Semiconductor Industry and Its Global Competition with John Neuffer — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI The American semiconductor industry and its global competition with John Neuffer Episode #9 | June 25, 2020 | Shane Tews and John Neuffer
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane. " I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work and how they shape our social and economic life. The US semiconductor industry spends a significant amount of money on research and development, close to $40 billion in 2019, second only to the pharmaceutical industry in the United States. While Silicon Valley is the birthplace of the semiconductor industry, much of the investment and manufacturing of semiconductors has recently occurred in Asia. Semiconductors are a critical component of modern electronics and will power the technologies of the future, everything ranging from computers to phones, 5G technology, internet of things [loT], and more. Currently several senators and congressmen have introduced legislation to encourage research and investment in the semiconductor industry. Why is it important to maintain US leadership in chip technology in coming years? And what are the best approaches for accomplishing this goal? Today my guest is John Neuffer. He is president and CEO of the Semiconductor Industry Association, known as SIA. John and his team are responsible for setting and leading the association's public policy to maintain US leadership in semiconductor design, manufacturing, and research. Prior to joining SIA, John served as senior vice president for global policy Information Technology Industry council known as ITI, where he directed ITl's global government relations in trade, cybersecurity, standards, regulatory, internet governance, and privacy. Before joining ITI, John served in several capacities at the office of the US Trade Representative here in Washington, DC, and in Japan. Thank you John, for being my guest today. I'd like to start this conversation by giving people a better understanding of how important semiconductors are to their daily lives. So how many digital goods that we touch on a daily basis have a semiconductor in them?
+
+[Speaker: John Neuffer]
+John Neuffer: Every single one of them. Just about everything with an electric current flowing through it involves a semiconductor these days. So your toaster, your refrigerator, obviously your iPhone, your car, they are ubiquitous. It's like a magic technology, on a space the size of quarter, a piece of silicon the size of a quarter, there's 20, 30, 40, 50 billion transistors. So transistors are the on-off
+
+[Speaker: John Neuffer]
+switches, the ones and zeros, that allow us to do all this phenomenal stuff with our iPhones and our other digital technologies.
+
+[Speaker: Shane Tews]
+Shane Tews: It's truly magic.
+
+[Speaker: John Neuffer]
+John Neuffer: The other thing I want to add, Shane, also is that it's loT, virtual reality, autonomous cars, e-health, remote learning. That's all powered by semiconductors underlying that. But really importantly, all the tuture technologies, 5G, 6G to come after that, quantum computing, artificial intelligence, that's all powered by semiconductor innovation.
+
+[Speaker: Shane Tews]
+Shane Tews: So it's not just the tech industry, it is transportation, telecommunications, agriculture, healthcare, biomedical, national detense. And it sounds like unless it's just you and me conversing in person there's a semiconductor engaged somewhere in there.
+
+[Speaker: John Neuffer]
+John Neuffer: That's right.
+
+[Speaker: Shane Tews]
+Shane Tews: So this is a technology that was birthed here in the United States, Silicon Valley. God love them, but it is now a global industry. Can you kind of give us a breakdown on what's going on?
+
+[Speaker: John Neuffer]
+John Neuffer: Yeah. So as you mentioned, semiconductors were invented here in the US of A, long history here. We've been global leaders for nearly the entire time, now we control about half the market. But what's happened since the semiconductors were invented is that there's a lot of other players around the world. The Koreans have come up, the Taiwanese, the Europeans, heavy production and design in Singapore, Japan. I think the biggest new player that's causing increasing heartburn in Washington are the Chinese. The Chinese are plowing literally hundreds of billions of dollars into their semiconductor industry to build it and make it strong and competitive. Right now they're far behind, but they're very focused and there's high level political attention on this question.
+
+[Speaker: Shane Tews]
+Shane Tews: So is there a difference between the design part of this and then the actual manufacturing?
+
+[Speaker: John Neuffer]
+John Neuffer: That's a great question. The industry is basically broken into three parts. One, companies that just design semiconductors, and then there's companies that just manufacture semiconductors, those are called foundry companies. And then there's companies that do the whole thing, they design and manufacture. So it's an important distinction.
+
+[Speaker: Shane Tews]
+Shane Tews: It seems what I've been reading lately that other countries are more focused on having government investment than we've had in the past. So why is it important that the United States starts to step up their game and get back engaged on this?
+
+[Speaker: John Neuffer]
+John Neuffer: Yeah, so you're getting right to kind of the big challenge we're facing right now. And that is, there's been a lot of pressure to bring more manufacturing backto the US generally, particularly advanced manufacturing, and that goes for semiconductors as well. We have very, very complex global supply chains. And one of the things that have made us very strong has been our ability to
+
+[Speaker: John Neuffer]
+basically use the resources of the world and systems of the world to build an amazingly competitive industry. But it's created some vulnerabilities too, and | think those have come to the tore of late, and I think this is what you want to focus on in our discussion today. We all have seen relations with China sour, and China, by the way, for our industry is our biggest and fastest growing About 35 percent of our sales go to China. In fact, about 83 percent of our customers are overseas, so we need to keep these markets open. So we've seen the relations with China sour, there's been a kind of a jolt to our policy establishment watching what's happening in Hong Kong. And they're thinking, "Well, is this going to someday happen in Taiwan?" And roughly 22 percent of all semiconductor manufacturing happens in Taiwan. A lot of stuff we make is fabricated in Taiwan, so | think that's caused some consternation. And then coming into the COVID crisis, I think it's exposed supply chain vulnerabilities to all industries. But I think that's kind of put into bold relief, the potential vulnerabilities that we have. And kind of the one obvious vulnerability is that our manutacturing has declined in recent years as a share of the global manufacturing. And that's creating a lot of challenges, and what I'd like to talk to you about a bit, Shane, is some of the things we need to do to address the challenges.
+
+[Speaker: Shane Tews]
+Shane Tews: So where do we currently sit in the global market?
+
+[Speaker: John Neuffer]
+John Neuffer: Right. So, right now we're number one overall, as I mentioned, we control about 47 percent of the global market share. But when it comes to manufacturing, in 1990 we manufactured about 40 percent of all semiconductors produced around the world. Today, we manufacture about 12 percent, a little bit north of 12 percent. 10 years from now, it's projected that we'll manufacture something south of 10 percent, about a 25 percent decline from today. Let me just clarify, it's not that our manufacturing capacity is going down, Shane. It's that the rest of the world has gone up dramatically. We're the, kind of, the last remaining electronics industry that has significant manufacturing here in the US. We manufacture in about 18 states. Of the companies that just produce, and companies that produce and design, of companies that produce semiconductors, US companies, about half of the fabrication happens here in the US and the other half around the world. So it's not that our manufacturing capacity has declined in the recent decades, it's that everyone else's has gone up. Everyone else has gone up dramatically. And I think that the policymakers in Washington and folks on the Hill are trying to figure out how to close the delta, how to kind of reverse the trend of us losing increasingly large market share when it comes to advanced manufacturing of
+
+[Speaker: Shane Tews]
+Shane Tews: You and I were talking earlier, and you said that the race to the future in semiconductor manufacturing is about investment in R&D and that this is not a free market.
+
+[Speaker: Speaker not identified]
+Iohn Neuffer: Yeah, so that's the other leg of our two-legged stool, which is an odd little stool, I suppose. But you can build all the manufacturing facilities here in the US, called "fabs," or fabrication operations. You can build all the fabs you want here in the US but unless you're driving the most innovative technologies into
+
+[Speaker: Speaker not identified]
+those fabs, you're still going to be diminished as an industry. And governments around the world are plowing very large sums into R&D and semiconductors, and our government has been very steady, but low in the amounts it's plowing in. Recently, there's been a little bit of an uptick, but when you compare to some other governments, it's quite insignificant. There's something that's important to identify here: When it comes to R&D we're not dealing — semiconductor R&D — we're not dealing with free market economy. Governments play a big role in that. As an industry, we plow about 18 percent of our sales back into R&D and that's all market-driven. But there's the government side, what the government puts in, and that's obviously not market-driven. And other governments are putting huge amounts towards R&D and semiconductors. But on the manufacturing side as well, sadly we are simply not in a free market economy. Other governments have identified semiconductors as strategic industries long ago, and they've been plowing substantial amounts into attracting semiconductor manufacturing. And so what happens with this, Shane, is that we don't have any federal program to do that. We have states that try to do that, and try hard to attract manufacturing from US companies and foreign companies, and there's been some successes. But when a state is competing against the coffers of a national government, it's not really a level playing field. So, that needs to be addressed. And governments around the world have been doing this for decades. We've not been in that game. And as a result, our manufacturing as a share of global manufacturing with semiconductors has been in a slow decline.
+
+[Speaker: Shane Tews]
+Shane Tews: Let's just walk that back for a second, because that's a really important point, that you're saying I may have done the R&D here in the United States, I'm ready to go to a manufacturing point in the process. When I'm looking at where to go to do my manufacturing, you have 18 states that have manufacturers, in the United States. When I look at the economy of it, I am now also looking at a market that is, basically, a lot of governments have gotten in to compete with the United States. So I may be looking at Arizona, but I'm also looking at, you
+
+[Speaker: John Neuffer]
+John Neuffer: I hat's exactly right. And other players around the world have very, very advanced manufacturing capabilities. Taiwan in particular has extremely advanced manufacturing capabilities. So when our design companies are shopping around as to where to produce, where to have their chips manufactured, they're going to look at those locations favorably. So it's a global marketplace when it comes to that, and our significant vulnerability is we don't have enough of the advanced manufacturing, or semiconductor manufacturing generally, that we probably should have. If we want to have more resilient supply chains and become more resilient, and frankly more competitive, and stay ahead of the, stay ahead of the curve we need to put a greater focus on increasing manufacturing capabilities here in the US.
+
+[Speaker: Shane Tews]
+Shane Tews: So legislation was introduced this month, and actually probably a couple of bills by the time you hear this, that are looking to take some corrective measures and get the US government and possibly state governments more engaged. Can you walk me through what the goals are on that?
+
+[Speaker: John Neuffer]
+John Neuffer: Yeah, actually well, the goals are to increase manufacturing and US
+
+[Speaker: John Neuffer]
+government investments in R&D. Those are the two fundamental goals. We were super excited when this legislation came out. The first bill is sponsored by Senators Cornyn and Warner. On the house side, there was a parallel bill sponsored by Matsui and McCaul. By the time we hear this there may be another bill sponsored by Cornyn and potentially others. The bills have lots of interesting and exciting provisions in them, we're very happy with that. I should also say the administration has been working behind the scenes to come up with its own ideas as to what incentives and investments should look like. So — but basically there's kind of two or three things going on. One is significant grants to incentivize manufacturing, some tax credits to incentivize building here, for the hugely expensive tools that go into manufacturing facilities, and the manufacturing facilities themselves. But there's also a very strong research prong of this, and that's funds to support USG [US government] R&D. On top of that, there's a proposal to create a national semiconductor technology center, which would, among many other things, help to research prototyping. These centers exist in other countries around the world, and we don't have one. It's — a consortia of cooperation between companies and between the government — would be a big asset for our industry going forward. There's a lot of things in there, but when you look at what it needs to take for us to even stay where we're at, at our 12 percent share of global manufacturing, it's going to be a really significant undertaking. So these are very, very important first steps.
+
+[Speaker: Shane Tews]
+Shane Tews: And l imagine also a big push for quite a while has been more STEM [science, technology, engineering, and math] spending, just because a lot of this also includes jobs.
+
+[Speaker: John Neuffer]
+John Neuffer: Yeah.
+
+[Speaker: Shane Tews]
+Shane Tews: If we have people that have the ability to do more in the research and be in demand we can keep those jobs here in the United States.
+
+[Speaker: John Neuffer]
+John Neuffer: Well, that is a great point. That's a virtuous cycle, Shane, where USG puts money into research. The research, most of it goes into our universities and some to our national labs, and that creates opportunities for STEM students to flourish. And it's a huge magnet for STEM students. One of the problems we face as an industry is we're not quite as cool as we used to be.
+
+[Speaker: Shane Tews]
+Shane Tews: I find that hard to believe.
+
+[Speaker: John Neuffer]
+John Neuffer: The computer scientists, electrical engineers, they're coming out and they're looking around and they're saying, "Gee, I want to create this cool app with this cool company in California." Well, semiconductors did use to be kind of a place for the cool kids, it's not quite as much as it used to be. And we have a talent problem, there's not enough talent being developed indigenously here in the US. And frankly, our immigration system is kind of a mess and it's hard to retain the toreian talent that tills the gap.
+
+[Speaker: Shane Tews]
+Shane Tews: So that is probably another reason why we're seeing so much government investment by other countries.
+
+[Speaker: Speaker not identified]
+Iohn Neuffer: Exactly.
+
+[Speaker: Shane Tews]
+Shane Tews: And it sounds like we have catching up to do there.
+
+[Speaker: John Neuffer]
+John Neuffer: Exactly.
+
+[Speaker: Shane Tews]
+Shane Tews: So Congress is going to play a role in this, and if things go well funding will allow you to have more options. Is that kind of what I'm hearing?
+
+[Speaker: John Neuffer]
+John Neuffer: That's exactly right. But one thing I do want to underscore with you, and that is that while we want the government to step in and level the playing field in terms of manufacturing and R&D, we also want the government to stay focused like a laser on keeping the foreign markets open. As I mentioned, 83 percent of our customers are overseas. We get huge revenues from overseas. One chief reason why that's important is that those revenues help us invest in R&D. As I mentioned, about 18 percent of our revenues go back into R&D and that 18 percent comes from our sales overseas. That's the huge scale we have overseas with those sales, to China and other countries. And so we need to keep those markets open so that we can keep plowing huge amounts into R&D. We are one of the most R&D intensive industries in the world. Keep those funds plowed back into R&D, and that R&D drives our innovation. And if those funds are diminished from the sales overseas, then our ability to innovate is diminished and that threatens our ability to be on the tip of the innovation spear going forward.
+
+[Speaker: Shane Tews]
+Shane Tews: You definitely make a good case for wanting to see more of this activity here in the United States. As somebody who's spent a lot of time in the last couple of months with all my digital devices, I'm sure I'm touching something that has a semiconductor in it pretty much every minute of the day. The analog world has kind of escaped me. Any closing thoughts, things we should be thinking about?
+
+[Speaker: John Neuffer]
+John Neuffer: I just think we're at a critical juncture here, Shane, as a country. We've seen other industries slip away and I'm very happy that folks in the administration and folks in Congress, have kind of grasped that we are at this critical juncture and are now beginning to help level the playing field. If we don't take aggressive action now we tace the boiled trog syndrome, just slowly but surely boiling to death. And I do think that we have a great opportunity now, there's a lot of focus on this, and | just want to make sure that we get across the finish line. We have a real opportunity here to do something big and bold to change the equation for us.
+
+[Speaker: Shane Tews]
+Shane Tews: Alright, now | think that's great. You think about all the industries that started here and slipped overseas, and then the cost effectiveness of them coming back is very difficult. And we don't want to see that happen, especially in the area of technology.
+
+[Speaker: John Neuffer]
+John Neuffer: Yeah. You know, one of the things Shane, is that people wonder if we should be involved as some kind of industrial policy and that's not kind of been the American way. Well, the semiconductor industry is as free market as they come. But the problem is that, as I mentioned, we are not in a free market when it comes to advanced manufacturing and R&D. And other governments have been doing this for decades. So, kind of a race to the bottom with subsidies is not very accurate in terms of characterizing where we're at, because, Shane,
+
+[Speaker: John Neuffer]
+herac, bgan daecades dg and ue ne sil flandang atthesariline toki So what we're trying to do is get that race changed so we can get moving off the start line.
+
+[Speaker: Shane Tews]
+Shane Tews: I was reading some articles and you had a great quote where you said, "This is a strategically important technology that we need to stay competitive." A very simple idea, and I think that's kind of the crux of what this whole discussion is about. So John, I want to thank you for your time today and wish you lots of luck.
+
+[Speaker: John Neuffer]
+John Neuffer: Thanks so much, Shane. This has been great. This is my first "Explain to Shane."
+
+[Speaker: Shane Tews]
+Shane Tews: Maybe one of many.
+
+[Speaker: John Neuffer]
+John Neuffer: It's been painless, thank you.
+
+[Speaker: Shane Tews]
+Shane Tews: Great. Thanks.

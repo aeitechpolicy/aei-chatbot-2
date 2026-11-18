@@ -1,30 +1,65 @@
 PAGE_TITLE: 
-	The 2023 Munich Security Conference Is Putting the “Cyber” in International Security: Highlights from My Conversation with Benedikt Franke | American Enterprise Institute - AEI
+	The 2023 Munich Security Conference Is Putting the “Cyber” in International Security: Highlights from My Conversation with Benedikt Franke
 
+[Speaker: Introduction / editorial context]
 International security has meant many things over the years, but a new facet of defense has emerged over the last 30 years: cybersecurity. With the anniversary of the 2022 Invasion of Ukraine approaching and the 2023 Munich Security Conference (MSC) coming up this weekend, my recent conversation with the leader of the MSC bears reiterating as conversations surrounding all facets of international security face a second year of being tested with real conflict.
+
+[Speaker: Introduction / editorial context]
 Benedikt Franke is a prominent figure in international security and diplomacy, renowned for his leadership at the Munich Security Conference. As the co-founder and managing director of the MSC since 2013, Franke has been instrumental in shaping the annual conference into a premier platform for high-level security policy dialogue. Under his guidance, the MSC has evolved to become a dynamic forum for policymakers, experts, and thought leaders to exchange ideas and collaborate on key security challenges facing the world. Franke’s extensive experience in international relations and public policy, as well as his deep commitment to multilateralism, have made him a respected and influential figure in the global security community.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: So, for those people who are not that familiar with the Munich Security Conference, can you just give us a baseline idea of the work that you do?
+
+[Speaker: Benedikt Franke]
 Benedikt Franke: The Munich Security Conference is indeed quite an old institution—60 years old. We believe that we are the world’s preeminent forum for the debate of foreign and security policy. We are much more than an annual conference, but people do know us for our annual meeting in Munich every February. We’ve now met 60 times, having been founded by one of the resistance fighters against Hitler, and we started with a strong transatlantic focus on trying to get German and American elites back together. And obviously, as security has become a much broader issue, our conference has broadened its focus. And so, today we are a pretty big organization dealing with all kinds of security definitions from hardcore security issues like tank procurement, hypersonic missiles, and cybersecurity to some of the softer aspects of security like food or water security or even access to education.
+
+[Speaker: Shane Tews]
 You had a paper come out in early 2022 about digital economy security—as opposed to conventional kinetic security. What were the key takeaways?
+
+[Speaker: Benedikt Franke]
 Actually, we came out with it just ahead of Russia’s invasion, which obviously has refocused attention on all the different ways that you can actually fight a war. And our point was that our freedom isn’t necessarily only defended in the fields of Ukraine, but also in our smart devices, in our critical infrastructure, in our democratic processes and, generally, in the way that we structure and lead our lives.
+
+[Speaker: Benedikt Franke]
 It’s dangerous and shortsighted not to accept the fight where the illiberals want to have it. So, we need to get better at mapping our own vulnerabilities, at understanding our own dependencies, and at strengthening our soft underbelly. This soft underbelly really is the digital world because it has access not only to hearts and minds, but to our entire lives. What we did call for was really for actors like our national governments, alliances like NATO and the European Union and others, to think about every policy and every regulation with this lens of safety.
+
+[Speaker: Benedikt Franke]
 What we want to do is to ensure that there is a process before regulations are decided upon, that includes a debate on the security aspect of things. Discussions about the app store are such an example. It may, at first sight, be a really good idea to force actors like Apple to open up the app store to everyone under the sun, and because it’s fair to open it up and it may create more competition, which is then better for the consumer. But taking away a proven layer of protection without offering an alternative seems pretty unwise from a geostrategic point of view where we need to do everything to protect our citizens from the influence of illiberal operations.
+
+[Speaker: Benedikt Franke]
 We need to get away from this idea that war is just kinetic, and that means working hard to protect our critical digital infrastructure.
+
+[Speaker: Shane Tews]
 The problem of reliable internet access is a huge issue. I was in Ethiopia and saw that governments can turn off parts of their country’s internet. How do you plan on addressing this issue of access?
+
+[Speaker: Benedikt Franke]
 It is important to understand these countries, the reasons why they turn off parts of the internet, and what we would have to do to tackle some of these concerns. Because sometimes, they really are perceptions that are not based on true facts, and sometimes, intelligence sharing can help dispel some of the concerns of these governments.
+
+[Speaker: Benedikt Franke]
 You’ve just mentioned Ethiopia. That’s a case where I think you can make a very good argument that you need the internet to provide humanitarian aid. You need the internet to do X, Y, and Z, which is all in the very interest of the national government. And that the malign use of the internet, even through the eyes of a biased government, doesn’t outweigh the gains. I think we just need to get better at engaging at eye level with these actors and also drawing red lines.
+
+[Speaker: Benedikt Franke]
 I know that drawing lines isn’t a very popular thing, but we need to make sure that this is ostracized and that access to the free and open internet is a basic right—a basic human right that sounds pretty ridiculous—but how do you want to ensure adequate education if you don’t have the internet?
-Benedikt, you wrote a book,
-The Art of Diplomacy
-, as a tribute to Wolfgang Ischinger who was your predecessor at the MSC for a long time. What did you learn from that experience?
+
+[Speaker: Shane Tews]
+Benedikt, you wrote a book, The Art of Diplomacy, as a tribute to Wolfgang Ischinger who was your predecessor at the MSC for a long time. What did you learn from that experience?
+
+[Speaker: Benedikt Franke]
 When people ask me, out of these 100 chapters, what’s the one necessary ingredient of successful diplomacy, I tell them it’s trust—creating, generating, and maintaining trust. And I’m always struck by the parallel between the art of diplomacy and the art of cybersecurity. Because in cyberspace, trust is everything. If you’ve lost it once, it’s very hard to regain. A lot of the processes like online voting, a lot of E-commerce, that all depends on our ability to generate mutual trust. And so, the Munich Security Conference has placed a premium on trust in cyberspace for a long time.
+
+[Speaker: Shane Tews]
 So, what do you have planned for 2023?
+
+[Speaker: Benedikt Franke]
 What we will be looking at really is this idea of revisionism—that there are quite a lot of regimes and individuals that want to turn back progress made that aren’t happy with the international rules-based order and they want to reinterpret it or erode it or even totally abolish it. And that is systemic competition that everyone keeps talking about isn’t necessarily between the US and China, between European Union and Russia.
+
+[Speaker: Benedikt Franke]
 It’s not even between democracies or autocracies or between the Global South and the Global North. It’s really between those countries that believe that the international rules-based order can be a basis for future corporation and those that see it as a threat and are actively working to undermine it. And that is a longer list than we would like.
+
+[Speaker: Benedikt Franke]
 If you remember the two votes in the UN General Assembly on Ukraine, one in early March and one in September was always the same 38 countries that abstained on very simple questions. And so, what we will focus on during 2023 is to understand why these countries abstained and what we would need to do to convince them of the inherent benefits of the current global governance mechanisms and what we would need to do to in a way pull them off the fence.
+
+[Speaker: Benedikt Franke]
 That means we need to take the concerns more seriously, fulfill our promises more fully, and avoid double standards.

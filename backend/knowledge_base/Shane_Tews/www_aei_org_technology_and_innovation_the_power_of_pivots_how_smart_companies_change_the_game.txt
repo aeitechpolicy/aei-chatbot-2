@@ -1,39 +1,65 @@
 PAGE_TITLE: 
-	The Power of Pivots: How Smart Companies Change the Game | American Enterprise Institute - AEI
+	The Power of Pivots: How Smart Companies Change the Game
 
+[Speaker: Introduction / editorial context]
 Businesses and startups alike have long served to drive American ingenuity and growth. Within the United States alone, over 75,000 successful startups have broken into the marketplace, leading the US to dominate the marketplace. While there are many tactics that new startups can utilize to thrive in a competitive industry, burdensome regulatory practices are stifling innovation, making it harder for these startups to hit the ground running.
-Last week, I spoke to Gary Shapiro about our regulatory and innovation environment. Gary Shapiro currently serves as CEO of the
-Consumer Technology Association
-, a standard and trade organization representing 1,300 consumer technology companies. A four-time published author, Gary writes on the importance of innovation, support of the startup culture, and ability to manage strategic pivots. Within his new book
-Pivot or Die
-:
-How Leaders Thrive When Everything Changes
-, Gary examines how companies are mastering the art of strategic transformation by embracing the “survive and thrive” culture that tech leaders need to be successful in today’s competitive marketplace.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: I love the way you divide the pivots in your book,
-Pivot or Die
-, into the “startup pivot,” the “forced pivot,” the “failure pivot,” and the “success pivot.” What are your favorite pivots?
-Gary Shapiro:
-To be a startup, you have to pivot. You shouldn’t be worried about long-term plans, strategy documents, or getting a prototype that actually works. Just approach an opportunity with a vision, idea, and a way of explaining in three or four seconds, which will capture someone’s attention and convince them to listen.
+
+[Speaker: Introduction / editorial context]
+Last week, I spoke to Gary Shapiro about our regulatory and innovation environment. Gary Shapiro currently serves as CEO of the Consumer Technology Association, a standard and trade organization representing 1,300 consumer technology companies. A four-time published author, Gary writes on the importance of innovation, support of the startup culture, and ability to manage strategic pivots. Within his new book Pivot or Die: How Leaders Thrive When Everything Changes, Gary examines how companies are mastering the art of strategic transformation by embracing the “survive and thrive” culture that tech leaders need to be successful in today’s competitive marketplace.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: I love the way you divide the pivots in your book, Pivot or Die, into the “startup pivot,” the “forced pivot,” the “failure pivot,” and the “success pivot.” What are your favorite pivots?
+
+[Speaker: Gary Shapiro]
+Gary Shapiro: To be a startup, you have to pivot. You shouldn’t be worried about long-term plans, strategy documents, or getting a prototype that actually works. Just approach an opportunity with a vision, idea, and a way of explaining in three or four seconds, which will capture someone’s attention and convince them to listen.
+
+[Speaker: Gary Shapiro]
 This is one of the advantages startups have over bigger companies. If you’re a large company, it’s like you’re maneuvering an ocean liner—it’s tough to make a quick turn and ultimately make a change within your business. There are many committees and political interests that protect the number one revenue source for the big company and they end up not being as flexible.
+
+[Speaker: Gary Shapiro]
 There are always bound to be external factors that force you, as a business, to operate as quickly as possible and in a way that you are not used to operating. One more prominent example is what everyone did during COVID. Best Buy was one company that was exceptional at pivoting to a new way of operating. Within three days of the national shutdown, they were doing deliveries out to people’s cars. They just made it happen.
+
+[Speaker: Gary Shapiro]
 This was at a time when everyone was doing forced pivots. The ones that had the toughest times making them were restaurants but, even they adapted and started offering more carryout services. In a way, COVID forced companies, instead of copying everybody else, to come up with ways just to survive. It forced them to come up with new products. And as a result, I think there’s been a divergence, at least in the consumer technology industry, of the companies now. There was this new mentality of “we got to try new stuff” and that mentality made it into many different sectors because of COVID. We just can’t do what everyone else is doing.
+
+[Speaker: Gary Shapiro]
 You talk in the book about how Best Buy realized they’re actually a service company. That’s part of why people go there versus buying other places. I actually did it during COVID, come to think of it. I got a bigger TV and had workers from Best Buy come set it up. They actually recognize that they have great service, and they make it a priority to what they do. A lot of companies don’t do that.
+
+[Speaker: Gary Shapiro]
 The way you make money in this entrepreneurial world of ours and in the free market is you look at what problems people have, and you solve them. And certainly for buying things in a home like a TV, the price is not usually the barrier anymore. It’s, how do I set it up? How do I deal with it? How do I work it? How do I get rid of the old stuff?
+
+[Speaker: Shane Tews]
 Now let’s talk about failure and success pivots. What are some of your favorite examples of companies that did a great job at navigating these challenges?
+
+[Speaker: Gary Shapiro]
 Interestingly enough, Panasonic started as a bicycle company and just kept pivoting. The company, which is Japanese, realized that Korean companies such as Samsung and Daewoo were overtaking them. And then, Chinese companies started producing cheaper goods than them. So Panasonic said, “Business is rough and the consumer is a great beneficiary of that. And while it’s a challenging business, they realized that the future is going to be electric cars. Early on, they cut a deal with Elon Musk and built a battery factory in Nevada. Now they have another one in the Midwest. They’ve recognized that the US is a great market for batteries and that they just can’t only come from China. That’s what a failure pivot is, realizing when you’re not succeeding in a market and being able to recognize new opportunities for success in another market.
+
+[Speaker: Gary Shapiro]
 On the other hand, when I got to know Jeff Bezos early on, he was extremely forward-thinking. At the time, he was the number one online bookseller in the country and was using the internet in a way that no one else had. Then, all of a sudden, he shows up with this device—an electronic book called The Kindle. He was essentially creating his own competition. And he just kept on doing it. If you pay attention to Amazon, they’re always doing something better, cleaner, and different. They were quick to get into cloud computing and they realized that just by having their servers, they were creating and maintaining a service that everyone else also needed. Now, it’s the most profitable part of Amazon because everyone uses cloud computing. So that success pivot is really about leveraging your existing platform to explore and invest in something that’s ahead of the curve, even if it’s risky, because you can be driving long-term growth and innovation as a result.
+
+[Speaker: Gary Shapiro]
 All of these pivots hinge, at some point, on regulatory mechanisms. Looking at AI, for example, there are a lot of companies that aren’t beholden to the US and are now looking over to the Middle East because they think they need some sort of regulatory certainty. That certainty is that regulators will leave them alone if they come and spend enough money there.
+
+[Speaker: Shane Tews]
 I’m really concerned about this, because we’re starting to create barriers similar to what we’re seeing in Europe, where they can’t figure out how to get a decent tech company over there. I’m afraid we are heading in that same direction. Do you feel the same way?
+
+[Speaker: Gary Shapiro]
 I definitely share that concern. The US and Europe share similar cultural values and ethical, and moral values about liberty and individual rights. But their number one export right now is regulation. With the encouragement of the United States government under the FTC, they’re extorting billions of dollars from US companies and shareholders and trying to knock them down. Our federal government is destroying the competitive advantage we have as a country, which is our tech industry. We dominate in tech globally, especially when you look at the internet sites and platforms like Google, Apple, and Meta. Any other country would die to have those companies located there. But we just attack them and then encourage Europe to attack them with overbearing regulatory practices.
+
+[Speaker: Gary Shapiro]
 The FTC has taken the position that big companies are “bad companies” and big companies are not allowed to buy small companies. I represent over 1300 technology companies, 80 percent of whom are small, and they are united on one thing, and that is that this is a bad thing. It’s terrible for raising investment capital for VCs. You can’t exit because your government will not allow big companies to buy you. I believe in big companies and I love the fact that the US dominates that area globally. But, we’re destroying our golden goose intentionally. Having and maintaining a strong investment environment is important for innovation, which is something that distinguishes us from every other country in the world. It’s as important to us as having a strong militaries. It’s our secret sauce that makes us better, helps us to grow our capital market, and will allow the generations after us to have a better life. And we’re just destroying it unmercifully.
+
+[Speaker: Gary Shapiro]
 In the book, you talk about this regulatory environment in the context of Ring, which is under threat from certain Chinese businesses promoting comparable goods. Because Ring was an American firm, it had to comply with all of these American regulations, while its Chinese counterpart did not. You compare that to Roomba, which the federal government stopped from being acquired because it determined that there were too many robot vacuum cleaners on the market, despite Nuremba’s desire to be bought. It’s fascinating. It’s like they just pick and choose some of these cases.
+
+[Speaker: Gary Shapiro]
 Every story has humans involved. The guys who invented Roomba were originally interested in entering the space exploration field, but pivoted because the space program was drying up. When Amazon came along and offered to buy them, the FTC traveled to Europe to convince European regulators to challenge that acquisition and ultimately kill it since the FTC was unable to do so in the United States. When former President Carter came in, he brought a deregulatory approach to the FTC called the Consumer Welfare Standard. This protected consumers and ultimately drove our country forward, grew our stock market, and helped the US dominate the innovation and tech space. Now that it’s been reversed, we’re regulating heavily and trying to replicate what Europe has.
-I look at the EU’s AI Act and the Digital Markets act and the General Data Protection Regulation (GDPR) and there is such a fine needle to thread there. In terms of privacy and data, GDPR wants you to limit privacy and data, and the EU AI act asks for these very exuberant data sets. Then with the DMA, they want all messaging apps to be interoperable, which, beyond being very technically challenging, it also breaks encryption. So the idea that they don’t think about the technology before regulating their point of view is a perpetual challenge for me.
+
+[Speaker: Gary Shapiro]
+I look at the EU’s AI Act and the Digital Markets act and the General Data Protection Regulation (GDPR) and there is such a fine needle to thread there. In terms of privacy and data, GDPR wants you to limit privacy and data, and the EU AI act asks for these very exuberant data sets. Then with the DMA, they want all messaging apps to be interoperable, which, beyond being very technically challenging, it also breaks encryption. So the idea that they don’t think about the technology before regulating their point of view is a perpetual challenge for me.
+
+[Speaker: Gary Shapiro]
 If you look at just the number of unicorns, you know, the companies with billion euro or dollar valuations, you know, the US has a ton and Europe has a tiny fraction of that. Why is that? We have similar land mass, similar sized population. Now look, they do have like, you know, 30 countries and dozens of languages, and they have regulations in every country and the year. The beauty of the US Constitution is that when it comes to regulation of interstate commerce, it’s up to Congress. And of course, states have certain rights in certain areas, but we are a desirable marketplace with one language, you know, with three, 30 million people, and it’s a great place to do business. We also have access to capital. We also don’t tax the heck out of everyone who does something innovative.

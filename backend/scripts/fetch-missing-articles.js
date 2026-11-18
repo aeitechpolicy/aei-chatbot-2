@@ -22,20 +22,18 @@
 //
 // A co-authored piece (multiple served scholars) is written once per
 // scholar folder, since each domain's chat only reads its own folder.
-// Existing files are never overwritten — if the target path already
-// exists, that record is skipped without a fetch.
+// Ordinary existing files are not overwritten. Optional REFRESH_INTERVIEWS
+// reprocesses only recognized interviews and records speaker-aware metadata.
 
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const SERVED_SCHOLARS = require('../utils/servedScholars');
+const { createHash } = require('node:crypto');
+const { inspectInterview, officialUrl } = require('../utils/interviewSources');
+const { loadTranscript } = require('../utils/interviewTranscripts');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
-const KB_DIR = path.join(__dirname, '..', 'knowledge_base');
-const INDEX_PATH = path.join(DATA_DIR, 'aei-index.json');
-const MATCHES_PATH = path.join(DATA_DIR, 'matches.json');
-const REPORT_PATH = path.join(DATA_DIR, 'fetch-missing-articles-report.json');
 
 const HEADERS = {
   'User-Agent':
@@ -66,10 +64,11 @@ function filenameFor(url) {
 async function fetchWithRetry(url) {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
-      const stagingUrl = url.replace("://www.aei.org", "://stage.aei.org");
-      return await axios.get(stagingUrl, { headers: HEADERS, timeout: 20000 });
+      return await axios.get(url, { headers: HEADERS, timeout: 20000, maxContentLength: 8 * 1024 * 1024,
+        beforeRedirect: options => { if (!officialUrl(`https://${options.hostname}${options.path}`) || options.protocol !== 'https:') throw new Error('Article redirected outside AEI'); } });
     } catch (err) {
-      if (attempt === MAX_RETRIES) throw err;
+      const status = err.response?.status;
+      if (attempt === MAX_RETRIES || (status >= 400 && status < 500 && ![408, 429].includes(status))) throw err;
       const backoff = 1000 * attempt * attempt;
       console.warn(`  retry ${attempt}/${MAX_RETRIES} after ${err.code || err.message}: ${url}`);
       await sleep(backoff);
@@ -115,22 +114,6 @@ function writeArticleFile(filePath, title, body) {
   fs.writeFileSync(filePath, content);
 }
 
-function findMissingRecords() {
-  const index = JSON.parse(fs.readFileSync(INDEX_PATH, 'utf8'));
-  const matches = fs.existsSync(MATCHES_PATH)
-    ? JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8'))
-    : [];
-  const matchedUrls = new Set(matches.map((m) => m.url));
-  const servedLower = new Set(SERVED_SCHOLARS.map((s) => s.toLowerCase()));
-
-  return index.filter((r) => {
-    if (r.delisted_at) return false;
-    const scholars = r.scholars || [];
-    if (!scholars.some((s) => servedLower.has(s.toLowerCase()))) return false;
-    return !matchedUrls.has(r.url);
-  });
-}
-
 function servedFoldersFor(record) {
   const scholars = record.scholars || [];
   return SERVED_SCHOLARS.filter((served) =>
@@ -138,89 +121,133 @@ function servedFoldersFor(record) {
   ).map((served) => served.replace(/\s+/g, '_'));
 }
 
-async function main() {
-  const allMissing = findMissingRecords();
-  const limit = process.env.LIMIT ? Number(process.env.LIMIT) : allMissing.length;
-  const missing = allMissing.slice(0, limit);
-  console.log(
-    `Found ${allMissing.length} served-scholar record(s) with no matched .txt file` +
-      (limit < allMissing.length ? ` (processing first ${limit} per LIMIT).` : '.')
-  );
-
-  const report = { written: [], skipped_exists: [], failed: [] };
-
-  for (let i = 0; i < missing.length; i++) {
-    const record = missing[i];
-
-    // Everything about one record is fault-isolated: a single malformed URL
-    // or unexpected error must not abort the whole batch and lose every
-    // file already written this run (this runs unattended in CI).
-    try {
-      const filename = filenameFor(record.url);
-      const folders = servedFoldersFor(record);
-
-      if (folders.length === 0) continue; // shouldn't happen given findMissingRecords' filter
-
-      const targetPaths = folders.map((folder) => path.join(KB_DIR, folder, filename));
-      const alreadyHaveAll = targetPaths.every((p) => fs.existsSync(p));
-      if (alreadyHaveAll) {
-        report.skipped_exists.push({ url: record.url, filename });
-        continue;
-      }
-
-      console.log(`[${i + 1}/${missing.length}] Fetching: ${record.url}`);
-      let article;
-      try {
-        const response = await fetchWithRetry(record.url);
-        const $ = cheerio.load(response.data);
-        article = extractArticle($);
-      } catch (err) {
-        console.warn(`  failed: ${err.message}`);
-        report.failed.push({ url: record.url, reason: err.message });
-        await sleep(DELAY_MS);
-        continue;
-      }
-
-      if (!article) {
-        console.warn('  no usable body content found; skipping');
-        report.failed.push({ url: record.url, reason: 'no usable body content extracted' });
-        await sleep(DELAY_MS);
-        continue;
-      }
-
-      for (const targetPath of targetPaths) {
-        if (fs.existsSync(targetPath)) continue;
-        writeArticleFile(targetPath, article.title, article.body);
-        console.log(`  wrote ${path.relative(process.cwd(), targetPath)} (${article.body.length} chars)`);
-      }
-
-      report.written.push({
-        url: record.url,
-        filename,
-        folders,
-        bodyLength: article.body.length,
-      });
-
-      await sleep(DELAY_MS);
-    } catch (err) {
-      console.warn(`  unexpected error, skipping record: ${err.message}`);
-      report.failed.push({ url: record.url, reason: err.message });
+// REFRESH_INTERVIEWS=true re-checks existing Shane pages once; ordinary articles
+// remain untouched. Subsequent scheduled runs only fetch unmatched records.
+async function runImport({
+  backendPath = path.join(__dirname, '..'), refreshInterviews = false, interviewsOnly = false,
+  limit, fetchPage = fetchWithRetry, fetchTranscript = loadTranscript,
+  delay = DELAY_MS, log = console.log, maxRunMs = 45 * 60 * 1000, now = Date.now
+} = {}) {
+  const dataPath = path.join(backendPath, 'data'), kbPath = path.join(backendPath, 'knowledge_base');
+  const metaPath = path.join(backendPath, 'articleMetadata.json');
+  const read = (filename, fallback) => fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : fallback;
+  const index = read(path.join(dataPath, 'aei-index.json'), []);
+  const matches = read(path.join(dataPath, 'matches.json'), []);
+  const metadata = read(metaPath, {});
+  const matched = new Set(matches.map(item => officialUrl(item.url)).filter(Boolean));
+  const all = index.filter(record => officialUrl(record.url) && !record.delisted_at && servedFoldersFor(record).length &&
+    (!interviewsOnly || servedFoldersFor(record).includes('Shane_Tews')) &&
+    (!matched.has(officialUrl(record.url)) || (refreshInterviews && servedFoldersFor(record).includes('Shane_Tews'))));
+  if (limit !== undefined && (!Number.isSafeInteger(limit) || limit < 1)) throw new Error('LIMIT must be a positive whole number');
+  const targets = all.slice(0, limit ?? all.length);
+  const report = { written: [], skipped_exists: [], failed: [], transcripts: [], refreshed_interviews: [], skipped_non_interview: [], event_transcript_links: [] };
+  const episodes = new Map(), transcripts = new Map();
+  const deadline = now() + maxRunMs;
+  log(`Checking ${targets.length} served-scholar records${refreshInterviews ? ' (including existing Shane interviews)' : ''}.`);
+  function saveMetadata() { fs.writeFileSync(metaPath, JSON.stringify(metadata, null, 2) + '\n'); }
+  function fail(url, stage, error) {
+    const reason = error.message || String(error);
+    report.failed.push({ url, stage, reason }); log(`  ${stage} failed: ${reason}`);
+  }
+  for (const [i, record] of targets.entries()) {
+    if (now() >= deadline) {
+      report.failed.push(...targets.slice(i).map(item => ({ url: item.url, stage: 'deferred', reason: 'Refresh time budget reached; rerun to continue' })));
+      break;
     }
+    try {
+      const url = officialUrl(record.url), filename = filenameFor(url), folders = servedFoldersFor(record);
+      const paths = folders.map(folder => path.join(kbPath, folder, filename));
+      const alreadyHaveAll = paths.every(file => fs.existsSync(file));
+      const refresh = refreshInterviews && folders.includes('Shane_Tews');
+      if (alreadyHaveAll && !refresh) { report.skipped_exists.push({ url, filename }); continue; }
+      log(`[${i + 1}/${targets.length}] ${url}`);
+      const response = await fetchPage(url), $ = cheerio.load(response.data);
+      const canonicalUrl = officialUrl($('link[rel="canonical"]').attr('href'), url) || url;
+      const plain = extractArticle($), interview = inspectInterview($, canonicalUrl);
+      if (interviewsOnly && !interview) { report.skipped_non_interview.push({ url }); if (delay) await sleep(delay); continue; }
+      const article = interview || plain;
+      if (!article || article.body.length < MIN_BODY_LENGTH) throw new Error('No usable body content extracted');
+      if (alreadyHaveAll && !interview) { report.skipped_exists.push({ url, filename }); continue; }
+      let episode = interview?.sourceType === 'podcast_description' ? interview : null;
+      const episodeUrl = interview?.interview.episodeUrl;
+      if (interview && episodeUrl && episodeUrl !== canonicalUrl) {
+        try {
+          if (!episodes.has(episodeUrl)) episodes.set(episodeUrl, (async () => {
+            const page = await fetchPage(episodeUrl);
+            const inspected = inspectInterview(cheerio.load(page.data), episodeUrl, { seriesHint: interview.interview.series === 'Explain to Shane' });
+            if (!inspected) throw new Error('Linked episode could not be verified as Explain to Shane');
+            return inspected;
+          })());
+          episode = await episodes.get(episodeUrl);
+        } catch (error) { fail(episodeUrl, 'episode', error); }
+      }
+      if (interview) {
+        interview.interview.episodeUrl = episode?.interview.episodeUrl || interview.interview.episodeUrl;
+        interview.interview.episodeDate = episode?.date || (episodeUrl === canonicalUrl ? record.date?.slice(0, 10) : null) || null;
+        interview.interview.transcriptUrl ||= episode?.interview.transcriptUrl || null;
+      }
+      for (const [j, file] of paths.entries()) {
+        if (fs.existsSync(file) && !interview) continue;
+        writeArticleFile(file, article.title || record.title, article.body);
+        const key = `${folders[j]}/${filename}`;
+        metadata[key] = {
+          ...metadata[key], title: article.title || record.title, url: canonicalUrl, date: article.date || record.date || null,
+          authors: interview?.authors?.length ? interview.authors : Array.isArray(record.authors) ? record.authors : record.scholars || [], ...(interview ? { sourceType: interview.sourceType, interview: interview.interview,
+            textCoverage: interview.sourceType === 'podcast_description' ? 'description-only' : 'full-text' } : { textCoverage: 'full-text' }),
+          fetchedAt: new Date().toISOString()
+        };
+      }
+      if (interview && alreadyHaveAll) report.refreshed_interviews.push({ url: canonicalUrl, requestedUrl: url, sourceType: interview.sourceType });
+      else report.written.push({ url: canonicalUrl, requestedUrl: url, filename, folders, bodyLength: article.body.length });
+      // Persist before PDF work so a failure leaves the usable edited article intact.
+      saveMetadata();
+      if (interview?.interview.transcriptUrl && interview.interview.series !== 'Explain to Shane') report.event_transcript_links.push({ url: interview.interview.transcriptUrl, pageUrl: canonicalUrl, reason: 'Event/panel transcript needs separate metadata review' });
+      if (interview?.interview.transcriptUrl && interview.interview.series === 'Explain to Shane') {
+        const pdfUrl = interview.interview.transcriptUrl;
+        try {
+          if (!transcripts.has(pdfUrl)) transcripts.set(pdfUrl, fetchTranscript(pdfUrl));
+          const transcript = await transcripts.get(pdfUrl);
+          const transcriptFile = 'podcast_transcript_' + createHash('sha256').update(pdfUrl).digest('hex').slice(0, 16) + '.txt';
+          let transcriptTitle = (episode?.title || article.title || record.title) + ' — full transcript';
+          let sourceDate = interview.interview.episodeDate;
+          const sourceInterview = { ...interview.interview, host: 'Shane Tews', participants: transcript.participants,
+            unverifiedSpeakerLabels: transcript.unverifiedSpeakerLabels || [], extractionMethod: transcript.extractionMethod || 'pdf-text' };
+          const prior = metadata[`Shane_Tews/${transcriptFile}`];
+          // Explicitly duplicated episode pages can have different publication dates.
+          // Prefer the earliest verified page; a correction on the same page still wins.
+          if (prior?.url === pdfUrl && prior.date && sourceDate && prior.date < sourceDate &&
+            prior.interview?.episodeUrl && prior.interview.episodeUrl !== sourceInterview.episodeUrl) {
+            sourceDate = prior.date; transcriptTitle = prior.title;
+            sourceInterview.episodeUrl = prior.interview.episodeUrl;
+            sourceInterview.episodeDate = prior.interview.episodeDate;
+          }
+          writeArticleFile(path.join(kbPath, 'Shane_Tews', transcriptFile), transcriptTitle, transcript.body);
+          metadata[`Shane_Tews/${transcriptFile}`] = {
+            title: transcriptTitle, authors: [], date: sourceDate, url: pdfUrl,
+            sourceType: interview.interview.series === 'Explain to Shane' ? 'podcast_transcript' : 'interview_transcript', textCoverage: 'full-text',
+            interview: sourceInterview,
+            fetchedAt: new Date().toISOString()
+          };
+          saveMetadata();
+          if (!report.transcripts.some(item => item.url === pdfUrl)) report.transcripts.push({ url: pdfUrl, episodeUrl, filename: transcriptFile });
+        } catch (error) { fail(pdfUrl, 'transcript', error); }
+      }
+    } catch (error) { fail(record.url, 'article', error); }
+    if (delay) await sleep(delay);
   }
-
-  fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
-
-  console.log('\nDone.');
-  console.log(`  written:        ${report.written.length}`);
-  console.log(`  skipped (exist): ${report.skipped_exists.length}`);
-  console.log(`  failed:          ${report.failed.length}`);
-  console.log(`\nReport written to ${path.relative(process.cwd(), REPORT_PATH)}`);
-  if (report.failed.length > 0) {
-    console.log('Review failed entries in the report before re-running.');
-  }
+  fs.mkdirSync(dataPath, { recursive: true });
+  fs.writeFileSync(path.join(dataPath, 'fetch-missing-articles-report.json'), JSON.stringify(report, null, 2) + '\n');
+  log(`Done: ${report.written.length} new pages, ${report.refreshed_interviews.length} updated interviews, ${report.transcripts.length} transcripts, ${report.failed.length} failures.`);
+  return report;
+}
+async function main() {
+  return runImport({ refreshInterviews: process.env.REFRESH_INTERVIEWS === 'true', interviewsOnly: process.env.INTERVIEWS_ONLY === 'true', limit: process.env.LIMIT ? Number(process.env.LIMIT) : undefined });
 }
 
-main().catch((err) => {
+if (require.main === module) main().catch((err) => {
   console.error('fetch-missing-articles failed:', err);
   process.exit(1);
 });
+
+module.exports = { fetchWithRetry, extractArticle, filenameFor, runImport };
+

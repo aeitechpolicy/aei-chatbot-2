@@ -1,29 +1,68 @@
 PAGE_TITLE: 
-	What’s Under the Hood with “Right to Repair”? Highlights from My Conversation with Jeff Westling | American Enterprise Institute - AEI
+	What’s Under the Hood with “Right to Repair”? Highlights from My Conversation with Jeff Westling
 
+[Speaker: Introduction / editorial context]
 The concept of “right to repair” has been volleyed back and forth between interest groups and a few legislatures in the past few years, but as more consumers invest in more personal technology, the interest around what is acceptable for a safe repair shop continues.
-To help take a look at recent legislative activities, I spoke to Jeff Westling, the Director of Technology and Innovation Policy at the American Action Forum (AAF). Jeff’s research focuses on telecommunications, online content, and antitrust policy. Prior to joining AAF, Jeff was a fellow at the R Street Institute and a law clerk at the Federal Communications Commission.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+To help take a look at recent legislative activities, I spoke to Jeff Westling, the Director of Technology and Innovation Policy at the American Action Forum (AAF). Jeff’s research focuses on telecommunications, online content, and antitrust policy. Prior to joining AAF, Jeff was a fellow at the R Street Institute and a law clerk at the Federal Communications Commission.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: You just recently wrote a primer on a topic that I also wrote about last year, and it has reared its head again. It’s the concept of “right to repair”. So, what’s the harm here, if any?
+
+[Speaker: Jeff Westling]
 Jeff Westling: What we’re talking about, obviously, is consumers being able to repair their devices, right? That’s something we completely agree with. That’s not a fundamental right, but something that we want consumers to be able to do. But on the other hand, there’s a balance to it. And for these companies and firms that are actually creating this equipment and selling it, there is a lot of proprietary information; there’s network information. There’s a lot of important stuff that goes into these devices. And if a manufacturer has to provide the manuals and the parts to repair it, a lot of the time you’re giving away some of that proprietary information. Sometimes you’re giving away things you’ve spent a lot of money to research and develop, and you’re just giving those to the third-party repair vendors. Once that information is out in the public, it’s easier for your competitors to see what you’re doing and copy you.
+
+[Speaker: Jeff Westling]
 There are also harms for consumers. If you’re going to a repair vendor and they’ve got these manuals, maybe you can trust them, or you think you can trust them, but they don’t actually repair the device up to your standards. It can cause problems for the device, and then you have to go back to the original manufacturer to get it repaired again. And there are just a lot of unintended consequences.
+
+[Speaker: Jeff Westling]
 Can we trust repair shops? I’ve certainly had my fair share of bad experiences.
+
+[Speaker: Jeff Westling]
 It’s not like you can’t trust them at all. It’s just a matter of finding the right third-party vendor. And I think that’s something that the market can handle. If you go out and you’re looking for someone to repair your phone, and you’ve got friends who have gone to the same third-party vendor and they’ve done a good job repairing the phones, that’s the market working.
+
+[Speaker: Jeff Westling]
 One issue is that when you go to these vendors, you actually end up having to give the vendor private information. When your friend goes and uses a third-party vendor, maybe they lost some data they never knew about. So, the market can’t react to that because the information is not out there.
+
+[Speaker: Jeff Westling]
 Sometimes, you go to a third-party vendor, they do a good job a couple of times, and you go get a repair the third time, and all of a sudden they make a mistake and it causes the device to malfunction—maybe causing harm to you or somebody else. So, you can go to the third-party vendors, it’s fine to do that. But when you’re going to those vendors, you don’t have the guarantee from the original equipment manufacturer.
+
+[Speaker: Shane Tews]
 So you’ve mentioned third parties, but there’s a difference between licensed and unlicensed. Can you walk us through that?
+
+[Speaker: Jeff Westling]
 Licensed third-party vendors actually have that credibility, that approval from the original equipment manufacturer. This approval is gained by working with the original equipment manufacturer, going through the trainings, and having gone through the processes to actually understand what’s going on in this device and how to repair it correctly. Now, there are independent, unlicensed third-party vendors who don’t have that relationship with the original equipment manufacturer. That’s not necessarily saying that they can’t repair the device properly, it’s just saying they don’t have a certain authority, the credibility that comes with having a relationship to the original equipment manufacturer.
+
+[Speaker: Jeff Westling]
 There are independent vendors that can repair devices and tractors or whatever equipment we’re talking about, but that comes with risk. And those are some of the tradeoffs that you have to consider when you’re thinking about these “right to repair” bills, because you really want to make sure that we’re getting people the repairs they need, effectively and cheaply, but also safely while protecting the investments of the original equipment manufacturers.
+
+[Speaker: Shane Tews]
 How have states addressed this issue with policy? Are they creating carve-outs for more consequential things like medical devices, or are they enabling “right to repair” wholesale?
+
+[Speaker: Jeff Westling]
 I know a lot of states are exempting medical devices as just a wholesale category of not being included in these “right to repair” debates. For example, in the New York bill, they generally focus on consumer tech devices and generally don’t reach things like agriculture and some of the more dangerous repairs. I do know some of the state legislatures had specific bills just for agriculture, like Arkansas and Kansas.
+
+[Speaker: Jeff Westling]
 But regarding the New York bill, in particular, after they had passed the bill from the state houses, when the governor went to sign it, they made some changes focused on the business and security side of things worth noting.
+
+[Speaker: Jeff Westling]
 For one, they made it so that you didn’t have to provide some of the details about how to get access to reparable devices. For instance, consider if Apple had to go ahead and give out a universal password or something so the repair services could get into the devices and repair them. The bill essentially wouldn’t accept that, with the changes basically saying, “No, we don’t want to create that kind of vulnerability or make those devices more susceptible to attack.”
+
+[Speaker: Jeff Westling]
 They also looked at what the cost you’re putting on some of these manufacturers is. And originally, it was going to make it so you had to provide parts. If manufacturers provided every little part, you can kind of see how things would add up quickly in terms of cost. So instead, if you need to repair your screen, then you can just buy the entire screen that comes with the bolts, all the different nails, and everything you need to replace the screen. But you can’t necessarily buy those individual tiny parts by themselves. They went with assemblies instead.
+
+[Speaker: Jeff Westling]
 So those are the kinds of things that a lot of states are working through right now.
+
+[Speaker: Shane Tews]
 What can we expect to see across the states looking forward? Are other states thinking along the same lines?
+
+[Speaker: Jeff Westling]
 We’ve already seen Apple and Samsung respond to the New York law. They’re starting to sell part assemblies to vendors. They’re starting to implement features that are going to comply with the New York law. And I’m curious to see if states see that because manufacturers are probably going to apply this across the country. They’re not just going to do this in New York, because why would I have separate programs, let’s just have one program. So I think we’re going to see a lot of legislative action this session.
+
+[Speaker: Jeff Westling]
 But it’ll be interesting to see how much the New York law impacts those efforts. It obviously didn’t go as far as some of the “right to repair” advocates would have liked, but I think it was a pretty interesting balance. And I say this as somebody who likes “right to repair”. I’m a fan of consumers having more choices when you’re not infringing on the rights of the original equipment manufacturer. We’ll probably still see some movement, at least on the agriculture side. I know John Deere made that agreement, but I don’t think it’s been universally applauded by some of the “right to repair” advocates. I’m curious, then, to see where states go on some of these issues.

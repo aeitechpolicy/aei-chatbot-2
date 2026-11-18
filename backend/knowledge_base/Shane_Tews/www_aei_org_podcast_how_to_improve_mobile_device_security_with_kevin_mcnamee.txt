@@ -1,14 +1,14 @@
 PAGE_TITLE: 
-	How to Improve Mobile-Device Security (with Kevin McNamee) | American Enterprise Institute - AEI
+	How to Improve Mobile-Device Security (with Kevin McNamee)
 
-As security risks to internet-enabled devices reach an all-time high, Nokia has been highlighting the most pressing threats to user devices through its annual
-Threat Intelligence Reports
-. According to the 2020 and 2021 reports, malware infections on both computers and mobile devices are on the rise—specifically through downloadable software that poses as something helpful or fun for users. And yet, proposed federal laws would weaken mobile-device protections at this critical time by forcing all hardware manufacturers to accept unvetted software applications or “apps” in their digital marketplaces—a practice known as “sideloading” that has been called out by the Department of Homeland Security specifically. (The department’s 2017
-Mobile Device Security report
-stated that “users should avoid—and enterprises should prohibit on their devices—sideloading of apps and the use of unauthorized app stores.”) This episode addresses the technical challenges sideloading brings into the process of keeping a secure mobile ecosystem.
-To discuss how we can protect consumers’ financial and other personal data,
-Kevin McNamee
-, the head of Nokia’s Threat Intelligence Lab, joins
-Shane
-on the latest episode of “Explain to Shane.” Under Kevin’s leadership, the Threat Intelligence Lab analyzes thousands of mobile malware samples per day to help power Nokia’s network-based malware detection program.
+[Speaker: Introduction / editorial context]
+As security risks to internet-enabled devices reach an all-time high, Nokia has been highlighting the most pressing threats to user devices through its annual Threat Intelligence Reports. According to the 2020 and 2021 reports, malware infections on both computers and mobile devices are on the rise—specifically through downloadable software that poses as something helpful or fun for users. And yet, proposed federal laws would weaken mobile-device protections at this critical time by forcing all hardware manufacturers to accept unvetted software applications or “apps” in their digital marketplaces—a practice known as “sideloading” that has been called out by the Department of Homeland Security specifically. (The department’s 2017 Mobile Device Security report stated that “users should avoid—and enterprises should prohibit on their devices—sideloading of apps and the use of unauthorized app stores.”) This episode addresses the technical challenges sideloading brings into the process of keeping a secure mobile ecosystem.
+
+[Speaker: Introduction / editorial context]
+To discuss how we can protect consumers’ financial and other personal data, Kevin McNamee, the head of Nokia’s Threat Intelligence Lab, joins Shane on the latest episode of “Explain to Shane.” Under Kevin’s leadership, the Threat Intelligence Lab analyzes thousands of mobile malware samples per day to help power Nokia’s network-based malware detection program.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

@@ -1,28 +1,59 @@
 PAGE_TITLE: 
-	AI’s Corporate Takeover? | American Enterprise Institute - AEI
+	AI’s Corporate Takeover?
 
+[Speaker: Introduction / editorial context]
 Artificial intelligence is rapidly transforming industries by optimizing processes, enhancing efficiency, and driving innovation. This conversation explores the AI developments to expect in the coming years, and highlights the critical roles of data, user interface, and hardware advancements in shaping the next wave of technological progress.
+
+[Speaker: Introduction / editorial context]
 Mark Johnson is the co-founder and partner of Michigan Software Labs, where he leads the charge for custom software solutions for clients ranging from middle market to Fortune 500 companies. Mark has been named one of the Grand Rapids 200 Most Powerful Business Leaders in West Michigan and one of the 40 under 40 by the Grand Rapids Business Journal. He is a member of the Forbes Technology Council and Fast Company Executive Board.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: What are companies hoping to achieve with AI? Let’s talk about their goals first, and then we can talk about the technology.
+
+[Speaker: Mark Johnson]
 Mark Johnson: Oftentimes, the outcome is related to either bottom line or top line. Let’s say you’re picking bottom line improvement, which means you just want to create some efficiency, and so you’re not thinking about efficiency in terms of workforce disruption yet. You’re just thinking about efficiency in terms of there being extra costs: say, we’re doing this process in a very manual way, and we want it more automated. In an industry like manufacturing, there’s obviously this component of predictive maintenance. Within that, you’re going to need to make some upgrades, but you don’t know which upgrades need to be made. Let’s say you have a large factory, and you’re able to put sensors in place. With AI, you’re able to use the data from those sensors to predict what might break and when it might break, and then create maintenance programs to allow you to be more successful. That’s an example of saving money.
+
+[Speaker: Mark Johnson]
 Most of the stuff that we’re seeing, it’s not sexy. It’s a lot of that predictive maintenance, quality control, trying to optimize supply chain, trying to look at how they can transform some component of their business one at a time. It really needs to be something that isn’t intimidating. That’s our goal with working with our clients. AI doesn’t need to be intimidating. Let’s just pick one place to start, get a base hit, and then we can compound on that and start to build more models that help them.
-Let’s do a little future casting. One of the things you talked about when you were here in DC at
-AEI’s AI event
-you talked about brain computer interface (BCI). Let’s talk about that.
+
+[Speaker: Mark Johnson]
+Let’s do a little future casting. One of the things you talked about when you were here in DC at AEI’s AI event you talked about brain computer interface (BCI). Let’s talk about that.
+
+[Speaker: Mark Johnson]
 Many people know Neuralink, Elon Musk’s company. If we analogize to the Wright brothers, Neuralink is like Langley—it’s very well known, with a lot of media attention and support. And there are other companies that are more similar to the Wright brothers. Paradromics is one of them, and a lot of really smart people out of Stanford are working trying to get FDA approval. The idea is how to have an interface that connects the brain to a computer system. So, rather than the analog way of you picking up your phone, what if it was all connected?
+
+[Speaker: Mark Johnson]
 My hypothesis is that the least invasive technology is going to win. People are going to wear something that is a strap underneath their hair or somehow connects behind the ear. I don’t think the Elon Musk vision, where you’re doing brain surgery to insert things, would work for the majority of the population.
-You have spoken about  “the now, the near, and the next.” What do you think is coming with the next wave of devices that we’re already familiar with, like the iPhone.
+
+[Speaker: Mark Johnson]
+You have spoken about “the now, the near, and the next.” What do you think is coming with the next wave of devices that we’re already familiar with, like the iPhone.
+
+[Speaker: Mark Johnson]
 Well, the iPhone is going to get much more useful to you and me. I predicted earlier, before the Worldwide Developers Conference, that Apple was going to partner with someone like OpenAI, similar to how they partnered with Google for search. Apple is picking the best and brightest in order to enable their tools. So Siri is going to be a lot more useful because of the apps that it introduces, and the way it will be able to remember things that our human minds can’t remember.
+
+[Speaker: Mark Johnson]
 Let’s say you’re planning a trip with a relative, and they’re coming. What time do they arrive? It’ll know the flight details. Where did we decide to go out to eat? Did we book that restaurant? If we haven’t booked it, Siri will be able to book it for us.
+
+[Speaker: Mark Johnson]
 As application developers, we start to see all these integrations and get excited—it would be amazing if apps worked like that. I think the “now, near, and next” is going to be this progression of integrating all the applications that we already use. I think the new iPhone is going to be a lot better. It’s always an extra camera or a little bit faster, but this next one will actually feel much better, especially if Siri actually works as they expect.
+
+[Speaker: Mark Johnson]
 Where do you see the most net positive industries shift where we sit right now.
+
+[Speaker: Mark Johnson]
 Because the datasets are getting so much better and smarter, a lot of this is going to go towards helping people with disabilities or restricted areas in healthcare. The ability for anyone to write an application that can help look at some of this data is going to be where a lot of the biggest improvement happens, so I would say Life Sciences is probably number one, especially as it has been so far behind other industries. I mean, no one looks to healthcare to say, “Oh, yeah, there’s innovative stuff happening there,” but now it’s starting to shift and healthcare is becoming more innovative and helping people live healthier, more vibrant lives.
+
+[Speaker: Mark Johnson]
 In a Forbes article, you wrote a great analogy for the different elements of the AI technology ecosystem, with the machines, upgrading the machines, changes in the talent pool, and the innovative and investment cycle.
+
+[Speaker: Mark Johnson]
 For fans of Formula One, I use the analogy where AI is the car. You still need an expert driver. Therefore, as we think about the workforce, as we think about being replaced, it still matters that people do an excellent job and have thoughtful knowledge of their industry. I also see the importance of a steering wheel, which represents the user interface of how we’re interacting with these AI tools. It cannot be something that isn’t able to perform really well with connecting to us.
+
+[Speaker: Mark Johnson]
 And then I also talk about the engine. The hardware is going to continue to get faster and easier to connect with. I wrote an article on quantum and just what’s happening there: in quantum, originally, they were thinking it was going to be these large scale models similar to what AI has, but now they are starting to realize that innovation is happening with smaller models, and the ability to create a lot of the value is going to come out of the smaller subsets there.
+
+[Speaker: Mark Johnson]
 Another big aspect is training. Whoever has the most data wins. Countries are thinking about this, but take somebody like Elon Musk. With X, he has a lot of social media data, which is turning into finance data. He has Tesla, which has a lot of visual data. He is doing work in solar and has all the data that is coming out of that. Being able to think about it not in terms of quality, but in terms of quantity, I think is a really important consideration. We are running out of internet data. We have already consumed that, so what’s left for these models to consume and to learn from and create on? That is where the exciting stuff comes with generative AI.

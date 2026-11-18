@@ -1,183 +1,89 @@
 PAGE_TITLE: 
-	Tech Policy in Congress and the European Union: Highlights from My Conversation with Peter Brown | American Enterprise Institute - AEI
+	Tech Policy in Congress and the European Union: Highlights from My Conversation with Peter Brown
 
-Today, both
-Europe and the US are seeing ongoing regulatory debates around digital privacy,
-antitrust, artificial intelligence (AI), and high-tech trade with China.
-Despite some similarities, the American and European approaches to regulating
-the technology industry are markedly different. How are lawmakers from the two
-continents approaching technology in society, and how do recent regulatory
-actions reflect each continent’s policy priorities?
-On the latest episode of “Explain to Shane,” I had a fascinating conversation with
-Peter Brown
-, a Washington, DC-based diplomat for the
-European Parliament
-. Together, we compared and contrasted the US and European regulatory systems and discussed key areas for transatlantic cooperation, along with the importance of a unified US-European approach to technological standards-setting amidst China’s rise.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of “Explain to Shane” on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Peter, tell us about your role
-as a senior technology policy advisor for the European Parliament’s Washington,
-DC liaison office.
-Peter Brown:
-The European Parliament is the only legislature in the world with its own
-external or diplomatic presence in third countries. We have offices in London, and
-shortly in Jakarta, but the first one was in DC because of the importance of
-the transatlantic relationship and establishing liaison with Congress. This is
-the principal role of the office, but it also oversees outreach with the private
-sector, folks in academia, and think tanks.
-The office
-is a mix of staff from our own press and communications services, as well as
-specialists from various policy services in the parliament staff on detail. My
-own post actually marks the first time someone has been nominated to explicitly
-cover technology policy. Broadly, other colleagues will lead on specific
-dossiers because they’re following particular parliamentary committees, but my role
-is more to give horizontal overview, understand how the various aspects of
-technology policy link together, and provide specialist input to various teams.
-How do the EU’s lawmaking and regulatory
-processes work around Big Tech, antitrust, and privacy? So much is being
-written about Europe’s Digital Markets Act (DMA) and Digital Services Act
-(DMA), and you spend a lot of time working with Congress too. Can you also help
-us understand the similarities and differences between our two systems—as well as
-between the different governing bodies in Europe?
-The European Union is only 30 years old in
-terms of its current legislative and legal basis, though predecessors of the
-European community go back to the 1950s. The current set of legislative powers is
-only 15 years old, so we’re still the new kid on the block in terms of how
-things operate.
-The big
-difference with the US is that what we do at the EU level can only be done if
-it’s covered by an explicit provision in the EU’s treaties, which is what we
-call the “legal basis to act.” There has to be an examination of so-called “subsidiarity
-proportionality.” Is it better to do something at the European level than at
-the national level?
-Furthermore,
-only the European Commission can initiate legislation. The European Parliament
-doesn’t have a right of initiative and neither do the member states, except in
-some limited cases. Most legislation requires agreement between the parliament
-and member states. At the end of the day, legislation approved at the European
-level tends to be transposed into and enforced as national law, making the
-European Commission’s role somewhat secondary in terms of enforcement or
-cracking the whip with member states.
-In summary,
-legislation is only possible if it’s covered by the treaties and proposed by
-the commission. The similarities between this model and the one Congress
-follows mostly mirror this balance of competing interests between the three
-branches of government in the US. In Europe, the executive branch is the
-European Commission, largely. Then you’ve got the member states and the
-European Parliament.
-I think the
-other similarity is judicial oversight with the Supreme Court in the US and the
-Court of Justice in the European Union. There are significant differences, but
-I think we’re still the two largest rule-of-law legislators on the planet in
-terms of economic and political impact. I think those commonalities are
-actually more important than the differences that we see sometimes in terms of
-substance.
-How does the EU trilogue process work?
-That’s something we cannot directly relate to here in the US.
-Essentially,
-you have multiple opportunities for legislation to be dealt with in multiple
-readings. Again, there are some similarities between the national legislative
-procedures in Europe and those in US. It starts when the commission announces a
-legislative procedure. We have a big advantage, I think, over Congress in that
-sense because the commission is the result of cooperation over many years and
-issues.
-We think of
-Congress as complex with the majority and the minority. But in parliament, we
-deal with seven major political groups across 27 countries working in 23
-languages. So for any piece of legislation, it’s not a matter of the majority
-wanting one thing and the minority the other; it requires a balance between
-different political groups and sharing the cake fairly among those willing to
-cooperate.
-When the
-commission’s proposal arrives on the table in parliament, we have a first
-reading. The parliament looks at the legal basis and decides which
-parliamentary committee is going to lead on the piece of legislation. Multiple committees
-are sometimes involved, and each nominates what we call a “rapporteur,” which
-is not really a “sponsor” in the congressional sense, but rather a lead
-legislator whose job it is to pilot the whole internal process until the
-plenary gets to vote on that first reading. The trilogue, which can be
-initiated anytime throughout the process, is basically an informal but
-politically charged set of meetings between representatives of the council, the
-commission, and the parliament to try and reach political agreement.
-If, at the first
-reading, the council agrees with parliament, the process ends and the legislation
-gets adopted. If the commission does not like what parliament is proposing in
-the first reading, it goes to a second reading, which parliament can approve,
-in which case the council’s amendment gets adopted. If parliament amends it, it
-goes back to the council for a second reading. If the council still doesn’t
-agree, it goes to what’s called a “conciliation procedure.” If at any stage there
-is no agreement or a complete rejection of the other body’s position, the whole
-thing ends.
-The General
-Data Protection Regulation (GDPR) was an example of where if this trilogue
-process had been available and used earlier on, the final product could have been
-a different and more effective beast. The whole process started in 2011; after
-finally being adopted in 2016, the GDPR had crossed two parliament legislatures
-and tired everybody out. But ultimately we still had gaps and problems in
-implementation.
-Because the DMA and DSA have now gone
-through this trilogue process, what is the timeline for implementation?
-The council will
-take the substance of the agreement back to a full meeting of the Committee of
-Permanent Representatives, which is basically the proxies of the member-state
-ministers in their ambassadorial and diplomatic representations in Brussels. It’ll
-be a matter of weeks before final agreement on that. Once parliament puts the
-ink on the signature page of the regulation, it is subject to a six-month
-period before implementation.
-How is the global standards-setting process
-going for AI?
-My biggest
-observation in AI standards work is that we struck lucky for once at a global
-level. Often, standards work lags somewhat behind innovation. But this was such
-a critical area of technology and interest that the standards community said,
-“We have to get in right at the beginning and attack all these issues
-about core terminology and concepts.” This is one of the first standards that’s
-been looked at by the committee dealing with the AI standards globally, along
-with what we call the “governance implications” on the use of AI, which is the
-standard I was editor for. It was just published.
-We’re
-looking at some high-level issues about what we mean by AI, and whether we have
-a formal definition for AI in the committee covering it. All of the work
-looking at concepts and terminology of AI itself feeds into what it is about. So
-trying to define AI in a single sentence, which is how most definitions are
-done within formal standards, might be more problematic than helpful because by
-being so reductionist, you’re actually going to lose a lot of support and
-people to the complexities AI throws up.
-One
-remaining issue is where standardization takes place. You have to understand
-standards development as almost a marketplace in its own right. There are
-competing standards. They’re voluntary. They’re not regulations. They’re not
-things you have to follow, but if you choose to follow them, you’re expected to
-follow them as designed.
-The US-EU Trade
-and Technology Council (TTC) is looking at standards developed in the US for
-the US market, standards developed in Europe for the European market, standards
-developed globally, and, the elephant in the room, the growth of China in
-global standardization work.
-I think a
-legitimate concern is: If the EU or any other region insists on the importance
-of standards at that level, you’re basically giving a free pass to countries
-like China to do the same. Therefore, there’s a sense of strengthening and
-reinforcing the importance of global standards where there is a fair competition
-of ideas and a fair, transparent, consensus-driven process where all actors can
-be involved in developing those standards so they can have value across the
-globe. Regional standards really ought to be reserved for issues which only affect
-a particular region or country.
-What should we keep an eye out for this
-summer?
-The aforementioned issue with the TTC is
-going to be big. The European Parliament and Congress are both expressing
-interest in parliamentary and legislative oversight of that executive
-cooperation between the EU and US.
-In terms of
-my own work, I’m going to be writing two series of posts in the coming
-months—one on the whole series of issues around AI, and the second one on the
-differences between digital and analog, and the advantages of both in terms of
-the future of society.
+[Speaker: Introduction / editorial context]
+Today, both Europe and the US are seeing ongoing regulatory debates around digital privacy, antitrust, artificial intelligence (AI), and high-tech trade with China. Despite some similarities, the American and European approaches to regulating the technology industry are markedly different. How are lawmakers from the two continents approaching technology in society, and how do recent regulatory actions reflect each continent’s policy priorities?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I had a fascinating conversation with Peter Brown, a Washington, DC-based diplomat for the European Parliament. Together, we compared and contrasted the US and European regulatory systems and discussed key areas for transatlantic cooperation, along with the importance of a unified US-European approach to technological standards-setting amidst China’s rise.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Peter, tell us about your role as a senior technology policy advisor for the European Parliament’s Washington, DC liaison office.
+
+[Speaker: Peter Brown]
+Peter Brown: The European Parliament is the only legislature in the world with its own external or diplomatic presence in third countries. We have offices in London, and shortly in Jakarta, but the first one was in DC because of the importance of the transatlantic relationship and establishing liaison with Congress. This is the principal role of the office, but it also oversees outreach with the private sector, folks in academia, and think tanks.
+
+[Speaker: Peter Brown]
+The office is a mix of staff from our own press and communications services, as well as specialists from various policy services in the parliament staff on detail. My own post actually marks the first time someone has been nominated to explicitly cover technology policy. Broadly, other colleagues will lead on specific dossiers because they’re following particular parliamentary committees, but my role is more to give horizontal overview, understand how the various aspects of technology policy link together, and provide specialist input to various teams.
+
+[Speaker: Shane Tews]
+How do the EU’s lawmaking and regulatory processes work around Big Tech, antitrust, and privacy? So much is being written about Europe’s Digital Markets Act (DMA) and Digital Services Act (DMA), and you spend a lot of time working with Congress too. Can you also help us understand the similarities and differences between our two systems—as well as between the different governing bodies in Europe?
+
+[Speaker: Peter Brown]
+The European Union is only 30 years old in terms of its current legislative and legal basis, though predecessors of the European community go back to the 1950s. The current set of legislative powers is only 15 years old, so we’re still the new kid on the block in terms of how things operate.
+
+[Speaker: Peter Brown]
+The big difference with the US is that what we do at the EU level can only be done if it’s covered by an explicit provision in the EU’s treaties, which is what we call the “legal basis to act.” There has to be an examination of so-called “subsidiarity proportionality.” Is it better to do something at the European level than at the national level?
+
+[Speaker: Peter Brown]
+Furthermore, only the European Commission can initiate legislation. The European Parliament doesn’t have a right of initiative and neither do the member states, except in some limited cases. Most legislation requires agreement between the parliament and member states. At the end of the day, legislation approved at the European level tends to be transposed into and enforced as national law, making the European Commission’s role somewhat secondary in terms of enforcement or cracking the whip with member states.
+
+[Speaker: Peter Brown]
+In summary, legislation is only possible if it’s covered by the treaties and proposed by the commission. The similarities between this model and the one Congress follows mostly mirror this balance of competing interests between the three branches of government in the US. In Europe, the executive branch is the European Commission, largely. Then you’ve got the member states and the European Parliament.
+
+[Speaker: Peter Brown]
+I think the other similarity is judicial oversight with the Supreme Court in the US and the Court of Justice in the European Union. There are significant differences, but I think we’re still the two largest rule-of-law legislators on the planet in terms of economic and political impact. I think those commonalities are actually more important than the differences that we see sometimes in terms of substance.
+
+[Speaker: Peter Brown]
+How does the EU trilogue process work? That’s something we cannot directly relate to here in the US.
+
+[Speaker: Peter Brown]
+Essentially, you have multiple opportunities for legislation to be dealt with in multiple readings. Again, there are some similarities between the national legislative procedures in Europe and those in US. It starts when the commission announces a legislative procedure. We have a big advantage, I think, over Congress in that sense because the commission is the result of cooperation over many years and issues.
+
+[Speaker: Peter Brown]
+We think of Congress as complex with the majority and the minority. But in parliament, we deal with seven major political groups across 27 countries working in 23 languages. So for any piece of legislation, it’s not a matter of the majority wanting one thing and the minority the other; it requires a balance between different political groups and sharing the cake fairly among those willing to cooperate.
+
+[Speaker: Peter Brown]
+When the commission’s proposal arrives on the table in parliament, we have a first reading. The parliament looks at the legal basis and decides which parliamentary committee is going to lead on the piece of legislation. Multiple committees are sometimes involved, and each nominates what we call a “rapporteur,” which is not really a “sponsor” in the congressional sense, but rather a lead legislator whose job it is to pilot the whole internal process until the plenary gets to vote on that first reading. The trilogue, which can be initiated anytime throughout the process, is basically an informal but politically charged set of meetings between representatives of the council, the commission, and the parliament to try and reach political agreement.
+
+[Speaker: Peter Brown]
+If, at the first reading, the council agrees with parliament, the process ends and the legislation gets adopted. If the commission does not like what parliament is proposing in the first reading, it goes to a second reading, which parliament can approve, in which case the council’s amendment gets adopted. If parliament amends it, it goes back to the council for a second reading. If the council still doesn’t agree, it goes to what’s called a “conciliation procedure.” If at any stage there is no agreement or a complete rejection of the other body’s position, the whole thing ends.
+
+[Speaker: Peter Brown]
+The General Data Protection Regulation (GDPR) was an example of where if this trilogue process had been available and used earlier on, the final product could have been a different and more effective beast. The whole process started in 2011; after finally being adopted in 2016, the GDPR had crossed two parliament legislatures and tired everybody out. But ultimately we still had gaps and problems in implementation.
+
+[Speaker: Shane Tews]
+Because the DMA and DSA have now gone through this trilogue process, what is the timeline for implementation?
+
+[Speaker: Peter Brown]
+The council will take the substance of the agreement back to a full meeting of the Committee of Permanent Representatives, which is basically the proxies of the member-state ministers in their ambassadorial and diplomatic representations in Brussels. It’ll be a matter of weeks before final agreement on that. Once parliament puts the ink on the signature page of the regulation, it is subject to a six-month period before implementation.
+
+[Speaker: Shane Tews]
+How is the global standards-setting process going for AI?
+
+[Speaker: Peter Brown]
+My biggest observation in AI standards work is that we struck lucky for once at a global level. Often, standards work lags somewhat behind innovation. But this was such a critical area of technology and interest that the standards community said, “We have to get in right at the beginning and attack all these issues about core terminology and concepts.” This is one of the first standards that’s been looked at by the committee dealing with the AI standards globally, along with what we call the “governance implications” on the use of AI, which is the standard I was editor for. It was just published.
+
+[Speaker: Peter Brown]
+We’re looking at some high-level issues about what we mean by AI, and whether we have a formal definition for AI in the committee covering it. All of the work looking at concepts and terminology of AI itself feeds into what it is about. So trying to define AI in a single sentence, which is how most definitions are done within formal standards, might be more problematic than helpful because by being so reductionist, you’re actually going to lose a lot of support and people to the complexities AI throws up.
+
+[Speaker: Peter Brown]
+One remaining issue is where standardization takes place. You have to understand standards development as almost a marketplace in its own right. There are competing standards. They’re voluntary. They’re not regulations. They’re not things you have to follow, but if you choose to follow them, you’re expected to follow them as designed.
+
+[Speaker: Peter Brown]
+The US-EU Trade and Technology Council (TTC) is looking at standards developed in the US for the US market, standards developed in Europe for the European market, standards developed globally, and, the elephant in the room, the growth of China in global standardization work.
+
+[Speaker: Peter Brown]
+I think a legitimate concern is: If the EU or any other region insists on the importance of standards at that level, you’re basically giving a free pass to countries like China to do the same. Therefore, there’s a sense of strengthening and reinforcing the importance of global standards where there is a fair competition of ideas and a fair, transparent, consensus-driven process where all actors can be involved in developing those standards so they can have value across the globe. Regional standards really ought to be reserved for issues which only affect a particular region or country.
+
+[Speaker: Shane Tews]
+What should we keep an eye out for this summer?
+
+[Speaker: Peter Brown]
+The aforementioned issue with the TTC is going to be big. The European Parliament and Congress are both expressing interest in parliamentary and legislative oversight of that executive cooperation between the EU and US.
+
+[Speaker: Peter Brown]
+In terms of my own work, I’m going to be writing two series of posts in the coming months—one on the whole series of issues around AI, and the second one on the differences between digital and analog, and the advantages of both in terms of the future of society.

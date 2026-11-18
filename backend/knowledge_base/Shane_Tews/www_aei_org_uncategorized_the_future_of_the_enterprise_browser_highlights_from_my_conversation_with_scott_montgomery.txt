@@ -1,33 +1,68 @@
 PAGE_TITLE: 
-	The Future of the Enterprise Browser: Highlights from My Conversation with Scott Montgomery | American Enterprise Institute - AEI
+	The Future of the Enterprise Browser: Highlights from My Conversation with Scott Montgomery
 
+[Speaker: Introduction / editorial context]
 Web browsers are built for convenience—prioritizing speed, compatibility, and ease of use. But what happens when a browser isn’t for just an individual user but for an entire enterprise? In today’s cybersecurity landscape, where threats are constant and data breaches can be catastrophic, organizations need more than just a traditional browser. They need a secure enterprise browser designed to protect corporate data, enforce security policies, and seamlessly integrate with existing IT frameworks without compromising user experience.
-Below are my highlights with
-Scott “Monty” Montgomery
-, Vice President at
-Island.io
-, a leading pioneer in this browser technology shift. Monty explores how the use of an enterprise browser enables organizations to establish granular permissions and conditional access and harness the power of predictive analytics to stay ahead of security threats.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below are my highlights with Scott “Monty” Montgomery, Vice President at Island.io, a leading pioneer in this browser technology shift. Monty explores how the use of an enterprise browser enables organizations to establish granular permissions and conditional access and harness the power of predictive analytics to stay ahead of security threats.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: How does an enterprise browser differ from what the average consumer uses?
+
+[Speaker: Scott Montgomery]
 Scott Montgomery: They’re similar in the way that they’re built, but it’s more about intent. When I’m sitting at my desk setting up travel, catching up with my friends, or buying something, I’m doing it expressly for the purpose of consumerism. I am doing something for me and my household, or I’m doing for something for me and my kids or my friends, etcetera. But when you use that same exact tool to try to support mission or your business, the wheels start to come off a little bit because the goals are wildly different. For example, I’m expecting to be inundated with ads about what I browsed when I’m a consumer.
+
+[Speaker: Scott Montgomery]
 One key element of the enterprise browser is the security suite. Your portal secures my interactions at a level that I would not normally get with a wide-open browser.
+
+[Speaker: Scott Montgomery]
 I think safety is the key element. We don’t think about safety when we’re browsing as consumers. We rely on the hospitality provider that we’re booking a hotel with to worry about safety or even our privacy. I think that consumer experience sort of lends itself against our mission. If I’m at work, I’m expecting my interactions to be safe and private, or for it to be somebody else’s problem. If the person on the keyboard can’t take for granted what’s being protected or what isn’t, then what if the tool did?
+
+[Speaker: Scott Montgomery]
 One good example is patient care. I didn’t know this when I first started here, but the biggest challenge in a delay or error in patient care or an incident regarding a patient’s care is actually wrong paperwork. When the paperwork is wrong, it could really harm somebody. What if the browser helped put up guard rails to make sure that the paperwork went from one station to the next station correctly? Now, not only are we providing more timely patient care, but we’re also helping the organization avoid pitfalls, costs, and hurting people.
+
+[Speaker: Shane Tews]
 How are you helping make sure that they have the right paperwork? What’s the process for that?
+
+[Speaker: Scott Montgomery]
 A lot of the drudgery in electronic, protected healthcare information is in forms: What is this patient’s blood type? What is this patient’s weight? Height? Current blood oxygen level? Those numbers and details matter, and are in the hands of whoever touches that electronic, protected healthcare information record. You might have a biller, a nurse, a nurse’s assistant, a volunteer, a doctor, a consultant, a consulting doctor, a therapist. It could be any number of people in and out of that record. What happens on the time where somebody fat fingers a response and sends it on? What if the tool could say, the last 10 times this record made a move, this value was x and now you’ve entered y? Maybe this one’s an error because it’s been static for 10 times now, and the 11th time it’s different.
+
+[Speaker: Scott Montgomery]
 Sometimes there’s an expected value for a field and you don’t get that as an input, so you may want the browser to prompt a question. Sometimes there’s a pull-down menu with three values, and the third one is super rare. The browser could say, “It’s cool that it’s this rare value that you’ve pulled down, but it is kind of rare. Are you sure?” It’s not so much a question of reinventing the wheel, but there are analyses you can make. There are also guardrails you could put up where you could say, “When you got the ability to make a free text entry, yours didn’t look like anybody else’s. Does that mean your hands were one key to the left?”
+
+[Speaker: Scott Montgomery]
 In this healthcare organization they said that not only did they save time because people didn’t have to go back and do rework, but they also saved money because people weren’t harmed in the process. The name of the game is better, faster patient care.
+
+[Speaker: Scott Montgomery]
 One of the things your platform does is help centralize security. One testimonial said you were able to consolidate and eliminate issues to bring it into one collaborative tool set.
+
+[Speaker: Scott Montgomery]
 The benefit of modern browsers is they include their own encryption between the browser and the remote service to make the consumer aspect safer. Why wouldn’t we leverage that for our enterprise or our mission and eliminate moving parts? This is a relatively new category of tools and it’s a different approach by focusing on the browser as the tool that people are using all day, every day.
+
+[Speaker: Scott Montgomery]
 I’m not against Virtual Private Networks, but it comes with moving parts. It comes with that split tunnel decision you have to make on the back-end network, and it typically comes with a public jet infrastructure and a device certificate or a user certificate, or both. They’re not bad, they’re just complex. They’re moving parts and they cost money. What if, for certain workflows, we could dispense with some of that? The heart of Island is just rethinking the ways we’ve done it for 20 years.
+
+[Speaker: Shane Tews]
 What is the zero trust that you bring into this system?
+
+[Speaker: Scott Montgomery]
 The Island browser is identity aware because I want to know what level of data to deliver this person.
+
+[Speaker: Scott Montgomery]
 In the hospital example, if the biller is accessing the record, why would I show them protected health care information? I shouldn’t. They should have rights to certain parts of data, but not all of it, so I have to establish identity.
+
+[Speaker: Scott Montgomery]
 One of the next considerations is the gadget. For instance, if you do a lot of consulting with the government, and they buy you a laptop, but you have your own iPad, whose responsibility is it to make sure that you treat the applications data correctly on your iPad? A lot of folks won’t let you bring your own device for the very reason that they can’t enforce what you do on your iPad. What if they gave you a browser you can use on your iPad? They may offer you a different view of the same data because it’s your personally owned device, but now I’m device-aware and network-aware.
+
+[Speaker: Shane Tews]
 Your platform is very plug and play, which allows for not having to train or retrain people. What are the design principles that Island makes possible?
+
+[Speaker: Scott Montgomery]
 Let’s start with the building blocks. Google created the Chromium platform that everybody uses. Seven out of 10 browsers on the planet are built from Chromium, and it’s a fabulous foundation. As a contributing author to Chromium, we are allowed to sort of take our own fork, not the entirety of the code, but that which lends itself to the enterprise or mission support. We’re a little bit more nimble in a central processing unit because it’s not as many lines of code and it also allows us to make fixes as often as we need to. Because we use that same rendering engine, all of our users have this really high degree of assurance that their stuff is going to work.
+
+[Speaker: Scott Montgomery]
 Think about your own data as a consumer; what about you is a secret? Your checking account has a routing number and an account number, your social security number, your credit card numbers, etc. The browser itself can be a super target because of the kind of data it accesses. Encrypting the data while it’s even in use is a critical part of how we achieve success at Island, because we need to make sure that not only can you do what you’re doing, but your company can make sure that the data of the organization that you use remains safe while you’re using it, and we can now multiply that across all of the users. A big part of distinguishing ourselves is protecting the data while it’s in use, protecting the data while it’s in transit, and protecting the data while it’s at rest, using modern methodologies.

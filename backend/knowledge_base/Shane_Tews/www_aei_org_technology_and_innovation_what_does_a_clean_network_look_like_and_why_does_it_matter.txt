@@ -1,25 +1,29 @@
 PAGE_TITLE: 
-	What Does a ‘clean’ Network Look Like, and Why Does It Matter? | American Enterprise Institute - AEI
+	What Does a ‘clean’ Network Look Like, and Why Does It Matter?
 
-In early August, Secretary of State Mike Pompeo
-announced
-the Donald Trump administration’s Clean Network program, a “comprehensive approach to guarding our citizens’ privacy and our companies’ most sensitive information from aggressive intrusions by malign actors, such as the Chinese Communist Party.” The Clean Network program targets Chinese firms, apps, and technology for removal from American telecoms networks, mobile app stores, smartphones, and cloud services, and it aims to secure undersea cables from Chinese interference.
-US Secretary of State Mike Pompeo speaks about the Clean Network program during a news conference at the State Department in Washington, DC, August 5, 2020, via Reuters
+[Speaker: Introduction / editorial context]
+In early August, Secretary of State Mike Pompeo announced the Donald Trump administration’s Clean Network program, a “comprehensive approach to guarding our citizens’ privacy and our companies’ most sensitive information from aggressive intrusions by malign actors, such as the Chinese Communist Party.” The Clean Network program targets Chinese firms, apps, and technology for removal from American telecoms networks, mobile app stores, smartphones, and cloud services, and it aims to secure undersea cables from Chinese interference.
+
+[Speaker: Introduction / editorial context]
 The Clean Network program prioritizes a new level of security for US networks at an opportune time. The nature of legacy network operations means security is tethered to current networks rather than included by design. This signal from the administration could be an important push on network operators to prioritize security while America’s next-generation communications architecture and 5G wireless networks are still being designed (and as improved security often means increased cost for network operators).
-While there are many stories about China’s hacking, intellectual property theft, and broken cybersecurity promises, it is important to acknowledge that the Chinese have also been working on a “
-ubiquitous network backbone
-” for some time, and the US must counter. Beijing sees the development of a new internet network architecture as an opportunity to tap into information systems across the world. China sees the Internet of Things, social media networks, cloud services, the global financial system, new sensor systems, and other connected technologies as opportunities to siphon off intellectual property, commercial and government intelligence, and personal data.
-To this end, China is working hard to dominate international technical standards bodies to gain a toehold for controlling how (and with what technologies) global networks and platforms will be built in the future. (I discussed this challenge on a recent
-episode
-of “Explain to Shane” with Dominique Lazanski, who coauthored a great
-paper
-on this topic.)
-The Clean Network program has a laudable goal in removing untrustworthy entities from US networks. Next-generation networks and the Internet of Things should operate on the backbone of identity and authentication mechanisms based on a model of
-zero trust
-and strict validation. The old “guard the moat” model with a firewall at the perimeter of a system to protect the “information technology castle” no longer foils bad actors who have mastered penetrating defenses and gaining unfettered access to sensitive data flows.
+
+[Speaker: Introduction / editorial context]
+While there are many stories about China’s hacking, intellectual property theft, and broken cybersecurity promises, it is important to acknowledge that the Chinese have also been working on a “ubiquitous network backbone” for some time, and the US must counter. Beijing sees the development of a new internet network architecture as an opportunity to tap into information systems across the world. China sees the Internet of Things, social media networks, cloud services, the global financial system, new sensor systems, and other connected technologies as opportunities to siphon off intellectual property, commercial and government intelligence, and personal data.
+
+[Speaker: Introduction / editorial context]
+To this end, China is working hard to dominate international technical standards bodies to gain a toehold for controlling how (and with what technologies) global networks and platforms will be built in the future. (I discussed this challenge on a recent episode of “Explain to Shane” with Dominique Lazanski, who coauthored a great paper on this topic.)
+
+[Speaker: Introduction / editorial context]
+The Clean Network program has a laudable goal in removing untrustworthy entities from US networks. Next-generation networks and the Internet of Things should operate on the backbone of identity and authentication mechanisms based on a model of zero trust and strict validation. The old “guard the moat” model with a firewall at the perimeter of a system to protect the “information technology castle” no longer foils bad actors who have mastered penetrating defenses and gaining unfettered access to sensitive data flows.
+
+[Speaker: Introduction / editorial context]
 Demanding verification and trust as prerequisites for accessing a network keeps malicious actors out and allows for gated access to data on an as-needed or need-to-know basis. This, combined with strict control mechanisms for devices connected to the network, will lower the overall attack surface of a network and boost overall cybersecurity.
+
+[Speaker: Introduction / editorial context]
 To achieve more secure networks, the backbone suppliers to the network operators need to use this major shift in network architecture design to adopt new developments in software-defined networking, Open Radio Access Networks (O-RAN), and ensure their chosen vendors have security by design as a priority to ensure the supply chain can be secured at multiple levels.
-For more on how government and industry can promote the security of future networks, on September 14 the Federal Communication Commission (FCC) will
-host
-a virtual conference on O-RAN and 5G that will discuss the importance of supplier diversity for network security. Secretary Pompeo and FCC Chairman Ajit Pai will address the importance of having the US develop and lead the world toward open, interoperable networks with security as a priority.
+
+[Speaker: Introduction / editorial context]
+For more on how government and industry can promote the security of future networks, on September 14 the Federal Communication Commission (FCC) will host a virtual conference on O-RAN and 5G that will discuss the importance of supplier diversity for network security. Secretary Pompeo and FCC Chairman Ajit Pai will address the importance of having the US develop and lead the world toward open, interoperable networks with security as a priority.
+
+[Speaker: Introduction / editorial context]
 In sum, it is an encouraging sign that the US government is increasingly vocal on network security. It is crucial that we establish that it is a national priority for future communications networks to be designed with an eye toward security, ensuring that Americans can reap all the benefits that the networks and technology promise to offer.

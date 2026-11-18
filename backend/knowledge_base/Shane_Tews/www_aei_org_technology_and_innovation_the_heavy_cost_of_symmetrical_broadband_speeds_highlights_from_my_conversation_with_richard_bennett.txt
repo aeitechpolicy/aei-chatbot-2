@@ -1,123 +1,65 @@
 PAGE_TITLE: 
-	The Heavy Cost of Symmetrical Broadband Speeds: Highlights from My Conversation with Richard Bennett | American Enterprise Institute - AEI
+	The Heavy Cost of Symmetrical Broadband Speeds: Highlights from My Conversation with Richard Bennett
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-As the
-pandemic has shifted work, education, and entertainment online, there is a
-growing appetite in Washington to enhance broadband access across the country.
-However, some members of Congress and the current administration have advocated
-for ramping up broadband speeds to a symmetrical 100 megabits per second (Mbps)
-both downstream and upstream (known as 100/100). Where is the push for this new
-standard coming from, and what would it mean for the average consumer?
-Richard Bennett
-, founder of
-High Tech Forum
-and a co-creator of Wi-Fi, returned to the podcast to explain how mandating 100/100 would burden consumers and fail to connect more Americans to the internet. He and I also discussed President Biden’s infrastructure plan and why “future-proof” networks seldom live up to their name.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Richard, the current standard
-for high-speed broadband in the United States is 25 Mbps for downloads and 3
-Mbps for uploads (25/3). Given how well the American internet has performed
-during the pandemic, it seems the current standard has served us well. Why do
-we now “need” 100/100?
-Richard
-Bennett: I think setting a symmetrical parameter for broadband speeds is kind
-of outcome-driven. If what we want is a justification for pulling fiber optic cable all over the US, then we have to come up
-with a requirement based on one of the unique properties fiber optic cable has.
-Hypothetically, 100/100 should enable a whole
-lot of applications people want that require equal uploads and downloads. But
-it turns out fiber optic cable is not the only way to achieve that; you can do it
-with wireless too. You can actually get symmetrical behavior out of the cable
-network. You can get symmetrical behavior out of the telephone. It’s always
-been an option, but we have chosen to allocate more bandwidth on the downstream
-side than on the upstream side because there’s more traffic to move. This is
-what matches consumer demand.
-So if I have a one-gigabit symmetrical
-connection, that means I have two gigabits of bandwidth to work with. With the
-same amount allocated to upstream as downstream, it’s pretty likely upstream is
-going to be idle 95 percent of the time. So I think we’ve just backed into a
-corner that the advocates of recabling the nation with fiber optic cable have
-stumbled into by trying to justify an outcome that was predetermined.
-It seems like 100/100 being pushed as the “new
-normal” is actually providing cover for another goal here.
-Also, 100/100 would make a lot of people
-with fast, working internet connections unable to say they have high-speed broadband.
-Wouldn’t this essentially increase speeds for those who are already connected
-at the expense of those who still aren’t’?
-Yeah, and it makes the case for massive
-government intervention to essentially rewire the country with fiber — a
-technology that only the government can pay for at this point. It knocks pretty
-much all the private actors out of business, and for what?
-Sure, a lot
-of people are frustrated with their internet service providers (ISPs), but
-there is going to be an ISP in the picture regardless of who’s providing the
-service. And if they’re constrained by government decisions about where to pull
-cables and who gets it first, we’re locking ourselves into another 10-plus year
-debacle over speeds while many Americans continue lacking internet access
-altogether.
-This brings us back to the idea that
-certain technologies or networks can be “future-proof.” But what if we had
-future-proofed using what was in vogue 10 years ago?
-Yeah, I
-think fundamentally, bits don’t really care what kind of medium they’re moving
-over. It can be co-ax, it can be wireless, it can be Starlink, it can be 5G. When
-did the wire become the most important factor in this overall system? The whole
-point of the internet is that internet protocol doesn’t really care what the
-communications medium is.
-There are
-also some fingerprints of players in Washington who have been advocating for a
-nationalized broadband network for about 20 years, and have been wanting this
-sort of thing for a long time. As to the rhetoric about future-proof networks:
-They were saying that same thing in the 1990s. The symmetrical high-speed fiber
-optic network was a 1990s vision of a future-proof network. And of course, the
-irony is that in the 20 years that have elapsed, we’ve seen the rise of mobile
-broadband.
-The one
-thing that the future-proof vision of future-proofed wires can’t provide for
-you is mobility. And it turns out that mobility is more important to us. The
-mobility and the convenience of wireless connections is more important to
-people than having some arbitrarily high-capacity upload channel that you’re
-never going to use. The thing that really matters most in both broadband
-policy, I think, and also in the personal experience of the internet is: You
-want the connectivity to be pervasive. Wherever you are, whatever you’re doing,
-we want the option of connecting to the internet and using that to enhance the
-experience — whatever it is.
-We want
-networking to be a seamless part of everyday life. The network has to adapt to
-us; we don’t have to adapt to the network anymore. We don’t have to sit at a
-desk, looking at a screen while stuck in one location if we don’t want to.
-It seems
-like we’ve fallen out of touch with the goal of getting more people connected —
-and are now focused instead on speed.
-Yes, but I
-should also note that in some respects, I think the advocates for a new
-high-speed broadband standard are somewhat correct. 3 Mbps upstream has always
-seemed a bit constrained to me. But I think, probably, the correction that
-needs to be made to the standard is something like 25/5, 25/6, or 25/8 — maybe
-even 25/10 — but not anything beyond that. To me, this 100/100 push really
-seems to be more of petty Washington, DC politics than a sober assessment of
-what people’s actual needs are and where the policy should go.
-Like I said,
-we need networks that are more flexible, pervasive, adaptable, and software-controlled.
-We never realized back when the Federal Communications Commission (FCC) started
-making these standards that there’s really no way to create a definition of
-broadband that works in all cases. Now, I think the answer to that question is:
-You need a software-defined network that can adapt dynamically to the needs of
-whatever applications you’re running. If you’re the kind of person who wants to
-do a complete offsite backup of your hard drive every once in a while, you
-should be able to get the upstream capacity to do that quickly when you need it
-— but not have to continually pay for it when you don’t.
-What we
-actually need to get out of our network is flexibility across the range of
-applications we use, and if it can give us that at a low price by allocating
-bandwidth dynamically between people who aren’t using their connection and
-people who are at any given time, that’s great. But how do you square that kind
-of network dynamism and efficiency with notions like net neutrality and that your
-network has to meet some predefined standard that the FCC basically pulled out
-of thin air?
+
+[Speaker: Introduction / editorial context]
+As the pandemic has shifted work, education, and entertainment online, there is a growing appetite in Washington to enhance broadband access across the country. However, some members of Congress and the current administration have advocated for ramping up broadband speeds to a symmetrical 100 megabits per second (Mbps) both downstream and upstream (known as 100/100). Where is the push for this new standard coming from, and what would it mean for the average consumer?
+
+[Speaker: Introduction / editorial context]
+Richard Bennett, founder of High Tech Forum and a co-creator of Wi-Fi, returned to the podcast to explain how mandating 100/100 would burden consumers and fail to connect more Americans to the internet. He and I also discussed President Biden’s infrastructure plan and why “future-proof” networks seldom live up to their name.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Richard, the current standard for high-speed broadband in the United States is 25 Mbps for downloads and 3 Mbps for uploads (25/3). Given how well the American internet has performed during the pandemic, it seems the current standard has served us well. Why do we now “need” 100/100?
+
+[Speaker: Richard Bennett]
+Richard Bennett: I think setting a symmetrical parameter for broadband speeds is kind of outcome-driven. If what we want is a justification for pulling fiber optic cable all over the US, then we have to come up with a requirement based on one of the unique properties fiber optic cable has.
+
+[Speaker: Richard Bennett]
+Hypothetically, 100/100 should enable a whole lot of applications people want that require equal uploads and downloads. But it turns out fiber optic cable is not the only way to achieve that; you can do it with wireless too. You can actually get symmetrical behavior out of the cable network. You can get symmetrical behavior out of the telephone. It’s always been an option, but we have chosen to allocate more bandwidth on the downstream side than on the upstream side because there’s more traffic to move. This is what matches consumer demand.
+
+[Speaker: Richard Bennett]
+So if I have a one-gigabit symmetrical connection, that means I have two gigabits of bandwidth to work with. With the same amount allocated to upstream as downstream, it’s pretty likely upstream is going to be idle 95 percent of the time. So I think we’ve just backed into a corner that the advocates of recabling the nation with fiber optic cable have stumbled into by trying to justify an outcome that was predetermined.
+
+[Speaker: Shane Tews]
+It seems like 100/100 being pushed as the “new normal” is actually providing cover for another goal here. Also, 100/100 would make a lot of people with fast, working internet connections unable to say they have high-speed broadband. Wouldn’t this essentially increase speeds for those who are already connected at the expense of those who still aren’t’?
+
+[Speaker: Richard Bennett]
+Yeah, and it makes the case for massive government intervention to essentially rewire the country with fiber — a technology that only the government can pay for at this point. It knocks pretty much all the private actors out of business, and for what?
+
+[Speaker: Richard Bennett]
+Sure, a lot of people are frustrated with their internet service providers (ISPs), but there is going to be an ISP in the picture regardless of who’s providing the service. And if they’re constrained by government decisions about where to pull cables and who gets it first, we’re locking ourselves into another 10-plus year debacle over speeds while many Americans continue lacking internet access altogether.
+
+[Speaker: Shane Tews]
+This brings us back to the idea that certain technologies or networks can be “future-proof.” But what if we had future-proofed using what was in vogue 10 years ago?
+
+[Speaker: Richard Bennett]
+Yeah, I think fundamentally, bits don’t really care what kind of medium they’re moving over. It can be co-ax, it can be wireless, it can be Starlink, it can be 5G. When did the wire become the most important factor in this overall system? The whole point of the internet is that internet protocol doesn’t really care what the communications medium is.
+
+[Speaker: Richard Bennett]
+There are also some fingerprints of players in Washington who have been advocating for a nationalized broadband network for about 20 years, and have been wanting this sort of thing for a long time. As to the rhetoric about future-proof networks: They were saying that same thing in the 1990s. The symmetrical high-speed fiber optic network was a 1990s vision of a future-proof network. And of course, the irony is that in the 20 years that have elapsed, we’ve seen the rise of mobile broadband.
+
+[Speaker: Richard Bennett]
+The one thing that the future-proof vision of future-proofed wires can’t provide for you is mobility. And it turns out that mobility is more important to us. The mobility and the convenience of wireless connections is more important to people than having some arbitrarily high-capacity upload channel that you’re never going to use. The thing that really matters most in both broadband policy, I think, and also in the personal experience of the internet is: You want the connectivity to be pervasive. Wherever you are, whatever you’re doing, we want the option of connecting to the internet and using that to enhance the experience — whatever it is.
+
+[Speaker: Richard Bennett]
+We want networking to be a seamless part of everyday life. The network has to adapt to us; we don’t have to adapt to the network anymore. We don’t have to sit at a desk, looking at a screen while stuck in one location if we don’t want to.
+
+[Speaker: Richard Bennett]
+It seems like we’ve fallen out of touch with the goal of getting more people connected — and are now focused instead on speed.
+
+[Speaker: Richard Bennett]
+Yes, but I should also note that in some respects, I think the advocates for a new high-speed broadband standard are somewhat correct. 3 Mbps upstream has always seemed a bit constrained to me. But I think, probably, the correction that needs to be made to the standard is something like 25/5, 25/6, or 25/8 — maybe even 25/10 — but not anything beyond that. To me, this 100/100 push really seems to be more of petty Washington, DC politics than a sober assessment of what people’s actual needs are and where the policy should go.
+
+[Speaker: Richard Bennett]
+Like I said, we need networks that are more flexible, pervasive, adaptable, and software-controlled. We never realized back when the Federal Communications Commission (FCC) started making these standards that there’s really no way to create a definition of broadband that works in all cases. Now, I think the answer to that question is: You need a software-defined network that can adapt dynamically to the needs of whatever applications you’re running. If you’re the kind of person who wants to do a complete offsite backup of your hard drive every once in a while, you should be able to get the upstream capacity to do that quickly when you need it — but not have to continually pay for it when you don’t.
+
+[Speaker: Richard Bennett]
+What we actually need to get out of our network is flexibility across the range of applications we use, and if it can give us that at a low price by allocating bandwidth dynamically between people who aren’t using their connection and people who are at any given time, that’s great. But how do you square that kind of network dynamism and efficiency with notions like net neutrality and that your network has to meet some predefined standard that the FCC basically pulled out of thin air?
+
+[Speaker: Richard Bennett]
 It’s this whole adversarial relationship between regulators and service providers. This is really, I think, probably the most toxic thing I’ve seen in broadband policy in the few years I’ve been involved in it. And so really, we need to see this more as a partnership.

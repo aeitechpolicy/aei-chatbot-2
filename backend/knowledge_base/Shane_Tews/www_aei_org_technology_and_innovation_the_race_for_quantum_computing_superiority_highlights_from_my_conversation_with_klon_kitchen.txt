@@ -1,156 +1,80 @@
 PAGE_TITLE: 
-	The Race for Quantum Computing Superiority: Highlights from My Conversation with Klon Kitchen | American Enterprise Institute - AEI
+	The Race for Quantum Computing Superiority: Highlights from My Conversation with Klon Kitchen
 
+[Speaker: Introduction / editorial context]
 By Shane Tews and Klon Kitchen
-Quantum
-computers are poised to permanently change how technology exists in society.
-But with the advent of quantum computing comes several risks to the US across a
-range of fields — including national security. How can the US sufficiently
-advance its quantum computing capabilities and manage the risks that come with
-them?
-Klon Kitchen
-,
-an AEI resident fellow in foreign and defense policy, joined “Explain to Shane”
-to discuss his latest AEI report, “
-Quantum computing: A national security primer
-,” along with what’s
-at stake for the US in the quantum computing race. Klon also gave a
-comprehensive overview of how quantum computers operate, and explained how US
-government and industry can work together to achieve quantum superiority.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Klon, to get us started, give
-us an overview of what quantum computing is. What does it stand to contribute
-to society, and why are so many people talking about it?
-Klon
-Kitchen: When we talk about quantum computing, we’re talking about the
-application of quantum theory to computer science. Quantum theory is
-essentially our hypothesis for how the world works at the subatomic level; it’s
-how we hypothesize and understand things like lasers or photosynthesis.
-Two aspects
-of quantum theory are particularly applicable to quantum computing. The first
-is called “superposition.” In traditional physics, something cannot exist in
-two states simultaneously. But in the quantum realm, they can. And so in the
-context of a computer, computers are made up of little calculators or switches
-that are either a one or a zero. It can’t be a one and a zero at the same time.
-But a quantum computer uses something called cubits, which can be a one, a zero,
-or both simultaneously. That represents a significant growth in computational
-power.
-The second
-aspect is called “entanglement.” In the quantum realm, the notion of
-entanglement describes how one body builds a relationship with a separate body,
-and that relationship determines the state. For example, if you spin two dimes
-on opposite sides of the universe and one lands on heads, because it’s
-entangled with the other dime, you know the other dime is now on heads too. So
-when you have cubits in a quantum computer that you can entangle, you have
-exponentially grown that computer’s computational capacity.
-So those are
-two crazy mind-bending dynamics that innovators are currently trying to
-incorporate into computers. A few years ago, I would have said we were a decade
-or two away from a true quantum computer. Google, however, recently announced
-that they believe they will have one of these computers before 2030. And even
-if that slips by a couple of years, we are talking about a fundamental shift in
-human knowledge and capability coming at us very quickly.
-As I mentioned, quantum computing is about
-computational power and speed. Specifically, a quantum computer would
-constitute the single greatest technological leap in human history. I
-understand that sounds like hyperbole, but I don’t think it is. I think that is
-a legitimate, fact-driven assessment of what quantum computing’s potential really
-is.
-How is
-the US doing in the quantum computing race compared to China? How should we
-feel about where the US stands currently?
-One example of where quantum could have a
-real impact is the type of encryption that protects things like our nuclear
-codes. Currently, our most powerful supercomputer would take somewhere in the
-range of tens of thousands of years to break one of those codes — if at all. A
-quantum computer, especially the type Google and others are describing, would
-likely break that type of encryption near instantaneously. That’s a big deal.
-And that’s only one very narrow application of what will be a very broadly
-applied innovation.
-Beyond encryption concerns, both in terms of
-being able to break our encryption and our inability to potentially crack
-China’s quantum encryption, there are a great deal of economic, social, and
-political benefits quantum could enable. For example, a quantum computer would
-theoretically be able to model the subatomic environment. So in a field like
-medicine, that would mean an exponential growth in our knowledge about medical
-research and treatment.
-In terms of securing quantum advantage, I
-think it’s safe to say the US and China are the leaders in this science right
-now. Each nation has a different approach to building quantum capabilities, and
-each has its own strengths and weaknesses, but I think the US model of research
-and development (R&D) innovation is more agile. I think it’s more creative and
-diverse, and that it’s generally producing greater dynamism while encouraging
-the underlying real scientific discovery of things.
-The Chinese model is more narrowly focused.
-It’s kind of government-driven, but it benefits from that government support. It
-allows R&D to be done in a deliberate and sustained way against key
-national priorities. So in the case of China, I think they’re prioritizing
-information security — as well as some biotechnology research.
-When it comes to who’s winning this race,
-it’s kind of hard to judge because all we know is that there’s a certain number
-of people on the track, and there’s more than one path to the finish line. It’s
-hard to give a straight-up horse race analogy in terms of who’s up and who’s
-down. What we know is that we’re all running down these different paths. And at
-the point when anybody actually achieves some type of meaningful advantage,
-that first-mover advantage will be real and could have very quick follow-on
-effects.
-I know
-the last administration was pushing to advance US quantum computing. Are we
-seeing the same momentum with the current administration? And keeping in mind
-the possible shortfalls of the US not having as strong a centralized R&D
-model as China, what role should the US government be playing in advancing our
-quantum computing capabilities?
-Yes, I do think the Biden administration is
-continuing something called the National Quantum Initiative, which was
-specifically aimed at trying to build partnerships between the public and
-private sectors in the US to foster quantum R&D.
-The first thing for me is recognizing that
-the government clearly has a stake here. In other words, they deserve a seat at
-the table, and that stake is ensuring the US is not overtaken by quantum
-surprise. In fact, I would argue that this, in one respect, goes to the core of
-the government’s constitutional duty to provide for the common defense. So I
-think this is a legitimate discussion for government to be involved in.
-That does not mean, however, that the
-government should centrally plan or manage this research. Instead, I think it
-should continue what it’s doing: working with industry to communicate the
-government’s interests, priorities, and concerns, and, where possible, removing
-barriers to commercial innovation and research. I think that is a good use of
-government’s time and capacity: removing those barriers and encouraging key
-initiatives.
-I have not heard anyone arguing for the US to
-adopt centralized R&D with regard to quantum, but I do think a growing
-group on both sides of the political aisle recognizes there’s legitimate
-government equity in this research and a necessity for whole-of-society
-engagement. I think that understandably makes some people — particularly
-conservatives — nervous, because that type of rhetoric has been used in the
-past to justify things that I think weren’t justifiable. But I think this is
-one of those cases in which we have a sufficiently important issue that is
-fundamental and consequential enough to require a level of voluntary
-public-private cooperation, because we’re all standing over the same barrel.
-What immediate
-future developments should we be looking out for here?
-Honeywell is putting a ton of effort into
-quantum research. The University of Maryland has a consortium of academics, lab
-researchers, and industry experts that’s doing a lot of really good work on this
-too. Organizations like the National Institute of Standards and Technology are
-also working on establishing quantum security standards. So I think you’re going
-to see a steady supply of core quantum computing science research coming out.
-I think you’re also going to increasingly
-hear in the broader public conversation this idea of quantum as a service, in
-which companies offer paying customers access to quantum computers, software,
-and applications. Though they might not be the fully baked quantum computers,
-we’re going to have a number of iteratively more powerful computers, I think,
-between now and the day we finally achieve true quantum advantage — whenever
-that may be.
-I essentially think this is going to become a
-common part of the nation’s social and economic lexicon. I think the science
-has matured enough to where we’re going to hear more about it as we go forward,
-because it’s transitioning from being theoretical to, “Hey, I think we’ve
-actually got something here and are starting to build stuff.”
+
+[Speaker: Introduction / editorial context]
+Quantum computers are poised to permanently change how technology exists in society. But with the advent of quantum computing comes several risks to the US across a range of fields — including national security. How can the US sufficiently advance its quantum computing capabilities and manage the risks that come with them?
+
+[Speaker: Introduction / editorial context]
+Klon Kitchen, an AEI resident fellow in foreign and defense policy, joined “Explain to Shane” to discuss his latest AEI report, “Quantum computing: A national security primer,” along with what’s at stake for the US in the quantum computing race. Klon also gave a comprehensive overview of how quantum computers operate, and explained how US government and industry can work together to achieve quantum superiority.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Klon, to get us started, give us an overview of what quantum computing is. What does it stand to contribute to society, and why are so many people talking about it?
+
+[Speaker: Klon Kitchen]
+Klon Kitchen: When we talk about quantum computing, we’re talking about the application of quantum theory to computer science. Quantum theory is essentially our hypothesis for how the world works at the subatomic level; it’s how we hypothesize and understand things like lasers or photosynthesis.
+
+[Speaker: Klon Kitchen]
+Two aspects of quantum theory are particularly applicable to quantum computing. The first is called “superposition.” In traditional physics, something cannot exist in two states simultaneously. But in the quantum realm, they can. And so in the context of a computer, computers are made up of little calculators or switches that are either a one or a zero. It can’t be a one and a zero at the same time. But a quantum computer uses something called cubits, which can be a one, a zero, or both simultaneously. That represents a significant growth in computational power.
+
+[Speaker: Klon Kitchen]
+The second aspect is called “entanglement.” In the quantum realm, the notion of entanglement describes how one body builds a relationship with a separate body, and that relationship determines the state. For example, if you spin two dimes on opposite sides of the universe and one lands on heads, because it’s entangled with the other dime, you know the other dime is now on heads too. So when you have cubits in a quantum computer that you can entangle, you have exponentially grown that computer’s computational capacity.
+
+[Speaker: Klon Kitchen]
+So those are two crazy mind-bending dynamics that innovators are currently trying to incorporate into computers. A few years ago, I would have said we were a decade or two away from a true quantum computer. Google, however, recently announced that they believe they will have one of these computers before 2030. And even if that slips by a couple of years, we are talking about a fundamental shift in human knowledge and capability coming at us very quickly.
+
+[Speaker: Klon Kitchen]
+As I mentioned, quantum computing is about computational power and speed. Specifically, a quantum computer would constitute the single greatest technological leap in human history. I understand that sounds like hyperbole, but I don’t think it is. I think that is a legitimate, fact-driven assessment of what quantum computing’s potential really is.
+
+[Speaker: Shane Tews]
+How is the US doing in the quantum computing race compared to China? How should we feel about where the US stands currently?
+
+[Speaker: Klon Kitchen]
+One example of where quantum could have a real impact is the type of encryption that protects things like our nuclear codes. Currently, our most powerful supercomputer would take somewhere in the range of tens of thousands of years to break one of those codes — if at all. A quantum computer, especially the type Google and others are describing, would likely break that type of encryption near instantaneously. That’s a big deal. And that’s only one very narrow application of what will be a very broadly applied innovation.
+
+[Speaker: Klon Kitchen]
+Beyond encryption concerns, both in terms of being able to break our encryption and our inability to potentially crack China’s quantum encryption, there are a great deal of economic, social, and political benefits quantum could enable. For example, a quantum computer would theoretically be able to model the subatomic environment. So in a field like medicine, that would mean an exponential growth in our knowledge about medical research and treatment.
+
+[Speaker: Klon Kitchen]
+In terms of securing quantum advantage, I think it’s safe to say the US and China are the leaders in this science right now. Each nation has a different approach to building quantum capabilities, and each has its own strengths and weaknesses, but I think the US model of research and development (R&D) innovation is more agile. I think it’s more creative and diverse, and that it’s generally producing greater dynamism while encouraging the underlying real scientific discovery of things.
+
+[Speaker: Klon Kitchen]
+The Chinese model is more narrowly focused. It’s kind of government-driven, but it benefits from that government support. It allows R&D to be done in a deliberate and sustained way against key national priorities. So in the case of China, I think they’re prioritizing information security — as well as some biotechnology research.
+
+[Speaker: Klon Kitchen]
+When it comes to who’s winning this race, it’s kind of hard to judge because all we know is that there’s a certain number of people on the track, and there’s more than one path to the finish line. It’s hard to give a straight-up horse race analogy in terms of who’s up and who’s down. What we know is that we’re all running down these different paths. And at the point when anybody actually achieves some type of meaningful advantage, that first-mover advantage will be real and could have very quick follow-on effects.
+
+[Speaker: Shane Tews]
+I know the last administration was pushing to advance US quantum computing. Are we seeing the same momentum with the current administration? And keeping in mind the possible shortfalls of the US not having as strong a centralized R&D model as China, what role should the US government be playing in advancing our quantum computing capabilities?
+
+[Speaker: Klon Kitchen]
+Yes, I do think the Biden administration is continuing something called the National Quantum Initiative, which was specifically aimed at trying to build partnerships between the public and private sectors in the US to foster quantum R&D.
+
+[Speaker: Klon Kitchen]
+The first thing for me is recognizing that the government clearly has a stake here. In other words, they deserve a seat at the table, and that stake is ensuring the US is not overtaken by quantum surprise. In fact, I would argue that this, in one respect, goes to the core of the government’s constitutional duty to provide for the common defense. So I think this is a legitimate discussion for government to be involved in.
+
+[Speaker: Klon Kitchen]
+That does not mean, however, that the government should centrally plan or manage this research. Instead, I think it should continue what it’s doing: working with industry to communicate the government’s interests, priorities, and concerns, and, where possible, removing barriers to commercial innovation and research. I think that is a good use of government’s time and capacity: removing those barriers and encouraging key initiatives.
+
+[Speaker: Klon Kitchen]
+I have not heard anyone arguing for the US to adopt centralized R&D with regard to quantum, but I do think a growing group on both sides of the political aisle recognizes there’s legitimate government equity in this research and a necessity for whole-of-society engagement. I think that understandably makes some people — particularly conservatives — nervous, because that type of rhetoric has been used in the past to justify things that I think weren’t justifiable. But I think this is one of those cases in which we have a sufficiently important issue that is fundamental and consequential enough to require a level of voluntary public-private cooperation, because we’re all standing over the same barrel.
+
+[Speaker: Shane Tews]
+What immediate future developments should we be looking out for here?
+
+[Speaker: Klon Kitchen]
+Honeywell is putting a ton of effort into quantum research. The University of Maryland has a consortium of academics, lab researchers, and industry experts that’s doing a lot of really good work on this too. Organizations like the National Institute of Standards and Technology are also working on establishing quantum security standards. So I think you’re going to see a steady supply of core quantum computing science research coming out.
+
+[Speaker: Klon Kitchen]
+I think you’re also going to increasingly hear in the broader public conversation this idea of quantum as a service, in which companies offer paying customers access to quantum computers, software, and applications. Though they might not be the fully baked quantum computers, we’re going to have a number of iteratively more powerful computers, I think, between now and the day we finally achieve true quantum advantage — whenever that may be.
+
+[Speaker: Klon Kitchen]
+I essentially think this is going to become a common part of the nation’s social and economic lexicon. I think the science has matured enough to where we’re going to hear more about it as we go forward, because it’s transitioning from being theoretical to, “Hey, I think we’ve actually got something here and are starting to build stuff.”
+
+[Speaker: Klon Kitchen]
 I do want to add one caveat: None of this is guaranteed. My only point on quantum computing science is that this seems more realistic and more possible than anyone would have said a short few years ago. It’s just that the level of evolution that has occurred in the last three years suggests we may have the tiger by the tail right now — that we may have figured something out.

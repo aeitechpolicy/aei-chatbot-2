@@ -1,7 +1,11 @@
 PAGE_TITLE: 
-	Inside the World of Domains (with Ram Mohan) | American Enterprise Institute - AEI
+	Inside the World of Domains (with Ram Mohan)
 
+[Speaker: Introduction / editorial context]
 As the domain name system expands, how can the industry ensure that this growth supports a multilingual and inclusive internet? What responsibilities come with managing such a critical layer of the internet’s infrastructure in an era of rapid digital transformation?
-Shane Tews is joined by Ram Mohan, Chief Strategy Officer of Identity Digital, on the latest episode of
-Explain to Shane
-. They discuss how internationalized domain names and comprehensive policies can help create a more accessible web for users around the world. They also explore how the domain name system’s evolution intersects with broader Internet governance challenges—and what it means for the future of global connectivity.
+
+[Speaker: Introduction / editorial context]
+Shane Tews is joined by Ram Mohan, Chief Strategy Officer of Identity Digital, on the latest episode of Explain to Shane. They discuss how internationalized domain names and comprehensive policies can help create a more accessible web for users around the world. They also explore how the domain name system’s evolution intersects with broader Internet governance challenges—and what it means for the future of global connectivity.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.

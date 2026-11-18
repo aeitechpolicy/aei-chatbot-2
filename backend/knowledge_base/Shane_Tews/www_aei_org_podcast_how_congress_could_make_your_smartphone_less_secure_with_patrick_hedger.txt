@@ -1,14 +1,14 @@
 PAGE_TITLE: 
-	How Congress Could Make Your Smartphone Less Secure (with Patrick Hedger) | American Enterprise Institute - AEI
+	How Congress Could Make Your Smartphone Less Secure (with Patrick Hedger)
 
+[Speaker: Introduction / editorial context]
 At a time when cybersecurity is more important than ever, Congress is taking steps to weaken the security of your mobile device. By forcing app-store operators to allow “sideloading” — the unvetted downloading of any app or software from the open internet — bad actors could have a fast lane to your personal data and information. Furthermore, letting these platforms retain control over their digital marketplaces is crucial as both a physical and information war rages on in Ukraine. Why is Congress considering this, and why now?
-To help make sense of the sideloading and app-security issues,
-Patrick Hedger
-, executive director of the
-Taxpayers Protection Alliance
-(TPA), joins
-Shane
-on the latest episode of “Explain to Shane.” The two of them discuss Congress’ app-store regulatory proposals, along with a new TPA initiative called the
-App Security Project
-. The project is “dedicated to protecting and enhancing consumer security and safety with mobile apps and software that have come to define today’s innovative, but ultimately vulnerable, digital ecosystem.”
+
+[Speaker: Introduction / editorial context]
+To help make sense of the sideloading and app-security issues, Patrick Hedger, executive director of the Taxpayers Protection Alliance (TPA), joins Shane on the latest episode of “Explain to Shane.” The two of them discuss Congress’ app-store regulatory proposals, along with a new TPA initiative called the App Security Project. The project is “dedicated to protecting and enhancing consumer security and safety with mobile apps and software that have come to define today’s innovative, but ultimately vulnerable, digital ecosystem.”
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

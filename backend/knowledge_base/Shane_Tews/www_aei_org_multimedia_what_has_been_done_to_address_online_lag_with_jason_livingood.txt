@@ -1,6 +1,11 @@
 PAGE_TITLE: 
-	What Has Been Done to Address Online Lag? (with Jason Livingood) | American Enterprise Institute - AEI
+	What Has Been Done to Address Online Lag? (with Jason Livingood)
 
+[Speaker: Introduction / editorial context]
 While the internet has improved monumentally since its early days of bandwidth restrictions and dial-up, customers are more demanding of the network and have little patience for latency on any of their devices. What causes these interruptions to our usually consistent high-speed streams? Latency, or lag.
+
+[Speaker: Introduction / editorial context]
 On today’s episode of Explain to Shane, Comcast’s Vice President for Technology Policy, Products, and Standards, Jason Livingood, dives into what is being done to solve this challenge. Jason has spent his career addressing the internet’s emerging challenges: he’s been a pivotal figure in promoting ultra-low latency networking and directing R&D through the Comcast Innovation Fund. He’s also served twice on the FCC’s Technical Advisory Committee and has spent 16 years on the Member Advisory Board of the Internet Society.
+
+[Speaker: Introduction / editorial context]
 Jason will shed light on why latency has become a critical factor for internet users and discuss the steps being taken by Comcast ahead of high-demand streaming events like this summer’s Paris Olympics.

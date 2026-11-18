@@ -1,0 +1,359 @@
+PAGE_TITLE: 
+	The Challenge of Putting Federal Broadband Funds to Good Use (with Mark Jamison) — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI Explain to Shane: The Challenge of Putting Federal Broadband Funds to Good Use (with Mark Jamison) Episode # 63 | June 19, 2022 | Shane Tews and Mark Jamison
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. The Infrastructure Investment and Jobs Act, or IIJA, also known as the Bipartisan Infrastructure Bill, passed Congress and was enacted into law in December 2021 to provide broadband access to the entire country through billions of dollars in grants to expand high-speed internet access. The IIJA sets forth $65 billion in federal investment funds as part of the $42.45 billion Broadband Equity, Access, and Deployment program (or the BEAD program) to distribute grants and funds through the states and territories, along with $2 billion for tribal connectivity programs, plus $2.75 billion in digital equity, and $1 billion to enable middle-mile infrastructure plans. These programs are all part of the federal programs put in place to solve the digital divide challenge with high- speed, affordable, and reliable internet access. As Assistant Secretary of NTIA Alan Davidson recently said, these programs are "this generation's infrastructure moment."
+
+[Speaker: Shane Tews]
+Shane Tews: My guest today is Professor Mark Jamison, or Dr. J, as we call him. Dr. Jand | discuss the need for educating and training to meet the infrastructure buildout worktorce challenges and how the states are working through the opportunities this funding brings through these multiple grant programs. Dr. J is a Nonresident Senior Fellow at AEI, and the Director and Gunter Professor of the Public Utility Research Center at the University of Florida's Warrington College of Business. Dr. J served as a special advisor to the chair of the governor of Florida's Internet Task Force, and he served on the Federal Communications Commission (FCC) transition team for President-elect Trump. This is Dr. J's second visit on Explain to Shane. During his last visit, we talked about legislation in Congress and the changes at the Federal Trade Commission around antitrust, competition, and the consumer welfare standard. Mark, or can I just call you Dr. J because that's what we call you here at AEI?
+
+[Speaker: Mark Jamison]
+Mark Jamison: That's what some high school students called me a long time ago and it has
+
+[Speaker: Mark Jamison]
+stuck ever since.
+
+[Speaker: Shane Tews]
+Shane Tews: I was just in an event with Dr. Jamison and I said "Dr. J" and they looked around. I was like, "I mean, Mark." So, welcome to Explain to Shane. You have been working very diligently around a bunch of new programs that have been put in place by both Congress and this administration around how we bridge the digital divide with broadband. So today, I would love the chance to walk through some of these really arcane topics for a lot of people, but things that are near and dear to our heart—the Broadband Equity, Access, and Deployment, the BEAD program as we like to call it, is definitely top of mind. And the other one is the Notice of Funding Opportunity (NOFO). So, which should go first?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, they belong together.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Because the NOFO is simply notifying people that money is available. What is it available for? The BEAD program. So they go hand in hand.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. So if I take advantage of the NOFO, then I have the opportunity to get BEAD funding?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yes, but you cannot do that. A state has to do it. So the Department of Commerce-NTIA being part of the Department of Commerce—will be sending money to states for states to implement the broadband program.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. So how much money did Congress just give the Department of Commerce division of the National Telecommunications and Information Administration (NTIA)? The number seems to keep going up. And that's when I realized, it seems like it was $42 billion, then it got to be $46 billion, and then it was $48 [billion]. And then I wondered if people are just putting all these programs together because there are multiple programs that are going on here—the middle-mile program. I'm separating out the ones that are over at the Department of Agriculture. So it's just many, many billions.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Many, many billions. $42.5 is the amount that was allocated for this in the infrastructure bill.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Mark Jamison]
+Mark Jamison: But you're right. Under COVID, a few other programs went out for middle-mile and other types of things. That is something that happens a lot in Washington DC, as we will have a lot of different programs all focused on the same issue.
+
+[Speaker: Shane Tews]
+Shane Tews: So ifl am someone in my favorite, the great state of Nebraska, where I'm from, but l'm not in a very urbanized area, so l'm probably outside of the Lincoln, Omaha, Grand Island, North Platt area, and I realize you have familiarity with this too, because you at one point we're a short-term resident in Nebraska.
+
+[Speaker: Mark Jamison]
+Mark Jamison: In North Platt, Nebraska. Yes, for all of six months, I think.
+
+[Speaker: Shane Tews]
+Shane Tews: The guy from Kansas. So explain the middle-mile since that seems to be the first thing that is going to get funded. We just saw Assistant Secretary Alan Davidson talk, and he said that is the one that is the most shovel-ready and probably the most important to the next level. Do you agree with that?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, I don't know if it's shovel-ready or not. That's a term that probably has been overused a little bit.
+
+[Speaker: Shane Tews]
+Shane Tews: Fair.
+
+[Speaker: Mark Jamison]
+Mark Jamison: But essentially the idea of what we call middle-mile is getting typically fiber- optic cables out into a rural area so that people can then build from there into homes, into businesses, anchor institutions like schools, hospitals, etc. So it's getting the internet, the broadband into an area rather than getting it into the actual buildings that people will be working in or living in.
+
+[Speaker: Shane Tews]
+Shane Tews: So my friend Roger Entner likes to say, "It's exiting off the superhighway onto the highway structure, or maybe getting onto the county roads."
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, yes, you could think of it that way. It's basically like the main highway. That would be the middle-mile.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. So it seems like that's a good idea from a sequencing perspective that they're plotting that out. But now do the states have to put that in as well? Do we know how the programming for that is going?
+
+[Speaker: Mark Jamison]
+Mark Jamison: That is something I've not studied very much. I cannot tell you exactly how that program works.
+
+[Speaker: Shane Tews]
+Shane Tews: We're going to asterisks that and we're going to come back to that on notes for later. So once the middle-mile is going on—so these are going on in parallel time sequences is what you're saying.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yes. I don't think there was a deliberate sequence to it. There wasn't an idea that said, "We' ve got to build a middle-mile, then we'll connect people."
+
+[Speaker: Shane Tews]
+Shane Tews: The idea of connecting people with broadband didn't actually—they weren't fully thinking about broadband when they did it. They were thinking about the outcome, which is actually not a bad thing. I don't mind it when policymakers think about outcome and then let technology do the middle work, which is probably a better way to do it. So you have been working with the state of Florida on the kind of initial work project that needed to get done so the governor can now put the information forward to NTIA. Tell us what the steps were going into that process.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, what I was working on was something that Florida has in its statute, which says that every two years, the state will write a broadband strategic plan. And the statute was put into place a year or two ago, so it was time to write the first
+
+[Speaker: Shane Tews]
+Shane Tews: So it's a recent statute.
+
+[Speaker: Mark Jamison]
+Mark Jamison: It's a recent statute, and I've talked with the state many times about broadbano saying, you know, "Don't do this; do this." And they said, "Well, if you're so smart, you help write the strategic plan."
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Mark Jamison]
+Mark Jamison: So l did. We finished that in about May; [that] was the first of the end of our work as a research center. Now the people in the governor's office and economic development, etc. are putting the finishing touches on that. But that was not directed at the $42.5 billion. We didn't even know that was going to look like that. We were just writing.
+
+[Speaker: Shane Tews]
+Shane Tews: You have your own statute.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yes.
+
+[Speaker: Shane Tews]
+Shane Tews: 20 years from now, there'll be somebody going, "Whose idea was this?" I'm like, "This guy at the University of Florida, Dr. Jamison." But it is a good idea just to—it's always good to have a plan. Usually I'm a big, if you have a plan, it moves forward. So you gave the governor some guidance on how to move towards the future on broadband. And that just happened to coincide with the fact that then Congress decided to bring a lot of taxpayer money into the idea of getting broadband across America. So that's now being rolled into the plan that the governor is doing as far as you know?
+
+[Speaker: Mark Jamison]
+Mark Jamison: That I don't know. Once the governor's office, the leaders in the legislature and such got involved, it was time for the academic to step away.
+
+[Speaker: Shane Tews]
+Shane Tews: Ah, okay.
+
+[Speaker: Mark Jamison]
+Mark Jamison: so l stepped out and they re doing their work now. And whether any ot the work that my team and I did sees the light of day, I have no idea.
+
+[Speaker: Shane Tews]
+Shane Tews: Alright, well, let's hope that it's all going tor a good cause. So let's just talk about how BEAD works then. So Congress has allowed funding to go forward to the Department of Commerce. They have the congressional remit to what they're supposed to be doing. Now each state puts a plan forward so they can augment their thought, but they can take the rules that they have to use to agree to go to NTIA, but they can also augment it so it makes sense—a fit for purpose, I guess, depending on what the state's needs are. Give us some idea of how you think that's going, because it's coming up soon, right? July 18th?
+
+[Speaker: Mark Jamison]
+Mark Jamison: It's coming up soon. Well, I think the July 18th is the letter of intent.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, okay, just saying that they plan on taking money away from government.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Saying, "Yes, we want to do this kind of a thing." Then there's a back and forth with NTIA. Eventually the state needs to submit a five-year plan and that involves some more back and forth with NTIA. Then eventually NTIA says, "Okay, state, here's how much money we will allow you to use." Then it's in the state's hands to work with it. Although I suspect NTIA will stay involved.
+
+[Speaker: Shane Tews]
+Shane Tews: So l know there's a couple things that are specifically requested. One is making sure that—well, there's just a question of unserved versus underserved, but the idea of making sure that people that are not currently online can find a way to get online. Some of that is connectivity, from what we were talking about with the middle-mile, and some of it is just not understanding the programs and access. So there's programs for that. And now there have been new requirements put on for labor. I know there are some concerns about that trom a cost perspective. One of the things that came up several times at this event that you and I were just at is that workforce challenge. So are we ready to get a lot of people out there and start laying fiber all across America? What's it going to take to make that happen?
+
+[Speaker: Mark Jamison]
+Mark Jamison: No, we're not ready for that. And I don't know if there is such a thing as being ready for that, because you're going to spend $42.5 billion doing something that people were not geared up to do. It's not like we have people who are experts in laying fiber-optics or in doing any of the software work or the electronics work. It's not like they're sitting out there twiddling their thumbs saying, "Gee, I wish there was a program so I could have a job." These are people who are all out there building houses, doing whatever else they're doing today. Diverting that work over to building broadband will take some effort.
+
+[Speaker: Shane Tews]
+Shane Tews: Definitely. We're seeing community colleges are going to have an interest in this. It's both an opportunity and a challenge. So it's going to be interesting to see how that goes going forward. Then the whole idea about high speed and affordable. So are we still—is 100/100 [megabit speeds], are we realiziną that night be aspirational, and are they still calling for numbers that say that you have to have this numberto be able to apply?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yes, they still are. That is actually in this statute, as I understand it. And that is fairly easily achievable. Most broadband networks being developed today orovide that level of service. Not everyone buys it, but they provide it.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, that's interesting. Yeah, it's available, but some people just choose to go with a lower amount. So once we get broadband across America, what do you think will be the biggest change [in terms of] the adoption that we'll see consumers want?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, that'll be hard to say because one of the things that we've studied over the years and have struggled with is: Why is it that a lot of people don't seem to want broadband? Because we've had programs before where we just offered broadband for free and people still said "no thanks." And we've offered training. We'll give you this stuff, and then we'll offer you training on how to use all of it." And they'li say, "How much do I have to pay to not have to go to those classes?"
+
+[Speaker: Shane Tews]
+Shane Tews: Can you do it for me?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yeah.
+
+[Speaker: Shane Tews]
+Shane Tews: That's an interesting point. I don't know if we're at a stage now in society where it's becoming tougher and tougher not to have some digital skills. I imagine it
+
+[Speaker: Mark Jamison]
+Mark Jamison: I think that's true. I think of it as: If you go back to my grandparents' times, cars were kind of rare back then and not a lot of people ever learned how to drive, but once we all built roads out to everybody's houses, then people learned how to do those things. Ilook at broadband as that same thing. Once it is there, people will figure out what it's good for, for them. And their lives will be different because of it. And I don't know what that will look like; it's theirs to innovate with.
+
+[Speaker: Shane Tews]
+Shane Tews: If we stay with that analogy, that means that Web3 will be like a lot of our research assistants who don't have cars and aren't sure they know how to
+
+[Speaker: Mark Jamison]
+Mark Jamison: That will be true.
+
+[Speaker: Shane Tews]
+Shane Tews: Because they now have that capability. So for somebody who has spent a lot of time in this space and you're seeing the government going towards spending a lot of money in this area, what do you recommend? Is there a priority list that we should be looking at as the spend comes forward in how to layer this process forward for success?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, the biggest challenge that I see is making sure that the money is spent well and that people are held accountable for the things that they do. So it was a big lesson for me back in 2008-2009 when we had one of the stimulus packages with the Great Recession. It had almost $8 billion in it for broadband, and the money was all spent. We have tried to do research now to say, , "What was the impact?"' And we cannot find that broadband expanded at all. What we were able to find is that the people who got the money were typically politically connected.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, interesting.
+
+[Speaker: Mark Jamison]
+Mark Jamison: So there's equipment out there that is sitting doing nothing because it wasn't well thought through how to make sure that people who were experts were the ones—businesses that would actually know how to do broadband—were the ones who got the money and it was part of their business. Then people just weren't held accountable if they didn't do the work.
+
+[Speaker: Shane Tews]
+Shane Tews: So there weren't measurements that were part of what they had to do to be part of the program?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, there were measurements. After a while, people figured out that "I don't actually have to report these things."
+
+[Speaker: Shane Tews]
+Shane Tews: It was pass-fail.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, even some of the government agencies quit publishing the data because it was embarrassing how little was happening.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, that's interesting. Yeah. I was talking to another policy colleague of ours this morning, actually, about why the FCC maps are such a mess and why people stop reporting. He basically told me that there's no downside for them to just stop telling the FCC how things are going.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yeah. The FCC doesn't have much of any kind of a penalty—or has not had any kind of a penalty—for people to not report their broadband. We had, for example, one company in Florida that provides broadband, wireless broadband, primarily tor businesses. And about three or so years ago, they just quit sending in numbers, which when our data analysis came about really messed with our data because suddenly all this broadband disappeared.
+
+[Speaker: Shane Tews]
+Shane Tews: That's so interesting. I feel like, I don't know. I guess I'm going to have to learn more about that because I don't understand why you wouldn't encourage them, or at least maybe you have a stick. Maybe there's something they don't get if they don't play with the other kids.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yeah, they didn't need anything from the FCC except for their spectrum license.
+
+[Speaker: Shane Tews]
+Shane Tews: That's why they didn't care.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yeah, that was about it. Then there was always the private business information issue. So if you're a broadband provider, do you really want all the other broadband providers to know exactly where your customers are? No, you really don't want that. So the FCC also had a system in place for kind of hiding data so that you couldn't figure out exactly who was the broadband provider for a particular household.
+
+[Speaker: Shane Tews]
+Shane Tews: So it was need-to-know and they didn't think the FCC needed to know.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, that's certainly true for some of the broadband providers.
+
+[Speaker: Shane Tews]
+Shane Tews: Right. I imagine there's some sort of emergency thing that says if you want somebody to come actually take care of you in a state of emergency, though, you would want to be found.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, but that's a whole different system.
+
+[Speaker: Shane Tews]
+Shane Tews: Right, exactly.
+
+[Speaker: Mark Jamison]
+Mark Jamison: That's not a broadband system.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, there's just no crossover there. That's interesting. So do you have a preference or thoughts on—fiber is really big. This plan says—and fiber is great, out fiber is also expensive and it's also talking about the worktorce situation. It can be a challenge to get fiber everywhere. Fixed wireless? Other opportunities? What do you think about ways to connect these areas that are difficult? You have them in Florida. We have them all across the United States, especially out west.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, I always like to leave that in the hands of the experts.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay, I like that. You're tech-agnostic.
+
+[Speaker: Mark Jamison]
+Mark Jamison: There are people who are going to be putting their money on the line to build systems. The government is not going to fund the whole thing.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay, so actually, let's break that apart, because that is a very good point. A lot of people think the government hands you money and then you just know what you're doing there, and there's no private equity that comes in. But a lot of times there are a lot of additional equity partners in here.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Sure.
+
+[Speaker: Shane Tews]
+Shane Tews: So walk us through that.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Okay. Well, the way that I explain it to people is: If the broadband is not in a particular place, it's because it's not commercially viable or at least hasn't been at the rate of which we can build systems because the faster you try to build something, the more expensive it gets. So at the rate we've been able to go, it just isn't commercial viable. The revenues are below the cost. So the purpose of a subsidy then is to, you could say, augment the revenues if you want to, or you can say it pays for part of the cost just to get so what customers pay is higher than what a company has to put out from its own pocket. And then that makes it all viable.
+
+[Speaker: Shane Tews]
+Shane Tews: It sounds like some real basic economics going on there.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Some very basic economics, well, which we've ignored in this country for a long time when it comes to broadband.
+
+[Speaker: Shane Tews]
+Shane Tews: And many other things, right?
+
+[Speaker: Mark Jamison]
+Mark Jamison: I won't go into those horrible stories. So then the way I think about it is: Well, the customers are the ones who know how much broadband is probably worth to them. And if they've never had it before, they' ve got neighbors and such they can talk with or family they can talk with and kind of learn about, "Okay, yeah, this is how much it's worth to me." Then the companies, the internet service providers know how much it costs to provide that service. They're the ones that are real experts on it. is exactly the right solution. These are just antennas that point at each other and send a broadband signal out into a rural area. We've got some of that in Florida because we have some places where there aren't very many people. Then there are also going to be places where it's pretty much going to be a satellite. We have, I don't know how many, just a small number of communities in Florida that are part of the reservations from Native Americans. You're not going to get fiber-optics out there.
+
+[Speaker: Shane Tews]
+Shane Tews: Right.
+
+[Speaker: Mark Jamison]
+Mark Jamison: They're out in the swamps someplace. You're not going to be able to run a wireless system out there. It's going to be satellite.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. That's also something we've all been watching for various reasons. I always like the situation back in Puerto Rico where all their wireless got knocked out and at the time Google had a Loon over in Colombia, so they floated it over and did a triangulation with—I remember AT&T being involved. I'm not sure what other carriers were involved, but they lit up the island temporarily. And it just made me realize every once in a while when you get in one of those stressed situations where you have to think outside of the norms, you actually come up with some really interesting ways to solve things. We definitely have seen that in the Ukraine too, I think, with Elon Musk sending over a bunch of Starlinks.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Sure.
+
+[Speaker: Shane Tews]
+Shane Tews: We'll see. The Chinese definitely have paid attention to that.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yeah. You just pointed to the satellites. We've done it for a long time in this country. So when Hurricane Katrina went through New Orleans, it wasn't AT&T at the time. It was Bell South, as I recall, [which] just rolled in some portable cell towers and got service back up within a very short period of time. I don't remember how long, but I think you would count it in two or three days.
+
+[Speaker: Shane Tews]
+Shane Tews: Their emergency response is pretty amazing—all those guys.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yes.
+
+[Speaker: Shane Tews]
+Shane Tews: What else are you working on? Anything else we should be hearing from you before we shut down this Explain to Shane?
+
+[Speaker: Mark Jamison]
+Mark Jamison: Oh gosh, what am I not working on? We're working on competition in app markets.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Mark Jamison]
+Mark Jamison: We are working on what's going on with antitrust, and maybe it's really not antitrust. It's at least going after big companies.
+
+[Speaker: Shane Tews]
+Shane Tews: Yes, consumer welfare.
+
+[Speaker: Mark Jamison]
+Mark Jamison: We're working on some of that as well, yes. I have been working on some interesting broadband research with a former postdoc of mine, trying to look at how broadband has affected entrepreneurs in the US.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, interesting.
+
+[Speaker: Mark Jamison]
+Mark Jamison: The results so far are pretty interesting. So for the first 10 years, first decade of this century, we found out that it really impacted entrepreneurs who were women or minorities—not so much the white males. Then after 2010, that all kind of settled down. It impacts everyone just about the same now, and that's a
+
+[Speaker: Mark Jamison]
+curious finding.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, I can imagine. I just had this visual in my head of: There's been this woman who's been running a business for 10 years. Her husband is off going to some office, and all of a sudden he comes home and he goes, "COVID hit. What have you been doing?"
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yeah.
+
+[Speaker: Shane Tews]
+Shane Tews: It's like, "Yeah, l've had this business for 10 years because | had the internet right here in our house. That's tascinating. I know you and l are doing an event on the metaverse. So you're also looking at some of the applications around that as well.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Oh, yes. We have a small think tank working on trying to understand how this works because what we want to understand is primarily: What's different in the economics of this versus where we've been in the past? And then also, what is this going to mean for public policy? What is it going to mean for people's lives? And there's a lot to be sorted out.
+
+[Speaker: Shane Tews]
+Shane Tews: So my thing about the metaverse, I felt this way about second life, too, [which] is: I just don't want my avatar to have a better closet than me. Does she get an
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, that's a good question, because this all gets into those what we call "non- fungible tokens" (NFTs).
+
+[Speaker: Shane Tews]
+Shane Tews: All the things I can buy—my virtual purchases.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Yeah, and those have gotten to be very problematic in the past couple of months.
+
+[Speaker: Shane Tews]
+Shane Tews: Huh. I'll have to keep an eye on that.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Well, with the price of energy going up, it takes a lot of energy to produce those things.
+
+[Speaker: Shane Tews]
+Shane Tews: Wow. Supply chain management in the virtual world too.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Your metaverse closet just got really expensive.
+
+[Speaker: Shane Tews]
+Shane Tews: Now I have one more thing to worry about. Well, thank you so much for being a guest today on Explain to Shane.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Oh, it's my pleasure. Thank you for having me.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of Explain to Shane.

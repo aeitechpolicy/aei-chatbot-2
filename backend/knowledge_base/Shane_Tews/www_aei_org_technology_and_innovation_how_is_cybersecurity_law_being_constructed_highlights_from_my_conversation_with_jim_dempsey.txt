@@ -1,149 +1,80 @@
 PAGE_TITLE: 
-	How Is Cybersecurity Law Being Constructed? Highlights from My Conversation with Jim Dempsey | American Enterprise Institute - AEI
+	How Is Cybersecurity Law Being Constructed? Highlights from My Conversation with Jim Dempsey
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-The extent
-to which lawyers, corporate executives, and government officials focus on
-cybersecurity fluctuates with the threat level posed by malicious cyber actors.
-In light of recent ransomware attacks on critical industries, lawmakers are
-looking at more regulatory obligations to mitigate the risks these threats
-pose. Companies, meanwhile, are working to comply with a chaotic patchwork of
-rules and regulations. The field of cybersecurity law is not systematic, and
-industries are working through who owns the internal cyber regulatory
-responsibilities and compliance obligations.
-In an effort
-to create a coherent roadmap for everyone involved in cybersecurity law,
-Jim
-Dempsey
-published a book titled “
-Cybersecurity
-law fundamentals
-.” Jim joined the latest episode of “Explain to Shane” to
-give an overview of the book and to discuss key lessons that lawmakers,
-industry leaders, and lawyers would be well-advised to consider when it comes
-to cyber.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Jim, welcome to the podcast. To
-get us started, tell us what your new book covers, and what inspired you to
-write it.
-Jim Dempsey:
-In 2016, the dean for curriculum at University of California, Berkley School of
-Law asked me to teach a course on cybersecurity law to a group of mostly
-foreign students getting a two-year degree. At the time, there was no case
-book, so I started compiling my own materials. After a year or so, I had a
-pretty good set of PowerPoints that I thought I could turn into something
-publishable.
-I was a bit inspired by Paul Schwartz and Dan Solove, who have a publication with the International Association of Privacy Professionals (IAPP) called “
-Privacy law fundamentals
-.” I thought it would be great to have “Cybersecurity law fundamentals,” and that IAPP would be the ideal publisher because they are practitioner-oriented.
-It was a
-fascinating exercise for me, looking at how a new field of law is being
-constructed. As you and many of your listeners will know, the United States
-does not have a comprehensive privacy law. We have a patchwork quilt of
-sectoral approaches. The same is true with cybersecurity; there is no single
-comprehensive cybersecurity law.
-Really, the
-field is made up of criminal law, the Computer Fraud and Abuse Act, common-law
-torts, negligence contracts, some regulatory law, and Federal Trade Commission
-(FTC) enforcement. And now, quite fascinatingly, trade and national security
-law are being applied in attempt to keep dangerous products and services out of
-our critical infrastructure.
-Putting that
-all together and trying to make sense of it — then trying to keep it up to date
-— was a fascinating challenge. You just wouldn’t believe how much there is when
-you dig into it.
-Then, Colonial
-Pipeline gets hit, and suddenly everybody is wondering what rules govern these
-pipelines that are so critical to our economy. It gets shut down by a
-ransomware attack and suddenly, the home heating oil, jet fuel, and gasoline
-stop flowing. So it’s an amazing, fascinating, and rapidly developing field.
-It’s been fun putting this together, and I hope it’s useful to practitioners.
-You said there are some ongoing efforts to
-keep the book up to date. How are you doing that?
-The book is actually available from IAPP as we’re speaking. You can buy a hard or e-book copy; regardless of which you buy, I’m launching a free website called
-cybersecuritylawfundamentals.com
-that I’ve already populated with about 40 pages worth of updates.
-Between when
-I sent the book off for proofreading and layout and now, when it’s being
-published, there’s been a lot of water under the bridge. So I’ve realized I’ll
-have to constantly work to keep this up to date. I now have 16 chapters and 16
-sets of updates, and I’ll continue feeding that website as, again, we watch
-this fascinating area of law develop in real time. The courts, regulatory agencies,
-and the White House are far from finished grappling with this.
-You briefly mentioned similarities between
-cybersecurity and privacy law. As concepts, how do you overlay those two
-things?
-That’s such a fascinating question. For anyone who’s been doing privacy for a long time, you’ll remember that the origins of information privacy are founded on this concept of
-fair information practices
-. How do you use and collect information about individuals? These guidelines cover notice and consent, but also purpose specification, collection limitations, and limits on secondary use and security.
-There was
-always the principle that if you collect information about an individual, you
-have some obligation to protect it against loss or misuse. In a way, that’s the
-foundation of the FTC’s cybersecurity authority. The FTC has basically said it
-is an unfair trade practice to take somebody’s personal or sensitive data and
-not protect it with reasonable measures.
-And a lot of
-what this book is about — a lot of what the field is about, of course — is what
-is reasonable, because the standard in cybersecurity is not perfection.
-Everybody agrees — certainly all the technologists agree — that there is no
-such thing as perfect security. Particularly now in a world of advanced,
-persistent threats, there is no perfect security. The perfectly secure system
-would be useless; it would be encased in concrete and buried in the bottom of
-the ocean.
-So the
-standard is reasonableness. Then that opens the question of: What is
-reasonable? How much security is enough security? That’s what companies are
-grappling with. It’s a cost-benefit test, really, and it should be. That’s what
-regulators are grappling with, too — and Congress, to some extent. To me, that is
-the fundamental question in this field: How much security is enough security to
-protect you from legal liability?
-With so many different bodies tackling this
-and so many laws being passed, I think it can be really hard to build
-compliance into the design of certain devices. Would you agree?
-That’s
-another way in which privacy and cybersecurity are similar. They both have to
-be built in from the design level of a product. We’ve been saying for years
-that you can’t bolt on privacy after the product is designed, and you really
-can’t bolt on security. And some of the same questions that you ask from a
-privacy perspective, you should be asking from a cybersecurity perspective.
-The first
-thing that any company has to do, large or small, is take an inventory. What
-data are we collecting? Where are we keeping it? What devices are connected to
-our network? What software is running on our network? That’s important from
-both a privacy and cybersecurity perspective.
-The chief
-privacy officer and the chief information security officer need to have a good
-relationship and work together inside a company. Then, through the product
-development teams and the product counsel, you push down that recognition into
-the company to the development stage. So whether it’s privacy by design or
-secure software development practices, both privacy and cybersecurity need to
-be taken into account — absolutely, from the beginning.
-Speaking of integrating privacy and
-security protections into certain services, what are your thoughts on proposals
-in Congress to allow “sideloading” in app stores? This would basically force
-companies like Apple, which prioritize user security, to allow unvetted
-third-party apps to enter their app stores and end up on users’ devices. I
-personally think it’s crazy.
-Well, it’s
-rooted in this concept about the right to tinker with a device you’ve
-purchased. The idea is, “I bought it, so I should be able to unlock it and do
-whatever I want.” This is a long-running debate in the industry, but you’re
-taking a huge risk in doing so. For Apple, who has put tons of effort into
-developing a secure environment for users, it’ll be way more challenging to
-ensure that everything getting pushed onto user devices is a security upgrade,
-not a downgrade.
-This is why
-Apple has been so strict on the encryption issue. They don’t want to push
-anything to anybody that ends up degrading the iPhone’s security capabilities.
-I can see the one side of the debate that advocates for the notion of: “I
-bought this phone; why should it be wrapped up with various limitations on what
-I can do with it?” But I can definitely see the fear from companies that if
-they allow unvetted third-party products onto their phones, it’ll break the
-phone’s security. As a result, the blame would come back to the device maker
-and operating system developer.
+
+[Speaker: Introduction / editorial context]
+The extent to which lawyers, corporate executives, and government officials focus on cybersecurity fluctuates with the threat level posed by malicious cyber actors. In light of recent ransomware attacks on critical industries, lawmakers are looking at more regulatory obligations to mitigate the risks these threats pose. Companies, meanwhile, are working to comply with a chaotic patchwork of rules and regulations. The field of cybersecurity law is not systematic, and industries are working through who owns the internal cyber regulatory responsibilities and compliance obligations.
+
+[Speaker: Introduction / editorial context]
+In an effort to create a coherent roadmap for everyone involved in cybersecurity law, Jim Dempsey published a book titled “Cybersecurity law fundamentals.” Jim joined the latest episode of “Explain to Shane” to give an overview of the book and to discuss key lessons that lawmakers, industry leaders, and lawyers would be well-advised to consider when it comes to cyber.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Jim, welcome to the podcast. To get us started, tell us what your new book covers, and what inspired you to write it.
+
+[Speaker: Jim Dempsey]
+Jim Dempsey: In 2016, the dean for curriculum at University of California, Berkley School of Law asked me to teach a course on cybersecurity law to a group of mostly foreign students getting a two-year degree. At the time, there was no case book, so I started compiling my own materials. After a year or so, I had a pretty good set of PowerPoints that I thought I could turn into something publishable.
+
+[Speaker: Jim Dempsey]
+I was a bit inspired by Paul Schwartz and Dan Solove, who have a publication with the International Association of Privacy Professionals (IAPP) called “Privacy law fundamentals.” I thought it would be great to have “Cybersecurity law fundamentals,” and that IAPP would be the ideal publisher because they are practitioner-oriented.
+
+[Speaker: Jim Dempsey]
+It was a fascinating exercise for me, looking at how a new field of law is being constructed. As you and many of your listeners will know, the United States does not have a comprehensive privacy law. We have a patchwork quilt of sectoral approaches. The same is true with cybersecurity; there is no single comprehensive cybersecurity law.
+
+[Speaker: Jim Dempsey]
+Really, the field is made up of criminal law, the Computer Fraud and Abuse Act, common-law torts, negligence contracts, some regulatory law, and Federal Trade Commission (FTC) enforcement. And now, quite fascinatingly, trade and national security law are being applied in attempt to keep dangerous products and services out of our critical infrastructure.
+
+[Speaker: Jim Dempsey]
+Putting that all together and trying to make sense of it — then trying to keep it up to date — was a fascinating challenge. You just wouldn’t believe how much there is when you dig into it.
+
+[Speaker: Jim Dempsey]
+Then, Colonial Pipeline gets hit, and suddenly everybody is wondering what rules govern these pipelines that are so critical to our economy. It gets shut down by a ransomware attack and suddenly, the home heating oil, jet fuel, and gasoline stop flowing. So it’s an amazing, fascinating, and rapidly developing field. It’s been fun putting this together, and I hope it’s useful to practitioners.
+
+[Speaker: Shane Tews]
+You said there are some ongoing efforts to keep the book up to date. How are you doing that?
+
+[Speaker: Jim Dempsey]
+The book is actually available from IAPP as we’re speaking. You can buy a hard or e-book copy; regardless of which you buy, I’m launching a free website called cybersecuritylawfundamentals.com that I’ve already populated with about 40 pages worth of updates.
+
+[Speaker: Jim Dempsey]
+Between when I sent the book off for proofreading and layout and now, when it’s being published, there’s been a lot of water under the bridge. So I’ve realized I’ll have to constantly work to keep this up to date. I now have 16 chapters and 16 sets of updates, and I’ll continue feeding that website as, again, we watch this fascinating area of law develop in real time. The courts, regulatory agencies, and the White House are far from finished grappling with this.
+
+[Speaker: Shane Tews]
+You briefly mentioned similarities between cybersecurity and privacy law. As concepts, how do you overlay those two things?
+
+[Speaker: Jim Dempsey]
+That’s such a fascinating question. For anyone who’s been doing privacy for a long time, you’ll remember that the origins of information privacy are founded on this concept of fair information practices. How do you use and collect information about individuals? These guidelines cover notice and consent, but also purpose specification, collection limitations, and limits on secondary use and security.
+
+[Speaker: Jim Dempsey]
+There was always the principle that if you collect information about an individual, you have some obligation to protect it against loss or misuse. In a way, that’s the foundation of the FTC’s cybersecurity authority. The FTC has basically said it is an unfair trade practice to take somebody’s personal or sensitive data and not protect it with reasonable measures.
+
+[Speaker: Jim Dempsey]
+And a lot of what this book is about — a lot of what the field is about, of course — is what is reasonable, because the standard in cybersecurity is not perfection. Everybody agrees — certainly all the technologists agree — that there is no such thing as perfect security. Particularly now in a world of advanced, persistent threats, there is no perfect security. The perfectly secure system would be useless; it would be encased in concrete and buried in the bottom of the ocean.
+
+[Speaker: Jim Dempsey]
+So the standard is reasonableness. Then that opens the question of: What is reasonable? How much security is enough security? That’s what companies are grappling with. It’s a cost-benefit test, really, and it should be. That’s what regulators are grappling with, too — and Congress, to some extent. To me, that is the fundamental question in this field: How much security is enough security to protect you from legal liability?
+
+[Speaker: Shane Tews]
+With so many different bodies tackling this and so many laws being passed, I think it can be really hard to build compliance into the design of certain devices. Would you agree?
+
+[Speaker: Jim Dempsey]
+That’s another way in which privacy and cybersecurity are similar. They both have to be built in from the design level of a product. We’ve been saying for years that you can’t bolt on privacy after the product is designed, and you really can’t bolt on security. And some of the same questions that you ask from a privacy perspective, you should be asking from a cybersecurity perspective.
+
+[Speaker: Jim Dempsey]
+The first thing that any company has to do, large or small, is take an inventory. What data are we collecting? Where are we keeping it? What devices are connected to our network? What software is running on our network? That’s important from both a privacy and cybersecurity perspective.
+
+[Speaker: Jim Dempsey]
+The chief privacy officer and the chief information security officer need to have a good relationship and work together inside a company. Then, through the product development teams and the product counsel, you push down that recognition into the company to the development stage. So whether it’s privacy by design or secure software development practices, both privacy and cybersecurity need to be taken into account — absolutely, from the beginning.
+
+[Speaker: Jim Dempsey]
+Speaking of integrating privacy and security protections into certain services, what are your thoughts on proposals in Congress to allow “sideloading” in app stores? This would basically force companies like Apple, which prioritize user security, to allow unvetted third-party apps to enter their app stores and end up on users’ devices. I personally think it’s crazy.
+
+[Speaker: Jim Dempsey]
+Well, it’s rooted in this concept about the right to tinker with a device you’ve purchased. The idea is, “I bought it, so I should be able to unlock it and do whatever I want.” This is a long-running debate in the industry, but you’re taking a huge risk in doing so. For Apple, who has put tons of effort into developing a secure environment for users, it’ll be way more challenging to ensure that everything getting pushed onto user devices is a security upgrade, not a downgrade.
+
+[Speaker: Jim Dempsey]
+This is why Apple has been so strict on the encryption issue. They don’t want to push anything to anybody that ends up degrading the iPhone’s security capabilities. I can see the one side of the debate that advocates for the notion of: “I bought this phone; why should it be wrapped up with various limitations on what I can do with it?” But I can definitely see the fear from companies that if they allow unvetted third-party products onto their phones, it’ll break the phone’s security. As a result, the blame would come back to the device maker and operating system developer.

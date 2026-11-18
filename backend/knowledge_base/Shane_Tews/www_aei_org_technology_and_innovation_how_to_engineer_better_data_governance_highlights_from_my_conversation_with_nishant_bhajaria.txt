@@ -1,147 +1,71 @@
 PAGE_TITLE: 
-	How to Engineer Better Data Governance: Highlights from My Conversation with Nishant Bhajaria | American Enterprise Institute - AEI
+	How to Engineer Better Data Governance: Highlights from My Conversation with Nishant Bhajaria
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Efforts to
-legislate data protection (or “privacy”) have become a priority in the US and
-Europe. But the real issue at hand is data governance — namely the collection,
-storage, and deletion of data that companies collect about customers. These
-companies now face a patchwork of potential legislation to regulate data access
-and retention. But what if engineers and corporate leaders could work together
-to limit data collection risks before their products come to market? And what
-if privacy protections evolved to meet consumer preferences around information
-gathering and sharing by both companies and third-party vendors? Would there be
-more understanding of how the information is used and less concern over the
-security of the data retained by these companies?
-Nishant Bhajaria
-, Uber’s head of technical privacy and governance, joined “Explain to Shane” to discuss his upcoming book,
-Privacy Engineering
-, which will offer a roadmap for company executives and engineers looking to equip their products with greater built-in privacy protections while increasing transparency and accountability for users.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Nishant, your upcoming book, Privacy
-Engineering, focuses on designing technical privacy solutions for business
-applications of software systems. What inspired you to write it?
-Nishant
-Bhajaria: When engineers build tools every day, there’s a lot of segmentation
-of how work actually happens in companies. There’s internet segmentation and
-there’s actual service segmentation in which an engineer aide does stuff with
-data, services, and infrastructure that the head engineers have no awareness
-of. When combined, the work of both parties creates risks companies cannot
-prepare for. It creates opportunities for bad actors inside and outside the
-company.
-So how do
-you, at a technical tooling level, address those risks? You either do them
-right from the get-go or you play catch-up forever. This book is aimed primarily
-at those engineers so they have the tooling and understanding to do things
-right from the get-go. My second audience is the executives, regulators, folks
-in the media, and the folks on Capitol Hill who have taken it upon themselves
-to bring this issue to light. How do you make sure people understand all the
-dependencies, weaknesses, and complexities of getting this stuff right? How do
-you make sure that people, when they pass legislation, understand the moving
-parts? The difference in context between the executive regulatory layer and the
-engineering layer is too big. And it is to our detriment as a company, as a
-country, and as a society.
-So my hope
-here is to close that gap, and that even people who don’t write code read this
-book to understand just what it takes to build these systems.
-Did the California Consumer Privacy Act (CCPA)
-inspire your work at all? Did Uber have to do any workarounds when that came
-out a few years ago?
-My work in
-this space predates the CCPA and even Europe’s General Data Protection
-Regulation (GDPR). Now, I feel like industry is running scared because they have
-built up all this data. They were told for a long time, “Collect data, monetize
-it, and make your services available and free in a very democratic fashion.” And
-now suddenly we’re told to collect data differently without prescriptive
-guidance on what to do right. This goes for Uber and all other businesses that
-deal with user data.
-When I
-became a US citizen, I was told that if you forget to submit something
-correctly, it’s not the government’s fault. It’s your fault. It’s you, and
-you’re supposed to understand immigration law correctly — just me, this little
-person here. Now, the entire industry is in the same spot with security and
-privacy, so I wrote this book after having built out notes for two years. When
-the publisher asked if I wanted to do it about a year ago, I said, “Fine. I
-have all this stuff ready to go.”
-Then of
-course GDPR came in, the CCPA came in, and Apple and Facebook have since come
-in with their dialogue about the third-party cookies and user consent. So with my
-preparation of over a decade and all the news that keeps on coming with cyberwarfare
-and data breaches, there’s been no shortage of material. The challenge has
-been: How do I constrain all this within 325 pages?
-Talk a bit more about GDPR. Did Uber have
-to restructure when GDPR passed?
-A lot of
-that work was done before I joined the company. But my general guidance is:
-Don’t use the GDPR or CCPA as your only beacon. Use those as platforms to build
-on, because these laws are not the be-all-end-all. GDPR is not history; it’s a
-harbinger in terms of what it means. Even though more and more laws that are
-coming up and discussions that are taking place build on the GDPR, my general
-sense is: If you are trying to reduce data collection, GDPR doesn’t give you a
-way to do that. If you’re trying to delete data intelligently, GDPR doesn’t let
-you essentially get a checklist to do that.
-My general
-approach is that we should collect less data. I have this diagram that I often
-show executive members of the board where if you look at the data as a funnel,
-you have the narrow end on the left-hand side and the broad end on the
-right-hand side. When data enters the company, it grows more and more. And then
-when data is collected, people find new uses for the moment. It’s like when you
-are in a meeting and think, “Oh, this meeting should take only 10 minutes” and
-then you go five minutes over because people find new topics. Data is like
-that.
-So my
-general guidance, whether I’m at Uber or any other company for that matter, is:
-Let’s make sure we collect what we need to collect. Let’s delete data as soon
-as possible, but more importantly, let’s centralize data. The problem with
-using GDPR as your only reference is that it tells you things at a
-first-principle basis, but your implementation is going to be very, very
-company-specific. So this book focuses a lot on tooling, because if you build
-out the right tooling, engineers will do the right thing just by design because
-it’s baked into the infrastructure. Engineers will do the right thing if you
-make it easy for them to do that, and that’s what this book does.
-Treat GDPR
-as a beginning, use it as a reference point, but don’t assume that just because
-you’ve got GDPR done two or three years ago you are somehow done with privacy.
-It’s only the beginning.
-Apple has unveiled a new program that
-notifies users when their information is being collected and used, then lets
-them opt out if they desire. What do you think about this?
-I think the
-Apple conversation is interesting. When I first got into privacy, the typical
-use case that popped up was how in the US, the box tends to be pre-checked and
-you are considered to be opted-in, then you have to actively opt-out. The
-assumption is that fewer people are going to proactively check and uncheck the
-box. Of course, on the European side, the box is opted-out and you have to
-preemptively check in.
-Fast forward
-to now, and I don’t know if our customer base has been made aware of the sheer
-number of choices and all that happens behind the scenes. And now we’re
-suddenly saying, “Here are the options. Tell us what you would have us do.” I
-think this might become like GDPR or rather with the “do not sell” option with
-the CCPA where people just check it and move on because it’s getting too
-exhausting. Because you know, when we open the app as customers, not as
-engineers or think tank experts, we’re trying to get somewhere. When you open
-Netflix, we are trying to stream something. When we open Amazon, we want to buy
-something. The idea of having this extra speed bump is not something we have
-been trained to do.
-So I don’t
-know if the debate is something that’s going to necessarily have the customers
-front and center. My general sense is that when you make a change on privacy or
-security, the ultimate filter is: Is it going to benefit the customers? And I’m
-not sure if the customers — the users, in this case — have enough context to
-really make the most informed decisions. I’m just not sure if the regular
-customers understand the complexity of the debate and will be better off
-regardless of where we end up.
-This has been a great conversation. When is
-your book coming out?
-The book
-should be out next month. We are going through final edits as we speak; I’m
-getting these podcasts ready so that they line up with the book’s release. I’ve
-gotten a ton of feedback from engineers, and it’s already available on presale,
-so the link is available to everyone.
+
+[Speaker: Introduction / editorial context]
+Efforts to legislate data protection (or “privacy”) have become a priority in the US and Europe. But the real issue at hand is data governance — namely the collection, storage, and deletion of data that companies collect about customers. These companies now face a patchwork of potential legislation to regulate data access and retention. But what if engineers and corporate leaders could work together to limit data collection risks before their products come to market? And what if privacy protections evolved to meet consumer preferences around information gathering and sharing by both companies and third-party vendors? Would there be more understanding of how the information is used and less concern over the security of the data retained by these companies?
+
+[Speaker: Introduction / editorial context]
+Nishant Bhajaria, Uber’s head of technical privacy and governance, joined “Explain to Shane” to discuss his upcoming book, Privacy Engineering, which will offer a roadmap for company executives and engineers looking to equip their products with greater built-in privacy protections while increasing transparency and accountability for users.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Nishant, your upcoming book, Privacy Engineering, focuses on designing technical privacy solutions for business applications of software systems. What inspired you to write it?
+
+[Speaker: Nishant Bhajaria]
+Nishant Bhajaria: When engineers build tools every day, there’s a lot of segmentation of how work actually happens in companies. There’s internet segmentation and there’s actual service segmentation in which an engineer aide does stuff with data, services, and infrastructure that the head engineers have no awareness of. When combined, the work of both parties creates risks companies cannot prepare for. It creates opportunities for bad actors inside and outside the company.
+
+[Speaker: Nishant Bhajaria]
+So how do you, at a technical tooling level, address those risks? You either do them right from the get-go or you play catch-up forever. This book is aimed primarily at those engineers so they have the tooling and understanding to do things right from the get-go. My second audience is the executives, regulators, folks in the media, and the folks on Capitol Hill who have taken it upon themselves to bring this issue to light. How do you make sure people understand all the dependencies, weaknesses, and complexities of getting this stuff right? How do you make sure that people, when they pass legislation, understand the moving parts? The difference in context between the executive regulatory layer and the engineering layer is too big. And it is to our detriment as a company, as a country, and as a society.
+
+[Speaker: Nishant Bhajaria]
+So my hope here is to close that gap, and that even people who don’t write code read this book to understand just what it takes to build these systems.
+
+[Speaker: Shane Tews]
+Did the California Consumer Privacy Act (CCPA) inspire your work at all? Did Uber have to do any workarounds when that came out a few years ago?
+
+[Speaker: Nishant Bhajaria]
+My work in this space predates the CCPA and even Europe’s General Data Protection Regulation (GDPR). Now, I feel like industry is running scared because they have built up all this data. They were told for a long time, “Collect data, monetize it, and make your services available and free in a very democratic fashion.” And now suddenly we’re told to collect data differently without prescriptive guidance on what to do right. This goes for Uber and all other businesses that deal with user data.
+
+[Speaker: Nishant Bhajaria]
+When I became a US citizen, I was told that if you forget to submit something correctly, it’s not the government’s fault. It’s your fault. It’s you, and you’re supposed to understand immigration law correctly — just me, this little person here. Now, the entire industry is in the same spot with security and privacy, so I wrote this book after having built out notes for two years. When the publisher asked if I wanted to do it about a year ago, I said, “Fine. I have all this stuff ready to go.”
+
+[Speaker: Nishant Bhajaria]
+Then of course GDPR came in, the CCPA came in, and Apple and Facebook have since come in with their dialogue about the third-party cookies and user consent. So with my preparation of over a decade and all the news that keeps on coming with cyberwarfare and data breaches, there’s been no shortage of material. The challenge has been: How do I constrain all this within 325 pages?
+
+[Speaker: Shane Tews]
+Talk a bit more about GDPR. Did Uber have to restructure when GDPR passed?
+
+[Speaker: Nishant Bhajaria]
+A lot of that work was done before I joined the company. But my general guidance is: Don’t use the GDPR or CCPA as your only beacon. Use those as platforms to build on, because these laws are not the be-all-end-all. GDPR is not history; it’s a harbinger in terms of what it means. Even though more and more laws that are coming up and discussions that are taking place build on the GDPR, my general sense is: If you are trying to reduce data collection, GDPR doesn’t give you a way to do that. If you’re trying to delete data intelligently, GDPR doesn’t let you essentially get a checklist to do that.
+
+[Speaker: Nishant Bhajaria]
+My general approach is that we should collect less data. I have this diagram that I often show executive members of the board where if you look at the data as a funnel, you have the narrow end on the left-hand side and the broad end on the right-hand side. When data enters the company, it grows more and more. And then when data is collected, people find new uses for the moment. It’s like when you are in a meeting and think, “Oh, this meeting should take only 10 minutes” and then you go five minutes over because people find new topics. Data is like that.
+
+[Speaker: Nishant Bhajaria]
+So my general guidance, whether I’m at Uber or any other company for that matter, is: Let’s make sure we collect what we need to collect. Let’s delete data as soon as possible, but more importantly, let’s centralize data. The problem with using GDPR as your only reference is that it tells you things at a first-principle basis, but your implementation is going to be very, very company-specific. So this book focuses a lot on tooling, because if you build out the right tooling, engineers will do the right thing just by design because it’s baked into the infrastructure. Engineers will do the right thing if you make it easy for them to do that, and that’s what this book does.
+
+[Speaker: Nishant Bhajaria]
+Treat GDPR as a beginning, use it as a reference point, but don’t assume that just because you’ve got GDPR done two or three years ago you are somehow done with privacy. It’s only the beginning.
+
+[Speaker: Shane Tews]
+Apple has unveiled a new program that notifies users when their information is being collected and used, then lets them opt out if they desire. What do you think about this?
+
+[Speaker: Nishant Bhajaria]
+I think the Apple conversation is interesting. When I first got into privacy, the typical use case that popped up was how in the US, the box tends to be pre-checked and you are considered to be opted-in, then you have to actively opt-out. The assumption is that fewer people are going to proactively check and uncheck the box. Of course, on the European side, the box is opted-out and you have to preemptively check in.
+
+[Speaker: Nishant Bhajaria]
+Fast forward to now, and I don’t know if our customer base has been made aware of the sheer number of choices and all that happens behind the scenes. And now we’re suddenly saying, “Here are the options. Tell us what you would have us do.” I think this might become like GDPR or rather with the “do not sell” option with the CCPA where people just check it and move on because it’s getting too exhausting. Because you know, when we open the app as customers, not as engineers or think tank experts, we’re trying to get somewhere. When you open Netflix, we are trying to stream something. When we open Amazon, we want to buy something. The idea of having this extra speed bump is not something we have been trained to do.
+
+[Speaker: Nishant Bhajaria]
+So I don’t know if the debate is something that’s going to necessarily have the customers front and center. My general sense is that when you make a change on privacy or security, the ultimate filter is: Is it going to benefit the customers? And I’m not sure if the customers — the users, in this case — have enough context to really make the most informed decisions. I’m just not sure if the regular customers understand the complexity of the debate and will be better off regardless of where we end up.
+
+[Speaker: Shane Tews]
+This has been a great conversation. When is your book coming out?
+
+[Speaker: Nishant Bhajaria]
+The book should be out next month. We are going through final edits as we speak; I’m getting these podcasts ready so that they line up with the book’s release. I’ve gotten a ton of feedback from engineers, and it’s already available on presale, so the link is available to everyone.

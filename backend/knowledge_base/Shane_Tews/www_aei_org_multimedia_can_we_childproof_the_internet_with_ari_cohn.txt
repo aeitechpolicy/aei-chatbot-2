@@ -1,9 +1,14 @@
 PAGE_TITLE: 
-	Can We Childproof the Internet? (with Ari Cohn) | American Enterprise Institute - AEI
+	Can We Childproof the Internet? (with Ari Cohn)
 
+[Speaker: Introduction / editorial context]
 Recent child online safety bills have ignited a firestorm of controversy. These emotionally charged proposals aim to shield children from online harm, but they’ve raised serious concerns about potential infringement of First Amendment rights. The current legislative landscape remains uncertain, with various bills at different stages across states and at the federal level.
+
+[Speaker: Introduction / editorial context]
 How do we balance the urgent need to protect children with our fundamental rights to free speech? What are the practical implications of proposed age-gating measures? And where do we draw the line between parental responsibility and government intervention?
-To discuss these challenges and concerns surrounding age-gating on the internet, we’re joined by
-Ari Cohn
-. Ari serves as Free Speech Counsel at TechFreedom. Prior to this role, he was the director of the Individual Rights Defense Program at the Foundation for Individual Rights in Education and served as an attorney with the United States Department of Education’s Office for Civil Rights.
+
+[Speaker: Introduction / editorial context]
+To discuss these challenges and concerns surrounding age-gating on the internet, we’re joined by Ari Cohn. Ari serves as Free Speech Counsel at TechFreedom. Prior to this role, he was the director of the Individual Rights Defense Program at the Foundation for Individual Rights in Education and served as an attorney with the United States Department of Education’s Office for Civil Rights.
+
+[Speaker: Introduction / editorial context]
 Join us as we explore the current state of child online safety legislation.

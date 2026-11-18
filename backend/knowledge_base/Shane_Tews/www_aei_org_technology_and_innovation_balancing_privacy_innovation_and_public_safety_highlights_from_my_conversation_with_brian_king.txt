@@ -1,153 +1,74 @@
 PAGE_TITLE: 
-	Balancing Privacy, Innovation, and Public Safety: Highlights from My Conversation with Brian King | American Enterprise Institute - AEI
+	Balancing Privacy, Innovation, and Public Safety: Highlights from My Conversation with Brian King
 
-Support for
-a federal privacy law is gaining bipartisan momentum, but privacy laws that
-have already been implemented in California and Europe have had mixed effects. How
-can lessons from these existing regulations help inform the creation of a federal
-privacy law in the US?
-Brian King
-, director of internet policy and industry affairs at
-Clarivate
-and a representative of the Intellectual Property Constituency at the
-Internet Corporation for Assigned Names and Numbers
-(ICANN), joined my latest podcast to break down the challenges of privacy regulation. Together, we discussed how privacy laws can create access challenges to information that users need for compliance with trademark and intellectual property rules and public safety laws.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues.
-Shane Tews: Give us a quick primer on how
-privacy laws in the US work.
-Brian King: The
-US takes what is considered a sectoral approach to privacy laws, which means different
-sectors are regulated differently depending on what type of personal data is
-being regulated. Examples of sectors include health data and financial data, so
-listeners might be familiar with HIPPA (which protects personal health
-information) or the Gramm-Leach-Bliley Act (which protects financial data).
-Do you think we should have a federal
-privacy law since we’re seeing such strong reactions to things like the California
-Consumer Privacy Act (CCPA) and Europe’s General Data Protection Regulation
-(GDPR)?
-Yes — I
-think the time is right for a federal privacy law in the US. My personal view
-is that it is very difficult for organizations to manage data breach rules. Currently,
-data breach laws vary across all 50 states based on standards like the
-likelihood and magnitude of consumer harm (i.e., the number of records that
-have been breached before a notification obligation arises). And the time is
-really right to protect data in a way that’s predictable for consumers, companies,
-and organizations that need to comply with this patchwork of laws. A
-consolidated omnibus privacy law in the US would make life easier for all
-parties involved.
-I really
-sympathize with the lawyers that need to keep track of all these rules and
-advise their clients on ways to comply with these laws. In effect, I think some
-state or some jurisdiction will become the least common denominator or the gold
-standard, which will become the de facto standard across all 50 states. And if
-that’s going to happen anyway, why not make life easier for these organizations
-who truly do want to comply with data privacy and data protection laws? Let’s
-give them one federal standard to live up to.
-What’s going on with Europe’s GDPR, and how
-are we managing that here in the United States?
-The GDPR is an
-overall privacy law, not a sectoral approach to privacy regulation. As its name
-implies, it’s a general regulation that protects personal data of all sorts. It
-does include some special categories of personal data that require additional
-protection, but it sets a baseline floor for the collection, processing,
-storage, and even the deletion of personal data. It also takes a very broad
-definition of what personal data is. It varies a little bit from what we’re
-used to in the US, which is personally identifiable information: any data
-relating to an identified or identifiable individual. With this very broad
-definition of personal data, GDPR then governs every aspect of how that
-personal data might be processed from collection onto deletion.
-Unlike its
-predecessor, the Data Protection Directive — which, like all directives under European
-Union (EU) law, had to be implemented individually by all EU member states — the
-GDPR is a regulation which became automatically binding on all the EU member
-states the moment it was passed and took effect in 2018. It did not have the
-ramp-up time or the potential for varying implementations by the various EU
-member states, and that became kind of the de facto global standard because the
-European economy is so strong and European consumers do business all over the
-world, and Europe trades with jurisdictions everywhere. The exchange of
-personal data, then, if it impacted European citizens, became a global matter.
-The standard
-for fines possible under GDPR is up to 4 percent of a company’s “global annual
-turnover,” they call it. We might say “revenue” in the US, but it’s up to 4
-percent of their global annual revenue that could be assessed in a fine under
-GDPR.
-The actual implementation has been messy, and
-I know you’ve dealt with this in your role in the Intellectual Property
-Constituency at ICANN. Explain why not having access to information because of
-a privacy law is a challenge.
-It’s
-important to understand that when the domain name system was conceived, there
-was a database of information called WHOIS — a useful tool to look up the owner
-of any given domain name in the system so that the domain owner could be
-contacted about technical issues related to the functioning of their domain
-name. It provided a directory or an address book of everyone who was in this
-small circle of computer scientists working on the domain name system itself. As
-this system grew up and businesses went online and online consumers interacted
-more, WHOIS provided a valuable tool for a number of organizations ranging from
-law enforcement to intellectual property owners to consumer protection
-organizations that needed to identify who was behind a domain name and a
-website.
-The availability
-of WHOIS information over the years has allowed those kind of “good guy”
-organizations or folks acting in the public interest to identify, contact, and potentially
-prosecute bad actors, but often, they just validate that the person behind a
-website is who they say they are. For quite some time, in order to procure a
-Secure Sockets Layer Certificate, for example, which would encrypt the web
-content going back and forth, the owner of the website had to be validated
-against that WHOIS information. So, WHOIS became a backstop that kept everybody
-honest in an internet that is largely anonymized. Then, as the internet grew
-up, that WHOIS information grew up with it and became baked into a lot of
-cybersecurity tools and best practices.
-So, along
-came GDPR, and real questions arose about whether personal data could be
-published in that WHOIS database. Because there were no controls about who
-could access that database and for what purpose, that ran afoul of several of GDPR’s
-data protection principles.
-What are the law enforcement, government,
-and IP people looking for that hasn’t come to fruition in ICANN’s attempt to
-adapt WHOIS to GDPR’s rules?
-ICANN’s IP
-Constituency, along with a variety of other constituencies, were looking for a
-system for standardized access to WHOIS data: a way that the requester of the
-data could be validated, authenticated, agree to process the data in compliance
-with data protection laws, and that they had a valid and lawful basis for
-processing the data, or that they perhaps owned a trademark that was being
-infringed, for example, by the domain name in question.
-And so what
-we were looking for was a system that would allow up-front validation of who
-you are, what IP rights you have, what you’re asserting, and to build an
-equation that would result in the disclosure of that data when the right
-authenticated, accredited requesters needed it. That was the objective, but
-things went awry from there.
-What I think
-it boils down to is that the remaining challenges are grounded in the fears of
-monumental fines under GDPR. There is really no clarity or certainty available
-for ICANN and for the domain name registries and registrars that operate under
-contracts with ICANN. There’s no certainty that they won’t be fined for
-providing the data to a trademark owner or a law enforcement agency.
+[Speaker: Introduction / editorial context]
+Support for a federal privacy law is gaining bipartisan momentum, but privacy laws that have already been implemented in California and Europe have had mixed effects. How can lessons from these existing regulations help inform the creation of a federal privacy law in the US?
+
+[Speaker: Introduction / editorial context]
+Brian King, director of internet policy and industry affairs at Clarivate and a representative of the Intellectual Property Constituency at the Internet Corporation for Assigned Names and Numbers (ICANN), joined my latest podcast to break down the challenges of privacy regulation. Together, we discussed how privacy laws can create access challenges to information that users need for compliance with trademark and intellectual property rules and public safety laws.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues.
+
+[Speaker: Shane Tews]
+Shane Tews: Give us a quick primer on how privacy laws in the US work.
+
+[Speaker: Brian King]
+Brian King: The US takes what is considered a sectoral approach to privacy laws, which means different sectors are regulated differently depending on what type of personal data is being regulated. Examples of sectors include health data and financial data, so listeners might be familiar with HIPPA (which protects personal health information) or the Gramm-Leach-Bliley Act (which protects financial data).
+
+[Speaker: Shane Tews]
+Do you think we should have a federal privacy law since we’re seeing such strong reactions to things like the California Consumer Privacy Act (CCPA) and Europe’s General Data Protection Regulation (GDPR)?
+
+[Speaker: Brian King]
+Yes — I think the time is right for a federal privacy law in the US. My personal view is that it is very difficult for organizations to manage data breach rules. Currently, data breach laws vary across all 50 states based on standards like the likelihood and magnitude of consumer harm (i.e., the number of records that have been breached before a notification obligation arises). And the time is really right to protect data in a way that’s predictable for consumers, companies, and organizations that need to comply with this patchwork of laws. A consolidated omnibus privacy law in the US would make life easier for all parties involved.
+
+[Speaker: Brian King]
+I really sympathize with the lawyers that need to keep track of all these rules and advise their clients on ways to comply with these laws. In effect, I think some state or some jurisdiction will become the least common denominator or the gold standard, which will become the de facto standard across all 50 states. And if that’s going to happen anyway, why not make life easier for these organizations who truly do want to comply with data privacy and data protection laws? Let’s give them one federal standard to live up to.
+
+[Speaker: Shane Tews]
+What’s going on with Europe’s GDPR, and how are we managing that here in the United States?
+
+[Speaker: Brian King]
+The GDPR is an overall privacy law, not a sectoral approach to privacy regulation. As its name implies, it’s a general regulation that protects personal data of all sorts. It does include some special categories of personal data that require additional protection, but it sets a baseline floor for the collection, processing, storage, and even the deletion of personal data. It also takes a very broad definition of what personal data is. It varies a little bit from what we’re used to in the US, which is personally identifiable information: any data relating to an identified or identifiable individual. With this very broad definition of personal data, GDPR then governs every aspect of how that personal data might be processed from collection onto deletion.
+
+[Speaker: Brian King]
+Unlike its predecessor, the Data Protection Directive — which, like all directives under European Union (EU) law, had to be implemented individually by all EU member states — the GDPR is a regulation which became automatically binding on all the EU member states the moment it was passed and took effect in 2018. It did not have the ramp-up time or the potential for varying implementations by the various EU member states, and that became kind of the de facto global standard because the European economy is so strong and European consumers do business all over the world, and Europe trades with jurisdictions everywhere. The exchange of personal data, then, if it impacted European citizens, became a global matter.
+
+[Speaker: Brian King]
+The standard for fines possible under GDPR is up to 4 percent of a company’s “global annual turnover,” they call it. We might say “revenue” in the US, but it’s up to 4 percent of their global annual revenue that could be assessed in a fine under GDPR.
+
+[Speaker: Brian King]
+The actual implementation has been messy, and I know you’ve dealt with this in your role in the Intellectual Property Constituency at ICANN. Explain why not having access to information because of a privacy law is a challenge.
+
+[Speaker: Brian King]
+It’s important to understand that when the domain name system was conceived, there was a database of information called WHOIS — a useful tool to look up the owner of any given domain name in the system so that the domain owner could be contacted about technical issues related to the functioning of their domain name. It provided a directory or an address book of everyone who was in this small circle of computer scientists working on the domain name system itself. As this system grew up and businesses went online and online consumers interacted more, WHOIS provided a valuable tool for a number of organizations ranging from law enforcement to intellectual property owners to consumer protection organizations that needed to identify who was behind a domain name and a website.
+
+[Speaker: Brian King]
+The availability of WHOIS information over the years has allowed those kind of “good guy” organizations or folks acting in the public interest to identify, contact, and potentially prosecute bad actors, but often, they just validate that the person behind a website is who they say they are. For quite some time, in order to procure a Secure Sockets Layer Certificate, for example, which would encrypt the web content going back and forth, the owner of the website had to be validated against that WHOIS information. So, WHOIS became a backstop that kept everybody honest in an internet that is largely anonymized. Then, as the internet grew up, that WHOIS information grew up with it and became baked into a lot of cybersecurity tools and best practices.
+
+[Speaker: Brian King]
+So, along came GDPR, and real questions arose about whether personal data could be published in that WHOIS database. Because there were no controls about who could access that database and for what purpose, that ran afoul of several of GDPR’s data protection principles.
+
+[Speaker: Shane Tews]
+What are the law enforcement, government, and IP people looking for that hasn’t come to fruition in ICANN’s attempt to adapt WHOIS to GDPR’s rules?
+
+[Speaker: Brian King]
+ICANN’s IP Constituency, along with a variety of other constituencies, were looking for a system for standardized access to WHOIS data: a way that the requester of the data could be validated, authenticated, agree to process the data in compliance with data protection laws, and that they had a valid and lawful basis for processing the data, or that they perhaps owned a trademark that was being infringed, for example, by the domain name in question.
+
+[Speaker: Brian King]
+And so what we were looking for was a system that would allow up-front validation of who you are, what IP rights you have, what you’re asserting, and to build an equation that would result in the disclosure of that data when the right authenticated, accredited requesters needed it. That was the objective, but things went awry from there.
+
+[Speaker: Brian King]
+What I think it boils down to is that the remaining challenges are grounded in the fears of monumental fines under GDPR. There is really no clarity or certainty available for ICANN and for the domain name registries and registrars that operate under contracts with ICANN. There’s no certainty that they won’t be fined for providing the data to a trademark owner or a law enforcement agency.
+
+[Speaker: Shane Tews]
 So, what do you recommend?
-I think we should
-follow the guidance that the European data protection authorities have given
-us. This is frustrating and perhaps a bit unclear why, but we have departed
-from the guidance that we were given by the Belgian Data Protection Authority
-(DPA), which is the de facto regulator of ICANN, based on ICANN’s presence in
-Brussels. They asked us to develop a System Standardized Access/Disclosure (SSAD)
-that consists of centralized decision-making about whether a requester’s lawful
-basis is valid and ensures there are no data protection issues vis-à-vis the
-domain name registrant.
-We were
-asked to develop that centralized model, but the contracted parties thought the
-only way to control their own liability was to own the disclosure
-decision-making. That was really unfortunate in that we didn’t answer the call
-of the Belgian DPA and the European Data Protection Board, which encouraged
-ICANN to develop a centralized disclosure model. We could have done that, and I
-think we still can depending on how the ICANN board handles the SSAD-building recommendations
-from the Generic Names Supporting Organization Council. I think that more could
-be done here.
-I think that it’s certainly possible to do an SSAD with a robust notice to registrants about the possibility that their data could be processed if they are alleged to be infringing on someone else’s rights or committing a crime. It will also require  hard work on standards for what it takes for an organization to become accredited to access WHOIS data and what kind of rights need to be present and asserted in a given case.
+
+[Speaker: Brian King]
+I think we should follow the guidance that the European data protection authorities have given us. This is frustrating and perhaps a bit unclear why, but we have departed from the guidance that we were given by the Belgian Data Protection Authority (DPA), which is the de facto regulator of ICANN, based on ICANN’s presence in Brussels. They asked us to develop a System Standardized Access/Disclosure (SSAD) that consists of centralized decision-making about whether a requester’s lawful basis is valid and ensures there are no data protection issues vis-à-vis the domain name registrant.
+
+[Speaker: Brian King]
+We were asked to develop that centralized model, but the contracted parties thought the only way to control their own liability was to own the disclosure decision-making. That was really unfortunate in that we didn’t answer the call of the Belgian DPA and the European Data Protection Board, which encouraged ICANN to develop a centralized disclosure model. We could have done that, and I think we still can depending on how the ICANN board handles the SSAD-building recommendations from the Generic Names Supporting Organization Council. I think that more could be done here.
+
+[Speaker: Brian King]
+I think that it’s certainly possible to do an SSAD with a robust notice to registrants about the possibility that their data could be processed if they are alleged to be infringing on someone else’s rights or committing a crime. It will also require hard work on standards for what it takes for an organization to become accredited to access WHOIS data and what kind of rights need to be present and asserted in a given case.

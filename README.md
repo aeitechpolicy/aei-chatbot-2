@@ -1,14 +1,28 @@
 # AEI research chatbot
 
-An internal research assistant for publications by Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. The React website runs on Vercel, the Express backend on Render, and private chats and usage records in Neon PostgreSQL. Together AI supplies model responses. No paid hosting change is required by this update.
+## Current prepared update — November 18, 2026
 
-## Current update - November 17, 2026
+An internal research assistant for work by Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. The website runs on Vercel, the backend on Render, and private chats/usage in Neon. This source update is prepared locally; it has not been published. GitHub main was last checked at 7b4d4bec10663c10c63b05014d3a03ae7c599001 (merged PR #11).
 
-Together credits have been restored and a new private key was added to Render by the maintainer. Initial live requests identified two separate compatibility requirements: organization passthrough permission for Qwen3.8 Flash, followed by streaming-only responses. This update collects Together's stream into one complete response, retains final token counts, and rejects interrupted streams. Live answer quality must still be tested after deployment.
+This combined package replaces the earlier pending GLM-only package. It includes:
 
-The optional **Model Tester** login compares Qwen3.8 Flash, GLM-5.3-Flash and gpt-oss-120B. Article Chat shares one retrieval across all selected models. AEI + Web shares one library retrieval and one web search. AEI Article Search remains a direct library search and makes no model calls. Candidate replies, timings, token counts and per-model cost estimates are private to the tester's chats. Citation failures remain visible with a warning in this account so they can be evaluated. Regular accounts retain their existing citation behavior.
+- GLM-5.3-Flash for ordinary chats with low reasoning effort, using the current Together privacy settings. Default uncached estimates are $0.15 input/$0.50 output per million tokens. Existing explicit price overrides still take precedence. Model Tester retains the optional Qwen choice; deselect it while passthrough is disabled.
+- Focused web queries, explicit Eastern-date windows for recent questions, and publication/update date qualifications. Older, undated or future web results cannot establish a requested recent window. No usable dated result means no AI generation, though the search uses its normal search credit.
+- The public production AEI API and article pages instead of the old staging URLs. The refresh runs on standard GitHub-hosted Linux rather than a particular AEI computer. No additional paid hosting service is introduced. The first hosted catch-up run remains unverified.
+- Explain to Shane ingestion that follows explicitly linked episode pages and transcript PDFs. Full written transcripts and edited highlights are separate formats linked to the same interview. Host questions, guest answers and editorial introductions retain speaker markers; uncertain attribution stays marked.
+- Source cards, citation passages and research briefs identify the interview format and provide episode/transcript links. Chat retrieval prefers a matching full transcript over its linked edited version; Article Search retains both formats.
 
-Each candidate counts as a separate paid request. All candidates are reserved atomically against the existing pilot limits before any model is called. A failed candidate does not discard the others. The account has no file editor or staff feedback inbox access. Enable it with a unique `CHATBOT_TESTER_PASSWORD` in Render, 16-256 characters. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md).
+The real November 5 Greg Oslan episode and its November 12 highlights article were checked, including conversion of the nine-page PDF. One printed speaker-name variation is flagged for review, not silently corrected. This example does not establish complete historical transcript coverage.
+
+The importer can read scanned PDF text using bounded local OCR; source cards qualify it and ordinary answers cannot silently pass OCR wording as a verified quotation. The importer does not transcribe audio or infer missing publication dates. Description-only podcast pages can appear in Article Search but cannot serve as interview-answer evidence. Byline authorship does not establish who made an interview statement. A transcript and edited highlights of the same interview are not independent evidence of a recurring theme.
+
+The actual interview repair is included: 312 existing files were updated and 107 full podcast transcripts added (28 digitally readable PDFs and 79 scanned PDFs read locally). Two verified current episode/article pages were also added. Publication dates are recorded for all 421 repaired or new source files. This does not establish complete coverage of all AEI publications. Nineteen transcripts retain printed or recognized speaker-label variations for review; uncertain turns stay marked.
+
+Twelve conference/event PDFs were identified separately. Their links remain available, but they are not automatically treated as full versions of a podcast; some cover multiple panels. Fifteen other event/press files outside this interview scope remain unchanged.
+
+The source files and updated metadata are in this package, so publishing it does not require a separate interview-repair run. Together credits and web search do not refresh the rest of the library. After publication, an optional full catch-up can use the workflow on main with lookback_days 180 and refresh_interviews false. Reserve refresh_interviews true for a later deliberate recheck of older interviews. Inspect the reports before claiming the entire library is current.
+
+115 backend checks and 21 website checks passed; the production build and desktop/phone browser checks passed. Model/search replies were simulated. The real PDF was tested separately without an AI request. See [validation](VALIDATION.md), [publication steps](PRIVATE%20PILOT%20SETUP.md), and [handoff](HANDOFF.md).
 
 ## Current research modes
 

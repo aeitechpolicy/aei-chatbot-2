@@ -1,152 +1,86 @@
 PAGE_TITLE: 
-	Getting More Autonomous Vehicles on the Road: Highlights from My Conversation with Grayson Brulte | American Enterprise Institute - AEI
+	Getting More Autonomous Vehicles on the Road: Highlights from My Conversation with Grayson Brulte
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
+
+[Speaker: Introduction / editorial context]
 Autonomous vehicles (AVs) are gaining traction in states where regulations allow. But as AVs enter the roadway, issues like driver safety and data collection are under the spotlight. For both innovators and lawmakers, there are many lessons to be learned about the opportunities and challenges posed by this new technological twist on auto traffic.
-Grayson Brulte
-recently joined “Explain to Shane” to discuss the barriers to getting more AVs on the road, and how both manufacturers and passengers should approach them. Grayson has interviewed a number of state and local officials on his “
-Road to Autonomy
-” podcast, and has led successful AV testing programs in both California and Florida. With the future of self-driving cars hanging in the balance, Grayson shared first-hand expertise on AV production and regulation.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Grayson, tell us what you’ve
-been up to in Florida — specifically in a community outside of Orlando known as
-“The Villages.” How many autonomous vehicles are in that area right now?
-Grayson
-Brulte: The Villages is an incredible place in Central Florida, about 30
-minutes outside of Orlando. I’ve had the honor of working with Oliver Cameron,
-the former CEO of Voyage, who took me for an AV ride to meet some residents
-there. We would stop at a community center, for example, and these individuals
-would come out with the biggest smiles, saying, “How can I get this? Can I go
-to the bocce game? Can I go to the store? How can I go to the airport? Can I go
-to the doctor? Can I go to the hospital?”
-There was
-this general sense of enthusiasm and love in The Villages for exploring this
-new technology, because The Villages is an older retirement community, and they
-want to have these experiences. And as they get older, they need the ability to
-move around. So as of now, there are six AVs in that area.
-How do we manage the challenge of AVs not
-seeming reliable or safe? And on the production side, will AVs be profitable?
-It’s about
-setting expectations. There is no true, full autonomous vehicle on the road
-today. There are test vehicles, but there is no true service without a driver
-today. But the more these test vehicles can appeal to potential riders — like
-people in The Villages — the more people will realize that AVs can in fact be
-safe and reliable.
-On the
-production end, if you’re looking at “robotaxis,” for example, there is no path
-to profitability in the traditional sense. You’re going to see profits and
-extreme margins on the autonomous trucking side — which is easier from both a
-regulatory and technical standpoint — than you are for robotaxis, which will
-operate in dense, urban environments that are extremely hard to drive in.
-And that’s
-where the individuals building the robotaxis don’t understand that it’s not
-about who can build the best robotaxi; it’s about the experience. Can you
-partner with a retailer — say, Louis Vuitton, for example — so you can get an
-exclusive handbag if you ride in that vehicle? Something like that would give
-you the ability to expand margins by opening commerce in the vehicle.
-The vehicle
-itself will not generate money. It will probably lose money for the indefinite
-future, but once you lay commerce on top of that, it’s really interesting. The
-alcohol industry, for example, is chomping at the bit to be able to sell liquor
-and expand margins in fully autonomous cars. So in robotaxis, it’s going to
-come down to the experience, and then on the trucking side, it will come down
-to expanding the margins and shoring up the supply chain.
-As we saw
-during COVID-19, the supply chain got hit really hard. But when we have mass
-amounts of autonomous trucks on the road, they’re going to shore up the supply
-chain and lower the cost of goods. That piece of meat you’re buying might be 10
-percent cheaper because the truck was able to transport it more efficiently. There
-will be all these great advantages. Not only are these companies going to make
-money, but they’re going to have a positive impact on society and help
-consumers save money.
-How do you work through consumer safety
-issues with the people in government?
-When I
-worked for the City of Beverly Hills, CA’s Autonomous Vehicles Task Force, our
-mantra was “no surprises.” We would invite companies to come in and have lunch
-with the mayor, have lunch with the city council, explain what they wanted to
-do, then get the sign-off from the police chief, the fire chief, the city
-manager, and have all the safety plans put in place for the vehicle so everybody
-knew what was happening and when.
-Then we
-would invite the public to be a part of these conversations so that it was not
-done in the dark. It was done in an open forum where the public was able to
-attend these meetings to learn and ask questions. So it was all about no
-surprises and building trust. I think this is the key going forward: letting
-ordinary people see the process with their own eyes.
-I have bike lanes in front of my house here
-in DC. Do we need something similar to help integrate AVs into traffic flow?
-No, because
-when the vehicles are fully deployed, besides the sensors, you’re never going
-to know it’s a self-driving car. It’s going to blend in. Like I’ve said, what
-we have to do is go around the country with autonomous vehicles, invite the
-public to go for rides, meet the engineers, and let them experience the
-technology. I helped do this for the Society of Automotive Engineers, and some
-people going for rides were saying, “You’re going to kill me! You’re going to
-kill me!” Then afterwards they’d come out and literally give me a hug. One
-person said, “I’m not dead. I love you. But the bad news was: This was boring.”
-And I said, “Ma’am, that’s exactly what we want.”
-Another
-issue to consider is data privacy. Apple CEO Tim Cook has done a masterful job
-of positioning Apple as the king of protecting user privacy, and somebody is
-going to have to do that for the trust and adoption of self-driving cars.
-When it comes to data protection and/or
-privacy, we always need to be transparent and accountable as to what data is
-being collected and where it flows. When we’re talking about self-driving cars
-and smart cities, what kind of data is being collected, and how is it involved
-in city planning?
-Self-driving
-cars will gather data through countless cameras and sensors. You’ve paid anywhere
-from $50,000 to $140,000 for that vehicle. You own it and you’re gathering
-data, and that data is then going back to the company. Why are you not
-collecting a royalty?
-That’s the
-big debate I think will come with data. Here I am, driving this vehicle, gathering
-data. I’m helping the manufacturer make a comprehensive map of the city
-everywhere I go, but they don’t pay me a royalty. Why not? If you look at
-Tesla, you’re spending a lot of money to buy one, then gathering all this data
-so they can build up their neural net. Why are you not getting paid per mile
-when you’re gathering that data and giving it to the company?
-But the
-issue is: This will fundamentally disrupt their business models. That’s the
-issue. So if you’re buying the product and you own it, well then you should
-have the right to opt out of it, okay? Apple’s doing it, so why can’t you do it
-in the vehicle? But if you’re in an autonomous vehicle and you’re paying for a
-service without “owning” the product per se, that’s a different story as long
-as you’re fully transparent about it.
-So what’s going to be our first example of
-a successful self-driving car campaign here in the US? Who will be the first
-one to get this right?
-When Project
-Titan becomes a reality, based on track record, I’m going to say it’s Apple.
-Apple is building the moat around their business and privacy, and they have the
-brand. They have the marketing and PR campaign.
-My firm,
-Brulte & Co., also has several clients that are doing this right because
-they’re thinking it through holistically. We didn’t grow up in Detroit. We
-didn’t come through the automotive industry, so we tend to look at things
-completely differently through a lot of lenses. And so I would say our clients
-are looking at it holistically, trying to think through all the problems.
-There’s a
-huge debate in the analyst community now about how Apple is not going to build
-a car in the traditional sense. It’s not going to come off the line in Detroit
-or down in Georgia in one of the BMW plants. It’s a platform. And that thing is
-going to have services on top of it that will grow their services business.
-When Apple
-eventually achieves level 4 or level 5 autonomy, they’re going to augment the
-glass of the car. So your windshield and side windows are all going to be
-augmented. And that’s going to create a whole new line of business for Apple
-where if it’s going to be a subscription model, for example, you could say, “Hey,
-Siri, take me on a tour of the Washington monuments.” Siri would say, “Okay, Grayson,
-would you like that with an in-car audio guide? That will be $9.99.” I say, “Yes,
-Siri, thank you.” Apple gets a 30 percent commission, I have a really great
-experience, and my daughter can learn about the monuments. That’s absolutely
-priceless, and that just becomes another engine of growth for them. And that’s
-going to be one of the biggest opportunities in autonomous vehicles: the
-augmenting and selling of services.
+
+[Speaker: Introduction / editorial context]
+Grayson Brulte recently joined “Explain to Shane” to discuss the barriers to getting more AVs on the road, and how both manufacturers and passengers should approach them. Grayson has interviewed a number of state and local officials on his “Road to Autonomy” podcast, and has led successful AV testing programs in both California and Florida. With the future of self-driving cars hanging in the balance, Grayson shared first-hand expertise on AV production and regulation.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Grayson, tell us what you’ve been up to in Florida — specifically in a community outside of Orlando known as “The Villages.” How many autonomous vehicles are in that area right now?
+
+[Speaker: Grayson Brulte]
+Grayson Brulte: The Villages is an incredible place in Central Florida, about 30 minutes outside of Orlando. I’ve had the honor of working with Oliver Cameron, the former CEO of Voyage, who took me for an AV ride to meet some residents there. We would stop at a community center, for example, and these individuals would come out with the biggest smiles, saying, “How can I get this? Can I go to the bocce game? Can I go to the store? How can I go to the airport? Can I go to the doctor? Can I go to the hospital?”
+
+[Speaker: Grayson Brulte]
+There was this general sense of enthusiasm and love in The Villages for exploring this new technology, because The Villages is an older retirement community, and they want to have these experiences. And as they get older, they need the ability to move around. So as of now, there are six AVs in that area.
+
+[Speaker: Shane Tews]
+How do we manage the challenge of AVs not seeming reliable or safe? And on the production side, will AVs be profitable?
+
+[Speaker: Grayson Brulte]
+It’s about setting expectations. There is no true, full autonomous vehicle on the road today. There are test vehicles, but there is no true service without a driver today. But the more these test vehicles can appeal to potential riders — like people in The Villages — the more people will realize that AVs can in fact be safe and reliable.
+
+[Speaker: Grayson Brulte]
+On the production end, if you’re looking at “robotaxis,” for example, there is no path to profitability in the traditional sense. You’re going to see profits and extreme margins on the autonomous trucking side — which is easier from both a regulatory and technical standpoint — than you are for robotaxis, which will operate in dense, urban environments that are extremely hard to drive in.
+
+[Speaker: Grayson Brulte]
+And that’s where the individuals building the robotaxis don’t understand that it’s not about who can build the best robotaxi; it’s about the experience. Can you partner with a retailer — say, Louis Vuitton, for example — so you can get an exclusive handbag if you ride in that vehicle? Something like that would give you the ability to expand margins by opening commerce in the vehicle.
+
+[Speaker: Grayson Brulte]
+The vehicle itself will not generate money. It will probably lose money for the indefinite future, but once you lay commerce on top of that, it’s really interesting. The alcohol industry, for example, is chomping at the bit to be able to sell liquor and expand margins in fully autonomous cars. So in robotaxis, it’s going to come down to the experience, and then on the trucking side, it will come down to expanding the margins and shoring up the supply chain.
+
+[Speaker: Grayson Brulte]
+As we saw during COVID-19, the supply chain got hit really hard. But when we have mass amounts of autonomous trucks on the road, they’re going to shore up the supply chain and lower the cost of goods. That piece of meat you’re buying might be 10 percent cheaper because the truck was able to transport it more efficiently. There will be all these great advantages. Not only are these companies going to make money, but they’re going to have a positive impact on society and help consumers save money.
+
+[Speaker: Shane Tews]
+How do you work through consumer safety issues with the people in government?
+
+[Speaker: Grayson Brulte]
+When I worked for the City of Beverly Hills, CA’s Autonomous Vehicles Task Force, our mantra was “no surprises.” We would invite companies to come in and have lunch with the mayor, have lunch with the city council, explain what they wanted to do, then get the sign-off from the police chief, the fire chief, the city manager, and have all the safety plans put in place for the vehicle so everybody knew what was happening and when.
+
+[Speaker: Grayson Brulte]
+Then we would invite the public to be a part of these conversations so that it was not done in the dark. It was done in an open forum where the public was able to attend these meetings to learn and ask questions. So it was all about no surprises and building trust. I think this is the key going forward: letting ordinary people see the process with their own eyes.
+
+[Speaker: Shane Tews]
+I have bike lanes in front of my house here in DC. Do we need something similar to help integrate AVs into traffic flow?
+
+[Speaker: Grayson Brulte]
+No, because when the vehicles are fully deployed, besides the sensors, you’re never going to know it’s a self-driving car. It’s going to blend in. Like I’ve said, what we have to do is go around the country with autonomous vehicles, invite the public to go for rides, meet the engineers, and let them experience the technology. I helped do this for the Society of Automotive Engineers, and some people going for rides were saying, “You’re going to kill me! You’re going to kill me!” Then afterwards they’d come out and literally give me a hug. One person said, “I’m not dead. I love you. But the bad news was: This was boring.” And I said, “Ma’am, that’s exactly what we want.”
+
+[Speaker: Grayson Brulte]
+Another issue to consider is data privacy. Apple CEO Tim Cook has done a masterful job of positioning Apple as the king of protecting user privacy, and somebody is going to have to do that for the trust and adoption of self-driving cars.
+
+[Speaker: Shane Tews]
+When it comes to data protection and/or privacy, we always need to be transparent and accountable as to what data is being collected and where it flows. When we’re talking about self-driving cars and smart cities, what kind of data is being collected, and how is it involved in city planning?
+
+[Speaker: Grayson Brulte]
+Self-driving cars will gather data through countless cameras and sensors. You’ve paid anywhere from $50,000 to $140,000 for that vehicle. You own it and you’re gathering data, and that data is then going back to the company. Why are you not collecting a royalty?
+
+[Speaker: Grayson Brulte]
+That’s the big debate I think will come with data. Here I am, driving this vehicle, gathering data. I’m helping the manufacturer make a comprehensive map of the city everywhere I go, but they don’t pay me a royalty. Why not? If you look at Tesla, you’re spending a lot of money to buy one, then gathering all this data so they can build up their neural net. Why are you not getting paid per mile when you’re gathering that data and giving it to the company?
+
+[Speaker: Grayson Brulte]
+But the issue is: This will fundamentally disrupt their business models. That’s the issue. So if you’re buying the product and you own it, well then you should have the right to opt out of it, okay? Apple’s doing it, so why can’t you do it in the vehicle? But if you’re in an autonomous vehicle and you’re paying for a service without “owning” the product per se, that’s a different story as long as you’re fully transparent about it.
+
+[Speaker: Shane Tews]
+So what’s going to be our first example of a successful self-driving car campaign here in the US? Who will be the first one to get this right?
+
+[Speaker: Grayson Brulte]
+When Project Titan becomes a reality, based on track record, I’m going to say it’s Apple. Apple is building the moat around their business and privacy, and they have the brand. They have the marketing and PR campaign.
+
+[Speaker: Grayson Brulte]
+My firm, Brulte & Co., also has several clients that are doing this right because they’re thinking it through holistically. We didn’t grow up in Detroit. We didn’t come through the automotive industry, so we tend to look at things completely differently through a lot of lenses. And so I would say our clients are looking at it holistically, trying to think through all the problems.
+
+[Speaker: Grayson Brulte]
+There’s a huge debate in the analyst community now about how Apple is not going to build a car in the traditional sense. It’s not going to come off the line in Detroit or down in Georgia in one of the BMW plants. It’s a platform. And that thing is going to have services on top of it that will grow their services business.
+
+[Speaker: Grayson Brulte]
+When Apple eventually achieves level 4 or level 5 autonomy, they’re going to augment the glass of the car. So your windshield and side windows are all going to be augmented. And that’s going to create a whole new line of business for Apple where if it’s going to be a subscription model, for example, you could say, “Hey, Siri, take me on a tour of the Washington monuments.” Siri would say, “Okay, Grayson, would you like that with an in-car audio guide? That will be $9.99.” I say, “Yes, Siri, thank you.” Apple gets a 30 percent commission, I have a really great experience, and my daughter can learn about the monuments. That’s absolutely priceless, and that just becomes another engine of growth for them. And that’s going to be one of the biggest opportunities in autonomous vehicles: the augmenting and selling of services.

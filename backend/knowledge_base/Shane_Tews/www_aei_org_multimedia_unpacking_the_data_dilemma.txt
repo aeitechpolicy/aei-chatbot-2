@@ -1,13 +1,8 @@
 PAGE_TITLE: 
-	Unpacking the Data Dilemma (with Cristina Alaimo and Jannis Kallinikos) | American Enterprise Institute - AEI
+	Unpacking the Data Dilemma (with Cristina Alaimo and Jannis Kallinikos)
 
+[Speaker: Introduction / editorial context]
 As the US pushes for a TikTok ban and the EU leads the way in data-privacy regulation, experts warn that overly restrictive policies might inadvertently stifle innovation and economic growth. But how do we strike the right balance? What role does data play in shaping our society? How do we categorize and classify the information we generate daily? And what challenges do policymakers face in regulating data?
-In this timely episode of
-Explain to Shane
-, we dive into the critical intersection of data and society. Shane interviews
-Cristina Alaimo
-and
-Jannis Kallinikos
-, co-authors of
-Data Rules: Reinventing the Market Economy
-. Cristina is an assistant professor in digital economy and society at LUISS University, in Rome, Italy, and Jannis is a full professor of information systems Systems at LUISS Business School.
+
+[Speaker: Introduction / editorial context]
+In this timely episode of Explain to Shane, we dive into the critical intersection of data and society. Shane interviews Cristina Alaimo and Jannis Kallinikos, co-authors of Data Rules: Reinventing the Market Economy. Cristina is an assistant professor in digital economy and society at LUISS University, in Rome, Italy, and Jannis is a full professor of information systems Systems at LUISS Business School.

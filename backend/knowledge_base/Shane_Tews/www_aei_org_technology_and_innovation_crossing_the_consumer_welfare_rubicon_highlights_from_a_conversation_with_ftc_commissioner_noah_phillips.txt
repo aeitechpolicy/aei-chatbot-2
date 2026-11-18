@@ -1,38 +1,68 @@
 PAGE_TITLE: 
-	Crossing the Consumer Welfare Rubicon: Highlights from a Conversation with FTC Commissioner Noah Phillips | American Enterprise Institute - AEI
+	Crossing the Consumer Welfare Rubicon: Highlights from a Conversation with FTC Commissioner Noah Phillips
 
-On July 18, I had a one-on-one discussion with Commissioner Noah Phillips of the Federal Trade Commission (FTC) on how the FTC is handling antitrust enforcement under Chairwoman Lina Khan’s leadership. Since the event took place, Phillips has
-announced
-his intentions to resign from the FTC this fall.
-Below is an edited and abridged transcript of key highlights from our discussion. You can view the full event on
-AEI.org
-and read the full transcript
-here
-.
-Noah Phillips (left) and Shane Tews (right) during the July 18, 2022 AEI event, “Crossing the Consumer Welfare Rubicon: A Conversation with Commissioner Noah Phillips of the Federal Trade Commission.”
-Shane Tews: Much of the discussion around the FTC parallels congressional legislation about antitrust and competition changes. These bills target specific tech companies by
-defining
-“covered platforms” in a way that only Big Tech could be affected. Is this legislative targeting a good idea?
+[Speaker: Introduction / editorial context]
+On July 18, I had a one-on-one discussion with Commissioner Noah Phillips of the Federal Trade Commission (FTC) on how the FTC is handling antitrust enforcement under Chairwoman Lina Khan’s leadership. Since the event took place, Phillips has announced his intentions to resign from the FTC this fall.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from our discussion. You can view the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
+Shane Tews: Much of the discussion around the FTC parallels congressional legislation about antitrust and competition changes. These bills target specific tech companies by defining “covered platforms” in a way that only Big Tech could be affected. Is this legislative targeting a good idea?
+
+[Speaker: Noah Phillips]
 Noah Phillips: Before any of the proposed bills were introduced, there was a hearing in the House Antitrust Subcommittee. One of the things I said was that the first 500 or so pages of the House majority’s report on competition were an indictment of only four companies (Alphabet, Amazon, Apple, and Meta). At the end of the hearing, there were proposals to change the antitrust laws, but I argued that there was a mismatch. They only explained a case for prohibiting certain conduct from four companies despite there being thousands of companies out there.
+
+[Speaker: Noah Phillips]
 At the FTC, my view on how to regulate the economy is that we should try to figure out what’s bad and stop the bad things. If it’s not bad, it should be allowed to happen. But the joke is on me as the bills they ultimately came out with exclusively honed in on those companies. We’ve decided that five companies shouldn’t engage in certain conduct without providing a coherent story of why those companies are especially bad when they do those kinds of conduct. That’s a wonky way to regulate.
+
+[Speaker: Noah Phillips]
 Moreover, these companies don’t look a lot alike. They’re all big and they’re all tech, but that’s about it. In fact, you see them fighting a lot in the markets and in the press. They just don’t do the same thing. We’ve picked a few different kinds of conduct, usually associated with one or two of them, and we’ve now said, “You all can’t do that.”
+
+[Speaker: Noah Phillips]
 Let’s go a little more into self-preferencing, since those seeking antitrust reform view this conduct as a prime example of an anticompetitive business practice.
+
+[Speaker: Noah Phillips]
 Oddly enough, self-preferencing isn’t novel. It’s conduct that is endemic in the economy. You see it everywhere you go, such as at the end of every aisle at the grocery store. So, the question really should be: How do we evaluate this conduct generally? Is it good or bad?
+
+[Speaker: Noah Phillips]
 It seems to me that the idea behind the legislation is that some people don’t like these companies, so now we must stop them from doing some things to make them more—what? We don’t actually know what we want these tech companies to look like. We will be in a better place when we think seriously about why some conduct is not okay if Amazon does it, but okay for Target or Giant to do.
-President Biden’s
-Executive Order on Promoting Competition in the American Economy
-touched on two major topics: non-delegation authority—trying to regulate the entire economy without a congressional mandate—and the FTC’s rulemaking authority. What exactly did this executive order aim to do?
+
+[Speaker: Shane Tews]
+President Biden’s Executive Order on Promoting Competition in the American Economy touched on two major topics: non-delegation authority—trying to regulate the entire economy without a congressional mandate—and the FTC’s rulemaking authority. What exactly did this executive order aim to do?
+
+[Speaker: Noah Phillips]
 Antitrust law has been grounded in the statutes that judges apply in litigation. The vision that the president articulates in his executive order substantially replaces those with rules that a majority of FTC commissioners would make.
+
+[Speaker: Noah Phillips]
 This is troubling because the scope of our current rulemaking authority is almost limitless. The order directs us to make device regulations, pharmaceutical regulations, and labor regulations. It also wants us to do a competition rule on privacy. It’s not really clear at all what the president thinks the limit of our authority is. Moreover, one of the first things the Democrats did after Chair Khan was appointed was they got rid of the policy that defined the scope of Section V, our statute under which we make rules. We have no real limits anymore.
+
+[Speaker: Noah Phillips]
 We’re now just making rules for the economy in a way that’s out of line with precedent. This raises a number of different issues, including a legal one. The FTC doesn’t have the authority to regulate the entire economy if you look carefully at the statute.
+
+[Speaker: Noah Phillips]
 There’s a policy problem too: I’m not convinced that my colleagues and I—no disrespect to them or to myself—would be good at running the entire economy. I don’t think that we are built to do that; I don’t think we’ve demonstrated our capacity to do that.
+
+[Speaker: Noah Phillips]
 The third problem is constitutional. If this new authority is really so broad and the language is so vague, it look like Congress could just be giving wholesale legislative authority to an administrative agency. That’s a constitutional problem. We need to have a serious conversation before we accept the premise that a majority of FTC commissioners can make almost any rule to regulate the economy that it wants. FTC commissioners aren’t elected.
+
+[Speaker: Shane Tews]
 Should the FTC make rules on data security or data privacy? Would the FTC be prepared for that responsibility? Should the FTC be the home of a federal privacy czar?
+
+[Speaker: Noah Phillips]
 The short answer to those questions is yes. The FTC is, in my view, the best privacy enforcer in the world. This is evidenced by the outcomes and results of our privacy cases. Even without a national privacy law, the FTC is the clear leader. I have had other enforcers from around the world call us for help on enforcing their privacy laws, and I think that is a testament to the creativity and thoughtfulness of the FTC’s staff.
+
+[Speaker: Noah Phillips]
 If we’re going to do a national privacy law, the FTC is absolutely the right place to put it. However, we would need more resources to implement it well. If you look at the size of the Information Commissioner’s Office in the United Kingdom, they have about 180 people, while the Irish have over 100 people. The FTC’s Division of Privacy and Identity Protection has only around 45 people. The United States is a huge country, and if we get more authority, we could definitely use more people. In fact, we could definitely use more people today.
+
+[Speaker: Noah Phillips]
 Another thing that is really important when it comes to data privacy is that a lot of people are really talking about data security. This is an area where I have become convinced that we have a market failure. We don’t invest enough in protecting data, and we have a real harm. That’s definitely an area where I think we could do rulemaking, so I would love to see legislation from Congress there.
+
+[Speaker: Shane Tews]
 One reason people feel insecure about digital privacy is a perceived lack of transparency and accountability, a sentiment that has been exacerbated by scandals like Cambridge Analytica. On the other hand, people also want a personalized internet browsing experience, and that requires companies to share data with one another. Can we reconcile these two seemingly mutually exclusive desires?
+
+[Speaker: Noah Phillips]
 When the FTC settled the Facebook/Cambridge Analytica scandal, it was argued that we needed to pick a direction between security and competition because in that settlement we made it a lot harder for Facebook to share data with third parties. It was recognized that there was an inherent competition trade-off. That data was relevant to businesses. They were going to use it. Leveraging data is what targeting advertising is all about. Thus, it’s important to remember that things come with tradeoffs, especially in tech policy.
-But there are ways to increase transparency while allowing for data sharing. Apple has a really easy-to-use screen that pops up when you open an app called
-Nutrition Labeling
-. These labels explain what data is collected that can be tracked across different apps and websites, that is linked to you, or that is not linked to you. To me, it seems like a good way of conveying to people the complex question of: How is my data being used?
+
+[Speaker: Noah Phillips]
+But there are ways to increase transparency while allowing for data sharing. Apple has a really easy-to-use screen that pops up when you open an app called Nutrition Labeling. These labels explain what data is collected that can be tracked across different apps and websites, that is linked to you, or that is not linked to you. To me, it seems like a good way of conveying to people the complex question of: How is my data being used?

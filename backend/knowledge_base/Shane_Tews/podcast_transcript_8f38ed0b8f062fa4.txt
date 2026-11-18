@@ -1,0 +1,137 @@
+PAGE_TITLE: 
+	Explain to Shane: Roger Entner Explains Broadband Network Capacity amid the COVID-19 Pandemic — full transcript
+
+[Speaker: Introduction / editorial context]
+AEI Roger Entner explains broadband network capacity amid the COVID-19 pandemic Episode #1 | April 7, 2020 | Shane Tews and Roger Entner
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane." I'm your host, Shane Tews, of the American Enterprise Institute. On this podcast I interview tech industry experts to explain how the apps, services, and structures of today's information and technology systems work, and how they shape our social and economic life. Today I'm joined by Roger Entner, telecommunications expert and founder of Recon Analytics, to discuss how our broadband networks are handling the stress from increased usage during the coronavirus pandemic.
+
+[Speaker: Roger Entner]
+Roger Entner: Thank you for having me. It's always a pleasure and an honor to talk with you and to be on your podcast.
+
+[Speaker: Shane Tews]
+Shane Tews: I think we' d like to open the discussion on network connectivity. Let's start myopically, with looking at the states. How are our networks faring so far?
+
+[Speaker: Roger Entner]
+Roger Entner: Our networks are performing quite well. We are seeing that our peak usage, which is always around 9 pm wherever you are, is up around 30 percent to 35 percent. What we are also seeing is that network usage is broadening much more and that the traffic pattern — usually it goes straight up as the day continues, now those shoulders get broader. So the busy hour, while still peaking somewhere around 7 to 9 pm, starts now at around 8 am to 9 am because consumer traffic is what is really driving internet traffic around the world. It's not businesses that are the heavy data users, it's consumers. And it is consumers watching video. Video is really the application that taxes networks the most. But things are holding up well, because networks are being built in the United States with one to one-and-a-half years of forward capacity in mind, and that is usually 40 to 45 percent per year. So we're still way below that, where we would be in a year from now, so everything is still performing very well.
+
+[Speaker: Shane Tews]
+Shane Tews: That's great news to hear. Both Roger and I just had the opportunity to be on a Comcast media call, and I found it fascinating when they said the first cities where they saw the uptick was Seattle and San Francisco, and now Chicago is coming inline with that, having tech workers that are now at home. So they saw Microsoft, Google, Apple, Twitter, Facebook, all the other companies that are like that working from home. And they used that as a new balance to see, as
+
+[Speaker: Shane Tews]
+the rest of the world figured out how to video conference, use VPNs and other tools that you should be using to have a safe online experience, expand across the United States. So, glad to see that our networks are staying up and doing a good job.
+
+[Speaker: Roger Entner]
+Roger Entner: Yeah, and American operators are investing, and have been investing, far more than operators in other countries. Now and then when you go to Europe, people ask, "Why are American carriers charging more than European carriers?" And the answer is that they're investing twice as much into the network. Some of the last-mile problems that we seem to be seeing in Europe we largely don't see here. Some companies have reported they've seen a slow-down in some markets, but when you look at it — yes, the speed was going down from 95 megabits per second (Mbps) to 45 Mbps. That's still more than what my mother gets in Germany! Even though that's a drop of a substantial amount. But that is really the exception rather than the rule. For example, here l'm using Verizon Fios, and I have a Gigabit connection - I don't see anything degrading. So networks are holding up.
+
+[Speaker: Shane Tews]
+Shane Tews: That brings up a couple of questions for me. One is that we' ve definitely seen that Comcast, AT&T, Charter, Cox, a lot of these companies that have had the ability to do investment as they saw fit because of the flexible regulatory regime we have — that really seems to have made a difference. And I want to get into international networking, but can we take a step back and talk about the way that some of the different network configurations work, so 1 can understand the difference? When I hear about the cable operators, you' ve just mentioned Fios, versus how in Europe we still see a lot of DSL usage, and how that is managed differently and may have a different outcome for the consumer.
+
+[Speaker: Roger Entner]
+Roger Entner: Yes, so basically we have, if we include wireless, four different access methods. The number one usage that we have in the United States for broadband to the home are cable networks. Cable networks have a network that's called hybrid fiber-coax, which means there's a fiber network in the end and typically across the street there's a pole, the cable comes over to your house, and that's usually a coax cable. And there's somewhere called a cable head, and that cable head traditionally served 300 households, and that was a shared resource. So these 300 households shared that cable head, and however much capacity that cable head had. Cable had a huge advantage through its evolving standards, called DOCSIS [Data Over Cable Service Interface Specification]. We're now at DOCSIS 3.1 which can deliver gigabit speeds. That's because they' re able to put more data on the same amount of fiber and cable. What they' ve also done is reduced the number of households per cable head. Now it's about 75. So simply by having a quarter as many households per cable head, you have four times the capacity, and then you have the new standards you end up with 10 or 15 times more capacity. And that's what allows the cable networks to really do that quite well.
+
+[Speaker: Shane Tews]
+Shane Tews: So they've gone from 300 households per cable head—l'd imagine there was more investment to get them to 75, they're coming further into the neighborhoods to get them closer.
+
+[Speaker: Roger Entner]
+Roger Entner: Yes, they're putting four times as much hardware into the neighborhood so that they can adequately serve the increase in usage. And the increase in usage has been streaming video. And that has really been that huge, huge driver over the last five years. Netflix, Hulu, you name it. And that has really driven this massive investment in [the] network so that we are able to sustain that traffic. Now that traffic is just spread out through the day, and not just at 9 o'clock in the evening when everyone wants to watch their favorite show on a streaming service.
+
+[Speaker: Shane Tews]
+Shane Tews: So how does that compare to Fios, which you mentioned, a fiber network?
+
+[Speaker: Roger Entner]
+Roger Entner: So the next most prevalent use is fiber. And here, you have a dedicated pipe that goes to the central office. And there is a huge backbone pipe going out. There, you're not sharing with anybody, and that gives you a much more dedicated, much more reliable connection than cable. Not that cable is unreliable, but here you have a dedicated pipe, a dedicated lane. And then we have DSL.
+
+[Speaker: Shane Tews]
+Shane Tews: Compare that to DSL, which seems 180 degrees in the other direction.
+
+[Speaker: Roger Entner]
+Roger Entner: DSL is basically monetizing the old copper network. And the speed that you get is highly dependent on how far away you are from the central office or a piece of equipment called a DSLAM [digital subscriber line access multiplexer]. It has gotten far faster, but you're still stuck at 3, 5, 7, 10 Mbps. In Europe, Deutsche Telecom for example in Germany, is heavily betting on using vectorized DSL. So then you get speeds of 50 Mbps, maybe 100, but it tops out. It just doesn't have the same scale that either cable or fiber has. Cable is certainly the right solution to go forward, but they're just inching and getting the last little bit of speed out of a technology from the 1980s and 1990s.
+
+[Speaker: Shane Tews]
+Shane Tews: I feel that way about my 2012 computer I'm on right now. First thing I'm going to do after the coronavirus is go out and buy a 2020.
+
+[Speaker: Roger Entner]
+Roger Entner: Or buy it online! Use your connection. So — we still have, you know, 10 million plus households on DSL. The FCC is working very hard and is funding these connections to be replaced with faster technology. They have the CAF Fund, Connect America Fund, I think they're in the second one. There's funding coming for 5G, which hopefully will help that wirelessly. Hopefully we can then use 5G for connections to the home. T-Mobile is certainly banking on that to help them expand in rural America. Then we have traditional wireless local- loop technologies with companies like Starry for example. And they can get, depending on where you are, up to a Gigabit as well.
+
+[Speaker: Shane Tews]
+Shane Tews: So it sounds like the big change was kind of going from email traffic to streaming. Once streaming hit, everybody just needed exponentially more capacity.
+
+[Speaker: Roger Entner]
+Roger Entner: Yes. Email doesn't tax the system. Browsing websites doesn't tax the system. Gaming doesn't tax the system. Video does.
+
+[Speaker: Shane Tews]
+Shane Tews: Now that's interesting—explain why gaming doesn't, because it seems like it would to me.
+
+[Speaker: Roger Entner]
+Roger Entner: Well, what happens is you download the game, right? And then all the pictures, all the graphics, are on your computer. And the only thing that the game does is transmit where you are, where you're moving, and all the things that are flying around trying to kill you, typically. And that is not a lot of data. Because you're playing with 10, 20, 30 other people. And it just has to tell them, you know, "Shane is in coordinate x and y, and Roger is in the next x and y," and they can all triangulate it with local computing. So say you shoot me, it reports back to the server that you pulled your trigger, and this is the direction it's flying, it computes if it hit me or not, and it tells me I'm dead. And it tells you that you hit me.
+
+[Speaker: Shane Tews]
+Shane Tews: So it isn't as heavy a lift as it sounds like it would be.
+
+[Speaker: Roger Entner]
+Roger Entner: Oh no, not at all. If we just look at bitrates, at how much data traffic something takes, 4K video takes about 25 Mbps. HD video takes about 5 Mbps. So for every 4K video stream, 5 people can watch their own dedicated HD stream. Standard television is about 1 Mbps. Again, five times less, or for every 4K stream you can have 25 people watching this in standard definition like we all did in the 1990s. Standard video is even less than 1 Mbps, and audio is about 40 kilobits per second. If you're a parent and your kid is gaming, and your network feels slower, it's not your kid. It uses less data than the video stream you're watching. All the emails, all the other things are really a rounding error. We see it in wireless. Without video, you can't use more than 2 gigabytes (GB), you're usually less than 1 GB. The moment video comes in, you're at 8, 10, and more GB per month. In a home network, you're probably using 250, 300 GB a month. That's probably the median usage, and then there are people who use a lot more and people who use a lot less.
+
+[Speaker: Shane Tews]
+Shane Tews: So this is a critique that I think comes sometimes when people don't understand how networks function, and l ask this question to hopefully clarify. If you're dealing with a company, let's say Comcast or AT&T that also owns a content company. So in AT&T's case that would be Warner, with Comcast they have NBCUniversal. Does that content flow any differently because it would appearto be a native content stream, than if I get onto my Comcast or AT&T connection to use Netflix or Amazon?
+
+[Speaker: Roger Entner]
+Roger Entner: No, it's all streamed the same way. And it doesn't matter, because the network has excess capacity. Prioritizing — you're all going 100 miles per hour over the interstate. Even if you have priority, you can't go faster than 100 miles per hour, it all reaches the same point.
+
+[Speaker: Shane Tews]
+Shane Tews: So what was the concern that was a big news item last week, where the European Union asked Netflix and YouTube specifically to change their streaming level? Was that because of DSL?
+
+[Speaker: Roger Entner]
+Roger Entner: I think they did that out of an abundance of caution. It's the recognition that video is whatever crashes networks. We can see the traffic patterns in Europe on the backbone side. A lot of backbone providers and internet exchange providers make their data available for anybody on their website. So for example, a company called DE-CIX, de-cix.com is the website, when you go to locations you can see how their internet exchange points are behaving. So for example in Frankfurt, which is the world's biggest internet exchange point, traffic went up from an average of 5.8 terabits per second to about 9.1 right now. So a 40 percent increase, which is what we see here. A lot. One of the things you have to put this in context with is that their capacity is 54.1 terabits per second. So even though traffic went up by 50 percent, they're only at less than 20 percent utilization. So the backbone—it doesn't make a difference. You can look at Madrid, where you also see a 50 percent increase, in Italy you see 50 percent of increase, from a backbone perspective it really doesn't make a difference because that capacity is built in. On the edge, meaning the last mile, especially where you have an aging or not updated network, that can create problems. If everybody's on DSL and watches video — if you have only 5 or 10 Mbps, you feel it if even 1 Mbps is missing.
+
+[Speaker: Shane Tews]
+Shane Tews: So earlier in our conversation, you mentioned the shoulders get broader. Is that saying there's kind of a natural thought that the office networking going to home networking would make a difference, and instead it's leveling out because it's just a change of location, not a change in how much is being used?
+
+[Speaker: Roger Entner]
+Roger Entner: Yeah, it soaks up capacity that might not be used otherwise. You can think of capacity like an airline seat: when the plane has left, it doesn't matter if the person sits there or not, it goes the same way. So networks are always designed around peak usage, and what happens outside of peak usage doesn't matter because the wireless networks have a high fixed cost and a very low variable cost. So if somebody uses the capacity during the day, it doesn't cost more. The backhaul is the same, the power is virtually the same, so you're just using the whole pipe a little bit efficiently.
+
+[Speaker: Shane Tews]
+Shane Tews: So does the change in traffic patterns have anything to do going forward— you're saying the network operators have a lot of headroom, are they
+
+[Speaker: Shane Tews]
+expanding headroom faster now as they're seeing these market changes?
+
+[Speaker: Roger Entner]
+Roger Entner: Well we've only seen these market changes for the last four to six weeks, right? Right now the increases are a little bit faster than what we have seen during the natural course: on average, as I mentioned, about 40 to 50 percent data increase per year. So I think the thinking is a lot of them feel validated about their very conservative approach and capital-investment heavy approach to build for that increase that happens anyway, they just needed it a little bit faster, so they weren't surprised by it. Will they build a little bit more capacity this year? Probably. But typically their approach has been validated.
+
+[Speaker: Shane Tews]
+Shane Tews: It's been interesting looking at the statistics I've seen from some of the companies. I think Comcast said they were up 34 percent last week, and they're expecting that to continue. We're seeing a lot of difference in Wi-Fi calling and VPN usage. So Wi-Fi calling for AT&T I think was up about 67 percent on average by Saturday, and consumer voice is up about 63 percent. So people are using the tools.
+
+[Speaker: Roger Entner]
+Roger Entner: Absolutely. But even when you look at the Seattle internet exchange, traffic is up by about 40 percent, and that's where all of that happened. So I would say Seattle, San Francisco bay area, New York are bellwethers of what we will see in the rest of the country. Because these people are in curfew, they have to work from home, and that's about what we see as an increase, it's about 40, Soni no eo balis. 50 percent. Now when it moves to Chicago we see the same increase, and when it moves to Dallas, Denver, Phoenix, and Atlanta we will see the same pattern repeating itself. And we'll see how long this continues.
+
+[Speaker: Shane Tews]
+Shane Tews: Looking at the Verizon usage data that they have in their press release, it says they saw 106 million hours of streaming content, 190 billion photos uploaded, and 38 billion songs downloaded. And their virtual private networks are up 52 percent and the cloud tools are up 47 percent. So I think people are catching on, they're getting this.
+
+[Speaker: Roger Entner]
+Roger Entner: Yeah, and the VPN, by the way, is business usage. But here the gating factor is actually how many VPN ports your company has at their physical location, rather than the network. The other thing I thought was very interesting was that Microsoft reported a more than 700 percent increase in their cloud application usage. Microsoft is the biggest provider of cloud email, with Office 365. They're using that for commercial clients, and so many more things will move to the cloud now, because you want to have that flexibility. Companies that have been laggards are facing a wake-up call that they have to make their company flexible. And then they need to go to companies like Microsoft or AT&T and get a solution that helps to become indifferent of where the worker is physically located. So that you are not dependent on work in the office or at home, and the flexibility will make the company actually faster.
+
+[Speaker: Shane Tews]
+Shane Tews: That's interesting. One thing that was mentioned up on the call we were on earlier is that mobile data is moving over to networks, and that helps take stress on mobile networks and bring it to Wi-Fi. They've seen that go from 10 percent to 24 percent.
+
+[Speaker: Roger Entner]
+Roger Entner: It's people staying at home. Your mobile phone becomes a stationary phone when you're quarantined at home, right? And so very often people are using Wi-Fi as a stable connection, some people may or may not have connection issues in their home and Wi-Fi certainly alleviates it. We still probably have a third of Americans on metered plans, and Wi-Fi certainly increases the mileage of your wireless data. But we are moving more and more into an unlimited LTE data world, and so it becomes a little bit less important. And the wireless networks are holding up very well, and we're seeing increases here in the 20 to 30 percent range here as well. It's just that people are using it a lot more than they've used before.
+
+[Speaker: Shane Tews]
+Shane Tews: I also found the data on how many more things are being attached to the network fascinating. So we know that the Internet of Things coming in is pushing a lot more things online, and we're seeing a lot more people attach while at home.
+
+[Speaker: Roger Entner]
+Roger Entner: Yeah, they're at home. They are saving half an hour or an hour a day that they're not commuting, and they're tinkering around with their network and with devices they can attach to their network. They want to have video at their door and install that, they want to have motion sensors and all the other things and they attach them to their networks. When people get idle, they get busy, right?
+
+[Speaker: Shane Tews]
+Shane Tews: Good point. Well Roger, we see our world has changed the last couple of weeks and it's going to continue to move forward. Any prediction what you think will be going on with network operations in the next month and coming year?
+
+[Speaker: Roger Entner]
+Roger Entner: I think the patterns we're seeing with the bellwether states, New York, California, Washington, will extend to the rest of the country. I think some of the changes we have seen will be very difficult to roll back. I think usage caps — if it's okay not to have usage caps in an emergency, it's hard to explain to customers why there should be usage caps in normal times. I think it will also be difficult to explain to employees why they can't work at home after all this. We all have teething problems when you move to your home office, but once that's been fixed I think that will be a new standard. It will change traffic patterns, it will change real estate, all these things will change. I think personally, the huge office floors we see in open-office designs might be rethought, because that's very conducive to spreading things. We're going to be more sensitive and also a lot more robust to these challenges that come with having a pandemic around that's life-threatening.
+
+[Speaker: Shane Tews]
+Shane Tews: Right. Well hopefully some of the positive things will continue to stick around. I'm very hopeful on the telemedicine front that we'll realize there's a more efficient use of everyone's time, similar to what we've learned with conference calls. Roger, thank you for your time today. We look forward to having you on as a future guest as we see these trends go on, but | really appreciate you being a guest on today's Explain to Shane.
+
+[Speaker: Roger Entner]
+Roger Entner: Thank you for having me.

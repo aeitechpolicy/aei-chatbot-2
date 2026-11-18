@@ -1,144 +1,59 @@
 PAGE_TITLE: 
-	Global Internet Governance: Highlights from My Conversation with David Gross and Dustin Loup | American Enterprise Institute - AEI
+	Global Internet Governance: Highlights from My Conversation with David Gross and Dustin Loup
 
-What is “internet governance,” and why does it need to be
-coordinated internationally? Who gets to participate in these discussions? Ambassador
-David Gross, the former US Coordinator for International Communications and
-Information Policy, and Dustin Loup, executive director of The Internet
-Society’s Greater Washington DC chapter, joined the latest episode of “Explain
-to Shane” to discuss how the workings of the internet are coordinated at the
-global and regional levels.
-Below is an edited and abridged transcript of our talk. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the “Explain to Shane” podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane Tews: Ambassador
-Gross, what was the catalyst to create the Internet Governance Forum?
-David Gross: Well,
-the catalyst really goes back a fair number of years. I’m not going to do too
-much ancient history. Back in 1998, at the ITU’s Plenipotentiary Conference,
-was a treaty-writing writing conference of the UN specialized agencies for ICT-related
-matters, which is what the ITU has become. There was a discussion, and a
-decision made to a request of the United Nations that there be a “heads of
-state” summit — which is as big a thing as you can get in the UN world — that
-would focus on the use of new technologies like the internet for development
-and related issues. The UN decided to go ahead with that and decided — in the
-way that the UN often makes decisions — to not make a decision as to where the
-place for the summit would be, because there were two competing countries. Switzerland
-(and Geneva) wanted to host it, and Tunisia (Tunis, the capital) also wanted to
-host it. So they decided to have one summit, two phases.
-The first phase was
-held in Geneva. And many countries such as Russia, China, Saudi Arabia, and
-others, Iran, were very, very active in the preparations. And what they really
-wanted to do — more than anything else — was to change the relationship between
-the US government and ICANN. And, as everyone probably listening to this
-podcast knows, ICANN is the organization based in California that was created
-in essence by the US Government back in the 1990s to handle internet naming and
-addressing related issues.
+[Speaker: Introduction / editorial context]
+What is “internet governance,” and why does it need to be coordinated internationally? Who gets to participate in these discussions? Ambassador David Gross, the former US Coordinator for International Communications and Information Policy, and Dustin Loup, executive director of The Internet Society’s Greater Washington DC chapter, joined the latest episode of “Explain to Shane” to discuss how the workings of the internet are coordinated at the global and regional levels.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to the podcast here and read our full discussion here. You can also subscribe to the “Explain to Shane” podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: Ambassador Gross, what was the catalyst to create the Internet Governance Forum?
+
+[Speaker: David Gross]
+David Gross: Well, the catalyst really goes back a fair number of years. I’m not going to do too much ancient history. Back in 1998, at the ITU’s Plenipotentiary Conference, was a treaty-writing writing conference of the UN specialized agencies for ICT-related matters, which is what the ITU has become. There was a discussion, and a decision made to a request of the United Nations that there be a “heads of state” summit — which is as big a thing as you can get in the UN world — that would focus on the use of new technologies like the internet for development and related issues. The UN decided to go ahead with that and decided — in the way that the UN often makes decisions — to not make a decision as to where the place for the summit would be, because there were two competing countries. Switzerland (and Geneva) wanted to host it, and Tunisia (Tunis, the capital) also wanted to host it. So they decided to have one summit, two phases.
+
+[Speaker: David Gross]
+The first phase was held in Geneva. And many countries such as Russia, China, Saudi Arabia, and others, Iran, were very, very active in the preparations. And what they really wanted to do — more than anything else — was to change the relationship between the US government and ICANN. And, as everyone probably listening to this podcast knows, ICANN is the organization based in California that was created in essence by the US Government back in the 1990s to handle internet naming and addressing related issues.
+
+[Speaker: David Gross]
 Virtually all countries wanted to take away the US’s unique position with regard to ICANN, and there was a lot of fighting done in the preparatory work up to the summit in 2003 in Geneva. And again, in classic UN fashion, the decision was made to punt that to the second phase of the summit, which was in 2005 in Tunis. As we got closer to that second phase of the summit, the US government, of which I had the honor of leading the preparatory work and then actually had the honor of leading both — co-leading the US delegation of both phases at the summit, since President Bush was otherwise engaged at the time, we issued a set of four principles. And those four principles basically said that we were going to, among other things, preserve the security and stability of the internet’s domain name and addressing system, the DNS, which took a lot of countries by surprise, because they thought they were going to have a way of playing in that game, and we said “no.”
-We decided that
-since we were going to say “no” to everything that was substantive, that we
-would create a space called the Internet Governance Forum that we could have
-discussions along the lines that the US had set forth back about a year or so
-earlier. In that, what we did is ensure, however, that this would not be a
-perpetual world summit on the information society that heads of state — or
-anything else that might be substantive. So, we were very careful to put the
-word “no” repeatedly in the document that created the Internet Governance
-Forum, so they would have no decision making and no recommendations — no,
-really, anything of substance — other than to be a forum for vigorous
-discussion amongst all players, not just governments, but also academia, the
-private sector, civil society, and the like. That was what created, ultimately,
-the IGF.
-I want to introduce our other guest today, Dustin Loup,
-who is the co-chair of the IGF-USA, and just talk a little bit about how we
-want from this international body to bringing in the regional elements. So,
-there’s an international IGF every year, and then we have an IGF-USA every
-year. Dustin, can you just kind of elaborate on that for me?
-Dustin Loup: So, one
-of the great outcomes of the IGF has been the independent establishment of different
-national and regional initiatives that began to pop up shortly after the IGF
-was established. Each of these operates in an autonomous way, but there is some
-coordination that’s handled at the global IGF secretariat level to align the
-work and provide recognition, in a way, to the different national and regional
-IGFs. For example, you can pop up the IGF-USA and talk about the benefits of
-organic produce for maternal health, and call it the IGF-USA, and have it be
-recognized. You could call it the IGF-USA, but there’s a real baseline set of
-requirements that each IGF needs to meet in order to have that recognition and
-to participate with the other national and regional IGFs across the world, and
-I think at this point there are 131 different national and regional IGFs.
-So we’ve mentioned there’s kind of a facility group that
-coordinates at the international level. Do we have themes? Do we have themes
-every year?
-Dustin Loup: We try
-to align them with the themes of the global IGF, but we organize it in an
-independent process. The way that this works is, at the beginning of each
-cycle, we’ll come together with different national and regional IGFs and talk
-about the issues that are most important from our local perspective and
-identify something like five to seven topics that we will build a collaborative
-session for at the global IGF, where NRIs — that’s just the acronym for
-national and regional initiatives — will collectively discuss the issues that
-we’ve identified from our local perspectives, and see how we can improve
-coordination globally, see where there’s alignment, where there’s not
-alignment, and just learn from each other.
-This year, those
-topics include things like the future of work and what that looks like in the
-digital age, the role of data for sustainability, the technical aspects of
-content regulation, the digital economy, and what cross-border regulations mean
-for digital sovereignty, cybersecurity policies and standards, access and
-digital inclusion, as well as just digital rights, and the impact of the internet
-on democracy generally speaking.
-If someone’s listening to this and somehow has not been
-engaged in this fascinating world and would like to participate, how do you get
-engaged in this?
-David Gross: Well, I
-think a little bit depends on which “this” we’re talking about. In the Internet
-Governance Forum, there’s really — on the global side, and it’s true nationally
-as well, Dustin can speak to that — but on the global, there are really no
-limits. It is open to everyone; there is no accreditation process. You have to
-show up either in person or virtually, depending upon the situation. In fact,
-in the very first one of the IGFs globally, which was held in Athens Greece,
-about a year after the World Summit on the Information Society took place,
-there was a bit of a kerfuffle about that. The Chinese, actually, were very
-upset about some NGOs that were coming in from Taiwan. And, as you know, the
-issue of Taiwan and the United Nations is a very sensitive one. The Chinese
-actually decided not to press the issue.
-Dustin, what’s the best way to become engaged in
-IGF-USA’s program planning?
-Dustin Loup: So, we have an open steering committee that anybody can join. It operates year-round, and works to keep everything with the IGF-USA moving forward. This committee leads the planning for the annual event, as well as participating in the international IGF. If you want to get involved, we have a listserv that you can join by going to our website, which is igfusa.us, or your listeners are always welcome to reach out to me directly, and I can get them plugged into the process. And just make sure that you, you know, stay tuned for the open call for topics that we send out every year, and that’s a good place to start. And, if you just want to enjoy the end product and attend the event, you can register at
-igfusa.us
-.
-As someone who’s been involved for many years, you know,
-it’s fun to do the entire year cycle. I always love when we actually do the
-poll… see what people care about. But, I know you’re about ready to have your
-event, so what’s on deck for the virtual event on July 22nd and 23rd?
-Dustin Loup: So,
-this year, we restructured it into a two-day conference in order to enable more
-participation in this new structure. We won’t have any concurrent panels, and,
-instead, each session will have a dedicated time slot, which will allow for
-more audience participation in each topic and discussion. You can take a look
-at our full agenda on our website, which, again, is igfusa.us. But, just really
-quickly to run through what we have in store: On day one, we will kick off by
-covering how the internet and technology have been used during the COVID
-crisis, followed by a great discussion on 5G and IoT [Internet of Things] that
-will begin with a fireside chat with FCC [Federal Communications Commission]
-Chairman Ajit Pai and DHS [Department of Homeland Security] Director Chris
-Krebs, moderated by yours truly, Shane Tews. And we’ll follow up with a session
-on encryption and lawful access, followed by the closing session for day one,
-which will focus on the challenges around content moderation and platform
-liability.
-To kick off day two,
-we’ll start the discussion with a panel on privacy in the age of COVID-19, and
-how that relates to healthcare. Then, we will look at what artificial
-intelligence machine learning and big data mean for the internet. Then, we’ll
-take a look at the security side of things, and the cyberattacks that a lot of
-users don’t see, or maybe don’t understand, and then we’ll look at the digital
-divide and what the impact of COVID-19 has been on learners and educators. And,
-finally, we’ll close out the conference with a focus on what all of this means
-for internet governance, and where do we go from here.
+
+[Speaker: David Gross]
+We decided that since we were going to say “no” to everything that was substantive, that we would create a space called the Internet Governance Forum that we could have discussions along the lines that the US had set forth back about a year or so earlier. In that, what we did is ensure, however, that this would not be a perpetual world summit on the information society that heads of state — or anything else that might be substantive. So, we were very careful to put the word “no” repeatedly in the document that created the Internet Governance Forum, so they would have no decision making and no recommendations — no, really, anything of substance — other than to be a forum for vigorous discussion amongst all players, not just governments, but also academia, the private sector, civil society, and the like. That was what created, ultimately, the IGF.
+
+[Speaker: Shane Tews]
+I want to introduce our other guest today, Dustin Loup, who is the co-chair of the IGF-USA, and just talk a little bit about how we want from this international body to bringing in the regional elements. So, there’s an international IGF every year, and then we have an IGF-USA every year. Dustin, can you just kind of elaborate on that for me?
+
+[Speaker: Dustin Loup]
+Dustin Loup: So, one of the great outcomes of the IGF has been the independent establishment of different national and regional initiatives that began to pop up shortly after the IGF was established. Each of these operates in an autonomous way, but there is some coordination that’s handled at the global IGF secretariat level to align the work and provide recognition, in a way, to the different national and regional IGFs. For example, you can pop up the IGF-USA and talk about the benefits of organic produce for maternal health, and call it the IGF-USA, and have it be recognized. You could call it the IGF-USA, but there’s a real baseline set of requirements that each IGF needs to meet in order to have that recognition and to participate with the other national and regional IGFs across the world, and I think at this point there are 131 different national and regional IGFs.
+
+[Speaker: Shane Tews]
+So we’ve mentioned there’s kind of a facility group that coordinates at the international level. Do we have themes? Do we have themes every year?
+
+[Speaker: Dustin Loup]
+Dustin Loup: We try to align them with the themes of the global IGF, but we organize it in an independent process. The way that this works is, at the beginning of each cycle, we’ll come together with different national and regional IGFs and talk about the issues that are most important from our local perspective and identify something like five to seven topics that we will build a collaborative session for at the global IGF, where NRIs — that’s just the acronym for national and regional initiatives — will collectively discuss the issues that we’ve identified from our local perspectives, and see how we can improve coordination globally, see where there’s alignment, where there’s not alignment, and just learn from each other.
+
+[Speaker: Dustin Loup]
+This year, those topics include things like the future of work and what that looks like in the digital age, the role of data for sustainability, the technical aspects of content regulation, the digital economy, and what cross-border regulations mean for digital sovereignty, cybersecurity policies and standards, access and digital inclusion, as well as just digital rights, and the impact of the internet on democracy generally speaking.
+
+[Speaker: Shane Tews]
+If someone’s listening to this and somehow has not been engaged in this fascinating world and would like to participate, how do you get engaged in this?
+
+[Speaker: David Gross]
+David Gross: Well, I think a little bit depends on which “this” we’re talking about. In the Internet Governance Forum, there’s really — on the global side, and it’s true nationally as well, Dustin can speak to that — but on the global, there are really no limits. It is open to everyone; there is no accreditation process. You have to show up either in person or virtually, depending upon the situation. In fact, in the very first one of the IGFs globally, which was held in Athens Greece, about a year after the World Summit on the Information Society took place, there was a bit of a kerfuffle about that. The Chinese, actually, were very upset about some NGOs that were coming in from Taiwan. And, as you know, the issue of Taiwan and the United Nations is a very sensitive one. The Chinese actually decided not to press the issue.
+
+[Speaker: Shane Tews]
+Dustin, what’s the best way to become engaged in IGF-USA’s program planning?
+
+[Speaker: Dustin Loup]
+Dustin Loup: So, we have an open steering committee that anybody can join. It operates year-round, and works to keep everything with the IGF-USA moving forward. This committee leads the planning for the annual event, as well as participating in the international IGF. If you want to get involved, we have a listserv that you can join by going to our website, which is igfusa.us, or your listeners are always welcome to reach out to me directly, and I can get them plugged into the process. And just make sure that you, you know, stay tuned for the open call for topics that we send out every year, and that’s a good place to start. And, if you just want to enjoy the end product and attend the event, you can register at igfusa.us.
+
+[Speaker: Shane Tews]
+As someone who’s been involved for many years, you know, it’s fun to do the entire year cycle. I always love when we actually do the poll… see what people care about. But, I know you’re about ready to have your event, so what’s on deck for the virtual event on July 22nd and 23rd?
+
+[Speaker: Dustin Loup]
+Dustin Loup: So, this year, we restructured it into a two-day conference in order to enable more participation in this new structure. We won’t have any concurrent panels, and, instead, each session will have a dedicated time slot, which will allow for more audience participation in each topic and discussion. You can take a look at our full agenda on our website, which, again, is igfusa.us. But, just really quickly to run through what we have in store: On day one, we will kick off by covering how the internet and technology have been used during the COVID crisis, followed by a great discussion on 5G and IoT [Internet of Things] that will begin with a fireside chat with FCC [Federal Communications Commission] Chairman Ajit Pai and DHS [Department of Homeland Security] Director Chris Krebs, moderated by yours truly, Shane Tews. And we’ll follow up with a session on encryption and lawful access, followed by the closing session for day one, which will focus on the challenges around content moderation and platform liability.
+
+[Speaker: Dustin Loup]
+To kick off day two, we’ll start the discussion with a panel on privacy in the age of COVID-19, and how that relates to healthcare. Then, we will look at what artificial intelligence machine learning and big data mean for the internet. Then, we’ll take a look at the security side of things, and the cyberattacks that a lot of users don’t see, or maybe don’t understand, and then we’ll look at the digital divide and what the impact of COVID-19 has been on learners and educators. And, finally, we’ll close out the conference with a focus on what all of this means for internet governance, and where do we go from here.

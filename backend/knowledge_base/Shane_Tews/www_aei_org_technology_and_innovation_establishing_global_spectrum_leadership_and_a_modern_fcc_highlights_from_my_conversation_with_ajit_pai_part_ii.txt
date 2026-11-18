@@ -1,40 +1,89 @@
 PAGE_TITLE: 
-	Establishing Global Spectrum Leadership and a Modern FCC: Highlights from My Conversation with Ajit Pai, Part II | American Enterprise Institute - AEI
+	Establishing Global Spectrum Leadership and a Modern FCC: Highlights from My Conversation with Ajit Pai, Part II
 
+[Speaker: Introduction / editorial context]
 With so many new innovations in technology, we have ventured beyond much of the original design for the existing regulatory frameworks, particularly around communications technology. Ajit Pai spent over a decade at the Federal Communications Commission (FCC) and recognized that changes in the regulatory structure were important to match the advancements in telecommunications and technology ecosystems.
+
+[Speaker: Introduction / editorial context]
 When he was chairman of the FCC from 2017–2021, Ajit developed a well-deserved reputation as a creative and effective thought leader on many core issues and the needed changes and policies to expand broadband access across America to enabling investment in the next generation communications networks like 5G. I recently had the opportunity to discuss his leadership at length when I interviewed him live at the AEI Enterprise Club retreat. Along with his role at AEI as a non-resident fellow, he is a partner in the global investment firm Searchlight Capital Partners.
-Below is the second part of an edited and abridged transcript of our discussion. We entertained live audience questions, and the discussion was just too good not to publish. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion
-here
-and the first half of the conversation’s highlights
-here
-. If you enjoyed the episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is the second part of an edited and abridged transcript of our discussion. We entertained live audience questions, and the discussion was just too good not to publish. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here and the first half of the conversation’s highlights here. If you enjoyed the episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Audience Member]
 Audience Member: Looking back, were there opportunities we missed because the FCC didn’t act or could’ve done better by something?
+
+[Speaker: Ajit Pai]
 Ajit Pai: I think a lot of the work we did, in terms of deregulation, should have happened a long time ago. For example, when I came into office, we still had rules on the books that required telephone companies to maintain the copper infrastructure they had in the ground at all costs, essentially. That made no sense to me. I mean, if you look at consumer demand of broadband, the data consumption is going up exponentially. But you have this dilapidated infrastructure .
+
+[Speaker: Ajit Pai]
 I remember when I was a staffer back in ‘07, ‘08 thinking, “This is insane. I mean, cable companies don’t have these ridiculous restrictions, and they’re able to invest and upgrade their networks. Why shouldn’t telephone companies have the same?” It took a decade until I got the corner office to finally make that happen.
+
+[Speaker: Ajit Pai]
 We still had on the books, until my last year in office, these rules that required certain companies that own infrastructure to essentially lease it out to competitors at government set rates and on government set terms. And this, too, made no sense to me. I don’t think that anyone would be willing to build a house if they knew the government could come in at any time and say, “You know what? You’ve gotta give your worst enemy a one-bedroom in the house or the entire house. And we’re going to tell you what the cost is going to be.” I mean, nobody would ever build houses. The same is true for broadband.
+
+[Speaker: Ajit Pai]
 And the same thing is true on the spectrum too. There’s bifurcated authority over spectrum. The FCC has jurisdiction over civilian spectrum, and the Department of Commerce has jurisdiction over government spectrum. We’re unique among OECD countries in that bifurcation. It causes all kinds of inefficiencies. I’ve long thought that the government should just collapse the two and give the FCC plenary authority there. If they did, then we’d be able to move a lot faster and a lot smarter than we currently are. So, that’s one change.
+
+[Speaker: Ajit Pai]
 One would think that the predicate for any kind of regulation should be a market failure. The correction of which results in more benefits to the American public than detriments. But we never did that. And that’s part of the reason why I created what’s called the Office of Economics and Analytics, to make sure that economists are at the table doing that.
-And as I mentioned earlier on, to me, one of the most powerful forces in government is inertia. We’re going to keep doing things because that’s the way we’ve always done things. I didn’t have patience for that,  and I wish my predecessors hadn’t either.
+
+[Speaker: Ajit Pai]
+And as I mentioned earlier on, to me, one of the most powerful forces in government is inertia. We’re going to keep doing things because that’s the way we’ve always done things. I didn’t have patience for that, and I wish my predecessors hadn’t either.
+
+[Speaker: Speaker not identified]
 What role should the Federal Trade Commission (FTC) or FCC play in regulating our social media channels?
+
+[Speaker: Speaker not identified]
 I’m not a big fan of common carrier regulation, generally speaking. And the basic reason is that common carrier regulation, in my view, is appropriate only when there is a market failure and/or the industry is a natural monopoly. So, the only alternative is to essentially treat that company as if it were the AT&T of 100 years ago.
+
+[Speaker: Speaker not identified]
 When it comes to social media, things change pretty quickly. Even now, it’s kind of funny to me that the FTC has Facebook squarely in its sights. Prohibiting them from doing anything in the social media space is sort of moot because TikTok is eating their lunch, right? If I’m in Meta, then I’m much more worried about TikTok than I am of anything else. So, social media is much more competitive, number one.
+
+[Speaker: Speaker not identified]
 Number two, I’m not convinced that either the FCC or the FTC has the legal authority to impose common carrier regulation, which I know is kind of an arcane thing. I looked at the law, but until Congress updates in law, at least in the FCC, the FCC only has common carrier jurisdiction over telecommunications companies, which this is not. This is higher up in the stack. So, that’s one of the concerns I’d have about common carrier regulation.
+
+[Speaker: Speaker not identified]
 I also think it could also cause some unintended consequences. I mean, investment decisions depend a lot on the regulatory treatment of things. And I wouldn’t want to have the government artificially try to channel investment in different areas by imposing common carrier regulation on social media companies.
+
+[Speaker: Speaker not identified]
 That said, I do have a lot of skepticism about and very little sympathy for these companies, which were banging the drum in favor of net neutrality, forcing network operators to abide by these rules because they were concerned the network operators would censor content, who are now turning around, doing the exact same thing. I think the primary avenue for reform would be sort of closer interpretation of what exactly Section 230 means.
+
+[Speaker: Speaker not identified]
 Is there any nuance to how you would treat companies at different levels of the “stack” and their obligations under Section 230 as they start to look a little bit more like utilities, for instance, and less like the App of the Week or Year?
+
+[Speaker: Speaker not identified]
 That’s a good question. I mean, from a consumer perspective, the question is, “Am I free to do what I want on the internet or not?” And if the answer is no, then, to me, at least there should be regulatory parity into how we treat everybody in the stack.
+
+[Speaker: Speaker not identified]
 If they have market power, then, as you said, they do smack more of a highly regulated utility, like a water company, as opposed to, say, a social media company that has to compete with a bunch of other social media companies. So, you know, maybe market power should be the decisive factor here.
+
+[Speaker: Speaker not identified]
 Where do we find and cultivate more agency leaders like you?
+
+[Speaker: Speaker not identified]
 You’re very kind to say that. Often, I felt like that annoying kid, when you were in college, who ran for student government on a platform of getting rid of student government. It’s like, I remember thinking one day, when I was getting all these arrows, like, “Oh, my God. That’s me. How did this happen?”
+
+[Speaker: Speaker not identified]
 I’d like to think that in any administration, they would want to pick people like that, people of action. And so, one of the things I did with my team was to say, “Look, just let’s assume that we started from scratch. There were no regulations at all. What rules would you write for the road?”
+
+[Speaker: Speaker not identified]
 And whatever the delta is between where we are now and whatever that is you came up with, to the maximum extent of our legal authority, let’s get there. Whatever it is, as the leader, I’ll take the heat for doing it.
+
+[Speaker: Speaker not identified]
 If you’re gonna go into public service, make it meaningful. There are a few people like that out there, I hope, still kicking around.
+
+[Speaker: Speaker not identified]
 I think that’s one of the mistakes some Republicans make when they get these jobs is to think that, you know, the career staff is just the enemy, just run over them as much as you can and just get your stuff in. Like, to me, it’s harder to do it my way. But ultimately, we got a lot more results across the board because I really engaged the staff as a partner. And I’m really, really proud of that to this day.
+
+[Speaker: Speaker not identified]
 What can administrative law agency leaders like yourself do to reform the system so it’s more responsive to the needs of those outside of government?
+
+[Speaker: Speaker not identified]
 So, I think one of the things that Washington could do is force Congress to actually legislate on these questions. I think, a lot of times, one of the problems for administrative agencies, is they’re always trying to shoehorn whatever the current thing is into these regulatory or statutory frameworks that were established, in some cases, decades ago. And, you know, the FCC has certainly done that, the FTC, all these alphabet soup agencies do it. And part of the reason is that Congress just doesn’t legislate all that often on some of the core questions. Fundamental questions have to be decided by the people’s elected representatives. That should be what every student learns in civics when they’re in grade school.
+
+[Speaker: Speaker not identified]
 If you take that seriously as I do, it would seem to follow that now Congress needs to take the reins back and start legislating on what should be the rules on blockchain and crypto, for example. But I don’t want the US Securities and Exchange Commission just making it up because of the temporary majority they might have right now. What should be the rules on artificial intelligence? Like, I don’t want some hodgepodge of agencies making up because Congress hasn’t legislated. I want Congress to put on the page the basic principles for all of these areas. I mean, that’s what we elected them for, right, to make the rules.
+
+[Speaker: Speaker not identified]
 The administrative state doesn’t make the rules, they execute the rules. And so, it’s just a fundamental fact of government that has been lost, I think, over the last 20 years, when it comes to technology and other sectors. And I would hope that they would start to return to that fundamental understanding.

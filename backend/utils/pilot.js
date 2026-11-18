@@ -4,7 +4,10 @@ const path = require('node:path');
 const { DatabaseSync } = require('node:sqlite');
 const { PostgresStorage } = require('../storage/postgres');
 
-const MODEL = 'Qwen/Qwen3.8-Flash';
+const { TEST_MODELS } = require('./modelTesting');
+const DEFAULT_MODEL = TEST_MODELS.find(model => model.id === 'zai-org/GLM-5.3-Flash');
+const MODEL = DEFAULT_MODEL.id;
+const MODEL_PARAMETERS = Object.freeze({ ...DEFAULT_MODEL.parameters });
 const MAX_OUTPUT_TOKENS = 1024;
 const MAX_INPUT_BYTES = 120000;
 const MAX_QUESTION_CHARS = 6000;
@@ -44,14 +47,14 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   );`);
   }
 
-  // Together's public Qwen3.8 Flash rates, checked October 29, 2026.
+  // The ordinary-chat model shares the checked pricing used by Model Tester.
   // Estimates remain separate from the provider's final bill.
-  const inputRate = positiveNumber(env.CHATBOT_INPUT_USD_PER_MILLION, 0.15);
-  const outputRate = positiveNumber(env.CHATBOT_OUTPUT_USD_PER_MILLION, 0.47);
+  const inputRate = positiveNumber(env.CHATBOT_INPUT_USD_PER_MILLION, DEFAULT_MODEL.inputRate);
+  const outputRate = positiveNumber(env.CHATBOT_OUTPUT_USD_PER_MILLION, DEFAULT_MODEL.outputRate);
   const dailyBudget = positiveNumber(env.CHATBOT_DAILY_ESTIMATE_USD, 0.50);
   const dailyQuestions = Math.floor(positiveNumber(env.CHATBOT_DAILY_QUESTIONS, 50));
   const personQuestions = Math.floor(positiveNumber(env.CHATBOT_PERSON_DAILY_QUESTIONS, 30));
-  const priceSource = env.CHATBOT_PRICE_SOURCE || 'Together Qwen3.8 Flash model page, checked 2026-10-29; estimates, not final billing';
+  const priceSource = env.CHATBOT_PRICE_SOURCE || DEFAULT_MODEL.priceSource;
   const accounts = new Map();
   let setupError = null;
   for (const [id, label, password] of [
@@ -256,4 +259,4 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     dataDir: root };
 }
 
-module.exports = { createPilot, MODEL, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS };
+module.exports = { createPilot, MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS };

@@ -1,109 +1,44 @@
 PAGE_TITLE: 
-	COVID-19 and Broadband Networks: Highlights from My Discussion with Roger Entner | American Enterprise Institute - AEI
+	COVID-19 and Broadband Networks: Highlights from My Discussion with Roger Entner
 
-With so many people working remotely during the COVID-19 pandemic, how are broadband networks holding up? Has the type of content people access online changed? And what implications could this have for broadband networks and for policy in the long run? Roger Entner, a telecommunications expert and founder of telecom research and consulting firm Recon Analytics, joined me on my new tech policy podcast, “
-Explain to Shane
-,” to discuss these questions and more.
-Below is an abbreviated and lightly edited transcript of our conversation. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the Explain to Shane podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Tews:
-Looking at the United States, how
-are our networks faring so far?
-Entner: Our networks are performing quite well. We are seeing that our peak
-usage, which is always around 9 pm wherever you are, is up around 30 percent to
-35 percent. We are also seeing that network usage is broadening much more. The
-busy hour, while still peaking somewhere around 7 to 9 pm, starts now at around
-8 am to 9 am because consumer traffic is what is really driving internet
-traffic around the world. It’s not businesses that are the heavy data users,
-it’s consumers. And it is consumers watching video. Video is really the
-application that taxes networks the most. The networks are holding up well,
-because networks are being built in the United States with one to
-one-and-a-half years of forward capacity in mind, and that is usually 40 to 45
-percent per year. We’re still way below that, so everything is still performing
-very well.
-That’s great news to hear. On a recent Comcast media call, they
-said the first cities where they saw the uptick were Seattle and San Francisco,
-having tech workers that are now at home. So they saw Microsoft, Google, Apple,
-Twitter, Facebook, all the other companies that are like that working from
-home. And they used that as a new balance, as the rest of the world figured out
-how to video conference, use VPNs and other tools that you should be using to
-have a safe online experience, expand across the United States.
-American operators are investing, and
-have been investing, far more than operators in other countries. Now and then
-when you go to Europe, people ask, “Why are American carriers charging more
-than European carriers?” And the answer is that they’re investing twice as much
-into the network. Some of the last-mile problems that we seem to be seeing in
-Europe we largely don’t see here. Some companies have reported they’ve seen a slow-down
-in some markets, but when you look at it — yes, the speed was going down from
-95 megabits per second (Mbps) to 45 Mbps. That’s still more than what my mother
-gets in Germany! Even though that’s a drop of a substantial amount. But that is
-really the exception rather than the rule. For example, here I’m using Verizon
-Fios, and I have a Gigabit connection — I don’t see anything degrading. The Networks
-are holding up.
-It’s been interesting looking at the statistics I’ve seen from
-some companies. I think Comcast said they were up 34 percent last week, and
-they’re expecting that to continue. We’re seeing a lot of difference in Wi-Fi
-calling and VPN usage. So Wi-Fi calling for AT&T I think was up about 67
-percent on average by Saturday, and consumer voice is up about 63 percent. So
-people are using the tools.
-Absolutely. But even when you look at the Seattle internet exchange,
-traffic is up by about 40 percent. So I would say Seattle, San Francisco bay
-area, New York are bellwethers of what we will see in the rest of the country.
-Because these people are in curfew, they have to work from home, and that’s
-about what we see as an increase, it’s about 40, 50 percent. Now when it moves
-to Chicago we see the same increase, and when it moves to Dallas, Denver, Phoenix,
-and Atlanta we will see the same pattern repeating itself. And we’ll see how
-long this continues.
-Looking at the Verizon usage data that they have in their press
-release, it says they saw 106 million hours of streaming content, 190 billion
-photos uploaded, and 38 billion songs downloaded. And their virtual private
-networks are up 52 percent and the cloud tools are up 47 percent. So I think
-people are catching on, they’re getting this.
-VPN is business usage. The gating factor is actually how many VPN ports
-your company has at their physical location, rather than the network. The other
-thing I thought was very interesting was that Microsoft reported a more than
-700 percent increase in their cloud application usage. Microsoft is the biggest
-provider of cloud email, with Office365. They’re using that for commercial
-clients, so many more things will move to the cloud now, because you want to
-have that flexibility. Companies that have been laggards are facing a wake-up
-call that they have to make their company flexible. And then they need to go to
-companies like Microsoft or AT&T and get a solution that helps to become
-indifferent of where the worker is physically located. This way companies are
-not dependent on work in the office or at home, and the flexibility will make
-the company actually faster.
-I also found the data on how many more things are being attached
-to the network fascinating. So we know that the Internet of Things coming in is
-pushing a lot more things online, and we’re seeing a lot more people attach
-while at home.
-Yes, because they’re at home more. They are saving half an hour or an
-hour a day that they’re not commuting, and they’re tinkering around with their
-network and with devices they can attach to their network. They want to have
-video at their door and install that, they want to have motion sensors and all
-the other things and they attach them to their networks. When people get idle,
-they get busy, right?
-Good point. Well Roger, we see our world has changed the last
-couple of weeks and it’s going to continue to move forward. Any prediction what
-you think will be going on with network operations in the next month and coming
-year?
-I think the patterns we’re seeing with the bellwether states, New York,
-California, Washington, will extend to the rest of the country. I think some of
-the changes we have seen will be very difficult to roll back. If it’s okay not
-to have usage caps in an emergency, it’s hard to explain to customers why there
-should be usage caps in normal times. I think it will also be difficult to
-explain to employees why they can’t work at home after all this. We all have
-teething problems when you move to your home office, but once that’s been fixed
-I think that will be a new standard. It will change traffic patterns, it will
-change real estate, all these things will change. I think personally, the huge
-office floors we see in open-office designs might be rethought, because that’s
-very conducive to spreading things. We’re going to be more sensitive and also a
-lot more robust to these challenges that come with having a pandemic around
-that’s life-threatening.
+[Speaker: Introduction / editorial context]
+With so many people working remotely during the COVID-19 pandemic, how are broadband networks holding up? Has the type of content people access online changed? And what implications could this have for broadband networks and for policy in the long run? Roger Entner, a telecommunications expert and founder of telecom research and consulting firm Recon Analytics, joined me on my new tech policy podcast, “Explain to Shane,” to discuss these questions and more.
+
+[Speaker: Introduction / editorial context]
+Below is an abbreviated and lightly edited transcript of our conversation. You can listen to the podcast here and read our full discussion here. You can also subscribe to the Explain to Shane podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Speaker not identified]
+Tews: Looking at the United States, how are our networks faring so far?
+
+[Speaker: Speaker not identified]
+Entner: Our networks are performing quite well. We are seeing that our peak usage, which is always around 9 pm wherever you are, is up around 30 percent to 35 percent. We are also seeing that network usage is broadening much more. The busy hour, while still peaking somewhere around 7 to 9 pm, starts now at around 8 am to 9 am because consumer traffic is what is really driving internet traffic around the world. It’s not businesses that are the heavy data users, it’s consumers. And it is consumers watching video. Video is really the application that taxes networks the most. The networks are holding up well, because networks are being built in the United States with one to one-and-a-half years of forward capacity in mind, and that is usually 40 to 45 percent per year. We’re still way below that, so everything is still performing very well.
+
+[Speaker: Speaker not identified]
+That’s great news to hear. On a recent Comcast media call, they said the first cities where they saw the uptick were Seattle and San Francisco, having tech workers that are now at home. So they saw Microsoft, Google, Apple, Twitter, Facebook, all the other companies that are like that working from home. And they used that as a new balance, as the rest of the world figured out how to video conference, use VPNs and other tools that you should be using to have a safe online experience, expand across the United States.
+
+[Speaker: Speaker not identified]
+American operators are investing, and have been investing, far more than operators in other countries. Now and then when you go to Europe, people ask, “Why are American carriers charging more than European carriers?” And the answer is that they’re investing twice as much into the network. Some of the last-mile problems that we seem to be seeing in Europe we largely don’t see here. Some companies have reported they’ve seen a slow-down in some markets, but when you look at it — yes, the speed was going down from 95 megabits per second (Mbps) to 45 Mbps. That’s still more than what my mother gets in Germany! Even though that’s a drop of a substantial amount. But that is really the exception rather than the rule. For example, here I’m using Verizon Fios, and I have a Gigabit connection — I don’t see anything degrading. The Networks are holding up.
+
+[Speaker: Speaker not identified]
+It’s been interesting looking at the statistics I’ve seen from some companies. I think Comcast said they were up 34 percent last week, and they’re expecting that to continue. We’re seeing a lot of difference in Wi-Fi calling and VPN usage. So Wi-Fi calling for AT&T I think was up about 67 percent on average by Saturday, and consumer voice is up about 63 percent. So people are using the tools.
+
+[Speaker: Speaker not identified]
+Absolutely. But even when you look at the Seattle internet exchange, traffic is up by about 40 percent. So I would say Seattle, San Francisco bay area, New York are bellwethers of what we will see in the rest of the country. Because these people are in curfew, they have to work from home, and that’s about what we see as an increase, it’s about 40, 50 percent. Now when it moves to Chicago we see the same increase, and when it moves to Dallas, Denver, Phoenix, and Atlanta we will see the same pattern repeating itself. And we’ll see how long this continues.
+
+[Speaker: Speaker not identified]
+Looking at the Verizon usage data that they have in their press release, it says they saw 106 million hours of streaming content, 190 billion photos uploaded, and 38 billion songs downloaded. And their virtual private networks are up 52 percent and the cloud tools are up 47 percent. So I think people are catching on, they’re getting this.
+
+[Speaker: Speaker not identified]
+VPN is business usage. The gating factor is actually how many VPN ports your company has at their physical location, rather than the network. The other thing I thought was very interesting was that Microsoft reported a more than 700 percent increase in their cloud application usage. Microsoft is the biggest provider of cloud email, with Office365. They’re using that for commercial clients, so many more things will move to the cloud now, because you want to have that flexibility. Companies that have been laggards are facing a wake-up call that they have to make their company flexible. And then they need to go to companies like Microsoft or AT&T and get a solution that helps to become indifferent of where the worker is physically located. This way companies are not dependent on work in the office or at home, and the flexibility will make the company actually faster.
+
+[Speaker: Speaker not identified]
+I also found the data on how many more things are being attached to the network fascinating. So we know that the Internet of Things coming in is pushing a lot more things online, and we’re seeing a lot more people attach while at home.
+
+[Speaker: Speaker not identified]
+Yes, because they’re at home more. They are saving half an hour or an hour a day that they’re not commuting, and they’re tinkering around with their network and with devices they can attach to their network. They want to have video at their door and install that, they want to have motion sensors and all the other things and they attach them to their networks. When people get idle, they get busy, right?
+
+[Speaker: Speaker not identified]
+Good point. Well Roger, we see our world has changed the last couple of weeks and it’s going to continue to move forward. Any prediction what you think will be going on with network operations in the next month and coming year?
+
+[Speaker: Speaker not identified]
+I think the patterns we’re seeing with the bellwether states, New York, California, Washington, will extend to the rest of the country. I think some of the changes we have seen will be very difficult to roll back. If it’s okay not to have usage caps in an emergency, it’s hard to explain to customers why there should be usage caps in normal times. I think it will also be difficult to explain to employees why they can’t work at home after all this. We all have teething problems when you move to your home office, but once that’s been fixed I think that will be a new standard. It will change traffic patterns, it will change real estate, all these things will change. I think personally, the huge office floors we see in open-office designs might be rethought, because that’s very conducive to spreading things. We’re going to be more sensitive and also a lot more robust to these challenges that come with having a pandemic around that’s life-threatening.

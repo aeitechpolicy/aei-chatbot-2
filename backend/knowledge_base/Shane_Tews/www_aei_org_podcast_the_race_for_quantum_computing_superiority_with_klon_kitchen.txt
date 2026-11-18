@@ -1,18 +1,17 @@
 PAGE_TITLE: 
-	The Race for Quantum Computing Superiority (with Klon Kitchen) | American Enterprise Institute - AEI
+	The Race for Quantum Computing Superiority (with Klon Kitchen)
 
-Due to their
-ability to calculate multiple complex variables at the same time, quantum
-computers are poised to permanently change how technology exists in society.
-But with the advent of quantum computing comes several risks to the US across a
-range of fields, including national security. How can the US sufficiently
-advance its quantum computing capabilities and manage the risks that come with
-them?
-On this episode,
-Shane
-is joined by
-Klon Kitchen
-, an AEI resident fellow in foreign and defense policy. Klon writes frequently on the intersection of technology and national security, and recently published an AEI report titled “
-Quantum computing: A national security primer
-.” He joins the podcast to discuss this report and explain what’s at stake for the US in the race for quantum computing superiority.
+[Speaker: Introduction / editorial context]
+Due to their ability to calculate multiple complex variables at the same time, quantum computers are poised to permanently change how technology exists in society. But with the advent of quantum computing comes several risks to the US across a range of fields, including national security. How can the US sufficiently advance its quantum computing capabilities and manage the risks that come with them?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by Klon Kitchen, an AEI resident fellow in foreign and defense policy. Klon writes frequently on the intersection of technology and national security, and recently published an AEI report titled “Quantum computing: A national security primer.” He joins the podcast to discuss this report and explain what’s at stake for the US in the race for quantum computing superiority.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

@@ -1,0 +1,155 @@
+PAGE_TITLE: 
+	How to Improve Mobile-Device Security (with Kevin McNamee) — full transcript
+
+[Speaker: Introduction / editorial context]
+AEI Explain to Shane: How to Improve Mobile- Device Security (with Kevin McNamee) Episode # 56 | April 19, 2022 | Shane Tews and Kevin McNamee
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane." I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. Cyber threats continue to have an immense impact on society, and security risks to mobile devices continue to be at an all-time high. For several years, Nokia has been documenting the most pressing threats around mobile devices in its annual Threat Intelligence Reports that track how malware problems are placed on devices through real-time analytics. According to Nokia's intelligence reports from 2020 and 2021, Trojan malware infections on both computers and mobile devices are on the rise with privacy and security controls being a priority to enable a first level of security protection through a security review process. This ensures that an app meets the user protection guidelines before it becomes available to a consumer to download onto their device. And yet there are legislative proposals in Congress that would weaken mobile device protections by demanding all software can be downloaded on any device without a security review, even though the Department of Homeland Security (DHS) has a daily campaign encouraging the use of more security on mobile devices and laptop computers. DHS specifically highlights that the act of "sideloading" an app is a bad idea because it avoids the first layer of protection: the vetting process that reviews the app's security and privacy compliance. Nokia's threat report points out that sideloading is a very popular way to push nalware onto users. It's also a common wav for a consumer's financial and potentially other personal data to be placed at risk. What can we do to keep our mobile devices out of harm's way? Today's guest is Kevin McNamee. Kevin is the head of Nokia's Threat Intelligence Lab, which analyzes thousands of mobile malware samples every day to create the detection rules that power Nokia's network-based malware detection system. Kevin was previously director of security research at Bell Labs, where he specialized in the analysis of malware propagation and detection. Kevin joins the podcast to explain how we can secure mobile devices both
+
+[Speaker: Shane Tews]
+today and in the future through a better understanding of how the exploits are disseminated to ensure better protection for both the device and the user's data stored on the device and in the cloud. Kevin, thank you for joining us on "Explain to Shane." I'm a huge fan of Nokia's yearly Threat Intelligence Report, and I found your recent findings very important on how much data you remind users come off a mobile device and how important it is to have device security. Because I know that's something that we remind people, but they just, you know, they just keep adding apps to it. And we have a whole new challenge which Congress is putting forward on sideloading. So it's made making sure that we can keep device security front and center even more important. So tell us about your report.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Nokia has got a product that we deploy in carrier networks around the world. And what it does is: It's a system that's designed to monitor the network traffic and look for evidence of malware infections. So that's where the data comes from. Certain customers of ours will share aggregated anonymized data and feed it back in. And so that's what makes up the threat report. We cover mobile networks, and we've also got some fixed broadband networks we cover. So that gives us sort of a good scope for figuring out what's going on. We've been producing them for the past couple of years and they're usually quite well received. The key thing is: It's, like, real data from live networks, so that's always good.
+
+[Speaker: Shane Tews]
+Shane Tews: So you're seeing real aggregated data. What have you seen [that has declined versus what we're seeing an uptick in?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Well, what we've seen over the past few years has been, of course, a shift from the traditional windows laptop and PC platforms to malware transitioning to the smartphone. That seems to make a lot of sense because that's now the primary device that most people are going to use to access the network for their communication purposes, for their email, for banking, for all sorts of things. So typically malware will follow the money and will follow the platform that people are using for their network connectivity. So that's one thing. I think the other thing is: We've also noticed Internet of Things (loT) is a big area that's starting to expand. And particularly with 5G networks coming along, there's an anticipation of a great expansion of the number of loT devices that are going to be deployed out there. So that's an area that we've been looking at fairly closely and expect to see more activity in that area going forward.
+
+[Speaker: Shane Tews]
+Shane Tews: I know loT is a specific challenge because the device manufacturers say if they make it heavy or put friction points into their devices, they're less apt to be the ones that consumers want. Consumers hate friction. But at the same time, then you're assuming a lot onto the network because the device shows up, hopefully doesn't have a static password, but it probably does if it has a password at all. And then you plug into your device and it's like, "go." So is there anything that you would suggest that consumers think about when they're buying these loT devices? I realize a lot of them you're talking about are probably enterprise, but our focus is more on people that are running around
+
+[Speaker: Shane Tews]
+buying stuff for their house.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah, no, I think with loT devices, the thing is that there's a great variety of devices. So I think ones consumers would be concerned about are mostly devices they would deploy inside their homes. So for things like your smart fridge and your thermostat and door-opening stuff, it's relatively well-protected from what we've been looking at lately, which is loT botnets. And these tend to attach devices that are visible from the internet. And there's a lot of activity going on there because these botnets, what they do is: As soon as the device gets infected with some sort of bot, with malware, it starts scanning, looking for other devices. And when it finds one, it compromises them and adds them. So the botnet sort of grows with time and that's been an issue. But as I said, for the general consumer, it's not so much a problem because the attackers aren't really trying to break into the residential home and infect their smart fridges. They're mostly interested in internet-enabled, internet-visible devices.
+
+[Speaker: Shane Tews]
+Shane Tews: That's a feeling of relief, even though as a fan of Silicon Valley, I always remember that Gilfoyle actually saved the day through the loT-enabled refrigerator.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah, I mean, there's been lots of evidence for, you know, all of a sudden people discover that their video surveillance camera that they've deployed outside has been hacked and now anyone on the internet can view what's going on in their driveway. So, I mean, I'm not saying it doesn't happen, but it's not as big as the loT botnets that are used in these massive distributed denial of service (DDoS) attacks and stuff that you—it is more for the professional cybercriminals and stuff like that.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah. You reminded me that Steve Jobs early on—| think it was in 2007— commented that when Apple was trying to create their platform really, as they were, you know, it was a nascent iPhone that was coming out. He said, you "We're trying to develop a device that could have protections from virus[es], malwares, all the important things that you want to, you know, keep away from your consumer on this mobile device." And you also want to figure out how to make the information stay private, which is where they've done a lot more about that in the last two years with app tracking transparency. But he noted that sometimes these goals are diametrically opposed because you're trying to make it easy tor the consumer to use the device and at the same time protect the device. And so what is it? I know you get into this a bit in your report. I know that Apple has a better reputation than Android. Why is that when it comes to security?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: It's actually a couple of factors. And I think first of all, both companies, both from the Android side and from the iPhone side, they' ve actually done a pretty good job of securing the device itself. If you compare it, for example, to the IBM, Microsoft Windows PC platform, okay, completely wide open, very little control on who, what was—l mean, everybody was allowed to write apps for it. You could get apps from anywhere. You could do whatever you want. And they had a fairly substantial malware issue. I mean, that was: Viruses were invented and then you had bots and you had all sorts of attacks going on and
+
+[Speaker: Kevin McNamee]
+things like that. Definitely both Apple and Android (Google) have done a pretty good job of securing the actual devices themselves. And the way they've done this is they've basically—the apps that run on these devices run in a sandbox environment where they only basically have impact on themselves. They can't see other apps on the device. They can't, you know, they can't get access to the disc storage devices or the memory that's used by other apps. So they're fairly isolated. And even if they go rogue, the damage they can do is fairly limited, okay? So that's the first thing. And then I think Apple has got more success creating a secure environment, because they've basically secured the app supply chain. Basically, if you want to get an app for an iPhone, you go to the Apple store and that's the only source for those apps. So they've, I mean, anyone can write an app for Apple's phone; it's just that you have to meet the criteria that Apple set. You have to go out and get a developer's license. You get a certiticate they give you that you can used to sign your application. You submit your app to them, they check it out, they make sure it matches their policy, make sure there's no malware in it, and then they make it available in the store. So they've sort of secured the app supply chain. I'd say that's what they've done now. Now, Google has also taken steps in recent years to do that. They've taken a slightly different approach. They've come out with something called, well, their app store is Google Play. And they've come out with a system called Google Play Protect, which is built into the Android. And what it does is: When you install an app, whether it comes from a third party or from Google Play, it will verify that that app is suitable for, you know, it does not contain malware and it's been suitably vetted. So that's a slightly different approach, but those are the two main things: secure environment and securing the app supply chain.
+
+[Speaker: Shane Tews]
+Shane Tews: That's really helpful. The Department of Homeland Security here in the United States has been recently calling for enhanced protection in what they call the "Shields Up" campaign, just because there's so much churn in the global world right now. And we're seeina a lot more malware and it's important to enhance your stature, I guess, is the best way to say it. But they've been calling since 2017 about sideloading of apps and concerned about unauthorized apps, which do also go back to Microsoft, not just Apple and Google. Can you explain what the challenge is with sideloading? I know you're talking about how we're making the hardware kind of harder to get at, but it seems like if you are—it's the software now that's the challenge.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah, certainly, I think—take a little step backwards. Why are we talking about apps? And the reason is this: Like, the phones themselves are pretty much secure. I mean, phones have been hacked using, you know, network-based attacks, using vulnerabilities, using a whole bunch of different ways, but that's not the common way. The most common way to get malware onto a smartphone is: You take an app and you stick the malware on the app and then you get someone to download it and install it on their phone, okay? That is by far the most common way to get malware onto one of these devices.
+
+[Speaker: Kevin McNamee]
+And so what that means is that it's the supply chain for the apps that becomes the thing that people attack. Apple is completely locked down. Google, when you get the phone by default, most Androids will have smart sideloading turned off. And so you have to go to Google Play to get the apps. But the user—and I think it's valid that the user can choose what they want to put on their devices. It's their device after all. So they can turn off sideloading—sorry, turn on sideloading— and then what that means is: They can basically download apps from anywhere, okay? And a lot of app stores are very good and very safe and that's fine, but there are some that are not. And there's also the possibility that I could send you, for example, a web link and you click on it and they'll install the app on your phone. So that leads to this sort of phishing type of activity where people are sending phishing attacks, emails, text messages with links, "click here to get the app," etc., and people do that. And then they get into trouble with malware on their devices.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, we've definitely seen our devices become more important to us during COVID when we were all home, and mobile has had a huge uptick. And I know you had a news release recently about banking malware and threats around that. So what's the main concern in that space?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: There's different types of malware. And I think the malware that goes in and steals your money or steals your identity is certainly the highest threat level. So you have to take extra care. A banking Trojan can literally empty your bank account in a matter of minutes if it manages compromise you. There's other identity theft too. If people get in and they take things like your social insurance number and other personal information like that, they can then use that to, you know, in the background to open up, you know, accounts, to do other things. So there's more than just the banking Trojan. Anything that gets at your identity can be a major problem for you. So that's what | [consider] the biggest concern. I mean, there's also ransomware, for example. For a smartphone owner or a laptop owner, ransomware is not such a big issue because all you really have to do is make sure you've got a backup. It your phone just talls out of your pocket and gets run over by a bus, it's gone. If you get ransomware in your phone and it encrypts all your data, it's gone. So if you have a backup it's pretty straightforward to fix that. But the banking Trojan, once the money is gone. It's going to be difficult to replace.
+
+[Speaker: Shane Tews]
+Shane Tews: So it sounds like you're talking about perhaps not actually downloading what you think you have. You're not downloading the Chase app; it looks very similar to it. So it's an imitation app. Let's say I am an idiot and | do that. How do I best remove it, like, once | realize l've made a mistake?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: It's actually, for the most part, quite simple because [in] most apps, there's a teature on the phone to uninstall the app. So you go in and you just go through that and that will get rid of, like, 90 percent of the malware you'd potentially get on your phone. But apps can also, they can disguise themselves and they can protect themselves from being uninstalled, okay? They can sort of bury themselves deep within the operating system and out of sight. With those ones, there's always the simple thing to—you can do a sort of factory reset on
+
+[Speaker: Kevin McNamee]
+the device, okay?
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Which sets it back to the way you got it when you bought the device, and that will clean off any additional apps that were installed on it after you purchased the device. Ihen—and here's the dangerous part—then you want to restore the apps, say, for example, from the cloud somewhere where you've backed them up, you know, whether it's, you know, whatever cloud you store your stuff in. And you don't want to go back to the cloud and reinstall the malware. So you want to [think] about the things you put back on your device.
+
+[Speaker: Shane Tews]
+Shane Tews: It might be a little time consuming. I'm going to put them back on one by one.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah. And make sure you know what the app is and what it does. And don't install the one that impacted you just before, you know, the phone blew up.
+
+[Speaker: Shane Tews]
+Shane Tews: Don't do the same thing again. That's very smart advice.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Exactly. And if all else fails, you can also do a hard reset on the device. You can take it in and have it reflashed. I mean, that's done, you take it back to where you purchased it and they can do a hard reset. So that's another option when all else fails.
+
+[Speaker: Shane Tews]
+Shane Tews: That sounds like that would also solve another issue l've been reading quite a bit about lately which are zombie apps, where they just stay in your phone. You forget, I mean, l every once in a while have to do just a—l'm doing a "spring cleaning, " I'm calling it right now where I'm like, I read this article, it sounds like a great idea, I download the app, and then I probably don't click on it twice, but it's still active in the background. And you forget about that. And it's stealing information on you. So, same situation with the zombie app?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah, exactly the same. Like, sometimes they can actually physically conceal themselves. So in other words even when you go into your list of apps that are installed, it doesn't look like it's there. It looks like it's something else. So it can be quite tricky. But generally speaking, it you go in, you can always find it in that uninstall dialogue on your phone where you can actually say, "Take this app and get rid of it. Uninstall it." You have to be—I mean, they can be quite clever in impersonating other software. Back in 2013, I did a Black Hat presentation where we actually took a copy of the Angry Birds game—you know, a very popular game-and sort of basically downloaded a copy of it, and then just using standard software development tools, opened it up, and we actually put some spyware into that app and then, you know, wrapped it up, repackaged it, and, you know, basically we used it for a demonstration to show the fact that it could be done. But the thing that leveraged that is, like, apps are signed by the developer, okay? So, using digital certificates, and that's one thing | think that both Apple las done a very good job of ensuring that the apps are signed, so is Google ut there could be a lot more done there so that when vou aet an app on voui phone, if it displayed the certificate of the person that created the app in a reasonable way, that would give you a little bit more confidence that your app
+
+[Speaker: Kevin McNamee]
+was good. So l think in terms of securing the app supply chain that there's a few things that could be done by the major players aside from completely locking down the app store. If you have a good app signing certificate type of policy that works out very well, people know at least who wrote the app they're getting and installing. Probably, I think the Google Play Protect is a good idea. You basically have an app that checks things on your phone as sort of, like, almost an antivirus app that you have on your phone. I think that's a good idea too. So that's other techniques for ensuring that app supply chain is secure.
+
+[Speaker: Shane Tews]
+Shane Tews: And for the individual user, how does the multifactor authentication-how much does that cut down for stealing personal information? Because it seems like a pretty easy to-do, but again, it's a friction point.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah. When you're doing anything that's got the potential for loss of identity theft or loss of money or whatever, I would recommend insisting on multifactor authentication. In other words, if I'm dealing with my bank and they're not using multifactor authentication, I think there's a problem.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: It's invaluable. It provides just an extra level that you think—because one of the things that the, for example, banking Trojans, do lis): You think you're visiting your bank and you're typing in your credentials, but you're not really doing it. You're actually going to some fake website. I mean, it's complicated; it's a complex environment. It's the malware on the phone combined with a fake website combined with a whole bunch of other things that conspires to sort of lure you in. Multifactor authentication provides a fairly large protection against a lot of those techniques that they use. So I would recommend definitely using that if you can.
+
+[Speaker: Shane Tews]
+Shane Tews: So I'm looking at the most prolific malware by class in your report in 2021. And we've talked about ransomware, banking Trojans—miner? Is that just information mining?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Vieaniaciunly, sorry, not information mining. What it is isa coin miner-a
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, okay.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: And what it does, this is like: There's a whole cottage industry developed over it. The way bitcoin works is that you run servers that consume a large amount of computing resources and they basically validate the bitcoin transactions. And so it's, like, an international network of these devices. And if you contribute to this, you actually get paid in bitcoin. So there's this whole cottage industry of people hacking into other people's devices and computers and using them for bitcoin mining. That way they can get sort of paid in bitcoin for this work that they've done. And so that's what a miner is. It's something-
+
+[Speaker: Shane Tews]
+Shane Tews: They're using my compute power to get their bitcoin.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah. They're not really a huge threat. It's just more of an annoyance because they'll use your computing resources, they'll drain your battery, they'll use power, and, you know, you're being sort of—
+
+[Speaker: Shane Tews]
+Shane Tews: It sounds like a parasitic operation. It's bright green in your report, which got my attention. But then adware actually is 45 percent, but you made it gray. So it doesn't have quite the allure. So adware is just a matter of downloading something that is running an ad network, or what am I doing with adware?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Okay, well, a lot of applications and services are sponsored through advertising. So that's all perfectly legitimate, but there are certain types of malware that, what it does, the malware is earning money by clicking on ads or by presenting ads to you to click on. And if the application that's doing this, if it makes itself, if it's doing it sort of using a suspicious type of technique, it's sort of, like, doing stuff under the table that you don't know, for example, it makes itself difficult to install. It makes itself, it tries to take over your device. It's popping up things right over the top of your screen nerves. If it's malicious and very demanding, very intense in this way, if it's really annoying, we classify as adware.
+
+[Speaker: Shane Tews]
+Shane Tews: | love it. Yeah, it is definitely annoying. Well, your report is definitely worth reading. Ilike that you have a whole section here on how the increase in just, you know, home operations with COVID, that's definitely something we had to start figuring into our security portfolio. Anything else that you recommend, you know, what you're doing in your space that consumers should be thinking about?
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Consumers? Yeah. I think there's the—we're looking now at 5G security. That's what we've sort of—that's something that's coming up. So, not so much focused on the consumer, but focused on the fact that 5G networks, a bit more bandwidth, you've got mobile edge computing. So the service providers are moving their services further out into the network, into the edge of the network. And, you know, this opens sort of the attack surface of the network somewhat. So we're investigating some of that and we 'l have some more of that in our, I guess, subsequent reports—like the one we'll come out with this year and next year.
+
+[Speaker: Shane Tews]
+Shane Tews: And that's just because the computer is being moved closer to the edge.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Yeah. Imagine, like, you've got applications that are typically used to running in data centers that are, you know, well-secured and protected from the internet and all of a sudden you take those applications and you move them out to the edge of the mobile network. You know, so in all various little points of presence around a city, for example, so you're really moving data centers from one central location and distributing it around. So that opens up the security footprint quite a bit.
+
+[Speaker: Shane Tews]
+Shane Tews: Oh, I know. We're just starting to see much more 5G implementation here, in the United States, so we'll keep an eye out for that. Well, Kevin, thank you so much for being a guest today on "Explain to Shane."
+
+[Speaker: Shane Tews]
+We look forward to reading your future reports.
+
+[Speaker: Kevin McNamee]
+Kevin McNamee: Okay. And thanks very much for having me on. It's always a pleasure to be able to sort of explain some of the security stuff that we've been looking at for quite some time. So it's my pleasure; thanks.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of "Explain to Shane." For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in. We'll see you on the next episode of "Explain to Shane."
