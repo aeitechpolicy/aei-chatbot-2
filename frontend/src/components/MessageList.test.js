@@ -6,6 +6,36 @@ jest.mock('../utils/api', () => ({ ...jest.requireActual('../utils/api'), apiFet
 
 beforeAll(() => { HTMLElement.prototype.scrollIntoView = jest.fn(); });
 
+test.each([
+  ['articles', undefined, 'I found related articles in the AEI Scholar Library, but the answer did not pass the citation check. Open Article sources below to read the relevant passages.', 'Related articles'],
+  ['web', 'web', 'The answer did not pass the citation check. Open Sources below to review the library passages and web snippets.', 'Related sources']
+])('stored source-only %s replies show sources directly without technical warnings', (_, searchMode, content, label) => {
+  const sources = [{ id: 'S1', title: 'A relevant AEI interview', author: 'Shane Tews', date: '2026-11-12',
+    url: 'https://www.aei.org/interview/', excerpt: 'The recorded passage is immediately visible.' }];
+  const { container } = render(<MessageList chatId="sample-chat" messages={[{ role: 'assistant', content, sources, searchMode,
+    citationNotice: 'A quotation could not be matched to the cited excerpts.' }]} />);
+  const results = within(screen.getByRole('region', { name: label }));
+  expect(results.getByRole('link', { name: 'A relevant AEI interview' })).toHaveAttribute('href', 'https://www.aei.org/interview/');
+  expect(results.getByText('The recorded passage is immediately visible.')).toBeVisible();
+  expect(results.getByText('Shane Tews · 2026-11-12')).toBeVisible();
+  expect(container).not.toHaveTextContent('citation check');
+  expect(container).not.toHaveTextContent('A quotation could not');
+  expect(container.querySelector('details.article-source-details')).toBeNull();
+  expect(screen.queryByRole('note')).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Preview research brief' })).not.toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Send to the team' })).toBeVisible();
+  expect(results.getByRole('button', { name: 'Send to the team: A relevant AEI interview' })).toBeVisible();
+});
+
+test('partial answers still show their omission notice and regular source drawer', () => {
+  render(<MessageList messages={[{ role: 'assistant', content: 'A supported finding [S1].',
+    citationNotice: 'Some passages were omitted because they did not pass the citation check.',
+    sources: [{ id: 'S1', title: 'An article', excerpt: 'Evidence.' }] }]} />);
+  expect(screen.getByRole('note')).toHaveTextContent('Some passages were omitted');
+  expect(screen.getByText('Article sources (1)').closest('details')).not.toHaveAttribute('open');
+  expect(screen.getByRole('button', { name: 'View passage [S1]' })).toBeVisible();
+});
+
 test('model and source HTML stays plain text rather than becoming executable markup', () => {
   const payload = '<img src=x onerror="window.privateMarker=1"><script>window.privateMarker=2</script>';
   const { container } = render(<MessageList messages={[{ role: 'assistant', content: `${payload}\n[Source: Article ${payload}]` }]} loading={false} />);

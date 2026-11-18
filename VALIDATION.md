@@ -1,5 +1,9 @@
 # Validation record
 
+## Source-first reply validation — November 18, 2026
+
+All 30 frontend tests passed across five suites, and the CI production build passed. New tests cover old stored fallback messages in Article Chat and AEI + Web, visible inline cards/links, hidden technical diagnostics, feedback controls and no brief button; partial answers retain their omission notice and drawer. A local mock browser check confirmed the saved fallback renders cards directly without the dropdown or quotation warning. No model/search credits, production chat writes, backend changes or new dependencies were used. Existing non-failing React act/toolchain warnings remain.
+
 ## Citation check for team testing — November 18, 2026
 
 132 backend tests passed with zero failures using Node 24 and simulated providers. New checks cover known headings, wrapped prose/citation placement, isolation of bullet references, retention of separately cited prose, removal of wrong-source/invented quotes, OCR quote restrictions, outside-link exclusion and saving the partial answer plus warning with exactly one model call/ledger entry. No production model request, private database write or new dependency was needed. No frontend files changed, so the existing frontend build/tests were not repeated for this backend-only patch. The parser does not establish semantic support for every claim. Existing stored answers remain unchanged; a post-deploy live question is still needed.

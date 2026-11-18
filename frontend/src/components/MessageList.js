@@ -8,6 +8,13 @@ import ResearchBriefPreview from './ResearchBriefPreview';
 import FeedbackDialog from './FeedbackDialog';
 import '../styles/MessageList.css';
 
+// Recognize stored source-only replies too, so existing chats get the clearer
+// presentation without rewriting their saved content or citation diagnostics.
+const sourceOnlyReplies = new Set([
+  'I found related articles in the AEI Scholar Library, but the answer did not pass the citation check. Open Article sources below to read the relevant passages.',
+  'The answer did not pass the citation check. Open Sources below to review the library passages and web snippets.'
+]);
+
 function AnswerText({ content, sources = [], onSource }) {
   const tokens = /(\[[SW]\d+\]|\[Source:\s*[^\]\n]+\]|\*\*[^*\n]+\*\*|\*[^*\n]+\*|`[^`\n]+`)/g;
   return String(content ?? '').split('\n').map((line, index) => (
@@ -58,8 +65,9 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
   const canReport = message.role === 'assistant' && chatId;
   const sources = message.sources || [];
   const comparison = message.comparison || [];
-  const brief = !isUser && buildResearchBrief(message, title);
   const experimental = message.searchMode === 'web';
+  const sourceOnly = !isUser && !comparison.length && sources.length > 0 && Boolean(message.citationNotice) && sourceOnlyReplies.has(message.content);
+  const brief = !isUser && !sourceOnly && buildResearchBrief(message, title);
 
   function openSource(source, button) {
     opener.current = button;
@@ -78,7 +86,14 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
     {experimental && !sources.some(source => source?.id?.startsWith('S')) && <p className="answer-source-note">The web search returned results. The AEI Scholar Library has no matching passages for this question.</p>}
     <div className={`message-evidence-layout ${selected ? 'has-passage' : ''}`}>
       <div className="message-content">
-        {comparison.length ? <div className="scholar-comparison" aria-label="Scholar comparison">
+        {sourceOnly ? <>
+          <p>{experimental
+            ? 'I found related articles and web sources. Read the relevant passages below.'
+            : 'I found related articles in the AEI Scholar Library. Read the relevant passages below.'}</p>
+          <section aria-label={experimental ? 'Related sources' : 'Related articles'}>
+            <SourceCards sources={sources} chatFeedback={canReport ? { chatId, messageIndex } : undefined} />
+          </section>
+        </> : comparison.length ? <div className="scholar-comparison" aria-label="Scholar comparison">
           {comparison.map(group => {
             const source = sources.find(item => item?.id === group.sourceId);
             return <section key={group.scholar}>
@@ -91,7 +106,7 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
       </div>
       {selected && <CitationPassage source={selected} onClose={closeSource} />}
     </div>
-    {message.citationNotice && <p className="citation-notice" role="note">{message.citationNotice}</p>}
+    {!sourceOnly && message.citationNotice && <p className="citation-notice" role="note">{message.citationNotice}</p>}
     {canReport && <div className="message-tools">
       {!feedbackSent && <span className="feedback-hint" id={feedbackHintId}>Something wrong with this answer?</span>}
       <button className="research-secondary" type="button" aria-describedby={feedbackSent ? undefined : feedbackHintId}
@@ -99,7 +114,7 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
         <Flag size={17} aria-hidden="true" /> {feedbackSent ? 'Sent to the team' : 'Send to the team'}
       </button>
     </div>}
-    {!isUser && sources.length > 0 && <details className="article-source-details">
+    {!isUser && !sourceOnly && sources.length > 0 && <details className="article-source-details">
       <summary>
         <BookOpen size={17} aria-hidden="true" />
         <span>{experimental ? 'Sources' : 'Article sources'} ({sources.length})</span>
