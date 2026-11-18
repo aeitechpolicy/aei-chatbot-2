@@ -1,5 +1,9 @@
 # Maintainer handoff
 
+## Source-first replies — November 18, 2026
+
+The frontend now presents stored citation-check source-only fallback replies as related source cards directly in the answer, with a plain-language introduction. Technical citation diagnostics remain in stored messages and the Model Tester, but are hidden for these source-only cards. This also updates the presentation of existing saved fallback replies; no database rewrite or extra AI call is needed. Ordinary and partial answers keep their source drawer and applicable notices. Source-only cards retain AEI/web labels, publication/byline details, passages, original links and feedback buttons. They do not offer a research brief. Based on merged PR #14 (4509021).
+
 ## Citation check for team testing — November 18, 2026
 
 Based on deployed PR #13 (9b99da2). Ordinary Article Chat and AEI + Web now keep independently cited prose units that pass the checks and omit units with unknown references, uncited claims, external references, unmatched long quotations or unverified OCR quotations. A visible citation notice explains omissions. When no usable prose remains, the existing source-only response still appears. Known descriptive headings, wrapped prose and a citation on the following line no longer cause formatting failures; separate list items and uncited complete sentences do not inherit the preceding item's citation. These checks validate reference structure and quote matching, not the truth of every paraphrase.
