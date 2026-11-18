@@ -1,0 +1,182 @@
+PAGE_TITLE: 
+	Making Online Safety Simpler (with Greg Oslan) — full transcript
+
+[Speaker: Introduction / editorial context]
+Explain to Shane: Making Online Safety Simpler (with Greg Oslan) Episode #154 | November 5, 2026 | Shane Tews and Greg Oslan
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to Explain to Shane. I’m your host, Shane Tews at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today’s information technology system work and how they shape our social and economic life. We all know we should protect ourselves online, but the advice keeps changing. Our passwords leak in breaches we are not notified about, scam texts look extremely similar to messages from our financial institutions, and criminals are using artificial intelligence to clone our voices and craft phishing attacks that slip past the old red flags. Do the old cybersecurity tools still work? Does it help to rely on a password manager? What about passkeys or multi-factor authentication? How can we clean up our cluttered digital footprint? And if an account is hijacked or if you are subject to ransomware, what are the first steps you should take to protect yourself? To help us with these questions today is Greg Oslan, chairman and CEO of MERENA Incorporated. He serves on the board of the National Cybersecurity Center in Colorado Springs, a nonprofit that fosters cyber innovation and awareness. I hope you enjoy this episode of Explain to Shane. Greg, thank you for being a guest today on Explain to Shane. You and I had a conversation a couple of weeks ago, and the work that you and your team have been doing around consumers, much more so than enterprise . . . A lot of people leave an enterprise environment where they’re used to kind of having the warm hug of technology solving their problems at a level they probably don’t even understand. And then they leave, or even just a lot of them have two devices, like they’re walking around with a corporate device and an individual device, and they don’t know how to do a lot of the things that should protect them on their own devices, including not just mobile but also a lot of web presence because there’s a bit of an age thing. There’s a lot of older people that learned how to use the web, and we like the web. So, we’re using these tools. So, I want to walk through, first of all, some of the things that we should be thinking about because they’re the most obvious place to start, and that is actually email. And I know that sounds dated, but email is the crux of a lot of the problems when it comes to cyber criminal activity and scams. So, how can someone find out whether their email or their passwords have already been exposed in a data breach? And then what do you do about it?
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, I think I’ll answer your question directly, but I think there’s a number of things because we can easily go to . . . We’ll check an email, but to your point, the issue is so much larger than just an email. And after 10 years of doing this as part of the National Cybersecurity Center and then spinning MERENA out, which is the company that we now have, we’ve learned a lot over that period of time and particularly in the last couple of years and now with AI, understanding the problem and making it worse to some degree.
+
+[Speaker: Greg Oslan]
+Checking email is a relatively easy thing to do today. You can use tools that have been out there for a number of years, and they’ll quickly tell you what breaches your email might have been in. So, that’s kind of step one. But for most individuals in society, that’s scary because you immediately see you’re in 5 breaches, 15 breaches, or maybe 50 breaches because you’ve got 9, 10, X number of years of digital exhaust out there on accounts that you forgot you even had, yet those accounts were compromised. Most people say, “Well, that’s okay. That was 15 years ago. I don’t use that account anymore.” Your email is still attached to it most likely. And for too much of society, that password you used back then may be the password you’re using now . . .
+
+[Speaker: Shane Tews]
+Shane Tews: For everything.
+
+[Speaker: Greg Oslan]
+Greg Oslan: For everything. And we found it . . . And you just have to be honest about it, nor should they have to be. They’re not tactical. They don’t want to be. They don’t want to have to care about, “Is my software up to date? Is my password okay? Or do I need another one? Do I need to enable multi-factor authentication? Oh, by the way, what the heck is multi-factor authentication? Sounds like a bad word to me.” All of those things are way too complex for society writ large. We have a lot of smart people, but they weren’t trained, nor should they have been, to be technologists.
+
+[Speaker: Shane Tews]
+Shane Tews: So, let’s kind of take that on some component parts there. First of all, let’s just talk about historically what led you to this stage. So, you guys have been around for about a decade, is that right?
+
+[Speaker: Greg Oslan]
+Greg Oslan: Yeah, about a decade.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. Good. All right. What was the catalyst for you to stand up your cyber tools and start teaching people about good and bad behavior?
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, after doing this for 10 years and doing a lot of very important things for the country, everything from training and educating all 50 state legislatures during COVID on cyber. So, you had to do everything online and you had to figure out how to do that all the way down to offering cyber camps for individuals and students, young adults in communities, we realize that education alone . . . Putting people in a training class or giving them a cyber camp so they can learn really was not making a true massive impact on society, which is our mission. So, as part of that, we said, “Well, if we’re going to help enable a cyber-resilient society, how can we give individuals the mechanism to do that?” You know, I’ve been in the cybersecurity industry for almost since it started, which probably dates me a bit. But in the early days, we quickly realized there were a lot of individual tools for the enterprise to help them understand where their areas of risk were. The same thing is true of the consumer. You can get antivirus tools. You can get a VPN tool. You can get a credit report and alerts from Equifax. But the problem the enterprise had is the only way to bring all that together to truly understand your risk was a human being. Well, that’s the problem we have with individuals today. You have too much signal and too much noise. And so what do you do about it? You would ask checking a password. Well, you can check a password or you can check your email or you can check a link. But now what? Now are you going to use ChatGPT or you can use Google search? Human beings don’t think that way. You know, they’re not analysts. They don’t go step by step.
+
+[Speaker: Greg Oslan]
+So, we said, “Well, what we did for the enterprise is we created security event managers. Well, that’s an analogy to what we want to do for the consumer.” We want to give you one place where you can see your entire online life and then be able to manage and take action to protect yourself online. This is about how do you manage your online life. Everybody has different levels of risk tolerance. Some people have things that are more important to others. So, it’s really what’s important to you that matters. How much risk are you willing to take? And if you have 100 accounts in your profile, well, you’re going to get a lot more information and have an opportunity to be far more protected than someone who has 10. And so our system works on the accounts that are in your profile. And the interesting thing is the average person has about 150 accounts. The average person can barely name 30.
+
+[Speaker: Shane Tews]
+Shane Tews: I don’t know how many subscriptions I have either. So, let’s simplify this just for a second because I’m a Gmail user. I love my Gmail because Google solves a lot of problems for me on that. But your point about AI, you know . . . One of the clever little souls of which I probably gave it some access sent me . . . I got an email the other day saying that a large enterprise that I’ve done some things with needed help because my vendor number, blah, blah, blah. It looked so real, and it had so much information that it had pulled probably from previous emails. And I had to really look at it now. The tell for me was I was like, “This isn’t my bank account number.” But I knew to ask that question of the email, and I was like, “It looks so real.” I mean, the domain name, the URL, it was accurate. But then the thing I always look at is the actual email address was not. It was some gibberish domain name. But the average bear doesn’t know how to do that. So, I always like to . . . Okay, let me use my mom for an example. She’s on an old Yahoo account that was established when Yahoo started, so she’s got lots of legacy stuff going on in there. And I’m always like trying to clean it out like a little nest. But she doesn’t know the tells, like she doesn’t know. And I’m always like, “Mom, unless you ask somebody for something, they’re not just voluntarily going to give you stuff. So, let’s just know that all those are going to be fake.” What’s the starting point? What is the place where you go, “I think this is not real. What do I do about this?” And then how . . . Explain . . . You called it . . . It’s merena.com.
+
+[Speaker: Greg Oslan]
+Greg Oslan: Right.
+
+[Speaker: Shane Tews]
+Shane Tews: It kind of . . . How does it help?
+
+[Speaker: Greg Oslan]
+Greg Oslan: Sure. So, there’s a couple of things, and I think you point out there was a point a few years ago where you had some basis, you looked at the email address or you looked at the email and you could tell it was kind of . . . It was that the English and grammar was poor. There were misspellings. And so you can look and say, “Well, this isn’t real.” Today, again, with the advancements of AI, deepfakes, and so on, it’s almost impossible. And that’s even for those that are well trained in doing it. So, there’s a few things that, behavior-wise, people have to do. Step one is if they’re asking for money, it’s probably a fake, because no bank, nobody is going to call . . . Nobody’s going to send you an email and say, “Send me $20 for X,” unless you ordered it. And then you still have to go into their account, put in your credit card, whatever it may be. But nobody is going to say, “Send me $12 to do a particular thing that you need to do.” So, that’s step one. You do need to know, and you do need to have the behavior of, “I’m not just going to send somebody money,” which is the most important thing.
+
+[Speaker: Greg Oslan]
+Number two, there is no entity that will ask you for your email and password in an email, or your login information and password in an email. So, the next step is you either need to go directly to that website itself, whoever sent you it. So, if it’s Google, you need to go directly to google.com because that is the source of truth, or you need to call if you get something from someone. So, those are all the behavioral things that we teach and we’re going to have to teach. From a tool perspective, from what MERENA can provide is number one, you can take that email and you can check it within our system. It will verify whether is this a standard email or not. Now I will tell you that’s imperfect because you can make up a lot of Gmail things that are real but it’s not from the individual that you think it’s from but it’s a starting point. The same thing is true with the link that’s connected to it. In most cases, if you’re supposed to click on a link to send something, that link is probably invalid. It’s a valid link, but it’s on the . . .
+
+[Speaker: Shane Tews]
+Shane Tews: It’s taking you somewhere else, not where you’re supposed to . . .
+
+[Speaker: Greg Oslan]
+Greg Oslan: Yeah, taking you . . .
+
+[Speaker: Shane Tews]
+Shane Tews: It’s not taking you to Chase.
+
+[Speaker: Greg Oslan]
+Greg Oslan: It’s a known bad link from a bad actor that will tell you not to do it. We provide those tools within our system, but we also provide you all that step-by-step guidance. So, you take your mother or you take a teenager or you take someone who’s just not tactical, which by the way is 160 million people in our society who identify as non-technical. And 60 million fall into the 2 groups of the elderly, which sadly, according to AARP, that’s anybody over 50. I don’t know if that’s fair but . . . Or children, which would be those under 18, at least qualified that way. And with those large groups, what we do is provide you step-by-step instructions. So, if you have a question and you say, “I don’t know what to do with this,” or, “I’m not sure this is real,” it will walk you through step by step with questions where you provide responses, so at the end, it can help you decide what your next step is. It’s the same as we like to . . . It’s called whomever your IT manager is for your household, it’s your Uncle Bob, it’s your Aunt Sally, whomever it may be. We’ve done the same thing. We’ve just embedded it within the system.
+
+[Speaker: Shane Tews]
+Shane Tews: I’ve given this example before about how, like when I go out to visit my family, the first thing I do is I make them put all their phones down. I know nobody’s changed their password in . . . And then I update their software because that’s something that they just tend not to do. So, I mean, is there a reward for positive behavior?
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, we have two tiers of service. One is free, which as you suspect a large portion of our users are there. And then we have a paid portion. In that you get both a dashboard where you see your entire online life in one place, and two, you get a score. That score is related to your online behavior, not anything else. So, the reward is if your score is . . . And you pick your own, what you think your bar is, we like to say 75. If you have a score of 75 or better, you have a pretty good online risk.
+
+[Speaker: Shane Tews]
+Shane Tews: How do you determine the score? Is it scraping? How are you getting to that point?
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, we created it off of seven categories in your behavior. So, one is alerts. So, let’s assume you get an immediate action alert that Google has had a compromise and you need to update your software immediately. Once you take that action, well, then that alert is cleared and your score goes back up. If you do not take that action, your score goes down. You get extra credit for good cyber hygiene. Do you have MFA on all your accounts?
+
+[Speaker: Shane Tews]
+Shane Tews: Multi-factor authentication. Yes.
+
+[Speaker: Greg Oslan]
+Greg Oslan: Yes, sorry. See, I already did it on my own. We do our best. You know, we like to say a second form of verification that it’s you. Picture a wheel, and around that wheel are your various forms of devices, applications, communications. So, something will be under communications, and under communications, you may have a Signal, you may have Snapchat, you may have WhatsApp, whatever your ways are that you communicate outside of a phone, of course. Then another one could be family. Well, under family, you may have applications like Roblox. Under entertainment, you may have your cable or your streaming services and all of those we watch. And if any of those have a compromise, you will get an alert. And those alerts range from immediate action. This is a compromise that’s at high risk to you. You need to take an action. We give you advisory alerts that say, “You really ought to be aware of this. This could impact you or your family, and so you ought to think about the following things.” And then we have informational alerts that you get.
+
+[Speaker: Shane Tews]
+Shane Tews: Now I’m curious about the technology. How does it know I’m doing all this? What is it that . . . Gives me step one. So, I agree. I’m going to go for freemium for right now. I’m going to go test this.
+
+[Speaker: Greg Oslan]
+Greg Oslan: There typically are two things everybody does. The first thing everybody does is check their email. They want to know, have I been in a breach? And almost everybody has. You just don’t know it but almost everybody has. So, that is the starting point for building your account or your account profile in particular. So, let’s assume you’ve been in five breaches. We will automatically assume those are five accounts you have. So, we will put them in your profile. We will then take you there and say, “Now you ought to build out your profile,” and we walk you through step by step. We give you a bunch of suggestions in each one of the categories I described. So, once that profile is built, we now issue alerts against all of those accounts as compromises or risks come up. The next step, which accumulates over time, is behavior. So, individuals have different behaviors. Some people go to shopping sites a ton. Well, some shopping sites are safer than other shopping sites. And so behind the scenes, we rate those as risky or not risky. Same thing’s true of other sites that people use. Surprising, and I was surprised by this, people put in sites that you would not expect them to put in, like Grindr or OnlyFans.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay. They’re being honest.
+
+[Speaker: Greg Oslan]
+Greg Oslan: That’s right, because they’re like, in some ways, “Well, this is what I use,” and maybe they know it’s a riskier site, or maybe they just want to make sure they’re protected because they’d rather everybody not know. It doesn’t really matter.
+
+[Speaker: Shane Tews]
+Shane Tews: So, is the first level it’s looking to see if your email’s been compromised, and then it’s giving you suggestions, or it’s looking at your . . . This is what I’m trying to figure out. So, you are
+
+[Speaker: Shane Tews]
+proactively putting this information in there. It’s not sitting on your web browser watching everything that you’re doing?
+
+[Speaker: Greg Oslan]
+Greg Oslan: Correct. We made the conscious decision that we were not going to be . . . Because frankly our research showed . . .
+
+[Speaker: Shane Tews]
+Shane Tews: Surveillance.
+
+[Speaker: Speaker not identified]
+Greg Osland: Yeah, it scared people. The surveillance is just something that people are uncomfortable about, regardless of the fact that Google ads and Meta and everybody do that every day. But we decided we were not going to do that. It was not needed to help people be safer online, at least at this point in our life and in what we believe individuals are. This has to be simple. It has to be fairly touch-free. And it has to be done in a way that individuals want to do it, because if they don’t want to do it, I can’t help them, right?
+
+[Speaker: Shane Tews]
+Shane Tews: Right. So, they’ve already decided they’re concerned about their online safety behavior. I’m with you on the . . . I hate the phrase “hygiene,” but it’s needed. You know, cyber hygiene is like, are you doing the best things possible, changing your passwords, doing all the things that you need to do? And then you . . . So, let’s talk about the family angle, because that one’s an interesting one, because it’s one in the consumer side, right? I talked about enterprises. People know to . . . They attach you to the different people in your corporation. People get attached to their family . . . Family behavior, I guess, is a way to say it, that like your family members are doing something and they keep pinging you and sending you stuff. And you’re like, “Please stop.” Because you’re just throwing all this garbage into my Gmail, and then I’m having to go defend across the process on that. So, how does that work?
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, what we’ve done is . . . Part of the $7.99 a month, you can add family members to that account at no additional charge. And because we believe, as you just said, the family is kind of one unit, and that unit shares everything . . . You mentioned your mother, and we’ve done more research than I thought I would do because it intrigued me, the sandwich generation, who is dealing both with their children and their parents. And we hear things like, “My parents are worse than my kids because they answer the phone every time, they click on everything. And I have no way to know how to help them. They don’t live in my state, or they don’t listen to me anyways,” kind of like the children, what goes around comes around. And so, we said, “Well, you should be able to do that.” You’ll know what accounts your mother has. You’ll know if she signed up for a new account, you’ll know the last time she logged into that account. We don’t monitor anything more than that. We just know that they . . .
+
+[Speaker: Shane Tews]
+Shane Tews: You know that because of the email that is registered with you, is that correct?
+
+[Speaker: Greg Oslan]
+Greg Oslan: We know that because of the . . . And also, the actual behavior in doing it. When you go to . . . You click . . . I don’t know. Let’s pick Bank of America. You type in and you click Bank of America. Well, we know through the browser that you’re going to Bank of America or through your device that you have opened Bank of America as an example. And we don’t do anything more than that. We don’t keep passwords. We don’t keep login information. We just want to be able to provide this was accessed at this point in time. If you didn’t do it, you have a problem. If you consciously did it, take a parent, well, you, the child of that parent, may want to know that because
+
+[Speaker: Greg Oslan]
+they just downloaded a new application and you’ve had a discussion with them that said, “You can’t do that. It’s too risky. You’re being taken advantage of.”
+
+[Speaker: Shane Tews]
+Shane Tews: So, a lot of the operating systems or like . . . Again, I’m using Google, but there’s others. They already have these tools. A lot of them there. What is it that makes yours something that I need to spend time, money, and energy on? Because is it just because I’m becoming more cognizant of what you’re capable of doing, or I just don’t know how to use other tools, or is there . . . What’s the plus-up?
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, the answer is a little bit of both. So, first of all, we’ve created the smarts to integrate all these things together. So, to your point, you can go to Have I Been Pwned and check an email. Well, now what do you do? You’ve been in 15 breaches. You can go to Google and say, “Well, is this image real?” And with about 75 percent, 80 percent certainty, it can tell you if it is. It’s getting harder and harder every day. But again, you had to go to that site to do that. That’s how human beings work, which is why when Google search worked so well originally until it became an ad factory and became not quite as effective as designed and why people are using ChatGPT or Claude as a replacement because it becomes very specific. It takes information from a lot of places and gives you the answer you want. And our ability to analyze across all your applications is that behavior profile that helps us help you lower your risk. But looking at each one individually, you’re not lowering your total risk. You’re only lowering a specific piece of your risk.
+
+[Speaker: Shane Tews]
+Shane Tews: So, what do you do if somebody’s already been hit by, let’s say, a ransomware attack or an email that was a setup for that? Do you just show a process that they have to go to? That’s always the question of people what do I do? You know, who do I contact? Call the sheriff. I don’t know what to do there.
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, ours is you would go to a different . . . You know, obviously your device is compromised in some way. Don’t go to that device. Go to another device, log into MERENA, and tell it specifically, “I think I’ve been hacked,” and it will say, “Well, what are you seeing?” And you’ll talk, and then it’ll ask you what type of device you are, what application you were in, and it’ll walk through and it’ll say, “Okay, here are the steps you’re going to take.” You know, step one, make sure you don’t do anything with that machine. Step two, make sure you disconnect it from the internet because you don’t want it to infect anything else. And then step three, it’ll ask what . . . for localized support, “What’s your zip code?” And it’ll give you a list of, “Here are five entities that could help you right now that are highly rated,” and all that kind of stuff. In addition, it will say, “Here’s how you communicate, contact, let the police know, both local and federal.” So, it’ll provide you the numbers for them and/or the website that you can go in and file your crime, if you will, your complaint. And the same thing is true with federal, which is the FBI.
+
+[Speaker: Shane Tews]
+Shane Tews: Is there a digital version of a police report?
+
+[Speaker: Greg Oslan]
+Greg Oslan: Believe it or not, for that there is.
+
+[Speaker: Shane Tews]
+Shane Tews: Okay.
+
+[Speaker: Greg Oslan]
+Greg Oslan: Not in all counties or cities or communities, but across the country, there’s a number of them. I mean, we have it in Colorado Springs, we have it in Douglas County, and we have those.
+
+[Speaker: Greg Oslan]
+Sadly, for most individuals, the size of the crime will rarely help you. They’re dealing with much, much bigger and much bigger losses. And today, for example, there is no cyber insurance for individuals, unless you have your own LLC or corporation or something. I fundamentally believe that will change and it will become part of your homeowners policy because it is just too big, becoming too broad and too vast. Almost $40 billion was lost last year to online crime. Elderly.
+
+[Speaker: Shane Tews]
+Shane Tews: It slips through. Yeah, people just absorb it, and they don’t know how to stop it.
+
+[Speaker: Greg Oslan]
+Greg Oslan: Yeah, $40 billion sounds like a huge, huge number, but not when corporations are getting taken for that. Each company is getting taken for that. So, our policies, our laws, our rules of society are going to have to evolve much faster than they are today, especially the elderly, to not get wiped out. Or you take the average American that we forget is living paycheck to paycheck. Or it’s your Social Security check that just got taken. Well, that wasn’t a lot of money, but that was your entire money for the month. That was your rent. That was your food. That was your gas. Gone. What do you do? And there is no real good backstop for that today.
+
+[Speaker: Shane Tews]
+Shane Tews: Giving us more problems to solve.
+
+[Speaker: Greg Oslan]
+Greg Oslan: We realized you’ve got to start somewhere. And if we can’t start helping people protect themselves, then we can’t raise the bar for that kind of crime. Let’s take it on the elderly. If it becomes expensive and becomes hard, if you, in your case you mentioned as a daughter, can manage easily your parent or loved ones’ online life, the bar gets higher. It’s not as easy for them to do and . . .
+
+[Speaker: Shane Tews]
+Shane Tews: Sometimes you just want to be the non-chosen one. Fortunately, somebody else might get hit but take me out of the pool.
+
+[Speaker: Greg Oslan]
+Greg Oslan: That’s right. And the higher that you set your own bar, the lower you are in the pool of attacks.
+
+[Speaker: Shane Tews]
+Shane Tews: Fantastic. So, looking forward, since you’ve built all these tools, do you feel like you’ve got enough on your plate, or is there something additionally as you’re . . . This is an iterative process, you keep learning things. What else is on the horizon?
+
+[Speaker: Greg Oslan]
+Greg Oslan: So, it’s a really good question. Five years from now, I think we’ll . . . Well, I think it’s going to be very, very difficult to eliminate logins and passwords in society writ large. I think there will be other mechanisms. We see that facial recognition, fingerprint has never been really as good, is increasing rapidly the ability to use other tools that Google and Microsoft and others are providing, which while not perfect, better than managing 100 passwords, because we’ve proven, everything can be compromised. So, there is no absolute solution, but the more variety you have, the better off you are.
+
+[Speaker: Shane Tews]
+Shane Tews: Well, I look forward to seeing how it goes. I’m going to go use my mother as a guinea pig on your system. Well, Greg, thank you. I wish you a lot of luck. I love the work that you and the center have been doing for the last decade. I like the fact that you’ve decided that individuals need protection and no one else is really paying attention to them, and you’re doing that job. So, thank you so much for being a guest today on Explain to Shane.
+
+[Speaker: Greg Oslan]
+Greg Oslan: Thank you.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of Explain to Shane. For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in. We’ll see you on the next episode of Explain to Shane.

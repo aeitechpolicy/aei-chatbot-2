@@ -1,138 +1,62 @@
 PAGE_TITLE: 
-	A Privacy-friendly Digital Wallet for Children: Highlights from My Conversation with Rick Lane | American Enterprise Institute - AEI
+	A Privacy-friendly Digital Wallet for Children: Highlights from My Conversation with Rick Lane
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-How can
-children enjoy the groundbreaking innovations of the digital age with
-sufficient guardrails around their personal data? What existing laws and
-regulations aim to protect children online, and what steps must businesses of
-all sizes take to comply with them?
-On the latest episode of “Explain to Shane,” I was joined by
-Rick Lane
-, founder and CEO of Iggy Ventures, to discuss the importance of aligning the actual use of financial transactions by kids with the often-ignored regulations around children’s online privacy and data collection. Rick explained why he chose to advise and invest in
-Rego Digital Architectures’
-Mazoola
-app (
-now
-available
-for download) and their proactive programs that give parents better tools for managing kids’ use of credit cards and create online allowance accounts with rules that can teach financial responsibility while protecting the child’s identity. Mazoola is the only independently certified family mobile wallet that is compliant with the
-Children’s Online Privacy Protection Act
-of 1998 (COPPA) and
-Europe’s General Data Protection Regulation
-(GDPR).
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Rick, to get us started, tell
-us what Mazoola is about and how it operates.
-Rick Lane:
-My involvement in Rego, the parent company, and the Mazoola kids’ digital
-wallet really came about when Rego reached out to me to discuss how to protect
-kids online. I’ve been volunteering my time on public policy issues, and they
-wanted some advice about COPPA and this new area that they were launching into,
-which was the digital wallet space. And so my conversation began by just
-looking at what they were doing, and what I found was absolutely fascinating.
-I found that
-Rego had developed a COPPA-compliant fintech infrastructure from the ground up,
-and their vision was to allow kids of all ages to engage in commerce online and
-offline without being tracked. And that was something novel because most of the
-cards and digital wallets out there targeting kids follow the
-Gramm-Leach-Bliley Act (GLBA) privacy protection provisions, which is an
-opt-out system based on your parents. Rego’s model is opt-in, and parents have
-total control of a kid’s purchasing activities. That, to me, was a great way of
-allowing kids to learn financial literacy with sufficient protections as
-they’re getting more involved in this cashless society.
-What does Mazoola’s compliance with COPPA
-and GDPR look like in practice?
-There’s a
-specific process in place. When COPPA was created by then-Rep., now-Sen. Ed
-Markey (D-MA) there was a goal of ensuring the new websites at the time were
-going to protect children’s privacy. The ways to do it were either a completely
-self-regulatory regime with no mechanism to check unless there was litigation,
-or to create a process where the Federal Trade Commission (FTC) could certify
-private-sector third parties by walking through and analyzing the processes of
-companies engaged in collecting information on children and targeting children
-online so they can then become COPPA certified.
-That
-certification process is very robust. And Rego went through that entire process.
-So the FTC went through and made sure every aspect of the collection, use, and
-storage of a child’s information was within the boundaries of COPPA’s
-regulations. Rego had a few earlier attempts at this that didn’t pan out,
-because there really wasn’t as much focus on the collection and use of kids’
-data on the financial transaction side as much as there was on sites like
-Instagram, Facebook, or Twitter. Most parents also never thought about it. Most
-people don’t think about opting out of how their information is being used.
-This is a
-relatively new phenomenon where because of COVID-19, we’ve moved to a much more
-cashless society. Kids don’t carry much cash. Parents are getting these debit
-and credit cards. You see a whole host of companies out there targeting
-children and teens because the market is huge. But the big difference between
-Mazoola and our competitors is that we collect no personally identifiable
-information on a child at all.
-Social
-security numbers, first and last names, dates of birth — all the information
-that data brokers collect on us is being collected on our kids. Under GLBA,
-unless you opted out of how the information is going to be used, that information
-is sold. Think about this — and again, I didn’t until talking to the Rego
-people — you’re able to combine the financial transactions of 14 and 15
-year-olds — sometimes even younger — plus all of the information they’ve put on
-Facebook and Instagram and all the other data collected on their web browsing
-histories. This is a powerful amount of information. But now it’s even more so
-because we’ve moved to this cashless society and kids are using debit and
-credit cards all over the place. What really attracted me to Rego was that they
-were in the middle of solving this public policy problem with a new
-technological solution that was built from the ground up. That’s a very unique
-situation to be in in this town.
-I’m a big proponent of the US enacting a
-federal privacy law, because I think we’re making it too tough for companies to
-figure out state-by-state how to comply with all the guidelines, especially
-when talking about mobile. So how is the current patchwork of privacy laws
-compliance-wise for a small startup like Mazoola? Did it affect your ability to
-get the product rolled out?
-Actually,
-no, not for us, because we’re under COPPA. So in a weird way, COPPA is our
-federal privacy bill. So the more macro discussions of federal preemption and
-private rights of action were already resolved in 1998 when COPPA came about.
-So we are fortunate in that we don’t have a lot of state law conflicts because
-we’re under COPPA or, as some financial services are, under GLBA, which has
-also usually been carved out of some of these state laws.
-So we’re
-kind of in an interesting spot in that even if there is a change or an
-enactment of a federal privacy bill, we just can amend our model to comply. And
-you’ve seen this with a bill from Markey and Rep. Kathy Castor (D-FL) to amend
-COPPA to increase the age for data collection eligibility up to 17 from 13 —
-which would make it similar to GDPR — and to include financial services
-transactions as part of the information that falls within COPPA’s realm.
-The other
-thing that’s also important is in regards to data breaches, which is somewhat
-connected to the privacy debate. There is a ton of evidence of kids getting
-caught in these data breaches. The beauty of Mazoola is that if there’s a data
-breach, no information on the kid will be collected. So you’re protecting a
-child not just from collection and use of their data by the data brokers out
-there, but you’re also helping to protect them against use of their data on the
-dark web.
-What future developments should we keep an
-eye out for?
-I think in
-this space, it is possible revisions to COPPA. Markey (the original author),
-the chair of the Senate Commerce Committee, the ranking member of the House
-Commerce Committee, as well as Democrats and Republicans on both sides of the
-aisle agree that COPPA needs to be updated.
-So that is
-going to happen, in my view, probably sometime next session. There is just too
-much momentum for it not to. The stumbling block may be that someone wants to
-try to tie it to more macro privacy legislation. But as I mentioned earlier,
-COPPA is its own separate entity and doesn’t have some of the outlying issues
-that a general privacy bill would have to in order to get it over the finish
-line. So you could amend COPPA in a way that doesn’t bring in some of the other
-privacy and data breach issues.
-It’s not
-just Congress that is looking at this, but the FTC as well — the entity that
-oversees COPPA. And they too are noticing that there is this new world order in
-the fintech space that is targeting children and does not fall under COPPA. So
-that’s another interesting place where you could see some discussions happening
-here in Washington, DC.
+
+[Speaker: Introduction / editorial context]
+How can children enjoy the groundbreaking innovations of the digital age with sufficient guardrails around their personal data? What existing laws and regulations aim to protect children online, and what steps must businesses of all sizes take to comply with them?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I was joined by Rick Lane, founder and CEO of Iggy Ventures, to discuss the importance of aligning the actual use of financial transactions by kids with the often-ignored regulations around children’s online privacy and data collection. Rick explained why he chose to advise and invest in Rego Digital Architectures’ Mazoola app (now available for download) and their proactive programs that give parents better tools for managing kids’ use of credit cards and create online allowance accounts with rules that can teach financial responsibility while protecting the child’s identity. Mazoola is the only independently certified family mobile wallet that is compliant with the Children’s Online Privacy Protection Act of 1998 (COPPA) and Europe’s General Data Protection Regulation (GDPR).
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Rick, to get us started, tell us what Mazoola is about and how it operates.
+
+[Speaker: Rick Lane]
+Rick Lane: My involvement in Rego, the parent company, and the Mazoola kids’ digital wallet really came about when Rego reached out to me to discuss how to protect kids online. I’ve been volunteering my time on public policy issues, and they wanted some advice about COPPA and this new area that they were launching into, which was the digital wallet space. And so my conversation began by just looking at what they were doing, and what I found was absolutely fascinating.
+
+[Speaker: Rick Lane]
+I found that Rego had developed a COPPA-compliant fintech infrastructure from the ground up, and their vision was to allow kids of all ages to engage in commerce online and offline without being tracked. And that was something novel because most of the cards and digital wallets out there targeting kids follow the Gramm-Leach-Bliley Act (GLBA) privacy protection provisions, which is an opt-out system based on your parents. Rego’s model is opt-in, and parents have total control of a kid’s purchasing activities. That, to me, was a great way of allowing kids to learn financial literacy with sufficient protections as they’re getting more involved in this cashless society.
+
+[Speaker: Shane Tews]
+What does Mazoola’s compliance with COPPA and GDPR look like in practice?
+
+[Speaker: Rick Lane]
+There’s a specific process in place. When COPPA was created by then-Rep., now-Sen. Ed Markey (D-MA) there was a goal of ensuring the new websites at the time were going to protect children’s privacy. The ways to do it were either a completely self-regulatory regime with no mechanism to check unless there was litigation, or to create a process where the Federal Trade Commission (FTC) could certify private-sector third parties by walking through and analyzing the processes of companies engaged in collecting information on children and targeting children online so they can then become COPPA certified.
+
+[Speaker: Rick Lane]
+That certification process is very robust. And Rego went through that entire process. So the FTC went through and made sure every aspect of the collection, use, and storage of a child’s information was within the boundaries of COPPA’s regulations. Rego had a few earlier attempts at this that didn’t pan out, because there really wasn’t as much focus on the collection and use of kids’ data on the financial transaction side as much as there was on sites like Instagram, Facebook, or Twitter. Most parents also never thought about it. Most people don’t think about opting out of how their information is being used.
+
+[Speaker: Rick Lane]
+This is a relatively new phenomenon where because of COVID-19, we’ve moved to a much more cashless society. Kids don’t carry much cash. Parents are getting these debit and credit cards. You see a whole host of companies out there targeting children and teens because the market is huge. But the big difference between Mazoola and our competitors is that we collect no personally identifiable information on a child at all.
+
+[Speaker: Rick Lane]
+Social security numbers, first and last names, dates of birth — all the information that data brokers collect on us is being collected on our kids. Under GLBA, unless you opted out of how the information is going to be used, that information is sold. Think about this — and again, I didn’t until talking to the Rego people — you’re able to combine the financial transactions of 14 and 15 year-olds — sometimes even younger — plus all of the information they’ve put on Facebook and Instagram and all the other data collected on their web browsing histories. This is a powerful amount of information. But now it’s even more so because we’ve moved to this cashless society and kids are using debit and credit cards all over the place. What really attracted me to Rego was that they were in the middle of solving this public policy problem with a new technological solution that was built from the ground up. That’s a very unique situation to be in in this town.
+
+[Speaker: Shane Tews]
+I’m a big proponent of the US enacting a federal privacy law, because I think we’re making it too tough for companies to figure out state-by-state how to comply with all the guidelines, especially when talking about mobile. So how is the current patchwork of privacy laws compliance-wise for a small startup like Mazoola? Did it affect your ability to get the product rolled out?
+
+[Speaker: Rick Lane]
+Actually, no, not for us, because we’re under COPPA. So in a weird way, COPPA is our federal privacy bill. So the more macro discussions of federal preemption and private rights of action were already resolved in 1998 when COPPA came about. So we are fortunate in that we don’t have a lot of state law conflicts because we’re under COPPA or, as some financial services are, under GLBA, which has also usually been carved out of some of these state laws.
+
+[Speaker: Rick Lane]
+So we’re kind of in an interesting spot in that even if there is a change or an enactment of a federal privacy bill, we just can amend our model to comply. And you’ve seen this with a bill from Markey and Rep. Kathy Castor (D-FL) to amend COPPA to increase the age for data collection eligibility up to 17 from 13 — which would make it similar to GDPR — and to include financial services transactions as part of the information that falls within COPPA’s realm.
+
+[Speaker: Rick Lane]
+The other thing that’s also important is in regards to data breaches, which is somewhat connected to the privacy debate. There is a ton of evidence of kids getting caught in these data breaches. The beauty of Mazoola is that if there’s a data breach, no information on the kid will be collected. So you’re protecting a child not just from collection and use of their data by the data brokers out there, but you’re also helping to protect them against use of their data on the dark web.
+
+[Speaker: Shane Tews]
+What future developments should we keep an eye out for?
+
+[Speaker: Rick Lane]
+I think in this space, it is possible revisions to COPPA. Markey (the original author), the chair of the Senate Commerce Committee, the ranking member of the House Commerce Committee, as well as Democrats and Republicans on both sides of the aisle agree that COPPA needs to be updated.
+
+[Speaker: Rick Lane]
+So that is going to happen, in my view, probably sometime next session. There is just too much momentum for it not to. The stumbling block may be that someone wants to try to tie it to more macro privacy legislation. But as I mentioned earlier, COPPA is its own separate entity and doesn’t have some of the outlying issues that a general privacy bill would have to in order to get it over the finish line. So you could amend COPPA in a way that doesn’t bring in some of the other privacy and data breach issues.
+
+[Speaker: Rick Lane]
+It’s not just Congress that is looking at this, but the FTC as well — the entity that oversees COPPA. And they too are noticing that there is this new world order in the fintech space that is targeting children and does not fall under COPPA. So that’s another interesting place where you could see some discussions happening here in Washington, DC.

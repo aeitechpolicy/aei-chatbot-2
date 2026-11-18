@@ -1,35 +1,56 @@
 PAGE_TITLE: 
-	Navigating the Post-World Radiocommunication Conference | American Enterprise Institute - AEI
+	Navigating the Post–World Radiocommunication Conference
 
+[Speaker: Introduction / editorial context]
 On January 22, AEI hosted an expert panel on the US’s stance on spectrum and telecommunications policy following the World Radiocommunication Conference (WRC). The event started with a conversation between AEI’s Shane Tews and Steve Lang of the Bureau of Cyberspace and Digital Policy followed by an expert panel featuring the US House of Representatives’ Kate O’Connor, NCTA’s Traci Biswese, Michael O’Reilly of the Association of Public-Safety Communications Officials International Advisory Council, CTIA’s Umair Javed, and Wilkinson, Barker, Knauer’s Evelyn L. Remaley.
+
+[Speaker: Introduction / editorial context]
 The World Radiocommunication Conference is held every three to four years to harmonize radio frequency spectrum allocations around the various world systems. Maintaining US leadership in spectrum and telecommunications policy is vital for national security and innovation. Thus, addressing the outcomes of the WRC is critical to understanding how policies will impact American tech leadership.
-Below is an edited and abridged version of key highlights from the discussions. You can watch the
-full event
-on AEI.org and read the full transcript
-here
-.
-Shane Tews:
-To start with some basics, the WRC just happened in November and December of 2023. At the conference, governments come together to negotiate radio regulations, which then drives billions of dollars of investment. What were some of the big impact items this year?
-Steve Lang:
-I can tell you a little about what the US top-line priorities were for the conference. We went in with broadly three buckets of priorities. First, we wanted to do work that would expand connectivity and drive innovation. Second, we wanted to unlock the space economy for the next generation of space science. Third, we wanted to make sure that we were protecting our national defense interests, and preserving our aviation and maritime safety spectrum.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged version of key highlights from the discussions. You can watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
+Shane Tews: To start with some basics, the WRC just happened in November and December of 2023. At the conference, governments come together to negotiate radio regulations, which then drives billions of dollars of investment. What were some of the big impact items this year?
+
+[Speaker: Steve Lang]
+Steve Lang: I can tell you a little about what the US top-line priorities were for the conference. We went in with broadly three buckets of priorities. First, we wanted to do work that would expand connectivity and drive innovation. Second, we wanted to unlock the space economy for the next generation of space science. Third, we wanted to make sure that we were protecting our national defense interests, and preserving our aviation and maritime safety spectrum.
+
+[Speaker: Steve Lang]
 Under that first category of innovation and connectivity, we wanted to harmonize a spectrum available for 5G, especially in our region of the Americas. We were also looking to the future, and we wanted to make sure there was a future agenda item that would help lead the way to a pipeline for 6G services as well. It’s not just these 5G and 6G licensed services that are important to connectivity for the United States, unlicensed services like Wi-Fi are also a high priority. So one of our top objectives was to make sure that the 6 gigahertz band remains available for Wi-Fi and other unlicensed services. And we had some good successes there.
-Each country there is trying to advance their own economic and industrial interests, their technological leadership, and their national security interest. In the US, we’re leading in many ways in the development of these non-geostationary satellite orbits systems (NGSOs), and are doing very well in developing technologies that rely on unlicensed spectrum applications. But other countries have other interests. For instance, regarding NGSO systems, some countries were concerned about the impact that large mega constellations could have on radio astronomy, or they were concerned about the future availability of orbital or spectrum resources for systems that we’re not thinking of yet. There are different reasons why there might be different points of view, depending on where we’re competitive, or what we’re prioritizing.
-Shane Tews
-: Uamir, do you feel like the US was successful in furthering its policy priorities?
-Umair Javed:
-What I saw at the conference, where over 160 countries had gathered, was that reliable internet and mobile connections are still a challenge for many of these countries. If you look at the ITU data, internet penetration has reached 95 percent of population coverage in only 13 countries worldwide. Not surprisingly, a lot of the gap in many of these countries is in rural and remote areas. So, these countries came to this conference with an agenda: They wanted to use this conference to make progress in closing the digital divides in their borders. This is important because so much of what happened at the conference and what happened with the US positions can be explained by the simple idea that the United States did not have an answer for these countries about where they should go to find that spectrum. But other countries did. That dynamic has consequences, not just for our global competitiveness, but also for our national security.
+
+[Speaker: Steve Lang]
+Each country there is trying to advance their own economic and industrial interests, their technological leadership, and their national security interest. In the US, we’re leading in many ways in the development of these non-geostationary satellite orbits systems (NGSOs), and are doing very well in developing technologies that rely on unlicensed spectrum applications. But other countries have other interests. For instance, regarding NGSO systems, some countries were concerned about the impact that large mega constellations could have on radio astronomy, or they were concerned about the future availability of orbital or spectrum resources for systems that we’re not thinking of yet. There are different reasons why there might be different points of view, depending on where we’re competitive, or what we’re prioritizing.
+
+[Speaker: Shane Tews]
+Shane Tews: Uamir, do you feel like the US was successful in furthering its policy priorities?
+
+[Speaker: Umair Javed]
+Umair Javed: What I saw at the conference, where over 160 countries had gathered, was that reliable internet and mobile connections are still a challenge for many of these countries. If you look at the ITU data, internet penetration has reached 95 percent of population coverage in only 13 countries worldwide. Not surprisingly, a lot of the gap in many of these countries is in rural and remote areas. So, these countries came to this conference with an agenda: They wanted to use this conference to make progress in closing the digital divides in their borders. This is important because so much of what happened at the conference and what happened with the US positions can be explained by the simple idea that the United States did not have an answer for these countries about where they should go to find that spectrum. But other countries did. That dynamic has consequences, not just for our global competitiveness, but also for our national security.
+
+[Speaker: Umair Javed]
 Two big consequences flowed from that dynamic concerning the spectrum bands. The first being that the United States came out of that conference falling further behind on mid-band spectrum. Second, other countries were filling the leadership gap that the US had left behind. We saw other countries’ ability to shape spectrum policy independent of US priorities at this conference in a way that I don’t think we’ve ever seen before.
+
+[Speaker: Umair Javed]
 That said, because of the global interest in finding full-powered mid-band spectrum and because of other countries’ desire to make progress on that issue, we did see some helpful outcomes at this conference. We saw the lower three gigahertz band become harmonized, so this is truly a global 5G band now. We saw seven gigahertz be identified as a target for future harmonization activity. This is an opportunity for the United States to lead because that’s a band that we’ve identified in our national spectrum strategy as well. There are outcomes from the conference that start to pave a path for the United States to start to close some of the gap between us and other countries on spectrum policy.
-​​
-Kate O’Connor:
-I’ll bring it back from Dubai to the United States. I work for Chairwoman Cathy McMorris Rogers on the Energy and Commerce Committee. One of her top priorities has been to reauthorize the Spectrum Auction Authority since that expired. One of her big priorities in doing so was also ensuring that the DoD study that was directed as part of the Infrastructure Investment and Jobs Act, was done appropriately and in accordance with our normal spectrum management feasibility studies.
+
+[Speaker: Umair Javed]
+​​Kate O’Connor: I’ll bring it back from Dubai to the United States. I work for Chairwoman Cathy McMorris Rogers on the Energy and Commerce Committee. One of her top priorities has been to reauthorize the Spectrum Auction Authority since that expired. One of her big priorities in doing so was also ensuring that the DoD study that was directed as part of the Infrastructure Investment and Jobs Act, was done appropriately and in accordance with our normal spectrum management feasibility studies.
+
+[Speaker: Umair Javed]
 I think some of the things that Umair was talking about in the World Radiocommunication Conferences are extremely interesting, given where the US has been, and now where the administration is going. The legislation that passed out of committee, that we did not pass through the House, would have made changes to how DoD did the study. But DoD has now released the study and provided it to Congress. And the way that they did the study, I think, was pretty disappointing. And I can speak for our members that there was a lot of concern with some of the results in the testing, and the technical parameters that were used to do the study. One of which was that DoD was given $50 million, and they studied only sharing opportunities in the current environment that we’re operating in.
-Shane Tews
-: We’ve had a World Radiocommunication Conference and we have an idea globally what we can and can’t play with, but now we’re back in our domestic space. What is the best next step?
-Evelyn L. Remaley:
-As tough as it is, the WRC did give us some direction with the outcomes there. We know what happened with the six gigahertz, but there were decisions made around seven gigahertz for IMT, as well as that 3.3 to 3.4, which we’ve said that we’ll revisit, and have additional study there. Even though DoD has already put its report out, we need to commit to doing that study taking a look again, seeing if something was missed, and what we can uncover. That could be a very, very important piece of the puzzle. If we could add something there and find a solution, and if there are going to be issues and disagreements on that path ahead and potential agency issues, we need to start those conversations and expedite them now.
-Michael O’Reilly:
-We do need to fix some things. We do need to make more mid-band spectrum available for commercial purposes going forward, for both sides of the equation. That means pushing agencies farther than they’d like. The idea that the agencies are so sophisticated, and they’re very up to tune on spectrum policy, I think that’s debatable, disputable, given some of the things that we’ve learned about how our previous DoD spectrum managers were handling the job that they were asked to do.
-Traci Biswese:
-It’s important to look at WRC first and then zoom in domestically. One point I wanted to be sure to make is that we saw that six gigahertz was designated for IMT and several places outside of the US. It’s important to think about that as we are huddling back in the US and figuring out what is our strategy for the next conference. I think part of that is already kind of teed up for us in the national spectrum strategies. There are some bands that we’re looking at. There has been a great opportunity for the industry to provide input on how people think these bands should be studied and what the timeline and implementation should look like.
+
+[Speaker: Shane Tews]
+Shane Tews: We’ve had a World Radiocommunication Conference and we have an idea globally what we can and can’t play with, but now we’re back in our domestic space. What is the best next step?
+
+[Speaker: Evelyn L. Remaley]
+Evelyn L. Remaley: As tough as it is, the WRC did give us some direction with the outcomes there. We know what happened with the six gigahertz, but there were decisions made around seven gigahertz for IMT, as well as that 3.3 to 3.4, which we’ve said that we’ll revisit, and have additional study there. Even though DoD has already put its report out, we need to commit to doing that study taking a look again, seeing if something was missed, and what we can uncover. That could be a very, very important piece of the puzzle. If we could add something there and find a solution, and if there are going to be issues and disagreements on that path ahead and potential agency issues, we need to start those conversations and expedite them now.
+
+[Speaker: Michael O’Reilly]
+Michael O’Reilly: We do need to fix some things. We do need to make more mid-band spectrum available for commercial purposes going forward, for both sides of the equation. That means pushing agencies farther than they’d like. The idea that the agencies are so sophisticated, and they’re very up to tune on spectrum policy, I think that’s debatable, disputable, given some of the things that we’ve learned about how our previous DoD spectrum managers were handling the job that they were asked to do.
+
+[Speaker: Traci Biswese]
+Traci Biswese: It’s important to look at WRC first and then zoom in domestically. One point I wanted to be sure to make is that we saw that six gigahertz was designated for IMT and several places outside of the US. It’s important to think about that as we are huddling back in the US and figuring out what is our strategy for the next conference. I think part of that is already kind of teed up for us in the national spectrum strategies. There are some bands that we’re looking at. There has been a great opportunity for the industry to provide input on how people think these bands should be studied and what the timeline and implementation should look like.
+
+[Speaker: Traci Biswese]
 I think the next steps are to roll out that implementation, work here on the ground to hash out things domestically, and ensure that there is a balanced spectrum policy. There is a need for different types of spectrum, keeping in mind that coexistence is key, especially where there are bands where there’s federal use. The Department of Defense is using spectrum in ways that are often classified, and we can’t see into that black box. However, we look at the different tools in the toolbox, and there are different ways to coexist with the federal incumbents that are in these various bands. I think honing in on that, coexistence in those bands will help to get to the point of releasing the spectrum for commercial use.

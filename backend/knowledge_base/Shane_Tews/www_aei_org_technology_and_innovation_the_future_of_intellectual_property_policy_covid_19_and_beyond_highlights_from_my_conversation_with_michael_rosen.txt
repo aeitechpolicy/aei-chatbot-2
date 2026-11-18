@@ -1,162 +1,80 @@
 PAGE_TITLE: 
-	The Future of Intellectual Property Policy - COVID-19 and Beyond: Highlights from My Conversation with Michael Rosen | American Enterprise Institute - AEI
+	The Future of Intellectual Property Policy — COVID-19 and Beyond: Highlights from My Conversation with Michael Rosen
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Intellectual
-property (IP) has been a hot topic given the Joe Biden administration’s support
-of a proposal to waive the World Trade Organization’s (WTO) Trade-Related
-Aspects of Intellectual Property Rights (TRIPS) for COVID-19 vaccines and
-treatments. Some argue IP protections incentivized vaccine manufacturers to
-produce what are now the world’s antidotes to the pandemic. But others say
-these protections are slowing down global vaccination and distribution rates —
-especially in developing countries. Why did the administration take this
-stance, and what might this signal about its approach to other IP issues?
-AEI Adjunct Fellow
-Michael Rosen
-joined me on “Explain to Shane” to discuss the state of US IP policy, what the administration’s TRIPS waiver stance means for the future of innovation and public health, and how this issue acts as a proxy for the challenges of IP innovation in technology.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Mike, to get us started, give
-us some background on the TRIPS waiver proposal at the WTO.
-Michael
-Rosen: In October 2020, South Africa and India filed a petition before the WTO to
-suspend or waive these TRIPS rights as they relate to COVID-19 vaccines,
-treatments, and other COVID-related matters. It’s a little ambiguous what that
-means exactly, but it certainly is meant to cover vaccines. The idea is to essentially
-suspend the rights of the pioneering vaccine companies to enforce their patents
-and other IP protections.
-The idea is
-that this would enable generic manufacturers to also produce vaccines, get them
-out faster, get them out cheaper to the rest of the world, and manage to end
-the pandemic even sooner than under the current regime, which involves these
-select companies who pioneered and developed the drugs selling them. So that’s
-the basic idea: stop their patents, put them on hold, allow other generic
-manufacturers to make the drugs, distribute them quickly, and solve the
-problem.
-The
-charitable answer for why this was proposed — and I think there is a lot of
-truth to it — is that India was ravaged by one of the worst COVID-19 outbreaks
-in the world and unfortunately did not have enough shots to vaccinate its 1.3
-billion people. But there are other explanations as well involving the fact
-that India and South Africa are the leading countries for producing generic
-drugs. And what they’re seeking would actually bestow a windfall on the generic
-industries. So it’s not necessarily coming from a place that’s misguided, but
-there are other interests there besides just solving the pandemic that’s raging
-in their countries.
-Does this proposal seem likely to give us
-leverage over the problem at hand? You’ve written several pieces for AEI’s Tech
-Policy Daily on why you think the Biden administration is wrong to support the
-proposal, so what are your thoughts?
-The problem
-with the waiver proposal is that it does too much that’s bad and too little
-that’s good. First of all, it will take up to at least the end of this year
-before the WTO in a consensus fashion can actually make progress on this
-proposal. It’s a long, slow, bureaucratic process to get one of these types of
-waivers through the WTO. So even though at the beginning of May the Biden
-administration signaled that would support this motion, there’s still a lot of
-opposition — especially in Europe, Australia, and Japan.
-And according
-to what’s been reported, it’ll likely take until November or December for the
-WTO to actually reach a decision on that. By that time, of course, the worst of
-the raging pandemic in India and other places around the world will have passed
-and hundreds of millions of vaccine doses will be created by them.
-But it’s not
-just that. Even after a process has been approved, it will take a significant
-amount of time for these generic manufacturers to get off the ground, test
-their products, and obtain the necessary regulatory approvals that they’re as
-safe and effective as the branded Pfizer, Moderna, etc. vaccines. Even then,
-the main problem in developing countries right now is not so much the lack of
-vaccines — although that is a problem — but the lack of infrastructure in terms
-of supply chain and logistics to get these medicines in the hands of people who
-need them. We’re talking about in many cases — with Pfizer, at least — deep-freezing
-capacity, refrigerated or frozen trucks, and transportation. So there are many,
-many bottlenecks for both the vaccines and raw materials.
-The real
-problem here isn’t that patents are preventing people from being vaccinated;
-it’s all these other conditions. And that’s where I would say it just does too
-little that’s good to actually waive these protections.
-The supply chain is always in there
-somewhere. Talk more about how that plays into this.
-That is
-indeed going to be a problem — not so much for the pioneering drug companies,
-but for those who are trying to copy what they’re doing, and even more so for patients
-who are going to be receiving these doses that may not be properly tested or arrive
-on time if they can’t get the supply chain and all the associated know-how to
-go with it.
-Some who
-are, I think, on the more extreme side of this debate would say: Not only
-should Pfizer, Johnson & Johnson, AstraZeneca, and Moderna have to suspend
-their patent enforcement rights, but they need to be compelled to affirmatively
-hand over all of their know-how and trade secrets about how to actually make, supply,
-and distribute these products to generic manufacturers.
-And it’s
-interesting because Moderna actually agreed last year to not enforce their own COVID-19
-vaccine patents. So from their perspective, this is kind of a non-issue because
-they’ve agreed very altruistically to give up their patents until this pandemic
-ends. But the waiver would go far beyond that because there are other patents related
-to the mRNA vector for developing that technology. Since those patents would
-also fall by the wayside, we could go way too far in that regard.
-Also, Moderna
-was literally facing bankruptcy. It went all-in investing billions of dollars
-in this mRNA technology. Had it not succeeded as it did — thank God — that
-company would have gone under. It’s very easy, as some activists do, to paint
-with a broad brush this concept that Big Pharma is evil, profit-hungry, and money-mad.
-But in fact, these companies are taking real risks with real dollars from real
-investors. And without the promise of some kind of return there, we wouldn’t
-have these breakthroughs. It’s that simple: It’s not the place of governments
-to say who has made too much money.
-But the
-bigger problem isn’t so much these companies’ future earnings; the problem is
-for the next pandemic, which we have to assume is going to happen at some point.
-What’s going to happen when the next set of vaccine pioneers expect that even
-when they come up with a terrific cure, they’re going to have to suspend their
-patents? It’s going to give innovators and investors pause to know they could
-be pouring billions of dollars into developing and testing these cures only to
-have it taken away. That’s where, in my view, it does too much.
-So you’re essentially saying the success of
-a company like Moderna — which almost went under — speaks to why we need IP-related
-incentives on the horizon?
-Yes,
-absolutely. That’s what our system is all about. Our system of IP protection
-and innovation relies on a risk-reward benefit in exchange for disclosure. And
-to me and many who oppose this waiver, there are concrete and effective steps these
-companies and western countries can take to end the pandemic much faster that don’t
-involve waiving patents. For instance, the companies can be encouraged to
-manufacture more doses even faster. And I think because of the threat of the
-waiver, they are feeling pressure to do this (although there are raw materials
-constraints).
-Even more
-so, this is a golden opportunity for the US, UK, and others to engage in
-vaccine diplomacy. This is a great opportunity for the government to spend a
-few tens of billions of dollars on doses and give them away where our influence
-can be felt to create a sense of gratitude to the US — and also because it’s
-the right thing to do.
-And yes, it
-will be expensive. There’s no question, but when the Biden administration is
-talking about spending $1.9 trillion on a so-called infrastructure plan, tens
-of billions of dollars to actually help put a final nail in the coffin of this
-pandemic and bolster US influence and strategic goals around the world is a
-no-brainer. And if the vaccine manufacturers are willing to provide these at
-cost or at a small markup, this is great bang for the buck for the US taxpayer.
-More generally, how are we doing with IP
-rights in the technology space?
-I think the
-IP regimes in the US — whether on the patent, trademark, or copyright side — are
-certainly imperfect and there are important ways we can fix them. I’ve been
-writing for as long as I’ve been associated with AEI about different patent
-reform measures and ways the system could be improved.
-The same is
-true on the trademark and copyright sides: There are always ways to make the
-system better, and Congress, the courts, and practitioners like myself should work
-hard to make that happen. But the basic trade-off in all of these systems
-between disclosure to the public of how technology works in exchange for a limited
-monopoly is a bargain that should never be trifled with in its basic, most
-fundamental sense. And we do that right in the US. We do it right in Europe and
-Japan. There are ways to improve it, but challenging this system fundamentally in
-the sense of “all information needs to be free” is not helpful. It only
-undermines innovation and creativity.
+
+[Speaker: Introduction / editorial context]
+Intellectual property (IP) has been a hot topic given the Joe Biden administration’s support of a proposal to waive the World Trade Organization’s (WTO) Trade-Related Aspects of Intellectual Property Rights (TRIPS) for COVID-19 vaccines and treatments. Some argue IP protections incentivized vaccine manufacturers to produce what are now the world’s antidotes to the pandemic. But others say these protections are slowing down global vaccination and distribution rates — especially in developing countries. Why did the administration take this stance, and what might this signal about its approach to other IP issues?
+
+[Speaker: Introduction / editorial context]
+AEI Adjunct Fellow Michael Rosen joined me on “Explain to Shane” to discuss the state of US IP policy, what the administration’s TRIPS waiver stance means for the future of innovation and public health, and how this issue acts as a proxy for the challenges of IP innovation in technology.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Mike, to get us started, give us some background on the TRIPS waiver proposal at the WTO.
+
+[Speaker: Michael Rosen]
+Michael Rosen: In October 2020, South Africa and India filed a petition before the WTO to suspend or waive these TRIPS rights as they relate to COVID-19 vaccines, treatments, and other COVID-related matters. It’s a little ambiguous what that means exactly, but it certainly is meant to cover vaccines. The idea is to essentially suspend the rights of the pioneering vaccine companies to enforce their patents and other IP protections.
+
+[Speaker: Michael Rosen]
+The idea is that this would enable generic manufacturers to also produce vaccines, get them out faster, get them out cheaper to the rest of the world, and manage to end the pandemic even sooner than under the current regime, which involves these select companies who pioneered and developed the drugs selling them. So that’s the basic idea: stop their patents, put them on hold, allow other generic manufacturers to make the drugs, distribute them quickly, and solve the problem.
+
+[Speaker: Michael Rosen]
+The charitable answer for why this was proposed — and I think there is a lot of truth to it — is that India was ravaged by one of the worst COVID-19 outbreaks in the world and unfortunately did not have enough shots to vaccinate its 1.3 billion people. But there are other explanations as well involving the fact that India and South Africa are the leading countries for producing generic drugs. And what they’re seeking would actually bestow a windfall on the generic industries. So it’s not necessarily coming from a place that’s misguided, but there are other interests there besides just solving the pandemic that’s raging in their countries.
+
+[Speaker: Shane Tews]
+Does this proposal seem likely to give us leverage over the problem at hand? You’ve written several pieces for AEI’s Tech Policy Daily on why you think the Biden administration is wrong to support the proposal, so what are your thoughts?
+
+[Speaker: Michael Rosen]
+The problem with the waiver proposal is that it does too much that’s bad and too little that’s good. First of all, it will take up to at least the end of this year before the WTO in a consensus fashion can actually make progress on this proposal. It’s a long, slow, bureaucratic process to get one of these types of waivers through the WTO. So even though at the beginning of May the Biden administration signaled that would support this motion, there’s still a lot of opposition — especially in Europe, Australia, and Japan.
+
+[Speaker: Michael Rosen]
+And according to what’s been reported, it’ll likely take until November or December for the WTO to actually reach a decision on that. By that time, of course, the worst of the raging pandemic in India and other places around the world will have passed and hundreds of millions of vaccine doses will be created by them.
+
+[Speaker: Michael Rosen]
+But it’s not just that. Even after a process has been approved, it will take a significant amount of time for these generic manufacturers to get off the ground, test their products, and obtain the necessary regulatory approvals that they’re as safe and effective as the branded Pfizer, Moderna, etc. vaccines. Even then, the main problem in developing countries right now is not so much the lack of vaccines — although that is a problem — but the lack of infrastructure in terms of supply chain and logistics to get these medicines in the hands of people who need them. We’re talking about in many cases — with Pfizer, at least — deep-freezing capacity, refrigerated or frozen trucks, and transportation. So there are many, many bottlenecks for both the vaccines and raw materials.
+
+[Speaker: Michael Rosen]
+The real problem here isn’t that patents are preventing people from being vaccinated; it’s all these other conditions. And that’s where I would say it just does too little that’s good to actually waive these protections.
+
+[Speaker: Michael Rosen]
+The supply chain is always in there somewhere. Talk more about how that plays into this.
+
+[Speaker: Michael Rosen]
+That is indeed going to be a problem — not so much for the pioneering drug companies, but for those who are trying to copy what they’re doing, and even more so for patients who are going to be receiving these doses that may not be properly tested or arrive on time if they can’t get the supply chain and all the associated know-how to go with it.
+
+[Speaker: Michael Rosen]
+Some who are, I think, on the more extreme side of this debate would say: Not only should Pfizer, Johnson & Johnson, AstraZeneca, and Moderna have to suspend their patent enforcement rights, but they need to be compelled to affirmatively hand over all of their know-how and trade secrets about how to actually make, supply, and distribute these products to generic manufacturers.
+
+[Speaker: Michael Rosen]
+And it’s interesting because Moderna actually agreed last year to not enforce their own COVID-19 vaccine patents. So from their perspective, this is kind of a non-issue because they’ve agreed very altruistically to give up their patents until this pandemic ends. But the waiver would go far beyond that because there are other patents related to the mRNA vector for developing that technology. Since those patents would also fall by the wayside, we could go way too far in that regard.
+
+[Speaker: Michael Rosen]
+Also, Moderna was literally facing bankruptcy. It went all-in investing billions of dollars in this mRNA technology. Had it not succeeded as it did — thank God — that company would have gone under. It’s very easy, as some activists do, to paint with a broad brush this concept that Big Pharma is evil, profit-hungry, and money-mad. But in fact, these companies are taking real risks with real dollars from real investors. And without the promise of some kind of return there, we wouldn’t have these breakthroughs. It’s that simple: It’s not the place of governments to say who has made too much money.
+
+[Speaker: Michael Rosen]
+But the bigger problem isn’t so much these companies’ future earnings; the problem is for the next pandemic, which we have to assume is going to happen at some point. What’s going to happen when the next set of vaccine pioneers expect that even when they come up with a terrific cure, they’re going to have to suspend their patents? It’s going to give innovators and investors pause to know they could be pouring billions of dollars into developing and testing these cures only to have it taken away. That’s where, in my view, it does too much.
+
+[Speaker: Shane Tews]
+So you’re essentially saying the success of a company like Moderna — which almost went under — speaks to why we need IP-related incentives on the horizon?
+
+[Speaker: Michael Rosen]
+Yes, absolutely. That’s what our system is all about. Our system of IP protection and innovation relies on a risk-reward benefit in exchange for disclosure. And to me and many who oppose this waiver, there are concrete and effective steps these companies and western countries can take to end the pandemic much faster that don’t involve waiving patents. For instance, the companies can be encouraged to manufacture more doses even faster. And I think because of the threat of the waiver, they are feeling pressure to do this (although there are raw materials constraints).
+
+[Speaker: Michael Rosen]
+Even more so, this is a golden opportunity for the US, UK, and others to engage in vaccine diplomacy. This is a great opportunity for the government to spend a few tens of billions of dollars on doses and give them away where our influence can be felt to create a sense of gratitude to the US — and also because it’s the right thing to do.
+
+[Speaker: Michael Rosen]
+And yes, it will be expensive. There’s no question, but when the Biden administration is talking about spending $1.9 trillion on a so-called infrastructure plan, tens of billions of dollars to actually help put a final nail in the coffin of this pandemic and bolster US influence and strategic goals around the world is a no-brainer. And if the vaccine manufacturers are willing to provide these at cost or at a small markup, this is great bang for the buck for the US taxpayer.
+
+[Speaker: Shane Tews]
+More generally, how are we doing with IP rights in the technology space?
+
+[Speaker: Michael Rosen]
+I think the IP regimes in the US — whether on the patent, trademark, or copyright side — are certainly imperfect and there are important ways we can fix them. I’ve been writing for as long as I’ve been associated with AEI about different patent reform measures and ways the system could be improved.
+
+[Speaker: Michael Rosen]
+The same is true on the trademark and copyright sides: There are always ways to make the system better, and Congress, the courts, and practitioners like myself should work hard to make that happen. But the basic trade-off in all of these systems between disclosure to the public of how technology works in exchange for a limited monopoly is a bargain that should never be trifled with in its basic, most fundamental sense. And we do that right in the US. We do it right in Europe and Japan. There are ways to improve it, but challenging this system fundamentally in the sense of “all information needs to be free” is not helpful. It only undermines innovation and creativity.

@@ -1,26 +1,53 @@
 PAGE_TITLE: 
-	Can We Childproof the Internet? | American Enterprise Institute - AEI
+	Can We Childproof the Internet?
 
+[Speaker: Introduction / editorial context]
 Child Online Safety bills are crafted with the intention of protecting minors from harmful content on the internet. However, they can infringe on First Amendment rights, affecting the freedom of speech and access to information, and cause other inadvertent harms. In this discussion, we explore the complexities and unintended consequences of age gating, including the chilling effect on anonymous speech and the perils of over-blocking valuable educational content.
+
+[Speaker: Introduction / editorial context]
 Ari Cohn is a Free Speech Counsel at TechFreedom, specializing in First Amendment and defamation law. Before starting his own practice, Ari spent six years as director of the Individual Rights Defense Program at the Foundation for Individual Rights in Education.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews
-:
-The Child Online Safety bills are met with the best of intentions, but they do a lot of damage in ways that people don’t really understand. How does age-gating on the internet potentially violate First Amendment rights and freedom of speech for both minors and adults?
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: The Child Online Safety bills are met with the best of intentions, but they do a lot of damage in ways that people don’t really understand. How does age-gating on the internet potentially violate First Amendment rights and freedom of speech for both minors and adults?
+
+[Speaker: Ari Cohn]
 Ari Cohn: It’s an important issue. Unfortunately, when people get confronted with an issue that’s so emotional and urgent, it tends to put blinders on in terms of potential bad effects.
+
+[Speaker: Ari Cohn]
 The first and perhaps most obvious way is that it eliminates the ability to read—and in some cases, to speak—anonymously on the internet. We went through this back in the late 90s, when Congress was trying to figure out a way to stop “material harmful to minors” content from finding its way into minors’ web browsers. One of the ways that people thought that this could be done was verifying the ages of visitors to certain websites. This went all the way up to the Supreme Court, and then found its way back down to the appellate courts a number of different times, and the gist of the problem was: the First Amendment protects the right to receive information, just as it protects the right to speak. By forcing people to give up their identity—whether that be credit card number or driver’s license—before they’re able to access content would dissuade people from actually accessing that information that they are constitutionally entitled to access.
+
+[Speaker: Ari Cohn]
 Now, what we have here in terms of social media is actually one step worse, because not only does it impact the right to receive information, but with social media platforms, it also impacts the right to affirm when you have to give up your identity before speaking on those platforms. Consider the amount of anonymous speech that is important to dissent, which people would not feel necessarily comfortable expressing if their name was tied to it. Removing the ability to express ourselves in that way actually does a great disservice to freedom of expression in this country. And that’s baked into the founding of this country: The Federalist Papers were published anonymously, and so many of the foundational writings of our country were published anonymously at first.
+
+[Speaker: Ari Cohn]
 The other harm comes from fully restricting access, like the bills that say minors can’t be on social media. That is an even greater, more obvious First Amendment problem, because it just flat out bans a certain class of people entirely from these important avenues for speech online. Minors have significant First Amendment rights; the Supreme Court has been very clear about that. The contours can be a little bit murky at times, but just because the user is under the age of 18 doesn’t mean that they don’t have the right to speak online. That’s just not how the First Amendment has ever worked.
+
+[Speaker: Shane Tews]
 We also have an interesting conundrum that by asking for age gating, you’re asking for more information. Depending on how the age gating verification is going to work, you’re going to collect information on minors, and then dispose of it. But as we all know, once you’ve collected data, the data is collected, right?
+
+[Speaker: Ari Cohn]
 It never goes away. When you think about it, a lot of times these laws carry stiff penalties if they’re not complied with. And one of the things that very few of these bills tried to reckon with is: If you destroy the information about how you verified somebody’s age, how are you supposed to prove that you complied with the law? In some sense, you have to maintain some of this data. Otherwise, it’s just taking the platform’s word that they did it. And I don’t think that government regulators or attorneys general are going to be willing to do that.
+
+[Speaker: Ari Cohn]
 One of the specific technical and logistical challenges is “overblocking.” Searching for sexual health, reproductive rights, mental health issues, are the kinds of things this would block, which seems counterintuitive.
+
+[Speaker: Ari Cohn]
 We’ve been here before, in the late ’90s, early 2000s, with schools having web blockers on their computers, which isn’t necessarily a bad idea, in theory, but it would block a lot of things like LGBT-related or sexual-health-related information. These web blocking programs were just really draconian and blocked a lot of valid, useful, educational information for students. This isn’t exactly a new problem. All that has happened is instead of it being an automated program that a school installs, now social media platforms have to be the ones blocking. And, of course, they’re going to, because they have no idea where these liability lines will fall. They’re going to do whatever they can to reduce their exposure. That is just good business, risk aversion, so it’s going to happen.
+
+[Speaker: Shane Tews]
 You have spent a lot of time paying attention to the court cases and the legislative efforts that are going on. What is the state of play right now?
+
+[Speaker: Ari Cohn]
 There have been a number of states that have passed laws, and there is litigation in a number of different states over different aspects. In Texas, for one, there’s a law that was more focused on porn. And the Fifth Circuit did what the Fifth Circuit does and completely ignored all the precedent created over the past few decades and said, “No, that’s totally fine.”
+
+[Speaker: Ari Cohn]
 Every year, we seem to come up with a new way to force the Supreme Court to decide what the soul of the internet is going to be. Last term, it was Section 230 and algorithms. This term, it’s content moderation laws. And I guarantee next term, it’s going to be age verification. So we’ll have some clarity eventually, because there will be a circuit split sometime in the very near future. This is going to be decided, although the state of play right now is decidedly uncertain. And the interesting part about it is, these cases from back in the late ’90s, early 2000s, never said that age verification is just verboten until the end of time. In fact, what they said is that age verification as it worked at the moment would violate the First Amendment.
+
+[Speaker: Ari Cohn]
 The question now is whether anything has changed significantly enough to reduce those constitutional concerns. I don’t think it has. In fact, I think it has gotten worse, because we now know what the effects of data collection are; we know that once data exists, it exists forever in some way, shape, or form. I’ll go back to the idea that some laws say you have to destroy the data: even if I am wrong and that there’s a way to prove compliance, I still think it doesn’t matter.
+
+[Speaker: Ari Cohn]
 Because the chilling effect of asking someone to provide their identity isn’t necessarily dependent on what happens to the data afterwards. All the user knows is that they are being asked to identify themselves before reading something or being able to speak online, and it is that moment where they say, “That is creepy. I don’t want to do that. I would rather not exercise my First Amendment rights.” So, in a way, it’s almost even irrelevant what happens to the data, because that constitutional chilling effect happens at the first very first step when the user is asked to identify themselves.

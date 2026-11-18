@@ -1,27 +1,56 @@
 PAGE_TITLE: 
-	Where Are We on Spectrum Allocation? Highlights from My Conversation with Roger Entner | American Enterprise Institute - AEI
+	Where Are We on Spectrum Allocation? Highlights from My Conversation with Roger Entner
 
+[Speaker: Introduction / editorial context]
 Radio spectrum is the lifeblood of our connected, communicating world. The cordless devices that make our lives more productive and easier often use radio spectrum to connect to the internet. Spectrum is also a finite resource—there’s nothing usable below 3 Hz and above 3,000 GHz. This scarcity then creates a tragedy of the commons problem that has been mitigated by licensure and regulation. Since spectrum usage is at an all-time high, what are we doing as a country to ensure the right technology has access to the right bandwidth? What complicates those discussions, and how do we compare to the rest of the world?
-I sat down with
-Roger Entner
-, founder of Recon Analytics and former senior vice president and head of research at Nielsen Media Research, to take a magnifying glass to these questions.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+I sat down with Roger Entner, founder of Recon Analytics and former senior vice president and head of research at Nielsen Media Research, to take a magnifying glass to these questions.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: There’s always this challenge between licensed and unlicensed spectrum: it’s really hard to get back once given away, if even plausible. So, how are we doing on spectrum allocation? And where do you think we should start in addressing our spectrum challenge?
+
+[Speaker: Roger Entner]
 Roger Entner: The problem with American spectrum policy is it’s a story of stop and go, stop and go, stop and go. Every time we’re executing, we do really, really well, and then we declare victory over our spectrum needs. And then people are using more spectrum. We have to get back to licensing spectrum, ideally in sync with the rest of the world.
+
+[Speaker: Roger Entner]
 The US has been very negligent in that aspect. We’ve come late, and done solutions that nobody else has done in the six gigahertz band, for example, which has been unlicensed. Do we need more licensed spectrum? Yes. Do we need more unlicensed spectrum? Absolutely. But we should do this in an internationally harmonized way. And this means now; other countries have moved ahead and licensed a lot of the spectrum, so we need to catch up.
+
+[Speaker: Shane Tews]
 Who all needs to be engaged in this then? And how do we get ahead of the ball instead of dropping the ball?
+
+[Speaker: Roger Entner]
 On the regulatory side, you have the Federal Communications Commission (FCC) and National Telecommunications and Information Administration (NTIA). You also have state, local, and federal users. And federal users, particularly the Department of Defense, have a lot of spectrum. And then you have the House and Senate deciding, in coordination with the White House and based on the recommendations from NTIA and FCC, what spectrum should be allocated to whom, when, and how. The more political will there is expended, the faster the spectrum is allocated. But right now, it doesn’t go anywhere. To the great credit of the FCC and NTIA, they announced a task force to identify new spectrum. But the expectation is that this will come to a conclusion in around 10 to 15 years, whereas we need spectrum in four to five years.
+
+[Speaker: Roger Entner]
 Then that whole situation with the Federal Aviation Administration (FAA) was a complete disaster. When the first rules came about around C-band, Boeing, the largest airplane manufacturer in the United States, if not the world, said “We need 100 megahertz of guard band between where the wireless industry is active and the altimeters.” And the FCC said “No, Boeing, you’re not getting 100 megahertz guard band. You’re getting 200 megahertz guard band, because we want to be extra careful that these planes don’t get impacted. So we give you twice as much as what you want.” In Europe, they’re getting 100 megahertz, and in Japan they’re getting no guard band. Then spectrum gets auctioned, and then the airline industry comes out and says “Oh, no, planes will fall from the sky and crash” because there was interference. What has blown me away the most is that the “expert” agency on spectrum, interference, etc. apparently is not the FCC, but the FAA. They’re eating the FCC’s lunch on this.
+
+[Speaker: Shane Tews]
 So you’re getting at the bigger challenge we have, the inter-agency process when it comes to spectrum allocation. What do we need to navigate it properly?
+
+[Speaker: Roger Entner]
 It’s missing somebody who is banging heads together and saying “We’re going to do this.” Because until then, everybody is playing in their own corner of the sandbox and is not sharing with anybody else. And in the middle of the sandbox is the American consumer, who is suffering for it.
+
+[Speaker: Roger Entner]
 The reality is that we’re using more and more data, year after year; it’s going up by 30 percent. Spectrum, like everything else, is a limited resource. You can improve capacity by splitting cell sites. But it’s a lot harder to split cell sites than make cells bigger: one of the things that a lot of people don’t understand is that under 4G and 5G, every cell site sees another cell site as an interferer. When there’s interference, spectrum utilization goes down. And the closer the cell sites are together, the more interferers they see.
+
+[Speaker: Shane Tews]
 Speaking of coordination, let’s evaluate the fiber rollout. Should we be so focused on fiber with our broadband spending?
+
+[Speaker: Roger Entner]
 The average fiber mile costs $30,000 to $50,000. If that farm is only one mile off the mid-haul, that’s a $50,000 bill. The customer is paying $50. The payback is 1000 months. That’s 80 years. So the great-grandchildren of whoever lives there now, if they will continue to live there, in 80 years’ time, will have amortized the investment that we have made.
+
+[Speaker: Roger Entner]
 So, is it the best technical solution out there? Yes. Is it the most cost-effective one? Not really. For example, Verizon bought 200 megahertz in the Midwest, in most rural states. With 200 megahertz dedicated to fixed wireless, with low population density, you can provide gigabit wireless service, probably even two gigabits. That’s what you can do wirelessly at a lower cost structure, because they use the same antennas that they use for regular mobile service to cover the same fixed wireless service. So it’s a two-for-one.
+
+[Speaker: Shane Tews]
 There seems to be a wide array of programs seeking to fund broadband expansion. Any thoughts out there for the states putting their plans together?
+
+[Speaker: Roger Entner]
 We should look at it from a technology-agnostic perspective. There are solutions where fiber is great, there are solutions where cable with Data Over Cable Service Interface Specification 4 (DOCSIS 4) is great. And so for all of the technologies, there is a solution, and there should be a funding source for it.
+
+[Speaker: Roger Entner]
 Satellite has a lot of promise. By default, it’s a global solution. But it also has a lot of problems. Because these satellites are up 200, 300 miles in space, and they will come down. So you have to replenish them over and over again. Depending on how much capacity you want and need, you need thousands of them. But they have the opportunity to go to places where even wireless doesn’t make sense. The problem is that in about 95 percent of the places where people are, we have other ways of doing it cheaper, more effectively, and better overall. But what I’m excited about is satellite usage to eliminate dead spots, especially for first responders. We have wildfires in national parks, and rightfully, we don’t have coverage there because you don’t necessarily want to put a cell site out in the middle of pristine nature.

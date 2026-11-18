@@ -1,14 +1,14 @@
 PAGE_TITLE: 
-	Do Data Protection Laws Really Improve Cybersecurity? (with Emily Taylor) | American Enterprise Institute - AEI
+	Do Data Protection Laws Really Improve Cybersecurity? (with Emily Taylor)
 
+[Speaker: Introduction / editorial context]
 Data protection regulations must strike a difficult balance between individual privacy and cybersecurity. But what happens when a cyberattacker’s identity is masked in the name of privacy? How would existing laws in the European Union, United Kingdom, and India address this dilemma? What can proponents of federal privacy legislation in the US learn from these countries?
-On this episode,
-Shane
-speaks with
-Emily Taylor
-, CEO of
-Oxford Information Labs
-and an associate fellow of
-Chatham House’s
-international security program. Emily and her Chatham House colleagues recently ran a set of ransomware simulations to test how much (or how little) national laws on cross-border data flows would influence the severity, investigation, and eventual attribution of a cyberattack. She joins “Explain to Shane” to preview her findings and discuss the complex relationship between data protection and cybersecurity.
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane speaks with Emily Taylor, CEO of Oxford Information Labs and an associate fellow of Chatham House’s international security program. Emily and her Chatham House colleagues recently ran a set of ransomware simulations to test how much (or how little) national laws on cross-border data flows would influence the severity, investigation, and eventual attribution of a cyberattack. She joins “Explain to Shane” to preview her findings and discuss the complex relationship between data protection and cybersecurity.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

@@ -1,12 +1,14 @@
 PAGE_TITLE: 
-	Welcome to Explain to Shane! | American Enterprise Institute - AEI
+	Welcome to Explain to Shane!
 
+[Speaker: Introduction / editorial context]
 In the past decade, technology has become increasingly important to policy debates. But how does it all really work, and what’s coming next?
-Join AEI Visiting Fellow
-Shane Tews
-as she goes behind the touchscreen in the newest addition to the
-AEI Podcast Network
-,
-Explain to Shane
-!
+
+[Speaker: Introduction / editorial context]
+Join AEI Visiting Fellow Shane Tews as she goes behind the touchscreen in the newest addition to the AEI Podcast Network, Explain to Shane!
+
+[Speaker: Introduction / editorial context]
 Together with tech industry leaders, she explores how the apps, services, and structures of today’s information technology systems work, and how they shape our social and economic lives.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

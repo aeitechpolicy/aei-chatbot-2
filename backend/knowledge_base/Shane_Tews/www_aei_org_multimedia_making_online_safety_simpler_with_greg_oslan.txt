@@ -1,0 +1,11 @@
+PAGE_TITLE: 
+	Making Online Safety Simpler (with Greg Oslan)
+
+[Speaker: Introduction / editorial context]
+Many people rely on their employers to manage cybersecurity at work. Protecting personal devices and accounts, however, is often overlooked and can mean sorting through unfamiliar tools and advice on your own. As cybersecurity threats constantly evolve, how can we equip ourselves and our loved ones to identify data breaches and act quickly? When an email looks real but something is off, what should you do first? And what do you do if you have already been hit by a ransomware attack?
+
+[Speaker: Introduction / editorial context]
+To explore the steps to take, Shane is joined by Greg Oslan, chairman and CEO of MERENA Inc. and board treasurer of the National Cybersecurity Center in Colorado Springs. They dive into common occurrences people at any level of digital literacy face such as forgotten accounts, recycled passwords, and the evolution of scams in the AI era.
+
+[Speaker: Introduction / editorial context]
+Find this episode’s transcript here.

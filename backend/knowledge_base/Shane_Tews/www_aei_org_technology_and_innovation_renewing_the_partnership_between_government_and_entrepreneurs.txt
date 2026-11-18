@@ -1,32 +1,65 @@
 PAGE_TITLE: 
-	Renewing the Partnership Between Government and Entrepreneurs | American Enterprise Institute - AEI
+	Renewing the Partnership Between Government and Entrepreneurs
 
+[Speaker: Introduction / editorial context]
 Our government grapples with challenges that demand quick solutions and decisive action. However, the government’s structure often lacks the necessary incentives to drive innovation. How can venture capital principles be applied within governmental agencies to foster impactful change?
-Below are the highlights from my conversation with
-Arun Gupta
-, as he emphasizes the importance of a renewed partnership between government and entrepreneurs. Arun coauthored
-Venture Meets Mission: Aligning People, Purpose, and Profit to Innovate and Transform Society
-. He is also CEO of NobleReach Foundation, a venture capitalist, a lecturer at Stanford University, and an adjunct entrepreneurship professor and senior advisor to the provost at Georgetown University.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below are the highlights from my conversation with Arun Gupta, as he emphasizes the importance of a renewed partnership between government and entrepreneurs. Arun coauthored Venture Meets Mission: Aligning People, Purpose, and Profit to Innovate and Transform Society. He is also CEO of NobleReach Foundation, a venture capitalist, a lecturer at Stanford University, and an adjunct entrepreneurship professor and senior advisor to the provost at Georgetown University.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: A point you make in your book is that if venture capital funds were judged like government money, no one would invest in the venture fund. VCs get measured by the winners on their portfolio, but the government gets measured by its losers. What is the effect of that?
+
+[Speaker: Arun Gupta]
 Arun Gupta: I think while the point may feel subtle, it has very profound implications. When you’re measured on your winners like VCs are, you take risks—you innovate. And when you look at the collective portfolio of what you’re doing, you don’t treat a loss as a loss, but as an experiment that helped you innovate. As a VC, I can make 10 bets and five of them may not work, three of them are okay, but if two of them are outlier winners, I’m oversubscribed in my next fund. With the government, if you make 10 bets and nine of them are okay, but one of them is bad, you carry that around with you for a decade. That changes the risk appetite. Now, you’re playing not to lose. That’s not innovation. That’s making sure that we don’t fail.
+
+[Speaker: Arun Gupta]
 Furthermore, when you are focusing on the playbook and not deviating, you also implicitly say that you’ve got the right playbook. It also means you’re focused on the inputs, not the outputs. So, we have two different systems there. We recognize that we can’t wave a magic wand and change the culture of government overnight. Then, how do we create a renewed partnership between government and entrepreneurs where we can shift the risk to the right people at the right time, to folks that can take that risk. With that, we can, as a collective society, innovate, to solve big problems.
+
+[Speaker: Shane Tews]
 What is the venture-meets-mission ecosystem you speak about in your classes?
+
+[Speaker: Arun Gupta]
 The ecosystem has multiple stakeholders, including the private sector, academic institutions, and government. How do we pull these together? In my class, we humanize the government. It’s easy to say “get government out of my life, we don’t need government.” But we want to pull back on that, asking “what part of government don’t you want?” so we can remind people that the government is really just a collection of organizations that are made up of individuals with positive intent. And we also personalize entrepreneurship. Entrepreneurs get conflated with the billionaire class, but entrepreneurship is much broader than that—it’s not about the outcome as much as the mindset.
+
+[Speaker: Arun Gupta]
 I really believe the two superpowers in this country are our ability to create talent (in that ecosystem coming out of the higher education community), and our ability to innovate (which comes out of our entrepreneurial ecosystem). How do we create the connection back to larger government ambitions to solve the problems? How do we create that renewed partnership? Because at the end of the day, in the world that we’re now living in—which is rapidly changing technologically, geopolitically, socially, and environmentally—the folks best equipped to come up with solutions in a rapidly changing environment are actually entrepreneurs. You have to be entrepreneurial, because we don’t know what new tech is coming down the pike, when it’s going to hit exactly, and how it’s going to impact us.
+
+[Speaker: Arun Gupta]
 And the issue is, we’ve lost the ability of being able to get our best tech talent going into government again. Today, we’re in an environment where less than 7% of tech workers in government are under the age of 30. We have 4x more over the age of 60. Meanwhile, the average age at Big Tech firms is probably low-to-mid 30s. How do we create that infrastructure for that talent wanting to come in and serve a “tour duty?”
+
+[Speaker: Arun Gupta]
 How did you come to the view that the public sector is a really valuable career? Most of the people coming out of the VC world and Silicon Valley tend to have a very different mindset towards government than you do.
+
+[Speaker: Arun Gupta]
 For one, I think Silicon Valley is also recognizing the benefit of this. You see meaningfully large pools of capital and funds getting raised around defense tech, climate tech, and health tech, where they are building capability around collaborating with the government in a meaningful way. I think that’s largely changing because there are success stories today; there are real companies built that have created outlier performance and outcomes and returns for investors.
+
+[Speaker: Arun Gupta]
 The reason I had come to this wasn’t really altruism, but it was my experience investing at the intersection of mission tech and entrepreneurship in the early days of cybersecurity and dual purpose tech. Once you start investing in that area, and you see that there’s real innovation happening, it dispels a little bit of some of the myths I had around what’s really happening inside the government.
+
+[Speaker: Arun Gupta]
 I do feel like we’ve given this generation a false-binary choice in the words we use: private sector vs. public sector, for-profit vs. not-for-profit. That doesn’t leave a lot of room for a middle ground. Having spent the latter half of my venture career investing in that space and then now watching this become a real investment area that’s attracting real capital, I think: why wouldn’t you want to go into this world? This is a sandbox where you can be solving big problems that have real societal benefit, while also doing it in a way where you can create financial independence for yourself.
+
+[Speaker: Arun Gupta]
 They really do speak two different languages, and we need people who speak the languages of both Silicon Valley and DC.
+
+[Speaker: Arun Gupta]
 On top of people speaking the languages, when we bring in folks from the private sector, we bring in expats, but we need more “dual citizens” of Silicon Valley and DC. The difference is expats come in, stay kind of isolated, and then they kind of go back into their old world. A dual citizen actually comes in, learns the language, learns the process, the culture, and also has the ability to bring those relationships that they’ve developed back to their homeland.
+
+[Speaker: Arun Gupta]
 That cross pollination only happens when you have dual citizens, because at the crux, that dual citizen brings trust. The reason they’re willing to open up and talk about problems that we’re trying to solve is because they trust that dual citizen. We’re heading into a decade or two now, where I think the real big problems are going to be solved at the intersections, they’re not going to be solved in silos. We need people that know how to communicate across those intersections, can translate across those intersections, and more importantly, have trust across those intersections.
+
+[Speaker: Arun Gupta]
 There is a generational shift that we’re seeing. The reason I’m optimistic about this generation is that I do think they’re more mission driven than previous generations, and primarily because they’ve been shaped by existential threats in a very short period of time. COVID is the healthcare one; then you think about what happened in Ukraine; you look at geopolitical threats, the environmental threats, great power competition with our autocratic adversaries… Those are all things that this generation is having to take in in a very short period of time. They now want to go serve and criticize these big problems.
+
+[Speaker: Arun Gupta]
 I see a sort of 9/11 effect now with Space Force. A lot of people wanted to do public service after 9/11, and with Space Force, I see a whole new wave of interest coming.
+
+[Speaker: Arun Gupta]
 That’s exactly right, and I think the commercial space industry is a great example of where we as a country have the capacity to collaborate with the government in the private sector when we want to. In 2010, the country started to feel like we were falling behind with space launch vehicles. NASA looks out to the private sector, and provides milestone funding for anyone that could help build commercial space launchers. That’s how space SpaceX was born. Part of the story that never gets told with SpaceX is that the government played an integral role in its emergence, in funding it. When the government puts out outcomes, and says, “If you can hit these outcomes, we will provide contracts of these values,” the private sector then can do what it does best, which is mobilizing capital, talent, and technology to see how we can build the right model to be able to deliver it in a profitable way. We have the capacity to do this in this country when our backs are up against the wall.
+
+[Speaker: Arun Gupta]
 Now, the question is, how do we make this the norm, rather than the exception?

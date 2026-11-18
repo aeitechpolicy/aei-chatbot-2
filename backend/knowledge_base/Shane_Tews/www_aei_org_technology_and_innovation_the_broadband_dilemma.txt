@@ -1,30 +1,65 @@
 PAGE_TITLE: 
-	The Broadband Dilemma | American Enterprise Institute - AEI
+	The Broadband Dilemma
 
-Broadband accessibility has rapidly transformed into a modern-day essential, integral to our nation’s economy.  However, some still do not have access to basic internet connectivity, which became more evident during COVID-19. As a result, government programs like the $42 billion Broadband Equity, Access, and Deployment (BEAD) Program were created to expand internet connectivity to unserved and underserved areas. Previous initiatives yielded low adoption rates and wasteful funding allocations, hindering progress and highlighting the need for transparency in the decision-making and funding process.
+[Speaker: Introduction / editorial context]
+Broadband accessibility has rapidly transformed into a modern-day essential, integral to our nation’s economy. However, some still do not have access to basic internet connectivity, which became more evident during COVID-19. As a result, government programs like the $42 billion Broadband Equity, Access, and Deployment (BEAD) Program were created to expand internet connectivity to unserved and underserved areas. Previous initiatives yielded low adoption rates and wasteful funding allocations, hindering progress and highlighting the need for transparency in the decision-making and funding process.
+
+[Speaker: Introduction / editorial context]
 Two weeks ago, AEI Nonresident Fellow Mark Jamison returned to Explain to Shane, accompanied fellow broadband expert and University of North Texas Economics Professor Janice Hauge. As members of AEI’s Broadband Barometer Project, they are ingrained in the key obstacles facing broadband expansion.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Thanks to the advanced tools of the digital era, broadband is considered essential to our economy. Both of you are digging deeper into the question of the role that government programs play in the actual expansion of the internet on both a macro and micro level. What are your initial thoughts on that idea?
+
+[Speaker: Mark Jamison]
 Mark Jamison: We learned during COVID what a lot of people already knew: That we’re moving into a digital world. If you are not participating in that in some way, then you’re missing out on a whole lot of life. There are still people who just prefer to not participate, and they certainly have that freedom, but that’s becoming a much smaller number. Internet connectivity is important for whatever people are trying to do in the modern world.
+
+[Speaker: Mark Jamison]
 The challenge with broadband is there are some places where it’s just really expensive to provide. The amount that people are willing and able to pay for broadband won’t cover the costs. In order to be able to get broadband into those spaces at a price point that is affordable for the people there, you need some sort of subsidy. That’s where these programs try to plug in.
+
+[Speaker: Mark Jamison]
 Now, some of them have different kinds of histories, but for this particular initiative that we’ve been examining, the focus is that some high costs keep this from being commercially viable, and so we want some funding to help make up that for that commercial viability gap.
+
+[Speaker: Shane Tews]
 You both looked at these programs in years past. What are some of the failures that we’re hopefully learning from?
-Janice Hauge:
-The scorecard
-that we’re working on now is an evaluation of the most recent and largest program that has been implemented, but in the past, we’ve had different programs to expand broadband. As part of the American Recovery and Reinvestment Act back in 2009, the federal government allocated $4.7 billion to broadband expansion. Run by the NTIA [National Telecommunications and Information Administration], it was the first major federal program of its type for broadband. However, empirical studies showed that there was absolutely no effect on adoption. Similarly, other large programs showed little evidence that they were effective. One study in particular showed that more than 10 percent of the projects never even started.
+
+[Speaker: Janice Hauge]
+Janice Hauge: The scorecard that we’re working on now is an evaluation of the most recent and largest program that has been implemented, but in the past, we’ve had different programs to expand broadband. As part of the American Recovery and Reinvestment Act back in 2009, the federal government allocated $4.7 billion to broadband expansion. Run by the NTIA [National Telecommunications and Information Administration], it was the first major federal program of its type for broadband. However, empirical studies showed that there was absolutely no effect on adoption. Similarly, other large programs showed little evidence that they were effective. One study in particular showed that more than 10 percent of the projects never even started.
+
+[Speaker: Janice Hauge]
 What we found is that when grants come out in this fashion, only half of the broadband per dollar spent is realized. At this point, we’re now allocating $42.5 billion to Broadband Equity, Access, and Deployment programs. Most of the studies, accountability measures, and things that have been put into place to try to make sure that the money hasn’t disappeared simply gauge whether or not the money was used. There are instances where we just don’t know if the money was used but even when it is used, there isn’t any perceivable adoption increase.
+
+[Speaker: Mark Jamison]
 Mark Jamison: What was happening in some of those cases is that money was being spent, perhaps to put in some broadband. But it was broadband that was going to be put in anyway. Essentially, providers doubled down on where there already were services.
+
+[Speaker: Shane Tews]
 What are some promising strategies for those states that have good scorecard ratings and what are some roadblocks in these criteria being met?
-Janice Hauge: We look at transparency and efficiency in terms of competition for funds, cost-effectiveness, and whether providers and subgrantees have any way of being monitored. There are cases where the states may be doing these things, but it isn’t publicly apparent due to poor or lack of website maintenance. That’s part of transparency. States that are doing well have a very interactive and transparent website where people can find if they are classified as “underserved” or who the subgrantees of Broadband Equity Access and Deployment (BEAD) funding are. We look to see if the states are requiring competition and free market processes to dictate pricing, all of which is publicly available or being submitted to the NTIA.
+
+[Speaker: Janice Hauge]
+Janice Hauge: We look at transparency and efficiency in terms of competition for funds, cost-effectiveness, and whether providers and subgrantees have any way of being monitored. There are cases where the states may be doing these things, but it isn’t publicly apparent due to poor or lack of website maintenance. That’s part of transparency. States that are doing well have a very interactive and transparent website where people can find if they are classified as “underserved” or who the subgrantees of Broadband Equity Access and Deployment (BEAD) funding are. We look to see if the states are requiring competition and free market processes to dictate pricing, all of which is publicly available or being submitted to the NTIA.
+
+[Speaker: Janice Hauge]
 States are in the process of planning and getting NTIA approval for these projects. Usually, funds are allocated early on in the process. In this case, states have had to jump through multiple hoops, submit five-year proposal plans, and submit letters of intent to apply for funds all before they know if funds will be available. There’s an overwhelming rush from states to supply this and additional information to NTIA, but states are still left waiting for final NTIA approval.
+
+[Speaker: Janice Hauge]
 We also don’t know why NTIA rejects certain proposals from the outside. We also don’t know what they are asking to be changed. But this rush for states to submit their plans to the NTIA and then further inaction by the NTIA leads to projects being stalled and overall confusion on when funds will be available and distributed.
+
+[Speaker: Shane Tews]
 Are conversations regarding funding from private capital, futureproofing these technologies, and further development, helpful when talking about BEAD funding?
+
+[Speaker: Mark Jamison]
 Mark Jamison: Some people are throwing up their hands, not because of private capital issues, but because of delays happening in development and the fact that many states will be launching their projects at the same time. Private companies cannot operate in 30 different states and keep their financial commitments to each individual state. If we are going to spend $40 billion over two or three years, there are only so many people who can manage and develop the infrastructure for these projects. Shortages of supply and expertise are bound to happen. Capital markets do not like risk. If NTIA or states are unclear what will happen several years from now, investors will put their money somewhere else.
+
+[Speaker: Shane Tews]
 This really is a never ending operation. If anything, we just keep adding more government programs to the list of things that we’re trying to figure out. Going forward, what are your final thoughts or pieces of advice to the states?
+
+[Speaker: Janice Hauge]
 Janice Hauge: One of the difficulties with the supply and bringing access to places that do not have it is that the states are having to weigh lower service quality with faster access. So they’re trying to decide, what do we give our people? Is it important to bring them fiber in five years, or is important to get them connected to something now? And there’s confusion from states and companies that we’ve spoken with so far about whether the NTIA will approve that type of proposal. I think clarity would be a huge improvement to the entire process because states don’t know if they’re going to get their proposal rejected.
+
+[Speaker: Mark Jamison]
 Mark Jamison: There are two things I would offer. One is that it’s very tempting to point fingers at people and say, “This isn’t going well because of you.” And I disagree with that. You go back to some of the discussions we had about what happened early in the Obama administration. Larry Strickling and Jonathan Adelstein were responsible for those programs. Those are really smart, dedicated people. They’re very capable. It’s just the systems weren’t allowing them to be successful, and that that is being repeated here. We’ve got a lot of really smart, dedicated people, but this is not a very well designed system.
+
+[Speaker: Mark Jamison]
 Second, how do we do as well as we can? And I just encourage everyone to hold people accountable, especially the people who will be getting funds. We should be keeping in mind that two years from now, five years from now, seven years from now. We need to have learned how things can go well and how things can go poorly so the next time we do something like this, whether it be for broadband or something else, we do better.

@@ -1,10 +1,14 @@
 PAGE_TITLE: 
-	Quantum: Computing’s Next Innovation Wave (with Alan Baratz) | American Enterprise Institute - AEI
+	Quantum: Computing’s Next Innovation Wave (with Alan Baratz)
 
-Quantum computing has the potential to radically advance our ability to solve complex problems, transforming entire industries from drug discovery to cybersecurity. But, how does quantum computing
-really
-work? What problems can it help people and businesses solve? And how does it play into the US’s larger national strategic goals?
+[Speaker: Introduction / editorial context]
+Quantum computing has the potential to radically advance our ability to solve complex problems, transforming entire industries from drug discovery to cybersecurity. But, how does quantum computing really work? What problems can it help people and businesses solve? And how does it play into the US’s larger national strategic goals?
+
+[Speaker: Introduction / editorial context]
 Our guest today is deeply entrenched in the development of quantum edge computing, which allows quantum computer deployment closer to where the data is generated and processed. Quantum edge computing can lead to performance improvement, optimization results, and reduce latency in information processing.
-Alan Baratz
-is the CEO of D-Wave. Alan has spearheaded bringing quantum optimization solutions into the consumer mainstream, applying them to real-world challenges like tsunami relief and carbon emission reduction. With over 25 years of experience developing leading technologies, he provides an insider view into the realities and possibilities of quantum computing.
+
+[Speaker: Introduction / editorial context]
+Alan Baratz is the CEO of D-Wave. Alan has spearheaded bringing quantum optimization solutions into the consumer mainstream, applying them to real-world challenges like tsunami relief and carbon emission reduction. With over 25 years of experience developing leading technologies, he provides an insider view into the realities and possibilities of quantum computing.
+
+[Speaker: Introduction / editorial context]
 Tune in as Alan demystifies the complex world of quantum computing.

@@ -1,44 +1,95 @@
 PAGE_TITLE: 
-	Have We Turned a Blind Eye to Cybersecurity? Highlights from My Conversation with Ambassador Robert O’Brien | American Enterprise Institute - AEI
+	Have We Turned a Blind Eye to Cybersecurity? Highlights from My Conversation with Ambassador Robert O’Brien
 
+[Speaker: Introduction / editorial context]
 The evolution of consumer technology means we are in an increasingly connected world of devices and applications that are being used by consumers worldwide. We see more of our government and business interactions, as well as much of our daily lives, becoming increasingly reliant on our connections to the internet. Along with this incredible access comes the need for more security for our networks and our devices.
+
+[Speaker: Introduction / editorial context]
 I recently interviewed former national security adviser Ambassador Robert O’Brien to discuss the implications of this trend. Ambassador O’Brien has spent much of his time examining where the United States stands in the tech race, and how our adversaries are increasingly using technology through the lens of national security, including promoting digital authoritarianism. He’s held multiple diplomatic posts, including special presidential envoy for hostage affairs in the State Department, and in his most recent service as the 27th national security adviser to the President.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed the episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed the episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Advanced technology is all over the news these days. How have you seen the evolution of technology affect our national security over time?
+
+[Speaker: Amb. O’Brien]
 Amb. O’Brien: I think what we thought was going to happen over the years is that as technology became diffused as we got products, software, and hardware to places like Russia, China, and Iran that it would lead to more freedom and more free expression. We thought the internet would be more like it is here.
+
+[Speaker: Amb. O’Brien]
 Unfortunately, what we’ve seen is that those authoritarian regimes have used that technology to suppress their people, to have total surveillance societies, but they’ve also used it against us. So, they’ve increased the complexity of their military systems and platforms to a point where they’re rivaling ours. If we don’t keep our technological edge as a nation, we’re going to have real trouble.
-Do you think the
-CHIPS Act
-is helping guide us in the right direction?
+
+[Speaker: Shane Tews]
+Do you think the CHIPS Act is helping guide us in the right direction?
+
+[Speaker: Amb. O’Brien]
 I think it is. I’m the free marketeer. I’m a Republican—it’s always been free markets, free men and women, and free trade my whole life. I believe in those principles. But we’ve got to take those principles and see how they’re applied in reality.
+
+[Speaker: Amb. O’Brien]
 We were so concerned about efficiency, saving money, and reducing the price of computers and phones that we allowed our national security to be affected. So, we put ourselves in a position where we were totally reliant on the Communist Party of China for our supply chain. And we saw that it really manifest itself at the onset of COVID-19 when the Chinese were using personal protective equipment and medical devices, pharmaceutical components, and testing capability as leverage diplomatically to gain their will, not just against the United States, but against smaller countries all over the world.
+
+[Speaker: Amb. O’Brien]
 We can’t be reliant on the Communist Party of China for our supply of chips, we must bring that manufacturing home. That’s why I came out in support of the CHIPS Act, which, for most of my life, I haven’t been in favor of industrial policy, but we’ve got to do something to encourage our manufacturers to come back to America.
-I
-generally
-feel like we have unleashed something amazing in social media, but it is coming back at us in a way that we were not expecting. Can you walk us through your concerns about the cybersecurity of social media?
+
+[Speaker: Shane Tews]
+I generally feel like we have unleashed something amazing in social media, but it is coming back at us in a way that we were not expecting. Can you walk us through your concerns about the cybersecurity of social media?
+
+[Speaker: Amb. O’Brien]
 I’m not against social media. I think there are wonderful advantages—the collaboration, the dissemination of information—that take place on social media that can be terrific. But let’s start with our adversaries. You know, most of our adversaries don’t allow social media. China doesn’t allow Twitter, Facebook, and Google for the most part, even if you have a VPN. And yet TikTok is readily available here. Our adversaries are using social media to divide Americans. What this looks like in our country is China putting disinformation out there, trolling people with bot farms, and trying to stoke social divisions in America.
+
+[Speaker: Amb. O’Brien]
 Specific to the military, a lot of young people in our armed forces like TikTok and they get can get hooked on it. However, the Chinese can find everybody who’s using it. So, heaven forbid if there was an outbreak of war, the Chinese would know where a lot of our aviators are, they’d know where a lot of our surface warfare officers are, and they’d know where a lot of US officials are. Anyone who’s on TikTok, they’re going to know exactly where they are. They might even be able to beat us on the battlefield by taking out our pilots before they can ever get to their planes. It’s extraordinarily worrisome.
+
+[Speaker: Shane Tews]
 As users of tech, how do we keep our guard up from these types of cyber exploits we’re talking about?
+
+[Speaker: Amb. O’Brien]
 It’s a great question, Shane. I wish the government could do more, but when you think about how diffused our systems are, there’s not just one cyber defense software that everyone uses. The government doesn’t control everyone’s computers.
+
+[Speaker: Amb. O’Brien]
 I mean, the sheer number of networks in America is astounding. Every company, every nonprofit, every NGO, every state government, every local government, the federal government, and the agencies within the federal government—almost all have incompatible and different networks. So, there’s no easy way to push a button here to fix our cybersecurity. What we have to do is we have to rely on people and everyday Americans. It comes down to personal cyber hygiene.
-Cyber hygiene starts really at the fundamental level of Americans not clicking on suspect links and videos or using things like TikTok to avoid having their system infected. We saw that with the
-SolarWinds
-case, the massive hack that took place right at the end of our administration. It had gotten into thousands and thousands of networks, and it originated with just one phishing expedition. So, really the best cyber defense is the individual American being careful about what they do and what they click on.
+
+[Speaker: Amb. O’Brien]
+Cyber hygiene starts really at the fundamental level of Americans not clicking on suspect links and videos or using things like TikTok to avoid having their system infected. We saw that with the SolarWinds case, the massive hack that took place right at the end of our administration. It had gotten into thousands and thousands of networks, and it originated with just one phishing expedition. So, really the best cyber defense is the individual American being careful about what they do and what they click on.
+
+[Speaker: Shane Tews]
 It seems like it’s Big Tech open season in Congress at the moment. What do you make of legislation that tries to reign in our tech industry’s capacity?
+
+[Speaker: Amb. O’Brien]
 It’s tough to defend Big Tech these days, right? The Democrats don’t like them because the companies in their view have gotten too big or monopolistic. From the left, they always like to break up companies and have the government get too involved in the market.
+
+[Speaker: Amb. O’Brien]
 On the conservative side, the conservatives are incensed at the algorithms, the platform, and the hiding of conservative comments. They hate the censorship, they hate the fact that the former President of the United States was not allowed to post on Twitter.
+
+[Speaker: Amb. O’Brien]
 The response has been a very blunt instrument, though. One option is to break up the companies, and there are problems with that because it goes to our ability to do the esoteric research on things like artificial intelligence, machine learning, and quantum computing that these companies of scale can do to keep us in the ballgame with the Chinese. Another option is that we open everything up so that any Chinese, Russian, or Iranian app designer can have total access to our phones.
+
+[Speaker: Amb. O’Brien]
 Right now, ten of the 20 biggest tech companies in the world are based in Beijing. I ask my friends who are upset about tech, and I understand their concern, “Do we really want Big Tech in Beijing, or would we rather have it here in Silicon Valley, Austin, Provo-Orem, Boston, Boulder, or Miami, where we can regulate it if necessary?” We can use a scalpel to deal with some of these issues that have people upset. But we shouldn’t break up the companies or open them up to the Chinese—those are two very blunt instruments that could both end badly for the United States.
+
+[Speaker: Shane Tews]
 What has happened to Huawei, and does it serve as a regulatory model for protecting American cybersecurity?
+
+[Speaker: Amb. O’Brien]
 When I first came into office, I was briefed very early on the issue. And people said, “Oh, Huawei’s got the market, they control the whole 5G market, we’re going to have to figure out some sort of encryption method to get around it because the Chinese will, of course, suck up all the data.” With artificial intelligence and machine learning, the Chinese could hoover up everybody’s data all over the world and come up with all kinds of advantages.
+
+[Speaker: Amb. O’Brien]
 We were told that standing up to Huawei was a fool’s errand, but we actually succeeded. We started with Japan and Australia, and then Italy and the UK came along and stopped Huawei. It showed that when America focuses and is willing to put leadership from the very top, from the President, we can still move the needle.
+
+[Speaker: Amb. O’Brien]
 America has gotten in the game with some really innovative things from companies like Microsoft and Dell, and some cloud computing and software options for 5G. And so we’re back in the game, and we’re going to protect our networks.
+
+[Speaker: Shane Tews]
 Is there anything that the network operators need to be doing on security as we’re seeing more and more things attached to the internet?
+
+[Speaker: Amb. O’Brien]
 I think for a long time the tech industry felt that they didn’t belong to a country. The internet was for everybody. This was going to be something apart from the government, and apart from the country in which they operated.
+
+[Speaker: Amb. O’Brien]
 In some ways, it was a great idea when you thought the internet would be wide open worldwide. And we’ve seen that the internet is not wide open, it’s very closed in China, Russia, and Iran. Our American tech manufacturers have also realized that the Chinese have stolen them blind. FBI Director Wray gave a great talk about the theft saying that the intellectual property theft by China on the United States has been the biggest transfer of human wealth in history. I’m reminded of Trajan’s Column depicting Rome’s looting of ancient Romania, but today, instead of carts of the spoils of war, the treasures are being brought over via electronics.
+
+[Speaker: Shane Tews]
 What’s on the horizon and what should we think about going forward?
+
+[Speaker: Amb. O’Brien]
 I’m extraordinarily optimistic about the United States of America, and I think that we’re going to have another American century. I think at the end of the day, notwithstanding the challenges that we face here at home, and they’re vast—and we’re polarized—but I’m confident that there’s nowhere in the world that people can innovate, build, and manufacture like the United States of America. No one can defeat us; we can only defeat ourselves.

@@ -1,11 +1,8 @@
 PAGE_TITLE: 
-	The Future of Small Business Financing (with Anthony Matos) | American Enterprise Institute - AEI
+	The Future of Small Business Financing (with Anthony Matos)
 
+[Speaker: Introduction / editorial context]
 How is technology revolutionizing access to capital for small businesses? What challenges do these businesses face in securing funding? And what broader role does technology play in improving their access to capital?
-On the latest episode of
-Explain to Shane
-, Shane interviews
-Anthony Matos
-, CEO and cofounder of
-Shubox
-, a platform designed to help small businesses access capital through the innovative use of data and AI. They discuss how innovative platforms like Shubox leverage AI and alternative data to streamline the lending process, provide valuable insights into business health, and ultimately help small businesses access the capital they need to grow.
+
+[Speaker: Introduction / editorial context]
+On the latest episode of Explain to Shane, Shane interviews Anthony Matos, CEO and cofounder of Shubox, a platform designed to help small businesses access capital through the innovative use of data and AI. They discuss how innovative platforms like Shubox leverage AI and alternative data to streamline the lending process, provide valuable insights into business health, and ultimately help small businesses access the capital they need to grow.

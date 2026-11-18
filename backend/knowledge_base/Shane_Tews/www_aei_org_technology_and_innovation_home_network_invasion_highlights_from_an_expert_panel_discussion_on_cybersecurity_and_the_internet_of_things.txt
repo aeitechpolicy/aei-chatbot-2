@@ -1,39 +1,62 @@
 PAGE_TITLE: 
-	Home Network Invasion: Highlights from an Expert Panel Discussion on Cybersecurity and the Internet of Things | American Enterprise Institute - AEI
+	Home Network Invasion: Highlights from an Expert Panel Discussion on Cybersecurity and the Internet of Things
 
-This past weekend witnessed the 2023 Consumer Electronics Show—often
-touted
-as the preeminent personal tech conference of the year—and it continued to expand the horizons of our tech-interwoven lives with its wares. However, it also brought to mind the vulnerabilities to cyberthreats that such a fabric creates. On November 8, 2022, AEI hosted a panel discussion focused on evaluating the security of our networks in a world where this lattice of everyday devices is vulnerable to attack by bad actors, and our conclusions may shock you.
-Our panel of experts featured
-Katerina Megas
-of the National Institute of Standards and Technology (NIST),
-Brian Scriber
-of CableLabs,
-Phil Englert
-of the Health Information Sharing and Analysis Center, and
-Paul Eisler
-of USTelecom.
-Below is an edited and abridged transcript of key highlights from the panel. You can re-watch the full event on
-AEI.org
-and read the full transcript
-here
-.
-From left to right: Paul Eisler, Phil Englert, Katerina Megas, Brian Scriber, and Shane Tews during the 11/8 event “Where Should the Security Lie in Our Networks?”
+[Speaker: Introduction / editorial context]
+This past weekend witnessed the 2023 Consumer Electronics Show—often touted as the preeminent personal tech conference of the year—and it continued to expand the horizons of our tech-interwoven lives with its wares. However, it also brought to mind the vulnerabilities to cyberthreats that such a fabric creates. On November 8, 2022, AEI hosted a panel discussion focused on evaluating the security of our networks in a world where this lattice of everyday devices is vulnerable to attack by bad actors, and our conclusions may shock you.
+
+[Speaker: Introduction / editorial context]
+Our panel of experts featured Katerina Megas of the National Institute of Standards and Technology (NIST), Brian Scriber of CableLabs, Phil Englert of the Health Information Sharing and Analysis Center, and Paul Eisler of USTelecom.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from the panel. You can re-watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
 Shane Tews: When it comes to small businesses, or homes for that matter, these small-scale environments tend to run into a harsh obsolescence curve when it comes to keeping devices on their Internet of Things (IoT) updated. How can we insulate these more vulnerable networks from becoming prematurely obsolete?
+
+[Speaker: Phil Englert]
 Phil Englert: You know, there might not be an industry that has thinner margins than health care these days. I think Becker’s estimates that 68 percent of health care providers will operate in the red this year for a variety of reasons. Medical devices are built to last a very long time, but one of the challenges we have is the disparity in lifecycles between the software that drives these medical devices and the clinical functionality that they perform. We have many, many systems that, at age seven or 15, or even 20, still provide the clinical functionality that they were designed for, and yet they’re operating on outdated, unsupported operating systems.
+
+[Speaker: Phil Englert]
 The other thing that we see is that mergers, acquisitions, and dispositions, where companies change hands on a routine basis or on a regular basis, cause a loss of that intrinsic DNA knowledge with every transaction that happens. And it makes it more and more difficult to support these things into the future.
+
+[Speaker: Katerina Megas]
 Katerina Megas: So there’s this idea of “I have a thing, and I want to be able to use that thing because it’s a dishwasher or it’s a washing machine. I should be able to use it until the drums don’t work or until I can’t replace the belt,” and often, the digital components are going to age before the actual physical device. And this concept became an extensive discussion when NIST was working on what we call the IoT cybersecurity baseline. One solution might be to find a way to continue to allow a device using unsupported software to operate but disconnect it from the internet, because it’s no longer safe or secure to be connected. But there’s danger in that too—if an individual thinks that their smoke detector is working and you bricked it because you said, “Yeah, it’s no longer secure, I’m sorry, we actually put personal safety above, you know, cybersecurity.” That’s when it starts getting complicated. It’s always a risk-based decision, and risk and how you see risk changes depending on where you’re sitting.
+
+[Speaker: Brian Scriber]
 Brian Scriber: But that risk isn’t just to the device, and I think that’s one of the areas that we kind of fall into this trap. If you are an attacker, finding a vulnerable device, like a lightbulb, is fantastic because it has power constantly, it has the computational ability to be able to engage. You gave it network credentials when you brought it on your network. That device is a fantastic landing spot to be able to launch all kinds of other attacks inside the home. So it really does come back to the devices, and what we’re trying to protect is the network, but we can’t rely on the network to do the protection. We have to start at square one.
-Shane Tews: Brian, can you walk us through what a
-distributed denial of service (DDoS) attack is so consumers have an understanding of how they might have a role to play in this?
+
+[Speaker: Shane Tews]
+Shane Tews: Brian, can you walk us through what a distributed denial of service (DDoS) attack is so consumers have an understanding of how they might have a role to play in this?
+
+[Speaker: Brian Scriber]
 Brian Scriber: So DDoS is a distributed denial-of-service attack. And what you’re doing is finding a way to ask a machine so many times for information that it can’t respond to legitimate requests for service. So imagine back in the day where we’re using wall-mounted phones to call and ask someone on a date. If you could call the person enough and keep them on the phone, maybe you could prevent somebody else from calling and asking your potential date out instead.
+
+[Speaker: Brian Scriber]
 So, there are different kinds of DDoS attacks, but the IoT devices that were targeted in the Mirai botnet were video and DVR devices that were connected directly to the internet or had a path easily accessible to the internet. They were hijacked, and they were enlisted in a thing called a botnet. That’s when you have a bunch of machines that are slave machines to be able to do your nefarious bidding and the idea of being able to hit those targets. You can also do some things where there’s reflection on botnets, and you can make a very dramatic increase in the amount of traffic. We saw some of that with Mirai, and it took down the East Coast when that hit, and we lost a lot of the services we rely on.
+
+[Speaker: Brian Scriber]
 This kind of attack is enabled by devices that don’t have a level of security to prevent them from being hijacked and used in those purposes. So our job in the cybersecurity space is to look at not just interoperability to be able to expand and have devices that can talk to each other but to do it securely. Secure interoperability is the direction that we’re trying to go, and DDoS attacks are one of the threats.
+
+[Speaker: Shane Tews]
 Shane Tews: Let’s talk about the Energy Star concept that has just come forward. The thing that has always concerned me about this issue is the idea that something is going to feel safe because it has some sort of emblem on it that will say the device has passed some standards test. But will it still be valid when it comes out of the box and attaches to a network?
+
+[Speaker: Katerina Megas]
 Katerina Megas: NIST was tasked in Executive Order 14028 to pilot a label for consumer IoT devices. After much deliberation and comparison to other labels like Energy Star’s, we thought there should be a simple mark, what we call binary, that shows the product either meets the standard or doesn’t meet it. But we do believe that there needs to be a digital representation as well and somewhere that individuals, consumers, security researchers, or other organizations can then go to some website and evaluate the nutritional label and see, “OK, what exactly is in this baseline, and what exactly is this device doing?” And that could be dynamically maintained. By putting things online, you would be able to have a more current label and keep it up to date over time.
+
+[Speaker: Shane Tews]
 Shane Tews: Paul, is there a way to protect our networks from the external network side—to keep malicious or vulnerable things apart from our more valuable networks?
+
+[Speaker: Paul Eisler]
 Paul Eisler: I think that depending on what kind of network you’re using and what it’s being used for, there’s different ways of architecting something to that effect on the network side. For example, you may just build a network in a way that certain parts of it are sectioned off from each other in a way that they’re not going to communicate, and then you just know it if somehow something is trying to get through there, you know you’ve got a problem.
+
+[Speaker: Phil Englert]
 Phil Englert: And there are a number of technologies that are being developed, such as passive monitoring tools that have the ability to do micro-segmentation, and it seems like, every week, there’s a new one, and the promise of machine learning and AI and advancing that, right? But recognizing that device A shouldn’t be talking to endpoint B or trying to get out of my network, you know, is something that is becoming, you know, more and more realistic. The challenge is the infrastructure is so varied and the technologies that drive these are so varied that it takes really complicated, not complex, but complicated software that can recognize all of those different nuances, you know, as normal and as abnormal and respond to them appropriately.
+
+[Speaker: Brian Scriber]
 Brian Scriber: But putting the onus on the bandage to keep everybody else safe isn’t the way we want to solve it. We want to treat the real wound, right? For a manufacturer, there’s not an economic driver to go back and necessarily update an outdated device. And that’s an interesting externality that shouldn’t be borne by the rest of the industry.
+
+[Speaker: Katerina Megas]
 Katerina Megas: If you’ve been in cybersecurity for a while, I think you would probably agree, the only thing that is absolutely secure is the thing that is not connected, right? Even still, they may remain vulnerable. We are not going to be able to put the entire onus on the device and declare, “You shall be secure.”
+
+[Speaker: Paul Eisler]
 Paul Eisler: Now, we understand that, because there are things that could be done on top of it, this is a whole-of-ecosystem problem. And I can say I work very closely with a lot of the larger manufacturers, for example, and I actually do genuinely get the impression that a lot of these larger manufacturers are on top of security. They really are trying to make a positive difference on security. Where I think that we run into issues is you have a ton of smaller players in the space where the economic incentives are very different than some of the larger established brands, and also, there are a ton of these that are already out there in the ecosystem right now.

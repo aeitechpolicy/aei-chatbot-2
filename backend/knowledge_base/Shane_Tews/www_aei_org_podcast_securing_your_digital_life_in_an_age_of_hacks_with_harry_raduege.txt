@@ -1,8 +1,14 @@
 PAGE_TITLE: 
-	Securing Your Digital Life in an Age of Hacks (with Harry Raduege) | American Enterprise Institute - AEI
+	Securing Your Digital Life in an Age of Hacks (with Harry Raduege)
 
+[Speaker: Introduction / editorial context]
 As we adopt technology at every level of our lives, these technological advancements can also open the door to more cyber risks. The increasing sophistication and frequency of cyberattacks are a threat to government agencies, private companies, and individual users alike. Given the interconnectedness of our digital economy, how can public users and companies take steps to protect themselves from cybercriminals? What steps can we take to guard our data from criminals? And can we identify vulnerabilities before they are exploited and defend our digital assets from attacks?
-Today’s guest has thought deeply about these questions and works to address emerging cyberthreats head-on.
-Lt. Gen. Harry Raduege
-is the president and CEO of the National Cybersecurity Center, a nonprofit that works to raise cyber awareness and integrate cybersecurity into every aspect of our interconnected lives. The center helps serve small and medium businesses, partners with K–12 schools and higher education to create educational programs, and brings together people and organizations to learn about protecting systems and devices from cyberattacks and how to solve cyber-related problems. Before his work at the National Cybersecurity Center, Lt. Gen. Raduege served in the Air Force for over 30 years, where he was the chief information officer of the Space Command, chief information officer of the North American Aerospace Defense Command, and commander of the Joint Rask Force–Global Network Operations.
+
+[Speaker: Introduction / editorial context]
+Today’s guest has thought deeply about these questions and works to address emerging cyberthreats head-on. Lt. Gen. Harry Raduege is the president and CEO of the National Cybersecurity Center, a nonprofit that works to raise cyber awareness and integrate cybersecurity into every aspect of our interconnected lives. The center helps serve small and medium businesses, partners with K–12 schools and higher education to create educational programs, and brings together people and organizations to learn about protecting systems and devices from cyberattacks and how to solve cyber-related problems. Before his work at the National Cybersecurity Center, Lt. Gen. Raduege served in the Air Force for over 30 years, where he was the chief information officer of the Space Command, chief information officer of the North American Aerospace Defense Command, and commander of the Joint Rask Force–Global Network Operations.
+
+[Speaker: Introduction / editorial context]
 Lt. Gen. Raduege joins the show with invaluable insights from working in cybersecurity.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

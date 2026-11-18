@@ -1,16 +1,14 @@
 PAGE_TITLE: 
-	Advancing Cybersecurity Through Software ‘Nutrition Labels’ (with Allan Friedman) | American Enterprise Institute - AEI
+	Advancing Cybersecurity Through Software ‘Nutrition Labels’ (with Allan Friedman)
 
-Following a wave of recent
-attacks, cyber and supply chain security are high on the United States’ policy
-agenda. Software “nutrition labels” are one solution cyber experts are
-considering; what do these “labels” look like, and how can government and
-industry work together to ensure their effectiveness?
-On this episode,
-Shane
-is joined by
-Allan Friedman
-, director of cybersecurity initiatives at the National Telecommunications and Information Administration (NTIA). For the last several years, Allan has been working to promote the adoption of
-Software Bills of Materials
-(SBOMs) across several industries and government agencies. He joins the podcast to explain how SBOMs can enrich America’s cyber toolbox, and how NTIA can promote their use without direct mandates.
+[Speaker: Introduction / editorial context]
+Following a wave of recent attacks, cyber and supply chain security are high on the United States’ policy agenda. Software “nutrition labels” are one solution cyber experts are considering; what do these “labels” look like, and how can government and industry work together to ensure their effectiveness?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by Allan Friedman, director of cybersecurity initiatives at the National Telecommunications and Information Administration (NTIA). For the last several years, Allan has been working to promote the adoption of Software Bills of Materials (SBOMs) across several industries and government agencies. He joins the podcast to explain how SBOMs can enrich America’s cyber toolbox, and how NTIA can promote their use without direct mandates.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

@@ -1,73 +1,71 @@
 PAGE_TITLE: 
-	The American Semiconductor Industry and Its Global Competition: Highlights from My Conversation with John Neuffer | American Enterprise Institute - AEI
+	The American Semiconductor Industry and Its Global Competition: Highlights from My Conversation with John Neuffer
 
-What are semiconductors, and why are they so important in
-our digital age? Does it matter if they’re made in the United States? John
-Neuffer, president and CEO of the Semiconductor Industry Association, joined
-the latest episode of “Explain to Shane” to discuss the outsized importance of
-this tiny piece of hardware, the state of the industry today, and the challenges
-it faces moving forward.
-Below is an edited and abridged transcript of our talk. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the “Explain to Shane” podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane Tews: I’d like to start this conversation by giving
-people a better understanding of how important semiconductors are to their
-daily lives. How many digital goods that we touch on a daily basis have a
-semiconductor in them?
-John Neuffer: Every single one of them. Just about
-everything with an electric current flowing through it involves a semiconductor
-these days. So your toaster, your refrigerator, obviously your iPhone, your car
-— they are ubiquitous. It’s like a magic technology: On a piece of silicon the
-size of a quarter, there are 20, 30, 40, 50 billion transistors. Transistors
-are the on-off switches, the ones and zeros, that allow us to do all this
-phenomenal stuff with our iPhones and our other digital technologies.
-The other thing I want to add, Shane, is that it’s internet
-of things (IoT), virtual reality, autonomous cars, e-health, remote learning.
-That’s all powered by semiconductors. But really importantly, all the future
-technologies — 5G, 6G to come after that, quantum computing, artificial
-intelligence — that’s all powered by semiconductor innovation.
-So this is a technology that was
-birthed here in the United States, Silicon Valley. God love them, but it is now
-a global industry. Can you kind of give us a breakdown on what’s going on?
+[Speaker: Introduction / editorial context]
+What are semiconductors, and why are they so important in our digital age? Does it matter if they’re made in the United States? John Neuffer, president and CEO of the Semiconductor Industry Association, joined the latest episode of “Explain to Shane” to discuss the outsized importance of this tiny piece of hardware, the state of the industry today, and the challenges it faces moving forward.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to the podcast here and read our full discussion here. You can also subscribe to the “Explain to Shane” podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: I’d like to start this conversation by giving people a better understanding of how important semiconductors are to their daily lives. How many digital goods that we touch on a daily basis have a semiconductor in them?
+
+[Speaker: John Neuffer]
+John Neuffer: Every single one of them. Just about everything with an electric current flowing through it involves a semiconductor these days. So your toaster, your refrigerator, obviously your iPhone, your car — they are ubiquitous. It’s like a magic technology: On a piece of silicon the size of a quarter, there are 20, 30, 40, 50 billion transistors. Transistors are the on-off switches, the ones and zeros, that allow us to do all this phenomenal stuff with our iPhones and our other digital technologies.
+
+[Speaker: John Neuffer]
+The other thing I want to add, Shane, is that it’s internet of things (IoT), virtual reality, autonomous cars, e-health, remote learning. That’s all powered by semiconductors. But really importantly, all the future technologies — 5G, 6G to come after that, quantum computing, artificial intelligence — that’s all powered by semiconductor innovation.
+
+[Speaker: Shane Tews]
+So this is a technology that was birthed here in the United States, Silicon Valley. God love them, but it is now a global industry. Can you kind of give us a breakdown on what’s going on?
+
+[Speaker: John Neuffer]
 As you mentioned, semiconductors were invented here in the US of A. They have a long history here. We’ve been global leaders for nearly the entire time, and now we control about half the market. But since the semiconductor was invented, a lot of other players have arisen around the world. The Koreans have come up, the Taiwanese, the Europeans, and there is heavy production and design in Singapore, Japan. I think the biggest new player that’s causing increasing heartburn in Washington is China. The Chinese are plowing literally hundreds of billions of dollars into their semiconductor industry to build it out and make it strong and competitive. Right now, they’re far behind, but they’re very focused and there’s high-level political attention on this question.
-So is there a difference between
-the design part of this and the actual manufacturing?
+
+[Speaker: Shane Tews]
+So is there a difference between the design part of this and the actual manufacturing?
+
+[Speaker: John Neuffer]
 That’s a great question. The industry is basically broken into three parts. One, companies that just design semiconductors. And then companies that just manufacture semiconductors, which are called foundry companies. And then there are companies that do the whole thing — they design and manufacture. It’s an important distinction.
-Why is it important that the
-United States starts to step up their game and get re-engaged on this?
+
+[Speaker: Shane Tews]
+Why is it important that the United States starts to step up their game and get re-engaged on this?
+
+[Speaker: John Neuffer]
 You’re getting right to the big challenge we’re facing now. And that is, there’s been a lot of pressure to bring more manufacturing back to the US generally, and particularly for advanced manufacturing. That goes for semiconductors as well. We have very, very complex global supply chains. And one of the things that has made us very strong has been our ability to use the resources of the world and systems of the world to build an amazingly competitive industry. But it’s created some vulnerabilities too, and I think those have come to the fore of late. We all have seen relations with China sour.
+
+[Speaker: John Neuffer]
 And China, by the way, for our industry is our biggest and fastest growing market. About 35 percent of our sales go to China. In fact, about 83 percent of our customers are overseas, so we need to keep these markets open.
+
+[Speaker: John Neuffer]
 So we’ve seen the relations with China sour, and there’s been a kind of a jolt to our policy establishment watching what’s happening in Hong Kong. And they’re thinking, “Well, is this going to someday happen in Taiwan?” Roughly 22 percent of all semiconductor manufacturing happens in Taiwan. A lot of stuff we make is fabricated there, so that’s caused some consternation. And then coming into the COVID-19 crisis, I think it’s exposed supply chain vulnerabilities of all industries. But I think that’s kind of put into bold relief the potential vulnerabilities that we have. And the one obvious vulnerability is that our chip manufacturing has declined in recent years as a share of global manufacturing. That’s creating a lot of challenges.
-You and I were talking earlier,
-and you said that the race to the future in semiconductor manufacturing is
-about investment in research and development (R&D) and that this is not a
-free market.
+
+[Speaker: John Neuffer]
+You and I were talking earlier, and you said that the race to the future in semiconductor manufacturing is about investment in research and development (R&D) and that this is not a free market.
+
+[Speaker: John Neuffer]
 Yeah, that’s the other leg of our two-legged stool, which is an odd little stool, I suppose. But you can build all the manufacturing facilities here in the US, called “fabs,” or fabrication operations. You can build all the fabs you want here in the US, but unless you’re driving the most innovative technologies into those fabs, you’re still going to be diminished as an industry. And governments around the world are plowing very large sums into R&D and semiconductors, and our government has been very steady, but low in the amounts it’s plowing in. Recently, there’s been a little bit of an uptick, but when you compare to some other governments, it’s insufficient.
+
+[Speaker: John Neuffer]
 There’s something that’s important to identify here: When it comes to semiconductor R&D, we’re not dealing with a free market economy. Governments play a big role in that. As an industry, we drive about 18 percent of our sales back into R&D, and that’s all market-driven. But there’s the government side, what the government puts in. And other governments are putting huge amounts towards R&D and semiconductors. On the manufacturing side as well, sadly we are simply not in a free market economy. Other governments identified semiconductors as strategic industries long ago, and they’ve been plowing substantial amounts into attracting semiconductor manufacturing.
-And so what happens is that we don’t have any
-federal program to do that. We have states that try to do that, and try hard to
-attract manufacturing from US companies and foreign companies, and there’s been
-some successes. But when a state is competing against the coffers of a national
-government, it’s not really a level playing field. So, that needs to be
-addressed. And governments around the world have been doing this for decades.
-We’ve not been in that game. As a result, our share of global semiconductor manufacturing
-has been in a slow decline.
+
+[Speaker: John Neuffer]
+And so what happens is that we don’t have any federal program to do that. We have states that try to do that, and try hard to attract manufacturing from US companies and foreign companies, and there’s been some successes. But when a state is competing against the coffers of a national government, it’s not really a level playing field. So, that needs to be addressed. And governments around the world have been doing this for decades. We’ve not been in that game. As a result, our share of global semiconductor manufacturing has been in a slow decline.
+
+[Speaker: John Neuffer]
 Other players around the world have very, very advanced manufacturing capabilities. Taiwan in particular has extremely advanced manufacturing capabilities. So when design companies are shopping around as to where to produce — where to have their chips manufactured — they may look at those locations favorably. It’s a global marketplace, and our significant vulnerability is we don’t have enough of the advanced manufacturing, or semiconductor manufacturing generally, that we probably should have. If we want to have more resilient supply chains, become more resilient — and frankly more competitive — and stay ahead of the curve, we need to put a greater focus on increasing manufacturing capabilities here in the US.
-Legislation was introduced this
-month that is looking to take some corrective measures and get the US
-government — and possibly state governments — more engaged. Can you walk me
-through what the goals are on that?
+
+[Speaker: Shane Tews]
+Legislation was introduced this month that is looking to take some corrective measures and get the US government — and possibly state governments — more engaged. Can you walk me through what the goals are on that?
+
+[Speaker: John Neuffer]
 Yeah, the goals are to increase chip manufacturing here and to have greater US government investments in R&D. Those are the two fundamental goals of the legislation. The first bill is sponsored by Sens. John Cornyn (R-TX) and Mark Warner (D-VA). On the house side, there was a parallel bill sponsored by Reps. Doris Matsui (D-CA) and Michael McCaul (R-TX). By the time we post this, there may be other bills. I should also say the administration has been working behind the scenes to come up with its own ideas as to what incentives and investments should look like.
+
+[Speaker: John Neuffer]
 Basically, there are three things going on. One is significant grants to incentivize manufacturing and some tax credits to incentivize building here, for the hugely expensive tools that go into manufacturing facilities, and the manufacturing facilities themselves. There’s also a very strong research prong of this — funds to support US government R&D. On top of that, there’s a proposal to create a National Semiconductor Technology Center, which would, among many other things, help to research prototyping. These centers exist in other countries around the world, and we don’t have one. It would be a consortium between companies and the government, and would be a big asset for our industry going forward. There are a lot of things in there, but when you look at what is needed to for us to just to even, at our 12 percent share of global manufacturing, it’s going to be a really significant undertaking. So these would be very, very important first steps.
-So Congress is going to play a role
-in this. And if things go well, funding will allow you to have more options. Is
-that kind of what I’m hearing?
+
+[Speaker: Shane Tews]
+So Congress is going to play a role in this. And if things go well, funding will allow you to have more options. Is that kind of what I’m hearing?
+
+[Speaker: John Neuffer]
 That’s exactly right. But one thing I do want to underscore, is that while we want the government to step in and level the playing field in terms of manufacturing and R&D, we also want the government to stay focused like a laser on keeping the foreign markets open. As I mentioned, 83 percent of our customers are overseas. We get huge revenues from overseas. One chief reason why that’s important is those revenues help us invest in R&D. As I mentioned, about 18 percent of our revenues go back into R&D and most of that 18 percent comes from our sales overseas. That’s the huge scale we have overseas with those sales, to China and other countries. And so we need to keep those markets open so that we can keep plowing huge amounts into R&D. We are one of the most R&D-intensive industries in the world. Keep those funds plowed back into R&D, and that R&D drives our innovation. And if those funds are diminished from smaller sales overseas, then our ability to innovate is diminished and that threatens our ability to be on the tip of the innovation spear going forward.

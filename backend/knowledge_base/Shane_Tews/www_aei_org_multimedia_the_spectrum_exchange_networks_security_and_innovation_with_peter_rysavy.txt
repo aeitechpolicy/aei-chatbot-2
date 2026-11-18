@@ -1,7 +1,8 @@
 PAGE_TITLE: 
-	The Spectrum Exchange: Networks, Security, and Innovation (with Peter Rysavy) | American Enterprise Institute - AEI
+	The Spectrum Exchange: Networks, Security, and Innovation (with Peter Rysavy)
 
+[Speaker: Introduction / editorial context]
 Amid debates over spectrum allocation, critical questions about national security, communication infrastructure, and connectivity continue to take center stage. What does spectrum sharing involve? How does spectrum sharing enhance the efficiency of limited spectrum resources? And what impact does it have on deploying emerging technologies like 5G and AI-driven networks?
-In this episode, Shane Tews and
-Peter Rysavy
-explore spectrum management challenges, sharing opportunities, and technological impacts on 5G networks, emphasizing regulatory frameworks and innovation for optimal spectrum usage. Peter is a wireless technology expert and the President of Rysavy Research, a technology consulting firm. He is also the executive director of the Wireless Technology Association, an organization that evaluates wireless technologies.
+
+[Speaker: Introduction / editorial context]
+In this episode, Shane Tews and Peter Rysavy explore spectrum management challenges, sharing opportunities, and technological impacts on 5G networks, emphasizing regulatory frameworks and innovation for optimal spectrum usage. Peter is a wireless technology expert and the President of Rysavy Research, a technology consulting firm. He is also the executive director of the Wireless Technology Association, an organization that evaluates wireless technologies.

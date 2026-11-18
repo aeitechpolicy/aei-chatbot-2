@@ -1,8 +1,11 @@
 PAGE_TITLE: 
-	Reclaiming the Airwaves (with Harold Furchtgott-Roth) | American Enterprise Institute - AEI
+	Reclaiming the Airwaves (with Harold Furchtgott-Roth)
 
+[Speaker: Introduction / editorial context]
 Spectrum is a vital asset to America’s digital infrastructure, but who decides how this resource is distributed? As wireless demand accelerates, what is causing the United States to lag in spectrum policy and oversight? With the recent change in the Big Beautiful Bill to renew auction authority, how can we ensure that spectrum doesn’t become a roadblock to future innovation?
+
+[Speaker: Introduction / editorial context]
 In this episode, Shane is joined by Harold Furchtgott-Roth, former commissioner of the Federal Communications Commission and currently a senior fellow at the Hudson Institute. They examine the historical reasons behind America’s rise—and subsequent decline—in spectrum innovation and discuss the policy reforms necessary to restore American leadership in this vital area.
-Download this episode’s transcript
-here
-.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.

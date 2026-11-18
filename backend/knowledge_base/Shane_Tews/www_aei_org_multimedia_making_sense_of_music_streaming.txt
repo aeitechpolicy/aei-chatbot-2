@@ -1,10 +1,11 @@
 PAGE_TITLE: 
-	Making Sense of Music Streaming (with Michael Huppe) | American Enterprise Institute - AEI
+	Making Sense of Music Streaming (with Michael Huppe)
 
+[Speaker: Introduction / editorial context]
 When Taylor Swift pulled her music from Spotify in 2014, she shone a spotlight on an issue that persists in the music industry today: Artists must jump through major hoops to be compensated for their music that is played across multiple platforms. Nine years later, the economics are still challenging for artists to receive payment for their work. Artists earn some royalties from streaming services and receive no compensation when their music is played on traditional AM or FM radio due to old broadcast rules. These issues are further exacerbated by AI, which poses risks to artists’ licensed work and raises questions around their creativity being compensated.
-SoundExchange was created in 2003 to help resolve this issue by tracking listening data across platforms and facilitating payments to artists. Since its creation, the organization has adapted its payment systems for performance royalties to keep pace with the modern music ecosystem as it changes with new technology. On this episode,
-Michael Huppe
-, the president and CEO of SoundExchange, joins
-Shane Tews.
-Under his leadership, the organization has overseen billions of dollars in payments and has drastically increased royalty rates to artists.
+
+[Speaker: Introduction / editorial context]
+SoundExchange was created in 2003 to help resolve this issue by tracking listening data across platforms and facilitating payments to artists. Since its creation, the organization has adapted its payment systems for performance royalties to keep pace with the modern music ecosystem as it changes with new technology. On this episode, Michael Huppe, the president and CEO of SoundExchange, joins Shane Tews. Under his leadership, the organization has overseen billions of dollars in payments and has drastically increased royalty rates to artists.
+
+[Speaker: Introduction / editorial context]
 Tune in to break down the complex economics of the music industry and the impact of AI technologies on the landscape of music.

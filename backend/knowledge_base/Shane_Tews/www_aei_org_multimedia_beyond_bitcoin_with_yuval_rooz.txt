@@ -1,7 +1,8 @@
 PAGE_TITLE: 
-	Beyond Bitcoin (with Yuval Rooz) | American Enterprise Institute - AEI
+	Beyond Bitcoin (with Yuval Rooz)
 
+[Speaker: Introduction / editorial context]
 Cryptocurrency is transforming finance before our eyes, using technology to put control over money and transactions back into the hands of users. With the potential to enable faster, cheaper, and more transparent transfers, cryptocurrency infrastructure lays the foundation for new avenues of innovation—from self-executing smart contracts to greater privacy and financial digitization. However, for many outside the industry, cryptocurrency remains veiled in confusion.
-Today’s guest,
-Yuval Rooz
-, is deeply entrenched in the world of blockchain and digitization. He is the cofounder and CEO of Digital Asset, which uses blockchain technology to modernize the industry underlying today’s economy—enabling companies to balance efficiency with privacy. Before founding Digital Asset, he managed an electric algorithmic trading desk at the DRW Trading Group. Tune in to find out how bitcoin and AI are changing the finance industry.
+
+[Speaker: Introduction / editorial context]
+Today’s guest, Yuval Rooz, is deeply entrenched in the world of blockchain and digitization. He is the cofounder and CEO of Digital Asset, which uses blockchain technology to modernize the industry underlying today’s economy—enabling companies to balance efficiency with privacy. Before founding Digital Asset, he managed an electric algorithmic trading desk at the DRW Trading Group. Tune in to find out how bitcoin and AI are changing the finance industry.

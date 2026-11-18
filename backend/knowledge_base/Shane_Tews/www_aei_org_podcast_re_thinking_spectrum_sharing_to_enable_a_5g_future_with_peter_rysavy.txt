@@ -1,21 +1,14 @@
 PAGE_TITLE: 
-	Re-Thinking Spectrum Sharing to Enable a 5G Future (with Peter Rysavy) | American Enterprise Institute - AEI
+	Re-Thinking Spectrum Sharing to Enable a 5G Future (with Peter Rysavy)
 
-The radio
-airwaves that power wireless technologies—known as spectrum—are a finite but
-critical resource. Tailoring spectrum toward its best use often entails
-industry and government sharing airwaves with one another, a process that has
-proven complicated as historical use does not always equate to the best current
-use of spectrum assets. And, with the advent of 5G wireless, the stakes are
-higher than ever.
-Shane
-sits down with
-Peter Rysavy
-on this episode of
-Explain to Shane
-to analyze potential spectrum sharing solutions and discuss how 5G policy has played out across different industries and government agencies. Peter is president of
-Rysavy Research, LLC
-, a consulting firm that has specialized in computer networking and wireless technology since 1993. Peter recently published a
-series of articles and slide decks
-on the basics of spectrum sharing, along with advanced concepts that draw on past examples to demonstrate the complexity—and importance—of the spectrum sharing process.
+[Speaker: Introduction / editorial context]
+The radio airwaves that power wireless technologies—known as spectrum—are a finite but critical resource. Tailoring spectrum toward its best use often entails industry and government sharing airwaves with one another, a process that has proven complicated as historical use does not always equate to the best current use of spectrum assets. And, with the advent of 5G wireless, the stakes are higher than ever.
+
+[Speaker: Introduction / editorial context]
+Shane sits down with Peter Rysavy on this episode of Explain to Shane to analyze potential spectrum sharing solutions and discuss how 5G policy has played out across different industries and government agencies. Peter is president of Rysavy Research, LLC, a consulting firm that has specialized in computer networking and wireless technology since 1993. Peter recently published a series of articles and slide decks on the basics of spectrum sharing, along with advanced concepts that draw on past examples to demonstrate the complexity—and importance—of the spectrum sharing process.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

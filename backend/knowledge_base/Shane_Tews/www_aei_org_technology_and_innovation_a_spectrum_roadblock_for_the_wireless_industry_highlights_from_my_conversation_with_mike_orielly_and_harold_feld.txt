@@ -1,159 +1,80 @@
 PAGE_TITLE: 
-	A Spectrum Roadblock for the Wireless Industry: Highlights from My Conversation with Mike O’Rielly and Harold Feld | American Enterprise Institute - AEI
+	A Spectrum Roadblock for the Wireless Industry: Highlights from My Conversation with Mike O’Rielly and Harold Feld
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-For years, the Federal
-Communications Commission (FCC) has been working to modernize use of key
-sections of spectrum airwaves — known as C-band — by opening them up to
-commercial use. Through a series of auctions, the FCC sold the C-band airwave
-license rights to commercial 5G mobile telecommunications providers, unleashing
-a massive wave of private investment to enable 5G deployment. But the Federal
-Aviation Administration (FAA) recently
-warned
-that using C-band for 5G could interfere with
-air safety, reigniting a multiyear battle that many believe FCC engineers have
-successfully put to rest.
-On the latest episode of “Explain to Shane,” I was joined by former FCC Commissioner
-Mike O’Rielly
-and
-Harold Feld
-of Public Knowledge to discuss why the FAA issued this warning, how legitimate its safety concerns are, and how the C-band auction winners have responded. Mike and Harold also shared their thoughts on what this kerfuffle could mean for the future of C-band and continued spectrum deployment in the wireless industry.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Mike, you were at the FCC when the C-band auction plans
-were moved forward, and Harold, you’ve been very active in this space recently.
-Can you both give us some background here and share your thoughts on the FAA’s
-recent warning?
-Mike O’Rielly: First, I should
-mention that nothing I say today is an attempt to engage or advocate before the
-FCC in any proceeding. I like to put that out there so we don’t have any
-problems later.
-This issue is about concerns in
-the altimeter industry and at the FAA that the deployment of C-band spectrum
-for 5G services could lead to harmful interference with altimeters and cause
-planes to fall from the sky. This is something the FCC considered while I was
-there; we spent many months on this and considered it thoroughly, but now it
-feels like something that was asked and answered before. There’s very little
-data from the industry that supports their position. And the current delay this
-has caused is only a small one, but I worry that it’s going to extend even
-further.
-Harold Feld: This is just the
-latest example of a federal agency not liking the result it got at the FCC, despite
-the fact that the FCC is the expert agency that’s in charge of this and frankly
-does this kind of interference dispute stuff every day as opposed to just
-protecting its own turf. Nevertheless, the FAA has decided to go fight a war in
-the press and try to force the FCC to block deployment of 5G networks because
-of highly suspect interference concerns involving altimeters.
-For reference, altimeters are the
-devices that tell planes when they’re coming in and pick up how close they are
-to the ground. Obviously we care about that. We don’t want planes to fall out
-of the sky or smack the ground particularly hard when they’re trying to land.
-And this is certainly a case where even if there is a modest risk of harmful
-interference, you want to be extra careful and make sure you address that. But
-that’s what FCC engineers do all the time.
-It’s the job of FCC engineers —
-who are universally respected — to make the call on how this works. And I can
-say having done this for 20 years that FCC engineers will always err on the
-side of caution; they are not ignoring any safety concerns. They take the fact
-that people’s lives are at stake very, very seriously. It just seems some of
-these agencies don’t like the FCC being the one to make the decision.
-We’re dealing with globally
-harmonized spectrum bands, meaning the FCC is not the first agency to look at
-this. Around 40 other countries have authorized use of C-band for 5G technology.
-Not all of these countries have the same rules; some are more aggressive than
-what we have. Japan, in particular, allows use for 5G up into the part of the
-band that the FCC has excluded 5G operation from. And we don’t have any actual
-reports of harmful interference — or incidents that could arguably be caused by
-harmful interference.
-Why do we not have a definitive answer on whether these altimeter
-interference risks actually exist? I’ve been reading some aviation business
-websites, and it seems like they don’t have a good answer either.
-People think the analysis of
-interference is some kind of computer function where you put numbers in and a
-clean result comes out that definitively says whether it interferes or not. But
-in reality it’s very complicated. Wireless spectrum and how the energy works
-depends on a lot of environmental factors. And you have to try to predict for
-things like what kind of equipment is going to be in use, the maximum amount of
-energy that might be released by a device if it’s operating within its
-specifications, etc. So there’s a lot of uncertainty about this. And when you
-do your engineering study, you have to make some complex decisions.
-What are the
-political factors at play here? Do you think FCC Acting Chair Jessica Rosenworcel’s
-upcoming confirmation hearing for the permanent chair position is playing into
-this?
-Mike O’Rielly: We’re seeing federal agencies jump into
-spectrum policy on their own behalf. In the last four or five years, we had
-fights with the Department of Education, Department of Defense, Department of
-Transportation, NASA, and the National Oceanic and Atmospheric Administration
-over particular bands. They felt aggrieved by the decision-making process,
-mostly through the National Telecommunications and Information Administration
-(NTIA). Either they didn’t think they weren’t represented, or they felt better
-about going to Capitol Hill and trying to make their case.
-We were told that this administration would be different —
-that past mistakes were going to be resolved and that we’d have a collaborative
-process. But this seems more of the same, in my opinion, where now you’ve got
-the FAA going at this directly to scare the American public. The last
-administration had not listened to the FAA’s concerns, I guess, sufficiently to
-their liking. And now they have a new one that’s willing to listen — wrongly in
-my mind — and give this issue credence. It really scares the public
-unnecessarily rather than trying to work through the collaborative process.
-But even when you get to the collaborative process, you’d think
-what the commission did here — a huge guard band of 220 MHz — would be
-sufficient. That’s unprecedented in modern spectrum policy in terms of
-protecting another entity.
-Harold Feld: I think the big problem here is not that we
-have an administration that is necessarily believing the FAA over the FCC. I
-think the problem has been that we’ve left FCC and NTIA positions open for far
-too long. It’s particularly NTIA: the agency that is supposed to manage how
-other executive branch agencies operate when it comes to spectrum policy.
-It takes a lot of work. The George W. Bush and Obama
-administrations both invested a lot of White House credibility in making sure
-everybody played nice because the agencies don’t have authority over each
-other. So if the agencies decide they’re going to go around NTIA, there’s
-nothing NTIA can do. But it makes a real difference if you have an actual
-political appointee in place operating at the same level as the head of the
-sister agency who, frankly, can call up the Secretary of Commerce or White
-House if necessary and say, “Hey, you’ve really got to talk to these guys because
-they’re running crazy.”
-Mike O’Rielly: I worry that it’s not just about people and
-personnel. You could have the best person at NTIA, but if the administration
-doesn’t give them credence or recognize the decisions they’re making, you
-really don’t get that far. That’s been the problem with NTIA; we’ve had
-administrators and it hasn’t really been beneficial.
-Harold Feld: I think the upcoming Rosenworcel confirmation hearing
-could be a factor here. The Senate Commerce Committee is also the Senate
-Transportation Committee, which is not the case on the House side. So to the
-extent that the FAA and aviation industry are going to have allies in Congress,
-they’re likely to be on that committee.
-On the other hand, I don’t see this as a major issue
-derailing the confirmation hearings. I do think that may have played into the
-decision of AT&T and Verizon to delay this a month to not get caught in the
-politics of nomination and see if there’s some way they can satisfy the FAA’s
-concerns on their own.
-What happens if a
-decision isn’t reached after the month that AT&T and Verizon have agreed to
-wait? Can they just move forward with 5G deployment?
-Mike O’Rielly: The industry has rights in terms of spectrum
-use. Until the FCC changes that or decrees differently, they can move forward.
-They’re nice enough to extend the timeframe; I’m not sure it’s for the
-Rosenworcel hearing as much as it is just not wanting to be on the wrong side
-of a story that suggests they’re threatening the American flying public, which
-is not accurate in my mind. But they want to be able to say they’ve done
-everything possible to try and work these issues out.
-Harold Feld: There’s the possibility of a longer-term impact
-for the wireless industry on deployment where we had a rulemaking, we had an
-auction, and the industry collectively spent over $80 billion. Now they
-potentially find themselves looking at what’s going to make the FAA happy so
-that they can move forward, with no idea as to what the timeframe or cost potentially
-could be if the FAA is not willing to have the aviation industry upgrade their
-equipment if they think that’s the problem.
-At the moment, one month is not going to be a significant
-issue. The problem is: If this drags on indefinitely, what will this do not
-just to AT&T and Verizon’s deployment, but to the faith industry can have that
-when they have an auction and the FCC sets rules, they will actually be able to
-develop a deployment schedule and get things out on time?
+
+[Speaker: Introduction / editorial context]
+For years, the Federal Communications Commission (FCC) has been working to modernize use of key sections of spectrum airwaves — known as C-band — by opening them up to commercial use. Through a series of auctions, the FCC sold the C-band airwave license rights to commercial 5G mobile telecommunications providers, unleashing a massive wave of private investment to enable 5G deployment. But the Federal Aviation Administration (FAA) recently warned that using C-band for 5G could interfere with air safety, reigniting a multiyear battle that many believe FCC engineers have successfully put to rest.
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I was joined by former FCC Commissioner Mike O’Rielly and Harold Feld of Public Knowledge to discuss why the FAA issued this warning, how legitimate its safety concerns are, and how the C-band auction winners have responded. Mike and Harold also shared their thoughts on what this kerfuffle could mean for the future of C-band and continued spectrum deployment in the wireless industry.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Mike, you were at the FCC when the C-band auction plans were moved forward, and Harold, you’ve been very active in this space recently. Can you both give us some background here and share your thoughts on the FAA’s recent warning?
+
+[Speaker: Mike O’Rielly]
+Mike O’Rielly: First, I should mention that nothing I say today is an attempt to engage or advocate before the FCC in any proceeding. I like to put that out there so we don’t have any problems later.
+
+[Speaker: Mike O’Rielly]
+This issue is about concerns in the altimeter industry and at the FAA that the deployment of C-band spectrum for 5G services could lead to harmful interference with altimeters and cause planes to fall from the sky. This is something the FCC considered while I was there; we spent many months on this and considered it thoroughly, but now it feels like something that was asked and answered before. There’s very little data from the industry that supports their position. And the current delay this has caused is only a small one, but I worry that it’s going to extend even further.
+
+[Speaker: Harold Feld]
+Harold Feld: This is just the latest example of a federal agency not liking the result it got at the FCC, despite the fact that the FCC is the expert agency that’s in charge of this and frankly does this kind of interference dispute stuff every day as opposed to just protecting its own turf. Nevertheless, the FAA has decided to go fight a war in the press and try to force the FCC to block deployment of 5G networks because of highly suspect interference concerns involving altimeters.
+
+[Speaker: Harold Feld]
+For reference, altimeters are the devices that tell planes when they’re coming in and pick up how close they are to the ground. Obviously we care about that. We don’t want planes to fall out of the sky or smack the ground particularly hard when they’re trying to land. And this is certainly a case where even if there is a modest risk of harmful interference, you want to be extra careful and make sure you address that. But that’s what FCC engineers do all the time.
+
+[Speaker: Harold Feld]
+It’s the job of FCC engineers — who are universally respected — to make the call on how this works. And I can say having done this for 20 years that FCC engineers will always err on the side of caution; they are not ignoring any safety concerns. They take the fact that people’s lives are at stake very, very seriously. It just seems some of these agencies don’t like the FCC being the one to make the decision.
+
+[Speaker: Harold Feld]
+We’re dealing with globally harmonized spectrum bands, meaning the FCC is not the first agency to look at this. Around 40 other countries have authorized use of C-band for 5G technology. Not all of these countries have the same rules; some are more aggressive than what we have. Japan, in particular, allows use for 5G up into the part of the band that the FCC has excluded 5G operation from. And we don’t have any actual reports of harmful interference — or incidents that could arguably be caused by harmful interference.
+
+[Speaker: Harold Feld]
+Why do we not have a definitive answer on whether these altimeter interference risks actually exist? I’ve been reading some aviation business websites, and it seems like they don’t have a good answer either.
+
+[Speaker: Harold Feld]
+People think the analysis of interference is some kind of computer function where you put numbers in and a clean result comes out that definitively says whether it interferes or not. But in reality it’s very complicated. Wireless spectrum and how the energy works depends on a lot of environmental factors. And you have to try to predict for things like what kind of equipment is going to be in use, the maximum amount of energy that might be released by a device if it’s operating within its specifications, etc. So there’s a lot of uncertainty about this. And when you do your engineering study, you have to make some complex decisions.
+
+[Speaker: Shane Tews]
+What are the political factors at play here? Do you think FCC Acting Chair Jessica Rosenworcel’s upcoming confirmation hearing for the permanent chair position is playing into this?
+
+[Speaker: Mike O’Rielly]
+Mike O’Rielly: We’re seeing federal agencies jump into spectrum policy on their own behalf. In the last four or five years, we had fights with the Department of Education, Department of Defense, Department of Transportation, NASA, and the National Oceanic and Atmospheric Administration over particular bands. They felt aggrieved by the decision-making process, mostly through the National Telecommunications and Information Administration (NTIA). Either they didn’t think they weren’t represented, or they felt better about going to Capitol Hill and trying to make their case.
+
+[Speaker: Mike O’Rielly]
+We were told that this administration would be different — that past mistakes were going to be resolved and that we’d have a collaborative process. But this seems more of the same, in my opinion, where now you’ve got the FAA going at this directly to scare the American public. The last administration had not listened to the FAA’s concerns, I guess, sufficiently to their liking. And now they have a new one that’s willing to listen — wrongly in my mind — and give this issue credence. It really scares the public unnecessarily rather than trying to work through the collaborative process.
+
+[Speaker: Mike O’Rielly]
+But even when you get to the collaborative process, you’d think what the commission did here — a huge guard band of 220 MHz — would be sufficient. That’s unprecedented in modern spectrum policy in terms of protecting another entity.
+
+[Speaker: Harold Feld]
+Harold Feld: I think the big problem here is not that we have an administration that is necessarily believing the FAA over the FCC. I think the problem has been that we’ve left FCC and NTIA positions open for far too long. It’s particularly NTIA: the agency that is supposed to manage how other executive branch agencies operate when it comes to spectrum policy.
+
+[Speaker: Harold Feld]
+It takes a lot of work. The George W. Bush and Obama administrations both invested a lot of White House credibility in making sure everybody played nice because the agencies don’t have authority over each other. So if the agencies decide they’re going to go around NTIA, there’s nothing NTIA can do. But it makes a real difference if you have an actual political appointee in place operating at the same level as the head of the sister agency who, frankly, can call up the Secretary of Commerce or White House if necessary and say, “Hey, you’ve really got to talk to these guys because they’re running crazy.”
+
+[Speaker: Mike O’Rielly]
+Mike O’Rielly: I worry that it’s not just about people and personnel. You could have the best person at NTIA, but if the administration doesn’t give them credence or recognize the decisions they’re making, you really don’t get that far. That’s been the problem with NTIA; we’ve had administrators and it hasn’t really been beneficial.
+
+[Speaker: Harold Feld]
+Harold Feld: I think the upcoming Rosenworcel confirmation hearing could be a factor here. The Senate Commerce Committee is also the Senate Transportation Committee, which is not the case on the House side. So to the extent that the FAA and aviation industry are going to have allies in Congress, they’re likely to be on that committee.
+
+[Speaker: Harold Feld]
+On the other hand, I don’t see this as a major issue derailing the confirmation hearings. I do think that may have played into the decision of AT&T and Verizon to delay this a month to not get caught in the politics of nomination and see if there’s some way they can satisfy the FAA’s concerns on their own.
+
+[Speaker: Shane Tews]
+What happens if a decision isn’t reached after the month that AT&T and Verizon have agreed to wait? Can they just move forward with 5G deployment?
+
+[Speaker: Mike O’Rielly]
+Mike O’Rielly: The industry has rights in terms of spectrum use. Until the FCC changes that or decrees differently, they can move forward. They’re nice enough to extend the timeframe; I’m not sure it’s for the Rosenworcel hearing as much as it is just not wanting to be on the wrong side of a story that suggests they’re threatening the American flying public, which is not accurate in my mind. But they want to be able to say they’ve done everything possible to try and work these issues out.
+
+[Speaker: Harold Feld]
+Harold Feld: There’s the possibility of a longer-term impact for the wireless industry on deployment where we had a rulemaking, we had an auction, and the industry collectively spent over $80 billion. Now they potentially find themselves looking at what’s going to make the FAA happy so that they can move forward, with no idea as to what the timeframe or cost potentially could be if the FAA is not willing to have the aviation industry upgrade their equipment if they think that’s the problem.
+
+[Speaker: Harold Feld]
+At the moment, one month is not going to be a significant issue. The problem is: If this drags on indefinitely, what will this do not just to AT&T and Verizon’s deployment, but to the faith industry can have that when they have an auction and the FCC sets rules, they will actually be able to develop a deployment schedule and get things out on time?

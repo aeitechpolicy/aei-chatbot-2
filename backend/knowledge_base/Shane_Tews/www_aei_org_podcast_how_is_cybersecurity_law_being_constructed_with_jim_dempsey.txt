@@ -1,20 +1,14 @@
 PAGE_TITLE: 
-	How Is Cybersecurity Law Being Constructed? (with Jim Dempsey) | American Enterprise Institute - AEI
+	How Is Cybersecurity Law Being Constructed? (with Jim Dempsey)
 
-The extent
-to which lawyers, corporate executives, and government officials focus on
-cybersecurity fluctuates with the threat level posed by malicious cyber actors.
-In light of numerous ransomware attacks on critical industries, lawmakers are
-looking at more regulatory obligations to mitigate the risks these threats pose.
-Companies, meanwhile, are working to comply with a chaotic patchwork of rules
-and regulations. The field of cybersecurity law is not systematic, and
-industries are working through who owns the internal cyber regulatory
-responsibilities and compliance obligations.
-In an effort to create a coherent roadmap for everyone involved in cybersecurity law,
-Jim Dempsey
-recently published a book titled  “
-Cybersecurity Law Fundamentals
-.” On this episode of “Explain to Shane,”
-Shane
-sits down with Jim to discuss his book, along with key lessons that lawmakers, industry leaders, and lawyers would be well-advised to consider when it comes to cyber.
+[Speaker: Introduction / editorial context]
+The extent to which lawyers, corporate executives, and government officials focus on cybersecurity fluctuates with the threat level posed by malicious cyber actors. In light of numerous ransomware attacks on critical industries, lawmakers are looking at more regulatory obligations to mitigate the risks these threats pose. Companies, meanwhile, are working to comply with a chaotic patchwork of rules and regulations. The field of cybersecurity law is not systematic, and industries are working through who owns the internal cyber regulatory responsibilities and compliance obligations.
+
+[Speaker: Introduction / editorial context]
+In an effort to create a coherent roadmap for everyone involved in cybersecurity law, Jim Dempsey recently published a book titled “Cybersecurity Law Fundamentals.” On this episode of “Explain to Shane,” Shane sits down with Jim to discuss his book, along with key lessons that lawmakers, industry leaders, and lawyers would be well-advised to consider when it comes to cyber.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

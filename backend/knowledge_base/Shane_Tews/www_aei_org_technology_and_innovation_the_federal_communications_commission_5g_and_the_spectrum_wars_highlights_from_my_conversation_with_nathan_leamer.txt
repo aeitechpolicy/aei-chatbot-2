@@ -1,148 +1,62 @@
 PAGE_TITLE: 
-	The Federal Communications Commission, 5G, and the ‘Spectrum Wars’: Highlights from My Conversation with Nathan Leamer | American Enterprise Institute - AEI
+	The Federal Communications Commission, 5G, and the ‘Spectrum Wars’: Highlights from My Conversation with Nathan Leamer
 
-Spectrum is
-a finite resource that we are still learning to tailor towards its best current
-use. Reallocating spectrum inherently means one party is taking a scarce
-resource away from another, even if the spectrum has been unused by its current
-license holder or abandoned by its previous user. How has the current Federal
-Communications Commission (FCC) tackled the challenge of spectrum reallocation,
-and how could the resulting “spectrum wars” shape the rollout of new networks?
-Nathan Leamer
-, vice president of public affairs at
-Targeted Victory
-and former policy advisor to FCC Chairman Ajit Pai, joined “Explain to Shane” to discuss spectrum reallocation, 5G, and the current FCC’s policy successes.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in to our discussions.
-Shane Tews: Light-touch regulation has been
-a staple of this FCC’s policy agenda. Tell us why this is such an important
-policy approach for Chairman Pai.
-Nathan Leamer:
-When we think about the future of telecommunications, there are two possible
-paths. One is a “mother may I” approach in which the government establishes the
-rules for innovation, investment, and growth opportunities. The other is one
-that enables the market — companies small and large — to grow, develop, and
-innovate in ways that fit their customers. One of the greatest examples of this
-over the past couple of years is the growth of innovation around satellites,
-particularly as a broadband service. Whether you look at companies like
-Starlink, Amazon’s Kuiper program, or others who want to create a different
-type of internet access, the FCC’s light-touch approach reduces the application
-process, improves the permitting process, and really allows those companies’
-services to come to market without a government process.
-This FCC has done a great job of driving
-the interagency process — another key part of spectrum efficiency. But when it comes
-to spectrum usage, there seem to be challenges regarding what path to stay on
-and what to change. What has been the FCC’s approach to this complex issue?
-I think Chairman
-Ajit Pai and a number of the commissioners both on the Republican and Democrat
-sides recognize the need to consider how to allocate these finite resources,
-whether it’s spectrum management at the agency level or even at the interagency
-level. Within the agency, they’re looking at how to set up an auction or an
-allocation for spectrum to make sure this resource is utilized most
-efficiently. Instead of having a dog and pony show where companies show up and try
-to demonstrate how they could use a particular spectrum band better than their competitors,
-the FCC has created an auction process that basically allows them to put their
-money where their mouth is and demonstrate their actual plans. This process actually
-looks at the economics and shows how these entities will use the spectrum.
-I think this
-chairman did something pretty remarkable at the beginning of his term by
-creating the Office of Economics and Analytics. Now, when the FCC looks at
-reallocating spectrum or evaluates how to disperse funding in a different way,
-they actually have real economists who know how to think about the long-term
-projections and look at the money so that when we’re thinking about consumers and
-the public good, we’re also thinking about the economics. This allows the FCC to
-make decisions that are good for innovation and good for consumers.
-Talk to us about the DOD’s potential plans
-for a nationalized 5G network. Does the DOD think they know better regarding what
-to do with mid-band spectrum? If so, why?
-Adjacent to commercially
-available spectrum, there’s also spectrum that is given to and controlled by different
-federal agencies, mostly by DOD, but also by the Department of Transportation,
-Department of Energy, and others. They have these large swaths of the spectrum
-for their own, whether it’s for military purposes or research purposes, but
-because they have so much, they’re holding onto something valuable that could
-be useful in the commercial space — particularly for the development of 5G
-technology. And so there’s been a lot of conversations over the past couple of
-years about the FCC or other entities wanting to repurpose a small portion here
-or there of DOD’s spectrum for commercial usage by private entities. The
-reality is: DOD doesn’t like to play this game. They’re generally very stodgy
-about engaging back and forth with other entities or even other government agencies
-such as the FCC.
-It was first
-reported in January 2018 that some individuals associated with DOD wanted to
-create a 5G nationalized network that they would build out and potentially
-lease to an entity that would essentially act as a wholesaler. Instead of the
-way the FCC and the rest of the government has established, this would create
-privatized 5G networks that could be used across the nation.
-There are
-certain individuals who want to push this idea that are very politically
-connected, but it really runs contrary to how the FCC, Congress, and even the
-president have called for the allocation of 5G technology and networks. It’s creating
-this burgeoning political battle, because if the DOD network is built out, it could
-undermine the efforts of the privatized networks, but at the same time, DOD has
-access to really good spectrum. So, I think people should be asking: Should DOD
-have exclusivity, or should some of this be reallocated to the private sector/commercial
-space?
-Early on in the pandemic, there was an
-opportunity to bring 5.9 GHz spectrum to the consumer market quicker than
-expected through a temporary order, which seems to have gone well. What has happened
-recently in that space?
-This is a
-very valuable band of spectrum that has a lot of interest in use cases,
-particularly among those who care about next-generation Wi-Fi. It is basically a
-much more powerful, faster Wi-Fi connection, but it’s also a band that the
-Department of Transportation had previously held onto and used, particularly
-with dedicated short-range communications (DSRC) technology, which is their
-approach for driverless vehicles. However, there’s congestion in this band
-between people who want to use it for DSRC technology in driverless vehicles
-and those who want to use it for next-generation Wi-Fi that could be used by
-wireless providers, cable providers, and other players in the internet market.
-Recently,
-the FCC announced they’re moving ahead on a split-the-baby approach. Basically,
-they’re going to permanently maneuver in such a way that a certain amount of
-that spectrum will be available for next-generation Wi-Fi, which is exciting
-for a lot of communities across the country, but a portion of it will also be
-used for what’s called cellular vehicle-to-everything (C-V2X), which is
-vehicle-to-vehicle technology that promises greater effectiveness than DSRC. This
-approach balances these concerns — driverless technology, autonomous vehicles,
-and the future of the transportation sector — with this technology’s value for
-internet providers. It’s a why-not-both approach, rather than either-or. I
-think this speaks to how this FCC — and hopefully future FCCs — will navigate concerns
-between different agencies and players to find workable solutions.
-Moving forward, what else do you think we
-should keep an eye on? Any thoughts on how the election might influence innovation
-policy?
-There’s a
-lot of uncertainty on how this election will change the way we think about
-innovation policy around both telecommunications and emerging technology. The
-biggest thing I’m watching is the policy conversation’s realignment both on the
-left and the right, particularly among right-of-center voices who understand
-the value of market-based solutions and the importance of enabling innovation
-and entrepreneurship. It’s concerning to see how that conversation has changed
-over the past several months, so regardless of how the election turns out, I
-really do hope that the voices of reason — the voices of the market — win out.
-On the Democratic
-side, you’re also seeing that same kind of introspection and identity crisis where
-new voices that want to break up every company bigger than a small startup are gaining
-traction. This diverges from the views of many on the left who are more
-business-friendly. And so I think people should pay attention to those two
-changing dynamics on both sides of the aisle. They could shape the way we think
-about telecommunications and technology going forward, not just on issues like
-net neutrality but also on 5G, innovation, emerging technology, social media,
-and the future of media companies. I’m fascinated to see how that plays out.
-I’m a little worried, but also I think it’s an opportunity for new voices and
-new people to participate in the conversation.
-I think a
-Democrat-run FCC might want to bring back net neutrality. Still, that
-conversation is part of a much larger one about the internet’s future and what
-regulations work or don’t work. I’m also excited to see how Congress and other
-agencies approach long-term questions about consumer privacy — what the rules
-of the road should be and what kind of framework works, not just for large
-companies, but also for companies that are much smaller and emerging and not
-just on the edge, but also amongst the internet providers.
+[Speaker: Introduction / editorial context]
+Spectrum is a finite resource that we are still learning to tailor towards its best current use. Reallocating spectrum inherently means one party is taking a scarce resource away from another, even if the spectrum has been unused by its current license holder or abandoned by its previous user. How has the current Federal Communications Commission (FCC) tackled the challenge of spectrum reallocation, and how could the resulting “spectrum wars” shape the rollout of new networks?
+
+[Speaker: Introduction / editorial context]
+Nathan Leamer, vice president of public affairs at Targeted Victory and former policy advisor to FCC Chairman Ajit Pai, joined “Explain to Shane” to discuss spectrum reallocation, 5G, and the current FCC’s policy successes.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in to our discussions.
+
+[Speaker: Shane Tews]
+Shane Tews: Light-touch regulation has been a staple of this FCC’s policy agenda. Tell us why this is such an important policy approach for Chairman Pai.
+
+[Speaker: Nathan Leamer]
+Nathan Leamer: When we think about the future of telecommunications, there are two possible paths. One is a “mother may I” approach in which the government establishes the rules for innovation, investment, and growth opportunities. The other is one that enables the market — companies small and large — to grow, develop, and innovate in ways that fit their customers. One of the greatest examples of this over the past couple of years is the growth of innovation around satellites, particularly as a broadband service. Whether you look at companies like Starlink, Amazon’s Kuiper program, or others who want to create a different type of internet access, the FCC’s light-touch approach reduces the application process, improves the permitting process, and really allows those companies’ services to come to market without a government process.
+
+[Speaker: Shane Tews]
+This FCC has done a great job of driving the interagency process — another key part of spectrum efficiency. But when it comes to spectrum usage, there seem to be challenges regarding what path to stay on and what to change. What has been the FCC’s approach to this complex issue?
+
+[Speaker: Nathan Leamer]
+I think Chairman Ajit Pai and a number of the commissioners both on the Republican and Democrat sides recognize the need to consider how to allocate these finite resources, whether it’s spectrum management at the agency level or even at the interagency level. Within the agency, they’re looking at how to set up an auction or an allocation for spectrum to make sure this resource is utilized most efficiently. Instead of having a dog and pony show where companies show up and try to demonstrate how they could use a particular spectrum band better than their competitors, the FCC has created an auction process that basically allows them to put their money where their mouth is and demonstrate their actual plans. This process actually looks at the economics and shows how these entities will use the spectrum.
+
+[Speaker: Nathan Leamer]
+I think this chairman did something pretty remarkable at the beginning of his term by creating the Office of Economics and Analytics. Now, when the FCC looks at reallocating spectrum or evaluates how to disperse funding in a different way, they actually have real economists who know how to think about the long-term projections and look at the money so that when we’re thinking about consumers and the public good, we’re also thinking about the economics. This allows the FCC to make decisions that are good for innovation and good for consumers.
+
+[Speaker: Shane Tews]
+Talk to us about the DOD’s potential plans for a nationalized 5G network. Does the DOD think they know better regarding what to do with mid-band spectrum? If so, why?
+
+[Speaker: Nathan Leamer]
+Adjacent to commercially available spectrum, there’s also spectrum that is given to and controlled by different federal agencies, mostly by DOD, but also by the Department of Transportation, Department of Energy, and others. They have these large swaths of the spectrum for their own, whether it’s for military purposes or research purposes, but because they have so much, they’re holding onto something valuable that could be useful in the commercial space — particularly for the development of 5G technology. And so there’s been a lot of conversations over the past couple of years about the FCC or other entities wanting to repurpose a small portion here or there of DOD’s spectrum for commercial usage by private entities. The reality is: DOD doesn’t like to play this game. They’re generally very stodgy about engaging back and forth with other entities or even other government agencies such as the FCC.
+
+[Speaker: Nathan Leamer]
+It was first reported in January 2018 that some individuals associated with DOD wanted to create a 5G nationalized network that they would build out and potentially lease to an entity that would essentially act as a wholesaler. Instead of the way the FCC and the rest of the government has established, this would create privatized 5G networks that could be used across the nation.
+
+[Speaker: Nathan Leamer]
+There are certain individuals who want to push this idea that are very politically connected, but it really runs contrary to how the FCC, Congress, and even the president have called for the allocation of 5G technology and networks. It’s creating this burgeoning political battle, because if the DOD network is built out, it could undermine the efforts of the privatized networks, but at the same time, DOD has access to really good spectrum. So, I think people should be asking: Should DOD have exclusivity, or should some of this be reallocated to the private sector/commercial space?
+
+[Speaker: Shane Tews]
+Early on in the pandemic, there was an opportunity to bring 5.9 GHz spectrum to the consumer market quicker than expected through a temporary order, which seems to have gone well. What has happened recently in that space?
+
+[Speaker: Nathan Leamer]
+This is a very valuable band of spectrum that has a lot of interest in use cases, particularly among those who care about next-generation Wi-Fi. It is basically a much more powerful, faster Wi-Fi connection, but it’s also a band that the Department of Transportation had previously held onto and used, particularly with dedicated short-range communications (DSRC) technology, which is their approach for driverless vehicles. However, there’s congestion in this band between people who want to use it for DSRC technology in driverless vehicles and those who want to use it for next-generation Wi-Fi that could be used by wireless providers, cable providers, and other players in the internet market.
+
+[Speaker: Nathan Leamer]
+Recently, the FCC announced they’re moving ahead on a split-the-baby approach. Basically, they’re going to permanently maneuver in such a way that a certain amount of that spectrum will be available for next-generation Wi-Fi, which is exciting for a lot of communities across the country, but a portion of it will also be used for what’s called cellular vehicle-to-everything (C-V2X), which is vehicle-to-vehicle technology that promises greater effectiveness than DSRC. This approach balances these concerns — driverless technology, autonomous vehicles, and the future of the transportation sector — with this technology’s value for internet providers. It’s a why-not-both approach, rather than either-or. I think this speaks to how this FCC — and hopefully future FCCs — will navigate concerns between different agencies and players to find workable solutions.
+
+[Speaker: Shane Tews]
+Moving forward, what else do you think we should keep an eye on? Any thoughts on how the election might influence innovation policy?
+
+[Speaker: Nathan Leamer]
+There’s a lot of uncertainty on how this election will change the way we think about innovation policy around both telecommunications and emerging technology. The biggest thing I’m watching is the policy conversation’s realignment both on the left and the right, particularly among right-of-center voices who understand the value of market-based solutions and the importance of enabling innovation and entrepreneurship. It’s concerning to see how that conversation has changed over the past several months, so regardless of how the election turns out, I really do hope that the voices of reason — the voices of the market — win out.
+
+[Speaker: Nathan Leamer]
+On the Democratic side, you’re also seeing that same kind of introspection and identity crisis where new voices that want to break up every company bigger than a small startup are gaining traction. This diverges from the views of many on the left who are more business-friendly. And so I think people should pay attention to those two changing dynamics on both sides of the aisle. They could shape the way we think about telecommunications and technology going forward, not just on issues like net neutrality but also on 5G, innovation, emerging technology, social media, and the future of media companies. I’m fascinated to see how that plays out. I’m a little worried, but also I think it’s an opportunity for new voices and new people to participate in the conversation.
+
+[Speaker: Nathan Leamer]
+I think a Democrat-run FCC might want to bring back net neutrality. Still, that conversation is part of a much larger one about the internet’s future and what regulations work or don’t work. I’m also excited to see how Congress and other agencies approach long-term questions about consumer privacy — what the rules of the road should be and what kind of framework works, not just for large companies, but also for companies that are much smaller and emerging and not just on the edge, but also amongst the internet providers.
+
+[Speaker: Nathan Leamer]
 I’m also really excited to see how the government can establish correct rules of the road for things like artificial intelligence or blockchain. I’m excited to discover how we can use these technologies to benefit our lives. But I also know that our dear friends in Congress or different agencies can be an impediment to their usefulness, so we need to make sure the framework by which we are thinking about those questions enables opportunity instead of discouraging it.

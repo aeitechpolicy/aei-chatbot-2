@@ -1,156 +1,68 @@
 PAGE_TITLE: 
-	Congress Takes Another Stab at Chip Funding: Highlights from a Conversation with Peter Cleveland and Jon Hoganson | American Enterprise Institute - AEI
+	Congress Takes Another Stab at Chip Funding: Highlights from a Conversation with Peter Cleveland and Jon Hoganson
 
-While the $52 billion of federal funding in the
-CHIPS for America Act
-has strong bipartisan support,
-it’s been caught in a larger fight between the two legislative chambers over an
-attempt to reconcile the bill with other spending priorities. However, on July
-26, the Senate voted 64-32 to end debate on the legislation, setting the stage for
-Congress to potentially pass the bill and send it to President Biden to sign. Then,
-on July 27, the bill passed the Senate and now awaits a vote in the House.
-To make sense of this situation and attempt to predict what
-comes next, AEI’s
-Claude
-Barfield
-and I sat down with
-Peter
-Cleveland
-of Taiwan Semiconductor Manufacturing Corporation (TSMC)
-and
-Jon Hoganson
-of Advanced Micro Devices Inc. (AMD) We
-discussed the ins and outs of Congress’ battle over chip funding, along with
-key opportunities that could be missed if action isn’t taken soon.
-Below is an edited and abridged transcript of our talk. You
-can listen to
-this
-and
-other
-episodes
-of
-Explain to Shane
-on AEI.org and
-subscribe via your
-preferred listening platform
-. You can also read the full
-transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and
-tell your friends and colleagues to tune in.
-Shane Tews: Everybody
-in the US wants the nation to be a semiconductor powerhouse; however, no one
-actually wants to pay for it and nobody can agree on how to go about doing this.
-Can you give us the lay of the land from the private sector perspective?
-Peter Cleveland: TSMC is optimistic about the current legislative
-jigsaw puzzle. Congressional Republican and Democratic leaders may have some
-political differences, but they all agree that restoring US leadership in
-domestic chip manufacturing is critical—as is lifting American innovative
-capacity. The steps that we’re taking to invest in leading-edge chip
-fabrication in Phoenix at a five-nanometer level are consistent with what Congress
-is trying to accomplish. Politics aside, I think we are headed in the right
-direction.
-Jon Hoganson: I fully agree with what Peter said. From AMD’s
-perspective, getting a fully-funded CHIPS Act across the finish line is
-critical to the future of semiconductor manufacturing in the US. It’s also
-critical to US leadership in technology.
-There is one thing that is missing in the conversation. CHIPS
-is more than just manufacturing. It’s about restoring the American semiconductor
-ecosystem. It’s a very complex supply chain, and the US is really losing out by
-not having domestic manufacturing capabilities. But we also need to restore research
-and development. Funding a National Semiconductor Technology Center and
-building it out is critical to making sure the next generation of leading-edge
-technology is developed domestically.
-Secretary of Commerce
-Gina Raimondo warned that stalling the bill could lead to companies halting
-plans to invest in the US. Is her prediction accurate? How would the bill’s
-failure to pass specifically impact both of your companies?
-Peter Cleveland: TSMC is trying to expand our global
-footprint away from Taiwan and toward Japan, Europe, and certainly Phoenix. However,
-our wafer fabs are incredibly expensive as we manufacture the leading, bleeding-edge
-chips. These chips are the fastest in terms of performance, thermal energy
-efficiency, transistor density, and gigahertz speed.
-To Raimondo’s point, if we can’t partner with the US
-government in terms of appropriate incentives, we will have to look elsewhere for
-support. The United States leads the free world, and we hope we find the
-support here. Failure is untenable. Congress is close to working out some
-details, but let’s get this done now.
-Jon Hoganson: I agree with Peter. I also think that this is
-about investing in the future of the industry and the future of US technological
-leadership. People get caught up in the price tag, which is enormous, and I’m
-not undermining that at all. It’s an incredibly expensive industry. The
-industry’s capital expenditure annually is significantly higher than the GDP of
-a lot of countries, but that’s what it takes to be competitive. The US has to
-decide whether it wants to continue to lead in industries like semiconductors
-or not. If it does, it’s going to take a constructive partnership between
-government and industry.
-There is no leading-edge manufacturing in the United States.
-TSMC will build a fab in Arizona, but there is currently no five-nanometer
-manufacturing in the United States, and no American company is capable of
-producing five-nanometer chips. These specialized chips are important for every
-leading technology company in the US. We need that advanced manufacturing
-capability.
-Claude Barfield: The
-computer shortage has been a major factor propelling this bill, but if the
-legislation passes, it won’t make much difference because it looks like in some
-aspects of chip production, the shortage is mitigating. How would you respond
-to that?
-Peter Cleveland: This thesis is incorrect. For applications
-in the areas of artificial intelligence, networking, virtual reality, augmented
-reality, autonomous vehicles, digital currencies, and digital healthcare,
-demand vastly outstrips supply. I will concede that there’s a transition
-underway in laptops and desktops as people return to work and use those
-personal devices less often at home.
-The most important reason to onshore advanced fabrication is
-so that we can harness the great designs and innovations from companies like
-AMD. They design chips for all those aforementioned purposes. If we want to
-lead in these new-generation spaces and applications, particularly artificial
-intelligence, we need to lead in both chip design and manufacturing. All of
-that advanced manufacturing now is occurring mostly in Taiwan, and that needs
-to change. We need to bring that onshore.
-Jon Hoganson: From AMD’s perspective, the calculus around the
-legislation hasn’t changed regardless of the chip shortage status. It’s
-important to remember that the CHIPS Act passed as part of the National Defense
-Authorization Act before the chip shortage even happened. CHIPS was always
-about economic and national security as well as rebuilding the semiconductor ecosystem
-here in the United States. We need to reach the minimum viable capacity in the
-United States—in other words, what we need to produce at a bare minimum to meet
-everything for national and economic security needs.
-In an interview with
-Brookings, TSMC founder Morris Chang argued that although it was much more
-expensive to manufacture in the US, TSMC would still be able to handle those
-costs. But with smaller companies, are we looking at a need to continually subsidize
-production?
-Peter Cleveland: The cost structure is higher here
-especially in terms of inputs and material costs as well as labor. That’s why
-the incentives become important to help us land in Phoenix. It is important to
-state that we will have a catalytic impact on high-tech, high-wage jobs. The thousands
-of jobs that we would create will surge economic development and create a
-massive supply ecosystem around us. Yet, it’s an expensive undertaking.
-On the potential for a permanent subsidy: I don’t anticipate
-that. A tax credit, though, could be permanent because it continually
-incentivizes the buildout of manufacturing over time. That’ll be up to
-lawmakers to decide if they will get a bang for their buck. Is the rate of
-return for them good enough to justify a permanent tax credit? I think the
-answer to that will be “yes.”
-Shane Tews: Part of
-the challenge is also just getting enough personnel and workforce in the
-semiconductor pipeline. Is that something you guys are addressing when you’re
-looking at potential locations?
-Jon Hoganson: Workforce is certainly a big issue for AMD as there
-is a global war for talent in our industry. We are competing with the Apples,
-Amazons, and Metas of the world. It’s not an easy field to be in. But the
-legislation contains a big component regarding workforce development. That’s
-why we’re supportive of the larger Bipartisan Innovation Act because it
-addresses the workforce training issues. For CHIPS to succeed, we will have to
-invest in our university infrastructure and the workforce. To connect the local
-workforce with our industry’s costs, part of the reason why chip manufacturing
-is less expensive in places like Taiwan is because they already have the
-workforce. We pay well in this industry and we are doing exciting, innovative
-work, but there is definitely a need to rebuild the workforce in the US.
-Peter Cleveland: I agree with Jon’s comments.
-Software-design engineering is very appealing and high-paying, but there remains
-incredible potential to develop a semiconductor workforce pipeline in the US. The
-STEM talent pool here is magnificent. It’s the best in the world from Carnegie
-Mellon to Arizona State University to CalTech. But still, in the hardware space,
-it is very tough.
+[Speaker: Introduction / editorial context]
+While the $52 billion of federal funding in the CHIPS for America Act has strong bipartisan support, it’s been caught in a larger fight between the two legislative chambers over an attempt to reconcile the bill with other spending priorities. However, on July 26, the Senate voted 64-32 to end debate on the legislation, setting the stage for Congress to potentially pass the bill and send it to President Biden to sign. Then, on July 27, the bill passed the Senate and now awaits a vote in the House.
+
+[Speaker: Introduction / editorial context]
+To make sense of this situation and attempt to predict what comes next, AEI’s Claude Barfield and I sat down with Peter Cleveland of Taiwan Semiconductor Manufacturing Corporation (TSMC) and Jon Hoganson of Advanced Micro Devices Inc. (AMD) We discussed the ins and outs of Congress’ battle over chip funding, along with key opportunities that could be missed if action isn’t taken soon.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Everybody in the US wants the nation to be a semiconductor powerhouse; however, no one actually wants to pay for it and nobody can agree on how to go about doing this. Can you give us the lay of the land from the private sector perspective?
+
+[Speaker: Peter Cleveland]
+Peter Cleveland: TSMC is optimistic about the current legislative jigsaw puzzle. Congressional Republican and Democratic leaders may have some political differences, but they all agree that restoring US leadership in domestic chip manufacturing is critical—as is lifting American innovative capacity. The steps that we’re taking to invest in leading-edge chip fabrication in Phoenix at a five-nanometer level are consistent with what Congress is trying to accomplish. Politics aside, I think we are headed in the right direction.
+
+[Speaker: Jon Hoganson]
+Jon Hoganson: I fully agree with what Peter said. From AMD’s perspective, getting a fully-funded CHIPS Act across the finish line is critical to the future of semiconductor manufacturing in the US. It’s also critical to US leadership in technology.
+
+[Speaker: Jon Hoganson]
+There is one thing that is missing in the conversation. CHIPS is more than just manufacturing. It’s about restoring the American semiconductor ecosystem. It’s a very complex supply chain, and the US is really losing out by not having domestic manufacturing capabilities. But we also need to restore research and development. Funding a National Semiconductor Technology Center and building it out is critical to making sure the next generation of leading-edge technology is developed domestically.
+
+[Speaker: Shane Tews]
+Secretary of Commerce Gina Raimondo warned that stalling the bill could lead to companies halting plans to invest in the US. Is her prediction accurate? How would the bill’s failure to pass specifically impact both of your companies?
+
+[Speaker: Peter Cleveland]
+Peter Cleveland: TSMC is trying to expand our global footprint away from Taiwan and toward Japan, Europe, and certainly Phoenix. However, our wafer fabs are incredibly expensive as we manufacture the leading, bleeding-edge chips. These chips are the fastest in terms of performance, thermal energy efficiency, transistor density, and gigahertz speed.
+
+[Speaker: Peter Cleveland]
+To Raimondo’s point, if we can’t partner with the US government in terms of appropriate incentives, we will have to look elsewhere for support. The United States leads the free world, and we hope we find the support here. Failure is untenable. Congress is close to working out some details, but let’s get this done now.
+
+[Speaker: Jon Hoganson]
+Jon Hoganson: I agree with Peter. I also think that this is about investing in the future of the industry and the future of US technological leadership. People get caught up in the price tag, which is enormous, and I’m not undermining that at all. It’s an incredibly expensive industry. The industry’s capital expenditure annually is significantly higher than the GDP of a lot of countries, but that’s what it takes to be competitive. The US has to decide whether it wants to continue to lead in industries like semiconductors or not. If it does, it’s going to take a constructive partnership between government and industry.
+
+[Speaker: Jon Hoganson]
+There is no leading-edge manufacturing in the United States. TSMC will build a fab in Arizona, but there is currently no five-nanometer manufacturing in the United States, and no American company is capable of producing five-nanometer chips. These specialized chips are important for every leading technology company in the US. We need that advanced manufacturing capability.
+
+[Speaker: Claude Barfield]
+Claude Barfield: The computer shortage has been a major factor propelling this bill, but if the legislation passes, it won’t make much difference because it looks like in some aspects of chip production, the shortage is mitigating. How would you respond to that?
+
+[Speaker: Peter Cleveland]
+Peter Cleveland: This thesis is incorrect. For applications in the areas of artificial intelligence, networking, virtual reality, augmented reality, autonomous vehicles, digital currencies, and digital healthcare, demand vastly outstrips supply. I will concede that there’s a transition underway in laptops and desktops as people return to work and use those personal devices less often at home.
+
+[Speaker: Peter Cleveland]
+The most important reason to onshore advanced fabrication is so that we can harness the great designs and innovations from companies like AMD. They design chips for all those aforementioned purposes. If we want to lead in these new-generation spaces and applications, particularly artificial intelligence, we need to lead in both chip design and manufacturing. All of that advanced manufacturing now is occurring mostly in Taiwan, and that needs to change. We need to bring that onshore.
+
+[Speaker: Jon Hoganson]
+Jon Hoganson: From AMD’s perspective, the calculus around the legislation hasn’t changed regardless of the chip shortage status. It’s important to remember that the CHIPS Act passed as part of the National Defense Authorization Act before the chip shortage even happened. CHIPS was always about economic and national security as well as rebuilding the semiconductor ecosystem here in the United States. We need to reach the minimum viable capacity in the United States—in other words, what we need to produce at a bare minimum to meet everything for national and economic security needs.
+
+[Speaker: Shane Tews]
+In an interview with Brookings, TSMC founder Morris Chang argued that although it was much more expensive to manufacture in the US, TSMC would still be able to handle those costs. But with smaller companies, are we looking at a need to continually subsidize production?
+
+[Speaker: Peter Cleveland]
+Peter Cleveland: The cost structure is higher here especially in terms of inputs and material costs as well as labor. That’s why the incentives become important to help us land in Phoenix. It is important to state that we will have a catalytic impact on high-tech, high-wage jobs. The thousands of jobs that we would create will surge economic development and create a massive supply ecosystem around us. Yet, it’s an expensive undertaking.
+
+[Speaker: Peter Cleveland]
+On the potential for a permanent subsidy: I don’t anticipate that. A tax credit, though, could be permanent because it continually incentivizes the buildout of manufacturing over time. That’ll be up to lawmakers to decide if they will get a bang for their buck. Is the rate of return for them good enough to justify a permanent tax credit? I think the answer to that will be “yes.”
+
+[Speaker: Shane Tews]
+Shane Tews: Part of the challenge is also just getting enough personnel and workforce in the semiconductor pipeline. Is that something you guys are addressing when you’re looking at potential locations?
+
+[Speaker: Jon Hoganson]
+Jon Hoganson: Workforce is certainly a big issue for AMD as there is a global war for talent in our industry. We are competing with the Apples, Amazons, and Metas of the world. It’s not an easy field to be in. But the legislation contains a big component regarding workforce development. That’s why we’re supportive of the larger Bipartisan Innovation Act because it addresses the workforce training issues. For CHIPS to succeed, we will have to invest in our university infrastructure and the workforce. To connect the local workforce with our industry’s costs, part of the reason why chip manufacturing is less expensive in places like Taiwan is because they already have the workforce. We pay well in this industry and we are doing exciting, innovative work, but there is definitely a need to rebuild the workforce in the US.
+
+[Speaker: Peter Cleveland]
+Peter Cleveland: I agree with Jon’s comments. Software-design engineering is very appealing and high-paying, but there remains incredible potential to develop a semiconductor workforce pipeline in the US. The STEM talent pool here is magnificent. It’s the best in the world from Carnegie Mellon to Arizona State University to CalTech. But still, in the hardware space, it is very tough.

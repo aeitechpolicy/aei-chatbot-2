@@ -1,36 +1,65 @@
 PAGE_TITLE: 
-	Privacy, Data, National Security, and the Principles for Data-Sharing Globalization: Highlights from My Conversation with Sujit Raman | American Enterprise Institute - AEI
+	Privacy, Data, National Security, and the Principles for Data-Sharing Globalization: Highlights from My Conversation with Sujit Raman
 
+[Speaker: Introduction / editorial context]
 In a world where boundaries and borders are increasingly porous, where information flows seamlessly across the world, and where cyber threats have become a defining element of our modern digital ecosystem, establishing principles surrounding data privacy is crucial. But how does the shift towards a multipolar world impact data governance and globalization? What are the consequences of storing data within a country’s borders? And how does the international community create standards around these complex issues?
+
+[Speaker: Introduction / editorial context]
 To sort through these questions, I spoke with Sujit Raman, the Chief Legal Officer of TRM Labs and a Senior Fellow in the Tech Law and Security Program at the American University. His served as the former Department of Justice Cyber-Digital Task Force Chair, where he held responsibility for data protection, emerging technologies, and cyber-related matters.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: You recently wrote a piece called “Two Visions of Digital Sovereignty,” which captured so much, but one of the key things you brought up is that we recently transitioned over to the Transatlantic Data Privacy Framework (DPF), from the previous Data Shield Framework. So let’s start with the new DPF.
+
+[Speaker: Sujit Raman]
 Sujit Raman: The actual framework itself is meant to be a very easy transition from the old Privacy Shield, so if you’re a company that is certified under the old Privacy Shield Framework, it’s not much of a lift to transition over to the new DPF. Even for companies that are looking to join the new DPF, it’s a very similar process to the old Privacy Shield. You have to certify to certain cybersecurity standards and that you protect data in a certain way; you go file paperwork with the Department of Commerce; and then you’re basically in the system. From a user point of view, it’s very similar to the old system.
+
+[Speaker: Sujit Raman]
 Now, to be sure, there are some new rules in effect for the US government. That was the whole negotiation between the EU and the US government: how do we make sure that the issues that were identified in the Schrems II decision are addressed? There are certain significant amendments or reforms that the Intelligence Committee undertook within the US and the Department of Justice has issued rules that set up a new data privacy court. Those are two significant changes the US government made in response to Schrems that apparently have satisfied the European Commission, which is why they gave the United States an adequacy decision as of a few weeks ago.
+
+[Speaker: Shane Tews]
 Do you believe them?
+
+[Speaker: Sujit Raman]
 I can’t tell you that I’m completely neutral on this issue. I served many years in the US government. I have always felt that the US system was adequate. The privacy protections we offer US citizens as well as non-US citizens when it comes to the probable cause standard is one of the highest standards known in the law. But, it is unknown in other parts of the world. So, when European governments, for example, are accessing the contents of an email account of their own citizens, they’re doing it at a much lower standard than the US government is when we are searching content stored with US providers. I’ve always felt like the United States has a very adequate data privacy system, at least when it comes to government access to data. To be sure, there have been significant reforms and changes made over the last few weeks. I think the hope is that when all of these issues ultimately go back to the European courts, they’ll be cleared.
+
+[Speaker: Shane Tews]
 What is it that the Europeans are doing that has a lower standard than the US? Can you just walk us through that?
+
+[Speaker: Sujit Raman]
 I’ll start with the US. As you know, Shane, the Fourth Amendment binds federal, state, and local governments. To access the content of someone’s, let’s say, Gmail or any other kind of email account, the government has to go seek a warrant based on probable cause. And the probable cause standard is a pretty high standard. It’s very privacy-protective. There’s a whole litany of aspects that a federal agent and a prosecutor have to satisfy before a neutral judge will sign off on the warrant and allow you access to that account. In Europe, many of these societies don’t have written constitutions. They don’t have a Fourth Amendment requirement. And often, the standard for the government to access its own citizens’ email contents is much lower than what we have here in the United States.
+
+[Speaker: Sujit Raman]
 It’s often a source of frustration for American negotiators, American law enforcement officials, and American national security officials because they get all these criticisms of the American system by the European Court of Justice. (Which by the way, is not a court that has any competence on law enforcement or national security issues, it’s a commercial court.) They get all these criticisms, yet, you look at your analogs in these European governments, and they don’t have to meet those very same standards. And so that’s why for the last several years, there has been a fair amount of frustration on both sides of the Atlantic, by law enforcement and national security folks. But I do think we’ve made a lot of progress and that’s what I tried to touch upon in the piece. Hopefully, we can leave a lot of that drama behind us and now move forward in a productive way, which is all the more reason why some of these cybersecurity standards that are potentially being implemented in Europe are problematic.
+
+[Speaker: Sujit Raman]
 Let’s move to data localization and the challenges that we’re seeing globally, but I think to do that we need to take a step back, and talk about the importance of the CLOUD Act a couple of years ago, because that was a game changer. And we’re seeing parts of that get challenged with this data localization idea.
+
+[Speaker: Sujit Raman]
 The CLOUD Act basically had two parts. The first part was to reverse the Second Circuit’s decision in the Microsoft case. That was the case where Microsoft had been subpoenaed for certain information relating to one of its users. It was part of an investigation, a federal criminal investigation. Microsoft moved to quash the process, saying that the data was stored outside of the United States. It was stored in Ireland, as it turned out. And Microsoft’s view was that the US government doesn’t have jurisdiction over Microsoft servers outside of the United States. That issue was deeply contested and the Second Circuit ruled against the US government. The US government went to the Supreme Court. In fact, I worked on the briefing in that case on behalf of the US, and in the middle of all of that, we negotiated the CLOUD Act to resolve the issue.
+
+[Speaker: Sujit Raman]
 And what the CLOUD Act did, at least in its first provision, was to essentially reverse the second Circuit’s decision in that underlying litigation and to say, basically, so long as a company is subject to US jurisdiction, it is subject to legal process, as long as that data is in its possession, custody, or control. So even if the data is stored outside of the United States, if that company is subject to US jurisdiction, then the data needs to be produced. That’s a legislative clarification of pretty long-standing law.
+
+[Speaker: Sujit Raman]
 The second part of the CLOUD Act is a bit more forward looking. It allows the US government to engage in negotiations with other governments to form executive agreements, wherein you can directly serve process on foreign service providers. To give you a concrete example, in the United Kingdom, they have many investigations that involve emails on Google, Microsoft, Amazon, or wherever else. Historically, those tech companies could not be served directly with legal processes abroad because it would be illegal for the US company to produce data to a foreign government directly.
+
+[Speaker: Sujit Raman]
 What the CLOUD Act does is, if the US government and that other government form an executive agreement, and they meet various important privacy standards, civil liberties standards, and so on, the blocking statute is lifted so that the foreign government can directly serve the US company with legal process. The United Kingdom and Australia have now negotiated CLOUD Act agreements with the US government. What that means is, now, the UK government, for instance, can directly serve Google in the UK for evidence involving a UK crime. They don’t have to go through the MLAT process or some other burdensome procedure. The goal here is to ensure that law enforcement gets the digital evidence that they need in a timely way, but without, in any way, sacrificing civil liberties, due process, or individual rights.
+
+[Speaker: Shane Tews]
 Let’s say you take a picture with your iPhone using Google Photos, and then you send it to a Samsung user in Asia, and then they put it on their Lenovo computer, which is going to an Alibaba cloud. . . There are so many entities to go through, which goes the idea of being able to localize data. Where are we headed on that? And is there any reality to this? How do we start to parse this so it works in this digital global economy?
-That’s a little bit of what I tried to touch upon in the article that you referenced, Shane. Historically, there have been these two visions of digital sovereignty. One is this idea of the free flow of data across borders, not only for commercial reasons
-—
-for trade and innovation
-—
-but also for law enforcement and national security purposes. In a globalized economy, you’ve got data stored all around the world, which is actually beneficial. So, you need to create mechanisms to promote that free flow of data in a way that also protects privacy and doesn’t unduly impact individuals.
+
+[Speaker: Sujit Raman]
+That’s a little bit of what I tried to touch upon in the article that you referenced, Shane. Historically, there have been these two visions of digital sovereignty. One is this idea of the free flow of data across borders, not only for commercial reasons—for trade and innovation—but also for law enforcement and national security purposes. In a globalized economy, you’ve got data stored all around the world, which is actually beneficial. So, you need to create mechanisms to promote that free flow of data in a way that also protects privacy and doesn’t unduly impact individuals.
+
+[Speaker: Sujit Raman]
 The alternative vision is one that historically has been associated with authoritarian regimes. I don’t want to overstate that because India, Brazil, and, other US allies have also flirted with this concept. But, it’s a much more territorial idea that data concerning individuals or citizens should be stored within a particular territorial locality. It is much more skeptical of cross-border data flows, partly because the concern is that value would be sent outside the country.
-Many Europeans complain that their personal data is being monetized by US companies
-—
-the Googles and Amazons of the world. It feels almost like a system of data colonialism, that all their natural resources are being extracted, sent abroad, and monetized by foreign companies. You hear a little bit of that valence in the arguments coming from not only European companies or countries but also countries like India, Brazil, and South Africa. Countries that are essentially US allies, but when it comes to digital governance issues, are surprisingly a little bit aligned with the authoritarian countries
-—
-the Russias, and the Chinas. We’ve seen a lot of progress overall. But as we enter a more multipolar world, especially after the result of COVID and Russia’s aggression in Ukraine, countries around the world are looking around and saying, we need to make sure that we’re picking the right side.
+
+[Speaker: Sujit Raman]
+Many Europeans complain that their personal data is being monetized by US companies—the Googles and Amazons of the world. It feels almost like a system of data colonialism, that all their natural resources are being extracted, sent abroad, and monetized by foreign companies. You hear a little bit of that valence in the arguments coming from not only European companies or countries but also countries like India, Brazil, and South Africa. Countries that are essentially US allies, but when it comes to digital governance issues, are surprisingly a little bit aligned with the authoritarian countries—the Russias, and the Chinas. We’ve seen a lot of progress overall. But as we enter a more multipolar world, especially after the result of COVID and Russia’s aggression in Ukraine, countries around the world are looking around and saying, we need to make sure that we’re picking the right side.
+
+[Speaker: Sujit Raman]
 That’s why countries like India, even though they are strong US allies and have become much more cooperative on law enforcement issues, have shown some sympathy for the view typically associated with Russia or China when it comes to data localization. Just a few days ago, there was the conference in South Africa with BRIC countries dealing with financial flows, and the idea that you might want to move away from the dollar when it comes to settling certain transactions. These are moves towards a more multipolar world. We’re seeing that in every aspect of international relations and we’re seeing it when it comes to data governance as well.

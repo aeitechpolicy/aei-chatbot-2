@@ -1,145 +1,62 @@
 PAGE_TITLE: 
-	Coronavirus, 5G, and the Restoring Internet Freedom Order: Highlights from My Conversation with Joel Thayer | American Enterprise Institute - AEI
+	Coronavirus, 5G, and the Restoring Internet Freedom Order: Highlights from My Conversation with Joel Thayer
 
-How is the Federal Communications Commission responding to the coronavirus pandemic? What is Ligado and why is it controversial? And what does the
-Restoring Internet Freedom Order
-mean for the future of the web? Joel Thayer, an attorney at Phillips Lytle and an expert on telecommunications, regulatory and transaction matters, privacy, and cybersecurity, joined me on the latest episode of “Explain to Shane” to discuss these questions and more.
-Below is an edited and abridged transcript of our talk. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the “Explain to Shane” podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane Tews: Joel, welcome. Let’s start with what’s going
-on with the FCC and COVID? What temporary regulations have they been changing
-that hopefully been making broadband easier for American citizens?
-Joel Thayer: The FCC has taken what I feel is a leadership
-role in this area. And they’ve done three key things that I think are important
-to help out in this time of crisis. The three things are as follows: One, they
-had carriers take a Keep America Connected pledge, which we’ll go into in a
-little bit. Secondly, they opened up a lot of spectrum to augment our Wi-Fi
-footprint and increase capabilities, especially for wireless internet service
-providers or WISPs. Lastly, they implemented a lot of subsidy programs that
-have been focused primarily on telehealth capabilities and also connected
-education. So they’re doing a lot.
-They, in conjunction with industry, I think have positioned
-us very well to increase our abilities in the broadband space. It’s traditional
-carriers, such as Verizon and AT&T, and even fiber optic cable operators,
-are part of the list. I’m not entirely sure, but I’m almost certain it is. Specifically
-it’s targeted at wireless internet service providers, which are called WISPs.
-WISPs are primarily based in rural areas and rely heavily on spectrum in order
-to provide internet-based services for those who live in middle America, and
-enter any small rural town here. So it’s critical for them to access the
-spectrum that allows them to augment their services.
-Another thing that the FCC has done, on top of the pledge, is
-to open up spectrum for Wi-Fi capabilities. And specifically, there are two
-items that the FCC has promulgated that has really pushed us forward in that
-regard. One is the 6 GHz proceeding. 6 GHz, it’s just basically radio frequency
-spectrum that wasn’t traditionally used for Wi-Fi, but through a lot of
-extensive research and also testing, and also previous usage, the FCC has
-identified this spectrum frequency as a key element to increasing our Wi-Fi
-footprint.
-Spectrum basically is, think of it more like a layered cake.
-And the next layer right underneath 6 GHz is the 5.9 gigahertz band. And the
-5.9 GHz band, it was traditionally used for auto manufacturers to provide
-public safety capabilities. Which arguably hasn’t been used, but in this
-instance, the FCC has temporarily allowed it to be used, the 5.9 GHz band, to
-make a more contiguous Wi-Fi spectrum frequency. And contiguous just means that
-now it goes from using one layer of the cake to using a larger portion of the
-cake, to just enjoy for Wi-Fi purposes.
-Now that these things are temporary, are they able to
-make them permanent? What do they have to do about that?
-The 6 GHz proceeding that I mentioned earlier is an order
-and that rule is here to stay. 5.9, however, is still in regulatory limbo. What
-the FCC has to do, is move on what’s called a Notice of Proposed Rulemaking
-[NPRM]. And just to give you a very quick briefer on FCC proceedings: The FCC
-has to, in order for them to promulgate a rule with the effect of law, first
-give the public enough notice. That would meet their statutory obligations
-under what’s called the Administrative Procedures Act. And it would also meet
-our overall constitutional view of due process. Due process means that if the
-government is doing anything that could potentially affect our rights, they
-have to give us notice. So the FCC does this first. They will first put out
-what’s called a Notice of Inquiry, where they’ll say, “Hey, world, we want
-to move on these items. What say you? What can we do? Do you think that we have
-statutory authority?” And they seek comment on it through a certain period
-of time.
-After that, assuming everything is kosher, they move to the
-next stage, which is a Notice of Proposed Rulemaking, where it’s a more
-articulated proceeding. So basically they say, “Look. Given all your input
-from the Notice of Inquiry, we think that this would be a good-looking rule. Do
-you guys agree that it’s good-looking? If not, tell us why it’s not, and we
-will take that comment and then we will potentially create an order or a rule
-out of that proceeding.” Which ultimately results in a final order or
-rule.
-For the 5.9 proceeding, we’re in the middle part. We’re
-still in the Notice of Proposed Rulemaking area. And I believe that comments
-have just closed, either a week or two weeks ago. The next stage for the FCC to
-move to make this use a little bit more permanent, is to now move on to
-creating an order.
-So for now, it’s temporary, but once the FCC moves on its
-previous NPRM, the rule will be here to stay. But it has to move on this rule
-before it becomes anything less than temporary.
-In the middle of all this, there’s an issue that has been
-out there for many years, this company Ligado. What is Ligado and what are they
-up to?
-Ligado has sort of a tortured history. Ligado was formerly
-called LightSquared. And what LightSquared essentially did, was provide
-satellite-based services in a very specific frequency, using a very specific
-type of spectrum called L-band. L-band is traditionally used for GPS purposes,
-and is used by a wide variety of stakeholders, both governmental and private
-industry, such as John Deere or Garmin. Anyone who is in the GPS space uses
-spectrum frequencies in or around L band. So LightSquared realized that,
-“Hey, this is actually a pretty valuable spectrum to provide other
-services that are also beneficial, such as broadband.”
-Circa 2004, they petitioned the FCC to modify its license,
-its spectrum license. For the uninitiated, in order for a carrier like Ligado
-or Verizon or anyone to provide services using specific frequencies, they have
-to go and buy that particular frequency through an auction that the FCC holds,
-usually. So Ligado, formerly LightSquared, bought specific frequencies within L
-band and said, “Hey, you have a license to provide satellite services that
-does X, Y, and Z.” That X, Y, and Z aspects of their license did not include
-providing broadband services.
-Ligado said, “All right, well, we think that we have
-enough capabilities to provide broadband services. So let’s go and let’s modify
-our license.” In order to do that, you need the FCC to give a blessing. In
-order for you to get the FCC blessing, it is incredibly hard to do. It requires
-an immense amount of thought behind it. It requires a lot of inter-agency work
-to make sure that you’re not offending incumbents, which are other people who
-are currently using the band, and even the band around it.
-Final and not a small topic, the Restoring Internet
-Freedom Order and the comments. Some people still refer to this as net
-neutrality, which I don’t because I think that it’s something that’s way past
-its prime. It might’ve made sense in the early 2000s, but it just keeps
-bringing its ugly head back up. So what just happened April 20th? I know there
-were comments, and then we had reply comments on May 20th. Can you just break
-that down for us a little bit and what the key issues were?
-Ultimately this is a question from the DC circuit, or a
-request from the DC circuit, that the FCC, pursuant to a lawsuit called Mozilla
-v. FCC, explain how its changing classification of broadband services – going
-from a telecommunication service, which was done in 2015 to its reversion back,
-through the Restoring Internet Freedom order, which happened in 2018 – how that
-would affect some other policies.
-Title I versus Title II. Information services have been
-what broadband has been for a long time. It just was how these zeros and ones
-flow. And then certain people thought that it needs to be treated more like an
-old-fashioned telecom carrier. Is that correct?
-That’s absolutely right. So it goes back to, firstly, I was
-going to say, what is net neutrality? That’s basically the, this conversation
-is just an extension of that conversation. And net neutrality at its highest of
-high levels, is how the internet should be regulated from the perspective of
-the Federal Communications Commission. Or at least it’s devolved into that kind
-of conversation.
+[Speaker: Introduction / editorial context]
+How is the Federal Communications Commission responding to the coronavirus pandemic? What is Ligado and why is it controversial? And what does the Restoring Internet Freedom Order mean for the future of the web? Joel Thayer, an attorney at Phillips Lytle and an expert on telecommunications, regulatory and transaction matters, privacy, and cybersecurity, joined me on the latest episode of “Explain to Shane” to discuss these questions and more.
 
-The FCC also recognized that, “Hey, the Internet
-has been running on a Title I free market regime since the dawn of the
-worldwide web. We should be encouraging that because we saw spurs of investment
-as a result of keeping it in the free market. The Internet was not broken to
-begin with. Why are we over-regulating something that is clearly working?” So
-the Restoring Internet Freedom Order really just brings the Internet back to
-what it always has been, which is back to the regulatory family it’s always
-fallen under, which is a Title I information service.
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to the podcast here and read our full discussion here. You can also subscribe to the “Explain to Shane” podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: Joel, welcome. Let’s start with what’s going on with the FCC and COVID? What temporary regulations have they been changing that hopefully been making broadband easier for American citizens?
+
+[Speaker: Joel Thayer]
+Joel Thayer: The FCC has taken what I feel is a leadership role in this area. And they’ve done three key things that I think are important to help out in this time of crisis. The three things are as follows: One, they had carriers take a Keep America Connected pledge, which we’ll go into in a little bit. Secondly, they opened up a lot of spectrum to augment our Wi-Fi footprint and increase capabilities, especially for wireless internet service providers or WISPs. Lastly, they implemented a lot of subsidy programs that have been focused primarily on telehealth capabilities and also connected education. So they’re doing a lot.
+
+[Speaker: Joel Thayer]
+They, in conjunction with industry, I think have positioned us very well to increase our abilities in the broadband space. It’s traditional carriers, such as Verizon and AT&T, and even fiber optic cable operators, are part of the list. I’m not entirely sure, but I’m almost certain it is. Specifically it’s targeted at wireless internet service providers, which are called WISPs. WISPs are primarily based in rural areas and rely heavily on spectrum in order to provide internet-based services for those who live in middle America, and enter any small rural town here. So it’s critical for them to access the spectrum that allows them to augment their services.
+
+[Speaker: Joel Thayer]
+Another thing that the FCC has done, on top of the pledge, is to open up spectrum for Wi-Fi capabilities. And specifically, there are two items that the FCC has promulgated that has really pushed us forward in that regard. One is the 6 GHz proceeding. 6 GHz, it’s just basically radio frequency spectrum that wasn’t traditionally used for Wi-Fi, but through a lot of extensive research and also testing, and also previous usage, the FCC has identified this spectrum frequency as a key element to increasing our Wi-Fi footprint.
+
+[Speaker: Joel Thayer]
+Spectrum basically is, think of it more like a layered cake. And the next layer right underneath 6 GHz is the 5.9 gigahertz band. And the 5.9 GHz band, it was traditionally used for auto manufacturers to provide public safety capabilities. Which arguably hasn’t been used, but in this instance, the FCC has temporarily allowed it to be used, the 5.9 GHz band, to make a more contiguous Wi-Fi spectrum frequency. And contiguous just means that now it goes from using one layer of the cake to using a larger portion of the cake, to just enjoy for Wi-Fi purposes.
+
+[Speaker: Shane Tews]
+Now that these things are temporary, are they able to make them permanent? What do they have to do about that?
+
+[Speaker: Joel Thayer]
+The 6 GHz proceeding that I mentioned earlier is an order and that rule is here to stay. 5.9, however, is still in regulatory limbo. What the FCC has to do, is move on what’s called a Notice of Proposed Rulemaking [NPRM]. And just to give you a very quick briefer on FCC proceedings: The FCC has to, in order for them to promulgate a rule with the effect of law, first give the public enough notice. That would meet their statutory obligations under what’s called the Administrative Procedures Act. And it would also meet our overall constitutional view of due process. Due process means that if the government is doing anything that could potentially affect our rights, they have to give us notice. So the FCC does this first. They will first put out what’s called a Notice of Inquiry, where they’ll say, “Hey, world, we want to move on these items. What say you? What can we do? Do you think that we have statutory authority?” And they seek comment on it through a certain period of time.
+
+[Speaker: Joel Thayer]
+After that, assuming everything is kosher, they move to the next stage, which is a Notice of Proposed Rulemaking, where it’s a more articulated proceeding. So basically they say, “Look. Given all your input from the Notice of Inquiry, we think that this would be a good-looking rule. Do you guys agree that it’s good-looking? If not, tell us why it’s not, and we will take that comment and then we will potentially create an order or a rule out of that proceeding.” Which ultimately results in a final order or rule.
+
+[Speaker: Joel Thayer]
+For the 5.9 proceeding, we’re in the middle part. We’re still in the Notice of Proposed Rulemaking area. And I believe that comments have just closed, either a week or two weeks ago. The next stage for the FCC to move to make this use a little bit more permanent, is to now move on to creating an order.
+
+[Speaker: Joel Thayer]
+So for now, it’s temporary, but once the FCC moves on its previous NPRM, the rule will be here to stay. But it has to move on this rule before it becomes anything less than temporary.
+
+[Speaker: Shane Tews]
+In the middle of all this, there’s an issue that has been out there for many years, this company Ligado. What is Ligado and what are they up to?
+
+[Speaker: Joel Thayer]
+Ligado has sort of a tortured history. Ligado was formerly called LightSquared. And what LightSquared essentially did, was provide satellite-based services in a very specific frequency, using a very specific type of spectrum called L-band. L-band is traditionally used for GPS purposes, and is used by a wide variety of stakeholders, both governmental and private industry, such as John Deere or Garmin. Anyone who is in the GPS space uses spectrum frequencies in or around L band. So LightSquared realized that, “Hey, this is actually a pretty valuable spectrum to provide other services that are also beneficial, such as broadband.”
+
+[Speaker: Joel Thayer]
+Circa 2004, they petitioned the FCC to modify its license, its spectrum license. For the uninitiated, in order for a carrier like Ligado or Verizon or anyone to provide services using specific frequencies, they have to go and buy that particular frequency through an auction that the FCC holds, usually. So Ligado, formerly LightSquared, bought specific frequencies within L band and said, “Hey, you have a license to provide satellite services that does X, Y, and Z.” That X, Y, and Z aspects of their license did not include providing broadband services.
+
+[Speaker: Joel Thayer]
+Ligado said, “All right, well, we think that we have enough capabilities to provide broadband services. So let’s go and let’s modify our license.” In order to do that, you need the FCC to give a blessing. In order for you to get the FCC blessing, it is incredibly hard to do. It requires an immense amount of thought behind it. It requires a lot of inter-agency work to make sure that you’re not offending incumbents, which are other people who are currently using the band, and even the band around it.
+
+[Speaker: Shane Tews]
+Final and not a small topic, the Restoring Internet Freedom Order and the comments. Some people still refer to this as net neutrality, which I don’t because I think that it’s something that’s way past its prime. It might’ve made sense in the early 2000s, but it just keeps bringing its ugly head back up. So what just happened April 20th? I know there were comments, and then we had reply comments on May 20th. Can you just break that down for us a little bit and what the key issues were?
+
+[Speaker: Joel Thayer]
+Ultimately this is a question from the DC circuit, or a request from the DC circuit, that the FCC, pursuant to a lawsuit called Mozilla v. FCC, explain how its changing classification of broadband services – going from a telecommunication service, which was done in 2015 to its reversion back, through the Restoring Internet Freedom order, which happened in 2018 – how that would affect some other policies.
+
+[Speaker: Shane Tews]
+Title I versus Title II. Information services have been what broadband has been for a long time. It just was how these zeros and ones flow. And then certain people thought that it needs to be treated more like an old-fashioned telecom carrier. Is that correct?
+
+[Speaker: Joel Thayer]
+That’s absolutely right. So it goes back to, firstly, I was going to say, what is net neutrality? That’s basically the, this conversation is just an extension of that conversation. And net neutrality at its highest of high levels, is how the internet should be regulated from the perspective of the Federal Communications Commission. Or at least it’s devolved into that kind of conversation. The FCC also recognized that, “Hey, the Internet has been running on a Title I free market regime since the dawn of the worldwide web. We should be encouraging that because we saw spurs of investment as a result of keeping it in the free market. The Internet was not broken to begin with. Why are we over-regulating something that is clearly working?” So the Restoring Internet Freedom Order really just brings the Internet back to what it always has been, which is back to the regulatory family it’s always fallen under, which is a Title I information service.

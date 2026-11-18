@@ -1,145 +1,74 @@
 PAGE_TITLE: 
-	5 Questions on Strengthening US Cybersecurity with Rep. John Katko (R-NY) and an Expert Panel | American Enterprise Institute - AEI
+	5 Questions on Strengthening US Cybersecurity with Rep. John Katko (R-NY) and an Expert Panel
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-On June 11, AEI hosted a web event on strengthening US cybersecurity in the digital age. I was joined by
-Rep. John Katko
-(R-NY), ranking member of the House Homeland Security committee, for a one-on-one conversation, followed by a panel discussion with
-Ginny Badanes
-,
-Laura Bate
-,
-Klon Kitchen
-, and
-Andrea Limbago
-.
-Below is an edited and abridged transcript of key highlights from our discussion. You can view the full event on
-AEI.org
-and read the full transcript
-here
-.
-Shane Tews: Rep. Katko, walk us through
-your approach to cybersecurity for this particular Congress.
-Rep. Katko:
-It’s remarkable how much things have changed in the homeland security realm
-throughout my time in Congress. When I first got here, ISIS was all anyone was
-thinking about. But ISIS is now rendered to a much lower threat level for the
-United States. International terrorism is still an issue, but the new terrorism
-and new preeminent threat is really cybersecurity — the ransomware attacks we
-have seen and everything else that’s going on. We had HAFNIUM, SolarWinds,
-Colonial Pipeline, and the recent attack on our beef infrastructure in which
-they admitted to paying an $11 million ransom. It’s going to continue to
-escalate, and our critical infrastructure is a real problem.
-First, we
-should continue rethinking our fragmented approach to .gov security by
-consolidating security with the Department of Homeland Security’s (DHS)
-Cybersecurity and Infrastructure Security Agency (CISA). CISA has to be the
-quarterback of the .gov domain. Second, we have to have them working with the
-private sector as well to develop our understanding of the nature and extent of
-third-party risk. We then need to reduce this risk through certification
-regimes instead of just creating perfunctory compliance exercises. Certification
-regimes that have some teeth and substance will be really important for driving
-better software assurance and development processes across the system.
-Finally, we
-need to impose real costs on cyber adversaries like China, Russia, North Korea,
-and Iran. We know the group that hacked Colonial Pipeline was from Russia. It’s
-absolutely inconceivable that they were a rogue operation there; there’s no way
-the Russian government didn’t know they existed and what they were up to. And
-if we don’t have and convey strong responses, there’s no deterrence.
-Ginny, how does disinformation tie into the
-government’s cybersecurity responsibilities? Talk to us about some of your work
-on that topic.
-Ginny
-Badanes: When the team I work for at Microsoft first started up, our focus was
-on nation-state actors, largely in response to what we witnessed around the
-2016 election. But frankly, this was ramping up all around the globe. And there
-were some well-known actors — many of whom Rep. Katko named — who were actively
-trying to impact the results of elections, or at least the way people thought
-and interacted with one another, using disinformation campaigns. And a lot of
-those were coming from abroad. They were coming from other nation-states who
-were looking to interfere.
-I’ve been
-incredibly impressed with how CISA has taken on these issues very quickly. They
-quickly pulled together their disinformation site around the election and had
-the rumor control site up and running. Sure, Microsoft and others could have
-done that kind of function, but CISA was the appropriate landing place for
-that. There was also strong trust there; CISA was working closely with state
-and local governments when they built out that rumor control site.
-Often,
-industry is out ahead of government on technology and other issues. But there
-are areas in which I’ve been really impressed by recent government innovation —
-including CISA being a leader on the disinformation issue.
-Klon, now that the Department of Justice
-(DOJ) has begun treating ransomware like terrorism, how is our cybersecurity
-strategy poised to change?
+
+[Speaker: Introduction / editorial context]
+On June 11, AEI hosted a web event on strengthening US cybersecurity in the digital age. I was joined by Rep. John Katko (R-NY), ranking member of the House Homeland Security committee, for a one-on-one conversation, followed by a panel discussion with Ginny Badanes, Laura Bate, Klon Kitchen, and Andrea Limbago.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from our discussion. You can view the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
+Shane Tews: Rep. Katko, walk us through your approach to cybersecurity for this particular Congress.
+
+[Speaker: Rep. Katko]
+Rep. Katko: It’s remarkable how much things have changed in the homeland security realm throughout my time in Congress. When I first got here, ISIS was all anyone was thinking about. But ISIS is now rendered to a much lower threat level for the United States. International terrorism is still an issue, but the new terrorism and new preeminent threat is really cybersecurity — the ransomware attacks we have seen and everything else that’s going on. We had HAFNIUM, SolarWinds, Colonial Pipeline, and the recent attack on our beef infrastructure in which they admitted to paying an $11 million ransom. It’s going to continue to escalate, and our critical infrastructure is a real problem.
+
+[Speaker: Rep. Katko]
+First, we should continue rethinking our fragmented approach to .gov security by consolidating security with the Department of Homeland Security’s (DHS) Cybersecurity and Infrastructure Security Agency (CISA). CISA has to be the quarterback of the .gov domain. Second, we have to have them working with the private sector as well to develop our understanding of the nature and extent of third-party risk. We then need to reduce this risk through certification regimes instead of just creating perfunctory compliance exercises. Certification regimes that have some teeth and substance will be really important for driving better software assurance and development processes across the system.
+
+[Speaker: Rep. Katko]
+Finally, we need to impose real costs on cyber adversaries like China, Russia, North Korea, and Iran. We know the group that hacked Colonial Pipeline was from Russia. It’s absolutely inconceivable that they were a rogue operation there; there’s no way the Russian government didn’t know they existed and what they were up to. And if we don’t have and convey strong responses, there’s no deterrence.
+
+[Speaker: Rep. Katko]
+Ginny, how does disinformation tie into the government’s cybersecurity responsibilities? Talk to us about some of your work on that topic.
+
+[Speaker: Ginny Badanes]
+Ginny Badanes: When the team I work for at Microsoft first started up, our focus was on nation-state actors, largely in response to what we witnessed around the 2016 election. But frankly, this was ramping up all around the globe. And there were some well-known actors — many of whom Rep. Katko named — who were actively trying to impact the results of elections, or at least the way people thought and interacted with one another, using disinformation campaigns. And a lot of those were coming from abroad. They were coming from other nation-states who were looking to interfere.
+
+[Speaker: Ginny Badanes]
+I’ve been incredibly impressed with how CISA has taken on these issues very quickly. They quickly pulled together their disinformation site around the election and had the rumor control site up and running. Sure, Microsoft and others could have done that kind of function, but CISA was the appropriate landing place for that. There was also strong trust there; CISA was working closely with state and local governments when they built out that rumor control site.
+
+[Speaker: Ginny Badanes]
+Often, industry is out ahead of government on technology and other issues. But there are areas in which I’ve been really impressed by recent government innovation — including CISA being a leader on the disinformation issue.
+
+[Speaker: Shane Tews]
+Klon, now that the Department of Justice (DOJ) has begun treating ransomware like terrorism, how is our cybersecurity strategy poised to change?
+
+[Speaker: Klon Kitchen]
 Klon Kitchen: This distinction is largely a bureaucratic response, but that doesn’t mean it’s not important and impactful. DOJ essentially decided that internally it would begin operating and coordinating ransomware investigations in the same way they do terrorism investigations, which essentially means a lot more internal information sharing and DOJ maintaining strategic oversight of various investigations that are better understood as part of one coherent challenge. DOJ is approaching ransomware in the same way they would think about terrorism as not a series of one-off investigations, but rather an issue with common roots that needs to be considered comprehensively.
-Let me spit
-a couple of metrics that underscore the scale of this and why DOJ is having
-this response. In 2020, nearly 2,400 US government, health care, and school
-networks were shut down by ransomware. The average downtime of one of those
-attacks was 21 days, but the average recovery time — the time it took to actually
-get back up and running the way they were prior to the attack — was 287 days. $350
-million was paid in the United States in ransomware payments in 2020. That’s a
-311 percent increase from the prior year. The average sum of one of those
-payments was $312,493 — a 171 percent increase over 2019. So when we say
-ransomware concerns are growing and that they’re significant, that is not
-hyperbole.
-A final
-point: Reiterating what Rep. Katko said, there is no scenario in which the
-United States can secure itself in terms of its cyber interests absent a deep
-integration of the private sector at the policy and strategy levels. We are all
-over the same barrel, and I think both industry and government are recognizing
-that. We used to only make each other’s lives more difficult, but now, the pain
-point has become so sufficiently acute that we are meaningfully trying to find
-new ways to work together.
-Andrea, give us some background on the work
-you’ve been doing with supply chains. How does that tie into our
-discussion?
+
+[Speaker: Klon Kitchen]
+Let me spit a couple of metrics that underscore the scale of this and why DOJ is having this response. In 2020, nearly 2,400 US government, health care, and school networks were shut down by ransomware. The average downtime of one of those attacks was 21 days, but the average recovery time — the time it took to actually get back up and running the way they were prior to the attack — was 287 days. $350 million was paid in the United States in ransomware payments in 2020. That’s a 311 percent increase from the prior year. The average sum of one of those payments was $312,493 — a 171 percent increase over 2019. So when we say ransomware concerns are growing and that they’re significant, that is not hyperbole.
+
+[Speaker: Klon Kitchen]
+A final point: Reiterating what Rep. Katko said, there is no scenario in which the United States can secure itself in terms of its cyber interests absent a deep integration of the private sector at the policy and strategy levels. We are all over the same barrel, and I think both industry and government are recognizing that. We used to only make each other’s lives more difficult, but now, the pain point has become so sufficiently acute that we are meaningfully trying to find new ways to work together.
+
+[Speaker: Shane Tews]
+Andrea, give us some background on the work you’ve been doing with supply chains. How does that tie into our discussion?
+
+[Speaker: Andrea Limbago]
 Andrea Limbago: Supply chains are so interconnected with cybersecurity. I think it’s increasingly really hard to disconnect the two when everything is so hyper-connected both economically and digitally. And so in order to really figure out what some of your risks are in the cyber realm, you also need to know what your risks are across your supply chain given the huge increase we’re seeing in third-party attacks. In addition to cloud security, we need to expand our focus to: Who are your suppliers? Who are your partners? Who else has access to your data? SolarWinds is a great example of this: Even if you didn’t have SolarWinds software, you still might have been drawn into the scope of the attack via your more extended network.
-A core
-problem is that a lot of companies know their first-tier and initial suppliers,
-but not their second-tier, third-tier, and so on. Because of the
-hyper-specialization of components, you have to go down and start mapping to
-those other tiers to actually know where some of your risks might be. Some more
-forward-leaning companies have been looking at this for a while, but for the
-most part, COVID-19 was a wake-up call in this and so many different areas. It
-really pushed supply chain from sort of an esoteric, niche discussion that not
-many people really cared about to headline-level news now.
-It’s only
-getting more complex, but at Interos, we’re trying to help simplify things
-through “supply chain mapping”: providing that visibility and surfacing how the
-cybersecurity and interconnected components add to that risk.
-Laura, you’re a senior director for the
-Cyberspace Solarium Commission, which released a major report last year
-recommending a number of cyber-related policies for Congress to follow. One
-year later, are the policies you recommended actually coming to fruition? Where
-is more progress needed?
-Laura Bate:
-Yes — we are seeing updates in a number of areas. And the real credit goes to
-Congress, who is really taking the bull by the horns here. Rep. Katko, in
-particular, has been a fantastic champion for cybersecurity throughout the
-course of the commission’s work. So we’re very grateful for that, and for all
-of our congressional commissioners who are putting these ideas to practice. We
-think the recent executive orders on cybersecurity represent good progress. There’s
-also quite a bit in the US Innovation and Competition Act that relates to our
-work.
-But I think we
-should also be looking at cyber diplomacy: how to engage with our allies and
-partners. The Cyber Diplomacy Act is moving through Congress right now and
-could have a lot of bearing on making us more effective in thinking through how
-we as an international community can put critical supply chain elements in
-trusted countries. It doesn’t necessarily all need to be in the US. There are
-plenty of places with comparative advantages that would work, so we should be
-utilizing that.
-We also need
-to be thinking about how we invest internationally via investment finance
-corporations and the international arms the US has to further development,
-whether it’s a function of investment or just aid. We need to be thinking strategically
-about: Where are the countries that we trust? Where are our partners and
-allies, and how can we be advancing things that are critical to the community
-of nations that want a free, open, interoperable, and secure internet? How can
-that whole community of nations be structuring things to encourage a secure
-supply chain?
-The answer
-is: Yes, we’ve made great progress. (Thanks, Congress.) But there remains a lot
-to be done.
+
+[Speaker: Andrea Limbago]
+A core problem is that a lot of companies know their first-tier and initial suppliers, but not their second-tier, third-tier, and so on. Because of the hyper-specialization of components, you have to go down and start mapping to those other tiers to actually know where some of your risks might be. Some more forward-leaning companies have been looking at this for a while, but for the most part, COVID-19 was a wake-up call in this and so many different areas. It really pushed supply chain from sort of an esoteric, niche discussion that not many people really cared about to headline-level news now.
+
+[Speaker: Andrea Limbago]
+It’s only getting more complex, but at Interos, we’re trying to help simplify things through “supply chain mapping”: providing that visibility and surfacing how the cybersecurity and interconnected components add to that risk.
+
+[Speaker: Shane Tews]
+Laura, you’re a senior director for the Cyberspace Solarium Commission, which released a major report last year recommending a number of cyber-related policies for Congress to follow. One year later, are the policies you recommended actually coming to fruition? Where is more progress needed?
+
+[Speaker: Laura Bate]
+Laura Bate: Yes — we are seeing updates in a number of areas. And the real credit goes to Congress, who is really taking the bull by the horns here. Rep. Katko, in particular, has been a fantastic champion for cybersecurity throughout the course of the commission’s work. So we’re very grateful for that, and for all of our congressional commissioners who are putting these ideas to practice. We think the recent executive orders on cybersecurity represent good progress. There’s also quite a bit in the US Innovation and Competition Act that relates to our work.
+
+[Speaker: Laura Bate]
+But I think we should also be looking at cyber diplomacy: how to engage with our allies and partners. The Cyber Diplomacy Act is moving through Congress right now and could have a lot of bearing on making us more effective in thinking through how we as an international community can put critical supply chain elements in trusted countries. It doesn’t necessarily all need to be in the US. There are plenty of places with comparative advantages that would work, so we should be utilizing that.
+
+[Speaker: Laura Bate]
+We also need to be thinking about how we invest internationally via investment finance corporations and the international arms the US has to further development, whether it’s a function of investment or just aid. We need to be thinking strategically about: Where are the countries that we trust? Where are our partners and allies, and how can we be advancing things that are critical to the community of nations that want a free, open, interoperable, and secure internet? How can that whole community of nations be structuring things to encourage a secure supply chain?
+
+[Speaker: Laura Bate]
+The answer is: Yes, we’ve made great progress. (Thanks, Congress.) But there remains a lot to be done.

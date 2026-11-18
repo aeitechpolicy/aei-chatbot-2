@@ -1,162 +1,83 @@
 PAGE_TITLE: 
-	What’s Next for 12-GHz Spectrum? Highlights from My Conversation with V. Noah Campbell and Richard Bennett | American Enterprise Institute - AEI
+	What’s Next for 12-GHz Spectrum? Highlights from My Conversation with V. Noah Campbell and Richard Bennett
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-In December 2020, the Federal Communications Commission (FCC) announced a
-Notice of Proposed Rulemaking
-(NPRM) on the feasibility of allowing satellite and terrestrial commercial operations in the 12.2–12.7-gigahertz (GHz) spectrum band. Doing so could expand broadband access and expedite mobile 5G network buildouts; however, incumbents worry that more commercial activity in the band may interfere with their satellite operations. How can the FCC expand use of this spectrum while navigating incumbents’ concerns?
-To discuss
-the future of the 12-GHz band, I sat down with two spectrum policy
-experts:
-V. Noah Campbell
-, co-founder and CEO of
-Radio Spectrum
-Access LLC
-, and
-Richard Bennett
-, founder of
-High Tech Forum
-and
-a co-creator of Wi-Fi. Noah explained how both industry and the FCC can safely
-increase commercial activity in the 12-GHz band, while Richard offered an
-engineer’s perspective on what freeing up spectrum entails — both in the 12-GHz
-band and beyond.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: V., you have been interested in
-the 12-GHz space for a while. What is your firm, Radio Spectrum Access, seeking
-to accomplish by requesting the FCC consider increasing the use of this
-spectrum band?
-V. Noah
-Campbell: We’ve been paying very close attention to this band for about three
-years because it’s extremely unique: 500 megahertz of contiguous spectrum between
-12.2–12.7 GHz. Not only is it a very deep spectrum position; it’s the only
-terrestrially licensed frequency of spectrum that’s been auctioned and is
-already licensed for terrestrial use exclusively between the sub-6-GHz
-frequency and millimeter wave frequency.
-So it’s a
-very unique asset, and we think the usage it was assigned almost 20 years ago
-when it was first auctioned is basically obsolete. We think that updating the
-rules here could create a lot of additional capacity for mobile wireless. And
-our advocacy before the commission — which thus far has been successful — is to
-update the rules and bring this portion of frequency into the 5G era.
-Richard, what is your engineering
-perspective on the process of possibly clearing the 12-GHz band for additional
-use?
-Richard
-Bennett: The NPRM gives you a pretty good idea of what’s going on. There are
-three incumbent users in the 12-GHz band: Direct Broadcast Satellite (DBS),
-which is the DirecTV and Dish Network satellite television systems with small
-antennas on top of people’s houses; there’s SpaceX, who’s actually operating on
-a provisional license in the 12-GHz band; and then there’s a service called
-multichannel video data distribution service (MVDDS), which is a quirky one-way
-transmission system used for things like remote broadcasting. The MVDDS
-allocation is what’s primarily under consideration for redefinition of what the
-terms are. These folks want to turn that into a flexible-use license rather
-than the very narrow usage that it’s authorized for today.
-Of course,
-SpaceX is getting a lot of attention because it’s being touted as a potential
-solution to the digital divide. But their system is actually running in three
-different frequency bands, so it is possible in principle for it to surrender
-its use of the 12-GHz band and concentrate on the other two bands, but they
-don’t want to because they like the big fat allocation that’s in the 12-GHz
-band — and they feel like their service is a pretty cool thing.
-So the
-commission is trying to figure out whether it can modify the rules that apply
-to the three different incumbents, or whether they just need to start over and
-create a whole new sharing framework. And the existing sharing framework is
-like a lot of buildings you see in Washington, DC that appear to have had
-multiple coats of paint slapped on it over a hundred years. There are
-allocations on top of allocations, and it has some really strange conditions.
-For example,
-when you build an MVDDS system, you have to coordinate it with the existing
-DBS. But once you’ve done that, if the DBS operator installs new dishes, they
-have to be noninterfering with the MVDDS. So the priority rights are sort of first-come,
-first-serve, and it probably would be good in principle to just sort of erase
-it and start over. But that’s not the kind of thing the FCC does very well, so
-I expect we’re going to see more incremental fiddling around the edges as the
-commission explores the possibility of enabling some 5G access in the 12-GHz
-band.
-How do consumers stand to benefit if the
-FCC does decide to expand the 12-GHz band beyond its current use?
-V. Noah
-Campbell: The demand for bandwidth in the US is massive and constantly
-increasing. And so the consumer benefits here, I think, are really
-straightforward. You can add a huge amount of capacity relatively easily and
-quickly to the US 5G mobile ecosystem, and that has radical benefits for both
-consumers and the greater competitive ecosystem. You don’t have to give
-anything up if the engineering shows that you’re not going to impact incumbents.
-How should the FCC and other entities that
-want updated rules for the 12-GHz band move forward?
-The truth
-here is that you really don’t have to “nerd” that hard to figure this out. But
-with that said, as Richard noted, the current coexistence regime is extremely
-wonky. It takes three or four months, it’s paper-driven, it’s antiquated, and
-our research indicates that the whole process could be compressed to three or
-four milliseconds.
-The other
-thing to keep in mind is that this spectrum has some really inside-out elements.
-Most of the services that the 12-GHz band incumbents seek to provide are
-extremely rural services. Now, 12 GHz propagates much, much better than 24-GHz
-and millimeter wave spectrum does, but this will predominantly be just like a
-lot of other densification. This will be an inside-out band from a 5G services
-standpoint.
-So there’s
-sort of a natural difference between the markets here and a pre-built-in
-sharing regime within the band that just needs to be expanded on a little bit.
-It’s not going to take crunching huge amounts of data over multiple years. This
-can be done really quickly, and I think there absolutely is the political will.
-This is not a partisan issue; it’s consistent across different administrations.
-This NPRM was voted on and passed unanimously in the waning days of the Pai
-FCC, and the Rosenworcel FCC has taken up the exact same language that was used
-in the last administration.
-So our ask
-of the commission until January is very simple: Let’s take a look at this. We
-should study it. It’s valuable and important enough for the country and our national
-interests that we do so. And the FCC agreed unanimously to do so. They’re
-looking for a win-win, which we absolutely embrace.
-Our ask is
-to be given a chance to prove the engineering — which we’re doing — to recognize
-the economic and policy benefits. We’re very grateful to the commission for
-opening this NPRM, and we’re very much looking forward to participating
-robustly in the process.
-So have we learned enough now? Are we at
-the point where we just need to get the proof points to those who make the final
-decision?
-Richard
-Bennett: Essentially, this has given us a really fine illustration of what the
-FCC’s new mission is. So when it’s not playing about with largely symbolic but
-fundamentally insubstantial issues like net neutrality, the FCC has the mission
-of reallocating spectrum from old systems to new, higher value systems.
-So the need
-here is partially a technical model of coordination between incumbents’
-services and 5G, partly a model of political and economic cooperation managed
-by the FCC, and actually a new sense of what the FCC’s mission is — whether it
-sees itself as a facilitator of advanced communication technologies emerging
-from the lab and going into the marketplace where they can happily coexist with
-incumbent services. That’s really what we want the FCC to be, and to the extent
-that it can stay out of pointless fights like net neutrality, that’d be great
-for everybody.
-V. Noah
-Campbell: The FCC is really good at this, and they’ve been doing it
-successfully and leading the world at it for 40 years. So they really are a
-model globally for how to repurpose frequency and update rules such that
-frequency can be used more efficiently.
+
+[Speaker: Introduction / editorial context]
+In December 2020, the Federal Communications Commission (FCC) announced a Notice of Proposed Rulemaking (NPRM) on the feasibility of allowing satellite and terrestrial commercial operations in the 12.2–12.7-gigahertz (GHz) spectrum band. Doing so could expand broadband access and expedite mobile 5G network buildouts; however, incumbents worry that more commercial activity in the band may interfere with their satellite operations. How can the FCC expand use of this spectrum while navigating incumbents’ concerns?
+
+[Speaker: Introduction / editorial context]
+To discuss the future of the 12-GHz band, I sat down with two spectrum policy experts: V. Noah Campbell, co-founder and CEO of Radio Spectrum Access LLC, and Richard Bennett, founder of High Tech Forum and a co-creator of Wi-Fi. Noah explained how both industry and the FCC can safely increase commercial activity in the 12-GHz band, while Richard offered an engineer’s perspective on what freeing up spectrum entails — both in the 12-GHz band and beyond.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: V., you have been interested in the 12-GHz space for a while. What is your firm, Radio Spectrum Access, seeking to accomplish by requesting the FCC consider increasing the use of this spectrum band?
+
+[Speaker: V. Noah Campbell]
+V. Noah Campbell: We’ve been paying very close attention to this band for about three years because it’s extremely unique: 500 megahertz of contiguous spectrum between 12.2–12.7 GHz. Not only is it a very deep spectrum position; it’s the only terrestrially licensed frequency of spectrum that’s been auctioned and is already licensed for terrestrial use exclusively between the sub-6-GHz frequency and millimeter wave frequency.
+
+[Speaker: V. Noah Campbell]
+So it’s a very unique asset, and we think the usage it was assigned almost 20 years ago when it was first auctioned is basically obsolete. We think that updating the rules here could create a lot of additional capacity for mobile wireless. And our advocacy before the commission — which thus far has been successful — is to update the rules and bring this portion of frequency into the 5G era.
+
+[Speaker: Shane Tews]
+Richard, what is your engineering perspective on the process of possibly clearing the 12-GHz band for additional use?
+
+[Speaker: Richard Bennett]
+Richard Bennett: The NPRM gives you a pretty good idea of what’s going on. There are three incumbent users in the 12-GHz band: Direct Broadcast Satellite (DBS), which is the DirecTV and Dish Network satellite television systems with small antennas on top of people’s houses; there’s SpaceX, who’s actually operating on a provisional license in the 12-GHz band; and then there’s a service called multichannel video data distribution service (MVDDS), which is a quirky one-way transmission system used for things like remote broadcasting. The MVDDS allocation is what’s primarily under consideration for redefinition of what the terms are. These folks want to turn that into a flexible-use license rather than the very narrow usage that it’s authorized for today.
+
+[Speaker: Richard Bennett]
+Of course, SpaceX is getting a lot of attention because it’s being touted as a potential solution to the digital divide. But their system is actually running in three different frequency bands, so it is possible in principle for it to surrender its use of the 12-GHz band and concentrate on the other two bands, but they don’t want to because they like the big fat allocation that’s in the 12-GHz band — and they feel like their service is a pretty cool thing.
+
+[Speaker: Richard Bennett]
+So the commission is trying to figure out whether it can modify the rules that apply to the three different incumbents, or whether they just need to start over and create a whole new sharing framework. And the existing sharing framework is like a lot of buildings you see in Washington, DC that appear to have had multiple coats of paint slapped on it over a hundred years. There are allocations on top of allocations, and it has some really strange conditions.
+
+[Speaker: Richard Bennett]
+For example, when you build an MVDDS system, you have to coordinate it with the existing DBS. But once you’ve done that, if the DBS operator installs new dishes, they have to be noninterfering with the MVDDS. So the priority rights are sort of first-come, first-serve, and it probably would be good in principle to just sort of erase it and start over. But that’s not the kind of thing the FCC does very well, so I expect we’re going to see more incremental fiddling around the edges as the commission explores the possibility of enabling some 5G access in the 12-GHz band.
+
+[Speaker: Shane Tews]
+How do consumers stand to benefit if the FCC does decide to expand the 12-GHz band beyond its current use?
+
+[Speaker: V. Noah Campbell]
+V. Noah Campbell: The demand for bandwidth in the US is massive and constantly increasing. And so the consumer benefits here, I think, are really straightforward. You can add a huge amount of capacity relatively easily and quickly to the US 5G mobile ecosystem, and that has radical benefits for both consumers and the greater competitive ecosystem. You don’t have to give anything up if the engineering shows that you’re not going to impact incumbents.
+
+[Speaker: Shane Tews]
+How should the FCC and other entities that want updated rules for the 12-GHz band move forward?
+
+[Speaker: Speaker not identified]
+The truth here is that you really don’t have to “nerd” that hard to figure this out. But with that said, as Richard noted, the current coexistence regime is extremely wonky. It takes three or four months, it’s paper-driven, it’s antiquated, and our research indicates that the whole process could be compressed to three or four milliseconds.
+
+[Speaker: Speaker not identified]
+The other thing to keep in mind is that this spectrum has some really inside-out elements. Most of the services that the 12-GHz band incumbents seek to provide are extremely rural services. Now, 12 GHz propagates much, much better than 24-GHz and millimeter wave spectrum does, but this will predominantly be just like a lot of other densification. This will be an inside-out band from a 5G services standpoint.
+
+[Speaker: Speaker not identified]
+So there’s sort of a natural difference between the markets here and a pre-built-in sharing regime within the band that just needs to be expanded on a little bit. It’s not going to take crunching huge amounts of data over multiple years. This can be done really quickly, and I think there absolutely is the political will. This is not a partisan issue; it’s consistent across different administrations. This NPRM was voted on and passed unanimously in the waning days of the Pai FCC, and the Rosenworcel FCC has taken up the exact same language that was used in the last administration.
+
+[Speaker: Speaker not identified]
+So our ask of the commission until January is very simple: Let’s take a look at this. We should study it. It’s valuable and important enough for the country and our national interests that we do so. And the FCC agreed unanimously to do so. They’re looking for a win-win, which we absolutely embrace.
+
+[Speaker: Speaker not identified]
+Our ask is to be given a chance to prove the engineering — which we’re doing — to recognize the economic and policy benefits. We’re very grateful to the commission for opening this NPRM, and we’re very much looking forward to participating robustly in the process.
+
+[Speaker: Shane Tews]
+So have we learned enough now? Are we at the point where we just need to get the proof points to those who make the final decision?
+
+[Speaker: Richard Bennett]
+Richard Bennett: Essentially, this has given us a really fine illustration of what the FCC’s new mission is. So when it’s not playing about with largely symbolic but fundamentally insubstantial issues like net neutrality, the FCC has the mission of reallocating spectrum from old systems to new, higher value systems.
+
+[Speaker: Richard Bennett]
+So the need here is partially a technical model of coordination between incumbents’ services and 5G, partly a model of political and economic cooperation managed by the FCC, and actually a new sense of what the FCC’s mission is — whether it sees itself as a facilitator of advanced communication technologies emerging from the lab and going into the marketplace where they can happily coexist with incumbent services. That’s really what we want the FCC to be, and to the extent that it can stay out of pointless fights like net neutrality, that’d be great for everybody.
+
+[Speaker: V. Noah Campbell]
+V. Noah Campbell: The FCC is really good at this, and they’ve been doing it successfully and leading the world at it for 40 years. So they really are a model globally for how to repurpose frequency and update rules such that frequency can be used more efficiently.
+
+[Speaker: Shane Tews]
 Any last thoughts?
-Richard
-Bennett: The one thing I’d like to say is that I hope Congress stays out of
-this. I mean, looking at the kind of nonsense that’s happening on Capitol Hill
-in terms of the definition of broadband as a symmetrical service, it’s like, “Duh,
-look at any kind of engineering measurements.” You’ve got 10–15 times as much
-download as upload on the consumer side, so why would you go out and spend
-taxpayer money on services that nobody’s ever going to use? But on Capitol Hill,
-that turns into a bidding war. So the hundred megabit-per-second symmetrical
-crowd is bidding against the gigabit symmetrical crowd to see who can come up
-with the most aspirational standard that will not really be future-proof,
-because there’s no such thing.
+
+[Speaker: Richard Bennett]
+Richard Bennett: The one thing I’d like to say is that I hope Congress stays out of this. I mean, looking at the kind of nonsense that’s happening on Capitol Hill in terms of the definition of broadband as a symmetrical service, it’s like, “Duh, look at any kind of engineering measurements.” You’ve got 10–15 times as much download as upload on the consumer side, so why would you go out and spend taxpayer money on services that nobody’s ever going to use? But on Capitol Hill, that turns into a bidding war. So the hundred megabit-per-second symmetrical crowd is bidding against the gigabit symmetrical crowd to see who can come up with the most aspirational standard that will not really be future-proof, because there’s no such thing.
+
+[Speaker: V. Noah Campbell]
 V. Noah Campbell: Just to echo Richard’s point and what I mentioned earlier, I think the FCC is eminently qualified. They have a track record of global leadership in doing exactly what we’re aiming for here, and their engineers are world-class. We have total confidence the FCC will manage this appropriately and successfully, and we’re looking forward to it. And we’re very excited to be doing what we’re doing. We think we’re going to come out with a result that’s highly beneficial for all parties.

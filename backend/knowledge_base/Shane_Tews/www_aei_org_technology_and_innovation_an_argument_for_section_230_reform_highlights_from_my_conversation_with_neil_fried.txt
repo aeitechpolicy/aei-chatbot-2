@@ -1,178 +1,77 @@
 PAGE_TITLE: 
-	An Argument for Section 230 Reform: Highlights from My Conversation with Neil Fried | American Enterprise Institute - AEI
+	An Argument for Section 230 Reform: Highlights from My Conversation with Neil Fried
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Section 230 of the Communications Decency Act
-shields online intermediaries such as social media platforms from civil liability for content users post, but also allows them to moderate illegal, lewd, or otherwise harmful content as they see fit. These dual protections afforded to internet-based companies have been credited for the innovation and growth of social media companies, but Section 230 is often criticized across partisan lines. Does Section 230 invite too much content moderation, or too little? And how, if at all, should Section 230 be reformed?
-Over the past year, our American Enterprise Institute programming
-has
-offered
-a
-number
-of
-different
-perspectives
-on
-Section 230 reform. On the latest episode of “Explain to Shane,” I was joined by
-Neil Fried
-to hear his argument for why Section 230
-should
-be reformed.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Neil, you were part of the team
-that helped implement the Telecommunications Act of 1996 as a Federal
-Communications Commission (FCC) attorney, so you witnessed the birth of Section
-230 first-hand. Can you give us some background on why Section 230 was created?
-Neil Fried:
-There was this dial-up bulletin board company called Prodigy — back when that
-was sort of the first consumer use of the internet — that was building itself
-as a family-friendly bulletin board, so they were moderating their chats. If
-someone posted something profane or abusive, Prodigy moderators would take it down.
-And interestingly, in what was one of the first cases about online defamation,
-using common law — before Section 230 was passed — a court in New York said
-because Prodigy was moderating
-some
-content, it could be held culpable for
-all
-content on its site, even content it had not moderated. And because something
-allegedly libelous got through on one of the bulletin boards, a court said
-Prodigy could be held culpable for defamation.
-That case never
-went to complete fruition, so maybe Prodigy wouldn’t eventually have been held
-culpable for defamation, but the precedent was alarming to Congress because
-here, Prodigy tried to moderate and to do the right thing, and was told, “You’re
-going to be punished for doing the right thing. You could be held culpable.” That
-got Congress very concerned, and is what prompted Section 230’s passage.
-Congress
-wanted to encourage platforms to moderate, but the fear was that companies like
-Prodigy would learn
-not
-to moderate
-in order to avoid legal liability. The lawyers for Prodigy reasonably said, “If
-we want to minimize our exposure to litigation, we’re going to stop all
-moderation.” And that’s the exact opposite result of what everybody wanted.
-At the time,
-Sen. Ron Wyden (D-OR) and former Rep. Chris Cox (R-CA) were members of the
-House and saw this as a problem. They very reasonably and, I think, with the
-right intention, decided to pass legislation that said, “Hold on. Let’s change
-the common law standard so that you can’t be held culpable just because you’ve
-chosen to moderate.” And so Congress overwhelmingly and very quickly passed
-Section 230.
-And one
-provision in Section 230 — specifically, Section 230 (c)(2) — actually solves
-the Prodigy problem. That provision says platforms’ efforts to moderate cannot
-be used against that platform in terms of creating culpability for what’s on
-the platform. So again, if what happened with Prodigy played out after Section
-230 (c)(2) had passed, the court would have said the opposite: “Prodigy did
-moderate, and the mere fact that they moderated doesn’t expose them to liability.”
-Talk a bit more about the difference
-between Section 230 (c)(1) and (c)(2).
-Many people who
-have concerns about Section 230 have concerns about (c)(1). We just talked
-about (c)(2), which says you can’t be held culpable for
-all
-content just because you moderated
-some
-content. Section (c)(1) says you cannot be treated as the
-publisher of third-party content on your platform — full stop, even if you do
-no moderating. In the way it’s been interpreted, (c)(1) essentially trumps
-(c)(2). According to the Internet Association’s own study, 91 percent of
-Section 230 cases are decided under Section 230 (c)(1). And what that means is:
-You don’t have to examine whether the platform does any moderating. If Congress
-was trying to encourage content moderation, (c)(1) doesn’t do that.
-This means —
-and this is where the concern comes up —that if you are reckless in the way you
-facilitate illegal activity by your users, if you are negligent, if you know
-there’s illegal activity on your platform, or if you do nothing, you are still
-immune from the way in which courts have interpreted Section 230. And that
-short-circuits Section 230’s whole objective. If you want to encourage content
-moderation, but then you tell the platform they’re immune even if they do no
-content moderation, that removes the legal incentive to moderate because you
-can’t be held culpable. That also actually creates an economic incentive not to
-moderate or to minimize moderation because moderation costs money.
-So unfortunately,
-the way (c)(1) has been interpreted creates the opposite effect of 230’s
-founding intention. It eliminates the standard duty of reasonable care that
-ordinarily requires all businesses to take reasonable steps to prevent users
-from engaging in illegal activity.
-Do you think the FCC has a role or
-responsibility in interpreting Section 230?
-There was a
-bit of discussion about this at the FCC before the change in administration. Then-Chairman
-Ajit Pai actually sought comment on what that meant. And I think many commenters
-and the FCC’s then-general counsel accurately concluded that because Section
-230 was part of a bill that amended the Communications Act of 1934 — and
-because Title II of that act gives the FCC its mandate to regulate wire and
-radio communications services, because other provisions of the act say the FCC
-may implement Title II, and because courts have held that they may implement
-things that are stuck in Title II — the FCC could actually interpret what
-Section 230 (c)(1) and 230 (c)(2) should mean, and subsequent courts would have
-to follow the FCC’s interpretations.
-Now, this
-doesn’t mean the FCC actually regulates the internet, and that’s the misnomer.
-All this says is that the FCC gets to say what that language means, then courts
-apply it. So we’re not talking about regulation. What the FCC under the prior
-administration concluded is: They could give a more rational reading of (c)(1)
-and (c)(2) to avoid these outcomes. But since it was at the end of an
-administration and took place around the election chaos, Pai ended up putting
-the pen down, and acting Chair Jessica Rosenworcel has said she does not intend
-to move forward at this time on that proceeding.
-I believe
-there’s a strong argument the FCC could construe this language. At the moment,
-it does not look like the FCC will do so, so it’s sort of back squarely in
-Congress’s hands. And to be honest, that’s usually the better result anyway.
-It’s much better for Congress to explain what its legislative language means.
-And if changes are agreed upon, it’s much better for Congress to make clear its
-intention. So I still believe it’s better for Congress to reform Section 230,
-but everybody should keep in mind that there is an avenue for the FCC to do so
-if it chooses.
-So you think that legislation from Congress
-is the best solution?
-I do. It has
-the strongest footing. You want the duly elected representatives of the people
-to make as clear as possible what they want laws to do. When there’s ambiguity
-— and I think there is arguably ambiguity in the way this language has been
-applied — courts fill in that ambiguity. But the better solution is to avoid
-the ambiguity in the first place and for Congress to make absolutely clear what
-it wants.
-I would just
-suggest that if we look at all the bills that are being introduced and all the
-acrimony we are seeing, there is consensus that Section 230 is not operating
-the way it should. Some say it’s not operating the way it was meant to; others
-say it is, but given what we know now, we want it to do something different.
-But either way, there is general consensus that 230 is not operating in a
-positive way. Now, the debate is: How do we change it?
-Ordinarily,
-if an entity were regulated, it would do what the regulators or the law says.
-If the entity were subject to judicial review, it would do what is necessary to
-be compliant with the precedent of the courts. Here, in a very unique
-situation, we have neither. So the internet platforms are not subject to
-regulation. And because of Section 230, they’re not subject to court precedent about
-negligent behavior either.
-Every other
-business is subject to negligence claims in court if they do something
-unreasonable. Brick-and-mortar companies are subject to a duty of care. If they
-act unreasonably, they can be sued. But with the same service now offered
-online by a platform, the platform is not subject to the duty of care and can’t
-be sued for negligence. So we have negligent or worse behavior by platforms being
-immunized while their rivals still can be sued.
-That has two
-consequences. One, I would argue it makes people less safe online. As more of
-our economy moves online, we’re essentially taking people from a place where
-they’re protected from negligence related to third-party conduct to one where
-no such protection exists. Second, it also creates a competitive disparity
-where brick-and-mortar firms who will remain subject to the standard duty of
-care have a harder time competing against platforms who can, as the saying
-goes, “move fast and break things.”
-In its current
-form, 230 says if they break things via facilitating illegal activity, platforms
-can’t be held culpable. That’s why companies like Facebook can do what they
-choose. I do give credit to any company that decides voluntarily to moderate,
-but I would suggest that if purely voluntary efforts were always enough, we
-would never need laws.
+
+[Speaker: Introduction / editorial context]
+Section 230 of the Communications Decency Act shields online intermediaries such as social media platforms from civil liability for content users post, but also allows them to moderate illegal, lewd, or otherwise harmful content as they see fit. These dual protections afforded to internet-based companies have been credited for the innovation and growth of social media companies, but Section 230 is often criticized across partisan lines. Does Section 230 invite too much content moderation, or too little? And how, if at all, should Section 230 be reformed?
+
+[Speaker: Introduction / editorial context]
+Over the past year, our American Enterprise Institute programming has offered a number of different perspectives on Section 230 reform. On the latest episode of “Explain to Shane,” I was joined by Neil Fried to hear his argument for why Section 230 should be reformed.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Neil, you were part of the team that helped implement the Telecommunications Act of 1996 as a Federal Communications Commission (FCC) attorney, so you witnessed the birth of Section 230 first-hand. Can you give us some background on why Section 230 was created?
+
+[Speaker: Neil Fried]
+Neil Fried: There was this dial-up bulletin board company called Prodigy — back when that was sort of the first consumer use of the internet — that was building itself as a family-friendly bulletin board, so they were moderating their chats. If someone posted something profane or abusive, Prodigy moderators would take it down. And interestingly, in what was one of the first cases about online defamation, using common law — before Section 230 was passed — a court in New York said because Prodigy was moderating some content, it could be held culpable for all content on its site, even content it had not moderated. And because something allegedly libelous got through on one of the bulletin boards, a court said Prodigy could be held culpable for defamation.
+
+[Speaker: Neil Fried]
+That case never went to complete fruition, so maybe Prodigy wouldn’t eventually have been held culpable for defamation, but the precedent was alarming to Congress because here, Prodigy tried to moderate and to do the right thing, and was told, “You’re going to be punished for doing the right thing. You could be held culpable.” That got Congress very concerned, and is what prompted Section 230’s passage.
+
+[Speaker: Neil Fried]
+Congress wanted to encourage platforms to moderate, but the fear was that companies like Prodigy would learn not to moderate in order to avoid legal liability. The lawyers for Prodigy reasonably said, “If we want to minimize our exposure to litigation, we’re going to stop all moderation.” And that’s the exact opposite result of what everybody wanted.
+
+[Speaker: Neil Fried]
+At the time, Sen. Ron Wyden (D-OR) and former Rep. Chris Cox (R-CA) were members of the House and saw this as a problem. They very reasonably and, I think, with the right intention, decided to pass legislation that said, “Hold on. Let’s change the common law standard so that you can’t be held culpable just because you’ve chosen to moderate.” And so Congress overwhelmingly and very quickly passed Section 230.
+
+[Speaker: Neil Fried]
+And one provision in Section 230 — specifically, Section 230 (c)(2) — actually solves the Prodigy problem. That provision says platforms’ efforts to moderate cannot be used against that platform in terms of creating culpability for what’s on the platform. So again, if what happened with Prodigy played out after Section 230 (c)(2) had passed, the court would have said the opposite: “Prodigy did moderate, and the mere fact that they moderated doesn’t expose them to liability.”
+
+[Speaker: Neil Fried]
+Talk a bit more about the difference between Section 230 (c)(1) and (c)(2).
+
+[Speaker: Neil Fried]
+Many people who have concerns about Section 230 have concerns about (c)(1). We just talked about (c)(2), which says you can’t be held culpable for all content just because you moderated some content. Section (c)(1) says you cannot be treated as the publisher of third-party content on your platform — full stop, even if you do no moderating. In the way it’s been interpreted, (c)(1) essentially trumps (c)(2). According to the Internet Association’s own study, 91 percent of Section 230 cases are decided under Section 230 (c)(1). And what that means is: You don’t have to examine whether the platform does any moderating. If Congress was trying to encourage content moderation, (c)(1) doesn’t do that.
+
+[Speaker: Neil Fried]
+This means — and this is where the concern comes up —that if you are reckless in the way you facilitate illegal activity by your users, if you are negligent, if you know there’s illegal activity on your platform, or if you do nothing, you are still immune from the way in which courts have interpreted Section 230. And that short-circuits Section 230’s whole objective. If you want to encourage content moderation, but then you tell the platform they’re immune even if they do no content moderation, that removes the legal incentive to moderate because you can’t be held culpable. That also actually creates an economic incentive not to moderate or to minimize moderation because moderation costs money.
+
+[Speaker: Neil Fried]
+So unfortunately, the way (c)(1) has been interpreted creates the opposite effect of 230’s founding intention. It eliminates the standard duty of reasonable care that ordinarily requires all businesses to take reasonable steps to prevent users from engaging in illegal activity.
+
+[Speaker: Shane Tews]
+Do you think the FCC has a role or responsibility in interpreting Section 230?
+
+[Speaker: Neil Fried]
+There was a bit of discussion about this at the FCC before the change in administration. Then-Chairman Ajit Pai actually sought comment on what that meant. And I think many commenters and the FCC’s then-general counsel accurately concluded that because Section 230 was part of a bill that amended the Communications Act of 1934 — and because Title II of that act gives the FCC its mandate to regulate wire and radio communications services, because other provisions of the act say the FCC may implement Title II, and because courts have held that they may implement things that are stuck in Title II — the FCC could actually interpret what Section 230 (c)(1) and 230 (c)(2) should mean, and subsequent courts would have to follow the FCC’s interpretations.
+
+[Speaker: Neil Fried]
+Now, this doesn’t mean the FCC actually regulates the internet, and that’s the misnomer. All this says is that the FCC gets to say what that language means, then courts apply it. So we’re not talking about regulation. What the FCC under the prior administration concluded is: They could give a more rational reading of (c)(1) and (c)(2) to avoid these outcomes. But since it was at the end of an administration and took place around the election chaos, Pai ended up putting the pen down, and acting Chair Jessica Rosenworcel has said she does not intend to move forward at this time on that proceeding.
+
+[Speaker: Neil Fried]
+I believe there’s a strong argument the FCC could construe this language. At the moment, it does not look like the FCC will do so, so it’s sort of back squarely in Congress’s hands. And to be honest, that’s usually the better result anyway. It’s much better for Congress to explain what its legislative language means. And if changes are agreed upon, it’s much better for Congress to make clear its intention. So I still believe it’s better for Congress to reform Section 230, but everybody should keep in mind that there is an avenue for the FCC to do so if it chooses.
+
+[Speaker: Shane Tews]
+So you think that legislation from Congress is the best solution?
+
+[Speaker: Neil Fried]
+I do. It has the strongest footing. You want the duly elected representatives of the people to make as clear as possible what they want laws to do. When there’s ambiguity — and I think there is arguably ambiguity in the way this language has been applied — courts fill in that ambiguity. But the better solution is to avoid the ambiguity in the first place and for Congress to make absolutely clear what it wants.
+
+[Speaker: Neil Fried]
+I would just suggest that if we look at all the bills that are being introduced and all the acrimony we are seeing, there is consensus that Section 230 is not operating the way it should. Some say it’s not operating the way it was meant to; others say it is, but given what we know now, we want it to do something different. But either way, there is general consensus that 230 is not operating in a positive way. Now, the debate is: How do we change it?
+
+[Speaker: Neil Fried]
+Ordinarily, if an entity were regulated, it would do what the regulators or the law says. If the entity were subject to judicial review, it would do what is necessary to be compliant with the precedent of the courts. Here, in a very unique situation, we have neither. So the internet platforms are not subject to regulation. And because of Section 230, they’re not subject to court precedent about negligent behavior either.
+
+[Speaker: Neil Fried]
+Every other business is subject to negligence claims in court if they do something unreasonable. Brick-and-mortar companies are subject to a duty of care. If they act unreasonably, they can be sued. But with the same service now offered online by a platform, the platform is not subject to the duty of care and can’t be sued for negligence. So we have negligent or worse behavior by platforms being immunized while their rivals still can be sued.
+
+[Speaker: Neil Fried]
+That has two consequences. One, I would argue it makes people less safe online. As more of our economy moves online, we’re essentially taking people from a place where they’re protected from negligence related to third-party conduct to one where no such protection exists. Second, it also creates a competitive disparity where brick-and-mortar firms who will remain subject to the standard duty of care have a harder time competing against platforms who can, as the saying goes, “move fast and break things.”
+
+[Speaker: Neil Fried]
+In its current form, 230 says if they break things via facilitating illegal activity, platforms can’t be held culpable. That’s why companies like Facebook can do what they choose. I do give credit to any company that decides voluntarily to moderate, but I would suggest that if purely voluntary efforts were always enough, we would never need laws.

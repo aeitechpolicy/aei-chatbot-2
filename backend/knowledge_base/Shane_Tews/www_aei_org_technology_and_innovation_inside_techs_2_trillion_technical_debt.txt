@@ -1,32 +1,65 @@
 PAGE_TITLE: 
-	Inside Tech’s $2 Trillion Technical Debt | American Enterprise Institute - AEI
+	Inside Tech’s $2 Trillion Technical Debt
 
-Technical debt, the accumulation of shortcuts and compromises in software systems, is an issue across industries with consequences ranging from system failures and security breaches to hindered innovation. The Wall Street Journal
-reports
-it was the cause of 13,000 canceled Southwest Airlines flights during the 2022 holiday season and numerous high-profile cyberattacks on Google, Apple, and Microsoft. The cost of addressing this debt stands at $1.52 trillion, while cybersecurity incidents, operational failures, and maintenance of outdated systems amounts to $2.41 trillion annually in the US.
+[Speaker: Introduction / editorial context]
+Technical debt, the accumulation of shortcuts and compromises in software systems, is an issue across industries with consequences ranging from system failures and security breaches to hindered innovation. The Wall Street Journal reports it was the cause of 13,000 canceled Southwest Airlines flights during the 2022 holiday season and numerous high-profile cyberattacks on Google, Apple, and Microsoft. The cost of addressing this debt stands at $1.52 trillion, while cybersecurity incidents, operational failures, and maintenance of outdated systems amounts to $2.41 trillion annually in the US.
+
+[Speaker: Introduction / editorial context]
 To shed light on the problem of technical debt, I spoke with Ken Silva. Ken has over 30 years of experience in technology, telecommunications, and cybersecurity businesses. He is well known for his work as a chief technology officer, chief security officer, and chief scientific officer for multiple tech companies.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Let’s start with the whole concept of technical debt. The numbers in a
-Wall Street Journal article
-estimate the cost of technical debt at about $2.41 trillion annually, mostly affecting enterprises and some governments. Is this problem as big as the Wall Street Journal says it is?
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Let’s start with the whole concept of technical debt. The numbers in a Wall Street Journal article estimate the cost of technical debt at about $2.41 trillion annually, mostly affecting enterprises and some governments. Is this problem as big as the Wall Street Journal says it is?
+
+[Speaker: Ken Silva]
 Ken Silva: I would suspect maybe that it’s even bigger than that. It’s probably close to unmeasurable because every organization has some level of technical debt or legacy challenge that they have to deal with.
+
+[Speaker: Ken Silva]
 Technical debt means a lot of different things to different people. As an example, your product development team views technical debt as features that are yet to be added or bugs in your software that have yet to be added. If you look at an operational or a DevOps team, they’ll look at that more as libraries that have yet to be patched or languages that have yet to be updated.
+
+[Speaker: Ken Silva]
 Give us some real-world examples of how technical debt causes not only just a cost but also operational problems, disruptions, and then security breaches.
+
+[Speaker: Ken Silva]
 I think you could tie in most modern security breaches to some level of technical debt—of not having software that’s patched, not having libraries that are patched, or having bugs that have been in disrepair in your software for some amount of time. The fact of the matter is that engineering teams don’t get brownie points for fixing bugs; they get brownie points for adding features.
+
+[Speaker: Ken Silva]
 Just as an example, last year, an unpatched vulnerability in Cisco devices compromised more than 40,000 Cisco devices. And Cisco is probably the top brand in network in the world, not just in the US. This affects everyone. And by the way, Cisco had actually fixed this bug, but the number of organizations that had actually deployed it was a lot less than we had hoped.
+
+[Speaker: Ken Silva]
 How do organizations strike that balance between wanting to be innovative and having regulatory obligations? It seems like they have to maintain that robust SECURE IT infrastructure that’s full of legacy stuff they really don’t need.
+
+[Speaker: Ken Silva]
 In a lot of cases, they don’t know if they need it or not. Or they have it, they need it, and they don’t even know if it’s working properly. The balance, I think, is unique to each organization. What works for my organization may not work for your organization, but I think being conscious of the fact that you have to deal with these things and being conscious that you have to ask yourself—and maybe this is part of the internal audit process—what happens if this thing I rely on goes away? Those are things you can sort of look at internally and say, “Okay, I can work around that,” or “I’ll build around that so that I don’t rely on that so much.”
+
+[Speaker: Ken Silva]
 But your customers also can hold you back. At a startup I worked at, we had a product that worked with Internet Explorer for a long time. Microsoft had stated that they were no longer going to support Internet Explorer, that Edge was the future for them, and that Internet Explorer was going to fade into the sunset. We were going to go with it. We said, “Hey, look, we’re going to support Edge. We’re not going to support Internet Explorer anymore.” So we notified our customers that, “Hey, guess what, our product’s not going to work within Internet Explorer anymore, and you need to upgrade to Microsoft Edge to continue to use our product.” Our largest customer came back and said, “Look, we have hundreds of thousands of desktops that are running Internet Explorer. It will take us years to update all of those. You need to continue to support Internet Explorer.” So even in our own internal audit processes, we had to quantify what our risk was in continuing to support these legacy libraries in Internet Explorer and not moving away from those risky libraries that even Microsoft just said, “Look, we don’t want to support anymore.” Sometimes your customers can drive you to support things in ways that you would rather not do it in a less secure way.
+
+[Speaker: Ken Silva]
 I’ve tried to adopt a principle: rely on someone else as little as possible. Simply because you don’t want to tie yourself to something you can’t get out of. An example is a cloud provider. For storage, networking, and compute, it’s fairly straightforward. You can load your own operating systems, set the network up the way you want, and store things the way you want. But when you start using the individual services and APIs they offer, those vary from one cloud provider to the next. As your infrastructure grows and you rely on those APIs, your cloud provider could decide to make changes, or you could decide to make changes but can’t because you’re tied to that cloud provider forever. Their technical debt now becomes your technical debt.
+
+[Speaker: Ken Silva]
 Now the US is facing new security challenges with Europe’s Digital Markets Act saying, “We think you should stop putting guardrails around,” in this case, “the Apple App Store.” But as consumers and people concerned with security, we’re seeing more reasons to have an app store. I was talking to a drone company the other day that is planning to build an App Store specifically for drones. I said to them, “You certainly would like this drone App Store to know the security measures of the apps it makes available to customers, right?”
+
+[Speaker: Shane Tews]
 The people that are security-minded are saying all the right things. The challenge is sometimes the security-minded and the regulators are not in the same building. What are your thoughts as somebody who spent a lot of time in this space? How do you talk them into understanding the importance of security?
+
+[Speaker: Ken Silva]
 We’ve spent a lot of time doing that. There are merits to both sides of the argument. Apple is very justified in what they’re trying to do. They’re trying to create an ecosystem that is secure across all of their devices… across their entire ecosystem. Individual users are saying, “Hey, wait a minute. I want to be able to install what I want to install, and I don’t want you to control it.” There’s always been this wrestling match between the end user’s desire to do what they want and the hardware and software manufacturers’ desire to have some control over what is and isn’t on the devices. Apple has, for a very long time, strictly controlled what can and can’t be installed on their devices, with good reason. When people have had jailbroken phones or devices, there have been instances where bad stuff has happened. The same with Android, but Android does give you the option to restrict it. But they also allow you to unlock it if you’re willing to take the risk. Android may have found a balance there.
+
+[Speaker: Ken Silva]
 But for enterprises? The reality is that we’re in a bring-your-own-device world. You’re taking the devices given to you by your company home with you every day, attaching them to your network at home, or to the Starbucks network. Just the mere fact that you’re hooking it to another network is placing it at some risk that we never would have taken 15 years ago. But we take those risks today. Most enterprises are happy to have strict control over what can and can’t be installed on devices. But end users don’t feel that way.
+
+[Speaker: Shane Tews]
 With artificial intelligence, will we be able to leapfrog over some of the current challenges we have with the systems?
+
+[Speaker: Ken Silva]
 I have a lot of hope for AI, I really do. Right now, AI can create shells of code that are probably not production-ready code. But my hope is that it will be able to look through your environment in near real-time, spot areas that you need to focus on, and help guide you through that transition process. Sometimes we just call stuff we didn’t get to and always wanted to do technical debt.
+
+[Speaker: Ken Silva]
 I’ll give you an example of one that turned out to be more serious than we thought. Amazon has its own flavor of Linux that it uses. It’s very good, and they keep it up to date with security patches and all those sorts of things. But in 2022 or 2024, they decided to create the next generation of that. They did it, but there were people still on the first iteration who couldn’t get to the second iteration. Now we’re on the third iteration of it. People always meant to move to Amazon Linux 2, but they never got onto it, and now they’re stuck. Amazon Linux 1 isn’t supported anymore, so now they’re freaking out. They said, “I know, we’ll go to containers and start using Kubernetes.” Then they find out they can’t migrate to Kubernetes either because their application was never really developed for containerization. They find out that everything doesn’t fit in the container nicely.
+
+[Speaker: Ken Silva]
 I’ve also seen it too many times where a company with great technology gets acquired, and the acquiring company just looks at it afterward and says, “I can’t deal with this. I can’t integrate it. It doesn’t use a language we’re familiar with or that we use. I don’t have any developers that know COBOL or Fortran anymore.” It’s a shame because its good technology, and it gets shelved. The intellectual property tends to get absorbed into something else, and you never see it again. A lot of companies, particularly when they’re small, say, “I don’t want my developers working on anything that doesn’t contribute to the intellectual property of my company.” So if there’s open source out there, I want to use that first. That’s a noble goal, and it’s a good thought to start with. But also remember that someday that open source project may go away or change in a way you can’t adapt to, and you’re stuck.

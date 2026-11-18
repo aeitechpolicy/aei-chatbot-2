@@ -1,41 +1,83 @@
 PAGE_TITLE: 
-	Spectrum at a Crossroads | American Enterprise Institute - AEI
+	Spectrum at a Crossroads
 
-President Donald Trump recently signed the “
-One Big Beautiful Bill Act
-” into law which, among other action items, restored the Federal Communications Commission’s authority to auction spectrum. Although this authority is now back in place, questions are bound to bubble to the surface—how is this vital resource managed, and by whom? With spectrum powering everyday devices and technologies, the policies that are managing it will prove to be the difference between a system that fuels innovation and one that stifles it.
+[Speaker: Introduction / editorial context]
+President Donald Trump recently signed the “One Big Beautiful Bill Act” into law which, among other action items, restored the Federal Communications Commission’s authority to auction spectrum. Although this authority is now back in place, questions are bound to bubble to the surface—how is this vital resource managed, and by whom? With spectrum powering everyday devices and technologies, the policies that are managing it will prove to be the difference between a system that fuels innovation and one that stifles it.
+
+[Speaker: Introduction / editorial context]
 Harold Furchtgott-Roth is a former commissioner of the Federal Communications Commission and is now a senior fellow at the Hudson Institute. Previously, he worked as chief economist for the House Committee on Commerce, played a key role in drafting the Telecommunications Act of 1996, and has consulted extensively across the communications industry.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Spectrum is often described as invisible infrastructure that most Americans never think about, yet it’s critical to everything from our cell phones to Wi-Fi. For our listeners who may not be familiar with Spectrum policy, can you explain why Spectrum has become such a foundational part of our American digital infrastructure?
-Harold Furchtgott-Roth:
-Spectrum is important globally because it is the foundation of a lot of the great innovations of the past generation. If you go back to as recently as the mid-1980s, the World Bank has these annual studies of poverty globally and income levels. And in the mid-1980s, roughly 60 percent of the world’s population was at a subsistence level. Maybe a little less than 60 percent, but call it 50 percent.
+
+[Speaker: Harold Furchtgott-Roth]
+Harold Furchtgott-Roth: Spectrum is important globally because it is the foundation of a lot of the great innovations of the past generation. If you go back to as recently as the mid-1980s, the World Bank has these annual studies of poverty globally and income levels. And in the mid-1980s, roughly 60 percent of the world’s population was at a subsistence level. Maybe a little less than 60 percent, but call it 50 percent.
+
+[Speaker: Harold Furchtgott-Roth]
 What we’ve seen in the past generation is that the number has shrunk to less than 10 percent globally. Most of those changes have taken place in China, India, and Africa, where at the time the vast majority of people were at a subsistence level. Now they’re at a higher income level. Well, how did that happen?
+
+[Speaker: Harold Furchtgott-Roth]
 It’s one of the greatest transformations of economic welfare in human history to have roughly half of the world’s population go from subsistence level to a situation where their children are better off. That’s the greatest thing that a parent could want: to see my children be better off than I was. And that has happened in that generation from the mid to late 1980s until 2015.
+
+[Speaker: Harold Furchtgott-Roth]
 Well, how did that happen? There have been a lot of innovations, some medical, some agricultural; there’s been a lot of efficiency there. But one of the great innovations has been the explosion of wireless services. Wireless services have transformed the lives of individuals. You can go to the poorest locations in the world, and you’ll find people with wireless phones. They’ve become far more of an essential ingredient to life than refrigeration or electricity, and a lot of other things. To have a wireless phone, to be able to communicate with the world, to gather information, to communicate with friends and family literally all over the world.
+
+[Speaker: Harold Furchtgott-Roth]
 That is something that this generation can do that their parents’ generation could not do. And it’s extraordinarily valuable. And it’s raised people’s incomes substantially. And how is that possible? One of the foundations of that is Spectrum. That’s why Spectrum, in my view, is really important, not just to the United States. Frankly, it’s been far more important to people in other countries than in the United States.
+
+[Speaker: Shane Tews]
 Shane Tews: The United States was once a leader in Spectrum policy, pioneering the use of Spectrum auctions and market-based mechanisms for allocating this valuable resource. We had a licensing regime that seemed to be working well and was using market mechanisms effectively. What happened to derail this successful approach?
-Harold Furchtgott-Roth:
-Well, the US has been the leader in good ideas, and we’ve also been the leader in really not very good ideas. And one of the not very good ideas was to make Spectrum auctions time-limited instead of permanent.
+
+[Speaker: Harold Furchtgott-Roth]
+Harold Furchtgott-Roth: Well, the US has been the leader in good ideas, and we’ve also been the leader in really not very good ideas. And one of the not very good ideas was to make Spectrum auctions time-limited instead of permanent.
+
+[Speaker: Harold Furchtgott-Roth]
 We wouldn’t be in the troubles that we’ve been in the past few years if the Spectrum auction authority were permanent. One of the reasons Congress doesn’t make it permanent is that the House Energy and Commerce Committee and the Senate Commerce Committee like to be able to collect credit for auction receipts in the budget windows, which are ten years. If it were permanent, they wouldn’t be able to collect the auction receipts for the out years. But it’s very bad policy to have it expire, which it did a few years ago.
+
+[Speaker: Shane Tews]
 Shane Tews: Beyond renewing Spectrum auction authority, what other reforms should we be considering? While restoring auction authority is crucial, does that solve most of our current Spectrum issues, or are there additional FCC policy changes you’d recommend?
-Harold Furchtgott-Roth:
-I think Chairman Carr is doing a great job, and I think he’s going to do a great job on Spectrum, and he is doing a lot of important things, like trying to get rid of some of the broadcast ownership rules. So there’s a lot of improvement that I’m sure Chairman Carr is going to do.
+
+[Speaker: Harold Furchtgott-Roth]
+Harold Furchtgott-Roth: I think Chairman Carr is doing a great job, and I think he’s going to do a great job on Spectrum, and he is doing a lot of important things, like trying to get rid of some of the broadcast ownership rules. So there’s a lot of improvement that I’m sure Chairman Carr is going to do.
+
+[Speaker: Harold Furchtgott-Roth]
 There are a lot of things that our government should be doing in Spectrum policy outside of the FCC, which is where I think we’re missing opportunities to put Spectrum to higher-value use. A lot of this has to do with federal Spectrum, and right now if you’re managing federal Spectrum for an agency, your only real incentive is to just protect it and not necessarily put it to its highest value use because your agency doesn’t benefit if there were some higher value use and your agency isn’t penalized if it isn’t putting it to efficient use. Creating a system where there were costs and benefits associated with putting Spectrum to a higher value use, I think that would be very beneficial.
+
+[Speaker: Harold Furchtgott-Roth]
 I think there’s a way of doing that was something that I would call a Spectrum fee on federal Spectrum, so that an agency would have to pay a certain amount of money every year to keep their licenses. But if they thought the Spectrum wasn’t worth it, they would be able to turn it in and avoid the fee or get some money in return. We don’t have anything like that. The idea has floated around for years, but nothing’s ever been done about it.
+
+[Speaker: Shane Tews]
 Shane Tews: As we think about best practices in Spectrum policy globally, is there a country you would say is doing particularly well in this area? Is there somebody that we might actually look to as a model for how to manage Spectrum resources effectively?
-Harold Furchtgott-Roth:
-Well, some countries are autocratic. The head of the country says we’re doing this tomorrow, and that happens tomorrow. China is an example. They can turn Spectrum policy around in a day. We’re not that. Thank goodness we’re not that. And thank goodness they haven’t figured out how to insert market-oriented concepts in a way that is as useful to them as they could be. There is a mindset in the United States, I’m afraid, among a lot of political leadership to use regulation to improve Spectrum policy or to improve policy in almost every area. Other countries are much better at regulation than we are. We’re not very good at it.
+
+[Speaker: Harold Furchtgott-Roth]
+Harold Furchtgott-Roth: Well, some countries are autocratic. The head of the country says we’re doing this tomorrow, and that happens tomorrow. China is an example. They can turn Spectrum policy around in a day. We’re not that. Thank goodness we’re not that. And thank goodness they haven’t figured out how to insert market-oriented concepts in a way that is as useful to them as they could be. There is a mindset in the United States, I’m afraid, among a lot of political leadership to use regulation to improve Spectrum policy or to improve policy in almost every area. Other countries are much better at regulation than we are. We’re not very good at it.
+
+[Speaker: Harold Furchtgott-Roth]
 We’re slow, it takes forever, we have all of these legal procedures, you have to jump through a thousand bureaucratic steps, and I’m not saying there’s anything wrong with the bureaucratic steps; that’s just where we are as a country. Where we excel is putting markets to work, and that is what we’ve done; that’s what we did in Spectrum policy beginning in the late 1980s through the 2000s, up through 2010 or so.
+
+[Speaker: Harold Furchtgott-Roth]
 We just haven’t moved forward very much in the past 15 years. And we need to do that. And where America excels is market ideas, letting businesses develop technologies that will accelerate economic activity. An example we’re seeing is artificial intelligence. What industry has not been regulated, really ever? Artificial intelligence. Where it developed, almost all the big AI companies right now are in the United States. It’s a great natural resource for the United States. There were provisions that were proposed in the reconciliation bill to essentially prohibit states from regulating artificial intelligence. Well, that got stripped out.
+
+[Speaker: Harold Furchtgott-Roth]
 So it’s open season for states to regulate artificial intelligence. Who benefits when artificial intelligence is regulated? Not the United States. Not American businesses. The innovative ideas that are regulated to death will wind up going elsewhere.
+
+[Speaker: Shane Tews]
 Shane Tews: How are we doing with 5G and 6G development? That was a major policy focus several years ago, but it seems we’ve assumed everything was progressing smoothly. Given your comments about China’s centralized approach and our increased focus on supply chain security, are we making progress on alternatives that reduce dependence on Chinese equipment, or have we lost focus on these issues?
-Harold Furchtgott-Roth:
-Let me just begin at the hundred-thousand-foot level. The US is in a substantial competition with China, both economically, politically, militarily, and diplomatically.  I think we should just avoid the pretense that we’re ahead; we’re not ahead. China is way ahead in 5G.
+
+[Speaker: Harold Furchtgott-Roth]
+Harold Furchtgott-Roth: Let me just begin at the hundred-thousand-foot level. The US is in a substantial competition with China, both economically, politically, militarily, and diplomatically. I think we should just avoid the pretense that we’re ahead; we’re not ahead. China is way ahead in 5G.
+
+[Speaker: Harold Furchtgott-Roth]
 It’s not just that they’re centralized. It’s that they’re good at centralization. That’s what they excel at. The US is not good at centralization. There are some politicians in Washington who look at China and say we should be more like China. And my reaction is, no. If the thinking is that imitating China is good for the United States, we lose. We lose in so many ways.
+
+[Speaker: Harold Furchtgott-Roth]
 Let’s say the government’s going to do this government program, that government program. It works in China, but it’s not going to work in the United States, and not very well. Plus, we then lose the war at that point because, at the end of the day, it’s about who has the better idea.
+
+[Speaker: Harold Furchtgott-Roth]
 A country is not just about military might; a country is also about ideas. A country is about saying which set of ideas are going to work? We defeated the Soviet Union, not just militarily, but because we had the ideas that markets are the way to make people better off. That’s what ultimately destroyed the Soviet Union, because the people in the Soviet Union and Soviet bloc countries realized their lives were miserable compared to what they heard about life in the West.
+
+[Speaker: Harold Furchtgott-Roth]
 China is really good at centralized planning. And people who don’t agree with them, they wind up in some prison as an organ donor or something like that. We’re not that. And if we get to a situation where we say centralized planning is the way to go, then essentially China has won.

@@ -1,46 +1,77 @@
 PAGE_TITLE: 
-	Assessing the Many Hats of Cybersecurity Governance: Highlights from My Conversation with Jason Blessing | American Enterprise Institute - AEI
+	Assessing the Many Hats of Cybersecurity Governance: Highlights from My Conversation with Jason Blessing
 
+[Speaker: Introduction / editorial context]
 Will the Biden administration release a national cybersecurity strategy? Can federal agencies’ responsibilities be reorganized and redistributed among one another to increase our national cyber resilience? These and several other questions remain up in the air as cyber threats continue to proliferate.
-On this episode of
-Explain to Shane
-, I was joined by
-Jason Blessing
-, a Jeane Kirkpatrick visiting research fellow on AEI’s Foreign and Defense Policy Team, to discuss ways for both the government and private sector to establish comprehensive strategies for confronting cyber threats and combatting authoritarian influence in the digital sphere. We also discussed Jason’s latest
-report
-with Richard Harknett,
-The Advantage Gained: Building on USCYBERCOM-NSA’s “Dual Hat” Synergy Model
-, which looks at the equities around sharing government data-gathering and information-sharing capabilities.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+On this episode of Explain to Shane, I was joined by Jason Blessing, a Jeane Kirkpatrick visiting research fellow on AEI’s Foreign and Defense Policy Team, to discuss ways for both the government and private sector to establish comprehensive strategies for confronting cyber threats and combatting authoritarian influence in the digital sphere. We also discussed Jason’s latest report with Richard Harknett, The Advantage Gained: Building on USCYBERCOM-NSA’s “Dual Hat” Synergy Model, which looks at the equities around sharing government data-gathering and information-sharing capabilities.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: You recently released a report analyzing the dual-hat leadership model in which the same individual oversees both the United States Cyber Command (Cybercom) and the National Security Agency (NSA). What was the catalyst for you to write the paper and can you talk to us about what the dual-hat model entails?
+
+[Speaker: Jason Blessing]
 Jason Blessing: The catalyst behind the paper was the fact that there was some committee legislation bouncing around in the House and Senate over whether to separate the dual hat and have different command structures for the NSA and Cybercom.
+
+[Speaker: Jason Blessing]
 Since the NSA is an intelligence organization, it’s really focused on cryptologic portfolios, signals intelligence, and network exploitation. On the other hand, Cybercom is a military organization—the tip of the military’s cyber spear—with an aim to disrupt networks. Thus, legislators and numerous individuals in the current and previous administrations have said that we need to make sure that both organizations have, specifically in terms of cyber, the individual capabilities and individual maturity to carry out their missions.
+
+[Speaker: Jason Blessing]
 What drove Richard Harknett and me to write this report is the concept of effectiveness being dropped from these conversations. Our argument largely hinges on the current system’s effectiveness being the main arrangement in favor of maintaining this dual-hatted leadership.
+
+[Speaker: Shane Tews]
 What are some of the specific reasons people want to split these organizations?
+
+[Speaker: Jason Blessing]
 One of the arguments is that the NSA and CYBERCOM are two very large organizations, and it’s extremely hard for one commander and one staff to direct and manage two different organizations. So, there’s the corporate organizational argument.
+
+[Speaker: Jason Blessing]
 Another is the democratic argument—using the small “D” democratic as in democratic principles. Do we want to have our intelligence and military so tightly intertwined when it could be easier for civilian control to keep these missions separate as they serve different functions?
+
+[Speaker: Jason Blessing]
 Some argue as long as you keep two organizations intertwined, relying on each other is going to hamper the specialization of each. How can you fully create greater effectiveness with the military side of things if it’s tied to an intelligence mission of the NSA and vice versa? How can you adequately pursue and create the greatest effectiveness for each organization if they have a symbiotic relationship? You can’t fully optimize each organization if they’re tied to each other, because they have different strategic ends.
+
+[Speaker: Jason Blessing]
 Yet, we are still within legal bounds to have this dual-hat model. It helps us overcome some of that bureaucratic segmentation in the federal government that could be exploited by our adversaries. It also helps our reaction time and helps us judge our overall approach.
+
+[Speaker: Shane Tews]
 In your paper, you talk about the need for a mentality and mindset shift in the dual-hat model. Have we been successful in this shift?
+
+[Speaker: Jason Blessing]
 To start with a fun anecdote, in the early days of sharing office space, there was conflict between NSA parking and Cybercom parking over who gets which spots. After hours at Fort Meade, civilian NSA employees had parked in a military commander’s parking spot. As it was after hours, there wasn’t a problem, but in military culture, you would never do that.
+
+[Speaker: Jason Blessing]
 Things like that are just emblematic of the infighting and the reluctance of the NSA to let the military come in and sort of blow up all the tools they have and all the vulnerabilities they can exploit. There was a real fear surrounding whether their bureaucratic turf was safe from the military.
+
+[Speaker: Jason Blessing]
 Over the years, things have started to smooth out internally between NSA and Cybercom. Military and intelligence communities co-mingle in the same area, which would’ve been unheard of not long ago.
+
+[Speaker: Shane Tews]
 How is the US doing in protecting civilian industries from cyberattacks? Should the government, the military, or these industries themselves invest more in cybersecurity?
+
+[Speaker: Jason Blessing]
 Post-2008, the private sector—and a bit in the banking industry—adopted this mindset of not paying attention to cyber threats. They would just build it into the budget, absorb whatever losses happen, and pay customers what they lose. In other words, building cybersecurity into the corporate budget rather than focusing on preventing cyberattacks in the first place. There’s been a slight change of mindset, particularly in the banking industry, to where it’s now a business decision to actively prepare for cyber threats.
+
+[Speaker: Jason Blessing]
 Some of the most sophisticated network defenses are coming from the financial industry by necessity. But we haven’t seen that from the rest of the public sector, and water and electric utilities are some of the most vulnerable public systems. We’re slowly starting to see better reporting requirements or guidelines coming out from the Cybersecurity and Infrastructure Security Agency (CISA), but large firms are going to have to continue adopting this mindset shift.
+
+[Speaker: Jason Blessing]
 If you’re looking at big energy firms, water providers, or smaller businesses, the question is: How do you justify investing in cybersecurity as a good business decision when there aren’t returns on these investments in terms of market share? We may need to reshape the markets themselves. Consumers should gravitate toward providers or companies that actually invest in customer security.
+
+[Speaker: Shane Tews]
 What are a couple of things we could change that would lower the risk of cybersecurity threats, for both the public and private sectors?
+
+[Speaker: Jason Blessing]
 That’s a mammoth of a question. In the paper, we talk about the need for measuring the effectiveness of our military and intelligence operations and assessing the tradeoff between the two. That’s not easy; you can’t just come up with a couple of indicators required by differing agencies. Maintaining the dual hat would allow it to make those calls instead of increasing the segmentation, not only in our defenses but also in our decision-making.
+
+[Speaker: Jason Blessing]
 That leads us to another question: how do we better coordinate across government agencies and figure out roles and responsibilities? One would hope that answers would start to materialize in our national cybersecurity strategy which should be released later this fall. The release of the cybersecurity strategy is being staggered with the national security strategy to look like the former is subordinate to our larger national security strategy, but it doesn’t look like there’s going to be too much communication between the two strategies. I think the Biden administration will miss an opportunity to link the national cybersecurity strategy with our broader national security strategy, particularly in defining the roles and responsibilities across the government.
+
+[Speaker: Jason Blessing]
 Cybersecurity is also a values-driven competition. So, the next level down is not only asking how we align the government itself but also the government and the role of the private sector. We’ve made some good progress with reporting requirements and a lot of the advisories that have come out of CISA. Yet, the broader issue is that we don’t have a global democratic strategy for digital affairs and cyberspace. There’s some hope with the digital bureau that’s been stood up within the Department of State, but that’s not a government-wide vision for how to deal with increased authoritarian influence in the digital sphere.
+
+[Speaker: Jason Blessing]
 So, to make a long answer short, there are several steps that the government and private sector should take in each of these aforementioned concentric circles. That’s what I think we really need to be focusing on as a country.

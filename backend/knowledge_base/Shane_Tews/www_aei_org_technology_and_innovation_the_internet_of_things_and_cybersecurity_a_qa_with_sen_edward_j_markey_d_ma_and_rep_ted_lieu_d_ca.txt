@@ -1,22 +1,41 @@
 PAGE_TITLE: 
-	The Internet of Things and Cybersecurity: A Q&A with Sen. Edward J. Markey (D-MA) and Rep. Ted Lieu (D-CA) | American Enterprise Institute - AEI
+	The Internet of Things and Cybersecurity: A Q&A with Sen. Edward J. Markey (D-MA) and Rep. Ted Lieu (D-CA)
 
-In February, AEI hosted an
-event
-with Sen. Edward Markey (D-MA) and Rep. Ted Lieu (D-CA) to discuss their Cyber Shield Act (S. 2020 and H.R. 4163) and efforts to improve Internet of Things (IoT) cybersecurity. As I’ve written
-previously
-, cybersecurity has traditionally focused on a limited number of end points, but millions of IoT devices soon to come online will change this as the digital and physical world become increasingly intertwined. IoT device manufacturers want to appeal to consumers with simple-to-use, affordable devices, and it’s challenging to get consumers to review the security features of devices they’re buying.
+[Speaker: Introduction / editorial context]
+In February, AEI hosted an event with Sen. Edward Markey (D-MA) and Rep. Ted Lieu (D-CA) to discuss their Cyber Shield Act (S. 2020 and H.R. 4163) and efforts to improve Internet of Things (IoT) cybersecurity. As I’ve written previously, cybersecurity has traditionally focused on a limited number of end points, but millions of IoT devices soon to come online will change this as the digital and physical world become increasingly intertwined. IoT device manufacturers want to appeal to consumers with simple-to-use, affordable devices, and it’s challenging to get consumers to review the security features of devices they’re buying.
+
+[Speaker: Introduction / editorial context]
 Via Twenty20.
-The lawmakers’
-legislation
-would create a “cyber shield” mark aimed at helping consumers identify IoT devices that “meet industry-leading cybersecurity and data security standards, guidelines, best practices, methodologies, procedures, and processes.” A year after the bill’s introduction, and with IoT devices sure to be popular with shoppers on Black Friday and Cyber Monday, we agreed to do a Q&A on some of the questions that are still on my mind. Here are some of the things we discussed.
-Shane Tews: Why do you think the Cyber Shield Act is necessary? The National Institute of Standards and Technology has developed a cybersecurity framework that is largely praised by industry and cybersecurity advocates, and many industries have already developed best practices.
-Sen. Markey and Rep. Lieu: We can continue to create cybersecurity framework after cybersecurity framework — cybersecurity plan after cybersecurity plan. But if consumers cannot gauge to what extent their IoT device actually adheres to the best cybersecurity frameworks and plans, how will they make informed decisions? And if IoT manufacturers know consumers cannot reliably determine which devices have the best cybersecurity protections, what is their incentive to reduce their cyber vulnerabilities? There is a market demand for more secure devices and manufacturers capable and willing to meet that demand. The Cyber Shield Act closes this information asymmetry to ensure consumers can make more informed purchasing decisions and manufacturers are rewarded for improving their cybersecurity.
-Shane Tews: Cybersecurity threats evolve rapidly. Unlike other certification programs (i.e., EnergyStar) that seek to measure fairly static criteria (i.e., energy consumption), a cybersecurity certification regime would have to be extremely flexible in order to accurately gauge to what extent a IoT device is protected from evolving threats. Do you think that is possible?
+
+[Speaker: Introduction / editorial context]
+The lawmakers’ legislation would create a “cyber shield” mark aimed at helping consumers identify IoT devices that “meet industry-leading cybersecurity and data security standards, guidelines, best practices, methodologies, procedures, and processes.” A year after the bill’s introduction, and with IoT devices sure to be popular with shoppers on Black Friday and Cyber Monday, we agreed to do a Q&A on some of the questions that are still on my mind. Here are some of the things we discussed.
+
+[Speaker: Shane Tews]
+Shane Tews: Why do you think the Cyber Shield Act is necessary? The National Institute of Standards and Technology has developed a cybersecurity framework that is largely praised by industry and cybersecurity advocates, and many industries have already developed best practices.
+
+[Speaker: Speaker not identified]
+Sen. Markey and Rep. Lieu: We can continue to create cybersecurity framework after cybersecurity framework — cybersecurity plan after cybersecurity plan. But if consumers cannot gauge to what extent their IoT device actually adheres to the best cybersecurity frameworks and plans, how will they make informed decisions? And if IoT manufacturers know consumers cannot reliably determine which devices have the best cybersecurity protections, what is their incentive to reduce their cyber vulnerabilities? There is a market demand for more secure devices and manufacturers capable and willing to meet that demand. The Cyber Shield Act closes this information asymmetry to ensure consumers can make more informed purchasing decisions and manufacturers are rewarded for improving their cybersecurity.
+
+[Speaker: Shane Tews]
+Shane Tews: Cybersecurity threats evolve rapidly. Unlike other certification programs (i.e., EnergyStar) that seek to measure fairly static criteria (i.e., energy consumption), a cybersecurity certification regime would have to be extremely flexible in order to accurately gauge to what extent a IoT device is protected from evolving threats. Do you think that is possible?
+
+[Speaker: Speaker not identified]
 Sen. Markey and Rep. Lieu: Absolutely. The Cyber Shield Act commissions the Department of Commerce, in consultation with an advisory committee of industry and cybersecurity experts, to develop a series of benchmarks that improve the cybersecurity of IoT devices. These benchmarks should include risk assessment, testing, identification of threats, and remediation (i.e., patching vulnerabilities or notifications) — all features that would enable the device and the manufacturer to adapt to and address emerging cybersecurity threats. Furthermore, the Cyber Shield Act mandates that the secretary update the benchmarks not less frequently than every two years and requires the inspector general to evaluate and provide recommendations on the effectiveness of the benchmarks, including their ability to address emerging threats.
+
+[Speaker: Shane Tews]
 Shane Tews: What federal agencies should help ensure consumers have the information they need to understand the cybersecurity of their Internet of Things device?
+
+[Speaker: Speaker not identified]
 Sen. Markey and Rep. Lieu: From autonomous vehicles to medical devices, drones, and government devices, every federal agency bears some responsibility to improve the cybersecurity of our IoT devices. But as the federal agency tasked with protecting a free and open digital economy, the Department of Commerce is a principal agency with the breadth, mission, and responsibility to create and implement the Cyber Shield program.
-Shane Tews: How has your Cyber Shield Act legislation been received in Congress? Do you believe that this legislation will pass?
+
+[Speaker: Shane Tews]
+Shane Tews: How has your Cyber Shield Act legislation been received in Congress? Do you believe that this legislation will pass?
+
+[Speaker: Speaker not identified]
 Sen. Markey and Rep. Lieu: As privacy and cybersecurity breaches mount, the pressure on Congress to address this pressing issue will continue to rise. Now both industry and Congress are ready to act. In August, CTIA — the Cellular Telecommunications and Internet Association — announced a cybersecurity certification program for IoT devices. And in the wake of the Equifax data breach and Facebook Cambridge Analytica scandal, the congressional atmosphere is ripe for comprehensive privacy and cybersecurity legislation. As these efforts progress, I will fight to ensure the Cyber Shield Act becomes law.
+
+[Speaker: Shane Tews]
 Shane Tews: Does the Cyber Shield Act envision many panels of experts for different types of technologies and devices?
-Sen. Markey and Rep. Lieu: The Cyber Shield Act envisions the establishment of panels of experts for unique subsets of devices given the devices’ cybersecurity risk, functionality, and the sensitivity of the information it collects. Any IoT cybersecurity framework should aim to set some baseline protections that facilitate security, integrity, and functionality across all devices. However, certain devices, such as medical devices, should adhere to a superior series of protection given the sensitivity of their functions and the information they store. Different devices often face different security risks, technical challenges, and IT environments and so may benefit from cybersecurity profiles tailored for their unique characteristics while also aligning with a broader IoT cybersecurity framework.
+
+[Speaker: Speaker not identified]
+Sen. Markey and Rep. Lieu: The Cyber Shield Act envisions the establishment of panels of experts for unique subsets of devices given the devices’ cybersecurity risk, functionality, and the sensitivity of the information it collects. Any IoT cybersecurity framework should aim to set some baseline protections that facilitate security, integrity, and functionality across all devices. However, certain devices, such as medical devices, should adhere to a superior series of protection given the sensitivity of their functions and the information they store. Different devices often face different security risks, technical challenges, and IT environments and so may benefit from cybersecurity profiles tailored for their unique characteristics while also aligning with a broader IoT cybersecurity framework.

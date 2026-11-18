@@ -1,152 +1,68 @@
 PAGE_TITLE: 
-	An Update on US Intellectual Property Policy: Highlights from My Conversation with Michael Rosen | American Enterprise Institute - AEI
+	An Update on US Intellectual Property Policy: Highlights from My Conversation with Michael Rosen
 
-One year ago, the Joe Biden administration announced its support for a proposal at the World Trade Organization (WTO) that would waive Trade-Related Aspects of Intellectual Property (TRIPS) protections for COVID-19 vaccines and treatments. WTO member states recently
-agreed
-to a limited waiver that only covers vaccines and patents—not therapeutics or trade secrets. Both sides of the debate are relatively unhappy with this outcome. Does this mean it was a good compromise, or did the WTO fall short in its duties? How is the administration doing on other intellectual property (IP) issues?
-On this episode, I welcomed AEI Adjunct
-Fellow
-Michael
-Rosen
-back to the podcast for a check-in on the TRIPS debate and a
-more general update on the global IP policy landscape. Michael is the AEI tech
-policy team’s specialist on IP issues; he writes often on IP-related incentives
-for innovation, and on patent reform in Congress and at the US Patent and
-Trademark Office. He is also a book review columnist for
-The Federalist
-and
-National
-Review
-.
-Below is an edited and abridged transcript of our talk. You
-can listen to
-this
-and
-other
-episodes
-of
-Explain to Shane
-on AEI.org and
-subscribe via your
-preferred listening platform
-. You can also read the full
-transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and
-tell your friends and colleagues to tune in.
-Shane Tews: What was the final outcome from the
-12th WTO Ministerial Conference
-as it relates to the TRIPS waiver?
-Michael Rosen: When we
-last discussed
-the waiver in June 2021, the Biden administration had just announced that the US would favor the proposal put forward by India and South Africa at the WTO in October 2020. Under that proposal, there would be a waiver of TRIPS protections with respect to everything related to COVID-19: vaccines, treatments, diagnostics, and equipment.
-The Donald Trump administration resisted that proposal, and
-Europe followed the US. But in May 2021, the Biden administration stepped
-forward and said it favored the proposal. It was only on June 17th, 2022 at the
-WTO conference in Geneva that the various countries of the WTO compromised and
-agreed to a limited TRIPS waiver. That means TRIPS protections have only been
-waived for COVID-19 vaccines—not to treatments, therapeutics, diagnostics, or
-trade secrets. Moreover, it’s in place only for five years, so it would have to
-be renewed.
-You previously
-mentioned that India and South Africa (as well as Kenya) ended up with a
-massive surplus of vaccines—so much so that they had to trash thousands because
-they expired. That seems incongruous to this entire conversation; am I
-interpreting things correctly?
-You’re exactly right. It’s incongruous from the get-go—even
-more so now. Last year, the objections we talked about and reiterated were that
-we don’t have a problem with patents; we have a problem reaching remote
-communities in the Global South and getting these vaccines into arms due to
-numerous issues related to supply chain, deep freezing storage, and cold
-storage transportation. That was what was holding up getting these doses in
-arms in the developing world.
-Now we have a different issue in addition to the
-aforementioned one: We now have more supply than demand for these vaccines. The
-pharmaceutical industry published their statistics: They’ve put out 13 billion
-doses of the vaccines across all the major companies— AstraZeneca, Moderna,
-Pfizer, and maybe Johnson & Johnson. Moreover, they plan to put out another
-20 billion this year. We don’t have a supply problem at all. It’s not a matter
-of needing to allow other countries to manufacture their own generic versions
-of these drugs. The problem is getting shots in arms, overcoming vaccine
-hesitancy and resistance, and transporting these doses to the remote corners of
-the world. This latest decision by the WTO does none of those things.
-Will China be
-excluded from the waiver?
-Initially, the compromise that had been floating around
-would have excluded certain countries that already manufactured 10 percent or
-more of the global supply of vaccine doses. Most prominently, that included
-China, which makes and exports a tremendous amount of its Sinovac vaccine. There
-was essentially no reason for China to need access to patents from other
-companies or countries in order to start making generic versions of these
-vaccines because they already produce so much on their own. However, it seems
-that in the end—and we’re still studying this to be sure—the provision that
-would’ve had the China exception was stricken from the final agreement. That
-means that even China can now make generic versions of Comirnaty and all the
-other Western COVID-19 vaccines out there.
-There were some
-recent changes involving standard essential patents (SEPs). What exactly is
-going on, and are these changes emblematic of a larger problem?
-Let’s start by defining what SEPs are, which is essentially what
-they sound like. They are patents that various companies develop which then become
-an irreplaceable and essential part of a certain technical standard (for
-example, the 802.11g Wi-Fi standard that’s promulgated by the Institute of
-Electrical and Electronics Engineers).
-When an SEP goes into the standard, it means that when a
-product conforms to a standard, it is also using that specific SEP. Part of the
-issue is that there are negotiations over the terms of these patents. In order
-to get recognized as a SEP, you need to make your patent available on what are
-called “fair, reasonable, and non-discriminatory” (FRAND) terms. If a company
-refuses to accept those terms and uses your patent without your permission,
-then they’re infringing upon it. The question in that situation is whether an SEP
-owner can get an injunctive relief against an infringer of an SEP.
-Logically thinking, the answer to that question is yes. And
-that was the stance the Trump administration took in 2019 when it issued its
-guidance alongside the US Patent and Trademark Office and the National
-Institute of Standards and Technologies. They said that appropriate remedies
-for patent infringement— including injunctive relief—should be available to SEP
-holders.
-So what happened? In late 2021, the Biden administration put
-out new guidance that withdrew the 2019 Trump administration statement. The
-Biden administration essentially asserted that, generally speaking, when an SEP
-holder has made a voluntary FRAND commitment, the various factors that go into
-the injunction analysis militate against entering an injunction.
-This created a whole firestorm among the patent community
-and patent practitioners. By June 2022, the Biden administration backed away
-from its new guidance, but had still withdrawn the 2019 Trump administration
-guidelines. When you couple that with the flip-flop over the TRIPS waiver, it seems
-sometimes that the Biden administration’s patent policy is just at sea. It’s rather
-unclear what they’re doing.
-What other issues in
-the IP space should people be focusing on?
-One issue that’s starting to come to the forefront involves
-the International Trade Commission (ITC), a quasi-independent unit within
-Department of Commerce designed to prevent the unfair importation of different
-products into the US that harm the country and American public interest. One
-main way it does this is by targeting products that infringe the patents of
-what are meant to be domestic industries. (Domestic industries are American
-companies or foreign companies that have a substantial presence in the US.) The
-ITC recently came under fire for a practice that some entities have undertaken
-where so-called “patent trolls” or “patent assertion entities” engage in
-various ways of proving that they somehow have a domestic industry, but really they
-are deploying smoke screens.
-Congress reintroduced a bill that would clamp down on this
-type of abuse (also known as “domestic industry by subpoena”). This abuse happens
-when one of these patent trolls, which doesn’t manufacture anything, manages to
-get some ruling or settlement on patent infringement with someone that actually
-does make a product. They then obtain a license to that product and purport to
-use the legitimate company as their domestic industry. This company then becomes
-the grounds for why this patent assertion entity is able to get injective relief
-at the ITC.
-This relief is extremely powerful. It’s what’s called an “exclusion
-order.” It means that whatever product the infringing company makes may not be
-imported into the US. Customs agents appear at the ports, inspect the boats,
-and destroy the infringing items as they come in. So it’s an extremely powerful
-tool for these companies to wield.
-Under this new bipartisan legislation, a few things would
-change. Most importantly, it would require the legitimate company that the patent
-troll is exploiting to sign onto the ITC complaint and become affirmatively
-part of that complaint. It would also require the ITC to find that excluding
-the infringing products would be in the public interest. They would have to
-make an affirmative ruling that that is indeed the case, whereas now it’s
-essentially the opposite. Thus, there are a few different ways in which this
-legislation could be very beneficial.
+[Speaker: Introduction / editorial context]
+One year ago, the Joe Biden administration announced its support for a proposal at the World Trade Organization (WTO) that would waive Trade-Related Aspects of Intellectual Property (TRIPS) protections for COVID-19 vaccines and treatments. WTO member states recently agreed to a limited waiver that only covers vaccines and patents—not therapeutics or trade secrets. Both sides of the debate are relatively unhappy with this outcome. Does this mean it was a good compromise, or did the WTO fall short in its duties? How is the administration doing on other intellectual property (IP) issues?
+
+[Speaker: Introduction / editorial context]
+On this episode, I welcomed AEI Adjunct Fellow Michael Rosen back to the podcast for a check-in on the TRIPS debate and a more general update on the global IP policy landscape. Michael is the AEI tech policy team’s specialist on IP issues; he writes often on IP-related incentives for innovation, and on patent reform in Congress and at the US Patent and Trademark Office. He is also a book review columnist for The Federalist and National Review.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: What was the final outcome from the 12th WTO Ministerial Conference as it relates to the TRIPS waiver?
+
+[Speaker: Michael Rosen]
+Michael Rosen: When we last discussed the waiver in June 2021, the Biden administration had just announced that the US would favor the proposal put forward by India and South Africa at the WTO in October 2020. Under that proposal, there would be a waiver of TRIPS protections with respect to everything related to COVID-19: vaccines, treatments, diagnostics, and equipment.
+
+[Speaker: Michael Rosen]
+The Donald Trump administration resisted that proposal, and Europe followed the US. But in May 2021, the Biden administration stepped forward and said it favored the proposal. It was only on June 17th, 2022 at the WTO conference in Geneva that the various countries of the WTO compromised and agreed to a limited TRIPS waiver. That means TRIPS protections have only been waived for COVID-19 vaccines—not to treatments, therapeutics, diagnostics, or trade secrets. Moreover, it’s in place only for five years, so it would have to be renewed.
+
+[Speaker: Shane Tews]
+You previously mentioned that India and South Africa (as well as Kenya) ended up with a massive surplus of vaccines—so much so that they had to trash thousands because they expired. That seems incongruous to this entire conversation; am I interpreting things correctly?
+
+[Speaker: Michael Rosen]
+You’re exactly right. It’s incongruous from the get-go—even more so now. Last year, the objections we talked about and reiterated were that we don’t have a problem with patents; we have a problem reaching remote communities in the Global South and getting these vaccines into arms due to numerous issues related to supply chain, deep freezing storage, and cold storage transportation. That was what was holding up getting these doses in arms in the developing world.
+
+[Speaker: Michael Rosen]
+Now we have a different issue in addition to the aforementioned one: We now have more supply than demand for these vaccines. The pharmaceutical industry published their statistics: They’ve put out 13 billion doses of the vaccines across all the major companies— AstraZeneca, Moderna, Pfizer, and maybe Johnson & Johnson. Moreover, they plan to put out another 20 billion this year. We don’t have a supply problem at all. It’s not a matter of needing to allow other countries to manufacture their own generic versions of these drugs. The problem is getting shots in arms, overcoming vaccine hesitancy and resistance, and transporting these doses to the remote corners of the world. This latest decision by the WTO does none of those things.
+
+[Speaker: Shane Tews]
+Will China be excluded from the waiver?
+
+[Speaker: Michael Rosen]
+Initially, the compromise that had been floating around would have excluded certain countries that already manufactured 10 percent or more of the global supply of vaccine doses. Most prominently, that included China, which makes and exports a tremendous amount of its Sinovac vaccine. There was essentially no reason for China to need access to patents from other companies or countries in order to start making generic versions of these vaccines because they already produce so much on their own. However, it seems that in the end—and we’re still studying this to be sure—the provision that would’ve had the China exception was stricken from the final agreement. That means that even China can now make generic versions of Comirnaty and all the other Western COVID-19 vaccines out there.
+
+[Speaker: Shane Tews]
+There were some recent changes involving standard essential patents (SEPs). What exactly is going on, and are these changes emblematic of a larger problem?
+
+[Speaker: Michael Rosen]
+Let’s start by defining what SEPs are, which is essentially what they sound like. They are patents that various companies develop which then become an irreplaceable and essential part of a certain technical standard (for example, the 802.11g Wi-Fi standard that’s promulgated by the Institute of Electrical and Electronics Engineers).
+
+[Speaker: Michael Rosen]
+When an SEP goes into the standard, it means that when a product conforms to a standard, it is also using that specific SEP. Part of the issue is that there are negotiations over the terms of these patents. In order to get recognized as a SEP, you need to make your patent available on what are called “fair, reasonable, and non-discriminatory” (FRAND) terms. If a company refuses to accept those terms and uses your patent without your permission, then they’re infringing upon it. The question in that situation is whether an SEP owner can get an injunctive relief against an infringer of an SEP.
+
+[Speaker: Michael Rosen]
+Logically thinking, the answer to that question is yes. And that was the stance the Trump administration took in 2019 when it issued its guidance alongside the US Patent and Trademark Office and the National Institute of Standards and Technologies. They said that appropriate remedies for patent infringement— including injunctive relief—should be available to SEP holders.
+
+[Speaker: Michael Rosen]
+So what happened? In late 2021, the Biden administration put out new guidance that withdrew the 2019 Trump administration statement. The Biden administration essentially asserted that, generally speaking, when an SEP holder has made a voluntary FRAND commitment, the various factors that go into the injunction analysis militate against entering an injunction.
+
+[Speaker: Michael Rosen]
+This created a whole firestorm among the patent community and patent practitioners. By June 2022, the Biden administration backed away from its new guidance, but had still withdrawn the 2019 Trump administration guidelines. When you couple that with the flip-flop over the TRIPS waiver, it seems sometimes that the Biden administration’s patent policy is just at sea. It’s rather unclear what they’re doing.
+
+[Speaker: Shane Tews]
+What other issues in the IP space should people be focusing on?
+
+[Speaker: Michael Rosen]
+One issue that’s starting to come to the forefront involves the International Trade Commission (ITC), a quasi-independent unit within Department of Commerce designed to prevent the unfair importation of different products into the US that harm the country and American public interest. One main way it does this is by targeting products that infringe the patents of what are meant to be domestic industries. (Domestic industries are American companies or foreign companies that have a substantial presence in the US.) The ITC recently came under fire for a practice that some entities have undertaken where so-called “patent trolls” or “patent assertion entities” engage in various ways of proving that they somehow have a domestic industry, but really they are deploying smoke screens.
+
+[Speaker: Michael Rosen]
+Congress reintroduced a bill that would clamp down on this type of abuse (also known as “domestic industry by subpoena”). This abuse happens when one of these patent trolls, which doesn’t manufacture anything, manages to get some ruling or settlement on patent infringement with someone that actually does make a product. They then obtain a license to that product and purport to use the legitimate company as their domestic industry. This company then becomes the grounds for why this patent assertion entity is able to get injective relief at the ITC.
+
+[Speaker: Michael Rosen]
+This relief is extremely powerful. It’s what’s called an “exclusion order.” It means that whatever product the infringing company makes may not be imported into the US. Customs agents appear at the ports, inspect the boats, and destroy the infringing items as they come in. So it’s an extremely powerful tool for these companies to wield.
+
+[Speaker: Michael Rosen]
+Under this new bipartisan legislation, a few things would change. Most importantly, it would require the legitimate company that the patent troll is exploiting to sign onto the ITC complaint and become affirmatively part of that complaint. It would also require the ITC to find that excluding the infringing products would be in the public interest. They would have to make an affirmative ruling that that is indeed the case, whereas now it’s essentially the opposite. Thus, there are a few different ways in which this legislation could be very beneficial.

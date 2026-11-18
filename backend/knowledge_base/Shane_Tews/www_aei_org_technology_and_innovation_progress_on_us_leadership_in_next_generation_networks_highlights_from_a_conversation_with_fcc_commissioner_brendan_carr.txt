@@ -1,101 +1,53 @@
 PAGE_TITLE: 
-	Progress on US Leadership in Next-generation Networks: Highlights from a Conversation with FCC Commissioner Brendan Carr | American Enterprise Institute - AEI
+	Progress on US Leadership in Next-generation Networks: Highlights from a Conversation with FCC Commissioner Brendan Carr
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-During a September 15 AEI
-web event
-, Federal Communications Commission (FCC) Commissioner Brendan Carr gave a progress report on his
-March 2021 plan
-for US leadership in next-generation networks. Carr emphasized the FCC’s progress on low-income broadband affordability programs, discussed the implications of Congress’ infrastructure spending packages for broadband, and outlined plans for continued commercial spectrum auctions. He also suggested taxing Big Tech firms to fund broadband initiatives, and discussed the FCC’s role in interpreting online speech regulations.
-Below is an edited and abridged transcript of key highlights from our discussion, including excerpts of Commissioner Carr’s individual remarks. You can re-watch the full event on
-AEI.org
-and read the full transcript
-here
-.
-Carr on broadband affordability programs
-:
-Acting FCC Chair Jessica Rosenworcel has found a way to move to the middle and get some really positive, common-sense things across the finish line, particularly these low-income broadband affordability programs. That’s been great to see.
-I was just in Arkansas last week and was talking with a fixed wireless provider. They told me a story about a mom with five kids who is just outside the reach of one of their existing sites. And if they could increase the power on that existing site, that would, overnight, bridge the digital divide for that family. Because right now, if those kids have to go to school remotely, they don’t have the connections that they need. But by increasing the power there, we could bridge the digital divide for them. So we don’t need, you know, complicated additional funding to help that family. We just need to increase the power at the FCC.
-Carr on Congress’ infrastructure spending
-:
-Right now, there’s talk about this next $3.5 trillion infrastructure bill, and about allocating some of this funding toward broadband. I think this is a good time to step back and take stock of where we are. The reality is: We have enough money that has been either appropriated by Congress or budgeted by various agencies to bridge the digital divide multiple times over.
-I talked earlier this year about how the FCC had $40 billion that was still in the pipeline that hadn’t been spent yet. If you broaden out from that, looking at the money they have right now that can be used for infrastructure generally, including broadband infrastructure, it’s $800 billion. That’s in addition to money that has gone directly to states.
-And so I understand the instinct in Washington to say, “Hey, we want to close a digital divide, so we’re going to spend an additional
-x
-billion dollars.” But the reality of where we are right now is that the money has been allocated. We have to actually do the hard work of rolling up our sleeves to get that money that’s already been allocated out the door.
-Shane Tews: Give us an update on the FCC’s
-commercial spectrum auctions.
-Brendan
-Carr: In March, I laid out a plan for about five or six initiatives that we
-could get done this year. The first was to go forward with an auction of 2.5-gigahertz
-(GHz) spectrum, which we left the option to do based on some actions we took in
-early January of this year. Second, I talked about moving forward with an
-auction of 3.45-GHz spectrum. The good news there is that we’re on track now to
-hold that auction. 2.5 GHz, on the other hand, doesn’t look like it will get
-done this year, which is disappointing. The other action I called for was to
-start a proceeding to look at increasing the power in the 3.5-GHz band.
-And now, we
-also have to move forward on 4.9 GHz, which is 50 megahertz of spectrum that we
-did act on a year or so ago but we’ve now put back on the board by reversing
-the decision to allow public safety entities to move forward in that band.
-The good
-news is: We’re not done with the year yet. There’s a couple more FCC meetings
-that we can move on. But so far, of all those bands, really only one is lined
-up for getting done this year. And I think the reality is: Spectrum policy is
-tough. If you look back at what we did the last three or four years, we really
-unleashed a mid-band spectrum tsunami. And it was not easy work. We can ride
-that wave for a certain period of time, but at some point, we’ve got to start
-putting up some new spectrum wins on the board. That’s why I think getting some
-more progress done on those additional bands is going to be key to extending
-America’s leadership in wireless.
-As you’ve pointed out recently, the FCC’s
-Universal Service Fund is subsidized via an outdated system that levies taxes
-on traditional voice and talk services. Talk us through the potential solutions
-you’ve been advocating for.
-I did an
-op-ed
-back in May on this issue that basically looks at universal service. Most people don’t know that this $9 billion pot of money that we use to bridge the digital divide via the USF comes from a line-item charge that shows up on your traditional bill for telecom voice service, both mobile and landline. And that percentage charge has just been moving up like a hockey stick. It’s been hovering around 30 percent recently. And there’s a
-new study
-that says that number at 30 percent could jump to 75 percent in the not-too-distant future if revenues continue to climb and even if expenditures just stay flat. It’s not sustainable. So what are we going to do about it?
-I think the
-right model going forward is to look to Big Tech — whether it’s taxing digital
-ads services per se or other sources of Big Tech revenue. I haven’t picked one
-to the exclusion of others. But digital ads services revenues, I think, has a
-lot of merit to it because it’s sustainable. It’s difficult to pass through to
-consumers. And as the aforementioned study showed, it makes a lot of sense from
-a policy perspective, because these Big Tech companies generate a lot of
-internet traffic, so they’re causing costs. They also benefit from greater
-connectivity because that’s more eyeballs for their business model. It aligns
-all the incentives correctly, so I think that’s one idea we should look at.
-Do you think the FCC should engage in the
-issue of Section 230 and online speech regulation?
-Look, I’ve
-been very hesitant to talk about Section 230 and online content moderation over
-the past year, but I do think this is very important. I think there is a role
-for the FCC to play here in terms of 230 reform. I think courts have just
-over-read the statute — basically saying, you know, these large digital social
-media companies have carte blanche to censor and have 230 protections. I don’t
-think that’s what Section 230 says. But I also think it’s time to go beyond 230
-reform. We could look at some affirmative antidiscrimination obligations that
-we can apply to large tech companies.
-There’s been
-a lot of talk about classifying common carriers or public accommodations for
-the purpose of public accommodation law. That’s not necessarily my view. My
-view is not that we need to classify social media as a common carrier. My view
-is: We need to look at some of the antidiscrimination principles that we’ve
-applied in the common-carrier context and in the public accommodation law
-context, bring those antidiscrimination ideas forward, and apply those to large
-tech companies.
-But it’s
-also more than just social media, per se. Look at the financial services
-market, which is increasingly a digital financial services market. There’s a
-lot of risk that we’re going to see with financial service deplatforming and
-censorship. Twitter CEO Jack Dorsey is very active in the digital financial
-services space as well. And there’s going to be a lot of questions about: Are
-we going to be importing or exporting Twitter’s blocked list into all these
-Square-esque digital services platforms that he’s also in charge of?
-So yes, I
-think online speech is an issue. I think there’s a role to play in creating a
-framework that’s going to promote more speech. But I also think we need to look
-forward into the digital financial services markets as well as censorship and
-deplatforming, which I think we’re going to see increase.
+
+[Speaker: Introduction / editorial context]
+During a September 15 AEI web event, Federal Communications Commission (FCC) Commissioner Brendan Carr gave a progress report on his March 2021 plan for US leadership in next-generation networks. Carr emphasized the FCC’s progress on low-income broadband affordability programs, discussed the implications of Congress’ infrastructure spending packages for broadband, and outlined plans for continued commercial spectrum auctions. He also suggested taxing Big Tech firms to fund broadband initiatives, and discussed the FCC’s role in interpreting online speech regulations.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from our discussion, including excerpts of Commissioner Carr’s individual remarks. You can re-watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Introduction / editorial context]
+Carr on broadband affordability programs:
+
+[Speaker: Introduction / editorial context]
+Carr on Congress’ infrastructure spending:
+
+[Speaker: Shane Tews]
+Shane Tews: Give us an update on the FCC’s commercial spectrum auctions.
+
+[Speaker: Brendan Carr]
+Brendan Carr: In March, I laid out a plan for about five or six initiatives that we could get done this year. The first was to go forward with an auction of 2.5-gigahertz (GHz) spectrum, which we left the option to do based on some actions we took in early January of this year. Second, I talked about moving forward with an auction of 3.45-GHz spectrum. The good news there is that we’re on track now to hold that auction. 2.5 GHz, on the other hand, doesn’t look like it will get done this year, which is disappointing. The other action I called for was to start a proceeding to look at increasing the power in the 3.5-GHz band.
+
+[Speaker: Brendan Carr]
+And now, we also have to move forward on 4.9 GHz, which is 50 megahertz of spectrum that we did act on a year or so ago but we’ve now put back on the board by reversing the decision to allow public safety entities to move forward in that band.
+
+[Speaker: Brendan Carr]
+The good news is: We’re not done with the year yet. There’s a couple more FCC meetings that we can move on. But so far, of all those bands, really only one is lined up for getting done this year. And I think the reality is: Spectrum policy is tough. If you look back at what we did the last three or four years, we really unleashed a mid-band spectrum tsunami. And it was not easy work. We can ride that wave for a certain period of time, but at some point, we’ve got to start putting up some new spectrum wins on the board. That’s why I think getting some more progress done on those additional bands is going to be key to extending America’s leadership in wireless.
+
+[Speaker: Brendan Carr]
+As you’ve pointed out recently, the FCC’s Universal Service Fund is subsidized via an outdated system that levies taxes on traditional voice and talk services. Talk us through the potential solutions you’ve been advocating for.
+
+[Speaker: Brendan Carr]
+I did an op-ed back in May on this issue that basically looks at universal service. Most people don’t know that this $9 billion pot of money that we use to bridge the digital divide via the USF comes from a line-item charge that shows up on your traditional bill for telecom voice service, both mobile and landline. And that percentage charge has just been moving up like a hockey stick. It’s been hovering around 30 percent recently. And there’s a new study that says that number at 30 percent could jump to 75 percent in the not-too-distant future if revenues continue to climb and even if expenditures just stay flat. It’s not sustainable. So what are we going to do about it?
+
+[Speaker: Brendan Carr]
+I think the right model going forward is to look to Big Tech — whether it’s taxing digital ads services per se or other sources of Big Tech revenue. I haven’t picked one to the exclusion of others. But digital ads services revenues, I think, has a lot of merit to it because it’s sustainable. It’s difficult to pass through to consumers. And as the aforementioned study showed, it makes a lot of sense from a policy perspective, because these Big Tech companies generate a lot of internet traffic, so they’re causing costs. They also benefit from greater connectivity because that’s more eyeballs for their business model. It aligns all the incentives correctly, so I think that’s one idea we should look at.
+
+[Speaker: Shane Tews]
+Do you think the FCC should engage in the issue of Section 230 and online speech regulation?
+
+[Speaker: Brendan Carr]
+Look, I’ve been very hesitant to talk about Section 230 and online content moderation over the past year, but I do think this is very important. I think there is a role for the FCC to play here in terms of 230 reform. I think courts have just over-read the statute — basically saying, you know, these large digital social media companies have carte blanche to censor and have 230 protections. I don’t think that’s what Section 230 says. But I also think it’s time to go beyond 230 reform. We could look at some affirmative antidiscrimination obligations that we can apply to large tech companies.
+
+[Speaker: Brendan Carr]
+There’s been a lot of talk about classifying common carriers or public accommodations for the purpose of public accommodation law. That’s not necessarily my view. My view is not that we need to classify social media as a common carrier. My view is: We need to look at some of the antidiscrimination principles that we’ve applied in the common-carrier context and in the public accommodation law context, bring those antidiscrimination ideas forward, and apply those to large tech companies.
+
+[Speaker: Brendan Carr]
+But it’s also more than just social media, per se. Look at the financial services market, which is increasingly a digital financial services market. There’s a lot of risk that we’re going to see with financial service deplatforming and censorship. Twitter CEO Jack Dorsey is very active in the digital financial services space as well. And there’s going to be a lot of questions about: Are we going to be importing or exporting Twitter’s blocked list into all these Square-esque digital services platforms that he’s also in charge of?
+
+[Speaker: Brendan Carr]
+So yes, I think online speech is an issue. I think there’s a role to play in creating a framework that’s going to promote more speech. But I also think we need to look forward into the digital financial services markets as well as censorship and deplatforming, which I think we’re going to see increase.

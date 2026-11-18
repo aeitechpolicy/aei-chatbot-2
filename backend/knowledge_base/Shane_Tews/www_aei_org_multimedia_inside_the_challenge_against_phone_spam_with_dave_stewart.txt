@@ -1,7 +1,8 @@
 PAGE_TITLE: 
-	Inside the Challenge Against Phone Spam (with Dave Stewart) | American Enterprise Institute - AEI
+	Inside the Challenge Against Phone Spam (with Dave Stewart)
 
+[Speaker: Introduction / editorial context]
 Unwanted calls and messages have become a major nuisance in the digital age. Regulators have scrambled to address rising complaints about these unwanted intrusions, but the persistence of fraudulent communications has undermined consumer faith in our telecommunications infrastructure. Why do these issues persist? And in today’s complex digital landscape, how are regulators and policymakers working to balance privacy, consumer trust, and fraud prevention?
-Today’s guest,
-Dave Stewart
-, works to address these challenges as the Senior Vice President and Chief Business Development Officer at Somos, a telephone number and identity service provider. Dave works to restore trust in the technology that underlies our daily calls and texts.
+
+[Speaker: Introduction / editorial context]
+Today’s guest, Dave Stewart, works to address these challenges as the Senior Vice President and Chief Business Development Officer at Somos, a telephone number and identity service provider. Dave works to restore trust in the technology that underlies our daily calls and texts.

@@ -1,34 +1,62 @@
 PAGE_TITLE: 
-	Taking On Government Bureaucracy (with Shane Bigelow) | American Enterprise Institute - AEI
+	Taking On Government Bureaucracy (with Shane Bigelow)
 
+[Speaker: Introduction / editorial context]
 DMVs are notoriously slow, primarily because of outdated systems that constitute the foundation of their operations. Nevertheless, these processes can be greatly improved by adopting modern, efficient solutions. Such innovations not only enhance DMV operations but also offer valuable insights into the modernization of other sluggish government functions, potentially streamlining services across various sectors.
-Below are the highlights from my conversation with
-Shane Bigelow
-, CEO of
-CHAMP Titles
-. CHAMP specializes in digitizing government and business processes and, under Bigelow‘s leadership, has focused on transforming traditional vehicle titling systems with blockchain technology.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews
-:
-Let’s start with CHAMP Titles’ origin story. You started CHAMP in 2018 because you realized how inefficient the titling business and the entire car supply chain were.
+
+[Speaker: Introduction / editorial context]
+Below are the highlights from my conversation with Shane Bigelow, CEO of CHAMP Titles. CHAMP specializes in digitizing government and business processes and, under Bigelow‘s leadership, has focused on transforming traditional vehicle titling systems with blockchain technology.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Let’s start with CHAMP Titles’ origin story. You started CHAMP in 2018 because you realized how inefficient the titling business and the entire car supply chain were.
+
+[Speaker: Shane Bigelow]
 Shane Bigelow: The problem in many governments around the world, not just domestically, is that the systems of record where data is stored are not easily accessible by the constituents that need to access them. I don’t just mean consumers, I mean dealers, fleets, lenders, insurance carriers, the whole world of industries that interact with state government to facilitate commerce around vehicles. If the systems of record aren’t easily accessible and easily usable by those constituents, everything slows down—the pace of car sales slows down, car lending slows down, ensuring a car slows down.
+
+[Speaker: Shane Bigelow]
 Initially, we thought we’d try to solve this problem at a global level, because we thought maybe the developing world might need it more than the US. My business partner said, “We don’t need to go to the developing world in order to find this problem. There are 51 versions of the developing world in the United States. They’re called the DMV.”
+
+[Speaker: Shane Bigelow]
 We had experience in the automotive world: my first startup was in the automotive finance sector, and he was an automotive retailer. We realized that if we went to the DMVs and tried to future proof them for what was coming, that we could really add value to the way that government was interacting with its constituents and its citizens. The goal was to bring something that could do good, and we could do that by creating a revenue-producing product that really added a lot of value to the humans and the industries that were using it, and I think we’ve effectively done that.
+
+[Speaker: Shane Bigelow]
 Walk me through how your new digital title and registration suite differs from the traditional paper system.
+
+[Speaker: Shane Bigelow]
 Traditionally, what DMVs have done is build technology themselves, and that was fine 40 years ago. People would walk in with paper or they’d mail in their paper, and then someone at the DMV would enter it into a database, and there’d be a record of it. Then when that record got changed, someone would mail in more paper, or walk in with more paper, and they’d make a change. That process shouldn’t be what we endure today. I should be able to do all of that from my phone. If I’m a car dealer, I’m dealing with this tens or dozens or hundreds of times per day, depending on the volume of my dealership. If I’m a lender, it could be an equal amount. An insurance carrier could be a very similar amount. These large industries are dealing with DMVs, many, many, many times per day, and they also experience the knock-on effect of having to do this in paper and deal with slow government systems.
+
+[Speaker: Shane Bigelow]
 Our logic is that we’re taking that old system where there’s a lot of data entry and replacing it with a modular system that automates a lot of the data entry, automates a lot of the workflows, allows for the consumers and the constituents to use it from a remote location—whether it’s their phone or their car dealership or their salvage yard or their bank—and allows for the whole thing to occur a lot faster than the traditional system. You have to couple that with a way to understand how to gradually move a state off of their old mainframe technology, and we happen to have that expertise to be able to move them from this old world into the new world.
+
+[Speaker: Shane Tews]
 When you buy a car, not only are you dealing with an auto dealership or an owner of a vehicle, but you also then have to get it registered. For dealerships, seeing how much money they were spending on keeping physical titles and paperwork on all these vehicles was kind of the linchpin that moved some of these guys off the dime. Where are these effects felt further down the supply chain?
+
+[Speaker: Shane Bigelow]
 Sure, a few things are happening in different industries. In the insurance industry, it used to be that less than five percent of claims resulted in a total loss. Most vehicles would just get fixed a decade ago. Well, now, 26 percent of all claims result in the car being totaled. When a car is totaled, that car goes and sits in a salvage yard until the insurance carrier can take legal ownership over it from the policy holder. If that takes 60 days on average, that car is depreciating. It’s a drain on insurance carriers’ capital, and the only way they make that up is by having higher premiums. We can now turn those cars in less than a day. By attacking that issue, this little old thing called titling is having a big change on the insurance industry, and the same goes for the lending industry.
+
+[Speaker: Shane Bigelow]
 Many of those cars that wound up in a total loss, or many of the cars that just exist in the world, about 70 percent of them are financed. If you’re trying to refinance your car because rates are now starting to come down, or you’re looking to buy a new car and you need to finance it, or you’re looking to sell it and you need to pay off a loan in order to be able to legally sell it, that takes time. Time comes with an interest expense. Time comes with a carrying expense for the lenders. If we can reduce that to minutes or hours now, interest rates start to come down. We can see in the states that use our technology that interest rates on car loans are lower than states that don’t have our systems.
+
+[Speaker: Shane Bigelow]
 Finally, my favorite one is actually the time tax—that’s the time that we spend waiting in line and taking time off from our job to have something like our car re registered or titled or sold to a friend or sold to a car dealer. If you’re on an hourly wage and you try to do that, it may cost you your job if you’re waiting in that line too long and you don’t get back on time, or you lose those hours of wages. It’s not like DMVs often stay open late so that you can go get there at eight o’clock at night and handle these things. This time tax is something that we all have to consider when technology at the government level is not efficient and government shouldn’t be in the business of taxing us twice.
+
+[Speaker: Shane Tews]
 You have been big on using blockchain for technology progress. Are you still big on the concept?
+
+[Speaker: Shane Bigelow]
 Crypto is a use case for blockchain, the same way that our DMV technology is a use case for blockchain. Blockchain is just a better way to store data. I do see the future coming. I see that quantum computing will bring quantum Blockchain, and so we’ll enhance the level of cryptography associated with Blockchain. And that’s a natural evolution of a technology to get better and better at what it does at its core: encrypt things, keep things immutable, give a great track record of provenance. There’s nothing better on the market right now than using Blockchain for that purpose. Because people have started to realize that crypto is simply a use case of this amazing technology called blockchain, they’ve realized that when people say blockchain, don’t be scared. This is a really good technology that’s coming to help you, not unlike how software as a service replaced Blockbuster Video. I’d much rather be able to pick what I want at home than have to drive to the video store and hope that the videotape I want is available for rent. Enhancements occur and companies will win at that game, or they’ll lose at that game. And it’s our job as citizens to demand that our tax dollars get used efficiently with the best technologies that are out there, and that’s what I think is happening for our industry right now.
-What other verticals are you looking at?
-You obviously have a lot of knowledge to bring to different industries.
+
+[Speaker: Shane Bigelow]
+What other verticals are you looking at? You obviously have a lot of knowledge to bring to different industries.
+
+[Speaker: Shane Bigelow]
 There’s the vehicle side of the DMV and there’s the driver side of the DMV. The vehicle side is your title, registration, lien, and the driver side is your driver’s license, testing, plating, that sort of thing. There are certainly things that we’ll continue to enhance and do more of on the driver’s side. We’ve been largely known as being on the vehicle side, but we’ll do more on the driver’s side. I think our systems of record are deployable in lots of different industry verticals, and as long as we have the industry expertise, we could easily step into many other verticals and deploy our same technology for different types of industry usage. The reality is that there are two or three states out of the 51 jurisdictions in the country (so all states, plus DC) that that do a reasonable job on their own and whose citizens aren’t probably too terribly upset with what they are provided. But there are 48 that continue to need additional support and help.
+
+[Speaker: Shane Bigelow]
 When I look just a little bit forward and think about the way that we’ll consume automobiles, I could sit in a Waymo and do work for the 35-minute drive and be very comfortable knowing that I know exactly how this car is going to behave, because it’s code. I know how it’ll interpret things. I know it’s not going to break the speed limit. I know what roads is going to be on.
+
+[Speaker: Shane Bigelow]
 This autonomous world will change the way taxes are used. It’ll change the rental car world forever. Will you ever rent a car if this is available to you at cost that’s arguably lower than a rental car. All of these things have knock on effects. On title, registration, lien, do you have a driver’s license? Do you need one? I lived in New York for a long time and never owned a car. That’s a microcosm of what the rest of the country might start to experience when that level of transportation accessibility changes, and so all of that will have neat impacts on the way that we interact with the government services that our DMVs provide.

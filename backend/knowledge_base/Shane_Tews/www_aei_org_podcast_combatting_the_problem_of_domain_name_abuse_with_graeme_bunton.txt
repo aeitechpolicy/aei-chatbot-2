@@ -1,16 +1,14 @@
 PAGE_TITLE: 
-	Combatting the Problem of Domain Name Abuse (with Graeme Bunton) | American Enterprise Institute - AEI
+	Combatting the Problem of Domain Name Abuse (with Graeme Bunton)
 
-Domain name abuse is a constant challenge, as it’s the entry point for many online activities that are harmful to consumers such as malware, botnets, phishing scams, and spam. Protecting the domain name system (DNS) is a priority for security and stability, and creating an efficient way to track abusers is key to this mission. But what exactly does DNS abuse look like in practice, and how do we catch those who adversely affect the health of the internet’s vast infrastructure?
-On this episode,
-Shane
-sits down with
-Graeme Bunton
-, the inaugural director of the
-DNS Abuse Institute
-(DNSAI). DNSAI recently partnered with
-CleanDNS
-to create
-NetBeacon
-—a DNS abuse reporting tool that helps mitigate and process abuse claims. Graeme gives his perspective on the issue of DNS abuse and explains why tools like NetBeacon are necessary in today’s DNS landscape.
+[Speaker: Introduction / editorial context]
+Domain name abuse is a constant challenge, as it’s the entry point for many online activities that are harmful to consumers such as malware, botnets, phishing scams, and spam. Protecting the domain name system (DNS) is a priority for security and stability, and creating an efficient way to track abusers is key to this mission. But what exactly does DNS abuse look like in practice, and how do we catch those who adversely affect the health of the internet’s vast infrastructure?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane sits down with Graeme Bunton, the inaugural director of the DNS Abuse Institute (DNSAI). DNSAI recently partnered with CleanDNS to create NetBeacon—a DNS abuse reporting tool that helps mitigate and process abuse claims. Graeme gives his perspective on the issue of DNS abuse and explains why tools like NetBeacon are necessary in today’s DNS landscape.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

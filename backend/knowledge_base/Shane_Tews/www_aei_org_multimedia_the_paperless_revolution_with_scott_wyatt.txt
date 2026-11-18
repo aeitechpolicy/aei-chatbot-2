@@ -1,8 +1,11 @@
 PAGE_TITLE: 
-	The Paperless Revolution with Scott Wyatt | American Enterprise Institute - AEI
+	The Paperless Revolution with Scott Wyatt
 
+[Speaker: Introduction / editorial context]
 Paperwork and manual forms are still the norm for most industries today, but this outdated process is begging for a digital overhaul. Cutting-edge software can now fully digitize documents and forms leveraging sophisticated coding, paving the way to streamline data flows. Can this technology revolutionize the way businesses and governments tackle administrative tasks? How can the digital transformation of traditionally paper-based processes enhance consumers’ experiences across industries?
-Our guest today has paved the way in easing the form process for consumers and businesses alike.
-Scott Wyatt
-is the founder of the recently patented Form Engine software, which speeds up the business and government world by digitizing their form and document processes. He has worked on devising technology-based solutions to outdated business models for over 20 years.
+
+[Speaker: Introduction / editorial context]
+Our guest today has paved the way in easing the form process for consumers and businesses alike. Scott Wyatt is the founder of the recently patented Form Engine software, which speeds up the business and government world by digitizing their form and document processes. He has worked on devising technology-based solutions to outdated business models for over 20 years.
+
+[Speaker: Introduction / editorial context]
 Tune in as we dive deep into the technologies promising to modernize businesses and governments.

@@ -1,32 +1,62 @@
 PAGE_TITLE: 
-	Can We Future-Proof AI? Highlights from My Conversation with Rob Reich | American Enterprise Institute - AEI
+	Can We Future-Proof AI? Highlights from My Conversation with Rob Reich
 
+[Speaker: Introduction / editorial context]
 Artificial intelligence (AI) holds promise to transform our world for the better, yet developing it responsibly poses complex challenges. As countries across the globe grapple with the AI explosion, policymakers struggle to frame the technology and its future implications. How can we harness AI’s potential while safeguarding ethics and human values? Can guidelines and regulations prevent consumer harm without stifling innovation? As AI capabilities race ahead, can we proactively build ethics and oversight into systems before it is too late?
-This critical moment requires thinkers like
-Rob Reich
-, a Professor of political science at Stanford University, faculty co-director of Stanford’s Center on Philanthropy and Civil Society, the faculty director of the McCoy Center for Ethics in Society, and the associate director of the Stanford Institute for Human-Centered Artificial Intelligence (HAI).
-Via Adobe Stock
-Below is an abridged transcript of our enlightening discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+This critical moment requires thinkers like Rob Reich, a Professor of political science at Stanford University, faculty co-director of Stanford’s Center on Philanthropy and Civil Society, the faculty director of the McCoy Center for Ethics in Society, and the associate director of the Stanford Institute for Human-Centered Artificial Intelligence (HAI).
+
+[Speaker: Introduction / editorial context]
+Below is an abridged transcript of our enlightening discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Rob, explain to us your relationship with technology, governance, and AI ethics that you cover in this book. You’ve been working in this fascinating area for quite some time.
-Rob Reich
-:
-Well, I’m not a technologist by training. I’m a philosopher. And I’ve been at Stanford now, 25 years. And so, the way I got into this was that I kind of observed, from my perch in the humanities and social sciences, the mass migration of undergraduate students from majoring in the humanities and social sciences at Stanford, to then majoring over on the engineering quad, in the computer science, in particular.
+
+[Speaker: Rob Reich]
+Rob Reich: Well, I’m not a technologist by training. I’m a philosopher. And I’ve been at Stanford now, 25 years. And so, the way I got into this was that I kind of observed, from my perch in the humanities and social sciences, the mass migration of undergraduate students from majoring in the humanities and social sciences at Stanford, to then majoring over on the engineering quad, in the computer science, in particular.
+
+[Speaker: Rob Reich]
 And of course, this coincided with the rise of Silicon Valley as an economic force in the entire world, and the transformation of our personal, our economic, our civic lives by so many digital tools and platforms—beginning with the internet in the 1990s, then of course, the web 2.0, as they call it, the social media wave. And now in accelerated fashion, this massive explosion of interest in artificial intelligence, in particular, generative AI, since the release of ChatGPT late last year.
+
+[Speaker: Rob Reich]
 So instead of just passively observing this and commenting, as I might, as a philosopher—since I’m at ground zero in certain respects here in Silicon Valley, and Stanford’s campus, where so many of these inventions were disseminated, or even invented in certain respects, from the technology side—I started collaborating with a whole bunch of folks over in the engineering school and trying to bring to bear a humanistic and social scientific, or a policy frame on not just the evaluation of AI, once it’s been designed and deployed, but rather in the very design of it in the beginning—as if it were philosophers in the lab with the computer scientists—in thinking up the frontier of AI.
+
+[Speaker: Shane Tews]
 It’s an interesting crossover we’re used to it now. You know, people thinking about the social elements, especially with all of the social networking matters that’s come out in the last 10 years or less. So what was your first impression of, how do I work with these people? How can I be helpful to this?
+
+[Speaker: Rob Reich]
 Well, I found that the technologists I encountered, maybe for totally understandable reasons, are advocates or exponents of the transformative potential of these tools and platforms, sometimes bleeding into unabashed boosterism, or that these are tools and technologies are almost all upside for humanity.
+
+[Speaker: Rob Reich]
 And we don’t have to go back that far in time. It’s really less than 10 years ago, even with the release of some of the social media tools like Twitter, and Facebook, and Instagram, that people felt that these were going to be liberatory for the world and unlock human creativity. And that if you simply allowed the dissemination of these incredible information technology platforms, it would allow people to expand freedom and to increase their own knowledge. And there was basically no downside. And I think in 2015, 2016, beginning in particular with the Russian interference in the 2016 election, people began to become much more attuned to some of the downsides: the misinformation and disinformation that goes viral; the ways in which automation in the workplace displaces or transforms human labor; the ways in which many of the internet companies are abusing, in certain respects, our privacy by hoovering up all this data. And then of course, we’ve learned about algorithmic bias in a variety of ways.
+
+[Speaker: Rob Reich]
 And the frame that I bring to this in the book and how I think about this as an ordinary matter, especially thinking for an AI audience there in DC and beyond, is that, we don’t need to invent from whole cloth, new frameworks to understand how it is that the digital revolution is working. We can use some fairly old frameworks that come from the social sciences and from philosophy, in particular the language from economics of externalities. And so, my own view, informed partly by history, and then partly by thinking in particular about social media, the internet, and then these AI companies, is that these tools and technologies have extraordinary upside benefits, positive force for humanity and society, and also a bunch of negative externalities. And those you could catalog as what I said before: the transformation of the human labor; the ways in which misinformation, disinformation gets dumped at the doorstep of our civic institutions, even while it’s quite profitable for the social media companies to propagate it. And so, using that language of externality, I think we can then bring to bear the familiar variety of tools that are within the government’s easy reach, or for that matter, civil society, in order to try to internalize them.
+
+[Speaker: Rob Reich]
 And that’s, to a certain extent, the largest and the most important message of the book. We are not boomers or doomers, as the lingo goes these days. We neither think it’s all upside nor all downside. We want a fairly ordinary conversation about the moment we’re in, in terms of bringing to bear pretty off-the-shelf tools of government and civil society, to ensure that we get the great benefits that the digital revolution promises, and to avoid some of the now obvious harms.
+
+[Speaker: Rob Reich]
 So, governance is an area that you focus on. And I’ve done a lot of work on internet governance, and one of the things that I think that AI has really drawn out is . . . People love falling for this stuff, right? You know, one of the reasons why it’s so easy to fool them is they want to believe a lot of it. So now, when you come into governance, you’ve got new challenges, which is that human element. It isn’t just a hard-edged tech problem, you know, like watermarking or some tool like that.
+
+[Speaker: Rob Reich]
 You have to ask, where is this very faint line on where the information flow becomes “not helpful” to “harmful” to “inaccurate.” And I was having a conversation today with somebody who said that people were very surprised that it wasn’t a bright line in the very beginning. They think, “Well, it’s real bright to me.” And I’ll say, “Yeah, not always the case.” What do you recommend in that space?
+
+[Speaker: Rob Reich]
 Yeah, I think you’re right. And especially when it comes to issues of free speech, and how it is that we think about the very broad permissions that we rightly celebrate for people to express themselves. And with the internet now, there are so many different mechanisms for disseminating voice, and gaining for ordinary people, an audience. And leaving aside just the First Amendment as a kind of constitutional barrier for government actually defining what counts as permissible and impermissible speech. . . Even if that weren’t the case, and of course, it doesn’t exist in quite the same way in the US as in other democracies, there still would be a really strong case for putting a heavy thumb on the scale of very robust protections for freedom of expression. So as you say, there’s no easy “bright line” to draw about where it is that we ought to, you know, ban or delete speech online, and then where it is we should champion it and celebrate it. I think it’s appropriately something that we have a pluralistic marketplace of different kinds of approaches, and then different users can opt in and opt out of their preferred communities in certain ways.
+
+[Speaker: Rob Reich]
 Now, of course, there are some limits. And I think it is important to note that the internet and social media is different in certain ways than, say, the telephone, or the radio, or the television. So I’m not trying to say it’s just a complete continuation there. But as someone who attaches extraordinary importance to the freedom of expression, I want to give the widest possible latitude to people to say and do what they want online and in other forums, up to and including in disseminating misinformation and disinformation. Although here’s, I think, the important point, from my point of view. The algorithms that surface different pieces of content to every user online, those don’t need to treat misinformation and disinformation in the same way they might other fairly ordinary forms of speech. The kinds of private communications, or, like, cat videos type of thing. Let that be a bunch of stuff that happens online. And the algorithmic curation or the algorithmic moderation of speech is where we can see some of the interventions that come chiefly from the companies, but then guided also by civil society.
+
+[Speaker: Rob Reich]
 So one area I think you and I have a little bit of a difference of opinion—but I’m always willing to be persuaded—is I believe that the number one thing that Europe is exporting right now is a bunch of regulation, which is not healthy for American companies. That’s where I think we differ. I think it’s that you are a little more interested in the precautionary principle being adopted here in the United States, which is forward-thinking regulation, where I think we need to think about consumer harm before we start putting regulations in place. So, tell me why I’m wrong.
+
+[Speaker: Rob Reich]
 Yeah, well, here’s one of the big differences between our current AI moment and what we went through with the early days of the internet, and then the early days of web 2.0, and the social web. As I said before, in those early days of the internet and social media, there was extraordinary enthusiasm for the unlimited potential and upside that these technologies bring. And then we saw some of the negative externalities emerge.
+
+[Speaker: Rob Reich]
 In this particular moment, all of that has been wrapped up into a very quick cycle. There hasn’t been anybody from day one of ChatGPT who thought this is only upside. We’ve always been aware of some of the downside. And the downside is even greater according to some of the skeptics or, for that matter, some of the chief scientists within the companies that are propagating these extraordinary technologies. Like the people at OpenAI, like the people at Anthropic, Google, Microsoft. So, you know, you hear about the worries about existential risks to humanity as a result of runaway or malevolent AI in various ways. Or the ways in which extremely powerful frontier AI models, when they fall into the hands of adversaries, could be used to generate bio pathogens for terrorist purposes or warfare.
+
+[Speaker: Rob Reich]
 In this case, since we’re not talking about cat videos anymore, we’re talking about something far more serious. I think something that approaches a precautionary principle is an important part of the conversation, not because we should just slow things down and take stock of where we are. I’m no fan of the letter that was signed a bunch of months ago by 20,000, 30,000 people, saying we should take a six month pause on developing this frontier models. By contrast, I simply think that we ought to find some ways to put in some safety and guardrails—both in formal policy and law, as well as in coordinating the companies around industry wide standards—so that there’s a much wider set of shared norms about the appropriate development and deployment of these powerful tools.

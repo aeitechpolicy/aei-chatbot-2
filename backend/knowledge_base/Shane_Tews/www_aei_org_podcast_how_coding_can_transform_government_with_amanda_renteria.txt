@@ -1,12 +1,14 @@
 PAGE_TITLE: 
-	How Coding Can Transform Government (with Amanda Renteria) | American Enterprise Institute - AEI
+	How Coding Can Transform Government (with Amanda Renteria)
 
-In the digital age, how can technology make government more effective? The nonprofit
-Code for America
-is training young coders and connecting them with governments in order to digitize “safety net” programs like Medicaid, welfare, and food purchasing assistance. The organization seeks to make these programs more effective and efficient at the local, state, and federal levels by bringing them into a web and mobile friendly environment that helps both the end user and the government agency connect and track benefits.
-On this episode,
-Shane
-speaks with Code for America CEO
-Amanda Renteria
-, a former candidate for elected office and national political director of Hillary Clinton’s 2016 presidential campaign. Together, they discuss how Code for America works with federal, state, and local governments to tackle complex political issues through cutting-edge IT solutions.
+[Speaker: Introduction / editorial context]
+In the digital age, how can technology make government more effective? The nonprofit Code for America is training young coders and connecting them with governments in order to digitize “safety net” programs like Medicaid, welfare, and food purchasing assistance. The organization seeks to make these programs more effective and efficient at the local, state, and federal levels by bringing them into a web and mobile friendly environment that helps both the end user and the government agency connect and track benefits.
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane speaks with Code for America CEO Amanda Renteria, a former candidate for elected office and national political director of Hillary Clinton’s 2016 presidential campaign. Together, they discuss how Code for America works with federal, state, and local governments to tackle complex political issues through cutting-edge IT solutions.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

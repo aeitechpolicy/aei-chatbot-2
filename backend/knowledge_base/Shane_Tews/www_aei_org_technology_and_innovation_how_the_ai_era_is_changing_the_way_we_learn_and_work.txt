@@ -1,49 +1,80 @@
 PAGE_TITLE: 
-	How the AI Era Is Changing the Way We Learn and Work | American Enterprise Institute - AEI
+	How the AI Era Is Changing the Way We Learn and Work
 
+[Speaker: Introduction / editorial context]
 As Artificial Intelligence (AI) rapidly transforms how we work, learn, and organize institutions, questions emerge about whether our current social structures can adopt AI and harness its full potential. From educational systems to workplaces struggling to integrate AI tools, the challenges lie in the structure. How do we redesign our approaches to teaching, learning, and working when AI can provide instant feedback, enable natural language programming, and fundamentally alter the skills we need?
+
+[Speaker: Introduction / editorial context]
 Bojan Tunguz is the founder and CEO of Tablo AI, a startup focused on applying machine learning to structured data problems. Before founding Tablo AI, he was a senior system software engineer at NVIDIA. He holds a Bachelor of Science in physics and a Master of Science in applied physics from Stanford and a PhD in theoretical physics from the University of Illinois. Brent Orrell is a Senior Fellow at the American Enterprise Institute, where he focuses on workforce development and the future of work.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in.
-Shane Tews:
-My latest fascination is trying to make artificial intelligence practical and application-oriented for policymakers. Even though we know Congress has substantial resources, they don’t tend to allocate much funding toward fixing their own systems. Starting at the policymaking level, what system changes would you recommend?
-Bojan Tunguz:
-I think most of our organizations are structured as monolithic entities, and I think one of the big problems is when changes are rapid. They need to be implemented in a much more agile way. We have very much command-and-control structures in almost all of our organizations, whether it’s Congress, a big tech company, or even a small startup. They all have a very centralized way of organizing things, and this creates a lot of friction points downstream that stifle innovation and the agility to move quickly as outside circumstances dictate. The idea is to make organizations much more cellular in nature.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: My latest fascination is trying to make artificial intelligence practical and application-oriented for policymakers. Even though we know Congress has substantial resources, they don’t tend to allocate much funding toward fixing their own systems. Starting at the policymaking level, what system changes would you recommend?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz: I think most of our organizations are structured as monolithic entities, and I think one of the big problems is when changes are rapid. They need to be implemented in a much more agile way. We have very much command-and-control structures in almost all of our organizations, whether it’s Congress, a big tech company, or even a small startup. They all have a very centralized way of organizing things, and this creates a lot of friction points downstream that stifle innovation and the agility to move quickly as outside circumstances dictate. The idea is to make organizations much more cellular in nature.
+
+[Speaker: Bojan Tunguz]
 So, like enabling small teams and small groups to be much more responsive and create products or projects as they see fit, without having to go through all sorts of internal approval mechanisms. How to do that effectively and how to implement it (the whole operator-agent problem) become the issues.
-Brent Orrell:
-It reminds me of a study that came out of the Harvard Business Review a few months back, where they were looking at the application of AI inside Procter & Gamble. They had four groups: groups without AI, individuals without AI, individuals with AI, and groups with AI to test what the effect was on their productivity and creativity, and so on. What they found was that the groups using AI delivered better products faster, and they generated more value-added insights into the company’s operations.
+
+[Speaker: Brent Orrell]
+Brent Orrell: It reminds me of a study that came out of the Harvard Business Review a few months back, where they were looking at the application of AI inside Procter & Gamble. They had four groups: groups without AI, individuals without AI, individuals with AI, and groups with AI to test what the effect was on their productivity and creativity, and so on. What they found was that the groups using AI delivered better products faster, and they generated more value-added insights into the company’s operations.
+
+[Speaker: Brent Orrell]
 What was more surprising was that individuals working with AI also outperformed groups without AI. And of course, individuals by themselves weren’t able to compete with anybody using AI. What it says to me is that there are not just enormous efficiencies to be gained, but insights to be gained through human-AI collaboration.
-Shane Tews:
-One of the key challenges we face on the regulatory side is ensuring the right people can access the right data while maintaining privacy. Currently, everything gets mixed together without clear categorization of what’s valuable versus what’s problematic. What are your recommendations for managing data access and utilization in a regulatory environment, particularly when it comes to separating useful data from personally identifiable information?
-Bojan Tunguz:
-Tread carefully. That would be my recommendation because even if you think it’s anonymized, it may not be. I know people who are masters at figuring out who someone is just based on all sorts of very tangential data. So there are ways that probably, even now, can be done. On the other hand, you don’t want to be too careful because you want to strike some kind of balance between benefits and setbacks.
+
+[Speaker: Shane Tews]
+Shane Tews: One of the key challenges we face on the regulatory side is ensuring the right people can access the right data while maintaining privacy. Currently, everything gets mixed together without clear categorization of what’s valuable versus what’s problematic. What are your recommendations for managing data access and utilization in a regulatory environment, particularly when it comes to separating useful data from personally identifiable information?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz: Tread carefully. That would be my recommendation because even if you think it’s anonymized, it may not be. I know people who are masters at figuring out who someone is just based on all sorts of very tangential data. So there are ways that probably, even now, can be done. On the other hand, you don’t want to be too careful because you want to strike some kind of balance between benefits and setbacks.
+
+[Speaker: Bojan Tunguz]
 My suggestion is that we should tread carefully, but not be frozen by overthinking it. Get data that can potentially have very important health benefits for everyone, or public policy benefits for everyone. I think those datasets should be made accessible, but I also think they should maybe be accessible to well-vetted groups. So you could get access to data, but you really have to pass some kind of clearance. You don’t want to have it out in the open.
-Shane Tews
-: One example of that distinction would be letting scientists or researchers look at relevant data sets when they’re working on curing cancer, versus a bunch of marketers getting hold of all that data and then starting to sell you pharmaceuticals.
-Bojan Tunguz:
-That’s exactly my point. I think users should definitely have some kind of input on how the data could be shared. Right now, we have opt-in for organ donation on driver’s licenses. Maybe we can have an opt-in for data to be shared for scientific purposes.
-Shane Tews:
-In terms of practical applications, this morning you were talking about how we start to implement this in education. Some people are adopting it, while others are not willing to engage with it at all. What’s your thought process on bringing AI into the education system?
-Bojan Tunguz:
-Well, the first thing that everyone in education has to realize is that AI is here, it’s staying, and it’s going to have a major impact on everything that we do. So that should be a given. How we adopt it and where we go from there—that’s the next question. My suggestion is that educational institutions, instead of just teaching AI as some kind of special little subject on the side, have to be reformed from the ground up to use this as a reality that we already have.
+
+[Speaker: Shane Tews]
+Shane Tews: One example of that distinction would be letting scientists or researchers look at relevant data sets when they’re working on curing cancer, versus a bunch of marketers getting hold of all that data and then starting to sell you pharmaceuticals.
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz: That’s exactly my point. I think users should definitely have some kind of input on how the data could be shared. Right now, we have opt-in for organ donation on driver’s licenses. Maybe we can have an opt-in for data to be shared for scientific purposes.
+
+[Speaker: Shane Tews]
+Shane Tews: In terms of practical applications, this morning you were talking about how we start to implement this in education. Some people are adopting it, while others are not willing to engage with it at all. What’s your thought process on bringing AI into the education system?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz: Well, the first thing that everyone in education has to realize is that AI is here, it’s staying, and it’s going to have a major impact on everything that we do. So that should be a given. How we adopt it and where we go from there—that’s the next question. My suggestion is that educational institutions, instead of just teaching AI as some kind of special little subject on the side, have to be reformed from the ground up to use this as a reality that we already have.
+
+[Speaker: Bojan Tunguz]
 Institutions themselves have to start thinking about how to redo everything that we know about education from the ground up and have an AI-first kind of education, because it will be a tool that everyone will be using. We may want to fight it for a while, but it’s going to overtake our processes and professional development.
+
+[Speaker: Bojan Tunguz]
 I think if I have to point out one single thing that AI has an advantage over, it’s the instant feedback that you can have in an educational setting. If you’re working on a paper, you can give it to AI and ask it for feedback. It can almost instantly give you very valuable feedback, especially with the most advanced tools that we have nowadays. It used to be, as we’ve mentioned just now, unreliable, but the expertise level has significantly increased over the last six months.
+
+[Speaker: Bojan Tunguz]
 It can also give you feedback based on your own strengths. So you’ll have different feedback if you’re writing a high school paper versus a college paper versus a graduate-level math project or whatnot, so it will have fine-tuned feedback depending on your own background and what you’re trying to accomplish.
-Brent Orrell:
-One of the things about AI feedback is that I’ve found that it’s a lot easier to take than feedback from a human being. It’s depersonalized. It’s not that you are a bad person or a bad writer or anything. It’s like, this isn’t right, or this needs to be changed.
-Shane Tews:
-We’ve talked about schools, but what’s preventing employers from starting to bring in AIs? Is it cost?
-Bojan Tunguz:
-I think at this point it’s institutional inertia, so they’re still used to doing things a certain way, and they’re not going to change until there’s an overwhelmingly compelling reason to do so.
+
+[Speaker: Brent Orrell]
+Brent Orrell: One of the things about AI feedback is that I’ve found that it’s a lot easier to take than feedback from a human being. It’s depersonalized. It’s not that you are a bad person or a bad writer or anything. It’s like, this isn’t right, or this needs to be changed.
+
+[Speaker: Shane Tews]
+Shane Tews: We’ve talked about schools, but what’s preventing employers from starting to bring in AIs? Is it cost?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz: I think at this point it’s institutional inertia, so they’re still used to doing things a certain way, and they’re not going to change until there’s an overwhelmingly compelling reason to do so.
+
+[Speaker: Bojan Tunguz]
 It will really depend on how mission-critical a particular skill is for the employer. If you’re a top AI researcher right now, I just heard the other day that Meta is offering up to $10 million to join their team. But for the regular run-of-the-mill positions, I think the system is still operating the way most stakeholders expect it to be operating. So there’s not really real pressure.
+
+[Speaker: Bojan Tunguz]
 But going forward, I think loosening regulations about employment will be a bigger deal than just using AI. When credentialing becomes a major liability, or a lack of credentialing becomes a major liability for companies, they will start being much more open to non-traditional ways of recruiting and screening candidates.
-Shane Tews:
-In terms of skills, there has been a lot of conversation around vibe coding, which relies on LLMs to generate and refine code using natural language. Asking as a non-engineer, what are your thoughts on this?
-Bojan Tunguz:
-It’s wonderful. I think it’s really enabling a lot of people to come up with projects and tools that they wouldn’t be doing otherwise. The way I explain it to people: I don’t consider myself an engineer; I consider myself more of a data scientist, which is much less of an engineering and coding-focused discipline. But I’ve been able to come up with my own little tools and my own little apps that I vibe code. I think it’s enabling a lot more people to give coding a chance.
+
+[Speaker: Shane Tews]
+Shane Tews: In terms of skills, there has been a lot of conversation around vibe coding, which relies on LLMs to generate and refine code using natural language. Asking as a non-engineer, what are your thoughts on this?
+
+[Speaker: Bojan Tunguz]
+Bojan Tunguz: It’s wonderful. I think it’s really enabling a lot of people to come up with projects and tools that they wouldn’t be doing otherwise. The way I explain it to people: I don’t consider myself an engineer; I consider myself more of a data scientist, which is much less of an engineering and coding-focused discipline. But I’ve been able to come up with my own little tools and my own little apps that I vibe code. I think it’s enabling a lot more people to give coding a chance.
+
+[Speaker: Bojan Tunguz]
 But there are a lot of things that you have to be careful about. For example, you shouldn’t be vibe-coding a mission-critical application. You still need to understand what your application is doing and how it actually works. That requires you to understand the code itself. So if you just vibe code without any understanding of how code works, that’s a disaster waiting to happen.

@@ -1,117 +1,62 @@
 PAGE_TITLE: 
-	The Complexities of Online Content Moderation: Highlights from My Conversation with Julie Owono | American Enterprise Institute - AEI
+	The Complexities of Online Content Moderation: Highlights from My Conversation with Julie Owono
 
-The debate around online content moderation is not slowing
-down. People remain bitterly divided over whether social media platforms should
-take down more content, or not moderate at all. Meanwhile, outside the US,
-authoritarian regimes are censoring online dissenters and retaliating against
-citizens who share certain content. How are content moderation experts working
-to solve these ever-complex issues?
-On this episode, I sat down with
-Julie Owono
-to discuss why we need clear principles
-around online speech — centered on free expression — and how these principles
-can be applied across different countries. Julie is the executive director of
-Stanford University’s
-Content Policy & Society Lab
-, executive director
-of
-Internet
-Without Borders
-, and a member of the
-Facebook Oversight Board
-.
-Below is an edited and abridged transcript of our talk. You
-can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening
-platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and
-tell your friends and colleagues to tune in.
-Shane Tews: Julie, to
-get started, tell us about your background at Internet Sans Frontières (or
-Internet Without Borders).
-Julie Owono: It’s a digital rights organization, with digital
-rights meaning human rights that people enjoy offline. Our assumption is that digital
-rights should have the same protections as offline ones, which means defending freedom
-of expression, freedom to speak, and also freedom to access online mediums. Not
-everyone can afford accessible internet or freely speak because their
-government either shuts down the internet or limits access to social media
-through taxes and censorship.
-We also focus a lot on issues around privacy and anonymity,
-because we think both are very interlinked to digital rights. Some people are
-really keen on having their privacy strongly protected because they are
-involved in the criticizing their authorities or governments. That can be a
-very dangerous, risky business.
-Are there times when
-it is appropriate to limit online speech?
-There are three important principles to follow when imposing
-limits on speech.
-The first is that your limitation has to be legal. You need
-a rule that is both clear and accessible. The second is that your limitation
-should be proportionate. If you wanted to limit the reach of a publication, is
-taking it down the only way to go about it? Alternatively, could we add
-interstitials or algorithmically limit the reach?
-Third, whatever you’re doing should be necessary. In other
-words, what is the imperative that justifies the censorship? The imperative
-could be safety, security, or preventing harm. But the problem with many of the
-laws is that they create this illusion that moderating the internet is easy. It
-is not. Especially when you’re a massive platform that deals with a gargantuan amount
-of content every day, it becomes very complicated.
-Being relatively new
-to the First Amendment as a non-US-native, is there anything that has surprised
-you as you’ve had to integrate it into your thought process?
-In Europe, we have this assumption that there’s simply no
-limit to free speech in the US. The First Amendment means absolutely no limits.
-But after coming to the United States two years ago, I started reading academic
-material about First Amendment issues. What I was surprised to realize is that
-there is a strong debate about the limits of speech; are you really allowed to
-say anything and everything?
-I also discovered that there is more proximity between
-international human rights standards with regards to speech and expression and
-the First Amendment. This is an exercise that we’ve had to do as Facebook
-Oversight Board members when we were deliberating on a case — the most famous of
-which involved the former president of the United States.
-From your work at the
-Facebook Oversight Board, what have you taken away from the global presence of
-Big Tech? What problems have you encountered?
-We’ve received lots of cases from North America and Western
-Europe, but also some from Latin America, Asia, Sub-Saharan Africa, and the
-Middle East. I’ve come to realize this: We need to do a better job of reaching
-out to users who do not speak English. Facebook (now Meta) has a hard time
-making sure all its users who speak a wide array of languages can understand
-the rules. I’m very curious on how someone wants to enforce a rule that nobody
-understands in a country. For example, Arabic is a group of related languages,
-but the US treats Arabic as a monolith, and certain nuances are lost in
-translation. In other cases, there is not even a translation of the guidelines
-available. With Punjabi, which is a language widely spoken in Southern Asia,
-community standards of Facebook were not available for a language spoken by
-over 100 million people.
-When you want to be a global platform, there are some
-inequities that shouldn’t exist. Removing lingual barriers is of the upmost
-importance if you want to make sure that people use your platform to its
-fullest extent possible.
-Tell us about
-Stanford’s Content Policy & Society Lab.
-The lab stems from this idea that we don’t talk to each
-other as different stakeholders. We don’t really listen to each other and to
-the challenges that we’re facing. One challenge, for instance, as a civil
-society organization is that we don’t fully understand Silicon Valley
-companies.
-We’ve also organized a set of workshops to create the safest
-place possible to have the most candid conversations on different subjects. The
-first subject that we dealt with was the moderation of dangerous organizations
-and violent extremism. We’ve also had speakers from the Nigerian government, and
-we also heard from an activist from Pakistan focusing specifically on issues
-around human rights — women’s rights in particular — and the moderation of
-dangerous organizations such as the Taliban.
-The second theme of the workshops was about moderation
-beyond social media. Regarding this, everyone thinks of the big companies like
-Facebook and Twitter, but there are other companies that are facing moderation
-challenges and have been quite creative in solving those problems. We wanted to
-make sure that there are high-level employees within tech companies from
-different teams attending the workshops to create the most productive
-environment.
+[Speaker: Introduction / editorial context]
+The debate around online content moderation is not slowing down. People remain bitterly divided over whether social media platforms should take down more content, or not moderate at all. Meanwhile, outside the US, authoritarian regimes are censoring online dissenters and retaliating against citizens who share certain content. How are content moderation experts working to solve these ever-complex issues?
+
+[Speaker: Introduction / editorial context]
+On this episode, I sat down with Julie Owono to discuss why we need clear principles around online speech — centered on free expression — and how these principles can be applied across different countries. Julie is the executive director of Stanford University’s Content Policy & Society Lab, executive director of Internet Without Borders, and a member of the Facebook Oversight Board.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Julie, to get started, tell us about your background at Internet Sans Frontières (or Internet Without Borders).
+
+[Speaker: Julie Owono]
+Julie Owono: It’s a digital rights organization, with digital rights meaning human rights that people enjoy offline. Our assumption is that digital rights should have the same protections as offline ones, which means defending freedom of expression, freedom to speak, and also freedom to access online mediums. Not everyone can afford accessible internet or freely speak because their government either shuts down the internet or limits access to social media through taxes and censorship.
+
+[Speaker: Julie Owono]
+We also focus a lot on issues around privacy and anonymity, because we think both are very interlinked to digital rights. Some people are really keen on having their privacy strongly protected because they are involved in the criticizing their authorities or governments. That can be a very dangerous, risky business.
+
+[Speaker: Shane Tews]
+Are there times when it is appropriate to limit online speech?
+
+[Speaker: Julie Owono]
+There are three important principles to follow when imposing limits on speech.
+
+[Speaker: Julie Owono]
+The first is that your limitation has to be legal. You need a rule that is both clear and accessible. The second is that your limitation should be proportionate. If you wanted to limit the reach of a publication, is taking it down the only way to go about it? Alternatively, could we add interstitials or algorithmically limit the reach?
+
+[Speaker: Julie Owono]
+Third, whatever you’re doing should be necessary. In other words, what is the imperative that justifies the censorship? The imperative could be safety, security, or preventing harm. But the problem with many of the laws is that they create this illusion that moderating the internet is easy. It is not. Especially when you’re a massive platform that deals with a gargantuan amount of content every day, it becomes very complicated.
+
+[Speaker: Shane Tews]
+Being relatively new to the First Amendment as a non-US-native, is there anything that has surprised you as you’ve had to integrate it into your thought process?
+
+[Speaker: Julie Owono]
+In Europe, we have this assumption that there’s simply no limit to free speech in the US. The First Amendment means absolutely no limits. But after coming to the United States two years ago, I started reading academic material about First Amendment issues. What I was surprised to realize is that there is a strong debate about the limits of speech; are you really allowed to say anything and everything?
+
+[Speaker: Julie Owono]
+I also discovered that there is more proximity between international human rights standards with regards to speech and expression and the First Amendment. This is an exercise that we’ve had to do as Facebook Oversight Board members when we were deliberating on a case — the most famous of which involved the former president of the United States.
+
+[Speaker: Shane Tews]
+From your work at the Facebook Oversight Board, what have you taken away from the global presence of Big Tech? What problems have you encountered?
+
+[Speaker: Julie Owono]
+We’ve received lots of cases from North America and Western Europe, but also some from Latin America, Asia, Sub-Saharan Africa, and the Middle East. I’ve come to realize this: We need to do a better job of reaching out to users who do not speak English. Facebook (now Meta) has a hard time making sure all its users who speak a wide array of languages can understand the rules. I’m very curious on how someone wants to enforce a rule that nobody understands in a country. For example, Arabic is a group of related languages, but the US treats Arabic as a monolith, and certain nuances are lost in translation. In other cases, there is not even a translation of the guidelines available. With Punjabi, which is a language widely spoken in Southern Asia, community standards of Facebook were not available for a language spoken by over 100 million people.
+
+[Speaker: Julie Owono]
+When you want to be a global platform, there are some inequities that shouldn’t exist. Removing lingual barriers is of the upmost importance if you want to make sure that people use your platform to its fullest extent possible.
+
+[Speaker: Julie Owono]
+Tell us about Stanford’s Content Policy & Society Lab.
+
+[Speaker: Julie Owono]
+The lab stems from this idea that we don’t talk to each other as different stakeholders. We don’t really listen to each other and to the challenges that we’re facing. One challenge, for instance, as a civil society organization is that we don’t fully understand Silicon Valley companies.
+
+[Speaker: Julie Owono]
+We’ve also organized a set of workshops to create the safest place possible to have the most candid conversations on different subjects. The first subject that we dealt with was the moderation of dangerous organizations and violent extremism. We’ve also had speakers from the Nigerian government, and we also heard from an activist from Pakistan focusing specifically on issues around human rights — women’s rights in particular — and the moderation of dangerous organizations such as the Taliban.
+
+[Speaker: Julie Owono]
+The second theme of the workshops was about moderation beyond social media. Regarding this, everyone thinks of the big companies like Facebook and Twitter, but there are other companies that are facing moderation challenges and have been quite creative in solving those problems. We wanted to make sure that there are high-level employees within tech companies from different teams attending the workshops to create the most productive environment.

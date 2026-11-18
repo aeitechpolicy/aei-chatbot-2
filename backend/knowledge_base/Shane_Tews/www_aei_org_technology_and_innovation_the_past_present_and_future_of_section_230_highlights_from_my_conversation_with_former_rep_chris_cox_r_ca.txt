@@ -1,155 +1,71 @@
 PAGE_TITLE: 
-	The Past, Present, and Future of Section 230: Highlights from My Conversation with Former Rep. Chris Cox (R-CA) | American Enterprise Institute - AEI
+	The Past, Present, and Future of Section 230: Highlights from My Conversation with Former Rep. Chris Cox (R-CA)
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Congress passed
-Section 230 of the Communications Decency Act
-in 1996 to protect nascent online platforms from liability for user-generated content. Section 230 is widely credited for fostering the innovative ecosystem that created today’s successful social media ecosystem, but controversy over online content moderation has made Section 230 a target for reform by both parties. Has Section 230 served its original purpose, and would reforming it do more harm than good?
-I was recently joined on “Explain to Shane” by
-Former Rep. Chris Cox
-, who co-authored Section 230 back in 1996. We discussed his original intent in writing Section 230, the potential costs of reforming the law, and the intersection of Section 230 and private platforms’ First Amendment right of editorial control.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Congressman Cox, you were a co-author of
-Section 230 with then-Rep. and now-Sen. Ron Wyden (D-OR). What issues did you have
-in mind when you were working on this back in 1996?
-It was
-actually a New York court case in 1995, the year before 230 was passed, that
-prompted me to partner with Rep. Wyden, given that we both considered the case
-to set a very dangerous legal precedent. The facts of that case would someday
-be made into a movie — “The Wolf of Wall Street” — about a man named Jordan
-Belfort who ran a New York stock brokerage that was eventually exposed as a
-massive fraud.
-During that
-time, before Belfort’s fraud was exposed, a whistleblower tried to raise the
-alarm on the most popular online platform of the time: Prodigy. Belfort’s
-brokerage firm then brazenly sued Prodigy for libel and demanded hundreds of
-millions of dollars in damages, simply because it hosted allegedly libelous
-content on its platform. Prodigy argued it shouldn’t be responsible for content
-its users created because it hosted thousands of comments that were posted in
-real time. Prodigy itself had no way of knowing whether the Wall Street firm was
-a fraud or not, and never expressed an opinion on whether the Wolf of Wall
-Street was really a bad guy.
-The New York
-court, however, ruled in Belfort’s favor, and that exposed Prodigy to enormous
-liability. The court reasoned that Prodigy had made some efforts at content
-moderation via pretty basic rules aimed at prohibiting online harassment. But
-if Prodigy had instead been an online space where, as the court said, “anything
-goes,” then the court said it wouldn’t have been liable for millions in
-damages. If that were the law, we can all imagine the perverse incentives it
-would create because online platforms would have to refuse to moderate even the
-most awful content in order to protect themselves from damages. Even just
-minimal content moderation would make them legally responsible for
-everything
-their users post. That would
-have been a prescription for turning every online platform hosting user-created
-content into a vulgar and dangerous place.
-The result
-of that year-long effort was what we now know as Section 230. It was signed
-into law in 1996, effectively overturning the Wolf of Wall Street case by
-protecting Good Samaritans who maintain rules of civility online. In place of
-what would have been the rule if the New York decision had been allowed to
-stand, Congress recognized it would be unreasonable for the law to require
-websites to read, understand, and investigate everything posted online in real
-time. To require that would mean losing the quintessential feature of the
-internet, which is real-time communication among millions of people around the
-world.
-There are a number of proposals in Congress
-to amend 230 or scrap it altogether. I’d love to hear your thoughts on these.
-Some are
-thoughtful and some are not, but there are more than one or two proposals to
-just repeal Section 230. Former President Donald Trump talked about doing that;
-President Joe Biden when he was a candidate talked about doing that but has backed
-away. Sen. Lindsey Graham (R-SC) introduced legislation to do this.
-Proposals in
-Congress to repeal Section 230 would quite obviously restore the status quo
-ante if that’s all you did. It would take us back to the state of the common
-law when the Wolf of Wall Street case was decided. If a website is a publisher
-responsible for everything that appears between the covers of a book or the
-front and back pages of a newspaper, just like a publisher, a website would
-have to hold the presses and take the time to read, understand, and investigate
-the truth or falsity of everything that’s posted online. On the internet,
-millions of individuals are the content creators converging on a single
-platform, which is why it is unreasonable to require a website to know about, understand,
-and investigate content that millions of people post in real time.
-Repealing
-the law entirely would return us to the legal no man’s land that necessitated
-230 in the first place. We hear a lot about Big Tech, but there are over 200
-million websites available to every American — all of which are governed by
-Section 230. So taking 230 away really would wreck the internet. All of them
-would either have to stop publishing user contributions or let anything go, no
-matter how gross or illegal it might be, or they might attempt to create
-round-the-clock legal and editorial review teams of hundreds or thousands of
-people, depending on how much they could afford, and attempt impossibly to continually
-monitor every message, video, photo, and blog before it was allowed to be
-posted online. Otherwise they’d face unlimited liability, just like Prodigy
-did.
-Inevitably,
-somebody in this political tug-of-war is going to be unhappy. For my money,
-Congress shouldn’t be focusing on shifting legal liability away from the people
-in the best position to prevent harm, which is the people who create the
-content. Instead, new legislation could be helpful in forcing transparency onto
-websites, including social media, about their content moderation practices.
-In addition to your former colleagues in
-Congress, some state governors, namely in Florida and Texas, have signed bills
-that purport to outlaw censorship of conservative voices on social media
-platforms. You are on the board of directors at NetChoice, which has sued both
-states for the introduction of these laws, but on First Amendment grounds,
-rather than because of Section 230. Can you walk us through that distinction?
-Section 230
-is relatively narrow and the First Amendment is very broad. Section 230 says
-liability for unlawful content rests with the creator of that content. The
-First Amendment says in the most sweeping terms possible that Congress shall
-make no law abridging free speech. And that’s a very well-protected fence
-around what not only the federal government but the state government can do.
-These are the most sweeping terms possible. The rights that are protected are
-those of every individual and every business in America. And that’s
-well-established.
-The
-restraints we’re protected against are those imposed by governments, either
-federal or state — not restraints protected by private actors. So this is where
-the state laws run into trouble. They’re partially preempted by Section 230 to
-the extent that they’re inconsistent with federal law, but they’re almost
-entirely invalid because they attempt to regulate private speech through
-government action. That violates the First Amendment. Under the First
-Amendment, Congress can’t compel private tech platforms to host content they
-would otherwise choose to remove. And Florida and Texas have tried to do that.
-I recently had Neil Fried, a big proponent of Section 230 reform, on the show. He
-argued
-Section 230 (c)(1) lets platforms off the hook for taking no effort to moderate harmful content, creating a perverse economic-legal incentive for online platforms by shielding them from the common-law duty of care that brick-and-mortar businesses are held to by the court.
-He essentially says that if Congress wanted
-to encourage good-faith content moderation, 230 (c)(1) does not do that. How
-would you respond?
-He is right
-that Section 230 essentially has two purposes. But there’s a problem with this
-argument about so-called “duty of care.” Duty of care is part and parcel of negligence
-law. And in negligence law, the question is “did you know” or “should you have
-known?” And the “should you have known” piece contemplates that you didn’t
-actually know, but somebody thinks that you ought to have known.
-Answering
-that question is always subjective, and that’s what 230 is
-not
-. It’s objective. It asks: Who created the content? And in a
-complaint in a lawsuit, a plaintiff has to say the platform had some complicity
-in creating the content. So we don’t want to make every case a question of the
-platform’s state of mind, because it’s totally subjective. If we have a
-subjective rather than objective test, we will turn every lawsuit into a
-multi-year process of discovery, depositions, interrogatories, and pretrial
-motions. Section 230 was meant to prevent that.
-It gets you
-right back to the Wolf of Wall Street problem. Nobody can take on that risk,
-and people will limit the amount of content they allow on the platform. They
-will have less of it, or may have none if their business model doesn’t require
-having customer reviews or whatever. They’ll just do without it. The internet
-would lose all that diversity of user-created content and free speech that we
-have right now.
-If I were
-back in the 1990s, I would counsel both myself and the people still in Congress
-now to be very careful what they wish for, and to be very concerned about
-unintended consequences as they tinker with the foundational law of the
-internet.
+
+[Speaker: Introduction / editorial context]
+Congress passed Section 230 of the Communications Decency Act in 1996 to protect nascent online platforms from liability for user-generated content. Section 230 is widely credited for fostering the innovative ecosystem that created today’s successful social media ecosystem, but controversy over online content moderation has made Section 230 a target for reform by both parties. Has Section 230 served its original purpose, and would reforming it do more harm than good?
+
+[Speaker: Introduction / editorial context]
+I was recently joined on “Explain to Shane” by Former Rep. Chris Cox, who co-authored Section 230 back in 1996. We discussed his original intent in writing Section 230, the potential costs of reforming the law, and the intersection of Section 230 and private platforms’ First Amendment right of editorial control.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Speaker not identified]
+Congressman Cox, you were a co-author of Section 230 with then-Rep. and now-Sen. Ron Wyden (D-OR). What issues did you have in mind when you were working on this back in 1996?
+
+[Speaker: Speaker not identified]
+It was actually a New York court case in 1995, the year before 230 was passed, that prompted me to partner with Rep. Wyden, given that we both considered the case to set a very dangerous legal precedent. The facts of that case would someday be made into a movie — “The Wolf of Wall Street” — about a man named Jordan Belfort who ran a New York stock brokerage that was eventually exposed as a massive fraud.
+
+[Speaker: Speaker not identified]
+During that time, before Belfort’s fraud was exposed, a whistleblower tried to raise the alarm on the most popular online platform of the time: Prodigy. Belfort’s brokerage firm then brazenly sued Prodigy for libel and demanded hundreds of millions of dollars in damages, simply because it hosted allegedly libelous content on its platform. Prodigy argued it shouldn’t be responsible for content its users created because it hosted thousands of comments that were posted in real time. Prodigy itself had no way of knowing whether the Wall Street firm was a fraud or not, and never expressed an opinion on whether the Wolf of Wall Street was really a bad guy.
+
+[Speaker: Speaker not identified]
+The New York court, however, ruled in Belfort’s favor, and that exposed Prodigy to enormous liability. The court reasoned that Prodigy had made some efforts at content moderation via pretty basic rules aimed at prohibiting online harassment. But if Prodigy had instead been an online space where, as the court said, “anything goes,” then the court said it wouldn’t have been liable for millions in damages. If that were the law, we can all imagine the perverse incentives it would create because online platforms would have to refuse to moderate even the most awful content in order to protect themselves from damages. Even just minimal content moderation would make them legally responsible for everything their users post. That would have been a prescription for turning every online platform hosting user-created content into a vulgar and dangerous place.
+
+[Speaker: Speaker not identified]
+The result of that year-long effort was what we now know as Section 230. It was signed into law in 1996, effectively overturning the Wolf of Wall Street case by protecting Good Samaritans who maintain rules of civility online. In place of what would have been the rule if the New York decision had been allowed to stand, Congress recognized it would be unreasonable for the law to require websites to read, understand, and investigate everything posted online in real time. To require that would mean losing the quintessential feature of the internet, which is real-time communication among millions of people around the world.
+
+[Speaker: Speaker not identified]
+There are a number of proposals in Congress to amend 230 or scrap it altogether. I’d love to hear your thoughts on these.
+
+[Speaker: Speaker not identified]
+Some are thoughtful and some are not, but there are more than one or two proposals to just repeal Section 230. Former President Donald Trump talked about doing that; President Joe Biden when he was a candidate talked about doing that but has backed away. Sen. Lindsey Graham (R-SC) introduced legislation to do this.
+
+[Speaker: Speaker not identified]
+Proposals in Congress to repeal Section 230 would quite obviously restore the status quo ante if that’s all you did. It would take us back to the state of the common law when the Wolf of Wall Street case was decided. If a website is a publisher responsible for everything that appears between the covers of a book or the front and back pages of a newspaper, just like a publisher, a website would have to hold the presses and take the time to read, understand, and investigate the truth or falsity of everything that’s posted online. On the internet, millions of individuals are the content creators converging on a single platform, which is why it is unreasonable to require a website to know about, understand, and investigate content that millions of people post in real time.
+
+[Speaker: Speaker not identified]
+Repealing the law entirely would return us to the legal no man’s land that necessitated 230 in the first place. We hear a lot about Big Tech, but there are over 200 million websites available to every American — all of which are governed by Section 230. So taking 230 away really would wreck the internet. All of them would either have to stop publishing user contributions or let anything go, no matter how gross or illegal it might be, or they might attempt to create round-the-clock legal and editorial review teams of hundreds or thousands of people, depending on how much they could afford, and attempt impossibly to continually monitor every message, video, photo, and blog before it was allowed to be posted online. Otherwise they’d face unlimited liability, just like Prodigy did.
+
+[Speaker: Speaker not identified]
+Inevitably, somebody in this political tug-of-war is going to be unhappy. For my money, Congress shouldn’t be focusing on shifting legal liability away from the people in the best position to prevent harm, which is the people who create the content. Instead, new legislation could be helpful in forcing transparency onto websites, including social media, about their content moderation practices.
+
+[Speaker: Speaker not identified]
+In addition to your former colleagues in Congress, some state governors, namely in Florida and Texas, have signed bills that purport to outlaw censorship of conservative voices on social media platforms. You are on the board of directors at NetChoice, which has sued both states for the introduction of these laws, but on First Amendment grounds, rather than because of Section 230. Can you walk us through that distinction?
+
+[Speaker: Speaker not identified]
+Section 230 is relatively narrow and the First Amendment is very broad. Section 230 says liability for unlawful content rests with the creator of that content. The First Amendment says in the most sweeping terms possible that Congress shall make no law abridging free speech. And that’s a very well-protected fence around what not only the federal government but the state government can do. These are the most sweeping terms possible. The rights that are protected are those of every individual and every business in America. And that’s well-established.
+
+[Speaker: Speaker not identified]
+The restraints we’re protected against are those imposed by governments, either federal or state — not restraints protected by private actors. So this is where the state laws run into trouble. They’re partially preempted by Section 230 to the extent that they’re inconsistent with federal law, but they’re almost entirely invalid because they attempt to regulate private speech through government action. That violates the First Amendment. Under the First Amendment, Congress can’t compel private tech platforms to host content they would otherwise choose to remove. And Florida and Texas have tried to do that.
+
+[Speaker: Speaker not identified]
+I recently had Neil Fried, a big proponent of Section 230 reform, on the show. He argued Section 230 (c)(1) lets platforms off the hook for taking no effort to moderate harmful content, creating a perverse economic-legal incentive for online platforms by shielding them from the common-law duty of care that brick-and-mortar businesses are held to by the court.
+
+[Speaker: Speaker not identified]
+He essentially says that if Congress wanted to encourage good-faith content moderation, 230 (c)(1) does not do that. How would you respond?
+
+[Speaker: Speaker not identified]
+He is right that Section 230 essentially has two purposes. But there’s a problem with this argument about so-called “duty of care.” Duty of care is part and parcel of negligence law. And in negligence law, the question is “did you know” or “should you have known?” And the “should you have known” piece contemplates that you didn’t actually know, but somebody thinks that you ought to have known.
+
+[Speaker: Speaker not identified]
+Answering that question is always subjective, and that’s what 230 is not. It’s objective. It asks: Who created the content? And in a complaint in a lawsuit, a plaintiff has to say the platform had some complicity in creating the content. So we don’t want to make every case a question of the platform’s state of mind, because it’s totally subjective. If we have a subjective rather than objective test, we will turn every lawsuit into a multi-year process of discovery, depositions, interrogatories, and pretrial motions. Section 230 was meant to prevent that.
+
+[Speaker: Speaker not identified]
+It gets you right back to the Wolf of Wall Street problem. Nobody can take on that risk, and people will limit the amount of content they allow on the platform. They will have less of it, or may have none if their business model doesn’t require having customer reviews or whatever. They’ll just do without it. The internet would lose all that diversity of user-created content and free speech that we have right now.
+
+[Speaker: Speaker not identified]
+If I were back in the 1990s, I would counsel both myself and the people still in Congress now to be very careful what they wish for, and to be very concerned about unintended consequences as they tinker with the foundational law of the internet.

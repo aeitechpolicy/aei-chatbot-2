@@ -1,3 +1,14 @@
 PAGE_TITLE: 
-	America’s 5G Future: Risks and Rewards (with Tommy Ross) | American Enterprise Institute - AEI
+	America’s 5G Future: Risks and Rewards (with Tommy Ross)
 
+[Speaker: Introduction / editorial context]
+If the US rollout of 5G wireless is to reach its full potential, network security needs to be a priority. But what are the security risks of 5G, and how can the US win the global 5G race?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane sits down with Tommy Ross, senior policy director at BSA | The Software Alliance and author of BSA’s most recent position paper titled “Securing 5G: A Call to Harness Software Innovation,” which discusses the transition from hardware-dominated networking to a software-centric model for 5G. Together, Shane and Tommy address the availability and importance of 5G network security tools.
+
+[Speaker: Introduction / editorial context]
+Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

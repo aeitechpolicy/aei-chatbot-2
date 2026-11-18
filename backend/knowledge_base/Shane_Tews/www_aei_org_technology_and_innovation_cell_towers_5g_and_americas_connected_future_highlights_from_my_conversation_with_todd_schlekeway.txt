@@ -1,135 +1,71 @@
 PAGE_TITLE: 
-	Cell Towers, 5G, and America’s Connected Future: Highlights from My Conversation with Todd Schlekeway | American Enterprise Institute - AEI
+	Cell Towers, 5G, and America’s Connected Future: Highlights from My Conversation with Todd Schlekeway
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-What does
-federal broadband funding mean for the physical side of US internet networks?
-How do interagency battles over next-generation network deployment impact the
-daily operations of tower climbers, technicians, and engineers?
-On the
-latest episode of “Explain to Shane,” I interviewed
-Todd
-Schlekeway
-, president and CEO of
-NATE: The Communications Infrastructure Contractors Association
-,
-to discuss how NATE’s members are navigating today’s telecommunications policy
-issues and working to power both our wired and wireless future networks.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Todd, to kick things off, tell
-us about the work you’ve been doing at NATE and the policy issues on your radar
-screen.
-Todd
-Schlekeway: NATE’s members include a lineup of 1,040 companies from all 50
-states. Our primary membership group is the contractor firms that deploy all
-wireless infrastructure and networks in the US. Within our diverse membership
-group, we also have associate member categories. We have wireless carriers,
-tower owners, engineering firms, training companies, public-safety entities,
-educational institutions, and technology-based companies. So we kind of run the
-gamut across the wireless ecosystem.
+
+[Speaker: Introduction / editorial context]
+What does federal broadband funding mean for the physical side of US internet networks? How do interagency battles over next-generation network deployment impact the daily operations of tower climbers, technicians, and engineers?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I interviewed Todd Schlekeway, president and CEO of NATE: The Communications Infrastructure Contractors Association, to discuss how NATE’s members are navigating today’s telecommunications policy issues and working to power both our wired and wireless future networks.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Todd, to kick things off, tell us about the work you’ve been doing at NATE and the policy issues on your radar screen.
+
+[Speaker: Todd Schlekeway]
+Todd Schlekeway: NATE’s members include a lineup of 1,040 companies from all 50 states. Our primary membership group is the contractor firms that deploy all wireless infrastructure and networks in the US. Within our diverse membership group, we also have associate member categories. We have wireless carriers, tower owners, engineering firms, training companies, public-safety entities, educational institutions, and technology-based companies. So we kind of run the gamut across the wireless ecosystem.
+
+[Speaker: Todd Schlekeway]
 This gives us a good lens into policy — everything including workforce development, spectrum access, coverage maps and mapping, tower-safety issues, unmanned aerial systems, network security, and supply chain. And most of these contractor firms are small businesses, so we weigh in quite frequently on issues that impact small businesses.
-via Reuters
-Everybody is excited about the next
-generation of wireless, also known as 5G. I realize 5G is about much tighter,
-close-proximity equipment, so give us an idea of where you guys fit in that
-space.
-NATE’s
-members have really been on the front lines of deployment for every generation
-of wireless, and 5G is no exception. Our members are diligently deploying 5G
-wireless networks. And because NATE creates a lot of the standards and training
-resources for the industry, we’ve had to make 5G-specific efforts. A lot of the
-work now is being done in bucket trucks, on rooftops, and in downtown corridors
-where they’re deploying 5G remote radio units on street lights.
-So 5G has
-really forced us to evolve as an association. Last year, we got a Department of
-Labor training grant to create a nationwide program for 5G small-cell
-deployment training. On a more specific level, 5G has really forced us to
-evolve from a resource perspective.
-I’d also be
-remiss if I didn’t mention the Federal Communications Commission’s (FCC)
-leadership in modernizing wireless infrastructure. The FCC’s effort in 2018, led
-by Commissioner Brendan Carr, to streamline the Environmental Compliance and
-Historic Preservation Review process — along with state and local reviews — really
-helped provide the fuel to scale 5G in this country and took away a lot of red
-tape. Without efforts like this to remove red tape, the contractors we
-represent can’t deploy, build, or maintain infrastructure and related networks,
-so this was really key.
-How did you guys handle the recent
-kerfuffle between the FCC and Federal Aviation Administration? We thought
-commercial carriers were going to be able to deploy services using C-band
-spectrum starting in December, but then Washington kind of put a halt to
-something that was flowing nicely.
-That has
-been a frustrating issue to follow. NATE actually weighed in with a coalition led
-by the Cellular Telecommunications Industry Association; we believe the FCC has
-the spectrum expertise and engineers who studied that issue diligently. Safety
-is a core tenet of NATE, so we are not dismissing potential safety concerns.
-But we believe that with all that money being spent on spectrum, the wireless
-industry has made every effort to make concessions. We think C-band can now be
-deployed safely and want that to happen, and we know the carriers do too
-because they’re the major customers in the industry. They’ve spent billions on
-it and are working to scale 5G, as I mentioned.
-If you read
-the news articles, you’ll see that 40 other countries are utilizing this
-spectrum safely. And so we’ll continue to work with the aviation community. But
-at the end of the day, the reason NATE weighs in on spectrum issues is because
-spectrum is a bunch of invisible airwaves, and it takes someone to turn those airwaves
-into connectivity. You have to deploy the new equipment on the towers, and
-that’s what our members do. Like Commissioner Carr says, it’s not just magic or
-pixie dust that makes that happen. There are contractor companies. These are
-America’s small businesses. These are technicians. And so we kind of transform
-those airwaves into connectivity.
-Tell us a little more about the training
-programs NATE runs.
-As you can
-imagine, training is paramount in our industry given that a lot of the work is
-done at elevation. As I mentioned earlier, NATE creates training standards. We
-also have around 34 private training companies as NATE members. A lot of the
-training right now in the industry happens at the employer level because these
-businesses are so small, so they’ll either have a third-party private training
-company come train technicians, or they’ll get someone in-house certified to do
-so.
-A couple
-training areas are gaining momentum, which will be great for the industry.
-First, we’re making inroads into getting more training programs up and running
-at community colleges, technical schools, and career centers. Second, there’s
-an industry-specific program called the Telecommunications Industry Registered
-Apprenticeship Program that is gaining influence and traction. These are super
-important programs if we’re going to move the needle on industry workforce
-needs.
-All of this
-funding flowing into the industry is great, but you need manpower behind it to
-accomplish your goals — whether it’s scaling 5G or closing the digital divide.
-You have to have capable men and women behind it who can deploy it and do so
-safely. So we’re focused on these programs heavily and think they offer models
-we should emulate nationally.
-I also
-wanted to highlight NATE’s work over the past year with the state of Ohio. They
-just announced plans to use our “Tower Tech I” course curriculum at three
-community colleges, launching later this spring. These are 12-week pilot cohort
-programs that prepare students to receive industry tower-training credentials
-from the National Wireless Safety Alliance, which will make them employable and
-able to apply these credits to future associate’s degrees at those schools.
-Your national show in Las Vegas started
-yesterday; what are you guys focusing on there?
-First, DISH Chairman
-and Co-Founder Charlie Ergen and Commissioner Carr are hosting a keynote
-Q&A.  The timing couldn’t be better
-because DISH has pegged Las Vegas as its first 5G market, and they’ve been
-doing beta testing for quite some time. They are anticipating lighting up their
-5G service there in the first quarter of this year.
-And of
-course, when you represent all these small-business contractor firms, any time
-a new carrier or major customer like this comes into the industry, that’s a
-major point of interest. Here, Ergen will be talking directly to future companies
-who are going to help them build out their networks — not only in Las Vegas and
-the state of Nevada, but nationwide.
-The hallmarks of our program are the educational sessions and the trade show. We have a very vibrant trade show floor, and one of the more exciting aspects of this show is: We are going to have a world premiere of “
-Vertical Freedom
-,” which is our feature-length movie that we produced over the last 24 months with Storybuilt Media, a movie production firm. It is going to tell the story of six technicians around the country of different, diverse backgrounds and geographical origins who do different work in the industry. Camera crews followed these technicians around and were embedded with their crews both on and off the job for the better part of last year. So we’re going to tell that story professionally and personally, which really will, I think, help the industry. The film’s target audience is mainstream America. We want them to see this film and say, “Hey, that could be an option for my son or daughter.” So “Vertical Freedom” is the name of this movie. It’s going to have its world premiere in Vegas, and then we’ll see where it goes. I’m guessing your listeners will be able to see it or access it on one of the more prominent platforms sometime later in 2022 or 2023.
+
+[Speaker: Todd Schlekeway]
+Everybody is excited about the next generation of wireless, also known as 5G. I realize 5G is about much tighter, close-proximity equipment, so give us an idea of where you guys fit in that space.
+
+[Speaker: Todd Schlekeway]
+NATE’s members have really been on the front lines of deployment for every generation of wireless, and 5G is no exception. Our members are diligently deploying 5G wireless networks. And because NATE creates a lot of the standards and training resources for the industry, we’ve had to make 5G-specific efforts. A lot of the work now is being done in bucket trucks, on rooftops, and in downtown corridors where they’re deploying 5G remote radio units on street lights.
+
+[Speaker: Todd Schlekeway]
+So 5G has really forced us to evolve as an association. Last year, we got a Department of Labor training grant to create a nationwide program for 5G small-cell deployment training. On a more specific level, 5G has really forced us to evolve from a resource perspective.
+
+[Speaker: Todd Schlekeway]
+I’d also be remiss if I didn’t mention the Federal Communications Commission’s (FCC) leadership in modernizing wireless infrastructure. The FCC’s effort in 2018, led by Commissioner Brendan Carr, to streamline the Environmental Compliance and Historic Preservation Review process — along with state and local reviews — really helped provide the fuel to scale 5G in this country and took away a lot of red tape. Without efforts like this to remove red tape, the contractors we represent can’t deploy, build, or maintain infrastructure and related networks, so this was really key.
+
+[Speaker: Todd Schlekeway]
+How did you guys handle the recent kerfuffle between the FCC and Federal Aviation Administration? We thought commercial carriers were going to be able to deploy services using C-band spectrum starting in December, but then Washington kind of put a halt to something that was flowing nicely.
+
+[Speaker: Todd Schlekeway]
+That has been a frustrating issue to follow. NATE actually weighed in with a coalition led by the Cellular Telecommunications Industry Association; we believe the FCC has the spectrum expertise and engineers who studied that issue diligently. Safety is a core tenet of NATE, so we are not dismissing potential safety concerns. But we believe that with all that money being spent on spectrum, the wireless industry has made every effort to make concessions. We think C-band can now be deployed safely and want that to happen, and we know the carriers do too because they’re the major customers in the industry. They’ve spent billions on it and are working to scale 5G, as I mentioned.
+
+[Speaker: Todd Schlekeway]
+If you read the news articles, you’ll see that 40 other countries are utilizing this spectrum safely. And so we’ll continue to work with the aviation community. But at the end of the day, the reason NATE weighs in on spectrum issues is because spectrum is a bunch of invisible airwaves, and it takes someone to turn those airwaves into connectivity. You have to deploy the new equipment on the towers, and that’s what our members do. Like Commissioner Carr says, it’s not just magic or pixie dust that makes that happen. There are contractor companies. These are America’s small businesses. These are technicians. And so we kind of transform those airwaves into connectivity.
+
+[Speaker: Todd Schlekeway]
+Tell us a little more about the training programs NATE runs.
+
+[Speaker: Todd Schlekeway]
+As you can imagine, training is paramount in our industry given that a lot of the work is done at elevation. As I mentioned earlier, NATE creates training standards. We also have around 34 private training companies as NATE members. A lot of the training right now in the industry happens at the employer level because these businesses are so small, so they’ll either have a third-party private training company come train technicians, or they’ll get someone in-house certified to do so.
+
+[Speaker: Todd Schlekeway]
+A couple training areas are gaining momentum, which will be great for the industry. First, we’re making inroads into getting more training programs up and running at community colleges, technical schools, and career centers. Second, there’s an industry-specific program called the Telecommunications Industry Registered Apprenticeship Program that is gaining influence and traction. These are super important programs if we’re going to move the needle on industry workforce needs.
+
+[Speaker: Todd Schlekeway]
+All of this funding flowing into the industry is great, but you need manpower behind it to accomplish your goals — whether it’s scaling 5G or closing the digital divide. You have to have capable men and women behind it who can deploy it and do so safely. So we’re focused on these programs heavily and think they offer models we should emulate nationally.
+
+[Speaker: Todd Schlekeway]
+I also wanted to highlight NATE’s work over the past year with the state of Ohio. They just announced plans to use our “Tower Tech I” course curriculum at three community colleges, launching later this spring. These are 12-week pilot cohort programs that prepare students to receive industry tower-training credentials from the National Wireless Safety Alliance, which will make them employable and able to apply these credits to future associate’s degrees at those schools.
+
+[Speaker: Shane Tews]
+Your national show in Las Vegas started yesterday; what are you guys focusing on there?
+
+[Speaker: Todd Schlekeway]
+First, DISH Chairman and Co-Founder Charlie Ergen and Commissioner Carr are hosting a keynote Q&A. The timing couldn’t be better because DISH has pegged Las Vegas as its first 5G market, and they’ve been doing beta testing for quite some time. They are anticipating lighting up their 5G service there in the first quarter of this year.
+
+[Speaker: Todd Schlekeway]
+And of course, when you represent all these small-business contractor firms, any time a new carrier or major customer like this comes into the industry, that’s a major point of interest. Here, Ergen will be talking directly to future companies who are going to help them build out their networks — not only in Las Vegas and the state of Nevada, but nationwide.
+
+[Speaker: Todd Schlekeway]
+The hallmarks of our program are the educational sessions and the trade show. We have a very vibrant trade show floor, and one of the more exciting aspects of this show is: We are going to have a world premiere of “Vertical Freedom,” which is our feature-length movie that we produced over the last 24 months with Storybuilt Media, a movie production firm. It is going to tell the story of six technicians around the country of different, diverse backgrounds and geographical origins who do different work in the industry. Camera crews followed these technicians around and were embedded with their crews both on and off the job for the better part of last year. So we’re going to tell that story professionally and personally, which really will, I think, help the industry. The film’s target audience is mainstream America. We want them to see this film and say, “Hey, that could be an option for my son or daughter.” So “Vertical Freedom” is the name of this movie. It’s going to have its world premiere in Vegas, and then we’ll see where it goes. I’m guessing your listeners will be able to see it or access it on one of the more prominent platforms sometime later in 2022 or 2023.

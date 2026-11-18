@@ -1,0 +1,140 @@
+PAGE_TITLE: 
+	How Congress Could Make Your Smartphone Less Secure (with Patrick Hedger) — full transcript
+
+[Speaker: Introduction / editorial context]
+ASI Explain to Shane: How Congress Could Make Your Smartphone Less Secure (with Patrick Hedger) Episode # 55 | April 5, 2022 | Shane Tews and Patrick Hedger
+
+[Speaker: Shane Tews]
+Shane Tews: Welcome to "Explain to Shane." I'm your host, Shane Tews, at the American Enterprise Institute. On this podcast, I interview tech industry experts to explain how the apps, services, and structures of today's information technology system work, and how they shape our social and economic life. Cybersecurity and privacy protections should be a priority for our government representatives, especially when the President of the United States is making public statements to back the Department of Homeland Security's (DHS) "Shields Up" program that urges private-sector companies and citizens to harden their cyber defenses and their digital assets immediately. There are daily warnings of scams run on both consumers and corporations about fraud incidents that are at a record high, as well as ransomware attacks. Yet lawmakers on Capitol Hill and in the state capitals are introducing legislation that would weaken device security on mobile devices in the name of increasing competition. DHS themselves have been preaching against what this legislative proposal is looking to make law. Today, we look at the Open [App_ Markets Act legislation that would mandate that all applications be allowed on mobile app stores. This is a practice known as "sideloading, " which means the software downloaded on a device will no longer go through the mobile operating system security review. These proposed laws would disable the current vetting process that searches for potential malware, Trojans, root kits, spyware, bots, as well as the privacy and security protections. Looking at the present Russian-Ukraine conflict, this legislation would mandate that Apple and other mobile app platforms would no longer have the ability to remove Russian apps like RT and Sputnik. Both these mobile apps have been highlighted as the key to systematic information manipulation by the Russian government. The US State Department has sent out a warning about the misinformation spread on these apps and the European Union has sanctioned both apps, banning them from their digital marketplaces. If this Senate legislation were to pass today, the Russian misinformation outlets could take the mobile app store owners to court and insist that the misinformation apps be placed back on. In this time of heightened cybersecurity awareness and concern around misinformation, why is this type of legislation being considered? Shouldn't we be looking to protect our digital economy and encourage governments to
+
+[Speaker: Shane Tews]
+continue to inform citizens with cybersecurity alerts rather than taking our shields down around mobile devices? Today's guest is Patrick Hedger. Patrick is executive director of the Taxpayers Protection Alliance, which recently launched the App Security Project, a new initiative to highlight the importance of the app economy and why it's needed to have the same strong security and privacy protections for users as we expect on any other software. Patrick joins today's podcast to talk about why Congress should be working to promote innovation and individual device protection, like we've recently heard in the president's statement on the importance of the Shields Up program, keeping awareness high around cybersecurity, rather than demand tech companies lower their guard around security with cyberattacks and criminal behavior at an all-time high by weakening security standards through legislation. Patrick, welcome to "Explain to Shane." Thank you for being here to talk about the importance of enhancing today's digital economy through trust and security as it pertains to current legislation through Congress and on online competition. There have been these bills that the House passed last year. The Senate is—I can't say they're even muddling through them. They' ve been running through them and then they keep introducing more, I think, because they think it s tun. So to start with, let's start with the Open App Markets Act, which is currently in the Senate. It would demand that tech companies operate applications, which we call apps, on their marketplace to lower their guard on security, demanding software be eligible to downloading, possibly omitting the vital step of vetting—the usually human interaction that's added to an app at the app store. And then there's a lot of practical application on this legislation that seems that it's coming out on the wrong side of the equation, that's saying we're lowering our guard and our barriers to getting into something versus raising them in a cybersecurity perspective.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah, you're right about that. And there's a couple of ironic things there. Talk about skipping a step in the equation: This legislation was passed out of Senate Judiciary without having an official legislative hearing. So the Congress is skipping a step there. They're trying to claim that some of these antitrust hearings that they've had count as legislative hearings for the bill, but that's just not the case. The bill went straight to a markup and was voted out of committee without any of the proper vetting or consideration of some of the serious cybersecurity concerns that are here. But effectively what this bill would do is really kind of turn your smart device, your smartphone into something more akin to an old laptop where you can download kind of anything and everything from the open web. And some people like that. But for the most part, most people just need their smartphone to work on a regular basis and on a reliable basis because increasingly, your smart device is becoming the one thing you leave the house with. It's your louse keys. It's your car keys. It's your—even now, the Iransportation Security Idministration (TSA) accepts some forms of identification on vour smartphone And there's, of course, Apple Pay and Google Pay and things like that. It is your wallet and it is your key chain. And that needs to work on almost a 100-percent basis. And people have a security expectation there that | don't think that they
+
+[Speaker: Patrick Hedger]
+have with a more open device like a personal computer or a laptop. So that's where | think this legislation is really, really misguided. And the proponents of this legislation, I mean, they'Il say as much. You've got Bruce Schneier who sent a letter to Senate Judiciary saying, "Oh, these cybersecurity concerns, you know, that's a moot point because, you know, people can just download their own antivirus software or cybersecurity software to these devices." And it's like, okay, well, why are we shifting the burden from trillion- dollar tech companies protecting your cybersecurity to you? I think that's just adding an unnecessary step when folks have already signaled that they like these devices as-is. I mean, Apple came in to a market with a huge market share for Microsoft and Blackberry with a more closed device that gave people that sense of security, and that it's almost foolproof. You can go into the app store, you can download an app, and not have to look into the background of the developer of the app because you know that Apple has vetted that developer, or that developer has met a certain bare minimum of standards to be able to sell the app on the app store. And trying to get rid of that at this time, I think, is, I mean, grossly misguided. We're recording today, and just minutes ago, the White House said ' up, Russia is getting desperate. They' re looking tor ways to put pressure on us through cyberattacks." And they said effectively to businesses, "Use everything at your disposal to increase cybersecurity." And you have allies in Congress of the president basically trying to outlaw a lot of those things.
+
+[Speaker: Shane Tews]
+Shane Tews: Iactually think they—did they probably say "shields up," but maybe Biden said "guards up?" Just wondering.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah, "shields up," but we're going to outlaw some of the most effective shields.
+
+[Speaker: Shane Tews]
+Shane Tews: Right.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: It doesn't make any sense.
+
+[Speaker: Shane Tews]
+Shane Tews: So this is something that obviously got your attention. Several months ago, you started, actually, a new organization specifically around this. So tell us about
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah. So at the Taxpayers Protection Alliance Foundation, we started the App Security Project. And the Taxpayers Protection Alliance Foundation is also a consumer organization; we're a taxpayer and consumer watchdog organization. And this felt natural because | don't think a lot of people understand the threat to the expectations that they have of their smart devices presented by this kind of legislation. Again, most people know that when they leave the house, for the most part, your iPhone or your Android is going to work pretty well and it's going to be pretty reliable so long as you've got a good charge in it. You can rely on that to pay for things, to get on public transit, to open your car door, to open your home, to, you know, also to take care of things going on in your smart home, right? You know, there's increasingly people monitoring their thermostats and
+
+[Speaker: Patrick Hedger]
+things like that remotely from their smart device. It's becoming an integral part of our lives—and not just the lives of the really tech savvy. But, you know, you can, for the most part, give your iphone to your grandparents or your parents and unlike technology in the past, it's hard tor them to screw it up. You know, you don't have to come over and fix the VCR ike in the old days, or, "Oh, I hit this button on the remote. I can't get it back to the channels I wanted." Thev're prettv foolproof devices. And I think that we're in an environment right now where you have a lot of beople that are advısing and pushing tor things on Capitol Hill and tech policv 'such] that we have almost a tyranny of experts. Because you've got folks that are very tech savvy that like a more open ecosystem. And that's great for them. That's a tradeoff that they can make. But the average consumer isn't looking to build their own computer in their basement and have the most open system. They just need something that works tor them on a day-to-day basis. And I think there's a real disconnect there.
+
+[Speaker: Shane Tews]
+Shane Tews: Yeah, I'm an Apple ecosystem person. I'm not shy about that because there's so many things I don't have to do every time. When I see somebody with a non-Apple device who doesn't have an entire IT department behind them, I'm like, "What are you doing?"
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah.
+
+[Speaker: Shane Tews]
+Shane Tews: "It is so much harder." So the challenge that has been talked about is something called "sideloading." So explain to us the problems and concerns with sideloading.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah. So sideloading is essentially allowing devices to run software that hasn't first gone through the vetting process such as the Apple app store, right? You can't actually go into your browser on your iPhone right now and just download software and run it on the phone. The way to run software on the phone on an iPhone in that ecosystem is: It has to come through the app store. Sideloading basically allows for developers to go around the app store. There are a couple reasons they want to do that. The main one is to essentially bypass Apple's apps and payment system. So that's putting more money in the hands of big videogame developers and things like that. So there's where a lot of the pressure for this is coming. But there are systems out there that do allow some sideloading. You've got the Android ecosystem, which is a more open ecosystem, that does allow sideloading, which is, again, just downloading software kind of directly from the open web. There's a tradeoff there. You do have access to more applications and potential software to run on your smart device if you have an Android. But at the same time, the data shows that Androids are, you know, somewhere in the double- digits times more likely to be infected with malware than an Apple device. And that's not necessarily a bad thing because again, you get more access. So if you're more tech-savvy person and you know what you're looking tor, an Android device might be better for you. But again, if you're just kind of the average consumer, you're looking for a device to buy for your elderly parent that you know is reliable for them, you may favor a more closed ecosystem
+
+[Speaker: Patrick Hedger]
+that's foolproof like Apple. What this legislation unfortunately does under the guise of creating more choice through sideloading is actually reduce choice at the hardware level and at the operating system level by reducing the choice between a closed, foolproof system and a more open ecosystem that does allow sideloading. So sideloading is a huge concern because it's just, again, kind of turning the smart devices that we have today into, again, like the laptops and personal computers of old and even of today where I think people fully expect that if they click on a bad link on their laptop or download some file and open something that they re not sure where it came trom, they could get any number of kinds of malware. Whereas I think people go into the app stores today ano say, "I don't really care. This looks like the best app; I'm not going to look into who is offering it and I'm just going to download it and not really worry about all my credit card information being stolen," because they don't have to.
+
+[Speaker: Shane Tews]
+Shane Tews: So one of the things that has gotten more news—it's always been around, but it's interesting that it's gotten attached to what's going on with Russia and Ukraine—is that back in the Crimea situation in 2014 that a lot of people were downloading incognito apps. So again, this is before some of these layers of protection had come on and they would download it thinking it was doing A and what it was really doing was feeding information back to one or the other side. And that would include GPS, all the information you might want if you were having a military operation. So l think that's been part of the "Shields Up." Youknow, like, be aware of every type of information that someone is trying to flow off of this. Sometimes it's a criminal, sometimes it's an act of war or an act of personal—somebody, you know, doing tracking apps. You see that a lot in areas with domestic violence. And, you know, that's an area that we haven't really touched on much. But again, it's one of the bigger areas that, you know, people just download something on somebody's phone. They don't know exactly where that intormation flow was coming trom. And it's very challenging to know, like, when you think you've turned it off. I actually was using an app yesterday that was using my geolocation and it probably took me seven tries, including turning my phone completely off, to realize that it had stopped. And the only reason why I knew it was still going is when Apple updated and it had a blue dot on the left side, and I was like, "That app is still running." And |just couldn't—finally | was like, you know, after all of this I kept turning it off and it finally decided to do that. But until those security measures were in place, you wouldn't know. And you wouldn't know that your audio was being used or you, you know, I mean now I'm a big fan of knowing. I was also someplace yesterday and they said, "Well, we're going to use, we need your phone number and we're going to use this to market to you and blah, blah, blah." And I said, "No, you are not." Ano they're like, "What do you mean?" I go, "Well, that's actually my option. Now | get to say no to that." And the app transparency project that they're working on is giving me a virtual way of saying no. Like, I had to say to the woman at this store that, you know, why do you want my phone number? Oh, so you can
+
+[Speaker: Shane Tews]
+continue to market to me? No, thank you.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah, it's bizarre right now. We're kind of being told by the proponents of these bills, these antitrust bills, that what they're trying to do is increase consumer choice. But really, it comes at the expense of empowering consumers. You know, it's not just the sideloading. I mean, some of the other legislation that we're seeing, you know, has this strong deterrence against self- preferencing. But what is self-preferencing? It's not really well-defined by this bill. And so some of the security features and security software that's inherently built into either your Apple or your Google device or even Microsoft device or whatever, is it self-preferencing that your Android phone comes preloaded with some sort of Google antivirus or cybersecurity-related software? That question remains an open question under a lot of this legislation, and unfortunately you could see a deterring effect where companies begin to really pare back some of the offerings that they have. And I think the best way to equate this is to look at any other kind of technology, right? Would you want to live in a world where because General Motors has a significant market share they can't install the kinds of airbags they want and pre-install those in the car? Right? It's not that these bills explicitly make things like that illegal; it's that they kick the decisions down to either unelected bureaucrats or judges in court cases. And it leaves an ambiguity as to how much self-preferencing—again, just oe ings e eingeles orno. inl sterene burden of proof in these cases as well. So companies are guilty of anticompetitive conduct and then have to prove themselves innocent. And that creates such a strong deterrence from ever offering the most protections, the best protections, the systems that these companies are most familiar with and know works best with their other systems. So l think there's iust too many question marks there to the point that a lot of companies are just going to say, "You know what? I'm going to sell you a blank iPhone or a blank Android and, you know, good luck." And'I don't think that's really what consumers want.
+
+[Speaker: Shane Tews]
+Shane Tews: It's not a world | want to go back into. It was no fun when you had to figure all that stuff out yourself.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Right.
+
+[Speaker: Shane Tews]
+Shane Tews: But I'm also curious when you're talking about self-preferencing, like, this is just for the digital world. When is it going to hit big boxes? What's going to happen next time | qo into a Satewav and | want to buy a Sateway brand or a Costco brand or, you know, I mean, it doesn't seem to inhibit them and it's the exact same activity.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah, exactly,I think more rules and regulations and legislation really need to be neutral to what market they're—neutral to the market as a whole. If it's okay
+
+[Speaker: Patrick Hedger]
+for, again, like, a Costco-—everybody likes the Kirkland brand—if it's okay for them to self-preference their products and offer them at a lower price or in a more favorable store location, there's no reason why tech companies shouldn't really be able to do the same thing. I think that's just a question of basic fairness. But that sort of also gets to the question of: Why would, you know, members of Congress be pursuing legislation that has all of these really clear cybersecurity holes and threats? You know, why is there this rush? And I think it's because they don't want to stop at the tech sector. They just, you see, the tech sector presents the first case where you've got Republicans and Democrats really mad at the same sector for a lot of different reasons. But there's this political appetite to take a bite out of those companies. But the long game-and we ve already seen this—the Democrats have kind of played their hands with some new legislation that they've introduced, the Prohibiting Anticompetitive Mergers Act, which would basically prohibit any merger larger than $5 billion. And it's retroactive to 2000, I think, and that shows you the direction Democrats want
+
+[Speaker: Shane Tews]
+Shane Tews: Wait—back in 2000, $1 billion was a lot of money. Now it doesn't—it's like somebody's beach house in Malibu, right?
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Exactly. There's the other problem, too. It's lot of arbitrary thresholds that are kind of moving targets. But that self-preferencing that goes on elsewhere in the economy is the next target. Silicon Valley really to me just seems like the proving ground tor where tolks want to take antitrust law. And they ve said as much. I mean, you've got Sen. Amy Klobuchar (D-MN) openly saying that it's "everything from caskets to cat food" which, to me, tells me those are such obscure examples that there isn't that much concentration in the market. But | digress. They're looking to go use antitrust as a hammer to go atter every last sector that's politically disfavored from Bia Pharma to Bia Agriculture to, I mean, you name it, any sort of sector that catches political ire will be next after—if bills like this which inherently weaken our understanding of antitrust move forward.
+
+[Speaker: Shane Tews]
+Shane Tews: Now I'm going to be fascinated about cat food, because I don't have a cat and I didn'tknow there was a fixed market.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Right, yeah, exactly.
+
+[Speaker: Shane Tews]
+Shane Tews: Or isthere? I don'tknow. Yeah, it seems the antitrust moving into this area that doesn't seem to be very proven and also knowing that these are companies that come and go at a relatively quick pace compared to other industries, you're seeing some of them right now that might not make it through the next
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Right.
+
+[Speaker: Shane Tews]
+Shane Tews: So, you know, why do you want to crush them when they're in the middle of trying to kill themselves? You know, and something else is going to come in right behind them and grab people's imagination and allow them to do the marketing. That is what most of it gets funded by anyway. I mean, it's
+
+[Speaker: Shane Tews]
+interesting because I don't know how much of this is actually consumer harm. I don't think we've seen a lot of actual evidence to that, but there's certainly a lot of consumer entertainment going on around this. But I don't want it to necessarily be the Senate. I'd like to see the Senate be doing things that are much more serious.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah. You raise a great point there. I mean, whether it's the $5 billion threshold in the Prohibiting Anticompetitive Mergers Act or—there's a bill that Sen. 1om Cotton (R-AR) and Sen. Klobuchar put forward that had a, I believe, $600 billion market cap threshold for preventing companies, any company above that market cap from making any new mergers or acquisitions, ever. And it's funny now-
+
+[Speaker: Shane Tews]
+Shane Tews: Ever?
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Ever. Yeah.
+
+[Speaker: Shane Tews]
+Shane Tews: And that's just in America.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Right.
+
+[Speaker: Shane Tews]
+Shane Tews: So all the venture capital money then moves somewhere else, right?
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Exactly. There's all sorts of problems with that legislation, not least of which is: It seems to pretty explicitly carve out Arkansas-based Walmart and Minnesota- based Target, among other major retailers. But what's funny about that is that to your point about companies that are—that this market is so dynamic and these companies are coming and going, Facebook (Meta now) over the course of less than a month, they went from being covered by that legislation with a $600 billion market cap threshold to no longer covered based on the drop in their market value. And a lot of that drop in their market value actually has to do with privacy, consumer privacy-enhancing systems that Apple was free to put in place that would be outlawed by other antitrust legislation that we see. So the idea that this is consumer-focused, I think, is totally ridiculous. This is about empowering other competitors in the sottware ecosystem space at the expense of some of the largest companies in this country.
+
+[Speaker: Shane Tews]
+Shane Tews: Well, thank you very much for your time. We want to follow along what you're up to; tell us where to find the work that you're doing.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Yeah, sure. First and foremost is: Protectingtaxpayers.org is the website of the Taxpayers Protection Alliance Foundation. But the website for our project specific to these issues, the App Security Project, is appsecurityproject.org. So pretty easy to remember.
+
+[Speaker: Shane Tews]
+Shane Tews: Great, Patrick, thank you for being here.
+
+[Speaker: Patrick Hedger]
+Patrick Hedger: Hey, thank you.
+
+[Speaker: Shane Tews]
+Shane Tews: Thank you for listening to another episode of "Explain to Shane." For more episodes, subscribe to the podcast on Spotify, Apple Podcasts, or your preferred listening platform. If you enjoyed this episode, leave us a review, and
+
+[Speaker: Shane Tews]
+tell your triends and colleagues to tune in. We'll see you on the next episode of "Explain to Shane."

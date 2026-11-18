@@ -1,131 +1,56 @@
 PAGE_TITLE: 
-	The Battle for Global Internet Governance: Highlights from My Conversation with Dominique Lazanski | American Enterprise Institute - AEI
+	The Battle for Global Internet Governance: Highlights from My Conversation with Dominique Lazanski
 
-China claims it is tired of western-centric internet governance, and now seeks to establish a less centralized global internet based on newer, native products that reflect China’s policy agenda. What would the success of China’s model mean for the future of internet governance? What would it mean for human rights?
-Dominique Lazanski
-, principal consultant of Last Press Label, a UK consultancy that specializes in cybersecurity and internet policy, joined the latest episode of “Explain to Shane” to discuss her new essay,
-“Standardising the Splinternet: How China’s Technical Standards Could Fragment the Internet.”
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-.
-Shane Tews: Dominique, thank you for this great paper
-that you, Emily Taylor, and Stacie Hoffmann wrote, titled “Standardizing the
-Splinternet: How China’s Technical Standards Could Fragment the Internet.” This
-is an issue I’ve been following for quite a while, but you did a very good job
-of being succinct in the topic. It’s really about how the Chinese are learning
-to game the standards process to make sure the weights go in their favor. So
-explain the importance of the standards process to us.
-Dominique Lazanski: Back
-before liberalization, the standards process was really important for
-government in terms of spectrum and managing telephones and all of that stuff.
-That’s done, and was done, in the UN. Then the internet came around in the ’70s
-and ’80s through bottom-up, very spontaneous, working-together processes that
-were quite messy. The standards that developed on the internet that are used,
-but are not formal, in addition to TCP/IP, which we all know and love,
-basically developed very much as “you’re using it and that happens.” Over at
-the UN, and in other standards organizations like 3GPP, which does standards
-for 5G, as well as regional standards groups like ETSI and others, there’s a
-more formal process that comes together, and primarily industry is driving
-standards that will be adopted and used.
-There was a conscious choice, which is a very detailed
-story, but what happened was members of the ITU in the late ’80s chose not to
-standardize the internet. And because of that, it’s gone to the Internet
-Engineering Task Force (IETF). There’s a lot of acronyms in this, as you know,
-which has developed a bottom-up process, through the stewardship initially of
-Vint Cerf and others in the Internet Society. It’s again very messy but very
-multi-stakeholder. I know you just had David Gross on talking about the IGF.
-Well, that process effectively is transposed into the internet technical
-processes and it’s very fluid, so the gap that’s been left at the UN has
-increasingly been filled by China.
-What’s interesting
-about standards, as you point out in your paper, is that once a company or a
-government has chosen a standard, it tends to lock them into a specific path
-that can become outdated and substandard quickly, which is why the internet
-runs on requests for information, which are considered best current practices
-because they’re easier to update. Is that going to be a challenge? When do you
-use a standard, and when do you just say “best practices”?
-That’s a very good question. They’re now being used
-interchangeably. But I guess the thing that’s happening now is if you want to
-standardize something that’s more finite, like how the network communicates
-with a mobile phone to authenticate it, for example, things like that are
-something that doesn’t change. The actual physical technology might change, but
-the process and the technical aspect of it doesn’t change, whereas where the
-internet is the growth of encryption and a number of other issues that you
-probably talked about — encrypted DNS and various things like that — have been
-typically put into use as cases first, and then brought to the IETF, became an
-RFC, and then became more standardized. I think the language is something
-that’s shifting quite a lot now.
+[Speaker: Introduction / editorial context]
+China claims it is tired of western-centric internet governance, and now seeks to establish a less centralized global internet based on newer, native products that reflect China’s policy agenda. What would the success of China’s model mean for the future of internet governance? What would it mean for human rights? Dominique Lazanski, principal consultant of Last Press Label, a UK consultancy that specializes in cybersecurity and internet policy, joined the latest episode of “Explain to Shane” to discuss her new essay, “Standardising the Splinternet: How China’s Technical Standards Could Fragment the Internet.”
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here.
+
+[Speaker: Shane Tews]
+Shane Tews: Dominique, thank you for this great paper that you, Emily Taylor, and Stacie Hoffmann wrote, titled “Standardizing the Splinternet: How China’s Technical Standards Could Fragment the Internet.” This is an issue I’ve been following for quite a while, but you did a very good job of being succinct in the topic. It’s really about how the Chinese are learning to game the standards process to make sure the weights go in their favor. So explain the importance of the standards process to us.
+
+[Speaker: Dominique Lazanski]
+Dominique Lazanski: Back before liberalization, the standards process was really important for government in terms of spectrum and managing telephones and all of that stuff. That’s done, and was done, in the UN. Then the internet came around in the ’70s and ’80s through bottom-up, very spontaneous, working-together processes that were quite messy. The standards that developed on the internet that are used, but are not formal, in addition to TCP/IP, which we all know and love, basically developed very much as “you’re using it and that happens.” Over at the UN, and in other standards organizations like 3GPP, which does standards for 5G, as well as regional standards groups like ETSI and others, there’s a more formal process that comes together, and primarily industry is driving standards that will be adopted and used.
+
+[Speaker: Dominique Lazanski]
+There was a conscious choice, which is a very detailed story, but what happened was members of the ITU in the late ’80s chose not to standardize the internet. And because of that, it’s gone to the Internet Engineering Task Force (IETF). There’s a lot of acronyms in this, as you know, which has developed a bottom-up process, through the stewardship initially of Vint Cerf and others in the Internet Society. It’s again very messy but very multi-stakeholder. I know you just had David Gross on talking about the IGF. Well, that process effectively is transposed into the internet technical processes and it’s very fluid, so the gap that’s been left at the UN has increasingly been filled by China.
+
+[Speaker: Shane Tews]
+What’s interesting about standards, as you point out in your paper, is that once a company or a government has chosen a standard, it tends to lock them into a specific path that can become outdated and substandard quickly, which is why the internet runs on requests for information, which are considered best current practices because they’re easier to update. Is that going to be a challenge? When do you use a standard, and when do you just say “best practices”?
+
+[Speaker: Dominique Lazanski]
+That’s a very good question. They’re now being used interchangeably. But I guess the thing that’s happening now is if you want to standardize something that’s more finite, like how the network communicates with a mobile phone to authenticate it, for example, things like that are something that doesn’t change. The actual physical technology might change, but the process and the technical aspect of it doesn’t change, whereas where the internet is the growth of encryption and a number of other issues that you probably talked about — encrypted DNS and various things like that — have been typically put into use as cases first, and then brought to the IETF, became an RFC, and then became more standardized. I think the language is something that’s shifting quite a lot now.
+
+[Speaker: Dominique Lazanski]
 I love the example in your paper about Hikvision, the Chinese surveillance company. The company is on the US sanctions list, and it became the editor of the surveillance standards of the ITU. In 2019, they noted that they were really good at identifying Uighur ethnicity. This is the entity that is holding the pen at the ITU, which is basically a long arm of the Chinese government.
-Let’s talk about the
-network layers, because this is where the real pull factor comes in — you know,
-chills down my spine — because the internet has been amazing because of its
-ubiquitous nature, and has been open, and you’ve always been able to improve
-upon it, and now it looks like we’re looking to invert that process with some
-of the work that the Chinese and the ITU are doing. How are they accomplishing
-this?
-Well, it’s really interesting. So in the paper, like I said,
-we have a really brief diagram of the OSI model, and then the TCP/IP model, and
-then the DII model. What the DII model does — so you have seven layers of the
-OSI model with TCP/IP, you’ve got four layers, just to remind you: application,
-transport, internet, and network access. What happens in the DII model is
-there’s a third-party application, there’s research management, there’s
-blockchain, and then there’s the physical component. This sounds kind of like,
-“Oh, this could possibly work.” But what’s interesting is when you look at it
-more closely, first of all, there aren’t a lot of details. We’ve never seen
-this actually demonstrated. We don’t know if there’s a lab running a version of
-this in China. We’ve never actually seen the specific details. But the second
-thing that it brings up is the internet. As you said, it’s decentralized,
-right? It survived a massive cyber attack in 2016 where it was so resilient
-that, though we noticed that it was the Dyn attack, it came back up. It was
-quite resilient because it is decentralized. Same thing for all of us working
-at home globally, right? 30 percent more traffic suddenly, not just working at
-home, but Netflix and all that as well; again, resilient and able to route
-traffic quite quickly.
-With the DII models, it’s very point-to-point. It’s almost
-mimicking telecom infrastructure: very linear. My argument has always been that
-this approach mimics the political system, so it’s more of a top-down
-management process versus a decentralized process. It has a single point of
-entry. It has various nodes, but each node has to have a fixed identifier. What
-happens with the domain name system is you can have DCHP, so you have different
-devices connecting and then releasing the IP address. So if you think about it
-almost from a political point of view, it makes sense. It fits into that way
-with China.
-In your paper, you also
-talk about how the social elements of technology — including identifying the
-economics of security, full security, cultural security, and social stability —
-are things that the Chinese have pointed out as they want more of a top down
-approach. They consider all of this as part of their cybersecurity program,
-which then leads to the question of what happens to human rights? Because human
-rights is a big point when discussing the internet governance structure.
+
+[Speaker: Shane Tews]
+Let’s talk about the network layers, because this is where the real pull factor comes in — you know, chills down my spine — because the internet has been amazing because of its ubiquitous nature, and has been open, and you’ve always been able to improve upon it, and now it looks like we’re looking to invert that process with some of the work that the Chinese and the ITU are doing. How are they accomplishing this?
+
+[Speaker: Dominique Lazanski]
+Well, it’s really interesting. So in the paper, like I said, we have a really brief diagram of the OSI model, and then the TCP/IP model, and then the DII model. What the DII model does — so you have seven layers of the OSI model with TCP/IP, you’ve got four layers, just to remind you: application, transport, internet, and network access. What happens in the DII model is there’s a third-party application, there’s research management, there’s blockchain, and then there’s the physical component. This sounds kind of like, “Oh, this could possibly work.” But what’s interesting is when you look at it more closely, first of all, there aren’t a lot of details. We’ve never seen this actually demonstrated. We don’t know if there’s a lab running a version of this in China. We’ve never actually seen the specific details. But the second thing that it brings up is the internet. As you said, it’s decentralized, right? It survived a massive cyber attack in 2016 where it was so resilient that, though we noticed that it was the Dyn attack, it came back up. It was quite resilient because it is decentralized. Same thing for all of us working at home globally, right? 30 percent more traffic suddenly, not just working at home, but Netflix and all that as well; again, resilient and able to route traffic quite quickly.
+
+[Speaker: Dominique Lazanski]
+With the DII models, it’s very point-to-point. It’s almost mimicking telecom infrastructure: very linear. My argument has always been that this approach mimics the political system, so it’s more of a top-down management process versus a decentralized process. It has a single point of entry. It has various nodes, but each node has to have a fixed identifier. What happens with the domain name system is you can have DCHP, so you have different devices connecting and then releasing the IP address. So if you think about it almost from a political point of view, it makes sense. It fits into that way with China.
+
+[Speaker: Dominique Lazanski]
+In your paper, you also talk about how the social elements of technology — including identifying the economics of security, full security, cultural security, and social stability — are things that the Chinese have pointed out as they want more of a top down approach. They consider all of this as part of their cybersecurity program, which then leads to the question of what happens to human rights? Because human rights is a big point when discussing the internet governance structure.
+
+[Speaker: Dominique Lazanski]
 That’s a really good point. I’ve been trying to listen closely to the language in the last couple of weeks. In the UK, the Huawei discussion is quite heated, and there was a decision just taken that they’re going to ban Huawei equipment from the UK 5G network. So the ambassador from China in the UK has been saying quite a lot of heated things. On top of that, the UK is going to offer a path to citizenship for a number of people from Hong Kong. Pretty much anybody in Hong Kong can come and live and work in the UK. And what I’m hearing more and more is China saying, “This is a national matter. The Uighurs? It’s a national matter. Hong Kong? It’s a national matter. This does not pertain to you.” The language they’re using is completely not addressing human rights.
-I think human rights
-is not even going to be on the table. If you look at the Human Rights Council
-at the UN that just finished meeting for this particular term, there was not
-one bullet item about the Uighurs, not one. Venezuela was on the map, and Syria
-was on the map. All of that, but nothing from China. So politically, they’re
-able to keep themselves off of that agenda. But from a technical point of view,
-if they start saying “this is our infrastructure. This is what we’re doing and
-we’re sharing it with our allies,” they’re going to say human rights was not
-something that particularly pertains to that, and that is really worrying. That
-sort of breaks up the multi-stakeholder model, don’t you think?
-For those who are
-interested in these topics, what should we be looking out for?
-China just launched a new standards policy called Standards
-2035, which states the goal of being really active in international standards,
-not just for technical and internet, but for all global standards, and takes it
-to a new level. So they’ve reorganized themselves. They have President Xi as
-the head of the Standards Committee. He’s probably the head of all the
-committees for everything, but he’s definitely head of the Standards Committee.
-There’s a really big push to have more leadership across standards. So again,
-it’s the Standards Strategy 2035. I think that’s going to be coming up in the
-news quite a lot.
-The other thing that’s coming up is, as you know Shane,
-every four years, the ITU has different departments in its agency and its
-organization, and the big one for technical standards has a big meeting called
-the WTSA coming up in November, but it’s potentially going to be moved — pretty
-much 99 percent going to be moved — until February.
+
+[Speaker: Dominique Lazanski]
+I think human rights is not even going to be on the table. If you look at the Human Rights Council at the UN that just finished meeting for this particular term, there was not one bullet item about the Uighurs, not one. Venezuela was on the map, and Syria was on the map. All of that, but nothing from China. So politically, they’re able to keep themselves off of that agenda. But from a technical point of view, if they start saying “this is our infrastructure. This is what we’re doing and we’re sharing it with our allies,” they’re going to say human rights was not something that particularly pertains to that, and that is really worrying. That sort of breaks up the multi-stakeholder model, don’t you think?
+
+[Speaker: Shane Tews]
+For those who are interested in these topics, what should we be looking out for?
+
+[Speaker: Dominique Lazanski]
+China just launched a new standards policy called Standards 2035, which states the goal of being really active in international standards, not just for technical and internet, but for all global standards, and takes it to a new level. So they’ve reorganized themselves. They have President Xi as the head of the Standards Committee. He’s probably the head of all the committees for everything, but he’s definitely head of the Standards Committee. There’s a really big push to have more leadership across standards. So again, it’s the Standards Strategy 2035. I think that’s going to be coming up in the news quite a lot.
+
+[Speaker: Dominique Lazanski]
+The other thing that’s coming up is, as you know Shane, every four years, the ITU has different departments in its agency and its organization, and the big one for technical standards has a big meeting called the WTSA coming up in November, but it’s potentially going to be moved — pretty much 99 percent going to be moved — until February.
+
+[Speaker: Dominique Lazanski]
 So you’ll start to see a lot more discussion, and people will be a lot more aware of the tensions between China and, in particular, also Huawei and a number of the countries that have had these debates like we have had in the UK. That’s going to start to play up because there’s a number of them. I know I mentioned, or you mentioned, Hikvision; there’s a number of companies that are on the US sanctions lists that have been active in addition to Hikvision in the ITU. So you’ll start to see how that’s going to work itself out to this big meeting where there will be multilateral negotiations for future plans of what to do in the ITU for technical standards. So China’s putting quite a lot of resources into that. Those are the two newsworthy things that I think, if I were kind of new to this, I’d start looking at. You’ll hear much more about that in the next couple of months.

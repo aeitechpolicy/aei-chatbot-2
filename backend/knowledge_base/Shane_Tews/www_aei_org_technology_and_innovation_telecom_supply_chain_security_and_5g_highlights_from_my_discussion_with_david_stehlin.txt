@@ -1,142 +1,53 @@
 PAGE_TITLE: 
-	Telecom Supply Chain Security and 5G: Highlights from My Discussion with David Stehlin | American Enterprise Institute - AEI
+	Telecom Supply Chain Security and 5G: Highlights from My Discussion with David Stehlin
 
+[Speaker: Introduction / editorial context]
 What makes 5G wireless networks different from previous telecom networks? Why is supply chain security so important for 5G? And with global supply chains, how can we ensure both transparency and quality? David Stehlin, CEO of the Telecommunications Industry Association (TIA), joined me on the latest episode of “Explain to Shane” to discuss how industry is ensuring the highest possible standards for the next generation of telecom connectivity.
-Below is an abbreviated and lightly edited transcript of our conversation. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the Explain to Shane podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane Tews: There are so many bits and parts to the
-networks, so I would imagine that supply chain quality management and having a
-consistent set of quality expectations across the telecom supply chain are really
-key to building the next generation network. Is that correct?
-David Stehlin: Yes, very much so. And we all know that
-5G is not just your next 4G, it’s not just more bandwidth or faster video
-downloads for your cell phone, it’s a pervasive change in the network. The
-large service providers today typically will operate eight to 10 to 12
-different networks because they might have some specifically for consumers and
-some for enterprises, wireless and wireline, some just for back haul, some are
-for certain types of enterprises. Each and every one of these networks requires
-its own set of products, its own set of management tools, its own team, and
-it’s very difficult and expensive to manage multiple networks. 5G allows
-service providers to squeeze a lot of networks into one, or maybe they’ll not
-get all the way down to one network, but they’re certainly going to go from 10
-or 12 down to maybe two or three networks, so they’ll be much more efficient in
-how they operate.
-That’s the good news. The bad news is that now you
-have much more running on the one network, so you have more risk of bad actors
-getting into the network. That could be through a critical IOT [internet of
-things] device, your router in your house, your connected HVAC system, or your
-car, all these things become at risk when they get more and more connected.
-On top of that, the industry is moving from
-proprietary network products to more open source network products. The US
-government is very supportive of open source because it gives the opportunity
-for our creative engineering talent in the United States to go out and create
-new services and new products and new parts of this coming 5G network. That’s
-fantastic, but how do you manage that risk? Because now you have to stitch
-together all those different parts in the network, each and every place that
-you have an access to the network, a critical IOT device as I mentioned before
-or a switch or router, whatever it may be, you allow a bad actor to come in and
-perhaps do harm.
-Let’s just take a step back to make sure that I’m
-clear on this. When you say they’re taking kind of multiple networks and
-creating one network, are they using new technology to streamline into a base
-network that then can be upgraded? They’re getting away from these individual
-networks that have been created for other specific uses?
-That’s right. 5G is much more than upgraded RAN [radio
-access network] equipment out of a cell tower. And as I said, it’s much more
-than more speed. It’s fiber much deeper into the network. It’s moving data
-centers out to the edge of the network, closer to you and closer to shopping
-malls and business centers and things of that sort. And they’re doing that
-because 5G and some of the services that will be enabled in 5G require very,
-very low latency. Latency is in many ways tied to distance. If you have to back
-haul everything to this very large hyperscale data center that might be 50
-miles away, the time it takes causes latency in the network and you can’t have
-high-latency operation if you’re going to do something like autonomous and
-connected cars.
-Okay. Let’s go ahead and go into the open source, and
-one of the favorite buzzwords on Capitol Hill right now and in the industry is
-ORAN. Can you walk us through that?
-Sure. ORAN is open radio access networks. Today there
-are really three or four major RAN players, major 5G players around the world,
-Nokia, Ericsson, Samsung, and Huawei. None of those, of course, are US
-manufacturers. While Samsung and Ericsson and Nokia have facilities here and do
-a lot of business with the US service providers, none of them are based in the
-United States. We have determined, and the US government has determined, that
-5G is of strategic importance to our future. So we need to have more strategic control
-over 5G networks in the United States.
-Historically, a service provider will buy a whole
-system from an equipment manufacturer. If you’re a service provider X, you
-might use Nokia in half of your network and Ericsson and the other half of your
-network for example, but then you’re restricted to use only those types of
-gear. Because technology is changing so quickly, the intent of ORAN and the
-ORAN Coalition is to allow providers of other types of services, typically
-software-based, to come in and provide the software component of the network.
-RAN is obviously the radios that are up on a tower or up on a light pole, but
-it’s also the software that controls things. Historically a service provider would
-buy both that software and the hardware from one vendor. Open source allows the
-service provider to buy software from one vendor or perhaps multiple vendors
-and the hardware from somebody else.
-What is TIA’s role in all this?
-We do a couple things. We help enable new
-technologies. For example, I mentioned that we’re enabling 5G by creating a
-standard related to edge data centers to help lower that latency. But our role
-in this specific opportunity is to create a new supply chain security standard.
-We’re going to take the best of many standards that are already out there, but
-are not specifically built for telecom, and merge them together and layer on
-top of what’s already been built. A telecom-specific standard will ensure that
-every component in the network, every product in the network, every system on
-the network is transparent and are trustworthy. It’s a combination of, is that
-chip coming from the vendor you think it is? And is that chip a trusted chip?
-Secondly, the standards will evaluate manufacturers.
-Many times these equipment providers will use contract manufacturing. They’re
-not building it in their own factory. Well, is that manufacturer trusted? Is
-the equipment provider using software that is in fact trusted? Most equipment providers
-will not only make their own software, but they will buy stacks and build upon
-those stacks. What’s the whole history of that stack of software? And when you
-link all these things together, you have to do so in a way that’s transparent
-and verifiable, and you create a series of elements that are locked down and
-can’t be changed.
-We will put a digital fingerprint on all the major
-critical elements in the network and then perhaps use something like blockchain
-to ensure that it is secure. We’re bringing together our members and others,
-industry experts, to create this new supply chain security standard. The intent
-is that we will have draft one of it out this year and that by the middle of
-next year it’ll be a released standard. And if you know anything about
-standards bodies, that’s extremely quick.
-I know that the US government is also very engaged in
-this, between DHS [Department of Homeland Security] and NIST [National
-Institute of Standards and Technology] and work that’s going on in the
-Pentagon. How are you incorporating sort of the work that they’re doing in
-supply chain with the TIA efforts?
-Yeah. First of all, we’re in dialogue with all of
-them. The Department of Commerce, DOD [Department of Defense], DHS, the CMMC
-[Cybersecurity Maturity Model Certification], we are in discussions with each
-of them. We’re not trying to recreate the wheel. We’re trying to take the best
-of each of those elements and merge them together into what makes sense for
-telecom. And we want it to be something that’s manageable, that’s not so
-overbearing and overarching that it doesn’t get deployed. It has to be something
-that’s workable, and that’s why we are focused on a standard that is
-process-based. What we do is we’ll go back and check how the processes are in
-place. Can you prove that that chip came from vendor X? Tell me where every
-element in that software stack came from. And then you merge these things
-together and you create a series of metrics and those metrics can then be
-benchmarked.
 
-One of the things we do
-with the current TL 9000 standard is everybody that is certified and is part of
-TL 9000 submits monthly data on the quality of their products into an
-anonymized database. How many problems they had during development, how many
-problems they had during the manufacturing, when it was deployed, how quickly
-did they fix those problems. That data then gets anonymized and creates a
-benchmark. Now if you’re a member or a service provider, you can look at the
-benchmarks and see best in class, middle of the road, and worst in class, and
-you as a vendor can see how you stack up versus the others. That benchmarking
-is something that’s really important to continue to raise the bar.
+[Speaker: Introduction / editorial context]
+Below is an abbreviated and lightly edited transcript of our conversation. You can listen to the podcast here and read our full discussion here. You can also subscribe to the Explain to Shane podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: There are so many bits and parts to the networks, so I would imagine that supply chain quality management and having a consistent set of quality expectations across the telecom supply chain are really key to building the next generation network. Is that correct?
+
+[Speaker: David Stehlin]
+David Stehlin: Yes, very much so. And we all know that 5G is not just your next 4G, it’s not just more bandwidth or faster video downloads for your cell phone, it’s a pervasive change in the network. The large service providers today typically will operate eight to 10 to 12 different networks because they might have some specifically for consumers and some for enterprises, wireless and wireline, some just for back haul, some are for certain types of enterprises. Each and every one of these networks requires its own set of products, its own set of management tools, its own team, and it’s very difficult and expensive to manage multiple networks. 5G allows service providers to squeeze a lot of networks into one, or maybe they’ll not get all the way down to one network, but they’re certainly going to go from 10 or 12 down to maybe two or three networks, so they’ll be much more efficient in how they operate.
+
+[Speaker: David Stehlin]
+That’s the good news. The bad news is that now you have much more running on the one network, so you have more risk of bad actors getting into the network. That could be through a critical IOT [internet of things] device, your router in your house, your connected HVAC system, or your car, all these things become at risk when they get more and more connected.
+
+[Speaker: David Stehlin]
+On top of that, the industry is moving from proprietary network products to more open source network products. The US government is very supportive of open source because it gives the opportunity for our creative engineering talent in the United States to go out and create new services and new products and new parts of this coming 5G network. That’s fantastic, but how do you manage that risk? Because now you have to stitch together all those different parts in the network, each and every place that you have an access to the network, a critical IOT device as I mentioned before or a switch or router, whatever it may be, you allow a bad actor to come in and perhaps do harm.
+
+[Speaker: Shane Tews]
+Let’s just take a step back to make sure that I’m clear on this. When you say they’re taking kind of multiple networks and creating one network, are they using new technology to streamline into a base network that then can be upgraded? They’re getting away from these individual networks that have been created for other specific uses?
+
+[Speaker: David Stehlin]
+That’s right. 5G is much more than upgraded RAN [radio access network] equipment out of a cell tower. And as I said, it’s much more than more speed. It’s fiber much deeper into the network. It’s moving data centers out to the edge of the network, closer to you and closer to shopping malls and business centers and things of that sort. And they’re doing that because 5G and some of the services that will be enabled in 5G require very, very low latency. Latency is in many ways tied to distance. If you have to back haul everything to this very large hyperscale data center that might be 50 miles away, the time it takes causes latency in the network and you can’t have high-latency operation if you’re going to do something like autonomous and connected cars.
+
+[Speaker: Shane Tews]
+Okay. Let’s go ahead and go into the open source, and one of the favorite buzzwords on Capitol Hill right now and in the industry is ORAN. Can you walk us through that?
+
+[Speaker: David Stehlin]
+Sure. ORAN is open radio access networks. Today there are really three or four major RAN players, major 5G players around the world, Nokia, Ericsson, Samsung, and Huawei. None of those, of course, are US manufacturers. While Samsung and Ericsson and Nokia have facilities here and do a lot of business with the US service providers, none of them are based in the United States. We have determined, and the US government has determined, that 5G is of strategic importance to our future. So we need to have more strategic control over 5G networks in the United States.
+
+[Speaker: David Stehlin]
+Historically, a service provider will buy a whole system from an equipment manufacturer. If you’re a service provider X, you might use Nokia in half of your network and Ericsson and the other half of your network for example, but then you’re restricted to use only those types of gear. Because technology is changing so quickly, the intent of ORAN and the ORAN Coalition is to allow providers of other types of services, typically software-based, to come in and provide the software component of the network. RAN is obviously the radios that are up on a tower or up on a light pole, but it’s also the software that controls things. Historically a service provider would buy both that software and the hardware from one vendor. Open source allows the service provider to buy software from one vendor or perhaps multiple vendors and the hardware from somebody else.
+
+[Speaker: Shane Tews]
+What is TIA’s role in all this?
+
+[Speaker: David Stehlin]
+We do a couple things. We help enable new technologies. For example, I mentioned that we’re enabling 5G by creating a standard related to edge data centers to help lower that latency. But our role in this specific opportunity is to create a new supply chain security standard. We’re going to take the best of many standards that are already out there, but are not specifically built for telecom, and merge them together and layer on top of what’s already been built. A telecom-specific standard will ensure that every component in the network, every product in the network, every system on the network is transparent and are trustworthy. It’s a combination of, is that chip coming from the vendor you think it is? And is that chip a trusted chip?
+
+[Speaker: David Stehlin]
+Secondly, the standards will evaluate manufacturers. Many times these equipment providers will use contract manufacturing. They’re not building it in their own factory. Well, is that manufacturer trusted? Is the equipment provider using software that is in fact trusted? Most equipment providers will not only make their own software, but they will buy stacks and build upon those stacks. What’s the whole history of that stack of software? And when you link all these things together, you have to do so in a way that’s transparent and verifiable, and you create a series of elements that are locked down and can’t be changed.
+
+[Speaker: David Stehlin]
+We will put a digital fingerprint on all the major critical elements in the network and then perhaps use something like blockchain to ensure that it is secure. We’re bringing together our members and others, industry experts, to create this new supply chain security standard. The intent is that we will have draft one of it out this year and that by the middle of next year it’ll be a released standard. And if you know anything about standards bodies, that’s extremely quick.
+
+[Speaker: Shane Tews]
+I know that the US government is also very engaged in this, between DHS [Department of Homeland Security] and NIST [National Institute of Standards and Technology] and work that’s going on in the Pentagon. How are you incorporating sort of the work that they’re doing in supply chain with the TIA efforts?
+
+[Speaker: David Stehlin]
+Yeah. First of all, we’re in dialogue with all of them. The Department of Commerce, DOD [Department of Defense], DHS, the CMMC [Cybersecurity Maturity Model Certification], we are in discussions with each of them. We’re not trying to recreate the wheel. We’re trying to take the best of each of those elements and merge them together into what makes sense for telecom. And we want it to be something that’s manageable, that’s not so overbearing and overarching that it doesn’t get deployed. It has to be something that’s workable, and that’s why we are focused on a standard that is process-based. What we do is we’ll go back and check how the processes are in place. Can you prove that that chip came from vendor X? Tell me where every element in that software stack came from. And then you merge these things together and you create a series of metrics and those metrics can then be benchmarked. One of the things we do with the current TL 9000 standard is everybody that is certified and is part of TL 9000 submits monthly data on the quality of their products into an anonymized database. How many problems they had during development, how many problems they had during the manufacturing, when it was deployed, how quickly did they fix those problems. That data then gets anonymized and creates a benchmark. Now if you’re a member or a service provider, you can look at the benchmarks and see best in class, middle of the road, and worst in class, and you as a vendor can see how you stack up versus the others. That benchmarking is something that’s really important to continue to raise the bar.

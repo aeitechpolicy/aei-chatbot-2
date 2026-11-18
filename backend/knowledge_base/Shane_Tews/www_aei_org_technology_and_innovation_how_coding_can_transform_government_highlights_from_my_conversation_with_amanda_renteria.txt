@@ -1,153 +1,77 @@
 PAGE_TITLE: 
-	How Coding Can Transform Government: Highlights from My Conversation with Amanda Renteria | American Enterprise Institute - AEI
+	How Coding Can Transform Government: Highlights from My Conversation with Amanda Renteria
 
-In the
-digital age, how can technology make government more effective? The
-nonprofit
-Code
-for America
-is training young coders and connecting them with state
-and local governments to remove barriers to “safety net” programs like the
-supplemental nutrition assistance program (SNAP), health care through Medicaid,
-utility programs like the Low Income Home Energy Assistance Program (LIHEAP), and
-online food purchasing assistance. The organization seeks to digitize these
-programs at the local, state, and federal levels in ways that help both the end
-user and government track benefits. Code for America also uses the data sets
-from these programs to help policymakers create intelligent action programs
-that enable more effective outcomes.
-Code for America CEO
-Amanda Renteria
-, a former candidate for elected office and national political director of Hillary Clinton’s 2016 presidential campaign, joined “Explain to Shane” to discuss how Code for America works with federal, state, and local governments to tackle multilayered, society-scale problems through more effective IT solutions.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Tell us about Code for
-America’s founding story and mission.
-Amanda
-Renteria: At Code for America, our guiding principle is that to really change
-peoples’ lives, government does it at scale, but technology is the lever for making
-change. When Jen Pahlka, our founder, first started with a group of
-technologists, the idea was: How can we inject a new way of doing things in
-government, and how can we use technology as that lever? In every single
-industry, modernized systems have brought us into the digital age, so how do we
-do that with government?
-Over the last
-decade, Code for America has helped launch the first National Day of Civic
-Hacking, has created fellowships in cities across America, has established a
-big volunteer network — 25,000 strong, 85 brigades across the country — and has
-dived deeper into products and programs that are particularly focused on
-low-income communities. We look at ways to not just upgrade a system, but also
-make it better, more efficient, less costly, and as good as what you would find
-in the private sector.
-Your work is really amazing, and I love
-that you focus on government assistance programs that are well-known to the
-public.
-A while
-back, we took a step back and said, “What does it really take to create a
-resilient country?” And there were three different pillars that we saw. Number
-one is the social safety net. This was long before COVID-19 happened, but we
-thought about food stamps programs, women and children programs, and social
-services. We then considered how end users navigate these systems and tried to
-improve that framework.
-The second
-piece that we work on is automatic record clearance — righting wrongs within
-the criminal justice system — which has been a much newer effort in which a lot
-more states have come on board and have used technology to do it quicker and
-more easily so that when DAs say, “We want to make sure people don’t have this
-burden,” we can apply new technology solutions to make sure that doesn’t
-happen. Ultimately, we believe a resilient country means that you have active
-civic engagement, and that’s what our volunteer base is all about.
-You will see
-us show up during crises. We have done a lot of mapping for hospitals. During
-hurricanes, you will find us working on how to help people find food shelters or
-home shelters. As we look forward, we have a unique window of opportunity right
-now as people are rethinking government systems, particularly due to COVID. How
-do we upgrade and modernize in a way that takes these services and, more
-generally, the way government works, to a whole new level? So far, we’re really
-excited about what we’ve seen.
-When your volunteers show up during a
-hurricane, how do they get into the system and help mitigate the most pressing
-challenges? What is the real entry point for your tech solutions?
-There are a
-couple of ways. We have city hackathons that get together and try to make these
-systems better. For example, during a hurricane, there are a lot of different
-networks in which people are trying to find shelter. Well, one of the problems
-we found when hurricanes hit is that the systems themselves were lagged 24 or
-48 hours. So we came in and said, “How do we help you build a website?” or “How
-do we build our own website?” so that instead of facing uncertainty regarding
-whether certain shelters or relief locations are open, we have a real-time interface
-that instructs you where to go.
-Another
-example is: During the pandemic, school lunch programs were closed. It was much
-harder to figure out food assistance programs, and so some of our brigades
-around the country started to map out where you could go get food assistance. Our
-maps would tell you: “Here, you can get cash assistance. Here, a nonprofit has
-propped up to help folks who are trying to figure out how to make ends meet.
-Here, you can get workforce training, etc.”
-I love that you basically are first
-responders who code. That’s awesome.
-That’s a
-great way to put it. It’s a state-by-state effort at the moment, but I hope we
-can figure out how to do this at a national level so that there’s some sort of
-centralized mechanism. I do think COVID has made people more willing to
-question older ways of doing things, which could give us some great
-opportunities going forward.
-Public-private sector coordination is
-another area of emphasis for you all. How have you tackled this issue?
-Private-public
-sector coordination is interesting because our approach is very
-people-centered. But we have noticed that the private and public sectors sometimes
-speak different languages. On the bright side, what we often hear is: “Wait a
-second, we saw this work in this state with these folks. Maybe you can do it in
-the same way here.” Essentially, we’re trying to address different states’
-needs while working with both the public and private sectors, so anywhere we
-can find common ground or common knowledge of existing solutions is key. Sometimes,
-it’s a private-public sector solution. Sometimes, it’s a community-based
-organization solution. Sometimes, it’s simply the process design within the
-government itself.
-And again, when
-we can orient solutions around the person that receives the services, then it
-all links in nicely. That can be really difficult with private sector companies
-who have scaled, let’s say, a software product that doesn’t quite customize for
-X state or Y state or X community or Y community that the state might be trying
-to reach. So sometimes we can work with private sector companies or vendors
-that are already in a given city and go, “Can you tweak it in this way? Can you
-tweak it in that way?” But many times, what we have found is that the public
-sector might not have those skills within it in order to do it themselves.
-That’s where the coordination is key.
-You’ve also had some interesting political
-experiences. You were the National Political Director for Hillary Clinton’s
-2016 presidential campaign, and you even ran for Congress and governor. Tell us
-how that informs what you’re doing now.
-I spent a decade on the Hill working as a policy wonk really
-involved in ensuring we have the kind of policy that empowers all communities. I
-then realized throughout that process that it was also important to understand
-the politics side of it: campaigns; how we elect officials; and how those
-voices are brought to the Senate, Congress, state legislatures, etc. And so I
-believe one of the biggest things that we need to do is make sure that we use
-tech in a way that allows those conversations to happen. We need to allow
-people to connect with policymakers in a way that promotes dignity and respect
-and informs and educates folks about what their government should and can look
-like. I believe we can do this.
-It’s just
-the idea that we could flip government programs on their heads to actually
-empower people instead of perpetuating burdensome processes that people endure at
-their most vulnerable moments in life. So I just think there’s so much here
-that we can do, but it really does start with: What do people need and want?
-And that’s what your work centers around on a campaign. When you’re sitting in
-the halls of the Senate, it’s tough to truly understand what’s going on in real
-life. But I think that technology, if we apply it well, can keep elected
-officials a lot more informed about what is needed and what is happening on the
-ground. To do this, though, we need a system that reaches people in rural,
-low-income, hardest-to-reach areas. Once we do that, we will have a government
-that’s right for the digital age.
-What would you recommend for any listeners
-interested in getting involved?
-People are
-really excited about what we’re up to, so to keep up with our day-to-day
-endeavors, we would love for you to follow us @codeforamerica on Twitter.
+[Speaker: Introduction / editorial context]
+In the digital age, how can technology make government more effective? The nonprofit Code for America is training young coders and connecting them with state and local governments to remove barriers to “safety net” programs like the supplemental nutrition assistance program (SNAP), health care through Medicaid, utility programs like the Low Income Home Energy Assistance Program (LIHEAP), and online food purchasing assistance. The organization seeks to digitize these programs at the local, state, and federal levels in ways that help both the end user and government track benefits. Code for America also uses the data sets from these programs to help policymakers create intelligent action programs that enable more effective outcomes.
+
+[Speaker: Introduction / editorial context]
+Code for America CEO Amanda Renteria, a former candidate for elected office and national political director of Hillary Clinton’s 2016 presidential campaign, joined “Explain to Shane” to discuss how Code for America works with federal, state, and local governments to tackle multilayered, society-scale problems through more effective IT solutions.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Tell us about Code for America’s founding story and mission.
+
+[Speaker: Amanda Renteria]
+Amanda Renteria: At Code for America, our guiding principle is that to really change peoples’ lives, government does it at scale, but technology is the lever for making change. When Jen Pahlka, our founder, first started with a group of technologists, the idea was: How can we inject a new way of doing things in government, and how can we use technology as that lever? In every single industry, modernized systems have brought us into the digital age, so how do we do that with government?
+
+[Speaker: Amanda Renteria]
+Over the last decade, Code for America has helped launch the first National Day of Civic Hacking, has created fellowships in cities across America, has established a big volunteer network — 25,000 strong, 85 brigades across the country — and has dived deeper into products and programs that are particularly focused on low-income communities. We look at ways to not just upgrade a system, but also make it better, more efficient, less costly, and as good as what you would find in the private sector.
+
+[Speaker: Amanda Renteria]
+Your work is really amazing, and I love that you focus on government assistance programs that are well-known to the public.
+
+[Speaker: Amanda Renteria]
+A while back, we took a step back and said, “What does it really take to create a resilient country?” And there were three different pillars that we saw. Number one is the social safety net. This was long before COVID-19 happened, but we thought about food stamps programs, women and children programs, and social services. We then considered how end users navigate these systems and tried to improve that framework.
+
+[Speaker: Amanda Renteria]
+The second piece that we work on is automatic record clearance — righting wrongs within the criminal justice system — which has been a much newer effort in which a lot more states have come on board and have used technology to do it quicker and more easily so that when DAs say, “We want to make sure people don’t have this burden,” we can apply new technology solutions to make sure that doesn’t happen. Ultimately, we believe a resilient country means that you have active civic engagement, and that’s what our volunteer base is all about.
+
+[Speaker: Amanda Renteria]
+You will see us show up during crises. We have done a lot of mapping for hospitals. During hurricanes, you will find us working on how to help people find food shelters or home shelters. As we look forward, we have a unique window of opportunity right now as people are rethinking government systems, particularly due to COVID. How do we upgrade and modernize in a way that takes these services and, more generally, the way government works, to a whole new level? So far, we’re really excited about what we’ve seen.
+
+[Speaker: Shane Tews]
+When your volunteers show up during a hurricane, how do they get into the system and help mitigate the most pressing challenges? What is the real entry point for your tech solutions?
+
+[Speaker: Amanda Renteria]
+There are a couple of ways. We have city hackathons that get together and try to make these systems better. For example, during a hurricane, there are a lot of different networks in which people are trying to find shelter. Well, one of the problems we found when hurricanes hit is that the systems themselves were lagged 24 or 48 hours. So we came in and said, “How do we help you build a website?” or “How do we build our own website?” so that instead of facing uncertainty regarding whether certain shelters or relief locations are open, we have a real-time interface that instructs you where to go.
+
+[Speaker: Amanda Renteria]
+Another example is: During the pandemic, school lunch programs were closed. It was much harder to figure out food assistance programs, and so some of our brigades around the country started to map out where you could go get food assistance. Our maps would tell you: “Here, you can get cash assistance. Here, a nonprofit has propped up to help folks who are trying to figure out how to make ends meet. Here, you can get workforce training, etc.”
+
+[Speaker: Amanda Renteria]
+I love that you basically are first responders who code. That’s awesome.
+
+[Speaker: Amanda Renteria]
+That’s a great way to put it. It’s a state-by-state effort at the moment, but I hope we can figure out how to do this at a national level so that there’s some sort of centralized mechanism. I do think COVID has made people more willing to question older ways of doing things, which could give us some great opportunities going forward.
+
+[Speaker: Shane Tews]
+Public-private sector coordination is another area of emphasis for you all. How have you tackled this issue?
+
+[Speaker: Amanda Renteria]
+Private-public sector coordination is interesting because our approach is very people-centered. But we have noticed that the private and public sectors sometimes speak different languages. On the bright side, what we often hear is: “Wait a second, we saw this work in this state with these folks. Maybe you can do it in the same way here.” Essentially, we’re trying to address different states’ needs while working with both the public and private sectors, so anywhere we can find common ground or common knowledge of existing solutions is key. Sometimes, it’s a private-public sector solution. Sometimes, it’s a community-based organization solution. Sometimes, it’s simply the process design within the government itself.
+
+[Speaker: Amanda Renteria]
+And again, when we can orient solutions around the person that receives the services, then it all links in nicely. That can be really difficult with private sector companies who have scaled, let’s say, a software product that doesn’t quite customize for X state or Y state or X community or Y community that the state might be trying to reach. So sometimes we can work with private sector companies or vendors that are already in a given city and go, “Can you tweak it in this way? Can you tweak it in that way?” But many times, what we have found is that the public sector might not have those skills within it in order to do it themselves. That’s where the coordination is key.
+
+[Speaker: Amanda Renteria]
+You’ve also had some interesting political experiences. You were the National Political Director for Hillary Clinton’s 2016 presidential campaign, and you even ran for Congress and governor. Tell us how that informs what you’re doing now.
+
+[Speaker: Amanda Renteria]
+I spent a decade on the Hill working as a policy wonk really involved in ensuring we have the kind of policy that empowers all communities. I then realized throughout that process that it was also important to understand the politics side of it: campaigns; how we elect officials; and how those voices are brought to the Senate, Congress, state legislatures, etc. And so I believe one of the biggest things that we need to do is make sure that we use tech in a way that allows those conversations to happen. We need to allow people to connect with policymakers in a way that promotes dignity and respect and informs and educates folks about what their government should and can look like. I believe we can do this.
+
+[Speaker: Amanda Renteria]
+It’s just the idea that we could flip government programs on their heads to actually empower people instead of perpetuating burdensome processes that people endure at their most vulnerable moments in life. So I just think there’s so much here that we can do, but it really does start with: What do people need and want? And that’s what your work centers around on a campaign. When you’re sitting in the halls of the Senate, it’s tough to truly understand what’s going on in real life. But I think that technology, if we apply it well, can keep elected officials a lot more informed about what is needed and what is happening on the ground. To do this, though, we need a system that reaches people in rural, low-income, hardest-to-reach areas. Once we do that, we will have a government that’s right for the digital age.
+
+[Speaker: Shane Tews]
+What would you recommend for any listeners interested in getting involved?
+
+[Speaker: Amanda Renteria]
+People are really excited about what we’re up to, so to keep up with our day-to-day endeavors, we would love for you to follow us @codeforamerica on Twitter.
+
+[Speaker: Amanda Renteria]
 In terms of how to get involved, we have brigades across the country — please join them. It’s not just about technology; it’s a lot of community leaders. In fact, many of our solutions come from people saying “I was trying to use this system. It doesn’t work. Can we, as a group, try and figure out a solution around that?” And so I welcome folks to be engaged in that because for us, it’s important to have civic engagement that reaches all people. We need folks who are on the ground, not in government per-se, who are in their community saying, “We can make this better.” And so I just want to welcome listeners to not only follow the work that we do, but join our brigades as well. We look forward to having you and creating what I think could be a pretty amazing government as we reach the future in this country.
+
+[Speaker: Amanda Renteria]
+[related-items item=”” title=”Learn more:”]

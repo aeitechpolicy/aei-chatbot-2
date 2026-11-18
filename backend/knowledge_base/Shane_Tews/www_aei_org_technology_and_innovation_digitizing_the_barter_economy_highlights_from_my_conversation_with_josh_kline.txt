@@ -1,137 +1,80 @@
 PAGE_TITLE: 
-	Digitizing the Barter Economy: Highlights from My Conversation with Josh Kline | American Enterprise Institute - AEI
+	Digitizing the Barter Economy: Highlights from My Conversation with Josh Kline
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
+
+[Speaker: Introduction / editorial context]
 While stuck indoors during the pandemic, items we want — and sometimes need — are harder to locate. Web retailers offer a quick fix, but what if we need online tutoring, IT help, or athletic coaching? And what if we could offer our own goods and services in return?
-In an attempt to overcome the communication barriers of traditional barter exchanges,
-Josh Kline
-founded
-HaveNeed
-— an app that lets users pay for what they “need” with what they “have.” The app’s algorithm creates pairings and multiparty trade circles that were previously impossible to arrange, and employs innovative security measures to ensure fair transactions. Josh recently joined me on “Explain to Shane” to share HaveNeed’s founding story and his outlook for the app’s future.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Josh,
-what inspired you to launch HaveNeed, and where are you in the process right
-now?
-Josh Kline: A few years ago, I was being recruited to join a
-Silicon Valley tech company called Box, which is a cloud content management
-company. I knew it was a great company, but I also understood that there was a
-shelf life on that role. I wanted to be in a position where I could be more
-impactful on the world around me beyond donating to charities and local
-organizations. I wanted to find a way that I could create impact at scale, but
-not as an adjunct to what I did for a living. I wanted it to be
-intrinsic
-to what I did for a living but,
-again, not necessarily in the form of starting a charitable organization. I’m
-an entrepreneur, so I wanted to create something that could deliver scale and
-have a sustainable economic engine.
-I’ve got a kid who’s a competitive tennis player. As he was
-growing, he was just churning through tennis racquets, equipment, and shoes.
-And that made me think: There must be a more efficient way to distribute things
-we’re not using into the community — whether it’s where I live in Los Angeles
-or Sub-Saharan Africa. So I thought
-that bartering could play a role in my idea at some level, but at first, it
-wasn’t obvious to me why there wasn’t a breakout success among tech companies
-and startups in the barter space. After some research, I realized they all
-failed because of this thing called the mutual coincidence of wants. If I want
-your headphones, but you don’t want my iPad, we don’t share a mutual
-coincidence of wants, so there’s no barter to be had.
-With this dilemma in
-mind, I came up with a multiparty barter architecture so that if I want your
-apple but you don’t want my orange, we don’t have a barter. But if you want
-somebody’s lime and they want my orange and I get your apple, we all have a
-trade to be done there. So I’ve spent the last several years developing a
-platform called HaveNeed, which is the first consumer multiparty barter platform
-for goods and services. It allows people to list their haves and their needs,
-and then we’ll algorithmically match and offset those haves and needs across a
-population of people and create these things called barter loops that people
-can either decide to participate in or not. These loops essentially solve the
-mutual coincidence of wants dilemma.
-How does this concept
-function in practice as an app?
-The next couple of billion internet users are going to be
-coming online with smartphones and internet access, and little or no access to
-cash or banking systems. So right there, that creates an opportunity to deliver
-services through mobile apps, and that’s where I focus.
-HaveNeed is architected and designed to be a mobile-first
-company. As I mentioned earlier, it’s about delivering impact at scale, and
-that means global scale, and most people aren’t going to have a desktop
-computer. Their first foray onto the internet is going to be through their
-phone. So the trick is — in boiling down this multiparty barter concept — constructing
-a user interface that’s easy to understand but sits atop an incredibly powerful
-platform that makes these connections across essentially disparate data points
-and brings logic to them.
-What is the “need feed,” and why is it so central to the
-app?
-The “need feed” is what we call our home screen. And what
-makes the need feed unique is that everything on it is indexed off of the
-active users’ haves and needs. So everything you see there is uniquely catered
-to things you need, and things you can offer in exchange for them. You can just
-scroll and find things that people have that are indexed off of your needs. But
-you’ll also see things that people need that are indexed off your haves, and if
-you find a tile that lists something that somebody needs, and you click into
-that tile, we’re going to tell you all the things you could possibly get if you
-offer up what another person needs.
-It’s a really interesting wildcard matching capability that
-ultimately offsets haves and needs. You could also just search for something in
-the platform and we’ll tell you what potentially you’d have to offer up to get
-the thing you’re looking for. Or, if you want to contribute something to another
-person’s need, we’ll tell you all the things you can get for it. We try to make
-it as easy as possible to donate, trade, and, as I said, push these products
-and services back into the community.
-The purpose of the app’s underlying algorithm is to create
-barter loops between two and five people. Two people is great; that’s legacy
-barter. It’s a one-to-one transaction with a high degree of probability to
-succeed. But since the chance of it coming together in the first place is low,
-we don’t limit the loops to two people.
-Some people don’t quite understand what a powerful
-difference this multiparty architecture makes. 
-When we’re doing software releases, we’ve got a small group of test users
-in the system for bug testing: six users, each with five haves and five needs,
-and then we run our bug testing against that. And with six users, each with
-five haves and five needs, in the last analysis we ran, we generated 11
-two-person barters. But when we extended that out to include up to five people
-on any barter loop, the number of possible transactions jumped to 3,279. So
-it’s almost 300 times more barter possibilities with the same population and
-the same number of items available.
-The app is actually being submitted to the App Store right
-now, so this is all happening real-time after a long time in development.
-Tell us about any
-barriers to entry you’ve encountered, especially on the government side. Have
-you run into any tough regulations or, on the contrary, gotten any government
-funding?
-I fit into an interesting segment of the startup market.
-HaveNeed is a social enterprise, not a nonprofit.  So while there’s funding available for
-nonprofits, I haven’t been able to secure government funding because nobody can
-quite understand what to make of my enterprise. After all, it is a for-profit
-tech startup.
-But over the last year, I’ve reached out to both the city of
-Los Angeles and the California state government, and I’ve realized that now is
-really the time and place for HaveNeed. What could be better than something
-that would allow citizens to be more resilient and share goods and services
-when tens of millions of people are out of work and cash is tight? But even
-with that, I have not been successful in identifying grant funding or government
-programs. It’s certainly not for a lack of trying.
-How can users rate
-transactions and, furthermore, be sure that they aren’t getting scammed?
-We do have a rating
-system that will be very helpful in determining who you want to trade with, and
-will allow you to filter for the quality of trading partners. But we’ve still
-got to build that up, and so we have to provide tools that give our users
-comfort and exude dependability and safety. These tools will include something
-that hasn’t been done before, which is transactional barter insurance, and
-that’s actually an insurance product we’re developing right now with an
-insurance tech firm. So in addition to an innovative app, I think we’ll
-actually have the first transactional barter insurance product on the market.
-How can users get
-involved in the app?
-We’re rolling out in beta imminently, so anybody listening can
-go to HaveNeed.org, and at the bottom of that page, there’s a signup form to be
-notified when the app is open to the public or when we’re recruiting for
-private groups.
+
+[Speaker: Introduction / editorial context]
+In an attempt to overcome the communication barriers of traditional barter exchanges, Josh Kline founded HaveNeed — an app that lets users pay for what they “need” with what they “have.” The app’s algorithm creates pairings and multiparty trade circles that were previously impossible to arrange, and employs innovative security measures to ensure fair transactions. Josh recently joined me on “Explain to Shane” to share HaveNeed’s founding story and his outlook for the app’s future.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Josh, what inspired you to launch HaveNeed, and where are you in the process right now?
+
+[Speaker: Josh Kline]
+Josh Kline: A few years ago, I was being recruited to join a Silicon Valley tech company called Box, which is a cloud content management company. I knew it was a great company, but I also understood that there was a shelf life on that role. I wanted to be in a position where I could be more impactful on the world around me beyond donating to charities and local organizations. I wanted to find a way that I could create impact at scale, but not as an adjunct to what I did for a living. I wanted it to be intrinsic to what I did for a living but, again, not necessarily in the form of starting a charitable organization. I’m an entrepreneur, so I wanted to create something that could deliver scale and have a sustainable economic engine.
+
+[Speaker: Josh Kline]
+I’ve got a kid who’s a competitive tennis player. As he was growing, he was just churning through tennis racquets, equipment, and shoes. And that made me think: There must be a more efficient way to distribute things we’re not using into the community — whether it’s where I live in Los Angeles or Sub-Saharan Africa. So I thought that bartering could play a role in my idea at some level, but at first, it wasn’t obvious to me why there wasn’t a breakout success among tech companies and startups in the barter space. After some research, I realized they all failed because of this thing called the mutual coincidence of wants. If I want your headphones, but you don’t want my iPad, we don’t share a mutual coincidence of wants, so there’s no barter to be had.
+
+[Speaker: Josh Kline]
+With this dilemma in mind, I came up with a multiparty barter architecture so that if I want your apple but you don’t want my orange, we don’t have a barter. But if you want somebody’s lime and they want my orange and I get your apple, we all have a trade to be done there. So I’ve spent the last several years developing a platform called HaveNeed, which is the first consumer multiparty barter platform for goods and services. It allows people to list their haves and their needs, and then we’ll algorithmically match and offset those haves and needs across a population of people and create these things called barter loops that people can either decide to participate in or not. These loops essentially solve the mutual coincidence of wants dilemma.
+
+[Speaker: Shane Tews]
+How does this concept function in practice as an app?
+
+[Speaker: Josh Kline]
+The next couple of billion internet users are going to be coming online with smartphones and internet access, and little or no access to cash or banking systems. So right there, that creates an opportunity to deliver services through mobile apps, and that’s where I focus.
+
+[Speaker: Josh Kline]
+HaveNeed is architected and designed to be a mobile-first company. As I mentioned earlier, it’s about delivering impact at scale, and that means global scale, and most people aren’t going to have a desktop computer. Their first foray onto the internet is going to be through their phone. So the trick is — in boiling down this multiparty barter concept — constructing a user interface that’s easy to understand but sits atop an incredibly powerful platform that makes these connections across essentially disparate data points and brings logic to them.
+
+[Speaker: Shane Tews]
+What is the “need feed,” and why is it so central to the app?
+
+[Speaker: Josh Kline]
+The “need feed” is what we call our home screen. And what makes the need feed unique is that everything on it is indexed off of the active users’ haves and needs. So everything you see there is uniquely catered to things you need, and things you can offer in exchange for them. You can just scroll and find things that people have that are indexed off of your needs. But you’ll also see things that people need that are indexed off your haves, and if you find a tile that lists something that somebody needs, and you click into that tile, we’re going to tell you all the things you could possibly get if you offer up what another person needs.
+
+[Speaker: Josh Kline]
+It’s a really interesting wildcard matching capability that ultimately offsets haves and needs. You could also just search for something in the platform and we’ll tell you what potentially you’d have to offer up to get the thing you’re looking for. Or, if you want to contribute something to another person’s need, we’ll tell you all the things you can get for it. We try to make it as easy as possible to donate, trade, and, as I said, push these products and services back into the community.
+
+[Speaker: Josh Kline]
+The purpose of the app’s underlying algorithm is to create barter loops between two and five people. Two people is great; that’s legacy barter. It’s a one-to-one transaction with a high degree of probability to succeed. But since the chance of it coming together in the first place is low, we don’t limit the loops to two people.
+
+[Speaker: Josh Kline]
+Some people don’t quite understand what a powerful difference this multiparty architecture makes. When we’re doing software releases, we’ve got a small group of test users in the system for bug testing: six users, each with five haves and five needs, and then we run our bug testing against that. And with six users, each with five haves and five needs, in the last analysis we ran, we generated 11 two-person barters. But when we extended that out to include up to five people on any barter loop, the number of possible transactions jumped to 3,279. So it’s almost 300 times more barter possibilities with the same population and the same number of items available.
+
+[Speaker: Josh Kline]
+The app is actually being submitted to the App Store right now, so this is all happening real-time after a long time in development.
+
+[Speaker: Shane Tews]
+Tell us about any barriers to entry you’ve encountered, especially on the government side. Have you run into any tough regulations or, on the contrary, gotten any government funding?
+
+[Speaker: Josh Kline]
+I fit into an interesting segment of the startup market. HaveNeed is a social enterprise, not a nonprofit. So while there’s funding available for nonprofits, I haven’t been able to secure government funding because nobody can quite understand what to make of my enterprise. After all, it is a for-profit tech startup.
+
+[Speaker: Josh Kline]
+But over the last year, I’ve reached out to both the city of Los Angeles and the California state government, and I’ve realized that now is really the time and place for HaveNeed. What could be better than something that would allow citizens to be more resilient and share goods and services when tens of millions of people are out of work and cash is tight? But even with that, I have not been successful in identifying grant funding or government programs. It’s certainly not for a lack of trying.
+
+[Speaker: Shane Tews]
+How can users rate transactions and, furthermore, be sure that they aren’t getting scammed?
+
+[Speaker: Josh Kline]
+We do have a rating system that will be very helpful in determining who you want to trade with, and will allow you to filter for the quality of trading partners. But we’ve still got to build that up, and so we have to provide tools that give our users comfort and exude dependability and safety. These tools will include something that hasn’t been done before, which is transactional barter insurance, and that’s actually an insurance product we’re developing right now with an insurance tech firm. So in addition to an innovative app, I think we’ll actually have the first transactional barter insurance product on the market.
+
+[Speaker: Shane Tews]
+How can users get involved in the app?
+
+[Speaker: Josh Kline]
+We’re rolling out in beta imminently, so anybody listening can go to HaveNeed.org, and at the bottom of that page, there’s a signup form to be notified when the app is open to the public or when we’re recruiting for private groups.
+
+[Speaker: Josh Kline]
 But if you were to download it now, unless you’re part of one of the private groups, your account won’t be whitelisted. You’ll get a little popup that says “sorry, not yet,” but we’re opening to the public soon, so sign up for our updates and stay tuned.
+
+[Speaker: Josh Kline]
+[related-items item=”” title=”Learn more:”]

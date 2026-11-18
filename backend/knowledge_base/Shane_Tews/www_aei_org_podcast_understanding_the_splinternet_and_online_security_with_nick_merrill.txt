@@ -1,26 +1,14 @@
 PAGE_TITLE: 
-	Understanding the ‘Splinternet’ and Online Security (with Nick Merrill) | American Enterprise Institute - AEI
+	Understanding the ‘Splinternet’ and Online Security (with Nick Merrill)
 
-The
-potential for a fragmented, decentralized global internet (or “splinternet”) is
-a concern on many levels. Two aspects of internet governance are at play here:
-the technical aspects of connectivity (or lack thereof), and content delivery —
-in essence, what material is permitted, censored, or filtered. As China,
-Russia, and authoritarian-leaning regimes advance top-down visions of the
-internet that reflect their national interests, will the internet fragment
-further? And what would moving away from the status quo of a free, open
-internet mean for global cybersecurity?
-To help make sense of these complex questions,
-Shane
-is joined by
-Nick Merrill
-, director of the
-Daylight Security Research Lab
-at the University of California, Berkeley’s
-Center for Long-Term Cybersecurity
-. In addition to recent national news appearances, Nick’s work includes
-The Internet Atlas
-— a visual indicator of the global internet’s structural risks —  along with the
-Internet Fragmentation Index
-. Nick joins the podcast to discuss how individual countries’ internet governance decisions shape user experiences and the global cybersecurity landscape.
+[Speaker: Introduction / editorial context]
+The potential for a fragmented, decentralized global internet (or “splinternet”) is a concern on many levels. Two aspects of internet governance are at play here: the technical aspects of connectivity (or lack thereof), and content delivery — in essence, what material is permitted, censored, or filtered. As China, Russia, and authoritarian-leaning regimes advance top-down visions of the internet that reflect their national interests, will the internet fragment further? And what would moving away from the status quo of a free, open internet mean for global cybersecurity?
+
+[Speaker: Introduction / editorial context]
+To help make sense of these complex questions, Shane is joined by Nick Merrill, director of the Daylight Security Research Lab at the University of California, Berkeley’s Center for Long-Term Cybersecurity. In addition to recent national news appearances, Nick’s work includes The Internet Atlas — a visual indicator of the global internet’s structural risks — along with the Internet Fragmentation Index. Nick joins the podcast to discuss how individual countries’ internet governance decisions shape user experiences and the global cybersecurity landscape.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

@@ -1,32 +1,59 @@
 PAGE_TITLE: 
-	The Future of Small Business Financing | American Enterprise Institute - AEI
+	The Future of Small Business Financing
 
-Small businesses are the foundation of the US economy,
-representing
-99 percent of all firms and employing nearly half of the private sector workforce. In 2021, these enterprises generated over $16.2 trillion in revenue. Beyond their economic impact, small businesses play a vital role in shaping neighborhoods and communities across the country. Despite their significance, many small businesses struggle to access traditional capital. They often face challenging credit requirements, extensive documentation demands, and lengthy loan application processes. These barriers can hinder growth and limit opportunities for many entrepreneurs.
-Anthony Matos, CEO and founder of
-Shubox
-, aims to address this issue by leveraging data and AI to help small-business owners access needed capital. Before founding Shubox, Anthony worked as a legal counsel at DNA RX systems, a financial advisor at Newbridge Securities Corporation, and as an associate attorney at the Law Offices of Mario M Blanch.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+[Speaker: Introduction / editorial context]
+Small businesses are the foundation of the US economy, representing 99 percent of all firms and employing nearly half of the private sector workforce. In 2021, these enterprises generated over $16.2 trillion in revenue. Beyond their economic impact, small businesses play a vital role in shaping neighborhoods and communities across the country. Despite their significance, many small businesses struggle to access traditional capital. They often face challenging credit requirements, extensive documentation demands, and lengthy loan application processes. These barriers can hinder growth and limit opportunities for many entrepreneurs.
+
+[Speaker: Introduction / editorial context]
+Anthony Matos, CEO and founder of Shubox, aims to address this issue by leveraging data and AI to help small-business owners access needed capital. Before founding Shubox, Anthony worked as a legal counsel at DNA RX systems, a financial advisor at Newbridge Securities Corporation, and as an associate attorney at the Law Offices of Mario M Blanch.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Anthony, you are the founder of Shubox, a technology platform that uses data and AI to help small business owners and their potential lenders have more transparent access to information to access and distribute capital. Tell me a little bit more about your platform.
+
+[Speaker: Anthony Matos]
 Anthony Matos: Me and my two other co-founders, Jose Rodriguez and Tiago Fernandes, came together with the mission to help small businesses access affordable capital. We all come from small business Latino communities in New York and we saw that there was a huge challenge in accessing capital. There was an information and data gap between small business owners and lenders.
+
+[Speaker: Anthony Matos]
 By looking at things like foot traffic, web traffic, customer sentiment, and other grassroot factors driving the success of these businesses, we have been able to analyze and assess the performance of a business. We end up packaging all of this information into a profile on our platform, which doesn’t just measure business health, but also uses the business’s financials to help potential lenders assess these businesses. Ultimately, our platform provides both lenders and businesses with better information and it provides this information faster than what is typically done manually.
+
+[Speaker: Shane Tews]
 You mentioned that the lack of access to traditional capital is an issue. How did these small restaurants and businesses expand when they didn’t use bank funds?
+
+[Speaker: Anthony Matos]
 After meeting with some very successful business owners from the neighborhood where I grew up, I learned that some had access to very small loans from traditional lenders. But by and large, any expansion they did was self-funded. This led to the question, “How do other local community businesses who aren’t expanding throughout their state and even across states access these traditional pools of capital?” This is a huge problem we sought to solve.
+
+[Speaker: Anthony Matos]
 When talking to business owners, we found that most times they were accessing capital through black and gray markets. Lots of it was coming from lenders, merchant cash advances, or even loan sharks. Today, these businesses end up paying up to 10 percent per month in interest on top of their original loan. This is especially a problem within Latino communities, where credit is not extensively available. Not many people have familiarity with the “game of credit” and how to best present and structure the story of their business to access credit in the future.
+
+[Speaker: Shane Tews]
 Shubox is pointing out where businesses can improve when they are rejected from bank loans. How do you leverage AI in this process?
+
+[Speaker: Anthony Matos]
 Transparency was one of the main complaints we heard from small business owners. Oftentimes when they were rejected for a loan, they didn’t know what they needed to do to improve. When a business cannot qualify for capital, we at Shubox can provide actionable feedback from the data we have collected. Usually, when we think about accessing capital, we think about FICO credit scoring, which is designed to reflect your ability to manage debt assuming you have a stable income. But when it comes to business scoring, it’s very different. You need information like project performance, revenue, and profitability – none of which is fixed to a salary. This leads to historical challenges in small business evaluation, specifically information opacity and heterogeneity.
+
+[Speaker: Anthony Matos]
 Before COVID, we saw a majority of small businesses exist primarily offline. They were predominantly cash-heavy and didn’t have a strong internet presence. This made it very difficult to get extensive data points on them. Evaluating whether or not these offline businesses were eligible for a loan was labor intensive regardless of the size of the loan they were applying for. However, we saw changes in this as COVID accelerated the digitization of small businesses. Suddenly, everyone was using contactless payments and credit card scanners. Their digital presence across social media platforms such as TikTok and even delivery apps grew overnight. This provided the opportunity to collect more “digital breadcrumbs” and gain more insights into how these businesses were operating.
+
+[Speaker: Anthony Matos]
 Heterogeneity was also an issue which posed a challenge to small businesses. There was some assumption that individual businesses were just too different from each other. So even if someone had successfully underwritten a loan for a cafe in Manhattan’s West Village, you couldn’t apply any of that knowledge to a separate cafe located in Williamsburg. Each business was seen as too unique. Now by leveraging AI and deep learning models, we are able to compare businesses across the nation by looking at data points like neighborhood, demographics, media, income, transit, accessibility within different neighborhoods, and more. If you were doing this manually, it would take an extremely long time and it would be imperfect. We are able to do this quicker and more efficiently using AI, which ultimately allows us to be more transparent with small businesses looking for improvements after receiving a loan rejection.
+
+[Speaker: Shane Tews]
 You said that you were using AI to create more transparency in the market. Where are you gathering the data points that are helping your clients and is there a concern about AI being leveraged?
+
+[Speaker: Anthony Matos]
 There’s a lot of dialogue right now about AI being a “black box.” There’s a worry that we don’t know how these AI models transform data points into more tangible plans of action and ultimately result in recommendations. In a way, credit access for small businesses has itself been a black box model for a long time. Small business owners are living in a world where decisions have already been made. Those decisions impact their day to day livelihoods yet, they don’t know how those choices were made. It feels random to them and like they aren’t privy to the decision-making process. We saw this as an opportunity to use AI and big data to shed some light on this.
+
+[Speaker: Anthony Matos]
 We think of data in three different buckets: publicly available data, private data, and data derivatives. Publicly available data is sourced through publicly available databases, as the name would imply. This includes data from cities that give further insight into traffic and demographic data. With private data, we’re able to source it via data partnerships with other financial institutions as well as other data providers, in order to get more of that data. And included within private data is the business’s own data. So when a business connects to the Shubox platform, we’re able to connect their financials and look at their information, ultimately providing more accurate contextualization. It was important to us to have the public data as well as private because what we had found with other platforms was that businesses were essentially penalized for the fact they didn’t know certain platforms existed. Lastly, data derivatives form our secret sauce, so to speak. Those are the insights that we generate from those first two buckets of public and private data. These data derivatives form the relationships that we’re able to find among these data points and relay to the individuals using our platform. This also allows us to give more insight to the business owners, allowing them to know what metrics were consulted to arrive at a decision.
+
+[Speaker: Shane Tews]
 How are institutions and lenders taking into account all of the data that you are collecting?
+
+[Speaker: Anthony Matos]
 We’re very excited about the direction and the receptivity of lenders. They are looking at other ways to evaluate businesses, especially how to evaluate businesses earlier. Small businesses need capital most at the very beginning, when they’re just starting out. However, if a loan requires two, three, four years of tax returns, new businesses will ultimately not be able to qualify for a loan. That’s always going to be the case with loans of certain rates and sizes. This leaves lenders with the feeling that they’re leaving money on the table.
+
+[Speaker: Anthony Matos]
 Conversely, consumers tend to stick to a single lender and have a sense of loyalty to them. If someone got their mortgage through Chase Bank, they’ll end up doing everything through Chase Bank. This isn’t the case with business capital access though. A small business is just as willing to go to the bank next door to find a loan. This creates a level of competition that challenges lenders to underwrite loans earlier and more creatively. Access to customer data, gives more insight to lenders and will allow them to approve loans form businesses that show performance earlier according to the data.

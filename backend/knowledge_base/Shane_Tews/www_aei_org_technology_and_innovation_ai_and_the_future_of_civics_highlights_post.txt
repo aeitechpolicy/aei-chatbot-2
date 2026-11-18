@@ -1,58 +1,71 @@
 PAGE_TITLE: 
-	AI and the Future of Civics | American Enterprise Institute - AEI
+	AI and the Future of Civics
 
-In a nation where less than
-half
-of adults can name all three branches of government, a
-quarter
-cannot name even a single branch, and roughly
-26
-percent cannot name any First Amendment freedoms, America’s civic literacy crisis has reached a critical point. Equipping students with a comprehensive understanding of government structures and the legislative process is essential to fostering an informed, engaged citizenry. In response, over half the US states have implemented statutes requiring a full year of stand-alone US government courses or a civics equivalent for high school graduation. The critical challenge now lies in developing strategies to extend civic engagement beyond the classroom and ensure that students develop a lasting commitment to active citizenship.
-Working alongside the
-Edward M. Kennedy Institute for the United States Senate
-, Adam Hinds, Michael Champigny, and Will Foster-Nolan have helped to spearhead  the
-Senate Immersion Module (SIM) Program
-—an innovative civic simulation which transforms participants into “Senators for a Day” and encourages them to weigh competing interests, consider diverse perspectives and understand the real world implications of their policy decisions.
-Adam
-serves as the Institute’s CEO and served as a Massachusetts State Senator from 2017–2022.
-Michael
-is a senior associate for curriculum and content at the Institute.
-Will
-is the Institute’s senior manager of education programs.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+[Speaker: Introduction / editorial context]
+In a nation where less than half of adults can name all three branches of government, a quarter cannot name even a single branch, and roughly 26 percent cannot name any First Amendment freedoms, America’s civic literacy crisis has reached a critical point. Equipping students with a comprehensive understanding of government structures and the legislative process is essential to fostering an informed, engaged citizenry. In response, over half the US states have implemented statutes requiring a full year of stand-alone US government courses or a civics equivalent for high school graduation. The critical challenge now lies in developing strategies to extend civic engagement beyond the classroom and ensure that students develop a lasting commitment to active citizenship.
+
+[Speaker: Introduction / editorial context]
+Working alongside the Edward M. Kennedy Institute for the United States Senate, Adam Hinds, Michael Champigny, and Will Foster-Nolan have helped to spearhead the Senate Immersion Module (SIM) Program—an innovative civic simulation which transforms participants into “Senators for a Day” and encourages them to weigh competing interests, consider diverse perspectives and understand the real world implications of their policy decisions. Adam serves as the Institute’s CEO and served as a Massachusetts State Senator from 2017–2022. Michael is a senior associate for curriculum and content at the Institute. Will is the Institute’s senior manager of education programs.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: We have a lot of recent graduates who come to Washington, DC from great institutions and they don’t know a lot of the pieces to how our government works. You’re doing a really great job at making these people show up well educated in the process. Walk me through how your program at the Kennedy Institute works.
-Adam Hinds:
-If I could just set the top level, because I love that you’re painting the picture for who we are and what we do. When people walk into the Institute, you are walking into an exact replica, one-to-one, of the United States Senate chamber. And so you can just imagine when students or guests walk in, their jaws drop. Honestly, sitting senators walk in and their jaws drop. And that really sets the stage for an experiential role play, civic experience.
-Will Foster-Nolan:
-The program that most students participate in is our Senate Immersion Module (SIM) program. This program focuses specifically on AI and tech policy and students are brought into our replica of the United States Senate Chamber, given a tablet, and assigned the identity of a real lawmaker. From there, they are asked to consider three different facets: the interests of their party, the interests of their states, and their own personal interests.
+
+[Speaker: Adam Hinds]
+Adam Hinds: If I could just set the top level, because I love that you’re painting the picture for who we are and what we do. When people walk into the Institute, you are walking into an exact replica, one-to-one, of the United States Senate chamber. And so you can just imagine when students or guests walk in, their jaws drop. Honestly, sitting senators walk in and their jaws drop. And that really sets the stage for an experiential role play, civic experience.
+
+[Speaker: Will Foster-Nolan]
+Will Foster-Nolan: The program that most students participate in is our Senate Immersion Module (SIM) program. This program focuses specifically on AI and tech policy and students are brought into our replica of the United States Senate Chamber, given a tablet, and assigned the identity of a real lawmaker. From there, they are asked to consider three different facets: the interests of their party, the interests of their states, and their own personal interests.
+
+[Speaker: Will Foster-Nolan]
 As they craft and build the piece of legislation throughout this two and a half hour experience, they’ll go to subcommittee hearings, they’ll interview expert witnesses, much like they would on Capitol Hill. They’re choosing different provisions based on the information they glean from these experts. After this, they move to a full committee period where they look at the body of work they’ve done thus far. They then do a markup process. They meet in their caucuses. They basically choose party platforms and debate how to amend the bill they’ve already created. And then finally, it all culminates with them turning back and coming back into this Senate chamber where they debate the bill that they have then spent a better part of two hours constructing. And then finally they will round it all out by voting on this bill and whether or not to pass it through the United States Senate.
+
+[Speaker: Will Foster-Nolan]
 We don’t claim that this is actually how institutions and politicians work on Capitol Hill but, the program works to hone in on party, state, and personal interests to ground students and give them a laser focus on a certain subset of issues they need to work on. The SIM is not supposed to be a mile-deep program. It’s more a mile wide.
+
+[Speaker: Shane Tews]
 When it comes to the SIM based on AI legislation, you could give the students a lot of that dialogue that’s been happening in the Senate. Do you feed that real-world information into the SIM? What kind of background do the students have regarding the actual conversations about regulation?
-Will Foster-Nolan
-: A lot of inspiration for the program comes from legislatures across the country. Previously, before we even launched the AI module, the SIM was focused on actual pieces of legislation that had passed, like the 2013 comprehensive immigration reform bill, the Affordable Care Act, and the First Step Act.
+
+[Speaker: Will Foster-Nolan]
+Will Foster-Nolan: A lot of inspiration for the program comes from legislatures across the country. Previously, before we even launched the AI module, the SIM was focused on actual pieces of legislation that had passed, like the 2013 comprehensive immigration reform bill, the Affordable Care Act, and the First Step Act.
+
+[Speaker: Will Foster-Nolan]
 In our newer version of the SIM, we’ve been given the green light to take different ideas on policies that Congress has yet to really legislate in any official capacity. We can use guidelines passed by the White House guidelines and other federal and state governments to create a more coherent outline of how students should be considering the legislation. But Artificial Intelligence and technology policy are things we haven’t seen coherent legislation on a national level.
-Michael Champigny
-: When Will and I were compiling a list of various bills from state legislatures throughout the country, we were very actively engaged with various state-level legislative aides. We were specifically working with some aides in the Massachusetts State House and we sent them a draft of our AI SIM. And their first piece of feedback was that these are the conversations we’re having around the office all the time. That really bolstered our confidence in the program—that the conversations the kids are having are the same sort that legislators at the state level and at the federal level are talking about.
+
+[Speaker: Michael Champigny]
+Michael Champigny: When Will and I were compiling a list of various bills from state legislatures throughout the country, we were very actively engaged with various state-level legislative aides. We were specifically working with some aides in the Massachusetts State House and we sent them a draft of our AI SIM. And their first piece of feedback was that these are the conversations we’re having around the office all the time. That really bolstered our confidence in the program—that the conversations the kids are having are the same sort that legislators at the state level and at the federal level are talking about.
+
+[Speaker: Shane Tews]
 My belief when it comes to tech policy is that you should not try to legislate the input, i.e. being prescriptive on the exact use of the technology. Instead, you should focus on legislating the outcome. As policymakers, we tend to focus on the possible regulatory or legislative input rather than the question of what we are concerned about specific technologies like AI. I’m wondering if this is something you discuss since many of the fear factors around artificial intelligence may not actually come to fruition. How do you make sure that these conversations are balanced on not just about what you can do as a legislator or regulator versus what you are trying to do about the concerns around the technologies used?
-Will Foster-Nolan
-: In previous iterations of the SIM, we would draw attention to something that was disagreed on from the onset. Parties always disagreed on something from the onset. And we would make sure to tell the students: that you’re completely opposite here and you don’t have this in common. You’re going to be fighting with each other all day.
+
+[Speaker: Will Foster-Nolan]
+Will Foster-Nolan: In previous iterations of the SIM, we would draw attention to something that was disagreed on from the onset. Parties always disagreed on something from the onset. And we would make sure to tell the students: that you’re completely opposite here and you don’t have this in common. You’re going to be fighting with each other all day.
+
+[Speaker: Will Foster-Nolan]
 This SIM has something different. We have the parties fundamentally agree on something from the onset, which in this case we do through the lens of national security. In the sense of AI and how it affects the national environment, there is a bipartisan consensus on the Hill that this is an issue that needs to be resolved. There might be different ways that the two parties have on how to get there, but they’re ultimately working towards the same goal. And that’s one lens we try to operate from.
+
+[Speaker: Will Foster-Nolan]
 Another thing we focus on within the simulation is regulation. We ask, “How far do you want to regulate this?” There’s always going to be a clash between pro-business individuals that want to further our innovative standing in the world and there are others who want AI regulation so it doesn’t go out of control. And that’s the central argument we want to introduce and engage with the students on. Is it important enough to regulate? How do you want to regulate it? The students have many options on how they want to legislate. And students have a lot of personal opinions on these matters as well.
-Michael Champigny:
-Our goal is not to tell the students how to write a bill but to give them options on how to pass their own bill. They have multiple options ranging from creating an entirely new federal agency to repealing all AI development. It’s entirely up to the students, they are the lawmakers within the simulation. But we can see the level of depth they go into in the Senate Chamber. One freshman college student brought up issues about an AI regulation bill and pointed out that two provisions within a bill created a loophole for businesses to essentially monitor their own AI use. You start to see that and get a better understanding about the two sides of regulations the students gravitated towards.
+
+[Speaker: Michael Champigny]
+Michael Champigny: Our goal is not to tell the students how to write a bill but to give them options on how to pass their own bill. They have multiple options ranging from creating an entirely new federal agency to repealing all AI development. It’s entirely up to the students, they are the lawmakers within the simulation. But we can see the level of depth they go into in the Senate Chamber. One freshman college student brought up issues about an AI regulation bill and pointed out that two provisions within a bill created a loophole for businesses to essentially monitor their own AI use. You start to see that and get a better understanding about the two sides of regulations the students gravitated towards.
+
+[Speaker: Shane Tews]
 I love the idea that you’re involving kids in this. Often, adults are so embedded in their thought process that they don’t think outside the box. For example, when cellphones first came out, kids were natively able to recognize the alphabet and the texting capabilities that cellphones had whereas adults just used it as a phone. Kids can put fertilizer on new ideas. How often did you run the SIM to continue these new ideas? What does the logistical process look like?
-Michael Champigny
-: Something we have seen across groups is that kids are really ready to grapple with these topics even if they don’t necessarily know what the policy area entails. Taking regulation for example, some high school students enter the program and they couldn’t necessarily tell you what the word “regulation” meant but, they have strong opinions on various topics throughout the program. Once we explain their terms and give them the tools to use their prior knowledge, they do some pretty amazing stuff.
-Adam Hinds
-: Just below 20,000 students come through the building yearly and since COVID, we’ve had the realization that we can and should be online. Now we serve about 5000 students online for no cost across the country thanks to some federal funding. Last week, we had over 1000 students engaging with each other from across the country to talk about the electoral college. Now, we’re fundraising to help expand this program further in the future.
+
+[Speaker: Michael Champigny]
+Michael Champigny: Something we have seen across groups is that kids are really ready to grapple with these topics even if they don’t necessarily know what the policy area entails. Taking regulation for example, some high school students enter the program and they couldn’t necessarily tell you what the word “regulation” meant but, they have strong opinions on various topics throughout the program. Once we explain their terms and give them the tools to use their prior knowledge, they do some pretty amazing stuff.
+
+[Speaker: Adam Hinds]
+Adam Hinds: Just below 20,000 students come through the building yearly and since COVID, we’ve had the realization that we can and should be online. Now we serve about 5000 students online for no cost across the country thanks to some federal funding. Last week, we had over 1000 students engaging with each other from across the country to talk about the electoral college. Now, we’re fundraising to help expand this program further in the future.
+
+[Speaker: Shane Tews]
 When you move to a virtual setting, you lose a bit of the patina behind the SIM as a whole. I imagine being a part of the simulation in in-person and being able to participate in it while in a Senate chamber is impactful. What are some of the benefits you’ve seen from the program in-person and virtually?
-Adam Hinds
-: Having a broader hands-on learning and roleplaying program is really memorable for sure, and people are able to bring that into real-life experience.
-Michael Champigny
-: We’ve recently looked at various studies around simulation based learning. What we found from Marist College and Santa Clara University was that simulations and game-based learning have been found especially beneficial to students who are struggling and might be unengaged in the traditional curriculum. Research also shows that simulations like our own promote civic engagement outside the classroom and inspire critical thinking skills. One study showed that after students participated in simulation based learning, they ended up more likely to pay attention to current events and national news. This is really extending to civic engagement beyond just what they need to learn in the classroom. In addition to that, the study also shows increased learning outcomes within the classroom. It’s sort of two fold. Students are both getting more engaged civically, and also learning what they need to learn, a lot better.
+
+[Speaker: Adam Hinds]
+Adam Hinds: Having a broader hands-on learning and roleplaying program is really memorable for sure, and people are able to bring that into real-life experience.
+
+[Speaker: Michael Champigny]
+Michael Champigny: We’ve recently looked at various studies around simulation based learning. What we found from Marist College and Santa Clara University was that simulations and game-based learning have been found especially beneficial to students who are struggling and might be unengaged in the traditional curriculum. Research also shows that simulations like our own promote civic engagement outside the classroom and inspire critical thinking skills. One study showed that after students participated in simulation based learning, they ended up more likely to pay attention to current events and national news. This is really extending to civic engagement beyond just what they need to learn in the classroom. In addition to that, the study also shows increased learning outcomes within the classroom. It’s sort of two fold. Students are both getting more engaged civically, and also learning what they need to learn, a lot better.

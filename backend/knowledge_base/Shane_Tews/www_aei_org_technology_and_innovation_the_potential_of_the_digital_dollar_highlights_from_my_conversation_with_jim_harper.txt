@@ -1,124 +1,71 @@
 PAGE_TITLE: 
-	The Potential of the Digital Dollar: Highlights from My Conversation with Jim Harper | American Enterprise Institute - AEI
+	The Potential of the Digital Dollar: Highlights from My Conversation with Jim Harper
 
-What will be the future of electronic payments? What are the advantages of a “digital dollar,” and how has the COVID-19 pandemic changed the way we distribute payments?
-Jim Harper
-, a visiting fellow on AEI’s Technology Policy Studies team, joined the latest episode of “Explain to Shane” to discuss the growth of digital payment technologies in the context of COVID-19, data privacy, and cybersecurity.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-.
-Shane Tews: So, Jim,
-COVID-19 generated a renewed interest in the digital dollar, and Congress has
-had some hearings on it recently. Can you explain the basics to us? What is the
-digital dollar?
-Jim Harper: The idea of a digital dollar has been
-percolating around for a while, but it really took off with COVID-19 and the
-economic stimulus measures that Congress took, where it was quickly discovered
-that it’s awfully hard to distribute payments to a lot of people. Even though
-the IRS has information about all taxpayers, pushing money out to them is not
-easy to do.
-There are really two digital dollar conversations going on
-in tandem. The thing that spurred things was a proposal that was introduced in
-the Senate to create a digital dollar and give everybody accounts run by the
-Fed, from which they could access their digital dollars. That was put forth by
-[Senator] Sherrod Brown from Ohio, but that was really quite similar to the
-e-money that we have now that you transfer through your bank, or Venmo, or
-PayPal, or any other thing.
-The real digital dollar, if you will, or the interesting
-digital dollar, is a truly tokenized dollar, where you aren’t passing it
-through a bank or another financial services provider. You’re not passing it
-through the Fed. So the dual conversation, or the urgency in Congress to get
-people stimulus funds, has sort of raised the tide for both discussions, but
-especially for the true tokenized digital dollar.
+[Speaker: Introduction / editorial context]
+What will be the future of electronic payments? What are the advantages of a “digital dollar,” and how has the COVID-19 pandemic changed the way we distribute payments? Jim Harper, a visiting fellow on AEI’s Technology Policy Studies team, joined the latest episode of “Explain to Shane” to discuss the growth of digital payment technologies in the context of COVID-19, data privacy, and cybersecurity.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here.
+
+[Speaker: Shane Tews]
+Shane Tews: So, Jim, COVID-19 generated a renewed interest in the digital dollar, and Congress has had some hearings on it recently. Can you explain the basics to us? What is the digital dollar?
+
+[Speaker: Jim Harper]
+Jim Harper: The idea of a digital dollar has been percolating around for a while, but it really took off with COVID-19 and the economic stimulus measures that Congress took, where it was quickly discovered that it’s awfully hard to distribute payments to a lot of people. Even though the IRS has information about all taxpayers, pushing money out to them is not easy to do.
+
+[Speaker: Jim Harper]
+There are really two digital dollar conversations going on in tandem. The thing that spurred things was a proposal that was introduced in the Senate to create a digital dollar and give everybody accounts run by the Fed, from which they could access their digital dollars. That was put forth by [Senator] Sherrod Brown from Ohio, but that was really quite similar to the e-money that we have now that you transfer through your bank, or Venmo, or PayPal, or any other thing.
+
+[Speaker: Jim Harper]
+The real digital dollar, if you will, or the interesting digital dollar, is a truly tokenized dollar, where you aren’t passing it through a bank or another financial services provider. You’re not passing it through the Fed. So the dual conversation, or the urgency in Congress to get people stimulus funds, has sort of raised the tide for both discussions, but especially for the true tokenized digital dollar.
+
+[Speaker: Shane Tews]
 A tokenized dollar — how does that work?
-Well, it’s tough to explain because sometimes “token” is
-just a metaphor, and there isn’t actually a real digital token going around. It’s
-really a technical infrastructure that would allow treatment of dollars
-digitally exactly the same as they’re treated in paper. So you’d be able to
-hand a $20 bill to a person, using your phone, you know, bluetooth connection
-or exposing a QR code to them, or whatever the technology would be, and $20 in
-value would move from you to this other person, just like pulling a $20 bill
-out of your billfold and handing it to them. So “tokenized” is really
-metaphorical, because what’s under the hood could be any number of things, but
-the idea is having something that you can hand over to somebody without going
-through a bank, without going through the Fed. That has a lot of important
-consequences for privacy and security, for example.
-So what are some of
-the current approaches to helping the unbanked get access to the system?
+
+[Speaker: Jim Harper]
+Well, it’s tough to explain because sometimes “token” is just a metaphor, and there isn’t actually a real digital token going around. It’s really a technical infrastructure that would allow treatment of dollars digitally exactly the same as they’re treated in paper. So you’d be able to hand a $20 bill to a person, using your phone, you know, bluetooth connection or exposing a QR code to them, or whatever the technology would be, and $20 in value would move from you to this other person, just like pulling a $20 bill out of your billfold and handing it to them. So “tokenized” is really metaphorical, because what’s under the hood could be any number of things, but the idea is having something that you can hand over to somebody without going through a bank, without going through the Fed. That has a lot of important consequences for privacy and security, for example.
+
+[Speaker: Shane Tews]
+So what are some of the current approaches to helping the unbanked get access to the system?
+
+[Speaker: Jim Harper]
 Well, there are a lot of options. One that springs to mind for me is to reduce the amount of — because of my policy interests — reduce the amount of financial surveillance. It’s costly to maintain the records that are required under US federal law. It’s costly to require proof of identity to get accounts. Again, people who have suffered homelessness or addiction and things like that often don’t have the documentation they need to get the modern ID cards and things like that. But at the operational levels, our system is kludgy and expensive because there are so many actors, or so many hands, or businesses involved. So again, this has a potential for driving down those costs, which just naturally would help the unbanked. The proposal for a system run by the Fed would probably be tax-subsidized, so it would be cheaper on the retail side, but not necessarily cheaper and better overall.
-How does the digital
-dollar differ from cryptocurrencies such as Bitcoin?
-So I’ll speak in terms of the tokenized digital dollar. I’m
-an advisor to the Digital Dollar Project. That might be one of the leading
-digital dollar discussions, though I don’t think it’s necessarily the only one.
-The Digital Dollar Project has put out a white paper arguing that there are a
-lot of benefits to a digital dollar — that it’s a way of upgrading our payments
-infrastructure, and that it would maintain the primacy of the dollar, globally.
-The project has refrained, actually, from selecting a technology, though I
-think it’s fair to say that it’s inspired by blockchain technology, which is
-the technology that underlines Bitcoin. They haven’t selected a particular
-technology, but instead, I think smartly, have put forward the characteristics,
-and are going to sort of build out what the characteristics are that you want
-in a digital dollar, and then see what technologies satisfy those
-characteristics.
+
+[Speaker: Shane Tews]
+How does the digital dollar differ from cryptocurrencies such as Bitcoin?
+
+[Speaker: Jim Harper]
+So I’ll speak in terms of the tokenized digital dollar. I’m an advisor to the Digital Dollar Project. That might be one of the leading digital dollar discussions, though I don’t think it’s necessarily the only one. The Digital Dollar Project has put out a white paper arguing that there are a lot of benefits to a digital dollar — that it’s a way of upgrading our payments infrastructure, and that it would maintain the primacy of the dollar, globally. The project has refrained, actually, from selecting a technology, though I think it’s fair to say that it’s inspired by blockchain technology, which is the technology that underlines Bitcoin. They haven’t selected a particular technology, but instead, I think smartly, have put forward the characteristics, and are going to sort of build out what the characteristics are that you want in a digital dollar, and then see what technologies satisfy those characteristics.
+
+[Speaker: Jim Harper]
 I’m attracted to blockchain, of course, because I can see a number of benefits to it, including open-data and security benefits. It has characteristics that I think are good for public projects, because you could run fully open-source software that people are able to audit themselves, and that would create good oversight dynamics and things like that. But again, the Digital Dollar Project hasn’t selected a technology, and you could run something entirely centrally, but you would get certain costs from that, such as a breakdown in the system if the centralized operator hasn’t got it right, and also surveillance costs and things like that.
-I’m totally with you
-on the potential for the technology being much more efficient than our current
-currency system, but law enforcement is very interested in the whole money
-laundering aspect and, candidly, I am too. What do we do to appease their
-concern that this will become, we’ll say, a dark web asset?
-Well, that’s the tough conversation that I think is coming
-up because one of the, I suppose, fundamental distinctions between a tokenized
-dollar and a paper dollar is that a tokenized dollar can be transferred across
-time. Sorry, across space, not time, quite yet, where physical can’t.
-Let me know when we
-get that time element, I’m going to be fascinated by that.
-Well, these coders will figure something out to transmit
-across time. You’re going to be able to move potentially large amounts of value
-across long distances, including state and national borders, without any of the
-effort that it takes to move $100 bills and $20 bills. So money will be easier
-to move around under a tokenized dollar, and obviously we have a rather
-substantial infrastructure of surveillance that relies on money being a little
-bit hard to move around. If you want to move it quickly, you have to go through
-a bank or other provider that’s regulated, and that provides surveillance
-services to the government. And if you don’t want to do that, you have to
-actually deal with bulky and heavy dollars, or gold, or whatever else.
-So this is one of the basic differences between a tokenized
-dollar and a physical dollar, so there will have to be a discussion. I think
-that the best approach right now is to have technology that could implement
-whatever the policy ends up being, so a base technology that can support
-fully-anonymized payments and payments that are subject to certain levels of
-surveillance and even blocking. For OFAC purposes, the Office of Foreign Assets
-Control requires people not to trade with folks in Iran and other places that harbor
-terrorist organizations or what have you.
-There’s going to be a lot of challenge in a digital dollar
-to nest those kinds of policies with the technology, but the technology should
-support anything, and then the policy discussion will get hammered out. I would
-love for there to be a nice, clear debate. I don’t suspect there will be a
-nice, clear debate on the actual costs and benefits of the financial
-surveillance regime we’ve got now. I don’t think it actually has a very big
-payoff relative to the billions of dollars worldwide that are spent on it.
-Facebook tried to put
-something together, which makes sense when we think about how many Facebook
-users are actually in areas where they’re unbanked. They tried to do this
-without tethering it to a particular asset, as the US dollar. Do we see
-anything with that kind of global backing?
+
+[Speaker: Shane Tews]
+I’m totally with you on the potential for the technology being much more efficient than our current currency system, but law enforcement is very interested in the whole money laundering aspect and, candidly, I am too. What do we do to appease their concern that this will become, we’ll say, a dark web asset?
+
+[Speaker: Jim Harper]
+Well, that’s the tough conversation that I think is coming up because one of the, I suppose, fundamental distinctions between a tokenized dollar and a paper dollar is that a tokenized dollar can be transferred across time. Sorry, across space, not time, quite yet, where physical can’t.
+
+[Speaker: Jim Harper]
+Let me know when we get that time element, I’m going to be fascinated by that.
+
+[Speaker: Jim Harper]
+Well, these coders will figure something out to transmit across time. You’re going to be able to move potentially large amounts of value across long distances, including state and national borders, without any of the effort that it takes to move $100 bills and $20 bills. So money will be easier to move around under a tokenized dollar, and obviously we have a rather substantial infrastructure of surveillance that relies on money being a little bit hard to move around. If you want to move it quickly, you have to go through a bank or other provider that’s regulated, and that provides surveillance services to the government. And if you don’t want to do that, you have to actually deal with bulky and heavy dollars, or gold, or whatever else.
+
+[Speaker: Jim Harper]
+So this is one of the basic differences between a tokenized dollar and a physical dollar, so there will have to be a discussion. I think that the best approach right now is to have technology that could implement whatever the policy ends up being, so a base technology that can support fully-anonymized payments and payments that are subject to certain levels of surveillance and even blocking. For OFAC purposes, the Office of Foreign Assets Control requires people not to trade with folks in Iran and other places that harbor terrorist organizations or what have you.
+
+[Speaker: Jim Harper]
+There’s going to be a lot of challenge in a digital dollar to nest those kinds of policies with the technology, but the technology should support anything, and then the policy discussion will get hammered out. I would love for there to be a nice, clear debate. I don’t suspect there will be a nice, clear debate on the actual costs and benefits of the financial surveillance regime we’ve got now. I don’t think it actually has a very big payoff relative to the billions of dollars worldwide that are spent on it.
+
+[Speaker: Shane Tews]
+Facebook tried to put something together, which makes sense when we think about how many Facebook users are actually in areas where they’re unbanked. They tried to do this without tethering it to a particular asset, as the US dollar. Do we see anything with that kind of global backing?
+
+[Speaker: Jim Harper]
 Yeah, I think Libra. Certainly, you might credit Bitcoin and cryptocurrency first, and then Libra, and then China for spurring forward the discussion in a serious currency country like the United States. The potential in all those things I just mentioned ranges from modest to significant. Facebook has something special, and that’s a user base, and the original version of Libra was to have a basket of currencies, and if I recall correctly, they’ve now moved to where they’re going to have a bunch of stable coins. That is a token that represents a dollar, and a token that represents a Swiss franc, and a token that represents a Euro, whatever the case may be. It has helped spur the conversation and moved things forward. I wish Facebook and Libra the best. I’m interested in anything that brings progress, especially because in places outside of the United States where the financial services infrastructure is frankly quite poor, it’s holding back those economies. That is unfortunate on humanitarian grounds, and it’s unfortunate on national security grounds.
-There are lots of places in the world that I’d love to see
-have the economic development so that there’s a rule of law, so that they can
-secure their own internal country, so that they can be safer international
-actors. I think there are real benefits to be gotten, perhaps, by loosening up
-a little bit on the financial surveillance regime so that there can be economic
-development that flourishes. I think Facebook fell on the wrong side of that,
-and was really beaten up by — I should say Libra, because Facebook had started
-the project but it’s not Facebook, per se, that runs Libra — Libra got on the
-wrong side of that, and has dramatically scaled back what they were hoping to
-do.
-But, there is a future out there where good people across
-the world are able to trade using digital currency, and they’re able to lift
-themselves up using this technology, which can easily be truly global and truly
-beneficial to markets and to freedom around the world.
+
+[Speaker: Jim Harper]
+There are lots of places in the world that I’d love to see have the economic development so that there’s a rule of law, so that they can secure their own internal country, so that they can be safer international actors. I think there are real benefits to be gotten, perhaps, by loosening up a little bit on the financial surveillance regime so that there can be economic development that flourishes. I think Facebook fell on the wrong side of that, and was really beaten up by — I should say Libra, because Facebook had started the project but it’s not Facebook, per se, that runs Libra — Libra got on the wrong side of that, and has dramatically scaled back what they were hoping to do.
+
+[Speaker: Jim Harper]
+But, there is a future out there where good people across the world are able to trade using digital currency, and they’re able to lift themselves up using this technology, which can easily be truly global and truly beneficial to markets and to freedom around the world.

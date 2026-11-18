@@ -1,11 +1,8 @@
 PAGE_TITLE: 
-	AI and the Future of Civics (with Adam Hinds, Michael Champigny, and Will Foster-Nolan) | American Enterprise Institute - AEI
+	AI and the Future of Civics (with Adam Hinds, Michael Champigny, and Will Foster-Nolan)
 
+[Speaker: Introduction / editorial context]
 In an era when civic literacy is at concerning lows, the Edward M. Kennedy Institute for the United States Senate’s Senate Immersion Module (SIM) is revolutionizing civic education by transforming students into senators for a day, complete with an innovative AI policy simulation. What can experiential learning reveal about students’ capacity to engage with complex policy issues? And how does incorporating emerging topics like AI regulation into civic education help students conceptualize real-world policy challenges?
-Joining us from the SIM are
-Adam Hinds
-,
-Michael Champigny
-, and
-Will Foster-Nolan
-. Adam is the CEO of the Kennedy Institute. He served as a Massachusetts state senator from 2017 to 2022, chairing the Joint Committee on Revenue and leading post-COVID rebuilding efforts. Michael is the senior associate for curriculum and content at the Kennedy Institute, and Will is the senior manager of education programs at the Kennedy Institute.
+
+[Speaker: Introduction / editorial context]
+Joining us from the SIM are Adam Hinds, Michael Champigny, and Will Foster-Nolan. Adam is the CEO of the Kennedy Institute. He served as a Massachusetts state senator from 2017 to 2022, chairing the Joint Committee on Revenue and leading post-COVID rebuilding efforts. Michael is the senior associate for curriculum and content at the Kennedy Institute, and Will is the senior manager of education programs at the Kennedy Institute.

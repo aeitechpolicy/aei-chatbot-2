@@ -1,164 +1,80 @@
 PAGE_TITLE: 
-	Shaping Tech Policy at the Federal Communications Commission: Highlights from a Conversation with FCC Chairman Ajit Pai | American Enterprise Institute - AEI
+	Shaping Tech Policy at the Federal Communications Commission: Highlights from a Conversation with FCC Chairman Ajit Pai
 
-Under Federal Communications Commission (FCC) Chairman
-Ajit Pai’s
-leadership, the US has seen a faster internet, investment in the buildout of 5G networks, more efficient spectrum allocation, and notable progress on closing the digital divide. Chairman Pai’s FCC has also implemented common-sense reforms like lowering interstate prison phone rate caps and establishing a new suicide prevention hotline. Pai recently announced he would depart the FCC on January 20, but his legacy will be one of innovation-friendly, light-touch regulation.
-Chairman Pai joined “Explain to Shane” to speak with me and
-my AEI colleague
-Daniel Lyons
-on what lies ahead for the next FCC and
-how the agency has navigated complex issues like 5G, spectrum allocation,
-and
-Restoring Internet Freedom
-.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Chairman,
-closing the digital divide has been a top priority of yours since day one. Do
-you feel like we’re making progress?
-Ajit Pai: I do feel like we’re making progress. The digital
-divide, as I said on my first full day in office in 2017, was going to be our
-top priority. And I do think we’ve done a tremendous amount to tackle that
-priority — from the Connect America Fund Phase II auctions that we held in 2018
-to the Rural Digital Opportunity Fund (RDOF) auction that just concluded (and
-we’ll be announcing the results of that shortly) to bread-and-butter regulatory
-reforms we’ve introduced to encourage the private sector to invest.
-As a result of a lot of these different initiatives, the
-number of people who have access to the internet in the US has gone up
-substantially. And especially with the advent of new technologies like
-low-earth orbit satellites and fixed wireless using the 6 gigahertz (GHz) band,
-we’re making even more progress. We’re very excited about what all this means
-for American communities on the wrong side of this divide.
-Freeing up unused spectrum for commercial use has been another
-major accomplishment for you — which I hope continues beyond January 20, 2021 —
-but new licensing proposals, removing barriers to development, and coordination
-with state and local governments seemed to be really key. But what happens if
-we stop reallocating spectrum?
-I think that would
-be exceptionally unfortunate because then spectrum availability becomes a
-bottleneck that prevents innovators and entrepreneurs from raising capital and
-investing in the US, and that’s not something we want to see. And I’ve got to
-say: Regardless of party affiliation, these issues are not easy in the least. For
-example, we didn’t have to pick some of these interagency battles. In fact, several
-of my predecessors thought it was easier just to kick the can down the road to
-propose further study or have a working group look at things or just let it sit
-on a shelf.
-And that was one of
-the things I testified about before the Senate Commerce Committee in the summer:
-That’s not why we’re in these jobs. We’re in these jobs to make the difficult decisions.
-You can never make progress if you’re just simply waiting for things to happen.
-You have to make them happen, and spectrum is a good example of that. On a
-number of different things — the 5.9 GHz band, the L band, etc. — it would have
-been easy for me just to say, “Let’s just put it on hold and go slowly,” but I
-don’t want spectrum availability — either licensed or unlicensed — to be a
-bottleneck for those who have the next great application or service.
-Daniel Lyons: One of
-your highest profile policy initiatives was the Restoring Internet Freedom
-Order, which repealed the Obama-era net neutrality rules for internet service
-providers (ISPs). Even though this became a touchy political issue, the
-internet’s reliance during the pandemic has largely proved your critics wrong.
-It’s now fairly clear that your light-touch regulatory approach is what made it
-possible to build out the infrastructure that gave us the network capacity we
-needed.
-But even before the
-pandemic, internet speeds had doubled, fiber deployment had increased, and the
-anticompetitive conduct that people feared never actually happened at the ISP
-level. How important is it for us to maintain that light-touch regulatory
-framework going forward?
-I think it is both a wise and important move. I would hope
-that those of good faith — if there are any left on this issue — would
-recognize that the religious fervor around utility-style regulation of the internet
-sounds great, but the practical consequences for actual consumers who rely on
-the internet are not good at all. So we took a lot of arrows in 2017, and the
-predictions were hyperbolic at best. But over time, I think people have
-recognized that they were sold a bill of goods on this issue — that it doesn’t
-really make sense to heavily regulate something and, conversely, that the light-touch
-regulation we restored in 2017 actually hasn’t been the end of the world. It’s
-actually made the internet better than ever. This is obviously an issue where
-there’s a lot more political salience than there is reasoned policy judgment,
-but hopefully the next FCC will see things the same way too.
-Shane Tews: Another
-key issue during your tenure has been the amazing buildout of 5G and your
-efforts to create a secure and trusted supply chain, which is a real challenge
-in network operations. Are we making progress here?
-We are making tremendous progress, and this is one of the
-areas I’m exceptionally proud about. Domestically, we were proactive; we were
-the first FCC in history to take the Universal Service Fund (USF) monies at our
-disposal and make clear to carriers that prospectively, we did not want them to
-spend that funding on equipment or services that posed a national security
-threat. We also went proactively to other parts of the federal government that
-have primary responsibility for these issues — national security agencies, law
-enforcement agencies, and the intelligence communities — and worked with them
-to get the information we needed to determine which companies constituted a
-threat and to set up a framework for evaluating these issues down the road. And
-that’s part of the Team Telecom order that the FCC finally got across the
-finish line in consultation with the executive branch.
-That’s just with respect to our USF policies prospectively.
-Retroactively, we have also instituted a rip-an-replace mandate and have urged
-Congress for quite some time to give us the necessary funding to accommodate
-that mandate. And hopefully they will come through with that very soon because
-there’s bipartisan support for that issue.
-Another thing I’m very proud of that also wasn’t easy was to
-roll up our sleeves and work with our counterparts around the world. For the
-last two years running, I’ve been a part of the US delegation to Prague where
-we worked with some 32 other nations to come up with a shared group of
-principles embracing a risk-based framework for evaluating security issues. And
-for a while, we got a bit of scoffing here in the United States, including at
-the FCC and on Capitol Hill, but now the results are starting to come in where
-England and Germany and private operators as well — Reliance Jio in India, Telstra
-in Australia, and SK and KT in Korea — are deciding to use trusted vendors. And
-that’s in part, I would think, because we have been persistent and thoughtful
-in our approaches with those countries.
-We’ve also embraced the free-market approach to solving this
-problem. It’s not just the US saying, “Okay, let’s ban problematic equipment,”
-but we’re also encouraging innovation. The development of Open Radio Access
-Networks (O-RAN) has generated a lot of buzz recently, and I’m a believer in
-the potential of that technology to help us put the keys to security in the
-hands of the operator in addition to a technological solution that reduces
-costs dramatically. The FCC has helped encourage that through the OpenRAN Forum
-we held and a few other ways behind the scenes.
-Daniel Lyons: As
-chairman, you’ve also overseen a number of internal process reforms like the
-establishment of the FCC’s Office of Economics and Analytics (OEA). Can you
-point us to some recent decisions in which that new office has been especially
-helpful?
-This might have been one of my favorite process reforms. In
-2017 we proposed — and in 2018 we actually created — the OEA to centralize our economic
-and data analytical functions. They’ve had a seat at the table for some
-critical things. The auctions team within OEA, for example, helped us with the
-Citizens Broadband Radio Service auction we held earlier in the summer and the
-RDOF reverse auction that just finished recently.
-They also did some work I found really interesting and
-important, even if it might be a bit arcane to others. One item was the data
-collection for the inmate calling services determinations we made. Collecting
-all the information from prisons and jails on calling rates (both interstate
-and intrastate) is highly technical, and their work helped us build a
-foundation for a thoughtful proposal that I believe will stand the test of time
-if there’s a petition for review filed in the Court of Appeals.
-Here, too, we rely on Congress for additional funding to
-help set up the back-end IT and other issues we need to resolve, but OEA has
-been absolutely vital. Regarding funding, though, this is one of the reforms I
-hope will happen in years to come as a fundamental improvement to the FCC’s
-decision-making process.
-Looking ahead, what
-do you think will be the greatest opportunities for bipartisan cooperation
-under the next FCC chair?
-First and foremost, spectrum issues should be. They haven’t
-been in the past, unfortunately, but hopefully people of good will can come
-together and recognize that getting more licensed and unlicensed spectrum out
-there — putting the airwaves to use for the American public — is a good thing.
-I also hope the digital divide work will bring people
-together. The pandemic has only underscored the importance of broadband, and
-making sure that every American has access to what I call “digital opportunity”
-is so important. Some of the offshoots of broadband use — the verticals, as
-they might say — are also going to be critical. Telehealth is first and
-foremost among them. Our COVID-19 telehealth program will hopefully serve as a
-model that my successors will be able to continue with more funding from
-Congress.
+[Speaker: Introduction / editorial context]
+Under Federal Communications Commission (FCC) Chairman Ajit Pai’s leadership, the US has seen a faster internet, investment in the buildout of 5G networks, more efficient spectrum allocation, and notable progress on closing the digital divide. Chairman Pai’s FCC has also implemented common-sense reforms like lowering interstate prison phone rate caps and establishing a new suicide prevention hotline. Pai recently announced he would depart the FCC on January 20, but his legacy will be one of innovation-friendly, light-touch regulation.
+
+[Speaker: Introduction / editorial context]
+Chairman Pai joined “Explain to Shane” to speak with me and my AEI colleague Daniel Lyons on what lies ahead for the next FCC and how the agency has navigated complex issues like 5G, spectrum allocation, and Restoring Internet Freedom.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Chairman, closing the digital divide has been a top priority of yours since day one. Do you feel like we’re making progress?
+
+[Speaker: Ajit Pai]
+Ajit Pai: I do feel like we’re making progress. The digital divide, as I said on my first full day in office in 2017, was going to be our top priority. And I do think we’ve done a tremendous amount to tackle that priority — from the Connect America Fund Phase II auctions that we held in 2018 to the Rural Digital Opportunity Fund (RDOF) auction that just concluded (and we’ll be announcing the results of that shortly) to bread-and-butter regulatory reforms we’ve introduced to encourage the private sector to invest.
+
+[Speaker: Ajit Pai]
+As a result of a lot of these different initiatives, the number of people who have access to the internet in the US has gone up substantially. And especially with the advent of new technologies like low-earth orbit satellites and fixed wireless using the 6 gigahertz (GHz) band, we’re making even more progress. We’re very excited about what all this means for American communities on the wrong side of this divide.
+
+[Speaker: Shane Tews]
+Freeing up unused spectrum for commercial use has been another major accomplishment for you — which I hope continues beyond January 20, 2021 — but new licensing proposals, removing barriers to development, and coordination with state and local governments seemed to be really key. But what happens if we stop reallocating spectrum?
+
+[Speaker: Speaker not identified]
+I think that would be exceptionally unfortunate because then spectrum availability becomes a bottleneck that prevents innovators and entrepreneurs from raising capital and investing in the US, and that’s not something we want to see. And I’ve got to say: Regardless of party affiliation, these issues are not easy in the least. For example, we didn’t have to pick some of these interagency battles. In fact, several of my predecessors thought it was easier just to kick the can down the road to propose further study or have a working group look at things or just let it sit on a shelf.
+
+[Speaker: Speaker not identified]
+And that was one of the things I testified about before the Senate Commerce Committee in the summer: That’s not why we’re in these jobs. We’re in these jobs to make the difficult decisions. You can never make progress if you’re just simply waiting for things to happen. You have to make them happen, and spectrum is a good example of that. On a number of different things — the 5.9 GHz band, the L band, etc. — it would have been easy for me just to say, “Let’s just put it on hold and go slowly,” but I don’t want spectrum availability — either licensed or unlicensed — to be a bottleneck for those who have the next great application or service.
+
+[Speaker: Daniel Lyons]
+Daniel Lyons: One of your highest profile policy initiatives was the Restoring Internet Freedom Order, which repealed the Obama-era net neutrality rules for internet service providers (ISPs). Even though this became a touchy political issue, the internet’s reliance during the pandemic has largely proved your critics wrong. It’s now fairly clear that your light-touch regulatory approach is what made it possible to build out the infrastructure that gave us the network capacity we needed.
+
+[Speaker: Shane Tews]
+But even before the pandemic, internet speeds had doubled, fiber deployment had increased, and the anticompetitive conduct that people feared never actually happened at the ISP level. How important is it for us to maintain that light-touch regulatory framework going forward?
+
+[Speaker: Speaker not identified]
+I think it is both a wise and important move. I would hope that those of good faith — if there are any left on this issue — would recognize that the religious fervor around utility-style regulation of the internet sounds great, but the practical consequences for actual consumers who rely on the internet are not good at all. So we took a lot of arrows in 2017, and the predictions were hyperbolic at best. But over time, I think people have recognized that they were sold a bill of goods on this issue — that it doesn’t really make sense to heavily regulate something and, conversely, that the light-touch regulation we restored in 2017 actually hasn’t been the end of the world. It’s actually made the internet better than ever. This is obviously an issue where there’s a lot more political salience than there is reasoned policy judgment, but hopefully the next FCC will see things the same way too.
+
+[Speaker: Shane Tews]
+Shane Tews: Another key issue during your tenure has been the amazing buildout of 5G and your efforts to create a secure and trusted supply chain, which is a real challenge in network operations. Are we making progress here?
+
+[Speaker: Speaker not identified]
+We are making tremendous progress, and this is one of the areas I’m exceptionally proud about. Domestically, we were proactive; we were the first FCC in history to take the Universal Service Fund (USF) monies at our disposal and make clear to carriers that prospectively, we did not want them to spend that funding on equipment or services that posed a national security threat. We also went proactively to other parts of the federal government that have primary responsibility for these issues — national security agencies, law enforcement agencies, and the intelligence communities — and worked with them to get the information we needed to determine which companies constituted a threat and to set up a framework for evaluating these issues down the road. And that’s part of the Team Telecom order that the FCC finally got across the finish line in consultation with the executive branch.
+
+[Speaker: Speaker not identified]
+That’s just with respect to our USF policies prospectively. Retroactively, we have also instituted a rip-an-replace mandate and have urged Congress for quite some time to give us the necessary funding to accommodate that mandate. And hopefully they will come through with that very soon because there’s bipartisan support for that issue.
+
+[Speaker: Speaker not identified]
+Another thing I’m very proud of that also wasn’t easy was to roll up our sleeves and work with our counterparts around the world. For the last two years running, I’ve been a part of the US delegation to Prague where we worked with some 32 other nations to come up with a shared group of principles embracing a risk-based framework for evaluating security issues. And for a while, we got a bit of scoffing here in the United States, including at the FCC and on Capitol Hill, but now the results are starting to come in where England and Germany and private operators as well — Reliance Jio in India, Telstra in Australia, and SK and KT in Korea — are deciding to use trusted vendors. And that’s in part, I would think, because we have been persistent and thoughtful in our approaches with those countries.
+
+[Speaker: Speaker not identified]
+We’ve also embraced the free-market approach to solving this problem. It’s not just the US saying, “Okay, let’s ban problematic equipment,” but we’re also encouraging innovation. The development of Open Radio Access Networks (O-RAN) has generated a lot of buzz recently, and I’m a believer in the potential of that technology to help us put the keys to security in the hands of the operator in addition to a technological solution that reduces costs dramatically. The FCC has helped encourage that through the OpenRAN Forum we held and a few other ways behind the scenes.
+
+[Speaker: Daniel Lyons]
+Daniel Lyons: As chairman, you’ve also overseen a number of internal process reforms like the establishment of the FCC’s Office of Economics and Analytics (OEA). Can you point us to some recent decisions in which that new office has been especially helpful?
+
+[Speaker: Daniel Lyons]
+This might have been one of my favorite process reforms. In 2017 we proposed — and in 2018 we actually created — the OEA to centralize our economic and data analytical functions. They’ve had a seat at the table for some critical things. The auctions team within OEA, for example, helped us with the Citizens Broadband Radio Service auction we held earlier in the summer and the RDOF reverse auction that just finished recently.
+
+[Speaker: Daniel Lyons]
+They also did some work I found really interesting and important, even if it might be a bit arcane to others. One item was the data collection for the inmate calling services determinations we made. Collecting all the information from prisons and jails on calling rates (both interstate and intrastate) is highly technical, and their work helped us build a foundation for a thoughtful proposal that I believe will stand the test of time if there’s a petition for review filed in the Court of Appeals.
+
+[Speaker: Daniel Lyons]
+Here, too, we rely on Congress for additional funding to help set up the back-end IT and other issues we need to resolve, but OEA has been absolutely vital. Regarding funding, though, this is one of the reforms I hope will happen in years to come as a fundamental improvement to the FCC’s decision-making process.
+
+[Speaker: Shane Tews]
+Looking ahead, what do you think will be the greatest opportunities for bipartisan cooperation under the next FCC chair?
+
+[Speaker: Speaker not identified]
+First and foremost, spectrum issues should be. They haven’t been in the past, unfortunately, but hopefully people of good will can come together and recognize that getting more licensed and unlicensed spectrum out there — putting the airwaves to use for the American public — is a good thing.
+
+[Speaker: Speaker not identified]
+I also hope the digital divide work will bring people together. The pandemic has only underscored the importance of broadband, and making sure that every American has access to what I call “digital opportunity” is so important. Some of the offshoots of broadband use — the verticals, as they might say — are also going to be critical. Telehealth is first and foremost among them. Our COVID-19 telehealth program will hopefully serve as a model that my successors will be able to continue with more funding from Congress.
+
+[Speaker: Speaker not identified]
 Notwithstanding the political back-and-forth in Washington, I hope the FCC will continue to be an oasis for common-sense policies that benefit all Americans.
+
+[Speaker: Speaker not identified]
+[related-items item=”” title=”Learn more:”]

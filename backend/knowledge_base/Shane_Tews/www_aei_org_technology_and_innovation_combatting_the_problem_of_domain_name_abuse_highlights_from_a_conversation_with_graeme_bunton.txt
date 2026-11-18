@@ -1,44 +1,83 @@
 PAGE_TITLE: 
-	Combatting the Problem of Domain Name Abuse: Highlights from a Conversation with Graeme Bunton | American Enterprise Institute - AEI
+	Combatting the Problem of Domain Name Abuse: Highlights from a Conversation with Graeme Bunton
 
+[Speaker: Introduction / editorial context]
 Domain Name System (DNS) abuse is a persistent and growing internet security concern—87 percent of organizations suffered a DNS attack between 2020–21. What’s being done to address this rising tide of online abuse?
-On this episode, we interviewed
-Graeme Bunton
-, Executive Director of the
-DNS Abuse Institute
-(DSNAI)—an initiative dedicated to developing collaborative and innovative methods of reducing technical online harm. We discussed how the complexity, volume, and inaccuracy of the methods of redress make internet harm reduction excessively difficult to accomplish and how the Domain Name Abuse Institute’s work is enabling a more effective process for abuse claims.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+On this episode, we interviewed Graeme Bunton, Executive Director of the DNS Abuse Institute (DSNAI)—an initiative dedicated to developing collaborative and innovative methods of reducing technical online harm. We discussed how the complexity, volume, and inaccuracy of the methods of redress make internet harm reduction excessively difficult to accomplish and how the Domain Name Abuse Institute’s work is enabling a more effective process for abuse claims.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: To get started, talk to us about domain name abuse—or “DNS abuse” as it’s referred to in the industry—and the importance of combatting criminal activity.
+
+[Speaker: Graeme Bunton]
 Graeme Bunton: DNS abuse is a subset of online harms that are particularly impactful on what’s called the “domain registration industry.” And because of the way the internet works, the DNS is sort of that sole point of centralization. It’s really a key bit for trying to mitigate cybercrime and online harm.
+
+[Speaker: Graeme Bunton]
 Give us an idea of what you’re doing with the centralized DNS abuse reports that you’re creating.
+
+[Speaker: Graeme Bunton]
 We started the DNS Abuse Institute created by Public Interest Registry last year. We spent some time surveying: What were the real pain points about dealing with DNS abuse across the industry, and where could we make the most impact? It became very clear really quickly that reading through documents out of the Internet Corporation for Assigned Names and Numbers (ICANN) ecosystem and talking with registries and registrars that the manual abuse reports that are coming in the door every day are problematic.
+
+[Speaker: Graeme Bunton]
 For people who have been impacted by abuse in some fashion and want to report it, that experience is awful. You’ve got to be able to identify who a registrar is, which is not trivial for most people. You need to be able to use WHOIS or something like that. Then you need to go and find an individual registrar’s abuse reporting page, which isn’t always straightforward, and then fill out their own custom requirements to submit an abuse report.
+
+[Speaker: Graeme Bunton]
 Not everybody has the sort of experience that would allow them to do that. And then having to do it with multiple domain names across multiple registrars makes things exponentially difficult.
+
+[Speaker: Graeme Bunton]
 Then, as I was saying on the registrar/registry side of things, they’re getting hundreds, maybe thousands of these abuse reports every day. The big problem is that these reports are duplicative, unevidenced, and unactionable. There’s a long list of really unpleasant attributes in these reports. So we have a very frustrated industry spending lots of time and energy triaging these tickets for basically very little value—thousands of useless abuse reports. On the other side, no one is happy about the abuse they’re encountering.
+
+[Speaker: Graeme Bunton]
 By and large, registrars should be the front line on most abuse. They have the key relationship with the registrant—the person who bought the domain name. So for most cases, they should be the ones resolving them. There are some exceptions like botnets where you’re doing some stuff at scale where the registry is more important.
+
+[Speaker: Shane Tews]
 What is NetBeacon and why is it important?
+
+[Speaker: Graeme Bunton]
 We have these two main problems: Reporting abuse sucks and getting abuse reports also sucks. The way to fix that was for us to build an abuse reporting intermediary: something that sits between the people who are trying to submit reports and the people who are trying to get them to build one centralized and standardized database. With standardizing those reports, we enrich them with useful information and get them to where they need to go so that the experience on the registry or registrar side is much better.
+
+[Speaker: Graeme Bunton]
 That makes it easier for reporters, and it incentivizes registrars to use and participate in NetBeacon. Ultimately, we’re trying to reduce the barrier to action so that registries and registrars can get an abuse report. They don’t have to do a lot of work because it’s now standardized. Hopefully, they can just quickly choose whether this domain is indeed abusive.
+
+[Speaker: Graeme Bunton]
 There is a big caveat that I should point out: As the intermediary, we can never make a registrar or registry take a domain offline. They are always going to be responsible for that choice. We are just trying to make that choice as easy and as quick as possible.
+
+[Speaker: Graeme Bunton]
 Something we do at NetBeacon is called “enrichment.” This is where we take all the domains submitted and bounce them off various sources of domain intelligence online. So that’s going to be block lists like Spamhaus and SURBL. We’re also working on integrating Google Safe Browsing API so that when you get a report out of the system, it includes information like whether someone else has flagged this domain name as abusive.
+
+[Speaker: Shane Tews]
 Your three core, argeed-upon principles are innovation, education, and collaboration. Why did you choose these three?
+
+[Speaker: Graeme Bunton]
 Innovation is clearly at work with the NetBeacon initiative. We’re building tools for registries, registrars, and end users to make the internet safer.
+
+[Speaker: Graeme Bunton]
 Education is an ongoing effort for us, mostly focused on producing a set of best practices—and we put out two last year. We’re working on a fun one we should have out shortly for registries and registrars on managing reporter expectations. People put in abuse reports, and they would like to know what happens when they do that. The industry by and large is not great at managing those expectations. So a major question we’re addressing is: How do you do that without revealing too much about your processes, without litigating endlessly on these back-and-forth issues?
+
+[Speaker: Graeme Bunton]
 We’ve got another best practice coming out later this year on architecting registration workflows to reduce abuse. Sometimes it’s really about how to respond to abuse, while othertimes it’s really operational. We did one for end users last year on how to keep your blog safe, why to set unique passwords, and stuff like that.
+
+[Speaker: Graeme Bunton]
 Collaboration is about discussing the work that we’re up to with registries and registrars. That’s like, “Hey, we’re working on this best practice or thinking about this feature for NetBeacon. Can we get some feedback?” Our partners are starting to respond by asking good questions like, “How do we begin sharing actionable intelligence in a safe and privacy-compliant manner?”
+
+[Speaker: Graeme Bunton]
 We’re figuring out how to take next steps in combatting things like TLD hopping, which is where you see a domain name engaged in malware or phishing bouncing around the industry. How do we begin to get people in front of that and be able to share reliable, useful information that’s both actionable and compliant?
+
+[Speaker: Shane Tews]
 What do you guys have on the horizon?
+
+[Speaker: Graeme Bunton]
 We keep expanding NetBeacon and expanding the list of harms that you can report. Ultimately, I want this thing to be the place to report bad things online for the whole range of the infrastructure ecosystem. That’s essentially a public service.
+
+[Speaker: Graeme Bunton]
 We’ve set a high bar here for transparency, academic robustness, and accuracy so that we’re trying to get the community to a place where the statistics are reliable. If someone wants to dig into how a report was made, then they can.
+
+[Speaker: Graeme Bunton]
 Over the next couple of months, we’re taking our data and trying to figure out exactly where in the Domain Name System abuse is occuring? We’ve also got some really neat bits where we can measure abuse time live so we can see who is actioning their abuse quickly. Because of this, we can celebrate the registries and registrars that are doing a great job.
+
+[Speaker: Graeme Bunton]
 We’re also able to split between malicious and compromised domain names so that we can see what the split is across the industry. This is important because someone might have a whole bunch of phishing sites that are actually compromised websites. It’s up to the hosts to resolve those issues, not necessarily the registrar. It’s really important to understand that distinction. So we’ll begin publishing that level of data at the registry and registrar.

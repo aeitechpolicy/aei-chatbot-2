@@ -1,120 +1,71 @@
 PAGE_TITLE: 
-	Web3 and the Future of the Internet: Highlights from My Conversation with Gabrielle Hibbert | American Enterprise Institute - AEI
+	Web3 and the Future of the Internet: Highlights from My Conversation with Gabrielle Hibbert
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-The next
-generation of the internet, also known as Web3, is poised to permanently change
-how the online world functions — namely through blockchain technology,
-decentralization, and token-based economics. What are the underlying
-technologies behind Web3, and can it solve the many policy issues we still
-haven’t gotten right with today’s internet?
-On the latest episode of “Explain to Shane,” I was joined by
-Gabrielle Hibbert
-, a Web3 researcher and developer, to discuss the opportunities and challenges posed by Web3, and how policymakers should approach this new generation of the internet. In the coming year, Gabrielle will also serve as a fellow for the newly created
-Decentralized Future Council
-— an initiative to educate policymakers about the decentralized web.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Tell us about Web3, the concept
-of a decentralized internet, and your upcoming work with the Decentralized
-Future Council.
-Gabrielle
-Hibbert: To put it succinctly, Web3 is the web of trust, immutability, and
-authentication. To kind of orient ourselves and frame everything, we are currently
-in Web2. This is the iteration of the internet most people are familiar with,
-and we are moving towards the new iteration, which is a more decentralized
-architecture — or Web3.
-From a
-systems-engineering perspective, Web3 will differ in terms of that
-decentralized architecture. If we think about Web2 in terms of systems
-engineering, Web2 relies on a centralized authority which all trust is funneled
-through. But Web3 is an interconnected, peer-to-peer information system in
-which no single entity has sole authority. At a thousand-foot level, this makes
-the internet more equitable, democratized, and secure.
-On the cybersecurity
-side, the Web2 sole-authority model makes the process of security a bit more
-difficult. So let’s say that sole authority experiences an outage, or is
-compromised in some way by an attack. This has the potential to affect all
-other entities connected to it. In Web3, a single outage does not necessarily
-have that cascading effect due to its decentralized nature. So from a security
-standpoint, having those interconnected peer-to-peer nodes talking to one
-another, along with that decentralized structure, helps bolster the web’s
-secure foundation.
-The basic
-mission of the Decentralized Future Council is to educate policymakers and
-regulators on how to better embrace both the centralized and decentralized web
-so we can spread and support the positive impacts these new technologies can
-have on our greater community. The topics our work covers include privacy,
-security, and online trust and safety. Specifically, my work there will really
-focus on articulating the public-interest potential for the decentralized web
-as being a more equitable web that can enhance commerce, communications, and
-democracy, in addition to discussing how the future internet can represent the
-values and causes of all people, regardless of geography or economy.
-In addition,
-we want to support open-source protocols to ensure information is never
-compromised, abused, or ruled by a single entity.
-You called Web3 “the web of
-authentication,” among other things. Give us an idea of what you’re thinking
-about there, because I think it’s very important.
-The
-relationship between authentication and Web3 can be boiled down to hashing
-algorithms. Hashing algorithms are basically one-way encryption algorithms. So
-you can’t go back after a piece of data has entered that hashing algorithm.
-It’s that form of authentication that I believe people may be looking for in
-this new iteration of the web. So its application is pretty practical.
-Another
-example people can hang their hat on in terms of that authentication method is
-with the idea of permanence and preservation within the Web3 ecosystem. In
-Web2, we have a lot of link-rot — in essence, broken links that populate our
-internet. The average lifespan of a webpage is around 100 days before it’s
-gone, so this has huge implications for preserving humanity’s history.
-What can
-combat link-rot in Web3, which ties back to that authentication piece, is the
-idea of a decentralized file system, or the interplanetary file system (IPFS)
-created by Protocol Labs. IPFS can effectively combat link-rot and the
-inefficiencies of our current internet through the use of a content identifier
-(or CID). The CID utilizes that hashing algorithm to authenticate different
-files and records that you may have.
+
+[Speaker: Introduction / editorial context]
+The next generation of the internet, also known as Web3, is poised to permanently change how the online world functions — namely through blockchain technology, decentralization, and token-based economics. What are the underlying technologies behind Web3, and can it solve the many policy issues we still haven’t gotten right with today’s internet?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I was joined by Gabrielle Hibbert, a Web3 researcher and developer, to discuss the opportunities and challenges posed by Web3, and how policymakers should approach this new generation of the internet. In the coming year, Gabrielle will also serve as a fellow for the newly created Decentralized Future Council — an initiative to educate policymakers about the decentralized web.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Tell us about Web3, the concept of a decentralized internet, and your upcoming work with the Decentralized Future Council.
+
+[Speaker: Gabrielle Hibbert]
+Gabrielle Hibbert: To put it succinctly, Web3 is the web of trust, immutability, and authentication. To kind of orient ourselves and frame everything, we are currently in Web2. This is the iteration of the internet most people are familiar with, and we are moving towards the new iteration, which is a more decentralized architecture — or Web3.
+
+[Speaker: Gabrielle Hibbert]
+From a systems-engineering perspective, Web3 will differ in terms of that decentralized architecture. If we think about Web2 in terms of systems engineering, Web2 relies on a centralized authority which all trust is funneled through. But Web3 is an interconnected, peer-to-peer information system in which no single entity has sole authority. At a thousand-foot level, this makes the internet more equitable, democratized, and secure.
+
+[Speaker: Gabrielle Hibbert]
+On the cybersecurity side, the Web2 sole-authority model makes the process of security a bit more difficult. So let’s say that sole authority experiences an outage, or is compromised in some way by an attack. This has the potential to affect all other entities connected to it. In Web3, a single outage does not necessarily have that cascading effect due to its decentralized nature. So from a security standpoint, having those interconnected peer-to-peer nodes talking to one another, along with that decentralized structure, helps bolster the web’s secure foundation.
+
+[Speaker: Gabrielle Hibbert]
+The basic mission of the Decentralized Future Council is to educate policymakers and regulators on how to better embrace both the centralized and decentralized web so we can spread and support the positive impacts these new technologies can have on our greater community. The topics our work covers include privacy, security, and online trust and safety. Specifically, my work there will really focus on articulating the public-interest potential for the decentralized web as being a more equitable web that can enhance commerce, communications, and democracy, in addition to discussing how the future internet can represent the values and causes of all people, regardless of geography or economy.
+
+[Speaker: Gabrielle Hibbert]
+In addition, we want to support open-source protocols to ensure information is never compromised, abused, or ruled by a single entity.
+
+[Speaker: Gabrielle Hibbert]
+You called Web3 “the web of authentication,” among other things. Give us an idea of what you’re thinking about there, because I think it’s very important.
+
+[Speaker: Gabrielle Hibbert]
+The relationship between authentication and Web3 can be boiled down to hashing algorithms. Hashing algorithms are basically one-way encryption algorithms. So you can’t go back after a piece of data has entered that hashing algorithm. It’s that form of authentication that I believe people may be looking for in this new iteration of the web. So its application is pretty practical.
+
+[Speaker: Gabrielle Hibbert]
+Another example people can hang their hat on in terms of that authentication method is with the idea of permanence and preservation within the Web3 ecosystem. In Web2, we have a lot of link-rot — in essence, broken links that populate our internet. The average lifespan of a webpage is around 100 days before it’s gone, so this has huge implications for preserving humanity’s history.
+
+[Speaker: Gabrielle Hibbert]
+What can combat link-rot in Web3, which ties back to that authentication piece, is the idea of a decentralized file system, or the interplanetary file system (IPFS) created by Protocol Labs. IPFS can effectively combat link-rot and the inefficiencies of our current internet through the use of a content identifier (or CID). The CID utilizes that hashing algorithm to authenticate different files and records that you may have.
+
+[Speaker: Shane Tews]
 How does cryptocurrency fit into Web3?
-I think
-cryptocurrency is just one aspect of the decentralized web that policymakers
-and the greater community are really only vaguely familiar with. But
-cryptocurrencies are such a small part of the wider decentralized web
-ecosystem. And there’s so much more outside of that, such as smart contracts or
-computer programs that can automatically execute, control, and document events
-and actions.
-So there is
-a lot out there beyond cryptocurrencies. Part of my purpose at the
-Decentralized Future Council — and in coming on this podcast — is to make sure
-the public-interest elements of this technology are expressly talked about and
-discussed.
-You’ve written a lot about the idea of
-“distributive justice.” How does that fit into what we’re discussing?
-In August of 2021, I wrote this
-piece
-for Brandeis University’s Institute for Economic and Racial Equity titled, “Technology needs to achieve distributive justice.” The crux of my thesis is: To achieve the best possible internet that best serves the public, we need an internet that reflects the great diversity of our country while also achieving equity and democracy.
-In terms of how
-the concept of distributive justice intersects with the decentralized web, it
-really comes down to building a diverse ecosystem and squaring that with public
-interest, in addition to making sure sectors such as trust and safety,
-commerce, communications, and democracy as a whole are enhanced to ensure
-everyone gets their equitable slice of the pie.
-What future developments should we be
-keeping an eye out for with you in mind?
-In addition
-to the Decentralized Future Council getting started, something I should mention
-is the idea of identity management. The idea of a decentralized identity is
-something that’s being actively researched, and is something I find
-fascinating. Instead of having a fixed profile that stays within a centralized
-authority, your identity could be more flexible and move with you through a
-unique identifier in Web3. This could bring us really close to how we operate
-in the real world as we move throughout different spaces and different times.
-This is one
-of those topics I encourage folks to look into in addition to the work being
-done at Protocol Labs with IPFS. You can also sign up for our email updates
-from the Decentralized Future Council once we get our website up and running.
+
+[Speaker: Gabrielle Hibbert]
+I think cryptocurrency is just one aspect of the decentralized web that policymakers and the greater community are really only vaguely familiar with. But cryptocurrencies are such a small part of the wider decentralized web ecosystem. And there’s so much more outside of that, such as smart contracts or computer programs that can automatically execute, control, and document events and actions.
+
+[Speaker: Gabrielle Hibbert]
+So there is a lot out there beyond cryptocurrencies. Part of my purpose at the Decentralized Future Council — and in coming on this podcast — is to make sure the public-interest elements of this technology are expressly talked about and discussed.
+
+[Speaker: Shane Tews]
+You’ve written a lot about the idea of “distributive justice.” How does that fit into what we’re discussing?
+
+[Speaker: Gabrielle Hibbert]
+In August of 2021, I wrote this piece for Brandeis University’s Institute for Economic and Racial Equity titled, “Technology needs to achieve distributive justice.” The crux of my thesis is: To achieve the best possible internet that best serves the public, we need an internet that reflects the great diversity of our country while also achieving equity and democracy.
+
+[Speaker: Gabrielle Hibbert]
+In terms of how the concept of distributive justice intersects with the decentralized web, it really comes down to building a diverse ecosystem and squaring that with public interest, in addition to making sure sectors such as trust and safety, commerce, communications, and democracy as a whole are enhanced to ensure everyone gets their equitable slice of the pie.
+
+[Speaker: Shane Tews]
+What future developments should we be keeping an eye out for with you in mind?
+
+[Speaker: Gabrielle Hibbert]
+In addition to the Decentralized Future Council getting started, something I should mention is the idea of identity management. The idea of a decentralized identity is something that’s being actively researched, and is something I find fascinating. Instead of having a fixed profile that stays within a centralized authority, your identity could be more flexible and move with you through a unique identifier in Web3. This could bring us really close to how we operate in the real world as we move throughout different spaces and different times.
+
+[Speaker: Gabrielle Hibbert]
+This is one of those topics I encourage folks to look into in addition to the work being done at Protocol Labs with IPFS. You can also sign up for our email updates from the Decentralized Future Council once we get our website up and running.

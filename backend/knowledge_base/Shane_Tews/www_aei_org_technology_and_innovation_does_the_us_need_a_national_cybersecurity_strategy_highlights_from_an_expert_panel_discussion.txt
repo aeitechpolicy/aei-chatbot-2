@@ -1,155 +1,68 @@
 PAGE_TITLE: 
-	Does the US Need a National Cybersecurity Strategy? Highlights from an Expert Panel Discussion | American Enterprise Institute - AEI
+	Does the US Need a National Cybersecurity Strategy? Highlights from an Expert Panel Discussion
 
-On October 19, AEI hosted an event on whether the US needs a national cybersecurity strategy. I was joined by
-James X. (Jim) Dempsey
-,
-James Andrew (Jim) Lewis
-,
-Sujit Raman
-, and
-Diane Rinaldo
-for what was a productive and timely conversation on a key issue.
-Below is an edited and abridged transcript of key highlights from the event. You can view the full webinar on
-AEI.org
-and read the full transcript
-here
-.
-Shane Tews: Jim Dempsey, where do you think
-the US stands in terms of its progress on a national cybersecurity strategy
-today?
-Jim Dempsey:
-Well, the US already has a national cybersecurity strategy. It has since 1998;
-it’s a patchwork — or worse, a crazy quilt — that is showing signs of wear
-while it’s still being stitched together today. This strategy is based on two
-main factors: a sector-by-sector approach, and the concept of public-private
-partnership — which has really been the basis of all cyber-related executive
-orders and announcements since the Bill Clinton presidency. Presidents George
-W. Bush, Barack Obama, and Donald Trump have all hinged national cybersecurity
-policy on the concept of voluntary standards and information sharing. And
-Congress has endorsed this as well.
-Now,
-President Joe Biden has ordered a comprehensive review and, basically, a policy
-reset of the vulnerability of American citizens’ data. There’s also a lot on
-supply chains there and in another executive order that includes the telecoms
-sector. We also have a national security memo on industrial control systems,
-along with the Transportation Security Administration (TSA) using its existing
-legal authority on reliability and safety — not cybersecurity — to issue a
-statute on pipeline security following the Colonial Pipeline ransomware attack
-last summer. Meanwhile, Congress has been using its authority through the
-National Defense Authorization Act to secure our telecommunications
-infrastructure.
-On top of
-everything here, we have multiple other pieces of this crazy quilt that
-comprises our national cyber strategy. But I think the public-private
-partnership will endure, and that it has to. And we need follow-through and
-implementation on the president’s orders — both Biden’s and Trump’s — as additional
-regulations are salted in.
-Sujit, you served as associate deputy
-attorney general at the Department of Justice (DOJ) from 2017–2020, where you
-oversaw our national cybersecurity investigations and prosecutions. Do you
-think, from your experience, that industry is ready to come to the fold to
-partner with government? Do they have the risk coverage they need in order to do
-so?
-Sujit Raman: For so long, the government has really
-focused on the public-private partnership. That phrase has been in vogue, as
-Jim Dempsey mentioned, for probably over 20 years now. But what we are starting
-to see is more enforcement and shifting of obligations to the private sector in
-a way that I think is actually pretty unprecedented. Talking about the TSA
-directives Jim mentioned, that’s a pretty significant set of guidelines issued under
-non-core-cybersecurity authorities. These are public safety, national security
-authorities. One was essentially a voluntary set of standards, but the second
-was more mandatory.
-So you’ve got mandatory guidelines being imposed on an
-industry that historically has not been subjected to this kind of regulation. The
-regulation has been imposed not through traditional administrative law
-principles, not through notice and comment, but really under an emergency-type
-authority. You’ve got an industry that also historically has not prioritized
-cybersecurity in this way. So there are real questions about whether or not
-folks can kind of get up to the standards the government is insisting they get
-up to in an appropriate time. And if they’re essentially triaging cyber
-priorities, are they leaving other aspects of their security vulnerable? That
-wouldn’t be a good end state.
-You’ve also got the rail and airline industries
-potentially subject to similar kinds of executive directives. This is a really
-interesting and almost uncertain area when it comes to legal issues about private
-and public. How far can the executive branch go without the support of
-Congress? These authorities are very basic ones that the administration is
-relying on. How far forward can you go and impose obligations on the private
-sector without going through the traditional administrative law process?
-DOJ just announced a Civil Cyber-Fraud Initiative,
-which essentially aims to incentivize whistleblowers within companies to report
-to the government that their employer, for whatever reason, hasn’t met certain
-cybersecurity standards or has certified to the government that it’s met
-certain standards and hasn’t. The Securities and Exchange Commission (SEC) has
-also become much more aggressive in bringing cases against public companies for
-alleged disclosure violations. And we’ve seen a number of resolutions just in
-the last month in which the SEC has imposed significant civil penalties on
-companies for making material misrepresentations in their quarterly reports or other
-public-facing statements about their cybersecurity posture. The Office of
-Foreign Assets Control has also issued updated ransomware guidance, which could
-have tremendous impacts on the private sector if people make ransom payments to
-sanctioned parties or third parties that have touched a sanctioned party.
-That’s potentially where some of the guidance is going.
-As a former law enforcement official, I’m not
-necessarily opposed to any of this. For me, it’s really a question of process and
-what the plan is going forward. So my preliminary thought is that we’re seeing
-a distinct kind of change in approach.
-Clockwise from top left: Shane Tews, Diane Rinaldo, Jim Lewis, Sujit Raman, and Jim Dempsey at the October 19, 2021 AEI tech webinar, “ Does the US need a national cybersecurity strategy?”
-Diane, how is Capitol Hill managing the
-cybersecurity challenge?
-Diane
-Rinaldo: In the past 12 years or so, we’ve seen this issue come such a long way
-that now, companies are willing to come into the skiff and say they’ve been
-hacked. Everyone is willing to talk about this more openly. But coordinating
-Congress, I would say, continues to be an issue. I say this as a former House
-and Senate staffer: Jurisdiction is still king. Depending on what committee
-you’re on, you want to make sure you remain the lead on any given issue.
-There’s not as much sharing of information.
-I also know
-from my work in the executive branch that we’ve all bemoaned the interagency
-process. But there’s something to be said for bringing all sides of an issue
-together around the table and looking at it through many different facets. And
-I feel like this just doesn’t really happen on Capitol Hill. Further down the
-road you might have leadership pull together the different committees of
-jurisdiction to have a conversation. But this is not happening at the
-sausage-making stage in which you’re actually putting pen to paper, and you
-really miss out on a lot of the nuance.
-We’ve seen
-this with legislation that continues to be introduced. There are definitely
-pushes and pulls on cyber legislation as well as other pieces kind of running
-through. I think it’s important to understand the national security and
-economic implications of any given issue. There’s not only one way to move
-forward on something; it’s important to have all the voices in the room to help
-ensure the best piece of legislation is going to move forward at the end of the
-day.
-Jim Lewis, it seems like the message here
-is that we’re not super coordinated on cyber. Do our foreign adversaries take
-advantage of this?
-Jim Lewis: Foreign
-governments are especially interested in how the White House’s executive order
-will affect them. But the key to the executive order is the dark secret of our
-information technology industry: that a lot of the software is flawed. We’ve also
-seen a tension between competitiveness and security. If you open up markets to
-some extent, you’re making it easier to inject malware.
-I guess the
-good news is that Americans now know more about cybersecurity than before. But
-the public discussion remains driven a lot by over-the-top journalism. How do
-you develop a comprehensive strategy based on bad public data? How do you get
-that public discussion that Jim Dempsey, Sujit, and Diane were calling for when
-it’s misinformed?
-So there’s a
-lot of work to do here, and part of that will be reaching rapprochement with
-our allies. That needs to be rebuilt; it’s a source of strength. Part of it
-will be figuring out how we reach some understanding with our opponents that are
-strongly persuaded the US is incompetent, if not senile. I say this after
-having discussions with both Russian and Chinese government colleagues in the
-last few months. That’s one reason why deterrence doesn’t work. If nobody’s
-afraid of you, they’re not going to be deterred. So how do we reverse that
-international opinion? How do we get, maybe, some of the issues we rightfully
-didn’t act on earlier in legislation a little further on?
-One question from the audience here that AEI scholarship
-has
-addressed
-recently: Should we prioritize offensive strikes and give up on norm-building?
+[Speaker: Introduction / editorial context]
+On October 19, AEI hosted an event on whether the US needs a national cybersecurity strategy. I was joined by James X. (Jim) Dempsey, James Andrew (Jim) Lewis, Sujit Raman, and Diane Rinaldo for what was a productive and timely conversation on a key issue.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from the event. You can view the full webinar on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
+Shane Tews: Jim Dempsey, where do you think the US stands in terms of its progress on a national cybersecurity strategy today?
+
+[Speaker: Jim Dempsey]
+Jim Dempsey: Well, the US already has a national cybersecurity strategy. It has since 1998; it’s a patchwork — or worse, a crazy quilt — that is showing signs of wear while it’s still being stitched together today. This strategy is based on two main factors: a sector-by-sector approach, and the concept of public-private partnership — which has really been the basis of all cyber-related executive orders and announcements since the Bill Clinton presidency. Presidents George W. Bush, Barack Obama, and Donald Trump have all hinged national cybersecurity policy on the concept of voluntary standards and information sharing. And Congress has endorsed this as well.
+
+[Speaker: Jim Dempsey]
+Now, President Joe Biden has ordered a comprehensive review and, basically, a policy reset of the vulnerability of American citizens’ data. There’s also a lot on supply chains there and in another executive order that includes the telecoms sector. We also have a national security memo on industrial control systems, along with the Transportation Security Administration (TSA) using its existing legal authority on reliability and safety — not cybersecurity — to issue a statute on pipeline security following the Colonial Pipeline ransomware attack last summer. Meanwhile, Congress has been using its authority through the National Defense Authorization Act to secure our telecommunications infrastructure.
+
+[Speaker: Jim Dempsey]
+On top of everything here, we have multiple other pieces of this crazy quilt that comprises our national cyber strategy. But I think the public-private partnership will endure, and that it has to. And we need follow-through and implementation on the president’s orders — both Biden’s and Trump’s — as additional regulations are salted in.
+
+[Speaker: Shane Tews]
+Sujit, you served as associate deputy attorney general at the Department of Justice (DOJ) from 2017–2020, where you oversaw our national cybersecurity investigations and prosecutions. Do you think, from your experience, that industry is ready to come to the fold to partner with government? Do they have the risk coverage they need in order to do so?
+
+[Speaker: Sujit Raman]
+Sujit Raman: For so long, the government has really focused on the public-private partnership. That phrase has been in vogue, as Jim Dempsey mentioned, for probably over 20 years now. But what we are starting to see is more enforcement and shifting of obligations to the private sector in a way that I think is actually pretty unprecedented. Talking about the TSA directives Jim mentioned, that’s a pretty significant set of guidelines issued under non-core-cybersecurity authorities. These are public safety, national security authorities. One was essentially a voluntary set of standards, but the second was more mandatory.
+
+[Speaker: Sujit Raman]
+So you’ve got mandatory guidelines being imposed on an industry that historically has not been subjected to this kind of regulation. The regulation has been imposed not through traditional administrative law principles, not through notice and comment, but really under an emergency-type authority. You’ve got an industry that also historically has not prioritized cybersecurity in this way. So there are real questions about whether or not folks can kind of get up to the standards the government is insisting they get up to in an appropriate time. And if they’re essentially triaging cyber priorities, are they leaving other aspects of their security vulnerable? That wouldn’t be a good end state.
+
+[Speaker: Sujit Raman]
+You’ve also got the rail and airline industries potentially subject to similar kinds of executive directives. This is a really interesting and almost uncertain area when it comes to legal issues about private and public. How far can the executive branch go without the support of Congress? These authorities are very basic ones that the administration is relying on. How far forward can you go and impose obligations on the private sector without going through the traditional administrative law process?
+
+[Speaker: Sujit Raman]
+DOJ just announced a Civil Cyber-Fraud Initiative, which essentially aims to incentivize whistleblowers within companies to report to the government that their employer, for whatever reason, hasn’t met certain cybersecurity standards or has certified to the government that it’s met certain standards and hasn’t. The Securities and Exchange Commission (SEC) has also become much more aggressive in bringing cases against public companies for alleged disclosure violations. And we’ve seen a number of resolutions just in the last month in which the SEC has imposed significant civil penalties on companies for making material misrepresentations in their quarterly reports or other public-facing statements about their cybersecurity posture. The Office of Foreign Assets Control has also issued updated ransomware guidance, which could have tremendous impacts on the private sector if people make ransom payments to sanctioned parties or third parties that have touched a sanctioned party. That’s potentially where some of the guidance is going.
+
+[Speaker: Sujit Raman]
+As a former law enforcement official, I’m not necessarily opposed to any of this. For me, it’s really a question of process and what the plan is going forward. So my preliminary thought is that we’re seeing a distinct kind of change in approach.
+
+[Speaker: Shane Tews]
+Diane, how is Capitol Hill managing the cybersecurity challenge?
+
+[Speaker: Diane Rinaldo]
+Diane Rinaldo: In the past 12 years or so, we’ve seen this issue come such a long way that now, companies are willing to come into the skiff and say they’ve been hacked. Everyone is willing to talk about this more openly. But coordinating Congress, I would say, continues to be an issue. I say this as a former House and Senate staffer: Jurisdiction is still king. Depending on what committee you’re on, you want to make sure you remain the lead on any given issue. There’s not as much sharing of information.
+
+[Speaker: Diane Rinaldo]
+I also know from my work in the executive branch that we’ve all bemoaned the interagency process. But there’s something to be said for bringing all sides of an issue together around the table and looking at it through many different facets. And I feel like this just doesn’t really happen on Capitol Hill. Further down the road you might have leadership pull together the different committees of jurisdiction to have a conversation. But this is not happening at the sausage-making stage in which you’re actually putting pen to paper, and you really miss out on a lot of the nuance.
+
+[Speaker: Diane Rinaldo]
+We’ve seen this with legislation that continues to be introduced. There are definitely pushes and pulls on cyber legislation as well as other pieces kind of running through. I think it’s important to understand the national security and economic implications of any given issue. There’s not only one way to move forward on something; it’s important to have all the voices in the room to help ensure the best piece of legislation is going to move forward at the end of the day.
+
+[Speaker: Shane Tews]
+Jim Lewis, it seems like the message here is that we’re not super coordinated on cyber. Do our foreign adversaries take advantage of this?
+
+[Speaker: Jim Lewis]
+Jim Lewis: Foreign governments are especially interested in how the White House’s executive order will affect them. But the key to the executive order is the dark secret of our information technology industry: that a lot of the software is flawed. We’ve also seen a tension between competitiveness and security. If you open up markets to some extent, you’re making it easier to inject malware.
+
+[Speaker: Jim Lewis]
+I guess the good news is that Americans now know more about cybersecurity than before. But the public discussion remains driven a lot by over-the-top journalism. How do you develop a comprehensive strategy based on bad public data? How do you get that public discussion that Jim Dempsey, Sujit, and Diane were calling for when it’s misinformed?
+
+[Speaker: Jim Lewis]
+So there’s a lot of work to do here, and part of that will be reaching rapprochement with our allies. That needs to be rebuilt; it’s a source of strength. Part of it will be figuring out how we reach some understanding with our opponents that are strongly persuaded the US is incompetent, if not senile. I say this after having discussions with both Russian and Chinese government colleagues in the last few months. That’s one reason why deterrence doesn’t work. If nobody’s afraid of you, they’re not going to be deterred. So how do we reverse that international opinion? How do we get, maybe, some of the issues we rightfully didn’t act on earlier in legislation a little further on?
+
+[Speaker: Shane Tews]
+One question from the audience here that AEI scholarship has addressed recently: Should we prioritize offensive strikes and give up on norm-building?
+
+[Speaker: Speaker not identified]
 I think that’s a false contrast. Norms say we’re going to regularize cyber operations by putting them under the umbrella of international or humanitarian law — the laws that govern armed conflict. And so norms provide a framework for responsive state action. Do you need to do more? Yes, you need to think about how to create accountability, and offense may be part of that. But it’s better to see this as a continuum rather than one or the other. You have norms so that you can then say, as a law-abiding state, “You are transgressing these norms, and I have the right under international law — that you’ve agreed to — to impose consequences.”

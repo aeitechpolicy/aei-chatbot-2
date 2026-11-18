@@ -1,17 +1,17 @@
 PAGE_TITLE: 
-	Can We Modernize the Federal Identity System? (with Jordan Burris) | American Enterprise Institute - AEI
+	Can We Modernize the Federal Identity System? (with Jordan Burris)
 
-Criminals are constantly looking for holes in online identity verification—a key reason why the US
-government
-lost
-$163 billion in unemployment-related fraud during the pandemic. Can technology make identity verification systems more resilient, despite everyone being on separate networks?
-On this episode,
-Shane
-and AEI Nonresident Senior Fellow
-Jim Harper
-interview
-Jordan Burris
-, senior director for product market strategy at
-Socure
-—a platform that combines machine learning and artificial intelligence to provide accurate, trusted digital identity verification. The three of them discuss how fraud prevention is a “team sport” that requires balancing best practices and robust information sharing with careful protection of citizens’ personal information from government overreach.
+[Speaker: Introduction / editorial context]
+Criminals are constantly looking for holes in online identity verification—a key reason why the US government lost $163 billion in unemployment-related fraud during the pandemic. Can technology make identity verification systems more resilient, despite everyone being on separate networks?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane and AEI Nonresident Senior Fellow Jim Harper interview Jordan Burris, senior director for product market strategy at Socure—a platform that combines machine learning and artificial intelligence to provide accurate, trusted digital identity verification. The three of them discuss how fraud prevention is a “team sport” that requires balancing best practices and robust information sharing with careful protection of citizens’ personal information from government overreach.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

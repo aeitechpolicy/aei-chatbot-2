@@ -1,147 +1,68 @@
 PAGE_TITLE: 
-	How Can Technology Help the Supply Chain? Highlights from My Conversation with Glenn Richey | American Enterprise Institute - AEI
+	How Can Technology Help the Supply Chain? Highlights from My Conversation with Glenn Richey
 
-As today’s
-supply chain challenges create bottlenecks across the economy, consumers and
-businesses of all sizes are dealing with unprecedented situations involving
-lack of component parts, trapped inventory, and delayed deliveries. But what if
-we could digitize parts of the supply chain and make them more efficient? Where,
-if at all, does technology stand to contribute to supply chain management?
-On the
-latest episode of “Explain to Shane,” I was joined by
-Glenn
-Richey
-, Harbert Eminent Scholar and inaugural chair of Auburn University’s
-Center for Supply Chain Innovation. We had a fascinating conversation on the
-causes and effects of the current supply chain dilemma and discussed how blockchain,
-digitization, and artificial intelligence could help boost supply chain
-efficiency.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Glenn, you are the first
-department head of a new supply chain management program at Auburn University. Tell
-us about your work there.
-Glenn
-Richey: Our situation here at Auburn is wonderful for both us and our students.
-We’ve had a program in logistics, supply chain management, and transportation
-since the early 1970s. It has grown organically over time, but as the world has
-changed and as we’ve gotten more emphasis on global distribution, we’ve seen
-pretty significant growth in the program.
-About six
-years ago, we were at about 180 students. Since that time, we’ve grown to 535
-students in our undergraduate program alone. Industry has been calling for more
-education to fill supply chain roles, and we’ve been providing that
-consistently. Now, when you hit 500-something students, you’ve kind of
-overblown being part of a different department. So we decided it was time to
-build out from that and become our own group, allowing us to also expand our
-master’s program, which is growing by leaps and bounds, and put emphasis on our
-doctorate program as well.
-There’s some
-information out there that would say something like 70 percent of people that
-work in supply chain management don’t have formal training in the area, which
-forces them to stumble out of the blocks instead of racing through to where
-they need to be to make things happen. Our goal here is to try to give people a
-head start and help industry. And certainly right now, during the pandemic, industry
-could use some help.
-What was the factor that made it clear we
-needed more people trained on this? Was it digitization of information? Take
-Amazon, for example. People love to call it a tech company, but it really has
-the underpinnings of a logistics company. It just does things digitally.
-That’s
-exactly right. You could say that about Amazon, Walmart, and a lot of major
-retail players who have put lots of emphasis on supply chain management and
-logistics — for a few reasons. One is the efficiency that allows you to get
-prices down and compete effectively in the marketplace. The other is to make
-sure you have the product on hand, you have a source of supply, and you’re
-getting the customers what they want.
-In the
-1970s, we had a very a production-centric concept: If you build it, business
-will come. And the role of the supply chain and logistics people was simply to
-get this stuff on trucks to where it needed to be. But over time that has
-become a more complex and dynamic situation. Now, we’re using technology to get
-things leaner and focus more on customer needs and wants. Hopefully that
-reduces some waste in the system, makes us more sustainable, and allows us to
-really satisfy business partners and customers overall.
-Give us your thousand-foot view of today’s
-supply chain crisis. What is going on, and who is feeling the effects?
-If we think
-back a couple of years, Donald Trump’s administration was working to drop
-tariffs into different countries with the idea that the playing ground wasn’t
-necessarily fair for the United States. At that time, a lot of manufacturing
-entities foresaw some level of disruption one way or another, whether it was an
-economic disruption that changed the way they priced out and made money from
-their products, or whether there were going to be some barriers, blockades, or
-quotas that restricted them from actually getting the job done.
-A number of
-those companies started to change and adjust where they were actually sourcing
-their products from. Some moved away from China, some moved away from other
-areas in the world, and some moved from single sourcing to multiple sourcing.
-Then over time we saw them kind of shift back, which was an act of continuously
-planning for challenges that the system could handle, though it might be
-strained.
-So we saw
-some problems and weaknesses across global supply chains and networks. But when
-the pandemic hit, it literally shut things down. It shut things down initially
-with labor as a whole, specifically in raw material extraction and
-manufacturing. Those two areas put a stop to anything that was flowing through
-the supply chain. Adding fuel to the fire after that, ports dealt with a big
-capacity issue after we saw e-commerce explode. We just didn’t have the truck
-drivers and labor on the road and in warehouses to continue moving the
-products.
-We’re doing
-what we can to get up to pace for finding different ways to do different things,
-and it may take us a while to get it all streamlined. But the important thing
-to realize is that we’re talking about 30–40 years of focus on optimization and
-efficiency with not as much attention paid to just-in-case inventory,
-contingency planning, safety stock, and those type of things.
-One thing I focus on is cybersecurity. If
-you’re a company, I’m wondering how much information you’re willing to put up
-into a network system to make sure all of your partners are collaborating. When
-there are bidirectional information flows going on, is there somebody who makes
-sure that’s all secure? And how does blockchain factor into all of this?
-Well, part
-of the excitement about blockchain that has been out there for quite some time
-— but not implemented in the ways a lot of us hoped — is that it could provide
-an opportunity for governance to be extended to the entire network. So the
-blockchain setup allows you to exchange this information and have all of this
-good digitized stuff handy and available to help you decide how your forecast
-should be set or who your next business partner should be.
-Companies
-have been a little slow to transition to blockchain for a number of reasons —
-one of which is that the more powerful industries and players in the supply
-chain don’t want to give up power. And that’s what this network governance
-approach does. If we can get a lot of digitized information into the
-blockchain, it’s going to make us more effective and efficient. But there is
-also a concern about how secure things are. And, as you know from
-cybersecurity, we don’t want to give up our competitive advantage just by
-placing things out there on the web. So that’s something we’re still thinking
-through.
-Going forward, how would you summarize your
-expectations for the role of technology in supply chain management? You
-mentioned blockchain; what else are you focusing on?
-In our programs, we spend a significant
-amount of time getting students involved in technology. We have partners in
-other academic departments that actually tell us what type of tech the students
-need so they’ll be ready to go.
-There’s also this discussion of big data. I
-think access to big data and some of the analytical tools we have today should
-allow us to do a better job with forecasting coming out of this. The
-unfortunate thing is: When we see things like this, we see companies overbuy,
-and we see the bull-whip effect drive a lot of inventory into different
-locations. We saw people panic-buy toilet paper, which might send a ripple
-through that system and encourage companies to produce more than they really
-need to. Hopefully digitization and the information that’s out there and the
-tools that we have will allow us to do a better job of forecasting so we can
-hit those demand numbers much better than we did in this last time period.
-I will also say that there’s other
-technology. Artificial intelligence (AI) can help drive out some of the
-mistakes we might make. Certainly there’s opportunities for some of the
-material-handling technology and the like to be integrated with AI, especially
-at the ports. But as you know, those things take time. The things that we can
-put into place more quickly are those that relate to forecasting and
-information technology.
+[Speaker: Introduction / editorial context]
+As today’s supply chain challenges create bottlenecks across the economy, consumers and businesses of all sizes are dealing with unprecedented situations involving lack of component parts, trapped inventory, and delayed deliveries. But what if we could digitize parts of the supply chain and make them more efficient? Where, if at all, does technology stand to contribute to supply chain management?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I was joined by Glenn Richey, Harbert Eminent Scholar and inaugural chair of Auburn University’s Center for Supply Chain Innovation. We had a fascinating conversation on the causes and effects of the current supply chain dilemma and discussed how blockchain, digitization, and artificial intelligence could help boost supply chain efficiency.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Glenn, you are the first department head of a new supply chain management program at Auburn University. Tell us about your work there.
+
+[Speaker: Glenn Richey]
+Glenn Richey: Our situation here at Auburn is wonderful for both us and our students. We’ve had a program in logistics, supply chain management, and transportation since the early 1970s. It has grown organically over time, but as the world has changed and as we’ve gotten more emphasis on global distribution, we’ve seen pretty significant growth in the program.
+
+[Speaker: Glenn Richey]
+About six years ago, we were at about 180 students. Since that time, we’ve grown to 535 students in our undergraduate program alone. Industry has been calling for more education to fill supply chain roles, and we’ve been providing that consistently. Now, when you hit 500-something students, you’ve kind of overblown being part of a different department. So we decided it was time to build out from that and become our own group, allowing us to also expand our master’s program, which is growing by leaps and bounds, and put emphasis on our doctorate program as well.
+
+[Speaker: Glenn Richey]
+There’s some information out there that would say something like 70 percent of people that work in supply chain management don’t have formal training in the area, which forces them to stumble out of the blocks instead of racing through to where they need to be to make things happen. Our goal here is to try to give people a head start and help industry. And certainly right now, during the pandemic, industry could use some help.
+
+[Speaker: Glenn Richey]
+What was the factor that made it clear we needed more people trained on this? Was it digitization of information? Take Amazon, for example. People love to call it a tech company, but it really has the underpinnings of a logistics company. It just does things digitally.
+
+[Speaker: Glenn Richey]
+That’s exactly right. You could say that about Amazon, Walmart, and a lot of major retail players who have put lots of emphasis on supply chain management and logistics — for a few reasons. One is the efficiency that allows you to get prices down and compete effectively in the marketplace. The other is to make sure you have the product on hand, you have a source of supply, and you’re getting the customers what they want.
+
+[Speaker: Glenn Richey]
+In the 1970s, we had a very a production-centric concept: If you build it, business will come. And the role of the supply chain and logistics people was simply to get this stuff on trucks to where it needed to be. But over time that has become a more complex and dynamic situation. Now, we’re using technology to get things leaner and focus more on customer needs and wants. Hopefully that reduces some waste in the system, makes us more sustainable, and allows us to really satisfy business partners and customers overall.
+
+[Speaker: Shane Tews]
+Give us your thousand-foot view of today’s supply chain crisis. What is going on, and who is feeling the effects?
+
+[Speaker: Glenn Richey]
+If we think back a couple of years, Donald Trump’s administration was working to drop tariffs into different countries with the idea that the playing ground wasn’t necessarily fair for the United States. At that time, a lot of manufacturing entities foresaw some level of disruption one way or another, whether it was an economic disruption that changed the way they priced out and made money from their products, or whether there were going to be some barriers, blockades, or quotas that restricted them from actually getting the job done.
+
+[Speaker: Glenn Richey]
+A number of those companies started to change and adjust where they were actually sourcing their products from. Some moved away from China, some moved away from other areas in the world, and some moved from single sourcing to multiple sourcing. Then over time we saw them kind of shift back, which was an act of continuously planning for challenges that the system could handle, though it might be strained.
+
+[Speaker: Glenn Richey]
+So we saw some problems and weaknesses across global supply chains and networks. But when the pandemic hit, it literally shut things down. It shut things down initially with labor as a whole, specifically in raw material extraction and manufacturing. Those two areas put a stop to anything that was flowing through the supply chain. Adding fuel to the fire after that, ports dealt with a big capacity issue after we saw e-commerce explode. We just didn’t have the truck drivers and labor on the road and in warehouses to continue moving the products.
+
+[Speaker: Glenn Richey]
+We’re doing what we can to get up to pace for finding different ways to do different things, and it may take us a while to get it all streamlined. But the important thing to realize is that we’re talking about 30–40 years of focus on optimization and efficiency with not as much attention paid to just-in-case inventory, contingency planning, safety stock, and those type of things.
+
+[Speaker: Shane Tews]
+One thing I focus on is cybersecurity. If you’re a company, I’m wondering how much information you’re willing to put up into a network system to make sure all of your partners are collaborating. When there are bidirectional information flows going on, is there somebody who makes sure that’s all secure? And how does blockchain factor into all of this?
+
+[Speaker: Glenn Richey]
+Well, part of the excitement about blockchain that has been out there for quite some time — but not implemented in the ways a lot of us hoped — is that it could provide an opportunity for governance to be extended to the entire network. So the blockchain setup allows you to exchange this information and have all of this good digitized stuff handy and available to help you decide how your forecast should be set or who your next business partner should be.
+
+[Speaker: Glenn Richey]
+Companies have been a little slow to transition to blockchain for a number of reasons — one of which is that the more powerful industries and players in the supply chain don’t want to give up power. And that’s what this network governance approach does. If we can get a lot of digitized information into the blockchain, it’s going to make us more effective and efficient. But there is also a concern about how secure things are. And, as you know from cybersecurity, we don’t want to give up our competitive advantage just by placing things out there on the web. So that’s something we’re still thinking through.
+
+[Speaker: Shane Tews]
+Going forward, how would you summarize your expectations for the role of technology in supply chain management? You mentioned blockchain; what else are you focusing on?
+
+[Speaker: Glenn Richey]
+In our programs, we spend a significant amount of time getting students involved in technology. We have partners in other academic departments that actually tell us what type of tech the students need so they’ll be ready to go.
+
+[Speaker: Glenn Richey]
+There’s also this discussion of big data. I think access to big data and some of the analytical tools we have today should allow us to do a better job with forecasting coming out of this. The unfortunate thing is: When we see things like this, we see companies overbuy, and we see the bull-whip effect drive a lot of inventory into different locations. We saw people panic-buy toilet paper, which might send a ripple through that system and encourage companies to produce more than they really need to. Hopefully digitization and the information that’s out there and the tools that we have will allow us to do a better job of forecasting so we can hit those demand numbers much better than we did in this last time period.
+
+[Speaker: Glenn Richey]
+I will also say that there’s other technology. Artificial intelligence (AI) can help drive out some of the mistakes we might make. Certainly there’s opportunities for some of the material-handling technology and the like to be integrated with AI, especially at the ports. But as you know, those things take time. The things that we can put into place more quickly are those that relate to forecasting and information technology.

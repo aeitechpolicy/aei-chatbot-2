@@ -1,30 +1,62 @@
 PAGE_TITLE: 
-	Beyond Bitcoin: Unlocking Blockchain’s Potential | American Enterprise Institute - AEI
+	Beyond Bitcoin: Unlocking Blockchain’s Potential
 
+[Speaker: Introduction / editorial context]
 Blockchain technology has the potential to transform financial services, supply chains, and efficiency. Yet as innovators like Digital Assets seek to modernize infrastructure across industries, questions emerge around balancing efficiency, privacy, and regulatory needs in complex blockchain applications.
-To unpack some of these key questions around blockchain, privacy, and regulation, I spoke with
-Yuval Rooz
-. Rooz is the cofounder and CEO of Digital Asset, a blockchain technology company that works to modernize the industry underlying today’s economy – enabling companies to better balance efficiency with privacy.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+To unpack some of these key questions around blockchain, privacy, and regulation, I spoke with Yuval Rooz. Rooz is the cofounder and CEO of Digital Asset, a blockchain technology company that works to modernize the industry underlying today’s economy – enabling companies to better balance efficiency with privacy.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: You are doing a lot in the market to modernize the financial infrastructure around blockchain, so start us off with some basics about your company, Digital Assets.
+
+[Speaker: Yuval Rooz]
 Yuval Rooz: At Digital Assets, we’re using blockchain technology and smart contracts to bring the financial infrastructure to the 21st century. We can talk in more detail about what that means, but really, there’s quite a lot of inefficiency that exists in today’s infrastructure due to a lot of reconciliation and this hub and spoke model that traditionally is how enterprise software was built. We’re trying to bring standardization—which is where you use smart contracts—and one source of truth—which is where blockchain comes in—to remove a lot of these inefficiencies.
+
+[Speaker: Shane Tews]
 One of the things that people don’t always understand in the smart contract language is the ability to utilize it for both privacy as well as efficiency. There’s sometimes a misconception that everything on blockchain is wide open, but you have said that you can only share the information that is needed for a transaction. Is that right?
+
+[Speaker: Yuval Rooz]
 Spot on. When you think about public chains like Bitcoin or Ethereum, their architecture was created in a way that everybody gets to see every transaction. So there is no privacy. When we started Digital Assets, we were not trying to recreate Bitcoin or Ethereum, but use some of the ideas behind blockchain to build regulated financial infrastructure. That one element that I just said about everybody seeing every transaction and having no privacy, was not possible for us to have if we wanted to work with regulated financial institutions.
+
+[Speaker: Yuval Rooz]
 When we were designing these smart contracts and our infrastructure, we were not just saying, what is the transaction, but explicitly defining the parties that are part of that transaction. Meaning, who are the eligible parties that can see this transaction and who are the parties that are eligible to interact with this transaction?
+
+[Speaker: Yuval Rooz]
 I’ll give a very simple example. Imagine, Shane, you and I are moving money from one to another. Both you and I can decide how much money we want to move. But, we also know that there are Know Your Customer and Anti Money Laundering requirements. If a money transfer happens over $10,000, that needs to be reported to the authorities. In a smart contract, we can define that Shane and Yuval are parties to a transaction where they can define how much money they will move. But imagine there is another party, like a regulator, and if the transaction is above $10,000, that regulator gets to see the transaction. They suddenly have visibility into the transaction because it triggered an anti-money laundering rule. They cannot define how much money gets moved, they can’t touch the money, but they have visibility. So, when we built the technology, we wanted to have this fine-grained control over the privacy of a transaction, who gets to interact with it, but also who gets to see it.
+
+[Speaker: Shane Tews]
 There’s a lot of discussion in Congress about stablecoin, though there are friction points in the space including places where regulators are regulating from the analog rulebook. So, where are you seeing this have a quick uptick in adoption?
+
+[Speaker: Yuval Rooz]
 People are compiling all aspects of blockchain technology into a narrative of these bad actors that are deceiving investors and creating these assets that terrorist organizations and criminals are using to move value. In reality, we at Digital Assets are just using the underlying technology to manage real-world assets in a much more efficient manner.
+
+[Speaker: Yuval Rooz]
 When you look at how financial institutions are being regulated, the regulations have no context to technology in the rules that they have to follow. Meaning, that a financial institution needs to satisfy all kinds of conditions, independent of the technology that they’re using. For example, if you are a bank, you need to make sure that your customer information is confidential. It doesn’t matter if the bank is using a MongoDB database if they’re using a SQL database, if it’s on-prem, if it’s on the internet, is it in the cloud. It doesn’t really matter. At a high level, it says if you are a bank, you need to protect your customers’ information.
+
+[Speaker: Yuval Rooz]
 This is where the world starts to conflate ideas. People will say, “Oh, you’re using blockchain. Well, how can you protect someone’s information because everything is public? There’s no privacy.” Because of this idea, if you’re using blockchain in the description of your projects, you now need to get approval from a regulator. That stifled a lot of innovation that had nothing to do with cryptocurrencies.
+
+[Speaker: Yuval Rooz]
 The technology is proving itself and it is getting used. For example, we have mortgages that are being issued on a blockchain and getting acquired in a much more efficient manner. Historically, it would take about a month to settle a mortgaged purchase. Now it’s being done in hours. And many other use cases have nothing to do with cryptocurrencies, that are using that blockchain technology. The challenge is that when you go to launch these applications, it ends up being much longer than if we were to just use a traditional database in the cloud since our customers are heavily regulated because the word blockchain shows up. That’s the unfortunate part of this connection to cryptocurrencies.
-On another episode of this podcast, I had a guest who owned a chain of car dealerships and he realized the amount of friction there was in the chain of custody from all the different parts of selling a car, then owning a car, and then selling a car again. He went to the Ohio banks
-said, “Do you know how much real estate you’re spending keeping paper on these car loans?” They slowly migrated their process, and saved billions of dollars just by getting rid of the warehouses that were maintaining the records of the information on cars.
+
+[Speaker: Yuval Rooz]
+On another episode of this podcast, I had a guest who owned a chain of car dealerships and he realized the amount of friction there was in the chain of custody from all the different parts of selling a car, then owning a car, and then selling a car again. He went to the Ohio banks said, “Do you know how much real estate you’re spending keeping paper on these car loans?” They slowly migrated their process, and saved billions of dollars just by getting rid of the warehouses that were maintaining the records of the information on cars.
+
+[Speaker: Yuval Rooz]
 That reflects a concept I’m 100 percent behind, which is the tokenization of real-world assets. We don’t need to create these made-up assets for a store of value. Think of gold: you don’t have different versions or gold; like gold one, gold two, gold three, gold 10,000. So, this idea of tokenization of real-world assets is really where the value is. Which is, can we use this technology to streamline the processing and movement of value as close as possible to real time of real-world assets.
+
+[Speaker: Yuval Rooz]
 If done correctly, tokenization is really taking digitization to the next level. I think that people dislike digitization because digitization is a term that has been used for the last 15 or 20 years, so people wanted a cool new term. I think the problem with that is that it insinuates that if I represented an asset as a token, I solved all the problems. That’s just not true. You really have to digitize the process: all of the transfer rules, and all of the components of the life of an asset. I think that that is the big potential around this technology.
+
+[Speaker: Shane Tews]
 Do you think the US needs to lead? What if somebody else takes charge and gets ahead of us?
+
+[Speaker: Yuval Rooz]
 I think the US needs to be involved in the conversation. I think that that’s more important. A lot of times, people will bring up the point of China, but at the end of the day, the Yuan is not going to become the reserve currency because it’s on a blockchain. It might not be a component of why countries will consider doing trade with China, because maybe it’s easier, it’s more efficient. But in my opinion, it’s not going to be the primary reason. I think the absence of the US from the conversations around standards is much more damaging than the lack of actually implementing the technology.
+
+[Speaker: Yuval Rooz]
 Right now, most developed countries are thinking about, what does this technology mean? What is the value of it? We’re still many years away from developed countries moving all of their payment solutions to this technology, but the US should be at the forefront of those conversations.

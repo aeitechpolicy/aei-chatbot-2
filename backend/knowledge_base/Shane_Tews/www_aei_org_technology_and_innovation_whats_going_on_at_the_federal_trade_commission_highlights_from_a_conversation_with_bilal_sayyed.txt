@@ -1,160 +1,74 @@
 PAGE_TITLE: 
-	What’s Going on at the Federal Trade Commission? Highlights from a Conversation with Bilal Sayyed | American Enterprise Institute - AEI
+	What’s Going on at the Federal Trade Commission? Highlights from a Conversation with Bilal Sayyed
 
+[Speaker: Introduction / editorial context]
 By Shane Tews and Mark Jamison
-Under Chairwoman Lina Khan’s leadership, the Federal Trade
-Commission (FTC) is undergoing a number of process reforms that are poised to
-make the commission less democratic by allocating more power to the chair
-herself. If successful, what impact will these reforms have on the future of
-the commission — and on the laws it’s tasked with enforcing?
-We recently sat down with
-Bilal Sayyed
-, a
-TechFreedom
-senior adjunct fellow and former director of the FTC’s Office of Policy Planning, for an “Explain to Shane” discussion on the situation at the FTC. Bilal shared his insights on how Khan’s reforms will reshape long-standing policies around how the FTC is run, and on the challenges companies may face under the new FTC’s scrutiny.
-Below is an edited and abridged transcript of our talk. You can listen to this two-part discussion and other episodes of “Explain to Shane” on AEI.org (
-here
-and
-here
-) and subscribe via your
-preferred listening platform
-. You can also read the full transcripts of our discussion
-here
-and
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Bilal, to get us started, give
-us an overview of what the FTC does and why it matters to consumers,
-corporations, and everyone involved in US government.
-Bilal
-Sayyed: The FTC is one of two federal agencies focused on competition across a
-broad range of industries. The other federal agency or executive-branch
-department that focuses on competition in the same way the FTC does is the
-Antitrust Division of the Department of Justice (DOJ).
-The two are
-a bit different in setup; the FTC is thought of as a legislative agency and has
-a five-member commission that at least theoretically oversees the work of
-mostly career staff. Although there’s a chair, each commissioner gets a vote —
-in the ordinary course — about how the agency directs and uses its resources.
-The DOJ’s Antitrust Division is part of the executive branch, and its officials
-report to the attorney general. So there’s a single decision maker there.
-The FTC is
-also the nation’s only broad-based consumer protection agency dealing with
-fraud in advertising claims, as well as many other things (e.g., privacy
-issues) that arise across industries and the economy. There are other federal
-regulatory agencies that arguably deal with consumer protection and competition-related
-issues, but they’re relatively narrow in scope.
-Mark Jamison: Over the past two to three
-months, the FTC has undergone some significant changes. Give us the big picture
-of what’s going on.
-The incoming
-chair and at least one of the retained Democratic commissioners — maybe both —
-have a really different view of the FTC’s role than previous commissions did,
-regardless of their political makeup. Chair Lina Khan and her Democratic
-colleagues believe there’s been insufficient enforcement over the last 30–40
-years on both the competition and consumer protection side. And they are
-aggressively moving to undo the local framework and procedural guardrails that
-I think they believe supported this under-enforcement of antitrust laws.
-Most of what
-the FTC has done over the last 40 or so years has been enforcement-oriented.
-They identify a potential violation of law — even sometimes a potential
-violation of a consumer protection rule — and proceed with an investigation and
-evaluation of evidence. Then they enact an enforcement action, or not, against
-the respondents in that investigation. But what you see now is the beginning of
-an effort to put more of the economy under rule-based regulation. I think we
-will move away from the case-by-case method into a regulatory model in which
-firms of any type have to adhere to certain rules. And if they don’t adhere to
-those rules, they’ll be found in violation. This, I think, is consistent with
-the belief that there’s been under-enforcement of the law, and that one reason
-for this is that one-by-one enforcement actions take too much time and don’t
-give you much bang for the buck.
-So the key
-change, I think, is moving to a rule-based system in which the FTC probably
-drafts rules that apply industry-wide or economy-wide and then looks for
-adherence to those rules. That would be a significant change and not something
-the agency has done or attempted to do since the 1970s.
-An issue that has been hot in the media is
-the idea that some of the Big Tech companies have been acquiring smaller firms
-that could rise up and provide potential competition. What are your thoughts on
-that, and what do you think the FTC might do in that space?
-Look, I think
-it’s important for the FTC and the DOJ’s Antitrust Division to look to identify
-and potentially challenge acquisitions that will eliminate a strong future
-competitor to the acquiring firm or one of the parties to the merger. We
-operate in an innovative economy in which firms develop new products and new
-ways of distributing products, and that’s been the driving force of our economy
-for a long time. So if allegedly dominant firms acquire future competitors and
-either seek to bury what those firms are doing or in some way eliminate
-competition, that is a problem.
-But of
-course, there are difficulties with identifying future competitors. Not every
-new firm is a future competitor or even a significant or meaningful player in
-the markets they operate in. There are large hurdles to developing from a
-startup to an effective competitor. That makes the analysis of such
-acquisitions more difficult and speculative than acquisitions of existing
-competitors. And the analysis is further complicated by the fact that it’s
-uncertain whether the smaller companies will develop into competitive threats,
-even if they have interesting technologies or products. One thing the agencies
-do consider (and should consider more) is, “Does the merger, in fact,
-either bring that product or technology to market more quickly or make it more
-likely that the technology or product comes to market?”
-The concern
-has been that the agency doesn’t have a framework for evaluating such
-transactions, but that’s just incorrect. Often, you hear people in congressional
-hearings talk about Facebook’s acquisition of Instagram or WhatsApp as
-acquisitions that may have eliminated a potential or future competitor. Now,
-the FTC has brought a case against Facebook that was intended to look at those
-acquisitions, so I won’t comment on those specifically. But the agency has, in
-the last 20–25 years, brought by my count something in the range of 100 what
-I’d call “potential or future” competition cases. They’ve done this across a
-variety of industries, and they’ve largely been successful in preventing the
-acquisition or combination of existing and future competitors in those roughly
-100 matters.
-So I think
-the agency leadership — and Congress as well — may now be operating under the
-misconception that the FTC needs either greater resources or statutory
-authority to challenge such transactions. The record should put that in perspective.
-We’ve also seen several procedural changes
-at the FTC under its new leadership. One is eliminating the requirement that a
-majority of commissioners vote to approve the start of an investigation. Now, a
-single commissioner can sign off and launch an investigation. What are your
-thoughts?
-I have mixed
-thoughts on that. I think I have concerns about the commission structure as a
-five-member body to begin with. It doesn’t always allow for speed, and it
-allows for conflicting messages either through the public or the staff. It also
-potentially allows for delays in investigation. However, the place was set up
-as a commission, and removing what could be a deliberative exchange between the
-commissioners before the start of an investigation could be harmful.
-I think a
-better approach would’ve been to try to impose some deadlines on the approval
-of such things. There are, under the commission’s internal rules, some
-deadlines. But they’re often not adhered to and somewhat flexible. Speed is
-often a virtue (though not always), but I think this change loses some benefits
-of deliberation pre-investigation or before expanding an investigation’s scope.
-In that sense, it was a mistake.
-Shane Tews: Christine Wilson, a Republican
-commissioner, has cited difficulties obtaining information from FTC staff. They
-have basically refused to work with her, and she’s apparently had to go outside
-the FTC to get data she wants. How does that even happen?
-The agency
-has been largely collegial for the whole time I’ve been practicing, and the
-chair doesn’t ask the staff to stiff commissioners of a different party. It’s
-counterproductive, and it probably isn’t even effective. Now, although each
-commissioner — at least prior to some of these changes — gets a vote, the chair
-is the person who sort of runs the agency, either directly or through its
-leadership designees. So it is possible, of course, to direct the staff to
-stiff other commissioners. It’s not good policy, but it can be done. I think
-it’s ineffective because it’s very easy for the commissioners to indicate
-they’re not getting information that otherwise would’ve been normal to share.
-In some
-respects, Wilson was complaining about information shared with the parties or
-directed requests to the parties. And so there you just can reach out to
-parties either directly or indirectly and say “we’re just not hearing
-about what’s going on” at the early stages of an investigation. And I
-think people will then provide that information.
-Of course, if
-you set up a commission to be bipartisan, stiffing people at the beginning of
-an investigation probably hurts your ability to move things forward later,
-whether it’s because you don’t get the benefit of input from people or because
-things just get slowed down later on. It is hard to see who benefits from this.
+
+[Speaker: Introduction / editorial context]
+Under Chairwoman Lina Khan’s leadership, the Federal Trade Commission (FTC) is undergoing a number of process reforms that are poised to make the commission less democratic by allocating more power to the chair herself. If successful, what impact will these reforms have on the future of the commission — and on the laws it’s tasked with enforcing?
+
+[Speaker: Introduction / editorial context]
+We recently sat down with Bilal Sayyed, a TechFreedom senior adjunct fellow and former director of the FTC’s Office of Policy Planning, for an “Explain to Shane” discussion on the situation at the FTC. Bilal shared his insights on how Khan’s reforms will reshape long-standing policies around how the FTC is run, and on the challenges companies may face under the new FTC’s scrutiny.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this two-part discussion and other episodes of “Explain to Shane” on AEI.org (here and here) and subscribe via your preferred listening platform. You can also read the full transcripts of our discussion here and here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Bilal, to get us started, give us an overview of what the FTC does and why it matters to consumers, corporations, and everyone involved in US government.
+
+[Speaker: Bilal Sayyed]
+Bilal Sayyed: The FTC is one of two federal agencies focused on competition across a broad range of industries. The other federal agency or executive-branch department that focuses on competition in the same way the FTC does is the Antitrust Division of the Department of Justice (DOJ).
+
+[Speaker: Bilal Sayyed]
+The two are a bit different in setup; the FTC is thought of as a legislative agency and has a five-member commission that at least theoretically oversees the work of mostly career staff. Although there’s a chair, each commissioner gets a vote — in the ordinary course — about how the agency directs and uses its resources. The DOJ’s Antitrust Division is part of the executive branch, and its officials report to the attorney general. So there’s a single decision maker there.
+
+[Speaker: Bilal Sayyed]
+The FTC is also the nation’s only broad-based consumer protection agency dealing with fraud in advertising claims, as well as many other things (e.g., privacy issues) that arise across industries and the economy. There are other federal regulatory agencies that arguably deal with consumer protection and competition-related issues, but they’re relatively narrow in scope.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Over the past two to three months, the FTC has undergone some significant changes. Give us the big picture of what’s going on.
+
+[Speaker: Mark Jamison]
+The incoming chair and at least one of the retained Democratic commissioners — maybe both — have a really different view of the FTC’s role than previous commissions did, regardless of their political makeup. Chair Lina Khan and her Democratic colleagues believe there’s been insufficient enforcement over the last 30–40 years on both the competition and consumer protection side. And they are aggressively moving to undo the local framework and procedural guardrails that I think they believe supported this under-enforcement of antitrust laws.
+
+[Speaker: Mark Jamison]
+Most of what the FTC has done over the last 40 or so years has been enforcement-oriented. They identify a potential violation of law — even sometimes a potential violation of a consumer protection rule — and proceed with an investigation and evaluation of evidence. Then they enact an enforcement action, or not, against the respondents in that investigation. But what you see now is the beginning of an effort to put more of the economy under rule-based regulation. I think we will move away from the case-by-case method into a regulatory model in which firms of any type have to adhere to certain rules. And if they don’t adhere to those rules, they’ll be found in violation. This, I think, is consistent with the belief that there’s been under-enforcement of the law, and that one reason for this is that one-by-one enforcement actions take too much time and don’t give you much bang for the buck.
+
+[Speaker: Mark Jamison]
+So the key change, I think, is moving to a rule-based system in which the FTC probably drafts rules that apply industry-wide or economy-wide and then looks for adherence to those rules. That would be a significant change and not something the agency has done or attempted to do since the 1970s.
+
+[Speaker: Shane Tews]
+An issue that has been hot in the media is the idea that some of the Big Tech companies have been acquiring smaller firms that could rise up and provide potential competition. What are your thoughts on that, and what do you think the FTC might do in that space?
+
+[Speaker: Speaker not identified]
+Look, I think it’s important for the FTC and the DOJ’s Antitrust Division to look to identify and potentially challenge acquisitions that will eliminate a strong future competitor to the acquiring firm or one of the parties to the merger. We operate in an innovative economy in which firms develop new products and new ways of distributing products, and that’s been the driving force of our economy for a long time. So if allegedly dominant firms acquire future competitors and either seek to bury what those firms are doing or in some way eliminate competition, that is a problem.
+
+[Speaker: Speaker not identified]
+But of course, there are difficulties with identifying future competitors. Not every new firm is a future competitor or even a significant or meaningful player in the markets they operate in. There are large hurdles to developing from a startup to an effective competitor. That makes the analysis of such acquisitions more difficult and speculative than acquisitions of existing competitors. And the analysis is further complicated by the fact that it’s uncertain whether the smaller companies will develop into competitive threats, even if they have interesting technologies or products. One thing the agencies do consider (and should consider more) is, “Does the merger, in fact, either bring that product or technology to market more quickly or make it more likely that the technology or product comes to market?”
+
+[Speaker: Speaker not identified]
+The concern has been that the agency doesn’t have a framework for evaluating such transactions, but that’s just incorrect. Often, you hear people in congressional hearings talk about Facebook’s acquisition of Instagram or WhatsApp as acquisitions that may have eliminated a potential or future competitor. Now, the FTC has brought a case against Facebook that was intended to look at those acquisitions, so I won’t comment on those specifically. But the agency has, in the last 20–25 years, brought by my count something in the range of 100 what I’d call “potential or future” competition cases. They’ve done this across a variety of industries, and they’ve largely been successful in preventing the acquisition or combination of existing and future competitors in those roughly 100 matters.
+
+[Speaker: Speaker not identified]
+So I think the agency leadership — and Congress as well — may now be operating under the misconception that the FTC needs either greater resources or statutory authority to challenge such transactions. The record should put that in perspective.
+
+[Speaker: Shane Tews]
+We’ve also seen several procedural changes at the FTC under its new leadership. One is eliminating the requirement that a majority of commissioners vote to approve the start of an investigation. Now, a single commissioner can sign off and launch an investigation. What are your thoughts?
+
+[Speaker: Speaker not identified]
+I have mixed thoughts on that. I think I have concerns about the commission structure as a five-member body to begin with. It doesn’t always allow for speed, and it allows for conflicting messages either through the public or the staff. It also potentially allows for delays in investigation. However, the place was set up as a commission, and removing what could be a deliberative exchange between the commissioners before the start of an investigation could be harmful.
+
+[Speaker: Speaker not identified]
+I think a better approach would’ve been to try to impose some deadlines on the approval of such things. There are, under the commission’s internal rules, some deadlines. But they’re often not adhered to and somewhat flexible. Speed is often a virtue (though not always), but I think this change loses some benefits of deliberation pre-investigation or before expanding an investigation’s scope. In that sense, it was a mistake.
+
+[Speaker: Shane Tews]
+Shane Tews: Christine Wilson, a Republican commissioner, has cited difficulties obtaining information from FTC staff. They have basically refused to work with her, and she’s apparently had to go outside the FTC to get data she wants. How does that even happen?
+
+[Speaker: Speaker not identified]
+The agency has been largely collegial for the whole time I’ve been practicing, and the chair doesn’t ask the staff to stiff commissioners of a different party. It’s counterproductive, and it probably isn’t even effective. Now, although each commissioner — at least prior to some of these changes — gets a vote, the chair is the person who sort of runs the agency, either directly or through its leadership designees. So it is possible, of course, to direct the staff to stiff other commissioners. It’s not good policy, but it can be done. I think it’s ineffective because it’s very easy for the commissioners to indicate they’re not getting information that otherwise would’ve been normal to share.
+
+[Speaker: Speaker not identified]
+In some respects, Wilson was complaining about information shared with the parties or directed requests to the parties. And so there you just can reach out to parties either directly or indirectly and say “we’re just not hearing about what’s going on” at the early stages of an investigation. And I think people will then provide that information.
+
+[Speaker: Speaker not identified]
+Of course, if you set up a commission to be bipartisan, stiffing people at the beginning of an investigation probably hurts your ability to move things forward later, whether it’s because you don’t get the benefit of input from people or because things just get slowed down later on. It is hard to see who benefits from this.

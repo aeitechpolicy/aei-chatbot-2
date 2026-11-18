@@ -1,6 +1,11 @@
 PAGE_TITLE: 
-	Inside Tech’s $2 Trillion Technical Debt (with Ken Silva) | American Enterprise Institute - AEI
+	Inside Tech’s $2 Trillion Technical Debt (with Ken Silva)
 
+[Speaker: Introduction / editorial context]
 Outdated systems, sloppy code, and years of quick fixes have created a growing issue of “technical debt” in businesses. This unseen threat poses security risks, slows innovation, and leaves companies running on inefficient systems. Technical debt costs the US an estimated $2.41 trillion annually, with a whopping $1.52 trillion needed just to address the backlog. As businesses prioritize new features over fixing deep-rooted problems, the issues keep piling up, creating deeper vulnerabilities in legacy systems.
+
+[Speaker: Introduction / editorial context]
 Joining me today on Explain to Shane is Ken Silva, a renowned industry veteran with over 30 years of experience in tech, cybersecurity, and telecommunications businesses. He is well known for the work he has done as a chief technology officer and as a chief security officer for multiple tech companies.
+
+[Speaker: Introduction / editorial context]
 Tune in as we explore the hidden price of technical debt.

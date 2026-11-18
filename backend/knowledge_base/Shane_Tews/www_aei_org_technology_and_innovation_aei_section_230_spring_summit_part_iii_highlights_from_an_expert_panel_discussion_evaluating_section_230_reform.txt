@@ -1,38 +1,50 @@
 PAGE_TITLE: 
-	AEI Section 230 Spring Summit, Part III: Highlights from an Expert Panel Discussion Evaluating Section 230 Reform | American Enterprise Institute - AEI
+	AEI Section 230 Spring Summit, Part III: Highlights from an Expert Panel Discussion Evaluating Section 230 Reform
 
-On April 19, 2023, AEI hosted a half-day summit to identify where the policy zeitgeist is at on online content moderation policy given the consideration of two recent Supreme Court cases with major implications on how the internet as we know it functions. This
-blog
-series
-highlights the best moments from each discussion. The final panel of the day discussed the many frameworks for approaching reform. The Supreme Court ruled on both cases on May 18 but did not address the matter directly, taking a narrow approach that left the Section 230 liability protection for social media companies in place. The most likely next step is relegating any reform to Congress or to future cases.
-This panel of experts featured
-Quinta Jurecic
-, a fellow in Governance Studies at the Brookings Institution;
-Lateef Mtima
-, professor of law at Howard University;
-Kristian Stout
-, director of innovation policy at ICLE;
-Berin Szóka
-, president of TechFreedom; and moderated by
-Shane Tews
-.
-Below is an edited and abridged transcript of key highlights from that panel. You can watch the full event on
-AEI.org
-and read the full transcript
-here
-.
+[Speaker: Introduction / editorial context]
+On April 19, 2023, AEI hosted a half-day summit to identify where the policy zeitgeist is at on online content moderation policy given the consideration of two recent Supreme Court cases with major implications on how the internet as we know it functions. This blog series highlights the best moments from each discussion. The final panel of the day discussed the many frameworks for approaching reform. The Supreme Court ruled on both cases on May 18 but did not address the matter directly, taking a narrow approach that left the Section 230 liability protection for social media companies in place. The most likely next step is relegating any reform to Congress or to future cases.
+
+[Speaker: Introduction / editorial context]
+This panel of experts featured Quinta Jurecic, a fellow in Governance Studies at the Brookings Institution; Lateef Mtima, professor of law at Howard University; Kristian Stout, director of innovation policy at ICLE; Berin Szóka, president of TechFreedom; and moderated by Shane Tews.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from that panel. You can watch the full event on AEI.org and read the full transcript here.
+
+[Speaker: Shane Tews]
 Shane Tews: How should we be thinking about Section 230, and what happens if we change the statute?
+
+[Speaker: Lateef Mtima]
 Lateef Mtima: We place a lot of emphasis on the positive impact that Section 230 has had on marginalized voices. But it’s not just marginalized voices, it’s everybody. Every citizen in America now has the opportunity to opine on just about anything. And it has brought the benefits of the First Amendment into reality. So when we think about what Section 230 has done, it’s beneficial to think about its impact on “marginalized communities” and outsider voices. And remember, this includes not what you would traditionally think about as outsider. Rural communities, artistic communities, and virtually anyone outside the mainstream. And if we break Section 230, all of that goes away. And we go back to a situation in which you basically have a very tiny portion of mainstream America that controls the public conversation.
+
+[Speaker: Berin Szóka]
 Berin Szóka: I would emphasize three points, which you’ll see in here, essentially distilled. Point number one, it is very difficult to distinguish what is lawful from what is unlawful. And what is unlawful is very limited in this country. Point number two, Section 230 has never done anything to prevent the people who actually create content from being held responsible for it. Period. End of story. And that should be the case, it should remain the case. The question is, what should platforms be held liable for? Today, Section 230 does allow platforms to be held liable when they help to create content, and also has a number of important exceptions, such as federal criminal law. So if you’re a platform, then you’re never immune from federal criminal law under Section 230. And then finally, and this is really the key point here. The work that Section 230 ultimately does is in making it possible to build systems like we have today—to offer content at scale—in the US legal system.
+
+[Speaker: Kristian Stout]
 Kristian Stout: I do take very seriously the idea that if you created a Section 230 exception, you repeal it, or you did one of the proposals that are frequently floated, you probably would have a flood of litigation. But that’s not to say that any change to Section 230 will necessarily bury platforms and other online providers in litigation. There needs to be some way to introduce the concept of reasonableness in the moderation standards. It’s going to be very difficult. Berin flagged a lot of the ways that this could be difficult.
+
+[Speaker: Kristian Stout]
 But that’s not to say that it’s impossible or completely unwarranted. Right now, 230 works as a complete liability shield from secondary liability. There’s not very many places in the United States law or law of the West where you’ve seen something like that emerge. And I think the initial instinct of the lawmakers in the 1990s probably was right. They weren’t sure how this industry was going to develop. They didn’t know where the friction points would be in order to figure out where these businesses could grow. The internet has given us a tremendous amount of value. But after two and a half decades, we’ve seen how attorneys have tried to bring these suits. We’ve seen the different kinds of harms that can arise. I think it’s at least plausible that we want to have a discussion that looks at that.
+
+[Speaker: Kristian Stout]
 Reform would need to be something that would take a long time to implement, be very marginal, and allow courts to start to look at the reasonableness of how these platforms engage with their users. I think one of the things that point me in the direction of thinking about that is that there are a lot of laws in the United States that are really bad. And Section 230 rightly gives platforms a way around these bad laws.
+
+[Speaker: Shane Tews]
 Shane Tews: So what do we tell the lawmakers that are coming back in session soon and are going to be dropping this legislation? What’s some guidance you would give them?
+
+[Speaker: Quinta Jurecic]
 Quinta Jurecic: If you look at some of the legislation that was introduced when Section 230 sort of first hit the spotlight in 2018, it’s on the level of “repeal it.” Both President Biden and President Trump indicated that that was their desired policy during the 2020 presidential campaign. Now, certainly, there’s been a lot of legislation introduced in Congress, taking different approaches to 230. I disagree with most of it for all of the reasons that we’ve set out here. But I do think you start to see at least a little more sophistication in the approach that lawmakers are taking, and acknowledging in some cases that perhaps we might want to ensure that platforms that perform different services or are different sizes have different obligations under Section 230. An example would be legislation like the Platform Accountability and Transparency Act tying Section 230 to transparency obligations. We can debate whether or not those different pieces of legislation are perfect, and I don’t think they are. But at least it seems to me that we’re moving toward a little bit of more sophistication there.
+
+[Speaker: Berin Szóka]
 Berin Szóka: I mean, the reality of this is very simple. If you applied a rule, neutrally, about whatever—misinformation, hate speech, incitement, pick your category—if you applied that rule neutrally, if you had a computer do it, if we sat down and had pure engineers come up with that rule, and there were no human intervention at all. However you want to define neutral application of the rule, it would produce disparate impact along partisan lines. It is that simple. You would wind up in a situation, no matter how you did that, where the companies would seem to be discriminating.
+
+[Speaker: Kristian Stout]
 Kristian Stout: I think I’m in the middle somewhere. And I’ll extrapolate from what Berin said, the problem is not just users, it’s humans. If you’ve ever met any humans, they can be horrible people sometimes. So we’re filled in this sea of people doing terrible things, including politicians. And one of the things that leads me to be slightly cynical is the public choice and political economy aspects that drive politicians’ decision making. The interest is in making noise that helps with fundraising. It’s not necessarily in talking about hard problems and thinking about marginal fixes that will move us forward an inch at a time. I do think that there’s room for reform. I think the reform should be boring. It should be boring people on boring committees reviewing cases, review instances of problems, and then they think about how we move that ball forward very slightly to the point where normal average citizens might not even recognize that there’re incremental changes happening.
+
+[Speaker: Shane Tews]
 Shane Tews: Generative AI is here and already producing online content. How should we be thinking about that in the context of Section 230?
+
+[Speaker: Kristian Stout]
 Kristian Stout: You can think about in terms of Tesla and auto-driving cars. So if Tesla creates a car that’s now fully capable of self-drive, and someone gets in an accident, who’s responsible? Is Tesla somehow responsible? In those cases, one of the things I’ve been thinking about is that you want to say the liability would rest with the manufacturer. But you would rely on an insurance system to back up the kind of harms that would arise from that.
-I think the same thing would happen with things like large language models and different kinds of AI. They’re going to be able to generate some horribly offensive and possibly dangerous content. The users who click the button to generate them I don’t think would be responsible. I don’t think necessarily even the website that hosts it. I would think it would be something like the developer. Now, this gets complicated when it’s open source, but say something
-like
-the developer.
+
+[Speaker: Kristian Stout]
+I think the same thing would happen with things like large language models and different kinds of AI. They’re going to be able to generate some horribly offensive and possibly dangerous content. The users who click the button to generate them I don’t think would be responsible. I don’t think necessarily even the website that hosts it. I would think it would be something like the developer. Now, this gets complicated when it’s open source, but say something like the developer.

@@ -1,59 +1,140 @@
 PAGE_TITLE: 
-	Establishing Global Spectrum Leadership and a Modern FCC: Highlights from My Conversation with Ajit Pai, Part I | American Enterprise Institute - AEI
+	Establishing Global Spectrum Leadership and a Modern FCC: Highlights from My Conversation with Ajit Pai, Part I
 
+[Speaker: Introduction / editorial context]
 With so many new innovations in technology, we have ventured beyond much of the original design for the existing regulatory frameworks, particularly around communications technology. Ajit Pai spent over a decade at the Federal Communications Commission (FCC) and recognized that changes in the regulatory structure were important to match the advancements in telecommunications and technology ecosystems.
+
+[Speaker: Introduction / editorial context]
 When he was chairman of the FCC from 2017–2021, Ajit developed a well-deserved reputation as a creative and effective thought leader on many core issues and the needed changes and policies to expand broadband access across America to enabling investment in the next generation communications networks like 5G. I recently had the opportunity to discuss his leadership at length when I interviewed him live at the AEI Enterprise Club retreat. Along with his role at AEI as a non-resident fellow, he is a partner in the global investment firm Searchlight Capital Partners.
-Below is an edited and abridged transcript of the first part of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of the first part of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Ajit, could you explain the process of the monthly FCC meeting and how you changed things to allow information to flow better before these meetings?
+
+[Speaker: Ajit Pai]
 Ajit Pai: Sure. For those of you who are blissfully unaware of my career trajectory, I spent four years as a commissioner during the Obama administration before being elevated to chairman under President Trump. And one of the things that drove me crazy, when I was a commissioner in the minority, is that, by law, we are required to have a meeting where we vote on various things—proposals, orders—that are teed up by the chairman of the commission. But we would never release the actual text of those proposals and orders until after we had voted.
+
+[Speaker: Ajit Pai]
 So, we’d essentially vote in secret on these documents that nobody could see other than the FCC commissioners and staff. And then, only afterward, we announced to the world what we had done. And so, it seemed to me kind of bizarre that, in an age where a single congressman or senator can put legislation on the internet immediately after introducing it and people can debate about it and report on it, the FCC still lived in this sort of backwater.
+
+[Speaker: Ajit Pai]
 So, I proposed to the chairman at the time, my predecessor, “Look, I really think we should publish this in advance. So, people can, as my third grade math teacher would say, ‘Show your work,’ to say what it is you’re going to do and how you got there.” And he’s like, “No, it’s illegal. And it’s just a bad idea. And it’s gonna impose all these burdens.” I kept being told no, including by members of Congress on both sides of the aisle, actually.
+
+[Speaker: Ajit Pai]
 In my second week in office, I changed that. I said, “From now on, at these monthly meetings, I will promise you, the American public, we are going to publish at least three weeks in advance exactly what we’re going to be voting on.” And I remember some members of the press who are otherwise predisposed not to like me anyway say, “Oh, my God, this is going to be a complete disaster. Only high-priced lobbyists and lawyers are going to get access to the FCC to really understand what’s going on.”
+
+[Speaker: Ajit Pai]
 It’s completely the opposite now. When I was in the office, I would routinely get emails from people in Wyoming or another state who had an internet connection that said, “Well, I can actually read what it is you’re about to do. I might disagree with it, but at least I can understand it.” And that kind of transparency seems like it should be “Government 101” to the average citizen. But within the FCC, it was pretty radical.
+
+[Speaker: Ajit Pai]
 We also introduced other steps just to make the agency more open and transparent and also just transformed how the agency operated. We created an Office of Economics and Analytics—for lawyers there is an Office of General Counsel, for engineers there was an Office of Engineering Technology, but economists were always relegated to the backwater.
+
+[Speaker: Ajit Pai]
 I thought this was ridiculous. Telecoms is one-sixth of the national economy. We should have an economist at the table to at least help us weigh costs and benefits. I’m really proud of the different reforms like that we pushed through and those reforms have persisted even into the current administration.
+
+[Speaker: Shane Tews]
 The Federal Trade Commission (FTC) seems to be doing the opposite. What’s your appraisal of how things are going over there?
+
+[Speaker: Ajit Pai]
 So, I used to be an FCC staffer before becoming a commissioner. One of my frustrations was that the staff would work on all this stuff, but it would never go anywhere—just sit on a shelf. If you know anything about me, then you know that I’m kind of a man of action. I don’t want to waste time and effort. And so, everything that we had our staff work on immediately got voted on. They loved that.
+
+[Speaker: Ajit Pai]
 I think that’s part of the reason why the morale of the FTC is relatively low now, if you look at the surveys. And they’re not getting as much done either. So, it’s kind of a double whammy that I don’t think serves the agency or the American public very well.
+
+[Speaker: Shane Tews]
 Let’s go back to some of the work that you did. What were some of your top accomplishments during your time at the FCC?
+
+[Speaker: Ajit Pai]
 I think one of the things that was closest to my heart, at least, was helping to close the digital divide—that gap between the Americans who don’t have internet access and those who do. And I come from a small town in rural Kansas that’s called Parsons (three hours south of Kansas City, two hours from Wichita, and two hours from Tulsa). Whenever I go back home, I become keenly aware that many people back home don’t have the same internet access that we do in suburban Washington, DC. So, I tried to change that. We instituted a whole bunch of different reforms to help accomplish that, which I’m sure we might get into later.
+
+[Speaker: Ajit Pai]
 The second accomplishment was really advancing the ball in terms of American leadership in wireless and 5G in particular. When I came into office, the US had not held a major spectrum option in 5G at all. We didn’t have much teed up in the pipeline. Part of the reason was there a lot of institutional forces within the government and in the private sector that always stood in the way.
+
+[Speaker: Ajit Pai]
 And I told my team from day one, I was determined to spend every last ounce of my political capital, I was going to make sure that the US had a leading position in spectrum policy and wireless infrastructure. However, we broke a lot of eggs—no doubt about it.
+
+[Speaker: Ajit Pai]
 The dominant mode at the FCC when it came to spectrum was inertia, which is one of the most powerful forces in American government. It’s always easier for the chairman or chairwoman not to rock the boat, not to push a certain spectrum band because another agency or company will get upset.
+
+[Speaker: Ajit Pai]
 But because of the boat-rocking, you have 5G deployed widely across the United States. Phones are coming out that are 5G enabled. New services are coming out. New business models are emerging on the basis of 5G.
+
+[Speaker: Shane Tews]
 So, let’s talk about the shuffling-of-the-spectrum process. At one point the Federal Aviation Administration (FAA) and commercial pilots were upset because they thought that this new technology was going to make planes crash. What all went down there?
+
+[Speaker: Ajit Pai]
 Yeah, this is a classic case of how spectrum policy works in Washington. And to be sort of amusing, the FAA, having solved all the other problems with airline travel, as I’m sure you’re aware, decided to focus on this particular issue late last year. Nothing about the overhead bag situation, or you’re being crammed in. Like, “No, 5G spectrum, that’s what we’re going to focus on.”
+
+[Speaker: Ajit Pai]
 Anyway, we’d opened up back in 2017 and 2018 a conversation about all the possible spectrum that could be used for 5G. And one of the things we identified was what was called the C-band. And this is sort of the sweet spot in terms of spectrum. Because of the physical properties of it, it carries a lot of data and can also go a relatively longer distance.
+
+[Speaker: Ajit Pai]
 About 200 megahertz away from that band, which is a pretty big distance, is a radio altimeter. The altimeters tell you how far you are when you’re on a plane. And so, we had the engineers look at it. We invited the National Telecommunications and Information Administration, which is in the Department of Commerce. We invited the FAA and the airline industry to also tell us if they think there’s going to be interference with these altimeters. We asked them to let us know, but they never did.
+
+[Speaker: Ajit Pai]
 Before we moved ahead with our final order in 2020, I asked the team, “Just put together a huge punch list of all the potential issues that could go wrong if we move ahead like this.” It was a 15-page document. Page 13 said something like, “Yeah, you know, some people have been complaining about altimeters.”
+
+[Speaker: Ajit Pai]
 We addressed the issues, pressed onward, and held the auction (the largest spectrum auction in American history). It generated $81 billion for you, the American taxpayer, which I’m sure Congress will use very wisely. This is critical spectrum for American leadership in 5G, though. If you want to beat China and all these other countries on 5G, then you’ve got to put the building blocks—including spectrum—in place.
+
+[Speaker: Ajit Pai]
 And what do you know? The Department of Commerce, just earlier this week or late last week, put out a report saying, “Yeah, we don’t really think there’s going to be interference here with these altimeters after all.” All of that angst you see in the headlines proclaiming that 5G is going to kill us all in the air, it was just essentially for clickbait.
+
+[Speaker: Shane Tews]
 What is the C-band and why is it so important for moving forward in technology?
+
+[Speaker: Ajit Pai]
 One of the things with 5G is that it uses a wide variety of spectrum—the airwaves that we all rely on. And for 5G, in particular, these phones are going to need to be a little bit closer to the edges of the network. They’re going to have to have a much greater capacity to receive and send data.
+
+[Speaker: Ajit Pai]
 Traditionally, the C-band has been used for the satellite delivery of video programming. So if you watch ESPN or some other linear channel on your cable provider, we’re watching C-band-delivered programming. Because of the advances in technology, they can now send video much more efficiently, or they can just use optical fiber to send it instead of going via space.
+
+[Speaker: Ajit Pai]
 So, we said, “Okay. That’s essentially free spectrum now. All that spectrum isn’t gonna be used for satellite, so let’s repurpose it for a higher-valued use,” which is sort of the Ronald Coase theorem in action, right? Assuming transaction costs are low, then the property rights should be assigned to the highest-valued user.
+
+[Speaker: Ajit Pai]
 There are many other countries around the world that are looking to seize the mantle of leadership from the US in wireless, China in particular. They have a lot of innovators who are focused exclusively on 5G. So my worry was that if the US didn’t put in place some of these building blocks like spectrum or wireless infrastructure, then, over time, capital and talent would flow to where people perceive there’s greater opportunity to innovate. The C-band was really the centerpiece of our efforts.
+
+[Speaker: Shane Tews]
 Let’s talk about the pandemic and what I think was the unsung hero: internet infrastructure. Why is it we did so well and that other countries didn’t do as well as we did?
+
+[Speaker: Ajit Pai]
 I’d like to think part of the reason is because we made the difficult decisions early on that incentivize companies to raise the capital to build the networks and to ultimately deliver the services that would stand strong during the COVID-19 pandemic. Before anyone had heard of COVID-19, I said, “Look, whatever the proceeds of this spectrum auction are, I urge Congress to devote that money to building rural broadband—to making sure that we get fiber or other communications technologies to unserved parts of the country.”
+
+[Speaker: Ajit Pai]
 Fiber investment in the United States set a record in 2018, a record that was broken in 2019, and then again in 2020. We saw millions more Americans connected to the internet before COVID-19 hit. And so, as a result, when the pandemic did hit, we saw people able to do a lot more things in the United States than they could, generally speaking, in Europe.
+
+[Speaker: Ajit Pai]
 One of my counterparts in the European Union had to go hat-in-hand to Netflix and YouTube and companies like that to ask them, “Can you throttle your video content from HD down to SD because we are not confident that our broadband networks are going to be able to sustain all of that traffic?” And the reason he did that is because Europe has a very heavy regulatory framework with utility-style regulations. Any rational company wouldn’t invest in Europe.
+
+[Speaker: Ajit Pai]
 So, I said to all of America’s broadband providers, “Look, I know this is going to hit your bottom line, but do what you can to keep American consumers connected. Don’t cut them off if they have a bill that’s outstanding for say, 30 days. Make all of your Wi-Fi hotspots available to anybody.” And they stood up and they did that.
-There is a
-lot
-of money allocated for broadband expansion, and a multitude of agencies and programs are involved to implement it. How then does the market manage, all of a sudden, this influx of cash?
+
+[Speaker: Shane Tews]
+There is a lot of money allocated for broadband expansion, and a multitude of agencies and programs are involved to implement it. How then does the market manage, all of a sudden, this influx of cash?
+
+[Speaker: Ajit Pai]
 There’s good and bad in all of this. The good side is that the amount of money that’s being allocated through these various programs you mentioned is substantial. In my current role as an investor, it’s fundamentally changed the unit economics for serving some of these rural areas where otherwise you would never have a business case for building broadband. If you want these areas to be served, the public sector capital has to be allocated.
+
+[Speaker: Ajit Pai]
 Part of the problem is, on the other side, though, that, number one, there are multiple different programs. Let’s say the US Department of Agriculture awarded a grant to some company to deploy in a particular area. Well, what if they haven’t deployed? What if they’ll never deploy? Should the Department of Commerce then come in and fund somebody else to do it? Making all these kids play in the sandbox, so to speak, is exceptionally complex.
+
+[Speaker: Shane Tews]
 Do we have enough workforce to implement what we are planning on doing here?
+
+[Speaker: Ajit Pai]
 In terms of the things that keep me up at night, workforce and supply chain are two of the biggest. I mean, there are only so many people who can do this stuff. It’s hard, and it’s labor intensive. And if you make a mistake, like attaching something to the wrong spot on the utility pole, you can get sued or the entire thing burns down.
+
+[Speaker: Ajit Pai]
 So, relatively few people want to do this kind of work, even though it’s relatively well paid and has good benefits. With upwards of $80 billion in total going for broadband deployment, everyone in the country is going to be looking to do this work all at the same time—a massive labor constraint.
+
+[Speaker: Shane Tews]
 The ability for the FCC to have spectrum auctions expired on September 30th. So what happens now?
-It’s going to be up to Congress to extend it, and I think they should extend it. The FCC needs this authority. The flip side of that is that the FCC actually has to
-exercise
-that authority.
+
+[Speaker: Ajit Pai]
+It’s going to be up to Congress to extend it, and I think they should extend it. The FCC needs this authority. The flip side of that is that the FCC actually has to exercise that authority.
+
+[Speaker: Ajit Pai]
 One of my concerns has been that the agency has not kept up that pace of spectrum auctions that we did. In fact, the current FCC has not held a single spectrum auction that we didn’t start. It’s on track not to do any by the time the first term of this administration is done. So, whether Congress extends the authority or not, I’m not sure.

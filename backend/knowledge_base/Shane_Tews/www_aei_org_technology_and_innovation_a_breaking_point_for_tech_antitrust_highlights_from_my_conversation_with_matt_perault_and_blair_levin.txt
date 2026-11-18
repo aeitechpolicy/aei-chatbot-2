@@ -1,183 +1,83 @@
 PAGE_TITLE: 
-	A Breaking Point for Tech Antitrust: Highlights from My Conversation with Matt Perault and Blair Levin | American Enterprise Institute - AEI
+	A Breaking Point for Tech Antitrust: Highlights from My Conversation with Matt Perault and Blair Levin
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Several
-bills seeking to restructure American antitrust law are moving forward in both
-bodies of Congress. The bills specifically target Big Tech firms, though they
-follow arbitrary metrics for “bigness,” and don’t address lawmakers’ main
-concerns regarding tech platforms. With a Senate markup already completed for
-two of the bills, we must ask: Is Congress really prepared to pass major
-antitrust legislation?
-On the
-latest episode of “Explain to Shane,” I was joined by
-Matt
-Perault
-and
-Blair Levin
-to discuss what consumers stand to lose if
-these bills become law, along with the political forces at play in tech
-antitrust.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Can you guys walk us through
-why antitrust has suddenly become a hot topic in Washington? Also, talk a bit
-about the consumer welfare-oriented underpinning of antitrust law and why this
-has come into question.
-Matt
-Perault: The consumer welfare standard is the idea that the thought process
-around whether government should intervene in the market to deem certain
-conduct as anticompetitive and illegal should be rooted in an analysis of
-whether or not consumers are harmed. The consumer welfare standard also
-includes harm to quality and innovation — essentially, whether a monopolist is
-able to release worse and less innovative products over time.
-The
-interesting recent development is this idea that the consumer welfare standard
-is insufficient and doesn’t take into account harms to labor markets, the
-environment, society, and democracy. I understand why we want to be conscious
-of that range of harms, but it seems like the consumer welfare standard’s
-narrow focus and objective economics-based orientation is actually really
-helpful in guiding how we think about harm to consumers as opposed to
-competitors.
-Blair Levin:
-There is a sense on both the left and the right that there’s too much
-concentration and market dominance. But this notion absolutely breaks down when
-you discuss what to do about it. Whether you think there is too much or not,
-you have to be aware of the fact that government intervention in the market has
-consequences. Are they really the consequences we want?
-The bipartisan
-American Innovation and Choice Online Act
-would outlaw self-preferencing, which is when a company gives its products or services an advantage over another platform’s competitive offerings. Will this really help consumers?
-Matt
-Perault: I think a lot of the momentum behind the nondiscrimination measures is
-the result of the Francis Haugen disclosures and frustrations that people feel
-toward Facebook for a variety of different reasons. But Facebook doesn’t engage
-in a lot of self-preferencing. It doesn’t have vertically integrated app
-stores, devices, and services like Apple and Google do, nor does it have
-name-brand products like Amazon Basics. So this bill wouldn’t disrupt
-Facebook’s business model as much as it would Amazon’s, Apple’s, and Google’s. But
-Facebook is the reason this bill is moving.
-The thing
-is, consumers would really feel the bill’s effects. I don’t think it’s an
-abstraction to say it would be more difficult to use Google Maps on an Android
-device. You might get an iPhone with no pre-loaded Apple apps. It’s conceivable
-that those things are good for consumers in the long run, but there isn’t
-really a clear articulation of the consumer harm in the status quo and how this
-legislation would be better for people. I think it’s actually more likely we’d
-see prices rise. We’d see products that people really like, like batteries on
-Amazon, no longer available.
-Blair Levin:
-One things that’s interesting to me is that legislation is often written with
-historic metaphors in mind. I think that fundamental principle of
-nondiscrimination has worked very effectively in some other situations. When
-AT&T was a telephone monopoly, I think there were a lot of prohibitions on
-discrimination that were very effective. Whether those are relevant for today’s
-market, though, is a different question.
-So I think
-you have to do a pretty sophisticated analysis to see whether prohibiting a
-certain kind of discrimination would actually enable greater competition. I
-just don’t know whether, in this particular case, this kind of legislation
-would do that, or would have a negative effect of the kind that Matt is talking
-about.
-It seems like there’s now a general
-assumption that mergers are always bad. But Microsoft Word, for example, didn’t
-create spellcheck. They bought the company that invented spellcheck and
-integrated it, and a lot of these small startups are actually trying to get
-acquired, rather than become some huge conglomerate. These bills are now trying
-to slow that process down, and I don’t see to what positive end. What are your
-thoughts?
-Matt
-Perault: I agree with you. There can be anticompetitive mergers, and current
-law enables the government to intervene when there are. The general
-economics-based assumption is that there are lots of efficiencies to be gained
-from mergers. And so the government would only intervene when you can show
-there’s a substantial lessening of competition. That’s a high bar — and I think
-appropriately so, because most mergers are good for competition and good for
-consumers. If we tighten merger restrictions, the harm is not going to just be
-felt by Facebook and Google, but by a lot of startups that are trying to get
-off the ground.
-Blair Levin:
-I’m going to offer a bit of a counter here. Yeah, it was perfectly fine for
-Microsoft to acquire spellcheck. But what if the Microsoft of 1998 had bought
-Google? I don’t think search would be as good. But I also don’t know how the
-Department of Justice would have blocked them. There’s likewise criticism of
-the government for allowing Facebook to buy Instagram. But if you go back to
-when that deal was being reviewed, there’s no way the courts would’ve upheld a
-blocking of it.
-Still,
-Microsoft was one of the beneficiaries of the IBM lawsuit years ago, which allowed
-Microsoft to rise up without being crushed in the same way that lawsuits
-against Microsoft may have allowed Facebook, Google, and others to grow.
-There’s a lot of historical debate about whether that’s true, but I think
-history suggests that creating more of an open zone in which people are not
-getting acquired so quickly might be good.
-Also,
-Facebook’s strategy for entering the metaverse is likely an acquisition
-strategy. That will be worth keeping an eye on.
-The
-Open App Markets Act
-would force app store operators to allow “sideloading” — essentially making any app and any payment system permitted in e-commerce marketplaces. But this poses a huge challenge to the security ecosystem. Why is this something we’re considering?
-This is a
-great point, and is one we’re going to be dealing with for decades. There is no
-single solution; we aren’t going to have a day of victory. We want a lot of
-interoperability, but interoperability always raises security questions. It’s
-sometimes used as a fake defense for anticompetitive conduct, but sometimes
-it’s quite real.
-There’s also
-the point that, with the growing number of cyber and ransomware attacks, it’s
-harder for small companies to protect themselves. Big Tech firms have these
-great walls and fortresses when it comes to security, so the smaller firms
-sometimes feel like the only way to be secure is to get inside of a Big Tech
-firm’s castle and become beholden to them. And that’s going to have a long-term
-impact on competition, unless there’s a national strategy to help smaller
-companies address cyber vulnerabilities, which are increasing in number and
-cost.
-So what do you guys think comes next for
-these bills?
-Matt
-Perault: I think it’s incredibly hard to predict. When the House bills made it
-out of committee roughly a year ago, it seemed like there was a lot of
-momentum. I would’ve thought, given the House’s composition, they would’ve hit
-the floor immediately after leaving committee, but they still haven’t.
-I don’t know
-if that will happen with the Senate bills. Some people have said there’s more
-than a 50 percent likelihood they are passed. That feels high to me, because I
-think consumers are going to struggle if this legislation becomes law. I think
-there’s going to be a major consumer backlash against it, because this isn’t an
-abstraction, like I said. This is going to change how products feel, how your
-phone feels in your hand, and the products that you can buy on Amazon.
-I think
-companies are going to make that very apparent, because it’s their strongest
-defense. If this is really coming close to passage, I think they will make it
-very apparent why they’re delivering a worse product for users. So the people
-who stand behind the bills would be entering a midterm season with a lot of
-pressure and backlash from consumers around the consequences of this.
-I think it
-doesn’t really work as a governance strategy, because the bills are really
-going to affect consumers’ lives in ways they don’t like. But it’s very good
-politics. It makes for good tweets. It makes for good fundraising. It riles up
-the base. And so it seems to me like the ideal outcome is that it moves through
-committee and doesn’t really come to a vote on the floor. Members of Congress
-can then keep talking about how the powerful lobbying teams at the various
-companies are stopping this from moving forward. But I think that’s actually
-the right outcome for members of Congress.
-Blair Levin:
-I’d agree with that assessment. It’s always easier and more accurate to predict
-that nothing happens, because that’s often the way it works. People like to see
-politicians in Washington fighting for them against big corporations. They also
-have a sense that these bills don’t apply to
-their
-corporations of choice. I think people really love Amazon
-Prime and think Google Maps works really well. It’s similar to how people really
-hate Congress but like their own member. 
 
+[Speaker: Introduction / editorial context]
+Several bills seeking to restructure American antitrust law are moving forward in both bodies of Congress. The bills specifically target Big Tech firms, though they follow arbitrary metrics for “bigness,” and don’t address lawmakers’ main concerns regarding tech platforms. With a Senate markup already completed for two of the bills, we must ask: Is Congress really prepared to pass major antitrust legislation?
 
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I was joined by Matt Perault and Blair Levin to discuss what consumers stand to lose if these bills become law, along with the political forces at play in tech antitrust.
 
-So there’s a curious dynamic that I think leads
-to the situation Matt is talking about where it’s really good politics in the
-short term, but not necessarily if it passes.
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Can you guys walk us through why antitrust has suddenly become a hot topic in Washington? Also, talk a bit about the consumer welfare-oriented underpinning of antitrust law and why this has come into question.
+
+[Speaker: Matt Perault]
+Matt Perault: The consumer welfare standard is the idea that the thought process around whether government should intervene in the market to deem certain conduct as anticompetitive and illegal should be rooted in an analysis of whether or not consumers are harmed. The consumer welfare standard also includes harm to quality and innovation — essentially, whether a monopolist is able to release worse and less innovative products over time.
+
+[Speaker: Matt Perault]
+The interesting recent development is this idea that the consumer welfare standard is insufficient and doesn’t take into account harms to labor markets, the environment, society, and democracy. I understand why we want to be conscious of that range of harms, but it seems like the consumer welfare standard’s narrow focus and objective economics-based orientation is actually really helpful in guiding how we think about harm to consumers as opposed to competitors.
+
+[Speaker: Blair Levin]
+Blair Levin: There is a sense on both the left and the right that there’s too much concentration and market dominance. But this notion absolutely breaks down when you discuss what to do about it. Whether you think there is too much or not, you have to be aware of the fact that government intervention in the market has consequences. Are they really the consequences we want?
+
+[Speaker: Shane Tews]
+The bipartisan American Innovation and Choice Online Act would outlaw self-preferencing, which is when a company gives its products or services an advantage over another platform’s competitive offerings. Will this really help consumers?
+
+[Speaker: Matt Perault]
+Matt Perault: I think a lot of the momentum behind the nondiscrimination measures is the result of the Francis Haugen disclosures and frustrations that people feel toward Facebook for a variety of different reasons. But Facebook doesn’t engage in a lot of self-preferencing. It doesn’t have vertically integrated app stores, devices, and services like Apple and Google do, nor does it have name-brand products like Amazon Basics. So this bill wouldn’t disrupt Facebook’s business model as much as it would Amazon’s, Apple’s, and Google’s. But Facebook is the reason this bill is moving.
+
+[Speaker: Matt Perault]
+The thing is, consumers would really feel the bill’s effects. I don’t think it’s an abstraction to say it would be more difficult to use Google Maps on an Android device. You might get an iPhone with no pre-loaded Apple apps. It’s conceivable that those things are good for consumers in the long run, but there isn’t really a clear articulation of the consumer harm in the status quo and how this legislation would be better for people. I think it’s actually more likely we’d see prices rise. We’d see products that people really like, like batteries on Amazon, no longer available.
+
+[Speaker: Blair Levin]
+Blair Levin: One things that’s interesting to me is that legislation is often written with historic metaphors in mind. I think that fundamental principle of nondiscrimination has worked very effectively in some other situations. When AT&T was a telephone monopoly, I think there were a lot of prohibitions on discrimination that were very effective. Whether those are relevant for today’s market, though, is a different question.
+
+[Speaker: Blair Levin]
+So I think you have to do a pretty sophisticated analysis to see whether prohibiting a certain kind of discrimination would actually enable greater competition. I just don’t know whether, in this particular case, this kind of legislation would do that, or would have a negative effect of the kind that Matt is talking about.
+
+[Speaker: Shane Tews]
+It seems like there’s now a general assumption that mergers are always bad. But Microsoft Word, for example, didn’t create spellcheck. They bought the company that invented spellcheck and integrated it, and a lot of these small startups are actually trying to get acquired, rather than become some huge conglomerate. These bills are now trying to slow that process down, and I don’t see to what positive end. What are your thoughts?
+
+[Speaker: Matt Perault]
+Matt Perault: I agree with you. There can be anticompetitive mergers, and current law enables the government to intervene when there are. The general economics-based assumption is that there are lots of efficiencies to be gained from mergers. And so the government would only intervene when you can show there’s a substantial lessening of competition. That’s a high bar — and I think appropriately so, because most mergers are good for competition and good for consumers. If we tighten merger restrictions, the harm is not going to just be felt by Facebook and Google, but by a lot of startups that are trying to get off the ground.
+
+[Speaker: Blair Levin]
+Blair Levin: I’m going to offer a bit of a counter here. Yeah, it was perfectly fine for Microsoft to acquire spellcheck. But what if the Microsoft of 1998 had bought Google? I don’t think search would be as good. But I also don’t know how the Department of Justice would have blocked them. There’s likewise criticism of the government for allowing Facebook to buy Instagram. But if you go back to when that deal was being reviewed, there’s no way the courts would’ve upheld a blocking of it.
+
+[Speaker: Blair Levin]
+Still, Microsoft was one of the beneficiaries of the IBM lawsuit years ago, which allowed Microsoft to rise up without being crushed in the same way that lawsuits against Microsoft may have allowed Facebook, Google, and others to grow. There’s a lot of historical debate about whether that’s true, but I think history suggests that creating more of an open zone in which people are not getting acquired so quickly might be good.
+
+[Speaker: Blair Levin]
+Also, Facebook’s strategy for entering the metaverse is likely an acquisition strategy. That will be worth keeping an eye on.
+
+[Speaker: Shane Tews]
+The Open App Markets Act would force app store operators to allow “sideloading” — essentially making any app and any payment system permitted in e-commerce marketplaces. But this poses a huge challenge to the security ecosystem. Why is this something we’re considering?
+
+[Speaker: Speaker not identified]
+This is a great point, and is one we’re going to be dealing with for decades. There is no single solution; we aren’t going to have a day of victory. We want a lot of interoperability, but interoperability always raises security questions. It’s sometimes used as a fake defense for anticompetitive conduct, but sometimes it’s quite real.
+
+[Speaker: Speaker not identified]
+There’s also the point that, with the growing number of cyber and ransomware attacks, it’s harder for small companies to protect themselves. Big Tech firms have these great walls and fortresses when it comes to security, so the smaller firms sometimes feel like the only way to be secure is to get inside of a Big Tech firm’s castle and become beholden to them. And that’s going to have a long-term impact on competition, unless there’s a national strategy to help smaller companies address cyber vulnerabilities, which are increasing in number and cost.
+
+[Speaker: Shane Tews]
+So what do you guys think comes next for these bills?
+
+[Speaker: Matt Perault]
+Matt Perault: I think it’s incredibly hard to predict. When the House bills made it out of committee roughly a year ago, it seemed like there was a lot of momentum. I would’ve thought, given the House’s composition, they would’ve hit the floor immediately after leaving committee, but they still haven’t.
+
+[Speaker: Matt Perault]
+I don’t know if that will happen with the Senate bills. Some people have said there’s more than a 50 percent likelihood they are passed. That feels high to me, because I think consumers are going to struggle if this legislation becomes law. I think there’s going to be a major consumer backlash against it, because this isn’t an abstraction, like I said. This is going to change how products feel, how your phone feels in your hand, and the products that you can buy on Amazon.
+
+[Speaker: Matt Perault]
+I think companies are going to make that very apparent, because it’s their strongest defense. If this is really coming close to passage, I think they will make it very apparent why they’re delivering a worse product for users. So the people who stand behind the bills would be entering a midterm season with a lot of pressure and backlash from consumers around the consequences of this.
+
+[Speaker: Matt Perault]
+I think it doesn’t really work as a governance strategy, because the bills are really going to affect consumers’ lives in ways they don’t like. But it’s very good politics. It makes for good tweets. It makes for good fundraising. It riles up the base. And so it seems to me like the ideal outcome is that it moves through committee and doesn’t really come to a vote on the floor. Members of Congress can then keep talking about how the powerful lobbying teams at the various companies are stopping this from moving forward. But I think that’s actually the right outcome for members of Congress.
+
+[Speaker: Blair Levin]
+Blair Levin: I’d agree with that assessment. It’s always easier and more accurate to predict that nothing happens, because that’s often the way it works. People like to see politicians in Washington fighting for them against big corporations. They also have a sense that these bills don’t apply to their corporations of choice. I think people really love Amazon Prime and think Google Maps works really well. It’s similar to how people really hate Congress but like their own member. So there’s a curious dynamic that I think leads to the situation Matt is talking about where it’s really good politics in the short term, but not necessarily if it passes.

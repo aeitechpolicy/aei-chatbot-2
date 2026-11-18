@@ -1,41 +1,80 @@
 PAGE_TITLE: 
-	Growing the E-Commerce Pie for Microbusiness Entrepreneurs: Highlights from My Conversation with Alex Rosen | American Enterprise Institute - AEI
+	Growing the E-Commerce Pie for Microbusiness Entrepreneurs: Highlights from My Conversation with Alex Rosen
 
+[Speaker: Introduction / editorial context]
 Microbusinesses have taken local economies by storm in the US over the last couple of years. The lowered cost of starting an e-commerce business using a website as a storefront has coincided with historic levels of small business creation and business licenses issued. But how can these fragile entities be supported online, and what benefits do they bring to the table in their communities? Enter Alex Rosen.
+
+[Speaker: Introduction / editorial context]
 Rosen is passionate about empowering people and businesses to reach new goals through technology, creativity, and connected experiences. As a refugee from the former Soviet Union, she didn’t speak English when she first arrived to the US, and she watched her family navigate unfamiliar situations to establish themselves in the local community. This inspired Alex to help bridge opportunities for others. Her work at Google and Cisco prepared her for her role doing just that with GoDaddy Venture Forward. She completed her undergraduate degree at Stanford University and her MBA at the UCLA Anderson School of Management.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: To get us started, Alex, your work for GoDaddy Venture Forward has produced some interesting reports. What’s going on over there?
+
+[Speaker: Alex Rosen]
 Alex Rosen: In general, at GoDaddy the mission is to empower entrepreneurs everywhere, making opportunity more inclusive for all, and what better way to do that than to better understand the customers we serve and share that information freely?
+
+[Speaker: Alex Rosen]
 So, Venture Forward was a research initiative that began in 2018, and to date we’ve looked at and tracked over 20 million microbusinesses and over 20,000 entrepreneurs who we’ve surveyed to better understand who they are and what their impact is on the local economy. We then take that data and are able to publish it and share it so policymakers and anyone else can leverage it as they try to understand what’s happening in the economy. Even though the data begins in 2018, our research looks at everything—from the Great Recession up to last quarter.
+
+[Speaker: Shane Tews]
 What did you find out about how the pandemic affected microbusinesses?
+
+[Speaker: Alex Rosen]
 So first, we should ask what is meant when we say “microbusiness.” During the pandemic years, there was a lot of talk of small businesses being the backbone of the economy. But what’s the difference between a small business and a microbusiness? The microbusinesses that we’re referencing and that we track are businesses that over 92 percent of which have less than 10 employees, they have a domain with GoDaddy, and a website presence. The majority of them need less than $5,000 to get started. They’re super nimble.
+
+[Speaker: Alex Rosen]
 What we saw during the pandemic is that many people—especially the ones who were the most financially exacerbated or taken out of the workforce—turned to microbusinesses. We saw a huge rise in black entrepreneurship, female entrepreneurship, and under-30 entrepreneurship, because when you’re doing it through a domain, it’s much easier to get started in terms of startup costs. Over two-thirds rely on their microbusiness as a source of income—some as their main source, but the majority as a side hustle.
+
+[Speaker: Alex Rosen]
 Another thing that stood out to us during our recent survey from February 2022 is that much of the motivation differed, whether it was a business of necessity or business of opportunity. Did these individuals have another source of income when they started this? The data show it’s about half-and-half between those who were employed when they decided to be their own boss versus the ones who didn’t have another source of income at the time.
+
+[Speaker: Shane Tews]
 Can you talk more about the toolsets that you provide to these entrepreneurs?
+
+[Speaker: Alex Rosen]
 In looking at what these microbusinesses need, obviously access to capital is number one. One of the other key things—and that’s table stakes—is access to affordable and high-speed broadband. We’ve done a lot of research that has found that areas that have more broadband see more microbusinesses. Additionally, areas that have more microbusinesses see a lot of positive economic outcomes.
+
+[Speaker: Alex Rosen]
 That’s why we’re so excited to partner with local policymakers and economic developers, because these microbusinesses are often too small or too new to show up in traditional government statistics. Us being able to share this data allows them to be able to better understand what’s happening in their communities and then design programs based on what’s needed. It’s one thing to get online—which is not necessarily easy—and start a business, but it’s something else entirely to grow and manage that business.
+
+[Speaker: Alex Rosen]
 These people are not high tech, necessarily. Their presence online is a part of their business, but that’s not why they started it. They’re not trying to be webmasters. They want to sell their candles, or offer consulting services—whatever it might be. And so we’ve uncovered some of these needs, and we share that with folks who have been incredibly responsive to building the use cases, the business cases, and tracking the ROI on the federal dollar or local dollar investments.
+
+[Speaker: Shane Tews]
 Being a native of the former Soviet Union, what made you decide to get into technology here in the US?
+
+[Speaker: Alex Rosen]
 I am so passionate about technology. To me, technology is such an art and a science. It is infrastructure. It is the train that carries ideas to and fro. It is the pencil that you write with. Ultimately, it’s an open structure that allows people to get creative within a framework. Technology, to me, was a way of connecting the unconnected. I saw it as the opportunity to create something in any direction you want.
+
+[Speaker: Alex Rosen]
 I saw tech companies take a stand in allowing others to be empowered. So that’s what I see as the ultimate upside of technology. It can go in any direction, but when it’s used as a force for good, as a framework for good, it allows people to access new opportunities in a way they wouldn’t otherwise.
+
+[Speaker: Shane Tews]
 We’re in a time where “permissionless innovation” is in jeopardy, with entities wanting to regulate something before there’s a real problem. Are you concerned at all about this trend for microbusinesses?
+
+[Speaker: Alex Rosen]
 That’s an interesting question. Identity, I think, plays a big role here. A lot of these entrepreneurs don’t necessarily even see themselves always as an entrepreneur. We’re often asked, “What industry are these entrepreneurs in?” And if you ask the businesses themselves, they’re like, “I just sell candles” or “I just sell cheesecake.”
+
+[Speaker: Alex Rosen]
 They don’t necessarily even feel the industry competition or the regulations. All they see is the costs of doing their business and what it takes to get their website going.
+
+[Speaker: Shane Tews]
 What role do these microbusinesses play in their communities?
+
+[Speaker: Alex Rosen]
 One thing that motivated us from 2019 on is the fact that not only does unemployment go down for every microbusiness per 100 people in a community, but also for every one of these entrepreneurs we found correlation and causation that there are two jobs created for every marginal entrepreneur. Annual household median incomes go up in a community as well. So there are macro and micro effects from these microbusinesses in the community. And they matter. Sometimes they feel too small to matter, but they do matter in a very quantifiable way.
+
+[Speaker: Shane Tews]
 What’s next for you, Alex?
-We just recently launched our data hub at
-godaddy.com/datahub
-. This has all of our information and reports, from the microbusiness index to localized, quarterly data around the presence of microbusinesses. It also contains our e-commerce data that was just recently published in September where you can look at these trends geographically, and we have surveyed over 20,000 entrepreneurs the past few years.
+
+[Speaker: Alex Rosen]
+We just recently launched our data hub at godaddy.com/datahub. This has all of our information and reports, from the microbusiness index to localized, quarterly data around the presence of microbusinesses. It also contains our e-commerce data that was just recently published in September where you can look at these trends geographically, and we have surveyed over 20,000 entrepreneurs the past few years.
+
+[Speaker: Alex Rosen]
 We’ve been doing these annually and have moved into biannually so we can understand those demographics. We’re asking questions like: Are we seeing BIPOC populations turn to entrepreneurship more? Are we seeing that under-30 group wanting to be unicorns more in terms of long-term ambitions? How are they responding to inflation? How many of them are only online?
+
+[Speaker: Alex Rosen]
 We’re continuing to update that dataset because data in the hands of people who could do something with it is just incredibly powerful, and we want to put it into as many hands as possible.

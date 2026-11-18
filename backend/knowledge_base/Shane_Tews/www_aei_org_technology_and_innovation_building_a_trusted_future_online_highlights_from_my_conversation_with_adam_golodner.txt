@@ -1,148 +1,74 @@
 PAGE_TITLE: 
-	Building a “Trusted Future” Online: Highlights from My Conversation with Adam Golodner | American Enterprise Institute - AEI
+	Building a “Trusted Future” Online: Highlights from My Conversation with Adam Golodner
 
-How can we
-achieve a real, certifiable level of comfort and trust between consumers and
-the companies that make our technologies? The standards for what constitutes
-trust and safety vary from user to user; we need to find a tractable way to
-build out indicators of trust that will allow both producers and users to see
-risks clearly.
-On the
-latest episode of “Explain to Shane,” I sat down
-Adam
-Golodner
-, co-chair of
-Trusted Future
-—a new think tank dedicated to enhancing
-trust in today’s digital ecosystem—to discuss the technical and engineering
-components of trust and safety, along with what these topics have to do with
-cybersecurity, privacy, and the supply chain.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of “Explain to Shane” on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Adam, your new think tank,
-Trusted Future, seeks to bring expertise, research, and best practices to the
-forefront of the policy conversation around the digital ecosystem. What are your
-goals for this organization?
-Adam
-Golodner: We’re focused on this gap between
-the level of trust everyone has in current technologies versus emerging
-technologies like 5G, 6G, artificial intelligence (AI), quantum computing, and
-new functionality in satellites. People need to feel they can trust products,
-services, and companies in order to fully utilize the opportunities that these
-new tools will bring to our lives.
+[Speaker: Introduction / editorial context]
+How can we achieve a real, certifiable level of comfort and trust between consumers and the companies that make our technologies? The standards for what constitutes trust and safety vary from user to user; we need to find a tractable way to build out indicators of trust that will allow both producers and users to see risks clearly.
+
+[Speaker: Introduction / editorial context]
+On the latest episode of “Explain to Shane,” I sat down Adam Golodner, co-chair of Trusted Future—a new think tank dedicated to enhancing trust in today’s digital ecosystem—to discuss the technical and engineering components of trust and safety, along with what these topics have to do with cybersecurity, privacy, and the supply chain.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Adam, your new think tank, Trusted Future, seeks to bring expertise, research, and best practices to the forefront of the policy conversation around the digital ecosystem. What are your goals for this organization?
+
+[Speaker: Adam Golodner]
+Adam Golodner: We’re focused on this gap between the level of trust everyone has in current technologies versus emerging technologies like 5G, 6G, artificial intelligence (AI), quantum computing, and new functionality in satellites. People need to feel they can trust products, services, and companies in order to fully utilize the opportunities that these new tools will bring to our lives.
+
+[Speaker: Adam Golodner]
 On one hand, what are the indications of trust that producers of products and services can state that they follow—almost like a Leadership in Energy and Environmental Design (LEED) certification for green buildings? On the other hand, consumers have their own standards that they want met. Whether you’re an enterprise, individual consumer, critical infrastructure, the military, or intelligence networks, you should be able to say, “These are things I need in order to feel comfortable putting your product or service into my infrastructure.” One would’ve thought we’d done this over the past 20–30 years, but it turns out it’s been done in a very siloed way. We haven’t put it together in a framework.
-So we’re
-trying to build what I’m calling a “trust framework” that provides tractable
-numbers and indicators of trust that one can look at in order to decide
-something that’s really pretty simple: Do I trust this product, service, or
-company to be in my infrastructure and to protect my operations, data,
-customers, and partners’ information and operations?
+
+[Speaker: Adam Golodner]
+So we’re trying to build what I’m calling a “trust framework” that provides tractable numbers and indicators of trust that one can look at in order to decide something that’s really pretty simple: Do I trust this product, service, or company to be in my infrastructure and to protect my operations, data, customers, and partners’ information and operations?
+
+[Speaker: Shane Tews]
 Who are you looking to engage?
+
+[Speaker: Adam Golodner]
 We have a terrific advisory board that includes Jim Kohlenberger, who has worked in technology for 30 years or so and held many positions in the White House. He’s a terrific head on global technology policy. Also on our advisory board is Admiral Mike Rogers, the former head of the National Security Agency and US cyber command. We also have Maureen Ohlhausen, a former Federal Trade Commission commissioner and acting chair; Danny Weitzner from Massachusetts Institute of Technology, who is a former White House and Commerce Department official; Karen Kornbluh, who is a former ambassador to the Organisation for Economic Co-Operation and Development; and Smitty Smith, who is a former Federal Communications Commission official.
-I think we
-have put together a pretty wide-ranging slate of people to help think through
-these issues. As we build out this trust framework, we’ll be working with the
-best minds that we can find in the chief information security officer (CISO)
-rank from small, medium-sized, and global companies to help us think through
-tractable things. We really just want tractable things and companies that are
-making emerging technologies.
-You recently published a
-piece
-in Dark Reading that talked about the importance of offensive creativity in engineering systems, as opposed to defense. Can you elaborate on this concept?
-It has become
-a refrain within the security community that the advantage goes to the
-offense—not to the defense. What we mean is that if you want to break into a
-network, steal information, turn a network off, or turn devices into bricks,
-it’s way easier to do that than it is to defend against it. This is true
-because software by nature is an engineering exercise. It’s not a civil
-engineering exercise like building a bridge, which is math. It’s actually a
-different, logic-based exercise. Really, coding is more art than it is science.
-And so there
-are always bugs in products or vulnerabilities that someone looking for them
-may be able to exploit. This is just the way that we build. We’re getting much
-better at building code and making it more secure from the start, and this is
-part of what we’re doing with the trust framework.
-These days,
-most of the exploits people try is through what we call “social engineering.”
-That is, they are trying to get us to fall for a trick. They’re trying to get us
-to think that an email from a crook is actually an email from a colleague. When
-you click it, it will embed malware onto your mobile device if your mobile
-device allows you to do that, or onto your desktop if you’re working from a desktop,
-your desktop allows you to do that, and it doesn’t have built-in defenses that
-can catch the problem right away.
-More than 75
-percent of the approaches that lead to exploits of vulnerabilities across the
-infrastructure come from these social engineering methodologies that, whether
-it’s a criminal gang trying to steal your money or a nation-state trying to
-steal your information or some blended threat as part of an actual war, will
-try to either obfuscate your ability to use something or try to actually shut
-down your infrastructure.
-If you’re
-the defender, you have to think about ways to make that not possible. You shouldn’t
-have to be a CISO to defend a network. You should be able to do so as an
-individual or a small- or medium-sized business,
-and
-if you’re defending a large enterprise. We have a dearth of
-cyber experts in the US; we’re about 500,000 behind what we need. And right
-now, clearly the scales are on the side of the offense.
-Apple CEO Tim Cook was in Washington, DC
-last week, and he talked about this but more in the essence of privacy as well
-as security. He mentioned some of the antitrust proposals in Congress, one of
-which would mandate “sideloading” so that application (app) store operators have
-to allow any type of software on the device. Why is that such a problem?
-Policymakers
-need to understand the technical, practical, and global implications of any
-policy affecting security or privacy in technology. I start from the
-proposition that commercial information technology products are built once and
-sold globally. That’s how the industry works and is how one drives security and
-privacy into the infrastructure; it’s the same product everywhere, be it an
-enterprise, consumer network, critical infrastructure, intelligence network, or
-military network. So if you create some policy that affects a product that is
-built once and sold globally, you are in effect creating something that impacts
-the global infrastructure.
-When
-considering proposals that force platform operators to allow “sideloading,” or
-forcing mobile device creators to allow any app to be downloaded onto the
-device, you have to figure out the technical and practical impacts. You might step
-back and think about how the apps stores reject more than 700,000 apps a year
-because they would violate security or privacy policies, and are sometimes
-manufactured by our adversaries. I think in any objective sense, my own view is
-that it’s not good for security. You then have to say, “My policy choice in
-some way is not good for security. Is that a good or bad policy?”
-I think you
-could run into non-trivial unintended consequences by undermining security and
-privacy of the infrastructure via unvetted apps entering the ecosystem.
-Security agencies around the world for the past five years have looked at this
-growing threat to the mobile ecosystem and the use of social engineering to trick
-people into downloading malware that will then steal information or be able to
-shut down devices. Pretty much across the board, they’ve all said this is a bad
-policy.
-We also want
-to make sure from a broad policy perspective that we don’t have policy proposals
-that undermine companies that are actually competing on security and privacy. If
-I’m Mr. Cook, I’m thinking about how we’re driving security and privacy into
-the ecosystem of the mobile device. Now, in effect, someone is saying, “Don’t
-do that.” This message has unintended consequences and is counterproductive for
-everyone who has been following what all of our security agencies have been
-saying for 20 years: “In fact, build it in. Please compete on security and
-privacy.” If we are talking about policies, which are choices, make choices
-that don’t undermine global information infrastructure.
-What work do you have coming up on the
-horizon?
-I think the
-trust issue is multidimensional, and you have to get to a place where we move
-away from the siloed approach to try to get to what is trusted. So it is
-software development, but it’s also hardware development. It’s the supply
-chain. It’s the privacy engineering that’s built into the product and service.
-That’s what
-we’re trying to get to: boiling down this trust from something that gives you a
-gestalt or gut view about it to something that gives you a more objective and
-tractable way to understand whether you should trust this product, service, or
-company.
+
+[Speaker: Adam Golodner]
+I think we have put together a pretty wide-ranging slate of people to help think through these issues. As we build out this trust framework, we’ll be working with the best minds that we can find in the chief information security officer (CISO) rank from small, medium-sized, and global companies to help us think through tractable things. We really just want tractable things and companies that are making emerging technologies.
+
+[Speaker: Shane Tews]
+You recently published a piece in Dark Reading that talked about the importance of offensive creativity in engineering systems, as opposed to defense. Can you elaborate on this concept?
+
+[Speaker: Adam Golodner]
+It has become a refrain within the security community that the advantage goes to the offense—not to the defense. What we mean is that if you want to break into a network, steal information, turn a network off, or turn devices into bricks, it’s way easier to do that than it is to defend against it. This is true because software by nature is an engineering exercise. It’s not a civil engineering exercise like building a bridge, which is math. It’s actually a different, logic-based exercise. Really, coding is more art than it is science.
+
+[Speaker: Adam Golodner]
+And so there are always bugs in products or vulnerabilities that someone looking for them may be able to exploit. This is just the way that we build. We’re getting much better at building code and making it more secure from the start, and this is part of what we’re doing with the trust framework.
+
+[Speaker: Adam Golodner]
+These days, most of the exploits people try is through what we call “social engineering.” That is, they are trying to get us to fall for a trick. They’re trying to get us to think that an email from a crook is actually an email from a colleague. When you click it, it will embed malware onto your mobile device if your mobile device allows you to do that, or onto your desktop if you’re working from a desktop, your desktop allows you to do that, and it doesn’t have built-in defenses that can catch the problem right away.
+
+[Speaker: Adam Golodner]
+More than 75 percent of the approaches that lead to exploits of vulnerabilities across the infrastructure come from these social engineering methodologies that, whether it’s a criminal gang trying to steal your money or a nation-state trying to steal your information or some blended threat as part of an actual war, will try to either obfuscate your ability to use something or try to actually shut down your infrastructure.
+
+[Speaker: Adam Golodner]
+If you’re the defender, you have to think about ways to make that not possible. You shouldn’t have to be a CISO to defend a network. You should be able to do so as an individual or a small- or medium-sized business, and if you’re defending a large enterprise. We have a dearth of cyber experts in the US; we’re about 500,000 behind what we need. And right now, clearly the scales are on the side of the offense.
+
+[Speaker: Shane Tews]
+Apple CEO Tim Cook was in Washington, DC last week, and he talked about this but more in the essence of privacy as well as security. He mentioned some of the antitrust proposals in Congress, one of which would mandate “sideloading” so that application (app) store operators have to allow any type of software on the device. Why is that such a problem?
+
+[Speaker: Adam Golodner]
+Policymakers need to understand the technical, practical, and global implications of any policy affecting security or privacy in technology. I start from the proposition that commercial information technology products are built once and sold globally. That’s how the industry works and is how one drives security and privacy into the infrastructure; it’s the same product everywhere, be it an enterprise, consumer network, critical infrastructure, intelligence network, or military network. So if you create some policy that affects a product that is built once and sold globally, you are in effect creating something that impacts the global infrastructure.
+
+[Speaker: Adam Golodner]
+When considering proposals that force platform operators to allow “sideloading,” or forcing mobile device creators to allow any app to be downloaded onto the device, you have to figure out the technical and practical impacts. You might step back and think about how the apps stores reject more than 700,000 apps a year because they would violate security or privacy policies, and are sometimes manufactured by our adversaries. I think in any objective sense, my own view is that it’s not good for security. You then have to say, “My policy choice in some way is not good for security. Is that a good or bad policy?”
+
+[Speaker: Adam Golodner]
+I think you could run into non-trivial unintended consequences by undermining security and privacy of the infrastructure via unvetted apps entering the ecosystem. Security agencies around the world for the past five years have looked at this growing threat to the mobile ecosystem and the use of social engineering to trick people into downloading malware that will then steal information or be able to shut down devices. Pretty much across the board, they’ve all said this is a bad policy.
+
+[Speaker: Adam Golodner]
+We also want to make sure from a broad policy perspective that we don’t have policy proposals that undermine companies that are actually competing on security and privacy. If I’m Mr. Cook, I’m thinking about how we’re driving security and privacy into the ecosystem of the mobile device. Now, in effect, someone is saying, “Don’t do that.” This message has unintended consequences and is counterproductive for everyone who has been following what all of our security agencies have been saying for 20 years: “In fact, build it in. Please compete on security and privacy.” If we are talking about policies, which are choices, make choices that don’t undermine global information infrastructure.
+
+[Speaker: Shane Tews]
+What work do you have coming up on the horizon?
+
+[Speaker: Adam Golodner]
+I think the trust issue is multidimensional, and you have to get to a place where we move away from the siloed approach to try to get to what is trusted. So it is software development, but it’s also hardware development. It’s the supply chain. It’s the privacy engineering that’s built into the product and service.
+
+[Speaker: Adam Golodner]
+That’s what we’re trying to get to: boiling down this trust from something that gives you a gestalt or gut view about it to something that gives you a more objective and tractable way to understand whether you should trust this product, service, or company.

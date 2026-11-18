@@ -1,150 +1,92 @@
 PAGE_TITLE: 
-	How Software ‘Nutrition Labels’ Can Enhance Cybersecurity: Highlights from My Conversation with Allan Friedman | American Enterprise Institute - AEI
+	How Software ‘Nutrition Labels’ Can Enhance Cybersecurity: Highlights from My Conversation with Allan Friedman
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-Following a wave of recent attacks, cyber and supply chain
-security are high on the United States’ policy agenda. Software “nutrition
-labels” are one solution cyber experts are considering; what do these “labels”
-look like, and how can government and industry work together to ensure their
-effectiveness?
-Allan Friedman
-, director of cybersecurity initiatives at the National Telecommunications and Information Administration (NTIA), joined “Explain to Shane” to discuss how
-Software Bills of Materials
-(SBOMs) can enrich America’s cyber toolbox, and how NTIA can promote their use without direct mandates. Allan and I also discussed the shared responsibilities industry and government have when it comes to cyber.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews
-:
-Allan, start us off by explaining what an
-SBOM is.
-Allan Friedman: An SBOM is a Software Bill of Materials. Essentially,
-you can think of it as a list of ingredients for software. One of the core
-questions around security and technology today is: Why don’t we have that level
-of transparency for the software that runs our lives and our critical
-infrastructure? The vision behind a Software Bill of Materials is just to have
-that level of transparency — making sure we have some data about what’s in the
-software we use.
-If we wanted to torture our ingredients list metaphor, some
-of those ingredients are fresh and healthy and nutritious, but some of them are
-stale and rotten and may have things that are bad for us. So as we try to
-understand what healthy or “hygienic” software looks like, the first step is
-transparency. The first step in an efficient marketplace for quality and secure
-software is to know what we have.
-Now, having this data won’t solve all of our problems, just
-as looking at a list of ingredients won’t magically allow me to stick with some
-diet I’ve committed to. It does, however, give me the tools to think about what’s
-there and make an informed decision. You and I might be okay with ingesting
-something containing beef tallow, but people with certain restrictions or dietary
-requirements may not be. So this is about giving people the tools and data to
-make those decisions.
-How are you working
-to ensure folks in industry will not only adopt SBOMs, but also cooperate with
-one another?
-We call this the multistakeholder process. The model is such
-that the government doesn’t have a vested interest in what the solution is; we
-just need there to be a solution. And so our approach is to bring as many
-perspectives to the table as possible and help the community find a solution.
-For this case, actually defining what we wanted to fix was
-the first step. We kind of knew most people would understand the SBOM idea and
-would have a broad idea of whether they were for or against it. So the first
-thing we had to do was put everything on the table and make sure we had a
-shared vision for what a minimum viable SBOM was.
-Building on that, we then had to take inventory of what we
-had to work with and identify risks and challenges. A good analogy for one of
-these challenges is the term “. . . and natural flavorings” on an ingredients
-label. Even if I have the full list of ingredients, it doesn’t tell me the recipe.
-There’s a big difference between knowing what’s in something and being able to
-replicate it. (I can’t make an Oreo just by looking at the list of ingredients.)
-So for an SBOM, we had to decide whether that type of “. . . and natural
-flavorings” ambiguity was something we could work with.
-This would basically allow people to say, “There’s still
-some stuff I’m not going to tell you, but I have to tell you what I’m not going
-to tell you.” And that’s something we built into our model: the idea of “known
-unknowns.” Whenever you tell someone what’s in your software, you also have to
-tell them what you’re
-not
-revealing.
-You have to tell them some information about what you’re not telling, which
-could be because you don’t know, right? You’re using some other supplier’s software,
-because it’s transitive. It’s a big tree.
-Or it could be that you simply aren’t comfortable sharing
-that data, but in either case, now your customer or your downstream user can
-say, “Now that I know about this lack of understanding, we can have a
-negotiation” or “tell me more” or “this is fine” based on their risk. I can
-hire a third-party security tester to make sure there’s nothing extra risky
-there. And that’s okay. Again, the starting point is this notion of
-transparency.
-So how exactly do you
-quantify the “known unknowns”? And how do SBOM users decide what “ingredients”
-they are and aren’t going to define?
-One way to think about our software is as a tree. At the
-base of the tree, we have our software, and then we branch up. The first branch
-is the operating system; then, the operating system in turn uses a
-cryptographic library, and the cryptographic library in turn uses several
-mathematical functions.
-Ideally, SBOMs would give people that full tree. But the “known
-unknown” idea addresses the possibility of reaching a point in that tree where
-you simply can’t go any further because there are secrets or you simply don’t
-have the necessary information. In that case, you’d just apply a label that
-says “this is unknown. I don’t know if this component has any further
-dependencies or not.” And that way, someone knows what they’re agreeing
-to.
-But if you’re using an operating system that’s commercial or
-proprietary and you haven’t been able to get the SBOM for that, you can just
-tell your customer you’re using this operating system, and now they can decide
-whether or not it’s something they’re worried about.
-What different
-industries are coming to the table for this?
-We’re seeing interest across the board, especially as more communities
-realize their software supply chain risks. This is an area in which we’re
-trying to help industry help itself. But as you know, NITA doesn’t have
-regulatory authority. Our vision is to try to help the community come together.
-But it’s also a space in which having regulators imply this is coming will help
-industry move quicker.
-The Food and Drug Administration announced in 2018 that they
-were requiring new medical devices to have SBOMs, but basically said “we’re not
-going to define this. We want the medical device manufacturers to work with the
-rest of the software world in the NTIA process.”
-And this has remained a key priority for not just the
-medical device manufacturers; many of these companies were actively involved in
-the production race for vaccines, personal protective equipment, ventilators,
-etc.
-But it has moved on beyond that. We’ve got some folks in the
-automotive sector thinking about how this looks between those who make car parts
-and those who assemble the car. In both of these cases, we like how the proof
-of concept model allows people to experiment and try this with live data.
-They’re talking about real products and live use cases.
-We’ve also just launched a third pilot effort in partnership
-with the Department of Energy and the National Labs to think about this for the
-energy and bulk power sectors.
-You’ve explained how
-NTIA is encouraging the adoption of SBOMs, but doesn’t have the actual
-regulatory power to mandate them. So what are your next steps to continue this
-process?
-Our vision is to continue being the nexus of these
-discussions. Ultimately, different sectors are going to have to take this and
-make it their own. There’s a real difference between the needs of the
-healthcare sector, the automotive sector, and the financial sector. They each
-have their own requirements. We just want to make sure people feel comfortable
-adapting so everyone follows the same basic model — so that there’s
-interoperability.
-We have some existing technical standards today that we want
-to encourage people to use rather than going off and bending something new. Some
-people may want more data, but we’ve emphasized the importance of a minimum
-viable model. One of our mantras is “crawl, then walk, then run.”
-Our vision is to have a point at which everyone who’s
-interested in this can learn about it and build on it. That’s the idea of
-having an SBOM nexus where the entire community knows this is where the status
-quo of SBOM is.
-Our final approach at NTIA is to work with international
-partners. As you know, NTIA is built around some assumptions that the internet
-is global and doesn’t belong to any one country. We’re partnering with folks in
-Japan who are very vested in thinking about this for supply chain management. And
-I recently chatted with one of our counterparts in England who works with their
-national security and cybersecurity center.
+
+[Speaker: Introduction / editorial context]
+Following a wave of recent attacks, cyber and supply chain security are high on the United States’ policy agenda. Software “nutrition labels” are one solution cyber experts are considering; what do these “labels” look like, and how can government and industry work together to ensure their effectiveness?
+
+[Speaker: Introduction / editorial context]
+Allan Friedman, director of cybersecurity initiatives at the National Telecommunications and Information Administration (NTIA), joined “Explain to Shane” to discuss how Software Bills of Materials (SBOMs) can enrich America’s cyber toolbox, and how NTIA can promote their use without direct mandates. Allan and I also discussed the shared responsibilities industry and government have when it comes to cyber.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Allan, start us off by explaining what an SBOM is.
+
+[Speaker: Allan Friedman]
+Allan Friedman: An SBOM is a Software Bill of Materials. Essentially, you can think of it as a list of ingredients for software. One of the core questions around security and technology today is: Why don’t we have that level of transparency for the software that runs our lives and our critical infrastructure? The vision behind a Software Bill of Materials is just to have that level of transparency — making sure we have some data about what’s in the software we use.
+
+[Speaker: Allan Friedman]
+If we wanted to torture our ingredients list metaphor, some of those ingredients are fresh and healthy and nutritious, but some of them are stale and rotten and may have things that are bad for us. So as we try to understand what healthy or “hygienic” software looks like, the first step is transparency. The first step in an efficient marketplace for quality and secure software is to know what we have.
+
+[Speaker: Allan Friedman]
+Now, having this data won’t solve all of our problems, just as looking at a list of ingredients won’t magically allow me to stick with some diet I’ve committed to. It does, however, give me the tools to think about what’s there and make an informed decision. You and I might be okay with ingesting something containing beef tallow, but people with certain restrictions or dietary requirements may not be. So this is about giving people the tools and data to make those decisions.
+
+[Speaker: Shane Tews]
+How are you working to ensure folks in industry will not only adopt SBOMs, but also cooperate with one another?
+
+[Speaker: Allan Friedman]
+We call this the multistakeholder process. The model is such that the government doesn’t have a vested interest in what the solution is; we just need there to be a solution. And so our approach is to bring as many perspectives to the table as possible and help the community find a solution.
+
+[Speaker: Allan Friedman]
+For this case, actually defining what we wanted to fix was the first step. We kind of knew most people would understand the SBOM idea and would have a broad idea of whether they were for or against it. So the first thing we had to do was put everything on the table and make sure we had a shared vision for what a minimum viable SBOM was.
+
+[Speaker: Allan Friedman]
+Building on that, we then had to take inventory of what we had to work with and identify risks and challenges. A good analogy for one of these challenges is the term “. . . and natural flavorings” on an ingredients label. Even if I have the full list of ingredients, it doesn’t tell me the recipe. There’s a big difference between knowing what’s in something and being able to replicate it. (I can’t make an Oreo just by looking at the list of ingredients.) So for an SBOM, we had to decide whether that type of “. . . and natural flavorings” ambiguity was something we could work with.
+
+[Speaker: Allan Friedman]
+This would basically allow people to say, “There’s still some stuff I’m not going to tell you, but I have to tell you what I’m not going to tell you.” And that’s something we built into our model: the idea of “known unknowns.” Whenever you tell someone what’s in your software, you also have to tell them what you’re not revealing. You have to tell them some information about what you’re not telling, which could be because you don’t know, right? You’re using some other supplier’s software, because it’s transitive. It’s a big tree.
+
+[Speaker: Allan Friedman]
+Or it could be that you simply aren’t comfortable sharing that data, but in either case, now your customer or your downstream user can say, “Now that I know about this lack of understanding, we can have a negotiation” or “tell me more” or “this is fine” based on their risk. I can hire a third-party security tester to make sure there’s nothing extra risky there. And that’s okay. Again, the starting point is this notion of transparency.
+
+[Speaker: Shane Tews]
+So how exactly do you quantify the “known unknowns”? And how do SBOM users decide what “ingredients” they are and aren’t going to define?
+
+[Speaker: Allan Friedman]
+One way to think about our software is as a tree. At the base of the tree, we have our software, and then we branch up. The first branch is the operating system; then, the operating system in turn uses a cryptographic library, and the cryptographic library in turn uses several mathematical functions.
+
+[Speaker: Allan Friedman]
+Ideally, SBOMs would give people that full tree. But the “known unknown” idea addresses the possibility of reaching a point in that tree where you simply can’t go any further because there are secrets or you simply don’t have the necessary information. In that case, you’d just apply a label that says “this is unknown. I don’t know if this component has any further dependencies or not.” And that way, someone knows what they’re agreeing to.
+
+[Speaker: Allan Friedman]
+But if you’re using an operating system that’s commercial or proprietary and you haven’t been able to get the SBOM for that, you can just tell your customer you’re using this operating system, and now they can decide whether or not it’s something they’re worried about.
+
+[Speaker: Shane Tews]
+What different industries are coming to the table for this?
+
+[Speaker: Allan Friedman]
+We’re seeing interest across the board, especially as more communities realize their software supply chain risks. This is an area in which we’re trying to help industry help itself. But as you know, NITA doesn’t have regulatory authority. Our vision is to try to help the community come together. But it’s also a space in which having regulators imply this is coming will help industry move quicker.
+
+[Speaker: Allan Friedman]
+The Food and Drug Administration announced in 2018 that they were requiring new medical devices to have SBOMs, but basically said “we’re not going to define this. We want the medical device manufacturers to work with the rest of the software world in the NTIA process.”
+
+[Speaker: Allan Friedman]
+And this has remained a key priority for not just the medical device manufacturers; many of these companies were actively involved in the production race for vaccines, personal protective equipment, ventilators, etc.
+
+[Speaker: Allan Friedman]
+But it has moved on beyond that. We’ve got some folks in the automotive sector thinking about how this looks between those who make car parts and those who assemble the car. In both of these cases, we like how the proof of concept model allows people to experiment and try this with live data. They’re talking about real products and live use cases.
+
+[Speaker: Allan Friedman]
+We’ve also just launched a third pilot effort in partnership with the Department of Energy and the National Labs to think about this for the energy and bulk power sectors.
+
+[Speaker: Shane Tews]
+You’ve explained how NTIA is encouraging the adoption of SBOMs, but doesn’t have the actual regulatory power to mandate them. So what are your next steps to continue this process?
+
+[Speaker: Allan Friedman]
+Our vision is to continue being the nexus of these discussions. Ultimately, different sectors are going to have to take this and make it their own. There’s a real difference between the needs of the healthcare sector, the automotive sector, and the financial sector. They each have their own requirements. We just want to make sure people feel comfortable adapting so everyone follows the same basic model — so that there’s interoperability.
+
+[Speaker: Allan Friedman]
+We have some existing technical standards today that we want to encourage people to use rather than going off and bending something new. Some people may want more data, but we’ve emphasized the importance of a minimum viable model. One of our mantras is “crawl, then walk, then run.”
+
+[Speaker: Allan Friedman]
+Our vision is to have a point at which everyone who’s interested in this can learn about it and build on it. That’s the idea of having an SBOM nexus where the entire community knows this is where the status quo of SBOM is.
+
+[Speaker: Allan Friedman]
+Our final approach at NTIA is to work with international partners. As you know, NTIA is built around some assumptions that the internet is global and doesn’t belong to any one country. We’re partnering with folks in Japan who are very vested in thinking about this for supply chain management. And I recently chatted with one of our counterparts in England who works with their national security and cybersecurity center.
+
+[Speaker: Allan Friedman]
 Similarly, in Brussels and London and other capitals around the world, people are paying attention to supply chain. We want to make sure they’re aware SBOM exists, that there’s an active community, and that there are existing standards and governance. We want to make sure they know what resources are there, what’s been led by the industry, and how the community can build on what we already have.

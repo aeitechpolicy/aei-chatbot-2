@@ -1,9 +1,8 @@
 PAGE_TITLE: 
-	The Broadband Dilemma (with Janice Hauge and Mark Jamison) | American Enterprise Institute - AEI
+	The Broadband Dilemma (with Janice Hauge and Mark Jamison)
 
+[Speaker: Introduction / editorial context]
 The National Telecommunications and Information Administration’s (NTIA) $42.5 billion Broadband Equity, Access, and Deployment (BEAD) Program, passed by Congress three years ago, set out to close the digital divide by bringing broadband to unserved and underserved communities. Yet despite the ambitious goal of getting all Americans online, progress has been slow. As of September 17, serious delays continue to plague the initiative, with 13 states still waiting for the NTIA to approve their initial proposals. These delays jeopardize the program’s effectiveness and risk leaving millions of Americans without access to essential digital infrastructure.
-Here to sort through the mess are two members of AEI’s Broadband Barometer Project,
-Janice Hauge
-and
-Mark Jamison
-. Janice is a professor in the Department of Economics at the University of North Texas, where she works on broadband policy and regulation in the telecommunications and broadband industry. Mark is a nonresident senior fellow at AEI where he focuses on technology’s impact on the economy, telecommunications, and Federal Communications Commission issues. He is concurrently the director and Gunter Professor of the Public Utility Research Center at the University of Florida’s Warrington College of Business.
+
+[Speaker: Introduction / editorial context]
+Here to sort through the mess are two members of AEI’s Broadband Barometer Project, Janice Hauge and Mark Jamison. Janice is a professor in the Department of Economics at the University of North Texas, where she works on broadband policy and regulation in the telecommunications and broadband industry. Mark is a nonresident senior fellow at AEI where he focuses on technology’s impact on the economy, telecommunications, and Federal Communications Commission issues. He is concurrently the director and Gunter Professor of the Public Utility Research Center at the University of Florida’s Warrington College of Business.

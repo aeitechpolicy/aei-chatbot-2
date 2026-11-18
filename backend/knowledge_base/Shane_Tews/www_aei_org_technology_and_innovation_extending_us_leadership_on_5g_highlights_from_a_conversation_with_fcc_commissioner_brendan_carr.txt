@@ -1,120 +1,71 @@
 PAGE_TITLE: 
-	Extending US Leadership on 5G: Highlights from a Conversation with FCC Commissioner Brendan Carr | American Enterprise Institute - AEI
+	Extending US Leadership on 5G: Highlights from a Conversation with FCC Commissioner Brendan Carr
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-During a March 15 AEI
-web event
-, Federal Communications Commission (FCC) Commissioner Brendan Carr emphasized the need to continue advancing US leadership in 5G. He highlighted the importance of the FCC’s recent work on making more spectrum available to commercial markets, and on continuing infrastructure buildouts for next-generation networks. Going forward, he recommended the FCC continue holding commercial spectrum auctions, enable further buildout of 5G infrastructure, and strengthen America’s 5G workforce with training and educational opportunities.
-Below is an edited and abridged transcript of key highlights from our discussion, including excerpts of Carr’s remarks before our conversation. You can view the full event on
-AEI.org
-and read the full transcript
-here
-.
-Carr on the success
-of light-touch regulation
-:
-Just a few short years ago, we were at serious risk of ceding US leadership in 5G to our overseas competitors. We were in jeopardy of losing the good-paying jobs and the trillions of dollars in economic growth that come with a first-mover advantage. On the infrastructure side, it took too long and cost too much for US providers to build the hundreds of thousands of new cell sites needed for 5G. . . . What it was taking us four years to do, China was doing every nine days.
-Some people argued that we needed to be like China to beat China. They said we needed to nationalize the wireless networks or heavily regulate our way forward. Instead, we bet on America’s free enterprise system, and we went with a tried-and-true playbook: freeing up more spectrum and modernizing our infrastructure rules.
-Carr on spectrum
-auctions
-:
-We knew that 5G would be delivered over every spectrum band, so we pursued an all-of-the-above strategy. On high band, we launched the world’s first 5G spectrum auction in 2018 and went on to hold several more, bringing thousands of megahertz (MHz) of spectrum to market. On low band, we completed the transition work needed to free up 600 MHz, in addition to modifying the rules for the 800-MHz and 900-MHz bands to enable more high-speed builds. On mid-band, we held the first auction of mid-band spectrum in 2020 with 70 MHz worth of spectrum in the 3.5-gigahertz (GHz) band. At 2.5 GHz, we transformed the rules governing nearly 200 MHz worth of this mid-band spectrum to support 5G, and teed up over 100 MHz for auction. At 4.9 GHz, we modernized the regulation of a 50-MHz swath of spectrum.
-In the L-band, we authorized 30 MHz of spectrum for 5G in Internet of Things. At 5.9 GHz, we opened up 45 MHz for unlicensed, plus we pushed out an additional 1,200 MHz of unlicensed in the 6-GHz band. [With] C-band . . . we cleared 280 MHz of this sought-after mid-band spectrum. All told, our spectrum efforts over the past four years opened up more than 6 GHz of spectrum for licensed 5G services, in addition to thousands of MHz of unlicensed spectrum.
-Carr on 5G
-infrastructure
-:
-Infrastructure builds accelerated at a record pace over the last four years . . . [and] those new builds are paying off for the American consumer. Internet speeds in the US have more than tripled over the last four years — far outpacing the increases seen in other countries. Indeed, the US leapfrogged ahead of 20 countries on the global mobile speed rankings over that same period of time. Competition has increased too, with the percentage of Americans with more than two options for high-speed service jumping by more than 52 percent between 2016 and 2018 alone. Prices are down, and [the] digital divide has been cut nearly in half since 2016. . . . On top of this, we flipped the script on 5G. Americans should be proud that we now have the world’s leading 5G platform.
-Shane Tews: Do you
-anticipate the FCC will need to free up more mobile spectrum for 5G moving
-forward?
-Brendan Carr: Yes. I’ve called for us to hold an auction on
-the 2.5-GHz band this year, and there are steps we can take in the 3.5-GHz
-band, 6-GHz band, and beyond. We’re in a lot better shape than we were a couple
-years ago, but we don’t have enough mid-band spectrum just yet.
-The good news is: So much of that legwork is done. We have
-spectrum in the cupboard. There’s work that remains, but the key now is to just
-get this spectrum out. And so I think we should put out a spectrum calendar
-that shows which bands we’re going to move forward with, in what order. That
-would provide some certainty to the public and give us something to work
-towards internally.
-Also, if we can get 5G terrestrial use in the 12-GHz band,
-this new generation of low-Earth orbit satellites will have lots of
-public-interest benefits. I’m excited about a lot of what we’re seeing from these
-satellites; I think they could be a key part of closing the digital divide,
-particularly when you look at the most expensive, hardest-to-serve, 1–2 percent
-of the country.
-Moving to the topic
-of jobs, tell us what the FCC has been up to.
-Ultimately, we need more telecom crews to complete 5G
-builds. I’ve spent a lot of time outside of DC in this job — not just with tower
-techs, but with the women and men that are pulling and splicing fiber. They
-tell me they want to double their crews, and that they’re having to turn down
-work because they don’t have enough trained telecom techs.
-I think we need to do more to help make this happen. Doing
-so will not just accelerate internet builds; it will also create thousands of
-good-paying jobs. Some of it can be through apprenticeships like the Department
-of Labor’s Telecommunications Industry Registered Apprenticeship Program, but
-we also need to focus on vocational training programs at community colleges.
-We’ve made progress on that front, and there are several in the works that I’m
-working directly with.
-I’ve also been working and engaging directly with a number
-of trade schools who have already seen tower tech training programs launch in
-South Carolina, South Dakota, North Dakota, and Oklahoma. Earlier this month, I
-was in Mississippi to work on standing up another tower training program there.
-So, as we move forward at the federal level, we should be mindful of
-opportunities to expand the 5G workforce.
-What is the FCC’s
-point of view on open radio access networks (O-RAN)? How is that going?
-We’re pretty excited about O-RAN. It gives America’s
-companies a chance to compete in the infrastructure space, whereas before, you
-needed billions and billions of dollars of R&D to enter and compete in the
-hardware space. But now, when you separate the hardware from the software layer
-as O-RAN does, you’re competing on software, which is easier for a lot of US
-companies to compete in. So I think it’s good in terms of leveling the playing
-field for competition. I think it gives us a lot more network security as well,
-in part because you have a lot more options for the network gear. It’s going to
-be a more efficient build in the long run, which should help drive down costs
-as well.
-I think it’s interesting to watch the different headlines on
-it play out, because some of the incumbent equipment vendors are differently
-situated on O-RAN — whether it’s good for them in the short run or long run.
-But I think we’re doing the right thing at the FCC, which is being supportive
-of the trend, seeing if there’s stuff that we can do to help accelerate it, and
-letting the private sector figure it out from there.
-Do you think we’re
-finally ready to move on from net neutrality, or are we going back to that
-battle?
-There’s a lot that has changed in the relatively short time
-since we last went down the misguided Title II net neutrality path in
-2015–2016. One difference is: We’re now in the world of 5G. And in all of the really
-interesting use cases and applications that can come from 5G, there are
-certainly versions of Title II net neutrality that don’t seem to be consistent
-with pro-consumer, competitive 5G applications. And so I do have some concerns
-— among other things — that if you go back down that path, you may bless an
-individual 5G use case or something while casting doubt over other beneficial
-cases.
-The political and technical dynamics of networks are also very
-different today. Back in 2015–2016, people said the greatest threat to a free
-and open internet was the mom-and-pop ISP in Iowa that needed the heaviest of
-heavy-handed regulations in the form of Title II to keep a free and open
-internet. Flash forward to today: The choke points are in a very different
-position. And it’s not just when we look at the edge of the network and the
-social media applications. It even is starting to move down the stack, and you
-can now see that infrastructure-side providers are the ones who are currently
-taking or have taken action to prevent the free flow of information.
-So ISPs, in the absence of Title II, have not been engaging
-in the type of conduct that people say requires Title II, but on the other
-hand, you’ve got these other infrastructure and edge providers that are engaging
-in that type of conduct. I think it’s a very different scenario to try to move
-forward with a heavy-handed, ISP-only approach.
-My view is that what we’re doing is undeniably working.
-COVID-19 was the ultimate stress test. The progress we made with our
-light-touch approach brought thousands of families across the digital divide
-before COVID hit so they had access to the internet. And those people on the
-internet had a far better experience than our international counterparts in
-terms of speeds and performance because of our approach to network regulation.
-We are seeing providers invest double their counterparts in Europe, for
-instance, because of our framework.
-So to somehow turn around and say we need to single out ISPs for heavy internet regulation based on things that are actually going on in
-other
-parts of the infrastructure or the edge is a much more difficult argument both to make, but also to sustain, I think, on appeal in terms of the arbitrary nature of an FCC decision. I also think the Supreme Court would potentially look very skeptically — more so today than ever — on this type of approach.
+
+[Speaker: Introduction / editorial context]
+During a March 15 AEI web event, Federal Communications Commission (FCC) Commissioner Brendan Carr emphasized the need to continue advancing US leadership in 5G. He highlighted the importance of the FCC’s recent work on making more spectrum available to commercial markets, and on continuing infrastructure buildouts for next-generation networks. Going forward, he recommended the FCC continue holding commercial spectrum auctions, enable further buildout of 5G infrastructure, and strengthen America’s 5G workforce with training and educational opportunities.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of key highlights from our discussion, including excerpts of Carr’s remarks before our conversation. You can view the full event on AEI.org and read the full transcript here.
+
+[Speaker: Introduction / editorial context]
+Carr on the success of light-touch regulation:
+
+[Speaker: Introduction / editorial context]
+Carr on spectrum auctions:
+
+[Speaker: Introduction / editorial context]
+Carr on 5G infrastructure:
+
+[Speaker: Shane Tews]
+Shane Tews: Do you anticipate the FCC will need to free up more mobile spectrum for 5G moving forward?
+
+[Speaker: Brendan Carr]
+Brendan Carr: Yes. I’ve called for us to hold an auction on the 2.5-GHz band this year, and there are steps we can take in the 3.5-GHz band, 6-GHz band, and beyond. We’re in a lot better shape than we were a couple years ago, but we don’t have enough mid-band spectrum just yet.
+
+[Speaker: Brendan Carr]
+The good news is: So much of that legwork is done. We have spectrum in the cupboard. There’s work that remains, but the key now is to just get this spectrum out. And so I think we should put out a spectrum calendar that shows which bands we’re going to move forward with, in what order. That would provide some certainty to the public and give us something to work towards internally.
+
+[Speaker: Brendan Carr]
+Also, if we can get 5G terrestrial use in the 12-GHz band, this new generation of low-Earth orbit satellites will have lots of public-interest benefits. I’m excited about a lot of what we’re seeing from these satellites; I think they could be a key part of closing the digital divide, particularly when you look at the most expensive, hardest-to-serve, 1–2 percent of the country.
+
+[Speaker: Brendan Carr]
+Moving to the topic of jobs, tell us what the FCC has been up to.
+
+[Speaker: Brendan Carr]
+Ultimately, we need more telecom crews to complete 5G builds. I’ve spent a lot of time outside of DC in this job — not just with tower techs, but with the women and men that are pulling and splicing fiber. They tell me they want to double their crews, and that they’re having to turn down work because they don’t have enough trained telecom techs.
+
+[Speaker: Brendan Carr]
+I think we need to do more to help make this happen. Doing so will not just accelerate internet builds; it will also create thousands of good-paying jobs. Some of it can be through apprenticeships like the Department of Labor’s Telecommunications Industry Registered Apprenticeship Program, but we also need to focus on vocational training programs at community colleges. We’ve made progress on that front, and there are several in the works that I’m working directly with.
+
+[Speaker: Brendan Carr]
+I’ve also been working and engaging directly with a number of trade schools who have already seen tower tech training programs launch in South Carolina, South Dakota, North Dakota, and Oklahoma. Earlier this month, I was in Mississippi to work on standing up another tower training program there. So, as we move forward at the federal level, we should be mindful of opportunities to expand the 5G workforce.
+
+[Speaker: Shane Tews]
+What is the FCC’s point of view on open radio access networks (O-RAN)? How is that going?
+
+[Speaker: Brendan Carr]
+We’re pretty excited about O-RAN. It gives America’s companies a chance to compete in the infrastructure space, whereas before, you needed billions and billions of dollars of R&D to enter and compete in the hardware space. But now, when you separate the hardware from the software layer as O-RAN does, you’re competing on software, which is easier for a lot of US companies to compete in. So I think it’s good in terms of leveling the playing field for competition. I think it gives us a lot more network security as well, in part because you have a lot more options for the network gear. It’s going to be a more efficient build in the long run, which should help drive down costs as well.
+
+[Speaker: Brendan Carr]
+I think it’s interesting to watch the different headlines on it play out, because some of the incumbent equipment vendors are differently situated on O-RAN — whether it’s good for them in the short run or long run. But I think we’re doing the right thing at the FCC, which is being supportive of the trend, seeing if there’s stuff that we can do to help accelerate it, and letting the private sector figure it out from there.
+
+[Speaker: Shane Tews]
+Do you think we’re finally ready to move on from net neutrality, or are we going back to that battle?
+
+[Speaker: Brendan Carr]
+There’s a lot that has changed in the relatively short time since we last went down the misguided Title II net neutrality path in 2015–2016. One difference is: We’re now in the world of 5G. And in all of the really interesting use cases and applications that can come from 5G, there are certainly versions of Title II net neutrality that don’t seem to be consistent with pro-consumer, competitive 5G applications. And so I do have some concerns — among other things — that if you go back down that path, you may bless an individual 5G use case or something while casting doubt over other beneficial cases.
+
+[Speaker: Brendan Carr]
+The political and technical dynamics of networks are also very different today. Back in 2015–2016, people said the greatest threat to a free and open internet was the mom-and-pop ISP in Iowa that needed the heaviest of heavy-handed regulations in the form of Title II to keep a free and open internet. Flash forward to today: The choke points are in a very different position. And it’s not just when we look at the edge of the network and the social media applications. It even is starting to move down the stack, and you can now see that infrastructure-side providers are the ones who are currently taking or have taken action to prevent the free flow of information.
+
+[Speaker: Brendan Carr]
+So ISPs, in the absence of Title II, have not been engaging in the type of conduct that people say requires Title II, but on the other hand, you’ve got these other infrastructure and edge providers that are engaging in that type of conduct. I think it’s a very different scenario to try to move forward with a heavy-handed, ISP-only approach.
+
+[Speaker: Brendan Carr]
+My view is that what we’re doing is undeniably working. COVID-19 was the ultimate stress test. The progress we made with our light-touch approach brought thousands of families across the digital divide before COVID hit so they had access to the internet. And those people on the internet had a far better experience than our international counterparts in terms of speeds and performance because of our approach to network regulation. We are seeing providers invest double their counterparts in Europe, for instance, because of our framework.
+
+[Speaker: Brendan Carr]
+So to somehow turn around and say we need to single out ISPs for heavy internet regulation based on things that are actually going on in other parts of the infrastructure or the edge is a much more difficult argument both to make, but also to sustain, I think, on appeal in terms of the arbitrary nature of an FCC decision. I also think the Supreme Court would potentially look very skeptically — more so today than ever — on this type of approach.

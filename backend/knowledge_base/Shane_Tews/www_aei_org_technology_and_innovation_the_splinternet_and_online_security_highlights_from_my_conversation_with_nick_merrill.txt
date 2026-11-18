@@ -1,153 +1,74 @@
 PAGE_TITLE: 
-	The ‘Splinternet’ and Online Security: Highlights from My Conversation with Nick Merrill | American Enterprise Institute - AEI
+	The ‘Splinternet’ and Online Security: Highlights from My Conversation with Nick Merrill
 
+[Speaker: Introduction / editorial context]
 By Shane Tews
-The
-potential for a fragmented, decentralized global internet (or “splinternet”) is
-a concern on many levels. Two aspects of internet governance are at play: the
-technical aspects of connectivity (or lack thereof), and content delivery —
-i.e., what material is permitted, censored, or filtered. As China, Russia, and other
-authoritarian-leaning regimes advance top-down visions of the internet that
-reflect their national interests, will the internet fragment further? And what
-would moving away from the status quo of a free, open internet mean for global
-cybersecurity?
-Nick Merrill
-, director of the
-Daylight Security Research Lab
-at the University of California, Berkeley’s
-Center for Long-Term Cybersecurity
-, joined “Explain to Shane” to discuss how individual countries’ internet governance decisions shape user experiences and the global cybersecurity landscape. Nick’s work includes
-The Internet Atlas
-— a visual indicator of the global internet’s structural risks — along with the
-Internet Fragmentation Index
-.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Nick, you are currently at the
-UC Berkeley Daylight Security Research Lab. Tell us a bit about your work.
-Nick
-Merrill: In general, a lot of security work starts with trying to make people
-more secure, which, of course, needs to be done. Our work is similar but
-slightly different. We’re trying to figure out what security means to different
-people in the first place. We’re trying to help people figure out what security
-risks matter to them and what steps they can take to achieve whatever value of
-security they’re seeking.  It’s a more
-bottom-up vision of security. And we focus more on tools, practices, and metrics
-to help people understand what’s going on.
-Another area you focus on is internet
-fragmentation.
-You’ve helped build
-the Internet Fragmentation Index, which is a really interesting tool to measure
-how countries treat the internet differently on both fronts: actual
-connections, and what is being censored or not permitted. Walk us through that.
-Our
-philosophy here is that when we talk about the internet, we’re really talking
-about the amalgamation of a bunch of technologies that have been layered on top
-of one another to produce what appears to be a global internet. The question we
-began to ask is: How is this purportedly global network different in different
-countries?
-We basically
-measure proxies of different layers of the internet and different technologies
-in this internet stack across countries to track material differences. Here, we’re
-not concerned with normative values of freedom. We’re concerned only with
-descriptive values, technologies, and how these technologies link networks
-together and how they vary. Our goal here is to see who is similar and different.
-And we end up with basically clusters of internets that are similar and
-interoperable with one another, and where they’re situated and who they’re
-similar to. We’ve ended up with this map of similarities between national
-internets.
-It turns out
-that this map and these similarities correlate with trade and military
-alliances. For example, if you block similar websites to someone, you are more
-likely to also have a trade agreement with them. You are more likely to be in a
-military alliance with that country. We find that these patterns reflect and
-probably shape other facets of geopolitical relations.
-So how do we incorporate security into a
-network ecosystem that lacks a central control mechanism?
-Content
-delivery networks (CDNs) get incoming traffic and determine whether that
-traffic is legitimate. They then put content close to the people requesting it,
-which is great for the network’s speed and reliability. In my opinion, these CDNs
-serve a really important function. They are integral to the internet. And I’m
-not anti-CDN in any way, but the problem with CDNs is that there are very few
-of them, they’re run by a handful of private companies, and if they were to go
-down, we would have really widespread outages. But these companies are relatively
-good at security.
-I think the
-big systemic risk here is a big state-sponsored attack. Russia, for example,
-doing a highly sophisticated attack on a CDN could arguably collapse the global
-internet through cascading failures that CDN outages sometimes cause. So the
-problem in some sense is the centralization of CDNs.
-The question
-— what do we do about it — is complicated. I would note that one of the
-internet’s original designs was to avoid centralization. The idea is that things
-go down. Things happen. As long as there’s enough redundancy, you can always
-route around a failure. And historically that has been very true. CDNs are kind
-of the first things that have challenged that in the sense that they are so
-centralized. If there were an outage, it would really be impossible to route
-around. It would also cause failures to cascade downstream — even for people
-who don’t directly use the provider.
-So what do
-we do about that? I think there’s a lot of interest in kind of
-re-decentralizing this infrastructure. This is one of those things where a
-blockchain-like technology — not literally Bitcoin, but a decentralized
-consensus mechanism — might actually help provide a kind of decentralized
-caching service. There may even be ways to provide a decentralized distributed
-denial-of-service protection on the security side. To me, this is a really
-interesting area for research. I think whatever we can do to provide fallbacks
-or failures would complement any policy intervention.
-With regard
-to these policy interventions, I don’t know for sure, but I think a company
-like Cloudflare should report to the Cybersecurity and Infrastructure Security
-Agency at the Department of Homeland Security. This is absolutely critical
-infrastructure. This kind of pan-internet meltdown would be super dangerous.
-On the content side, is it our place to
-tell governments they need to have more open communication with the world and
-their own citizens?
-This is one
-of my favorite things to think about. I think a key piece of background is that
-the internet is material. The internet is absolutely made of physical matter.
-There are cables that run under the ocean. There things that travel through the
-air and physical machines in different places. An idea pioneered by China here
-is that the internet goes through our borders; we have sovereignty over it.
-It’s within our right to do whatever we want with this content. But this is
-antithetical to the ideas of the people who built the internet. I think the
-question is: What do we want the world to be like, and who has the power to
-make it that way? And when I look at the internet, this is an internet that’s
-very much run by the United States that is facing really serious challenges
-from all sides: domestic tech companies all the way up to national adversaries.
-For now, the
-US still has quite a lot of power. So we’re at this critical juncture where I
-think that with concerted policy and public-private collaboration, it is
-possible to change the direction of the internet really broadly. But how exactly
-we do that is really the question. So where my work fits in is that we try to
-make these metrics that describe how the internet is working.
-I am not
-sitting here with all of the answers to these questions. But what I know for
-sure is that if we want to do anything, we have to see to what degree our
-interventions are having the effect we want them to have. And that’s really
-where measurement and metrics play a role.
-Disinformation is often cited as a
-cyber-adjacent risk. Do you think there is a way to have less disinformation on
-the internet?
-First of
-all, I think disinformation is absolutely a core cybersecurity issue. From the
-perspective of our adversaries, our core, traditional cybersecurity defenses
-are overall very good, but the government has this kind of hands-off attitude
-toward content online. So disinformation is very much the path of least
-resistance as far as really striking the US in the digital domain.
-The question
-is: As countries and private actors like Facebook try different strategies to
-combat misinformation, what is the effect on the global internet? Are those
-interventions making the global internet more robust? Are they making the
-internet more fragile in certain ways? Are they fragmenting the internet or are
-they making the internet more global? This is really where we need a guide. We
-need metrics that tell us what is happening when these different governance
-strategies are being deployed, because people are going to try stuff.
-And that is
-what it is. No one has a good answer, so it will take some experimentation.
+
+[Speaker: Introduction / editorial context]
+The potential for a fragmented, decentralized global internet (or “splinternet”) is a concern on many levels. Two aspects of internet governance are at play: the technical aspects of connectivity (or lack thereof), and content delivery — i.e., what material is permitted, censored, or filtered. As China, Russia, and other authoritarian-leaning regimes advance top-down visions of the internet that reflect their national interests, will the internet fragment further? And what would moving away from the status quo of a free, open internet mean for global cybersecurity?
+
+[Speaker: Introduction / editorial context]
+Nick Merrill, director of the Daylight Security Research Lab at the University of California, Berkeley’s Center for Long-Term Cybersecurity, joined “Explain to Shane” to discuss how individual countries’ internet governance decisions shape user experiences and the global cybersecurity landscape. Nick’s work includes The Internet Atlas — a visual indicator of the global internet’s structural risks — along with the Internet Fragmentation Index.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Nick, you are currently at the UC Berkeley Daylight Security Research Lab. Tell us a bit about your work.
+
+[Speaker: Nick Merrill]
+Nick Merrill: In general, a lot of security work starts with trying to make people more secure, which, of course, needs to be done. Our work is similar but slightly different. We’re trying to figure out what security means to different people in the first place. We’re trying to help people figure out what security risks matter to them and what steps they can take to achieve whatever value of security they’re seeking. It’s a more bottom-up vision of security. And we focus more on tools, practices, and metrics to help people understand what’s going on.
+
+[Speaker: Nick Merrill]
+Another area you focus on is internet fragmentation. You’ve helped build the Internet Fragmentation Index, which is a really interesting tool to measure how countries treat the internet differently on both fronts: actual connections, and what is being censored or not permitted. Walk us through that.
+
+[Speaker: Nick Merrill]
+Our philosophy here is that when we talk about the internet, we’re really talking about the amalgamation of a bunch of technologies that have been layered on top of one another to produce what appears to be a global internet. The question we began to ask is: How is this purportedly global network different in different countries?
+
+[Speaker: Nick Merrill]
+We basically measure proxies of different layers of the internet and different technologies in this internet stack across countries to track material differences. Here, we’re not concerned with normative values of freedom. We’re concerned only with descriptive values, technologies, and how these technologies link networks together and how they vary. Our goal here is to see who is similar and different. And we end up with basically clusters of internets that are similar and interoperable with one another, and where they’re situated and who they’re similar to. We’ve ended up with this map of similarities between national internets.
+
+[Speaker: Nick Merrill]
+It turns out that this map and these similarities correlate with trade and military alliances. For example, if you block similar websites to someone, you are more likely to also have a trade agreement with them. You are more likely to be in a military alliance with that country. We find that these patterns reflect and probably shape other facets of geopolitical relations.
+
+[Speaker: Shane Tews]
+So how do we incorporate security into a network ecosystem that lacks a central control mechanism?
+
+[Speaker: Nick Merrill]
+Content delivery networks (CDNs) get incoming traffic and determine whether that traffic is legitimate. They then put content close to the people requesting it, which is great for the network’s speed and reliability. In my opinion, these CDNs serve a really important function. They are integral to the internet. And I’m not anti-CDN in any way, but the problem with CDNs is that there are very few of them, they’re run by a handful of private companies, and if they were to go down, we would have really widespread outages. But these companies are relatively good at security.
+
+[Speaker: Nick Merrill]
+I think the big systemic risk here is a big state-sponsored attack. Russia, for example, doing a highly sophisticated attack on a CDN could arguably collapse the global internet through cascading failures that CDN outages sometimes cause. So the problem in some sense is the centralization of CDNs.
+
+[Speaker: Nick Merrill]
+The question — what do we do about it — is complicated. I would note that one of the internet’s original designs was to avoid centralization. The idea is that things go down. Things happen. As long as there’s enough redundancy, you can always route around a failure. And historically that has been very true. CDNs are kind of the first things that have challenged that in the sense that they are so centralized. If there were an outage, it would really be impossible to route around. It would also cause failures to cascade downstream — even for people who don’t directly use the provider.
+
+[Speaker: Nick Merrill]
+So what do we do about that? I think there’s a lot of interest in kind of re-decentralizing this infrastructure. This is one of those things where a blockchain-like technology — not literally Bitcoin, but a decentralized consensus mechanism — might actually help provide a kind of decentralized caching service. There may even be ways to provide a decentralized distributed denial-of-service protection on the security side. To me, this is a really interesting area for research. I think whatever we can do to provide fallbacks or failures would complement any policy intervention.
+
+[Speaker: Nick Merrill]
+With regard to these policy interventions, I don’t know for sure, but I think a company like Cloudflare should report to the Cybersecurity and Infrastructure Security Agency at the Department of Homeland Security. This is absolutely critical infrastructure. This kind of pan-internet meltdown would be super dangerous.
+
+[Speaker: Shane Tews]
+On the content side, is it our place to tell governments they need to have more open communication with the world and their own citizens?
+
+[Speaker: Nick Merrill]
+This is one of my favorite things to think about. I think a key piece of background is that the internet is material. The internet is absolutely made of physical matter. There are cables that run under the ocean. There things that travel through the air and physical machines in different places. An idea pioneered by China here is that the internet goes through our borders; we have sovereignty over it. It’s within our right to do whatever we want with this content. But this is antithetical to the ideas of the people who built the internet. I think the question is: What do we want the world to be like, and who has the power to make it that way? And when I look at the internet, this is an internet that’s very much run by the United States that is facing really serious challenges from all sides: domestic tech companies all the way up to national adversaries.
+
+[Speaker: Nick Merrill]
+For now, the US still has quite a lot of power. So we’re at this critical juncture where I think that with concerted policy and public-private collaboration, it is possible to change the direction of the internet really broadly. But how exactly we do that is really the question. So where my work fits in is that we try to make these metrics that describe how the internet is working.
+
+[Speaker: Nick Merrill]
+I am not sitting here with all of the answers to these questions. But what I know for sure is that if we want to do anything, we have to see to what degree our interventions are having the effect we want them to have. And that’s really where measurement and metrics play a role.
+
+[Speaker: Shane Tews]
+Disinformation is often cited as a cyber-adjacent risk. Do you think there is a way to have less disinformation on the internet?
+
+[Speaker: Nick Merrill]
+First of all, I think disinformation is absolutely a core cybersecurity issue. From the perspective of our adversaries, our core, traditional cybersecurity defenses are overall very good, but the government has this kind of hands-off attitude toward content online. So disinformation is very much the path of least resistance as far as really striking the US in the digital domain.
+
+[Speaker: Nick Merrill]
+The question is: As countries and private actors like Facebook try different strategies to combat misinformation, what is the effect on the global internet? Are those interventions making the global internet more robust? Are they making the internet more fragile in certain ways? Are they fragmenting the internet or are they making the internet more global? This is really where we need a guide. We need metrics that tell us what is happening when these different governance strategies are being deployed, because people are going to try stuff.
+
+[Speaker: Nick Merrill]
+And that is what it is. No one has a good answer, so it will take some experimentation.

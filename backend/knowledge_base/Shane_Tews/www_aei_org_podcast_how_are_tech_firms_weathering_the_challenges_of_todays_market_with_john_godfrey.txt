@@ -1,18 +1,14 @@
 PAGE_TITLE: 
-	How Are Tech Firms Weathering the Challenges of Today’s Market? (with John Godfrey) | American Enterprise Institute - AEI
+	How Are Tech Firms Weathering the Challenges of Today’s Market? (with John Godfrey)
 
-Today,
-technology companies are facing some of their largest security, supply chain,
-and regulatory threats ever. Members of Congress, the administration, and
-Federal Trade Commission are trying to require that firms allow anyone, anywhere
-to repair their consumer devices — at a high cost to product quality and
-individual security. Meanwhile, cyberattacks and data breaches are on the rise,
-and while trying to get next-generation 5G products off the ground, both
-software and hardware providers are facing massive semiconductor chip
-shortages. How are large tech companies navigating these challenges?
-On this episode,
-Shane
-is joined by
-John Godfrey
-, Samsung’s acting head of US public affairs and leader of their Washington, DC team. A broadband expert by trade, John is well-versed in a number of issues important to Samsung including “right to repair,” semiconductors, and 5G. John joins the podcast to discuss how Samsung views new regulatory initiatives on Capitol Hill, congressional funding for semiconductor production, and the growth of 5G wireless in the US and beyond.
+[Speaker: Introduction / editorial context]
+Today, technology companies are facing some of their largest security, supply chain, and regulatory threats ever. Members of Congress, the administration, and Federal Trade Commission are trying to require that firms allow anyone, anywhere to repair their consumer devices — at a high cost to product quality and individual security. Meanwhile, cyberattacks and data breaches are on the rise, and while trying to get next-generation 5G products off the ground, both software and hardware providers are facing massive semiconductor chip shortages. How are large tech companies navigating these challenges?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by John Godfrey, Samsung’s acting head of US public affairs and leader of their Washington, DC team. A broadband expert by trade, John is well-versed in a number of issues important to Samsung including “right to repair,” semiconductors, and 5G. John joins the podcast to discuss how Samsung views new regulatory initiatives on Capitol Hill, congressional funding for semiconductor production, and the growth of 5G wireless in the US and beyond.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

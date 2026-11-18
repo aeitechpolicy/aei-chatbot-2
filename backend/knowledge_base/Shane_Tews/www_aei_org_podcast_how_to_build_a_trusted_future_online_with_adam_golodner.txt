@@ -1,17 +1,14 @@
 PAGE_TITLE: 
-	How to Build a ‘Trusted Future’ Online (with Adam Golodner) | American Enterprise Institute - AEI
+	How to Build a ‘Trusted Future’ Online (with Adam Golodner)
 
-How can we
-achieve a real, certifiable level of comfort and trust between consumers and
-the companies that make our technologies? The standards for what constitutes
-trust and safety vary from user to user; we need to find a tractable way to
-build out indicators of trust that will allow both producers and users to see
-risks clearly.
-On this episode of “Explain to Shane,”
-Shane
-is joined by
-Adam Golodner
-, co-chair of
-Trusted Future
-—a new think tank dedicated to enhancing trust in today’s digital ecosystem. Adam and Shane discuss the technical and engineering components of trust and safety, along with what these topics have to do with cybersecurity, privacy, and the supply chain.
+[Speaker: Introduction / editorial context]
+How can we achieve a real, certifiable level of comfort and trust between consumers and the companies that make our technologies? The standards for what constitutes trust and safety vary from user to user; we need to find a tractable way to build out indicators of trust that will allow both producers and users to see risks clearly.
+
+[Speaker: Introduction / editorial context]
+On this episode of “Explain to Shane,” Shane is joined by Adam Golodner, co-chair of Trusted Future—a new think tank dedicated to enhancing trust in today’s digital ecosystem. Adam and Shane discuss the technical and engineering components of trust and safety, along with what these topics have to do with cybersecurity, privacy, and the supply chain.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

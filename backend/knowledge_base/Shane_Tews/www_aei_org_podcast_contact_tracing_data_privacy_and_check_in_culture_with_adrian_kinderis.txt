@@ -1,14 +1,14 @@
 PAGE_TITLE: 
-	Contact Tracing, Data Privacy, and ‘Check-In Culture’ (with Adrian Kinderis) | American Enterprise Institute - AEI
+	Contact Tracing, Data Privacy, and ‘Check-In Culture’ (with Adrian Kinderis)
 
-The
-COVID-19
-pandemic has fueled a debate about contact tracing apps. Virginia recently rolled out an app that uses Google’s and Apple’s Bluetooth technology to notify users if they’ve been exposed to the virus. However, Australians began using contact tracing months ago, and have since debated the need to balance privacy with government regulation. Technology can ensure personal privacy, but based on the lessons from “down under,” what are the trade-offs of contact tracing? Are small businesses willing to endure a small fee for a solution that ensures they can reopen safely?
-On this episode,
-Shane
-is joined by
-Adrian Kinderis
-, a hospitality venue owner and CEO of
-GuestCheck Australia
-, an app that helps hospitality venues register their guests digitally. Adrian and his development team recently put together a contact tracing tool that notifies individuals if they have been in a location with a COVID-positive customer. As a small business owner, Adrian has also witnessed the impact of contact tracing apps on the customer service industry. He discusses the costs and benefits of current contact tracing apps in the US and Australia, along with their privacy implications.
+[Speaker: Introduction / editorial context]
+The COVID-19 pandemic has fueled a debate about contact tracing apps. Virginia recently rolled out an app that uses Google’s and Apple’s Bluetooth technology to notify users if they’ve been exposed to the virus. However, Australians began using contact tracing months ago, and have since debated the need to balance privacy with government regulation. Technology can ensure personal privacy, but based on the lessons from “down under,” what are the trade-offs of contact tracing? Are small businesses willing to endure a small fee for a solution that ensures they can reopen safely?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by Adrian Kinderis, a hospitality venue owner and CEO of GuestCheck Australia, an app that helps hospitality venues register their guests digitally. Adrian and his development team recently put together a contact tracing tool that notifies individuals if they have been in a location with a COVID-positive customer. As a small business owner, Adrian has also witnessed the impact of contact tracing apps on the customer service industry. He discusses the costs and benefits of current contact tracing apps in the US and Australia, along with their privacy implications.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

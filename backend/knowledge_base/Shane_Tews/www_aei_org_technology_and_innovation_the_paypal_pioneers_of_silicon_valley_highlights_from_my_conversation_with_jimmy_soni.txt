@@ -1,155 +1,74 @@
 PAGE_TITLE: 
-	The PayPal Pioneers of Silicon Valley: Highlights from My Conversation with Jimmy Soni | American Enterprise Institute - AEI
+	The PayPal Pioneers of Silicon Valley: Highlights from My Conversation with Jimmy Soni
 
-When we
-think about today’s tech leaders in Silicon Valley, PayPal is probably not the
-first name that comes to mind. But PayPal’s founders and earliest employees
-have gone on to create, found, and advise companies like Facebook, LinkedIn,
-Palantir, SpaceX, Tesla, Yelp, and YouTube. What happened in PayPal’s early
-days to set these individuals and future companies up for success?
-On the
-latest episode of
-Explain to Shane,
-I
-was joined by
-Jimmy Soni
-,
-author of
-The Founders: The Story of PayPal and the Entrepreneurs Who
-Shaped Silicon Valley
-—a tale that was largely untold before Jimmy
-chronicled it. In our interview, Jimmy shared his intentions behind the book
-and what it can teach us about Silicon Valley, tech industry competition, and
-the innovation landscape today.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Walk us through the early years
-of PayPal in which Elon Musk and Peter Thiel had slightly different startup
-ideas but eventually converged to create the company.
-Jimmy Soni:
-For context, the modern PayPal is the offspring of two companies that joined
-together. Musk created a company called X.com, and Peter Thiel and Max Levchin
-co-founded a company called Confinity. Musk’s part at X.com shows you how little
-people change. He had vast ambitions to reconfigure the entire financial system
-to take advantage of the internet. It was strange to him that there were so
-many fees and so much delay in the banking system given that the internet made
-information transfer possible at hyper speed. X.com was supposed to be the one
-place for everything financial—banking, brokerage, and all financial services.
-People
-forget Musk had a .com success even before PayPal called Zip2. So he was a part
-of this early generation of internet entrepreneurs. This was his second act,
-and he didn’t want it to be small. He wanted it to change the financial system
-forever.
-Confinity was slightly different. Peter Thiel and Max Levchin had a more modest ambition for their platform. Initially, they wanted to make it possible for people with
-PalmPilots
-to beam real money across their devices. These are encrypted transactions, but exactly how many people are going to want to do that instead of just taking $10 out of their wallet and handing it to you to split a lunch tab?
-That product
-evolves to become emailing money because emailing money has a use case, is pretty
-convenient, and did not have a clear technological champion in that era. At the
-same time, emailing money was also a part of X.com’s vast portfolio of
-financial products. Those products took off at the same time, the two companies
-ended up competing against one other, then there was a hasty, shotgun wedding–style
-merger that brought them together.
-Talk to us about the whole Maxcode versus
-Microsoft situation.
-It’s good to talk with someone who lived this
-and has familiarity with the texture of it, because I had to bring it to life for
-readers who were generally accustomed to more open-source platforms—rather than
-the challenges of having to unite servers together to build space as a website
-grows. Today, you just use the cloud. You rent space from Amazon or whoever.
-Levchin essentially wanted a Linux-based
-architecture for PayPal based on his experience, the predilections of people he
-hired, and a general belief that it could scale more rapidly. Musk’s side was
-committed to using a Microsoft-based architecture for their system design. It
-was based on the idea that if you have a rapidly expanding product suite and introduce
-new products, there are off-the-shelf things Microsoft does that can be done
-faster and more capably, and you can just keep building.
-There are
-merits to both sides of the argument. I actually went back into the message
-boards and saw the little sniping the Microsoft people would do with the Linux
-people. It gets into a deeper division that David Sacks described regarding
-strategic orientation about where the company was going. For Max and company,
-there was a belief that payment services—which people today use PayPal for—were
-going to be the winning product for Musk. The belief was that the company
-should do everything financial because that’s how they were going to change the
-system.
-So there is
-some squabbling and fighting that leads to Musk’s departure from the company.
-But the more interesting and intellectually meaty stuff is this difference between
-strategic vision and what happens when a startup has that at the very top. How
-do you also reconcile the big thing a company wants to do with the reality of
-what your customers are using the product for?
-eBay also had its own system at the time
-that it was looking to preference, but the users just seemed to like PayPal
-more. This is interesting because we’re now hearing a lot about
-self-preferencing in an antitrust context.
-It’s one of
-the more interesting parts of the story to me. PayPal indeed built a better
-product, but part of what they did so well was building loyalty and trust with
-this group of users. You describe it pitch perfectly. A big group of eBay users
-suddenly glom onto Confinity’s PayPal product and X.com’s emailing money
-product, and eventually they unite and change the name to PayPal. eBay had figured
-out every part of the auction ecosystem but didn’t necessarily want to regulate
-or touch payments. They thought it was thorny, impossibly fraud-ridden,
-difficult, and complex. They acquired a payments company called Billpoint but
-failed to institute it as the only viable option for payments.
-Into that
-opening comes a really aggressive group of startup founders: Reid Hoffman, Elon
-Musk, Max Levchin, David Sacks, Peter Thiel, and their team of 200-plus. They
-think this is a market eBay should have cornered but didn’t, so they now try to
-make themselves more trusted than eBay’s homegrown product.
-It was also interesting how Reid Hoffman
-thought the Department of Justice (DOJ) would go after eBay for antitrust
-violations, so he’d call them and ask, “Do you really want the DOJ up your
-tail?” I love that you brought that tactic into the conversation because nobody
-wants the Federal Trade Commission or DOJ coming in to ask questions.
-I would
-emphasize that “tactic” is the correct word for it. I had this fantastic series
-of interviews and email discussions with Jeff Jordan who today is, I believe, a
-general partner at Andreessen Horowitz. At the time he was head of eBay’s North
-American operations. So the bee in his bonnet was PayPal; it was his problem to
-fix.
-He said
-PayPal would make these veiled references to antitrust based on headlines
-related to the Microsoft–Netscape issue, the DOJ investigating Microsoft, and
-Bill Gates having to testify. It sent a chill up the spine of all of these
-different technology CEOs and eBay wasn’t immune to that, meaning they
-definitely didn’t want to be in the DOJ’s crosshairs. Nobody does.
-I also
-interviewed Rob Chestnut, the attorney at eBay who was held responsible for
-part of this. His line was, “I’m a former federal prosecutor. I’ve had people
-threaten to shoot me before. You’re not going to scare me with antitrust.” So
-in his view, antitrust wasn’t the thing that drove eBay’s decision-making or
-response, but it was definitely in the air at the time. When PayPal came and
-made these faints and gestures about antitrust, it was scary. eBay didn’t want
-to then be in the position of hitting that “off” switch on a certain product or
-strategy because if they did, maybe it wasn’t an antitrust violation, but it
-certainly wouldn’t look good.
-eBay is one
-of the success stories of that era. You’re not going to risk it based on PayPal
-calling you out for antitrust, which is why eBay was hesitant to shut down
-other payment service options and leave the door open for PayPal. In the summer
-of 2002, this eventually resulted in the acquisition of PayPal by eBay, which
-is roughly the conclusion of my story.
+[Speaker: Introduction / editorial context]
+When we think about today’s tech leaders in Silicon Valley, PayPal is probably not the first name that comes to mind. But PayPal’s founders and earliest employees have gone on to create, found, and advise companies like Facebook, LinkedIn, Palantir, SpaceX, Tesla, Yelp, and YouTube. What happened in PayPal’s early days to set these individuals and future companies up for success?
+
+[Speaker: Introduction / editorial context]
+On the latest episode of Explain to Shane, I was joined by Jimmy Soni, author of The Founders: The Story of PayPal and the Entrepreneurs Who Shaped Silicon Valley—a tale that was largely untold before Jimmy chronicled it. In our interview, Jimmy shared his intentions behind the book and what it can teach us about Silicon Valley, tech industry competition, and the innovation landscape today.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Walk us through the early years of PayPal in which Elon Musk and Peter Thiel had slightly different startup ideas but eventually converged to create the company.
+
+[Speaker: Jimmy Soni]
+Jimmy Soni: For context, the modern PayPal is the offspring of two companies that joined together. Musk created a company called X.com, and Peter Thiel and Max Levchin co-founded a company called Confinity. Musk’s part at X.com shows you how little people change. He had vast ambitions to reconfigure the entire financial system to take advantage of the internet. It was strange to him that there were so many fees and so much delay in the banking system given that the internet made information transfer possible at hyper speed. X.com was supposed to be the one place for everything financial—banking, brokerage, and all financial services.
+
+[Speaker: Jimmy Soni]
+People forget Musk had a .com success even before PayPal called Zip2. So he was a part of this early generation of internet entrepreneurs. This was his second act, and he didn’t want it to be small. He wanted it to change the financial system forever.
+
+[Speaker: Jimmy Soni]
+Confinity was slightly different. Peter Thiel and Max Levchin had a more modest ambition for their platform. Initially, they wanted to make it possible for people with PalmPilots to beam real money across their devices. These are encrypted transactions, but exactly how many people are going to want to do that instead of just taking $10 out of their wallet and handing it to you to split a lunch tab?
+
+[Speaker: Jimmy Soni]
+That product evolves to become emailing money because emailing money has a use case, is pretty convenient, and did not have a clear technological champion in that era. At the same time, emailing money was also a part of X.com’s vast portfolio of financial products. Those products took off at the same time, the two companies ended up competing against one other, then there was a hasty, shotgun wedding–style merger that brought them together.
+
+[Speaker: Jimmy Soni]
+Talk to us about the whole Maxcode versus Microsoft situation.
+
+[Speaker: Jimmy Soni]
+It’s good to talk with someone who lived this and has familiarity with the texture of it, because I had to bring it to life for readers who were generally accustomed to more open-source platforms—rather than the challenges of having to unite servers together to build space as a website grows. Today, you just use the cloud. You rent space from Amazon or whoever.
+
+[Speaker: Jimmy Soni]
+Levchin essentially wanted a Linux-based architecture for PayPal based on his experience, the predilections of people he hired, and a general belief that it could scale more rapidly. Musk’s side was committed to using a Microsoft-based architecture for their system design. It was based on the idea that if you have a rapidly expanding product suite and introduce new products, there are off-the-shelf things Microsoft does that can be done faster and more capably, and you can just keep building.
+
+[Speaker: Jimmy Soni]
+There are merits to both sides of the argument. I actually went back into the message boards and saw the little sniping the Microsoft people would do with the Linux people. It gets into a deeper division that David Sacks described regarding strategic orientation about where the company was going. For Max and company, there was a belief that payment services—which people today use PayPal for—were going to be the winning product for Musk. The belief was that the company should do everything financial because that’s how they were going to change the system.
+
+[Speaker: Jimmy Soni]
+So there is some squabbling and fighting that leads to Musk’s departure from the company. But the more interesting and intellectually meaty stuff is this difference between strategic vision and what happens when a startup has that at the very top. How do you also reconcile the big thing a company wants to do with the reality of what your customers are using the product for?
+
+[Speaker: Jimmy Soni]
+eBay also had its own system at the time that it was looking to preference, but the users just seemed to like PayPal more. This is interesting because we’re now hearing a lot about self-preferencing in an antitrust context.
+
+[Speaker: Jimmy Soni]
+It’s one of the more interesting parts of the story to me. PayPal indeed built a better product, but part of what they did so well was building loyalty and trust with this group of users. You describe it pitch perfectly. A big group of eBay users suddenly glom onto Confinity’s PayPal product and X.com’s emailing money product, and eventually they unite and change the name to PayPal. eBay had figured out every part of the auction ecosystem but didn’t necessarily want to regulate or touch payments. They thought it was thorny, impossibly fraud-ridden, difficult, and complex. They acquired a payments company called Billpoint but failed to institute it as the only viable option for payments.
+
+[Speaker: Jimmy Soni]
+Into that opening comes a really aggressive group of startup founders: Reid Hoffman, Elon Musk, Max Levchin, David Sacks, Peter Thiel, and their team of 200-plus. They think this is a market eBay should have cornered but didn’t, so they now try to make themselves more trusted than eBay’s homegrown product.
+
+[Speaker: Jimmy Soni]
+It was also interesting how Reid Hoffman thought the Department of Justice (DOJ) would go after eBay for antitrust violations, so he’d call them and ask, “Do you really want the DOJ up your tail?” I love that you brought that tactic into the conversation because nobody wants the Federal Trade Commission or DOJ coming in to ask questions.
+
+[Speaker: Jimmy Soni]
+I would emphasize that “tactic” is the correct word for it. I had this fantastic series of interviews and email discussions with Jeff Jordan who today is, I believe, a general partner at Andreessen Horowitz. At the time he was head of eBay’s North American operations. So the bee in his bonnet was PayPal; it was his problem to fix.
+
+[Speaker: Jimmy Soni]
+He said PayPal would make these veiled references to antitrust based on headlines related to the Microsoft–Netscape issue, the DOJ investigating Microsoft, and Bill Gates having to testify. It sent a chill up the spine of all of these different technology CEOs and eBay wasn’t immune to that, meaning they definitely didn’t want to be in the DOJ’s crosshairs. Nobody does.
+
+[Speaker: Jimmy Soni]
+I also interviewed Rob Chestnut, the attorney at eBay who was held responsible for part of this. His line was, “I’m a former federal prosecutor. I’ve had people threaten to shoot me before. You’re not going to scare me with antitrust.” So in his view, antitrust wasn’t the thing that drove eBay’s decision-making or response, but it was definitely in the air at the time. When PayPal came and made these faints and gestures about antitrust, it was scary. eBay didn’t want to then be in the position of hitting that “off” switch on a certain product or strategy because if they did, maybe it wasn’t an antitrust violation, but it certainly wouldn’t look good.
+
+[Speaker: Jimmy Soni]
+eBay is one of the success stories of that era. You’re not going to risk it based on PayPal calling you out for antitrust, which is why eBay was hesitant to shut down other payment service options and leave the door open for PayPal. In the summer of 2002, this eventually resulted in the acquisition of PayPal by eBay, which is roughly the conclusion of my story.
+
+[Speaker: Shane Tews]
 So what is next on your horizon?
-I am taking a
-well-deserved breather. I don’t quite know what book I’ll do next. But I like
-people who are intentioned with their environment, much like the Silicon Valley
-innovation set who were in a time and place. I’m exploring everything from 20th-century
-education reform to Venice and Renaissance thinkers; I’m all over the place.
-At the
-moment, I am just trying to get the world to appreciate this founding group.
-Because as you said, they are not done. They are still making waves today. I
-think it’s worth looking at their origins because you see, as you did, that
-they’re kind of the same people in some ways. They are a lot more powerful and
-a lot wealthier, but a lot of how they approached the world was shaped during
-this .com boom era.
+
+[Speaker: Jimmy Soni]
+I am taking a well-deserved breather. I don’t quite know what book I’ll do next. But I like people who are intentioned with their environment, much like the Silicon Valley innovation set who were in a time and place. I’m exploring everything from 20th-century education reform to Venice and Renaissance thinkers; I’m all over the place.
+
+[Speaker: Jimmy Soni]
+At the moment, I am just trying to get the world to appreciate this founding group. Because as you said, they are not done. They are still making waves today. I think it’s worth looking at their origins because you see, as you did, that they’re kind of the same people in some ways. They are a lot more powerful and a lot wealthier, but a lot of how they approached the world was shaped during this .com boom era.

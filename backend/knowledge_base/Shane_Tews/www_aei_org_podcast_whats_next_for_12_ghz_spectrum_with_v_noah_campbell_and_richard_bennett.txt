@@ -1,18 +1,14 @@
 PAGE_TITLE: 
-	What’s Next for 12-GHz Spectrum? (with V. Noah Campbell and Richard Bennett) | American Enterprise Institute - AEI
+	What’s Next for 12-GHz Spectrum? (with V. Noah Campbell and Richard Bennett)
 
-In December 2020, the Federal Communications Commission (FCC) announced a
-Notice of Proposed Rulemaking
-regarding the feasibility of allowing commercial operations — both satellite and terrestrial — in the 12.2–12.7-GHz spectrum band. Doing so could expand broadband access and expedite mobile 5G network buildouts; however, incumbents worry that additional commercial activity in the band could potentially interfere with their satellite operations. How can the FCC ensure new use of the 12-GHz band while navigating incumbents’ concerns?
-On this episode,
-Shane
-is joined by two spectrum policy experts:
-V. Noah Campbell
-, co-founder and CEO of
-Radio Spectrum Access LLC
-, and
-Richard Bennett
-, founder of
-High Tech Forum
-and a co-creator of Wi-Fi. Noah discusses how both industry and the FCC can safely increase commercial activity in the 12-GHz band, while Richard gives an engineer’s perspective on what freeing up spectrum entails — in the 12-GHz band and beyond.
+[Speaker: Introduction / editorial context]
+In December 2020, the Federal Communications Commission (FCC) announced a Notice of Proposed Rulemaking regarding the feasibility of allowing commercial operations — both satellite and terrestrial — in the 12.2–12.7-GHz spectrum band. Doing so could expand broadband access and expedite mobile 5G network buildouts; however, incumbents worry that additional commercial activity in the band could potentially interfere with their satellite operations. How can the FCC ensure new use of the 12-GHz band while navigating incumbents’ concerns?
+
+[Speaker: Introduction / editorial context]
+On this episode, Shane is joined by two spectrum policy experts: V. Noah Campbell, co-founder and CEO of Radio Spectrum Access LLC, and Richard Bennett, founder of High Tech Forum and a co-creator of Wi-Fi. Noah discusses how both industry and the FCC can safely increase commercial activity in the 12-GHz band, while Richard gives an engineer’s perspective on what freeing up spectrum entails — in the 12-GHz band and beyond.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

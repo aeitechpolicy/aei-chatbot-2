@@ -1,38 +1,65 @@
 PAGE_TITLE: 
-	How Meta Thinks About Personalization and Privacy | American Enterprise Institute - AEI
+	How Meta Thinks About Personalization and Privacy
 
-Personalization, which tailors content based on user preference,
-has become widely used
-on virtually every social media platform. By
-providing users
-with relevant content that appeals to their unique interests, no two social media feeds are the same. Personalized social media posts can lead to a 50 percent
-increase in user engagement
-, as they resonate more deeply with individual preferences. This practice is so widely used that it has become a deep-seated expectation for users—74 percent of consumers
-feel frustrated
-when content isn’t personalized. But as social media platforms integrate personalization technology, questions around privacy, transparency, and user choice are becoming increasingly pronounced.
+[Speaker: Introduction / editorial context]
+Personalization, which tailors content based on user preference, has become widely used on virtually every social media platform. By providing users with relevant content that appeals to their unique interests, no two social media feeds are the same. Personalized social media posts can lead to a 50 percent increase in user engagement, as they resonate more deeply with individual preferences. This practice is so widely used that it has become a deep-seated expectation for users—74 percent of consumers feel frustrated when content isn’t personalized. But as social media platforms integrate personalization technology, questions around privacy, transparency, and user choice are becoming increasingly pronounced.
+
+[Speaker: Introduction / editorial context]
 Rob Sherman is Vice President and Deputy Chief Privacy Officer for Policy at Meta. He joined the company in 2012—at the time called Facebook—and has since then diligently worked to protect user privacy while promoting innovation. Before joining Meta, Rob was a lawyer at Covington & Burling LLP, specializing in technology and media.
-Below is a lightly edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: Let’s walk through how personalization works on social media apps, and how it can provide users with a better experience.
+
+[Speaker: Rob Sherman]
 Rob Sherman: It’s exciting that when I think about how my kids are growing up, they’re growing up with so much choice and so much ability to get the experience that works for them. That’s the same experience that I have now. So when I look at my Instagram feed, I am interested in travel. And so I get a lot of information about travel. I’m interested in things to do with my kids and I get information about that. I’m a vegetarian. So I get stuff about vegetarian recipes, like these are the kinds of things that I see and choose to consume on Instagram.
+
+[Speaker: Rob Sherman]
 The benefit of this is you can actually curate the experience that you want to have, and in general, your experience is going to be different than mine. You choose who you want to follow and that gives a signal to our systems of this is the kind of content that Shane is interested in. You might click on certain things more than others. You might choose to comment on or like things. Those are all signals that help our system decide what to show you. And the goal is really to give you an enriching experience that gives you the content that is most important for you.
+
+[Speaker: Rob Sherman]
 This personalization also informs ad choices. I think a lot of people don’t know that they can find out almost everything that Instagram or Facebook knows about them and if I don’t like something, they can augment it or change it. Explain to our listeners how they can find the inventory of what information Meta properties have about them.
+
+[Speaker: Rob Sherman]
 Yes, when you see an ad on Instagram, there’s a way that you can find out why you saw that ad. Ideally, the ads that you’re seeing are really useful, valuable to you. They’re things that you would want to buy. I just actually found a Mother’s Day present for my wife, which she doesn’t know about yet, but will find out in a couple of days because we’re recording this right before Mother’s Day. So I found that in an Instagram ad. But ideally, you’re getting those because they’re things that you would actually want. But you can also click on the ad and say, why am I seeing this? And you’ll get an explanation for what are the factors that we considered to think that you might want this. And then if you disagree, if we actually got it wrong, you can give us that feedback as well. So the idea is really, rather than all of us having to have that same content, we can each have the experience that we want, and then we can have a say in curating it in the way that is best for us.
+
+[Speaker: Rob Sherman]
 This is what we call ad preferences. This system is one of the factors that informs what ads you see. What it’s doing is it’s using a combination of things I’m interested in, the things I explicitly choose to follow the and things that I engage with, to decide what it’s going to want to surface to me. Part of that is just looking at, if people who like this particular page on Facebook are likely to be interested in these topics. Some of it is general, relating to broad populations.
+
+[Speaker: Rob Sherman]
 If you go into your ad settings, there’s a place where you can see a list of those topics. And then, like I said earlier, this will give you information about how those interests or other things you engaged with informed our choice to show you that particular ad at that moment. By default, it’s built to do the heavy lifting for you. The idea is to deliver personalization for everyone in a way that works for them, but then also give them the ability to dig in if they want to.
+
+[Speaker: Shane Tews]
 So that brings me to a question of how things work on the back end. As you have acquired different companies to become part of your suite of services, do my preferences follow me? There’s no reason for you to have separate technical teams for each platform, such as Facebook, Instagram, WhatsApp, and Oculus, because they share a lot of the same information. But have you encountered anything that users might be concerned about?
+
+[Speaker: Rob Sherman]
 One of the things I think is important is that when we’re building this technology, it’s increasingly working together. However, it’s also important to note that we have a feature called Account Center, which allows you to link your accounts together in the way you’re describing. If I would rather have my Instagram account be totally separate from my Facebook account, that’s absolutely something that I can do. I think from a starting point, giving people the ability to decide how they want to use different products together is an important piece. Most of us have different ways that we engage with the different platforms. So one of the things that we think about is how do we segregate that data and make sure that it’s used to deliver the services that you’re actually looking for and that the information is being used in ways that you expect and want.
+
+[Speaker: Rob Sherman]
 We try to be really transparent about that and make sure people know and have choices about it. Actually, one of the primary focuses of our privacy engineering team is building back-end technologies to ensure that data is used in the intended manner and not misused in other ways.
+
+[Speaker: Shane Tews]
 Switching topics, because I know you just had a Llamacon, and AI is everyone’s favorite topic right now. What’s going on with Llama?
+
+[Speaker: Rob Sherman]
 I was just in California for LlamaCon, which is our first Llama developers’ conference. And it was really great to be together with developers from around the world who are using Llama to build incredible things. One of the things that we try to do is to both deploy technology and then provide support to the ecosystem to help this technology (in this case open-source AI) to be valuable and create value for people around the world.
+
+[Speaker: Rob Sherman]
 One of the grants that we gave out through our Llama Impact Program was for a developer that’s using Llama to help people get access to government services and understand how to navigate the various programs that are available to them that they might not know how to get access to. In India, there’s a developer that’s using Llama to deliver personalized language and literacy instruction. In a country where you might not have the scale for every kid to have a teacher who can give them personalized experience, being able to do that on WhatsApp from your phone is actually really powerful.
+
+[Speaker: Rob Sherman]
 One of the things that I think is particularly important about the idea of open-sourcing is, if you think about a company like ours, we’re not education experts, to use the example that I just gave. These are kinds of things that we would never have the expertise to build ourselves, but by deploying this technology and open-sourcing it, we can actually enable the ecosystem to build on top of it and do all these really neat things.
+
+[Speaker: Shane Tews]
 Future-casting here: anything that you know that I don’t know that we should talk about?
+
+[Speaker: Rob Sherman]
 I think the thing that I took away from LlamaCon more than anything else is how broad and diverse the uses of this technology are. There were lots of different developers there, but the small developers who were doing really unique, really interesting things, stuck out to me. We had poster presentations where different developers could demonstrate what they were doing. And one of the developers that I ran into was building American Sign Language on Llama using WhatsApp. And so what it meant was you would have the ability to type something in and it would demonstrate how to say that in American Sign Language, but then you could also use your camera to record somebody signing to you and then it would translate that into written text. This was a small developer that didn’t have a lot of resources, but was bootstrapped by being able to build on top of Llama. That’s really, really incredible to think about what we’re able to do.
+
+[Speaker: Rob Sherman]
 When I look toward the future, one of the big challenges when we look at this new technology is that I think it’s going to give us a lot more choice. And I think that this technology is going to give each of us the ability to not have to rely on a developer to build technology exactly for our use case, but actually to be able to just tell the computer what you want and. I also think there are benefits of having that technology integrated into your life, like you and me being able to use wearable technology to talk to each other, even if we’re not in the same place.
+
+[Speaker: Rob Sherman]
 I do think the big challenge, though, is that getting this right is going to require us to challenge the orthodoxy of our instinctive answers to a lot of these questions.

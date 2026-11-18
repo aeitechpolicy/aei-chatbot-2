@@ -1,10 +1,14 @@
 PAGE_TITLE: 
-	A Look Inside a Cybersecurity Training Firm (with Keith Peer) | American Enterprise Institute - AEI
+	A Look Inside a Cybersecurity Training Firm (with Keith Peer)
 
+[Speaker: Introduction / editorial context]
 Cyberattacks are one of the largest threats facing society today. Learning how cyber disruptions take place is the best way to protect services provided by network operations and data systems, but who has the training resources and expert teams required to detect unseen risks for enterprise, government, and civil society alike?
-On this episode of “Explain to Shane,”
-Shane
-is joined by Keith Peer, head of the federal practice at
-Offensive Security
-. Offensive Security is a leading cybersecurity organization that offers courses, training exercises, and certifications on systems penetration testing for the federal government and a number of Fortune 500 companies. Keith joins the show to explain how Offensive Security’s experts are tackling the unique challenges of today’s cyber landscape.
+
+[Speaker: Introduction / editorial context]
+On this episode of “Explain to Shane,” Shane is joined by Keith Peer, head of the federal practice at Offensive Security. Offensive Security is a leading cybersecurity organization that offers courses, training exercises, and certifications on systems penetration testing for the federal government and a number of Fortune 500 companies. Keith joins the show to explain how Offensive Security’s experts are tackling the unique challenges of today’s cyber landscape.
+
+[Speaker: Introduction / editorial context]
 Download this episode’s transcript here.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow

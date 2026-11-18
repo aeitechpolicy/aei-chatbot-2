@@ -1,0 +1,71 @@
+PAGE_TITLE: 
+	Why Is It So Hard to Stay Safe Online?
+
+[Speaker: Introduction / editorial context]
+An account you haven’t touched in years can still have your email address and other sensitive data attached to it. If you’ve reused the password associated with that account, one breach can put the accounts you still use at risk. As AI has gotten better at mimicking how people write and adapting to the context of a conversation, scam emails have become harder to spot. Realizing an account has been compromised is only the first step. What you do next is not so clear.
+
+[Speaker: Introduction / editorial context]
+Greg Oslan joins us for an episode of Explain to Shane to discuss new ways even the most tech-savvy can fall for scams, as well as best practices we should use online. Greg is the chairman and CEO of MERENA Incorporated. Since 2021, he has served on the board of directors and the Cyber Security Subcommittee of the National Cybersecurity Center, a nonprofit in Colorado Springs that fosters cyber innovation and awareness.
+
+[Speaker: Introduction / editorial context]
+Below is a lightly edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: How can you tell if your email address or password was exposed in a data breach? And why does it matter if the breach involved an account you haven’t used in years?
+
+[Speaker: Greg Oslan]
+Greg Oslan: Checking whether your email address has been exposed in a breach is a relatively easy thing to do today. You can use tools that have been out there for a number of years, and they’ll quickly tell you which breaches may have exposed your email address.
+
+[Speaker: Greg Oslan]
+That’s step one. But for most individuals, that’s scary because you immediately see you’re in 5, 15, or maybe 50 breaches. You’ve got years of digital exhaust on accounts that you forgot you even had, yet those accounts were compromised.
+
+[Speaker: Greg Oslan]
+Most people say, “Well, that’s okay. That was 15 years ago. I don’t use that account anymore.” Your email is probably still attached to it. For too much of society, that password you used back then may be the password you’re using now.
+
+[Speaker: Shane Tews]
+What did you learn from teaching people about cybersecurity? Why wasn’t education alone enough?
+
+[Speaker: Greg Oslan]
+We’d been doing this for 10 years, from training and educating state legislatures during COVID to offering cyber camps for students and young adults. We realized that education alone really was not making the impact we wanted. So we said, “If we’re going to help enable a cyber-resilient society, how can we give individuals the mechanism to do that?”
+
+[Speaker: Greg Oslan]
+We realized there were a lot of individual tools to help businesses understand where their risks were. The same thing is true for consumers. You can get antivirus tools, a VPN, and a credit report from Equifax. But the problem businesses had was that it took a human being to bring all that together and truly understand the risk. That’s the problem individuals face today.
+
+[Speaker: Greg Oslan]
+You have too much signal and too much noise. You can check a password, your email, or a link. But now what? Are you going to use ChatGPT or Google search? Human beings don’t think that way. They’re not analysts. They don’t go step by step.
+
+[Speaker: Shane Tews]
+When an email looks real but something seems off, what should you do first?
+
+[Speaker: Greg Oslan]
+A few years ago, you looked at the email address or you looked at the email and could tell that the grammar was poor. There were misspellings, and so you could look and say, “Well, this isn’t real.” Today, with the advancements of AI, deepfakes, and so on, it’s almost impossible, even for those who are well trained in doing it.
+
+[Speaker: Greg Oslan]
+If they’re asking for money, it’s probably a fake. You need to think, “I’m not just going to send somebody money.” There is no entity that will ask you for your login information and password in an email.
+
+[Speaker: Greg Oslan]
+The next step is to go directly to the website itself. If it’s Google, you need to go directly to google.com because that is the source of truth. Or you need to call if you get something from someone.
+
+[Speaker: Shane Tews]
+What do you hear from people who are trying to help both their kids and their parents stay safe online?
+
+[Speaker: Greg Oslan]
+We’ve done more research than I thought I would do because the sandwich generation intrigued me: people who are dealing with both their children and their parents.
+
+[Speaker: Greg Oslan]
+We hear things like, “My parents are worse than my kids because they answer the phone every time, they click on everything, and I have no way to know how to help them. They don’t live in my state, or they don’t listen to me anyways.” Kind of like the children. What goes around comes around.
+
+[Speaker: Shane Tews]
+Can someone file a police report online? How much help can they expect after a scam?
+
+[Speaker: Greg Oslan]
+Believe it or not, you can. It’s not available everywhere, but a number of communities across the country offer online reporting. We have it in Colorado Springs and Douglas County.
+
+[Speaker: Greg Oslan]
+Sadly, if you’re an individual, the size of the loss may mean you won’t get much help. The police are dealing with much bigger losses.
+
+[Speaker: Greg Oslan]
+Our policies, our laws, our rules of society are going to have to evolve much faster than they are today, especially if we don’t want the elderly to get wiped out. Think about the average American living paycheck to paycheck. Or say it’s your Social Security check that just got taken. That might not seem like a lot of money, but it was all your money for the month.
+
+[Speaker: Greg Oslan]
+That was your rent. That was your food. That was your gas. Gone. What do you do? And there is no real good backstop for that today.

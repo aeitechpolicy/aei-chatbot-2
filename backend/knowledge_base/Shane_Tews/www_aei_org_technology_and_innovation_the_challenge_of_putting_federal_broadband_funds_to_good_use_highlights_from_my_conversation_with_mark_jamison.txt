@@ -1,143 +1,65 @@
 PAGE_TITLE: 
-	The Challenge of Putting Federal Broadband Funds to Good Use: Highlights from My Conversation with Mark Jamison | American Enterprise Institute - AEI
+	The Challenge of Putting Federal Broadband Funds to Good Use: Highlights from My Conversation with Mark Jamison
 
-Following the passage of the
-Infrastructure Investment and Jobs Act
-(IIJA), a
-Department of Commerce (DOC) branch known as the
-National Telecommunications
-and Information Administration
-(NTIA) has been tasked with allocating
-$42.5 billion of federal broadband infrastructure funding to state and local
-governments through the
-Broadband Equity, Access, and Deployment (BEAD) program
-.
-This $42.5 billion is part of a larger $65 billion sum that the IIJA puts
-toward broadband infrastructure. How can NTIA and the states ensure the money
-is spent effectively and that people are held accountable? How can barriers to
-broadband adoption be overcome without just throwing money at the issue?
-On this episode, I welcomed AEI Nonresident Senior
-Fellow
-Mark Jamison
-back to the podcast. Dr. Jamison has
-previously appeared on the show to talk about tech antitrust issues but is an
-internet and telecommunications expert by training. In addition to his
-fellowship at AEI, Dr. Jamison directs the Public Utility Research Center at
-the University of Florida’s Warrington College of Business—where he also
-teaches. Dr. Jamison previously served on the Federal Communications Commission
-transition team for President-elect Trump and as a special adviser to the
-governor of Florida’s internet task force. He is currently working with the
-Florida government to help write the state’s strategic broadband plan.
-Below is an edited and abridged transcript of our talk. You can listen to
-this
-and
-other episodes
-of
-Explain to Shane
-on AEI.org and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Let’s
-walk through two arcane topics: the BEAD program and the associated Notice of
-Funding Opportunity (NOFO). What is in the NOFO? Can I personally take
-advantage of it to get BEAD funding?
-Mark Jamison: This NOFO simply notifies people that money is
-now available for the BEAD program. To your second point: No, you cannot do
-that because a state has to do it. The DOC, with NTIA being part of it, will send
-states a grand total of $42.5 billion to implement the BEAD program.
-During the COVID-19 pandemic, more programs were launched to
-cover the “middle mile” and other issues relating to broadband deployment. Having
-a lot of different programs all focused on the same problem is not something
-new for DC, however.
-Can you explain the
-middle mile? DOC Assistant Secretary Alan Davidson (who heads NTIA) said the
-middle-mile is the most “shovel-ready” and probably the most important.
-I really don’t know if it’s shovel-ready or not. But essentially
-the idea of the middle-mile is getting primarily fiber-optic cables out into
-rural areas so people can expand broadband access from those cables into their homes,
-businesses, and anchor institutions like schools or hospitals. Basically, it’s
-getting the internet into an area rather than into the actual buildings people
-work or live in. A good way to think about it is like a main highway that gives
-smaller roads something to connect to.
-You have been working
-with Florida on the initial broadband plan that the governor will propose to
-NTIA. Tell us what you have been up to there.
-I was working on something that is in Florida’s state law:
-Every two years, the state must write a strategic broadband plan. This statute
-was only put into place recently, so it was time to write the first one. I’ve
-talked with the state many times about broadband saying, “Don’t do this; do
-this instead.” And they said, “Well, if you’re so smart, then you help write
-the strategic plan.” So I did, and we finished that project around May. Now the
-people in the governor’s office are putting the finishing touches on our work,
-but our plan was not written with the $42.5 billion of BEAD funding in mind. We
-didn’t even know the program would look like that.
-Once the governor’s office and the leaders of the state
-legislature got involved, it was time for the academics to step away. Whether
-any of the work that my team and I did sees the light of day is up in the air.
-Generally, after a state submits a proposal, there’s a back
-and forth with NTIA. Then, the state will need to submit a five-year plan that
-involves some more back and forth with NTIA. Eventually, NTIA should say,
-“Okay, state X, here’s how much money we will allot to you.” Then it’s in the
-state’s hands to utilize the funds well—and I suspect NTIA will stay involved
-throughout this final stage.
-Are we ready to start
-laying fiber all across America? What’s it going to take to make that happen?
-No, we’re not ready for that. I don’t know if there is such
-a thing as being ready to lay fiber across the whole country because we’re going
-to spend $42.5 billion doing something that people are not prepared to do. It’s
-not like we have experts in laying fiber-optics, software engineers, or electronics
-technicians and laborers sitting out there twiddling their thumbs saying, “Gee,
-I wish I could just find a job.” The people we are recruiting are out there
-building houses, working a typical 9–5 office job, or doing something else.
-Diverting that work over to building broadband will take some effort. So there
-remains a notable workforce challenge here.
-It can be a challenge
-to lay fiber everywhere, especially in the countryside. Are there alternatives
-that would allow us to connect these more remote areas?
-I would like to leave that question in the hands of the
-experts, but the way that I explain it to people is: If broadband is not in a
-particular place, it’s because it’s probably not commercially viable. The
-purpose of subsidies is to augment an internet service provider’s (ISP) revenues
-and potentially make broadband deployment in remote regions more viable. The
-customers are the ones who know how much broadband is worth to them, and the ISPs
-know how much it costs to provide that service. They’re the ones that are real
-experts on it. Sometimes that equation dictates that fiber-optics is exactly
-the right solution, whereas in other instances it is not.
-Sometimes wireless broadband is the right solution. These
-are just antennas that point at each other and send a broadband signal out into
-a rural area. We’ve got some in Florida because we have some places where there
-aren’t very many people. There are also going to be places where broadband
-access is going to be facilitated via satellites. We have a small number of
-communities in Florida that are part of Native American reservations; you’re
-not going to get fiber-optics out there as they’re out in the swamps. You’re
-not going to be able to run a wireless system through a dense swamp, so in this
-case, satellite internet is the solution.
-Once we get broadband
-across America, what do you think the biggest change will be in terms of how
-Americans view and use the internet?
-That’s hard to say because one of the things we’ve struggled
-to understand is why a lot of people reject broadband. We’ve had programs
-before that offered broadband for free and people still refused to connect. We’ve
-also offered programs where we give them free broadband and a free computer,
-but they still refuse to use broadband. We even offered training, on top of the
-computer and free internet, and some responded, “How much do I have to pay to
-not have to go to those classes?”
-If you go back to my grandparents’ times, cars were rarer
-back then and not a lot of people drove. But once we built roads to everybody’s
-houses, people learned to enjoy that new infrastructure. Broadband is very
-similar: Once it is there, people will figure out how they can personally
-benefit from it.
-The biggest challenge for the BEAD program is making sure
-the money is spent well and that people are held accountable. We learned an
-important lesson in 2008–2009 during the Great Recession when we had a stimulus
-package that had almost $8 billion in it for broadband. After all the money was
-spent, we tried to figure out that funding’s impact, and we did not find that
-broadband expanded at all. What we found is that the people who got the money
-were typically politically connected. There’s equipment out there that is
-sitting around in warehouses because the businesses and individuals that
-actually know how to do broadband were sidestepped and neglected. Then people
-weren’t even held accountable if they didn’t work. Even some government
-agencies quit publishing the data from that funding because the results were
-flat-out embarrassing.
+[Speaker: Introduction / editorial context]
+Following the passage of the Infrastructure Investment and Jobs Act (IIJA), a Department of Commerce (DOC) branch known as the National Telecommunications and Information Administration (NTIA) has been tasked with allocating $42.5 billion of federal broadband infrastructure funding to state and local governments through the Broadband Equity, Access, and Deployment (BEAD) program. This $42.5 billion is part of a larger $65 billion sum that the IIJA puts toward broadband infrastructure. How can NTIA and the states ensure the money is spent effectively and that people are held accountable? How can barriers to broadband adoption be overcome without just throwing money at the issue?
+
+[Speaker: Introduction / editorial context]
+On this episode, I welcomed AEI Nonresident Senior Fellow Mark Jamison back to the podcast. Dr. Jamison has previously appeared on the show to talk about tech antitrust issues but is an internet and telecommunications expert by training. In addition to his fellowship at AEI, Dr. Jamison directs the Public Utility Research Center at the University of Florida’s Warrington College of Business—where he also teaches. Dr. Jamison previously served on the Federal Communications Commission transition team for President-elect Trump and as a special adviser to the governor of Florida’s internet task force. He is currently working with the Florida government to help write the state’s strategic broadband plan.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Let’s walk through two arcane topics: the BEAD program and the associated Notice of Funding Opportunity (NOFO). What is in the NOFO? Can I personally take advantage of it to get BEAD funding?
+
+[Speaker: Mark Jamison]
+Mark Jamison: This NOFO simply notifies people that money is now available for the BEAD program. To your second point: No, you cannot do that because a state has to do it. The DOC, with NTIA being part of it, will send states a grand total of $42.5 billion to implement the BEAD program.
+
+[Speaker: Mark Jamison]
+During the COVID-19 pandemic, more programs were launched to cover the “middle mile” and other issues relating to broadband deployment. Having a lot of different programs all focused on the same problem is not something new for DC, however.
+
+[Speaker: Mark Jamison]
+Can you explain the middle mile? DOC Assistant Secretary Alan Davidson (who heads NTIA) said the middle-mile is the most “shovel-ready” and probably the most important.
+
+[Speaker: Mark Jamison]
+I really don’t know if it’s shovel-ready or not. But essentially the idea of the middle-mile is getting primarily fiber-optic cables out into rural areas so people can expand broadband access from those cables into their homes, businesses, and anchor institutions like schools or hospitals. Basically, it’s getting the internet into an area rather than into the actual buildings people work or live in. A good way to think about it is like a main highway that gives smaller roads something to connect to.
+
+[Speaker: Mark Jamison]
+You have been working with Florida on the initial broadband plan that the governor will propose to NTIA. Tell us what you have been up to there.
+
+[Speaker: Mark Jamison]
+I was working on something that is in Florida’s state law: Every two years, the state must write a strategic broadband plan. This statute was only put into place recently, so it was time to write the first one. I’ve talked with the state many times about broadband saying, “Don’t do this; do this instead.” And they said, “Well, if you’re so smart, then you help write the strategic plan.” So I did, and we finished that project around May. Now the people in the governor’s office are putting the finishing touches on our work, but our plan was not written with the $42.5 billion of BEAD funding in mind. We didn’t even know the program would look like that.
+
+[Speaker: Mark Jamison]
+Once the governor’s office and the leaders of the state legislature got involved, it was time for the academics to step away. Whether any of the work that my team and I did sees the light of day is up in the air.
+
+[Speaker: Mark Jamison]
+Generally, after a state submits a proposal, there’s a back and forth with NTIA. Then, the state will need to submit a five-year plan that involves some more back and forth with NTIA. Eventually, NTIA should say, “Okay, state X, here’s how much money we will allot to you.” Then it’s in the state’s hands to utilize the funds well—and I suspect NTIA will stay involved throughout this final stage.
+
+[Speaker: Shane Tews]
+Are we ready to start laying fiber all across America? What’s it going to take to make that happen?
+
+[Speaker: Mark Jamison]
+No, we’re not ready for that. I don’t know if there is such a thing as being ready to lay fiber across the whole country because we’re going to spend $42.5 billion doing something that people are not prepared to do. It’s not like we have experts in laying fiber-optics, software engineers, or electronics technicians and laborers sitting out there twiddling their thumbs saying, “Gee, I wish I could just find a job.” The people we are recruiting are out there building houses, working a typical 9–5 office job, or doing something else. Diverting that work over to building broadband will take some effort. So there remains a notable workforce challenge here.
+
+[Speaker: Shane Tews]
+It can be a challenge to lay fiber everywhere, especially in the countryside. Are there alternatives that would allow us to connect these more remote areas?
+
+[Speaker: Mark Jamison]
+I would like to leave that question in the hands of the experts, but the way that I explain it to people is: If broadband is not in a particular place, it’s because it’s probably not commercially viable. The purpose of subsidies is to augment an internet service provider’s (ISP) revenues and potentially make broadband deployment in remote regions more viable. The customers are the ones who know how much broadband is worth to them, and the ISPs know how much it costs to provide that service. They’re the ones that are real experts on it. Sometimes that equation dictates that fiber-optics is exactly the right solution, whereas in other instances it is not.
+
+[Speaker: Mark Jamison]
+Sometimes wireless broadband is the right solution. These are just antennas that point at each other and send a broadband signal out into a rural area. We’ve got some in Florida because we have some places where there aren’t very many people. There are also going to be places where broadband access is going to be facilitated via satellites. We have a small number of communities in Florida that are part of Native American reservations; you’re not going to get fiber-optics out there as they’re out in the swamps. You’re not going to be able to run a wireless system through a dense swamp, so in this case, satellite internet is the solution.
+
+[Speaker: Shane Tews]
+Once we get broadband across America, what do you think the biggest change will be in terms of how Americans view and use the internet?
+
+[Speaker: Mark Jamison]
+That’s hard to say because one of the things we’ve struggled to understand is why a lot of people reject broadband. We’ve had programs before that offered broadband for free and people still refused to connect. We’ve also offered programs where we give them free broadband and a free computer, but they still refuse to use broadband. We even offered training, on top of the computer and free internet, and some responded, “How much do I have to pay to not have to go to those classes?”
+
+[Speaker: Mark Jamison]
+If you go back to my grandparents’ times, cars were rarer back then and not a lot of people drove. But once we built roads to everybody’s houses, people learned to enjoy that new infrastructure. Broadband is very similar: Once it is there, people will figure out how they can personally benefit from it.
+
+[Speaker: Mark Jamison]
+The biggest challenge for the BEAD program is making sure the money is spent well and that people are held accountable. We learned an important lesson in 2008–2009 during the Great Recession when we had a stimulus package that had almost $8 billion in it for broadband. After all the money was spent, we tried to figure out that funding’s impact, and we did not find that broadband expanded at all. What we found is that the people who got the money were typically politically connected. There’s equipment out there that is sitting around in warehouses because the businesses and individuals that actually know how to do broadband were sidestepped and neglected. Then people weren’t even held accountable if they didn’t work. Even some government agencies quit publishing the data from that funding because the results were flat-out embarrassing.

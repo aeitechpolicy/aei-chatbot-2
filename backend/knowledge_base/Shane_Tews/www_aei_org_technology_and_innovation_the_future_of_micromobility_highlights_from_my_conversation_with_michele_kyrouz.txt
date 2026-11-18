@@ -1,159 +1,56 @@
 PAGE_TITLE: 
-	The Future of Micromobility: Highlights from My Conversation with Michele Kyrouz | American Enterprise Institute - AEI
+	The Future of Micromobility: Highlights from My Conversation with Michele Kyrouz
 
-Will shared micromobility technology survive the COVID-19
-pandemic? What are the benefits of electric scooters and other micromobility
-projects, and what are the regulatory barriers to their success? Michele
-Kyrouz, lawyer and transportation technology expert, joined me on the latest
-episode of Explain to Shane to discuss what’s in store for micromobility moving
-forward.
-Below is an edited and abridged transcript of our talk. You can listen to the podcast
-here
-and read our full discussion
-here
-. You can also subscribe to the Explain to Shane podcast on
-iTunes
-or
-Stitcher
-, or download the podcast on
-Ricochet
-.
-Shane Tews: Michele came to my attention when I noticed
-that she posted an article that she had written about why shared micro-mobility
-will survive post-pandemic. And the thing that really caught my eye was you
-pointed out that it’s no riskier than using a grocery cart, and I loved it. I
-loved the visual you had there and it really put all of this in perspective for
-me. So let’s talk first of all about what’s going on with scooters and bikes,
-whereas we’re all kind of dealing with this post-pandemic and the fear that
-some city mayors and city councils have had about the continued use of scooters
-and bikes. Can you talk about the social risk and what we should or shouldn’t
-be concerned about?
-Michele Kyrouz:  Yeah.
-You know, when I think about transportation and how it’s going to come back as
-we all get back to work, I think about it in two buckets. One is the risk of
-germs in the air and the other is germs on surfaces. And when you get on a
-subway or on a bus, you kind of have both of those risks, right? You have the
-risk of breathing air in a confined space that somebody next to you might have
-the coronavirus, and then you also are touching surfaces around you. So what
-occurred to me about micro-mobility, as we look forward to getting back to work
-and getting back to transportation, is that it really only has a surface risk.
-You’re out there in the fresh air and all you’re doing is holding on to a
-handle, or with a bike sitting on a seat. And that’s really a risk that we’ve
-come to learn to manage, in part because even in the middle of this pandemic,
-we’re still going to the grocery store.
-And as I was going to the grocery store and getting out my
-disinfectant wipes and wiping everything down and wearing my gloves, I thought,
-it’s really not that different to ride a scooter. And so I really feel it’s a
-risk that we have learned to manage during the pandemic, and that we feel more
-comfortable managing going forward. Whereas if something potentially has
-contamination in the air, there’s no way to really know if you’ve avoided a
-risk or whether you’re being subject to a risk. You can’t really clean the air
-the way you can get that satisfaction of wiping down a handle.
-You mentioned in your piece there is the possibility of
-creating NanoSeptic handlebars and brake levers. I’m not familiar with those,
-can you give us a couple of minutes on that or a second on that?
-Companies are trying to figure out, how can we give riders
-more comfort that in fact the handlebars are not infected. And so one option, I
-think it was the company Wheels, they have sort of a seated scooter product in
-a shared environment, and they announced that they were going to implement
-these NanoSeptic handlebars with a material that’s actually designed to kill
-germs. Sort of a self-cleaning surface powered by light with these
-nano-crystals that can really kind of clean on their own. And I think that’s a
-really interesting idea, and I think we’ll see more companies go down this road
-of trying to come up with solutions to make people feel more comfortable.
-I think someone else pointed out on Twitter that actually
-just leaving scooters out in the sunlight, that the UV from sunlight actually
-also helps to deter germs. And then you know, there are other things scooter
-companies can do, whether it’s giving you the wipes right there on your device
-or selling you a set of clip-on handle grips that you just snap on each time you
-want a ride and then take them with you. I think there are a number of
-innovations that scooter companies can work with to give people some extra
-comfort going forward.
-Let’s talk about some of the regulatory challenges that
-come to mind on what needs to be done, how cities or counties can handle the
-revamping of their regulatory transportation programs to make these
-micro-mobility programs sustainable. What do we need to be doing?
-When you look at shared micro-mobility programs in cities,
-especially kick scooters, what we saw was an effort by cities to put in place
-some regulatory programs to control some of the initial clutter that we saw
-when scooters were first introduced. And what I think has happened over time is
-that cities have really put in a lot of regulations and a lot of fees in an
-effort to control use of kick scooters. And in fact, they’ve gone overboard. So
-you have to ask yourself, is micro-mobility good for cities? Do we want to have
-shared scooter systems? And if we do, and if cities believe they’re good for
-all the reasons we’ve been discussing and they can help with mode shift to get
-people out of cars, they can provide the first and last mile to transit. If
-scooters can be helpful to cities in that way, shouldn’t cities take a step
-back and say, how are we regulating these? How are we imposing operational
-costs on these scooter programs that are totally unnecessary? And what can we
-do now to make it more economical to operate these systems in cities?
-Fees are one way that cities can really revamp their
-programs and make it more economical to run shared scooter programs. And then
-some of the other things that I think would be really helpful for scooter
-companies involve reducing a lot of the regulations that really aren’t
-necessary. So we see restrictions on riders like speed restrictions, curfews
-where you can’t ride a scooter at night, or geo-fenced areas where the scooter
-dies if you ride it down by the beach, things of that nature. And when you look
-at how we regulate cars, I mean we post a speed limit, let’s say it’s 25 miles
-an hour in a school zone, but we don’t force car companies to put a regulator
-in the car that automatically reduces the car speed to 25 miles an hour when
-you enter that school zone. We trust riders to obey the rules of the road and
-if they don’t, they face ticketing and other enforcement. So it seems like
-there’s an overzealous approach to regulating how riders are using scooters
-that has imposed a lot of costs on the industry that are unnecessary.
-The National League of Cities did an ability-to-access
-test where they talked about the bias of future investments and initiatives
-against the populations that are most in need of better mobility, especially in
-urban areas. And so are we seeing more cities look at how many people per
-square foot you can utilize a micro mobility device like a scooter or bike
-versus a car as a given mode of transportation?
-Yeah, I think road geometry is a really interesting concept
-and it says, when we look at our streets historically we’ve asked questions
-like how many cars per minute, what is the throughput of cars or vehicles on
-our streets? And instead we should be looking at how many people we’re moving.
-So the way you can move a lot of people is to either have one big vehicle, like
-a bus with 50 people on it, and each person only takes up two square feet. Or
-to have a really small vehicle, like a scooter or bike, that rides in a bike
-lane. You can move a lot of people that way. So the modes that we see on city
-streets that have really efficient road geometry are big buses and small micro
-vehicles. I think when you put the multimodal transportation system together,
-you have to say, not everybody’s going to ride the bus, right?
-Not everybody’s going to take one particular mode. There are
-plenty of people who don’t want to ride a scooter. And so you have to give
-people lots of different options, but options that are better than one person
-driving a 4,000 pound SUV to drive one mile. Think about the amount of space
-that takes up on the street, and the amount of traffic that gets clogged by
-everybody driving in their own car. By offering these other modes, like
-micro-mobility and public transit, and putting them together in a multimodal
-system, cities can really encourage a better flow of traffic.
-Michelle, tell us about the book, because you obviously
-you’ve spent a lot of time working in this area. It’s called
-The New
-Mobility Handbook
-. What are we going to learn?
-Well what I was thinking and wanting to write about the
-future of transportation is how we can create a multimodal system in cities
-that uses all three modes. It says, “Let’s continue to use cars, but
-change how we use them to make them more effective and to only use them for the
-trips where they’re really necessary.” And then let’s make room on our
-streets for micromobility and really build the infrastructure in cities to
-support safe riding of bikes and scooters. And then let’s make public transit great,
-right? We have to make public transit faster and more reliable for it to be a
-great option for people in cities.
-So what I’m doing in
-The New Mobility Handbook
-is
-just laying out how we can harness these new technologies like electric bikes
-and scooters, rideshare, all the cell phone technologies that have come to be
-in the last couple of decades. How we can harness these new technologies in
-order to make transportation work better in our cities. And the way to do that
-is not to just go totally in the technology direction, but also to marry that
-with our old-school urbanist policies about the best ways that cities can
-manage traffic. So for decades, we’ve had city planners saying that we should
-do congestion merge pricing, we should price fairly the impact that cars are
-having on cities.
-And now what we’re seeing is people really try to bring
-together some of those classic urbanist policies and put them together with our
-new technologies we have available today and say, “Let’s put it all
-together and come up with a multimodal system that works better for
-everyone.”
+[Speaker: Introduction / editorial context]
+Will shared micromobility technology survive the COVID-19 pandemic? What are the benefits of electric scooters and other micromobility projects, and what are the regulatory barriers to their success? Michele Kyrouz, lawyer and transportation technology expert, joined me on the latest episode of Explain to Shane to discuss what’s in store for micromobility moving forward.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to the podcast here and read our full discussion here. You can also subscribe to the Explain to Shane podcast on iTunes or Stitcher, or download the podcast on Ricochet.
+
+[Speaker: Shane Tews]
+Shane Tews: Michele came to my attention when I noticed that she posted an article that she had written about why shared micro-mobility will survive post-pandemic. And the thing that really caught my eye was you pointed out that it’s no riskier than using a grocery cart, and I loved it. I loved the visual you had there and it really put all of this in perspective for me. So let’s talk first of all about what’s going on with scooters and bikes, whereas we’re all kind of dealing with this post-pandemic and the fear that some city mayors and city councils have had about the continued use of scooters and bikes. Can you talk about the social risk and what we should or shouldn’t be concerned about?
+
+[Speaker: Michele Kyrouz]
+Michele Kyrouz: Yeah. You know, when I think about transportation and how it’s going to come back as we all get back to work, I think about it in two buckets. One is the risk of germs in the air and the other is germs on surfaces. And when you get on a subway or on a bus, you kind of have both of those risks, right? You have the risk of breathing air in a confined space that somebody next to you might have the coronavirus, and then you also are touching surfaces around you. So what occurred to me about micro-mobility, as we look forward to getting back to work and getting back to transportation, is that it really only has a surface risk. You’re out there in the fresh air and all you’re doing is holding on to a handle, or with a bike sitting on a seat. And that’s really a risk that we’ve come to learn to manage, in part because even in the middle of this pandemic, we’re still going to the grocery store.
+
+[Speaker: Michele Kyrouz]
+And as I was going to the grocery store and getting out my disinfectant wipes and wiping everything down and wearing my gloves, I thought, it’s really not that different to ride a scooter. And so I really feel it’s a risk that we have learned to manage during the pandemic, and that we feel more comfortable managing going forward. Whereas if something potentially has contamination in the air, there’s no way to really know if you’ve avoided a risk or whether you’re being subject to a risk. You can’t really clean the air the way you can get that satisfaction of wiping down a handle.
+
+[Speaker: Shane Tews]
+You mentioned in your piece there is the possibility of creating NanoSeptic handlebars and brake levers. I’m not familiar with those, can you give us a couple of minutes on that or a second on that?
+
+[Speaker: Michele Kyrouz]
+Companies are trying to figure out, how can we give riders more comfort that in fact the handlebars are not infected. And so one option, I think it was the company Wheels, they have sort of a seated scooter product in a shared environment, and they announced that they were going to implement these NanoSeptic handlebars with a material that’s actually designed to kill germs. Sort of a self-cleaning surface powered by light with these nano-crystals that can really kind of clean on their own. And I think that’s a really interesting idea, and I think we’ll see more companies go down this road of trying to come up with solutions to make people feel more comfortable.
+
+[Speaker: Michele Kyrouz]
+I think someone else pointed out on Twitter that actually just leaving scooters out in the sunlight, that the UV from sunlight actually also helps to deter germs. And then you know, there are other things scooter companies can do, whether it’s giving you the wipes right there on your device or selling you a set of clip-on handle grips that you just snap on each time you want a ride and then take them with you. I think there are a number of innovations that scooter companies can work with to give people some extra comfort going forward.
+
+[Speaker: Shane Tews]
+Let’s talk about some of the regulatory challenges that come to mind on what needs to be done, how cities or counties can handle the revamping of their regulatory transportation programs to make these micro-mobility programs sustainable. What do we need to be doing?
+
+[Speaker: Michele Kyrouz]
+When you look at shared micro-mobility programs in cities, especially kick scooters, what we saw was an effort by cities to put in place some regulatory programs to control some of the initial clutter that we saw when scooters were first introduced. And what I think has happened over time is that cities have really put in a lot of regulations and a lot of fees in an effort to control use of kick scooters. And in fact, they’ve gone overboard. So you have to ask yourself, is micro-mobility good for cities? Do we want to have shared scooter systems? And if we do, and if cities believe they’re good for all the reasons we’ve been discussing and they can help with mode shift to get people out of cars, they can provide the first and last mile to transit. If scooters can be helpful to cities in that way, shouldn’t cities take a step back and say, how are we regulating these? How are we imposing operational costs on these scooter programs that are totally unnecessary? And what can we do now to make it more economical to operate these systems in cities?
+
+[Speaker: Michele Kyrouz]
+Fees are one way that cities can really revamp their programs and make it more economical to run shared scooter programs. And then some of the other things that I think would be really helpful for scooter companies involve reducing a lot of the regulations that really aren’t necessary. So we see restrictions on riders like speed restrictions, curfews where you can’t ride a scooter at night, or geo-fenced areas where the scooter dies if you ride it down by the beach, things of that nature. And when you look at how we regulate cars, I mean we post a speed limit, let’s say it’s 25 miles an hour in a school zone, but we don’t force car companies to put a regulator in the car that automatically reduces the car speed to 25 miles an hour when you enter that school zone. We trust riders to obey the rules of the road and if they don’t, they face ticketing and other enforcement. So it seems like there’s an overzealous approach to regulating how riders are using scooters that has imposed a lot of costs on the industry that are unnecessary.
+
+[Speaker: Shane Tews]
+The National League of Cities did an ability-to-access test where they talked about the bias of future investments and initiatives against the populations that are most in need of better mobility, especially in urban areas. And so are we seeing more cities look at how many people per square foot you can utilize a micro mobility device like a scooter or bike versus a car as a given mode of transportation?
+
+[Speaker: Michele Kyrouz]
+Yeah, I think road geometry is a really interesting concept and it says, when we look at our streets historically we’ve asked questions like how many cars per minute, what is the throughput of cars or vehicles on our streets? And instead we should be looking at how many people we’re moving. So the way you can move a lot of people is to either have one big vehicle, like a bus with 50 people on it, and each person only takes up two square feet. Or to have a really small vehicle, like a scooter or bike, that rides in a bike lane. You can move a lot of people that way. So the modes that we see on city streets that have really efficient road geometry are big buses and small micro vehicles. I think when you put the multimodal transportation system together, you have to say, not everybody’s going to ride the bus, right?
+
+[Speaker: Michele Kyrouz]
+Not everybody’s going to take one particular mode. There are plenty of people who don’t want to ride a scooter. And so you have to give people lots of different options, but options that are better than one person driving a 4,000 pound SUV to drive one mile. Think about the amount of space that takes up on the street, and the amount of traffic that gets clogged by everybody driving in their own car. By offering these other modes, like micro-mobility and public transit, and putting them together in a multimodal system, cities can really encourage a better flow of traffic.
+
+[Speaker: Shane Tews]
+Michelle, tell us about the book, because you obviously you’ve spent a lot of time working in this area. It’s called The New Mobility Handbook. What are we going to learn?
+
+[Speaker: Michele Kyrouz]
+Well what I was thinking and wanting to write about the future of transportation is how we can create a multimodal system in cities that uses all three modes. It says, “Let’s continue to use cars, but change how we use them to make them more effective and to only use them for the trips where they’re really necessary.” And then let’s make room on our streets for micromobility and really build the infrastructure in cities to support safe riding of bikes and scooters. And then let’s make public transit great, right? We have to make public transit faster and more reliable for it to be a great option for people in cities.
+
+[Speaker: Michele Kyrouz]
+So what I’m doing in The New Mobility Handbook is just laying out how we can harness these new technologies like electric bikes and scooters, rideshare, all the cell phone technologies that have come to be in the last couple of decades. How we can harness these new technologies in order to make transportation work better in our cities. And the way to do that is not to just go totally in the technology direction, but also to marry that with our old-school urbanist policies about the best ways that cities can manage traffic. So for decades, we’ve had city planners saying that we should do congestion merge pricing, we should price fairly the impact that cars are having on cities.
+
+[Speaker: Michele Kyrouz]
+And now what we’re seeing is people really try to bring together some of those classic urbanist policies and put them together with our new technologies we have available today and say, “Let’s put it all together and come up with a multimodal system that works better for everyone.”

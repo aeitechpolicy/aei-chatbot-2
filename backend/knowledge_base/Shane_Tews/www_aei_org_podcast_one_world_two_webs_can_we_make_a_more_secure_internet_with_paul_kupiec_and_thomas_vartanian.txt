@@ -1,18 +1,23 @@
 PAGE_TITLE: 
-	One World, Two Webs: Can We Make A More Secure Internet? (with Paul Kupiec and Thomas Vartanian) | American Enterprise Institute - AEI
+	One World, Two Webs: Can We Make A More Secure Internet? (with Paul Kupiec and Thomas Vartanian)
 
+[Speaker: Introduction / editorial context]
 Unauthorized network access was the most common cause of third-party cyber attacks in 2022. This includes ransomware and phishing attacks that created internal network compromises that were responsible for 40 percent of third-party cybersecurity breaches. Are we really heading toward a more secure internet? Protection from cybersecurity scams needs more security by design and an ability to give more tools to consumers for better privacy and security control.
-To get at the heart of some of these concerns, we interviewed AEI’s very own
-Paul Kupiec
-and
-Thomas Vartanian
-.
+
+[Speaker: Introduction / editorial context]
+To get at the heart of some of these concerns, we interviewed AEI’s very own Paul Kupiec and Thomas Vartanian.
+
+[Speaker: Introduction / editorial context]
 Kupiec is a colleague at the American Enterprise Institute who focuses on systemic risk and the management and regulation of banks and financial markets. Before joining AEI, Paul worked at the Federal Deposit Insurance Corporation, the International Monetary Fund, Freddie Mac, JP Morgan, and the Board of Governors for the Federal Reserve System.
-Vartanian is the author of
-The Unhackable Internet
-and has served as General Counsel of the Federal Home Loan Bank Board during the saving and loans crisis and as Special Assistant to the Chief Counsel of the Office of the Comptroller of the Currency. He is also the author of
-200 Years of American Financial Panic
-, which is rising on the best-seller list. Tom currently leads the Financial Technology and Cybersecurity Center.
-In this episode,
-Shane
-walks us through just one of the many approaches to creating a more secure internet for all. We hope you enjoy the conversation.
+
+[Speaker: Introduction / editorial context]
+Vartanian is the author of The Unhackable Internet and has served as General Counsel of the Federal Home Loan Bank Board during the saving and loans crisis and as Special Assistant to the Chief Counsel of the Office of the Comptroller of the Currency. He is also the author of 200 Years of American Financial Panic, which is rising on the best-seller list. Tom currently leads the Financial Technology and Cybersecurity Center.
+
+[Speaker: Introduction / editorial context]
+In this episode, Shane walks us through just one of the many approaches to creating a more secure internet for all. We hope you enjoy the conversation.
+
+[Speaker: Introduction / editorial context]
+Nonresident Senior Fellow
+
+[Speaker: Introduction / editorial context]
+Arthur F. Burns Senior Fellow in Financial Policy

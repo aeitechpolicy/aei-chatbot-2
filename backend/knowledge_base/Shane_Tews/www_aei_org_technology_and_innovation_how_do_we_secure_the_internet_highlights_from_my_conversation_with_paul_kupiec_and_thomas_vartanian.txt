@@ -1,45 +1,80 @@
 PAGE_TITLE: 
-	How Do We Secure the Internet? Highlights from My Conversation with Paul Kupiec and Thomas Vartanian | American Enterprise Institute - AEI
+	How Do We Secure the Internet? Highlights from My Conversation with Paul Kupiec and Thomas Vartanian
 
+[Speaker: Introduction / editorial context]
 The history of the internet that we know and love today is one of openness, not restraint. That comes with a multitude of benefits, as well as its fair share of drawbacks. One such drawback is the relative insecurity of our financial institutions that have to be exposed to the open internet we enjoy, fending off bad actors around the clock to make sure our economy continues to function.
-I sat down with
-Thomas Vartanian
-, author of
-The Unhackable Internet,
-and
-Paul Kupiec
-, my colleague and financial institution expert at AEI, to dive into some of the drawbacks of our current system and discuss some of their ideas on how we could improve it.
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: Thomas, thanks so much for writing
-The Unhackable Internet
-and coming on the podcast to talk about it. One element of the book I want to explore is the extent to which there are weaknesses in our online networks and critical infrastructure—and dysfunction in the bureaucracies that oversee them. What’s the story of our digital security?
+
+[Speaker: Introduction / editorial context]
+I sat down with Thomas Vartanian, author of The Unhackable Internet, and Paul Kupiec, my colleague and financial institution expert at AEI, to dive into some of the drawbacks of our current system and discuss some of their ideas on how we could improve it.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: Thomas, thanks so much for writing The Unhackable Internet and coming on the podcast to talk about it. One element of the book I want to explore is the extent to which there are weaknesses in our online networks and critical infrastructure—and dysfunction in the bureaucracies that oversee them. What’s the story of our digital security?
+
+[Speaker: Thomas Vartanian]
 Thomas Vartanian: When I did the research with this book, I wanted to go back to that sort of genesis point and decide for myself again what the government has and has not done. And to make a long story short, I spent five years going through government reports, presidential executive orders, GAO reports, congressional reports, and reports by regulators. And the most interesting one, I thought, was the annual report from the FSOC, the Financial Stability Oversight Council, which was such an obvious cut-and-paste job year after year. It was shocking to me that this area of cybersecurity was becoming such an acute and serious area. Cutting and pasting these reports over and over again. And at the end of these annual reports, they all ended with, well, “somebody better do something.” It was the bottom line. Those were enormously frustrating.
+
+[Speaker: Thomas Vartanian]
 I went back and looked at all of the presidential executive orders from President Clinton to President Biden. The interesting thing is that President Clinton and his people nailed the problem. They identified the problem, they identified what we had to do, and they said, here’s what we have to do. And since that executive order in 1996, it has been repeated 20 times in 20 different executive orders by five different presidents.
+
+[Speaker: Thomas Vartanian]
 So the answer to your question is, what have we done? We have done relatively nothing, except ring the warning bell about what we should be doing. Now, on the other hand, the question is what can the government do? Because we all know that 95 percent of the internet is in the hands of private companies, users, and individuals. And so there’s this funny juxtaposition between looking to the government to make something safe that it really can’t make any safe by itself.
+
+[Speaker: Shane Tews]
 Paul, thanks for joining us and for hosting the event that brought this book to my attention. What did you learn reading Tom’s book, and what’s the thing that scared you the most?
+
+[Speaker: Paul Kupiec]
 Paul Kupiec: I think just how from the get-go, the whole internet is just not secure. I mean, it was never designed to be secure. People launch all kinds of apps on it and programs on it. There’s no quality control. There’s no necessary safety feature. There can be back doors. In modern times people are basically forced onto the internet to do their day-to-day lives. There isn’t a choice anymore. So we’re put in this position where we’re forced to use this electronic means of doing business and communicating that has all these flaws in it and all these traps, and people seem just unaware or they just don’t seem to care. And I think the whole point about “Will the government save us?” is another one. Yeah, good luck with that.
+
+[Speaker: Paul Kupiec]
 The next major financial crisis could be because of problems with the internet—a well-placed hack, some cyberattack—that brings the system down, and society is built now on the internet. If you take that down, you got real problems.
+
+[Speaker: Shane Tews]
 Tom, what would you say should be our next step to kind of get out of this security hole we’ve dug for ourselves with the public internet?
+
+[Speaker: Speaker not identified]
 Tom: I think that’s the $64,000 question, Shane. How do we get out of this mess? Because we don’t have any political leaders to speak of that are going to lead us out of this mess. We don’t have business leaders banging the drum, saying, “We have to fix the internet, because corporations are making more money from an insecure network than they’ll have to pay to make it secure.” Users would be horrified to learn that their internet experience would slow down by two nanoseconds, because it was more secure. There’s no effort at this point to try to fix it. And that’s what’s horrified me in terms of my experience over the last 30 years and the research I’ve done.
+
+[Speaker: Speaker not identified]
 Financial services companies are head and shoulders infrastructures. And that’s the problem, right? You’ve got transportation, you’ve got FAA, you’ve got water, you’ve got the power grids that are not as well coordinated, not as well protected as a financial services system. But that doesn’t mean the financial services system is by any means impervious to being taken down. It could happen at any particular time. And what concerns me at this moment is that we’ve reached the crossroads where technology is getting cheaper and cheaper and able to be gotten into the hands of more and more people. When it’s in the hands of nation-states, there’s sort of a mutually assured destruction agreement between all the nation-states. China is not going to bring down the United States or vice versa, because you’re afraid that whatever you mete out, you’ll get back a hundredfold.
+
+[Speaker: Speaker not identified]
 But what happens when this technology ends up in the hands of terrorists and criminal cartels and fanatics? I mean, that’s the scary part of what’s going on here. The only way we’re going to get traction is for the public to realize they have more to lose from the insecurity than they have to gain from the way the internet is now. And perhaps the only way that happens is a major event, a financial Armageddon. And at that point, you have to wonder whether or not it’s actually too late to fix it.
+
+[Speaker: Speaker not identified]
 Everything online and everything connected is vulnerable, and everything’s online and connected.
+
+[Speaker: Shane Tews]
 So how are we doing in terms of sharing information across the industry, and to and from regulators?
+
+[Speaker: Speaker not identified]
 Here’s the problem I see in sharing information for security. Fundamentally, sharing is a problem because you’re asking competitors to share information upon which they will compete. If we continue to have attacks on financial institutions, they will be competing. They will be marketing themselves as the most secure institutions in the marketplace. So that gives them little incentive to share information with other entities that they’re also doing business against.
+
+[Speaker: Speaker not identified]
 Secondly, the banking business is the most highly regulated in this country, perhaps after nuclear power. Everything they do, every move they make, is followed, tracked, and evaluated by regulators. It’s not an environment where people are anxious to share information with the government. Why? Because there are examples of them sharing information and having it used against them.
+
+[Speaker: Speaker not identified]
 Lastly, I think the question is what’s the government sharing and how’s the government playing the role here? And I suspect from what I know that the government’s in listening mode. It’s accepting a lot of information. It’s not giving out a lot of information. And that’s again a huge problem.
-Consider the Sony hack that was done by North Korea allegedly over that silly movie,
-The Interview
-. Sony was helpless, right? They weren’t allowed under federal law to hack back. So they call the FBI, they call the Cyber Command, they call whoever they call, you know, if you know who to call, you call Ghostbusters, I guess, and you wait and you say, “Well, what are you gonna do?” And the government says to you, “It’s in good hands, we’ll take care of it.”
-It’s a lot like the last scene in
-The Raiders of the Lost Ark
-. I don’t know if you remember that scene, but Indiana asked the government officials where the Ark has been taken, and they said “It’s with top people.” And he says “What top people?” and they say “Top people.”
+
+[Speaker: Speaker not identified]
+Consider the Sony hack that was done by North Korea allegedly over that silly movie, The Interview. Sony was helpless, right? They weren’t allowed under federal law to hack back. So they call the FBI, they call the Cyber Command, they call whoever they call, you know, if you know who to call, you call Ghostbusters, I guess, and you wait and you say, “Well, what are you gonna do?” And the government says to you, “It’s in good hands, we’ll take care of it.”
+
+[Speaker: Speaker not identified]
+It’s a lot like the last scene in The Raiders of the Lost Ark. I don’t know if you remember that scene, but Indiana asked the government officials where the Ark has been taken, and they said “It’s with top people.” And he says “What top people?” and they say “Top people.”
+
+[Speaker: Speaker not identified]
 Paul: In financial services in general now, we kind of have an air gap between people transacting with banks and institutions, and then the institutions transacting among themselves and with the Fed. You can’t directly interface and get a straight-through transaction to a reserve account. Industry, in the crypto industry especially, argues that that’s bothersome because they can’t program up all their payments. They have to give a file to a bank and then the file has to process it. There’s that air gap.
+
+[Speaker: Speaker not identified]
 Now, in some sense that’s one of the safety measures you recommend right there, it keeps the financial institutions cordoned off. But what happens if the Fed actually goes to a retail Central Bank Digital Currency (CBDC) to move money in the system? You know, the Treasury’s accounts are in the Fed system, and all the banks have their reserve accounts in the system. After reading your book, that sounds incredibly unwise from a cybersecurity standpoint.
+
+[Speaker: Shane Tews]
 How are we doing on authentication? Are we getting better?
+
+[Speaker: Speaker not identified]
 Tom: Let’s start with the basics. Single-factor authentication is useless. Plus, we are never authenticating a person. We’re always authenticating a machine or an IP address. There’re very few processes around that are focusing on identifying a person who’s using that machine. With multi-factor authentication, you get a text, then you answer the text. That helps in moderate ways, but an expert in this area told me that three layers of multi-factor authentication get you to only about 60 percent security.
+
+[Speaker: Speaker not identified]
 So what have we done here? In the 25 years that we’ve been fumbling around with all this, we have built the perfect playground for criminals, ne’er-do-wells, and all kinds of crazy people. That’s what we’ve done. To me, unless we stop right now and say, wait a minute, we’ve got to change direction, then we will live through some future financial digital horror.

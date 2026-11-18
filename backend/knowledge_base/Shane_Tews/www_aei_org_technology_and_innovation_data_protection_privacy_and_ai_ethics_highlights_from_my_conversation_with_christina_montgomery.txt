@@ -1,163 +1,86 @@
 PAGE_TITLE: 
-	Data Protection, Privacy, and AI Ethics: Highlights from My Conversation with Christina Montgomery | American Enterprise Institute - AEI
+	Data Protection, Privacy, and AI Ethics: Highlights from My Conversation with Christina Montgomery
 
-Enabling data to flow between enterprise divisions and
-industry partners enhances our economy. But when the information being shared
-is about individuals, protecting user privacy is key. Data transfers are thus a
-major topic in tech policy, especially as newer products employ artificial
-intelligence (AI) to collect and transfer user data. If the US were to pass a
-federal data protection or privacy law, what AI-related measures would need to
-be included? How can we regulate AI in a precise manner that protects
-innovation?
-I recently hosted IBM’s Chief Privacy Officer and AI Ethics Board Co-Chair
-Christina Montgomery
-on “Explain to Shane” to discuss how IBM is crafting its newest technologies — including AI — to handle consumer data in an ethical manner, and why the company supports “precision regulation” of AI. We also discussed where these priorities rank in IBM’s recent
-letter to the Biden administration
-.
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Shane Tews: IBM has
-made commitments related to ethics, privacy, and security around not only your
-AI products, but all of your endeavors across the world. Can you walk us
-through what these commitments mean?
-Christina Montgomery: This is a critical topic for us because
-we’ve been earning the trust of society and our clients for more than a
-century. We really embrace our obligation to be trusted stewards of technology.
-We’ve responsibly managed users’ most valuable data and worked to earn their
-trust by ushering in powerful new technologies with clear and constructive
-purposes. That’s sort of our mantra here: While technology — including AI —
-makes our lives easier and more convenient, there are legitimate concerns about
-privacy, safety, and fairness to address.
-The purpose of AI is to augment, not replace, human
-intelligence. We’ve been very clear on that point for a number of years now:
-that data and insights belong to their creator and that new technologies
-including AI have to be deployed in a transparent and explainable way.
-These principles are easy to understand, but they’re not
-always as easy to put into practice. You have to put mechanisms in place to
-live up to them. So we’ve been advancing things like AI fact sheets, which are
-like ingredients lists or nutrition labels for AI, so to speak. They provide
-critical information for AI users about the technology’s purpose and
-performance, along with the data sets that went into training the AI and its characteristics
-around things like bias and explainability.
-How do potential ethical problems get raised to a high enough level
-within the company for you all to address? Once they’re in front of you, how do
-you solve them?
-A good example of this would be
-probably in the context of COVID-19. At the beginning of the pandemic, we had a
-lot of well-meaning folks within IBM, and we wanted to work with clients and
-governments to ensure we were applying technology and expertise in ways that
-could make a meaningful difference. So we started looking at: How can we do
-that while still focusing on the promise of responsible technology? Because
-without trust, society may not embrace technologies that could help address the
-pandemic.
-We had folks throughout the
-business — not just at the top — preemptively looking at and exploring
-solutions like contact tracing and exposure notification technologies, fever
-detection tools, solutions that can manage and monitor social distancing, and
-health passports. And so we took our principles at that time a step further and
-adopted firm guardrails — which we published externally — that dictate how we
-would and would not apply technology in response to the public health emergency.
-Through the ethics board, we
-reviewed these opportunities and came up with limitations that pledged
-transparency, data collection limitations in any solutions we deployed, and strong
-protections for privacy and security. We also committed to ensuring that the
-use of our technology is lawful, fair, inclusive, and non-discriminatory. To
-this end, we deployed terms and conditions to be used in any business
-opportunity involving COVID-19 technology to ensure that we weren’t just
-talking about this guidance, but also incorporating it into concrete practices.
-In a way, I think the pandemic reinforced
-the idea that technology solutions can be very helpful, but they have to be
-deployed with the highest ethical standards to promote trust without infringing
-on privacy and fundamental rights.
-Moving on to data protection (commonly confused with privacy — not
-quite the same thing), laws like the California Consumer Privacy Act (CCPA) and
-Europe’s General Data Protection Regulation (GDPR)  have forced some major changes in how data is
-processed and retained. Have these laws influenced your product development and
-how you’re working with your clients?
-Absolutely. For any company
-that’s operating on a global scale, they would absolutely have to. To back up,
-we’ve been at the forefront of privacy and responsible data stewardship at IBM
-for decades. Just last week, we celebrated 20 years of having somebody in my
-role as chief privacy officer at IBM. We were the first company in our industry
-to appoint one, and our data responsibility principles predate the trust and
-transparency principles I mentioned earlier.
-But legislation like the GDPR and
-CCPA has had companies like us scale up our already-strong privacy focus to a
-global level. We’ve moved beyond compliance to deeply embedding privacy within
-our business strategy to essentially be proactive and strategic around privacy,
-and to look at the broader lens of: It’s not just about privacy, it’s really
-about data. And so we take an integrated approach to data that I think
-positions us well for a world in which data is increasingly a source of both
-value and risk. And technology is advancing so quickly that sometimes
-regulation can’t necessarily keep up — or at least there’s a perception of
-that.
-What we have done at IBM
-differentiates us across both dimensions of privacy and tech ethics. My team’s
-work has gone beyond just our legal functions; we were well-integrated into the
-business, hand-in-hand with our chief data office, our security business unit,
-our legal team, and our policy team, because we recognize this issue is bigger.
-It’s really about data and the risks associated with it, so we want to
-understand, across the company, what data we have, where it is, and how to
-unlock value for it, all while ensuring compliance with regulations and protecting
-our data from adversarial attack, reputational attack, and the like.
-Do you think this could be the year in which we finally see a federal
-privacy law?
-I don’t know, but I do know there’s
-a lot of discussion and seemingly bipartisan agreement that a law is needed.
-The question becomes whether that happens in the next year, but we’ve been
-clear for a long time now: We strongly support national legislation to protect
-consumer privacy. We’ve actively been encouraging Congress to make this a
-priority and we hope that it happens this year. We need a framework that
-provides strong data privacy protections for all and builds consumer trust and
-confidence.
-We think this is essential to a
-modern digital economy. States creating their own rules in the absence of a
-federal law creates a regulatory patchwork that is very difficult to navigate.
-It’s confusing for businesses and, importantly, for consumers who have to
-comply with rules that could change depending on the state they live in or the
-state from which they access the internet. So we are really strong advocates
-for a national law that will provide consistent protections for consumers, hold
-companies accountable for protecting consumer data, and establish a stable
-policy environment that supports innovation as well.
-We think transparency should be
-the focus of this. Consumers deserve to know what data is being collected, how
-it’s going to be used and shared, how long it’s going to be stored, and the
-like. They deserve the right to exert control over their data — meaning the
-right to access it, delete it, and opt out of having it collected in the first
-place.
-It’s also becoming clear that a
-national privacy law has to contemplate the need to sunset some data collection
-operations, such as those put in place for an emergency like COVID-19, which might
-not play an obvious role post-pandemic. I’m hopeful and encouraged, and will
-continue to advocate that something does get enacted this year.
-IBM’s recent letter to the Biden administration advocates for “precision
-regulation” of emerging technologies like AI. What is precision regulation, the
-way you define it?
-AI is ubiquitous today. It
-touches all of us, and — absent regulation — there is a risk that AI could be
-misused. Just look at how some facial recognition technologies have been applied
-to mass surveillance, right? But on the other hand, a blanket ban on a
-technology could cut society off from the many benefits that AI has to offer —
-for example, AI-driven drug discovery technologies that helped vaccine
-producers.
-So we need to strike the right
-balance: one that prioritizes transparency and trustworthiness, pushes
-innovation forward, and is cognizant of the ways that technology can be misused.
-That’s why we’re advocating for a precision approach that creates ethical
-guardrails for the use of new technologies without hindering the pace of
-innovation.
-What policy developments should we should be watching for from you and
-your IBM teammates?
-One thing we’re really pushing
-for and hoping to see in 2021 is a strengthening of international cooperation
-on AI regulatory policy, particularly on initiatives like the National
-Institute of Standards and Technology’s (NIST) AI Risk Management Framework. This
-was given consideration and guidance in the National Defense Authorization Act,
-and it’s a great mechanism for how government, industry, and civil society can
-advance a constructive and consensus-based conversation on AI.
-AI has recently become a major focus for countries around the globe, so it’s important to continue building on existing international collaborations like the Organisation for Economic Co-operation and Development’s AI Policy Observatory, the Global Partnership on AI, and then new initiatives like NIST’s.  Across the world, we have such a patchwork in terms of privacy. It would be great to see more uniformity around frameworks to address AI, so that’s an area we’ll be active in this year.
+[Speaker: Introduction / editorial context]
+Enabling data to flow between enterprise divisions and industry partners enhances our economy. But when the information being shared is about individuals, protecting user privacy is key. Data transfers are thus a major topic in tech policy, especially as newer products employ artificial intelligence (AI) to collect and transfer user data. If the US were to pass a federal data protection or privacy law, what AI-related measures would need to be included? How can we regulate AI in a precise manner that protects innovation?
+
+[Speaker: Introduction / editorial context]
+I recently hosted IBM’s Chief Privacy Officer and AI Ethics Board Co-Chair Christina Montgomery on “Explain to Shane” to discuss how IBM is crafting its newest technologies — including AI — to handle consumer data in an ethical manner, and why the company supports “precision regulation” of AI. We also discussed where these priorities rank in IBM’s recent letter to the Biden administration.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
+Shane Tews: IBM has made commitments related to ethics, privacy, and security around not only your AI products, but all of your endeavors across the world. Can you walk us through what these commitments mean?
+
+[Speaker: Christina Montgomery]
+Christina Montgomery: This is a critical topic for us because we’ve been earning the trust of society and our clients for more than a century. We really embrace our obligation to be trusted stewards of technology. We’ve responsibly managed users’ most valuable data and worked to earn their trust by ushering in powerful new technologies with clear and constructive purposes. That’s sort of our mantra here: While technology — including AI — makes our lives easier and more convenient, there are legitimate concerns about privacy, safety, and fairness to address.
+
+[Speaker: Christina Montgomery]
+The purpose of AI is to augment, not replace, human intelligence. We’ve been very clear on that point for a number of years now: that data and insights belong to their creator and that new technologies including AI have to be deployed in a transparent and explainable way.
+
+[Speaker: Christina Montgomery]
+These principles are easy to understand, but they’re not always as easy to put into practice. You have to put mechanisms in place to live up to them. So we’ve been advancing things like AI fact sheets, which are like ingredients lists or nutrition labels for AI, so to speak. They provide critical information for AI users about the technology’s purpose and performance, along with the data sets that went into training the AI and its characteristics around things like bias and explainability.
+
+[Speaker: Shane Tews]
+How do potential ethical problems get raised to a high enough level within the company for you all to address? Once they’re in front of you, how do you solve them?
+
+[Speaker: Christina Montgomery]
+A good example of this would be probably in the context of COVID-19. At the beginning of the pandemic, we had a lot of well-meaning folks within IBM, and we wanted to work with clients and governments to ensure we were applying technology and expertise in ways that could make a meaningful difference. So we started looking at: How can we do that while still focusing on the promise of responsible technology? Because without trust, society may not embrace technologies that could help address the pandemic.
+
+[Speaker: Christina Montgomery]
+We had folks throughout the business — not just at the top — preemptively looking at and exploring solutions like contact tracing and exposure notification technologies, fever detection tools, solutions that can manage and monitor social distancing, and health passports. And so we took our principles at that time a step further and adopted firm guardrails — which we published externally — that dictate how we would and would not apply technology in response to the public health emergency.
+
+[Speaker: Christina Montgomery]
+Through the ethics board, we reviewed these opportunities and came up with limitations that pledged transparency, data collection limitations in any solutions we deployed, and strong protections for privacy and security. We also committed to ensuring that the use of our technology is lawful, fair, inclusive, and non-discriminatory. To this end, we deployed terms and conditions to be used in any business opportunity involving COVID-19 technology to ensure that we weren’t just talking about this guidance, but also incorporating it into concrete practices.
+
+[Speaker: Christina Montgomery]
+In a way, I think the pandemic reinforced the idea that technology solutions can be very helpful, but they have to be deployed with the highest ethical standards to promote trust without infringing on privacy and fundamental rights.
+
+[Speaker: Shane Tews]
+Moving on to data protection (commonly confused with privacy — not quite the same thing), laws like the California Consumer Privacy Act (CCPA) and Europe’s General Data Protection Regulation (GDPR) have forced some major changes in how data is processed and retained. Have these laws influenced your product development and how you’re working with your clients?
+
+[Speaker: Christina Montgomery]
+Absolutely. For any company that’s operating on a global scale, they would absolutely have to. To back up, we’ve been at the forefront of privacy and responsible data stewardship at IBM for decades. Just last week, we celebrated 20 years of having somebody in my role as chief privacy officer at IBM. We were the first company in our industry to appoint one, and our data responsibility principles predate the trust and transparency principles I mentioned earlier.
+
+[Speaker: Christina Montgomery]
+But legislation like the GDPR and CCPA has had companies like us scale up our already-strong privacy focus to a global level. We’ve moved beyond compliance to deeply embedding privacy within our business strategy to essentially be proactive and strategic around privacy, and to look at the broader lens of: It’s not just about privacy, it’s really about data. And so we take an integrated approach to data that I think positions us well for a world in which data is increasingly a source of both value and risk. And technology is advancing so quickly that sometimes regulation can’t necessarily keep up — or at least there’s a perception of that.
+
+[Speaker: Christina Montgomery]
+What we have done at IBM differentiates us across both dimensions of privacy and tech ethics. My team’s work has gone beyond just our legal functions; we were well-integrated into the business, hand-in-hand with our chief data office, our security business unit, our legal team, and our policy team, because we recognize this issue is bigger. It’s really about data and the risks associated with it, so we want to understand, across the company, what data we have, where it is, and how to unlock value for it, all while ensuring compliance with regulations and protecting our data from adversarial attack, reputational attack, and the like.
+
+[Speaker: Shane Tews]
+Do you think this could be the year in which we finally see a federal privacy law?
+
+[Speaker: Christina Montgomery]
+I don’t know, but I do know there’s a lot of discussion and seemingly bipartisan agreement that a law is needed. The question becomes whether that happens in the next year, but we’ve been clear for a long time now: We strongly support national legislation to protect consumer privacy. We’ve actively been encouraging Congress to make this a priority and we hope that it happens this year. We need a framework that provides strong data privacy protections for all and builds consumer trust and confidence.
+
+[Speaker: Christina Montgomery]
+We think this is essential to a modern digital economy. States creating their own rules in the absence of a federal law creates a regulatory patchwork that is very difficult to navigate. It’s confusing for businesses and, importantly, for consumers who have to comply with rules that could change depending on the state they live in or the state from which they access the internet. So we are really strong advocates for a national law that will provide consistent protections for consumers, hold companies accountable for protecting consumer data, and establish a stable policy environment that supports innovation as well.
+
+[Speaker: Christina Montgomery]
+We think transparency should be the focus of this. Consumers deserve to know what data is being collected, how it’s going to be used and shared, how long it’s going to be stored, and the like. They deserve the right to exert control over their data — meaning the right to access it, delete it, and opt out of having it collected in the first place.
+
+[Speaker: Christina Montgomery]
+It’s also becoming clear that a national privacy law has to contemplate the need to sunset some data collection operations, such as those put in place for an emergency like COVID-19, which might not play an obvious role post-pandemic. I’m hopeful and encouraged, and will continue to advocate that something does get enacted this year.
+
+[Speaker: Shane Tews]
+IBM’s recent letter to the Biden administration advocates for “precision regulation” of emerging technologies like AI. What is precision regulation, the way you define it?
+
+[Speaker: Christina Montgomery]
+AI is ubiquitous today. It touches all of us, and — absent regulation — there is a risk that AI could be misused. Just look at how some facial recognition technologies have been applied to mass surveillance, right? But on the other hand, a blanket ban on a technology could cut society off from the many benefits that AI has to offer — for example, AI-driven drug discovery technologies that helped vaccine producers.
+
+[Speaker: Christina Montgomery]
+So we need to strike the right balance: one that prioritizes transparency and trustworthiness, pushes innovation forward, and is cognizant of the ways that technology can be misused. That’s why we’re advocating for a precision approach that creates ethical guardrails for the use of new technologies without hindering the pace of innovation.
+
+[Speaker: Shane Tews]
+What policy developments should we should be watching for from you and your IBM teammates?
+
+[Speaker: Christina Montgomery]
+One thing we’re really pushing for and hoping to see in 2021 is a strengthening of international cooperation on AI regulatory policy, particularly on initiatives like the National Institute of Standards and Technology’s (NIST) AI Risk Management Framework. This was given consideration and guidance in the National Defense Authorization Act, and it’s a great mechanism for how government, industry, and civil society can advance a constructive and consensus-based conversation on AI.
+
+[Speaker: Christina Montgomery]
+AI has recently become a major focus for countries around the globe, so it’s important to continue building on existing international collaborations like the Organisation for Economic Co-operation and Development’s AI Policy Observatory, the Global Partnership on AI, and then new initiatives like NIST’s. Across the world, we have such a patchwork in terms of privacy. It would be great to see more uniformity around frameworks to address AI, so that’s an area we’ll be active in this year.
+
+[Speaker: Christina Montgomery]
+[related-items item=”” title=”Learn more:”]

@@ -1,140 +1,65 @@
 PAGE_TITLE: 
-	The Need for Federal IT Modernization: Highlights from My Conversation with Jason Oxman | American Enterprise Institute - AEI
+	The Need for Federal IT Modernization: Highlights from My Conversation with Jason Oxman
 
-Federal information technology (IT) is widely known to be outdated, but proposed legislation in Congress would fast-track federal IT modernization by equipping departments and agencies with better cybersecurity and data collection mechanisms. Many agencies realize that upgraded legacy systems are crucial during COVID-19; the government thus needs to allow for emerging technologies that would enable more efficiency from both their IT systems and their agencies’ services.
-Jason Oxman
-, president and CEO of the Information Technology Industry Council (ITI), joined the latest episode of “Explain to Shane” to discuss how modernization of critical infrastructure (or lack thereof) will dictate the government’s ability to serve its citizens efficiently.
-Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-.
+[Speaker: Introduction / editorial context]
+Federal information technology (IT) is widely known to be outdated, but proposed legislation in Congress would fast-track federal IT modernization by equipping departments and agencies with better cybersecurity and data collection mechanisms. Many agencies realize that upgraded legacy systems are crucial during COVID-19; the government thus needs to allow for emerging technologies that would enable more efficiency from both their IT systems and their agencies’ services. Jason Oxman, president and CEO of the Information Technology Industry Council (ITI), joined the latest episode of “Explain to Shane” to discuss how modernization of critical infrastructure (or lack thereof) will dictate the government’s ability to serve its citizens efficiently.
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here.
+
+[Speaker: Shane Tews]
 Shane Tews: Jason, you all released a letter in July about IT, government spending, and public-private partnership work that caught my attention. And then I read congressional testimony from one of your great staff that really highlighted the importance of government understanding commercial best practices, and how current government standards aren’t up to those.
-What is going on in
-the federal IT modernization space, especially during COVID when so many people
-are working remotely?
-Jason Oxman: Well, it’s an important issue for the tech
-sector and for the government, and the reason we’re focusing on it at ITI is
-because our member companies are big customers of and service providers to the
-government here in the US at the federal, state, and local levels, and, indeed,
-around the world. The services and products that the technology industry provides
-are crucially important to the ability of the US government to serve its
-citizens, so we are very focused on IT modernization questions and investment
-in government infrastructure.
-Indeed, you alluded to testimony that one of the great ITI
-team members gave before Congress on the subject of IT modernization. Gordon
-Bitko, who leads our public sector work at ITI, actually joined us fairly
-recently. He’s the former CIO of the FBI. So, he’s well familiar with the needs
-of government to invest in infrastructure. Government has a very basic function
-in the US, and that is to keep its citizens safe, and to protect and ensure the
-economic growth and development of our economy, and IT and tech infrastructure are
-vitally important to both of those roles. So, that’s why we’re really focused
-on this issue.
-Gordon’s testimony —
-for listeners of this podcast — is probably pretty familiar testimony. It is
-really worth reading. He has some great points; he talks about the 2013 Boston
-Marathon bombing [investigation] that he was part of, and that they collected
-approximately 50 terabytes of data. (At that time, it was huge.) Several years
-later, the 2017 Las Vegas shooting investigation had one petabyte of data, and
-yet it is still so difficult for the FBI to stay up to speed with their
-government equipment compared to what others are doing.
-He also makes an
-interesting point about legacy equipment versus cloud infrastructure. We’re
-definitely more interest in going to the cloud, but I really thought the items
-that he brought up drove home the importance of bringing the private sector to public
-sector IT, and figuring out what is good for the government to own, and what is
-good for private companies to bring to the table. And I know, especially in
-what we call the three letter agencies, they’re getting a little more
-comfortable with cooperating in that space. So, how are you seeing the
-partnerships grow?
-Particularly in the time of the pandemic, these partnerships
-are incredibly important to the functioning of government. And, as you noted,
-Gordon Bitko in his testimony talked about the importance of investment in
-infrastructure upgrades, and one of those areas where it’s most important is
-just making sure that government employees can work remotely — something that
-is not at all certain, even today, several months into the pandemic.
-The importance of government investment in infrastructure
-is, in certain circumstances, really about the technology that government uses.
-You mentioned the shift to cloud technology, which, for some agencies, is
-incredibly important, although other agencies, for reasons of security or
-infrastructure, need to maintain the service presence at certain locations.
-But, that cloud infrastructure available for primary or backup use enables
-employees of the federal government to work remotely, and that’s been
-incredibly important in recent months.
-Last year, the GAO put out a report related to modernization
-plans that called on all federal agencies to develop modernization plans for
-critical legacy systems. These legacy systems, in some cases — and we’ve all
-heard the stories — involve government agencies using old programming languages
-like COBOL that are obsolete, or they’re using unsupported hardware, or they
-have security vulnerabilities because of outdated infrastructure. So, our
-argument to government is that these are critical needs. If the IRS can’t
-process taxes, some people might be happy about that, but the government needs
-that revenue in order to keep operating. We need to make sure that agencies are
-looking at their infrastructure, that they have a plan to modernize that
-infrastructure, and that they make the shift to infrastructure that will allow
-them to fulfill their critical missions.
-When we get to the
-policy arena, we’re seeing a lot of interest in privacy. We still don’t have a
-federal privacy regulation here in the United States, but, beyond that, we’ve
-gotten in a bit of trouble with Europe lately. The EU-US Privacy Shield was
-struck down by the courts in Europe, so what happens now? How does that affect
-our US suppliers and the information that flows across them?
-You highlighted the most important part of this privacy
-discussion, which is: The United States inexplicably does not have a federal
-privacy law, and we need one. ITI has, as one of its policy priorities, the
-adoption of a national privacy regime. Plenty of states have their own
-individual privacy laws, but, of course, technology and innovation doesn’t
-necessarily reflect state borders. It’s very hard for a company deploying technology,
-or, frankly, for a small business using technology, to adapt to 50 different
-privacy regimes on various state levels. We need a national privacy law in the
-US.
-So, having said that, let’s talk about what happened in
-Europe. Europe has a continent-wide privacy law. It’s called GDPR, and it’s
-been enforced for a number of years. It replaced 28 separate country regimes
-with one national privacy law, which was a great measure and something that we
-hope will happen here in the US.
-The decision that you referred to is called the Schrems II
-decision. “Schrems” is actually a person; he’s an Austrian who, as a student,
-sued because he thought his privacy was being violated under rules that allow
-the US and the EU to agree on something called a “privacy shield,” which
-protects data transferred back and forth between the EU and the US.
-Now, without going into great detail about the decision,
-what happens in the short term is nothing, because companies rely on contracts
-to protect privacy. But, in the longer term, Privacy Shield is something that
-we need to see put back in place. The court in Europe raised some concerns
-about Privacy Shield because of US government policies about privacy
-protection, particularly related to government agency access to information
-from citizens outside of the US.
-What ITI is doing in the first instance is we are reminding
-customers of technology companies that contract clauses remain in force, and
-that contracts protect the exchange of data across continents. And, in the
-second instance, we’re talking to governments — the US government, governments
-in the EU — to make sure we move forward and renegotiate a Privacy Shield
-solution to take us back to where we were.
-I completely agree that
-we need a federal privacy legislation. That’ll be an interesting thing that’ll
-probably be an issue we can talk about next year too, but hopefully we’ll
-resolve it.
-Is there anything
-else going on at ITI we should be aware of?
-Yeah, we’re focused on a number of really important policy
-issues. First and foremost, we’re spending a lot of time reminding policymakers
-about the important role that the tech industry plays in helping our nation
-adapt to, and eventually recover from, the health pandemic. It’s enormously
-heartening to see how important the tech industry is in allowing us all to work
-from home — to learn from home, in the case of the millions of American
-students who will not be returning to school physically in the fall. It’s also
-worth noting the importance of the tech industry to the vaccine search and, at
-the same time, allowing Americans to access healthcare remotely. So, we’re very
-focused on that portion of the tech industry’s contribution to the US economy,
-and there are policy issues wrapped up in that as well.
-We’ve certainly seen concerns about access to infrastructure
-and the digital divide, and in investment in that infrastructure. There are
-tens of millions of Americans who don’t have access to broadband. Why is that?
-Because we need to do more, and the government has a role to play in making
-sure the airwaves are available for use in 5G wireless, and making sure that we
-get access to the rights of way necessary to invest in physical infrastructure
-for wireline broadband connectivity where wireless doesn’t necessarily work.
+
+[Speaker: Shane Tews]
+What is going on in the federal IT modernization space, especially during COVID when so many people are working remotely?
+
+[Speaker: Jason Oxman]
+Jason Oxman: Well, it’s an important issue for the tech sector and for the government, and the reason we’re focusing on it at ITI is because our member companies are big customers of and service providers to the government here in the US at the federal, state, and local levels, and, indeed, around the world. The services and products that the technology industry provides are crucially important to the ability of the US government to serve its citizens, so we are very focused on IT modernization questions and investment in government infrastructure.
+
+[Speaker: Jason Oxman]
+Indeed, you alluded to testimony that one of the great ITI team members gave before Congress on the subject of IT modernization. Gordon Bitko, who leads our public sector work at ITI, actually joined us fairly recently. He’s the former CIO of the FBI. So, he’s well familiar with the needs of government to invest in infrastructure. Government has a very basic function in the US, and that is to keep its citizens safe, and to protect and ensure the economic growth and development of our economy, and IT and tech infrastructure are vitally important to both of those roles. So, that’s why we’re really focused on this issue.
+
+[Speaker: Jason Oxman]
+Gordon’s testimony — for listeners of this podcast — is probably pretty familiar testimony. It is really worth reading. He has some great points; he talks about the 2013 Boston Marathon bombing [investigation] that he was part of, and that they collected approximately 50 terabytes of data. (At that time, it was huge.) Several years later, the 2017 Las Vegas shooting investigation had one petabyte of data, and yet it is still so difficult for the FBI to stay up to speed with their government equipment compared to what others are doing.
+
+[Speaker: Shane Tews]
+He also makes an interesting point about legacy equipment versus cloud infrastructure. We’re definitely more interest in going to the cloud, but I really thought the items that he brought up drove home the importance of bringing the private sector to public sector IT, and figuring out what is good for the government to own, and what is good for private companies to bring to the table. And I know, especially in what we call the three letter agencies, they’re getting a little more comfortable with cooperating in that space. So, how are you seeing the partnerships grow?
+
+[Speaker: Jason Oxman]
+Particularly in the time of the pandemic, these partnerships are incredibly important to the functioning of government. And, as you noted, Gordon Bitko in his testimony talked about the importance of investment in infrastructure upgrades, and one of those areas where it’s most important is just making sure that government employees can work remotely — something that is not at all certain, even today, several months into the pandemic.
+
+[Speaker: Jason Oxman]
+The importance of government investment in infrastructure is, in certain circumstances, really about the technology that government uses. You mentioned the shift to cloud technology, which, for some agencies, is incredibly important, although other agencies, for reasons of security or infrastructure, need to maintain the service presence at certain locations. But, that cloud infrastructure available for primary or backup use enables employees of the federal government to work remotely, and that’s been incredibly important in recent months.
+
+[Speaker: Jason Oxman]
+Last year, the GAO put out a report related to modernization plans that called on all federal agencies to develop modernization plans for critical legacy systems. These legacy systems, in some cases — and we’ve all heard the stories — involve government agencies using old programming languages like COBOL that are obsolete, or they’re using unsupported hardware, or they have security vulnerabilities because of outdated infrastructure. So, our argument to government is that these are critical needs. If the IRS can’t process taxes, some people might be happy about that, but the government needs that revenue in order to keep operating. We need to make sure that agencies are looking at their infrastructure, that they have a plan to modernize that infrastructure, and that they make the shift to infrastructure that will allow them to fulfill their critical missions.
+
+[Speaker: Shane Tews]
+When we get to the policy arena, we’re seeing a lot of interest in privacy. We still don’t have a federal privacy regulation here in the United States, but, beyond that, we’ve gotten in a bit of trouble with Europe lately. The EU-US Privacy Shield was struck down by the courts in Europe, so what happens now? How does that affect our US suppliers and the information that flows across them?
+
+[Speaker: Jason Oxman]
+You highlighted the most important part of this privacy discussion, which is: The United States inexplicably does not have a federal privacy law, and we need one. ITI has, as one of its policy priorities, the adoption of a national privacy regime. Plenty of states have their own individual privacy laws, but, of course, technology and innovation doesn’t necessarily reflect state borders. It’s very hard for a company deploying technology, or, frankly, for a small business using technology, to adapt to 50 different privacy regimes on various state levels. We need a national privacy law in the US.
+
+[Speaker: Jason Oxman]
+So, having said that, let’s talk about what happened in Europe. Europe has a continent-wide privacy law. It’s called GDPR, and it’s been enforced for a number of years. It replaced 28 separate country regimes with one national privacy law, which was a great measure and something that we hope will happen here in the US.
+
+[Speaker: Jason Oxman]
+The decision that you referred to is called the Schrems II decision. “Schrems” is actually a person; he’s an Austrian who, as a student, sued because he thought his privacy was being violated under rules that allow the US and the EU to agree on something called a “privacy shield,” which protects data transferred back and forth between the EU and the US.
+
+[Speaker: Jason Oxman]
+Now, without going into great detail about the decision, what happens in the short term is nothing, because companies rely on contracts to protect privacy. But, in the longer term, Privacy Shield is something that we need to see put back in place. The court in Europe raised some concerns about Privacy Shield because of US government policies about privacy protection, particularly related to government agency access to information from citizens outside of the US.
+
+[Speaker: Jason Oxman]
+What ITI is doing in the first instance is we are reminding customers of technology companies that contract clauses remain in force, and that contracts protect the exchange of data across continents. And, in the second instance, we’re talking to governments — the US government, governments in the EU — to make sure we move forward and renegotiate a Privacy Shield solution to take us back to where we were.
+
+[Speaker: Shane Tews]
+I completely agree that we need a federal privacy legislation. That’ll be an interesting thing that’ll probably be an issue we can talk about next year too, but hopefully we’ll resolve it. Is there anything else going on at ITI we should be aware of?
+
+[Speaker: Jason Oxman]
+Yeah, we’re focused on a number of really important policy issues. First and foremost, we’re spending a lot of time reminding policymakers about the important role that the tech industry plays in helping our nation adapt to, and eventually recover from, the health pandemic. It’s enormously heartening to see how important the tech industry is in allowing us all to work from home — to learn from home, in the case of the millions of American students who will not be returning to school physically in the fall. It’s also worth noting the importance of the tech industry to the vaccine search and, at the same time, allowing Americans to access healthcare remotely. So, we’re very focused on that portion of the tech industry’s contribution to the US economy, and there are policy issues wrapped up in that as well.
+
+[Speaker: Jason Oxman]
+We’ve certainly seen concerns about access to infrastructure and the digital divide, and in investment in that infrastructure. There are tens of millions of Americans who don’t have access to broadband. Why is that? Because we need to do more, and the government has a role to play in making sure the airwaves are available for use in 5G wireless, and making sure that we get access to the rights of way necessary to invest in physical infrastructure for wireline broadband connectivity where wireless doesn’t necessarily work.
+
+[Speaker: Jason Oxman]
 Even in inner cities, we see a divide between those who have access and those who don’t, so we’re focused a lot on those infrastructure investment questions: What can the US government do? What can industry do to make sure that all Americans have access to these vital technologies? They’re not luxuries anymore. Access to broadband and access to technology are necessities, and we need to make sure that we stay focused there.

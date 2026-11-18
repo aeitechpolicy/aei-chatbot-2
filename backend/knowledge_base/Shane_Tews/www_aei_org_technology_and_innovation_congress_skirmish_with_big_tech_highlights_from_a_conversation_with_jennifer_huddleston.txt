@@ -1,140 +1,80 @@
 PAGE_TITLE: 
-	Congress’ Skirmish with Big Tech: Highlights from a Conversation with Jennifer Huddleston | American Enterprise Institute - AEI
+	Congress’ Skirmish with Big Tech: Highlights from a Conversation with Jennifer Huddleston
 
+[Speaker: Introduction / editorial context]
 By Shane Tews and Mark Jamison
-With a package of antitrust bills
-introduced
-to the House Judiciary Committee, Congress is moving swiftly to rein in what it sees as the market power and abusive business practices of “Big Tech” firms — namely Apple, Amazon, Facebook, and Alphabet Inc.’s Google. But what would these proposals mean in practice for everyday consumers?
-My AEI colleague Mark Jamison and I were recently joined on “Explain to Shane” by
-Jennifer Huddleston
-of
-NetChoice
-. The three of us discussed what Congress’ proposed legislation would mean for the future of mergers and acquisitions in the tech industry, along with how these proposals would deprive consumers of services they enjoy thanks to Silicon Valley’s culture of “permissionless innovation.”
-Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on
-AEI.org
-and subscribe via your
-preferred listening platform
-. You can also read the full transcript of our discussion
-here
-. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
-Mark Jamison: Jennifer, one bill before the House Judiciary Committee, the
-Ending Platform Monopolies Act
-, would essentially target for breakup any company that uses its platform to promote or sell its own products. It’s really that clear and blunt. What do you think about this?
-Jennifer Huddleston: When it comes to companies’ ability to
-sell or promote their own services, it’s important to think about what that
-would mean for consumers both now and in the future. Think about Amazon and
-your local drug store. Both will oftentimes offer a generic version of popular
-products. This isn’t just about Big Tech companies; it’s about a common
-practice in the retail industry. Consumers often benefit from having more
-choices and a lower cost alternative available. You may be willing to buy the
-generic cold medicine because it’s a few dollars cheaper at CVS, or you may
-find that Amazon Basics’ dress shirts or batteries provide just as good a
-product as the alternative. In other cases, you may consider a name-brand
-product really important to you.
-Proposals to prevent companies from doing this would mean
-places like Amazon couldn’t offer their own generic products while places like
-Walmart or CVS could. If Walmart and CVS could both sell their generic products
-and allow third-party sellers on their sites, Amazon would then be competing
-with traditional retail giants that are rapidly moving online but aren’t
-subject to the same rules.
-I think that’s an important thing to think about too with
-these thresholds. While right now it may only be Amazon, Apple, and Google that
-have crossed these thresholds, plenty of large companies such as Home Depot and
-Walmart are rapidly growing and could find themselves subject to these
-thresholds as well.
-Shane Tews: The
-American Choice and Innovation Online Act
-would allow the platforms to sell their own goods and services, but would prohibit a platform from “favoring” its own products via data it collects from other sellers that use the platform. It would also restrict customers from using preinstalled software. Can you walk us through exactly what’s going on here?
-Let’s start with the preinstalled software piece because a
-lot of people can actually visualize what that would look like. Imagine you
-take a new iPhone or Google Pixel out of the box, and there’s absolutely
-nothing on it when you turn it on. Some savvy users might say “that’s what I do
-with my phone anyway.” But a lot of consumers expect their new smartphone will
-have a calendar app, a mail app, and easy ways to download their favorite music
-or streaming services. We don’t want a case in which you’re literally getting
-an iPhone out of the box with nothing on it. That’s certainly not what
-consumers want.
-I think it’s also important to point out that if the current
-setup doesn’t work for you, choice is usually only a few clicks away. If you
-don’t like the Safari browser that comes pre-installed on your iPhone, you can
-change to a different browser. If you want to use a different search engine,
-you can locate it easily. A lot of steps aren’t typically involved to have a
-different choice if you like something other than the default.
-To the first piece of the legislation that you mentioned, for
-a long time, traditional retailers like Costco, CVS, Target, and Walmart have
-tracked what products were popular, then used those products for generic store
-brands. But at the end of the day, retailers don’t have all the information
-about what makes a product valuable. No matter how much data they have on
-what’s popular with consumers, there’s always that special sauce that the
-original innovator had. And that goes back to what we were discussing earlier
-with why some consumers may sometimes choose a name-brand product versus a
-generic product.
-Mark Jamison: Another bill, the
-Platform Competition and Opportunity Act
-, would bar Big Tech firms from acquiring smaller startups. What are your thoughts on this restriction?
-People create new ideas and innovative tech products for
-different reasons. If a bill like this became law, you would effectively close the
-door to one potential exit strategy. Some people come up with a great idea that
-improves an existing product. Their goal isn’t to create a huge product; it is
-just to make some marginal change that they’ve found works better or they feel
-like consumers may want on an existing product. Other people want to create
-that next big product, search engine, or social media platform that we haven’t
-even imagined yet, and that’s going to completely revolutionize the technology
-in our lives. That’s a great strategy too, and we definitely are still seeing a
-lot of innovation in those instances.
-It’s very exciting when one of those companies becomes
-successful and challenges an existing rival, but there’s a lot of steps along
-the way that may mean in terms of business strategies that there are decisions in
-which mergers and acquisitions are better, both for the companies involved and
-for consumers. Because when we’re talking about antitrust, we want to bring it
-back to consumer protection and welfare. Mergers are oftentimes beneficial for
-consumers.
-Some people are
-really great at bringing a product to market, but they may not want to be
-responsible for taking it to the next phase. They may want to get out and have
-another innovative product. Other people really want to rise up and challenge
-the current giants or come up with something completely innovative, but that’s
-a big risk too. Not every company can end up with an incredibly successful initial
-public offering. So we shouldn’t pretend that that’s an automatic, surefire way
-for a company to be successful.
-Shane Tews: One bill that particularly worries me is the
-Open App Markets Act
-, which would require iPhone and Android devices to permit third parties to circumvent their app stores and install software on users’ devices (a practice called “sideloading.”) Sideloading would bypass the security protections that iOS and the Apple App Store have added into their system — one of the reasons why I believe the iPhone possesses the value it does.
+
+[Speaker: Introduction / editorial context]
+With a package of antitrust bills introduced to the House Judiciary Committee, Congress is moving swiftly to rein in what it sees as the market power and abusive business practices of “Big Tech” firms — namely Apple, Amazon, Facebook, and Alphabet Inc.’s Google. But what would these proposals mean in practice for everyday consumers?
+
+[Speaker: Introduction / editorial context]
+My AEI colleague Mark Jamison and I were recently joined on “Explain to Shane” by Jennifer Huddleston of NetChoice. The three of us discussed what Congress’ proposed legislation would mean for the future of mergers and acquisitions in the tech industry, along with how these proposals would deprive consumers of services they enjoy thanks to Silicon Valley’s culture of “permissionless innovation.”
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our talk. You can listen to this and other episodes of “Explain to Shane” on AEI.org and subscribe via your preferred listening platform. You can also read the full transcript of our discussion here. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Jennifer, one bill before the House Judiciary Committee, the Ending Platform Monopolies Act, would essentially target for breakup any company that uses its platform to promote or sell its own products. It’s really that clear and blunt. What do you think about this?
+
+[Speaker: Jennifer Huddleston]
+Jennifer Huddleston: When it comes to companies’ ability to sell or promote their own services, it’s important to think about what that would mean for consumers both now and in the future. Think about Amazon and your local drug store. Both will oftentimes offer a generic version of popular products. This isn’t just about Big Tech companies; it’s about a common practice in the retail industry. Consumers often benefit from having more choices and a lower cost alternative available. You may be willing to buy the generic cold medicine because it’s a few dollars cheaper at CVS, or you may find that Amazon Basics’ dress shirts or batteries provide just as good a product as the alternative. In other cases, you may consider a name-brand product really important to you.
+
+[Speaker: Jennifer Huddleston]
+Proposals to prevent companies from doing this would mean places like Amazon couldn’t offer their own generic products while places like Walmart or CVS could. If Walmart and CVS could both sell their generic products and allow third-party sellers on their sites, Amazon would then be competing with traditional retail giants that are rapidly moving online but aren’t subject to the same rules.
+
+[Speaker: Jennifer Huddleston]
+I think that’s an important thing to think about too with these thresholds. While right now it may only be Amazon, Apple, and Google that have crossed these thresholds, plenty of large companies such as Home Depot and Walmart are rapidly growing and could find themselves subject to these thresholds as well.
+
+[Speaker: Shane Tews]
+Shane Tews: The American Choice and Innovation Online Act would allow the platforms to sell their own goods and services, but would prohibit a platform from “favoring” its own products via data it collects from other sellers that use the platform. It would also restrict customers from using preinstalled software. Can you walk us through exactly what’s going on here?
+
+[Speaker: Speaker not identified]
+Let’s start with the preinstalled software piece because a lot of people can actually visualize what that would look like. Imagine you take a new iPhone or Google Pixel out of the box, and there’s absolutely nothing on it when you turn it on. Some savvy users might say “that’s what I do with my phone anyway.” But a lot of consumers expect their new smartphone will have a calendar app, a mail app, and easy ways to download their favorite music or streaming services. We don’t want a case in which you’re literally getting an iPhone out of the box with nothing on it. That’s certainly not what consumers want.
+
+[Speaker: Speaker not identified]
+I think it’s also important to point out that if the current setup doesn’t work for you, choice is usually only a few clicks away. If you don’t like the Safari browser that comes pre-installed on your iPhone, you can change to a different browser. If you want to use a different search engine, you can locate it easily. A lot of steps aren’t typically involved to have a different choice if you like something other than the default.
+
+[Speaker: Speaker not identified]
+To the first piece of the legislation that you mentioned, for a long time, traditional retailers like Costco, CVS, Target, and Walmart have tracked what products were popular, then used those products for generic store brands. But at the end of the day, retailers don’t have all the information about what makes a product valuable. No matter how much data they have on what’s popular with consumers, there’s always that special sauce that the original innovator had. And that goes back to what we were discussing earlier with why some consumers may sometimes choose a name-brand product versus a generic product.
+
+[Speaker: Mark Jamison]
+Mark Jamison: Another bill, the Platform Competition and Opportunity Act, would bar Big Tech firms from acquiring smaller startups. What are your thoughts on this restriction?
+
+[Speaker: Mark Jamison]
+People create new ideas and innovative tech products for different reasons. If a bill like this became law, you would effectively close the door to one potential exit strategy. Some people come up with a great idea that improves an existing product. Their goal isn’t to create a huge product; it is just to make some marginal change that they’ve found works better or they feel like consumers may want on an existing product. Other people want to create that next big product, search engine, or social media platform that we haven’t even imagined yet, and that’s going to completely revolutionize the technology in our lives. That’s a great strategy too, and we definitely are still seeing a lot of innovation in those instances.
+
+[Speaker: Mark Jamison]
+It’s very exciting when one of those companies becomes successful and challenges an existing rival, but there’s a lot of steps along the way that may mean in terms of business strategies that there are decisions in which mergers and acquisitions are better, both for the companies involved and for consumers. Because when we’re talking about antitrust, we want to bring it back to consumer protection and welfare. Mergers are oftentimes beneficial for consumers.
+
+[Speaker: Mark Jamison]
+Some people are really great at bringing a product to market, but they may not want to be responsible for taking it to the next phase. They may want to get out and have another innovative product. Other people really want to rise up and challenge the current giants or come up with something completely innovative, but that’s a big risk too. Not every company can end up with an incredibly successful initial public offering. So we shouldn’t pretend that that’s an automatic, surefire way for a company to be successful.
+
+[Speaker: Shane Tews]
+Shane Tews: One bill that particularly worries me is the Open App Markets Act, which would require iPhone and Android devices to permit third parties to circumvent their app stores and install software on users’ devices (a practice called “sideloading.”) Sideloading would bypass the security protections that iOS and the Apple App Store have added into their system — one of the reasons why I believe the iPhone possesses the value it does.
+
+[Speaker: Shane Tews]
 What are your views on sideloading?
-People concerned
-about sideloading point to legitimate security concerns about the dangers of
-this practice, while others say “it’s my phone” and prefer ecosystems that let
-them download and install whatever they want.
-The great news is:
-The iOS ecosystem has a more secure product for people like yourself who want
-the security of knowing the apps have been vetted and that it’s a more secure
-ecosystem. The Google Android product, on the other hand, allows more
-sideloading and has more third-party app stores involved in the product. So you
-currently have this dynamic of competition around security, but a bill that
-mandates allowing sideloading could change that.
-When we think about these more niche areas, it’s also important
-to note that there are a lot of interconnected markets involved. And so while
-this bill may be portrayed as being about app stores and app competition, it
-would also have an impact on the mobile operating system market, because how
-one product has chosen to distinguish itself when it comes to security features
-would be difficult if not impossible to continue under such changes.
-Mark Jamison: The
-authors and supporters of these bills could be overlooking unintended
-consequences of their proposals. What might these be?
-There are definitely potential unintended consequences, and
-people pushing for legislative changes to antitrust may actually be more
-interested in other underlying policy problems. But when we’re looking at
-antitrust, it’s important to recognize that what we’re really looking at is the
-competition space. If your policy goals are related to privacy or content
-moderation, you shouldn’t be looking at antitrust as a tool for that.
-On the unintended consequences for antitrust specifically,
-we need to consider what would happen if these bills actually became law. If
-you break up Facebook and Instagram, is Facebook allowed to have photos on it?
-Is Facebook allowed to have its own messaging service? What are those barriers
-going to look like? With legislation, there would be a more direct impact, but
-we should consider: Is innovation our best competition policy at times? Is
-there something small out there right now that will gain an incredible amount
-of popularity very quickly so that in 10 years we’re talking about a completely
-different set of firms and products?
+
+[Speaker: Speaker not identified]
+People concerned about sideloading point to legitimate security concerns about the dangers of this practice, while others say “it’s my phone” and prefer ecosystems that let them download and install whatever they want.
+
+[Speaker: Speaker not identified]
+The great news is: The iOS ecosystem has a more secure product for people like yourself who want the security of knowing the apps have been vetted and that it’s a more secure ecosystem. The Google Android product, on the other hand, allows more sideloading and has more third-party app stores involved in the product. So you currently have this dynamic of competition around security, but a bill that mandates allowing sideloading could change that.
+
+[Speaker: Speaker not identified]
+When we think about these more niche areas, it’s also important to note that there are a lot of interconnected markets involved. And so while this bill may be portrayed as being about app stores and app competition, it would also have an impact on the mobile operating system market, because how one product has chosen to distinguish itself when it comes to security features would be difficult if not impossible to continue under such changes.
+
+[Speaker: Mark Jamison]
+Mark Jamison: The authors and supporters of these bills could be overlooking unintended consequences of their proposals. What might these be?
+
+[Speaker: Mark Jamison]
+There are definitely potential unintended consequences, and people pushing for legislative changes to antitrust may actually be more interested in other underlying policy problems. But when we’re looking at antitrust, it’s important to recognize that what we’re really looking at is the competition space. If your policy goals are related to privacy or content moderation, you shouldn’t be looking at antitrust as a tool for that.
+
+[Speaker: Mark Jamison]
+On the unintended consequences for antitrust specifically, we need to consider what would happen if these bills actually became law. If you break up Facebook and Instagram, is Facebook allowed to have photos on it? Is Facebook allowed to have its own messaging service? What are those barriers going to look like? With legislation, there would be a more direct impact, but we should consider: Is innovation our best competition policy at times? Is there something small out there right now that will gain an incredible amount of popularity very quickly so that in 10 years we’re talking about a completely different set of firms and products?
+
+[Speaker: Mark Jamison]
 If we’d been having this conversation 15 or so years ago, we’d be talking about how MySpace is a natural monopoly, how Yahoo! won the search wars, and how nobody could ever catch Nokia. We have to think about that too every time someone claims this time is different. We currently have an objective standard when it comes to antitrust that’s able to look at the scenario and calculate whether consumers are being harmed. Before we consider changing an antitrust standard, we need to look at potential collateral consequences.
+
+[Speaker: Mark Jamison]
 (Disclosure statement: Mark Jamison provided consulting for Google in 2012 regarding whether Google should be considered a public utility.)

@@ -1,30 +1,65 @@
 PAGE_TITLE: 
-	The Promise and Peril of AI in the Music Industry: Highlights from My Conversation with David Hughes | American Enterprise Institute - AEI
+	The Promise and Peril of AI in the Music Industry: Highlights from My Conversation with David Hughes
 
+[Speaker: Introduction / editorial context]
 Humans have long enjoyed the vastness and creativity inherent to the art of music. The relatively recent diffusion of personal music listening technology has stood up an entire industry behind its production and distribution. That whole apparatus could change drastically as generative artificial intelligence (AI) becomes more prevalent and usable by artists and executives alike. Questions swirl around intellectual property and copyright, residuals and contracts, and what listeners will even enjoy in the near future. Will AI enable the ultimate democratization of music creation? Or will it lower the bar of quality impossibly low, destroying any sense of skill?
-The reality is likely somewhere between, but to help break down how AI is shaping the future of this form of art—and business—I sat down with
-David Hughes
-, a music industry veteran and consultant wielding extensive experience at Sony and the Recording Industry Association of America (RIAA).
-Below is an edited and abridged transcript of our discussion. You can listen to
-this
-and
-other episodes
-of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Introduction / editorial context]
+The reality is likely somewhere between, but to help break down how AI is shaping the future of this form of art—and business—I sat down with David Hughes, a music industry veteran and consultant wielding extensive experience at Sony and the Recording Industry Association of America (RIAA).
+
+[Speaker: Introduction / editorial context]
+Below is an edited and abridged transcript of our discussion. You can listen to this and other episodes of Explain to Shane on AEI.org and subscribe via your preferred listening platform. If you enjoyed this episode, leave us a review, and tell your friends and colleagues to tune in.
+
+[Speaker: Shane Tews]
 Shane Tews: AI is all over the place at the moment. How is it affecting the music industry?
+
+[Speaker: David Hughes]
 David Hughes: I joke when people ask me what’s important in the music industry right now. I say only three things, AI, AI, and AI.
+
+[Speaker: David Hughes]
 So the first “AI” is the fact that AI is going to impact or replace pretty much every job in the music industry.
+
+[Speaker: David Hughes]
 And any job that requires industry expertise or creativity is going to be impacted, and hopefully not replaced. We’ll come back to that. How can we use these tools to fuel human creativity as opposed to replace it? The second “AI” is a generative AI. And that’s what we’re seeing now.
+
+[Speaker: David Hughes]
 And the third one is the relationship between AI and copyright. And that is the fundamental issue that will decide the future of our industry. If it doesn’t work out for the industry, it will be worse than Napster and peer-to-peer.
+
+[Speaker: Shane Tews]
 Let’s talk about copyright since you say that’s priority number one. Do you see any dangers here in the mimicry that’s possible?
+
+[Speaker: David Hughes]
 It’s dangerous because we’ve seen in the visual art space, where AI is trained on a specific artist’s style. And then they said, “Well, give me a picture of Iron Man in the style of Shane.” And bang, it pops up. And instead of me hiring you and paying you $5,000 or $10,000 to draw that picture, suddenly I have it. And anybody who’s familiar with your work would look at it and say, “Oh, yeah, that’s a Shane Tews.” But it’s not. And we’re going to see the same thing in music. And that is a real threat to the artist. It’s a threat to their artistic integrity because we don’t know what words are going to be put in their mouth. It’s a threat to their livelihood if it replaces them. And there are other issues. There’s more rights issues, especially in Europe, where they believe in more rights, and privacy issues, perhaps. So, this is a tricky area. And I think this is an area that is going to require legislation.
+
+[Speaker: Shane Tews]
 So you’re worried about the copyright morass of mimicry, but just how good is the mimicry out there now, and what is the level of quality to be dangerous?
+
+[Speaker: David Hughes]
 We can easily get to the point where the AI can create music that is of roughly equal quality to what the humans are creating, I’m afraid. And it’ll be able to do it at such a volume and speed that it will force human creators to change the way they do things.
+
+[Speaker: David Hughes]
 The scary part of that is that just “good enough” is going to be a big problem for the music industry. We already have the good enough problem in that the economics of music streaming are broken.
+
+[Speaker: David Hughes]
 You just put something that’s good enough between Bruno Mars, Lady Gaga, and Beyoncé. And as long as people listen to it for at least 31 seconds, somebody gets paid. And it’s not necessarily the music that people came to hear, but if it’s good enough, it doesn’t matter where it came from. So that’s one of the threats of AI, is to create music that’s just good enough that people don’t skip it. And then they’ll start sort of feeding that in between the good stuff.
+
+[Speaker: Shane Tews]
 Walk us through the history of this kind of AI development. Where did it start viably breaking through?
+
+[Speaker: David Hughes]
 We go back eight years, to Sony Computer Science Lab, and Sony CSL in Paris created a song, “Daddy’s Car.” And they did this by training on three dozen early Beatles songs. And the result was that they created a composition that was then, I think, recorded by humans and performed. But the composition itself was supposed to sound like a Beatles song. And it sounded like if, you know, a bunch of junior high school kids went into a garage with their instruments and said, let’s write a song that sounds like the Beatles. And you could tell that they were trying to sound like the Beatles. It was quite awful. But again, that was seven, eight years ago. And that same experiment done now on the cutting-edge technology, I think you’d get a very different result.
+
+[Speaker: David Hughes]
 Now, it would be easy enough to do that same sound recording with the voices of John or Paul, presumably.
+
+[Speaker: Shane Tews]
 How should music industry executives be thinking about AI music?
+
+[Speaker: David Hughes]
 So one of my good friends from the old days at Sony Music, Matt Carpenter, he was my partner in building the digital distribution system for Sony Music. And he had come from working for Michael Jackson. And he’s probably the brightest computer-savvy audio engineer in the industry. He said, “I’ve been trying to tell all the executives, you know, do you want to be driving the bus? Or do you want to be run over by the bus?” Now, I think he’s a little optimistic about the driving part. So I’ve been saying to people, “Do you want to be on the bus or under the bus?” And the way to be on the bus is to probably threaten some litigation strategically, offer licenses, and then embrace the technology, strategic partnerships, and then start to figure out if you can use this technology.
+
+[Speaker: Shane Tews]
 Is the room for innovation confined to the music itself in the industry? Or are there other ways it could shake things up?
+
+[Speaker: David Hughes]
 There’re a lot of opportunities to use AI outside the generative space from the music industry actually, for doing things like cleaning up their meta data and figuring out their royalty accounting systems. The royalty accounting systems at major record companies, for example, were designed originally just to ship physical units of CDs. They weren’t really designed to deal with trillions of streams. And the amount of data and the complexity of that data is such that the only way that we’re ever going to really clean that up is using AI.
