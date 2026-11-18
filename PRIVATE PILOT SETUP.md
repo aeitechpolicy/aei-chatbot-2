@@ -23,6 +23,8 @@ The daily count is shared across the chatbot, resets at midnight UTC and counts 
 
 ## Verify once after deployment
 
+In the tour, Next can demonstrate a step you have not tried. It stops after showing the action. Read for as long as needed, then select Next again to continue. Brief and feedback dialogs also have Next buttons. The practice form is never submitted automatically. The final large reminder and screenshot show where to reopen What’s new and How to use.
+
 1. Sign in as Demo User 1. What’s New must open. Check the before/after visual, then continue to the six-step demo. Next should demonstrate any unfinished step. The AEI + Web example must distinguish AEI [S1] from outside [W1]. The practice report must say no report was sent.
 2. At completion, check the reminder explaining How to use and What’s new at the top. Skip and Restart should work. Sign out and sign back in: What’s New must open again.
 3. Make one small real question as Demo User 1, then sign out. Demo User 2 must not see that chat. Sign back in as Demo User 1 and confirm it remains. Keep credentials stable so saved histories remain associated with the same account IDs. Do not share the same account between two people who need separate histories.

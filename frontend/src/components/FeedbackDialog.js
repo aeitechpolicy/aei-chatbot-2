@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ResearchDialog from './ResearchDialog';
 import { API_BASE_URL, apiFetch, chatEndpoint } from '../utils/api';
 import { sourceLink } from '../utils/sources';
@@ -6,21 +6,17 @@ import { sourceLink } from '../utils/sources';
 const REASONS = ['Incorrect information', 'Missing context', 'Citation issue', 'Other'];
 const SOURCE_REASONS = ['Incorrect title, byline or date', 'Broken or incorrect link', 'Incorrect passage', 'Irrelevant result', 'Other'];
 
-export default function FeedbackDialog({ chatId, messageIndex, answer, source, sent, onSent, onClose, practice = false, autoComplete = false }) {
+export default function FeedbackDialog({ chatId, messageIndex, answer, source, sent, onSent, onClose, practice = false, autoFill = false, onContinue }) {
   const [category, setCategory] = useState('');
   const [detail, setDetail] = useState('');
   const [error, setError] = useState('');
   const [sending, setSending] = useState(false);
 
-  const sentCallback = useRef(onSent);
-  sentCallback.current = onSent;
   useEffect(() => {
-    if (!practice || !autoComplete) return undefined;
+    if (!practice || !autoFill) return;
     setCategory('Incorrect information');
     setDetail('Practice example: please check the attribution in this answer.');
-    const timer = setTimeout(() => sentCallback.current(), 900);
-    return () => clearTimeout(timer);
-  }, [practice, autoComplete]);
+  }, [practice, autoFill]);
 
   async function submit(event) {
     event.preventDefault();
@@ -52,8 +48,9 @@ export default function FeedbackDialog({ chatId, messageIndex, answer, source, s
     {sent ? <div className="feedback-confirmation">
       <p role="status">{practice ? 'Practice complete. No report was sent.' : 'Your report was sent to the staff inbox.'}</p>
       <button type="button" className="research-primary" onClick={onClose}>Done</button>
+      {practice && onContinue && <button type="button" className="research-secondary" onClick={onContinue}>Next</button>}
     </div> : <form className="feedback-form" onSubmit={submit}>
-      <p>{practice ? 'Practice form: nothing you enter here is sent to staff.' : <>Staff will see the selected {source ? 'source' : 'answer'}, your account label, and your explanation.</>}</p>
+      <p>{practice ? 'Practice form: nothing you enter here is sent to staff. Take your time to review or edit it. Try sending a sample report, or select Next when you’re ready.' : <>Staff will see the selected {source ? 'source' : 'answer'}, your account label, and your explanation.</>}</p>
       {source && <p className="feedback-source-title"><strong>{source.title}</strong></p>}
       <label>What went wrong?
         <select value={category} onChange={event => setCategory(event.target.value)} required disabled={sending}>
@@ -80,6 +77,7 @@ export default function FeedbackDialog({ chatId, messageIndex, answer, source, s
         <button type="submit" className="research-primary" disabled={sending || !category || !detail.trim()}>
           {sending ? 'Sending…' : practice ? 'Try sending sample report' : 'Send report'}
         </button>
+        {practice && onContinue && <button type="button" className="research-secondary" onClick={onContinue}>Next</button>}
       </footer>
     </form>}
   </ResearchDialog>;

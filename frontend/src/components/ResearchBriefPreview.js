@@ -3,7 +3,7 @@ import { Copy } from 'lucide-react';
 import ResearchDialog from './ResearchDialog';
 import { copyResearchBrief } from '../utils/researchBrief';
 
-export default function ResearchBriefPreview({ brief, onClose }) {
+export default function ResearchBriefPreview({ brief, onClose, onContinue }) {
   const [status, setStatus] = useState('');
   const links = new Map(brief.references.map(source => [`[${source.id}]`, source.url]));
   async function copy() {
@@ -33,6 +33,7 @@ export default function ResearchBriefPreview({ brief, onClose }) {
     <footer className="research-dialog-actions">
       <span role="status">{status}</span>
       <button type="button" className="research-primary" onClick={copy}><Copy size={16} /> Copy brief</button>
+      {onContinue && <button type="button" className="research-secondary" onClick={onContinue}>Next</button>}
     </footer>
   </ResearchDialog>;
 }

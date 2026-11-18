@@ -47,9 +47,15 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   const [feedbackSent, setFeedbackSent] = useState(false);
   const [showing, setShowing] = useState(false);
   const heading = useRef(null);
+  const completionHeading = useRef(null);
   const run = useRef(0);
   const finished = step === steps.length;
-  useEffect(() => { heading.current?.focus(); }, [step]);
+  useEffect(() => {
+    if (finished) {
+      completionHeading.current?.focus();
+      completionHeading.current?.scrollIntoView?.({ block: 'start' });
+    } else heading.current?.focus();
+  }, [step, finished]);
   useEffect(() => () => { run.current++; }, []);
   const mark = index => setCompleted(previous => previous.includes(index) ? previous : [...previous, index]);
   function showStep(index) { setStep(index); setMode(index < 2 ? 'search' : index === 4 ? 'web' : 'chat'); }
@@ -59,7 +65,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   }
   function chooseMode(key) {
     setMode(key);
-    if (step === 0 && key === 'search') { mark(0); setStep(1); }
+    if (step === 0 && key === 'search') mark(0);
   }
   function findArticle(event) {
     event.preventDefault();
@@ -72,9 +78,12 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
     try { await navigator.clipboard.writeText(`${sampleSource.title}\n${sampleSource.author} · ${sampleSource.date}\n${sampleSource.url}`); setCopyStatus('Sample source list copied.'); }
     catch { setCopyStatus('Clipboard access is unavailable. You can copy the title and link from the sample result.'); }
   }
+  function advanceTour() {
+    run.current++; setShowing(false); setBriefOpen(false); setFeedbackOpen(false); showStep(step + 1);
+  }
   async function continueTour() {
     if (showing) return;
-    if (completed.includes(step)) { showStep(step + 1); return; }
+    if (completed.includes(step)) { advanceTour(); return; }
     const currentRun = ++run.current;
     const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     setShowing(true);
@@ -88,9 +97,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
     if (currentRun !== run.current) return;
     if (step === 1) setResults(true);
     if (step === 4) setWebPassage('W1');
-    await wait(step === 5 ? 1100 : 750);
-    if (currentRun !== run.current) return;
-    mark(step); setBriefOpen(false); setFeedbackOpen(false); setShowing(false); showStep(step + 1);
+    mark(step); setShowing(false);
   }
   function sourcePassage(source, name) {
     return <section className="guided-demo-passage" aria-label={name} data-tour-focus={source.id === 'W1' ? step === 4 : step === 2}>
@@ -110,7 +117,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
         <section className="guided-demo-coach" aria-live="polite"><p className="workspace-kicker">{finished ? 'Practice complete' : `Step ${step + 1}`}</p>
           <h3 ref={heading} tabIndex={-1}>{finished ? 'You’re ready to explore' : steps[step].title}</h3>
           <p>{finished ? 'Use the same controls in the real chatbot. Check the sources, keep interview speakers distinct, and report anything that needs attention.' : steps[step].help}</p>
-          {!finished && <p className="guided-demo-assist">{showing ? 'Showing this step for you…' : 'Need a hand? Select Next and this step will be shown for you.'}</p>}
+          {!finished && <p className="guided-demo-assist">{showing ? 'Showing this step for you…' : completed.includes(step) ? `Take your time. Select ${step === steps.length - 1 && completed.includes(step) ? 'Finish tour' : 'Next'} when you’re ready.` : 'Need a hand? Next will show this step. You can read it for as long as you like, then select Next again to continue.'}</p>}
         </section>
       </aside>
       <section className={`guided-demo-workspace ${showing ? 'is-demonstrating' : ''}`} aria-label="Practice workspace" aria-busy={showing}>
@@ -149,12 +156,25 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
         </>}</>}
       </section>
     </div>
-    <footer className="research-dialog-actions guided-demo-actions">{finished && <p className="guided-demo-return-hint">You can revisit this demo anytime using <strong>How to use</strong> at the top{showWhatsNewLink ? <>, or open <strong>What’s new</strong> to review the latest features</> : null}.</p>}<button type="button" className="walkthrough-dismiss" onClick={onClose}>{finished ? 'Close tour' : 'Skip tour'}</button>
+    {finished && <section className="guided-demo-return-guide" aria-label="Where to find help again">
+      <h3 ref={completionHeading} tabIndex={-1}>You can come back anytime</h3>
+      <p>Look in the <strong>top-right corner of the chatbot</strong>, as shown in the picture below.</p>
+      <ol>
+        {showWhatsNewLink && <li><strong>What’s new</strong> — review the latest features and the before-and-after comparison.</li>}
+        <li><strong>How to use</strong> — replay this guided demo whenever you need a reminder.</li>
+      </ol>
+      <figure><div className={`guided-demo-help-picture ${showWhatsNewLink ? 'has-whats-new' : ''}`}>
+        <img src={showWhatsNewLink ? '/tour-help-header.png' : '/tour-help-how-to.png'} alt={showWhatsNewLink ? 'Screenshot of the top-right chatbot toolbar showing What’s new and How to use next to each other.' : 'Screenshot of the How to use button at the top of the chatbot.'} />
+        {showWhatsNewLink && <span className="help-picture-marker marker-whats-new" aria-hidden="true">1</span>}
+        <span className="help-picture-marker marker-how-to" aria-hidden="true">{showWhatsNewLink ? '2' : '1'}</span>
+      </div><figcaption>This picture shows where to look. After you close the tour, use these buttons at the top of the chatbot.</figcaption></figure>
+    </section>}
+    <footer className="research-dialog-actions guided-demo-actions"><button type="button" className="walkthrough-dismiss" onClick={onClose}>{finished ? 'Close tour' : 'Skip tour'}</button>
       <button type="button" className="research-secondary" disabled={showing} onClick={restart}><RotateCcw size={14} aria-hidden="true" /> Restart</button>
       {step > 0 && !finished && <button type="button" className="research-secondary" disabled={showing} onClick={() => showStep(step - 1)}>Back</button>}
-      {finished ? <><button type="button" className="research-secondary" onClick={onOpenSearch}>Try real Article Search</button><button type="button" className="research-primary" disabled={busy} onClick={() => onTryQuestion(sampleQuestion)}>Open this question in Article Chat</button></> : <button type="button" className="research-primary" disabled={showing} onClick={continueTour}>{step === steps.length - 1 ? 'Finish tour' : 'Next'} <ArrowRight size={15} aria-hidden="true" /></button>}
+      {finished ? <><button type="button" className="research-secondary" onClick={onOpenSearch}>Try real Article Search</button><button type="button" className="research-primary" disabled={busy} onClick={() => onTryQuestion(sampleQuestion)}>Open this question in Article Chat</button></> : <button type="button" className="research-primary" disabled={showing} onClick={continueTour}>{step === steps.length - 1 && completed.includes(step) ? 'Finish tour' : 'Next'} <ArrowRight size={15} aria-hidden="true" /></button>}
     </footer>
-    {briefOpen && <ResearchBriefPreview brief={brief} onClose={() => setBriefOpen(false)} />}
-    {feedbackOpen && <FeedbackDialog practice autoComplete={showing && step === 5} answer={answer} sent={feedbackSent} onSent={() => { setFeedbackSent(true); mark(5); }} onClose={() => setFeedbackOpen(false)} />}
+    {briefOpen && <ResearchBriefPreview brief={brief} onClose={() => setBriefOpen(false)} onContinue={step === 3 ? () => { mark(3); advanceTour(); } : undefined} />}
+    {feedbackOpen && <FeedbackDialog practice autoFill={showing && step === 5} onContinue={step === 5 ? () => { mark(5); advanceTour(); } : undefined} answer={answer} sent={feedbackSent} onSent={() => { setFeedbackSent(true); mark(5); }} onClose={() => setFeedbackOpen(false)} />}
   </ResearchDialog>;
 }
