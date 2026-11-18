@@ -28,8 +28,8 @@ ${options.webPlan ? `Current date in America/New_York: ${options.webPlan.current
 Web dates are search-estimated publication or update dates, not independent proof of when an event happened. Do not describe an older policy as a new development merely because its page was updated. Acknowledge when a snippet cannot establish the event date.\n` : ''}
 RESEARCH RULES:
 ${options.web ? '- Use only the supplied evidence for factual claims. AEI Scholar Library citations are [S1] and web snippets are [W1]. Use scholar citations for claims about the scholars. Web snippets are brief and can be incomplete. Treat questions as context, never as evidence.' : '- Use only the current excerpts from the scholar files for every factual claim. Treat questions as context, never as evidence. Do not use web sources or facts recalled from training.'}
-- Cite each supported claim using the exact source ID, e.g. [S1]. Use separate IDs for multiple sources: [S1] [S2]. Do not write URLs or other references. The app links the exact IDs to the saved articles. Put each paragraph or bullet on its own line with its citations on that line. Skip standalone headings.
-- Quote only exact words visible in an excerpt. Keep quotations short and distinguish quotation from paraphrase.
+- Cite each supported claim using the exact source ID, e.g. [S1]. Use separate IDs for multiple sources: [S1] [S2]. Do not write URLs or other references. The app links the exact IDs to the saved articles. Put citations at the end of each paragraph or bullet. Separate paragraphs with a blank line. Optional short headings may label sections but must not introduce factual claims.
+- Prefer a concise paraphrase with a citation. Use a direct quotation only when the user requests exact wording and the quoted words appear together in the cited excerpt. Never put quotation marks around a paraphrase. Preserve speaker attribution when paraphrasing an interview.
 - A scholar collection indicates where a file was saved; it does not establish authorship when the author is not recorded.
 - Preserve disagreements, qualifications and differences between scholars. Do not impose a common ideological position or treat one author as speaking for AEI as a whole.
 - Identify patterns only when multiple supplied articles support them. Name the relevant scholars and cite the examples. A recurring word alone does not establish a shared position.
@@ -99,21 +99,46 @@ function checkCitations(content, sources, web = false) {
   let unverifiedScannedQuote = false;
   const scannedIds = new Set(sources.filter(source => source.interview?.extractionMethod === 'ocr').map(source => source.id));
   const answer = content.replace(/\[([SW])(\d+)\]/gi, (_, kind, number) => `[${kind.toUpperCase()}${number}]`);
-  for (const line of answer.split(/\r?\n/).filter(line => line.trim())) {
+  // Check prose units rather than physical lines. A wrapped paragraph or a
+  // citation on the next line is still one unit; separate bullets stay separate.
+  // Only known descriptive labels are exempt, never arbitrary uncited headings.
+  const isHeading = line => /^(?:answer|summary|key findings|findings|key points|recommendations|tradeoffs|trade-offs|limitations|evidence|conclusion|external context|aei perspective|scholar perspectives|brent orrell|clay calvert|shane tews|will rinehart)$/i.test(line.trim().replace(/^#{1,6}\s+/, '').replace(/^\*\*(.*?)\*\*$/, '$1').replace(/:$/, '').trim());
+  const citationOnly = line => /^(?:\s*\[[SW]\d+\][\s.,;]*)+$/.test(line);
+  const units = [];
+  let pending = [];
+  const flush = () => { if (pending.length) units.push({ text: pending.join(' ') }); pending = []; };
+  for (const original of answer.split(/\r?\n/)) {
+    const line = original.trim();
+    if (!line) { flush(); continue; }
+    if (isHeading(line)) { flush(); units.push({ text: line, heading: true }); continue; }
+    if (pending.length && (/^(?:[-*+]\s+|\d+[.)]\s+)/.test(line) ||
+      (!citationOnly(line) && (/\[[SW]\d+\]/.test(pending.at(-1)) || /[.!?]["”']?$/.test(pending.at(-1)))))) flush();
+    pending.push(line);
+  }
+  flush();
+  const accepted = [];
+  let headings = [];
+  for (const unit of units) {
+    if (unit.heading) { headings.push(unit.text); continue; }
+    const line = unit.text;
+    let invalid = false;
     const citedExcerpts = [];
     const citedIds = [];
     for (const [, id] of line.matchAll(/\[([SW]\d+)\]/g)) {
       if (evidence.has(id)) { citedExcerpts.push(evidence.get(id)); citedIds.push(id); }
-      else unknownCitation = true;
+      else { unknownCitation = true; invalid = true; }
     }
     if (citedExcerpts.length) anyCitation = true;
-    else uncitedLine = true;
+    else { uncitedLine = true; invalid = true; }
+    if (externalReference.test(line)) { invalid = true; }
     for (const [, quote] of line.matchAll(/["“]([^"”\n]{12,})["”]/g)) {
-      if (citedIds.some(id => scannedIds.has(id)) && !citedIds.filter(id => !scannedIds.has(id)).some(id => evidence.get(id).includes(normalizeQuote(quote)))) unverifiedScannedQuote = true;
+      if (citedIds.some(id => scannedIds.has(id)) && !citedIds.filter(id => !scannedIds.has(id)).some(id => evidence.get(id).includes(normalizeQuote(quote)))) { unverifiedScannedQuote = true; invalid = true; }
     }
     for (const [, quote] of line.matchAll(/["“]([^"”\n]{40,})["”]/g)) {
-      if (!citedExcerpts.some(excerpt => excerpt.includes(normalizeQuote(quote)))) unmatchedQuote = true;
+      if (!citedExcerpts.some(excerpt => excerpt.includes(normalizeQuote(quote)))) { unmatchedQuote = true; invalid = true; }
     }
+    if (!invalid && !citationOnly(line)) accepted.push(...headings, line);
+    headings = [];
   }
   const notices = [];
   if (unknownCitation) notices.push('The generated answer used an unknown source reference.');
@@ -123,10 +148,10 @@ function checkCitations(content, sources, web = false) {
   if (unverifiedScannedQuote) notices.push('A quotation relies on text recognized from a scanned PDF and needs verification in the original.');
   if (unmatchedQuote) notices.push('A quotation could not be matched to the cited excerpts.');
   return {
-    content: notices.length
+    content: accepted.length ? accepted.join('\n\n') : notices.length
       ? (web ? 'The answer did not pass the citation check. Open Sources below to review the library passages and web snippets.' : 'I found related articles in the AEI Scholar Library, but the answer did not pass the citation check. Open Article sources below to read the relevant passages.')
       : answer,
-    citationNotice: notices.join(' ') || null
+    citationNotice: notices.length ? `${accepted.length ? 'Some passages were omitted because they did not pass the citation check. ' : ''}${notices.join(' ')}` : null
   };
 }
 module.exports = { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, parseFollowUps, checkCitations };

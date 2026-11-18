@@ -199,7 +199,7 @@ test('title metadata stays separate from the answer and invalid titles fall back
   assert.ok(fallbackChatTitle('A lengthy research question '.repeat(9)).length <= 64);
 });
 
-test('each answer line needs a citation and long quotations must match a cited source on that line', () => {
+test('separate prose units need citations and quotations must match a cited excerpt', () => {
   const quote = 'The available evidence supports this limited conclusion.';
   const sources = prepareSources([{ title: 'First', body: quote }, { title: 'Second', body: 'A different observation appears here.' }]);
   const mixed = checkCitations('A cited point [S1].\nA fabricated additional claim.', sources);
@@ -210,6 +210,54 @@ test('each answer line needs a citation and long quotations must match a cited s
   assert.equal(checkCitations(`“${quote}” [S1]\nAnother point [S2].`, sources).citationNotice, null);
   assert.match(checkCitations('Source is example.org [S1].', sources).citationNotice, /outside the supplied citation IDs/);
   assert.match(checkCitations('INSUFFICIENT_EVIDENCE', sources).content, /do not answer this question/);
+});
+
+test('formatting labels and wrapped paragraphs do not discard a cited answer', () => {
+  const sources = prepareSources([{ title: 'First', body: 'Training supports workers during transitions.' }]);
+  const result = checkCitations('## Summary\nTraining supports workers\nduring transitions.\n[S1]\n\n**Limitations:**\nThis is a limited sample. [S1]', sources);
+  assert.equal(result.citationNotice, null);
+  assert.match(result.content, /Training supports workers during transitions\. \[S1\]/);
+  assert.match(result.content, /Limitations/);
+  const inventedHeading = checkCitations('## All workers will lose their jobs\n\nTraining supports workers. [S1]', sources);
+  assert.doesNotMatch(inventedHeading.content, /All workers/);
+  assert.match(inventedHeading.citationNotice, /omitted/);
+});
+
+test('a bad quotation omits its paragraph while retaining separately cited material', () => {
+  const sources = prepareSources([{ title: 'First', body: 'Training supports workers during transitions.' }]);
+  const result = checkCitations('Training supports workers. [S1]\n\n“The government guarantees a permanent job to every worker who applies.” [S1]', sources);
+  assert.equal(result.content, 'Training supports workers. [S1]');
+  assert.match(result.citationNotice, /Some passages were omitted/);
+  assert.match(result.citationNotice, /quotation/);
+  assert.doesNotMatch(result.content, /guarantees/);
+});
+
+test('citations on one bullet cannot validate the next bullet', () => {
+  const sources = prepareSources([{ title: 'First', body: 'Training supports workers during transitions.' }]);
+  const result = checkCitations('- Training supports workers. [S1]\n- Every worker is guaranteed a job.\n- Another invented point. [S99]', sources);
+  assert.equal(result.content, '- Training supports workers. [S1]');
+  assert.match(result.citationNotice, /unknown source/);
+  assert.match(result.citationNotice, /lacks a source reference/);
+});
+
+test('wrapped exact quotes allow whitespace and typography but not the wrong source', () => {
+  const quote = 'The available evidence supports this limited conclusion.';
+  const sources = prepareSources([{ title: 'First', body: quote }, { title: 'Second', body: 'A different observation appears here.' }]);
+  assert.equal(checkCitations('“The available evidence supports\nthis limited conclusion.”\n[s1]', sources).citationNotice, null);
+  const result = checkCitations(`“${quote}” [S2]\n\nA separate cited observation. [S1]`, sources);
+  assert.equal(result.content, 'A separate cited observation. [S1]');
+  assert.match(result.citationNotice, /quotation/);
+});
+
+test('OCR quotations and outside links stay excluded from otherwise usable answers', () => {
+  const sources = [{ id: 'S1', excerpt: 'The available evidence supports this limited conclusion.', interview: { extractionMethod: 'ocr' } }];
+  const result = checkCitations('The interview discusses evidence. [S1]\n\n“The available evidence supports this limited conclusion.” [S1]\n\nSee https://example.org for other claims. [S1]', sources, true);
+  assert.equal(result.content, 'The interview discusses evidence. [S1]');
+  assert.match(result.citationNotice, /scanned PDF/);
+  assert.match(result.citationNotice, /outside the supplied/);
+  const empty = checkCitations('## Summary\n\nNo cited evidence.', sources, true);
+  assert.match(empty.content, /Open Sources/);
+  assert.doesNotMatch(empty.content, /No cited evidence/);
 });
 
 test('a served scholar can be found as an identified interview guest without changing the byline or file collection', async t => {
