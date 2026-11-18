@@ -25,6 +25,10 @@ function wireResult(result) {
       const value = row[field.name];
       if (value === null || value === undefined) return null;
       if (field.dataTypeID === 3802 || field.dataTypeID === 114) return JSON.stringify(value);
+      // Neon returns PostgreSQL text timestamps; PGlite can return ISO strings.
+      if (field.dataTypeID === 1184 || field.dataTypeID === 1114) {
+        return (value instanceof Date ? value.toISOString() : String(value)).replace('T', ' ').replace(/Z$/, '+00');
+      }
       if (value instanceof Date) return value.toISOString();
       return String(value);
     })) };

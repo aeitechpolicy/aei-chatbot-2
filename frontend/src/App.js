@@ -3,6 +3,7 @@ import ChatInterface from './components/ChatInterface';
 import Sidebar from './components/Sidebar';
 import FileManager from './components/FileManager';
 import SignIn from './components/SignIn';
+import ModelTester from './components/ModelTester';
 import UsageReport from './components/UsageReport';
 import FeedbackInbox from './components/FeedbackInbox';
 import ArticleSearch from './components/ArticleSearch';
@@ -385,6 +386,7 @@ function App() {
   }, []);
   if (checking) return <main className="sign-in-page"><p role="status">Checking your session…</p></main>;
   if (!session) return <>{error && <p role="alert">{error}</p>}<SignIn /></>;
+  if (session.user.id === 'tester') return <ModelTester key={session.user.id} session={session} />;
   return <PrivateApp key={session.user.id} session={session} />;
 }
 

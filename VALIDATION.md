@@ -1,5 +1,23 @@
 # Validation record
 
+## November 17, 2026 - Streaming and private model comparisons
+
+59 backend checks passed with zero failures using simulated model replies, local SQLite and PGlite PostgreSQL. The suite covers three requests starting concurrently from identical evidence; one shared web search; partial provider failure; per-model prices; atomic rollback before any paid call when the complete comparison exceeds a limit; unused reservations; allowlisted model IDs; optional unique login passwords; tester isolation from other chats, files and staff reports; normal user/demo behavior; real Together SDK streaming; usage-only final chunks; interrupted streams; and credential-safe error logging.
+
+Nine frontend checks passed in the ModelTester and App suites. These cover a single comparison submission for three selected models; visible successful and failed candidates; clickable source passages and AEI links; switching among the three research modes; direct Article Search without model calls; deselecting models; existing article-search navigation; and login/session behavior. An existing ArticleSearch test emits a React act timing warning while passing.
+
+The initial database fixture used ISO timestamps where the real Neon HTTP wire protocol returns PostgreSQL text timestamps. The fixture was corrected, and the real Neon driver simulation now passes its feedback timestamp assertion. No live database repair was needed or attempted.
+
+Checks ran in temporary source copies because local dependency files were slow to load. Source files were byte-compared against this checkout. Exact dependency versions were imported from the existing package-lock files for the temporary installs; repository package files and lockfiles were unchanged. Dependencies and build output are excluded from the update ZIP.
+
+The production website build passed with CI=true after removing an unused import. Existing build-tool deprecation and browser-data notices remain; no new compile warnings remain. A local browser check passed at 1440px desktop and 390px phone widths, with no horizontal overflow or browser errors. It opened a citation passage, switched into Article Search, and confirmed that searching added no model submission. All preview responses were explicitly simulated.
+
+No production model calls, payments, private credentials, live database writes, or deployment changes were made by these checks. Catalog availability does not establish organization access or actual answer quality. Those require a small live test after publication.
+
+## Historical October 29 validation
+
+The following is the earlier validation record. Its counts and deployment status describe that earlier checkpoint.
+
 Checked October 29, 2026 using Node 24.22.1. This research-search follow-up is local and unpublished, based on deployed Qwen merge 0391378d9f3f12a7dcee12a1525c7a444486e048.
 
 ## Research-search follow-up

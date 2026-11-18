@@ -57,12 +57,14 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   for (const [id, label, password] of [
     ['owner', 'Chatbot Intern', env.CHATBOT_INTERN_PASSWORD],
     ['supervisor', 'Chatbot RA', env.CHATBOT_RA_PASSWORD],
-    ['demo', 'Demo User', env.CHATBOT_DEMO_PASSWORD]
+    ['demo', 'Demo User', env.CHATBOT_DEMO_PASSWORD],
+    ['tester', 'Model Tester', env.CHATBOT_TESTER_PASSWORD]
   ]) {
     if (!password) continue;
     const invalidLength = password.length < 16 || password.length > 256;
-    if (id === 'demo' && (invalidLength || password === env.CHATBOT_INTERN_PASSWORD || password === env.CHATBOT_RA_PASSWORD)) {
-      console.warn('Demo login disabled. Set CHATBOT_DEMO_PASSWORD to a unique password of 16 to 256 characters.');
+    if (['demo', 'tester'].includes(id) && (invalidLength ||
+        [env.CHATBOT_INTERN_PASSWORD, env.CHATBOT_RA_PASSWORD, ...(id === 'tester' ? [env.CHATBOT_DEMO_PASSWORD] : [])].includes(password))) {
+      console.warn(`${label} login disabled. Set a unique password of 16 to 256 characters.`);
       continue;
     }
     if (invalidLength) {
@@ -80,7 +82,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   const revokedSessions = new Map();
   const loginAttempts = [];
   const requestsByUser = new Map();
-  const active = new Set();
+  const active = new Map();
 
   function authenticate(token) {
     if (setupError || typeof token !== 'string' || token.length > 2048) return null;
@@ -131,46 +133,65 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   }
 
   async function begin(userId, messages) {
-    if (!storageConfigured) {
-      throw failure('The free database must be connected before AI answers can be enabled.', 503, 'storage_setup');
-    }
-    if (active.size) throw failure('An answer is already being prepared. Please wait a moment.', 429, 'busy');
-    const inputBytes = Buffer.byteLength(JSON.stringify(messages), 'utf8');
-    if (inputBytes > MAX_INPUT_BYTES) throw failure('This conversation and its sources are too long for the pilot limit. Try a shorter question in a new chat.', 413, 'input_limit');
-    const at = new Date(now()).toISOString();
-    const day = at.slice(0, 10);
-    const nextDay = new Date(Date.parse(`${day}T00:00:00Z`) + 86400000).toISOString();
-    const reserve = ((inputBytes + 1024) * inputRate + MAX_OUTPUT_TOKENS * outputRate) / 1e6;
-    const id = crypto.randomUUID();
-    active.add(id);
-    try {
-      if (remote) {
-        await remote.reserve({ id, startedAt: at, userId, model: MODEL, reserve, inputRate, outputRate, priceSource, dailyBudget, dailyQuestions, personQuestions });
-        return id;
-      }
-      db.exec('BEGIN IMMEDIATE');
-      try {
-      const totals = db.prepare('SELECT COUNT(*) AS n, COALESCE(SUM(COALESCE(estimated_usd,reserved_usd)),0) AS cost FROM usage WHERE started_at>=? AND started_at<?').get(day, nextDay);
-      const person = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=? AND started_at<?').get(userId, day, nextDay);
-      const minute = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=?').get(userId, new Date(now() - 60000).toISOString());
-      if (totals.n >= dailyQuestions || person.n >= personQuestions) throw failure('The daily question allowance has been reached. Please try again tomorrow. Allowances reset at midnight UTC.');
-      if (minute.n >= 5) throw failure('Please wait a minute before asking another question.');
-      if (totals.cost + reserve > dailyBudget) throw failure('The daily estimated cost allowance has been reached. Please try again tomorrow.');
-      db.prepare('INSERT INTO usage (id,started_at,user_id,model,status,reserved_usd,input_rate,output_rate,price_source) VALUES (?,?,?,?,?,?,?,?,?)').run(id, at, userId, MODEL, 'pending', reserve, inputRate, outputRate, priceSource);
-      db.exec('COMMIT');
-      } catch (error) { db.exec('ROLLBACK'); throw error; }
-    } catch (error) { active.delete(id); throw error; }
+    const [id] = await beginBatch(userId, messages, [{ id: MODEL, inputRate, outputRate, priceSource }]);
     return id;
   }
 
+  async function beginBatch(userId, messages, models) {
+    if (!storageConfigured) throw failure('The free database must be connected before AI answers can be enabled.', 503, 'storage_setup');
+    if (active.size) throw failure('An answer is already being prepared. Please wait a moment.', 429, 'busy');
+    const inputBytes = Buffer.byteLength(JSON.stringify(messages), 'utf8');
+    if (inputBytes > MAX_INPUT_BYTES) throw failure('This conversation and its sources are too long for the pilot limit. Try a shorter question in a new chat.', 413, 'input_limit');
+    if (!Array.isArray(models) || models.length < 1 || models.length > 3 || models.some(model =>
+      typeof model.id !== 'string' || !Number.isFinite(model.inputRate) || model.inputRate <= 0 || !Number.isFinite(model.outputRate) || model.outputRate <= 0)) {
+      throw failure('The comparison models need to be configured.', 503, 'model_setup');
+    }
+    const at = new Date(now()).toISOString();
+    const day = at.slice(0, 10);
+    const nextDay = new Date(Date.parse(`${day}T00:00:00Z`) + 86400000).toISOString();
+    const reservations = models.map(model => ({
+      id: crypto.randomUUID(), startedAt: at, userId, model: model.id,
+      reserve: ((inputBytes + 1024) * model.inputRate + MAX_OUTPUT_TOKENS * model.outputRate) / 1e6,
+      inputRate: model.inputRate, outputRate: model.outputRate, priceSource: model.priceSource,
+      dailyBudget, dailyQuestions, personQuestions
+    }));
+    for (const row of reservations) active.set(row.id, row);
+    try {
+      if (remote) {
+        if (reservations.length === 1) await remote.reserve(reservations[0]);
+        else await remote.reserveBatch(reservations);
+      } else {
+        db.exec('BEGIN IMMEDIATE');
+        try {
+          for (const row of reservations) {
+            const totals = db.prepare('SELECT COUNT(*) AS n, COALESCE(SUM(COALESCE(estimated_usd,reserved_usd)),0) AS cost FROM usage WHERE started_at>=? AND started_at<?').get(day, nextDay);
+            const person = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=? AND started_at<?').get(userId, day, nextDay);
+            const minute = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=?').get(userId, new Date(now() - 60000).toISOString());
+            if (totals.n >= dailyQuestions || person.n >= personQuestions) throw failure('The daily question allowance has been reached. Please try again tomorrow. Allowances reset at midnight UTC.');
+            if (minute.n >= 5) throw failure('Please wait a minute before asking another question.');
+            if (totals.cost + row.reserve > dailyBudget) throw failure('The daily estimated cost allowance has been reached. Please try again tomorrow.');
+            db.prepare('INSERT INTO usage (id,started_at,user_id,model,status,reserved_usd,input_rate,output_rate,price_source) VALUES (?,?,?,?,?,?,?,?,?)').run(row.id, at, userId, row.model, 'pending', row.reserve, row.inputRate, row.outputRate, row.priceSource);
+          }
+          db.exec('COMMIT');
+        } catch (error) { db.exec('ROLLBACK'); throw error; }
+      }
+    } catch (error) {
+      for (const row of reservations) active.delete(row.id);
+      throw error;
+    }
+    return reservations.map(row => row.id);
+  }
+
   async function finish(id, { response, errorCode, attempted = true } = {}) {
+    const reserved = active.get(id);
+    if (!reserved) throw new Error('This usage reservation is not active.');
     const usage = response && response.usage;
     const valid = usage && Number.isSafeInteger(usage.prompt_tokens) && usage.prompt_tokens >= 0 && Number.isSafeInteger(usage.completion_tokens) && usage.completion_tokens >= 0;
-    const cost = valid ? (usage.prompt_tokens * inputRate + usage.completion_tokens * outputRate) / 1e6 : (attempted ? null : 0);
+    const cost = valid ? (usage.prompt_tokens * reserved.inputRate + usage.completion_tokens * reserved.outputRate) / 1e6 : (attempted ? null : 0);
     const row = {
       status: errorCode ? (valid ? 'failed' : (attempted ? 'unknown_cost' : 'not_sent')) : (valid ? 'complete' : 'unknown_cost'),
       cost, inputTokens: valid ? usage.prompt_tokens : null, outputTokens: valid ? usage.completion_tokens : null,
-      model: response && response.model || MODEL, errorCode: errorCode || null
+      model: response && response.model || reserved.model, errorCode: errorCode || null
     };
     try {
       if (remote) { await remote.finish(id, row); return; }
@@ -187,7 +208,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
       const query = userId === 'owner' ? 'SELECT * FROM usage ORDER BY started_at DESC LIMIT 5000' : 'SELECT * FROM usage WHERE user_id=? ORDER BY started_at DESC LIMIT 5000';
       result = userId === 'owner' ? db.prepare(query).all() : db.prepare(query).all(userId);
     }
-    const labels = { owner: 'Chatbot Intern', supervisor: 'Chatbot RA', demo: 'Demo User' };
+    const labels = { owner: 'Chatbot Intern', supervisor: 'Chatbot RA', demo: 'Demo User', tester: 'Model Tester' };
     return result.map(row => ({ ...row, account_label: labels[row.user_id] || row.user_id }));
   }
 
@@ -227,7 +248,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     return [columns.map(cell).join(','), ...(await rows(userId)).map(row => columns.map(key => cell(row[key])).join(','))].join('\r\n');
   }
 
-  return { login, authenticate, requireAuth, begin, finish, rows, csv, saveFeedback, saveSourceFeedback, feedbackReports,
+  return { login, authenticate, requireAuth, begin, beginBatch, finish, rows, csv, saveFeedback, saveSourceFeedback, feedbackReports,
     logout: user => revokedSessions.set(user.nonce, user.exp),
     close: async () => { if (db) db.close(); if (remote) await remote.close(); },
     chatManager: remote && remote.chatManager,

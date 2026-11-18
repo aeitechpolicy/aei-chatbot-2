@@ -1,5 +1,23 @@
 # Maintainer handoff
 
+## Current checkpoint - November 17, 2026
+
+This checkout prepares the streaming compatibility fix and a separate optional Model Tester account. The user has restored Together credits, created a new key, saved it privately in Render, and deployed diagnostic logging through PR #10. The latest live error was HTTP 400: the Qwen model requires streaming. No successful live Qwen answer has yet been verified in this session. The code in this update must be uploaded, merged and deployed before that test.
+
+The backend now requests streaming with final usage, accumulates answer content, and keeps the existing response/citation/title pipeline. It has a 45-second abort signal and no automatic retries. A stream without a recognized completion marker fails rather than saving a partial answer.
+
+Model Tester uses its own password, sessions, chats and usage view. It shares evidence across up to three allowlisted models: Qwen/Qwen3.8-Flash, zai-org/GLM-5.3-Flash, openai/gpt-oss-120b. The latter two use low reasoning effort; all share the 1024-token output cap. A finish caused by the output limit is visibly marked. Token counts can include reasoning and provider costs can differ from estimates. Do not call an automatic AI judge or add a dedicated endpoint.
+
+All paid candidate calls must be reserved together. SQLite uses one transaction; PostgreSQL calls the new aei_pilot_reserve_batch function, which invokes the existing locked reservation function within one statement. Any failed reservation rolls back the whole set. Each finish uses the rates captured for its model. A missing usage record remains uncertain and retains its reservation. Failed/uncertain attempts still count toward allowances.
+
+The tester can use all three research modes and compare scholars within Article Chat. Article Search has shared deterministic results and no model calls. Web evidence is fetched once per comparison. Ordinary accounts cannot choose alternative models. Tester candidates with citation warnings retain their original text for inspection; ordinary answer filtering is unchanged. Never treat a passing citation-format check as proof that a factual claim is supported.
+
+Set CHATBOT_TESTER_PASSWORD only in Render to enable this optional account. It must be unique across all configured accounts and contain 16-256 characters. No new hosting service, dependency, frontend key or real password is included. Keys remain backend-only. See setup and validation for publication checks. After deployment, test Qwen once, then a small three-model comparison. Provider availability, account permissions and real answer quality are unverified until those calls succeed.
+
+## Historical October 29 handoff
+
+The material below is retained as the earlier record. Its deployment status and pending-work statements are superseded by the checkpoint above.
+
 Updated October 29, 2026. Deployed base is Qwen release 0391378, merged through PR #4 after private-pilot PR #3. Vercel succeeded, Render was reported live, and the user confirmed post-update login, saved chats and usage access. Both-account ownership and restart persistence passed earlier. Together stays disconnected and no new payment is approved. This checkout adds a locally tested research-search follow-up that is not yet published. See [setup](PRIVATE%20PILOT%20SETUP.md) and [validation](VALIDATION.md). The original baseline and investigation evidence remain separate.
 
 ## Audience and operating plan

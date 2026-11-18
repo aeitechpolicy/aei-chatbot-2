@@ -1,0 +1,154 @@
+const { test } = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const express = require('express');
+const { createApp } = require('../server');
+const { createPilot } = require('../utils/pilot');
+const { TEST_MODELS, selectedModels } = require('../utils/modelTesting');
+
+const OWNER = 'test-only-owner-password';
+const TESTER = 'test-only-model-tester-password';
+const messages = [{ role: 'user', content: 'Compare this policy question.' }];
+const answer = () => ({ choices: [{ message: { content: 'TITLE: Spectrum Policy\nThe supplied article discusses spectrum policy. [S1]' } }], usage: { prompt_tokens: 1000, completion_tokens: 100 } });
+
+async function fixture(t, { env = {}, complete = async () => answer(), fetchArticles, searchWeb } = {}) {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-model-testing-'));
+  const settings = { CHATBOT_INTERN_PASSWORD: OWNER, CHATBOT_TESTER_PASSWORD: TESTER, ...env };
+  const pilot = createPilot({ env: settings, dataDir: dir });
+  const app = createApp({ env: settings, pilot, complete, fileRoutes: express.Router(),
+    chatDependencies: { fetchArticles: fetchArticles || (async () => [{ title: 'Spectrum article', author: 'Shane Tews',
+      date: '2026-11-10', url: 'https://www.aei.org/articles/spectrum/', body: 'The supplied article discusses spectrum policy.' }]), searchWeb } });
+  const server = await new Promise(resolve => { const s = app.listen(0, '127.0.0.1', () => resolve(s)); });
+  t.after(async () => { await new Promise(resolve => server.close(resolve)); await pilot.close(); fs.rmSync(dir, { recursive: true, force: true }); });
+  const origin = `http://127.0.0.1:${server.address().port}`;
+  const sessions = {};
+  function session(user) { return sessions[user] || (sessions[user] = pilot.login(user, user === 'owner' ? OWNER : TESTER, user)); }
+  async function request(route, body, user = 'tester') {
+    return fetch(origin + route, { method: body === undefined ? 'GET' : 'POST', headers: {
+      Authorization: `Bearer ${session(user).token}`, 'Content-Type': 'application/json'
+    }, ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
+  }
+  async function chat(user = 'tester') { return (await request('/api/chat/new', { domainName: 'General' }, user)).json(); }
+  return { pilot, request, chat };
+}
+
+test('model choices are a server allowlist with no duplicates or arbitrary model IDs', () => {
+  assert.equal(selectedModels().length, 3);
+  for (const ids of [[], ['unknown/model'], [TEST_MODELS[0].id, TEST_MODELS[0].id], 'all', [null]]) {
+    assert.throws(() => selectedModels(ids), /Choose one to three/);
+  }
+});
+
+test('tester login is optional, unique and separate from staff history and files', async t => {
+  const f = await fixture(t);
+  const config = await (await f.request('/api/chat/capabilities')).json();
+  assert.deepEqual(config.models.map(model => model.id), TEST_MODELS.map(model => model.id));
+  const ownerConfig = await (await f.request('/api/chat/capabilities', undefined, 'owner')).json();
+  assert.equal(ownerConfig.models, undefined);
+  const own = await f.chat();
+  assert.equal((await f.request(`/api/chat/${own.id}`, undefined, 'owner')).status, 404);
+  assert.equal((await f.request('/api/files/content/Will_Rinehart/article.txt')).status, 403);
+  assert.equal((await f.request('/api/feedback')).status, 403);
+  assert.equal((await f.request('/api/usage')).status, 200);
+  const staffChat = await f.chat('owner');
+  assert.equal((await f.request(`/api/chat/${staffChat.id}/message`, { message: 'Policy', modelIds: TEST_MODELS.map(model => model.id) }, 'owner')).status, 403);
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-tester-login-'));
+  const disabled = createPilot({ env: { CHATBOT_INTERN_PASSWORD: OWNER, CHATBOT_TESTER_PASSWORD: OWNER }, dataDir: dir });
+  try { assert.throws(() => disabled.login('tester', OWNER, 'test'), /not recognized/); }
+  finally { await disabled.close(); fs.rmSync(dir, { recursive: true, force: true }); }
+});
+
+test('three models start together using identical library context and record their own prices', { timeout: 15000 }, async t => {
+  let lookups = 0;
+  const requests = [];
+  let release;
+  const allStarted = new Promise(resolve => { release = resolve; });
+  const f = await fixture(t, { fetchArticles: async () => { lookups++; return [{ title: 'Spectrum article',
+    author: 'Shane Tews', body: 'The supplied article discusses spectrum policy.', url: 'https://www.aei.org/articles/spectrum/' }]; },
+    complete: async request => { requests.push(request); if (requests.length === 3) release(); await allStarted; return answer(); } });
+  const chat = await f.chat();
+  const response = await f.request(`/api/chat/${chat.id}/message`, { message: 'What does the scholar say about spectrum?' });
+  assert.equal(response.status, 200);
+  const data = await response.json();
+  assert.equal(lookups, 1); assert.equal(requests.length, 3);
+  for (const request of requests) assert.deepEqual(request.messages, requests[0].messages);
+  assert.equal(requests[0].reasoning.enabled, false);
+  assert.equal(requests[1].reasoning_effort, 'low');
+  assert.equal(data.modelResponses.length, 3);
+  assert.ok(data.modelResponses.every(item => item.status === 'complete' && item.usageRecorded));
+  assert.equal(data.chat.title, 'Spectrum Policy');
+  const saved = await (await f.request(`/api/chat/${chat.id}`)).json();
+  assert.equal(saved.messages[1].modelResponses.length, 3);
+  const rows = await f.pilot.rows('tester');
+  assert.equal(rows.length, 3);
+  for (const model of TEST_MODELS) {
+    const row = rows.find(item => item.model === model.id);
+    assert.equal(row.status, 'complete'); assert.equal(row.account_label, 'Model Tester');
+    assert.ok(Math.abs(row.estimated_usd - (1000 * model.inputRate + 100 * model.outputRate) / 1e6) < 1e-12);
+  }
+});
+
+test('experimental web evidence is fetched once and a failed model does not discard successful answers', async t => {
+  let searches = 0;
+  const requests = [];
+  const f = await fixture(t, { searchWeb: async () => { searches++; return [{ title: 'Web result', url: 'https://example.org/news', content: 'External spectrum development.' }]; },
+    complete: async request => {
+      requests.push(request);
+      if (request.model === TEST_MODELS[1].id) throw Object.assign(new Error('simulated unavailable model'), { status: 503 });
+      return answer();
+    } });
+  const chat = await f.chat();
+  const response = await f.request(`/api/chat/${chat.id}/message`, { message: 'What changed in spectrum policy?', mode: 'web' });
+  assert.equal(response.status, 200);
+  const data = await response.json();
+  assert.equal(searches, 1); assert.equal(requests.length, 3);
+  assert.ok(requests.every(request => request.messages[0].content.includes('External spectrum development.')));
+  assert.ok(data.sources.some(source => source.id === 'W1'));
+  assert.equal(data.modelResponses.filter(item => item.status === 'complete').length, 2);
+  assert.equal(data.modelResponses.filter(item => item.status === 'failed').length, 1);
+  assert.equal((await f.pilot.rows('tester')).find(row => row.model === TEST_MODELS[1].id).status, 'unknown_cost');
+});
+
+test('a budget too small for the whole comparison prevents all provider calls and rolls reservations back', async t => {
+  let calls = 0;
+  const f = await fixture(t, { env: { CHATBOT_DAILY_ESTIMATE_USD: '0.0015' }, complete: async () => { calls++; return answer(); } });
+  const chat = await f.chat();
+  const response = await f.request(`/api/chat/${chat.id}/message`, { message: 'What does the scholar say?' });
+  assert.equal(response.status, 429); assert.equal(calls, 0);
+  assert.equal((await f.pilot.rows('tester')).length, 0);
+  const id = await f.pilot.begin('owner', messages);
+  await f.pilot.finish(id, { attempted: false });
+});
+
+test('missing web results leave zero paid calls and mark every unused reservation as not sent', async t => {
+  let calls = 0;
+  const f = await fixture(t, { searchWeb: async () => [], complete: async () => { calls++; return answer(); } });
+  const chat = await f.chat();
+  assert.equal((await f.request(`/api/chat/${chat.id}/message`, { message: 'Spectrum policy', mode: 'web' })).status, 502);
+  assert.equal(calls, 0);
+  const rows = await f.pilot.rows('tester');
+  assert.equal(rows.length, 3); assert.ok(rows.every(row => row.status === 'not_sent' && row.estimated_usd === 0));
+});
+
+test('citation failures remain visible for the tester and invalid model choices never spend credits', async t => {
+  let calls = 0;
+  const f = await fixture(t, { complete: async () => { calls++; return { ...answer(), choices: [{ message: { content: 'Unsupported candidate response without a citation.' } }] }; } });
+  const chat = await f.chat();
+  assert.equal((await f.request(`/api/chat/${chat.id}/message`, { message: 'Spectrum policy', modelIds: ['arbitrary/model'] })).status, 400);
+  assert.equal(calls, 0);
+  const data = await (await f.request(`/api/chat/${chat.id}/message`, { message: 'Spectrum policy', modelIds: [TEST_MODELS[0].id] })).json();
+  assert.equal(calls, 1); assert.equal(data.modelResponses[0].status, 'citation_warning');
+  assert.match(data.modelResponses[0].content, /Unsupported candidate/);
+});
+
+test('an unconnected provider leaves comparison reservations marked as not sent', async t => {
+  const f = await fixture(t, { complete: async () => { throw Object.assign(new Error('The AI service is not connected yet.'), { status: 503, code: 'ai_setup' }); } });
+  const chat = await f.chat();
+  const response = await f.request(`/api/chat/${chat.id}/message`, { message: 'Spectrum policy' });
+  assert.equal(response.status, 200);
+  const rows = await f.pilot.rows('tester');
+  assert.equal(rows.length, 3);
+  assert.ok(rows.every(row => row.status === 'not_sent' && row.estimated_usd === 0));
+});

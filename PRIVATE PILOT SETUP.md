@@ -1,70 +1,42 @@
 # Private pilot setup and publication
 
-Updated October 29, 2026. Qwen base release 0391378 is deployed through PR #4. The user confirmed Render live and post-update sign-in, saved chats and usage access. Earlier both-account isolation and restart checks passed. This research-search follow-up is prepared locally, not yet published. Together stays disconnected and the user has deferred new payments.
+Updated November 17, 2026. This update adds streaming compatibility and the optional Model Tester workspace. Local checks do not establish live provider compatibility or answer quality. The maintainer uploads changes to GitHub and controls deployments and private settings.
 
-## Existing services and private settings
+## Existing services
 
-The pilot uses Render Free, Neon Free and Vercel. Vercel's actual account plan and history are unverified. Free services have quotas and can sleep or pause. File Manager edits still use temporary Render storage.
+Keep the existing Vercel website, Render Free backend and Neon Free database. Free services retain their normal quotas and sleep/pause behavior. Together usage is charged separately. This update requires no hosting upgrade and adds no dependencies.
 
-Required private settings already saved on Render → aei-chatbot → Environment:
+## Private backend settings
 
-| Name | Private value |
+Render -> aei-chatbot -> Environment:
+
+| Name | Value |
 | --- | --- |
-| DATABASE_URL | Existing Neon connection string |
-| CHATBOT_INTERN_PASSWORD | Intern password, 16–256 characters |
-| CHATBOT_RA_PASSWORD | A different RA password, 16–256 characters |
-| CHATBOT_ALLOWED_ORIGINS | https://aei-chatbot.vercel.app, without a trailing slash |
+| DATABASE_URL | Existing private Neon PostgreSQL connection string |
+| TOGETHER_API_KEY | Existing newly created Together project key |
+| CHATBOT_INTERN_PASSWORD | Existing Intern password, 16-256 characters |
+| CHATBOT_RA_PASSWORD | Existing, different RA password, 16-256 characters |
+| CHATBOT_DEMO_PASSWORD | Optional existing unique demo password, 16-256 characters |
+| CHATBOT_TESTER_PASSWORD | NEW: optional unique Model Tester password, 16-256 characters |
+| CHATBOT_ALLOWED_ORIGINS | https://aei-chatbot.vercel.app |
 | NODE_VERSION | 24 |
+| TAVILY_API_KEY | Existing optional web-search connection; required for AEI + Web |
 
-Ordinary service variables override matching environment-group settings. Do not duplicate secrets into Vercel, source files, chat or screenshots. Vercel keeps its existing REACT_APP_API_URL pointing to the backend. The assistant has never inspected private values.
+Choose the tester password privately. Do not place any secret in GitHub, Vercel frontend variables, this document, screenshots, or chat. Ordinary Render variables override matching environment-group values. Vercel retains its existing REACT_APP_API_URL pointing to the backend.
 
-To enable the optional **Demo User** login, add `CHATBOT_DEMO_PASSWORD` to the Render service with a separate password of 16–256 characters. Deploy the update and select **Demo User** on the sign-in screen. This account can search the archive and use its own chats. Chatbot Intern can see the demo account’s recorded requests in **Usage and costs**. Remove the environment variable and deploy again to disable the login.
+Together passthrough models may require prompt storage and third-party sharing enabled in organization privacy settings. Those are organization choices, not permissions this code changes. Training consent is separate. Do not rotate a working key merely to resolve a streaming-format error.
 
-## Publish this follow-up
+## Publish
 
-1. Use the prepared AEI Scholar Library Update.zip. Transfer it to Windows and Extract All.
-2. In aeitechpolicy/aei-chatbot-2, create a branch from main for the demo update.
-3. Upload the extracted backend and frontend folders and any included root documentation. Confirm that the upload paths start with backend/, frontend/, or the root document name.
-4. Commit to the new branch with Restore original chatbot and update the Scholar Library.
-5. Have the assistant verify file paths and content against the package manifest, then create/review and merge the pull request.
-6. Confirm Vercel succeeds and Render shows the same merge live. Add the demo password in Render if you want to enable Demo User.
+1. Extract the update ZIP. At the repository root, upload its backend and frontend folders and documentation, preserving paths.
+2. Create a branch named model-testing-update. Commit with 'Add private model comparisons and streaming support', then open a pull request into main.
+3. Review the changed paths and merge once checks pass. This package contains no built website, dependencies or private credentials.
+4. Add CHATBOT_TESTER_PASSWORD in Render, then save and deploy. The database adds the comparison reservation function through the existing initialization process. Existing tables and records are retained.
+5. Confirm the Render deployment is Live for the merge commit and Vercel's deployment for that commit succeeded.
+6. Sign in as Chatbot Intern and ask one short article-grounded question. Check the answer and the newest usage entry.
+7. Sign out, choose Model Tester, and sign in using its new password. Leave the three defaults selected and ask the same question once. Check each answer, citations, timings and estimated costs. One failed model is shown separately, without an automatic retry.
+8. Test Article Search and AEI + Web. Article Search should produce no new Together usage. Web mode requires the existing search key and shares the same web results across candidates.
 
-Preserve upstream work when reviewing the branch. The package includes the historical scholar files already in the August 26 GitHub revision. The separate recent-publications import belongs in the staff File Manager.
+Each candidate counts as one request against the current global, per-account and per-minute allowances. Three selected models use three requests. A second three-model run inside one minute can exceed the five-request minute limit. Wait at least a minute rather than repeatedly retrying. The defaults remain 50 requests/day globally, 30/account/day and $0.50/day estimated usage, resetting at midnight UTC. Uncertain provider outcomes retain a conservative reservation. The app's limits cannot prevent use of a stolen API key outside the chatbot.
 
-## Demo versions
-
-Demo User starts in **Version 2.0 — November 2026**, with a What’s new overview followed by the guided tour. **Version 1.0 — Pre-September 2026** uses the archived August 26, 2026 interface and scholar folders. The newest recorded publication in that copy is July 15, 2026. In Version 1.0, open Scholars for the original file counts or Files to browse the read-only folders. Each version has its own chat history. Both use the pilot sign-in, model and usage limits.
-
-## Free checks after deployment
-
-Sign in and open Search articles. Search a concrete topic, choose one scholar, and inspect a result's recorded title/date/link and excerpt. Switch to All scholars or Explore a recent sample. Confirm an unmatched topic gives no matches. These steps use no AI credits and should create no AI usage row. Saved chats and existing usage access should remain available.
-
-Search covers the saved archive, not the live web. Missing metadata stays unrecorded; a collection label is not verified authorship. Broad samples do not establish a scholar's most common themes. No AI synthesis is generated by the free search screen.
-
-## Future funded AI test — not approved yet
-
-When the user later chooses to fund a small test, confirm account credit and privately add a fresh chatbot-only Together project key as TOGETHER_API_KEY in Render. A new key alone does not fund requests. Keep the old key revoked and automatic top-ups off. Do not create a dedicated model endpoint.
-
-The fixed model remains Qwen/Qwen3.8-Flash, confirmed as Serverless in the user's account. Default estimates remain $0.15 input/$0.47 output per million tokens, checked October 29: https://www.together.ai/models/qwen3-8-flash. Private CHATBOT_INPUT_USD_PER_MILLION, CHATBOT_OUTPUT_USD_PER_MILLION or CHATBOT_PRICE_SOURCE overrides take precedence; remove obsolete ones or update them privately before real AI use.
-
-General chat now supplies archive evidence across scholars. AI prompts contain up to six excerpts of 2,200 characters, with numbered references and recorded metadata. Unknown citation IDs are replaced and missing citations/unmatched quotations receive review notices. A no-match question receives an explanatory reply without a model call. These checks do not prove every claim is supported.
-
-AI allowances remain 50 attempts/day overall UTC, 30/account/day, five/minute/account and a $0.50 estimated app allowance. Output is capped at 1,024 tokens, optional reasoning is requested off and automatic retries are disabled. App controls cannot cap off-app API-key use or guarantee Together's bill. Search itself has no AI cost but uses existing hosting resources and authenticated request limits.
-
-## Storage and verification
-
-New chats, structured source excerpts and notices use the existing Neon JSON storage; no database migration is required. Usage and reservations remain durable. Backend restarts require signing in again. Old legacy chats are preserved separately, not assigned to these accounts.
-
-Use Node 24, npm ci in each app folder, backend npm test, frontend npm test -- --watchAll=false --runInBand, and frontend npm run build. Local tests use simulated Together replies and PGlite via the real Neon HTTP driver. They do not contact private accounts. See VALIDATION.md for exact results and remaining live checks.
-
-
-## Experimental web search
-
-The AEI + Web tab uses AEI Scholar Library passages and up to three Tavily web search snippets. Set `TAVILY_API_KEY` on the Render backend to enable it alongside the existing Together connection. The tab tells users before sending that their question is used to search the web. Archive passages and earlier questions stay out of the Tavily request. Each search uses a single basic Tavily request, subject to its own account quota. Together handles answer generation through the existing pilot budget.
-
-Article Chat offers **Compare scholars** when the scope is **All 4 scholars**. The comparison looks for a matching passage with each scholar listed as an author and marks gaps where evidence is limited. A numbered citation opens its passage. **Research brief** opens a preview with findings and linked sources. **Copy brief** copies the preview to the clipboard. Suggested follow-ups fill the question box for review.
-
-
-## Staff feedback inbox
-
-Ordinary chats are available to the account that created them. **Send to the team** lets the user select a reason, explain what went wrong, and review the answer before sending. The report includes the selected answer, the account label, the reason, and the explanation. Staff accounts can open **Feedback inbox**. Demo accounts can submit reports. The inbox uses the pilot database.
+To disable the tester login, remove CHATBOT_TESTER_PASSWORD from Render and deploy. Other accounts retain their own private chats. Compare model quality using the same questions and evidence, and review claims against cited passages. A model labeled available by the catalog still needs a live call to confirm access for this organization.

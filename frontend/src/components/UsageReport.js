@@ -39,9 +39,9 @@ export default function UsageReport() {
       <div className="usage-totals"><div><span>Recorded requests</span><strong>{rows.length}</strong></div><div><span>Known cost estimates</span><strong>{money(known)}</strong></div><div><span>Uncertain outcomes or costs</span><strong>{uncertain}</strong></div></div>
       {!data.settings.storageConfigured && <p className="pilot-error">The free database must be connected before AI answers can be enabled.</p>}
       <p className="usage-note">Daily pilot allowances: {data.settings.dailyQuestions} requests in total, up to {data.settings.personQuestions} per account, and ${data.settings.dailyBudget.toFixed(2)} in estimated usage. Days reset at midnight UTC. Requests with unknown costs retain a conservative allowance.</p>
-      <p className="usage-note">Estimate basis: {data.settings.priceSource}.</p>
+      <p className="usage-note">Estimate basis: rates recorded with each request. Model Tester uses each selected model’s own rates. Download CSV for details.</p>
       <div className="usage-table-wrap"><table className="usage-table"><thead><tr><th>Time (Eastern)</th><th>Account</th><th>Model</th><th>Result</th><th>Estimated cost</th></tr></thead><tbody>
-        {rows.map(row => <tr key={row.id}><td>{new Date(row.started_at).toLocaleString('en-US', { timeZone: 'America/New_York' })}</td><td>{row.user_id === 'owner' ? 'Chatbot Intern' : 'Chatbot RA'}</td><td>{row.model.split('/').pop()}</td><td>{status(row)}</td><td>{money(row.estimated_usd)}</td></tr>)}
+        {rows.map(row => <tr key={row.id}><td>{new Date(row.started_at).toLocaleString('en-US', { timeZone: 'America/New_York' })}</td><td>{row.account_label || row.user_id}</td><td>{row.model.split('/').pop()}</td><td>{status(row)}</td><td>{money(row.estimated_usd)}</td></tr>)}
         {!rows.length && <tr><td colSpan="5">No requests recorded yet.</td></tr>}
       </tbody></table></div>
       <p className="usage-note">Shows up to 5,000 recent requests. This report does not include activity that bypasses the chatbot. Check Together’s billing page for the account’s complete charges.</p>
