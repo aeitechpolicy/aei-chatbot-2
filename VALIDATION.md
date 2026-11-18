@@ -1,5 +1,9 @@
 # Validation record
 
+## Compare Scholars category validation — November 18, 2026
+
+133 backend tests and 33 frontend tests passed with zero failures; the CI production build passed. New checks cover selected-author retrieval, invalid/duplicate/unknown/fewer-than-two selections rejected before provider use, exactly one provider call, persisted comparison groups, the top-level category and request payload, disabling a one-scholar submission, interactive practice selection and all seven user-paced tour steps without API calls. The local browser check showed the new category, correct selected-name states, two-scholar picker and updated What’s new/tour. All model/search responses were simulated, no production data or credits were used, and there are no new dependencies. Existing non-failing toolchain/React warnings remain. Post-deployment live answer quality still needs a new question.
+
 ## Source-first reply validation — November 18, 2026
 
 All 30 frontend tests passed across five suites, and the CI production build passed. New tests cover old stored fallback messages in Article Chat and AEI + Web, visible inline cards/links, hidden technical diagnostics, feedback controls and no brief button; partial answers retain their omission notice and drawer. A local mock browser check confirmed the saved fallback renders cards directly without the dropdown or quotation warning. No model/search credits, production chat writes, backend changes or new dependencies were used. Existing non-failing React act/toolchain warnings remain.

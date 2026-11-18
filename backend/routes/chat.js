@@ -177,6 +177,14 @@ router.post('/:chatId/message', async (req, res) => {
     }
     const web = mode === 'web';
     const compare = mode === 'compare';
+    const comparisonScholars = req.body.comparisonScholars;
+    const allowedScholars = ['Brent_Orrell', 'Clay_Calvert', 'Shane_Tews', 'Will_Rinehart'];
+    if (comparisonScholars !== undefined && (!compare || !Array.isArray(comparisonScholars) ||
+      comparisonScholars.length < 2 || comparisonScholars.length > 4 ||
+      new Set(comparisonScholars).size !== comparisonScholars.length ||
+      comparisonScholars.some(key => !allowedScholars.includes(key)))) {
+      return res.status(400).json({ error: 'Select two to four different scholars to compare.' });
+    }
     if (web && !searchWeb) return res.status(503).json({ error: 'Web search is currently unavailable.', code: 'web_setup' });
 
     if (typeof message !== 'string' || !message.trim()) {
@@ -206,7 +214,7 @@ router.post('/:chatId/message', async (req, res) => {
     let groups;
     try {
       if (legacy) articles = await fetchArchivedArticles(chat.domainName, message);
-      else if (compare) groups = await findComparisonSources(fetchArticles, retrievalQuery);
+      else if (compare) groups = await findComparisonSources(fetchArticles, retrievalQuery, comparisonScholars);
       else articles = await fetchArticles(chat.domainName, libraryQuery, web ? 3 : 6);
     } catch {
       return res.status(503).json({ error: 'The AEI Scholar Library could not be searched. Please try again shortly.', code: 'archive_unavailable' });

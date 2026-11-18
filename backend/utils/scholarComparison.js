@@ -4,8 +4,8 @@ const { prepareSources, checkCitations } = require('./sourceContext');
 const NO_EVIDENCE = 'The AEI Scholar Library returned no matching passage with this scholar as a recorded author.';
 const LIMITED_EVIDENCE = 'The matching passage offers limited evidence for this question. Review the source below.';
 
-async function findComparisonSources(fetchArticles, query) {
-  const matches = await Promise.all(SERVED_SCHOLARS.map(async scholar => {
+async function findComparisonSources(fetchArticles, query, selectedKeys) {
+  const matches = await Promise.all(SERVED_SCHOLARS.filter(scholar => !selectedKeys || selectedKeys.includes(scholar.replace(/ /g, '_'))).map(async scholar => {
     const key = scholar.replace(/ /g, '_');
     const articles = await fetchArticles(key, query, 4);
     const authored = articles.filter(article => (article.authors || [article.author]).includes(scholar));

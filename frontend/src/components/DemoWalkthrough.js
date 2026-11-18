@@ -3,6 +3,7 @@ import { ArrowRight, BookOpen, Check, Copy, Flag, Globe, MessageCircle, RotateCc
 import ResearchDialog from './ResearchDialog';
 import ResearchBriefPreview from './ResearchBriefPreview';
 import FeedbackDialog from './FeedbackDialog';
+import { SCHOLARS } from '../utils/scholars';
 import { buildResearchBrief } from '../utils/researchBrief';
 
 const sampleQuestion = 'What does Greg Oslan recommend for protecting personal accounts?';
@@ -19,15 +20,17 @@ const webSource = {
 const answer = 'Oslan recommends checking whether account credentials have appeared in a breach and reviewing older accounts that still contain personal information. [S1]';
 const brief = buildResearchBrief({ content: answer, sources: [sampleSource] }, 'Protecting personal accounts');
 const steps = [
-  { title: 'Choose a mode', help: 'Select AEI Article Search. Article Chat answers from the Scholar Library; AEI + Web adds outside material.' },
+  { title: 'Choose a mode', help: 'Select AEI Article Search. Article Chat answers from the Scholar Library; Compare Scholars lets you choose whose perspectives to compare; AEI + Web adds outside material.' },
   { title: 'Find an article', help: 'Search Greg Oslan. In real search, you can also choose a scholar, date range, or Newest first. Select results to copy a source list.' },
   { title: 'Open the citation', help: 'Select [S1] to read the supporting passage. Shane Tews is the author of this article; Greg Oslan is the guest speaking in the passage.' },
   { title: 'Preview a research brief', help: 'Open the brief, review the findings and linked source, and copy the text if useful. It is made from the answer already on screen.' },
   { title: 'Try AEI + Web', help: 'Select AEI + Web, then [W1]. This prepared comparison connects the AEI interview with NIST guidance. [S1] identifies AEI evidence; [W1] identifies an outside source.' },
-  { title: 'Report a problem', help: 'Select Send to the team, choose a reason, and explain what needs correcting. This practice form sends nothing. In real use, staff see the answer or source you report and your explanation.' }
+  { title: 'Report a problem', help: 'Select Send to the team, choose a reason, and explain what needs correcting. This practice form sends nothing. In real use, staff see the answer or source you report and your explanation.' },
+  { title: 'Compare selected scholars', help: 'Open Compare Scholars and select two to four names. Ask one question to see their perspectives side by side. The live answer uses only the selected scholars and flags limited evidence. This practice shows the controls, not generated findings.' }
 ];
 const modes = [
   { key: 'chat', label: 'Article Chat', icon: MessageCircle },
+  { key: 'compare', label: 'Compare Scholars', icon: BookOpen },
   { key: 'search', label: 'AEI Article Search', icon: Search },
   { key: 'web', label: 'AEI + Web', icon: Globe }
 ];
@@ -35,6 +38,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   const [step, setStep] = useState(0);
   const [completed, setCompleted] = useState([]);
   const [mode, setMode] = useState('chat');
+  const [comparisonScholars, setComparisonScholars] = useState([]);
   const [query, setQuery] = useState('');
   const [results, setResults] = useState(false);
   const [searchError, setSearchError] = useState('');
@@ -58,10 +62,10 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   }, [step, finished]);
   useEffect(() => () => { run.current++; }, []);
   const mark = index => setCompleted(previous => previous.includes(index) ? previous : [...previous, index]);
-  function showStep(index) { setStep(index); setMode(index < 2 ? 'search' : index === 4 ? 'web' : 'chat'); }
+  function showStep(index) { setStep(index); setMode(index < 2 ? 'search' : index === 4 ? 'web' : index === 6 ? 'compare' : 'chat'); }
   function restart() {
     run.current++; setShowing(false); setStep(0); setCompleted([]); setMode('chat'); setQuery(''); setResults(false); setSearchError('');
-    setSelected(false); setCopyStatus(''); setPassage(false); setWebPassage(null); setBriefOpen(false); setFeedbackOpen(false); setFeedbackSent(false);
+    setSelected(false); setCopyStatus(''); setPassage(false); setWebPassage(null); setBriefOpen(false); setFeedbackOpen(false); setFeedbackSent(false); setComparisonScholars([]);
   }
   function chooseMode(key) {
     setMode(key);
@@ -93,6 +97,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
     if (step === 3) { setMode('chat'); setBriefOpen(true); }
     if (step === 4) setMode('web');
     if (step === 5) { setMode('chat'); setFeedbackOpen(true); }
+    if (step === 6) { setMode('compare'); setComparisonScholars(['Clay_Calvert', 'Shane_Tews']); }
     await wait(650);
     if (currentRun !== run.current) return;
     if (step === 1) setResults(true);
@@ -123,6 +128,17 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
       <section className={`guided-demo-workspace ${showing ? 'is-demonstrating' : ''}`} aria-label="Practice workspace" aria-busy={showing}>
         <div className="guided-demo-workspace-heading"><strong>AEI Chatbot</strong><span>Prepared example</span></div>
         <nav className="guided-demo-modes" aria-label="Practice research modes">{modes.map(({key, label, icon: Icon}) => <button key={key} type="button" disabled={showing} aria-pressed={mode === key} data-tour-focus={(step === 0 && key === 'search') || (step === 4 && key === 'web' && mode !== 'web')} onClick={() => chooseMode(key)}><Icon size={15} aria-hidden="true" />{label}</button>)}</nav>
+        {mode === 'compare' && <>
+          <p className="guided-demo-mode-description">Choose two to four scholars, then ask the same question of their work.</p>
+          <fieldset className="chat-scope-picker"><legend>Practice: choose scholars to compare</legend>
+            {Object.entries(SCHOLARS).map(([key, name]) => <button type="button" key={key} disabled={showing} aria-pressed={comparisonScholars.includes(key)} onClick={() => {
+              const next = comparisonScholars.includes(key) ? comparisonScholars.filter(item => item !== key) : [...comparisonScholars, key];
+              setComparisonScholars(next); if (step === 6 && next.length >= 2) mark(6);
+            }}>{name}</button>)}
+          </fieldset>
+          <p role="status">{comparisonScholars.length < 2 ? 'Select at least two scholars, or use Next to see an example.' : 'These are the scholars your comparison would include.'}</p>
+          <div className="scholar-comparison" aria-label="Practice selected scholars">{comparisonScholars.map(key => <section key={key}><h3>{SCHOLARS[key]}</h3><p>The live comparison would show this scholar’s perspective, supporting sources, and any limits in the evidence.</p></section>)}</div>
+        </>}
         {mode === 'search' && <>
           <p className="guided-demo-mode-description">Find articles in the AEI Scholar Library.</p>
           <form className="guided-demo-search" data-tour-focus={step === 1 && !results} onSubmit={findArticle}><label htmlFor="practice-query">Search the sample library</label><div>

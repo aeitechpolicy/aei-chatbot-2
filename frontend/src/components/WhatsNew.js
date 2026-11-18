@@ -16,8 +16,8 @@ const updates = [
   },
   {
     icon: Columns2,
-    title: 'Compare scholars and keep exploring',
-    text: 'See perspectives side by side, use suggested follow-ups, and return to chats named for the question you asked.'
+    title: 'Choose the scholars you want to compare',
+    text: 'Open the Compare Scholars tab, select two to four scholars, and ask one question. See their perspectives side by side, with sources and clear limits where evidence is missing.'
   },
   {
     icon: FileText,

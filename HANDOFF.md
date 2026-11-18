@@ -1,5 +1,11 @@
 # Maintainer handoff
 
+## Compare Scholars category — November 18, 2026
+
+Compare Scholars is now a separate Version 2 category beside Article Chat, AEI Article Search and AEI + Web. The old ordinary-chat toggle is removed. Users select two to four scholars through named toggle buttons; one-name submissions are disabled. The API validates unique, allowed scholar IDs before any retrieval/provider call and retrieves only those chosen authors. Omitting the optional selection retains the previous all-four API behavior, including Model Tester compatibility. Existing missing-evidence and quote/citation protections remain. Saved comparison groups restore the chosen names when opened in comparison mode; switching into the category starts a new General-scope chat. No new dependencies, environment variables, database migration or extra model request.
+
+What’s new describes the category and picker, the interface comparison now says four modes, and the user-paced guided tour has a seventh, interactive scholar-selection practice step. The practice panels explain the layout without inventing scholar positions or making API calls. This combined package also includes the previously prepared source-first reply display change. Version 1 is preserved.
+
 ## Source-first replies — November 18, 2026
 
 The frontend now presents stored citation-check source-only fallback replies as related source cards directly in the answer, with a plain-language introduction. Technical citation diagnostics remain in stored messages and the Model Tester, but are hidden for these source-only cards. This also updates the presentation of existing saved fallback replies; no database rewrite or extra AI call is needed. Ordinary and partial answers keep their source drawer and applicable notices. Source-only cards retain AEI/web labels, publication/byline details, passages, original links and feedback buttons. They do not offer a research brief. Based on merged PR #14 (4509021).
