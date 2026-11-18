@@ -14,6 +14,8 @@ const TEST_MODELS = Object.freeze([
 const MUSE_TEST_MODEL = Object.freeze({
   id: 'meta-models/Muse-Spark-Open-816B-A42B', label: 'Meta Muse Spark Open',
   inputRate: 1.25, outputRate: 4.25, parameters: Object.freeze({}),
+  maxOutputTokens: 4096,
+  maxEstimatedUsd: 0.05,
   priceSource: 'https://www.together.ai/models/muse-spark-open, checked 2026-11-18; uncached estimates, not final billing'
 });
 

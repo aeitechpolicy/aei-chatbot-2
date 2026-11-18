@@ -1,5 +1,9 @@
 # Maintainer handoff
 
+## Muse trial output allowance and five-cent ceiling — November 18, 2026
+
+The first live Muse request returned usage but no visible answer after consuming the 1024-token output allowance. Muse-only trials now allow up to 4096 output tokens and require a conservative per-request reservation of no more than $0.05, as requested by the maintainer. The reservation includes the larger output allowance at Muse prices. Over-limit prompts are refused before any reservation/provider request and do not leave the account busy. Ordinary chats and the existing three-model tester retain 1024 tokens and their existing limits. The daily budget remains unchanged. Visible truncated trial replies receive an output-limit note; saved history retains the flag. No provider privacy setting was changed. One live retry is planned after deployment.
+
 ## Intern-only Muse trial — November 18, 2026
 
 Chatbot Intern (owner) now has an optional Answer model selector for meta-models/Muse-Spark-Open-816B-A42B. The selection applies per request and resets with a new chat/session. Default routing for other accounts and the existing three-model tester remain unchanged. Only this exact model ID is accepted for owner-only trials; other accounts cannot request it. The existing single-request beginBatch reservation records Muse rates ($1.25 input/$4.25 output per million uncached tokens), independent of GLM rate overrides, with the same 1024-token output cap, daily budget and no automatic retries. Saved trial answers retain their model ID and show a Meta Muse Test badge. No environment variables, hosting upgrades or database migration are needed. Provider acceptance and real answer quality require a post-deployment test.

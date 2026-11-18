@@ -43,7 +43,7 @@ test('Intern Muse trial uses the selected model, stores its identity and charges
   assert.equal(response.status, 200); const data = await response.json();
   assert.equal(requests.length, 1); assert.equal(requests[0].model, MUSE_TEST_MODEL.id);
   assert.equal(requests[0].reasoning_effort, undefined); assert.equal(requests[0].reasoning, undefined);
-  assert.equal(requests[0].max_tokens, 1024);
+  assert.equal(requests[0].max_tokens, 4096);
   assert.equal(data.model, MUSE_TEST_MODEL.id);
   assert.equal(data.chat.messages.at(-1).model, MUSE_TEST_MODEL.id);
   assert.equal(data.citationNotice, null);
@@ -71,6 +71,29 @@ test('Muse reservations use Muse prices and keep the existing daily spending cap
   const own = await f.chat('owner');
   assert.equal((await f.request(`/api/chat/${own.id}/message`, { message: 'Policy', modelId: MUSE_TEST_MODEL.id }, 'owner')).status, 429);
   assert.equal(calls, 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+});
+
+test('Muse reserves the larger trial allowance and rejects unbounded output settings', async t => {
+  const f = await fixture(t);
+  const [id] = await f.pilot.beginBatch('owner', messages, [MUSE_TEST_MODEL]);
+  const [row] = await f.pilot.rows('owner');
+  const expected = ((Buffer.byteLength(JSON.stringify(messages), 'utf8') + 1024) * 1.25 + 4096 * 4.25) / 1e6;
+  assert.ok(Math.abs(row.reserved_usd - expected) < 1e-12);
+  await f.pilot.finish(id, { attempted: false });
+  for (const maxOutputTokens of [0, -1, 8192, '4096']) {
+    await assert.rejects(f.pilot.beginBatch('owner', messages, [{ ...MUSE_TEST_MODEL, maxOutputTokens }]), error => error.code === 'model_setup');
+  }
+});
+
+test('five-cent Muse cap blocks expensive context before reserving or calling a model', async t => {
+  const f = await fixture(t);
+  const tooLong = [{ role: 'user', content: 'x'.repeat(30000) }];
+  await assert.rejects(f.pilot.beginBatch('owner', tooLong, [MUSE_TEST_MODEL]), /\$0\.05 estimated limit/);
+  assert.equal((await f.pilot.rows('owner')).length, 0);
+  // A refused request must not leave the account stuck in the busy state.
+  const [id] = await f.pilot.beginBatch('owner', messages, [MUSE_TEST_MODEL]);
+  assert.equal((await f.pilot.rows('owner')).length, 1);
+  await f.pilot.finish(id, { attempted: false });
 });
 
 test('model choices are a server allowlist with no duplicates or arbitrary model IDs', () => {

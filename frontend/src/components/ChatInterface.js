@@ -118,6 +118,7 @@ const ChatInterface = ({
             role: 'assistant',
             content: result.response,
             model: result.model,
+            truncated: result.truncated,
             sources: result.sources || [],
             citationNotice: result.citationNotice,
             searchMode: result.searchMode,
@@ -237,7 +238,7 @@ const ChatInterface = ({
             <option value="">Current default</option>
             <option value="meta-models/Muse-Spark-Open-816B-A42B">Meta Muse Spark Open · Test</option>
           </select></label>
-          {testModel && <p className="workspace-meta">Intern-only trial · $1.25 input / $4.25 output per million tokens. Each question uses AI credits.</p>}
+          {testModel && <p className="workspace-meta">Intern-only trial · Five-cent estimated limit per question. $1.25 input / $4.25 output per million tokens. Trial output allowance: 4,096 tokens.</p>}
         </div>}
         {!legacy && !comparisonMode && !chatId && !sendingMessage && (
           <fieldset className="chat-scope-picker">

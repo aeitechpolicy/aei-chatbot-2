@@ -1,5 +1,9 @@
 # Validation record
 
+## Muse five-cent trial validation — November 18, 2026
+
+138 backend tests, 37 frontend tests and the CI build passed. New tests check the exact 4096-token Muse request, full conservative reservation, rejection of invalid output settings and refusal above $0.05 without a usage row or stuck busy state. A short allowed request still works after a refusal. The first live test used 4744 input/1024 output tokens and returned no visible answer; the larger allowance is intended to leave room for visible output. With that same context the revised conservative reservation is $0.04559425. These checks used simulated providers and no additional paid model call. A post-deployment retry remains to be verified.
+
 ## Intern-only Muse trial validation — November 18, 2026
 
 136 backend tests and 37 frontend tests passed; the production build passed. New checks verify the exact Muse model/parameters and saved identity, one call with Muse-specific ledger rates despite ordinary-model overrides, refusal of unauthorized/arbitrary model choices before spending, cross-account ownership, unchanged budget enforcement, Intern selection payload and hidden controls for ordinary accounts. The other three tester models remain unchanged. No real AI request was sent during automated validation. A single post-deployment live trial is authorized by the maintainer; its outcome and cost will be recorded separately.
