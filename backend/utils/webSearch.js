@@ -10,7 +10,7 @@ function cleanText(value, maxLength) {
 
 function searchTopic(question) {
   let text = String(question).normalize('NFKC').replace(/[\u2010-\u2015-]/g, ' ');
-  text = text.split(/\.\s+(?=(?:clearly|give|provide|cite|acknowledge|keep|separate|distinguish)\b)/i)[0];
+  text = text.split(/\.\s+(?=(?:clearly|give|provide|cite|acknowledge|keep|separate|distinguish|explain|connect|relate|summari[sz]e|if)\b)/i)[0];
   text = text.split(/\b(?:and|then)\s+(?:explain|relate|connect|compare)\b/i)[0];
   // These describe the requested answer and time window, rather than its subject.
   text = text.replace(/\b(?:developments?|updates?|news)\s+(?:from|over|in|within|during)\s+(?:the\s+)?(?:past|last|previous)\s+(?:\d+\s+)?(?:days?|weeks?|months?|years?)\b/gi, ' ');
@@ -73,6 +73,8 @@ function prepareWebSources(results, plan) {
     if (url.protocol !== 'https:' || url.username || url.password || url.port || !url.hostname.includes('.')) continue;
     url.hash = '';
     if (url.href.length > 400) continue;
+    // Recruitment and evergreen legal tables cannot establish a recent policy action.
+    if (plan?.window && /(^|\.)(usajobs\.gov|indeed\.com|ecfr\.gov)$/.test(url.hostname)) continue;
     const date = webPublishedDate(result.published_date);
     if (plan?.window && (!date || date < plan.window.from || date > plan.window.to)) continue;
     const excerpt = cleanText(result.content, 650);

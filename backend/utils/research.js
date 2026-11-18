@@ -2,7 +2,7 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const { createHash } = require('node:crypto');
 const SERVED_SCHOLARS = require('./servedScholars');
-const { interviewFields, speakerPrefix } = require('./interviewSources');
+const { interviewFields, speakerPrefix, speakerStart, speakerEnd, clipSpeakerText } = require('./interviewSources');
 
 const MAX_SOURCE_CHARS = 2200;
 const MAX_ARTICLE_CHARS = 200000;
@@ -64,14 +64,16 @@ function excerptFor(text, terms, idf = () => 1, maxChars = MAX_SOURCE_CHARS) {
   for (let start = 0; start < text.length;) {
     let end = Math.min(text.length, start + 1000);
     if (end < text.length) { const boundary = text.lastIndexOf(' ', end); if (boundary > start + 700) end = boundary; }
-    const part = text.slice(start, end).trim().replace(/\[Speaker:[^\]]*$/, '').trim();
+    end = speakerEnd(text, end);
+    const part = text.slice(start, end).trim();
     const frequencies = counts(tokens(part));
     const matches = terms.filter(t => frequencies.has(t));
     const score = matches.reduce((n, t) => n + idf(t) * (1 + Math.log1p(frequencies.get(t))), 0) * (1 + matches.length);
     windows.push({ start, end, part, score });
     if (end >= text.length) break;
     const next = text.indexOf(' ', Math.max(start + 1, end - 120));
-    start = next > start && next < end ? next + 1 : end;
+    const aligned = speakerStart(text, next > start && next < end ? next + 1 : end);
+    start = aligned > start ? aligned : end;
   }
   const best = [];
   const ranked = terms.length ? windows.slice().sort((a, b) => b.score - a.score || a.start - b.start) : windows;
@@ -80,7 +82,8 @@ function excerptFor(text, terms, idf = () => 1, maxChars = MAX_SOURCE_CHARS) {
     best.push(win);
     if (best.length === 2) break;
   }
-  return best.sort((a, b) => a.start - b.start).map(win => `${speakerPrefix(text, win.start)}${win.start ? '… ' : ''}${win.part}${win.end < text.length ? ' …' : ''}`).join('\n\n').slice(0, maxChars);
+  const rendered = best.sort((a, b) => a.start - b.start).map(win => `${speakerPrefix(text, win.start)}${win.start ? '… ' : ''}${win.part}${win.end < text.length ? ' …' : ''}`).join('\n\n');
+  return clipSpeakerText(rendered, maxChars);
 }
 
 function matchRanges(text, terms) {
@@ -94,8 +97,8 @@ function matchRanges(text, terms) {
 
 function matchedExcerpt(body, terms) {
   const firstMatch = matchRanges(body, terms)[0]?.[0] ?? 0;
-  const start = firstMatch > 460 ? body.lastIndexOf(' ', firstMatch - 120) + 1 : 0;
-  const end = body.length > start + 630 ? body.lastIndexOf(' ', start + 630) : body.length;
+  const start = speakerStart(body, firstMatch > 460 ? body.lastIndexOf(' ', firstMatch - 120) + 1 : 0);
+  const end = speakerEnd(body, body.length > start + 630 ? body.lastIndexOf(' ', start + 630) : body.length);
   const excerpt = `${speakerPrefix(body, start)}${start ? '… ' : ''}${body.slice(start, end > start ? end : start + 630)}${end < body.length ? ' …' : ''}`;
   return { excerpt, passageMatches: matchRanges(excerpt, terms) };
 }
@@ -240,6 +243,8 @@ function createArticleSearch({
   async function search({ query, scholar = 'General', limit = 12, fullTextOnly = false, from, to, sort = 'relevance', includeHighlights = false } = {}) {
     const archive = await catalog();
     const terms = queryTerms(query);
+    const normalizedQuery = normalize(query);
+    const exactPerson = archive.articles.some(doc => (doc.interview?.participants || []).some(name => normalize(name) === normalizedQuery)) ? normalizedQuery : null;
     const scope = scholar === 'General' ? null : scholarKey(scholar);
     const named = SERVED_SCHOLARS.filter(s => normalize(query).includes(normalize(s))).map(scholarKey);
     const overview = terms.length === 0 && /\b(themes?|overview|work|research|written|writing|focus|summari[sz]e)\b/i.test(query);
@@ -254,6 +259,7 @@ function createArticleSearch({
       if (doc.fullText) coverage.fullTextArticles++;
       if (doc.date && (!coverage.latestPublishedDate || doc.date > coverage.latestPublishedDate)) coverage.latestPublishedDate = doc.date;
       if ((from || to) && (!doc.date || (from && doc.date < from) || (to && doc.date > to))) continue;
+      if (exactPerson && ![doc.title, doc.body, ...doc.authors, ...(doc.interview?.participants || [])].some(value => (' ' + normalize(value) + ' ').includes(' ' + exactPerson + ' '))) continue;
       const matched = terms.filter(t => doc.tf.has(t));
       if (!overview && !matched.length) continue;
       const score = matched.reduce((sum, term) => {

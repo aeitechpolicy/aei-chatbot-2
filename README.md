@@ -1,8 +1,22 @@
 # AEI research chatbot
 
-## Current prepared update — November 18, 2026
+## Complete demo and source follow-up — November 18, 2026
 
-An internal research assistant for work by Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. The website runs on Vercel, the backend on Render, and private chats/usage in Neon. This source update is prepared locally; it has not been published. GitHub main was last checked at 7b4d4bec10663c10c63b05014d3a03ae7c599001 (merged PR #11).
+An internal AEI research assistant for Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart, hosted on the existing Vercel, Render and Neon services. PR #12 (01e2c51) is the published base. This combined follow-up is prepared for review; it replaces the earlier guided-tour-only ZIP and is not live until merged and deployed.
+
+- Demo User 1 and Demo User 2 have distinct passwords, private saved histories and the existing Demo restrictions. The original demo login remains compatible. Staff cannot open another account’s chat through the app; only reported answers or sources reach the feedback inbox. Infrastructure administrators with database access still have technical access to stored data; this is not end-to-end encryption.
+- Every demo sign-in opens What’s New and then the guided demo, regardless of a previous visit. A controllable before-and-after visual shows the preserved original interface (pre-September 2026) and the November 2026 interface.
+- The six-step prepared tour includes Article Search, citation passages, a brief preview, an AEI + Web example and practice feedback. Next demonstrates any unfinished step with a visible cursor cue, then waits indefinitely for the user to select Next again. Search results and citation passages remain visible; briefs and the practice-report form stay open for review. The report can be filled automatically but is never submitted automatically. Back, Skip and Restart remain available. The final screen has a large illustrated reminder with an actual screenshot showing the top-right How to use and What’s new buttons. Practice sends no model/search requests, reports or chats.
+- Demo screens show the newest library piece and publication date, with no refresh diagnostics, file tools or usage/cost screens. Provider-cost errors are replaced with a simple availability message for demo users.
+- Byline extraction now uses the primary article header, excluding related-article cards and CMS author accounts. The saved-page audit checked 410 metadata entries across 396 pages and corrected 167 entries (166 bylines and 26 publication dates, with overlap). The Greg Oslan highlights article is by Shane Tews, November 12, 2026. 991 entries had no matching page snapshot and were not verified by this audit; 107 standalone transcript entries were kept separate. This is not a complete library audit or refresh.
+- Web-query processing now excludes the explanatory instructions used in the live test. Recent-development results exclude recruitment listings and evergreen eCFR tables. Search dates remain qualified, and the model must not confuse page updates with new events.
+- Default allowances are 100 model requests per UTC day overall and up to 100 per account, subject to the unchanged $0.50 estimated daily spending cap and minute limits. A three-model comparison uses three model requests. Existing Render limit overrides still take precedence.
+
+A completed live AEI + Web test used GLM and recorded an estimated $0.00070 model cost, separate from search usage. It correctly declined to claim a recent spectrum development from weak web evidence, but exposed the query problem fixed here. Actual web-result quality after this follow-up still needs a live check. 126 backend and 27 frontend tests, the CI build and desktop/phone browser checks passed. See VALIDATION.md and PRIVATE PILOT SETUP.md.
+
+## PR #12 source repair record — November 18, 2026
+
+An internal research assistant for work by Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart. The website runs on Vercel, the backend on Render, and private chats/usage in Neon. The combined source update was published through PR #12 as merge 01e2c51. The notes below describe that release.
 
 This combined package replaces the earlier pending GLM-only package. It includes:
 

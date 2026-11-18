@@ -1,7 +1,7 @@
 import React, { useEffect, useId, useRef } from 'react';
 import { X } from 'lucide-react';
 
-export default function ResearchDialog({ title, children, onClose }) {
+export default function ResearchDialog({ title, children, onClose, className = '' }) {
   const dialogRef = useRef(null);
   const headingId = useId();
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function ResearchDialog({ title, children, onClose }) {
     };
   }, []);
 
-  return <dialog ref={dialogRef} className="research-dialog" aria-labelledby={headingId}
+  return <dialog ref={dialogRef} className={`research-dialog ${className}`} aria-labelledby={headingId}
     onCancel={event => { event.preventDefault(); onClose(); }}>
     <header className="research-dialog-header">
       <h2 id={headingId}>{title}</h2>

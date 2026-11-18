@@ -234,3 +234,15 @@ test('different episode-page aliases with the same explicit PDF link use one tra
   const result = await engine.search({ query: 'spectrum coordination', fullTextOnly: true });
   assert.equal(result.articles.length, 1); assert.equal(result.articles[0].sourceType, 'podcast_transcript');
 });
+
+test('an exact identified guest name does not match an unrelated person sharing a first name', async t => {
+  const { engine } = await archive(t, [
+    { scholar: 'Shane Tews', title: 'Online safety', body: '[Speaker: Greg Oslan]\nGreg Oslan discusses personal account protection.', metadata: { title: 'Online safety', authors: ['Shane Tews'], sourceType: 'interview_highlights', interview: { participants: ['Shane Tews', 'Greg Oslan'] } } },
+    { scholar: 'Shane Tews', title: 'A conversation with Greg Walden', body: 'Greg Walden discussed telecommunications regulation.' },
+    { scholar: 'Shane Tews', title: 'Earlier interview notes', body: 'These notes describe a conversation with Greg Oslan about cybersecurity.' }
+  ]);
+  const result = await engine.search({ query: 'Greg Oslan', includeHighlights: true });
+  assert.equal(result.matchedCount, 2);
+  assert.ok(result.articles.every(article => article.title !== 'A conversation with Greg Walden'));
+  for (const article of result.articles) assert.doesNotMatch(article.excerpt.replace(/\[Speaker: [^\]\n]+\]/g, ''), /[\[\]]/);
+});

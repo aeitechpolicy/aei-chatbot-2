@@ -137,3 +137,16 @@ test('scanned transcript passages and brief references retain their text-recogni
   fireEvent.click(screen.getByRole('button', { name: 'Preview research brief' }));
   expect(screen.getByRole('dialog', { name: 'Research brief' })).toHaveTextContent('Text read from scanned PDF; verify quotations in the original');
 });
+
+test('search preview shortening never leaves a partial speaker label', () => {
+  const SourceCards = require('./SourceCards').default;
+  const { shortenSourceExcerpt } = require('../utils/sources');
+  const boundaryText = 'Introductory context. [Speaker: Shane Tews]\nA question follows here.';
+  for (let cut = 20; cut < boundaryText.length; cut++) {
+    expect(shortenSourceExcerpt(boundaryText, cut).replace(/\[Speaker: [^\]\n]+\]/g, '')).not.toMatch(/[\[\]]/);
+  }
+  const raw = '[Speaker: Greg Oslan]\n' + 'Account protection. '.repeat(30) + '\n[Speaker: Shane Tews]\nA question about helping parents. ' + 'Further context. '.repeat(30);
+  const { container } = render(<SourceCards preview sources={[{ id: 'S1', title: 'An interview', excerpt: raw }]} />);
+  const preview = container.querySelector('blockquote').textContent;
+  expect(preview.replace(/\[Speaker: [^\]\n]+\]/g, '')).not.toMatch(/[\[\]]/);
+});

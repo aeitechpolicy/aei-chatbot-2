@@ -1,6 +1,22 @@
 # Maintainer handoff
 
-## Current prepared checkpoint — November 18, 2026
+## Current complete demo checkpoint — November 18, 2026
+
+Published base: PR #12, merge 01e2c51. Render live and repaired Article Search were confirmed by the maintainer. One subsequent ordinary live GLM AEI + Web answer completed and recorded $0.00070 estimated model cost. It did not find a verified recent spectrum development; it correctly qualified the weak results and kept scholar statements separate from web context. The account briefly returned to sign-in on the first submission, with no new usage record; after sign-in, one completed request was recorded. No more live tests were sent.
+
+This branch combines the previous unpublished guided-tour patch with all subsequent requested changes. It adds demo1/demo2 alongside the compatible original demo account; passwords are configured only through CHATBOT_DEMO_1_PASSWORD and CHATBOT_DEMO_2_PASSWORD in Render. Every configured password must be unique and 16–256 characters. Distinct immutable IDs preserve ownership and saved histories across normal database-backed restarts. No database migration is required. Staff routes deny demo accounts; staff tokens cannot retrieve their private chats. Usage remains visible to Intern, and only selected feedback content is shared through the inbox. Technical database administrators retain access to stored data.
+
+All demo logins now open What’s New on every app/session entry; closing it continues to the tour. The old browser seen flag is ignored. The before/after visual uses captures of the preserved original renderer and November workspace with sample sessions; it has pause/play, manual version selection and reduced-motion support. The six-step tour includes a clearly prepared AEI + Web/NIST example. Next can demonstrate every incomplete step, including entering a sample query and filling a practice report. Demonstration timers never advance the step, close a preview or submit feedback. Every result and passage remains until the user selects Next; the brief and practice form have their own Next buttons. Practice submission is an explicit user action only. It never calls a provider or saves a chat/report. Completion includes a large, numbered reminder with actual cropped screenshots of the persistent header help controls. Demo users see both controls; staff see the How to use screenshot.
+
+publicationMetadata.js scopes authors and publication dates to the current page’s primary header, with current-page head-date fallback. It never takes an author from a recommendation card or JSON-LD CMS account. fetch-missing-articles.js uses this for ordinary publications and interviews. repair-publication-metadata.js rechecks cached public pages without changing text or standalone transcript metadata. Report: 410 entries checked from 396 pages; 167 corrected (166 bylines, 26 dates, overlapping). 991 entries lack a matching page snapshot and remain unaudited, 107 transcripts are excluded. The included report identifies each correction and each unavailable entry. Frozen Version 1 data is unchanged.
+
+The exact live two-sentence prompt now yields the focused topic U.S. spectrum allocation. Recruitment and evergreen eCFR pages are excluded from dated-development evidence; there is no automatic extra paid search. Topic/date controls, uncertainty language, prompt-source limits and no automatic provider retries remain in force. The earlier speaker-boundary and exact-guest-name search fixes are included.
+
+Default daily/model request counts are now 100 shared and 100 per account; the $0.50 estimate cap and per-minute limit remain. Existing CHATBOT_DAILY_QUESTIONS and CHATBOT_PERSON_DAILY_QUESTIONS variables must be updated to 100 if they currently override the defaults. Test 100 passes and 101 fails across accounts using the database driver. Normal multi-model accounting still counts each model request.
+
+Validation: 126 backend tests, 27 frontend tests, CI build, a six-step desktop flow using only Next, repeat opening, no practice API writes, demo restrictions and 390px mobile overflow checks passed. Two demo histories were checked through a new PostgreSQL-backed app instance. No passwords, API keys, privacy settings or hosting plans were changed. No new dependencies/lockfiles. Publication and the two actual account passwords remain maintainer steps; see PRIVATE PILOT SETUP.md.
+
+## PR #12 source repair checkpoint — November 18, 2026
 
 The final package now includes actual repaired library text and metadata, not just importer code. Public pages were checked from the current catalog and known filenames. Results: 312 existing files updated; 107 podcast transcripts added (28 digital/79 OCR); two additional verified episode/article pages added; all 421 output source files have recorded publication dates. Four initially broken URL candidates were recovered and verified. There are no unresolved requested interview-page/PDF downloads in this scoped run. See backend/data/interview-repair-report.json for every changed file, source link, participant and extraction method.
 
@@ -8,7 +24,7 @@ Nineteen transcript sources retain uncertain printed/OCR speaker labels; uncerta
 
 Ordinary article files, the other scholars' source files, private database data and the frozen Version 1 snapshot were not rewritten. Search can retrieve a served scholar as an explicitly identified interview guest without changing byline authorship or the file's collection. A Brent Orrell guest example was checked using the real repaired library.
 
-This package combines all pending work after PR #11: ordinary-chat GLM routing, dated web retrieval, production library refresh, and speaker-aware Explain to Shane sources. It is not deployed. Main was checked at 7b4d4bec10663c10c63b05014d3a03ae7c599001. The GitHub connection can read but a content write returned 403 “Resource not accessible by integration”; the maintainer must upload and merge the package. This is an integration permission limit.
+This package combines all pending work after PR #11: ordinary-chat GLM routing, dated web retrieval, production library refresh, and speaker-aware Explain to Shane sources. It was published through PR #12 (merge 01e2c51), with Render live confirmed. The connector can read but content/PR writes returned 403; GitHub Desktop successfully pushed the complete branch and the maintainer created and merged its pull request.
 
 ### Model and web evidence
 

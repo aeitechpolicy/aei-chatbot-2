@@ -32,6 +32,7 @@ const cheerio = require('cheerio');
 const SERVED_SCHOLARS = require('../utils/servedScholars');
 const { createHash } = require('node:crypto');
 const { inspectInterview, officialUrl } = require('../utils/interviewSources');
+const { publicationMetadata } = require('../utils/publicationMetadata');
 const { loadTranscript } = require('../utils/interviewTranscripts');
 
 
@@ -165,7 +166,7 @@ async function runImport({
       const canonicalUrl = officialUrl($('link[rel="canonical"]').attr('href'), url) || url;
       const plain = extractArticle($), interview = inspectInterview($, canonicalUrl);
       if (interviewsOnly && !interview) { report.skipped_non_interview.push({ url }); if (delay) await sleep(delay); continue; }
-      const article = interview || plain;
+      const article = interview || (plain && { ...plain, ...publicationMetadata($, canonicalUrl) });
       if (!article || article.body.length < MIN_BODY_LENGTH) throw new Error('No usable body content extracted');
       if (alreadyHaveAll && !interview) { report.skipped_exists.push({ url, filename }); continue; }
       let episode = interview?.sourceType === 'podcast_description' ? interview : null;
@@ -192,7 +193,8 @@ async function runImport({
         const key = `${folders[j]}/${filename}`;
         metadata[key] = {
           ...metadata[key], title: article.title || record.title, url: canonicalUrl, date: article.date || record.date || null,
-          authors: interview?.authors?.length ? interview.authors : Array.isArray(record.authors) ? record.authors : record.scholars || [], ...(interview ? { sourceType: interview.sourceType, interview: interview.interview,
+          authors: article.authors || [], author: (article.authors || []).join(', '),
+          bylineVerified: Boolean(article.bylineVerified), metadataSource: article.metadataSource || null, ...(interview ? { sourceType: interview.sourceType, interview: interview.interview,
             textCoverage: interview.sourceType === 'podcast_description' ? 'description-only' : 'full-text' } : { textCoverage: 'full-text' }),
           fetchedAt: new Date().toISOString()
         };

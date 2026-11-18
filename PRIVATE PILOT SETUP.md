@@ -1,42 +1,37 @@
-# Publish the complete update
+# Publish the complete demo update
 
-This package includes the code changes AND the actual repaired interview files. Do not also upload either earlier update ZIP.
+This replaces the previous guided-tour-only ZIP. PR #12 is already published; do not upload the old interview text batches again. Use one new review branch and one pull request for all files in this package. There is no new hosting service or dependency.
 
-## One branch, one pull request, one publication
+## Review and publish
 
-Use branch search-and-interview-repair. All upload batches go onto that same branch. Merge only after every batch and the workflow change are included and reviewed. The live site remains on main until then.
+1. Extract the new ZIP. Upload its backend and frontend folders and four documentation files at the repository root, preserving their paths. Do not upload the ZIP itself. The package includes the corrected articleMetadata.json, repair report and two interface images. It contains fewer than 100 files and needs no workflow edit.
+2. Create a new branch from main, for example complete-demo-update. Suggested commit/pull-request title: Improve demo onboarding, add private demo accounts and correct source metadata.
+3. Review and merge that one pull request. Wait for the same merge commit to show Render live and Vercel ready.
 
-The browser upload has a 100-file limit, so the supplied browser package splits the release into six batches of no more than 90 files. Upload the contents of 01Code at the repository root, preserving backend/frontend paths. Then open backend/knowledge_base/Shane_Tews on the same GitHub branch and upload the flat text-file contents of 02Files1 through 06Files5 there. Do not upload the numbered folders themselves. Do not upload the library text files at the repository root.
+## Configure the two private accounts and the limit
 
-01Code contains the code, documentation, updated articleMetadata.json and repair report. 02Files1 through 06Files5 contain the interview library files. They are one release, not alternatives.
+In Render → aei-chatbot → Environment, add:
 
-The hidden .github/workflows/biweekly-scrape.yml file belongs on the same branch. On Mac, Command–Shift–Period shows hidden folders. If needed, edit the existing workflow on GitHub and replace the entire contents with the supplied standalone workflow file before merging. Do not paste a diff or upload the standalone copy at the repository root.
+- CHATBOT_DEMO_1_PASSWORD — choose Demo User 1’s unique password.
+- CHATBOT_DEMO_2_PASSWORD — choose Demo User 2’s different password.
+- CHATBOT_DAILY_QUESTIONS — 100.
+- CHATBOT_PERSON_DAILY_QUESTIONS — 100.
 
-Suggested pull request title: Improve search and repair podcast sources
+Each password must contain 16–256 characters and differ from every other configured account. Enter them directly in Render; do not send them in chat or put them in GitHub. Save and deploy after the code is merged. Retain DATABASE_URL, the private model/search keys and the existing staff passwords. No new Vercel variables or database migration are required. The existing optional CHATBOT_DEMO_PASSWORD account continues to work; it is labelled Demo User (original) in the sign-in menu.
 
-After all batches are committed, create one pull request into main and have Codex check it before merging. Wait for Render Live and Vercel Ready for the merge commit. The repaired files are already included; no separate interview repair run is needed to publish them.
+The daily count is shared across the chatbot, resets at midnight UTC and counts model requests; comparing three models counts three. The unchanged $0.50 estimated daily spending cap or minute limit can stop use before 100. These app limits do not control a stolen key used elsewhere.
 
-## Private settings
+## Verify once after deployment
 
-Keep the existing Render/Neon/Vercel services and Together organization privacy settings. No new API key, database or paid hosting is needed. If old CHATBOT_INPUT_USD_PER_MILLION / CHATBOT_OUTPUT_USD_PER_MILLION overrides exist, remove them or use 0.15 / 0.50 for GLM. Remove/update an obsolete CHATBOT_PRICE_SOURCE too. Keep spending limits unchanged.
+In the tour, Next can demonstrate a step you have not tried. It stops after showing the action. Read for as long as needed, then select Next again to continue. Brief and feedback dialogs also have Next buttons. The practice form is never submitted automatically. The final large reminder and screenshot show where to reopen What’s new and How to use.
 
-Existing backend settings remain DATABASE_URL, TOGETHER_API_KEY, CHATBOT_INTERN_PASSWORD, CHATBOT_RA_PASSWORD, optional CHATBOT_DEMO_PASSWORD and CHATBOT_TESTER_PASSWORD, CHATBOT_ALLOWED_ORIGINS=https://aei-chatbot.vercel.app, NODE_VERSION=24, and the private TAVILY_API_KEY. Passwords must be different and 16–256 characters. Keep all secrets out of GitHub, Vercel website variables, screenshots and chat. Vercel keeps its existing REACT_APP_API_URL.
+1. Sign in as Demo User 1. What’s New must open. Check the before/after visual, then continue to the six-step demo. Next should demonstrate any unfinished step. The AEI + Web example must distinguish AEI [S1] from outside [W1]. The practice report must say no report was sent.
+2. At completion, check the reminder explaining How to use and What’s new at the top. Skip and Restart should work. Sign out and sign back in: What’s New must open again.
+3. Make one small real question as Demo User 1, then sign out. Demo User 2 must not see that chat. Sign back in as Demo User 1 and confirm it remains. Keep credentials stable so saved histories remain associated with the same account IDs. Do not share the same account between two people who need separate histories.
+4. Demo users must see no Files, Usage and costs, feedback inbox or refresh diagnostics. Article Search shows only the most recent piece and its publication date. Staff see only content explicitly reported in the feedback inbox, plus usage summaries in their separate staff tools. Administrators with direct database access still have technical access to stored chats; this is not end-to-end encryption.
+5. Search Greg Oslan. Why Is It So Hard to Stay Safe Online? should list Shane Tews alone, November 12, 2026. Open the AEI link and supporting passage. The cached audit is partial; do not describe the whole library as fully verified or refreshed.
+New chats use corrected library metadata. Previously saved answers retain the source snapshots that accompanied them. Start a new chat to test a correction.
 
-## Check the deployed result
+6. Repeat one AEI + Web question as Intern after publication to assess the improved query. A prior completed live test was cautious but retrieved weak results. No extra paid search retries were added.
 
-1. Refresh and sign in. Start a new chat so the test uses the new evidence; historical answers retain their original saved excerpts.
-2. In Article Search, find Making Online Safety Simpler (with Greg Oslan), its full transcript, and Why Is It So Hard to Stay Safe Online? Check dates, format labels and episode/PDF links.
-3. Ask one small Intern question. Check GLM-5.3-Flash in Usage and costs, cited support and correct guest/host attribution. Scanned text is qualified; exact quotations require the original PDF.
-4. Test a Brent Orrell guest question or comparison. A scholar can appear as a guest without being the page's author.
-5. In Model Tester, deselect Qwen while passthrough remains disabled. Each selected model is a separately charged request. Article Search has no Together or web-search charge.
-6. Recheck AEI + Web with the past-30-days spectrum question. Dates are reported publication/update estimates, and no verified dated result is an acceptable answer.
-
-The existing limits remain 50 model attempts per UTC day overall, 30/account/day, five/minute/account and $0.50/day estimated app usage. These app limits do not control use of a key elsewhere. Never reuse a revoked key.
-
-## Optional broader library catch-up
-
-This repair does not establish that every publication by all four scholars is current. For that separate check, run Actions → Biweekly Article Scrape on main with lookback_days 180 and refresh_interviews false. The current interview repair is already included. Inspect harvest-report.json, fetch-missing-articles-report.json and the resulting commit before claiming complete coverage. A green job alone is insufficient. Later, refresh_interviews true can deliberately recheck older interview pages.
-
-The workflow now uses standard GitHub-hosted Linux and public AEI endpoints, with Poppler/Tesseract for PDFs. Standard runner compute is free for this public repository; storage/LFS quotas remain separate. The first hosted run is still unverified. Reading PDF/scanned text does not consume Together or paid search credits.
-
-Twelve conference/event PDFs and 15 other event/press files remain outside the automatic podcast repair. Nineteen transcript sources have uncertain printed/OCR speaker labels. See the repair summary and report; do not describe the collection as perfectly verified or exhaustive.
+126 backend and 27 frontend tests, the CI build and local desktop/phone checks passed. The local preview uses prepared content; live questions use the funded provider and normal controls.

@@ -166,7 +166,7 @@ test('the source keeps the page canonical URL and visible byline separate from i
   const { backendPath, fetchPage } = await fixture(t);
   const canonical = 'https://www.aei.org/technology/canonical-highlights/';
   const html = highlights.replace('</head>', `<link rel="canonical" href="${canonical}"></head>`)
-    .replace('<body>', '<body><a class="author-link" href="https://www.aei.org/profile/editorial-staff/">Editorial Staff</a>');
+    .replace('<body>', '<body><h1>Edited Highlights</h1><div class="details"><div class="author line"><a class="author-link" href="https://www.aei.org/profile/editorial-staff/">Editorial Staff</a></div></div>');
   await runImport({ backendPath, refreshInterviews: true, interviewsOnly: true, delay: 0, log: () => {},
     fetchPage: async url => url === highlightUrl ? { data: html } : fetchPage(url), fetchTranscript: async () => tagTranscript(rawTranscript) });
   const meta = JSON.parse(await fs.readFile(path.join(backendPath, 'articleMetadata.json'), 'utf8'));
@@ -273,5 +273,20 @@ test('a shared PDF keeps the earliest verified episode-page date regardless of p
     const meta = JSON.parse(await fs.readFile(path.join(backendPath, 'articleMetadata.json'), 'utf8'));
     const source = Object.values(meta).find(item => item.sourceType === 'podcast_transcript');
     assert.equal(source.date, '2026-11-05'); assert.equal(source.interview.episodeUrl, older);
+  }
+});
+
+test('moving a speaker change across retrieval boundaries never changes attribution or leaves broken labels', () => {
+  for (let padding = 0; padding < 1000; padding += 13) {
+    const text = '[Speaker: Greg Oslan]\n' + 'Background about account protection. '.repeat(25) + 'x'.repeat(padding) +
+      '\n\n[Speaker: Shane Tews]\nWhat does hostquestionevidence suggest about helping parents?\n\n[Speaker: Greg Oslan]\n' +
+      'The guestanswerevidence concerns checking personal accounts. '.repeat(35);
+    const excerpt = excerptFor(text, ['hostquestionevidence', 'guestanswerevidence']);
+    assert.ok(excerpt.length <= MAX_SOURCE_CHARS);
+    assert.doesNotMatch(excerpt.replace(/\[Speaker: [^\]\n]+\]/g, ''), /[\[\]]/);
+    for (const [term, speaker] of [['hostquestionevidence', 'Shane Tews'], ['guestanswerevidence', 'Greg Oslan']]) {
+      const at = excerpt.indexOf(term);
+      if (at >= 0) assert.equal([...excerpt.slice(0, at).matchAll(/\[Speaker: ([^\]]+)\]/g)].at(-1)?.[1], speaker);
+    }
   }
 });

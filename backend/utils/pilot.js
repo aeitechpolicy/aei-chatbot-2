@@ -1,3 +1,5 @@
+const DEMO_IDS = new Set(['demo', 'demo1', 'demo2']);
+const isDemoAccount = id => DEMO_IDS.has(id);
 const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -52,21 +54,24 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   const inputRate = positiveNumber(env.CHATBOT_INPUT_USD_PER_MILLION, DEFAULT_MODEL.inputRate);
   const outputRate = positiveNumber(env.CHATBOT_OUTPUT_USD_PER_MILLION, DEFAULT_MODEL.outputRate);
   const dailyBudget = positiveNumber(env.CHATBOT_DAILY_ESTIMATE_USD, 0.50);
-  const dailyQuestions = Math.floor(positiveNumber(env.CHATBOT_DAILY_QUESTIONS, 50));
-  const personQuestions = Math.floor(positiveNumber(env.CHATBOT_PERSON_DAILY_QUESTIONS, 30));
+  const dailyQuestions = Math.floor(positiveNumber(env.CHATBOT_DAILY_QUESTIONS, 100));
+  const personQuestions = Math.floor(positiveNumber(env.CHATBOT_PERSON_DAILY_QUESTIONS, 100));
   const priceSource = env.CHATBOT_PRICE_SOURCE || DEFAULT_MODEL.priceSource;
   const accounts = new Map();
   let setupError = null;
-  for (const [id, label, password] of [
+  const configuredAccounts = [
     ['owner', 'Chatbot Intern', env.CHATBOT_INTERN_PASSWORD],
     ['supervisor', 'Chatbot RA', env.CHATBOT_RA_PASSWORD],
     ['demo', 'Demo User', env.CHATBOT_DEMO_PASSWORD],
+    ['demo1', 'Demo User 1', env.CHATBOT_DEMO_1_PASSWORD],
+    ['demo2', 'Demo User 2', env.CHATBOT_DEMO_2_PASSWORD],
     ['tester', 'Model Tester', env.CHATBOT_TESTER_PASSWORD]
-  ]) {
+  ];
+  for (const [id, label, password] of configuredAccounts) {
     if (!password) continue;
     const invalidLength = password.length < 16 || password.length > 256;
-    if (['demo', 'tester'].includes(id) && (invalidLength ||
-        [env.CHATBOT_INTERN_PASSWORD, env.CHATBOT_RA_PASSWORD, ...(id === 'tester' ? [env.CHATBOT_DEMO_PASSWORD] : [])].includes(password))) {
+    if ((isDemoAccount(id) || id === 'tester') && (invalidLength ||
+        configuredAccounts.some(([otherId, , otherPassword]) => otherId !== id && otherPassword === password))) {
       console.warn(`${label} login disabled. Set a unique password of 16 to 256 characters.`);
       continue;
     }
@@ -211,7 +216,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
       const query = userId === 'owner' ? 'SELECT * FROM usage ORDER BY started_at DESC LIMIT 5000' : 'SELECT * FROM usage WHERE user_id=? ORDER BY started_at DESC LIMIT 5000';
       result = userId === 'owner' ? db.prepare(query).all() : db.prepare(query).all(userId);
     }
-    const labels = { owner: 'Chatbot Intern', supervisor: 'Chatbot RA', demo: 'Demo User', tester: 'Model Tester' };
+    const labels = { owner: 'Chatbot Intern', supervisor: 'Chatbot RA', demo: 'Demo User', demo1: 'Demo User 1', demo2: 'Demo User 2', tester: 'Model Tester' };
     return result.map(row => ({ ...row, account_label: labels[row.user_id] || row.user_id }));
   }
 
@@ -259,4 +264,4 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     dataDir: root };
 }
 
-module.exports = { createPilot, MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS };
+module.exports = { isDemoAccount, createPilot, MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_CHARS };
