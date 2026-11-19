@@ -29,7 +29,12 @@ function parseComparison(content, groups) {
     if (!source) return { scholar, content: NO_EVIDENCE, limited: true };
     const prefix = `COMPARE ${key} | `;
     const candidates = lines.map(line => line.trim()).filter(line => line.startsWith(prefix));
-    const body = candidates.length === 1 ? candidates[0].slice(prefix.length).trim() : '';
+    let body = candidates.length === 1 ? candidates[0].slice(prefix.length).trim() : '';
+    // Drop only a redundant citation-only tail after an already cited sentence.
+    body = body.replace(/(\[[SW]\d+\][.!?])\s+((?:\[[SW]\d+\]\s*)+)$/, (match, ending, tail, offset) => {
+      const earlier = body.slice(0, offset) + ending;
+      return [...tail.matchAll(/\[([SW]\d+)\]/g)].every(([, id]) => earlier.includes(`[${id}]`)) ? ending : match;
+    });
     if (!body || body === 'INSUFFICIENT_EVIDENCE') {
       return { scholar, content: LIMITED_EVIDENCE, limited: true, sourceId: source.id };
     }

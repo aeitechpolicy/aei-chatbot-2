@@ -1,5 +1,9 @@
 # Validation record
 
+## Final rehearsal attribution corrections — November 18, 2026
+
+154 backend tests, 44 frontend tests and the production build passed. The exact shortened rehearsal question is covered by a regression test, and an offline real-library check now selects a bylined non-interview Shane Tews article. Host-only source coverage is disclosed, source prompts enumerate each requested scholar’s authored source IDs, unknown comparison citations remain rejected, redundant known citation tails are removed, and malformed label asterisks are cleaned only for display. No paid model call is used. Live generated-answer quality remains to be checked.
+
 ## Demo answer-quality update — November 18, 2026
 
 151 backend tests, 43 frontend tests and the production build passed. Local tests cover ordinary Muse routing and fixed model-specific prices despite stale environment overrides, preserved other-account caps and tester output settings, cross-scholar evidence balance, named-publication context, exact-content deduplication, two-source comparisons with scholar-specific citations, coverage gaps and extractive briefs retaining later scholars and uncertainty. Real-library offline checks retrieve all four scholars for the supplied AI-theme question and a deeper, single-source Greg Oslan transcript excerpt. No paid model or web-search call is used in these checks. Generated-answer quality still needs manual confirmation after deployment.

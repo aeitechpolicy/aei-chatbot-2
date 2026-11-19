@@ -1,5 +1,11 @@
 # Maintainer handoff
 
+## Final rehearsal attribution corrections — November 18, 2026
+
+Cross-scholar chat retrieval now prioritizes each scholar’s bylined non-interview work before falling back to interview material. A podcast host or a collection label is not counted as an authored argument. The prompt receives explicit per-scholar authored source IDs and requests one short finding per requested scholar; missing authored evidence is disclosed. Generic wording such as “without” no longer changes the topic ranking. Known untagged historical interview records may still need metadata repair; byline/type checks are not semantic proof of every statement’s attribution.
+
+Podcast prompts lead with guest recommendations, distinguish product-specific instructions from universal advice or AEI endorsement, and request plain labels with cited framing statements. Citation checks remain unchanged. The pasted warning does not reveal the omitted raw text, so its exact original trigger is not inferred. Comparison parsing removes only a redundant citation-only tail after an already cited sentence and retains new/unknown IDs for validation. Existing malformed label emphasis is cleaned in presentation without altering stored evidence or bypassing citation checks. No model, price, cap, schema, hosting or privacy change is made in this correction.
+
 ## Current demo settings and answer-quality update — November 18, 2026
 
 At the maintainer’s request, ordinary Article Chat, Compare Scholars and AEI + Web answers now use meta-models/Muse-Spark-Open-816B-A42B with reasoning_effort low and temperature 1.0. Non-Intern ordinary output allowance is 4,096 tokens; Intern remains at 16,384 with its usage-cap exemption. Other-account question, minute and daily spending caps remain active. The separate three-model tester retains its 1,024-token allowance and existing model choices. Muse estimates are pinned to $1.25 input/$4.25 output per million uncached tokens so stale GLM/Qwen CHATBOT_INPUT_USD_PER_MILLION, CHATBOT_OUTPUT_USD_PER_MILLION and CHATBOT_PRICE_SOURCE variables do not understate the new model’s costs. No new environment variable is needed.

@@ -338,7 +338,7 @@ test('identical full texts with missing and recorded links use the more complete
 
 test('coverage notices describe missing selected evidence without claiming a scholar has no work', () => {
   const { coverageNoticeFor } = require('../utils/sourceContext');
-  const sources = [{ author: 'Brent Orrell' }, { collections: ['Shane Tews'] }, { author: 'Will Rinehart' }];
+  const sources = [{ author: 'Brent Orrell' }, { author: 'Shane Tews' }, { author: 'Will Rinehart' }];
   assert.match(coverageNoticeFor('General', 'What themes appear across these scholars?', sources), /Clay Calvert/);
   assert.equal(coverageNoticeFor('Brent_Orrell', 'What themes?', sources), null);
   assert.equal(coverageNoticeFor('General', 'What themes appear across these scholars?', [...sources, { author: 'Clay Calvert' }]), null);
@@ -354,4 +354,39 @@ test('comparison accepts two assigned articles per scholar but rejects another s
   assert.ok(good.every(group => !group.limited));
   const bad = parseComparison('COMPARE Brent_Orrell | Wrong scholar [S3].', groups);
   assert.equal(bad[0].limited, true);
+});
+
+test('the shortened rehearsal question selects a bylined article for Shane instead of counting hosting as her argument', async t => {
+  const question = 'What themes appear across these scholars’ work on artificial intelligence? Identify differences without assuming agreement.';
+  assert.deepEqual(require('../utils/research').queryTerms(question), ['ai']);
+  const { engine } = await archive(t, [
+    { ...entries[0], body: 'AI workforce training supports learning.' },
+    { ...entries[1], body: 'AI regulation has policy tradeoffs.' },
+    { ...entries[2], body: 'AI copyright creates speech concerns.' },
+    { ...entries[3], title: 'AI policy choices', body: 'AI policy involves implementation tradeoffs.' },
+    { ...entries[3], title: 'AI discussion with Brent Orrell', body: '[Speaker: Brent Orrell]\nAI '.repeat(150),
+      metadata: { title: 'AI discussion with Brent Orrell', authors: [], sourceType: 'podcast_transcript', interview: { host: 'Shane Tews', participants: ['Shane Tews', 'Brent Orrell'] } } }
+  ]);
+  const result = await engine.search({ query: question, fullTextOnly: true, limit: 4 });
+  assert.ok(result.articles.some(article => article.title === 'AI policy choices'));
+  assert.ok(!result.articles.some(article => article.title === 'AI discussion with Brent Orrell'));
+});
+
+test('host-only evidence is disclosed and cannot stand in for a scholar’s authored position', () => {
+  const { coverageNoticeFor, scholarCoverageFor } = require('../utils/sourceContext');
+  const sources = [{ id: 'S1', title: 'An interview', author: 'Shane Tews', sourceType: 'podcast_transcript',
+    collections: ['Shane Tews'], interview: { host: 'Shane Tews', participants: ['Shane Tews', 'Brent Orrell'] } }];
+  const coverage = scholarCoverageFor('General', 'What themes appear across these scholars?', sources);
+  assert.ok(coverage.every(group => group.authoredSources.length === 0));
+  assert.match(coverageNoticeFor('General', 'What themes appear across these scholars?', sources), /hosting or file placement alone/);
+  const prompt = researchPrompt('General', sources, false, false, { scholarCoverage: coverage });
+  assert.match(prompt, /one short finding for each named scholar/);
+  assert.match(prompt, /not universal guidance or an AEI endorsement/);
+});
+
+test('comparison drops duplicate citation tails while retaining new or unknown source references for validation', async () => {
+  const { findComparisonSources, parseComparison } = require('../utils/scholarComparison');
+  const groups = await findComparisonSources(async () => [{ title: 'An article', author: 'Shane Tews', body: 'A policy argument.' }], 'AI', ['Shane_Tews']);
+  assert.equal(parseComparison('COMPARE Shane_Tews | A policy argument [S1]. [S1]', groups)[0].content, 'A policy argument [S1].');
+  assert.equal(parseComparison('COMPARE Shane_Tews | A policy argument [S1]. [S99]', groups)[0].limited, true);
 });

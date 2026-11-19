@@ -8,7 +8,7 @@ const MAX_SOURCE_CHARS = 2200;
 const MAX_DOCUMENT_CHARS = 12000;
 const MAX_ARTICLE_CHARS = 200000;
 const AEI_SOURCE_HOSTS = new Set(['aei.org', 'www.aei.org', 'ctse.aei.org', 'cosm.aei.org']);
-const STOP = new Set(('a an and are as at be been being but by can could did do does for from had has have how i if in into is it its me more most of on or our please said say says should show some than that the their them then there these they this those to us was we were what when where which who why will with would you your about also tell find give get written write writes writing summarize summary explain discuss compare comparison common shared across scholars scholar aei american enterprise institute main themes theme overview overall research focus focuses each any based actual published provide including include describe describes appear identify identifying perspectives perspective differ differences avoid assuming agreement distinguish separate current observations predictions relevant supplied sources source passage passages cite supported evidence uncertainty').split(' '));
+const STOP = new Set(('a an and are as at be without been being but by can could did do does for from had has have how i if in into is it its me more most of on or our please said say says should show some than that the their them then there these they this those to us was we were what when where which who why will with would you your about also tell find give get written write writes writing summarize summary explain discuss compare comparison common shared across scholars scholar aei american enterprise institute main themes theme overview overall research focus focuses each any based actual published provide including include describe describes appear identify identifying perspectives perspective differ differences avoid assuming agreement distinguish separate current observations predictions relevant supplied sources source passage passages cite supported evidence uncertainty').split(' '));
 function normalize(text = '') {
   return String(text).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[_\u2010-\u2015-]/g, ' ').replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
 }
@@ -29,6 +29,12 @@ function queryTerms(query) {
 }
 function scholarKey(name) { return normalize(name).replace(/ /g, '_'); }
 function includesScholar(doc, key) { return doc.scopes.has(key) || (doc.interview?.participants || []).some(name => scholarKey(name) === key); }
+function hasAuthoredArgument(article, scholar) {
+  const authors = Array.isArray(article.authors) ? article.authors : String(article.author || '').split(/,\s*/);
+  const interview = article.interview || /podcast|interview/.test(article.sourceType || '') ||
+    /highlights from|conversation with|interview with|full transcript/i.test(article.title || '');
+  return !interview && authors.some(name => scholarKey(name) === scholarKey(scholar));
+}
 function safeUrl(value) {
   try {
     const url = new URL(value);
@@ -287,7 +293,8 @@ function createArticleSearch({
     if (!scope && sort !== 'newest') {
       for (const name of (named.length ? named : SERVED_SCHOLARS.map(scholarKey))) {
         const bestCoverage = ranked.reduce((n, r) => Math.max(n, r.matched.length), 0);
-        const item = ranked.find(r => includesScholar(r.doc, name) && !selected.includes(r) && (overview || balancedEvidence || (r.matched.length >= bestCoverage && r.score >= (ranked[0]?.score || 0) * 0.6)));
+        const candidates = ranked.filter(r => includesScholar(r.doc, name) && !selected.includes(r) && (overview || balancedEvidence || (r.matched.length >= bestCoverage && r.score >= (ranked[0]?.score || 0) * 0.6)));
+        const item = (balancedEvidence && candidates.find(r => hasAuthoredArgument(r.doc, name))) || candidates[0];
         if (item) selected.push(item);
       }
     }
@@ -318,4 +325,4 @@ function createArticleSearch({
   return { search, status, findSource, invalidate: () => { pending = null; } };
 }
 const articleSearch = createArticleSearch();
-module.exports = { createArticleSearch, articleSearch, queryTerms, normalize, tokens, safeUrl, knownDate, excerptFor, MAX_SOURCE_CHARS, MAX_DOCUMENT_CHARS };
+module.exports = { createArticleSearch, articleSearch, queryTerms, normalize, tokens, safeUrl, knownDate, excerptFor, hasAuthoredArgument, MAX_SOURCE_CHARS, MAX_DOCUMENT_CHARS };

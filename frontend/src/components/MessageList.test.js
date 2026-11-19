@@ -188,3 +188,11 @@ test('ordinary Muse answers have no trial badge and disclose any selected-eviden
   expect(screen.queryByText('Meta Muse · Test')).not.toBeInTheDocument();
   expect(screen.getByText(/Selected evidence does not include/)).toBeVisible();
 });
+
+test('malformed label emphasis does not leave a stray asterisk beside a cited recommendation', () => {
+  const { container } = render(<MessageList loading={false} messages={[{ role: 'assistant', content: 'Behavioral guidance for phishing:* Verify the sender through the original website [S1].',
+    sources: [{ id: 'S1', title: 'An interview', excerpt: 'Verify the sender through the original website.' }] }]} />);
+  expect(container.textContent).toContain('Behavioral guidance for phishing: Verify');
+  expect(container.textContent).not.toContain('phishing:*');
+  expect(screen.getByRole('button', { name: 'View passage [S1]' })).toBeVisible();
+});

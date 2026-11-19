@@ -4,7 +4,7 @@ const { isDemoAccount, MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
 const { fetchLegacyArticles, legacyPrompt, legacyDomains, legacyFileList, legacyFile } = require('../utils/legacyArchive');
-const { prepareSources, researchPrompt, coverageNoticeFor, parseFirstAnswer, fallbackChatTitle, parseFollowUps, checkCitations } = require('../utils/sourceContext');
+const { prepareSources, researchPrompt, scholarCoverageFor, coverageNoticeFor, parseFirstAnswer, fallbackChatTitle, parseFollowUps, checkCitations } = require('../utils/sourceContext');
 const { queryTerms } = require('../utils/research');
 const { prepareWebSources, planWebSearch, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
@@ -252,6 +252,7 @@ router.post('/:chatId/message', async (req, res) => {
           web,
           webPlan,
           currentDate: webPlan?.currentDate || new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now()),
+          scholarCoverage: !legacy && !compare ? scholarCoverageFor(chat.domainName, retrievalQuery, sources) : [],
           comparison: compare ? comparisonInstructions(groups) : null,
           followUps: true
         }) },
