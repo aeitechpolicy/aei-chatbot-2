@@ -35,6 +35,7 @@ const { inspectInterview, officialUrl } = require('../utils/interviewSources');
 const { publicationMetadata } = require('../utils/publicationMetadata');
 const { loadTranscript } = require('../utils/interviewTranscripts');
 const { mergePublicationMetadata } = require('../utils/metadataMerge');
+const { normalize } = require('../utils/research');
 
 
 const HEADERS = {
@@ -123,10 +124,10 @@ function servedFoldersFor(record) {
   ).map((served) => served.replace(/\s+/g, '_'));
 }
 
-// REFRESH_INTERVIEWS=true re-checks existing Shane pages once; ordinary articles
-// remain untouched. Subsequent scheduled runs only fetch unmatched records.
+// REFRESH_INTERVIEWS=true re-checks existing Shane pages once. A fresh harvest
+// also rechecks modified ordinary pages; unchanged matched records are skipped.
 async function runImport({
-  backendPath = path.join(__dirname, '..'), refreshInterviews = false, interviewsOnly = false,
+  backendPath = path.join(__dirname, '..'), refreshInterviews = false, interviewsOnly = false, strictMetadata = false,
   limit, fetchPage = fetchWithRetry, fetchTranscript = loadTranscript,
   delay = DELAY_MS, log = console.log, maxRunMs = 45 * 60 * 1000, now = Date.now
 } = {}) {
@@ -136,13 +137,24 @@ async function runImport({
   const index = read(path.join(dataPath, 'aei-index.json'), []);
   const matches = read(path.join(dataPath, 'matches.json'), []);
   const metadata = read(metaPath, {});
+  const harvest = read(path.join(dataPath, 'harvest-report.json'), {});
+  const currentHarvest = Number.isFinite(Date.parse(harvest.checkedAt)) && Math.abs(now() - Date.parse(harvest.checkedAt)) < 4 * 60 * 60 * 1000;
+  const changed = new Set(currentHarvest ? harvest.changedServedUrls || [] : []);
+  const byUrl = new Map();
+  for (const meta of Object.values(metadata)) {
+    const url = officialUrl(meta.url);
+    if (!byUrl.has(url)) byUrl.set(url, []);
+    byUrl.get(url).push(meta);
+  }
+  const modified = record => changed.has(record.url) && record.modified &&
+    !(byUrl.get(officialUrl(record.url)) || []).some(meta => meta.sourceModified === record.modified);
   const matched = new Set(matches.map(item => officialUrl(item.url)).filter(Boolean));
   const all = index.filter(record => officialUrl(record.url) && !record.delisted_at && servedFoldersFor(record).length &&
     (!interviewsOnly || servedFoldersFor(record).includes('Shane_Tews')) &&
-    (!matched.has(officialUrl(record.url)) || (refreshInterviews && servedFoldersFor(record).includes('Shane_Tews'))));
+    (!matched.has(officialUrl(record.url)) || modified(record) || (refreshInterviews && servedFoldersFor(record).includes('Shane_Tews'))));
   if (limit !== undefined && (!Number.isSafeInteger(limit) || limit < 1)) throw new Error('LIMIT must be a positive whole number');
   const targets = all.slice(0, limit ?? all.length);
-  const report = { written: [], skipped_exists: [], failed: [], transcripts: [], refreshed_interviews: [], skipped_non_interview: [], event_transcript_links: [] };
+  const report = { checkedAt: null, written: [], skipped_exists: [], failed: [], transcripts: [], refreshed_interviews: [], refreshed_articles: [], metadata_needs_review: [], skipped_non_interview: [], event_transcript_links: [] };
   const episodes = new Map(), transcripts = new Map();
   const deadline = now() + maxRunMs;
   log(`Checking ${targets.length} served-scholar records${refreshInterviews ? ' (including existing Shane interviews)' : ''}.`);
@@ -160,7 +172,8 @@ async function runImport({
       const url = officialUrl(record.url), filename = filenameFor(url), folders = servedFoldersFor(record);
       const paths = folders.map(folder => path.join(kbPath, folder, filename));
       const alreadyHaveAll = paths.every(file => fs.existsSync(file));
-      const refresh = refreshInterviews && folders.includes('Shane_Tews');
+      const modifiedRefresh = Boolean(modified(record));
+      const refresh = modifiedRefresh || refreshInterviews && folders.includes('Shane_Tews');
       if (alreadyHaveAll && !refresh) { report.skipped_exists.push({ url, filename }); continue; }
       log(`[${i + 1}/${targets.length}] ${url}`);
       const response = await fetchPage(url), $ = cheerio.load(response.data);
@@ -169,7 +182,16 @@ async function runImport({
       if (interviewsOnly && !interview) { report.skipped_non_interview.push({ url }); if (delay) await sleep(delay); continue; }
       const article = interview || (plain && { ...plain, ...publicationMetadata($, canonicalUrl) });
       if (!article || article.body.length < MIN_BODY_LENGTH) throw new Error('No usable body content extracted');
-      if (alreadyHaveAll && !interview) { report.skipped_exists.push({ url, filename }); continue; }
+      if (modifiedRefresh && (!article.bylineVerified || !article.date)) throw new Error('An updated article lacks a verified header byline/date; the saved article was preserved');
+      if (modifiedRefresh && normalize(article.title.replace(/\s*\|\s*American Enterprise Institute.*$/i, '')) !== normalize(record.title)) {
+        throw new Error('Updated page title differs from the current catalog; the saved article was preserved');
+      }
+      if (alreadyHaveAll && !interview && !modifiedRefresh) { report.skipped_exists.push({ url, filename }); continue; }
+      if (strictMetadata && normalize(article.title.replace(/\s*\|\s*American Enterprise Institute.*$/i, '')) !== normalize(record.title)) throw new Error('Page title differs from the current catalog; source needs review');
+      if (!article.bylineVerified || !article.date) {
+        report.metadata_needs_review.push({ url: canonicalUrl, reason: 'Publication header is missing a verified byline or publication date' });
+        if (strictMetadata) { if (delay) await sleep(delay); continue; }
+      }
       let episode = interview?.sourceType === 'podcast_description' ? interview : null;
       const episodeUrl = interview?.interview.episodeUrl;
       if (interview && episodeUrl && episodeUrl !== canonicalUrl) {
@@ -189,18 +211,21 @@ async function runImport({
         interview.interview.transcriptUrl ||= episode?.interview.transcriptUrl || null;
       }
       for (const [j, file] of paths.entries()) {
-        if (fs.existsSync(file) && !interview) continue;
+        if (fs.existsSync(file) && !interview && !modifiedRefresh) continue;
         writeArticleFile(file, article.title || record.title, article.body);
         const key = `${folders[j]}/${filename}`;
         metadata[key] = mergePublicationMetadata(metadata[key], {
           title: article.title || record.title, url: canonicalUrl, date: article.date || record.date || null, dateVerified: Boolean(article.date),
           authors: article.authors || [], author: (article.authors || []).join(', '),
           bylineVerified: Boolean(article.bylineVerified), metadataSource: article.metadataSource || null, ...(interview ? { sourceType: interview.sourceType, interview: interview.interview,
-            textCoverage: interview.sourceType === 'podcast_description' ? 'description-only' : 'full-text' } : { textCoverage: 'full-text' }),
-          fetchedAt: new Date().toISOString()
+            textCoverage: interview.sourceType === 'podcast_description' ? 'description-only' : 'full-text' } : {
+              textCoverage: /^(?:podcast|captivate_podcast)$/.test(record.type) || /^(?:Discussing|Discssing)\b/i.test(article.title || record.title) ? 'description-only' : 'full-text'
+            }),
+          fetchedAt: new Date(now()).toISOString(), sourceModified: record.modified || null
         });
       }
       if (interview && alreadyHaveAll) report.refreshed_interviews.push({ url: canonicalUrl, requestedUrl: url, sourceType: interview.sourceType });
+      else if (modifiedRefresh && alreadyHaveAll) report.refreshed_articles.push({ url: canonicalUrl, requestedUrl: url });
       else report.written.push({ url: canonicalUrl, requestedUrl: url, filename, folders, bodyLength: article.body.length });
       // Persist before PDF work so a failure leaves the usable edited article intact.
       saveMetadata();
@@ -239,12 +264,15 @@ async function runImport({
     if (delay) await sleep(delay);
   }
   fs.mkdirSync(dataPath, { recursive: true });
+  report.checkedAt = new Date(now()).toISOString();
   fs.writeFileSync(path.join(dataPath, 'fetch-missing-articles-report.json'), JSON.stringify(report, null, 2) + '\n');
   log(`Done: ${report.written.length} new pages, ${report.refreshed_interviews.length} updated interviews, ${report.transcripts.length} transcripts, ${report.failed.length} failures.`);
   return report;
 }
 async function main() {
-  return runImport({ refreshInterviews: process.env.REFRESH_INTERVIEWS === 'true', interviewsOnly: process.env.INTERVIEWS_ONLY === 'true', limit: process.env.LIMIT ? Number(process.env.LIMIT) : undefined });
+  const report = await runImport({ strictMetadata: true, refreshInterviews: process.env.REFRESH_INTERVIEWS === 'true', interviewsOnly: process.env.INTERVIEWS_ONLY === 'true', limit: process.env.LIMIT ? Number(process.env.LIMIT) : undefined });
+  if (report.failed.length || report.metadata_needs_review.length) process.exitCode = 1;
+  return report;
 }
 
 if (require.main === module) main().catch((err) => {

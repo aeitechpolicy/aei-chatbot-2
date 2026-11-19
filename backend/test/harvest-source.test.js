@@ -51,3 +51,12 @@ test('a missing content feed is recorded for partial-refresh reporting', async t
   assert.equal(diagnostics[0].status, 404);
   assert.equal(diagnostics[0].type, 'removed-type');
 });
+test('a blocked feed is not repeatedly retried and an HTML challenge is not accepted as catalog data', async t => {
+  const original = axios.get; t.after(() => { axios.get = original; });
+  let calls = 0;
+  axios.get = async () => { calls++; throw { response: { status: 403 } }; };
+  const diagnostics = [];
+  assert.deepEqual(await fetchAll('posts', {}, diagnostics), []); assert.equal(calls, 1); assert.equal(diagnostics[0].status, 403);
+  axios.get = async () => ({ data: '<html>Security check</html>', headers: {} });
+  await assert.rejects(() => fetchAll('posts'), /expected a JSON array/);
+});

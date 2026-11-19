@@ -32,7 +32,7 @@ function scholarKey(name) { return normalize(name).replace(/ /g, '_'); }
 function includesScholar(doc, key) { return doc.scopes.has(key) || (doc.interview?.participants || []).some(name => scholarKey(name) === key); }
 function hasAuthoredArgument(article, scholar) {
   const authors = Array.isArray(article.authors) ? article.authors : String(article.author || '').split(/,\s*/);
-  const interview = article.interview || /podcast|interview/.test(article.sourceType || '') ||
+  const interview = article.interview || /podcast|interview|event/.test(article.sourceType || '') ||
     /highlights from|conversation with|interview with|full transcript/i.test(article.title || '');
   return !interview && authors.some(name => scholarKey(name) === scholarKey(scholar));
 }
@@ -186,8 +186,9 @@ function createArticleSearch({
         const titleTerms = counts(tokens(title));
         for (const [term, n] of titleTerms) tf.set(term, (tf.get(term) || 0) + n * 5);
         docs.push({ title, authors, date: sourceType === 'event' ? null : knownDate(catalog.date) || knownDate(meta.date),
-          url: safeUrl(catalog.url) || safeUrl(meta.url), body, fullText: fullText && !['excerpt-only', 'description-only'].includes(meta.textCoverage) && sourceType !== 'podcast_description',
-          ...interview, sourceType, eventDate, scopes, tf, bylineVerified: meta.bylineVerified === true, length: Math.max(1, terms.length), key: file });
+          url: safeUrl(catalog.url) || safeUrl(meta.url), body, fullText: fullText && !['excerpt-only', 'description-only', 'agenda-only'].includes(meta.textCoverage) && sourceType !== 'podcast_description',
+          ...interview, sourceType, eventDate, scopes, tf, bylineVerified: meta.bylineVerified === true, metadataVerified: Boolean(meta.verification),
+          fetchedAt: Date.parse(meta.fetchedAt) || 0, length: Math.max(1, terms.length), key: file });
       }
     }));
     // Same article saved under more than one scholar should appear once.
@@ -199,9 +200,9 @@ function createArticleSearch({
       if (fingerprint) byContent.set(fingerprint, key);
       const existing = unique.get(key);
       if (existing) {
-        const quality = item => (item.fullText ? 4 : 0) + (item.url ? 1 : 0) + (item.date ? 1 : 0) + (item.bylineVerified ? 8 : 0) + (item.interview && item.body.includes('[Speaker:') ? 2 : 0);
-        const preferred = quality(doc) > quality(existing) ? doc : existing;
-        preferred.authors = preferred.bylineVerified ? preferred.authors : [...new Set([...existing.authors, ...doc.authors])];
+        const quality = item => (item.metadataVerified ? 16 : 0) + (item.fullText ? 4 : 0) + (item.url ? 1 : 0) + (item.date ? 1 : 0) + (item.bylineVerified ? 8 : 0) + (item.interview && item.body.includes('[Speaker:') ? 2 : 0);
+        const preferred = quality(doc) > quality(existing) || quality(doc) === quality(existing) && doc.fetchedAt > existing.fetchedAt ? doc : existing;
+        preferred.authors = preferred.bylineVerified || preferred.metadataVerified ? preferred.authors : [...new Set([...existing.authors, ...doc.authors])];
         preferred.scopes = new Set([...existing.scopes, ...doc.scopes]);
         unique.set(key, preferred);
       } else unique.set(key, doc);
@@ -301,6 +302,22 @@ function createArticleSearch({
     }
     const byDate = (a, b) => (b.doc.date || '').localeCompare(a.doc.date || '');
     ranked.sort((a, b) => (sort === 'newest' ? byDate(a, b) : 0) || b.score - a.score || byDate(a, b) || a.doc.key.localeCompare(b.doc.key));
+    if (fullTextOnly && !overview && !namedPublications.size && !guestNames.length && terms.length > 1 && ranked.length) {
+      // A shared word is not always the same topic: "technical debt" must not
+      // pull in an article about technical training and student debt. Prefer
+      // an actual adjacent topic phrase when one is present in the evidence.
+      const words = normalize(withoutScholarNames(query)).replace(/\bartificial intelligence\b/g, 'ai').split(' ');
+      const pairs = words.slice(0,-1).map((word,i)=>[word,words[i+1]]).filter(pair=>pair.every(word=>terms.includes(stem(word))));
+      const bodies = new Map(ranked.map(item=>[item, ` ${normalize(item.doc.title+' '+item.doc.body).split(' ').map(stem).join(' ')} `]));
+      const phrase = pairs.map(pair=>({text:pair.map(stem).join(' '),weight:pair.reduce((sum,word)=>sum+idf(stem(word)),0)}))
+        .filter(pair=>ranked.some(item=>bodies.get(item).includes(` ${pair.text} `))).sort((a,b)=>b.weight-a.weight)[0];
+      const bestScore=ranked[0].score,bestCoverage=Math.max(...ranked.map(item=>item.matched.length));
+      for(let i=ranked.length-1;i>=0;i--) {
+        const item=ranked[i];
+        if ((!balancedEvidence && !(terms.length === 2 && phrase) && (item.score<bestScore*.5 || item.matched.length<Math.max(2,Math.ceil(bestCoverage*.5)))) ||
+          terms.length === 2 && phrase && !bodies.get(item).includes(` ${phrase.text} `)) ranked.splice(i,1);
+      }
+    }
     const selected = [];
     // Across scholars, surface a relevant example per scholar before filling by rank.
     if (!scope && sort !== 'newest') {

@@ -92,7 +92,7 @@ async function getWithRetry(url, params = {}) {
     } catch (err) {
       const status = err.response ? err.response.status : null;
       // 400 past the last page is how WP says "no more pages"; let caller handle.
-      if (status === 400) throw err;
+      if ([400, 401, 403, 404].includes(status)) throw err;
       if (attempt === MAX_RETRIES) throw err;
       const backoff = 1000 * attempt * attempt;
       console.warn(`  retry ${attempt}/${MAX_RETRIES} after ${status || err.code}: ${url}`);
@@ -133,6 +133,7 @@ async function fetchAll(restBase, extraParams = {}, diagnostics = []) {
       throw err;
     }
 
+    if (!Array.isArray(response.data)) throw new Error(`${restBase}: expected a JSON array, received a blocked or invalid feed`);
     if (page === 1) {
       const headerVal = response.headers['x-wp-totalpages'];
       const total = response.headers['x-wp-total'] || '?';
@@ -304,12 +305,14 @@ async function main() {
     // is indistinguishable from "this type legitimately has no live items" —
     // treat it the same as a failed fetch and skip delisting for this type
     // this run, rather than risk mass-delisting everything of that type.
-    if (items.length === 0) {
+    if (!modifiedAfter && items.length === 0) {
+      if (previousLive > 0) failures.push({ type: restBase, reason: 'Full harvest unexpectedly returned no previously known records' });
       console.warn(`  ${restBase}: fetched 0 items; skipping delisting for this type this run`);
     } else if (
-      previousLive >= DELIST_SAFETY_MIN_SAMPLE &&
+      !modifiedAfter && previousLive >= DELIST_SAFETY_MIN_SAMPLE &&
       items.length < previousLive * DELIST_SAFETY_FRACTION
     ) {
+      failures.push({ type: restBase, reason: 'Full harvest was suspiciously smaller than the saved catalog' });
       console.warn(
         `  ${restBase}: fetched only ${items.length} item(s), far fewer than the ` +
         `${previousLive} previously known live record(s); treating as an incomplete ` +
@@ -339,7 +342,8 @@ async function main() {
   records.sort((a, b) => (a.date < b.date ? 1 : -1));
   fs.writeFileSync(indexPath, JSON.stringify(records, null, 2));
 
-  fs.writeFileSync(path.join(OUT_DIR, 'harvest-report.json'), JSON.stringify({ checkedAt: new Date().toISOString(), fetched: fetched.length, failures }, null, 2) + '\n');
+  const changedServedUrls = fetched.filter(record => record.scholars.some(name => SERVED_SCHOLARS.includes(name))).map(record => record.url);
+  fs.writeFileSync(path.join(OUT_DIR, 'harvest-report.json'), JSON.stringify({ checkedAt: new Date().toISOString(), fetched: fetched.length, changedServedUrls, failures }, null, 2) + '\n');
   if (failures.length) console.warn(`Harvest incomplete: ${failures.length} feed(s) could not be fully checked; see data/harvest-report.json`);
 
   const byType = {};
@@ -347,10 +351,14 @@ async function main() {
   console.log('\nDone. Records by type:');
   for (const [t, n] of Object.entries(byType)) console.log(`  ${t}: ${n}`);
   console.log(`\nWrote ${records.length} records to data/aei-index.json`);
+  if (failures.length) process.exitCode = 1;
 }
 
 if (require.main === module) main().catch((err) => {
   console.error('Harvest failed:', err.message);
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+  fs.writeFileSync(path.join(OUT_DIR, 'harvest-report.json'), JSON.stringify({ checkedAt: new Date().toISOString(), fetched: 0,
+    failures: [{ stage: 'catalog', reason: err.message }] }, null, 2) + '\n');
   process.exit(1);
 });
 

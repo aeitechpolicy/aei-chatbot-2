@@ -1,10 +1,10 @@
 # AEI research chatbot
 
-## Source repair and search follow-up — November 19, 2026
+## Source repair and refresh follow-up — November 19, 2026
 
-The current data repair supplies verified missing fields for 64 sources and fixes one additional unrelated event link. The remaining 53 incomplete sources and the one unresolved byline conflict are documented in `backend/data/source-completeness-repair-report.json`. This is a metadata repair, not a new publication harvest or proof that the entire library is current. Publication dates and event dates remain distinct. Reviewed metadata is protected from weaker catalog imports and incomplete scraper headers.
+The current scoped repair recovers missing fields for 116 of 117 flagged sources and fixes one additional unrelated event link. One old event remains unavailable. Official source evidence and before/after records are in backend/data/source-completeness-repair-report.json. Publication dates and event dates stay distinct. This repair does not harvest new publications or certify complete library currency.
 
-Article Chat accepts ordinary first-name scholar references and short guest questions, with deeper interview evidence and more concise answer instructions. No new setup or hosting service is required; Muse settings, citation checks, private histories and demo restrictions are unchanged. See HANDOFF.md and VALIDATION.md for the exact scope and local checks.
+Article Chat supports everyday scholar names, deeper guest-specific context, shorter topic answers and tighter source relevance. Reviewed metadata is protected against weaker future imports. The existing biweekly refresh now catches missed windows, checks modified pages, rejects incomplete headers and reports partial/blocked runs without falsely advancing its success date. Real automated AEI access still needs verification. See LIBRARY REFRESH.md, HANDOFF.md and VALIDATION.md. No new hosting or setup service is required; model, privacy, citation checks and account restrictions are unchanged.
 
 ## Final rehearsal attribution corrections — November 18, 2026
 

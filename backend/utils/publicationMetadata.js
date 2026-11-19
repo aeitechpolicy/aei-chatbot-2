@@ -35,7 +35,7 @@ function publicationMetadata($, pageUrl) {
     section.find('a.author-link,a[rel="author"],.author [itemprop="name"]').add(section.filter('a.author-link,a[rel="author"]')).each((_, el) => {
       if (!$(el).closest(excluded).length) authors.push(clean($(el).text()));
     });
-    for (const el of section.find('.date span,time[datetime],.entry-date').toArray()) {
+    for (const el of section.find('.date span,.date,time[datetime],.entry-date').toArray()) {
       if (!$(el).closest(excluded).length) date ||= headerDate($(el).attr('datetime') || $(el).text());
     }
   }

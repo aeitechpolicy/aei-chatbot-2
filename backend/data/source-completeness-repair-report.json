@@ -2,10 +2,10 @@
   "checkedOn": "2026-11-19",
   "scope": "The 117 distinct sources with a missing link/publication date in the PR23 local inventory. This is not a complete audit of populated historical fields or a new article harvest.",
   "checked": 117,
-  "repairedSources": 64,
-  "verifiedArticleBylines": 60,
-  "events": 3,
-  "authorshipConflicts": 1,
+  "repairedSources": 116,
+  "verifiedArticleBylines": 97,
+  "events": 19,
+  "authorshipConflicts": 0,
   "applied": [
     {
       "file": "Clay_Calvert/www_aei_org_technology_and_innovation_apples_removal_of_ice_location_apps_examining_first_amendment_issues.txt",
@@ -1312,28 +1312,29 @@
       "previous": null,
       "corrected": {
         "title": "Social Media Addiction Lawsuits: The Deceptively Flawed Tobacco Analogy",
-        "url": "https://ctse.aei.org/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
-        "authors": [],
-        "author": "",
-        "bylineVerified": false,
-        "metadataSource": "official-publication-header",
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "article-header",
         "verification": {
-          "url": "https://ctse.aei.org/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
+          "url": "https://www.aei.org/domestic-policy/technology-and-innovation/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
           "checkedOn": "2026-11-19",
-          "method": "Official page header and saved body/participant match; no authorship inferred from folder",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
           "savedTextSha256": "dc222d98ceb1aa9d07a7e0ceec894aaf1936a48cacdd6b357a9e1dffe86b6cb1",
-          "readerSnapshotSha256": "e9d234a7d20f232b5da94bdf38a5babad9faa19b67db36d7a04597dce03b084d",
-          "verifiedFields": [
-            "title",
-            "url",
-            "date"
-          ],
-          "observedByline": [
-            "Shane Tews"
-          ]
+          "pageSnapshotSha256": "9bdafb01c332db17a77907fd2697ef0f57ceab12b4fac2f1c192c1a6e53a3819",
+          "resolvedMirrorByline": {
+            "url": "https://ctse.aei.org/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
+            "observedByline": [
+              "Shane Tews"
+            ],
+            "resolution": "Original AEI primary byline is authoritative"
+          }
         },
         "date": "2026-02-04",
-        "metadataReview": "Byline conflict: CTSE displays Shane Tews; file is in Clay Calvert collection. Authorship remains unverified."
+        "dateVerified": true
       }
     },
     {
@@ -1360,7 +1361,10 @@
         },
         "sourceType": "event",
         "eventDate": "2024-10-08",
-        "date": null
+        "date": null,
+        "dateVerified": false,
+        "eventDateVerified": true,
+        "textCoverage": "agenda-only"
       }
     },
     {
@@ -1387,7 +1391,9 @@
         },
         "sourceType": "event",
         "eventDate": "2025-03-25",
-        "date": null
+        "date": null,
+        "dateVerified": false,
+        "eventDateVerified": true
       }
     },
     {
@@ -1414,7 +1420,10 @@
         },
         "sourceType": "event",
         "eventDate": "2024-12-05",
-        "date": null
+        "date": null,
+        "dateVerified": false,
+        "eventDateVerified": true,
+        "textCoverage": "agenda-only"
       }
     },
     {
@@ -1438,345 +1447,1432 @@
           "pageSnapshotSha256": "6a1158925659e32719dfe84381354d8e0daee1d1e6ef39ca5cb899d17f9874af"
         }
       }
-    }
-  ],
-  "unresolved": [
+    },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_all_unemployment_is_local.txt",
-      "title": "All Unemployment Is Local",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/all-unemployment-is-local/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/all-unemployment-is-local/",
-        "https://www.aei.org/domestic-policy/all-unemployment-is-local/",
-        "https://cosm.aei.org/all-unemployment-is-local/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "All Unemployment Is Local",
+        "url": "https://www.aei.org/domestic-policy/all-unemployment-is-local/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-04-01",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/all-unemployment-is-local/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "2a481f60d264c9455eaef40f9c2792e979999c8aa3ec8865b89d1762fc289b95",
+          "pageSnapshotSha256": "de560536e145e1d432a27e0829f92023b153828211f46c2966466e41a6cff927"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_new_fed_study_ai_is_squeezing_the_skills_commons.txt",
-      "title": "New Fed Study: AI Is Squeezing the ‘Skills Commons’",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/new-fed-study-ai-is-squeezing-the-skills-commons/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/new-fed-study-ai-is-squeezing-the-skills-commons/",
-        "https://www.aei.org/domestic-policy/new-fed-study-ai-is-squeezing-the-skills-commons/",
-        "https://cosm.aei.org/new-fed-study-ai-is-squeezing-the-skills-commons/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "New Fed Study: AI Is Squeezing the ‘Skills Commons’",
+        "url": "https://www.aei.org/domestic-policy/new-fed-study-ai-is-squeezing-the-skills-commons/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-03-04",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/new-fed-study-ai-is-squeezing-the-skills-commons/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "df1941c6a382364c1a06eb0b851efd546fb6ae1ae4bed020b090b00d2089bae7",
+          "pageSnapshotSha256": "22d22f7fcfa79cf319f0af03bf64a2ad9917e7f18604f78e189bb77394fad5a2"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_oh_grow_up.txt",
-      "title": "Oh, Grow Up!",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/oh-grow-up/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/oh-grow-up/",
-        "https://www.aei.org/domestic-policy/oh-grow-up/",
-        "https://cosm.aei.org/oh-grow-up/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "Oh, Grow Up!",
+        "url": "https://www.aei.org/domestic-policy/oh-grow-up/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-01-29",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/oh-grow-up/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "dd8d96224858e354886978f6b13d5307c5bf6d2b397d8b939a9a5742834e2289",
+          "pageSnapshotSha256": "cb429806115e5670a4bd52f46e40b468af6847b4166e2078a8222dbca713726e"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_smarter_robots_better_people.txt",
-      "title": "Smarter Robots, Better People",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/smarter-robots-better-people/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/smarter-robots-better-people/",
-        "https://www.aei.org/domestic-policy/smarter-robots-better-people/",
-        "https://cosm.aei.org/smarter-robots-better-people/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "Smarter Robots, Better People",
+        "url": "https://www.aei.org/domestic-policy/smarter-robots-better-people/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2025-10-29",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/smarter-robots-better-people/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "f9b85d585aff9baa0e41bbfd3bd3e02ce0d026bac389eab52b99f18f7ef14977",
+          "pageSnapshotSha256": "24f8159d9263ee4d4ec3ff3f4f1d4f5a2675563460f206279cc1c5d80d734a99"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_the_coming_acceleration_an_update.txt",
-      "title": "The Coming Acceleration: An Update",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-coming-acceleration-an-update/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-coming-acceleration-an-update/",
-        "https://www.aei.org/domestic-policy/the-coming-acceleration-an-update/",
-        "https://cosm.aei.org/the-coming-acceleration-an-update/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "The Coming Acceleration: An Update",
+        "url": "https://www.aei.org/domestic-policy/the-coming-acceleration-an-update/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-03-19",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/the-coming-acceleration-an-update/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "eb2d8aa683977069003da88fe5d03e636a46e5ca418ad2979fd3b409e0933d65",
+          "pageSnapshotSha256": "1af37bb2e5f3095ce8a925a071a2d966b53db09a7d79e1e456062d2138c7d4f4"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_the_quiet_ai_revolution.txt",
-      "title": "The Quiet AI Revolution",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-quiet-ai-revolution/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-quiet-ai-revolution/",
-        "https://www.aei.org/domestic-policy/the-quiet-ai-revolution/",
-        "https://cosm.aei.org/the-quiet-ai-revolution/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "The Quiet AI Revolution",
+        "url": "https://www.aei.org/domestic-policy/the-quiet-ai-revolution/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2025-11-14",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/the-quiet-ai-revolution/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "bfc5c61c9f32019f35899a25a5bf9700e67d68da71c22277be6ab11fce9cea6d",
+          "pageSnapshotSha256": "1733a1e1259d84e057fe8cda54ade521cd0972a7a8b5a53193949423d5676747"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_the_selloff_beneath_the_selloff.txt",
-      "title": "The Selloff Beneath the Selloff",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-selloff-beneath-the-selloff/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-selloff-beneath-the-selloff/",
-        "https://www.aei.org/domestic-policy/the-selloff-beneath-the-selloff/",
-        "https://cosm.aei.org/the-selloff-beneath-the-selloff/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "The Selloff Beneath the Selloff",
+        "url": "https://www.aei.org/domestic-policy/the-selloff-beneath-the-selloff/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-02-11",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/the-selloff-beneath-the-selloff/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "1c6767509311f530822fe5056b1ca1b8e01d129f40addeeb5a7ddd77e31dc5e7",
+          "pageSnapshotSha256": "07f66b45465048cf3e01e077650a6dbaf01a913c1d7720078a9fc060f8a4ba10"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_the_unbearable_lightness_of_vibe_coding.txt",
-      "title": "The Unbearable Lightness of Vibe Coding",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-unbearable-lightness-of-vibe-coding/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-unbearable-lightness-of-vibe-coding/",
-        "https://www.aei.org/domestic-policy/the-unbearable-lightness-of-vibe-coding/",
-        "https://cosm.aei.org/the-unbearable-lightness-of-vibe-coding/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "The Unbearable Lightness of Vibe Coding",
+        "url": "https://www.aei.org/domestic-policy/the-unbearable-lightness-of-vibe-coding/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-05-07",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/the-unbearable-lightness-of-vibe-coding/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "d5865bb25bf34cfda7cc50fcd6bb452dbf4c14ebb3dcc0f81ac940c81a6290f8",
+          "pageSnapshotSha256": "072a43ae64de29e8fa2044636e09e55933fc6df19d376ffa9c6d84c90b311510"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_training_for_the_wrong_job.txt",
-      "title": "Training for the Wrong Job",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/training-for-the-wrong-job/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/training-for-the-wrong-job/",
-        "https://www.aei.org/domestic-policy/training-for-the-wrong-job/",
-        "https://cosm.aei.org/training-for-the-wrong-job/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "Training for the Wrong Job",
+        "url": "https://www.aei.org/domestic-policy/training-for-the-wrong-job/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-04-27",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/training-for-the-wrong-job/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "39324471d77cb781448f0581677f71ace773e36b8e618da264d79b9704bc8079",
+          "pageSnapshotSha256": "484c98e8d29da72494a1e414ed083483ef65a6140a2ba65a8e11e4b1c103df3f"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_what_ai_did_for_the_holidays.txt",
-      "title": "What AI Did for the Holidays",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/what-ai-did-for-the-holidays/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/what-ai-did-for-the-holidays/",
-        "https://www.aei.org/domestic-policy/what-ai-did-for-the-holidays/",
-        "https://cosm.aei.org/what-ai-did-for-the-holidays/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "What AI Did for the Holidays",
+        "url": "https://www.aei.org/domestic-policy/what-ai-did-for-the-holidays/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-01-12",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/what-ai-did-for-the-holidays/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "9ce839eda6844b4b32ab5831d5617ab9810b91c42f981aa82c6908ae320c7ca2",
+          "pageSnapshotSha256": "aba11b76f4186db285278f84c03d1ffceeeee61b095b1a33df02048d6cbfbc01"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_what_happens_in_silicon_valley_doesnt_stay_there.txt",
-      "title": "What Happens in Silicon Valley Doesn’t Stay There",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/what-happens-in-silicon-valley-doesnt-stay-there/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/what-happens-in-silicon-valley-doesnt-stay-there/",
-        "https://www.aei.org/domestic-policy/what-happens-in-silicon-valley-doesnt-stay-there/",
-        "https://cosm.aei.org/what-happens-in-silicon-valley-doesnt-stay-there/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "What Happens in Silicon Valley Doesn’t Stay There",
+        "url": "https://www.aei.org/domestic-policy/what-happens-in-silicon-valley-doesnt-stay-there/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-01-21",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/what-happens-in-silicon-valley-doesnt-stay-there/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "4881af719d4b11b8bd48a18e26af24d4ed233d0f4f4d85b6e0b7a3b0dbf9e254",
+          "pageSnapshotSha256": "f6df584896ad758b7fdaba73380950da4b9cf6ed211b126e1c1023716a87d30c"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_when_ai_starts_reading_the_room.txt",
-      "title": "When AI Starts Reading the Room",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/when-ai-starts-reading-the-room/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/when-ai-starts-reading-the-room/",
-        "https://www.aei.org/domestic-policy/when-ai-starts-reading-the-room/",
-        "https://cosm.aei.org/when-ai-starts-reading-the-room/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "When AI Starts Reading the Room",
+        "url": "https://www.aei.org/domestic-policy/when-ai-starts-reading-the-room/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2026-05-18",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/when-ai-starts-reading-the-room/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "8d9ef2a6dca1e83e322e81cc109c2585715681ecf2e774ab81db519433922681",
+          "pageSnapshotSha256": "4d2efce29e3e088554d4ca8eab0f40319b070e212700da40ea24916a613cd243"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_domestic_policy_when_human_fatigue_becomes_ais_weakest_link.txt",
-      "title": "When Human Fatigue Becomes AI’s Weakest Link",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/when-human-fatigue-becomes-ais-weakest-link/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/when-human-fatigue-becomes-ais-weakest-link/",
-        "https://www.aei.org/domestic-policy/when-human-fatigue-becomes-ais-weakest-link/",
-        "https://cosm.aei.org/when-human-fatigue-becomes-ais-weakest-link/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "When Human Fatigue Becomes AI’s Weakest Link",
+        "url": "https://www.aei.org/domestic-policy/when-human-fatigue-becomes-ais-weakest-link/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2025-08-21",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/when-human-fatigue-becomes-ais-weakest-link/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "09d1e00c7cefed5af5e8d2bc2423d4ec9b239a2bb1e75e6d67ef44799313c0ad",
+          "pageSnapshotSha256": "54f31294971f73de33a15dd9ff749fbe46fad1931fad2e054f1824655d27a1e1"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_economics_an_own_goal_h1_b_policy.txt",
-      "title": "An Own-Goal H1-B Policy",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/an-own-goal-h1-b-policy/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/an-own-goal-h1-b-policy/",
-        "https://cosm.aei.org/an-own-goal-h1-b-policy/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "An Own-Goal H1-B Policy",
+        "url": "https://www.aei.org/domestic-policy/an-own-goal-h1-b-policy/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2025-09-25",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/an-own-goal-h1-b-policy/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "fcb66a2afaf31cf20e1fecd29aeacb5ff91dd039657b078744257a6839ed1efa",
+          "pageSnapshotSha256": "daa83e050c50f6ab6abe7a5196a570c4a0e30e34a9a4cc697cdb9a8b3d19c247"
+        }
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_events_on_the_front_porch_with_brent_orrell_and_tony_pipa_a_conversation_with_nicholas_f_jacobs_and_daniel_m_shea.txt",
-      "title": "On the Front Porch with Brent Orrell and Tony Pipa: A Conversation with Nicholas F. Jacobs",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs/",
-        "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs-and-daniel-m-shea/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "On the Front Porch with Brent Orrell and Tony Pipa: A Conversation with Nicholas F. Jacobs",
+        "url": "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs-and-daniel-m-shea/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs-and-daniel-m-shea/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "0465c63932e41f551444d9dfc692680b7d0fa3efe23fdc5571a058356cfda7f6",
+          "pageSnapshotSha256": "dcbcc11959a7118481392da99b99a6d8a1fff0de51f68c6c3fa1381502ac764b",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Brent Orrell"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2024-01-25",
+        "publicationDate": "2024-01-17",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_perspectives_on_data_privacy_from_the_federal_trade_commission_and_department_of_justice.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Perspectives on Data Privacy from the Federal Trade Commission and Department of Justice",
+        "url": "https://www.aei.org/events/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "b73c7bda24bccb3f8c3f139d021aa65bcd6f633a468b63f399d29a3850b2eb80",
+          "pageSnapshotSha256": "e7f2a029f919d86e69c372d4b6b4eccab80a4e08fb0ac126829828573135f3a3",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Roslyn Layton",
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2019-03-18",
+        "publicationDate": "2019-03-18",
+        "textCoverage": "agenda-only",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_regulating_the_evolving_broadband_ecosystem.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Regulating the Evolving Broadband Ecosystem",
+        "url": "https://www.aei.org/events/regulating-the-evolving-broadband-ecosystem/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/regulating-the-evolving-broadband-ecosystem/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "0e6f1137ec52a5f9471b3a125b55a2795c7c8fdddade32ba4a0b5f407647cd60",
+          "pageSnapshotSha256": "66582d5cd466b4c7d49eab431665425561e0eca8a621fbe36827be0d24991744",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "James K. Glassman",
+            "Jeffrey Eisenach",
+            "Richard Bennett"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2014-09-10",
+        "publicationDate": "2014-08-28",
+        "eventEndDate": "2014-09-12",
+        "textCoverage": "agenda-only",
+        "eventDateVerified": true
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_events_rethinking_reentry_strengthening_programs_and_promoting_personal_agency_among_returning_citizens.txt",
-      "title": "Rethinking Reentry: Strengthening Programs and Promoting Personal Agency Among Returning Citizens",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/",
-        "https://www.aei.org/events/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "Rethinking Reentry: Strengthening Programs and Promoting Personal Agency Among Returning Citizens",
+        "url": "https://www.aei.org/events/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "1787621245d5bb112608bcfb8366e405dd70bdad49ec00f9b90e9035dadbf723",
+          "pageSnapshotSha256": "46c62a5639471df9aead42a5d46c0af80fe9c22f472a59a584dc71e0cd26bdb8",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Brent Orrell"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2020-01-17",
+        "publicationDate": "2020-01-03",
+        "eventDateVerified": true
+      }
     },
     {
       "file": "Brent_Orrell/www_aei_org_events_securing_ai_deployment_balancing_safety_and_benefits.txt",
-      "title": "Securing AI Deployment: Balancing Safety and Benefits",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/securing-ai-deployment-balancing-safety-and-benefits/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/securing-ai-deployment-balancing-safety-and-benefits/",
-        "https://www.aei.org/events/securing-ai-deployment-balancing-safety-and-benefits/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+      "previous": null,
+      "corrected": {
+        "title": "Securing AI Deployment: Balancing Safety and Benefits",
+        "url": "https://www.aei.org/events/securing-ai-deployment-balancing-safety-and-benefits/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/securing-ai-deployment-balancing-safety-and-benefits/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "00ae688131b02084c9cd07a933aac31105f1059048f6af030386f95174933694",
+          "pageSnapshotSha256": "07da608e7e944d30acb540bd63154d0f7c7556f7cb10ee058bfd7002876cdc53",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Brent Orrell",
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2024-06-05",
+        "publicationDate": "2024-05-29",
+        "textCoverage": "agenda-only",
+        "eventDateVerified": true
+      }
     },
+    {
+      "file": "Shane_Tews/www_aei_org_events_securing_the_internet_of_things_a_conversation_with_sen_ed_markey_d_ma_and_rep_ted_lieu_d_ca.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Securing the Internet of Things: A Conversation with Sen. Edward J. Markey (D-MA) and Rep. Ted Lieu (D-CA)",
+        "url": "https://www.aei.org/events/securing-the-internet-of-things-a-conversation-with-sen-ed-markey-d-ma-and-rep-ted-lieu-d-ca/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/securing-the-internet-of-things-a-conversation-with-sen-ed-markey-d-ma-and-rep-ted-lieu-d-ca/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "c211b5b0450d6b13209d82924367aae51e86a69aeec2da3b331b5282a74d85f4",
+          "pageSnapshotSha256": "12d91ddcdad39d7e9ffe4a99902a1dbf0fd84eefd13b0cbce8b19dc1ed7eccde",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2018-02-15",
+        "publicationDate": "2018-02-01",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_securing_us_technology_and_communications_supply_chains.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Securing US Technology and Communications Supply Chains",
+        "url": "https://www.aei.org/events/securing-us-technology-and-communications-supply-chains/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/securing-us-technology-and-communications-supply-chains/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "f6dfea0038ec6dcfbca38d1ada8d67cd7f8561f194d47b27d8cf81b1bef02c4b",
+          "pageSnapshotSha256": "b7ec87a82fd65f98b654d3e1e3c5627c561bc73a9f090aef2c4946829a945996",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2020-09-18",
+        "publicationDate": "2020-09-08",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_separating_fact_from_fiction_election_disinformation_on_online_platforms.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Separating Fact from Fiction: Election Disinformation on Online Platforms",
+        "url": "https://www.aei.org/events/separating-fact-from-fiction-election-disinformation-on-online-platforms/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/separating-fact-from-fiction-election-disinformation-on-online-platforms/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "b3e6e28cb3cf09aa4fa955f0fcedb0526ebf9480156898227210c9a17b7f3b77",
+          "pageSnapshotSha256": "2e5cff4a68e2ad69b2823f00237340f495723d5fc61279bbbabb4fce32deedd0",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2022-11-04",
+        "publicationDate": "2022-10-28",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_spectrum_sharing_and_maximizing_future_tech_a_conversation_with_fcc_commissioner_brendan_carr.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Spectrum Sharing and Maximizing Future Tech: A Conversation with FCC Commissioner Brendan Carr",
+        "url": "https://www.aei.org/events/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "ddd153adfef9d1cf2b7615dd367cbcecfcdbc08df91f15663610571f5c4c4034",
+          "pageSnapshotSha256": "5f72b27d0b4c0cc04842a389f698255ce6bd4caeff1d87945226930e452e5842",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2021-01-14",
+        "publicationDate": "2020-12-31",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_spectrum_slump_exploring_the_fccs_challenges_in_5g_leadership.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Spectrum Slump: Exploring the FCC’s Challenges in 5G Leadership",
+        "url": "https://www.aei.org/events/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "128cd9b80c6a2aeec958d87ba0636f8462f95052011088221db7b6e4dffebe59",
+          "pageSnapshotSha256": "f1c8154e622ac429ed60e1c858227689556ca4cc31c358471b664cad6e693b20",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2023-11-17",
+        "publicationDate": "2023-11-08",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_strengthening_us_cybersecurity_in_the_digital_age_a_conversation_with_rep_john_katko_r_ny.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Strengthening US Cybersecurity in the Digital Age: A Conversation with Rep. John Katko (R-NY)",
+        "url": "https://www.aei.org/events/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "0377a67fd49aaf267812a671d60a2f6212e5e8fc6cd25764419108bec0b42209",
+          "pageSnapshotSha256": "a5c9a8a951ea1689f8ac5872a5ce83ade9f3b2cf46cee6e8ff5133024317839f",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2021-06-11",
+        "publicationDate": "2021-05-28",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_the_chinese_cyber_threat_challenges_and_solutions.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Chinese Cyberthreat: Challenges and Solutions",
+        "url": "https://www.aei.org/events/the-chinese-cyber-threat-challenges-and-solutions/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/the-chinese-cyber-threat-challenges-and-solutions/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "bd033466e8dd1cc277b685871af7d4b1f27e08fd4dfd93b39cb45348b26e7188",
+          "pageSnapshotSha256": "bd994d5522b1a648a190c7300d75cd8ee1ed0cf60c5e276bd045780dc180c392",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Mackenzie Eaglen",
+            "Shane Tews",
+            "Michael Mazza"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2015-07-22",
+        "publicationDate": "2015-07-14",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_the_dotcom_act_a_roadmap_for_congressional_oversight_of_the_internet_assigned_numbers_authority_iana_transition.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The DOTCOM Act: A Roadmap for Congressional Oversight of the Internet Assigned Numbers Authority (IANA) Transition",
+        "url": "https://www.aei.org/events/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "b410ddff01c8559976a35daae5fcbb4fc078a4c07cce9551f6f3e4338b1752f2",
+          "pageSnapshotSha256": "857a10478c975c99dd580684fd5cccc786589be0ae8c991ecc30c69e60618675",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2015-07-29",
+        "publicationDate": "2015-07-08",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_what_would_happen_to_consumers_and_the_economy_under_a_progressive_regulatory_regime.txt",
+      "previous": null,
+      "corrected": {
+        "title": "What Would Happen to Consumers and the Economy Under a Progressive Regulatory Regime?",
+        "url": "https://www.aei.org/events/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "28c60aca6d413cd86c5541e76df22073678cee7cb47df69cbeebd0d9651faf5d",
+          "pageSnapshotSha256": "b8361c51b4975bf3904b8a2944db98e925aadd389423fe5c1d4d3fcae856e4de",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews",
+            "Phil Gramm"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2022-06-09",
+        "publicationDate": "2022-05-13",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_where_should_the_security_lie_in_our_networks.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Where Should the Security Lie in Our Networks?",
+        "url": "https://www.aei.org/events/where-should-the-security-lie-in-our-networks/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/where-should-the-security-lie-in-our-networks/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "456a435f635af061a6fd9aa76adecd14c1afb51dee4f0795378f5964c733cf83",
+          "pageSnapshotSha256": "2bea4f8d1977a2ce58bf00e2cb3e93c391152b325c754084a675fc50938366de",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2022-11-08",
+        "publicationDate": "2022-10-31",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_who_governs_the_internet_a_conversation_on_securing_the_multistakeholder_process.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Who Governs the Internet? A Conversation on Securing the Multistakeholder Process",
+        "url": "https://www.aei.org/events/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/",
+        "authors": [],
+        "author": "",
+        "date": null,
+        "dateVerified": false,
+        "bylineVerified": false,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/events/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "c7a4bb7b722c7bdee009b8beeb1998287a0e1bdcb1ae5d9b9e389678eed50adc",
+          "pageSnapshotSha256": "8b17c1aba75a1a906d92166067e96310451eade3f9d78948dd7fe57533016842",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "observedParticipants": [
+            "Jeffrey Eisenach",
+            "Shane Tews"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2014-07-22",
+        "publicationDate": "2014-06-24",
+        "eventDateVerified": true
+      }
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_a_conversation_about_rural_prosperity_and_its_connection_to_policies_past_present_future.txt",
+      "previous": {
+        "title": "A Conversation About Rural Prosperity and Its Connection to Policies, Past, Present & Future",
+        "url": "https://www.aei.org/podcast/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/"
+      },
+      "corrected": {
+        "title": "A Conversation About Rural Prosperity and Its Connection to Policies, Past, Present & Future",
+        "url": "https://www.aei.org/podcast/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2025-08-14",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/podcast/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "3f6d75a35f066e09823be64d825c759e991e434b0c0dad11334daa20326ec230",
+          "pageSnapshotSha256": "08a178410b5bd0fd32e9497501018237e365a4476a905542ed9af738a4664980"
+        },
+        "sourceType": "podcast_description",
+        "textCoverage": "description-only",
+        "interview": {
+          "episodeUrl": "https://www.aei.org/podcast/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
+          "episodeDate": "2025-08-14",
+          "participants": [
+            "Brent Orrell"
+          ]
+        }
+      }
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_ai_and_jobs.txt",
+      "previous": null,
+      "corrected": {
+        "title": "AI and Jobs",
+        "url": "https://www.aei.org/podcast/ai-and-jobs/",
+        "authors": [
+          "Brent Orrell",
+          "Corbin Barthold"
+        ],
+        "author": "Brent Orrell, Corbin Barthold",
+        "date": "2026-02-11",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/podcast/ai-and-jobs/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "2a3cd63dc1c40c8a65b7933cc64faa6e3f1990601b563afef9c02681610dc9b2",
+          "pageSnapshotSha256": "629e51552d5f782b142ee4d88b94bae34c96773b5c2f00d7c8c34756b32ce1d7"
+        },
+        "sourceType": "podcast_description",
+        "textCoverage": "description-only",
+        "interview": {
+          "episodeUrl": "https://www.aei.org/podcast/ai-and-jobs/",
+          "episodeDate": "2026-02-11",
+          "participants": [
+            "Brent Orrell",
+            "Corbin Barthold"
+          ]
+        }
+      }
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_ai_and_the_american_workforce.txt",
+      "previous": null,
+      "corrected": {
+        "title": "AI and the American Workforce",
+        "url": "https://www.aei.org/podcast/ai-and-the-american-workforce/",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "date": "2025-09-15",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/podcast/ai-and-the-american-workforce/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "d1ec7eaf6440d272382d3ef3daca648574d65e410cc3bb8ccd574c20399d8a1a",
+          "pageSnapshotSha256": "b67d1dff379d5d6e847e55b39cb6b40a983a5e2bc233557d33684e957230b155"
+        },
+        "sourceType": "podcast_description",
+        "textCoverage": "description-only",
+        "interview": {
+          "episodeUrl": "https://www.aei.org/podcast/ai-and-the-american-workforce/",
+          "episodeDate": "2025-09-15",
+          "participants": [
+            "Brent Orrell"
+          ]
+        }
+      }
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_is_this_your_last_job_the_ai_economy_with_aeis_brent_orrell.txt",
+      "previous": {
+        "title": "Is This Your Last “Job”? The AI Economy with AEI’s Brent Orrell",
+        "url": "https://www.aei.org/podcast/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/"
+      },
+      "corrected": {
+        "title": "Is This Your Last “Job”? The AI Economy with AEI’s Brent Orrell",
+        "url": "https://www.aei.org/podcast/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
+        "authors": [
+          "Brent Orrell",
+          "Kevin Frazier"
+        ],
+        "author": "Brent Orrell, Kevin Frazier",
+        "date": "2026-01-27",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/podcast/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "6cd258449dff1088a9ac3f4bba126d6bdf1f3d26bcbc8e04624739a251428438",
+          "pageSnapshotSha256": "5d7702d7954fb2af6c0e5fb7ab21a4073695b1088ef17a7465b91af4e825fec3"
+        },
+        "sourceType": "podcast_description",
+        "textCoverage": "description-only",
+        "interview": {
+          "episodeUrl": "https://www.aei.org/podcast/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
+          "episodeDate": "2026-01-27",
+          "participants": [
+            "Brent Orrell",
+            "Kevin Frazier"
+          ]
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_press_discssing_anthropics_clash_with_the_pentagon_rinehart_on_hearst_tv.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Discssing Anthropic's clash with the Pentagon: Rinehart on Hearst TV",
+        "url": "https://www.aei.org/press/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2026-02-27",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/press/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "66c8aac4cb01d91ad30e986d7e69c85e28e7dd6533cf7555c8c2830e7f59a906",
+          "pageSnapshotSha256": "4ace946f49e6b0220df59d97afc245b26393f701fbd3706e2dfae892473a95c6"
+        },
+        "textCoverage": "description-only"
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_press_discussing_data_centers_rinehart_on_whyy_radios_studio_2.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Discussing data centers: Rinehart on WHYY Radio's 'Studio 2'",
+        "url": "https://www.aei.org/press/discussing-data-centers-rinehart-on-whyy-radios-studio-2/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2026-03-11",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/press/discussing-data-centers-rinehart-on-whyy-radios-studio-2/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "b45fa19ee083555d406aacce091c9dcc5e5affad1ced14d005b492dadf824ec2",
+          "pageSnapshotSha256": "625618fda61e6e6d2454dff65b8cbee78541430785fa1417ec635fb91e12d2ef"
+        },
+        "textCoverage": "description-only"
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_press_discussing_how_governments_shape_the_rules_of_the_digital_age_tews_on_csiss_cache_me_if_you_can.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Discussing how governments shape the rules of the digital age: Tews on CSIS's 'Cache Me If You Can'",
+        "url": "https://www.aei.org/press/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "date": "2025-12-17",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/press/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "e2f5c41df05a63533d4139455961a26390e6bcd48347e27c9244666a164cd601",
+          "pageSnapshotSha256": "6add1756bb3a788df51c97228780e315f92dd0c6739d171af1ca7f17a58e02aa"
+        },
+        "textCoverage": "description-only"
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_press_discussing_the_politics_of_ai_and_data_centers_rinehart_on_the_realclearpolitics_podcast.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Discussing the politics of AI and data centers: Rinehart on the 'RealClearPolitics Podcast'",
+        "url": "https://www.aei.org/press/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2025-11-25",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/press/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "16a87e388a6eb0a06166b19e918aba8cdf8982e470905ebc1118aac7d3c92cd3",
+          "pageSnapshotSha256": "3d54bb50da6dd313c10e7df261ec9ae35c52b25e12411f251d9af3f09bf83c2f"
+        },
+        "textCoverage": "description-only"
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_siriusxms_the_michael_smerconish_program.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Discussing the social media addiction lawsuit: Calvert on SiriusXM's 'The Michael Smerconish Program'",
+        "url": "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "date": "2026-01-27",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "7dbce78b14ef4625dedee171253358dd5f7543b02858ed9e43739681ab27ee71",
+          "pageSnapshotSha256": "c7d8b7736ca936101edadda0ac338908cee1d90dc6d3a15de1b9484048407b5c"
+        },
+        "textCoverage": "description-only"
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_usa_todays_the_excerpt.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Discussing the social media addiction lawsuit: Calvert on USA Today's 'The Excerpt'",
+        "url": "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "date": "2026-02-02",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "d0c90579f1fce8e71d05dac2b21ba8f81bfd6478490b562e9ad24fab39d67b43",
+          "pageSnapshotSha256": "f6251c9eb55a63c7667774144e280102a18e667c342bfc3b564b3d9c02b084c4"
+        },
+        "textCoverage": "description-only"
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_press_discussing_the_teen_social_media_addiction_trial_calvert_on_fox_news_live_with_aishah_hasnie.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Discussing the teen social media addiction trial: Calvert on 'Fox News Live with Aishah Hasnie'",
+        "url": "https://www.aei.org/press/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "date": "2026-01-31",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/press/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "17060fcee4a18ab245376cbefb76c440f822ce120eb68dc7ae9570b6149c8bd9",
+          "pageSnapshotSha256": "a7461e10049a2b7fcefbd8a250f21f175b4affb50a93a442cd2ff9b9b7853903"
+        },
+        "textCoverage": "description-only"
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_report_beyond_the_moonshot_apollos_hidden_lessons_for_managing_complex_technological_projects.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Beyond the Moonshot: Apollo’s Hidden Lessons for Managing Complex Technological Projects",
+        "url": "https://www.aei.org/research-products/report/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2025-11-24",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/research-products/report/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "c4d6e60900a373223457c7d3003b2387395ccf35da91390457935f3a64fa0672",
+          "pageSnapshotSha256": "74f65ea1968868d8c049000204ce89288aee389167b50c7a91eaa51e4beade9c"
+        }
+      }
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_research_products_report_land_of_opportunity_advancing_the_american_dream.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Land of Opportunity: Advancing the American Dream",
+        "url": "https://www.aei.org/research-products/report/land-of-opportunity-advancing-the-american-dream/",
+        "authors": [
+          "Kevin Corinth",
+          "Scott Winship",
+          "Mason M. Bishop"
+        ],
+        "author": "Kevin Corinth, Scott Winship, Mason M. Bishop",
+        "date": "2026-04-27",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/research-products/report/land-of-opportunity-advancing-the-american-dream/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "ef2b8b15e80f4e4e98f1f6d08caffc9a2e4a3090f23b201ad3f6da4f415e2c49",
+          "pageSnapshotSha256": "98c7f79400a7ffc6331688e50bdeb45244db49d80caf9aa68d0ec993b7b74c63"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_testimony_gains_frictions_and_skill_equalization_how_ai_is_reshaping_the_u_s_economy.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Gains, Frictions, and Skill Equalization: How AI Is Reshaping the U.S. Economy",
+        "url": "https://www.aei.org/research-products/testimony/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2025-11-18",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/research-products/testimony/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "6be33acfafed80b583eed39d9eb63b1212fb2e80c919d5528eac064fcfa339f8",
+          "pageSnapshotSha256": "415705aa137d7a385ffdf5b3b16f6d1b7cb6aa35c9477c0659125ca5c2f76f4c"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_testimony_the_evidence_on_generative_ai_and_the_american_economy.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Evidence on Generative AI and the American Economy",
+        "url": "https://www.aei.org/research-products/testimony/the-evidence-on-generative-ai-and-the-american-economy/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2026-06-11",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/research-products/testimony/the-evidence-on-generative-ai-and-the-american-economy/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "9c72f034e2f316c8c249482874ef2ce82a3a03e5ca7163c8fe9e807e6a54ec35",
+          "pageSnapshotSha256": "5317a7999ff20482d855cc7a12a308cc8d6e9dee1be09d2e1ef0e293d1d84260"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_testimony_why_mandating_social_graph_interoperability_is_riskywritten_testimony_on_hb_1589.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Why Mandating Social Graph Interoperability Is Risky:Written Testimony on HB 1589",
+        "url": "https://www.aei.org/research-products/testimony/why-mandating-social-graph-interoperability-is-riskywritten-testimony-on-hb-1589/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2026-02-13",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/research-products/testimony/why-mandating-social-graph-interoperability-is-riskywritten-testimony-on-hb-1589/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "2898e3e01c5c9d85a33ab325042562baa700d7cf82d02fbc925921d5097ad7d6",
+          "pageSnapshotSha256": "223c0c336c9819f7965c278f9c59d92acd6d555144178cf2476a140530ff315f"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_might_as_well_face_it_were_addicted_to_addiction_claims.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Might as Well Face It: We're Addicted to Addiction Claims",
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/might-as-well-face-it-were-addicted-to-addiction-claims/",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "date": "2026-07-22",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/technology-and-innovation/might-as-well-face-it-were-addicted-to-addiction-claims/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "4479516906ff5752074930d25b9a1e4bcc3396f55209359dbb414ad369009d00",
+          "pageSnapshotSha256": "9a31a1d6471ca0584418111dd38b0220f8968420df98a829ecda687747bd83eb"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_numbers_seashells_and_social_media_new_case_sheds_light_on_comeys_threat_indictment.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Numbers, Seashells, and Social Media: New Case Sheds Light on Comey’s Threat Indictment",
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "date": "2026-07-01",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/technology-and-innovation/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "68b37f435c34795567d144d7dc6b67d500d52b79229cd6ee63de41127ce91ec4",
+          "pageSnapshotSha256": "fff9d1105676212fc0be45b5b8afdad7a2ca48a15b5664e713726976e2fc6746"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_open_banking_data_portability_the_future_of_financial_innovation.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Open Banking, Data Portability & the Future of Financial Innovation",
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/open-banking-data-portability-the-future-of-financial-innovation/",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "date": "2025-11-20",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/technology-and-innovation/open-banking-data-portability-the-future-of-financial-innovation/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "8ac19445a1c733a74e698676cd6c177ddf596729622073e999976694fb1e02c4",
+          "pageSnapshotSha256": "f2f5325d3bf15f0e977b16e49e210ff8d3e3d45ccf8ed8c1c0316468b34e20fd"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_procedural_rituals_over_governance_results.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Procedural Rituals over Governance Results",
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/procedural-rituals-over-governance-results/",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "date": "2025-10-21",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/technology-and-innovation/procedural-rituals-over-governance-results/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "6c8029f03d34376ed178dcafa9d32127a721609a3dba6da376f822fae9ef26cb",
+          "pageSnapshotSha256": "744969208d748d8511d4b9fecdd732fea87f01d69672e8e8a59247083f187ac5"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_public_school_districts_and_social_media_addiction_billions_at_stake_as_groundbreaking_trial_nears.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Public Schools and Social Media Addiction: Billions at Stake as Groundbreaking Trial Starts in June",
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/public-school-districts-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-nears/",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "date": "2026-04-30",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/technology-and-innovation/public-school-districts-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-nears/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "f0b9dbf7937f976aa8cd2001ecf93af4a3f7f7d47bc83c85983a84c541420bcd",
+          "pageSnapshotSha256": "5069ff8eb892bcd4914abd7c7e735372b05eb3669a8d6bcbf05755f7b3a94171"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_the_european_commissions_new_proposed_regulations_want_to_re_engineer_your_smartphone.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The European Commission’s New Proposed Regulations Want to Re-Engineer Your Smartphone",
+        "url": "https://www.aei.org/domestic-policy/technology-and-innovation/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "date": "2026-06-01",
+        "dateVerified": true,
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/technology-and-innovation/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in a normal browser; exact normalized title, primary publication header and saved-body/participant identity checked",
+          "savedTextSha256": "426db0e6615510f91adb36e6c349bd507b1bbc438541e9dbb5ffee99ec7fbe0d",
+          "pageSnapshotSha256": "c8bf24f5cdbbc93969e49e3683ba2ee408f7a6d064a3f3b12a57d10bd6564b8b"
+        }
+      }
+    }
+  ],
+  "unresolved": [
     {
       "file": "Brent_Orrell/www_aei_org_events_the_divided_brain_and_the_making_of_the_western_world.txt",
       "title": "The divided brain and the making of the Western world",
@@ -1789,686 +2885,19 @@
       "metadataSource": null,
       "episodeDate": null,
       "candidateUrl": "https://ctse.aei.org/the-divided-brain-and-the-making-of-the-western-world/",
-      "reason": "Official candidate page not readable",
+      "reason": "Recorded original address returns 404 and no exact title appeared in AEI search; publisher confirmation needed",
       "attemptedOfficialUrls": [
         "https://ctse.aei.org/the-divided-brain-and-the-making-of-the-western-world/",
         "https://www.aei.org/events/the-divided-brain-and-the-making-of-the-western-world/"
       ],
       "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Brent_Orrell/www_aei_org_podcast_a_conversation_about_rural_prosperity_and_its_connection_to_policies_past_present_future.txt",
-      "title": "A Conversation About Rural Prosperity and Its Connection to Policies, Past, Present & Future",
-      "authors": [],
-      "date": null,
-      "url": "https://www.aei.org/podcast/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
-        "https://cosm.aei.org/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Brent_Orrell/www_aei_org_podcast_ai_and_jobs.txt",
-      "title": "AI and Jobs",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/ai-and-jobs/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/ai-and-jobs/",
-        "https://cosm.aei.org/ai-and-jobs/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Brent_Orrell/www_aei_org_podcast_ai_and_the_american_workforce.txt",
-      "title": "AI and the American Workforce",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/ai-and-the-american-workforce/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/ai-and-the-american-workforce/",
-        "https://cosm.aei.org/ai-and-the-american-workforce/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Brent_Orrell/www_aei_org_podcast_is_this_your_last_job_the_ai_economy_with_aeis_brent_orrell.txt",
-      "title": "Is This Your Last “Job”? The AI Economy with AEI’s Brent Orrell",
-      "authors": [],
-      "date": null,
-      "url": "https://www.aei.org/podcast/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
-        "https://cosm.aei.org/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Brent_Orrell/www_aei_org_research_products_report_land_of_opportunity_advancing_the_american_dream.txt",
-      "title": "Land of Opportunity: Advancing the American Dream",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/land-of-opportunity-advancing-the-american-dream/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/land-of-opportunity-advancing-the-american-dream/",
-        "https://www.aei.org/research-products/report/land-of-opportunity-advancing-the-american-dream/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_siriusxms_the_michael_smerconish_program.txt",
-      "title": "Discussing the social media addiction lawsuit: Calvert on SiriusXM's 'The Michael Smerconish Program'",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/",
-        "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_usa_todays_the_excerpt.txt",
-      "title": "Discussing the social media addiction lawsuit: Calvert on USA Today's 'The Excerpt'",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/",
-        "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Clay_Calvert/www_aei_org_press_discussing_the_teen_social_media_addiction_trial_calvert_on_fox_news_live_with_aishah_hasnie.txt",
-      "title": "Discussing the teen social media addiction trial: Calvert on 'Fox News Live with Aishah Hasnie'",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/",
-        "https://www.aei.org/press/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_might_as_well_face_it_were_addicted_to_addiction_claims.txt",
-      "title": "Might as Well Face It: We're Addicted to Addiction Claims",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/might-as-well-face-it-were-addicted-to-addiction-claims/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/might-as-well-face-it-were-addicted-to-addiction-claims/",
-        "https://www.aei.org/technology-and-innovation/might-as-well-face-it-were-addicted-to-addiction-claims/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_numbers_seashells_and_social_media_new_case_sheds_light_on_comeys_threat_indictment.txt",
-      "title": "Numbers, Seashells, and Social Media: New Case Sheds Light on Comey’s Threat Indictment",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/",
-        "https://www.aei.org/technology-and-innovation/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_public_school_districts_and_social_media_addiction_billions_at_stake_as_groundbreaking_trial_nears.txt",
-      "title": "Public Schools and Social Media Addiction: Billions at Stake as Groundbreaking Trial Starts in June",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/public-schools-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-starts-in-june/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/public-schools-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-starts-in-june/",
-        "https://www.aei.org/technology-and-innovation/public-school-districts-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-nears/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_perspectives_on_data_privacy_from_the_federal_trade_commission_and_department_of_justice.txt",
-      "title": "Perspectives on Data Privacy from the Federal Trade Commission and Department of Justice",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/",
-        "https://www.aei.org/events/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_regulating_the_evolving_broadband_ecosystem.txt",
-      "title": "Regulating the Evolving Broadband Ecosystem",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/regulating-the-evolving-broadband-ecosystem/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/regulating-the-evolving-broadband-ecosystem/",
-        "https://www.aei.org/events/regulating-the-evolving-broadband-ecosystem/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_securing_the_internet_of_things_a_conversation_with_sen_ed_markey_d_ma_and_rep_ted_lieu_d_ca.txt",
-      "title": "Securing the Internet of Things: A Conversation with Sen. Edward J. Markey (D-MA) and Rep. Ted Lieu (D-CA)",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/securing-the-internet-of-things-a-conversation-with-sen-edward-j-markey-d-ma-and-rep-ted-lieu-d-ca/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/securing-the-internet-of-things-a-conversation-with-sen-edward-j-markey-d-ma-and-rep-ted-lieu-d-ca/",
-        "https://www.aei.org/events/securing-the-internet-of-things-a-conversation-with-sen-ed-markey-d-ma-and-rep-ted-lieu-d-ca/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_securing_us_technology_and_communications_supply_chains.txt",
-      "title": "Securing US Technology and Communications Supply Chains",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/securing-us-technology-and-communications-supply-chains/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/securing-us-technology-and-communications-supply-chains/",
-        "https://www.aei.org/events/securing-us-technology-and-communications-supply-chains/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_separating_fact_from_fiction_election_disinformation_on_online_platforms.txt",
-      "title": "Separating Fact from Fiction: Election Disinformation on Online Platforms",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/separating-fact-from-fiction-election-disinformation-on-online-platforms/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/separating-fact-from-fiction-election-disinformation-on-online-platforms/",
-        "https://www.aei.org/events/separating-fact-from-fiction-election-disinformation-on-online-platforms/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_spectrum_sharing_and_maximizing_future_tech_a_conversation_with_fcc_commissioner_brendan_carr.txt",
-      "title": "Spectrum Sharing and Maximizing Future Tech: A Conversation with FCC Commissioner Brendan Carr",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/",
-        "https://www.aei.org/events/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_spectrum_slump_exploring_the_fccs_challenges_in_5g_leadership.txt",
-      "title": "Spectrum Slump: Exploring the FCC’s Challenges in 5G Leadership",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/",
-        "https://www.aei.org/events/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_strengthening_us_cybersecurity_in_the_digital_age_a_conversation_with_rep_john_katko_r_ny.txt",
-      "title": "Strengthening US Cybersecurity in the Digital Age: A Conversation with Rep. John Katko (R-NY)",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/",
-        "https://www.aei.org/events/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_the_chinese_cyber_threat_challenges_and_solutions.txt",
-      "title": "The Chinese Cyberthreat: Challenges and Solutions",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-chinese-cyberthreat-challenges-and-solutions/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-chinese-cyberthreat-challenges-and-solutions/",
-        "https://www.aei.org/events/the-chinese-cyber-threat-challenges-and-solutions/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_the_dotcom_act_a_roadmap_for_congressional_oversight_of_the_internet_assigned_numbers_authority_iana_transition.txt",
-      "title": "The DOTCOM Act: A Roadmap for Congressional Oversight of the Internet Assigned Numbers Authority (IANA) Transition",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/",
-        "https://www.aei.org/events/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_what_would_happen_to_consumers_and_the_economy_under_a_progressive_regulatory_regime.txt",
-      "title": "What Would Happen to Consumers and the Economy Under a Progressive Regulatory Regime?",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/",
-        "https://www.aei.org/events/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_where_should_the_security_lie_in_our_networks.txt",
-      "title": "Where Should the Security Lie in Our Networks?",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/where-should-the-security-lie-in-our-networks/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/where-should-the-security-lie-in-our-networks/",
-        "https://www.aei.org/events/where-should-the-security-lie-in-our-networks/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_events_who_governs_the_internet_a_conversation_on_securing_the_multistakeholder_process.txt",
-      "title": "Who Governs the Internet? A Conversation on Securing the Multistakeholder Process",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/",
-        "https://www.aei.org/events/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_press_discussing_how_governments_shape_the_rules_of_the_digital_age_tews_on_csiss_cache_me_if_you_can.txt",
-      "title": "Discussing how governments shape the rules of the digital age: Tews on CSIS's 'Cache Me If You Can'",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/",
-        "https://www.aei.org/press/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_technology_and_innovation_open_banking_data_portability_the_future_of_financial_innovation.txt",
-      "title": "Open Banking, Data Portability & the Future of Financial Innovation",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/open-banking-data-portability-the-future-of-financial-innovation/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/open-banking-data-portability-the-future-of-financial-innovation/",
-        "https://www.aei.org/technology-and-innovation/open-banking-data-portability-the-future-of-financial-innovation/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Shane_Tews/www_aei_org_technology_and_innovation_the_european_commissions_new_proposed_regulations_want_to_re_engineer_your_smartphone.txt",
-      "title": "The European Commission’s New Proposed Regulations Want to Re-Engineer Your Smartphone",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/",
-        "https://www.aei.org/technology-and-innovation/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_press_discssing_anthropics_clash_with_the_pentagon_rinehart_on_hearst_tv.txt",
-      "title": "Discssing Anthropic's clash with the Pentagon: Rinehart on Hearst TV",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/",
-        "https://www.aei.org/press/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_press_discussing_data_centers_rinehart_on_whyy_radios_studio_2.txt",
-      "title": "Discussing data centers: Rinehart on WHYY Radio's 'Studio 2'",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/discussing-data-centers-rinehart-on-whyy-radios-studio-2/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/discussing-data-centers-rinehart-on-whyy-radios-studio-2/",
-        "https://www.aei.org/press/discussing-data-centers-rinehart-on-whyy-radios-studio-2/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_press_discussing_the_politics_of_ai_and_data_centers_rinehart_on_the_realclearpolitics_podcast.txt",
-      "title": "Discussing the politics of AI and data centers: Rinehart on the 'RealClearPolitics Podcast'",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/",
-        "https://www.aei.org/press/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_research_products_report_beyond_the_moonshot_apollos_hidden_lessons_for_managing_complex_technological_projects.txt",
-      "title": "Beyond the Moonshot: Apollo’s Hidden Lessons for Managing Complex Technological Projects",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/",
-        "https://www.aei.org/research-products/report/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_research_products_testimony_gains_frictions_and_skill_equalization_how_ai_is_reshaping_the_u_s_economy.txt",
-      "title": "Gains, Frictions, and Skill Equalization: How AI Is Reshaping the U.S. Economy",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/",
-        "https://www.aei.org/research-products/testimony/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_research_products_testimony_the_evidence_on_generative_ai_and_the_american_economy.txt",
-      "title": "The Evidence on Generative AI and the American Economy",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/the-evidence-on-generative-ai-and-the-american-economy/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/the-evidence-on-generative-ai-and-the-american-economy/",
-        "https://www.aei.org/research-products/testimony/the-evidence-on-generative-ai-and-the-american-economy/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_research_products_testimony_why_mandating_social_graph_interoperability_is_riskywritten_testimony_on_hb_1589.txt",
-      "title": "Why Mandating Social Graph Interoperability Is Risky:Written Testimony on HB 1589",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/why-mandating-social-graph-interoperability-is-risky-written-testimony-on-hb-1589/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/why-mandating-social-graph-interoperability-is-risky-written-testimony-on-hb-1589/",
-        "https://www.aei.org/research-products/testimony/why-mandating-social-graph-interoperability-is-riskywritten-testimony-on-hb-1589/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
-    },
-    {
-      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_procedural_rituals_over_governance_results.txt",
-      "title": "Procedural Rituals over Governance Results",
-      "authors": [],
-      "date": null,
-      "url": null,
-      "fullText": true,
-      "sourceType": null,
-      "bylineVerified": false,
-      "metadataSource": null,
-      "episodeDate": null,
-      "candidateUrl": "https://ctse.aei.org/procedural-rituals-over-governance-results/",
-      "reason": "Official candidate page not readable",
-      "attemptedOfficialUrls": [
-        "https://ctse.aei.org/procedural-rituals-over-governance-results/",
-        "https://www.aei.org/technology-and-innovation/procedural-rituals-over-governance-results/"
-      ],
-      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
     }
   ],
   "limitations": [
-    "Some original AEI pages return HTTP 403 to automated readers; unavailable pages remain unresolved.",
-    "A supplied date/link does not certify the entire library is current.",
-    "The CTSE tobacco-analogy page has a conflicting visible byline; no scholar is assigned as verified author.",
-    "Normal browser verified one additional original page, but AEI search then required a security check.",
-    "AEI browser search security check is pending user completion.",
-    "Published values in other historical records were not all independently reverified."
+    "This repairs the previously incomplete records; populated historical metadata was not all independently audited.",
+    "No new article harvest or assertion of completeness through today was made.",
+    "One old event page remains unrecovered after a 404 and site-search check.",
+    "Event agendas and podcast/media descriptions are not treated as full-text evidence of spoken arguments."
   ],
   "additionalWrongLinkCorrections": [
     {
@@ -2500,8 +2929,21 @@
           ],
           "savedTextSha256": "86c7f66acd29d4789a80f2f8e585470d0fb436c2e7bcc174d53f9edea3eb90eb",
           "readerSnapshotSha256": "ecb9e781a092d24f48a74144ec3f70d5ec3642375de144f462b2e101c2e0fb80"
-        }
+        },
+        "dateVerified": false,
+        "eventDateVerified": true
       }
     }
-  ]
+  ],
+  "resolvedAuthorshipConflicts": [
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_social_media_addiction_lawsuits_the_deceptively_flawed_tobacco_analogy.txt",
+      "url": "https://www.aei.org/domestic-policy/technology-and-innovation/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
+      "authors": [
+        "Clay Calvert"
+      ],
+      "date": "2026-02-04"
+    }
+  ],
+  "browserReviewIssues": []
 }

@@ -54,6 +54,43 @@ test('a short guest question gets transcript context instead of unrelated safety
   assert.match(source.excerpt, /disconnect a compromised device/);
   assert.ok(source.excerpt.length > 2200 && source.excerpt.length <= 12000);
 });
+test('an event listing or agenda does not become a participant’s authored argument', async t => {
+  assert.equal(require('../utils/research').hasAuthoredArgument({authors:['Shane Tews'],sourceType:'event'},'Shane Tews'),false);
+  const {engine}=await archive(t,[{...entries[3],body:'Online safety. Registration. Panelists. Q and A.',metadata:{title:'An event agenda',authors:[],sourceType:'event',eventDate:'2026-01-01',textCoverage:'agenda-only'}}]);
+  assert.equal((await engine.search({query:'online safety',fullTextOnly:true})).articles.length,0);
+  assert.equal((await engine.search({query:'online safety'})).articles.length,1);
+});
+test('a short technical-debt question does not fill its evidence list with student-debt word matches', async t => {
+  const {engine}=await archive(t,[
+    {...entries[0],title:'Hello, Technical Debt',body:'Technical debt accumulates when software shortcuts leave maintenance and security problems for later.'},
+    {...entries[3],title:'Legacy software risks',body:'Technical debt can expose older software to security failures.'},
+    {...entries[0],title:'The trades and student debt',body:'Technical training can help students enter careers without accumulating student debt.'}
+  ]);
+  const result=await engine.search({query:'Technical debt',fullTextOnly:true,limit:6});
+  assert.equal(result.articles.length,2);assert.ok(result.articles.every(x=>x.title!=='The trades and student debt'));
+  const prompt=researchPrompt('General',prepareSources(result.articles),false,false,{shortTopic:true});
+  assert.match(prompt,/plain-English definition/);assert.match(prompt,/100–150 words/);
+});
+test('an unreviewed identical agenda copy cannot displace verified event metadata', async t => {
+  const body='Online safety panel registration and agenda. '.repeat(20);
+  const {engine}=await archive(t,[
+    {...entries[0],title:'Safety event',body,metadata:{title:'Safety event',url:'https://www.aei.org/events/safety/',authors:[],sourceType:'event',eventDate:'2026-01-01',textCoverage:'agenda-only',verification:{method:'reviewed header'}}},
+    {...entries[3],title:'Safety event',body,url:null,date:null}
+  ]);
+  assert.equal((await engine.search({query:'online safety',fullTextOnly:true})).articles.length,0);
+  const result=await engine.search({query:'online safety'});
+  assert.equal(result.articles.length,1);assert.equal(result.articles[0].sourceType,'event');
+  assert.equal(result.articles[0].url,'https://www.aei.org/events/safety/');
+  assert.deepEqual(result.articles[0].authors,[]);
+});
+test('a focused legacy-system question keeps direct evidence instead of weak generic AI sources', async t => {
+  const {engine}=await archive(t,[
+    {...entries[3],title:'AI and legacy systems',body:'AI changes exploitation risk for legacy systems previously protected by obscurity. AI discovers flaws and can chain them into exploits.'},
+    {...entries[2],title:'AI and journalism',body:'AI systems raise copyright questions for journalism.'}
+  ]);
+  const result=await engine.search({query:'How does AI change the exploitation risk of legacy systems previously protected by obscurity?',fullTextOnly:true});
+  assert.deepEqual(result.articles.map(x=>x.title),['AI and legacy systems']);
+});
 test('verified metadata wins over stale catalog metadata and duplicate unverified bylines', async t => {
   const body = 'AI legislation has measurable costs and uncertain benefits. '.repeat(10);
   const { engine } = await archive(t, [
@@ -65,6 +102,15 @@ test('verified metadata wins over stale catalog metadata and duplicate unverifie
   assert.deepEqual(articles[0].authors, ['Brent Orrell', 'Real Coauthor']);
   assert.equal(articles[0].date, '2026-01-02');
   assert.equal(articles[0].url, 'https://ctse.aei.org/verified/');
+});
+test('a refreshed canonical article wins over an older verified file with the same URL', async t => {
+  const url='https://www.aei.org/current/';
+  const {engine}=await archive(t,[
+    {...entries[0],title:'Policy',url,body:'Earlier AI policy assumptions.',metadata:{title:'Policy',url,authors:['Brent Orrell'],bylineVerified:true}},
+    {...entries[0],title:'Policy',url,body:'Updated AI policy conclusions.',metadata:{title:'Policy',url,authors:['Brent Orrell'],bylineVerified:true,fetchedAt:'2026-11-19T12:00:00Z'}}
+  ]);
+  const result=await engine.search({query:'AI policy',fullTextOnly:true});
+  assert.equal(result.articles.length,1);assert.match(result.articles[0].body,/Updated AI policy conclusions/);
 });
 test('full-text search finds topic evidence absent from title and catalog excerpt, ignoring question filler', async t => {
   const { engine } = await archive(t, entries);

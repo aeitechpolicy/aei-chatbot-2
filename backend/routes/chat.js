@@ -253,6 +253,7 @@ router.post('/:chatId/message', async (req, res) => {
         { role: 'system', content: researchPrompt(chat.domainName, sources, articles.some(article => article.selectionMode === 'overview'), needsTitle, {
           web,
           webPlan,
+          shortTopic: !compare && message.trim().split(/\s+/).length <= 4 && !/[?？]/.test(message),
           currentDate: webPlan?.currentDate || new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now()),
           scholarCoverage: !legacy && !compare ? scholarCoverageFor(chat.domainName, retrievalQuery, sources) : [],
           comparison: compare ? comparisonInstructions(groups) : null,
