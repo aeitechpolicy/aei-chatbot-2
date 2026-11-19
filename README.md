@@ -1,5 +1,11 @@
 # AEI research chatbot
 
+## Current Intern testing settings — November 18, 2026
+
+At the maintainer’s request, Chatbot Intern (server account ID `owner`) has no app-level daily question, per-account question, five-per-minute model-call, daily spending or per-request five-cent trial ceiling. Intern requests are still recorded, with their model-specific token counts and cost estimates, and are excluded from the shared daily allowances for other accounts. Ordinary Intern and Muse trial answers allow up to 16,384 output tokens with a 120-second provider timeout. Other accounts and Model Tester retain existing limits and the 1,024-token answer allowance. Provider credit balances, model/context limits and hosting/network timeouts still apply. Authentication, private history, input validation, the API abuse throttle, single-active-answer guard, citation checks and no automatic paid retries remain in place. The citation checker can still shorten an answer; longer output does not add missing scholar evidence.
+
+Deployment replaces the PostgreSQL reservation function automatically at startup; existing records remain intact. No new environment variables, paid hosting or provider privacy changes are needed. These settings supersede the older trial/limit notes below.
+
 ## Complete demo and source follow-up — November 18, 2026
 
 An internal AEI research assistant for Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart, hosted on the existing Vercel, Render and Neon services. PR #12 (01e2c51) is the published base. This combined follow-up is prepared for review; it replaces the earlier guided-tour-only ZIP and is not live until merged and deployed.
@@ -70,7 +76,7 @@ When no evidence matches, the chatbot explains that without calling the model. A
 
 Chatbot Intern and Chatbot RA have separate histories. Intern can see both accounts' usage; RA can see its own. New chats and usage use the connected Neon database. Sessions last up to eight hours; sign-out revokes them and backend restarts require signing in again.
 
-AI limits remain 50 attempts per UTC day overall, 30 per account/day, five per minute/account, a $0.50 estimated daily app allowance, 6,000 characters per question and 1,024 output tokens. Optional reasoning is requested off and automatic paid retries are disabled. The fixed model is Qwen/Qwen3.8-Flash. Default estimates are $0.15/million input tokens and $0.47/million output tokens, checked October 29: https://www.together.ai/models/qwen3-8-flash. Existing private price overrides take precedence.
+For accounts other than Chatbot Intern, default AI allowances are 100 attempts per UTC day shared, 100 per account/day, five per minute/account, a $0.50 estimated daily app allowance and 1,024 output tokens. Intern is exempt from question/spending caps and uses a 16,384-token allowance, as detailed above. All accounts retain a 6,000-character question length, input validation and no automatic paid retries. The ordinary model is zai-org/GLM-5.3-Flash; uncached estimates are $0.15/million input tokens and $0.50/million output tokens. Existing private price overrides take precedence.
 
 App allowances cover this app only and estimates can differ from Together's final bill. Free article searches do not appear as AI usage rows. No paid hosting upgrade is introduced; keep Render Free, Neon Free and the existing Vercel deployment. The actual Vercel account plan/history has not been independently verified. Free services have quotas and may sleep or pause. AI answers still require funded provider credit and a fresh private key when the user approves them.
 

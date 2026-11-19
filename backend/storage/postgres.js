@@ -32,21 +32,23 @@ const SCHEMA = [
       total_n BIGINT; person_n BIGINT; minute_n BIGINT; total_cost DOUBLE PRECISION;
     BEGIN
       PERFORM pg_advisory_xact_lock(1470293341);
-      SELECT COUNT(*), COALESCE(SUM(COALESCE(estimated_usd, reserved_usd)), 0)
-        INTO total_n, total_cost FROM aei_pilot_usage
-        WHERE started_at >= day_start AND started_at < day_start + INTERVAL '24 hours';
-      SELECT COUNT(*) INTO person_n FROM aei_pilot_usage
-        WHERE user_id = p->>'userId' AND started_at >= day_start AND started_at < day_start + INTERVAL '24 hours';
-      SELECT COUNT(*) INTO minute_n FROM aei_pilot_usage
-        WHERE user_id = p->>'userId' AND started_at >= at_time - INTERVAL '1 minute';
-      IF total_n >= (p->>'dailyQuestions')::INTEGER OR person_n >= (p->>'personQuestions')::INTEGER THEN
-        RAISE EXCEPTION USING ERRCODE='P0001', MESSAGE='daily_question_limit';
-      END IF;
-      IF minute_n >= 5 THEN
-        RAISE EXCEPTION USING ERRCODE='P0001', MESSAGE='minute_question_limit';
-      END IF;
-      IF total_cost + (p->>'reserve')::DOUBLE PRECISION > (p->>'dailyBudget')::DOUBLE PRECISION THEN
-        RAISE EXCEPTION USING ERRCODE='P0001', MESSAGE='daily_budget_limit';
+      IF p->>'userId' <> 'owner' THEN
+        SELECT COUNT(*), COALESCE(SUM(COALESCE(estimated_usd, reserved_usd)), 0)
+          INTO total_n, total_cost FROM aei_pilot_usage
+          WHERE user_id <> 'owner' AND started_at >= day_start AND started_at < day_start + INTERVAL '24 hours';
+        SELECT COUNT(*) INTO person_n FROM aei_pilot_usage
+          WHERE user_id = p->>'userId' AND started_at >= day_start AND started_at < day_start + INTERVAL '24 hours';
+        SELECT COUNT(*) INTO minute_n FROM aei_pilot_usage
+          WHERE user_id = p->>'userId' AND started_at >= at_time - INTERVAL '1 minute';
+        IF total_n >= (p->>'dailyQuestions')::INTEGER OR person_n >= (p->>'personQuestions')::INTEGER THEN
+          RAISE EXCEPTION USING ERRCODE='P0001', MESSAGE='daily_question_limit';
+        END IF;
+        IF minute_n >= 5 THEN
+          RAISE EXCEPTION USING ERRCODE='P0001', MESSAGE='minute_question_limit';
+        END IF;
+        IF total_cost + (p->>'reserve')::DOUBLE PRECISION > (p->>'dailyBudget')::DOUBLE PRECISION THEN
+          RAISE EXCEPTION USING ERRCODE='P0001', MESSAGE='daily_budget_limit';
+        END IF;
       END IF;
       INSERT INTO aei_pilot_usage
         (id, started_at, user_id, model, status, reserved_usd, input_rate, output_rate, price_source)

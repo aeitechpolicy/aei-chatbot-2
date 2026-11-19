@@ -9,7 +9,7 @@ const { queryTerms } = require('../utils/research');
 const { prepareWebSources, planWebSearch, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
 const { providerErrorDetails } = require('../utils/providerError');
-const { TEST_MODELS, MUSE_TEST_MODEL, selectedModels, estimatedCost } = require('../utils/modelTesting');
+const { TEST_MODELS, MUSE_TEST_MODEL, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost } = require('../utils/modelTesting');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb, now = Date.now }) {
@@ -345,11 +345,11 @@ router.post('/:chatId/message', async (req, res) => {
     const response = await complete({
       model: testModel ? testModel.id : MODEL,
       messages: fullMessages,
-      max_tokens: testModel?.maxOutputTokens || MAX_OUTPUT_TOKENS,
+      max_tokens: req.auth.id === 'owner' ? INTERN_OUTPUT_TOKENS : MAX_OUTPUT_TOKENS,
       ...(testModel ? testModel.parameters : MODEL_PARAMETERS),
       temperature: 0.2,
       stream: false
-    });
+    }, req.auth.id === 'owner' ? { timeoutMs: INTERN_TIMEOUT_MS } : undefined);
     aiResult = response;
     const rawAnswer = response.choices?.[0]?.message?.content;
     const { content: modelAnswer, title } = !legacy && needsTitle && typeof rawAnswer === 'string'
@@ -372,7 +372,8 @@ router.post('/:chatId/message', async (req, res) => {
     const hasAnswer = compare ? comparison.some(group => !group.limited) : !checkedAnswer.citationNotice && answerText !== 'INSUFFICIENT_EVIDENCE';
     const aiResponse = {
       role: 'assistant',
-      ...(testModel ? { model: testModel.id, truncated: response.choices?.[0]?.finish_reason === 'length' } : {}),
+      ...(testModel ? { model: testModel.id } : {}),
+      truncated: response.choices?.[0]?.finish_reason === 'length',
       ...checkedAnswer,
       sources,
       searchMode: legacy ? 'legacy' : mode,

@@ -1,5 +1,11 @@
 # Maintainer handoff
 
+## Current Intern testing settings — November 18, 2026
+
+At the maintainer’s request, Chatbot Intern (server account ID `owner`) has no app-level daily question, per-account question, five-per-minute model-call, daily spending or per-request five-cent trial ceiling. Intern requests are still recorded, with their model-specific token counts and cost estimates, and are excluded from the shared daily allowances for other accounts. Ordinary Intern and Muse trial answers allow up to 16,384 output tokens with a 120-second provider timeout. Other accounts and Model Tester retain existing limits and the 1,024-token answer allowance. Provider credit balances, model/context limits and hosting/network timeouts still apply. Authentication, private history, input validation, the API abuse throttle, single-active-answer guard, citation checks and no automatic paid retries remain in place. The citation checker can still shorten an answer; longer output does not add missing scholar evidence.
+
+Deployment replaces the PostgreSQL reservation function automatically at startup; existing records remain intact. No new environment variables, paid hosting or provider privacy changes are needed. These settings supersede the older trial/limit notes below.
+
 ## Muse trial output allowance and five-cent ceiling — November 18, 2026
 
 The first live Muse request returned usage but no visible answer after consuming the 1024-token output allowance. Muse-only trials now allow up to 4096 output tokens and require a conservative per-request reservation of no more than $0.05, as requested by the maintainer. The reservation includes the larger output allowance at Muse prices. Over-limit prompts are refused before any reservation/provider request and do not leave the account busy. Ordinary chats and the existing three-model tester retain 1024 tokens and their existing limits. The daily budget remains unchanged. Visible truncated trial replies receive an output-limit note; saved history retains the flag. No provider privacy setting was changed. One live retry is planned after deployment.
