@@ -20,4 +20,32 @@ function providerErrorDetails(error, apiKey = process.env.TOGETHER_API_KEY) {
   };
 }
 
-module.exports = { providerErrorDetails };
+// Numeric completion metadata only. Never log question, source, answer or reasoning text.
+function completionDetails(response) {
+  const usage = response?.usage;
+  const number = value => Number.isSafeInteger(value) && value >= 0 ? value : null;
+  const finish = response?.choices?.[0]?.finish_reason;
+  return {
+    finishReason: ['stop', 'eos', 'length', 'tool_calls', 'function_call', 'content_filter'].includes(finish) ? finish : null,
+    inputTokens: number(usage?.prompt_tokens),
+    outputTokens: number(usage?.completion_tokens),
+    reasoningTokens: number(usage?.completion_tokens_details?.reasoning_tokens),
+    answerCharacters: typeof response?.choices?.[0]?.message?.content === 'string' ? response.choices[0].message.content.length : 0
+  };
+}
+
+function emptyAnswerError(response) {
+  const limited = response?.choices?.[0]?.finish_reason === 'length';
+  return Object.assign(new Error(limited
+    ? 'The model reached its output allowance before returning answer text. Review Usage and costs before retrying.'
+    : 'The model returned no answer text. Review Usage and costs before retrying.'), {
+    status: 502, code: limited ? 'empty_answer_output_limit' : 'empty_answer'
+  });
+}
+
+function usageFailureCode(error) {
+  return ['empty_answer', 'empty_answer_output_limit'].includes(error.code)
+    ? error.code : String(error.status || error.code || 'request_error');
+}
+
+module.exports = { providerErrorDetails, completionDetails, emptyAnswerError, usageFailureCode };

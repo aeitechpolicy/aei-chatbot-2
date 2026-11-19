@@ -15,7 +15,10 @@ const INTERN_OUTPUT_TOKENS = 16384;
 const INTERN_TIMEOUT_MS = 120000;
 const MUSE_TEST_MODEL = Object.freeze({
   id: 'meta-models/Muse-Spark-Open-816B-A42B', label: 'Meta Muse Spark Open',
-  inputRate: 1.25, outputRate: 4.25, parameters: Object.freeze({}),
+  inputRate: 1.25, outputRate: 4.25,
+  // Meta's model card recommends low/medium effort for shorter responses.
+  // Do not let the trial inherit the model's xhigh reasoning default.
+  parameters: Object.freeze({ reasoning_effort: 'low', temperature: 1.0 }),
   maxOutputTokens: INTERN_OUTPUT_TOKENS,
   priceSource: 'https://www.together.ai/models/muse-spark-open, checked 2026-11-18; uncached estimates, not final billing'
 });

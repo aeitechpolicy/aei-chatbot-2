@@ -242,7 +242,7 @@ test('a reasoning-only or blank reply records its usage but is not saved as an a
   assert.ok(!JSON.stringify(body).includes('private-reasoning-marker'));
   assert.equal(f.calls(), 1);
   const row = (await f.pilot.rows('owner'))[0];
-  assert.equal(row.status, 'failed'); assert.ok(Math.abs(row.estimated_usd - 0.00155) < 1e-10);
+  assert.equal(row.status, 'failed'); assert.equal(row.error_code, 'empty_answer'); assert.ok(Math.abs(row.estimated_usd - 0.00155) < 1e-10);
   const saved = await (await f.request(`/api/chat/${chat.id}`, { token })).json();
   assert.equal(saved.messages.length, 1); assert.equal(saved.messages[0].role, 'user');
 });

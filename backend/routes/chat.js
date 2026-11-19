@@ -8,7 +8,7 @@ const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, par
 const { queryTerms } = require('../utils/research');
 const { prepareWebSources, planWebSearch, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
-const { providerErrorDetails } = require('../utils/providerError');
+const { providerErrorDetails, completionDetails, emptyAnswerError, usageFailureCode } = require('../utils/providerError');
 const { TEST_MODELS, MUSE_TEST_MODEL, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost } = require('../utils/modelTesting');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
@@ -309,7 +309,7 @@ router.post('/:chatId/message', async (req, res) => {
           const raw = result.choices?.[0]?.message?.content;
           const parsed = typeof raw === 'string' ? parseFirstAnswer(raw) : { content: '' };
           const { content, followUps } = parseFollowUps(parsed.content, [...previousQuestions.map(question => question.content), message]);
-          if (!content) throw Object.assign(new Error('The model returned no answer text within the output limit.'), { code: 'empty_answer' });
+          if (!content) throw emptyAnswerError(result);
           const scholarComparison = compare ? parseComparison(content, groups) : null;
           const checked = compare ? { citationNotice: null } : checkCitations(content, sources, web);
           output = { status: checked.citationNotice ? 'citation_warning' : 'complete',
@@ -320,9 +320,9 @@ router.post('/:chatId/message', async (req, res) => {
             ...(scholarComparison ? { comparison: scholarComparison } : {}) };
         } catch (error) {
           providerAttempted = error.code !== 'ai_setup';
-          failureCode = String(error.status || error.code || 'request_error');
-          console.error('Model comparison failed:', JSON.stringify({ model: model.id, ...providerErrorDetails(error) }));
-          output = { status: 'failed', error: error.code === 'empty_answer' ? error.message :
+          failureCode = usageFailureCode(error);
+          console.error('Model comparison failed:', JSON.stringify({ model: model.id, ...providerErrorDetails(error), ...(result ? { completion: completionDetails(result) } : {}) }));
+          output = { status: 'failed', error: ['empty_answer', 'empty_answer_output_limit'].includes(error.code) ? error.message :
             `This model could not complete its answer${error.status ? ` (HTTP ${error.status})` : ''}. Check Render logs before retrying.`,
             errorCode: failureCode };
         }
@@ -346,8 +346,8 @@ router.post('/:chatId/message', async (req, res) => {
       model: testModel ? testModel.id : MODEL,
       messages: fullMessages,
       max_tokens: req.auth.id === 'owner' ? INTERN_OUTPUT_TOKENS : MAX_OUTPUT_TOKENS,
-      ...(testModel ? testModel.parameters : MODEL_PARAMETERS),
       temperature: 0.2,
+      ...(testModel ? testModel.parameters : MODEL_PARAMETERS),
       stream: false
     }, req.auth.id === 'owner' ? { timeoutMs: INTERN_TIMEOUT_MS } : undefined);
     aiResult = response;
@@ -361,7 +361,7 @@ router.post('/:chatId/message', async (req, res) => {
       ? parseFollowUps(modelAnswer, [...previousQuestions.map(question => question.content), message])
       : { content: '', followUps: [] };
     if (!answerText) {
-      throw Object.assign(new Error('The model did not return an answer. Check Usage and costs before trying again.'), { status: 502, code: 'empty_answer' });
+      throw emptyAnswerError(response);
     }
 
     const comparison = compare ? parseComparison(answerText, groups) : null;
@@ -407,11 +407,11 @@ router.post('/:chatId/message', async (req, res) => {
       catch { console.error('Unable to clear an unused comparison reservation.'); }
     }
     if (usageId) {
-      try { await pilot.finish(usageId, { response: aiResult, errorCode: String(error.status || error.code || 'request_error'), attempted: attempted && error.code !== 'ai_setup' }); }
+      try { await pilot.finish(usageId, { response: aiResult, errorCode: usageFailureCode(error), attempted: attempted && error.code !== 'ai_setup' }); }
       catch { console.error('Unable to update usage; the reserved estimate remains in the ledger.'); }
     }
-    console.error('Chat request failed:', JSON.stringify(providerErrorDetails(error)));
-    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer', 'web_unavailable', 'model_selection', 'model_setup', 'web_window'].includes(error.code);
+    console.error('Chat request failed:', JSON.stringify({ model: req.auth.id === 'owner' && req.body?.modelId === MUSE_TEST_MODEL.id ? MUSE_TEST_MODEL.id : MODEL, ...providerErrorDetails(error), ...(aiResult ? { completion: completionDetails(aiResult) } : {}) }));
+    const localCode = ['usage_limit', 'busy', 'input_limit', 'storage_setup', 'ai_setup', 'empty_answer', 'empty_answer_output_limit', 'web_unavailable', 'model_selection', 'model_setup', 'web_window'].includes(error.code);
     res.status(localCode ? error.status : 500).json({
       error: localCode ? error.message : (error.status === 402 ? 'The Together account has no available credit.' : 'The answer could not be completed. Please check the usage report before retrying.'),
       code: error.status === 402 ? 'credit_limit' : (localCode ? error.code : 'system_error')
