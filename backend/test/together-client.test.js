@@ -4,7 +4,7 @@ const Together = require('together-ai');
 const { MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS } = require('../utils/pilot');
 const { togetherCompletion } = require('../utils/togetherCompletion');
 
-test('the Together SDK streams GLM text and returns final usage for the existing chat flow', async () => {
+test('the Together SDK streams ordinary Muse text and returns final usage for the existing chat flow', async () => {
   let calls = 0;
   const client = new Together({ apiKey: 'test-only-not-a-real-key', baseURL: 'http://127.0.0.1:9', maxRetries: 0, timeout: 45000,
     fetch: async (input, options) => {
@@ -12,7 +12,7 @@ test('the Together SDK streams GLM text and returns final usage for the existing
       assert.equal(new URL(input).pathname, '/v1/chat/completions');
       const body = JSON.parse(options.body);
       assert.equal(body.model, MODEL); assert.equal(body.max_tokens, MAX_OUTPUT_TOKENS);
-      assert.equal(body.model, 'zai-org/GLM-5.3-Flash');
+      assert.equal(body.model, 'meta-models/Muse-Spark-Open-816B-A42B');
       assert.equal(body.reasoning_effort, 'low'); assert.equal(body.reasoning, undefined);
       assert.equal(body.stream, true);
       assert.deepEqual(body.stream_options, { include_usage: true });

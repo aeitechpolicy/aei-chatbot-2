@@ -152,7 +152,7 @@ test('three models start together using identical library context and record the
   assert.equal(response.status, 200);
   const data = await response.json();
   assert.equal(lookups, 1); assert.equal(requests.length, 3);
-  for (const request of requests) assert.deepEqual(request.messages, requests[0].messages);
+  for (const request of requests) { assert.deepEqual(request.messages, requests[0].messages); assert.equal(request.max_tokens, 1024); }
   assert.equal(requests[0].reasoning.enabled, false);
   assert.equal(requests[1].reasoning_effort, 'low');
   assert.equal(data.modelResponses.length, 3);

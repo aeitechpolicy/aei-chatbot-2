@@ -5,9 +5,10 @@ const SERVED_SCHOLARS = require('./servedScholars');
 const { interviewFields, speakerPrefix, speakerStart, speakerEnd, clipSpeakerText } = require('./interviewSources');
 
 const MAX_SOURCE_CHARS = 2200;
+const MAX_DOCUMENT_CHARS = 12000;
 const MAX_ARTICLE_CHARS = 200000;
 const AEI_SOURCE_HOSTS = new Set(['aei.org', 'www.aei.org', 'ctse.aei.org', 'cosm.aei.org']);
-const STOP = new Set(('a an and are as at be been being but by can could did do does for from had has have how i if in into is it its me more most of on or our please said say says should show some than that the their them then there these they this those to us was we were what when where which who why will with would you your about also tell find give get written write writes writing summarize summary explain discuss compare comparison common shared across scholars scholar aei american enterprise institute main themes theme overview overall research focus focuses').split(' '));
+const STOP = new Set(('a an and are as at be been being but by can could did do does for from had has have how i if in into is it its me more most of on or our please said say says should show some than that the their them then there these they this those to us was we were what when where which who why will with would you your about also tell find give get written write writes writing summarize summary explain discuss compare comparison common shared across scholars scholar aei american enterprise institute main themes theme overview overall research focus focuses each any based actual published provide including include describe describes appear identify identifying perspectives perspective differ differences avoid assuming agreement distinguish separate current observations predictions relevant supplied sources source passage passages cite supported evidence uncertainty').split(' '));
 function normalize(text = '') {
   return String(text).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[_\u2010-\u2015-]/g, ' ').replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
 }
@@ -21,7 +22,7 @@ function tokens(text) {
   return normalized.split(' ').filter(w => w.length > 1 && !STOP.has(w)).map(stem);
 }
 function queryTerms(query) {
-  let text = String(query);
+  let text = String(query).replace(/\b(?:these|our|selected|the)?\s*scholars?[’']?\s+(?:work|writing|research)\b/gi, ' ');
   for (const name of SERVED_SCHOLARS) text = text.replace(new RegExp(name.replace(/ /g, '[ _]+'), 'gi'), ' ');
   const terms = [...new Set(tokens(text))].slice(0, 40);
   return /\b(themes?|overview|focus)\b/i.test(query) && terms.every(t => t === 'work') ? [] : terms;
@@ -80,7 +81,7 @@ function excerptFor(text, terms, idf = () => 1, maxChars = MAX_SOURCE_CHARS) {
   for (const win of ranked) {
     if (best.some(other => win.start < other.end && win.end > other.start)) continue;
     best.push(win);
-    if (best.length === 2) break;
+    if (best.length === Math.max(2, Math.floor(maxChars / 1100))) break;
   }
   const rendered = best.sort((a, b) => a.start - b.start).map(win => `${speakerPrefix(text, win.start)}${win.start ? '… ' : ''}${win.part}${win.end < text.length ? ' …' : ''}`).join('\n\n');
   return clipSpeakerText(rendered, maxChars);
@@ -184,11 +185,14 @@ function createArticleSearch({
     }));
     // Same article saved under more than one scholar should appear once.
     const unique = new Map();
+    const byContent = new Map();
     for (const doc of docs.sort((a, b) => a.key.localeCompare(b.key))) {
-      const key = doc.url || doc.key;
+      const fingerprint = doc.body.length >= 200 ? normalize(doc.title) + '|' + createHash('sha256').update(normalize(doc.body)).digest('hex') : null;
+      const key = unique.has(doc.url) ? doc.url : (fingerprint && byContent.get(fingerprint)) || doc.url || doc.key;
+      if (fingerprint) byContent.set(fingerprint, key);
       const existing = unique.get(key);
       if (existing) {
-        const quality = item => (item.fullText ? 4 : 0) + (item.interview && item.body.includes('[Speaker:') ? 2 : 0);
+        const quality = item => (item.fullText ? 4 : 0) + (item.url ? 1 : 0) + (item.date ? 1 : 0) + (item.interview && item.body.includes('[Speaker:') ? 2 : 0);
         const preferred = quality(doc) > quality(existing) ? doc : existing;
         preferred.authors = [...new Set([...existing.authors, ...doc.authors])];
         preferred.scopes = new Set([...existing.scopes, ...doc.scopes]);
@@ -244,15 +248,21 @@ function createArticleSearch({
     const archive = await catalog();
     const terms = queryTerms(query);
     const normalizedQuery = normalize(query);
+    const namedPublications = new Set(fullTextOnly ? archive.articles.filter(doc => {
+      const title = normalize(doc.title).replace(/\bfull (?:podcast )?transcript\b.*$/, '').replace(/\bwith\b.*$/, '').trim();
+      return title.split(' ').length >= 4 && (' ' + normalizedQuery + ' ').includes(' ' + title + ' ');
+    }).map(doc => doc.key) : []);
     const exactPerson = archive.articles.some(doc => (doc.interview?.participants || []).some(name => normalize(name) === normalizedQuery)) ? normalizedQuery : null;
     const scope = scholar === 'General' ? null : scholarKey(scholar);
     const named = SERVED_SCHOLARS.filter(s => normalize(query).includes(normalize(s))).map(scholarKey);
+    const balancedEvidence = fullTextOnly && (terms.length <= 1 || named.length > 1 || /\b(scholars|themes|across|overview)\b/i.test(query));
     const overview = terms.length === 0 && /\b(themes?|overview|work|research|written|writing|focus|summari[sz]e)\b/i.test(query);
     const idf = term => Math.log(1 + (archive.articles.length - (archive.df.get(term) || 0) + 0.5) / ((archive.df.get(term) || 0) + 0.5));
     const coverage = { articles: 0, fullTextArticles: 0, latestPublishedDate: null };
     const ranked = [];
     for (const doc of archive.articles) {
       if (fullTextOnly && !doc.fullText) continue;
+      if (namedPublications.size && !namedPublications.has(doc.key)) continue;
       if (scope && !includesScholar(doc, scope)) continue;
       if (!scope && named.length && !named.some(s => includesScholar(doc, s))) continue;
       coverage.articles++;
@@ -262,7 +272,9 @@ function createArticleSearch({
       if (exactPerson && ![doc.title, doc.body, ...doc.authors, ...(doc.interview?.participants || [])].some(value => (' ' + normalize(value) + ' ').includes(' ' + exactPerson + ' '))) continue;
       const matched = terms.filter(t => doc.tf.has(t));
       if (!overview && !matched.length) continue;
-      const score = matched.reduce((sum, term) => {
+      const titleTokens = tokens(doc.title);
+      const phraseMatches = terms.slice(0, -1).filter((term, i) => titleTokens.some((word, j) => word === term && titleTokens[j + 1] === terms[i + 1])).length;
+      const score = (1 + 0.8 * phraseMatches) * matched.reduce((sum, term) => {
         const tf = doc.tf.get(term);
         return sum + idf(term) * tf * 2.2 / (tf + 1.2 * (0.25 + 0.75 * doc.length / archive.averageLength));
       }, 0) * (0.3 + 0.7 * matched.length / Math.max(1, terms.length)) * (0.5 + 0.5 * Math.min(1, doc.body.length / 700));
@@ -275,7 +287,7 @@ function createArticleSearch({
     if (!scope && sort !== 'newest') {
       for (const name of (named.length ? named : SERVED_SCHOLARS.map(scholarKey))) {
         const bestCoverage = ranked.reduce((n, r) => Math.max(n, r.matched.length), 0);
-        const item = ranked.find(r => includesScholar(r.doc, name) && !selected.includes(r) && (overview || (r.matched.length >= bestCoverage && r.score >= (ranked[0]?.score || 0) * 0.6)));
+        const item = ranked.find(r => includesScholar(r.doc, name) && !selected.includes(r) && (overview || balancedEvidence || (r.matched.length >= bestCoverage && r.score >= (ranked[0]?.score || 0) * 0.6)));
         if (item) selected.push(item);
       }
     }
@@ -287,14 +299,18 @@ function createArticleSearch({
     const chosen = [...new Set(selected.map(item => fullTextOnly && item.doc.sourceType === 'interview_highlights'
       ? transcriptByEpisode.get(interviewKey(item.doc)) || item : item))];
     const articles = chosen.slice(0, Math.min(12, Math.max(1, limit))).map(({ doc, matched }, i) => {
-      const body = excerptFor(doc.body, terms, idf);
+      const evidenceLimit = namedPublications.size ? MAX_DOCUMENT_CHARS : MAX_SOURCE_CHARS;
+      const titleTerms = new Set(tokens(doc.title));
+      const passageTerms = namedPublications.size ? terms.filter(term => !titleTerms.has(term)) : terms;
+      if (namedPublications.size && /\b(practical|steps?|recommend|advice)\b/i.test(query)) passageTerms.push('step', 'recommend', 'check', 'start', 'protect');
+      const body = excerptFor(doc.body, passageTerms, idf, evidenceLimit);
       return {
         id: `S${i + 1}`, title: doc.title, authors: doc.authors, author: doc.authors.join(', ') || 'Author not recorded', date: doc.date, url: doc.url,
         ...(doc.sourceType ? { sourceType: doc.sourceType, eventDate: doc.eventDate } : {}),
         ...interviewFields(doc),
         ...(includeHighlights ? { sourceRef: doc.sourceRef, ...matchedExcerpt(body, matched), titleMatches: matchRanges(doc.title, matched) } : {}),
         collections: SERVED_SCHOLARS.filter(name => doc.scopes.has(scholarKey(name))),
-        body, fullText: doc.fullText, matchedTerms: matched
+        body, evidenceLimit, fullText: doc.fullText, matchedTerms: matched
       };
     });
     return { articles, mode: overview ? 'overview' : 'topic', matchedCount: ranked.length, coverage, scholars: SERVED_SCHOLARS, aiUsed: false };
@@ -302,4 +318,4 @@ function createArticleSearch({
   return { search, status, findSource, invalidate: () => { pending = null; } };
 }
 const articleSearch = createArticleSearch();
-module.exports = { createArticleSearch, articleSearch, queryTerms, normalize, tokens, safeUrl, knownDate, excerptFor, MAX_SOURCE_CHARS };
+module.exports = { createArticleSearch, articleSearch, queryTerms, normalize, tokens, safeUrl, knownDate, excerptFor, MAX_SOURCE_CHARS, MAX_DOCUMENT_CHARS };

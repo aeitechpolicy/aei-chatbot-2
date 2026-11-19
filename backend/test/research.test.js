@@ -294,3 +294,64 @@ test('an exact identified guest name does not match an unrelated person sharing 
   assert.ok(result.articles.every(article => article.title !== 'A conversation with Greg Walden'));
   for (const article of result.articles) assert.doesNotMatch(article.excerpt.replace(/\[Speaker: [^\]\n]+\]/g, ''), /[\[\]]/);
 });
+
+test('the real cross-scholar AI question retrieves each matching scholar despite uneven scores', async t => {
+  const question = 'What themes appear across these scholars’ work on artificial intelligence? Identify which scholars discuss each theme and where their perspectives differ. Avoid assuming agreement.';
+  assert.deepEqual(require('../utils/research').queryTerms(question), ['ai']);
+  const { engine } = await archive(t, [
+    { ...entries[0], body: 'AI workforce training helps employees adapt.' },
+    { ...entries[1], body: 'AI regulation raises policy tradeoffs.' },
+    { ...entries[2], body: 'AI chatbots raise free speech concerns.' },
+    { ...entries[3], title: 'AI and digital infrastructure', body: 'AI infrastructure. '.repeat(100) },
+    { ...entries[3], title: 'Cybersecurity reporting', body: 'Scholars identify each perspective and discuss their work.' }
+  ]);
+  const result = await engine.search({ query: question, fullTextOnly: true, limit: 6 });
+  assert.deepEqual(new Set(result.articles.flatMap(article => article.authors)), new Set(entries.map(entry => entry.scholar)));
+  assert.ok(result.articles.every(article => article.title !== 'Cybersecurity reporting'));
+});
+
+test('a named interview receives deeper relevant passages without unrelated episodes', async t => {
+  const body = '[Speaker: Greg Oslan]\nFirst step: check exposed email addresses. ' + 'Background discussion. '.repeat(700) +
+    '\n[Speaker: Greg Oslan]\nThe second step: protect accounts with passkeys. ' + 'Background discussion. '.repeat(700);
+  const { engine } = await archive(t, [
+    { ...entries[3], title: 'Making Online Safety Simpler (with Greg Oslan) — full transcript', body },
+    { ...entries[3], title: 'An older interview with Greg Oslan', body: 'Online safety recommendations and practical steps.' }
+  ]);
+  const result = await engine.search({ query: 'In Making Online Safety Simpler, what practical steps does Greg Oslan recommend?', fullTextOnly: true });
+  assert.equal(result.articles.length, 1);
+  const [source] = prepareSources(result.articles);
+  assert.match(source.excerpt, /second step: protect accounts with passkeys/);
+  assert.ok(source.excerpt.length > 2200 && source.excerpt.length <= 12000);
+  assert.match(source.excerpt, /\[Speaker: Greg Oslan\]/);
+});
+
+test('identical full texts with missing and recorded links use the more complete record once', async t => {
+  const body = 'AI legislation has measurable costs and uncertain benefits. '.repeat(10);
+  const { engine } = await archive(t, [
+    { ...entries[1], title: 'Regulation Costs', body, url: null },
+    { ...entries[1], title: 'Regulation Costs', body, url: 'https://www.aei.org/regulation-costs/' }
+  ]);
+  const result = await engine.search({ query: 'AI legislation', fullTextOnly: true });
+  assert.equal(result.articles.length, 1);
+  assert.equal(result.articles[0].url, 'https://www.aei.org/regulation-costs/');
+});
+
+test('coverage notices describe missing selected evidence without claiming a scholar has no work', () => {
+  const { coverageNoticeFor } = require('../utils/sourceContext');
+  const sources = [{ author: 'Brent Orrell' }, { collections: ['Shane Tews'] }, { author: 'Will Rinehart' }];
+  assert.match(coverageNoticeFor('General', 'What themes appear across these scholars?', sources), /Clay Calvert/);
+  assert.equal(coverageNoticeFor('Brent_Orrell', 'What themes?', sources), null);
+  assert.equal(coverageNoticeFor('General', 'What themes appear across these scholars?', [...sources, { author: 'Clay Calvert' }]), null);
+});
+
+test('comparison accepts two assigned articles per scholar but rejects another scholar’s citation', async () => {
+  const { findComparisonSources, parseComparison, comparisonInstructions } = require('../utils/scholarComparison');
+  const groups = await findComparisonSources(async key => Array.from({ length: 2 }, (_, i) => ({ title: `${key} article ${i}`,
+    author: key.replace(/_/g, ' '), body: 'An argument about AI policy.', url: `https://www.aei.org/${key}-${i}/` })), 'AI', ['Brent_Orrell', 'Will_Rinehart']);
+  assert.deepEqual(groups.map(group => group.sources.length), [2, 2]);
+  assert.match(comparisonInstructions(groups), /two or three short sentences/);
+  const good = parseComparison('COMPARE Brent_Orrell | First argument [S1]. Another finding [S2].\nCOMPARE Will_Rinehart | A different argument [S3] [S4].', groups);
+  assert.ok(good.every(group => !group.limited));
+  const bad = parseComparison('COMPARE Brent_Orrell | Wrong scholar [S3].', groups);
+  assert.equal(bad[0].limited, true);
+});

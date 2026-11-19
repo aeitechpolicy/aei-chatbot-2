@@ -6,11 +6,11 @@ const path = require('node:path');
 const { DatabaseSync } = require('node:sqlite');
 const { PostgresStorage } = require('../storage/postgres');
 
-const { TEST_MODELS, INTERN_OUTPUT_TOKENS } = require('./modelTesting');
-const DEFAULT_MODEL = TEST_MODELS.find(model => model.id === 'zai-org/GLM-5.3-Flash');
+const { MUSE_TEST_MODEL, TEST_OUTPUT_TOKENS, INTERN_OUTPUT_TOKENS } = require('./modelTesting');
+const DEFAULT_MODEL = MUSE_TEST_MODEL;
 const MODEL = DEFAULT_MODEL.id;
 const MODEL_PARAMETERS = Object.freeze({ ...DEFAULT_MODEL.parameters });
-const MAX_OUTPUT_TOKENS = 1024;
+const MAX_OUTPUT_TOKENS = 4096;
 const MAX_INPUT_BYTES = 120000;
 const MAX_QUESTION_CHARS = 6000;
 
@@ -51,12 +51,12 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
 
   // The ordinary-chat model shares the checked pricing used by Model Tester.
   // Estimates remain separate from the provider's final bill.
-  const inputRate = positiveNumber(env.CHATBOT_INPUT_USD_PER_MILLION, DEFAULT_MODEL.inputRate);
-  const outputRate = positiveNumber(env.CHATBOT_OUTPUT_USD_PER_MILLION, DEFAULT_MODEL.outputRate);
+  const inputRate = DEFAULT_MODEL.inputRate;
+  const outputRate = DEFAULT_MODEL.outputRate;
   const dailyBudget = positiveNumber(env.CHATBOT_DAILY_ESTIMATE_USD, 0.50);
   const dailyQuestions = Math.floor(positiveNumber(env.CHATBOT_DAILY_QUESTIONS, 100));
   const personQuestions = Math.floor(positiveNumber(env.CHATBOT_PERSON_DAILY_QUESTIONS, 100));
-  const priceSource = env.CHATBOT_PRICE_SOURCE || DEFAULT_MODEL.priceSource;
+  const priceSource = DEFAULT_MODEL.priceSource;
   const accounts = new Map();
   let setupError = null;
   const configuredAccounts = [
@@ -161,7 +161,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     const nextDay = new Date(Date.parse(`${day}T00:00:00Z`) + 86400000).toISOString();
     const reservations = models.map(model => ({
       id: crypto.randomUUID(), startedAt: at, userId, model: model.id,
-      reserve: ((inputBytes + 1024) * model.inputRate + (model.maxOutputTokens || MAX_OUTPUT_TOKENS) * model.outputRate) / 1e6,
+      reserve: ((inputBytes + 1024) * model.inputRate + (model.maxOutputTokens || (userId === 'tester' ? TEST_OUTPUT_TOKENS : MAX_OUTPUT_TOKENS)) * model.outputRate) / 1e6,
       inputRate: model.inputRate, outputRate: model.outputRate, priceSource: model.priceSource,
       dailyBudget, dailyQuestions, personQuestions
     }));

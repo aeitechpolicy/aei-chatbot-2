@@ -81,10 +81,11 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
     <div className="message-header">
       <div className="message-icon">{isUser ? <User size={20} /> : <Bot size={20} />}</div>
       <div className="message-role">{isUser ? 'Question' : 'Assistant'}</div>
-      {!isUser && message.model === 'meta-models/Muse-Spark-Open-816B-A42B' && <span className="answer-mode-label">Meta Muse · Test</span>}
+      {!isUser && message.model === 'meta-models/Muse-Spark-Open-816B-A42B' && message.modelTest !== false && <span className="answer-mode-label">Meta Muse · Test</span>}
       {experimental && <span className="answer-mode-label">AEI + Web</span>}
     </div>
     {experimental && !sources.some(source => source?.id?.startsWith('S')) && <p className="answer-source-note">The web search returned results. The AEI Scholar Library has no matching passages for this question.</p>}
+    {message.coverageNotice && <p className="answer-source-note">{message.coverageNotice}</p>}
     <div className={`message-evidence-layout ${selected ? 'has-passage' : ''}`}>
       <div className="message-content">
         {sourceOnly ? <>

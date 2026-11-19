@@ -21,7 +21,7 @@ const updates = [
   {
     icon: FileText,
     title: 'Turn an answer into a brief',
-    text: 'Open Article sources to preview and copy a research brief with linked citations.'
+    text: 'Open Article sources to preview and copy concise findings from the answer, including important qualifications and linked sources.'
   },
   {
     icon: Newspaper,

@@ -1,5 +1,13 @@
 # Maintainer handoff
 
+## Current demo settings and answer-quality update — November 18, 2026
+
+At the maintainer’s request, ordinary Article Chat, Compare Scholars and AEI + Web answers now use meta-models/Muse-Spark-Open-816B-A42B with reasoning_effort low and temperature 1.0. Non-Intern ordinary output allowance is 4,096 tokens; Intern remains at 16,384 with its usage-cap exemption. Other-account question, minute and daily spending caps remain active. The separate three-model tester retains its 1,024-token allowance and existing model choices. Muse estimates are pinned to $1.25 input/$4.25 output per million uncached tokens so stale GLM/Qwen CHATBOT_INPUT_USD_PER_MILLION, CHATBOT_OUTPUT_USD_PER_MILLION and CHATBOT_PRICE_SOURCE variables do not understate the new model’s costs. No new environment variable is needed.
+
+Retrieval removes generic question instructions, balances explicitly cross-scholar evidence where matches exist, favors matching topic phrases in titles, and deduplicates identical full texts even when a copy lacks a URL. Named publications can supply up to 12,000 characters of context, rather than a small excerpt mixed with unrelated articles. Comparisons can use two authored sources per scholar while rejecting citations assigned to another scholar. General cross-scholar answers disclose any scholar absent from the selected evidence; absence is not a claim that no relevant work exists.
+
+Answer instructions request concise findings, dates on historical statistics and legal developments, and clear separation of observations, predictions and proposals. Research briefs extract complete opening sentences and material qualifications from every cited paragraph rather than keeping only the first four; links, comparison rows and selected-evidence gaps remain available. Brief previews/copying make no additional AI call. Existing chats remain private and readable, and citation checks and feedback controls remain active. This update does not establish complete library freshness or repair every missing date/byline/link. All older default-model notes below are historical.
+
 ## Muse low-effort reliability trial — November 18, 2026
 
 Intern-only Muse requests now explicitly send reasoning_effort: low and temperature: 1.0. Meta documents low/medium for shorter responses, xhigh as the model default, and temperature 1.0 as recommended sampling: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B. The API output allowance remains 16,384 tokens; no Intern question/spending caps are reintroduced and the ordinary/default model is unchanged. Provider acceptance and the effect on quality still require a manual live trial.

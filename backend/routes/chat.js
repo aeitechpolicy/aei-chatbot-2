@@ -4,12 +4,12 @@ const { isDemoAccount, MODEL, MODEL_PARAMETERS, MAX_OUTPUT_TOKENS, MAX_QUESTION_
 const ChatManager = require('../utils/chatManager');
 const { fetchRelevantArticles } = require('../utils/aeiScraper');
 const { fetchLegacyArticles, legacyPrompt, legacyDomains, legacyFileList, legacyFile } = require('../utils/legacyArchive');
-const { prepareSources, researchPrompt, parseFirstAnswer, fallbackChatTitle, parseFollowUps, checkCitations } = require('../utils/sourceContext');
+const { prepareSources, researchPrompt, coverageNoticeFor, parseFirstAnswer, fallbackChatTitle, parseFollowUps, checkCitations } = require('../utils/sourceContext');
 const { queryTerms } = require('../utils/research');
 const { prepareWebSources, planWebSearch, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
 const { providerErrorDetails, completionDetails, emptyAnswerError, usageFailureCode } = require('../utils/providerError');
-const { TEST_MODELS, MUSE_TEST_MODEL, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost } = require('../utils/modelTesting');
+const { TEST_MODELS, MUSE_TEST_MODEL, TEST_OUTPUT_TOKENS, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost } = require('../utils/modelTesting');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb, now = Date.now }) {
@@ -58,7 +58,7 @@ router.get('/history', async (req, res) => {
 });
 
 router.get('/capabilities', (req, res) => res.json({ webSearch: typeof searchWeb === 'function',
-  ...(req.auth.id === 'tester' ? { models: TEST_MODELS.map(({ parameters, ...model }) => model), maxOutputTokens: MAX_OUTPUT_TOKENS } : {}) }));
+  ...(req.auth.id === 'tester' ? { models: TEST_MODELS.map(({ parameters, ...model }) => model), maxOutputTokens: TEST_OUTPUT_TOKENS } : {}) }));
 router.get('/archive', async (req, res, next) => {
   if (!isLegacy(req)) return res.status(404).json({ error: 'Archive unavailable.' });
   try { res.json({ domains: await legacyDomains() }); }
@@ -227,7 +227,7 @@ router.post('/:chatId/message', async (req, res) => {
     }
     const archiveSources = legacy
       ? articles.map(article => `${article.title || 'Untitled'} (${article.date || 'Unknown date'}) - ${article.url || 'URL unavailable'}`)
-      : compare ? groups.map(group => group.source).filter(Boolean) : prepareSources(articles);
+      : compare ? groups.flatMap(group => group.sources) : prepareSources(articles);
     if (!legacy && !web && !archiveSources.length) {
       const aiResponse = {
         role: 'assistant',
@@ -251,6 +251,7 @@ router.post('/:chatId/message', async (req, res) => {
         { role: 'system', content: researchPrompt(chat.domainName, sources, articles.some(article => article.selectionMode === 'overview'), needsTitle, {
           web,
           webPlan,
+          currentDate: webPlan?.currentDate || new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now()),
           comparison: compare ? comparisonInstructions(groups) : null,
           followUps: true
         }) },
@@ -304,7 +305,7 @@ router.post('/:chatId/message', async (req, res) => {
         let providerAttempted = true;
         let output;
         try {
-          result = await complete({ model: model.id, messages: fullMessages, max_tokens: MAX_OUTPUT_TOKENS,
+          result = await complete({ model: model.id, messages: fullMessages, max_tokens: TEST_OUTPUT_TOKENS,
             ...model.parameters, temperature: 0.2, stream: false });
           const raw = result.choices?.[0]?.message?.content;
           const parsed = typeof raw === 'string' ? parseFirstAnswer(raw) : { content: '' };
@@ -372,7 +373,8 @@ router.post('/:chatId/message', async (req, res) => {
     const hasAnswer = compare ? comparison.some(group => !group.limited) : !checkedAnswer.citationNotice && answerText !== 'INSUFFICIENT_EVIDENCE';
     const aiResponse = {
       role: 'assistant',
-      ...(testModel ? { model: testModel.id } : {}),
+      model: testModel ? testModel.id : MODEL, modelTest: Boolean(testModel),
+      ...(!legacy && !compare ? { coverageNotice: coverageNoticeFor(chat.domainName, retrievalQuery, sources) } : {}),
       truncated: response.choices?.[0]?.finish_reason === 'length',
       ...checkedAnswer,
       sources,
@@ -389,7 +391,7 @@ router.post('/:chatId/message', async (req, res) => {
     usageId = null;
     res.json({
       response: aiResponse.content,
-      model: aiResponse.model,
+      model: aiResponse.model, modelTest: aiResponse.modelTest, coverageNotice: aiResponse.coverageNotice,
       sources,
       comparison: aiResponse.comparison,
       followUps: aiResponse.followUps,

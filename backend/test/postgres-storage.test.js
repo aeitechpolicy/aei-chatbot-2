@@ -86,7 +86,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
     }
     const rows = await pilot.rows('owner');
     assert.equal(rows.length, 2); assert.ok(rows.every(row => row.status === 'complete'));
-    assert.ok(rows.every(row => Math.abs(row.estimated_usd - 0.001) < 1e-9));
+    assert.ok(rows.every(row => Math.abs(row.estimated_usd - 0.008375) < 1e-9));
     assert.equal((await pilot.rows('supervisor')).length, 1);
     const csv = await pilot.csv('owner');
     assert.ok(csv.includes('Chatbot Intern')); assert.ok(csv.includes('Chatbot RA'));
@@ -159,7 +159,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
   });
 
   await t.test('separate app instances share pending spending reservations', async () => {
-    const limits = { CHATBOT_DAILY_ESTIMATE_USD: '0.003', CHATBOT_INPUT_USD_PER_MILLION: '1', CHATBOT_OUTPUT_USD_PER_MILLION: '1' };
+    const limits = { CHATBOT_DAILY_ESTIMATE_USD: '0.03', CHATBOT_INPUT_USD_PER_MILLION: '1', CHATBOT_OUTPUT_USD_PER_MILLION: '1' };
     const first = makePilot(limits);
     const second = makePilot(limits);
     const messages = [{ role: 'user', content: 'A short question' }];
@@ -188,7 +188,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
   });
 
   await t.test('Intern bypasses usage caps, remains recorded and does not consume other accounts’ allowance', async () => {
-    const pilot = makePilot({ CHATBOT_DAILY_QUESTIONS: '1', CHATBOT_PERSON_DAILY_QUESTIONS: '1', CHATBOT_DAILY_ESTIMATE_USD: '0.003' });
+    const pilot = makePilot({ CHATBOT_DAILY_QUESTIONS: '1', CHATBOT_PERSON_DAILY_QUESTIONS: '1', CHATBOT_DAILY_ESTIMATE_USD: '0.03' });
     const messages = [{ role: 'user', content: 'A test question' }];
     for (let i = 0; i < 7; i++) {
       const id = await pilot.begin('owner', messages);

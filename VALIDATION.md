@@ -1,5 +1,9 @@
 # Validation record
 
+## Demo answer-quality update — November 18, 2026
+
+151 backend tests, 43 frontend tests and the production build passed. Local tests cover ordinary Muse routing and fixed model-specific prices despite stale environment overrides, preserved other-account caps and tester output settings, cross-scholar evidence balance, named-publication context, exact-content deduplication, two-source comparisons with scholar-specific citations, coverage gaps and extractive briefs retaining later scholars and uncertainty. Real-library offline checks retrieve all four scholars for the supplied AI-theme question and a deeper, single-source Greg Oslan transcript excerpt. No paid model or web-search call is used in these checks. Generated-answer quality still needs manual confirmation after deployment.
+
 ## Muse low-effort reliability trial — November 18, 2026
 
 145 backend tests, 37 frontend tests and the production build passed. Tests use simulated providers; no paid AI question is authorized as part of these checks. They cover exact SDK serialization of Muse low effort and temperature 1.0, preservation of reported reasoning-token counts, numeric-only failure logs, known finish reasons, distinct output-limit/blank error codes, retained failed-call cost estimates and no automatic retry or saved blank assistant message. A manual live test is needed to establish provider acceptance, reliability, cost and answer quality.
