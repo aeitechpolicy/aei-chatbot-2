@@ -22,6 +22,11 @@ test('a real coauthor in the primary header is retained; unrelated dates do not 
   const missing = `<html><head><script type="application/ld+json">{"@type":"Article","url":"https://www.aei.org/unrelated/","datePublished":"2026-11-15"}</script></head><body><h1>Unknown</h1><div class="post-content">No byline</div><article class="archive-post"><a class="author-link">Wrong Person</a><time datetime="2026-11-15"></time></article></body></html>`;
   assert.deepEqual(publicationMetadata(cheerio.load(missing), url), { authors: [], date: null, bylineVerified: false, metadataSource: null });
 });
+test('a podcast single-header date without a nested span is read with both visible participants', () => {
+  const $=cheerio.load('<div class="single-header podcast"><h1>Podcast</h1><p class="author">By <a class="author-link">Brent Orrell</a> + <a class="author-link">Kevin Frazier</a></p><p class="date">January 27, 2026</p></div><aside><p class="date">November 19, 2026</p></aside>');
+  assert.equal(publicationMetadata($,url).date,'2026-01-27');
+  assert.deepEqual(publicationMetadata($,url).authors,['Brent Orrell','Kevin Frazier']);
+});
 test('metadata repair corrects every cached copy without rewriting transcript metadata or filling uncached bylines', t => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-byline-'));
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));

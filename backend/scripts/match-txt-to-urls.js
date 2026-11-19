@@ -118,6 +118,16 @@ function* suffixes(key) {
   }
 }
 
+// A trailing word such as "innovation" is not an article identity. Accept a
+// section rename only when the whole recorded slug matches the saved title.
+function sameTitle(file, record, root) {
+  const text = fs.readFileSync(path.join(root, file), 'utf8');
+  const match = text.match(/^PAGE_TITLE:\s*([^\r\n]+)(?:\r?\n|$)/i);
+  if (!match) return false;
+  const title = match[1].replace(/\s*\|\s*American Enterprise Institute.*$/i, '').trim();
+  return munge(title) === munge(record.title);
+}
+
 // Tiebreaker: does the filename's prefix (the part before the slug) look like
 // this record's section, after alias translation?
 function prefixVotes(fileKey, slugKey, record) {
@@ -198,6 +208,7 @@ function main() {
           record = picked.record;
           method = 'slug_suffix';
         }
+        if (record && !sameTitle(f.file, record, root)) { record = null; method = null; }
         break; // longest matching suffix decides, one way or the other
       }
     }
@@ -248,4 +259,5 @@ function main() {
   console.log(`  author mismatches to review: ${authorAudit.length}`);
 }
 
-main();
+if (require.main === module) main();
+module.exports = { munge, sameTitle, pickRecord, suffixes };

@@ -4,7 +4,8 @@
 # Runs every other week: incrementally harvests anything new from the AEI
 # API since the last window, then scrapes full text for any new article by
 # the four served scholars (backend/utils/servedScholars.js) that isn't in
-# knowledge_base/ yet, and commits the result. This is the "keep the archive
+# knowledge_base/ yet or has a newer catalog modification, and commits verified
+# progress. Missed runs extend the catch-up window from the last success. This is the "keep the archive
 # current" counterpart to harvest.yml (manual, full-replace) and
 # backfill-metadata.yml (manual, matches existing knowledge_base files to
 # URLs) — this workflow is the only one that adds brand-new article content
@@ -42,12 +43,17 @@ on:
   workflow_dispatch:
     inputs:
       lookback_days:
-        description: 'Days of edits to check (use a longer window to catch up after a missed run)'
+        description: 'Minimum days of edits to check; missed runs automatically extend the catch-up window'
         type: number
         required: true
         default: 20
       refresh_interviews:
         description: 'Re-check existing Shane pages for speaker labels and linked transcript PDFs (one-time catch-up)'
+        type: boolean
+        required: false
+        default: false
+      verify_only:
+        description: 'Check source access and the refresh pipeline without publishing article/status changes'
         type: boolean
         required: false
         default: false
@@ -84,7 +90,7 @@ jobs:
 
   scrape:
     needs: check-week
-    if: github.ref == 'refs/heads/main' && needs.check-week.outputs.should_run == 'true'
+    if: needs.check-week.outputs.should_run == 'true' && (github.ref == 'refs/heads/main' || (github.event_name == 'workflow_dispatch' && inputs.verify_only))
     runs-on: ubuntu-24.04
     timeout-minutes: 120
     steps:
@@ -109,72 +115,102 @@ jobs:
         working-directory: backend
         run: npm ci
 
-      - name: Compute lookback window
+      - name: Record refresh start
+        run: |
+          node -e 'require("node:fs").appendFileSync(process.env.GITHUB_ENV, "REFRESH_STARTED_AT=" + new Date().toISOString() + "\n")'
+
+      - name: Compute catch-up window
+        working-directory: backend
         env:
           LOOKBACK_DAYS: ${{ github.event_name == 'schedule' && '20' || inputs.lookback_days }}
         run: |
-          since=$(node -e '
-            const days = Number(process.env.LOOKBACK_DAYS);
-            if (!Number.isInteger(days) || days < 1 || days > 365) {
-              throw new Error("Lookback must be a whole number from 1 to 365 days");
-            }
-            const date = new Date();
-            date.setUTCDate(date.getUTCDate() - days);
-            console.log(date.toISOString().slice(0, 10) + "T00:00:00");
-          ')
+          since=$(node scripts/library-refresh-status.js --since)
           echo "SINCE=$since" >> "$GITHUB_ENV"
 
       - name: Incremental harvest
+        id: harvest
+        continue-on-error: true
         working-directory: backend
         run: node scripts/harvest-aei-index.js --modified-after="$SINCE"
 
       - name: Match existing knowledge base
+        id: match
+        if: steps.harvest.outcome == 'success'
+        continue-on-error: true
         working-directory: backend
         run: node scripts/match-txt-to-urls.js knowledge_base
 
-      - name: Fetch missing served-scholar articles and transcripts
+      - name: Fetch missing and modified articles and transcripts
+        id: import
+        if: steps.match.outcome == 'success'
+        continue-on-error: true
         working-directory: backend
         env:
           REFRESH_INTERVIEWS: ${{ github.event_name == 'workflow_dispatch' && inputs.refresh_interviews && 'true' || 'false' }}
         run: node scripts/fetch-missing-articles.js
 
       - name: Re-match after fetch
+        id: rematch
+        if: steps.match.outcome == 'success' && (steps.import.outcome == 'success' || steps.import.outcome == 'failure')
+        continue-on-error: true
         working-directory: backend
         run: node scripts/match-txt-to-urls.js knowledge_base
 
       - name: Rebuild slim runtime index
+        id: index
+        if: steps.rematch.outcome == 'success'
+        continue-on-error: true
         working-directory: backend
         run: node scripts/build-slim-index.js
 
       - name: Record library refresh status
+        id: report
+        if: always() && !cancelled() && steps.harvest.outcome != ''
         working-directory: backend
-        run: |
-          node - <<'JS'
-          const fs = require('node:fs');
-          const filename = 'data/library-scrape-status.json';
-          const prior = fs.existsSync(filename) ? JSON.parse(fs.readFileSync(filename, 'utf8')) : {};
-          const report = JSON.parse(fs.readFileSync('data/fetch-missing-articles-report.json', 'utf8'));
-          const harvest = JSON.parse(fs.readFileSync('data/harvest-report.json', 'utf8'));
-          const checked = new Date().toISOString();
-          const failures = report.failed.length + harvest.failures.length;
-          fs.writeFileSync(filename, JSON.stringify({
-            lastScrapeCheck: checked,
-            lastSuccessfulScrape: failures ? prior.lastSuccessfulScrape || null : checked,
-            skippedInLastScrape: report.failed.length,
-            incompleteHarvest: harvest.failures.length > 0
-          }, null, 2) + '\n');
-          JS
+        env:
+          HARVEST_OUTCOME: ${{ steps.harvest.outcome }}
+          MATCH_OUTCOME: ${{ steps.match.outcome }}
+          IMPORT_OUTCOME: ${{ steps.import.outcome }}
+          REMATCH_OUTCOME: ${{ steps.rematch.outcome }}
+          INDEX_OUTCOME: ${{ steps.index.outcome }}
+          REFRESH_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/library-refresh-status.js
+
+      - name: Save refresh diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: library-refresh-report
+          path: |
+            backend/data/library-refresh-report.json
+            backend/data/harvest-report.json
+            backend/data/fetch-missing-articles-report.json
+            backend/data/unmatched.json
+            backend/data/author-audit.json
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Commit changes
+        if: always() && !cancelled() && steps.report.outcome == 'success' && github.ref == 'refs/heads/main' && !inputs.verify_only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add backend/data/aei-index.json backend/data/aei-authors.json \
-                  backend/data/matches.json backend/data/ambiguous.json \
-                  backend/data/unmatched.json backend/data/author-audit.json \
-                  backend/data/aei-index-slim.json backend/data/library-scrape-status.json \
-                  backend/articleMetadata.json backend/data/fetch-missing-articles-report.json \
-                  backend/data/harvest-report.json backend/knowledge_base
+          git add backend/data/library-scrape-status.json backend/data/library-refresh-report.json
+          if node -e 'process.exit(require("./backend/data/library-refresh-report.json").canPublishSources ? 0 : 1)'; then
+            git add backend/data/aei-index.json backend/data/aei-authors.json \
+                    backend/data/matches.json backend/data/ambiguous.json \
+                    backend/data/unmatched.json backend/data/author-audit.json \
+                    backend/data/aei-index-slim.json backend/articleMetadata.json \
+                    backend/data/fetch-missing-articles-report.json \
+                    backend/data/harvest-report.json backend/knowledge_base
+          else
+            echo "Source reports are incomplete or stale: publishing diagnostics only; saved source data stays unchanged."
+            # This is the disposable Actions checkout. Keep the staged status
+            # files, discard unpublished source edits, and avoid rebasing a
+            # dirty checkout. Diagnostic artifacts were uploaded above.
+            git restore --worktree -- backend
+            git clean -fd -- backend/data backend/knowledge_base
+          fi
           if git diff --cached --quiet; then
             echo "No archive changes to publish."
             exit 0
@@ -195,3 +231,8 @@ jobs:
             echo "main advanced during the upload. Rebasing and retrying."
           done
 
+
+      - name: Require a complete refresh
+        if: always() && !cancelled()
+        run: |
+          node -e 'const fs=require("node:fs"); const p="backend/data/library-refresh-report.json"; if(!fs.existsSync(p) || !JSON.parse(fs.readFileSync(p)).complete) { console.error("Scholar Library refresh incomplete. The last successful date was not advanced. Review verified progress and unresolved items in the diagnostics artifact."); process.exit(1); }'

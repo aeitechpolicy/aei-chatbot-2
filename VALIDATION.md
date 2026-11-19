@@ -1,5 +1,15 @@
 # Validation record
 
+## Source repairs, simple questions and refresh validation — November 19, 2026
+
+All 175 backend tests passed with zero failures on Node 24 using simulated providers and local test servers. Coverage includes reviewed date/byline/provenance preservation, coauthors, exact-title slug matching, scholar aliases and future-tense “will”, guest transcript context, short-question context isolation, relevant topic phrases, focused-source filtering, newer equivalent duplicates, event-agenda exclusion, podcast header dates, modified ordinary pages, missing-header preservation, blocked/HTML feed responses, catch-up windows, fresh-report requirements and incomplete-run watermarks. No paid provider request or production database write was made. Frontend files are unchanged; PR #23's 44 frontend checks and production build remain the latest frontend validation.
+
+Offline real-library checks select five directly relevant technical-debt sources without the student-debt article, and one directly relevant source for the legacy-system/obscurity follow-up. Everyday Shane/Brent/Will/Clay questions, explicit cross-scholar AI themes and guest first-name transcript retrieval were checked without model generation. These establish retrieval behavior, not live generated-answer accuracy.
+
+The review recovers missing fields for 116 of 117 flagged sources: 97 primary-header publication bylines and 19 event records, plus one additional wrong existing link correction. The original AEI page resolves the tobacco-analogy byline as Clay Calvert. All updated records retain official-page provenance and matching saved-text hashes; events use eventDate separately. The remaining divided-brain event has no verified replacement page. Previously populated historical records were not all reverified, and no new publication harvest or refresh timestamp is claimed.
+
+The workflow YAML parses. The verification-only workflow path, publication guards and fresh reports are locally reviewed; a real GitHub runner/source-access test has not completed. AEI may block public automated requests. The runbook identifies an approved publisher feed/export as the reliable alternative. No claim is made that the refresh is operational until that real test succeeds.
+
 ## Final rehearsal attribution corrections — November 18, 2026
 
 154 backend tests, 44 frontend tests and the production build passed. The exact shortened rehearsal question is covered by a regression test, and an offline real-library check now selects a bylined non-interview Shane Tews article. Host-only source coverage is disclosed, source prompts enumerate each requested scholar’s authored source IDs, unknown comparison citations remain rejected, redundant known citation tails are removed, and malformed label asterisks are cleaned only for display. No paid model call is used. Live generated-answer quality remains to be checked.
