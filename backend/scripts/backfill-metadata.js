@@ -6,7 +6,7 @@
 //
 //   "Author_Folder/www_aei_org_...txt": {
 //     "title": "...",
-//     "author": "Will Rinehart",     // folder author, per existing convention
+//     "author": "Will Rinehart",     // catalog byline, never inferred from folder
 //     "date": "2025-02-10",          // YYYY-MM-DD
 //     "url": "https://www.aei.org/.../"
 //   }
@@ -24,6 +24,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
+const { mergeCatalogMetadata } = require('../utils/metadataMerge');
 
 const KB_PATH = process.env.KB_PATH || path.join(__dirname, '..', 'knowledge_base');
 const WRITE = process.env.WRITE_METADATA === 'true';
@@ -31,51 +32,33 @@ const WRITE = process.env.WRITE_METADATA === 'true';
 const MATCHES_PATH = path.join(__dirname, '..', 'data', 'matches.json');
 const METADATA_PATH = path.join(__dirname, '..', 'articleMetadata.json');
 
-// 1. Run the matcher (writes data/matches.json and friends).
-console.log(`Running matcher against ${KB_PATH}...`);
-execFileSync('node', [path.join(__dirname, 'match-txt-to-urls.js'), KB_PATH], {
-  stdio: 'inherit',
-});
-
-// 2. Load matcher output and existing metadata.
-const matches = JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8'));
-let metadata = {};
-if (fs.existsSync(METADATA_PATH)) {
-  metadata = JSON.parse(fs.readFileSync(METADATA_PATH, 'utf8'));
+function backfillEntries(metadata, matches) {
+  const output = structuredClone(metadata);
+  let added = 0, updated = 0;
+  for (const m of matches) {
+    const entry = { title: m.title, authors: m.scholars || [], author: (m.scholars || []).join(', '),
+      date: (m.date || '').slice(0, 10), url: m.url, metadataSource: 'catalog-match' };
+    const existing = output[m.file];
+    const next = existing ? mergeCatalogMetadata(existing, entry) : entry;
+    if (!existing) added++;
+    else if (JSON.stringify(existing) !== JSON.stringify(next)) updated++;
+    output[m.file] = next;
+  }
+  return { metadata: output, added, updated };
 }
-
-// 3. Transform and merge.
-let added = 0;
-let updated = 0;
-for (const m of matches) {
-  const entry = {
-    title: m.title,
-    author: m.folder_author || (m.scholars && m.scholars[0]) || 'Unknown',
-    date: (m.date || '').slice(0, 10),
-    url: m.url,
-  };
-  const existing = metadata[m.file];
-  if (!existing) {
-    metadata[m.file] = entry;
-    added += 1;
-  } else if (JSON.stringify(existing) !== JSON.stringify(entry)) {
-    metadata[m.file] = entry;
-    updated += 1;
+function main() {
+  console.log(`Running matcher against ${KB_PATH}...`);
+  execFileSync(process.execPath, [path.join(__dirname, 'match-txt-to-urls.js'), KB_PATH], { stdio: 'inherit' });
+  const matches = JSON.parse(fs.readFileSync(MATCHES_PATH, 'utf8'));
+  const prior = fs.existsSync(METADATA_PATH) ? JSON.parse(fs.readFileSync(METADATA_PATH, 'utf8')) : {};
+  const { metadata, added, updated } = backfillEntries(prior, matches);
+  console.log(`Transform: ${added} new entries, ${updated} updated, ${Object.keys(metadata).length} total in articleMetadata.json`);
+  if (WRITE) {
+    fs.writeFileSync(METADATA_PATH, JSON.stringify(metadata, null, 2) + '\n');
+    console.log(`Wrote ${METADATA_PATH}`);
+  } else {
+    console.log('Dry run (WRITE_METADATA != "true"): articleMetadata.json not written.');
   }
 }
-
-console.log(`\nTransform: ${added} new entries, ${updated} updated, ` +
-  `${Object.keys(metadata).length} total in articleMetadata.json`);
-
-// 4. Write or report.
-if (WRITE) {
-  fs.writeFileSync(METADATA_PATH, JSON.stringify(metadata, null, 2) + '\n');
-  console.log(`Wrote ${METADATA_PATH}`);
-} else {
-  console.log('Dry run (WRITE_METADATA != "true"): articleMetadata.json not written.');
-  const preview = matches.slice(0, 3).map((m) => m.file);
-  if (preview.length) {
-    console.log('Sample of files that would be written:');
-    for (const f of preview) console.log(`  ${f}`);
-  }
-}
+if (require.main === module) main();
+module.exports = { backfillEntries };

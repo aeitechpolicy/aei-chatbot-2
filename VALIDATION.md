@@ -1,5 +1,13 @@
 # Validation record
 
+## Source completeness and everyday questions — November 19, 2026
+
+163 backend tests passed using simulated model/search providers and local SQLite/PostgreSQL-compatible fixtures. They cover catalog backfill preservation, coauthor provenance, title-safe slug matching, incomplete header/date refreshes, verified duplicate preference, short scholar aliases, future-tense “will”, informal guest transcript context, and a new scholar question versus a contextual follow-up. After the final date-preservation change, all 30 relevant metadata/import/interview tests passed again. The frontend is unchanged; the existing 44 frontend checks and production build from PR #23 remain the latest frontend validation.
+
+Eight offline real-library questions were checked without a model or web-search provider call. The short Greg safety query now selects two Greg Oslan transcripts with roughly 10,000 characters each instead of unrelated safety articles and a roughly 2,000-character passage. The short Shane online-safety query returns relevant bylined Shane publications with repaired dates and links. Explicit four-scholar AI coverage and exact-title transcript retrieval remain available. These checks establish retrieval behavior, not live answer accuracy or adherence to the requested writing style.
+
+The source audit reviewed 117 incomplete unique sources. Sixty-four receive verified missing fields, including separately typed events and one unresolved byline conflict; one additional incorrect existing event link is corrected. Fifty-three incomplete sources remain listed for review. Official pages, saved-body/participant matching and content hashes support the applied records. No new content harvest, refreshed timestamp, complete historical-byline audit, or claim of library currency is made. No paid model/Tavily call, provider-account change, credential access or frozen Version 1 edit occurred.
+
 ## Final rehearsal attribution corrections — November 18, 2026
 
 154 backend tests, 44 frontend tests and the production build passed. The exact shortened rehearsal question is covered by a regression test, and an offline real-library check now selects a bylined non-interview Shane Tews article. Host-only source coverage is disclosed, source prompts enumerate each requested scholar’s authored source IDs, unknown comparison citations remain rejected, redundant known citation tails are removed, and malformed label asterisks are cleaned only for display. No paid model call is used. Live generated-answer quality remains to be checked.

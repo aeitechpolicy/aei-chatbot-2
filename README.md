@@ -1,5 +1,11 @@
 # AEI research chatbot
 
+## Source repair and search follow-up — November 19, 2026
+
+The current data repair supplies verified missing fields for 64 sources and fixes one additional unrelated event link. The remaining 53 incomplete sources and the one unresolved byline conflict are documented in `backend/data/source-completeness-repair-report.json`. This is a metadata repair, not a new publication harvest or proof that the entire library is current. Publication dates and event dates remain distinct. Reviewed metadata is protected from weaker catalog imports and incomplete scraper headers.
+
+Article Chat accepts ordinary first-name scholar references and short guest questions, with deeper interview evidence and more concise answer instructions. No new setup or hosting service is required; Muse settings, citation checks, private histories and demo restrictions are unchanged. See HANDOFF.md and VALIDATION.md for the exact scope and local checks.
+
 ## Final rehearsal attribution corrections — November 18, 2026
 
 Cross-scholar chat retrieval now prioritizes each scholar’s bylined non-interview work before falling back to interview material. A podcast host or a collection label is not counted as an authored argument. The prompt receives explicit per-scholar authored source IDs and requests one short finding per requested scholar; missing authored evidence is disclosed. Generic wording such as “without” no longer changes the topic ranking. Known untagged historical interview records may still need metadata repair; byline/type checks are not semantic proof of every statement’s attribution.

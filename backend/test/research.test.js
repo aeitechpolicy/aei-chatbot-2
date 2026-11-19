@@ -29,6 +29,43 @@ const entries = [
   { scholar: 'Clay Calvert', title: 'Speech and the Constitution', body: 'The First Amendment protects speech. A defamation lawsuit presents a different legal question.', url: 'https://www.aei.org/articles/speech/', date: '2025-01-02' },
   { scholar: 'Shane Tews', title: 'Connecting Communities', body: 'Broadband deployment and spectrum policy affect network connectivity.', url: 'https://www.aei.org/articles/networks/', date: '2025-06-01' }
 ];
+test('everyday scholar names resolve without mistaking the future-tense will for a name', async t => {
+  const { namedScholars } = require('../utils/scholarNames');
+  assert.deepEqual(namedScholars('How will AI affect jobs?'), []);
+  assert.deepEqual(namedScholars('What does will think about AI regulation?'), ['Will Rinehart']);
+  assert.deepEqual(namedScholars('Compare Clay and Shane on age verification.'), ['Clay Calvert', 'Shane Tews']);
+  const { engine } = await archive(t, [
+    { ...entries[0], body: 'Job skills and AI affect workers.' },
+    { ...entries[1], body: 'Job skills and AI regulation affect workers.' }
+  ]);
+  assert.ok((await engine.search({ query: 'What does Brent say about skills?', fullTextOnly: true })).articles.every(x => x.authors.includes('Brent Orrell')));
+  assert.equal((await engine.search({ query: 'How will AI affect jobs?', fullTextOnly: true })).articles.length, 2);
+});
+test('a short guest question gets transcript context instead of unrelated safety articles', async t => {
+  const body = '[Speaker: Greg Oslan]\nCheck email exposure first. ' + 'Background discussion. '.repeat(700) +
+    '\n[Speaker: Greg Oslan]\nFor online safety, verify messages directly and disconnect a compromised device. ' + 'Background discussion. '.repeat(700);
+  const { engine } = await archive(t, [
+    { ...entries[3], title: 'Making Online Safety Simpler', body, metadata: { title: 'Making Online Safety Simpler', authors: [], sourceType: 'podcast_transcript', interview: { participants: ['Shane Tews', 'Greg Oslan'] } } },
+    { ...entries[2], title: 'Online safety tips', body: 'Online safety legislation raises constitutional concerns.' }
+  ]);
+  const result = await engine.search({ query: 'What are Greg’s online safety tips?', fullTextOnly: true });
+  assert.equal(result.articles.length, 1);
+  const [source] = prepareSources(result.articles);
+  assert.match(source.excerpt, /disconnect a compromised device/);
+  assert.ok(source.excerpt.length > 2200 && source.excerpt.length <= 12000);
+});
+test('verified metadata wins over stale catalog metadata and duplicate unverified bylines', async t => {
+  const body = 'AI legislation has measurable costs and uncertain benefits. '.repeat(10);
+  const { engine } = await archive(t, [
+    { ...entries[0], title: 'Same article', body, url: 'https://www.aei.org/old/', metadata: { title: 'Same article', authors: ['Brent Orrell', 'Real Coauthor'], bylineVerified: true, url: 'https://ctse.aei.org/verified/', date: '2026-01-02' } },
+    { ...entries[1], title: 'Same article', body, url: 'https://ctse.aei.org/verified/', date: '1999-01-01' }
+  ]);
+  const { articles } = await engine.search({ query: 'AI legislation', fullTextOnly: true });
+  assert.equal(articles.length, 1);
+  assert.deepEqual(articles[0].authors, ['Brent Orrell', 'Real Coauthor']);
+  assert.equal(articles[0].date, '2026-01-02');
+  assert.equal(articles[0].url, 'https://ctse.aei.org/verified/');
+});
 test('full-text search finds topic evidence absent from title and catalog excerpt, ignoring question filler', async t => {
   const { engine } = await archive(t, entries);
   const r = await engine.search({ query: 'What has Brent Orrell written about workforce training?', scholar: 'General' });

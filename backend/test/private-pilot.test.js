@@ -369,6 +369,20 @@ test('an unavailable archive does not trigger a general-knowledge provider fallb
   assert.equal(response.status, 503); assert.equal((await response.json()).code, 'archive_unavailable');
   assert.equal(f.calls(), 0); assert.equal((await f.pilot.rows('owner')).length, 0);
 });
+test('a new short scholar question does not inherit the previous scholar or topic', async t => {
+  const queries = [];
+  const f = await fixture(t, { fetchArticles: async (domain, query) => {
+    queries.push(query);
+    return [{ title: 'Fixture article', author: 'Brent Orrell', body: 'Saved article evidence.' }];
+  } });
+  const { token } = await f.login(); const chat = await f.newChat(token);
+  for (const message of ['What does Shane say about online safety?', 'What does Brent say about skills?', 'What about training?']) {
+    const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message } });
+    assert.equal(response.status, 200);
+  }
+  assert.equal(queries[1], 'What does Brent say about skills?');
+  assert.equal(queries[2], 'What does Brent say about skills? What about training?');
+});
 
 test('ordinary chat saves a usable partial answer and warning without a second model request', async t => {
   const f = await fixture(t, { complete: async request => {

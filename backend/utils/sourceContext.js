@@ -1,5 +1,6 @@
 const { safeUrl, knownDate, MAX_SOURCE_CHARS, MAX_DOCUMENT_CHARS, hasAuthoredArgument } = require('./research');
 const { interviewFields } = require('./interviewSources');
+const { namedScholars } = require('./scholarNames');
 
 function prepareSources(articles = []) {
   const seen = new Set();
@@ -36,12 +37,14 @@ ${options.web ? '- Use only the supplied evidence for factual claims. AEI Schola
 - Identify patterns only when multiple supplied articles support them. Name the relevant scholars and cite the examples. A recurring word alone does not establish a shared position.
 - If the supplied excerpts cannot answer the question, use INSUFFICIENT_EVIDENCE as the entire answer body.
 - State analytical interpretations as interpretations. Avoid claiming that this small selection covers a scholar's entire body of work.
-- Aim for 180–300 words unless the question asks for more detail. Use short paragraphs or 3–5 focused bullets, with one main point per bullet. Preserve meaningful qualifications rather than listing every detail.
+- Default to 120–220 words unless the question asks for more detail. Answer the question in the opening sentence, then use short paragraphs or 3–5 focused bullets. A short question is not a request for a long background section. Preserve meaningful qualifications rather than listing every detail.
 - Distinguish observations reported in the articles from predictions and policy proposals. Attach the original year to dated statistics and legal developments; an old article does not establish current conditions or current law. Conditional benefits (could, may, potentially) are possibilities, not observed outcomes.
 - For a question across scholars, account for each selected scholar and identify gaps in the selected evidence. Absence from the supplied passages does not establish that a scholar has never discussed the topic.
 - Lead with the answer or the policy question the evidence can address. Use concise language and define technical terms when needed. Explain tradeoffs and implications only when the passages support them.
 - Use plain bullets or short paragraphs. Keep any descriptive label and its cited explanation on the same line; do not use asterisks for emphasis or separate uncited headings. Cite framing statements about host questions as well as guest recommendations.
 - For questions about a guest’s practical recommendations, lead with the guest’s advice rather than credentials or a long list of host questions. Identify product-specific instructions as the guest’s description of that product, not universal guidance or an AEI endorsement.
+- For a practical-steps question, present the supported actions first. Omit company mission statements, audience-size estimates and unrelated performance percentages unless requested. Put any product-specific workflow in a separately labeled short note. Mention the host's role briefly only when relevant, without repeating every question. Paraphrase actionable advice instead of reproducing incidental website addresses; use the supplied source IDs for links.
+- The question may use a first name or an informal description. Resolve the person or publication only when the supplied sources establish the identity. If more than one identity fits and the difference affects the answer, ask one short clarifying question instead of combining different people's views.
 - When contrasting publications from different dates, identify the years and do not portray differing time periods as a direct contemporaneous disagreement without evidence.
 - Use an impersonal editorial voice in generated narration. Avoid first- and second-person phrasing such as I, me, my, our, you or your; prefer named scholars and concrete nouns over personal pronouns. Preserve original wording inside verified quotations and attribute statements to the named speaker.
 - A byline or scholar collection does not turn an interview guest’s statements into the scholar’s own views. Name the speaker when the passage identifies them; otherwise describe the discussion without assigning the view to the author. Use names rather than guessing pronouns.
@@ -59,7 +62,7 @@ ${JSON.stringify(sources)}`;
 function scholarCoverageFor(domain, query, sources) {
   if (domain !== 'General' || !/\b(across|scholars|themes|overview)\b/i.test(query)) return [];
   const scholars = require('./servedScholars');
-  const named = scholars.filter(name => query.toLowerCase().includes(name.toLowerCase()));
+  const named = namedScholars(query);
   return (named.length ? named : scholars).map(name => ({ scholar: name,
     authoredSources: sources.filter(source => hasAuthoredArgument(source, name)).map(source => source.id) }));
 }

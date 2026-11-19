@@ -2,6 +2,7 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const { createHash } = require('node:crypto');
 const SERVED_SCHOLARS = require('./servedScholars');
+const { namedScholars, withoutScholarNames } = require('./scholarNames');
 const { interviewFields, speakerPrefix, speakerStart, speakerEnd, clipSpeakerText } = require('./interviewSources');
 
 const MAX_SOURCE_CHARS = 2200;
@@ -23,7 +24,7 @@ function tokens(text) {
 }
 function queryTerms(query) {
   let text = String(query).replace(/\b(?:these|our|selected|the)?\s*scholars?[’']?\s+(?:work|writing|research)\b/gi, ' ');
-  for (const name of SERVED_SCHOLARS) text = text.replace(new RegExp(name.replace(/ /g, '[ _]+'), 'gi'), ' ');
+  text = withoutScholarNames(text);
   const terms = [...new Set(tokens(text))].slice(0, 40);
   return /\b(themes?|overview|focus)\b/i.test(query) && terms.every(t => t === 'work') ? [] : terms;
 }
@@ -173,7 +174,7 @@ function createArticleSearch({
         const eventDate = knownDate(meta.eventDate);
         const interview = interviewFields(meta);
         const sourceType = interview.sourceType || (meta.sourceType === 'event' ? 'event' : null);
-        const catalog = imported || sourceType ? meta : record;
+        const catalog = imported || sourceType || meta.bylineVerified || meta.verification ? meta : record;
         const title = String(catalog.title || meta.title || article.title || 'Untitled saved article');
         const recordedAuthors = Array.isArray(record.scholars) && record.scholars.length ? record.scholars : [];
         const byline = recordedAuthors.length ? recordedAuthors : (meta.author ? [meta.author] : []);
@@ -186,7 +187,7 @@ function createArticleSearch({
         for (const [term, n] of titleTerms) tf.set(term, (tf.get(term) || 0) + n * 5);
         docs.push({ title, authors, date: sourceType === 'event' ? null : knownDate(catalog.date) || knownDate(meta.date),
           url: safeUrl(catalog.url) || safeUrl(meta.url), body, fullText: fullText && !['excerpt-only', 'description-only'].includes(meta.textCoverage) && sourceType !== 'podcast_description',
-          ...interview, sourceType, eventDate, scopes, tf, length: Math.max(1, terms.length), key: file });
+          ...interview, sourceType, eventDate, scopes, tf, bylineVerified: meta.bylineVerified === true, length: Math.max(1, terms.length), key: file });
       }
     }));
     // Same article saved under more than one scholar should appear once.
@@ -198,9 +199,9 @@ function createArticleSearch({
       if (fingerprint) byContent.set(fingerprint, key);
       const existing = unique.get(key);
       if (existing) {
-        const quality = item => (item.fullText ? 4 : 0) + (item.url ? 1 : 0) + (item.date ? 1 : 0) + (item.interview && item.body.includes('[Speaker:') ? 2 : 0);
+        const quality = item => (item.fullText ? 4 : 0) + (item.url ? 1 : 0) + (item.date ? 1 : 0) + (item.bylineVerified ? 8 : 0) + (item.interview && item.body.includes('[Speaker:') ? 2 : 0);
         const preferred = quality(doc) > quality(existing) ? doc : existing;
-        preferred.authors = [...new Set([...existing.authors, ...doc.authors])];
+        preferred.authors = preferred.bylineVerified ? preferred.authors : [...new Set([...existing.authors, ...doc.authors])];
         preferred.scopes = new Set([...existing.scopes, ...doc.scopes]);
         unique.set(key, preferred);
       } else unique.set(key, doc);
@@ -254,13 +255,23 @@ function createArticleSearch({
     const archive = await catalog();
     const terms = queryTerms(query);
     const normalizedQuery = normalize(query);
+    const people = [...new Set(archive.articles.flatMap(doc => doc.interview?.participants || []))];
+    const namedGuests = people.filter(name => !SERVED_SCHOLARS.includes(name) &&
+      (` ${normalizedQuery} `).includes(` ${normalize(name)} `));
+    const firstNameGuests = namedGuests.length ? [] : people.filter(name => !SERVED_SCHOLARS.includes(name) &&
+      !SERVED_SCHOLARS.some(scholar => normalize(scholar).split(' ')[0] === normalize(name).split(' ')[0]) &&
+      !/^(?:will|may|bill|mark|grant|hope|faith|rob)$/.test(normalize(name).split(' ')[0]) &&
+      new RegExp(`\\b${normalize(name).split(' ')[0]}(?:[’']s)?\\b`, 'i').test(String(query)));
+    // An explicit guest name limits retrieval to that person's interviews.
+    // Ambiguous first names retain all matching people rather than guessing.
+    const guestNames = namedGuests.length ? namedGuests : firstNameGuests;
     const namedPublications = new Set(fullTextOnly ? archive.articles.filter(doc => {
       const title = normalize(doc.title).replace(/\bfull (?:podcast )?transcript\b.*$/, '').replace(/\bwith\b.*$/, '').trim();
       return title.split(' ').length >= 4 && (' ' + normalizedQuery + ' ').includes(' ' + title + ' ');
     }).map(doc => doc.key) : []);
     const exactPerson = archive.articles.some(doc => (doc.interview?.participants || []).some(name => normalize(name) === normalizedQuery)) ? normalizedQuery : null;
     const scope = scholar === 'General' ? null : scholarKey(scholar);
-    const named = SERVED_SCHOLARS.filter(s => normalize(query).includes(normalize(s))).map(scholarKey);
+    const named = namedScholars(query).map(scholarKey);
     const balancedEvidence = fullTextOnly && (terms.length <= 1 || named.length > 1 || /\b(scholars|themes|across|overview)\b/i.test(query));
     const overview = terms.length === 0 && /\b(themes?|overview|work|research|written|writing|focus|summari[sz]e)\b/i.test(query);
     const idf = term => Math.log(1 + (archive.articles.length - (archive.df.get(term) || 0) + 0.5) / ((archive.df.get(term) || 0) + 0.5));
@@ -269,6 +280,8 @@ function createArticleSearch({
     for (const doc of archive.articles) {
       if (fullTextOnly && !doc.fullText) continue;
       if (namedPublications.size && !namedPublications.has(doc.key)) continue;
+      if (guestNames.length && !guestNames.some(name => (doc.interview?.participants || []).includes(name) ||
+        (` ${normalize(doc.title + ' ' + doc.body)} `).includes(` ${normalize(name)} `))) continue;
       if (scope && !includesScholar(doc, scope)) continue;
       if (!scope && named.length && !named.some(s => includesScholar(doc, s))) continue;
       coverage.articles++;
@@ -306,10 +319,10 @@ function createArticleSearch({
     const chosen = [...new Set(selected.map(item => fullTextOnly && item.doc.sourceType === 'interview_highlights'
       ? transcriptByEpisode.get(interviewKey(item.doc)) || item : item))];
     const articles = chosen.slice(0, Math.min(12, Math.max(1, limit))).map(({ doc, matched }, i) => {
-      const evidenceLimit = namedPublications.size ? MAX_DOCUMENT_CHARS : MAX_SOURCE_CHARS;
+      const evidenceLimit = namedPublications.size || (fullTextOnly && guestNames.length) ? MAX_DOCUMENT_CHARS : MAX_SOURCE_CHARS;
       const titleTerms = new Set(tokens(doc.title));
-      const passageTerms = namedPublications.size ? terms.filter(term => !titleTerms.has(term)) : terms;
-      if (namedPublications.size && /\b(practical|steps?|recommend|advice)\b/i.test(query)) passageTerms.push('step', 'recommend', 'check', 'start', 'protect');
+      const passageTerms = namedPublications.size || guestNames.length ? terms.filter(term => !titleTerms.has(term)) : [...terms];
+      if ((namedPublications.size || guestNames.length) && /\b(practical|steps?|recommend|advice|tips)\b/i.test(query)) passageTerms.push('step', 'recommend', 'check', 'start', 'protect');
       const body = excerptFor(doc.body, passageTerms, idf, evidenceLimit);
       return {
         id: `S${i + 1}`, title: doc.title, authors: doc.authors, author: doc.authors.join(', ') || 'Author not recorded', date: doc.date, url: doc.url,

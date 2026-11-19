@@ -1,0 +1,2507 @@
+{
+  "checkedOn": "2026-11-19",
+  "scope": "The 117 distinct sources with a missing link/publication date in the PR23 local inventory. This is not a complete audit of populated historical fields or a new article harvest.",
+  "checked": 117,
+  "repairedSources": 64,
+  "verifiedArticleBylines": 60,
+  "events": 3,
+  "authorshipConflicts": 1,
+  "applied": [
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_apples_removal_of_ice_location_apps_examining_first_amendment_issues.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Apple’s Removal of ICE-Location Apps: Examining First Amendment Issues",
+        "url": "https://ctse.aei.org/apples-removal-of-ice-location-apps-examining-first-amendment-issues/",
+        "date": "2025-10-29",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/apples-removal-of-ice-location-apps-examining-first-amendment-issues/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "672d65dbad61764d77c1c8c5e180744fd8aee4ce19a903e4e2f6bace6e23018a",
+          "readerSnapshotSha256": "3d27a08177fdbb48949296ecce2ee3fc063b4a97f2fa6e395ed242f3ecac5165"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_high_stakes_as_countrys_first_social_media_addiction_trial_nears_and_snap_settles.txt",
+      "previous": null,
+      "corrected": {
+        "title": "High Stakes as Country’s First Social Media Addiction Trial Nears and Snap Settles",
+        "url": "https://ctse.aei.org/high-stakes-as-countrys-first-social-media-addiction-trial-nears-and-snap-settles/",
+        "date": "2026-01-22",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/high-stakes-as-countrys-first-social-media-addiction-trial-nears-and-snap-settles/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "381e9db9037ec188c8f6efd705ab11133f24ff4aa61cad63bd32c4933e769af0",
+          "readerSnapshotSha256": "492f8802f712204c4794e495b6e3540dd65b92a4808998830c09f710407cedce"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_lessons_from_a_tragedy_public_school_teachers_online_speech_rights_arent_absolute_and_thats_a_good_thing.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Lessons from a Tragedy: Public School Teachers’ Online Speech Rights Aren’t Absolute and That’s a Good Thing",
+        "url": "https://ctse.aei.org/lessons-from-a-tragedy-public-school-teachers-online-speech-rights-arent-absolute-and-thats-a-good-thing/",
+        "date": "2025-09-16",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/lessons-from-a-tragedy-public-school-teachers-online-speech-rights-arent-absolute-and-thats-a-good-thing/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "d7b48ff3c230cb1155d25d53d0d73d81a020a22b8f65a0ebcb2140258cb583f7",
+          "readerSnapshotSha256": "dd5149db2a9892abe6ffed94116f4503ef48d3819b76f36fec30e3e68b163bbb"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_lessons_from_arkansas_social_media_addiction_legislation_is_unconstitutional_and_unnecessary.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Lessons from Arkansas: Social Media Addiction Legislation Is Unconstitutional and Unnecessary",
+        "url": "https://ctse.aei.org/lessons-from-arkansas-social-media-addiction-legislation-is-unconstitutional-and-unnecessary/",
+        "date": "2026-05-27",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/lessons-from-arkansas-social-media-addiction-legislation-is-unconstitutional-and-unnecessary/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "4a5e2d7505c2548a23afac0079e801a573930cdfbdd9bbbef5c8362b6ea873f3",
+          "readerSnapshotSha256": "2440fdd8cff134bd16701e9268409cd7d1215e94baa86348326c154617b075c1"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_of_free_speech_claims_and_supply_chain_risks_anthropics_battle_with_the_government.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Of Free Speech Claims and Supply Chain Risks: Anthropic’s Battle with the Government",
+        "url": "https://ctse.aei.org/of-free-speech-claims-and-supply-chain-risks-anthropics-battle-with-the-government/",
+        "date": "2026-04-14",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/of-free-speech-claims-and-supply-chain-risks-anthropics-battle-with-the-government/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "54864e332bf7cb45eedf1c5e36dff6afa15b7dc9e0a7343589def18bce267b44",
+          "readerSnapshotSha256": "54323d72b0dfc3d2c67b8bcfe920527de067066645a6190b37f654242e7258bd"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_online_hate_speech_threats_and_incitement_understanding_key_differences_after_bondis_blunder.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Online Hate Speech, Threats, and Incitement: Understanding Key Differences After Bondi’s Blunder",
+        "url": "https://ctse.aei.org/online-hate-speech-threats-and-incitement-understanding-key-differences-after-bondis-blunder/",
+        "date": "2025-11-04",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/online-hate-speech-threats-and-incitement-understanding-key-differences-after-bondis-blunder/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "e7baf255416362109b28515bac681c4e7c82377365d4cbc35041cabd56dce933",
+          "readerSnapshotSha256": "6cfc2a73ec198419c5bb5801778a697105658c4966265b6f2881838cbcb4fe9b"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_online_off_campus_hate_speech_treating_public_university_grad_students_like_high_schoolers_is_problematic.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Online, Off-Campus Hate Speech: Treating Public University Grad Students Like High Schoolers Is Problematic",
+        "url": "https://ctse.aei.org/online-off-campus-hate-speech-treating-public-university-grad-students-like-high-schoolers-is-problematic/",
+        "date": "2026-04-01",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/online-off-campus-hate-speech-treating-public-university-grad-students-like-high-schoolers-is-problematic/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "6b7705bbc5ffff79c2634c3580e98391d1c0e35a24d8fd8a8727eada4338d597",
+          "readerSnapshotSha256": "7f85006b184167a1a43c40cd76bc16edd8e8c4837607ab5efedbf62e3b5ae04e"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_online_speech_and_jawboning_hypocrisy_does_an_inglorious_first_amendment_legacy_await_bondi_and_noem.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Online Speech and Jawboning Hypocrisy: Does an Inglorious First Amendment Legacy Await Bondi and Noem?",
+        "url": "https://ctse.aei.org/online-speech-and-jawboning-hypocrisy-does-an-inglorious-first-amendment-legacy-await-bondi-and-noem/",
+        "date": "2026-05-12",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/online-speech-and-jawboning-hypocrisy-does-an-inglorious-first-amendment-legacy-await-bondi-and-noem/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "3562efb4e9e0a21949a78ba5eba44574b6872ae2a3121b73348e84833906bbf1",
+          "readerSnapshotSha256": "3142ca8bf661ac8a90223e1a951d04153a679d4a757b15bd8ec71667a6d79d14"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_par_for_the_judicial_course_reducing_scrutiny_of_laws_targeting_lawful_sexual_content.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Par for the Judicial Course: Reducing Scrutiny of Laws Targeting Lawful Sexual Content",
+        "url": "https://ctse.aei.org/par-for-the-judicial-course-reducing-scrutiny-of-laws-targeting-lawful-sexual-content/",
+        "date": "2025-09-30",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/par-for-the-judicial-course-reducing-scrutiny-of-laws-targeting-lawful-sexual-content/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "e61b9dfa1785c73417eca433bc42f765e6ba533d88ff30eccb058325e25c32db",
+          "readerSnapshotSha256": "64275ce8c9178dabe08d90fe9a462a0663c3079cdb477cc4de85a4f62f4c285a"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_parents_or_states_who_should_decide_how_much_social_media_time_is_too_much.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Parents or States: Who Should Decide How Much Social Media Time Is Too Much?",
+        "url": "https://ctse.aei.org/parents-or-states-who-should-decide-how-much-social-media-time-is-too-much/",
+        "date": "2026-04-22",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/parents-or-states-who-should-decide-how-much-social-media-time-is-too-much/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "7827a0878286a76a1a328838f48790426dd1f7f4a9fe36d9b6809f6bfbf7f91b",
+          "readerSnapshotSha256": "c1f11ffef7f0fb0ef6124148131aa9618416d0e4d84a7796287beba13ae30ddf"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_proportionality_and_framing_unpacking_free_speech_coalition_v_paxton.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Proportionality and Framing: Unpacking Free Speech Coalition v. Paxton",
+        "url": "https://ctse.aei.org/proportionality-and-framing-unpacking-free-speech-coalition-v-paxton/",
+        "date": "2025-09-09",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/proportionality-and-framing-unpacking-free-speech-coalition-v-paxton/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "bb42cc024f6474e07c395019e60e75723e62fc8045a0d4d08b57b181be13eee3",
+          "readerSnapshotSha256": "9b72de7eaa1d3bb9e403db9f308e89af469eb985d580e2160d5255835913ee10"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_protecting_minors_on_mobile_devices_first_amendment_lessons_from_texass_flawed_app_store_accountability_act.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Protecting Minors on Mobile Devices: First Amendment Lessons from Texas’s Flawed “App Store Accountability Act”",
+        "url": "https://ctse.aei.org/protecting-minors-on-mobile-devices-first-amendment-lessons-from-texass-flawed-app-store-accountability-act/",
+        "date": "2026-03-04",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/protecting-minors-on-mobile-devices-first-amendment-lessons-from-texass-flawed-app-store-accountability-act/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "f47f3ad6d28aa7768c384c5b8dac8f053eeae831d59e52e759b9dc29b6567e93",
+          "readerSnapshotSha256": "44521d8950d12090cc40da0df5e475cbcbdfae9c787d707f826d32f5887baf3e"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_public_school_students_online_off_campus_speech_rights_lessons_from_a_first_amendment_victory_part_1.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Public School Students’ Online, Off-Campus Speech Rights: Lessons from a First Amendment Victory, Part 1",
+        "url": "https://ctse.aei.org/public-school-students-online-off-campus-speech-rights-lessons-from-a-first-amendment-victory-part-1/",
+        "date": "2025-12-22",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/public-school-students-online-off-campus-speech-rights-lessons-from-a-first-amendment-victory-part-1/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "692f5f130e9df418d4edb8006d6cb1be447e2232def1f4882a202642fa52d10c",
+          "readerSnapshotSha256": "7e97a9635ab0d96b9e10986150a8e9be4144d8d3ef1f1f710f152b27fcc560ae"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_public_school_students_online_off_campus_speech_rights_lessons_from_a_first_amendment_victory_part_2.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Public School Students’ Online, Off-Campus Speech Rights: Lessons from a First Amendment Victory, Part 2",
+        "url": "https://ctse.aei.org/public-school-students-online-off-campus-speech-rights-lessons-from-a-first-amendment-victory-part-2/",
+        "date": "2025-12-23",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/public-school-students-online-off-campus-speech-rights-lessons-from-a-first-amendment-victory-part-2/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "13261ab1aaea1c51770d6c43dfb4c953e932bd7f4dfd3f1025cea9d6cc190698",
+          "readerSnapshotSha256": "b99a64fdad4d812d060bc00fadb353aae74308de39638687525392f6c29e1f86"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_regulating_political_deepfakes_first_amendment_lessons_from_hawaiis_unconstitutional_effort.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Regulating Political Deepfakes: First Amendment Lessons from Hawaii’s Unconstitutional Effort",
+        "url": "https://ctse.aei.org/regulating-political-deepfakes-first-amendment-lessons-from-hawaiis-unconstitutional-effort/",
+        "date": "2026-03-18",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/regulating-political-deepfakes-first-amendment-lessons-from-hawaiis-unconstitutional-effort/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "644b801918541640f55204c77e62de61238dcb7d57fc02abaf06bde3863d7aec",
+          "readerSnapshotSha256": "41d3e3a84bc1284030be2fe3c43d41619db082041944e54fe61b151701a8cb9e"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_restricting_minors_access_to_social_media_divided_ruling_over_florida_law_reveals_first_amendment_rifts.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Restricting Minors’ Access to Social Media: Divided Ruling over Florida Law Reveals First Amendment Rifts",
+        "url": "https://ctse.aei.org/restricting-minors-access-to-social-media-divided-ruling-over-florida-law-reveals-first-amendment-rifts/",
+        "date": "2026-01-13",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/restricting-minors-access-to-social-media-divided-ruling-over-florida-law-reveals-first-amendment-rifts/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "3b2b5cfbee643c9369af02f9989509d4f711bb7f1394c331b4567b4826948297",
+          "readerSnapshotSha256": "d1ce8375ed9caaad354a361d6510aa166947eccb84be96cf8239079bbf6235b4"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_sending_government_mandated_messages_to_minors_on_social_media_platforms_colorados_unconstitutional_experiment.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Sending Government-Mandated Messages to Minors on Social Media Platforms: Colorado’s Unconstitutional Experiment",
+        "url": "https://ctse.aei.org/sending-government-mandated-messages-to-minors-on-social-media-platforms-colorados-unconstitutional-experiment/",
+        "date": "2025-09-17",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/sending-government-mandated-messages-to-minors-on-social-media-platforms-colorados-unconstitutional-experiment/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "f18581c4eee7e29277f7d163079d3c3f64106bb137867eef9571b181d213abc3",
+          "readerSnapshotSha256": "e7499c6c41882e7ef4914a15c0ba29d99a610398edd10aedb18ffbf98747b6a6"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_social_media_threats_comeys_indictment_trivializes_serious_online_attacks_against_politicians.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Social Media Threats: Comey’s Indictment Trivializes Serious Online Attacks Against Politicians",
+        "url": "https://ctse.aei.org/social-media-threats-comeys-indictment-trivializes-serious-online-attacks-against-politicians/",
+        "date": "2026-05-06",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/social-media-threats-comeys-indictment-trivializes-serious-online-attacks-against-politicians/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "97d7bf0ff025b1da2e89f482e47509c4309aa5a33a8615ba9b3c99b3eb868554",
+          "readerSnapshotSha256": "98c445f69d32635fbd4cc6544cf61bf7306d0046de869e93ed8e1c8a5e1ed9a5"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_spam_filtering_government_jawboning_and_synergies_between_litigation_and_regulation_of_speech_practices.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Spam Filtering, Government Jawboning, and Synergies Between Litigation and Regulation of Speech Practices",
+        "url": "https://ctse.aei.org/spam-filtering-government-jawboning-and-synergies-between-litigation-and-regulation-of-speech-practices/",
+        "date": "2025-09-24",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/spam-filtering-government-jawboning-and-synergies-between-litigation-and-regulation-of-speech-practices/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "bb53493a84d743dfa8b4940063e457a8dc318e7f4be23f600d23624f4285d0ad",
+          "readerSnapshotSha256": "61048ebbfa5012b88c180a62b5fdb720780fe650afd1cbf413eb7d9d549a2bd4"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_statutory_underinclusivity_and_social_media_platforms_first_amendment_lessons_for_lawmakers.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Statutory Underinclusivity and Social Media Platforms: First Amendment Lessons for Lawmakers",
+        "url": "https://ctse.aei.org/statutory-underinclusivity-and-social-media-platforms-first-amendment-lessons-for-lawmakers/",
+        "date": "2026-02-25",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/statutory-underinclusivity-and-social-media-platforms-first-amendment-lessons-for-lawmakers/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "817f2631b5b63c63a1bfb9901b855c32900a60e716412836b59679239fcb345e",
+          "readerSnapshotSha256": "0d3aae53fa2cbb5899164fa9eb0d741aee1af3057ab218fea85bb456f681ec72"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_suicides_settlements_and_unresolved_chatbot_issues_a_long_litigation_road_lies_ahead.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Suicides, Settlements, and Unresolved Chatbot Issues: A Long Litigation Road Lies Ahead",
+        "url": "https://ctse.aei.org/suicides-settlements-and-unresolved-chatbot-issues-a-long-litigation-road-lies-ahead/",
+        "date": "2026-02-17",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/suicides-settlements-and-unresolved-chatbot-issues-a-long-litigation-road-lies-ahead/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "b7a4436b011f8426bb2ae526671827b8aeb8d78f86f14205067c17f2acd477d2",
+          "readerSnapshotSha256": "6d6a1494765b2736e2c80af9514dca3d2781b457231e1ec89a338d6295b93945"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_the_first_amendment_algorithms_and_section_230_is_a_high_court_battle_brewing.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The First Amendment, Algorithms, and Section 230: Is a High Court Battle Brewing?",
+        "url": "https://ctse.aei.org/the-first-amendment-algorithms-and-section-230-is-a-high-court-battle-brewing/",
+        "date": "2026-06-24",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-first-amendment-algorithms-and-section-230-is-a-high-court-battle-brewing/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "ece406033a565ddb37ea68c868ae59c90444dafc812a761a3cbf1a1f798c379e",
+          "readerSnapshotSha256": "37a97c68aa41c344e77d0346854ae5d0641dc081fa8a443bd70ed0ce912af4f1"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_the_flawed_firing_of_a_public_university_professor_first_amendment_lessons_about_online_speech_rights.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Flawed Firing of a Public University Professor: First Amendment Lessons About Online Speech Rights",
+        "url": "https://ctse.aei.org/the-flawed-firing-of-a-public-university-professor-first-amendment-lessons-about-online-speech-rights/",
+        "date": "2025-11-19",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-flawed-firing-of-a-public-university-professor-first-amendment-lessons-about-online-speech-rights/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "1f59fce6f4f27566e16233deebd03a7c6ad458f21d3e4ec7ce01ed1d80369840",
+          "readerSnapshotSha256": "299e2a847993ef584bc870bd59eecb157c3f32dbc073463a10a1680788696a9a"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_the_jawbone_act_a_sensible_start_for_addressing_coercive_government_censorship.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The JAWBONE Act: A Sensible Start for Addressing Coercive Government Censorship",
+        "url": "https://ctse.aei.org/the-jawbone-act-a-sensible-start-for-addressing-coercive-government-censorship/",
+        "date": "2026-06-16",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-jawbone-act-a-sensible-start-for-addressing-coercive-government-censorship/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "653d2cde82786ab624595f6dcb88e530a6d1940d23cca3626e7d919757cc3fd2",
+          "readerSnapshotSha256": "4d4bc7eca47e5fdbf8b50ebc06af4520bed29b2e03cef1ccb239e1f92ae6748f"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_unpacking_a_raft_of_lawsuits_blaming_online_media_for_harm_to_humans.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Unpacking a Raft of Lawsuits Blaming Online Media for Harm to Humans",
+        "url": "https://ctse.aei.org/unpacking-a-raft-of-lawsuits-blaming-online-media-for-harm-to-humans/",
+        "date": "2025-10-07",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/unpacking-a-raft-of-lawsuits-blaming-online-media-for-harm-to-humans/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "51e0d20e13a7764249daf4b0f82bad665a181c3c56665b056aba6093f3f8b2be",
+          "readerSnapshotSha256": "be96b051295cf2ebbff215f090303beee3fb0b85fa94ba4ece1a13dd3f0125fd"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_why_the_feel_good_k_g_m_social_media_verdict_is_troubling.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Why the Feel-Good K.G.M. Social Media Verdict Is Troubling",
+        "url": "https://ctse.aei.org/why-the-feel-good-k-g-m-social-media-verdict-is-troubling/",
+        "date": "2026-05-19",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/why-the-feel-good-k-g-m-social-media-verdict-is-troubling/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "3db8459027bbd5b78c798c63d2025e231435e6a09c9631fb600f4c59a7474e70",
+          "readerSnapshotSha256": "c3d34137d04a81fb0561baee8700f4dee2c0a183ead8a70f7b5d3cebbd369861"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_will_the_first_amendment_affect_the_midterms_government_pressure_to_control_speech_and_ai_tools_worries_americans.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Will the First Amendment Affect the Midterms? Government Pressure to Control Speech and AI Tools Worries Americans",
+        "url": "https://ctse.aei.org/will-the-first-amendment-affect-the-midterms-government-pressure-to-control-speech-and-ai-tools-worries-americans/",
+        "date": "2026-06-09",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/will-the-first-amendment-affect-the-midterms-government-pressure-to-control-speech-and-ai-tools-worries-americans/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "f4e18a3d4e3a3f2fc0d2ac6fa3309d3ae37c5d46a30b7fb2f9d14c3482f562ec",
+          "readerSnapshotSha256": "c65bf819d15437178f549c3498c8015a3990802f49d9aac08b0af9b939db530a"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_wrestling_with_hulk_hogans_litigation_legacy_for_online_journalism.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Wrestling with Hulk Hogan’s Litigation Legacy for Online Journalism",
+        "url": "https://ctse.aei.org/wrestling-with-hulk-hogans-litigation-legacy-for-online-journalism/",
+        "date": "2025-12-04",
+        "authors": [
+          "Clay Calvert"
+        ],
+        "author": "Clay Calvert",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/wrestling-with-hulk-hogans-litigation-legacy-for-online-journalism/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "1ed9b762ec1e8ad8d30e847698d3ea9c9a0bee6e9b12bfbb3278740c49af0bbc",
+          "readerSnapshotSha256": "f81cab71ec48fdc42864019be1cc2f77a76d4f9d8da6b90c73e7c6259ef73e5e"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_402_payment_required_the_http_code_that_waited_30_years_and_why_it_matters_today.txt",
+      "previous": null,
+      "corrected": {
+        "title": "402 \"Payment Required\": The HTTP Code That Waited 30 Years and Why It Matters Today",
+        "url": "https://ctse.aei.org/402-payment-required-the-http-code-that-waited-30-years-and-why-it-matters-today/",
+        "date": "2026-03-17",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/402-payment-required-the-http-code-that-waited-30-years-and-why-it-matters-today/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "242de02df97d985ed8388696530e01c16c0e4d9a62512677bbcee235ab995f18",
+          "readerSnapshotSha256": "fca906a940d97f062cefded43a9ed696b40f41328fb39d31b112614d9addfdf9"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_ai_cybersecurity_cant_wait_for_washington_why_industry_must_lead.txt",
+      "previous": null,
+      "corrected": {
+        "title": "AI Cybersecurity Can’t Wait for Washington: Why Industry Must Lead",
+        "url": "https://ctse.aei.org/ai-cybersecurity-cant-wait-for-washington-why-industry-must-lead/",
+        "date": "2026-05-28",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/ai-cybersecurity-cant-wait-for-washington-why-industry-must-lead/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "a48a9f19af99664e111c1047a9794dfda420f58c2c0edb3271ff4df0e879fac5",
+          "readerSnapshotSha256": "c37e08e2826f2c5c77a99c21b8cf428388a0875de4ccd99df529edcb691361d3"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_ai_infrastructure_is_a_new_asset_class_and_washington_has_work_to_do.txt",
+      "previous": null,
+      "corrected": {
+        "title": "AI Infrastructure Is a New Asset Class, and Washington Has Work to Do.",
+        "url": "https://ctse.aei.org/ai-infrastructure-is-a-new-asset-class-and-washington-has-work-to-do/",
+        "date": "2026-06-30",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/ai-infrastructure-is-a-new-asset-class-and-washington-has-work-to-do/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "1892da9646fafc4e7cfc73400b83a6350a2ba75af48091199f67e0c21b1fc2bf",
+          "readerSnapshotSha256": "6545287858c4d22e1cf0ce7844eb05616cd826d9c14fc4482f1029d06bb4b2c1"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_anthropics_project_glasswing_is_a_warning_technical_debt_is_now_a_national_security_risk.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Anthropic’s Project Glasswing Is a Warning: Technical Debt Is Now a National Security Risk",
+        "url": "https://ctse.aei.org/anthropics-project-glasswing-is-a-warning-technical-debt-is-now-a-national-security-risk/",
+        "date": "2026-04-20",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/anthropics-project-glasswing-is-a-warning-technical-debt-is-now-a-national-security-risk/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "ce28c9b48e2f86708e1a75e7dc9da1b41c2ac3795ff29d1f6ff56285dbdbf3ee",
+          "readerSnapshotSha256": "83b473f12936d4581cccb2b642059351b6c128c4377bde0ed9a526261ede9e12"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_are_humans_the_greatest_bottleneck_to_ai_progress.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Are Humans the Greatest Bottleneck to AI Progress?",
+        "url": "https://ctse.aei.org/are-humans-the-greatest-bottleneck-to-ai-progress/",
+        "date": "2025-09-08",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/are-humans-the-greatest-bottleneck-to-ai-progress/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "a9956bc1a0d44a6ee2e3a48bfb44c31ff7d86554c9bc4e611dd64000e281e83f",
+          "readerSnapshotSha256": "51170bfdb213f709468e8169ab2cfc95170a405a875851145ba405d51b93625e"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_ces_2026_marks_the_shift_from_ai_features_to_ai_coordination.txt",
+      "previous": null,
+      "corrected": {
+        "title": "CES 2026 Marks the Shift From AI Features to AI Coordination",
+        "url": "https://ctse.aei.org/ces-2026-marks-the-shift-from-ai-features-to-ai-coordination/",
+        "date": "2026-01-16",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/ces-2026-marks-the-shift-from-ai-features-to-ai-coordination/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "925be599c360189919ecccd19d568298e7cb926811b94936290bb682d480e790",
+          "readerSnapshotSha256": "0992475b094d7ce7aaefa9055ea8bb0b62432322b6ec2708cb7adcf0c01a5f67"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_financial_markets_are_sounding_the_alarm_on_memory_chips_policymakers_should_be_listening.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Financial Markets Are Sounding the Alarm on Memory Chips: Policymakers Should Be Listening.",
+        "url": "https://ctse.aei.org/financial-markets-are-sounding-the-alarm-on-memory-chips-policymakers-should-be-listening/",
+        "date": "2026-03-31",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/financial-markets-are-sounding-the-alarm-on-memory-chips-policymakers-should-be-listening/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "6f570eadca4282a7a85432b7ac2c37ab75ba181d26205fd371cfc4e36648f55a",
+          "readerSnapshotSha256": "22913b75b6d06531594794020939596741a7ee843936b4a12e76a38e2ff496f9"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_how_tech_has_become_the_economys_central_nervous_system.txt",
+      "previous": null,
+      "corrected": {
+        "title": "How Tech Has Become the Economy's Central Nervous System",
+        "url": "https://ctse.aei.org/how-tech-has-become-the-economys-central-nervous-system/",
+        "date": "2025-09-15",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/how-tech-has-become-the-economys-central-nervous-system/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "5d705c6e542264c279d8056461fb2d036ac65a92d482a3b12505f86e520dc39f",
+          "readerSnapshotSha256": "a6160d31602659c5b5d786adb6896b9ede1df4f208b1829b09c3bb142b214abd"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_kids_online_safety_requires_precision_not_centralization.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Kids’ Online Safety Requires Precision, Not Centralization",
+        "url": "https://ctse.aei.org/kids-online-safety-requires-precision-not-centralization/",
+        "date": "2026-01-13",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/kids-online-safety-requires-precision-not-centralization/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "c2f20bcc392b851682b18068bad6444bf3f5253d124141cb3fa232820e24fc90",
+          "readerSnapshotSha256": "b0180b0dba2a63d7b8f8069a668a9b3dc375d297a29106f456d397f893d5310c"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_nvidia_as_a_pillar_of_the_american_tech_stack.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Nvidia as a Pillar of the American Tech Stack",
+        "url": "https://ctse.aei.org/nvidia-as-a-pillar-of-the-american-tech-stack/",
+        "date": "2026-03-25",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/nvidia-as-a-pillar-of-the-american-tech-stack/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "c81afee08f2d5129e5ed0c6c3b4cc489f475a0b9e88b4adb7410273e87fc3389",
+          "readerSnapshotSha256": "9da08afffd12dd9045348ab710de291be52a505627d57e1bec7be503b3784f61"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_parents_over_platforms_why_app_level_responsibility_is_the_smarter_path_for_kids_online_safety.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Parents over Platforms: Why App-Level Responsibility Is the Smarter Path for Kids’ Online Safety",
+        "url": "https://ctse.aei.org/parents-over-platforms-why-app-level-responsibility-is-the-smarter-path-for-kids-online-safety/",
+        "date": "2026-02-18",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/parents-over-platforms-why-app-level-responsibility-is-the-smarter-path-for-kids-online-safety/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "a4d495b88b2b0c1218b68a2d290d39138c7b4157242ad7f423fb9fb35f761b08",
+          "readerSnapshotSha256": "2e0e4b51ce1362d0c5ccd44951f2e6aea5f49068eeca361190abcd34bded2391"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_protecting_youth_online_2025_update.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Protecting Youth Online: 2025 Update",
+        "url": "https://ctse.aei.org/protecting-youth-online-2025-update/",
+        "date": "2026-01-12",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/protecting-youth-online-2025-update/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "d907c04ceddfef3080fbcb1f3fcd81334fbcd5ad0467464544c94e4c68298571",
+          "readerSnapshotSha256": "37317e99c9147f5cb15931c38e3f7624831ec520a1a23bc852c4c5f7cc27504f"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_restoring_americas_cyber_shield_why_cisa_2015_must_be_reenacted_now.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Restoring America's Cyber Shield: Why CISA 2015 Must Be Reenacted Now",
+        "url": "https://ctse.aei.org/restoring-americas-cyber-shield-why-cisa-2015-must-be-reenacted-now/",
+        "date": "2025-11-17",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/restoring-americas-cyber-shield-why-cisa-2015-must-be-reenacted-now/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "a1bee680e7da6832c5752a21e767c20c59efe68e7798fb60572d6c214bcd3a0e",
+          "readerSnapshotSha256": "facdfa42dee0128a45f9e3d2f7529ddd7d5ce46ffdea6e93b8fd1b210c43fecb"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_technology_innovation_the_five_ps_what_congress_gets_right_on_data_protection_but_needs_structure_to_successfully_enable_privacy.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Five P's: What Congress Gets Right on Data Protection but Needs Structure to Successfully Enable Privacy",
+        "url": "https://ctse.aei.org/the-five-ps-what-congress-gets-right-on-data-protection-but-needs-structure-to-successfully-enable-privacy/",
+        "date": "2026-04-30",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-five-ps-what-congress-gets-right-on-data-protection-but-needs-structure-to-successfully-enable-privacy/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "0f227231b4121de4a584b0c490ea2a6726570af0bbeef3ceb0b8273ee7bd9404",
+          "readerSnapshotSha256": "f015d3bddc39cecc11240e417ed5fb80a18ca938c5417a565627ed12b33181b6"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_technology_innovation_the_secs_digital_asset_pivot_comes_late_in_a_global_financial_arms_race.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The SEC’s Digital Asset Pivot Comes Late in a Global Financial Arms Race",
+        "url": "https://ctse.aei.org/the-secs-digital-asset-pivot-comes-late-in-a-global-financial-arms-race/",
+        "date": "2025-10-01",
+        "authors": [
+          "Shane Tews",
+          "Nicoletta Kolpakov"
+        ],
+        "author": "Shane Tews, Nicoletta Kolpakov",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-secs-digital-asset-pivot-comes-late-in-a-global-financial-arms-race/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "1cdc1e6ce55639b6faf7125a0de09259c77dfb8dc86a3716fd9657526c8b642a",
+          "readerSnapshotSha256": "85f77335aec93b163c40d7134b4053f52a0536d57d91522b59a24294c782517a"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_the_hidden_economy_behind_every_scam_email.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Hidden Economy Behind Every Scam Email",
+        "url": "https://ctse.aei.org/the-hidden-economy-behind-every-scam-email/",
+        "date": "2025-11-24",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-hidden-economy-behind-every-scam-email/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "9cb6139ff9c8775ca6930ffe0a4a776b9c70bc3411b1dd19feace8c7d4c453ed",
+          "readerSnapshotSha256": "99e16fd26921fe8f3230975e658b6c11570afe1e3e25d67d937948aff6936986"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_the_internets_continuous_crime_problem_and_how_the_domain_industry_is_profiting_from_it.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Internet’s Continuous Crime Problem, and How the Domain Industry Is Profiting from It",
+        "url": "https://ctse.aei.org/the-internets-continuous-crime-problem-and-how-the-domain-industry-is-profiting-from-it/",
+        "date": "2026-06-08",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-internets-continuous-crime-problem-and-how-the-domain-industry-is-profiting-from-it/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "ab1a8e7d724776fbb0655d12782d3c7849509f33957867da687667006c19db88",
+          "readerSnapshotSha256": "c1f718994dcb279da11a25e82e1744193ab332c10b12b23a791bae293a314615"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_the_quantum_era_is_here_and_it_looks_different_than_expected.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Quantum Era Is Here—and It Looks Different Than Expected",
+        "url": "https://ctse.aei.org/the-quantum-era-is-here-and-it-looks-different-than-expected/",
+        "date": "2026-02-03",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-quantum-era-is-here-and-it-looks-different-than-expected/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "6dafb503bd0edb32911cb446a2ab33867799b820f469436a546398ee30f250fe",
+          "readerSnapshotSha256": "8a9b87bed84f6f9993bbe2ca7843ac0a87fc32888d3583be40e4fe9e9f4a3f13"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_the_us_cost_of_europes_digital_markets_act.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The US Cost of Europe’s Digital Markets Act",
+        "url": "https://ctse.aei.org/the-us-cost-of-europes-digital-markets-act/",
+        "date": "2025-10-15",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-us-cost-of-europes-digital-markets-act/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "a2eb0f6c6323833feff17568f552d34aa12240ae4ef656930ea5097ef9ef5165",
+          "readerSnapshotSha256": "42f21739255b8234de1225604d653f8128ba183510c31eb72a1d700eb1b31cfd"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_washington_working_to_expand_ai_globally_the_effort_to_export_american_ai_infrastructure.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Washington Working to Expand AI Globally: The Effort to Export American AI Infrastructure",
+        "url": "https://ctse.aei.org/washington-working-to-expand-ai-globally-the-effort-to-export-american-ai-infrastructure/",
+        "date": "2025-11-03",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/washington-working-to-expand-ai-globally-the-effort-to-export-american-ai-infrastructure/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "635a9521a326cb565071e755a6179d55160bb58b8f7b6c0f3cf2e7c4088fb584",
+          "readerSnapshotSha256": "fda2a08703131e6cfca695cd4a5996d61b1dbf4dd3fcd3f934e63620774ac585"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_web_4_0_and_the_accountability_vacuum.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Web 4.0 and the Accountability Vacuum",
+        "url": "https://ctse.aei.org/web-4-0-and-the-accountability-vacuum/",
+        "date": "2026-03-02",
+        "authors": [
+          "Shane Tews",
+          "Nicoletta Kolpakov"
+        ],
+        "author": "Shane Tews, Nicoletta Kolpakov",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/web-4-0-and-the-accountability-vacuum/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "6a4c6f7bb25979d8ac548dfe7098d23e3c085becbfbc962110fac97d676ea079",
+          "readerSnapshotSha256": "7fec5dd2e77cba4983bb55ca861d148db98f6fd2bf440c34b92163f15d358d42"
+        }
+      }
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_when_kids_safety_becomes_a_trojan_horse_for_risky_app_store_regulation.txt",
+      "previous": null,
+      "corrected": {
+        "title": "When Kids’ Safety Becomes a Trojan Horse for Risky App Store Regulation",
+        "url": "https://ctse.aei.org/when-kids-safety-becomes-a-trojan-horse-for-risky-app-store-regulation/",
+        "date": "2025-10-30",
+        "authors": [
+          "Shane Tews"
+        ],
+        "author": "Shane Tews",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/when-kids-safety-becomes-a-trojan-horse-for-risky-app-store-regulation/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "cc4a2c53846b76a17de1b96630b2d59a366adcc423d0184888708527da993b0f",
+          "readerSnapshotSha256": "8078fdc6a54420449a3c833d653c4a8b979e04c071d100a1de61e74f5d997406"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_a_federal_privacy_law_must_face_the_tradeoffs.txt",
+      "previous": null,
+      "corrected": {
+        "title": "A Federal Privacy Law Must Face the Tradeoffs",
+        "url": "https://ctse.aei.org/a-federal-privacy-law-must-face-the-tradeoffs/",
+        "date": "2026-06-08",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/a-federal-privacy-law-must-face-the-tradeoffs/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "9ab3480bc0cef3fe71a76e6a4409703ea31911c44af06720835d1e7773a13651",
+          "readerSnapshotSha256": "dc5ed73f4fbc6b0cbdb76377062f6be163970b11a844cc70b22290250da4338b"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_google_avoids_breakup_but_faces_new_data_sharing_requirements.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Google Avoids Breakup but Faces New Data Sharing Requirements",
+        "url": "https://ctse.aei.org/google-avoids-breakup-but-faces-new-data-sharing-requirements/",
+        "date": "2025-09-05",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/google-avoids-breakup-but-faces-new-data-sharing-requirements/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "54b91a4895dd8a99612685fe7292519abf2ac11b756e7ac908877378f2fdb691",
+          "readerSnapshotSha256": "96befc638458af64b8e60dfd92b0064d8bf5bc3b7b698ba64adfe1acb84817a1"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_jagged_intelligence_jagged_adoption.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Jagged Intelligence, Jagged Adoption",
+        "url": "https://ctse.aei.org/jagged-intelligence-jagged-adoption/",
+        "date": "2026-01-23",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/jagged-intelligence-jagged-adoption/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "b9b3ad97eda226d354a26d826b940225f3fcff16c30b1910e3dc66f11f4bff06",
+          "readerSnapshotSha256": "f55aff8911859e32ff852ed3cf4194343deb9cdf6d431c1dcfe12be9778296bd"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_senator_sanders_ai_report_ignores_the_data_on_ai_and_inequality.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Senator Sanders' AI Report Ignores the Data on AI and Inequality",
+        "url": "https://ctse.aei.org/senator-sanders-ai-report-ignores-the-data-on-ai-and-inequality/",
+        "date": "2025-10-09",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/senator-sanders-ai-report-ignores-the-data-on-ai-and-inequality/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "e8e5b35ca21870b57e665e096ee3f38a86845b5e8fbb9ae03a421b586dd2a448",
+          "readerSnapshotSha256": "334cd540f8a4a83aa4a8770d9f9365e07997b9fd9bae03166f032deb7ba789e0"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_spacecraft_is_statecraft.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Spacecraft Is Statecraft",
+        "url": "https://ctse.aei.org/spacecraft-is-statecraft/",
+        "date": "2025-09-10",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/spacecraft-is-statecraft/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "9dbacf1c7566389a87c4c0315755fdee1dfa036e784c80a8a4dfacc5a149fed2",
+          "readerSnapshotSha256": "83c81ce8b327b3a226796e28d70c923d57b089d6493ac0920e47ec6fd8e1e719"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_the_ai_revolution_in_property_tax_assessment.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The AI Revolution in Property Tax Assessment",
+        "url": "https://ctse.aei.org/the-ai-revolution-in-property-tax-assessment/",
+        "date": "2025-09-29",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-ai-revolution-in-property-tax-assessment/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "e299d243460912649c2d442d79a9564afaec7bfce08284cf04d6e6fb95f23800",
+          "readerSnapshotSha256": "a66a3414da25ac1a3ea9b2614e73de5bd8899467dd71715bab466a104f5c35ae"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_the_coming_fight_to_define_the_agentic_web.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Coming Fight to Define the Agentic Web",
+        "url": "https://ctse.aei.org/the-coming-fight-to-define-the-agentic-web/",
+        "date": "2026-02-12",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-coming-fight-to-define-the-agentic-web/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "1e7548ae9fe4acd234e12366b33a7c3234e64ab83bde1591c5dcc40e95516f76",
+          "readerSnapshotSha256": "7c49e396352f44b933b5b8b00a8684e492bf1325f4fe06c1daf13121de937921"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_the_political_backlash_to_data_centers.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Political Backlash to Data Centers",
+        "url": "https://ctse.aei.org/the-political-backlash-to-data-centers/",
+        "date": "2026-02-19",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/the-political-backlash-to-data-centers/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "73b538a3429f72f9ea075f038e49744a375a72cbab067ede35a84531efffea95",
+          "readerSnapshotSha256": "faf115555068a94a7c0ed48a26b71f87f67303129e64b3ac5948d9581bf291f1"
+        }
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_where_are_the_chips_going_to_fall.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Where Are the CHIPS Going to Fall?",
+        "url": "https://ctse.aei.org/where-are-the-chips-going-to-fall/",
+        "date": "2025-09-04",
+        "authors": [
+          "Will Rinehart"
+        ],
+        "author": "Will Rinehart",
+        "bylineVerified": true,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/where-are-the-chips-going-to-fall/",
+          "checkedOn": "2026-11-19",
+          "method": "Official article header, exact normalized title and at least two distinct saved-body passage matches",
+          "savedTextSha256": "995cb265da888583cdfc6440e0a8716761cae8380304f5fa995b0a8039dc0c41",
+          "readerSnapshotSha256": "dd21920a87ce5f9667e16f053e2e21226f8047b675de57d6d781886760c17091"
+        }
+      }
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_social_media_addiction_lawsuits_the_deceptively_flawed_tobacco_analogy.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Social Media Addiction Lawsuits: The Deceptively Flawed Tobacco Analogy",
+        "url": "https://ctse.aei.org/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
+        "authors": [],
+        "author": "",
+        "bylineVerified": false,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/social-media-addiction-lawsuits-the-deceptively-flawed-tobacco-analogy/",
+          "checkedOn": "2026-11-19",
+          "method": "Official page header and saved body/participant match; no authorship inferred from folder",
+          "savedTextSha256": "dc222d98ceb1aa9d07a7e0ceec894aaf1936a48cacdd6b357a9e1dffe86b6cb1",
+          "readerSnapshotSha256": "e9d234a7d20f232b5da94bdf38a5babad9faa19b67db36d7a04597dce03b084d",
+          "verifiedFields": [
+            "title",
+            "url",
+            "date"
+          ],
+          "observedByline": [
+            "Shane Tews"
+          ]
+        },
+        "date": "2026-02-04",
+        "metadataReview": "Byline conflict: CTSE displays Shane Tews; file is in Clay Calvert collection. Authorship remains unverified."
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_events_a_conversation_with_office_of_science_and_technology_policy_director_arati_prabhakar_the_case_for_federal_research_and_development_in_the_age_of_global_competition.txt",
+      "previous": null,
+      "corrected": {
+        "title": "A Conversation with Office of Science and Technology Policy Director Arati Prabhakar: The Case for Federal Research and Development in the Age of Global Competition",
+        "url": "https://ctse.aei.org/event/a-conversation-with-office-of-science-and-technology-policy-director-arati-prabhakar-the-case-for-federal-research-and-development-in-the-age-of-global-competition/",
+        "authors": [],
+        "author": "",
+        "bylineVerified": false,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/event/a-conversation-with-office-of-science-and-technology-policy-director-arati-prabhakar-the-case-for-federal-research-and-development-in-the-age-of-global-competition/",
+          "checkedOn": "2026-11-19",
+          "method": "Official page header and saved body/participant match; no authorship inferred from folder; event date confirmed in event summary and dated page",
+          "savedTextSha256": "8dc0a6f0afba341ef9b959c9c0e40a2d76d56a0eee0a5b9b9b11faff449831d4",
+          "readerSnapshotSha256": "a98f9246fa41246a39c5fb11653feae8f57e264bd7619258caa6c16ce94061b3",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2024-10-08",
+        "date": null
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_events_the_energy_demands_of_the_data_driven_future_challenges_and_solutions.txt",
+      "previous": null,
+      "corrected": {
+        "title": "The Energy Demands of the Data-Driven Future: Challenges and Solutions",
+        "url": "https://ctse.aei.org/event/the-energy-demands-of-the-data-driven-future-challenges-and-solutions/",
+        "authors": [],
+        "author": "",
+        "bylineVerified": false,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/event/the-energy-demands-of-the-data-driven-future-challenges-and-solutions/",
+          "checkedOn": "2026-11-19",
+          "method": "Official page header and saved body/participant match; no authorship inferred from folder; event date confirmed in event summary and dated page",
+          "savedTextSha256": "e9e6a62aa4f160a6d571974a9bc2584d64389aa48801eb3d0debde6b35124d05",
+          "readerSnapshotSha256": "667233029a4a4ca15638a5526a968dd963ce164104a42fd386a212eeee33ad26",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2025-03-25",
+        "date": null
+      }
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_events_what_comes_next_in_the_information_wars.txt",
+      "previous": null,
+      "corrected": {
+        "title": "What Comes Next in the Information Wars?",
+        "url": "https://ctse.aei.org/event/what-comes-next-in-the-information-wars/",
+        "authors": [],
+        "author": "",
+        "bylineVerified": false,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/event/what-comes-next-in-the-information-wars/",
+          "checkedOn": "2026-11-19",
+          "method": "Official page header and saved body/participant match; no authorship inferred from folder; event date confirmed in event summary and dated page",
+          "savedTextSha256": "e478ba7fdfb345993913dee17111884e5807d99cc0d46ef28ba370bf4465beef",
+          "readerSnapshotSha256": "cf95aaede138aaf76482440c50328092f7d795586b895cdd3bd9e8101a772af4",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ]
+        },
+        "sourceType": "event",
+        "eventDate": "2024-12-05",
+        "date": null
+      }
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_humans_are_the_key_to_ai.txt",
+      "previous": null,
+      "corrected": {
+        "title": "Humans Are the Key to AI",
+        "url": "https://www.aei.org/domestic-policy/humans-are-the-key-to-ai/",
+        "date": "2026-06-15",
+        "authors": [
+          "Brent Orrell"
+        ],
+        "author": "Brent Orrell",
+        "bylineVerified": true,
+        "metadataSource": "article-header",
+        "verification": {
+          "url": "https://www.aei.org/domestic-policy/humans-are-the-key-to-ai/",
+          "checkedOn": "2026-11-19",
+          "method": "Original AEI page viewed in normal browser; primary header and multiple saved-body passages matched",
+          "savedTextSha256": "f1ad79dfe80d8b1bc7371e00053f8fb3cfc8b4edb1e2a0620f69935b979dd7b6",
+          "pageSnapshotSha256": "6a1158925659e32719dfe84381354d8e0daee1d1e6ef39ca5cb899d17f9874af"
+        }
+      }
+    }
+  ],
+  "unresolved": [
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_all_unemployment_is_local.txt",
+      "title": "All Unemployment Is Local",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/all-unemployment-is-local/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/all-unemployment-is-local/",
+        "https://www.aei.org/domestic-policy/all-unemployment-is-local/",
+        "https://cosm.aei.org/all-unemployment-is-local/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_new_fed_study_ai_is_squeezing_the_skills_commons.txt",
+      "title": "New Fed Study: AI Is Squeezing the ‘Skills Commons’",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/new-fed-study-ai-is-squeezing-the-skills-commons/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/new-fed-study-ai-is-squeezing-the-skills-commons/",
+        "https://www.aei.org/domestic-policy/new-fed-study-ai-is-squeezing-the-skills-commons/",
+        "https://cosm.aei.org/new-fed-study-ai-is-squeezing-the-skills-commons/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_oh_grow_up.txt",
+      "title": "Oh, Grow Up!",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/oh-grow-up/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/oh-grow-up/",
+        "https://www.aei.org/domestic-policy/oh-grow-up/",
+        "https://cosm.aei.org/oh-grow-up/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_smarter_robots_better_people.txt",
+      "title": "Smarter Robots, Better People",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/smarter-robots-better-people/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/smarter-robots-better-people/",
+        "https://www.aei.org/domestic-policy/smarter-robots-better-people/",
+        "https://cosm.aei.org/smarter-robots-better-people/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_the_coming_acceleration_an_update.txt",
+      "title": "The Coming Acceleration: An Update",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-coming-acceleration-an-update/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-coming-acceleration-an-update/",
+        "https://www.aei.org/domestic-policy/the-coming-acceleration-an-update/",
+        "https://cosm.aei.org/the-coming-acceleration-an-update/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_the_quiet_ai_revolution.txt",
+      "title": "The Quiet AI Revolution",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-quiet-ai-revolution/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-quiet-ai-revolution/",
+        "https://www.aei.org/domestic-policy/the-quiet-ai-revolution/",
+        "https://cosm.aei.org/the-quiet-ai-revolution/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_the_selloff_beneath_the_selloff.txt",
+      "title": "The Selloff Beneath the Selloff",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-selloff-beneath-the-selloff/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-selloff-beneath-the-selloff/",
+        "https://www.aei.org/domestic-policy/the-selloff-beneath-the-selloff/",
+        "https://cosm.aei.org/the-selloff-beneath-the-selloff/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_the_unbearable_lightness_of_vibe_coding.txt",
+      "title": "The Unbearable Lightness of Vibe Coding",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-unbearable-lightness-of-vibe-coding/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-unbearable-lightness-of-vibe-coding/",
+        "https://www.aei.org/domestic-policy/the-unbearable-lightness-of-vibe-coding/",
+        "https://cosm.aei.org/the-unbearable-lightness-of-vibe-coding/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_training_for_the_wrong_job.txt",
+      "title": "Training for the Wrong Job",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/training-for-the-wrong-job/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/training-for-the-wrong-job/",
+        "https://www.aei.org/domestic-policy/training-for-the-wrong-job/",
+        "https://cosm.aei.org/training-for-the-wrong-job/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_what_ai_did_for_the_holidays.txt",
+      "title": "What AI Did for the Holidays",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/what-ai-did-for-the-holidays/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/what-ai-did-for-the-holidays/",
+        "https://www.aei.org/domestic-policy/what-ai-did-for-the-holidays/",
+        "https://cosm.aei.org/what-ai-did-for-the-holidays/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_what_happens_in_silicon_valley_doesnt_stay_there.txt",
+      "title": "What Happens in Silicon Valley Doesn’t Stay There",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/what-happens-in-silicon-valley-doesnt-stay-there/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/what-happens-in-silicon-valley-doesnt-stay-there/",
+        "https://www.aei.org/domestic-policy/what-happens-in-silicon-valley-doesnt-stay-there/",
+        "https://cosm.aei.org/what-happens-in-silicon-valley-doesnt-stay-there/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_when_ai_starts_reading_the_room.txt",
+      "title": "When AI Starts Reading the Room",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/when-ai-starts-reading-the-room/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/when-ai-starts-reading-the-room/",
+        "https://www.aei.org/domestic-policy/when-ai-starts-reading-the-room/",
+        "https://cosm.aei.org/when-ai-starts-reading-the-room/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_domestic_policy_when_human_fatigue_becomes_ais_weakest_link.txt",
+      "title": "When Human Fatigue Becomes AI’s Weakest Link",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/when-human-fatigue-becomes-ais-weakest-link/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/when-human-fatigue-becomes-ais-weakest-link/",
+        "https://www.aei.org/domestic-policy/when-human-fatigue-becomes-ais-weakest-link/",
+        "https://cosm.aei.org/when-human-fatigue-becomes-ais-weakest-link/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_economics_an_own_goal_h1_b_policy.txt",
+      "title": "An Own-Goal H1-B Policy",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/an-own-goal-h1-b-policy/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/an-own-goal-h1-b-policy/",
+        "https://cosm.aei.org/an-own-goal-h1-b-policy/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_events_on_the_front_porch_with_brent_orrell_and_tony_pipa_a_conversation_with_nicholas_f_jacobs_and_daniel_m_shea.txt",
+      "title": "On the Front Porch with Brent Orrell and Tony Pipa: A Conversation with Nicholas F. Jacobs",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs/",
+        "https://www.aei.org/events/on-the-front-porch-with-brent-orrell-and-tony-pipa-a-conversation-with-nicholas-f-jacobs-and-daniel-m-shea/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_events_rethinking_reentry_strengthening_programs_and_promoting_personal_agency_among_returning_citizens.txt",
+      "title": "Rethinking Reentry: Strengthening Programs and Promoting Personal Agency Among Returning Citizens",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/",
+        "https://www.aei.org/events/rethinking-reentry-strengthening-programs-and-promoting-personal-agency-among-returning-citizens/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_events_securing_ai_deployment_balancing_safety_and_benefits.txt",
+      "title": "Securing AI Deployment: Balancing Safety and Benefits",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/securing-ai-deployment-balancing-safety-and-benefits/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/securing-ai-deployment-balancing-safety-and-benefits/",
+        "https://www.aei.org/events/securing-ai-deployment-balancing-safety-and-benefits/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_events_the_divided_brain_and_the_making_of_the_western_world.txt",
+      "title": "The divided brain and the making of the Western world",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-divided-brain-and-the-making-of-the-western-world/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-divided-brain-and-the-making-of-the-western-world/",
+        "https://www.aei.org/events/the-divided-brain-and-the-making-of-the-western-world/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_a_conversation_about_rural_prosperity_and_its_connection_to_policies_past_present_future.txt",
+      "title": "A Conversation About Rural Prosperity and Its Connection to Policies, Past, Present & Future",
+      "authors": [],
+      "date": null,
+      "url": "https://www.aei.org/podcast/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/",
+        "https://cosm.aei.org/a-conversation-about-rural-prosperity-and-its-connection-to-policies-past-present-future/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_ai_and_jobs.txt",
+      "title": "AI and Jobs",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/ai-and-jobs/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/ai-and-jobs/",
+        "https://cosm.aei.org/ai-and-jobs/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_ai_and_the_american_workforce.txt",
+      "title": "AI and the American Workforce",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/ai-and-the-american-workforce/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/ai-and-the-american-workforce/",
+        "https://cosm.aei.org/ai-and-the-american-workforce/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_podcast_is_this_your_last_job_the_ai_economy_with_aeis_brent_orrell.txt",
+      "title": "Is This Your Last “Job”? The AI Economy with AEI’s Brent Orrell",
+      "authors": [],
+      "date": null,
+      "url": "https://www.aei.org/podcast/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/",
+        "https://cosm.aei.org/is-this-your-last-job-the-ai-economy-with-aeis-brent-orrell/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Brent_Orrell/www_aei_org_research_products_report_land_of_opportunity_advancing_the_american_dream.txt",
+      "title": "Land of Opportunity: Advancing the American Dream",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/land-of-opportunity-advancing-the-american-dream/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/land-of-opportunity-advancing-the-american-dream/",
+        "https://www.aei.org/research-products/report/land-of-opportunity-advancing-the-american-dream/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_siriusxms_the_michael_smerconish_program.txt",
+      "title": "Discussing the social media addiction lawsuit: Calvert on SiriusXM's 'The Michael Smerconish Program'",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/",
+        "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-siriusxms-the-michael-smerconish-program/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_press_discussing_the_social_media_addiction_lawsuit_calvert_on_usa_todays_the_excerpt.txt",
+      "title": "Discussing the social media addiction lawsuit: Calvert on USA Today's 'The Excerpt'",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/",
+        "https://www.aei.org/press/discussing-the-social-media-addiction-lawsuit-calvert-on-usa-todays-the-excerpt/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_press_discussing_the_teen_social_media_addiction_trial_calvert_on_fox_news_live_with_aishah_hasnie.txt",
+      "title": "Discussing the teen social media addiction trial: Calvert on 'Fox News Live with Aishah Hasnie'",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/",
+        "https://www.aei.org/press/discussing-the-teen-social-media-addiction-trial-calvert-on-fox-news-live-with-aishah-hasnie/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_might_as_well_face_it_were_addicted_to_addiction_claims.txt",
+      "title": "Might as Well Face It: We're Addicted to Addiction Claims",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/might-as-well-face-it-were-addicted-to-addiction-claims/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/might-as-well-face-it-were-addicted-to-addiction-claims/",
+        "https://www.aei.org/technology-and-innovation/might-as-well-face-it-were-addicted-to-addiction-claims/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_numbers_seashells_and_social_media_new_case_sheds_light_on_comeys_threat_indictment.txt",
+      "title": "Numbers, Seashells, and Social Media: New Case Sheds Light on Comey’s Threat Indictment",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/",
+        "https://www.aei.org/technology-and-innovation/numbers-seashells-and-social-media-new-case-sheds-light-on-comeys-threat-indictment/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Clay_Calvert/www_aei_org_technology_and_innovation_public_school_districts_and_social_media_addiction_billions_at_stake_as_groundbreaking_trial_nears.txt",
+      "title": "Public Schools and Social Media Addiction: Billions at Stake as Groundbreaking Trial Starts in June",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/public-schools-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-starts-in-june/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/public-schools-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-starts-in-june/",
+        "https://www.aei.org/technology-and-innovation/public-school-districts-and-social-media-addiction-billions-at-stake-as-groundbreaking-trial-nears/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_perspectives_on_data_privacy_from_the_federal_trade_commission_and_department_of_justice.txt",
+      "title": "Perspectives on Data Privacy from the Federal Trade Commission and Department of Justice",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/",
+        "https://www.aei.org/events/perspectives-on-data-privacy-from-the-federal-trade-commission-and-department-of-justice/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_regulating_the_evolving_broadband_ecosystem.txt",
+      "title": "Regulating the Evolving Broadband Ecosystem",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/regulating-the-evolving-broadband-ecosystem/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/regulating-the-evolving-broadband-ecosystem/",
+        "https://www.aei.org/events/regulating-the-evolving-broadband-ecosystem/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_securing_the_internet_of_things_a_conversation_with_sen_ed_markey_d_ma_and_rep_ted_lieu_d_ca.txt",
+      "title": "Securing the Internet of Things: A Conversation with Sen. Edward J. Markey (D-MA) and Rep. Ted Lieu (D-CA)",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/securing-the-internet-of-things-a-conversation-with-sen-edward-j-markey-d-ma-and-rep-ted-lieu-d-ca/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/securing-the-internet-of-things-a-conversation-with-sen-edward-j-markey-d-ma-and-rep-ted-lieu-d-ca/",
+        "https://www.aei.org/events/securing-the-internet-of-things-a-conversation-with-sen-ed-markey-d-ma-and-rep-ted-lieu-d-ca/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_securing_us_technology_and_communications_supply_chains.txt",
+      "title": "Securing US Technology and Communications Supply Chains",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/securing-us-technology-and-communications-supply-chains/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/securing-us-technology-and-communications-supply-chains/",
+        "https://www.aei.org/events/securing-us-technology-and-communications-supply-chains/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_separating_fact_from_fiction_election_disinformation_on_online_platforms.txt",
+      "title": "Separating Fact from Fiction: Election Disinformation on Online Platforms",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/separating-fact-from-fiction-election-disinformation-on-online-platforms/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/separating-fact-from-fiction-election-disinformation-on-online-platforms/",
+        "https://www.aei.org/events/separating-fact-from-fiction-election-disinformation-on-online-platforms/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_spectrum_sharing_and_maximizing_future_tech_a_conversation_with_fcc_commissioner_brendan_carr.txt",
+      "title": "Spectrum Sharing and Maximizing Future Tech: A Conversation with FCC Commissioner Brendan Carr",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/",
+        "https://www.aei.org/events/spectrum-sharing-and-maximizing-future-tech-a-conversation-with-fcc-commissioner-brendan-carr/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_spectrum_slump_exploring_the_fccs_challenges_in_5g_leadership.txt",
+      "title": "Spectrum Slump: Exploring the FCC’s Challenges in 5G Leadership",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/",
+        "https://www.aei.org/events/spectrum-slump-exploring-the-fccs-challenges-in-5g-leadership/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_strengthening_us_cybersecurity_in_the_digital_age_a_conversation_with_rep_john_katko_r_ny.txt",
+      "title": "Strengthening US Cybersecurity in the Digital Age: A Conversation with Rep. John Katko (R-NY)",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/",
+        "https://www.aei.org/events/strengthening-us-cybersecurity-in-the-digital-age-a-conversation-with-rep-john-katko-r-ny/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_the_chinese_cyber_threat_challenges_and_solutions.txt",
+      "title": "The Chinese Cyberthreat: Challenges and Solutions",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-chinese-cyberthreat-challenges-and-solutions/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-chinese-cyberthreat-challenges-and-solutions/",
+        "https://www.aei.org/events/the-chinese-cyber-threat-challenges-and-solutions/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_the_dotcom_act_a_roadmap_for_congressional_oversight_of_the_internet_assigned_numbers_authority_iana_transition.txt",
+      "title": "The DOTCOM Act: A Roadmap for Congressional Oversight of the Internet Assigned Numbers Authority (IANA) Transition",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/",
+        "https://www.aei.org/events/the-dotcom-act-a-roadmap-for-congressional-oversight-of-the-internet-assigned-numbers-authority-iana-transition/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_what_would_happen_to_consumers_and_the_economy_under_a_progressive_regulatory_regime.txt",
+      "title": "What Would Happen to Consumers and the Economy Under a Progressive Regulatory Regime?",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/",
+        "https://www.aei.org/events/what-would-happen-to-consumers-and-the-economy-under-a-progressive-regulatory-regime/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_where_should_the_security_lie_in_our_networks.txt",
+      "title": "Where Should the Security Lie in Our Networks?",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/where-should-the-security-lie-in-our-networks/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/where-should-the-security-lie-in-our-networks/",
+        "https://www.aei.org/events/where-should-the-security-lie-in-our-networks/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_events_who_governs_the_internet_a_conversation_on_securing_the_multistakeholder_process.txt",
+      "title": "Who Governs the Internet? A Conversation on Securing the Multistakeholder Process",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/",
+        "https://www.aei.org/events/who-governs-the-internet-a-conversation-on-securing-the-multistakeholder-process/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_press_discussing_how_governments_shape_the_rules_of_the_digital_age_tews_on_csiss_cache_me_if_you_can.txt",
+      "title": "Discussing how governments shape the rules of the digital age: Tews on CSIS's 'Cache Me If You Can'",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/",
+        "https://www.aei.org/press/discussing-how-governments-shape-the-rules-of-the-digital-age-tews-on-csiss-cache-me-if-you-can/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_open_banking_data_portability_the_future_of_financial_innovation.txt",
+      "title": "Open Banking, Data Portability & the Future of Financial Innovation",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/open-banking-data-portability-the-future-of-financial-innovation/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/open-banking-data-portability-the-future-of-financial-innovation/",
+        "https://www.aei.org/technology-and-innovation/open-banking-data-portability-the-future-of-financial-innovation/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Shane_Tews/www_aei_org_technology_and_innovation_the_european_commissions_new_proposed_regulations_want_to_re_engineer_your_smartphone.txt",
+      "title": "The European Commission’s New Proposed Regulations Want to Re-Engineer Your Smartphone",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/",
+        "https://www.aei.org/technology-and-innovation/the-european-commissions-new-proposed-regulations-want-to-re-engineer-your-smartphone/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_press_discssing_anthropics_clash_with_the_pentagon_rinehart_on_hearst_tv.txt",
+      "title": "Discssing Anthropic's clash with the Pentagon: Rinehart on Hearst TV",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/",
+        "https://www.aei.org/press/discssing-anthropics-clash-with-the-pentagon-rinehart-on-hearst-tv/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_press_discussing_data_centers_rinehart_on_whyy_radios_studio_2.txt",
+      "title": "Discussing data centers: Rinehart on WHYY Radio's 'Studio 2'",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/discussing-data-centers-rinehart-on-whyy-radios-studio-2/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/discussing-data-centers-rinehart-on-whyy-radios-studio-2/",
+        "https://www.aei.org/press/discussing-data-centers-rinehart-on-whyy-radios-studio-2/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_press_discussing_the_politics_of_ai_and_data_centers_rinehart_on_the_realclearpolitics_podcast.txt",
+      "title": "Discussing the politics of AI and data centers: Rinehart on the 'RealClearPolitics Podcast'",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/",
+        "https://www.aei.org/press/discussing-the-politics-of-ai-and-data-centers-rinehart-on-the-realclearpolitics-podcast/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_report_beyond_the_moonshot_apollos_hidden_lessons_for_managing_complex_technological_projects.txt",
+      "title": "Beyond the Moonshot: Apollo’s Hidden Lessons for Managing Complex Technological Projects",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/",
+        "https://www.aei.org/research-products/report/beyond-the-moonshot-apollos-hidden-lessons-for-managing-complex-technological-projects/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_testimony_gains_frictions_and_skill_equalization_how_ai_is_reshaping_the_u_s_economy.txt",
+      "title": "Gains, Frictions, and Skill Equalization: How AI Is Reshaping the U.S. Economy",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/",
+        "https://www.aei.org/research-products/testimony/gains-frictions-and-skill-equalization-how-ai-is-reshaping-the-u-s-economy/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_testimony_the_evidence_on_generative_ai_and_the_american_economy.txt",
+      "title": "The Evidence on Generative AI and the American Economy",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/the-evidence-on-generative-ai-and-the-american-economy/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/the-evidence-on-generative-ai-and-the-american-economy/",
+        "https://www.aei.org/research-products/testimony/the-evidence-on-generative-ai-and-the-american-economy/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_research_products_testimony_why_mandating_social_graph_interoperability_is_riskywritten_testimony_on_hb_1589.txt",
+      "title": "Why Mandating Social Graph Interoperability Is Risky:Written Testimony on HB 1589",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/why-mandating-social-graph-interoperability-is-risky-written-testimony-on-hb-1589/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/why-mandating-social-graph-interoperability-is-risky-written-testimony-on-hb-1589/",
+        "https://www.aei.org/research-products/testimony/why-mandating-social-graph-interoperability-is-riskywritten-testimony-on-hb-1589/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    },
+    {
+      "file": "Will_Rinehart/www_aei_org_technology_and_innovation_procedural_rituals_over_governance_results.txt",
+      "title": "Procedural Rituals over Governance Results",
+      "authors": [],
+      "date": null,
+      "url": null,
+      "fullText": true,
+      "sourceType": null,
+      "bylineVerified": false,
+      "metadataSource": null,
+      "episodeDate": null,
+      "candidateUrl": "https://ctse.aei.org/procedural-rituals-over-governance-results/",
+      "reason": "Official candidate page not readable",
+      "attemptedOfficialUrls": [
+        "https://ctse.aei.org/procedural-rituals-over-governance-results/",
+        "https://www.aei.org/technology-and-innovation/procedural-rituals-over-governance-results/"
+      ],
+      "nextStep": "Verify the original page header and saved text in a normal browser or an official AEI export; do not infer a date or byline from the filename."
+    }
+  ],
+  "limitations": [
+    "Some original AEI pages return HTTP 403 to automated readers; unavailable pages remain unresolved.",
+    "A supplied date/link does not certify the entire library is current.",
+    "The CTSE tobacco-analogy page has a conflicting visible byline; no scholar is assigned as verified author.",
+    "Normal browser verified one additional original page, but AEI search then required a security check.",
+    "AEI browser search security check is pending user completion.",
+    "Published values in other historical records were not all independently reverified."
+  ],
+  "additionalWrongLinkCorrections": [
+    {
+      "file": "Will_Rinehart/www_aei_org_events_americas_ai_action_plan_analyzing_the_strategy_for_global_leadership.txt",
+      "previous": {
+        "title": "Global Leadership?",
+        "author": "Will Rinehart",
+        "date": "2006-06-30",
+        "url": "https://www.aei.org/podcast/global-leadership/"
+      },
+      "corrected": {
+        "title": "America’s AI Action Plan: Analyzing the Strategy for Global Leadership",
+        "authors": [],
+        "author": "",
+        "url": "https://ctse.aei.org/event/americas-ai-action-plan-analyzing-the-strategy-for-global-leadership/",
+        "date": null,
+        "sourceType": "event",
+        "eventDate": "2025-07-29",
+        "bylineVerified": false,
+        "metadataSource": "official-publication-header",
+        "verification": {
+          "url": "https://ctse.aei.org/event/americas-ai-action-plan-analyzing-the-strategy-for-global-leadership/",
+          "checkedOn": "2026-11-19",
+          "method": "Exact event title, dated event header and saved-body passage matches; removes unrelated podcast match",
+          "verifiedFields": [
+            "title",
+            "url",
+            "eventDate"
+          ],
+          "savedTextSha256": "86c7f66acd29d4789a80f2f8e585470d0fb436c2e7bcc174d53f9edea3eb90eb",
+          "readerSnapshotSha256": "ecb9e781a092d24f48a74144ec3f70d5ec3642375de144f462b2e101c2e0fb80"
+        }
+      }
+    }
+  ]
+}

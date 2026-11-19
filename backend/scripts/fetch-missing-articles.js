@@ -34,6 +34,7 @@ const { createHash } = require('node:crypto');
 const { inspectInterview, officialUrl } = require('../utils/interviewSources');
 const { publicationMetadata } = require('../utils/publicationMetadata');
 const { loadTranscript } = require('../utils/interviewTranscripts');
+const { mergePublicationMetadata } = require('../utils/metadataMerge');
 
 
 const HEADERS = {
@@ -191,13 +192,13 @@ async function runImport({
         if (fs.existsSync(file) && !interview) continue;
         writeArticleFile(file, article.title || record.title, article.body);
         const key = `${folders[j]}/${filename}`;
-        metadata[key] = {
-          ...metadata[key], title: article.title || record.title, url: canonicalUrl, date: article.date || record.date || null,
+        metadata[key] = mergePublicationMetadata(metadata[key], {
+          title: article.title || record.title, url: canonicalUrl, date: article.date || record.date || null, dateVerified: Boolean(article.date),
           authors: article.authors || [], author: (article.authors || []).join(', '),
           bylineVerified: Boolean(article.bylineVerified), metadataSource: article.metadataSource || null, ...(interview ? { sourceType: interview.sourceType, interview: interview.interview,
             textCoverage: interview.sourceType === 'podcast_description' ? 'description-only' : 'full-text' } : { textCoverage: 'full-text' }),
           fetchedAt: new Date().toISOString()
-        };
+        });
       }
       if (interview && alreadyHaveAll) report.refreshed_interviews.push({ url: canonicalUrl, requestedUrl: url, sourceType: interview.sourceType });
       else report.written.push({ url: canonicalUrl, requestedUrl: url, filename, folders, bodyLength: article.body.length });

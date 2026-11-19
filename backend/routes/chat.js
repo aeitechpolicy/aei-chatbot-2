@@ -212,7 +212,9 @@ router.post('/:chatId/message', async (req, res) => {
     const needsTitle = chat.title === 'New Chat';
     const previousQuestions = chat.messages.slice(-6).filter(({ role }) => role === 'user');
     const lastQuestion = previousQuestions.at(-1)?.content;
-    const retrievalQuery = lastQuestion && queryTerms(message).length < 2 && !/\b(themes?|overview|focus)\b/i.test(message)
+    const retrievalQuery = lastQuestion && queryTerms(message).length < 2 &&
+      /^(?:what about\b|and\b|why\b|how so\b|tell (?:me )?more\b|what else\b)|\b(?:that|those|this|these|they|their|them|it)\b/i.test(message) &&
+      !/\b(themes?|overview|focus)\b/i.test(message)
       ? `${lastQuestion} ${message}` : message;
     const webPlan = web ? planWebSearch(message, now()) : null;
     const libraryQuery = web ? searchTopic(retrievalQuery) : retrievalQuery;
