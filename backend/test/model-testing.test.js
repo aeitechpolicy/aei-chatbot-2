@@ -6,7 +6,7 @@ const path = require('node:path');
 const express = require('express');
 const { createApp } = require('../server');
 const { createPilot } = require('../utils/pilot');
-const { TEST_MODELS, MUSE_TEST_MODEL, selectedModels } = require('../utils/modelTesting');
+const { TEST_MODELS, MUSE_TEST_MODEL, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels } = require('../utils/modelTesting');
 
 const OWNER = 'test-only-owner-password';
 const TESTER = 'test-only-model-tester-password';
@@ -43,7 +43,7 @@ test('Intern Muse trial uses the selected model, stores its identity and charges
   assert.equal(response.status, 200); const data = await response.json();
   assert.equal(requests.length, 1); assert.equal(requests[0].model, MUSE_TEST_MODEL.id);
   assert.equal(requests[0].reasoning_effort, undefined); assert.equal(requests[0].reasoning, undefined);
-  assert.equal(requests[0].max_tokens, 4096);
+  assert.equal(requests[0].max_tokens, INTERN_OUTPUT_TOKENS);
   assert.equal(data.model, MUSE_TEST_MODEL.id);
   assert.equal(data.chat.messages.at(-1).model, MUSE_TEST_MODEL.id);
   assert.equal(data.citationNotice, null);
@@ -65,35 +65,52 @@ test('Muse trial refuses non-Intern and arbitrary model requests before spending
   assert.equal(calls, 0); assert.equal((await f.pilot.rows('owner')).length, 0);
 });
 
-test('Muse reservations use Muse prices and keep the existing daily spending cap', async t => {
-  let calls = 0;
-  const f = await fixture(t, { env: { CHATBOT_DAILY_ESTIMATE_USD: '0.001' }, complete: async () => { calls++; return answer(); } });
-  const own = await f.chat('owner');
-  assert.equal((await f.request(`/api/chat/${own.id}/message`, { message: 'Policy', modelId: MUSE_TEST_MODEL.id }, 'owner')).status, 429);
-  assert.equal(calls, 0); assert.equal((await f.pilot.rows('owner')).length, 0);
+test('Intern ordinary and Muse answers use longer output and timeout in all three AI modes', async t => {
+  const requests = [];
+  const f = await fixture(t, { searchWeb: async () => [{ title: 'Web result', url: 'https://example.org/news', content: 'External spectrum development.' }],
+    env: { CHATBOT_DAILY_ESTIMATE_USD: '0.000001', CHATBOT_DAILY_QUESTIONS: '1', CHATBOT_PERSON_DAILY_QUESTIONS: '1' },
+    complete: async (request, options) => { requests.push({ request, options }); return { ...answer(), choices: [{ ...answer().choices[0], finish_reason: 'length' }] }; } });
+  for (const mode of ['archive', 'compare', 'web']) {
+    for (const modelId of [undefined, MUSE_TEST_MODEL.id]) {
+      const own = await f.chat('owner');
+      const response = await f.request(`/api/chat/${own.id}/message`, { message: 'Summarize spectrum policy.', mode, ...(modelId ? { modelId } : {}) }, 'owner');
+      assert.equal(response.status, 200);
+      const data = await response.json();
+      assert.equal(data.truncated, true);
+      assert.equal(data.chat.messages.at(-1).truncated, true);
+    }
+  }
+  assert.equal(requests.length, 6);
+  for (const { request, options } of requests) {
+    assert.equal(request.max_tokens, INTERN_OUTPUT_TOKENS);
+    assert.deepEqual(options, { timeoutMs: INTERN_TIMEOUT_MS });
+  }
+  assert.equal((await f.pilot.rows('owner')).length, 6);
 });
 
-test('Muse reserves the larger trial allowance and rejects unbounded output settings', async t => {
+test('Muse records the larger allowance without a five-cent ceiling and still bounds output settings', async t => {
   const f = await fixture(t);
   const [id] = await f.pilot.beginBatch('owner', messages, [MUSE_TEST_MODEL]);
   const [row] = await f.pilot.rows('owner');
-  const expected = ((Buffer.byteLength(JSON.stringify(messages), 'utf8') + 1024) * 1.25 + 4096 * 4.25) / 1e6;
+  const expected = ((Buffer.byteLength(JSON.stringify(messages), 'utf8') + 1024) * 1.25 + INTERN_OUTPUT_TOKENS * 4.25) / 1e6;
   assert.ok(Math.abs(row.reserved_usd - expected) < 1e-12);
+  assert.ok(row.reserved_usd > 0.05);
   await f.pilot.finish(id, { attempted: false });
-  for (const maxOutputTokens of [0, -1, 8192, '4096']) {
+  for (const maxOutputTokens of [0, -1, 32768, '16384']) {
     await assert.rejects(f.pilot.beginBatch('owner', messages, [{ ...MUSE_TEST_MODEL, maxOutputTokens }]), error => error.code === 'model_setup');
   }
+  await assert.rejects(f.pilot.beginBatch('tester', messages, [MUSE_TEST_MODEL]), error => error.code === 'model_setup');
 });
 
-test('five-cent Muse cap blocks expensive context before reserving or calling a model', async t => {
+test('a per-request estimate ceiling still applies to capped accounts, not Intern', async t => {
   const f = await fixture(t);
-  const tooLong = [{ role: 'user', content: 'x'.repeat(30000) }];
-  await assert.rejects(f.pilot.beginBatch('owner', tooLong, [MUSE_TEST_MODEL]), /\$0\.05 estimated limit/);
+  const capped = { ...MUSE_TEST_MODEL, maxOutputTokens: 1024, maxEstimatedUsd: 0.05 };
+  const longContext = [{ role: 'user', content: 'x'.repeat(40000) }];
+  await assert.rejects(f.pilot.beginBatch('tester', longContext, [capped]), /\$0\.05 estimated limit/);
   assert.equal((await f.pilot.rows('owner')).length, 0);
-  // A refused request must not leave the account stuck in the busy state.
-  const [id] = await f.pilot.beginBatch('owner', messages, [MUSE_TEST_MODEL]);
-  assert.equal((await f.pilot.rows('owner')).length, 1);
-  await f.pilot.finish(id, { attempted: false });
+  const [id] = await f.pilot.beginBatch('owner', longContext, [capped]);
+  assert.ok((await f.pilot.rows('owner'))[0].reserved_usd > 0.05);
+  await f.pilot.finish(id, { response: answer() });
 });
 
 test('model choices are a server allowlist with no duplicates or arbitrary model IDs', () => {

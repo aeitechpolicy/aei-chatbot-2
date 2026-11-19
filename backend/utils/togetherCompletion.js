@@ -1,9 +1,9 @@
-async function togetherCompletion(client, request) {
+async function togetherCompletion(client, request, { timeoutMs = 45000 } = {}) {
   const stream = await client.chat.completions.create({
     ...request,
     stream: true,
     stream_options: { include_usage: true }
-  }, { signal: AbortSignal.timeout(45000) });
+  }, { signal: AbortSignal.timeout(timeoutMs), timeout: timeoutMs });
 
   let content = '';
   let model = request.model;

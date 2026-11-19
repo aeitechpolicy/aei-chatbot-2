@@ -8,6 +8,7 @@ const { createPilot, MODEL, MODEL_PARAMETERS } = require('../utils/pilot');
 const { createApp } = require('../server');
 const ChatManager = require('../utils/chatManager');
 const { togetherCompletion } = require('../utils/togetherCompletion');
+const { INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS } = require('../utils/modelTesting');
 
 const OWNER = 'test-only-intern-password';
 const SUPERVISOR = 'test-only-ra-password';
@@ -20,7 +21,7 @@ async function fixture(t, overrides = {}) {
   const pilot = createPilot({ env, now: () => FIXED, dataDir: dir });
   const manager = new ChatManager(path.join(dir, 'chats'));
   let calls = 0;
-  const complete = overrides.realComplete ? undefined : async request => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, 1024); assert.deepEqual(Object.fromEntries(Object.keys(MODEL_PARAMETERS).map(key => [key, request[key]])), MODEL_PARAMETERS); assert.equal(request.reasoning, undefined); return overrides.complete ? overrides.complete(request) : answer(); };
+  const complete = overrides.realComplete ? undefined : async (request, completionOptions) => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, completionOptions?.timeoutMs === INTERN_TIMEOUT_MS ? INTERN_OUTPUT_TOKENS : 1024); assert.deepEqual(Object.fromEntries(Object.keys(MODEL_PARAMETERS).map(key => [key, request[key]])), MODEL_PARAMETERS); assert.equal(request.reasoning, undefined); return overrides.complete ? overrides.complete(request) : answer(); };
   const app = createApp({ env, pilot, complete, researchDependencies: { findSource: overrides.findSource, search: overrides.searchArticles || (async () => ({ articles: [], matchedCount: 0, coverage: { articles: 0 }, aiUsed: false })) }, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
     manager, searchWeb: overrides.searchWeb, now: overrides.now || (() => FIXED), knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
   } });
@@ -202,14 +203,14 @@ test('the first answer titles the chat in the same request and follow-ups use on
 
 test('daily question allowance blocks the provider call', async t => {
   const f = await fixture(t, { env: { CHATBOT_DAILY_QUESTIONS: '1' } });
-  const { token } = await f.login(); const chat = await f.newChat(token);
+  const { token } = await f.login('supervisor'); const chat = await f.newChat(token);
   for (const expected of [200, 429]) assert.equal((await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } })).status, expected);
   assert.equal(f.calls(), 1); assert.equal((await f.pilot.rows('owner')).length, 1);
 });
 
 test('estimated budget is reserved before a paid request is allowed', async t => {
   const f = await fixture(t, { env: { CHATBOT_DAILY_ESTIMATE_USD: '0.000001' } });
-  const { token } = await f.login(); const chat = await f.newChat(token);
+  const { token } = await f.login('supervisor'); const chat = await f.newChat(token);
   assert.equal((await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'A question' } })).status, 429);
   assert.equal(f.calls(), 0);
 });
@@ -310,11 +311,11 @@ test('usage and pending reservations survive reopening the same database', async
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-ledger-test-'));
   const env = { CHATBOT_INTERN_PASSWORD: OWNER, CHATBOT_DAILY_QUESTIONS: '1' };
   const first = createPilot({ env, now: () => FIXED, dataDir: dir });
-  await first.begin('owner', [{ role: 'user', content: 'A question' }]); await first.close();
+  await first.begin('supervisor', [{ role: 'user', content: 'A question' }]); await first.close();
   const second = createPilot({ env, now: () => FIXED, dataDir: dir });
   t.after(async () => { await second.close(); fs.rmSync(dir, { recursive: true, force: true }); });
   assert.equal((await second.rows('owner'))[0].status, 'pending');
-  await assert.rejects(() => second.begin('owner', [{ role: 'user', content: 'Another question' }]), /daily question allowance/);
+  await assert.rejects(() => second.begin('supervisor', [{ role: 'user', content: 'Another question' }]), /daily question allowance/);
 });
 
 test('sessions expire and the retired legacy endpoint cannot bypass the new route', async t => {

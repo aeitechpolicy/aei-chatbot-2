@@ -61,3 +61,17 @@ test('completed streams without usage preserve uncertainty and network failures 
   client.chat.completions.create = async function* () { throw failure; };
   await assert.rejects(() => togetherCompletion(client, { model: MODEL }), failure);
 });
+
+test('longer Intern timeout overrides the SDK timeout without leaking transport options into the model request', async () => {
+  let seen;
+  const client = { chat: { completions: { create: (body, options) => {
+    seen = { body, options };
+    return (async function* () { yield { choices: [{ index: 0, delta: { content: 'A completed answer' }, finish_reason: 'stop' }] }; })();
+  } } } };
+  await togetherCompletion(client, { model: MODEL }, { timeoutMs: 120000 });
+  assert.equal(seen.options.timeout, 120000);
+  assert.ok(seen.options.signal instanceof AbortSignal);
+  assert.equal(seen.body.timeoutMs, undefined);
+  await togetherCompletion(client, { model: MODEL });
+  assert.equal(seen.options.timeout, 45000);
+});

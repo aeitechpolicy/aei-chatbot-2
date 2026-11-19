@@ -61,10 +61,10 @@ app.get('/api/usage.csv', (req, res, next) => req.auth.id === 'tester' ? next() 
 });
 
 let client;
-const complete = options.complete || (async request => {
+const complete = options.complete || (async (request, completionOptions) => {
   if (!env.TOGETHER_API_KEY) throw Object.assign(new Error('The AI service is not connected yet.'), { status: 503, code: 'ai_setup' });
   client = client || new Together({ apiKey: env.TOGETHER_API_KEY, maxRetries: 0, timeout: 45000 });
-  return togetherCompletion(client, request);
+  return togetherCompletion(client, request, completionOptions);
 });
 
 // Serve static files

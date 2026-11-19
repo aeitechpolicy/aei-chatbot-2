@@ -147,14 +147,14 @@ test('free database storage through the real Neon HTTP driver', async t => {
     const first = makePilot({ CHATBOT_DAILY_QUESTIONS: '1' });
     const chat = await first.chatManager.createChat('General', null, 'owner');
     await first.chatManager.addMessage(chat.id, { role: 'user', content: 'Preserved after restart' });
-    await first.begin('owner', [{ role: 'user', content: 'A question' }]);
+    await first.begin('demo1', [{ role: 'user', content: 'A question' }]);
     const session = first.login('owner', OWNER, 'test');
     await first.close(); await pg.close(); pg = new PGlite(databaseDir);
     const next = makePilot({ CHATBOT_DAILY_QUESTIONS: '1' });
     assert.equal((await next.chatManager.getChatWithUserCheck(chat.id, 'owner')).messages[0].content, 'Preserved after restart');
     assert.equal((await next.rows('owner'))[0].status, 'pending');
     assert.equal(next.authenticate(session.token), null);
-    await assert.rejects(() => next.begin('owner', [{ role: 'user', content: 'Another question' }]), /daily question allowance/);
+    await assert.rejects(() => next.begin('demo1', [{ role: 'user', content: 'Another question' }]), /daily question allowance/);
     await next.close();
   });
 
@@ -163,7 +163,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
     const first = makePilot(limits);
     const second = makePilot(limits);
     const messages = [{ role: 'user', content: 'A short question' }];
-    const results = await Promise.allSettled([first.begin('owner', messages), second.begin('supervisor', messages)]);
+    const results = await Promise.allSettled([first.begin('demo1', messages), second.begin('supervisor', messages)]);
     assert.equal(results.filter(result => result.status === 'fulfilled').length, 1);
     assert.match(results.find(result => result.status === 'rejected').reason.message, /daily estimated cost allowance/);
     assert.equal((await first.rows('owner')).length, 1);
@@ -174,16 +174,35 @@ test('free database storage through the real Neon HTTP driver', async t => {
     const pilot = makePilot({ CHATBOT_PERSON_DAILY_QUESTIONS: '6', CHATBOT_DAILY_QUESTIONS: '7' });
     const messages = [{ role: 'user', content: 'A question' }];
     for (let i = 0; i < 5; i++) {
-      const id = await pilot.begin('owner', messages); await pilot.finish(id, { attempted: false, errorCode: 'local_test' });
+      const id = await pilot.begin('demo1', messages); await pilot.finish(id, { attempted: false, errorCode: 'local_test' });
     }
-    await assert.rejects(() => pilot.begin('owner', messages), /wait a minute/);
+    await assert.rejects(() => pilot.begin('demo1', messages), /wait a minute/);
     now += 60001;
-    const id = await pilot.begin('owner', messages); await pilot.finish(id, { attempted: false, errorCode: 'local_test' });
-    await assert.rejects(() => pilot.begin('owner', messages), /daily question allowance/);
+    const id = await pilot.begin('demo1', messages); await pilot.finish(id, { attempted: false, errorCode: 'local_test' });
+    await assert.rejects(() => pilot.begin('demo1', messages), /daily question allowance/);
     const other = await pilot.begin('supervisor', messages); await pilot.finish(other, { attempted: false, errorCode: 'local_test' });
     await assert.rejects(() => pilot.begin('supervisor', messages), /daily question allowance/);
     now += 86400000;
-    await assert.doesNotReject(() => pilot.begin('owner', messages));
+    await assert.doesNotReject(() => pilot.begin('demo1', messages));
+    await pilot.close();
+  });
+
+  await t.test('Intern bypasses usage caps, remains recorded and does not consume other accounts’ allowance', async () => {
+    const pilot = makePilot({ CHATBOT_DAILY_QUESTIONS: '1', CHATBOT_PERSON_DAILY_QUESTIONS: '1', CHATBOT_DAILY_ESTIMATE_USD: '0.003' });
+    const messages = [{ role: 'user', content: 'A test question' }];
+    for (let i = 0; i < 7; i++) {
+      const id = await pilot.begin('owner', messages);
+      await pilot.finish(id, { response: { ...response(), usage: { prompt_tokens: 100000, completion_tokens: 10000 } } });
+    }
+    const other = await pilot.begin('supervisor', messages);
+    await pilot.finish(other, { response: response() });
+    await assert.rejects(pilot.begin('demo1', messages), /daily question allowance/);
+    const own = await pilot.begin('owner', messages);
+    await pilot.finish(own, { response: response() });
+    const rows = await pilot.rows('owner');
+    assert.equal(rows.length, 9);
+    assert.equal(rows.filter(row => row.user_id === 'owner').length, 8);
+    assert.ok(rows.filter(row => row.user_id === 'owner').every(row => row.estimated_usd > 0));
     await pilot.close();
   });
 
@@ -235,9 +254,9 @@ test('free database storage through the real Neon HTTP driver', async t => {
     now = Date.parse('2026-03-08T23:30:00Z');
     const pilot = makePilot({ CHATBOT_DAILY_QUESTIONS: '1' });
     const messages = [{ role: 'user', content: 'A question' }];
-    const id = await pilot.begin('owner', messages);
+    const id = await pilot.begin('demo1', messages);
     await pilot.finish(id, { attempted: false, errorCode: 'local_test' });
-    await assert.rejects(() => pilot.begin('owner', messages), /daily question allowance/);
+    await assert.rejects(() => pilot.begin('demo1', messages), /daily question allowance/);
     await pilot.close();
   });
   await t.test('the two demo histories persist independently through a new database-backed app instance', async () => {
@@ -259,7 +278,7 @@ test('free database storage through the real Neon HTTP driver', async t => {
 
   await t.test('the hundredth daily request is permitted and the hundred-and-first is blocked across accounts', async () => {
     await pg.query(`INSERT INTO aei_pilot_usage (id,started_at,user_id,model,status,reserved_usd,estimated_usd,input_rate,output_rate,price_source)
-      SELECT 'seed-' || n, $1::timestamptz, 'owner', $2, 'complete', 0, 0, 0.15, 0.50, 'local test' FROM generate_series(1,99) AS n`, [new Date(BASE_TIME - 3600000).toISOString(), MODEL]);
+      SELECT 'seed-' || n, $1::timestamptz, 'supervisor', $2, 'complete', 0, 0, 0.15, 0.50, 'local test' FROM generate_series(1,99) AS n`, [new Date(BASE_TIME - 3600000).toISOString(), MODEL]);
     const pilot = makePilot();
     const id = await pilot.begin('demo1', [{ role: 'user', content: 'The hundredth question' }]);
     await pilot.finish(id, { response: response() });

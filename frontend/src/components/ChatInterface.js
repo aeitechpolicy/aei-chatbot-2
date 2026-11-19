@@ -238,7 +238,8 @@ const ChatInterface = ({
             <option value="">Current default</option>
             <option value="meta-models/Muse-Spark-Open-816B-A42B">Meta Muse Spark Open · Test</option>
           </select></label>
-          {testModel && <p className="workspace-meta">Intern-only trial · Five-cent estimated limit per question. $1.25 input / $4.25 output per million tokens. Trial output allowance: 4,096 tokens.</p>}
+          <p className="workspace-meta">Intern account · App-level question and spending caps disabled. Output allowance: 16,384 tokens. Usage and costs remain recorded.</p>
+          {testModel && <p className="workspace-meta">Intern-only trial · $1.25 input / $4.25 output per million tokens.</p>}
         </div>}
         {!legacy && !comparisonMode && !chatId && !sendingMessage && (
           <fieldset className="chat-scope-picker">

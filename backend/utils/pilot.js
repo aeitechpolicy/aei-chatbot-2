@@ -6,7 +6,7 @@ const path = require('node:path');
 const { DatabaseSync } = require('node:sqlite');
 const { PostgresStorage } = require('../storage/postgres');
 
-const { TEST_MODELS } = require('./modelTesting');
+const { TEST_MODELS, INTERN_OUTPUT_TOKENS } = require('./modelTesting');
 const DEFAULT_MODEL = TEST_MODELS.find(model => model.id === 'zai-org/GLM-5.3-Flash');
 const MODEL = DEFAULT_MODEL.id;
 const MODEL_PARAMETERS = Object.freeze({ ...DEFAULT_MODEL.parameters });
@@ -141,7 +141,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   }
 
   async function begin(userId, messages) {
-    const [id] = await beginBatch(userId, messages, [{ id: MODEL, inputRate, outputRate, priceSource }]);
+    const [id] = await beginBatch(userId, messages, [{ id: MODEL, inputRate, outputRate, priceSource, maxOutputTokens: userId === 'owner' ? INTERN_OUTPUT_TOKENS : MAX_OUTPUT_TOKENS }]);
     return id;
   }
 
@@ -152,7 +152,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     if (inputBytes > MAX_INPUT_BYTES) throw failure('This conversation and its sources are too long for the pilot limit. Try a shorter question in a new chat.', 413, 'input_limit');
     if (!Array.isArray(models) || models.length < 1 || models.length > 3 || models.some(model =>
       typeof model.id !== 'string' || !Number.isFinite(model.inputRate) || model.inputRate <= 0 || !Number.isFinite(model.outputRate) || model.outputRate <= 0 ||
-      (model.maxOutputTokens !== undefined && (!Number.isSafeInteger(model.maxOutputTokens) || model.maxOutputTokens < 1 || model.maxOutputTokens > 4096)) ||
+      (model.maxOutputTokens !== undefined && (!Number.isSafeInteger(model.maxOutputTokens) || model.maxOutputTokens < 1 || model.maxOutputTokens > (userId === 'owner' ? INTERN_OUTPUT_TOKENS : 4096))) ||
       (model.maxEstimatedUsd !== undefined && (!Number.isFinite(model.maxEstimatedUsd) || model.maxEstimatedUsd <= 0)))) {
       throw failure('The comparison models need to be configured.', 503, 'model_setup');
     }
@@ -165,7 +165,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
       inputRate: model.inputRate, outputRate: model.outputRate, priceSource: model.priceSource,
       dailyBudget, dailyQuestions, personQuestions
     }));
-    if (reservations.some((row, index) => models[index].maxEstimatedUsd !== undefined && row.reserve > models[index].maxEstimatedUsd)) {
+    if (userId !== 'owner' && reservations.some((row, index) => models[index].maxEstimatedUsd !== undefined && row.reserve > models[index].maxEstimatedUsd)) {
       throw failure('This test exceeds the $0.05 estimated limit. Try a shorter question or a narrower scholar selection.');
     }
     for (const row of reservations) active.set(row.id, row);
@@ -177,12 +177,14 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
         db.exec('BEGIN IMMEDIATE');
         try {
           for (const row of reservations) {
-            const totals = db.prepare('SELECT COUNT(*) AS n, COALESCE(SUM(COALESCE(estimated_usd,reserved_usd)),0) AS cost FROM usage WHERE started_at>=? AND started_at<?').get(day, nextDay);
-            const person = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=? AND started_at<?').get(userId, day, nextDay);
-            const minute = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=?').get(userId, new Date(now() - 60000).toISOString());
-            if (totals.n >= dailyQuestions || person.n >= personQuestions) throw failure('The daily question allowance has been reached. Please try again tomorrow. Allowances reset at midnight UTC.');
-            if (minute.n >= 5) throw failure('Please wait a minute before asking another question.');
-            if (totals.cost + row.reserve > dailyBudget) throw failure('The daily estimated cost allowance has been reached. Please try again tomorrow.');
+            if (userId !== 'owner') {
+              const totals = db.prepare("SELECT COUNT(*) AS n, COALESCE(SUM(COALESCE(estimated_usd,reserved_usd)),0) AS cost FROM usage WHERE user_id!='owner' AND started_at>=? AND started_at<?").get(day, nextDay);
+              const person = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=? AND started_at<?').get(userId, day, nextDay);
+              const minute = db.prepare('SELECT COUNT(*) AS n FROM usage WHERE user_id=? AND started_at>=?').get(userId, new Date(now() - 60000).toISOString());
+              if (totals.n >= dailyQuestions || person.n >= personQuestions) throw failure('The daily question allowance has been reached. Please try again tomorrow. Allowances reset at midnight UTC.');
+              if (minute.n >= 5) throw failure('Please wait a minute before asking another question.');
+              if (totals.cost + row.reserve > dailyBudget) throw failure('The daily estimated cost allowance has been reached. Please try again tomorrow.');
+            }
             db.prepare('INSERT INTO usage (id,started_at,user_id,model,status,reserved_usd,input_rate,output_rate,price_source) VALUES (?,?,?,?,?,?,?,?,?)').run(row.id, at, userId, row.model, 'pending', row.reserve, row.inputRate, row.outputRate, row.priceSource);
           }
           db.exec('COMMIT');
@@ -265,7 +267,7 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     logout: user => revokedSessions.set(user.nonce, user.exp),
     close: async () => { if (db) db.close(); if (remote) await remote.close(); },
     chatManager: remote && remote.chatManager,
-    settings: { model: MODEL, dailyBudget, dailyQuestions, personQuestions, priceSource, storageConfigured, storage: remote ? remote.kind : 'local' },
+    settings: { internUsageCapsDisabled: true, internOutputTokens: INTERN_OUTPUT_TOKENS, model: MODEL, dailyBudget, dailyQuestions, personQuestions, priceSource, storageConfigured, storage: remote ? remote.kind : 'local' },
     dataDir: root };
 }
 
