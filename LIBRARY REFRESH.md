@@ -1,5 +1,11 @@
 # Scholar Library refresh runbook
 
+## Confirmed access blocker — November 19, 2026
+
+Verification-only run #23 on merged commit f71f0a5 returned 403 from AEI's guest_author endpoint. Required author identities could not be discovered; later source steps and publishing were skipped. Diagnostics were saved and the run failed visibly in 3m 1s. No library/status changes were published. The pipeline is not yet operational for unattended collection. Contact AEI's web team for an approved feed/export or documented permitted access using the fields below; model credits and repeated retries will not fix this refusal.
+
+Evidence: https://github.com/aeitechpolicy/aei-chatbot-2/actions/runs/44627687186/job/135925842305#step:8:8
+
 ## What runs automatically
 
 GitHub → Actions → Biweekly Article Scrape uses GitHub-hosted Linux, not an AEI desktop. The existing schedule remains every other Monday at 08:00 UTC. It reads AEI's public catalog for the four served scholars, fetches missing or changed publications, checks article headers and rebuilds the search index. Collection uses no Together or Tavily credits and introduces no new hosting service. Existing GitHub Actions account limits still apply.

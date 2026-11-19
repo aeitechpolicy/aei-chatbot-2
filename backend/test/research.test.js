@@ -70,6 +70,8 @@ test('a short technical-debt question does not fill its evidence list with stude
   assert.equal(result.articles.length,2);assert.ok(result.articles.every(x=>x.title!=='The trades and student debt'));
   const prompt=researchPrompt('General',prepareSources(result.articles),false,false,{shortTopic:true});
   assert.match(prompt,/plain-English definition/);assert.match(prompt,/100–150 words/);
+  assert.match(prompt,/with its own source ID/);assert.match(prompt,/Do not put quotation marks around the definition/);
+  assert.match(prompt,/Exclude dollar amounts, percentages/);
 });
 test('an unreviewed identical agenda copy cannot displace verified event metadata', async t => {
   const body='Online safety panel registration and agenda. '.repeat(20);
