@@ -1,5 +1,11 @@
 # Validation record
 
+## Short topic follow-up and real refresh check — November 19, 2026
+
+79 research/chat checks passed with zero failures after the short-topic prompt refinement. The checks cover the actual prompt path and existing citation, ownership, provider-call and usage behavior using simulated replies. This tests instruction wiring, not model compliance. No paid Together or Tavily call was made. The preceding complete backend run passed all 175 checks; frontend remains unchanged.
+
+GitHub verification-only run #23 (44627687186), on merged commit f71f0a5, failed in 3m 1s. Setup succeeded. The discovery log reports guest_author not accessible (403), followed by missing required Brent Orrell, Clay Calvert, Shane Tews and Will Rinehart identities. Article/import/index steps and Commit changes were skipped; diagnostics/status reporting ran, and Require a complete refresh failed. Source data and refresh status were not published in this verification run. This confirms the publisher-access blocker and visible failure handling, not successful unattended collection. An approved publisher source remains necessary. Run: https://github.com/aeitechpolicy/aei-chatbot-2/actions/runs/44627687186 .
+
 ## Source repairs, simple questions and refresh validation — November 19, 2026
 
 All 175 backend tests passed with zero failures on Node 24 using simulated providers and local test servers. Coverage includes reviewed date/byline/provenance preservation, coauthors, exact-title slug matching, scholar aliases and future-tense “will”, guest transcript context, short-question context isolation, relevant topic phrases, focused-source filtering, newer equivalent duplicates, event-agenda exclusion, podcast header dates, modified ordinary pages, missing-header preservation, blocked/HTML feed responses, catch-up windows, fresh-report requirements and incomplete-run watermarks. No paid provider request or production database write was made. Frontend files are unchanged; PR #23's 44 frontend checks and production build remain the latest frontend validation.
