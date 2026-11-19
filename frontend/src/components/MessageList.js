@@ -17,7 +17,7 @@ const sourceOnlyReplies = new Set([
 
 function AnswerText({ content, sources = [], onSource }) {
   const tokens = /(\[[SW]\d+\]|\[Source:\s*[^\]\n]+\]|\*\*[^*\n]+\*\*|\*[^*\n]+\*|`[^`\n]+`)/g;
-  return String(content ?? '').split('\n').map((line, index) => (
+  return String(content ?? '').replace(/^(\s*(?:[-*]\s+)?)([^*\n]{1,90}:)\*{1,2}\s*/gm, '$1$2 ').split('\n').map((line, index) => (
     <React.Fragment key={index}>
       {index > 0 && <br />}
       {line.split(tokens).map((part, tokenIndex) => {
