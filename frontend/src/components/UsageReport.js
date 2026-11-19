@@ -27,6 +27,7 @@ export default function UsageReport() {
   const rows = data ? data.rows : [];
   const known = rows.reduce((sum, row) => sum + (row.estimated_usd || 0), 0);
   const uncertain = rows.filter(row => row.estimated_usd === null).length;
+  const detail = row => ({ empty_answer_output_limit: 'Output allowance reached before answer text', empty_answer: 'No answer text returned' }[row.error_code]);
   const status = row => ({ complete: 'Answered', failed: 'Answer failed', not_sent: 'Not sent', pending: 'Outcome uncertain', unknown_cost: 'Cost uncertain' }[row.status] || row.status);
   return <main className="usage-report">
     <div className="usage-heading"><div><p className="eyebrow">INTERNAL PILOT</p><h2>Usage and costs</h2></div>
@@ -41,7 +42,7 @@ export default function UsageReport() {
       <p className="usage-note">{data.settings.internUsageCapsDisabled && <>Chatbot Intern has no app-level question or spending caps and does not consume the other accounts’ shared allowance. Usage and costs remain recorded. </>}Daily pilot allowances{data.settings.internUsageCapsDisabled ? " for other accounts" : ""}: {data.settings.dailyQuestions} requests in total, up to {data.settings.personQuestions} per account, and ${data.settings.dailyBudget.toFixed(2)} in estimated usage. Days reset at midnight UTC. Requests with unknown costs retain a conservative allowance.</p>
       <p className="usage-note">Estimate basis: rates recorded with each request. Model Tester uses each selected model’s own rates. Download CSV for details.</p>
       <div className="usage-table-wrap"><table className="usage-table"><thead><tr><th>Time (Eastern)</th><th>Account</th><th>Model</th><th>Result</th><th>Estimated cost</th></tr></thead><tbody>
-        {rows.map(row => <tr key={row.id}><td>{new Date(row.started_at).toLocaleString('en-US', { timeZone: 'America/New_York' })}</td><td>{row.account_label || row.user_id}</td><td>{row.model.split('/').pop()}</td><td>{status(row)}</td><td>{money(row.estimated_usd)}</td></tr>)}
+        {rows.map(row => <tr key={row.id}><td>{new Date(row.started_at).toLocaleString('en-US', { timeZone: 'America/New_York' })}</td><td>{row.account_label || row.user_id}</td><td>{row.model.split('/').pop()}</td><td>{status(row)}{detail(row) && <div className="usage-note">{detail(row)}</div>}</td><td>{money(row.estimated_usd)}</td></tr>)}
         {!rows.length && <tr><td colSpan="5">No requests recorded yet.</td></tr>}
       </tbody></table></div>
       <p className="usage-note">Shows up to 5,000 recent requests. This report does not include activity that bypasses the chatbot. Check Together’s billing page for the account’s complete charges.</p>

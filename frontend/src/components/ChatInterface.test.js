@@ -12,6 +12,7 @@ test('Intern can select one Muse trial without changing the default or compariso
   expect(screen.getByText(/App-level question and spending caps disabled/)).toHaveTextContent('16,384 tokens');
   fireEvent.change(model, { target: { value: 'meta-models/Muse-Spark-Open-816B-A42B' } });
   expect(screen.getByText(/Intern-only trial/)).toHaveTextContent('$1.25 input / $4.25 output');
+  expect(screen.getByText(/Intern-only trial/)).toHaveTextContent('Low processing effort');
   fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Summarize the article.' } });
   await act(async () => { fireEvent.click(screen.getByRole('button', { name: 'Send message' })); });
   expect(send).toHaveBeenCalledWith('Summarize the article.', 'archive', { modelId: 'meta-models/Muse-Spark-Open-816B-A42B' });

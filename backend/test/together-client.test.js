@@ -75,3 +75,29 @@ test('longer Intern timeout overrides the SDK timeout without leaking transport 
   await togetherCompletion(client, { model: MODEL });
   assert.equal(seen.options.timeout, 45000);
 });
+
+test('Muse low-effort settings reach the real SDK and reasoning token counts survive without reasoning text', async () => {
+  let calls = 0;
+  const { MUSE_TEST_MODEL, INTERN_OUTPUT_TOKENS } = require('../utils/modelTesting');
+  const client = new Together({ apiKey: 'test-only-not-a-real-key', baseURL: 'http://127.0.0.1:9', maxRetries: 0,
+    fetch: async (url, options) => {
+      calls++;
+      const body = JSON.parse(options.body);
+      assert.equal(body.model, MUSE_TEST_MODEL.id); assert.equal(body.reasoning_effort, 'low');
+      assert.equal(body.temperature, 1.0); assert.equal(body.max_tokens, INTERN_OUTPUT_TOKENS);
+      const chunks = [
+        { choices: [{ index: 0, delta: { reasoning_content: 'private-reasoning-marker' }, finish_reason: null }] },
+        { choices: [{ index: 0, delta: {}, finish_reason: 'length' }] },
+        { choices: [], usage: { prompt_tokens: 3796, completion_tokens: 16384, completion_tokens_details: { reasoning_tokens: 16384 } } }
+      ];
+      return new Response(chunks.map(chunk => `data: ${JSON.stringify(chunk)}\n\n`).join('') + 'data: [DONE]\n\n',
+        { status: 200, headers: { 'Content-Type': 'text/event-stream' } });
+    }
+  });
+  const result = await togetherCompletion(client, { model: MUSE_TEST_MODEL.id, messages: [{ role: 'user', content: 'A simulated question' }],
+    max_tokens: INTERN_OUTPUT_TOKENS, ...MUSE_TEST_MODEL.parameters });
+  assert.equal(calls, 1); assert.equal(result.choices[0].message.content, '');
+  assert.equal(result.choices[0].finish_reason, 'length');
+  assert.equal(result.usage.completion_tokens_details.reasoning_tokens, 16384);
+  assert.doesNotMatch(JSON.stringify(result), /private-reasoning-marker/);
+});

@@ -42,7 +42,7 @@ test('Intern Muse trial uses the selected model, stores its identity and charges
   const response = await f.request(`/api/chat/${chat.id}/message`, { message: 'Summarize the supplied spectrum article.', modelId: MUSE_TEST_MODEL.id }, 'owner');
   assert.equal(response.status, 200); const data = await response.json();
   assert.equal(requests.length, 1); assert.equal(requests[0].model, MUSE_TEST_MODEL.id);
-  assert.equal(requests[0].reasoning_effort, undefined); assert.equal(requests[0].reasoning, undefined);
+  assert.equal(requests[0].reasoning_effort, 'low'); assert.equal(requests[0].temperature, 1.0); assert.equal(requests[0].reasoning, undefined);
   assert.equal(requests[0].max_tokens, INTERN_OUTPUT_TOKENS);
   assert.equal(data.model, MUSE_TEST_MODEL.id);
   assert.equal(data.chat.messages.at(-1).model, MUSE_TEST_MODEL.id);
@@ -230,4 +230,30 @@ test('an unconnected provider leaves comparison reservations marked as not sent'
   const rows = await f.pilot.rows('tester');
   assert.equal(rows.length, 3);
   assert.ok(rows.every(row => row.status === 'not_sent' && row.estimated_usd === 0));
+});
+
+test('empty Muse answers preserve charges, disclose the stop reason safely and never retry', async t => {
+  const logs = [];
+  t.mock.method(console, 'error', (...parts) => logs.push(parts.join(' ')));
+  let calls = 0;
+  const f = await fixture(t, { complete: async () => {
+    calls++;
+    return { model: MUSE_TEST_MODEL.id, choices: [{ finish_reason: 'length', message: { content: '', reasoning: 'private-reasoning-marker' } }],
+      usage: { prompt_tokens: 3796, completion_tokens: 16384, completion_tokens_details: { reasoning_tokens: 16384 } } };
+  } });
+  const chat = await f.chat('owner');
+  const response = await f.request(`/api/chat/${chat.id}/message`, { message: 'private-question-marker', modelId: MUSE_TEST_MODEL.id }, 'owner');
+  assert.equal(response.status, 502);
+  const body = await response.json();
+  assert.equal(body.code, 'empty_answer_output_limit'); assert.match(body.error, /output allowance/);
+  assert.equal(calls, 1);
+  const [row] = await f.pilot.rows('owner');
+  assert.equal(row.status, 'failed'); assert.equal(row.error_code, 'empty_answer_output_limit');
+  assert.equal(row.output_tokens, 16384);
+  assert.ok(Math.abs(row.estimated_usd - 0.074377) < 1e-12);
+  const saved = await (await f.request(`/api/chat/${chat.id}`, undefined, 'owner')).json();
+  assert.equal(saved.messages.length, 1); assert.equal(saved.messages[0].role, 'user');
+  assert.match(logs.join(' '), /"finishReason":"length"/);
+  assert.match(logs.join(' '), /"reasoningTokens":16384/);
+  assert.doesNotMatch(logs.join(' ') + JSON.stringify(body) + JSON.stringify(row), /private-reasoning-marker|private-question-marker/);
 });

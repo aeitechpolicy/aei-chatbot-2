@@ -1,5 +1,9 @@
 # Validation record
 
+## Muse low-effort reliability trial — November 18, 2026
+
+145 backend tests, 37 frontend tests and the production build passed. Tests use simulated providers; no paid AI question is authorized as part of these checks. They cover exact SDK serialization of Muse low effort and temperature 1.0, preservation of reported reasoning-token counts, numeric-only failure logs, known finish reasons, distinct output-limit/blank error codes, retained failed-call cost estimates and no automatic retry or saved blank assistant message. A manual live test is needed to establish provider acceptance, reliability, cost and answer quality.
+
 ## Intern usage caps and longer answers — November 18, 2026
 
 141 backend tests, 37 frontend tests and the production build passed. Simulated-provider tests cover Intern’s exemption from daily question, per-account, minute and spending caps; accurate usage records; separation from other accounts’ shared allowances in SQLite and PostgreSQL; 16,384-token requests and longer timeouts across Article Chat, Compare Scholars and AEI + Web; and preserved non-Intern caps. No paid AI question is part of this verification.
