@@ -21,7 +21,7 @@ async function fixture(t, overrides = {}) {
   const pilot = createPilot({ env, now: () => FIXED, dataDir: dir });
   const manager = new ChatManager(path.join(dir, 'chats'));
   let calls = 0;
-  const complete = overrides.realComplete ? undefined : async (request, completionOptions) => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, completionOptions?.timeoutMs === INTERN_TIMEOUT_MS ? INTERN_OUTPUT_TOKENS : 1024); assert.deepEqual(Object.fromEntries(Object.keys(MODEL_PARAMETERS).map(key => [key, request[key]])), MODEL_PARAMETERS); assert.equal(request.reasoning, undefined); return overrides.complete ? overrides.complete(request) : answer(); };
+  const complete = overrides.realComplete ? undefined : async (request, completionOptions) => { calls++; assert.equal(request.model, MODEL); assert.equal(request.max_tokens, completionOptions?.timeoutMs === INTERN_TIMEOUT_MS ? INTERN_OUTPUT_TOKENS : 4096); assert.deepEqual(Object.fromEntries(Object.keys(MODEL_PARAMETERS).map(key => [key, request[key]])), MODEL_PARAMETERS); assert.equal(request.reasoning, undefined); return overrides.complete ? overrides.complete(request) : answer(); };
   const app = createApp({ env, pilot, complete, researchDependencies: { findSource: overrides.findSource, search: overrides.searchArticles || (async () => ({ articles: [], matchedCount: 0, coverage: { articles: 0 }, aiUsed: false })) }, fileRoutes: overrides.fileRoutes || express.Router(), chatDependencies: {
     manager, searchWeb: overrides.searchWeb, now: overrides.now || (() => FIXED), knowledgeBase: { loadDomainContent: async () => ({}) }, fetchArticles: overrides.fetchArticles || (async () => [{ title: 'Fixture article', author: 'Clay Calvert', date: '2025-01-02', url: 'https://www.aei.org/articles/fixture/', body: 'Simulated source evidence for the test question.' }])
   } });
@@ -140,8 +140,8 @@ test('request model is fixed and returned usage is recorded without question tex
   assert.equal(saved.chat.messages[0].content, 'private-question-marker');
   const row = (await f.pilot.rows('owner'))[0];
   assert.equal(row.model, MODEL); assert.equal(row.input_tokens, 10000); assert.equal(row.output_tokens, 100);
-  assert.ok(Math.abs(row.estimated_usd - 0.00155) < 1e-10);
-  assert.equal(row.input_rate, 0.15); assert.equal(row.output_rate, 0.50);
+  assert.ok(Math.abs(row.estimated_usd - 0.012925) < 1e-10);
+  assert.equal(row.input_rate, 1.25); assert.equal(row.output_rate, 4.25);
   assert.equal(row.status, 'complete');
   const csv = await (await f.request('/api/usage.csv', { token })).text();
   assert.ok(csv.includes('Chatbot Intern'));
@@ -242,7 +242,7 @@ test('a reasoning-only or blank reply records its usage but is not saved as an a
   assert.ok(!JSON.stringify(body).includes('private-reasoning-marker'));
   assert.equal(f.calls(), 1);
   const row = (await f.pilot.rows('owner'))[0];
-  assert.equal(row.status, 'failed'); assert.equal(row.error_code, 'empty_answer'); assert.ok(Math.abs(row.estimated_usd - 0.00155) < 1e-10);
+  assert.equal(row.status, 'failed'); assert.equal(row.error_code, 'empty_answer'); assert.ok(Math.abs(row.estimated_usd - 0.012925) < 1e-10);
   const saved = await (await f.request(`/api/chat/${chat.id}`, { token })).json();
   assert.equal(saved.messages.length, 1); assert.equal(saved.messages[0].role, 'user');
 });
@@ -607,4 +607,24 @@ test('demo passwords must be unique across all configured accounts', async t => 
 test('the default daily allowance is 100 total and per account while the spending cap remains', async t => {
   const f = await fixture(t);
   assert.equal(f.pilot.settings.dailyQuestions, 100); assert.equal(f.pilot.settings.personQuestions, 100); assert.equal(f.pilot.settings.dailyBudget, 0.5);
+});
+
+test('ordinary demo answers use low-effort Muse with sufficient output and model-specific prices', async t => {
+  const requests = [];
+  const f = await fixture(t, { env: { CHATBOT_DEMO_1_PASSWORD: 'test-only-demo-one-password',
+    CHATBOT_INPUT_USD_PER_MILLION: '0.15', CHATBOT_OUTPUT_USD_PER_MILLION: '0.50', CHATBOT_PRICE_SOURCE: 'Stale GLM setting' },
+    complete: async request => { requests.push(request); return answer(); } });
+  const { token } = await f.login('demo1', 'test-only-demo-one-password');
+  const chat = await f.newChat(token);
+  const response = await f.request(`/api/chat/${chat.id}/message`, { token, method: 'POST', body: { message: 'Summarize the supplied article.' } });
+  assert.equal(response.status, 200);
+  const body = await response.json();
+  assert.equal(requests[0].model, 'meta-models/Muse-Spark-Open-816B-A42B');
+  assert.equal(requests[0].max_tokens, 4096); assert.equal(requests[0].reasoning_effort, 'low'); assert.equal(requests[0].temperature, 1);
+  assert.equal(body.chat.messages.at(-1).modelTest, false);
+  assert.equal(body.chat.messages.at(-1).model, requests[0].model);
+  const [row] = await f.pilot.rows('owner');
+  assert.equal(row.input_rate, 1.25); assert.equal(row.output_rate, 4.25);
+  assert.ok(!row.price_source.includes('Stale GLM'));
+  assert.equal((await f.request('/api/usage', { token })).status, 403);
 });

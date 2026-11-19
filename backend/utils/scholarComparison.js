@@ -9,22 +9,23 @@ async function findComparisonSources(fetchArticles, query, selectedKeys) {
     const key = scholar.replace(/ /g, '_');
     const articles = await fetchArticles(key, query, 4);
     const authored = articles.filter(article => (article.authors || [article.author]).includes(scholar));
-    return { key, scholar, source: prepareSources(authored.slice(0, 1))[0] };
+    return { key, scholar, sources: prepareSources(authored.slice(0, 2)) };
   }));
-  return matches.map((group, index) => ({
-    ...group,
-    source: group.source ? { ...group.source, id: `S${index + 1}` } : null
-  }));
+  let nextId = 1;
+  return matches.map(group => {
+    const sources = group.sources.map(source => ({ ...source, id: `S${nextId++}` }));
+    return { ...group, sources, source: sources[0] || null };
+  });
 }
 
 function comparisonInstructions(groups) {
-  const eligible = groups.filter(group => group.source).map(group => `${group.key}=[${group.source.id}]`).join(', ');
-  return `Write only one line for each of these scholars: ${eligible}. Use the exact format COMPARE Scholar_Name | answer. Use only the source assigned to that scholar. Describe their argument and a tradeoff if the passage supports one. Avoid attributing a coauthor's view to one person. When evidence is limited, use COMPARE Scholar_Name | INSUFFICIENT_EVIDENCE.`;
+  const eligible = groups.filter(group => group.source).map(group => `${group.key}=${group.sources.map(source => `[${source.id}]`).join(" ")}`).join(', ');
+  return `Write only one line for each of these scholars: ${eligible}. Use the exact format COMPARE Scholar_Name | answer. Use only sources assigned to that scholar. Write two or three short sentences, at most 90 words per scholar. Describe the main argument, a supported tradeoff, and any material evidence limit. Do not write one long sentence joined by semicolons. Avoid attributing a coauthor's view to one person. When evidence is limited, use COMPARE Scholar_Name | INSUFFICIENT_EVIDENCE.`;
 }
 
 function parseComparison(content, groups) {
   const lines = content.split(/\r?\n/);
-  return groups.map(({ key, scholar, source }) => {
+  return groups.map(({ key, scholar, source, sources }) => {
     if (!source) return { scholar, content: NO_EVIDENCE, limited: true };
     const prefix = `COMPARE ${key} | `;
     const candidates = lines.map(line => line.trim()).filter(line => line.startsWith(prefix));
@@ -32,7 +33,7 @@ function parseComparison(content, groups) {
     if (!body || body === 'INSUFFICIENT_EVIDENCE') {
       return { scholar, content: LIMITED_EVIDENCE, limited: true, sourceId: source.id };
     }
-    const checked = checkCitations(body, [source]);
+    const checked = checkCitations(body, sources || [source]);
     return checked.citationNotice
       ? { scholar, content: LIMITED_EVIDENCE, limited: true, sourceId: source.id }
       : { scholar, content: checked.content, limited: false, sourceId: source.id };

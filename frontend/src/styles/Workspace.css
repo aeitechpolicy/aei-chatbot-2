@@ -726,3 +726,8 @@
   .article-mode-switch { grid-row: 3; }
   .legacy-workspace .pilot-header-actions { margin-left: 0; flex-wrap: wrap; }
 }
+
+/* Keep the copy action visible while a longer brief or source list scrolls. */
+.research-dialog.brief-dialog[open] { display: flex; flex-direction: column; overflow: hidden; }
+.brief-dialog .research-dialog-header, .brief-dialog .research-dialog-actions { flex: 0 0 auto; }
+.brief-dialog .brief-preview { min-height: 0; overflow-y: auto; }

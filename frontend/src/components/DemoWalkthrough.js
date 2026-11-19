@@ -23,7 +23,7 @@ const steps = [
   { title: 'Choose a mode', help: 'Select AEI Article Search. Article Chat answers from the Scholar Library; Compare Scholars supports selected-scholar comparisons; AEI + Web adds outside material.' },
   { title: 'Find an article', help: 'Search Greg Oslan. Live search also includes scholar filters, date ranges, and Newest first. Select results to copy a source list.' },
   { title: 'Open the citation', help: 'Select [S1] to read the supporting passage. Shane Tews is the author of this article; Greg Oslan is the guest speaking in the passage.' },
-  { title: 'Preview a research brief', help: 'Open the brief, review the findings and linked source, and copy the text if useful. It is made from the answer already on screen.' },
+  { title: 'Preview a research brief', help: 'Open the brief, review the findings and linked source, and copy the text if useful. It selects concise findings from the answer already on screen, including important qualifications.' },
   { title: 'Try AEI + Web', help: 'Select AEI + Web, then [W1]. This prepared comparison connects the AEI interview with NIST guidance. [S1] identifies AEI evidence; [W1] identifies an outside source.' },
   { title: 'Report a problem', help: 'Select Send to the team, choose a reason, and explain what needs correcting. This practice form sends nothing. In real use, staff receive the reported answer or source and the submitted explanation.' },
   { title: 'Compare selected scholars', help: 'Open Compare Scholars and select two to four names. Ask one question to compare perspectives side by side. The live answer uses only the selected scholars and flags limited evidence. This practice shows the controls, not generated findings.' }

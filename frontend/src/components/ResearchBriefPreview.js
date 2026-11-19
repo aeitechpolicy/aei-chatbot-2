@@ -15,7 +15,7 @@ export default function ResearchBriefPreview({ brief, onClose, onContinue }) {
     }
   }
 
-  return <ResearchDialog title="Research brief" onClose={onClose}>
+  return <ResearchDialog title="Research brief" onClose={onClose} className="brief-dialog">
     <article className="brief-preview">
       <h3>{brief.heading}</h3>
       <h4>Key findings</h4>

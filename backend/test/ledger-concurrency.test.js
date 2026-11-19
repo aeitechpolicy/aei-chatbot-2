@@ -7,7 +7,7 @@ const { createPilot } = require('../utils/pilot');
 
 test('separate ledger connections share the same pending budget reservations', async t => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-ledger-concurrency-'));
-  const env = { CHATBOT_INTERN_PASSWORD: 'test-only-long-password', CHATBOT_DAILY_ESTIMATE_USD: '0.003', CHATBOT_INPUT_USD_PER_MILLION: '1', CHATBOT_OUTPUT_USD_PER_MILLION: '1' };
+  const env = { CHATBOT_INTERN_PASSWORD: 'test-only-long-password', CHATBOT_DAILY_ESTIMATE_USD: '0.03', CHATBOT_INPUT_USD_PER_MILLION: '1', CHATBOT_OUTPUT_USD_PER_MILLION: '1' };
   const options = { env, now: () => Date.parse('2026-10-28T18:00:00Z'), dataDir: dir };
   const first = createPilot(options); const second = createPilot(options);
   t.after(async () => { await first.close(); await second.close(); fs.rmSync(dir, { recursive: true, force: true }); });
@@ -31,7 +31,7 @@ test('an unfinished request prevents another paid request in the same pilot', as
 test('Intern bypasses daily, minute and per-request caps while other accounts retain their shared allowance', async t => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'aei-intern-exemption-'));
   const pilot = createPilot({ env: { CHATBOT_INTERN_PASSWORD: 'test-only-long-password', CHATBOT_DAILY_QUESTIONS: '1',
-    CHATBOT_PERSON_DAILY_QUESTIONS: '1', CHATBOT_DAILY_ESTIMATE_USD: '0.003' }, dataDir: dir });
+    CHATBOT_PERSON_DAILY_QUESTIONS: '1', CHATBOT_DAILY_ESTIMATE_USD: '0.03' }, dataDir: dir });
   t.after(async () => { await pilot.close(); fs.rmSync(dir, { recursive: true, force: true }); });
   const messages = [{ role: 'user', content: 'A short question' }];
   for (let i = 0; i < 7; i++) {

@@ -117,7 +117,7 @@ const ChatInterface = ({
           const aiMessage = {
             role: 'assistant',
             content: result.response,
-            model: result.model,
+            model: result.model, modelTest: result.modelTest, coverageNotice: result.coverageNotice,
             truncated: result.truncated,
             sources: result.sources || [],
             citationNotice: result.citationNotice,
@@ -235,7 +235,7 @@ const ChatInterface = ({
         {!legacy && allowModelTest && <div className="intern-model-test">
           <label>Answer model <select aria-label="Answer model" value={testModel} disabled={composerDisabled}
             onChange={event => setTestModel(event.target.value)}>
-            <option value="">Current default</option>
+            <option value="">Meta Muse Spark Open · Default</option>
             <option value="meta-models/Muse-Spark-Open-816B-A42B">Meta Muse Spark Open · Test</option>
           </select></label>
           <p className="workspace-meta">Intern account · App-level question and spending caps disabled. Output allowance: 16,384 tokens. Usage and costs remain recorded.</p>

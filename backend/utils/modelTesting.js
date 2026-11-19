@@ -11,6 +11,7 @@ const TEST_MODELS = Object.freeze([
 
 // A single owner-only trial; ordinary accounts and the three-model tester keep
 // their existing defaults and limits.
+const TEST_OUTPUT_TOKENS = 1024;
 const INTERN_OUTPUT_TOKENS = 16384;
 const INTERN_TIMEOUT_MS = 120000;
 const MUSE_TEST_MODEL = Object.freeze({
@@ -38,4 +39,4 @@ function estimatedCost(usage, model) {
     ? (usage.prompt_tokens * model.inputRate + usage.completion_tokens * model.outputRate) / 1e6 : null;
 }
 
-module.exports = { TEST_MODELS, MUSE_TEST_MODEL, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost };
+module.exports = { TEST_MODELS, MUSE_TEST_MODEL, TEST_OUTPUT_TOKENS, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost };

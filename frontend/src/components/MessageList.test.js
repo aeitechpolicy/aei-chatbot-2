@@ -180,3 +180,11 @@ test('search preview shortening never leaves a partial speaker label', () => {
   const preview = container.querySelector('blockquote').textContent;
   expect(preview.replace(/\[Speaker: [^\]\n]+\]/g, '')).not.toMatch(/[\[\]]/);
 });
+
+test('ordinary Muse answers have no trial badge and disclose any selected-evidence gap', () => {
+  render(<MessageList loading={false} messages={[{ role: 'assistant', model: 'meta-models/Muse-Spark-Open-816B-A42B', modelTest: false,
+    content: 'A supported finding [S1].', coverageNotice: 'Selected evidence does not include a passage for Clay Calvert.',
+    sources: [{ id: 'S1', title: 'An article', excerpt: 'A supported finding.' }] }]} />);
+  expect(screen.queryByText('Meta Muse · Test')).not.toBeInTheDocument();
+  expect(screen.getByText(/Selected evidence does not include/)).toBeVisible();
+});
