@@ -3,6 +3,8 @@ import { ArrowRight, BookOpen, Columns2, FileText, Flag, Newspaper, Search } fro
 import ResearchDialog from './ResearchDialog';
 
 const updates = [
+  { icon: Search, title: 'Choose the next research direction', text: 'Stay in the four-scholar library, explore other AEI perspectives online, or add wider-web context. Review the question before sending.' },
+  { icon: BookOpen, title: 'Follow a topic privately', text: 'Save a chat to Topic inbox. At sign-in, due topics are checked at most once in 24 hours. Choose a source scope before discussing an update.' },
   {
     icon: Search,
     title: 'Find articles and build a source list',

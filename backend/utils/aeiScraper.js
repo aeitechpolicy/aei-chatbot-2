@@ -6,8 +6,8 @@ function scoreRelevance(article, query) {
   const present = new Set(tokens(`${article.title || ''} ${article.body || ''}`));
   return queryTerms(query).filter(term => present.has(term)).length;
 }
-async function fetchRelevantArticles(domainName, query, maxResults = 6) {
-  const result = await articleSearch.search({ query, scholar: domainName, limit: maxResults, fullTextOnly: true });
+async function fetchRelevantArticles(domainName, query, maxResults = 6, options = {}) {
+  const result = await articleSearch.search({ query, scholar: domainName, limit: maxResults, fullTextOnly: true, contextTerms: options.contextTerms });
   return result.articles.map(article => ({ ...article, selectionMode: result.mode }));
 }
 module.exports = { fetchRelevantArticles, domainToScholarName, scoreRelevance };

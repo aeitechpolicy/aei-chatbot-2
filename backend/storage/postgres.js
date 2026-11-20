@@ -2,6 +2,10 @@ const crypto = require('node:crypto');
 
 const SCHEMA = [
   'SELECT pg_advisory_xact_lock(1470293340)',
+  `CREATE TABLE IF NOT EXISTS aei_pilot_private_items (
+    user_id TEXT NOT NULL, kind TEXT NOT NULL, id TEXT NOT NULL, payload JSONB NOT NULL,
+    PRIMARY KEY(user_id,kind,id)
+  )`,
   `CREATE TABLE IF NOT EXISTS aei_pilot_usage (
     id TEXT PRIMARY KEY, started_at TIMESTAMPTZ NOT NULL, user_id TEXT NOT NULL,
     model TEXT NOT NULL, status TEXT NOT NULL, reserved_usd DOUBLE PRECISION NOT NULL,
@@ -164,6 +168,27 @@ class PostgresStorage {
     return rows.map(normalizeRow);
   }
 
+  async privateItems(userId,kind) {
+    return (await this.query('SELECT id,payload FROM aei_pilot_private_items WHERE user_id=$1 AND kind=$2 ORDER BY id',[userId,kind])).map(row=>({id:row.id,...row.payload}));
+  }
+  async savePrivateItem(userId,kind,id,payload) {
+    await this.query(`INSERT INTO aei_pilot_private_items VALUES($1,$2,$3,$4::jsonb)
+      ON CONFLICT(user_id,kind,id) DO UPDATE SET payload=excluded.payload`,[userId,kind,id,JSON.stringify(payload)]);
+  }
+  async deletePrivateItem(userId,kind,id) {
+    await this.query('DELETE FROM aei_pilot_private_items WHERE user_id=$1 AND kind=$2 AND id=$3',[userId,kind,id]);
+  }
+  async claimTopicCheck(userId,id,at) {
+    return (await this.query(`UPDATE aei_pilot_private_items SET payload=jsonb_set(payload,'{lastAttemptAt}',to_jsonb($3::text))
+      WHERE user_id=$1 AND kind='follow' AND id=$2 AND (payload->>'lastAttemptAt' IS NULL OR payload->>'lastAttemptAt'<=$4) RETURNING id`,
+      [userId,id,at,new Date(Date.parse(at)-86400000).toISOString()])).length>0;
+  }
+  async finishTopicCheck(userId,id,at,payload) {
+    await this.query(`UPDATE aei_pilot_private_items SET payload=$4::jsonb || jsonb_strip_nulls(jsonb_build_object('readAt',payload->'readAt')) WHERE user_id=$1 AND kind='follow' AND id=$2 AND payload->>'lastAttemptAt'=$3`,[userId,id,at,JSON.stringify(payload)]);
+  }
+  async patchPrivateItem(userId,kind,id,patch) {
+    await this.query('UPDATE aei_pilot_private_items SET payload=payload || $4::jsonb WHERE user_id=$1 AND kind=$2 AND id=$3',[userId,kind,id,JSON.stringify(patch)]);
+  }
   async close() { /* The HTTP driver has no background connection pool. */ }
 }
 

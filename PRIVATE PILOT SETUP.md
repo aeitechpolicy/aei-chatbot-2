@@ -1,5 +1,17 @@
 # Publish the complete demo update
 
+## Research workflow and topic inbox — November 19, 2026
+
+Deploy both backend and frontend from the same merged update. Keep the existing DATABASE_URL, Together key and web-search key in the deployment settings. No new secret, account or hosting service is required. The database initializer creates aei_pilot_private_items on first use; app database credentials must retain their existing table/function creation permissions.
+
+After an answer, select Follow this topic and choose Scholar Library, AEI online or Wider web. Updates stay with that account. At sign-in the app checks due topics: the backend enforces at least 24 hours since the prior attempt, including unsuccessful attempts. Repeated sign-ins, refreshes and other devices share the same lease. Check for updates uses that same rule; it cannot force extra calls during the waiting period. No job runs while signed out. Online checks consume the existing search service's basic-search credits; update collection does not call Together. The model's existing caps and spending report do not include that separate search allowance. Up to ten followed topics are supported per account.
+
+The first check records current matching items. Later checks keep unseen links; neither implies a complete news feed or verifies a publication's event date. Search snippets are brief and may be incomplete. Library checks do not refresh saved files or resolve the separate AEI feed-access blocker. If the provider is unavailable, the inbox retains saved results and displays an error. Stop following removes that topic and its saved updates. Discuss in chat first asks which source scope to use and only prepares the next question; Send performs the subsequent chat request.
+
+Intern and RA see a report-count badge. Open Feedback inbox and explicitly mark a report read to clear its indicator for that staff account. Ordinary private conversations are not copied into this inbox; only user-submitted reports are shared. Demo users have no feedback-inbox, file, price, usage or token controls.
+
+The sun/moon toggles appearance, saved on that device. Latest updates provides a short release walkthrough; How to use opens all nine guided-practice steps. Demo users retain the welcome → before/after → guided-practice sequence at sign-in. New release notes appear afterward when unseen. To announce a later release, change the releaseKey suffix in App.js and revise RecentUpdates.js. Demo content must be original, based on public material, and must never reproduce confidential user conversations or screenshots.
+
 ## Final rehearsal attribution corrections — November 18, 2026
 
 Cross-scholar chat retrieval now prioritizes each scholar’s bylined non-interview work before falling back to interview material. A podcast host or a collection label is not counted as an authored argument. The prompt receives explicit per-scholar authored source IDs and requests one short finding per requested scholar; missing authored evidence is disclosed. Generic wording such as “without” no longer changes the topic ranking. Known untagged historical interview records may still need metadata repair; byline/type checks are not semantic proof of every statement’s attribution.

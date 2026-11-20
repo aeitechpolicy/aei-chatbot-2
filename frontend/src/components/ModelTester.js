@@ -130,7 +130,7 @@ export default function ModelTester({ session }) {
         </div>}
         <form className="model-test-form" onSubmit={send}>
           <label htmlFor="model-test-question">Question for the selected models</label>
-          <textarea id="model-test-question" value={question} maxLength={6000} rows={3} disabled={busy || opening} onChange={event => setQuestion(event.target.value)} placeholder="What has Shane Tews written about spectrum allocation and sharing?" />
+          <textarea id="model-test-question" value={question} maxLength={6000} rows={3} disabled={busy || opening} onChange={event => setQuestion(event.target.value)} placeholder="Compare the supplied publications on rural connectivity." />
           {view === 'web' && <p className="model-test-note">Experimental: the question is also sent to web search. Web results are fetched once and shared by all selected models.</p>}
           {view === 'web' && config && !config.webSearch && <p role="alert">Web search is not connected yet. Article Chat and AEI Article Search are available.</p>}
           <button className="pilot-primary" type="submit" disabled={busy || opening || !config || !question.trim() || !modelIds.length || (view === 'web' && !config.webSearch)}>

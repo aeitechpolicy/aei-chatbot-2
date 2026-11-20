@@ -15,7 +15,7 @@ test('Intern can select one Muse trial without changing the default or compariso
   expect(screen.getByText(/Intern-only trial/)).toHaveTextContent('Low processing effort');
   fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Summarize the article.' } });
   await act(async () => { fireEvent.click(screen.getByRole('button', { name: 'Send message' })); });
-  expect(send).toHaveBeenCalledWith('Summarize the article.', 'archive', { modelId: 'meta-models/Muse-Spark-Open-816B-A42B' });
+  expect(send).toHaveBeenCalledWith('Summarize the article.', 'archive', { interactive:true, modelId: 'meta-models/Muse-Spark-Open-816B-A42B' });
 });
 
 test('ordinary accounts have no model trial control', () => {
@@ -36,7 +36,7 @@ test('comparison picker sends only selected scholars and prevents a one-scholar 
   expect(send).not.toHaveBeenCalled();
   fireEvent.click(within(picker).getByRole('button', { name: 'Shane Tews' }));
   await act(async () => { fireEvent.click(screen.getByRole('button', { name: 'Send message' })); });
-  expect(send).toHaveBeenCalledWith('How do they approach regulation?', 'compare', { comparisonScholars: ['Clay_Calvert', 'Shane_Tews'] });
+  expect(send).toHaveBeenCalledWith('How do they approach regulation?', 'compare', { interactive:true, comparisonScholars: ['Clay_Calvert', 'Shane_Tews'] });
 });
 
 test('guided demo includes a selectable comparison category and a seventh tour step', () => {

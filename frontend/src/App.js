@@ -14,14 +14,32 @@ import LegacyFrame from './components/LegacyFrame';
 import LegacyFiles from './components/LegacyFiles';
 import LegacySidebar from './components/LegacySidebar';
 import { isDemoAccount } from './utils/accounts';
-import { CircleHelp, Sparkles } from 'lucide-react';
+import TopicInbox from './components/TopicInbox';
+import RecentUpdates from './components/RecentUpdates';
+import { CircleHelp, Sparkles, Sun, Moon, Bell } from 'lucide-react';
 import { API_BASE_URL, apiFetch, chatEndpoint, getSession, setSession, signOut } from './utils/api';
 import './styles/App.css';
 import './styles/Workspace.css';
 
 function PrivateApp({ session }) {
   const isDemo = isDemoAccount(session.user.id);
-  const [guide, setGuide] = useState(isDemo ? 'whats-new' : null);
+  const releaseKey=`aei-updates-${session.user.id}-research-flow-20261119`;
+  const unseenRelease=()=>{try{return window.localStorage.getItem(releaseKey)!=='seen';}catch{return true;}};
+  const [guide, setGuide] = useState(isDemo ? 'whats-new' : unseenRelease() ? 'recent' : null);
+  const [hasNewUpdates,setHasNewUpdates]=useState(unseenRelease);
+  const [theme,setTheme]=useState(()=>{try{return window.localStorage.getItem('aei-theme')==='dark'?'dark':'light';}catch{return 'light';}});
+  const [webScope,setWebScope]=useState('web');
+  const [feedbackUnread,setFeedbackUnread]=useState(0);
+  const [topics,setTopics]=useState([]);
+  const [checkingTopics,setCheckingTopics]=useState(false);
+  const [topicError,setTopicError]=useState('');
+  useEffect(()=>{document.body.dataset.theme=theme;try{window.localStorage.setItem('aei-theme',theme);}catch{}},[theme]);
+  async function loadTopics(){try{const response=await apiFetch(`${API_BASE_URL}/api/inbox`);if(response.ok)setTopics((await response.json()).topics||[]);}catch{}}
+  async function checkTopics(){setCheckingTopics(true);setTopicError('');try{const response=await apiFetch(`${API_BASE_URL}/api/inbox/check`,{method:'POST'});if(!response.ok)throw new Error();setTopics((await response.json()).topics||[]);}catch{setTopicError('Topic updates could not be checked. Saved updates remain available.');}finally{setCheckingTopics(false);}}
+  async function loadFeedbackStatus(){if(isDemo)return;try{const response=await apiFetch(`${API_BASE_URL}/api/feedback/status`);if(response.ok)setFeedbackUnread((await response.json()).unread||0);}catch{}}
+  useEffect(()=>{checkTopics();},[]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(()=>{if(isDemo)return undefined;loadFeedbackStatus();const timer=setInterval(loadFeedbackStatus,45000);window.addEventListener('focus',loadFeedbackStatus);return()=>{clearInterval(timer);window.removeEventListener('focus',loadFeedbackStatus);};},[]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const [currentView, setCurrentView] = useState('chat');
   const [demoVersion, setDemoVersion] = useState(2);
   const legacy = isDemo && demoVersion === 1;
@@ -109,7 +127,8 @@ function PrivateApp({ session }) {
     setCurrentView(view => view === 'compare' && chats.find(chat => chat.id === chatId)?.domainName !== 'General' ? 'chat' : ['web', 'compare'].includes(view) ? view : 'chat');
   };
 
-  const finishGuide = (next = null) => setGuide(next);
+  const finishGuide = (next = null) => setGuide(!next && hasNewUpdates ? 'recent' : next);
+  const finishRecent = () => {try{window.localStorage.setItem(releaseKey,'seen');}catch{}setHasNewUpdates(false);setGuide(null);};
 
   const handleDeleteChat = async (chatId) => {
     if (loading) return;
@@ -233,6 +252,7 @@ function PrivateApp({ session }) {
       </nav>;
 
   const guideDialog = <>
+    {guide === 'recent' && <RecentUpdates onClose={finishRecent} onTour={()=>{finishRecent();setGuide('tour');}} />}
     {guide === 'whats-new' && <WhatsNew onClose={() => { if (legacy) selectDemoVersion(2); finishGuide('comparison'); }}
       onContinue={() => { if (legacy) selectDemoVersion(2); finishGuide('comparison'); }} />}
     {guide === 'comparison' && <InterfaceChanges onClose={() => finishGuide('tour')} onStartTour={() => finishGuide('tour')}
@@ -248,7 +268,7 @@ function PrivateApp({ session }) {
     onSelectChat: handleSelectChat, onDeleteChat: handleDeleteChat, onCollapse: handleSidebarCollapse,
   };
 
-  const chat = <ChatInterface key={chatDraft.version} active={chatView} web={currentView === 'web'} comparisonMode={currentView === 'compare'}
+  const chat = <ChatInterface webScope={webScope} onTopicSaved={loadTopics} onModeChoice={scope=>{if(loading)return;setCurrentView(scope==='library'?'chat':'web');if(scope!=='library')setWebScope(scope);}} key={chatDraft.version} active={chatView} web={currentView === 'web'} comparisonMode={currentView === 'compare'}
     legacy={legacy} hideUsage={isDemo} allowModelTest={session.user.id === 'owner'} chatId={currentChatId} initialQuestion={chatDraft.question}
     draftScope={chatScope} onScopeChange={setChatScope} loading={loading} onSendMessage={handleSendMessage} />;
 
@@ -310,6 +330,9 @@ function PrivateApp({ session }) {
             <button type="button" aria-pressed={currentView === 'web'} onClick={() => setCurrentView('web')}>AEI + Web</button>
           </nav>
           <div className="pilot-header-actions"><span>{session.user.label}</span>
+            <button type="button" className="theme-toggle" aria-label={theme==='light'?'Switch to dark mode':'Switch to light mode'} onClick={()=>setTheme(value=>value==='light'?'dark':'light')}>{theme==='light'?<Moon size={18}/>:<Sun size={18}/>}</button>
+            <button type="button" onClick={()=>setGuide('recent')}>Latest updates{hasNewUpdates&&<span className="notification-dot" aria-label="New features" />}</button>
+            <button type="button" onClick={()=>setCurrentView('topics')}><Bell size={16} aria-hidden="true" />Topic inbox{topics.some(topic=>topic.updates?.some(update=>!topic.readAt||update.foundAt>topic.readAt))&&<span className="notification-dot" aria-label="Unread topic updates" />}</button>
             {isDemo && <>
               <button className="walkthrough-trigger" type="button" onClick={() => setGuide('whats-new')}>
                 <Sparkles size={16} aria-hidden="true" /> What’s new
@@ -318,7 +341,7 @@ function PrivateApp({ session }) {
             <button type="button" onClick={() => setGuide('tour')}>
               <CircleHelp size={16} aria-hidden="true" className="walkthrough-help-icon" /> How to use
             </button>
-            {!isDemo && <button onClick={() => setCurrentView('feedback')}>Feedback inbox</button>}
+            {!isDemo && <button onClick={() => setCurrentView('feedback')}>Feedback inbox{feedbackUnread>0&&<span className="notification-count" aria-label={`${feedbackUnread} unread reports`}>{feedbackUnread}</span>}</button>}
             {!isDemo && <button onClick={() => setCurrentView('usage')}>Usage and costs</button>}
             <button onClick={() => { signOut().catch(() => {}); }}>Sign out</button>
           </div>
@@ -345,7 +368,8 @@ function PrivateApp({ session }) {
           <ArticleSearch showFileCounts={!isDemo} showRefreshDetails={session.user.id === 'owner'} active={currentView === 'research'} />
         </div>
         {currentView === 'usage' && <UsageReport />}
-        {!isDemo && currentView === 'feedback' && <FeedbackInbox />}
+        {!isDemo && currentView === 'feedback' && <FeedbackInbox onRead={loadFeedbackStatus} />}
+        {currentView === 'topics' && <div className="workspace-panel">{topicError&&<p role="alert">{topicError}</p>}<TopicInbox topics={topics} onRefresh={loadTopics} onCheck={checkTopics} checking={checkingTopics} onOpen={(item,update,scope)=>{if(loading)return;setCurrentChatId(item.chatId);setChatScope('General');setWebScope(scope==='library'?'web':scope);setCurrentView(scope==='library'?'chat':'web');setChatDraft(draft=>({version:draft.version+1,question:`How does “${update.title}” relate to ${item.topic}?`}));}} /></div>}
         {currentView === 'files' && (
           <FileManager
             domains={domains}

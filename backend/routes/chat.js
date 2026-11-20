@@ -11,6 +11,7 @@ const { findComparisonSources, comparisonInstructions, parseComparison } = requi
 const { providerErrorDetails, completionDetails, emptyAnswerError, usageFailureCode } = require('../utils/providerError');
 const { TEST_MODELS, MUSE_TEST_MODEL, TEST_OUTPUT_TOKENS, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost } = require('../utils/modelTesting');
 const { ANSWER_REASONS, SOURCE_REASONS, FEEDBACK_ERROR, readFeedback, sourceSnapshot } = require('../utils/feedback');
+const { resolveQuestion, clarificationFor } = require('../utils/questionContext');
 
 function createChatRouter({ pilot, complete, manager, fetchArticles = fetchRelevantArticles, fetchArchivedArticles = fetchLegacyArticles, searchWeb, now = Date.now }) {
 const router = express.Router();
@@ -211,21 +212,32 @@ router.post('/:chatId/message', async (req, res) => {
     const userMessage = { role: 'user', content: message };
     const needsTitle = chat.title === 'New Chat';
     const previousQuestions = chat.messages.slice(-6).filter(({ role }) => role === 'user');
-    const lastQuestion = previousQuestions.at(-1)?.content;
-    const retrievalQuery = lastQuestion && queryTerms(message).length < 2 &&
-      /^(?:what about\b|and\b|why\b|how so\b|tell (?:me )?more\b|what else\b)|\b(?:that|those|this|these|they|their|them|it)\b/i.test(message) &&
-      !/\b(themes?|overview|focus)\b/i.test(message)
-      ? `${lastQuestion} ${message}` : message;
-    const webPlan = web ? planWebSearch(message, now()) : null;
+    if (req.body.webScope !== undefined && !['aei','web'].includes(req.body.webScope)) return res.status(400).json({error:'Choose AEI online or the wider web.'});
+    const webScope = req.body.webScope === 'aei' ? 'aei' : 'web';
+    const expansion = web && webScope === 'aei' && /^Find other AEI perspectives on this question:\s*/i.test(message);
+    const question = expansion ? message.replace(/^Find other AEI perspectives on this question:\s*/i,'') : message;
+    const resolved = resolveQuestion(question, chat.messages);
+    const retrievalQuery = resolved.query;
+    const onlineQuestion = retrievalQuery;
+    const webPlan = web ? { ...planWebSearch(onlineQuestion, now()), scope: webScope,
+      ...(expansion ? {query:queryTerms(onlineQuestion).join(' ')||onlineQuestion} : {}) } : null;
     const libraryQuery = web ? searchTopic(retrievalQuery) : retrievalQuery;
     let articles = [];
     let groups;
     try {
       if (legacy) articles = await fetchArchivedArticles(chat.domainName, message);
       else if (compare) groups = await findComparisonSources(fetchArticles, retrievalQuery, comparisonScholars);
-      else articles = await fetchArticles(chat.domainName, libraryQuery, web ? 3 : 6);
+      else articles = await fetchArticles(chat.domainName, libraryQuery, web ? 3 : 6, { contextTerms: resolved.anchors });
     } catch {
       return res.status(503).json({ error: 'The AEI Scholar Library could not be searched. Please try again shortly.', code: 'archive_unavailable' });
+    }
+    const clarification = !legacy && !web && !compare && req.body.interactive === true && req.body.clarified !== true
+      ? clarificationFor(message, articles, Boolean(resolved.anchors.length)) : null;
+    if (clarification) {
+      const reply = { role:'assistant', content:clarification.question, clarification, sources:[], searchMode:'clarification' };
+      await chatManager.addMessage(chatId,userMessage);
+      await chatManager.addMessage(chatId,reply,needsTitle ? fallbackChatTitle(message) : null);
+      return res.json({response:reply.content,clarification,aiUsed:false,chat:await chatManager.getChatWithUserCheck(chatId,getUserId(req)),chatId});
     }
     const archiveSources = legacy
       ? articles.map(article => `${article.title || 'Untitled'} (${article.date || 'Unknown date'}) - ${article.url || 'URL unavailable'}`)
@@ -253,7 +265,8 @@ router.post('/:chatId/message', async (req, res) => {
         { role: 'system', content: researchPrompt(chat.domainName, sources, articles.some(article => article.selectionMode === 'overview'), needsTitle, {
           web,
           webPlan,
-          shortTopic: !compare && message.trim().split(/\s+/).length <= 4 && !/[?？]/.test(message),
+          webScope: web ? webScope : null,
+          shortTopic: !web && !compare && message.trim().split(/\s+/).length <= 4 && !/[?？]/.test(message),
           currentDate: webPlan?.currentDate || new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now()),
           scholarCoverage: !legacy && !compare ? scholarCoverageFor(chat.domainName, retrievalQuery, sources) : [],
           comparison: compare ? comparisonInstructions(groups) : null,
@@ -275,7 +288,7 @@ router.post('/:chatId/message', async (req, res) => {
     else usageId = await pilot.begin(req.auth.id, reservedMessages);
     if (web) {
       let webSources;
-      try { webSources = prepareWebSources(await searchWeb(message, webPlan), webPlan); }
+      try { webSources = prepareWebSources(await searchWeb(retrievalQuery, webPlan), webPlan); }
       catch { throw Object.assign(new Error('Experimental web search could not retrieve sources. Try Article Chat or try again shortly.'), { status: 502, code: 'web_unavailable' }); }
       if (!webSources.length && webPlan.window) {
         const unused = usageId ? [usageId] : [...pendingComparisons];
@@ -383,6 +396,7 @@ router.post('/:chatId/message', async (req, res) => {
       ...checkedAnswer,
       sources,
       searchMode: legacy ? 'legacy' : mode,
+      ...(web ? { webScope } : {}),
       ...(comparison ? { comparison } : {}),
       ...(hasAnswer && followUps.length ? { followUps } : {})
     };
@@ -398,6 +412,7 @@ router.post('/:chatId/message', async (req, res) => {
       model: aiResponse.model, modelTest: aiResponse.modelTest, coverageNotice: aiResponse.coverageNotice,
       sources,
       comparison: aiResponse.comparison,
+      webScope: aiResponse.webScope,
       followUps: aiResponse.followUps,
       searchMode: aiResponse.searchMode,
       citationNotice: aiResponse.citationNotice,

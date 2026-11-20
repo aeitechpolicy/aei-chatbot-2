@@ -475,3 +475,9 @@ test('comparison drops duplicate citation tails while retaining new or unknown s
   assert.equal(parseComparison('COMPARE Shane_Tews | A policy argument [S1]. [S1]', groups)[0].content, 'A policy argument [S1].');
   assert.equal(parseComparison('COMPARE Shane_Tews | A policy argument [S1]. [S99]', groups)[0].limited, true);
 });
+
+test('a contextual follow-up excludes evidence that lacks the earlier policy topic',async t=>{
+ const {engine}=await archive(t,[{...entries[0],title:'Broadband and rural clinics',body:'Broadband projects affect remote clinics by changing connectivity and service delivery.'},{...entries[1],title:'Remote clinic staffing',body:'Remote clinics need staffing and flexible work schedules.'}]);
+ const result=await engine.search({query:'Which barriers slow rural broadband projects? What might that mean for remote clinics?',fullTextOnly:true,contextTerms:['broadband','project']});
+ assert.deepEqual(result.articles.map(x=>x.title),['Broadband and rural clinics']);
+});

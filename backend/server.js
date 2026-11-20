@@ -6,6 +6,8 @@ const { togetherCompletion } = require('./utils/togetherCompletion');
 const { createPilot } = require('./utils/pilot');
 const createChatRouter = require('./routes/chat');
 const createResearchRouter = require('./routes/research');
+const createInboxRouter = require('./routes/inbox');
+const ChatManager = require('./utils/chatManager');
 const { createWebSearch } = require('./utils/webSearch');
 
 function createApp(options = {}) {
@@ -48,9 +50,17 @@ app.get('/api/feedback', requireStaffView, async (req, res, next) => {
   if (!pilot.settings.storageConfigured) {
     return res.status(503).json({ error: 'The team inbox is unavailable until persistent storage is connected.' });
   }
-  try { return res.json({ reports: await pilot.feedbackReports() }); }
+  try { const read=new Set((await pilot.privateItems(req.auth.id,'feedback-read')).map(x=>x.id));return res.json({ reports: (await pilot.feedbackReports()).map(report=>({...report,read:read.has(report.id)})) }); }
   catch (error) { return next(error); }
 });
+app.get('/api/feedback/status',requireStaffView,async(req,res,next)=>{try{
+  const read=new Set((await pilot.privateItems(req.auth.id,'feedback-read')).map(x=>x.id));
+  res.json({unread:(await pilot.feedbackReports()).filter(item=>!read.has(item.id)).length});
+}catch(e){next(e);}});
+app.post('/api/feedback/:id/read',requireStaffView,async(req,res,next)=>{try{
+  if(!(await pilot.feedbackReports()).some(item=>item.id===req.params.id)) return res.status(404).json({error:'Report not found.'});
+  await pilot.savePrivateItem(req.auth.id,'feedback-read',req.params.id,{readAt:new Date().toISOString()});res.json({read:true});
+}catch(e){next(e);}});
 app.get('/api/usage', (req, res, next) => req.auth.id === 'tester' ? next() : requireStaffView(req, res, next), async (req, res, next) => {
   try { res.json({ rows: await pilot.rows(req.auth.id), settings: pilot.settings }); }
   catch (error) { next(error); }
@@ -73,6 +83,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 // Routes
 app.use('/api/research', createResearchRouter({ ...options.researchDependencies, pilot }));
 const searchWeb = (env.TOGETHER_API_KEY || options.complete) ? createWebSearch(env.TAVILY_API_KEY) : null;
+app.use('/api/inbox',createInboxRouter({pilot,manager:options.chatDependencies?.manager||pilot.chatManager||new ChatManager(path.join(pilot.dataDir,'chats')),searchWeb:options.chatDependencies?.searchWeb||searchWeb,...options.inboxDependencies}));
 app.use('/api/chat', createChatRouter({ pilot, complete, searchWeb, ...options.chatDependencies }));
 app.use('/api/files', options.fileRoutes || require('./routes/files'));
 

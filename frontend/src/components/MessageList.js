@@ -1,3 +1,4 @@
+import { ClarificationChoices } from './ResearchFlow';
 import InterviewDetails from './InterviewDetails';
 import React, { useEffect, useId, useRef, useState } from 'react';
 import { User, Bot, BookOpen, ChevronDown, FileText, Flag, X, ArrowUpRight } from 'lucide-react';
@@ -54,7 +55,7 @@ function CitationPassage({ source, onClose }) {
   </aside>;
 }
 
-function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFollowUps }) {
+function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFollowUps, onClarify }) {
   const [selected, setSelected] = useState(null);
   const opener = useRef(null);
   const [briefOpen, setBriefOpen] = useState(false);
@@ -82,8 +83,9 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
       <div className="message-icon">{isUser ? <User size={20} /> : <Bot size={20} />}</div>
       <div className="message-role">{isUser ? 'Question' : 'Assistant'}</div>
       {!isUser && message.model === 'meta-models/Muse-Spark-Open-816B-A42B' && message.modelTest !== false && <span className="answer-mode-label">Meta Muse · Test</span>}
-      {experimental && <span className="answer-mode-label">AEI + Web</span>}
+      {experimental && <span className="answer-mode-label">{message.webScope==='aei'?'AEI online':'AEI + Web'}</span>}
     </div>
+    {experimental && <p className="answer-source-note">{message.webScope==='aei'?'Online AEI excerpts, including material outside the four-scholar library.':'Online search excerpts and library passages are labeled separately. Online excerpts may be incomplete.'}</p>}
     {experimental && !sources.some(source => source?.id?.startsWith('S')) && <p className="answer-source-note">The web search returned results. The AEI Scholar Library has no matching passages for this question.</p>}
     {message.coverageNotice && <p className="answer-source-note">{message.coverageNotice}</p>}
     <div className={`message-evidence-layout ${selected ? 'has-passage' : ''}`}>
@@ -108,6 +110,7 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
       </div>
       {selected && <CitationPassage source={selected} onClose={closeSource} />}
     </div>
+    {!isUser && message.clarification && onClarify && <ClarificationChoices clarification={message.clarification} onChoose={question=>onClarify(question)} onCustom={question=>onClarify(question)} />}
     {message.truncated && <p className="citation-notice citation-review-note" role="note">The output limit was reached. The response may be incomplete.</p>}
     {!sourceOnly && message.citationNotice && <p className={`citation-notice ${message.citationNotice.startsWith('Some passages were omitted') ? 'citation-review-note' : ''}`} role="note">{message.citationNotice.startsWith('Some passages were omitted')
       ? 'This answer was shortened after a source-reference or quotation check. Related passages remain available in the sources.'
@@ -135,18 +138,18 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
     {brief && briefOpen && <ResearchBriefPreview brief={brief} onClose={() => setBriefOpen(false)} />}
     {canReport && feedbackOpen && <FeedbackDialog chatId={chatId} messageIndex={messageIndex} answer={message.content}
       sent={feedbackSent} onSent={() => setFeedbackSent(true)} onClose={() => setFeedbackOpen(false)} />}
-    {showFollowUps && message.followUps?.length > 0 && <div className="message-follow-ups" aria-label="Suggested follow-up questions">
+    {showFollowUps && message.followUps?.length > 0 && <div className="message-follow-ups" aria-label="Suggested follow-up questions"><h3>Explore next</h3><p>Choose a question to place it in the message box.</p>
       {message.followUps.map(question => <button type="button" key={question} onClick={() => onFollowUp(question)}>{question}</button>)}
     </div>}
   </div>;
 }
 
-export default function MessageList({ messages, loading, title, chatId, onFollowUp }) {
+export default function MessageList({ messages, loading, title, chatId, onFollowUp, onClarify }) {
   const messagesEndRef = useRef(null);
   useEffect(() => { messagesEndRef.current?.scrollIntoView?.({ behavior: 'smooth' }); }, [messages, loading]);
   return <div className="messages-list">
     {messages.map((message, index) => <ChatMessage key={index} message={message} title={title} chatId={chatId} messageIndex={index}
-      onFollowUp={onFollowUp} showFollowUps={Boolean(onFollowUp && !loading && index === messages.length - 1)} />)}
+      onFollowUp={onFollowUp} onClarify={!loading && index === messages.length - 1 ? onClarify : undefined} showFollowUps={Boolean(onFollowUp && !loading && index === messages.length - 1)} />)}
     {loading && <div className="message assistant">
       <div className="message-header"><div className="message-icon"><Bot size={20} /></div><div className="message-role">Assistant</div></div>
       <div className="message-content" role="status" aria-label="Preparing answer"><div className="typing-indicator"><span /><span /><span /></div></div>

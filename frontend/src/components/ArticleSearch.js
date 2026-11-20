@@ -115,7 +115,7 @@ export default function ArticleSearch({ showFileCounts = true, showRefreshDetail
     <LibraryDates status={libraryStatus} showRefreshDetails={showRefreshDetails} />
     <form className="research-search-form" onSubmit={search}>
       <div className="workspace-composer">
-        <input id="research-query" aria-label="Topic or research question" value={query} onChange={e => setQuery(e.target.value)} maxLength={6000} placeholder="Try spectrum sharing or age verification" required disabled={loading} />
+        <input id="research-query" aria-label="Topic or research question" value={query} onChange={e => setQuery(e.target.value)} maxLength={6000} placeholder="Try rural broadband or occupational licensing" required disabled={loading} />
         <button type="submit" className="send-button" aria-label="Search saved articles" title="Search saved articles" disabled={loading || !query.trim() || rangeError}><Search size={18} /></button>
       </div>
       <div className="research-controls">
