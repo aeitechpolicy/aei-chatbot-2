@@ -178,13 +178,16 @@ class PostgresStorage {
   async deletePrivateItem(userId,kind,id) {
     await this.query('DELETE FROM aei_pilot_private_items WHERE user_id=$1 AND kind=$2 AND id=$3',[userId,kind,id]);
   }
-  async claimTopicCheck(userId,id,at) {
-    return (await this.query(`UPDATE aei_pilot_private_items SET payload=jsonb_set(payload,'{lastAttemptAt}',to_jsonb($3::text))
-      WHERE user_id=$1 AND kind='follow' AND id=$2 AND (payload->>'lastAttemptAt' IS NULL OR payload->>'lastAttemptAt'<=$4) RETURNING id`,
-      [userId,id,at,new Date(Date.parse(at)-86400000).toISOString()])).length>0;
+  async claimTopicCheck(userId,id,at,manual=false) {
+    return (await this.query(`UPDATE aei_pilot_private_items SET payload=payload || jsonb_build_object('lastAttemptAt',$3::text,'checkStartedAt',$3::text)
+      WHERE user_id=$1 AND kind='follow' AND id=$2
+      AND (payload->>'checkStartedAt' IS NULL OR payload->>'checkStartedAt'<=$6)
+      AND ($5::boolean OR payload->>'lastAttemptAt' IS NULL OR payload->>'lastAttemptAt'<=$4) RETURNING id`,
+      [userId,id,at,new Date(Date.parse(at)-86400000).toISOString(),manual,new Date(Date.parse(at)-120000).toISOString()])).length>0;
   }
   async finishTopicCheck(userId,id,at,payload) {
-    await this.query(`UPDATE aei_pilot_private_items SET payload=$4::jsonb || jsonb_strip_nulls(jsonb_build_object('readAt',payload->'readAt')) WHERE user_id=$1 AND kind='follow' AND id=$2 AND payload->>'lastAttemptAt'=$3`,[userId,id,at,JSON.stringify(payload)]);
+    await this.query(`UPDATE aei_pilot_private_items SET payload=$4::jsonb || jsonb_strip_nulls(jsonb_build_object('readAt',payload->'readAt')) || jsonb_build_object('checkStartedAt',NULL)
+      WHERE user_id=$1 AND kind='follow' AND id=$2 AND payload->>'checkStartedAt'=$3`,[userId,id,at,JSON.stringify(payload)]);
   }
   async patchPrivateItem(userId,kind,id,patch) {
     await this.query('UPDATE aei_pilot_private_items SET payload=payload || $4::jsonb WHERE user_id=$1 AND kind=$2 AND id=$3',[userId,kind,id,JSON.stringify(patch)]);

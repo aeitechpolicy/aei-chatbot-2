@@ -1,5 +1,12 @@
 # AEI research chatbot
 
+## Online research and guide refinements — November 19, 2026
+
+AEI online looks beyond the four library scholars and excludes repeated library pages; an identifiable publication byline is required. Wider-web research adds external sources beyond AEI. Missing evidence is stated explicitly rather than repeating the library answer. Existing publisher author metadata helps identify additional authors without searching every scholar separately.
+
+Check for updates can run manually whenever no check is in progress. At sign in, due topics are checked once every 24 hours; a manual attempt starts a new automatic waiting period. Online checks use search credits. The demo now opens each page at the top, keeps navigation visible, shows More below when needed and identifies Meta Muse Spark Open in the introduction.
+
+
 ## Research workflow update — November 19, 2026
 
 Continue from a library answer into AEI online or wider-web research after an explicit choice and Send. Online excerpts remain separate from saved library evidence. Vague requests can offer library leads and a custom direction, and follow-ups retain the earlier topic.

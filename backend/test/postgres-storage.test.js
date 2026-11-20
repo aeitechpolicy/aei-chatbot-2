@@ -299,6 +299,10 @@ test('free database storage through the real Neon HTTP driver', async t => {
     assert.equal((await next.privateItems('demo1','follow'))[0].readAt,at);
     await next.finishTopicCheck('demo1','topic','2026-11-20T12:00:00.000Z',{title:'Updated match',lastAttemptAt:'2026-11-20T12:00:00.000Z'});
     assert.equal((await next.privateItems('demo1','follow'))[0].readAt,at);
+    assert.equal(await next.claimTopicCheck('demo1','topic','2026-11-20T12:01:00.000Z',true),true);
+    assert.equal(await first.claimTopicCheck('demo1','topic','2026-11-20T12:01:00.000Z',true),false);
+    await next.finishTopicCheck('demo1','topic','2026-11-20T12:01:00.000Z',{lastAttemptAt:'2026-11-20T12:01:00.000Z'});
+    assert.equal(await next.claimTopicCheck('demo1','topic','2026-11-20T12:02:00.000Z'),false);
     await next.deletePrivateItem('demo1','follow','topic');
     await next.finishTopicCheck('demo1','topic','2026-11-20T12:00:00.000Z',{title:'Should not return'});
     assert.deepEqual(await next.privateItems('demo1','follow'),[]);

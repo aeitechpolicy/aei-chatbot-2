@@ -341,6 +341,8 @@ async function main() {
 
   records.sort((a, b) => (a.date < b.date ? 1 : -1));
   fs.writeFileSync(indexPath, JSON.stringify(records, null, 2));
+  const {buildOnlineBylines}=require('./build-online-bylines');
+  fs.writeFileSync(path.join(OUT_DIR,'aei-online-bylines.json.gz'),require('node:zlib').gzipSync(JSON.stringify(buildOnlineBylines(records)),{level:9}));
 
   const changedServedUrls = fetched.filter(record => record.scholars.some(name => SERVED_SCHOLARS.includes(name))).map(record => record.url);
   fs.writeFileSync(path.join(OUT_DIR, 'harvest-report.json'), JSON.stringify({ checkedAt: new Date().toISOString(), fetched: fetched.length, changedServedUrls, failures }, null, 2) + '\n');

@@ -8,6 +8,7 @@ test('the guided practice completes search, citation, brief and feedback without
   const onTryQuestion = jest.fn();
   render(<DemoWalkthrough showWhatsNewLink onClose={jest.fn()} onOpenSearch={jest.fn()} onTryQuestion={onTryQuestion} />);
   expect(screen.getByText('0 of 9 complete')).toBeVisible();
+  fireEvent.click(screen.getByText('How answers are generated · Meta Muse Spark Open'));
   const explanation = screen.getByRole('region', { name: 'How answers are generated' });
   expect(explanation).toHaveTextContent('Responses are actively being fine-tuned.');
   expect(explanation).toHaveTextContent('missing references');

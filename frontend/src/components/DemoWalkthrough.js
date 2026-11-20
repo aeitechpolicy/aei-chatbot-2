@@ -30,8 +30,8 @@ const steps = [
   { title: 'Try AEI + Web', help: 'Select AEI + Web, then [W1]. This newly written practice comparison connects a public AEI article with FCC information. [S1] identifies AEI evidence; [W1] identifies an outside source.' },
   { title: 'Report a problem', help: 'Select Send to the team, choose a reason, and explain what needs correcting. This practice form sends nothing. In real use, staff receive the reported answer or source and the submitted explanation.' },
   { title: 'Compare selected scholars', help: 'Open Compare Scholars and select two to four names. Ask one question to compare perspectives side by side. The live answer uses only the selected scholars and flags limited evidence. This practice shows the controls, not generated findings.' },
-  { title: 'Choose the next research direction', help: 'Continue in Article Chat, explore AEI online, or add the wider web. Each choice waits for a deliberate selection and Send. Online excerpts remain separate from the four-scholar library.' },
-  { title: 'Follow a topic and find updates', help: 'Follow this topic opens a source-scope choice. Topic inbox keeps updates private. Checks run at sign-in only when 24 hours have elapsed since the last attempt; signing in again does not repeat a check. Discuss in chat offers a mode choice before continuing.' }
+  { title: 'Choose the next research direction', help: 'Continue in Article Chat, explore AEI online, or add the wider web. Each choice waits for a selection and Send. Online excerpts remain separate from the four-scholar library.' },
+  { title: 'Follow a topic and find updates', help: 'Follow this topic opens a source-scope choice. Topic inbox keeps updates private. At sign in, due topics are checked once every 24 hours. Check for updates runs a manual check at any time. Discuss in chat offers a mode choice before continuing.' }
 ];
 const modes = [
   { key: 'chat', label: 'Article Chat', icon: MessageCircle },
@@ -63,9 +63,8 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   const finished = step === steps.length;
   useEffect(() => {
     if (finished) {
-      completionHeading.current?.focus();
-      completionHeading.current?.scrollIntoView?.({ block: 'start' });
-    } else heading.current?.focus();
+      completionHeading.current?.focus({preventScroll:true});
+    } else heading.current?.focus({preventScroll:true});
   }, [step, finished]);
   useEffect(() => () => { run.current++; }, []);
   const mark = index => setCompleted(previous => previous.includes(index) ? previous : [...previous, index]);
@@ -121,20 +120,23 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
       <blockquote>{source.excerpt}</blockquote><a href={source.url} target="_blank" rel="noopener noreferrer">{source.id === 'S1' ? 'Open on AEI' : 'Open federal source'}</a>
     </section>;
   }
-  return <ResearchDialog title="Try AEI Chatbot" onClose={onClose} className="guided-demo-dialog">
+  return <ResearchDialog paged scrollKey={step} title="Try AEI Chatbot" onClose={onClose} className="guided-demo-dialog">
+    {!finished && <>
+    {step === 0 && <>
     <div className="guided-demo-intro"><span className="guided-demo-badge">Guided practice</span><p>Explore newly written practice material based on public sources. No user conversations are used. Practice activity is not sent to the chatbot or saved to chat history.</p></div>
-    <section className="guided-demo-generation" aria-label="How answers are generated">
+    <details key={`explanation-${step}`} className="guided-demo-explanation"><summary>How answers are generated · Meta Muse Spark Open</summary><section className="guided-demo-generation" aria-label="How answers are generated">
       <h3>How answers are generated</h3>
-      <p>Each question starts with a search for relevant passages from the selected scholars. An AI model then drafts a response using those passages and adds numbered source references. AEI + Web also includes outside search results, labelled separately.</p>
+      <p>Each question starts with a search for relevant passages from the selected scholars. Meta Muse Spark Open then drafts a response using those passages and adds numbered source references. AEI + Web also includes outside search results, labelled separately.</p>
       <p>A source check looks for missing references and checks longer quotations against the supplied passages. When wording needs further review, a shorter answer or related articles may appear instead. Source links and excerpts remain available for closer reading.</p>
       <p><strong>Responses are actively being fine-tuned.</strong> Reports submitted through <strong>Send to the team</strong> help improve relevance, wording, and source quality.</p>
-    </section>
+    </section></details>
+    </>}
     <div className="guided-demo-layout">
       <aside className="guided-demo-guide" aria-label="Tour checklist">
         <div className="walkthrough-progress"><span>{completed.length} of {steps.length} complete</span><progress value={completed.length} max={steps.length} aria-label="Walkthrough progress" /></div>
-        <ol className="guided-demo-checklist">{steps.map((item, index) => <li key={item.title}><button type="button" disabled={showing || (index > step && !completed.includes(index))} aria-current={!finished && step === index ? 'step' : undefined} onClick={() => showStep(index)}>
+        <details key={`checklist-${step}`} className="guided-demo-step-list"><summary>View all nine steps</summary><ol className="guided-demo-checklist">{steps.map((item, index) => <li key={item.title}><button type="button" disabled={showing || (index > step && !completed.includes(index))} aria-current={!finished && step === index ? 'step' : undefined} onClick={() => showStep(index)}>
           <span className={`guided-demo-step-number ${completed.includes(index) ? 'is-complete' : ''}`} aria-label={completed.includes(index) ? 'Completed' : `Step ${index + 1}`}>{completed.includes(index) ? <Check size={14} aria-hidden="true" /> : index + 1}</span>{item.title}
-        </button></li>)}</ol>
+        </button></li>)}</ol></details>
         <section className="guided-demo-coach" aria-live="polite"><p className="workspace-kicker">{finished ? 'Practice complete' : `Step ${step + 1}`}</p>
           <h3 ref={heading} tabIndex={-1}>{finished ? 'Ready to explore' : steps[step].title}</h3>
           <p>{finished ? 'Use the same controls in the real chatbot. Check the sources, keep interview speakers distinct, and report anything that needs attention.' : steps[step].help}</p>
@@ -145,7 +147,7 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
         <div className="guided-demo-workspace-heading"><strong>AEI Chatbot</strong><span>Prepared example</span></div>
         <nav className="guided-demo-modes" aria-label="Practice research modes">{modes.map(({key, label, icon: Icon}) => <button key={key} type="button" disabled={showing} aria-pressed={mode === key} data-tour-focus={(step === 0 && key === 'search') || (step === 4 && key === 'web' && mode !== 'web')} onClick={() => chooseMode(key)}><Icon size={15} aria-hidden="true" />{label}</button>)}</nav>
         {step === 7 && <ModeChoice current={practiceScope} disabled={showing} onChoose={scope=>{setPracticeScope(scope);mark(7);}} />}
-        {step === 8 && <section className="topic-card"><h3>Practice: follow this topic</h3><p>Prepared example · No check or save is performed.</p><fieldset className="follow-topic-form"><legend>Choose a source scope</legend>{['library','aei','web'].map(scope=><label key={scope}><input type="radio" name="practice-follow" checked={practiceScope===scope} onChange={()=>setPracticeScope(scope)} />{scope==='library'?'Scholar Library':scope==='aei'?'AEI online':'Wider web'}</label>)}</fieldset><button type="button" className="research-secondary" onClick={()=>{setPracticeFollow(true);mark(8);}}>Follow this topic</button>{practiceFollow&&<div className="topic-update"><h4>Topic inbox · Example</h4><p>First-check match · New publication related to this chat.</p><p>Next check: at sign-in after 24 hours. No automatic switch into another mode.</p><button type="button" className="research-secondary" onClick={()=>mark(8)}>Discuss in chat</button></div>}</section>}
+        {step === 8 && <section className="topic-card"><h3>Practice: follow this topic</h3><p>Prepared example · No check or save is performed.</p><fieldset className="follow-topic-form"><legend>Choose a source scope</legend>{['library','aei','web'].map(scope=><label key={scope}><input type="radio" name="practice-follow" checked={practiceScope===scope} onChange={()=>setPracticeScope(scope)} />{scope==='library'?'Scholar Library':scope==='aei'?'AEI online':'Wider web'}</label>)}</fieldset><button type="button" className="research-secondary" onClick={()=>{setPracticeFollow(true);mark(8);}}>Follow this topic</button>{practiceFollow&&<div className="topic-update"><h4>Topic inbox · Example</h4><p>First-check match · New publication related to this chat.</p><p>At sign in, due topics are checked once every 24 hours. Manual checks are available from Topic inbox.</p><button type="button" className="research-secondary" onClick={()=>mark(8)}>Discuss in chat</button></div>}</section>}
         {mode === 'compare' && <>
           <p className="guided-demo-mode-description">Choose two to four scholars, then ask the same question about the selected publications.</p>
           <fieldset className="chat-scope-picker"><legend>Practice: choose scholars to compare</legend>
@@ -190,7 +192,9 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
         </>}</>}
       </section>
     </div>
+    </>}
     {finished && <section className="guided-demo-return-guide" aria-label="Where to find help again">
+      <p className="workspace-kicker">{completed.length} of {steps.length} complete</p>
       <h3 ref={completionHeading} tabIndex={-1}>Help is always available</h3>
       <p>Look in the <strong>top-right corner of the chatbot</strong>, as shown in the picture below.</p>
       <ol>

@@ -34,10 +34,12 @@ module.exports = function createInboxRouter({pilot,manager,search=options=>artic
   }catch(e){next(e);}});
   router.post('/check',async(req,res,next)=>{
     try {
+      if (req.body?.manual !== undefined && typeof req.body.manual !== 'boolean') return res.status(400).json({error:'Choose a valid update check.'});
+      const manual=req.body?.manual === true;
       const topics=await pilot.privateItems(req.auth.id,'follow');
       for(const item of topics.slice(0,10)) {
         const at=date();
-        if(!await pilot.claimTopicCheck(req.auth.id,item.id,at)) continue;
+        if(!await pilot.claimTopicCheck(req.auth.id,item.id,at,manual)) continue;
         try {
           let sources;
           if(item.scope==='library') {
@@ -53,7 +55,7 @@ module.exports = function createInboxRouter({pilot,manager,search=options=>artic
           await pilot.finishTopicCheck(req.auth.id,item.id,at,{...item,lastAttemptAt:at,checkedAt:at,error:null,
             seen:[...new Set([...seen,...sources.map(s=>s.url).filter(Boolean)])].slice(-500),updates:[...fresh,...(item.updates||[])].slice(0,30)});
         } catch {
-          await pilot.finishTopicCheck(req.auth.id,item.id,at,{...item,lastAttemptAt:at,error:'The latest check could not finish. Saved updates remain available; another check is available after 24 hours.'});
+          await pilot.finishTopicCheck(req.auth.id,item.id,at,{...item,lastAttemptAt:at,error:'The latest check could not finish. Saved updates remain available; Check for updates can be selected to try again. Automatic checks wait 24 hours.'});
         }
       }
       res.json({topics:await pilot.privateItems(req.auth.id,'follow')});

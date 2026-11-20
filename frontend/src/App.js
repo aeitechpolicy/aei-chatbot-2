@@ -23,7 +23,7 @@ import './styles/Workspace.css';
 
 function PrivateApp({ session }) {
   const isDemo = isDemoAccount(session.user.id);
-  const releaseKey=`aei-updates-${session.user.id}-research-flow-20261119`;
+  const releaseKey=`aei-updates-${session.user.id}-online-directions-20261119-v2`;
   const unseenRelease=()=>{try{return window.localStorage.getItem(releaseKey)!=='seen';}catch{return true;}};
   const [guide, setGuide] = useState(isDemo ? 'whats-new' : unseenRelease() ? 'recent' : null);
   const [hasNewUpdates,setHasNewUpdates]=useState(unseenRelease);
@@ -35,7 +35,7 @@ function PrivateApp({ session }) {
   const [topicError,setTopicError]=useState('');
   useEffect(()=>{document.body.dataset.theme=theme;try{window.localStorage.setItem('aei-theme',theme);}catch{}},[theme]);
   async function loadTopics(){try{const response=await apiFetch(`${API_BASE_URL}/api/inbox`);if(response.ok)setTopics((await response.json()).topics||[]);}catch{}}
-  async function checkTopics(){setCheckingTopics(true);setTopicError('');try{const response=await apiFetch(`${API_BASE_URL}/api/inbox/check`,{method:'POST'});if(!response.ok)throw new Error();setTopics((await response.json()).topics||[]);}catch{setTopicError('Topic updates could not be checked. Saved updates remain available.');}finally{setCheckingTopics(false);}}
+  async function checkTopics(manual=false){setCheckingTopics(true);setTopicError('');try{const response=await apiFetch(`${API_BASE_URL}/api/inbox/check`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({manual})});if(!response.ok)throw new Error();setTopics((await response.json()).topics||[]);}catch{setTopicError('Topic updates could not be checked. Saved updates remain available.');}finally{setCheckingTopics(false);}}
   async function loadFeedbackStatus(){if(isDemo)return;try{const response=await apiFetch(`${API_BASE_URL}/api/feedback/status`);if(response.ok)setFeedbackUnread((await response.json()).unread||0);}catch{}}
   useEffect(()=>{checkTopics();},[]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(()=>{if(isDemo)return undefined;loadFeedbackStatus();const timer=setInterval(loadFeedbackStatus,45000);window.addEventListener('focus',loadFeedbackStatus);return()=>{clearInterval(timer);window.removeEventListener('focus',loadFeedbackStatus);};},[]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -369,7 +369,7 @@ function PrivateApp({ session }) {
         </div>
         {currentView === 'usage' && <UsageReport />}
         {!isDemo && currentView === 'feedback' && <FeedbackInbox onRead={loadFeedbackStatus} />}
-        {currentView === 'topics' && <div className="workspace-panel">{topicError&&<p role="alert">{topicError}</p>}<TopicInbox topics={topics} onRefresh={loadTopics} onCheck={checkTopics} checking={checkingTopics} onOpen={(item,update,scope)=>{if(loading)return;setCurrentChatId(item.chatId);setChatScope('General');setWebScope(scope==='library'?'web':scope);setCurrentView(scope==='library'?'chat':'web');setChatDraft(draft=>({version:draft.version+1,question:`How does “${update.title}” relate to ${item.topic}?`}));}} /></div>}
+        {currentView === 'topics' && <div className="workspace-panel">{topicError&&<p role="alert">{topicError}</p>}<TopicInbox showUsage={!isDemo} topics={topics} onRefresh={loadTopics} onCheck={()=>checkTopics(true)} checking={checkingTopics} onOpen={(item,update,scope)=>{if(loading)return;setCurrentChatId(item.chatId);setChatScope('General');setWebScope(scope==='library'?'web':scope);setCurrentView(scope==='library'?'chat':'web');setChatDraft(draft=>({version:draft.version+1,question:`How does “${update.title}” relate to ${item.topic}?`}));}} /></div>}
         {currentView === 'files' && (
           <FileManager
             domains={domains}

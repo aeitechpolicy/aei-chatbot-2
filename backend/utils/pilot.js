@@ -278,14 +278,18 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     if (remote) return remote.deletePrivateItem(userId,kind,id);
     db.prepare('DELETE FROM private_items WHERE user_id=? AND kind=? AND id=?').run(userId,kind,id);
   }
-  async function claimTopicCheck(userId,id,at) {
-    if (remote) return remote.claimTopicCheck(userId,id,at);
-    return Boolean(db.prepare(`UPDATE private_items SET payload=json_set(payload,'$.lastAttemptAt',?)
-      WHERE user_id=? AND kind='follow' AND id=? AND (json_extract(payload,'$.lastAttemptAt') IS NULL OR json_extract(payload,'$.lastAttemptAt')<=?)`).run(at,userId,id,new Date(Date.parse(at)-86400000).toISOString()).changes);
+  async function claimTopicCheck(userId,id,at,manual=false) {
+    if (remote) return remote.claimTopicCheck(userId,id,at,manual);
+    return Boolean(db.prepare(`UPDATE private_items SET payload=json_set(payload,'$.lastAttemptAt',?,'$.checkStartedAt',?)
+      WHERE user_id=? AND kind='follow' AND id=?
+      AND (json_extract(payload,'$.checkStartedAt') IS NULL OR json_extract(payload,'$.checkStartedAt')<=?)
+      AND (? OR json_extract(payload,'$.lastAttemptAt') IS NULL OR json_extract(payload,'$.lastAttemptAt')<=?)`)
+      .run(at,at,userId,id,new Date(Date.parse(at)-120000).toISOString(),manual?1:0,new Date(Date.parse(at)-86400000).toISOString()).changes);
   }
   async function finishTopicCheck(userId,id,at,payload) {
     if(remote) return remote.finishTopicCheck(userId,id,at,payload);
-    db.prepare(`UPDATE private_items SET payload=json_patch(?,json_object('readAt',json_extract(payload,'$.readAt'))) WHERE user_id=? AND kind='follow' AND id=? AND json_extract(payload,'$.lastAttemptAt')=?`).run(JSON.stringify(payload),userId,id,at);
+    db.prepare(`UPDATE private_items SET payload=json_patch(?,json_object('readAt',json_extract(payload,'$.readAt'),'checkStartedAt',NULL))
+      WHERE user_id=? AND kind='follow' AND id=? AND json_extract(payload,'$.checkStartedAt')=?`).run(JSON.stringify(payload),userId,id,at);
   }
   async function patchPrivateItem(userId,kind,id,patch) {
     if(remote) return remote.patchPrivateItem(userId,kind,id,patch);

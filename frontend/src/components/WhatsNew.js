@@ -4,7 +4,7 @@ import ResearchDialog from './ResearchDialog';
 
 const updates = [
   { icon: Search, title: 'Choose the next research direction', text: 'Stay in the four-scholar library, explore other AEI perspectives online, or add wider-web context. Review the question before sending.' },
-  { icon: BookOpen, title: 'Follow a topic privately', text: 'Save a chat to Topic inbox. At sign-in, due topics are checked at most once in 24 hours. Choose a source scope before discussing an update.' },
+  { icon: BookOpen, title: 'Follow a topic privately', text: 'Save a chat to Topic inbox. At sign in, due topics are checked once every 24 hours. Manual checks are also available. Choose a source scope before discussing an update.' },
   {
     icon: Search,
     title: 'Find articles and build a source list',
@@ -38,11 +38,11 @@ const updates = [
 ];
 
 export default function WhatsNew({ onClose, onContinue }) {
-  return <ResearchDialog title="What’s new in the AEI Chatbot" onClose={onClose} className="onboarding-dialog whats-new-dialog"
+  return <ResearchDialog paged title="What’s new in the AEI Chatbot" onClose={onClose} className="onboarding-dialog whats-new-dialog"
     closeLabel="Continue to before-and-after comparison" closeText="Continue →">
     <div className="whats-new onboarding-body">
       <p className="onboarding-stages">1 of 3 · What’s new</p>
-      <p>This version brings together research from Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart.</p>
+      <p>This version brings together research from Brent Orrell, Clay Calvert, Shane Tews, and Will Rinehart. Responses are generated using Meta Muse Spark Open, with relevant source passages supplied for each question.</p>
       <p>Next: a before-and-after comparison of the original chatbot and the November workspace, followed by the guided demo.</p>
       <h3 className="whats-new-feature-heading">Explore the new features</h3>
       <ul className="whats-new-list">

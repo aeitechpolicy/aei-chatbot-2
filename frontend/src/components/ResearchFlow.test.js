@@ -12,7 +12,7 @@ test('research directions wait for a selection without a request or timer-driven
  expect(choose).not.toHaveBeenCalled();expect(apiFetch).not.toHaveBeenCalled();
  fireEvent.click(screen.getByRole('button',{name:/Explore AEI online/}));expect(choose).toHaveBeenCalledWith('aei');
  fireEvent.click(screen.getByRole('button',{name:/Explore the wider web/}));expect(choose).toHaveBeenLastCalledWith('web');
- expect(screen.getByText(/No automatic switch or search/)).toBeVisible();expect(apiFetch).not.toHaveBeenCalled();
+ expect(screen.getByText(/Choose a direction, review the question/)).toBeVisible();expect(screen.queryByText(/No automatic switch or search/)).not.toBeInTheDocument();expect(apiFetch).not.toHaveBeenCalled();
 });
 test('clarification offers real library leads and a custom direction without sending an AI question',()=>{
  const choose=jest.fn(),custom=jest.fn();render(<ClarificationChoices clarification={{options:[{label:'Broadband and local access',question:'Explain Broadband and local access.'}]}} onChoose={choose} onCustom={custom} />);
@@ -32,7 +32,7 @@ test('an inbox item asks for a mode before opening its original conversation',()
 });
 test('release updates have user-controlled steps and link back to the full guided demo',()=>{
  const tour=jest.fn();render(<RecentUpdates onClose={jest.fn()} onTour={tour} />);
- expect(screen.getByRole('heading',{name:'Keep the question in context'})).toBeVisible();fireEvent.click(screen.getByRole('button',{name:'Next',exact:true}));expect(screen.getByRole('heading',{name:'Choose where the research goes next'})).toBeVisible();fireEvent.click(screen.getByRole('button',{name:'Open full guided demo'}));expect(tour).toHaveBeenCalledTimes(1);expect(apiFetch).not.toHaveBeenCalled();
+ expect(screen.getByRole('heading',{name:'Find additional AEI perspectives'})).toBeVisible();fireEvent.click(screen.getByRole('button',{name:'Next',exact:true}));expect(screen.getByRole('heading',{name:'Add outside evidence'})).toBeVisible();fireEvent.click(screen.getByRole('button',{name:'Open full guided demo'}));expect(tour).toHaveBeenCalledTimes(1);expect(apiFetch).not.toHaveBeenCalled();
 });
 test('staff reports retain their new indicator until explicitly marked read',async()=>{
  apiFetch.mockImplementation(async(url)=>url.includes('/read')?{ok:true}:{ok:true,json:async()=>({reports:[{id:'report',category:'Missing context',reporterLabel:'Demo User 1',createdAt:'2026-11-19',detail:'Check the topic.',answer:'Reported answer.',read:false}]})});

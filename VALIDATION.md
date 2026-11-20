@@ -1,5 +1,15 @@
 # Validation record
 
+## Online-source separation, manual checks and guide navigation — November 19, 2026
+
+- Final backend run: 193 tests passed, zero failures. Includes exclusion of known library URLs/titles and tracking-link variants, rejection of bylines from related cards, additional-author requirements, publisher-catalog fallback, conflicting/delisted fallback records, external-only wider-web scope, no model call or library search when AEI online finds only an existing library scholar, manual checks during the automatic cooldown, persistent in-flight exclusion and read-acknowledgment preservation in Postgres.
+- Final frontend run: 51 tests passed across ten suites. Includes guide-content scroll reset with footer navigation outside the scrolling body, revised practice flow and guidance, and unchanged explicit mode selection. Optimized build compiled successfully. Existing tooling deprecation notices remain non-blocking.
+- Browser verification used isolated local accounts and original public-source practice material. Confirmed More below is visible when content overflows, header/footer controls remain visible, moving from a scrolled overview to comparison resets scrollTop to zero, and new practice steps also start at zero. The long explanation and full checklist are expandable. Dark-mode citation notes have blue-gray background/text rather than amber. A manual library check succeeded while the automatic next-check time was still the following day.
+- The compressed byline lookup contains 34,111 unambiguous dated publisher entries from 2020 onward and is about 803 KB. It is generated from existing catalog metadata without web or model requests. Current author employment, complete historical coverage and live page availability are not guaranteed. Unknown/new pages can qualify through an identifiable returned publication header. Related-card names do not establish authorship.
+- AEI online requests up to six candidates in one basic search, with page text available only for local byline inspection; at most three bounded excerpts reach the model. It does not search each scholar separately or repeat the four-scholar retrieval. Wider-web scope excludes AEI domains in the provider request and checks domains again locally. These policies can produce fewer results; absence of a result is not proof of absence of research.
+- No paid model/search request was made during verification. Actual provider response formatting, live retrieval quality, and deployment still require confirmation. The separate AEI library-refresh endpoint remains blocked; this release does not advance the library refresh date or add hosting costs.
+
+
 ## Research workflow and private topic inbox — November 19, 2026
 
 - Final backend run: 185 tests passed, zero failures. Includes authenticated account isolation, persisted rolling 24-hour claims across concurrent requests and database instances, exact waiting-period boundary, failed-check cooldown, no resurrection after deletion, read acknowledgment preservation, staff-only report counts, domain restrictions and contextual follow-ups when moving to AEI online.
