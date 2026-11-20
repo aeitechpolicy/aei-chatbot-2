@@ -31,9 +31,9 @@ test('one AEI search requests byline evidence while wider-web search excludes AE
 });
 
 test('publisher bylines can establish an author when a live page header is unavailable',()=>{
- const catalog={...lookup,bylines:{'aei.org/local-access':['John Bailey']}};
+ const catalog={...lookup,bylines:{'aei.org/local-access':{authors:['John Bailey'],date:'2024-01-12'}}};
  const candidate=additionalSource({...source,raw_content:''},{scope:'aei'},catalog);
- assert.deepEqual(candidate.authors,['John Bailey']);assert.equal(candidate.bylineSource,'publisher catalog');
+ assert.deepEqual(candidate.authors,['John Bailey']);assert.equal(candidate.bylineSource,'publisher catalog');assert.equal(candidate.published_date,'2024-01-12');assert.equal(candidate.dateSource,'publisher catalog');
  assert.equal(additionalSource({...source,raw_content:'# Local access options\nBy Shane Tews'},{scope:'aei'},catalog),null);
 });
 test('compiled publisher bylines omit conflicting identities, delisted pages and older fallback records',()=>{
@@ -45,5 +45,5 @@ test('compiled publisher bylines omit conflicting identities, delisted pages and
   {url:'https://www.aei.org/old/',scholars:['John Bailey'],date:'2019-01-01'},
   {url:'https://www.aei.org/removed/',scholars:['John Bailey'],date:'2026-01-01',delisted_at:'2026-02-01'}
  ]);
- assert.deepEqual(rows,{'aei.org/one':['John Bailey']});
+ assert.deepEqual(rows,{'aei.org/one':{authors:['John Bailey'],date:'2026-01-01'}});
 });

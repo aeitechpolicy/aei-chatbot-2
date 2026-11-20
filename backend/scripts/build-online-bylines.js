@@ -6,8 +6,9 @@ function buildOnlineBylines(records) {
  for(const row of records) {
   const key=pageKey(row.url),authors=Array.isArray(row.scholars)?[...new Set(row.scholars.filter(name=>typeof name==='string'&&name.trim()&&!name.startsWith('unknown:')))].sort():[];
   if(!key||!authors.length||row.delisted_at||!/^20\d\d-/.test(row.date||'')||row.date<'2020-01-01')continue;
-  if(rows.has(key)&&JSON.stringify(rows.get(key))!==JSON.stringify(authors))conflicts.add(key);
-  else rows.set(key,authors);
+  const date=row.date.slice(0,10),previous=rows.get(key);
+  if(previous&&JSON.stringify(previous.authors)!==JSON.stringify(authors))conflicts.add(key);
+  else rows.set(key,{authors,date:previous&&previous.date!==date?null:date});
  }
  for(const key of conflicts)rows.delete(key);
  return Object.fromEntries([...rows].sort(([a],[b])=>a.localeCompare(b)));

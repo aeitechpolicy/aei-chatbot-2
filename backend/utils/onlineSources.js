@@ -53,9 +53,11 @@ function additionalSource(result, plan, lookup = onlineCatalog()) {
   if ((plan.excludeSources || []).some(source => pageKey(source.url) === key || titleKey(source.title) === titleKey(result.title))) return null;
   if (plan.scope !== 'aei') return result;
   const header = headerAuthors(result, lookup.names);
-  const authors = header.length ? header : (lookup.bylines?.[key] || []);
+  const saved=lookup.bylines?.[key];
+  const authors = header.length ? header : (Array.isArray(saved)?saved:saved?.authors||[]);
   if (!authors.length || authors.some(name => scholars.some(scholar => normalized(name) === normalized(scholar)))) return null;
-  return { ...result, authors,bylineSource:header.length?'online publication header':'publisher catalog' };
+  return { ...result, authors,bylineSource:header.length?'online publication header':'publisher catalog',
+    ...(saved?.date?{published_date:saved.date,dateSource:'publisher catalog'}:{}) };
 }
 
 module.exports = { additionalSource, headerAuthors, onlineCatalog, pageKey };

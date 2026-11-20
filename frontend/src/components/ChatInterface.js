@@ -33,6 +33,7 @@ const ChatInterface = ({
   const [comparisonScholars, setComparisonScholars] = useState(Object.keys(SCHOLARS));
   const [testModel, setTestModel] = useState('');
   const [followOpen,setFollowOpen]=useState(false);
+  const [readAnswerKey,setReadAnswerKey]=useState(null);
   const [clarified,setClarified]=useState(false);
   const [webAvailable, setWebAvailable] = useState(null);
   const inputRef = useRef(null);
@@ -208,6 +209,9 @@ const ChatInterface = ({
   const empty = chatReady && !currentChat?.messages?.length && !sendingMessage && !loading;
   const home = empty && !chatId && !web && !legacy && !comparisonMode;
   const Messages = legacy ? LegacyMessageList : MessageList;
+  const latestMessage=currentChat?.messages?.at(-1);
+  const latestAnswerKey=`${currentChat?.id||chatId||'draft'}:${currentChat?.messages?.length||0}`;
+  const answerRead=readAnswerKey===latestAnswerKey&&latestMessage?.role==='assistant'&&!sendingMessage&&!loading;
 
   return (
     <div className={`chat-interface ${empty && !legacy ? 'workspace-start' : ''} ${home ? 'article-chat-home' : ''}`}>
@@ -223,7 +227,7 @@ const ChatInterface = ({
           {chatLoadError && !chatReady ? (
             <p className="workspace-meta" role="alert">This chat could not be opened. Select the conversation again from chat history or start a new chat.</p>
           ) : (
-            <><Messages messages={currentChat?.messages || []} loading={sendingMessage || loading || !chatReady} title={currentChat?.title} chatId={currentChat?.id} onFollowUp={composerDisabled ? undefined : fillFollowUp} onClarify={composerDisabled ? undefined : question=>{setClarified(true);setInputValue(question);inputRef.current?.focus();}} />      {!legacy && !comparisonMode && currentChat?.messages?.some(message=>message.role==='assistant') && <div className="research-flow-actions">
+            <><Messages revealNext={answerRead} onAnswerRead={()=>setReadAnswerKey(latestAnswerKey)} messages={currentChat?.messages || []} loading={sendingMessage || loading || !chatReady} title={currentChat?.title} chatId={currentChat?.id} onFollowUp={composerDisabled ? undefined : fillFollowUp} onClarify={composerDisabled ? undefined : question=>{setClarified(true);setInputValue(question);inputRef.current?.focus();}} />      {!legacy && !comparisonMode && answerRead && !latestMessage?.clarification && <div className="research-flow-actions">
         <ModeChoice current={web?webScope:'library'} disabled={composerDisabled} onChoose={scope=>{const question=[...(currentChat?.messages||[])].reverse().find(message=>message.role==='user')?.content||'';const cleanQuestion=question.replace(/^(?:Find other AEI perspectives on this question:\s*)+/i,'');if(scope==='library'){onModeChoice?.('library','');if(inputValue.startsWith('Find other AEI perspectives on this question:'))fillFollowUp('');}else{onModeChoice?.(scope,cleanQuestion);fillFollowUp(scope==='aei'?`Find other AEI perspectives on this question: ${cleanQuestion}`:cleanQuestion);}}} />
         <button type="button" className="research-secondary" disabled={composerDisabled} onClick={()=>setFollowOpen(true)}><Bell size={17} aria-hidden="true" /> Follow this topic</button>
       </div>}

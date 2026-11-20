@@ -16,7 +16,7 @@ test('research directions wait for a selection without a request or timer-driven
 });
 test('clarification offers real library leads and a custom direction without sending an AI question',()=>{
  const choose=jest.fn(),custom=jest.fn();render(<ClarificationChoices clarification={{options:[{label:'Broadband and local access',question:'Explain Broadband and local access.'}]}} onChoose={choose} onCustom={custom} />);
- fireEvent.click(screen.getByRole('button',{name:'Broadband and local access'}));expect(choose).toHaveBeenCalledWith('Explain Broadband and local access.');
+ fireEvent.click(screen.getByRole('radio',{name:'Broadband and local access'}));fireEvent.click(screen.getByRole('button',{name:'Use this direction'}));expect(choose).toHaveBeenCalledWith('Explain Broadband and local access.');
  fireEvent.change(screen.getByRole('textbox',{name:'Another direction'}),{target:{value:'Remote clinics'}});fireEvent.click(screen.getByRole('button',{name:'Use this direction'}));expect(custom).toHaveBeenCalledWith('Remote clinics');expect(apiFetch).not.toHaveBeenCalled();
 });
 test('following requires a visible source-scope choice and saves only the chat reference and scope',async()=>{

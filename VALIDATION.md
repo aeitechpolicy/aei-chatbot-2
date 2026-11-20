@@ -1,5 +1,16 @@
 # Validation record
 
+## Answer-first reading and multi-mode clarification — November 20, 2026
+
+- Backend: 196 tests passed, zero failures. Covers clarification in Article Chat, Compare Scholars and AEI + Web before any model or search call, fresh/expanded AEI topic-query normalization, publisher date provenance and existing authentication/spending/isolation checks.
+- Frontend: 52 tests passed across eleven suites. The new reading-flow check verifies research controls are absent before the answer-end marker is visible, appear afterward, and reset for the next response. Scroll targeting uses the beginning of the new response. Optimized build compiled successfully after resolving hook-dependency/unused-import warnings.
+- Browser checks used isolated sample accounts, original practice questions and a prepared summary of a public 2022 article. Verified an existing and a newly returned long answer start at the beginning with research choices hidden; scrolling to the answer end reveals the choices. The clarification card shows three directions, custom text and Skip clarification. No paid provider requests or production histories were used.
+- Latest updates now has three pages. The fourth presentation page and decorative source-scope strip were removed. No reading-flow announcement was added and the release-notice key was not advanced. Future announcement additions require Evans's approval.
+- The publisher byline lookup now includes publication dates, marking conflicting dates unknown. New source objects use publisher dates with separate provenance from search estimates. Historical policy/program descriptions must identify author/year and avoid implying current availability. Existing stored answers are unchanged.
+- Clarification is a limited deterministic heuristic for short/open-ended requests, not full intent recognition. Clear and contextual questions normally proceed directly. Selection/custom reply/skip prepares the question in the composer; Send remains separate. The card itself makes no paid model/search call.
+- Actual live search rankings and model interpretation remain unverified by paid calls. Matching query text improves consistency but does not guarantee identical provider rankings. The separate publisher-feed block and library-refresh status are unchanged.
+
+
 ## Online-source separation, manual checks and guide navigation — November 19, 2026
 
 - Final backend run: 193 tests passed, zero failures. Includes exclusion of known library URLs/titles and tracking-link variants, rejection of bylines from related cards, additional-author requirements, publisher-catalog fallback, conflicting/delisted fallback records, external-only wider-web scope, no model call or library search when AEI online finds only an existing library scholar, manual checks during the automatic cooldown, persistent in-flight exclusion and read-acknowledgment preservation in Postgres.

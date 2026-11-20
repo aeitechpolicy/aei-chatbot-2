@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Globe, Library, Bell } from 'lucide-react';
+import { Globe, Library, Bell } from 'lucide-react';
 import ResearchDialog from './ResearchDialog';
 import { API_BASE_URL, apiFetch } from '../utils/api';
 
@@ -16,10 +16,19 @@ export function ModeChoice({ current = 'library', onChoose, disabled }) {
 }
 export function ClarificationChoices({ clarification, onChoose, onCustom }) {
   const [custom,setCustom]=useState('');
-  return <section className="clarification-choices" aria-label="Clarify the library question">
-    <p>Choose an article lead from the Scholar Library, or describe a different angle.</p>
-    {clarification.options.map(option => <button key={option.question} type="button" className="research-secondary" onClick={() => onChoose(option.question)}>{option.label}<ArrowRight size={15} aria-hidden="true" /></button>)}
-    <form onSubmit={event=>{event.preventDefault();if(custom.trim())onCustom(custom.trim());}}><label>Another direction<input value={custom} maxLength={2000} onChange={event=>setCustom(event.target.value)} placeholder="Describe the question or angle" /></label><button className="research-primary" disabled={!custom.trim()}>Use this direction</button></form>
+  const [selected,setSelected]=useState('');
+  return <section className="clarification-choices question-card" aria-label="Clarify the question">
+    <p className="workspace-kicker">A quick question</p><h3>{clarification.question||'Which direction would be most useful?'}</h3><p className="workspace-meta">{clarification.mode==='web'?(clarification.webScope==='aei'?'Sources: additional AEI authors online.':'Sources: external evidence alongside the Scholar Library.'):clarification.mode==='compare'?'The comparison uses the selected scholars.':'Sources: the selected scholars in the AEI Scholar Library.'}</p>
+    <form onSubmit={event=>{event.preventDefault();if(custom.trim())onCustom(custom.trim());else if(selected)onChoose(selected);}}>
+      <fieldset><legend>Research direction</legend>{clarification.options.map(option=><label className="clarification-option" key={option.question}>
+        <input type="radio" name="research-direction" checked={selected===option.question&&!custom.trim()} onChange={()=>{setSelected(option.question);setCustom('');}} />
+        <span>{option.label}</span>
+      </label>)}</fieldset>
+      <label>Another direction<textarea value={custom} maxLength={2000} onChange={event=>setCustom(event.target.value)} placeholder="Add a custom reply…" rows={1} /></label>
+      <div className="question-card-actions">{clarification.originalQuestion&&<button type="button" className="research-secondary" onClick={()=>onChoose(clarification.originalQuestion)}>Skip clarification</button>}
+      <button className="research-primary" disabled={!custom.trim()&&!selected}>Use this direction</button></div>
+    </form>
+    <p className="workspace-meta">The choice prepares a question in the message box. Select Send to continue.</p>
   </section>;
 }
 export function FollowTopicDialog({ chatId, initialScope='library', onClose, onSaved, showUsage=false }) {

@@ -1,5 +1,12 @@
 # AEI research chatbot
 
+## Answer-first research flow — November 19, 2026
+
+New responses open at the beginning. Suggested follow-ups and research choices appear after the latest answer has come into view. Short/open-ended topics can be narrowed with a three-choice question card, a custom reply or Skip clarification in Article Chat, Compare Scholars and AEI + Web. Clarification runs before paid requests; the prepared question still requires Send. Clear questions normally proceed directly.
+
+AEI-online searches use consistent topic wording from fresh chats and expansion controls. Available publisher dates accompany new online sources, and historical program descriptions are framed as historical. The fourth presentation-update page and extra source-scope strip were removed.
+
+
 ## Online research and guide refinements — November 19, 2026
 
 AEI online looks beyond the four library scholars and excludes repeated library pages; an identifiable publication byline is required. Wider-web research adds external sources beyond AEI. Missing evidence is stated explicitly rather than repeating the library answer. Existing publisher author metadata helps identify additional authors without searching every scholar separately.
