@@ -1,4 +1,5 @@
 const { knownDate } = require('./research');
+const { additionalSource } = require('./onlineSources');
 
 const MAX_WEB_RESULTS = 3;
 // UTF-8 and JSON headroom for three bounded snippets, titles and links.
@@ -65,13 +66,18 @@ function webPublishedDate(value) {
 function prepareWebSources(results, plan) {
   const seen = new Set();
   const sources = [];
-  for (const result of Array.isArray(results) ? results : []) {
+  for (let result of Array.isArray(results) ? results : []) {
     if (sources.length >= MAX_WEB_RESULTS) break;
     if (typeof result?.url !== 'string' || result.url.length > 400) continue;
     let url;
     try { url = new URL(result.url); } catch { continue; }
     if (url.protocol !== 'https:' || url.username || url.password || url.port || !url.hostname.includes('.')) continue;
     if (plan?.scope === 'aei' && !/(^|\.)aei\.org$/i.test(url.hostname)) continue;
+    if (plan?.scope === 'web' && /(^|\.)aei\.org$/i.test(url.hostname)) continue;
+    if (['aei','web'].includes(plan?.scope)) {
+      result = additionalSource(result, plan);
+      if (!result) continue;
+    }
     url.hash = '';
     if (url.href.length > 400) continue;
     // Recruitment and evergreen legal tables cannot establish a recent policy action.
@@ -86,6 +92,7 @@ function prepareWebSources(results, plan) {
       kind: 'web',
       title: cleanText(result.title, 130) || url.hostname,
       publisher: url.hostname,
+      ...(result.authors?.length ? {authors:result.authors,author:result.authors.join(', '),bylineSource:result.bylineSource} : {}),
       date,
       ...(date ? { dateIsEstimate: true } : {}),
       url: url.href,
@@ -107,12 +114,13 @@ function createWebSearch(apiKey) {
       body: JSON.stringify({
         query: Array.from(plan.query).slice(0, 400).join(''),
         ...(plan.scope === 'aei' ? { include_domains: ['aei.org'] } : {}),
+        ...(plan.scope === 'web' ? { exclude_domains: ['aei.org'] } : {}),
         topic: plan.window ? 'news' : 'general',
         ...(plan.window ? { start_date: plan.window.from, end_date: shiftDate(plan.window.to, 1), filter_by_published_date: true } : {}),
         search_depth: 'basic',
-        max_results: MAX_WEB_RESULTS,
+        max_results: plan.scope === 'aei' ? 6 : MAX_WEB_RESULTS,
         include_answer: false,
-        include_raw_content: false,
+        include_raw_content: plan.scope === 'aei' ? 'markdown' : false,
         include_published_date: true,
         auto_parameters: false
       })

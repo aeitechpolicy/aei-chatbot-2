@@ -1,5 +1,12 @@
 # Publish the complete demo update
 
+## Manual updates and additional-author research — November 19, 2026
+
+No new credentials, accounts or hosting services are required. Manual Topic inbox checks send manual=true and may run before the automatic 24-hour window ends. Sign-in requests remain automatic. Both paths claim a persistent in-flight lease; completion releases it, and the next automatic check is 24 hours after the latest attempt. Failed checks may be retried manually. Each online check uses existing search credits; update collection does not call the answer model.
+
+AEI online uses the existing author directory plus a compact publisher byline lookup. Rebuild the lookup offline after replacing the publisher catalog with `node backend/scripts/build-online-bylines.js`; ordinary harvesting also rebuilds it. The lookup contains dated 2020-and-later records, excludes conflicting authorship and is not a live employment roster. Online publication headers can establish bylines outside that fallback range. The collection pipeline remains blocked until permitted AEI access is available. Do not label the lookup or library as newly refreshed by this interface update.
+
+
 ## Research workflow and topic inbox — November 19, 2026
 
 Deploy both backend and frontend from the same merged update. Keep the existing DATABASE_URL, Together key and web-search key in the deployment settings. No new secret, account or hosting service is required. The database initializer creates aei_pilot_private_items on first use; app database credentials must retain their existing table/function creation permissions.

@@ -214,8 +214,8 @@ router.post('/:chatId/message', async (req, res) => {
     const previousQuestions = chat.messages.slice(-6).filter(({ role }) => role === 'user');
     if (req.body.webScope !== undefined && !['aei','web'].includes(req.body.webScope)) return res.status(400).json({error:'Choose AEI online or the wider web.'});
     const webScope = req.body.webScope === 'aei' ? 'aei' : 'web';
-    const expansion = web && webScope === 'aei' && /^Find other AEI perspectives on this question:\s*/i.test(message);
-    const question = expansion ? message.replace(/^Find other AEI perspectives on this question:\s*/i,'') : message;
+    const expansion = web && /^Find other AEI perspectives on this question:\s*/i.test(message);
+    const question = expansion ? message.replace(/^(?:Find other AEI perspectives on this question:\s*)+/i,'') : message;
     const resolved = resolveQuestion(question, chat.messages);
     const retrievalQuery = resolved.query;
     const onlineQuestion = retrievalQuery;
@@ -227,7 +227,7 @@ router.post('/:chatId/message', async (req, res) => {
     try {
       if (legacy) articles = await fetchArchivedArticles(chat.domainName, message);
       else if (compare) groups = await findComparisonSources(fetchArticles, retrievalQuery, comparisonScholars);
-      else articles = await fetchArticles(chat.domainName, libraryQuery, web ? 3 : 6, { contextTerms: resolved.anchors });
+      else if (!(web && webScope === 'aei')) articles = await fetchArticles(chat.domainName, libraryQuery, web ? 3 : 6, { contextTerms: resolved.anchors });
     } catch {
       return res.status(503).json({ error: 'The AEI Scholar Library could not be searched. Please try again shortly.', code: 'archive_unavailable' });
     }
@@ -268,7 +268,7 @@ router.post('/:chatId/message', async (req, res) => {
           webScope: web ? webScope : null,
           shortTopic: !web && !compare && message.trim().split(/\s+/).length <= 4 && !/[?？]/.test(message),
           currentDate: webPlan?.currentDate || new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now()),
-          scholarCoverage: !legacy && !compare ? scholarCoverageFor(chat.domainName, retrievalQuery, sources) : [],
+          scholarCoverage: !legacy && !compare && !(web && webScope === 'aei') ? scholarCoverageFor(chat.domainName, retrievalQuery, sources) : [],
           comparison: compare ? comparisonInstructions(groups) : null,
           followUps: true
         }) },
@@ -288,8 +288,18 @@ router.post('/:chatId/message', async (req, res) => {
     else usageId = await pilot.begin(req.auth.id, reservedMessages);
     if (web) {
       let webSources;
-      try { webSources = prepareWebSources(await searchWeb(retrievalQuery, webPlan), webPlan); }
+      try { webSources = prepareWebSources(await searchWeb(retrievalQuery, webPlan), {...webPlan,excludeSources:archiveSources}); }
       catch { throw Object.assign(new Error('Experimental web search could not retrieve sources. Try Article Chat or try again shortly.'), { status: 502, code: 'web_unavailable' }); }
+      if (!webSources.length && webScope === 'aei') {
+        const unused = usageId ? [usageId] : [...pendingComparisons];
+        for (const id of unused) { await pilot.finish(id, { errorCode:'no_additional_aei_sources',attempted:false }); pendingComparisons.delete(id); }
+        usageId = null;
+        const content = 'This search did not establish an additional AEI author beyond the four scholars in the Scholar Library. Repeated library material and pages without an identifiable publication byline were left out. A broader policy question or a named AEI scholar may help.';
+        const reply = {role:'assistant',content,sources:[],searchMode:'web',webScope:'aei'};
+        await chatManager.addMessage(chatId,userMessage);
+        await chatManager.addMessage(chatId,reply,needsTitle ? fallbackChatTitle(message) : null);
+        return res.json({response:content,sources:[],searchMode:'web',webScope:'aei',aiUsed:false,chat:await chatManager.getChatWithUserCheck(chatId,getUserId(req)),chatId});
+      }
       if (!webSources.length && webPlan.window) {
         const unused = usageId ? [usageId] : [...pendingComparisons];
         for (const id of unused) {
@@ -307,7 +317,7 @@ router.post('/:chatId/message', async (req, res) => {
       if (!webSources.length) {
         throw Object.assign(new Error('Experimental web search found no usable results for this question. Try Article Chat or a more specific question.'), { status: 502, code: 'web_unavailable' });
       }
-      sources = [...archiveSources, ...webSources];
+      sources = webScope === 'aei' ? webSources : [...archiveSources, ...webSources];
       fullMessages = messagesFor(sources);
     }
 
@@ -391,7 +401,7 @@ router.post('/:chatId/message', async (req, res) => {
     const aiResponse = {
       role: 'assistant',
       model: testModel ? testModel.id : MODEL, modelTest: Boolean(testModel),
-      ...(!legacy && !compare ? { coverageNotice: coverageNoticeFor(chat.domainName, retrievalQuery, sources) } : {}),
+      ...(!legacy && !compare && !(web && webScope === 'aei') ? { coverageNotice: coverageNoticeFor(chat.domainName, retrievalQuery, sources) } : {}),
       truncated: response.choices?.[0]?.finish_reason === 'length',
       ...checkedAnswer,
       sources,

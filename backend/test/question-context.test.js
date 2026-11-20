@@ -16,7 +16,7 @@ test('a vague topic can offer actual library leads while a definition request pr
  assert.equal(clarificationFor('AI',sources,true),null);
 });
 test('AEI-only online mode rejects unrelated lookalike domains even when the provider returns them',()=>{
- const results=['https://www.aei.org/article/','https://ctse.aei.org/article/','https://aei.org.example.com/article/','https://example.com/aei.org/'].map(url=>({url,title:'Example',content:'Source passage.'}));
+ const results=['https://www.aei.org/article/','https://ctse.aei.org/article/','https://aei.org.example.com/article/','https://example.com/aei.org/'].map(url=>({url,title:'Example',content:'Source passage.',raw_content:'# Example\nBy John Bailey\n\nA public passage.'}));
  assert.deepEqual(prepareWebSources(results,{scope:'aei'}).map(x=>x.url),results.slice(0,2).map(x=>x.url));
 });
 test('AEI-only mode sends an explicit domain restriction without asking for provider-generated answers',async t=>{

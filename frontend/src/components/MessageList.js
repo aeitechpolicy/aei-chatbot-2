@@ -85,8 +85,8 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
       {!isUser && message.model === 'meta-models/Muse-Spark-Open-816B-A42B' && message.modelTest !== false && <span className="answer-mode-label">Meta Muse · Test</span>}
       {experimental && <span className="answer-mode-label">{message.webScope==='aei'?'AEI online':'AEI + Web'}</span>}
     </div>
-    {experimental && <p className="answer-source-note">{message.webScope==='aei'?'Online AEI excerpts, including material outside the four-scholar library.':'Online search excerpts and library passages are labeled separately. Online excerpts may be incomplete.'}</p>}
-    {experimental && !sources.some(source => source?.id?.startsWith('S')) && <p className="answer-source-note">The web search returned results. The AEI Scholar Library has no matching passages for this question.</p>}
+    {experimental && <p className="answer-source-note">{message.webScope==='aei'?'Online excerpts by additional AEI authors; separate from the four-scholar library.':'Online search excerpts and library passages are labeled separately. Online excerpts may be incomplete.'}</p>}
+    {experimental && message.webScope !== 'aei' && !sources.some(source => source?.id?.startsWith('S')) && <p className="answer-source-note">The web search returned results. The AEI Scholar Library has no matching passages for this question.</p>}
     {message.coverageNotice && <p className="answer-source-note">{message.coverageNotice}</p>}
     <div className={`message-evidence-layout ${selected ? 'has-passage' : ''}`}>
       <div className="message-content">

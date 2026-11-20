@@ -4,7 +4,7 @@ import ResearchDialog from './ResearchDialog';
 import BeforeAfterPreview from './BeforeAfterPreview';
 
 export default function InterfaceChanges({ onClose, onStartTour, onBack }) {
-  return <ResearchDialog title="Before-and-after" onClose={onClose} className="onboarding-dialog interface-changes-dialog"
+  return <ResearchDialog paged title="Before-and-after" onClose={onClose} className="onboarding-dialog interface-changes-dialog"
     closeLabel="Continue to guided demo" closeText="Continue to demo →">
     <div className="interface-changes onboarding-body">
       <p className="onboarding-stages">2 of 3 · See the change</p>

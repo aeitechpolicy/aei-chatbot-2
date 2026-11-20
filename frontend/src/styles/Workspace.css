@@ -755,7 +755,8 @@ body[data-theme=dark] .article-workspace :is(.sidebar,.messages-container,.chat-
 body[data-theme=dark] .article-workspace :is(input,textarea,select,.sidebar button,.sidebar .chat-item,.message-content,.research-dialog button,.app-header button) {color:var(--workspace-text)}
 body[data-theme=dark] .article-workspace .research-primary {background:#235d85;color:white}
 body[data-theme=dark] .article-workspace .logo {background:white;border-radius:4px;padding:3px}
-body[data-theme=dark] .article-workspace :is(.citation-notice,.answer-source-note) {color:#eadcaa;background:#342f24}
+body[data-theme=dark] .article-workspace .citation-notice {color:#cfdeea;background:#243746;border:1px solid #486175}
+body[data-theme=dark] .article-workspace .answer-source-note {color:var(--workspace-muted);background:transparent}
 body[data-theme=dark] .article-workspace .message.user {background:#23455c;color:var(--workspace-text)}
 @media(max-width:650px){.mode-choice-options{grid-template-columns:1fr}.topic-inbox{padding:14px}.pilot-header-actions{flex-wrap:wrap}.research-dialog-actions{flex-wrap:wrap}.topic-card{padding:13px}}
 .web-scope-control {display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px;border:0}.web-scope-control legend {font-weight:600;color:var(--workspace-muted);font-size:.85rem;margin-bottom:6px}.web-scope-control button {padding:7px 14px;border:1px solid var(--workspace-line);border-radius:24px;background:var(--workspace-field);color:var(--workspace-text);font:inherit;cursor:pointer}.web-scope-control button[aria-pressed=true] {background:var(--aei-pale-blue);border-color:var(--workspace-link)}
@@ -763,3 +764,19 @@ body[data-theme=dark] .article-workspace :is(.article-mode-switch button[aria-pr
 body[data-theme=dark] .article-workspace :is(.workspace-panel,.app-content) {background:var(--workspace-bg)}
 body[data-theme=dark] .article-workspace * {scrollbar-color:#607c90 #172633}
 body[data-theme=dark] .article-workspace ::-webkit-scrollbar-track {background:#172633}
+
+/* One scrolling guide body; navigation remains in view on every page. */
+.research-dialog.paged-guide-dialog[open] {display:flex;flex-direction:column;overflow:hidden;max-height:92dvh}
+.paged-guide-dialog .research-dialog-header,.paged-guide-dialog > .research-dialog-actions {flex:0 0 auto;background:var(--workspace-panel)}
+.guide-scroll-body {overflow-y:auto;overscroll-behavior:contain;min-height:0;flex:1 1 auto;scrollbar-gutter:stable}
+.paged-guide-dialog .onboarding-body {overflow:visible;min-height:auto}
+.guide-scroll-cue {display:flex;align-items:center;justify-content:center;gap:7px;flex:0 0 auto;width:100%;padding:7px;border:0;border-bottom:1px solid var(--workspace-line);background:var(--aei-pale-blue);color:var(--workspace-link);font:inherit;font-size:.82rem;font-weight:700;cursor:pointer}
+.guide-scroll-cue[hidden] {display:none}
+.guided-demo-explanation {margin:0 22px 8px;color:var(--workspace-text)}
+.guided-demo-explanation > summary,.guided-demo-step-list > summary {cursor:pointer;color:var(--workspace-link);font-weight:600;font-size:.86rem;padding:8px 0}
+.guided-demo-explanation .guided-demo-generation {margin:6px 0 12px}
+.guided-demo-step-list {margin:8px 0 14px}
+.paged-guide-dialog .guided-demo-layout {padding-top:10px}
+
+.paged-guide-dialog .research-dialog-header,.paged-guide-dialog > .research-dialog-actions,.paged-guide-dialog > .guide-scroll-cue {position:relative;z-index:2}
+.paged-guide-dialog .guide-scroll-body {position:relative;z-index:0;isolation:isolate}

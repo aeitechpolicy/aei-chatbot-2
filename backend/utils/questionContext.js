@@ -1,7 +1,7 @@
 const { queryTerms } = require('./research');
 const { namedScholars } = require('./scholarNames');
 function resolveQuestion(message, messages = []) {
-  const prior = messages.filter(item => item.role === 'user').slice(-6).map(item => item.content);
+  const prior = messages.filter(item => item.role === 'user').slice(-6).map(item => item.content.replace(/^(?:Find other AEI perspectives on this question:\s*)+/i,''));
   const referential = /^(?:what about\b|and\b|why\b|how so\b|tell (?:me )?more\b|what else\b)|\b(?:that|those|this|these|they|their|them|it)\b/i;
   const continuation = text => referential.test(text) && !namedScholars(text).length && !/\b(themes?|overview|focus)\b/i.test(text);
   if (!prior.length || !continuation(message)) return { query: message, anchors: [] };

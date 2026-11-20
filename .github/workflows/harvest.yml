@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add backend/data/aei-index.json backend/data/aei-authors.json
+          git add backend/data/aei-index.json backend/data/aei-authors.json backend/data/aei-online-bylines.json.gz
           git diff --cached --quiet || git commit -m "Harvest AEI index"
           git pull --rebase origin main
           git push

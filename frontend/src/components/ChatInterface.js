@@ -216,7 +216,7 @@ const ChatInterface = ({
         <div className="workspace-intro">
           <p className="workspace-kicker">{web ? 'Experimental' : 'AEI Chatbot'}</p>
           <h2>{web ? (webScope==='aei'?'Explore AEI online':'Research with AEI and the web') : comparisonMode ? 'Compare scholar perspectives' : 'Explore a policy question'}</h2>
-          <p>{web ? (webScope==='aei'?'Brief online excerpts from AEI, including scholars outside the four-scholar library.':'External web context alongside the AEI Scholar Library. Online excerpts are distinct from saved publications.') : comparisonMode ? 'Choose two to four scholars and ask one question. Compare perspectives and identify limits in the available evidence.' : 'Ask about work in the AEI Scholar Library.'}</p>
+          <p>{web ? (webScope==='aei'?'Brief online excerpts by additional AEI authors beyond the four scholars in the library.':'External sources beyond AEI alongside the AEI Scholar Library. Online excerpts are distinct from saved publications.') : comparisonMode ? 'Choose two to four scholars and ask one question. Compare perspectives and identify limits in the available evidence.' : 'Ask about work in the AEI Scholar Library.'}</p>
         </div>
       ) : (
         <div className="messages-container">
@@ -224,7 +224,7 @@ const ChatInterface = ({
             <p className="workspace-meta" role="alert">This chat could not be opened. Select the conversation again from chat history or start a new chat.</p>
           ) : (
             <><Messages messages={currentChat?.messages || []} loading={sendingMessage || loading || !chatReady} title={currentChat?.title} chatId={currentChat?.id} onFollowUp={composerDisabled ? undefined : fillFollowUp} onClarify={composerDisabled ? undefined : question=>{setClarified(true);setInputValue(question);inputRef.current?.focus();}} />      {!legacy && !comparisonMode && currentChat?.messages?.some(message=>message.role==='assistant') && <div className="research-flow-actions">
-        <ModeChoice current={web?webScope:'library'} disabled={composerDisabled} onChoose={scope=>{const question=[...(currentChat?.messages||[])].reverse().find(message=>message.role==='user')?.content||'';if(scope==='library'){onModeChoice?.('library','');if(inputValue.startsWith('Find other AEI perspectives on this question:'))fillFollowUp('');}else{onModeChoice?.(scope,question);fillFollowUp(scope==='aei'?`Find other AEI perspectives on this question: ${question}`:question);}}} />
+        <ModeChoice current={web?webScope:'library'} disabled={composerDisabled} onChoose={scope=>{const question=[...(currentChat?.messages||[])].reverse().find(message=>message.role==='user')?.content||'';const cleanQuestion=question.replace(/^(?:Find other AEI perspectives on this question:\s*)+/i,'');if(scope==='library'){onModeChoice?.('library','');if(inputValue.startsWith('Find other AEI perspectives on this question:'))fillFollowUp('');}else{onModeChoice?.(scope,cleanQuestion);fillFollowUp(scope==='aei'?`Find other AEI perspectives on this question: ${cleanQuestion}`:cleanQuestion);}}} />
         <button type="button" className="research-secondary" disabled={composerDisabled} onClick={()=>setFollowOpen(true)}><Bell size={17} aria-hidden="true" /> Follow this topic</button>
       </div>}
 </>
@@ -232,7 +232,7 @@ const ChatInterface = ({
         </div>
       )}
 
-      {followOpen && <FollowTopicDialog chatId={currentChat?.id||chatId} initialScope={web?webScope:'library'} onClose={()=>setFollowOpen(false)} onSaved={()=>onTopicSaved?.()} />}
+      {followOpen && <FollowTopicDialog showUsage={!hideUsage} chatId={currentChat?.id||chatId} initialScope={web?webScope:'library'} onClose={()=>setFollowOpen(false)} onSaved={()=>onTopicSaved?.()} />}
       <form className="chat-input-form" onSubmit={handleSubmit}>
         {!legacy && web && <fieldset className="web-scope-control"><legend>Online research scope</legend>
           <button type="button" aria-pressed={webScope==='aei'} disabled={sendingMessage || loading} onClick={()=>onModeChoice?.('aei','')}>AEI online</button>
