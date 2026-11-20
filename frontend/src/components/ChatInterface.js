@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import MessageList from './MessageList';
 import LegacyMessageList from './LegacyMessageList';
 import RelatedNews from './RelatedNews';
-import { Send } from 'lucide-react';
+import { ModeChoice, FollowTopicDialog } from './ResearchFlow';
+import { Send, Bell } from 'lucide-react';
 import { API_BASE_URL, apiFetch, chatEndpoint } from '../utils/api';
 import { SCHOLARS, SCHOLAR_NAMES } from '../utils/scholars';
 import '../styles/ChatInterface.css';
@@ -10,6 +11,9 @@ import '../styles/ChatInterface.css';
 const ChatInterface = ({ 
   active,
   web = false,
+  webScope = 'web',
+  onModeChoice,
+  onTopicSaved,
   comparisonMode = false,
   allowModelTest = false,
   legacy = false,
@@ -28,6 +32,8 @@ const ChatInterface = ({
   const [chatLoadError, setChatLoadError] = useState(false);
   const [comparisonScholars, setComparisonScholars] = useState(Object.keys(SCHOLARS));
   const [testModel, setTestModel] = useState('');
+  const [followOpen,setFollowOpen]=useState(false);
+  const [clarified,setClarified]=useState(false);
   const [webAvailable, setWebAvailable] = useState(null);
   const inputRef = useRef(null);
   const chatLoadVersion = useRef(0);
@@ -103,10 +109,12 @@ const ChatInterface = ({
       
       try {
         const result = await onSendMessage(messageToSend, web ? 'web' : !legacy && comparisonMode ? 'compare' : 'archive', {
+          ...(!legacy ? {interactive:true, ...(clarified ? {clarified:true} : {}), ...(web ? {webScope} : {})} : {}),
           ...(comparisonMode ? { comparisonScholars } : {}),
           ...(allowModelTest && testModel ? { modelId: testModel } : {})
         });
         
+        setClarified(false);
         // The API response contains the AI response, so we can add it directly
         if (result && result.response) {
           ++chatLoadVersion.current;
@@ -121,7 +129,7 @@ const ChatInterface = ({
             truncated: result.truncated,
             sources: result.sources || [],
             citationNotice: result.citationNotice,
-            searchMode: result.searchMode,
+            searchMode: result.searchMode, webScope:result.webScope, clarification:result.clarification,
             comparison: result.comparison,
             followUps: result.followUps,
             timestamp: new Date().toISOString()
@@ -163,11 +171,13 @@ const ChatInterface = ({
   };
 
   const handleInputChange = (e) => {
+    setClarified(false);
     setInputValue(e.target.value);
     if (sendError) setSendError(null);
   };
 
   const fillFollowUp = question => {
+    setClarified(false);
     setInputValue(question);
     setSendError(null);
     inputRef.current?.focus();
@@ -205,20 +215,29 @@ const ChatInterface = ({
       {empty && !legacy ? (
         <div className="workspace-intro">
           <p className="workspace-kicker">{web ? 'Experimental' : 'AEI Chatbot'}</p>
-          <h2>{web ? 'Research with AEI and the web' : comparisonMode ? 'Compare scholar perspectives' : 'Explore a policy question'}</h2>
-          <p>{web ? 'Find relevant scholarship and additional context from the web.' : comparisonMode ? 'Choose two to four scholars and ask one question. Compare perspectives and identify limits in the available evidence.' : 'Ask about work in the AEI Scholar Library.'}</p>
+          <h2>{web ? (webScope==='aei'?'Explore AEI online':'Research with AEI and the web') : comparisonMode ? 'Compare scholar perspectives' : 'Explore a policy question'}</h2>
+          <p>{web ? (webScope==='aei'?'Brief online excerpts from AEI, including scholars outside the four-scholar library.':'External web context alongside the AEI Scholar Library. Online excerpts are distinct from saved publications.') : comparisonMode ? 'Choose two to four scholars and ask one question. Compare perspectives and identify limits in the available evidence.' : 'Ask about work in the AEI Scholar Library.'}</p>
         </div>
       ) : (
         <div className="messages-container">
           {chatLoadError && !chatReady ? (
             <p className="workspace-meta" role="alert">This chat could not be opened. Select the conversation again from chat history or start a new chat.</p>
           ) : (
-            <Messages messages={currentChat?.messages || []} loading={sendingMessage || loading || !chatReady} title={currentChat?.title} chatId={currentChat?.id} onFollowUp={composerDisabled ? undefined : fillFollowUp} />
+            <><Messages messages={currentChat?.messages || []} loading={sendingMessage || loading || !chatReady} title={currentChat?.title} chatId={currentChat?.id} onFollowUp={composerDisabled ? undefined : fillFollowUp} onClarify={composerDisabled ? undefined : question=>{setClarified(true);setInputValue(question);inputRef.current?.focus();}} />      {!legacy && !comparisonMode && currentChat?.messages?.some(message=>message.role==='assistant') && <div className="research-flow-actions">
+        <ModeChoice current={web?webScope:'library'} disabled={composerDisabled} onChoose={scope=>{const question=[...(currentChat?.messages||[])].reverse().find(message=>message.role==='user')?.content||'';if(scope==='library'){onModeChoice?.('library','');if(inputValue.startsWith('Find other AEI perspectives on this question:'))fillFollowUp('');}else{onModeChoice?.(scope,question);fillFollowUp(scope==='aei'?`Find other AEI perspectives on this question: ${question}`:question);}}} />
+        <button type="button" className="research-secondary" disabled={composerDisabled} onClick={()=>setFollowOpen(true)}><Bell size={17} aria-hidden="true" /> Follow this topic</button>
+      </div>}
+</>
           )}
         </div>
       )}
 
+      {followOpen && <FollowTopicDialog chatId={currentChat?.id||chatId} initialScope={web?webScope:'library'} onClose={()=>setFollowOpen(false)} onSaved={()=>onTopicSaved?.()} />}
       <form className="chat-input-form" onSubmit={handleSubmit}>
+        {!legacy && web && <fieldset className="web-scope-control"><legend>Online research scope</legend>
+          <button type="button" aria-pressed={webScope==='aei'} disabled={sendingMessage || loading} onClick={()=>onModeChoice?.('aei','')}>AEI online</button>
+          <button type="button" aria-pressed={webScope==='web'} disabled={sendingMessage || loading} onClick={()=>onModeChoice?.('web','')}>Wider web</button>
+        </fieldset>}
         {sendError && (
           <div className="send-error-banner">
             <span>{sendError}</span>
@@ -289,7 +308,7 @@ const ChatInterface = ({
         </div>
         {!legacy && (chatReady || sendingMessage) && (chatId || sendingMessage) && (
           <p className="workspace-meta">
-            {comparisonMode ? `Comparing: ${comparisonScholars.map(key => SCHOLARS[key]).join(', ')}` : scope === 'General' ? <>All 4 scholars <span aria-hidden="true">·</span> {SCHOLAR_NAMES}</> : `Scholar: ${SCHOLARS[scope] || scope.replace(/_/g, ' ')}`}
+            {web ? `Library coverage: ${scope === 'General' ? SCHOLAR_NAMES : SCHOLARS[scope] || scope.replace(/_/g,' ')} · Online scope: ${webScope==='aei'?'AEI website':'Wider web'}` : comparisonMode ? `Comparing: ${comparisonScholars.map(key => SCHOLARS[key]).join(', ')}` : scope === 'General' ? <>All 4 scholars <span aria-hidden="true">·</span> {SCHOLAR_NAMES}</> : `Scholar: ${SCHOLARS[scope] || scope.replace(/_/g, ' ')}`}
           </p>
         )}
       </form>

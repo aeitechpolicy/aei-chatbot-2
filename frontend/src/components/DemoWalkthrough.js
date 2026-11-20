@@ -3,30 +3,35 @@ import { ArrowRight, BookOpen, Check, Copy, Flag, Globe, MessageCircle, RotateCc
 import ResearchDialog from './ResearchDialog';
 import ResearchBriefPreview from './ResearchBriefPreview';
 import FeedbackDialog from './FeedbackDialog';
+import { ModeChoice } from './ResearchFlow';
 import { SCHOLARS } from '../utils/scholars';
 import { buildResearchBrief } from '../utils/researchBrief';
 
-const sampleQuestion = 'What does Greg Oslan recommend for protecting personal accounts?';
+// Newly written guided-practice material based on public sources, not saved user chats.
+const sampleQuestion = 'What options could expand rural connectivity?';
 const sampleSource = {
-  id: 'S1', title: 'Why Is It So Hard to Stay Safe Online?', author: 'Shane Tews', date: '2026-11-12',
-  url: 'https://www.aei.org/domestic-policy/why-is-it-so-hard-to-stay-safe-online/',
-  excerpt: 'Greg Oslan: Checking whether your email address has been exposed in a breach is a relatively easy thing to do today. You can use tools that have been out there for a number of years, and they’ll quickly tell you which breaches may have exposed your email address.'
+  id:'S1', title:'Rural Broadband Requires Out-of-the-Box Thinking', author:'Shane Tews and Joel Thayer', date:'2022-04-20',
+  url:'https://www.aei.org/commentary/rural-broadband-requires-out-of-the-box-thinking/',
+  excerpt:'America needs and deserves an all-of-the above approach to ensure every family can connect with 5G.'
 };
 const webSource = {
-  id: 'W1', kind: 'web', title: 'How Do I Create a Good Password?', publisher: 'NIST', date: null,
-  url: 'https://www.nist.gov/cybersecurity-and-privacy/how-do-i-create-good-password',
-  excerpt: 'For accounts that require passwords, NIST experts highly recommend that you use a password manager.'
+  id:'W1', kind:'web', title:'How to Use the FCC’s National Broadband Map', publisher:'Federal Communications Commission', date:null,
+  url:'https://help.bdc.fcc.gov/hc/en-us/articles/10467446103579-How-to-Use-the-FCC-s-National-Broadband-Map',
+  excerpt:'The FCC map lists fixed broadband technologies available at individual homes and small businesses, including fiber, cable, DSL, satellite and fixed wireless.',
+  practiceSummary:true
 };
-const answer = 'Oslan recommends checking whether account credentials have appeared in a breach and reviewing older accounts that still contain personal information. [S1]';
-const brief = buildResearchBrief({ content: answer, sources: [sampleSource] }, 'Protecting personal accounts');
+const answer = 'The authors advocate using several approaches to extend rural connectivity rather than relying on a single route. [S1]';
+const brief = buildResearchBrief({content:answer,sources:[sampleSource]},'Rural Connectivity Options');
 const steps = [
   { title: 'Choose a mode', help: 'Select AEI Article Search. Article Chat answers from the Scholar Library; Compare Scholars supports selected-scholar comparisons; AEI + Web adds outside material.' },
-  { title: 'Find an article', help: 'Search Greg Oslan. Live search also includes scholar filters, date ranges, and Newest first. Select results to copy a source list.' },
-  { title: 'Open the citation', help: 'Select [S1] to read the supporting passage. Shane Tews is the author of this article; Greg Oslan is the guest speaking in the passage.' },
+  { title: 'Find an article', help: 'Search rural broadband. Live search also includes scholar filters, date ranges, and Newest first. Select results to copy a source list.' },
+  { title: 'Open the citation', help: 'Select [S1] to read the supporting passage. The byline names Shane Tews and Joel Thayer; the source date identifies this as a historical publication.' },
   { title: 'Preview a research brief', help: 'Open the brief, review the findings and linked source, and copy the text if useful. It selects concise findings from the answer already on screen, including important qualifications.' },
-  { title: 'Try AEI + Web', help: 'Select AEI + Web, then [W1]. This prepared comparison connects the AEI interview with NIST guidance. [S1] identifies AEI evidence; [W1] identifies an outside source.' },
+  { title: 'Try AEI + Web', help: 'Select AEI + Web, then [W1]. This newly written practice comparison connects a public AEI article with FCC information. [S1] identifies AEI evidence; [W1] identifies an outside source.' },
   { title: 'Report a problem', help: 'Select Send to the team, choose a reason, and explain what needs correcting. This practice form sends nothing. In real use, staff receive the reported answer or source and the submitted explanation.' },
-  { title: 'Compare selected scholars', help: 'Open Compare Scholars and select two to four names. Ask one question to compare perspectives side by side. The live answer uses only the selected scholars and flags limited evidence. This practice shows the controls, not generated findings.' }
+  { title: 'Compare selected scholars', help: 'Open Compare Scholars and select two to four names. Ask one question to compare perspectives side by side. The live answer uses only the selected scholars and flags limited evidence. This practice shows the controls, not generated findings.' },
+  { title: 'Choose the next research direction', help: 'Continue in Article Chat, explore AEI online, or add the wider web. Each choice waits for a deliberate selection and Send. Online excerpts remain separate from the four-scholar library.' },
+  { title: 'Follow a topic and find updates', help: 'Follow this topic opens a source-scope choice. Topic inbox keeps updates private. Checks run at sign-in only when 24 hours have elapsed since the last attempt; signing in again does not repeat a check. Discuss in chat offers a mode choice before continuing.' }
 ];
 const modes = [
   { key: 'chat', label: 'Article Chat', icon: MessageCircle },
@@ -40,6 +45,8 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   const [mode, setMode] = useState('chat');
   const [comparisonScholars, setComparisonScholars] = useState([]);
   const [query, setQuery] = useState('');
+  const [practiceScope,setPracticeScope]=useState('library');
+  const [practiceFollow,setPracticeFollow]=useState(false);
   const [results, setResults] = useState(false);
   const [searchError, setSearchError] = useState('');
   const [selected, setSelected] = useState(false);
@@ -73,8 +80,8 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   }
   function findArticle(event) {
     event.preventDefault();
-    if (query.trim().replace(/\s+/g, ' ').toLowerCase() !== 'greg oslan') {
-      setSearchError('For this practice example, search Greg Oslan. The real search accepts other topics and names.'); return;
+    if (query.trim().replace(/\s+/g, ' ').toLowerCase() !== 'rural broadband') {
+      setSearchError('For this practice example, search rural broadband. The real search accepts other topics and names.'); return;
     }
     setSearchError(''); setResults(true); mark(1);
   }
@@ -92,11 +99,13 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
     const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
     setShowing(true);
     if (step === 0) setMode('search');
-    if (step === 1) { setMode('search'); setQuery('Greg Oslan'); setSearchError(''); }
+    if (step === 1) { setMode('search'); setQuery('rural broadband'); setSearchError(''); }
     if (step === 2) { setMode('chat'); setPassage(true); }
     if (step === 3) { setMode('chat'); setBriefOpen(true); }
     if (step === 4) setMode('web');
     if (step === 5) { setMode('chat'); setFeedbackOpen(true); }
+    if (step === 7) setPracticeScope('aei');
+    if (step === 8) setPracticeFollow(true);
     if (step === 6) { setMode('compare'); setComparisonScholars(['Clay_Calvert', 'Shane_Tews']); }
     await wait(650);
     if (currentRun !== run.current) return;
@@ -107,12 +116,13 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
   function sourcePassage(source, name) {
     return <section className="guided-demo-passage" aria-label={name} data-tour-focus={source.id === 'W1' ? step === 4 : step === 2}>
       <h4>{source.title}</h4><p>{source.author || source.publisher} · {source.date || 'Publication date not recorded'}</p>
-      {source.id === 'S1' && <p><strong>Guest: Greg Oslan</strong></p>}
-      <blockquote>{source.excerpt}</blockquote><a href={source.url} target="_blank" rel="noopener noreferrer">{source.id === 'S1' ? 'Open on AEI' : 'Open outside source'}</a>
+      {source.id === 'S1' && <p><strong>Public article · Two coauthors</strong></p>}
+      {source.practiceSummary && <p>Original practice summary of a public source; not a direct quotation.</p>}
+      <blockquote>{source.excerpt}</blockquote><a href={source.url} target="_blank" rel="noopener noreferrer">{source.id === 'S1' ? 'Open on AEI' : 'Open federal source'}</a>
     </section>;
   }
   return <ResearchDialog title="Try AEI Chatbot" onClose={onClose} className="guided-demo-dialog">
-    <div className="guided-demo-intro"><span className="guided-demo-badge">Guided practice</span><p>Explore a prepared example. Practice activity is not sent to the chatbot or saved to chat history.</p></div>
+    <div className="guided-demo-intro"><span className="guided-demo-badge">Guided practice</span><p>Explore newly written practice material based on public sources. No user conversations are used. Practice activity is not sent to the chatbot or saved to chat history.</p></div>
     <section className="guided-demo-generation" aria-label="How answers are generated">
       <h3>How answers are generated</h3>
       <p>Each question starts with a search for relevant passages from the selected scholars. An AI model then drafts a response using those passages and adds numbered source references. AEI + Web also includes outside search results, labelled separately.</p>
@@ -134,6 +144,8 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
       <section className={`guided-demo-workspace ${showing ? 'is-demonstrating' : ''}`} aria-label="Practice workspace" aria-busy={showing}>
         <div className="guided-demo-workspace-heading"><strong>AEI Chatbot</strong><span>Prepared example</span></div>
         <nav className="guided-demo-modes" aria-label="Practice research modes">{modes.map(({key, label, icon: Icon}) => <button key={key} type="button" disabled={showing} aria-pressed={mode === key} data-tour-focus={(step === 0 && key === 'search') || (step === 4 && key === 'web' && mode !== 'web')} onClick={() => chooseMode(key)}><Icon size={15} aria-hidden="true" />{label}</button>)}</nav>
+        {step === 7 && <ModeChoice current={practiceScope} disabled={showing} onChoose={scope=>{setPracticeScope(scope);mark(7);}} />}
+        {step === 8 && <section className="topic-card"><h3>Practice: follow this topic</h3><p>Prepared example · No check or save is performed.</p><fieldset className="follow-topic-form"><legend>Choose a source scope</legend>{['library','aei','web'].map(scope=><label key={scope}><input type="radio" name="practice-follow" checked={practiceScope===scope} onChange={()=>setPracticeScope(scope)} />{scope==='library'?'Scholar Library':scope==='aei'?'AEI online':'Wider web'}</label>)}</fieldset><button type="button" className="research-secondary" onClick={()=>{setPracticeFollow(true);mark(8);}}>Follow this topic</button>{practiceFollow&&<div className="topic-update"><h4>Topic inbox · Example</h4><p>First-check match · New publication related to this chat.</p><p>Next check: at sign-in after 24 hours. No automatic switch into another mode.</p><button type="button" className="research-secondary" onClick={()=>mark(8)}>Discuss in chat</button></div>}</section>}
         {mode === 'compare' && <>
           <p className="guided-demo-mode-description">Choose two to four scholars, then ask the same question about the selected publications.</p>
           <fieldset className="chat-scope-picker"><legend>Practice: choose scholars to compare</legend>
@@ -148,11 +160,11 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
         {mode === 'search' && <>
           <p className="guided-demo-mode-description">Find articles in the AEI Scholar Library.</p>
           <form className="guided-demo-search" data-tour-focus={step === 1 && !results} onSubmit={findArticle}><label htmlFor="practice-query">Search the sample library</label><div>
-            <input id="practice-query" maxLength={200} disabled={showing} value={query} onChange={event => setQuery(event.target.value)} placeholder="Greg Oslan" />
+            <input id="practice-query" maxLength={200} disabled={showing} value={query} onChange={event => setQuery(event.target.value)} placeholder="rural broadband" />
             <button type="submit" className="research-primary" disabled={showing}><Search size={15} aria-hidden="true" /> Search</button>
           </div></form>
           {searchError && <p role="alert">{searchError}</p>}
-          {results && <article className="guided-demo-result" data-tour-focus={step === 1} aria-label="Practice search result"><p className="workspace-kicker">Edited interview highlights</p><h4>{sampleSource.title}</h4><p>{sampleSource.author} · {sampleSource.date}</p><p>Interview participants: Shane Tews, Greg Oslan</p><a href={sampleSource.url} target="_blank" rel="noopener noreferrer">Open on AEI</a>
+          {results && <article className="guided-demo-result" data-tour-focus={step === 1} aria-label="Practice search result"><p className="workspace-kicker">Public article · Historical example</p><h4>{sampleSource.title}</h4><p>{sampleSource.author} · {sampleSource.date}</p><p>Newly written practice example based on a public publication.</p><a href={sampleSource.url} target="_blank" rel="noopener noreferrer">Open on AEI</a>
             <label className="source-selection"><input type="checkbox" checked={selected} onChange={event => setSelected(event.target.checked)} />Add to source list</label>
             <button type="button" className="research-secondary" disabled={!selected} onClick={copySourceList}><Copy size={14} aria-hidden="true" /> Copy source list</button><p role="status">{copyStatus || 'This is the prepared result for this walkthrough.'}</p>
           </article>}
@@ -160,16 +172,16 @@ export default function DemoWalkthrough({ onClose, onTryQuestion, onOpenSearch, 
         {mode === 'web' && <>
           <p className="guided-demo-mode-description">AEI + Web brings outside context alongside the scholar material. This is a prepared example, not a live search or a claim about today’s news.</p>
           {step < 2 ? <p className="guided-demo-placeholder">Choose AEI Article Search to start, or select Next to see a demonstration of that step.</p> : <>
-            <p className="guided-demo-question"><strong>Example question</strong><br />How does the AEI interview’s account-safety advice compare with NIST’s guidance?</p>
-            <article className="guided-demo-answer" aria-label="Prepared AEI plus Web answer"><p><strong>AEI interview:</strong> Greg Oslan recommends checking whether an email address has appeared in data breaches. <button type="button" className="source-reference citation-button" aria-label="Open sample AEI web citation S1" onClick={() => setWebPassage('S1')}>[S1]</button></p>
-              <p><strong>Outside guidance:</strong> NIST recommends a password manager for accounts requiring passwords. This adds a practical way to manage account credentials. <button type="button" className="source-reference citation-button" aria-label="Open sample web citation W1" data-tour-focus={step === 4 && webPassage !== 'W1'} onClick={() => { setWebPassage('W1'); mark(4); }}>[W1]</button></p>
+            <p className="guided-demo-question"><strong>Example question</strong><br />How could a public connectivity argument relate to checking local broadband availability?</p>
+            <article className="guided-demo-answer" aria-label="Prepared AEI plus Web answer"><p><strong>AEI article:</strong> The authors advocate several approaches to extending rural connectivity. <button type="button" className="source-reference citation-button" aria-label="Open sample AEI web citation S1" onClick={() => setWebPassage('S1')}>[S1]</button></p>
+              <p><strong>Federal background:</strong> The FCC map lists technology options available at individual locations. This adds background for checking local availability, rather than establishing which approach is best for every community. <button type="button" className="source-reference citation-button" aria-label="Open sample web citation W1" data-tour-focus={step === 4 && webPassage !== 'W1'} onClick={() => { setWebPassage('W1'); mark(4); }}>[W1]</button></p>
               {webPassage && sourcePassage(webPassage === 'W1' ? webSource : sampleSource, webPassage === 'W1' ? 'Sample outside source passage' : 'Sample AEI web passage')}
             </article>
           </>}
         </>}
         {mode === 'chat' && <>{step < 2 ? <p className="guided-demo-placeholder">Start with AEI Article Search, or select Next to see a demonstration of the step.</p> : <>
           <p className="guided-demo-question"><strong>Example question</strong><br />{sampleQuestion}</p><article className="guided-demo-answer" aria-label="Prepared sample answer"><p className="workspace-kicker">Prepared answer</p>
-            <p>Oslan recommends checking whether account credentials have appeared in a breach and reviewing older accounts that still contain personal information. <button type="button" className="source-reference citation-button" data-tour-focus={step === 2 && !passage} aria-label="Open sample citation S1" onClick={() => { setPassage(!passage); mark(2); }}>[S1]</button></p>
+            <p>The authors advocate using several approaches to extend rural connectivity rather than relying on a single route. <button type="button" className="source-reference citation-button" data-tour-focus={step === 2 && !passage} aria-label="Open sample citation S1" onClick={() => { setPassage(!passage); mark(2); }}>[S1]</button></p>
             {passage && sourcePassage(sampleSource, 'Sample source passage')}
             <div className="guided-demo-answer-actions"><button type="button" className="research-secondary" data-tour-focus={step === 3} onClick={() => { setBriefOpen(true); mark(3); }}><BookOpen size={16} aria-hidden="true" /> Preview research brief</button>
               <button type="button" className="research-secondary" data-tour-focus={step === 5} onClick={() => setFeedbackOpen(true)}><Flag size={16} aria-hidden="true" /> Send to the team</button></div>

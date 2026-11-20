@@ -1,0 +1,12 @@
+import React, {useState} from 'react';
+import ResearchDialog from './ResearchDialog';
+export default function RecentUpdates({onClose,onTour}) {
+  const [step,setStep]=useState(0);
+  const pages=[
+    {title:'Keep the question in context',text:'Follow-up questions keep the earlier research topic instead of starting an unrelated search. If a brief request needs a direction, choose a library article lead or type another angle.'},
+    {title:'Choose where the research goes next',text:'Below an answer, Continue the research offers three choices: the four-scholar library, AEI online (including other scholars), or the wider web. Switching prepares the question; nothing is searched until Send is selected. Online excerpts are labeled separately from library evidence.'},
+    {title:'Follow a topic privately',text:'Select Follow this topic after an answer, choose the source scope, then find results in Topic inbox. At sign-in, each topic is checked only if 24 hours have passed since the previous attempt. No checks run while signed out. The first check shows current matches; later checks show newly found items. Discuss in chat offers a mode choice before reopening the conversation.'},
+    {title:'Make the workspace comfortable',text:'Use the sun or moon at the top to switch appearance. Explore next highlights suggested follow-up questions. Latest updates reopens this guide; How to use replays the full demo. Staff see a badge when unread reports arrive.'}
+  ];
+  return <ResearchDialog title="Latest updates · November 19" onClose={onClose} closeLabel="Close latest updates"><div className="recent-updates-body"><p className="workspace-kicker">Research workflow update · {step+1} of {pages.length}</p><h3>{pages[step].title}</h3><p>{pages[step].text}</p><div className="recent-update-preview" aria-label="Research scope preview"><span>Scholar Library</span><span>AEI online</span><span>Wider web</span></div><p className="workspace-meta">Responses are actively being refined. Source passages and Send to the team remain available.</p></div><footer className="research-dialog-actions">{step>0&&<button type="button" className="research-secondary" onClick={()=>setStep(step-1)}>Back</button>}<button type="button" className="research-secondary" onClick={onTour}>Open full guided demo</button>{step<pages.length-1?<button type="button" className="research-primary" onClick={()=>setStep(step+1)}>Next</button>:<button type="button" className="research-primary" onClick={onClose}>Start researching</button>}</footer></ResearchDialog>;
+}

@@ -46,6 +46,9 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
   ); CREATE TABLE IF NOT EXISTS source_feedback (
     id TEXT PRIMARY KEY, created_at TEXT NOT NULL, reporter_label TEXT NOT NULL,
     category TEXT NOT NULL, detail TEXT NOT NULL, source TEXT NOT NULL
+  ); CREATE TABLE IF NOT EXISTS private_items (
+    user_id TEXT NOT NULL, kind TEXT NOT NULL, id TEXT NOT NULL, payload TEXT NOT NULL,
+    PRIMARY KEY(user_id,kind,id)
   );`);
   }
 
@@ -263,7 +266,34 @@ function createPilot({ env = process.env, now = Date.now, dataDir, storage } = {
     return [columns.map(cell).join(','), ...(await rows(userId)).map(row => columns.map(key => cell(row[key])).join(','))].join('\r\n');
   }
 
+  async function privateItems(userId, kind) {
+    if (remote) return remote.privateItems(userId,kind);
+    return db.prepare('SELECT id,payload FROM private_items WHERE user_id=? AND kind=? ORDER BY id').all(userId,kind).map(row=>({id:row.id,...JSON.parse(row.payload)}));
+  }
+  async function savePrivateItem(userId,kind,id,payload) {
+    if (remote) return remote.savePrivateItem(userId,kind,id,payload);
+    db.prepare('INSERT INTO private_items VALUES(?,?,?,?) ON CONFLICT(user_id,kind,id) DO UPDATE SET payload=excluded.payload').run(userId,kind,id,JSON.stringify(payload));
+  }
+  async function deletePrivateItem(userId,kind,id) {
+    if (remote) return remote.deletePrivateItem(userId,kind,id);
+    db.prepare('DELETE FROM private_items WHERE user_id=? AND kind=? AND id=?').run(userId,kind,id);
+  }
+  async function claimTopicCheck(userId,id,at) {
+    if (remote) return remote.claimTopicCheck(userId,id,at);
+    return Boolean(db.prepare(`UPDATE private_items SET payload=json_set(payload,'$.lastAttemptAt',?)
+      WHERE user_id=? AND kind='follow' AND id=? AND (json_extract(payload,'$.lastAttemptAt') IS NULL OR json_extract(payload,'$.lastAttemptAt')<=?)`).run(at,userId,id,new Date(Date.parse(at)-86400000).toISOString()).changes);
+  }
+  async function finishTopicCheck(userId,id,at,payload) {
+    if(remote) return remote.finishTopicCheck(userId,id,at,payload);
+    db.prepare(`UPDATE private_items SET payload=json_patch(?,json_object('readAt',json_extract(payload,'$.readAt'))) WHERE user_id=? AND kind='follow' AND id=? AND json_extract(payload,'$.lastAttemptAt')=?`).run(JSON.stringify(payload),userId,id,at);
+  }
+  async function patchPrivateItem(userId,kind,id,patch) {
+    if(remote) return remote.patchPrivateItem(userId,kind,id,patch);
+    db.prepare('UPDATE private_items SET payload=json_patch(payload,?) WHERE user_id=? AND kind=? AND id=?').run(JSON.stringify(patch),userId,kind,id);
+  }
+
   return { login, authenticate, requireAuth, begin, beginBatch, finish, rows, csv, saveFeedback, saveSourceFeedback, feedbackReports,
+    privateItems, savePrivateItem, deletePrivateItem, claimTopicCheck, finishTopicCheck, patchPrivateItem,
     logout: user => revokedSessions.set(user.nonce, user.exp),
     close: async () => { if (db) db.close(); if (remote) await remote.close(); },
     chatManager: remote && remote.chatManager,

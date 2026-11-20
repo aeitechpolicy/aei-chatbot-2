@@ -7,28 +7,28 @@ beforeEach(() => jest.clearAllMocks());
 test('the guided practice completes search, citation, brief and feedback without API calls', () => {
   const onTryQuestion = jest.fn();
   render(<DemoWalkthrough showWhatsNewLink onClose={jest.fn()} onOpenSearch={jest.fn()} onTryQuestion={onTryQuestion} />);
-  expect(screen.getByText('0 of 7 complete')).toBeVisible();
+  expect(screen.getByText('0 of 9 complete')).toBeVisible();
   const explanation = screen.getByRole('region', { name: 'How answers are generated' });
   expect(explanation).toHaveTextContent('Responses are actively being fine-tuned.');
   expect(explanation).toHaveTextContent('missing references');
   fireEvent.click(screen.getByRole('button', { name: 'AEI Article Search', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
-  fireEvent.change(screen.getByLabelText('Search the sample library'), { target: { value: 'Greg Oslan' } });
+  fireEvent.change(screen.getByLabelText('Search the sample library'), { target: { value: 'rural broadband' } });
   fireEvent.click(screen.getByRole('button', { name: 'Search', exact: true }));
-  expect(screen.getByRole('article', { name: 'Practice search result' })).toHaveTextContent('Why Is It So Hard to Stay Safe Online?');
+  expect(screen.getByRole('article', { name: 'Practice search result' })).toHaveTextContent('Rural Broadband Requires Out-of-the-Box Thinking');
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
   expect(screen.getByRole('article', { name: 'Prepared sample answer' })).toBeVisible();
   fireEvent.click(screen.getByRole('button', { name: 'Open sample citation S1' }));
-  expect(screen.getByRole('region', { name: 'Sample source passage' })).toHaveTextContent('Guest: Greg Oslan');
+  expect(screen.getByRole('region', { name: 'Sample source passage' })).toHaveTextContent('Public article · Two coauthors');
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Preview research brief' }));
   const brief = screen.getByRole('dialog', { name: 'Research brief' });
-  expect(brief).toHaveTextContent('Protecting personal accounts');
+  expect(brief).toHaveTextContent('Rural Connectivity Options');
   fireEvent.click(within(brief).getByRole('button', { name: 'Close dialog' }));
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
   expect(screen.getByRole('article', { name: 'Prepared AEI plus Web answer' })).toBeVisible();
   fireEvent.click(screen.getByRole('button', { name: 'Open sample web citation W1' }));
-  expect(screen.getByRole('region', { name: 'Sample outside source passage' })).toHaveTextContent('NIST');
+  expect(screen.getByRole('region', { name: 'Sample outside source passage' })).toHaveTextContent('Federal Communications Commission');
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Send to the team', exact: true }));
   const feedback = screen.getByRole('dialog', { name: 'Send to the team' });
@@ -41,13 +41,17 @@ test('the guided practice completes search, citation, brief and feedback without
   fireEvent.click(screen.getByRole('button', { name: 'Next', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Clay Calvert', exact: true }));
   fireEvent.click(screen.getByRole('button', { name: 'Shane Tews', exact: true }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next', exact:true }));
+  fireEvent.click(screen.getByRole('button', { name: /Explore AEI online/ }));
+  fireEvent.click(screen.getByRole('button', { name: 'Next', exact:true }));
+  fireEvent.click(screen.getByRole('button', { name: 'Follow this topic', exact:true }));
   fireEvent.click(screen.getByRole('button', { name: 'Finish tour' }));
-  expect(screen.getByText('7 of 7 complete')).toBeVisible();
+  expect(screen.getByText('9 of 9 complete')).toBeVisible();
   expect(screen.getByRole('region', { name: 'Where to find help again' })).toHaveTextContent('top-right corner of the chatbot');
   expect(screen.getByRole('img', { name: /Screenshot of the top-right chatbot toolbar/ })).toHaveAttribute('src', '/tour-help-header.png');
   expect(screen.getByRole('heading', { name: 'Help is always available' })).toHaveFocus();
   fireEvent.click(screen.getByRole('button', { name: 'Open this question in Article Chat' }));
-  expect(onTryQuestion).toHaveBeenCalledWith('What does Greg Oslan recommend for protecting personal accounts?');
+  expect(onTryQuestion).toHaveBeenCalledWith('What options could expand rural connectivity?');
   expect(apiFetch).not.toHaveBeenCalled();
 });
 
@@ -59,9 +63,9 @@ test('the practice can be skipped or restarted and other mode buttons never run 
   fireEvent.click(screen.getByRole('button', { name: 'AEI Article Search', exact: true }));
   fireEvent.change(screen.getByLabelText('Search the sample library'), { target: { value: 'A different topic' } });
   fireEvent.click(screen.getByRole('button', { name: 'Search', exact: true }));
-  expect(screen.getByRole('alert')).toHaveTextContent('For this practice example, search Greg Oslan');
+  expect(screen.getByRole('alert')).toHaveTextContent('For this practice example, search rural broadband');
   fireEvent.click(screen.getByRole('button', { name: 'Restart' }));
-  expect(screen.getByText('0 of 7 complete')).toBeVisible();
+  expect(screen.getByText('0 of 9 complete')).toBeVisible();
   expect(screen.getByRole('button', { name: 'Next', exact: true })).toBeEnabled();
   fireEvent.click(screen.getByRole('button', { name: 'Skip tour' }));
   expect(onClose).toHaveBeenCalledTimes(1);
@@ -73,8 +77,8 @@ test('automatic demonstrations wait indefinitely for Next, including both passag
   jest.useFakeTimers();
   try {
     render(<DemoWalkthrough onClose={jest.fn()} onOpenSearch={jest.fn()} onTryQuestion={jest.fn()} />);
-    const titles = ['Choose a mode', 'Find an article', 'Open the citation', 'Preview a research brief', 'Try AEI + Web', 'Report a problem', 'Compare selected scholars'];
-    for (let index = 0; index < 7; index++) {
+    const titles = ['Choose a mode', 'Find an article', 'Open the citation', 'Preview a research brief', 'Try AEI + Web', 'Report a problem', 'Compare selected scholars', 'Choose the next research direction', 'Follow a topic and find updates'];
+    for (let index = 0; index < 9; index++) {
       const tour = within(screen.getByRole('dialog', { name: 'Try AEI Chatbot' }));
       fireEvent.click(tour.getByRole('button', { name: 'Next', exact: true }));
       await act(async () => { jest.advanceTimersByTime(650); await Promise.resolve(); });
@@ -96,9 +100,9 @@ test('automatic demonstrations wait indefinitely for Next, including both passag
         await act(async () => { jest.advanceTimersByTime(60000); await Promise.resolve(); });
         expect(feedback.getByLabelText('What should the team know?')).toHaveValue('I can edit and review this at my own pace.');
         fireEvent.click(feedback.getByRole('button', { name: 'Next', exact: true }));
-      } else fireEvent.click(tour.getByRole('button', { name: index === 6 ? 'Finish tour' : 'Next', exact: true }));
+      } else fireEvent.click(tour.getByRole('button', { name: index === 8 ? 'Finish tour' : 'Next', exact: true }));
     }
-    expect(screen.getByText('7 of 7 complete')).toBeVisible();
+    expect(screen.getByText('9 of 9 complete')).toBeVisible();
     expect(screen.getByRole('heading', { name: 'Help is always available' })).toHaveFocus();
     expect(apiFetch).not.toHaveBeenCalled();
   } finally { jest.useRealTimers(); }

@@ -71,6 +71,7 @@ function prepareWebSources(results, plan) {
     let url;
     try { url = new URL(result.url); } catch { continue; }
     if (url.protocol !== 'https:' || url.username || url.password || url.port || !url.hostname.includes('.')) continue;
+    if (plan?.scope === 'aei' && !/(^|\.)aei\.org$/i.test(url.hostname)) continue;
     url.hash = '';
     if (url.href.length > 400) continue;
     // Recruitment and evergreen legal tables cannot establish a recent policy action.
@@ -105,6 +106,7 @@ function createWebSearch(apiKey) {
       headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         query: Array.from(plan.query).slice(0, 400).join(''),
+        ...(plan.scope === 'aei' ? { include_domains: ['aei.org'] } : {}),
         topic: plan.window ? 'news' : 'general',
         ...(plan.window ? { start_date: plan.window.from, end_date: shiftDate(plan.window.to, 1), filter_by_published_date: true } : {}),
         search_depth: 'basic',

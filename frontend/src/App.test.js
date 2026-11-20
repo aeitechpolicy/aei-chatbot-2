@@ -26,7 +26,7 @@ test('Compare Scholars has its own category and sends the selected pair through 
   fireEvent.click(picker.getByRole('button', { name: 'Will Rinehart' }));
   fireEvent.change(screen.getByLabelText('Ask about the scholars’ work'), { target: { value: 'Compare their approach to age verification.' } });
   fireEvent.click(screen.getByRole('button', { name: 'Send message' }));
-  await waitFor(() => expect(submitted).toEqual({ message: 'Compare their approach to age verification.', mode: 'compare', comparisonScholars: ['Clay_Calvert', 'Shane_Tews'] }));
+  await waitFor(() => expect(submitted).toEqual({ message: 'Compare their approach to age verification.', mode: 'compare', interactive:true, comparisonScholars: ['Clay_Calvert', 'Shane_Tews'] }));
   expect(await screen.findByText('Comparing: Clay Calvert, Shane Tews')).toBeVisible();
 });
 
@@ -157,9 +157,9 @@ test('a demo login shows research and chat while hiding staff controls', async (
   fireEvent.click(comparison.getByRole('button', { name: 'Start guided demo' }));
   const tour = within(await screen.findByRole('dialog', { name: 'Try AEI Chatbot' }));
   fireEvent.click(tour.getByRole('button', { name: 'AEI Article Search', exact: true }));
-  fireEvent.change(tour.getByLabelText('Search the sample library'), { target: { value: 'Greg Oslan' } });
+  fireEvent.change(tour.getByLabelText('Search the sample library'), { target: { value: 'rural broadband' } });
   fireEvent.click(tour.getByRole('button', { name: 'Search', exact: true }));
-  expect(tour.getByRole('article', { name: 'Practice search result' })).toHaveTextContent('Why Is It So Hard to Stay Safe Online?');
+  expect(tour.getByRole('article', { name: 'Practice search result' })).toHaveTextContent('Rural Broadband Requires Out-of-the-Box Thinking');
   fireEvent.click(tour.getByRole('button', { name: 'Skip tour' }));
   expect(fetch.mock.calls.some(([url]) => /\/api\/chat\/new|\/message$/.test(url))).toBe(false);
   fireEvent.click(screen.getByRole('button', { name: 'How to use' }));

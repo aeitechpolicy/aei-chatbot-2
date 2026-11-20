@@ -1,5 +1,13 @@
 # AEI research chatbot
 
+## Research workflow update — November 19, 2026
+
+Continue from a library answer into AEI online or wider-web research after an explicit choice and Send. Online excerpts remain separate from saved library evidence. Vague requests can offer library leads and a custom direction, and follow-ups retain the earlier topic.
+
+Topic inbox saves account-private follow settings and matches. Due topics are checked at sign-in at most once per rolling 24 hours across devices; no checks run while signed out. Library checks use saved material; online checks use the existing search connection and do not generate a model answer. Staff report badges, device appearance preference, clearer follow-ups and a versioned update walkthrough are included. Demo practice is newly written from public sources and contains no confidential user chats.
+
+The existing database gains one private-items table automatically through its current initializer. No additional hosting is required. See HANDOFF.md and PRIVATE PILOT SETUP.md for scope, privacy, update timing and remaining limits.
+
 ## Source repair and refresh follow-up — November 19, 2026
 
 The current scoped repair recovers missing fields for 116 of 117 flagged sources and fixes one additional unrelated event link. One old event remains unavailable. Official source evidence and before/after records are in backend/data/source-completeness-repair-report.json. Publication dates and event dates stay distinct. This repair does not harvest new publications or certify complete library currency.

@@ -24,6 +24,8 @@ function tokens(text) {
 }
 function queryTerms(query) {
   let text = String(query).replace(/\b(?:these|our|selected|the)?\s*scholars?[’']?\s+(?:work|writing|research)\b/gi, ' ');
+  // Career-stage wording differs between everyday questions and publication titles.
+  if (/\b(?:young(?:er)? workers|early[ -]career|entry[ -]level)\b/i.test(text)) text += ' younger workers early career entry level';
   text = withoutScholarNames(text);
   const terms = [...new Set(tokens(text))].slice(0, 40);
   return /\b(themes?|overview|focus)\b/i.test(query) && terms.every(t => t === 'work') ? [] : terms;
@@ -252,7 +254,7 @@ function createArticleSearch({
     const { byReference } = await catalog();
     return byReference.get(sourceRef) || null;
   }
-  async function search({ query, scholar = 'General', limit = 12, fullTextOnly = false, from, to, sort = 'relevance', includeHighlights = false } = {}) {
+  async function search({ query, scholar = 'General', limit = 12, fullTextOnly = false, contextTerms = [], from, to, sort = 'relevance', includeHighlights = false } = {}) {
     const archive = await catalog();
     const terms = queryTerms(query);
     const normalizedQuery = normalize(query);
@@ -291,6 +293,7 @@ function createArticleSearch({
       if ((from || to) && (!doc.date || (from && doc.date < from) || (to && doc.date > to))) continue;
       if (exactPerson && ![doc.title, doc.body, ...doc.authors, ...(doc.interview?.participants || [])].some(value => (' ' + normalize(value) + ' ').includes(' ' + exactPerson + ' '))) continue;
       const matched = terms.filter(t => doc.tf.has(t));
+      if (fullTextOnly && contextTerms.length && !contextTerms.every(term => doc.tf.has(term))) continue;
       if (!overview && !matched.length) continue;
       const titleTokens = tokens(doc.title);
       const phraseMatches = terms.slice(0, -1).filter((term, i) => titleTokens.some((word, j) => word === term && titleTokens[j + 1] === terms[i + 1])).length;

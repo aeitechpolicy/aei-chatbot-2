@@ -287,6 +287,23 @@ test('free database storage through the real Neon HTTP driver', async t => {
     await pilot.close();
   });
 
+  await t.test('private topic leases persist across database instances and allow only one concurrent due check', async () => {
+    const first=makePilot();const at='2026-11-19T12:00:00.000Z';
+    await first.savePrivateItem('demo1','follow','topic',{title:'Rural connectivity',updates:[]});
+    assert.deepEqual(await first.privateItems('demo2','follow'),[]);
+    const claims=await Promise.all([first.claimTopicCheck('demo1','topic',at),first.claimTopicCheck('demo1','topic',at)]);
+    assert.equal(claims.filter(Boolean).length,1);
+    const next=makePilot();assert.equal(await next.claimTopicCheck('demo1','topic','2026-11-20T11:59:59.999Z'),false);
+    assert.equal(await next.claimTopicCheck('demo1','topic','2026-11-20T12:00:00.000Z'),true);
+    await next.patchPrivateItem('demo1','follow','topic',{readAt:at});
+    assert.equal((await next.privateItems('demo1','follow'))[0].readAt,at);
+    await next.finishTopicCheck('demo1','topic','2026-11-20T12:00:00.000Z',{title:'Updated match',lastAttemptAt:'2026-11-20T12:00:00.000Z'});
+    assert.equal((await next.privateItems('demo1','follow'))[0].readAt,at);
+    await next.deletePrivateItem('demo1','follow','topic');
+    await next.finishTopicCheck('demo1','topic','2026-11-20T12:00:00.000Z',{title:'Should not return'});
+    assert.deepEqual(await next.privateItems('demo1','follow'),[]);
+  });
+
   assert.ok(httpRequests > 0);
 });
 

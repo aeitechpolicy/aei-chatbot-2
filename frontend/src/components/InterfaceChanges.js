@@ -12,7 +12,7 @@ export default function InterfaceChanges({ onClose, onStartTour, onBack }) {
     </div>
     <footer className="research-dialog-actions walkthrough-actions">
       <button type="button" className="research-secondary" onClick={onBack}><ArrowLeft size={16} aria-hidden="true" /> Back</button>
-      <p className="onboarding-next">Next: an interactive, seven-step guided demo.</p>
+      <p className="onboarding-next">Next: an interactive, nine-step guided demo.</p>
       <button type="button" className="research-primary" onClick={onStartTour}>Start guided demo <ArrowRight size={16} aria-hidden="true" /></button>
     </footer>
   </ResearchDialog>;

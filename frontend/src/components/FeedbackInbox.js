@@ -13,7 +13,7 @@ function ReportedSource({ source }) {
   </div>;
 }
 
-export default function FeedbackInbox() {
+export default function FeedbackInbox({onRead}) {
   const [reload, setReload] = useState(0);
   const [reports, setReports] = useState(null);
   const [error, setError] = useState('');
@@ -36,6 +36,7 @@ export default function FeedbackInbox() {
     return () => controller.abort();
   }, [reload]);
 
+  async function markRead(id){try{const response=await apiFetch(`${API_BASE_URL}/api/feedback/${encodeURIComponent(id)}/read`,{method:'POST'});if(!response.ok)throw new Error();setReports(items=>items.map(item=>item.id===id?{...item,read:true}:item));onRead?.();}catch{setError('The report could not be marked read.');}}
   return <main className="feedback-inbox">
     <div className="feedback-inbox-heading">
       <h2>Feedback inbox</h2>
@@ -45,7 +46,8 @@ export default function FeedbackInbox() {
     {!error && reports === null && <p role="status">Loading reports…</p>}
     {reports?.length === 0 && <p>No reports have been sent.</p>}
     {reports?.map(report => <article key={report.id} className="feedback-report">
-      <h3>{report.category}</h3>
+      <h3>{report.category}{!report.read&&<span className="notification-count">New</span>}</h3>
+      {!report.read&&<button type="button" className="research-secondary" onClick={()=>markRead(report.id)}>Mark report read</button>}
       <p className="source-metadata">{report.reporterLabel} · <time dateTime={report.createdAt}>{new Date(report.createdAt).toLocaleString()}</time></p>
       <p className="feedback-detail">{report.detail}</p>
       {report.source ? <ReportedSource source={report.source} /> : <details className="feedback-answer">
