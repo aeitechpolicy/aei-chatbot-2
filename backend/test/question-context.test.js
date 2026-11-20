@@ -11,7 +11,7 @@ test('a contextual question retains its original policy topic across several tur
 });
 test('a vague topic can offer actual library leads while a definition request proceeds',()=>{
  const sources=[{title:'AI and work'},{title:'AI regulation'}];
- assert.equal(clarificationFor('AI',sources,false).options.length,2);
+ assert.equal(clarificationFor('AI',sources,false).options.length,3);
  assert.equal(clarificationFor('What is AI?',sources,false),null);
  assert.equal(clarificationFor('AI',sources,true),null);
 });
@@ -24,4 +24,18 @@ test('AEI-only mode sends an explicit domain restriction without asking for prov
  global.fetch=async(url,options)=>{body=JSON.parse(options.body);return{ok:true,json:async()=>({results:[]})};};
  await createWebSearch('test-only-key')('Policy',{query:'Policy',scope:'aei'});
  assert.deepEqual(body.include_domains,['aei.org']);assert.equal(body.include_answer,false);assert.equal(body.search_depth,'basic');
+});
+
+test('open-ended multiword topics offer directions in every research mode while clear questions proceed',()=>{
+ for(const mode of ['archive','compare','web']) {
+  const reply=clarificationFor('Regional freight policy',[],false,{mode,webScope:'aei'});
+  assert.equal(reply.options.length,3);assert.equal(reply.originalQuestion,'Regional freight policy');assert.ok(reply.options.every(option=>option.label&&option.question));
+ }
+ assert.equal(clarificationFor('What are the tradeoffs of regional freight subsidies?',[],false),null);
+});
+test('fresh and expanded AEI questions use the same topic query',()=>{
+ const {aeiSearchQuery}=require('../utils/webSearch');
+ const question='What have other AEI scholars written about regional freight policy?';
+ assert.equal(aeiSearchQuery(question),aeiSearchQuery('Find other AEI perspectives on this question: '+question));
+ assert.doesNotMatch(aeiSearchQuery(question),/aei|scholar|written|perspective/);
 });

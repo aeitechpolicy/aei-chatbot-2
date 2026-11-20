@@ -1,4 +1,4 @@
-const { knownDate } = require('./research');
+const { knownDate, queryTerms } = require('./research');
 const { additionalSource } = require('./onlineSources');
 
 const MAX_WEB_RESULTS = 3;
@@ -18,6 +18,12 @@ function searchTopic(question) {
   text = text.replace(/\b(?:from|over|in|within|during)\s+(?:the\s+)?(?:past|last|previous)\s+(?:\d+\s+)?(?:days?|weeks?|months?|years?)\b/gi, ' ');
   text = text.replace(/^\s*(?:identify|find|show|give|provide|list|explain|summari[sz]e)\s+(?:(?:me|us|one|two|three|an?|the)\s+)?/i, ' ');
   return cleanText(text, 600) || cleanText(question, 600);
+}
+
+function aeiSearchQuery(question) {
+  const text=String(question).replace(/^(?:Find other AEI perspectives on this question:\s*)+/i,'');
+  const terms=queryTerms(searchTopic(text)).filter(term=>!['aei','scholar','perspective','written','write','writ','author','additional','other'].includes(term));
+  return terms.join(' ') || searchTopic(text);
 }
 
 function shiftDate(day, days) {
@@ -94,7 +100,7 @@ function prepareWebSources(results, plan) {
       publisher: url.hostname,
       ...(result.authors?.length ? {authors:result.authors,author:result.authors.join(', '),bylineSource:result.bylineSource} : {}),
       date,
-      ...(date ? { dateIsEstimate: true } : {}),
+      ...(date ? { dateIsEstimate: result.dateSource !== 'publisher catalog',dateSource:result.dateSource||'search result' } : {}),
       url: url.href,
       excerpt
     });
@@ -132,4 +138,4 @@ function createWebSearch(apiKey) {
   };
 }
 
-module.exports = { createWebSearch, prepareWebSources, planWebSearch, searchTopic, webPublishedDate, WEB_CONTEXT_RESERVE };
+module.exports = { createWebSearch, prepareWebSources, planWebSearch, searchTopic, webPublishedDate, WEB_CONTEXT_RESERVE, aeiSearchQuery };

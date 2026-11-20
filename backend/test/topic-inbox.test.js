@@ -40,7 +40,7 @@ test('library topic checks use no model or external search and vague questions o
  await f.request('/api/inbox',token,{chatId:chat.id,scope:'library'});await f.request('/api/inbox/check',token,{});
  assert.equal(f.searches(),0);assert.equal(f.models(),0);assert.equal((await f.pilot.privateItems('demo1','follow'))[0].updates[0].kind,'library');
  const c=await f.manager.createChat('General',null,'demo1');
- const r=await f.request(`/api/chat/${c.id}/message`,token,{message:'Broadband',interactive:true});assert.equal(r.status,200);const data=await r.json();assert.equal(data.aiUsed,false);assert.ok(data.clarification.options[0].question.includes('Broadband and rural clinics'));assert.equal(f.models(),0);
+ const r=await f.request(`/api/chat/${c.id}/message`,token,{message:'Broadband',interactive:true});assert.equal(r.status,200);const data=await r.json();assert.equal(data.aiUsed,false);assert.equal(data.clarification.options.length,3);assert.ok(data.clarification.options[0].question.includes('Broadband'));assert.equal(f.models(),0);
 });
 test('unread staff badges reveal counts only to staff and acknowledgments are staff-specific',async t=>{
  const f=await setup(t),owner=await f.login('owner'),demo=await f.login('demo1');
@@ -76,4 +76,14 @@ test('an AEI search containing only a library scholar does not call a model or r
  const token=await f.login('demo1'),chat=await f.chat('demo1');
  const response=await f.request(`/api/chat/${chat.id}/message`,token,{message:'Find other AEI perspectives on this question: Rural connectivity',mode:'web',webScope:'aei'});
  const body=await response.json();assert.equal(response.status,200);assert.equal(f.models(),0);assert.equal(f.libraryLookups(),0);assert.equal(body.aiUsed,false);assert.deepEqual(body.sources,[]);assert.match(body.response,/did not establish an additional AEI author/);
+});
+
+test('all research modes can clarify a short topic before any paid search or model call',async t=>{
+ const f=await setup(t),token=await f.login('demo1');
+ for(const mode of ['archive','compare','web']) {
+  const chat=await f.manager.createChat('General',null,'demo1');
+  const response=await f.request(`/api/chat/${chat.id}/message`,token,{message:'Regional freight policy',interactive:true,mode,webScope:'aei',...(mode==='compare'?{comparisonScholars:['Brent_Orrell','Shane_Tews']}:{})});
+  const body=await response.json();assert.equal(response.status,200);assert.equal(body.aiUsed,false);assert.equal(body.clarification.options.length,3);
+ }
+ assert.equal(f.models(),0);assert.equal(f.searches(),0);
 });

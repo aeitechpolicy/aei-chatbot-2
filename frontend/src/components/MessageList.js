@@ -1,6 +1,6 @@
 import { ClarificationChoices } from './ResearchFlow';
 import InterviewDetails from './InterviewDetails';
-import React, { useEffect, useId, useRef, useState } from 'react';
+import React, { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { User, Bot, BookOpen, ChevronDown, FileText, Flag, X, ArrowUpRight } from 'lucide-react';
 import SourceCards from './SourceCards';
 import { sourceLink, sourceDateLabel, sourceByline } from '../utils/sources';
@@ -55,7 +55,7 @@ function CitationPassage({ source, onClose }) {
   </aside>;
 }
 
-function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFollowUps, onClarify }) {
+function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFollowUps, onClarify, endMarker }) {
   const [selected, setSelected] = useState(null);
   const opener = useRef(null);
   const [briefOpen, setBriefOpen] = useState(false);
@@ -90,7 +90,7 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
     {message.coverageNotice && <p className="answer-source-note">{message.coverageNotice}</p>}
     <div className={`message-evidence-layout ${selected ? 'has-passage' : ''}`}>
       <div className="message-content">
-        {sourceOnly ? <>
+        {message.clarification&&onClarify ? null : sourceOnly ? <>
           <p>{experimental
             ? 'Related articles and web sources are shown below.'
             : 'Related articles from the AEI Scholar Library are shown below.'}</p>
@@ -138,22 +138,50 @@ function ChatMessage({ message, title, chatId, messageIndex, onFollowUp, showFol
     {brief && briefOpen && <ResearchBriefPreview brief={brief} onClose={() => setBriefOpen(false)} />}
     {canReport && feedbackOpen && <FeedbackDialog chatId={chatId} messageIndex={messageIndex} answer={message.content}
       sent={feedbackSent} onSent={() => setFeedbackSent(true)} onClose={() => setFeedbackOpen(false)} />}
+    {endMarker}
     {showFollowUps && message.followUps?.length > 0 && <div className="message-follow-ups" aria-label="Suggested follow-up questions"><h3>Explore next</h3><p>Choose a question to place it in the message box.</p>
       {message.followUps.map(question => <button type="button" key={question} onClick={() => onFollowUp(question)}>{question}</button>)}
     </div>}
   </div>;
 }
 
-export default function MessageList({ messages, loading, title, chatId, onFollowUp, onClarify }) {
-  const messagesEndRef = useRef(null);
-  useEffect(() => { messagesEndRef.current?.scrollIntoView?.({ behavior: 'smooth' }); }, [messages, loading]);
+export default function MessageList({ messages, loading, title, chatId, onFollowUp, onClarify, onAnswerRead, revealNext=true }) {
+  const latestTurnRef = useRef(null);
+  const preparingRef = useRef(null);
+  const answerEndRef = useRef(null);
+  const readCallback = useRef(onAnswerRead);
+  readCallback.current=onAnswerRead;
+  const latest=messages.at(-1);
+  useLayoutEffect(()=>{
+    const target=loading?preparingRef.current:latestTurnRef.current;
+    target?.scrollIntoView?.({behavior:'auto',block:'start'});
+  },[chatId,messages.length,loading,latest?.content,latest?.role]);
+  useEffect(()=>{
+    const marker=answerEndRef.current;
+    if(loading||latest?.role!=='assistant'||!marker||!readCallback.current)return undefined;
+    const root=marker.closest('.messages-container');
+    let done=false;
+    const finish=()=>{if(!done){done=true;readCallback.current?.();}};
+    if(typeof IntersectionObserver==='function'){
+      const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting))finish();},{root,threshold:1});
+      observer.observe(marker);return()=>observer.disconnect();
+    }
+    const check=()=>{if(!root||root.clientHeight<=0)return;const end=marker.getBoundingClientRect(),box=root.getBoundingClientRect();if(end.top>=box.top&&end.bottom<=box.bottom)finish();};
+    check();root?.addEventListener('scroll',check);
+    const observer=typeof ResizeObserver==='function'?new ResizeObserver(check):null;
+    if(root)observer?.observe(root);
+    return()=>{root?.removeEventListener('scroll',check);observer?.disconnect();};
+  },[chatId,messages.length,loading,latest?.content,latest?.role]);
   return <div className="messages-list">
-    {messages.map((message, index) => <ChatMessage key={index} message={message} title={title} chatId={chatId} messageIndex={index}
-      onFollowUp={onFollowUp} onClarify={!loading && index === messages.length - 1 ? onClarify : undefined} showFollowUps={Boolean(onFollowUp && !loading && index === messages.length - 1)} />)}
-    {loading && <div className="message assistant">
+    {messages.map((message,index)=><div key={index} ref={index===messages.length-1?latestTurnRef:null} className="answer-turn">
+      <ChatMessage message={message} title={title} chatId={chatId} messageIndex={index}
+        onFollowUp={onFollowUp} onClarify={!loading&&index===messages.length-1?onClarify:undefined}
+        endMarker={!loading&&index===messages.length-1&&message.role==='assistant'?<div ref={answerEndRef} className="answer-read-marker" aria-hidden="true" />:null}
+        showFollowUps={Boolean(revealNext&&onFollowUp&&!loading&&index===messages.length-1)} />
+    </div>)}
+    {loading&&<div ref={preparingRef} className="message assistant">
       <div className="message-header"><div className="message-icon"><Bot size={20} /></div><div className="message-role">Assistant</div></div>
       <div className="message-content" role="status" aria-label="Preparing answer"><div className="typing-indicator"><span /><span /><span /></div></div>
     </div>}
-    <div ref={messagesEndRef} />
   </div>;
 }

@@ -6,7 +6,7 @@ const { fetchRelevantArticles } = require('../utils/aeiScraper');
 const { fetchLegacyArticles, legacyPrompt, legacyDomains, legacyFileList, legacyFile } = require('../utils/legacyArchive');
 const { prepareSources, researchPrompt, scholarCoverageFor, coverageNoticeFor, parseFirstAnswer, fallbackChatTitle, parseFollowUps, checkCitations } = require('../utils/sourceContext');
 const { queryTerms } = require('../utils/research');
-const { prepareWebSources, planWebSearch, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
+const { prepareWebSources, planWebSearch, aeiSearchQuery, searchTopic, WEB_CONTEXT_RESERVE } = require('../utils/webSearch');
 const { findComparisonSources, comparisonInstructions, parseComparison } = require('../utils/scholarComparison');
 const { providerErrorDetails, completionDetails, emptyAnswerError, usageFailureCode } = require('../utils/providerError');
 const { TEST_MODELS, MUSE_TEST_MODEL, TEST_OUTPUT_TOKENS, INTERN_OUTPUT_TOKENS, INTERN_TIMEOUT_MS, selectedModels, estimatedCost } = require('../utils/modelTesting');
@@ -220,7 +220,7 @@ router.post('/:chatId/message', async (req, res) => {
     const retrievalQuery = resolved.query;
     const onlineQuestion = retrievalQuery;
     const webPlan = web ? { ...planWebSearch(onlineQuestion, now()), scope: webScope,
-      ...(expansion ? {query:queryTerms(onlineQuestion).join(' ')||onlineQuestion} : {}) } : null;
+      ...(webScope === 'aei' ? {query:aeiSearchQuery(onlineQuestion)} : {}) } : null;
     const libraryQuery = web ? searchTopic(retrievalQuery) : retrievalQuery;
     let articles = [];
     let groups;
@@ -231,8 +231,8 @@ router.post('/:chatId/message', async (req, res) => {
     } catch {
       return res.status(503).json({ error: 'The AEI Scholar Library could not be searched. Please try again shortly.', code: 'archive_unavailable' });
     }
-    const clarification = !legacy && !web && !compare && req.body.interactive === true && req.body.clarified !== true
-      ? clarificationFor(message, articles, Boolean(resolved.anchors.length)) : null;
+    const clarification = !legacy && req.body.interactive === true && req.body.clarified !== true
+      ? clarificationFor(question, compare ? groups.flatMap(group=>group.sources) : articles, Boolean(resolved.anchors.length), {mode,webScope}) : null;
     if (clarification) {
       const reply = { role:'assistant', content:clarification.question, clarification, sources:[], searchMode:'clarification' };
       await chatManager.addMessage(chatId,userMessage);

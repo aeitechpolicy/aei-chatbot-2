@@ -780,3 +780,28 @@ body[data-theme=dark] .article-workspace ::-webkit-scrollbar-track {background:#
 
 .paged-guide-dialog .research-dialog-header,.paged-guide-dialog > .research-dialog-actions,.paged-guide-dialog > .guide-scroll-cue {position:relative;z-index:2}
 .paged-guide-dialog .guide-scroll-body {position:relative;z-index:0;isolation:isolate}
+
+.answer-turn {scroll-margin-top:16px}
+.answer-read-marker {height:1px;width:1px;pointer-events:none}
+.research-flow-actions {overflow-anchor:none}
+.research-flow-actions .mode-choice {padding:12px 14px;margin:12px 0}
+.research-flow-actions .mode-choice-options {gap:8px;margin:10px 0}
+.research-flow-actions .mode-choice-options button {padding:10px;gap:4px}
+.research-flow-actions .mode-choice-options span {font-size:.8rem}
+
+.question-card {max-width:620px;border:1px solid var(--workspace-link);background:var(--workspace-field)}
+.question-card fieldset {border:0;padding:0;margin:12px 0}.question-card legend {font-size:.82rem;font-weight:600;margin-bottom:8px}
+.clarification-choices .clarification-option {display:flex;align-items:flex-start;gap:10px;padding:10px;border:1px solid var(--workspace-line);border-radius:9px;margin:7px 0;cursor:pointer}
+.clarification-option input {margin-top:4px;accent-color:var(--workspace-link)}
+.question-card textarea {display:block;box-sizing:border-box;width:100%;margin-top:7px;padding:10px;border:1px solid var(--workspace-line);border-radius:9px;background:var(--workspace-panel);color:var(--workspace-text);font:inherit;resize:vertical}
+.question-card-actions {display:flex;justify-content:flex-end;gap:9px;margin-top:10px;flex-wrap:wrap}
+
+.question-card form {display:block}
+.question-card h3 {font-size:1.08rem;margin:4px 0 7px}
+.question-card > p {margin:5px 0}
+.question-card .workspace-meta {text-align:left;font-size:.78rem;line-height:1.35}
+.question-card fieldset {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:10px 0}
+.question-card .clarification-option {margin:0;padding:9px;font-size:.83rem;line-height:1.35}
+.question-card textarea {min-height:38px;margin-top:4px;padding:8px}
+.question-card-actions {margin-top:8px}
+@media(max-width:750px){.question-card fieldset{grid-template-columns:1fr}.question-card .clarification-option{padding:8px}}

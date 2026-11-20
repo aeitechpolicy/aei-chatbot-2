@@ -1,5 +1,16 @@
 # Maintainer handoff
 
+Announcement approval: Check with Evans before adding new content to Latest updates or other release-announcement screens. Implementing a feature does not authorize announcing it there. The current answer-first reading changes must not be added to Latest updates; the authorized notice edit removes the fourth page and the scope strip only.
+
+## Answer-first reading and multi-mode clarification — November 19, 2026
+
+New answers scroll to their beginning, not the end of the message list. Continue the research, Follow this topic and suggested follow-ups stay hidden until the end marker of the latest answer enters the message viewport. A new response resets this per-answer state. Revealing actions does not scroll the answer again; the preserved Version 1 renderer is unchanged. Short answers can reveal actions immediately when the whole answer is already visible. The actions use more compact spacing.
+
+Clarification now supports Article Chat, Compare Scholars and both web scopes for short/open-ended topics. It is a deterministic three-choice question card with custom text and Skip clarification. The selected direction or skip places a question in the composer, marked clarified; Send remains a separate action. A clear question normally proceeds directly. The gate runs before a model reservation or online search, so the clarification adds no model/search credit charge. These are limited wording heuristics, not an LLM intent classifier. Real user questions and histories remain private; public fixtures use original synthetic cases.
+
+The fourth Latest updates page about guide presentation and the decorative source-scope strip were removed. Three release pages remain. Fresh and expanded AEI-online requests now use the same topic-query normalization; prior context still applies to explicitly referential follow-ups. Provider rankings can still vary. The compressed publisher lookup now retains unambiguous publication dates as well as bylines. Conflicting dates stay unknown. Publisher dates are marked separately from search-reported estimates, and the AEI-online prompt requires author/year attribution and historical framing of old program provisions. New source objects receive this metadata; existing stored answers are not rewritten.
+
+
 ## Distinct online research, manual updates and guide layout — November 19, 2026
 
 AEI online now omits known library URLs/titles, including alternate tracking links and linked interview pages. Candidate authors must be identified either in the publication heading/byline region of returned page text or in the compact publisher-authorship lookup. Any candidate naming one of the four library scholars is omitted, including coauthored pieces. Related-article headings do not establish a byline. AEI online uses only the remaining W sources for a brief expansion; no eligible source produces a clear evidence-limit response without a model call. This establishes a bounded search result, not proof that no other scholar has written on the topic. Wider-web scope excludes AEI domains/subdomains and repeated library sources, while retaining S passages as separately labeled background. Expansion prefixes are removed from search queries even after a scope switch.
