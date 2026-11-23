@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-11-23T20:04:12.378Z",
+  "checkedAt": "2026-11-23T20:04:12.622Z",
+  "complete": false,
+  "canPublishSources": false,
+  "runUrl": "https://github.com/aeitechpolicy/aei-chatbot-2/actions/runs/45255058831",
+  "stages": {
+    "harvest": "failure",
+    "match": "skipped",
+    "import": "skipped",
+    "rematch": "skipped",
+    "index": "skipped"
+  },
+  "failures": [
+    {
+      "stage": "harvest",
+      "reason": "Step failure"
+    },
+    {
+      "stage": "match",
+      "reason": "Step skipped"
+    },
+    {
+      "stage": "import",
+      "reason": "Step skipped"
+    },
+    {
+      "stage": "rematch",
+      "reason": "Step skipped"
+    },
+    {
+      "stage": "index",
+      "reason": "Step skipped"
+    },
+    {
+      "stage": "catalog",
+      "reason": "The author feed is missing required scholars: Brent Orrell, Clay Calvert, Shane Tews, Will Rinehart"
+    },
+    {
+      "stage": "import",
+      "reason": "No current article report; an earlier report cannot certify this run"
+    }
+  ],
+  "newPages": 0,
+  "updatedPages": 0,
+  "transcripts": 0
+}
